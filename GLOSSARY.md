@@ -55,7 +55,7 @@ A shortened official name that fits a name limit. It is chosen once and reused e
 _Avoid_: short name, truncation
 
 **Character set**:
-The fixed set of characters the game can display. German needs ä, ö, ü, Ä, Ö, Ü and ß added to it.
+The fixed set of characters the game can display. German needs ä, ö, ü, Ä, Ö and Ü added to it. ß is written as "ss".
 _Avoid_: font, alphabet, charmap
 
 ## Platform
