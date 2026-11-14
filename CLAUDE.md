@@ -4,7 +4,8 @@ This fork of Polished Crystal is being translated into German, to be played on a
 
 ## Upstream
 
-- `master` mirrors upstream (Rangi42/polishedcrystal), and translation work lives on branches. Upstream fixes bugs within days, so take fixes from upstream through a merge and keep this fork's diff limited to the translation.
+- `master` on the fork `remo-vonarx/polishedcrystal` is the Translation. Each change gets its own branch and reaches `master` through a PR on the fork, squash-merged with the PR title as the commit subject; the branch is deleted afterwards.
+- Upstream (Rangi42/polishedcrystal) is the `upstream` remote. It fixes bugs within days, so merge `upstream/master` in for fixes and keep this fork's diff limited to the translation.
 - Keep translated text out of engine code, in separate files (the abandoned upstream `i18n` branch, a French proof of concept, uses `locale/<lang>/` selected by a build flag). This keeps upstream merges cheap. Large upstream renames, such as draft PR #1652, are the main source of conflicts.
 - Upstream's English text is still changing ahead of v3.3.0. Translate against a tagged release.
 
