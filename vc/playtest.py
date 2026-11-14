@@ -73,13 +73,14 @@ def main():
 
     os.makedirs(a.out, exist_ok=True)
     args = [EXE, "-w"] + (["-p", os.path.abspath(a.movie)] if a.movie else []) + [os.path.abspath(a.title)]
-    pid = launch(args, os.path.join(a.out, "azahar_stdout.txt"))
+    stdout_path = os.path.join(a.out, "azahar_stdout.txt")
+    pid = launch(args, stdout_path)
     rpc, start = AzaharRPC(timeout=2), time.monotonic()
     try:
         for t in [float(x) for x in a.shots.split(",")]:
             time.sleep(max(0.0, start + t - time.monotonic()))
             if not alive(pid):
-                print(f"{t:5.0f}s  Azahar exited early")
+                print(f"{t:5.0f}s  Azahar exited early; see {stdout_path} and {LOG}")
                 return 1
             path = os.path.join(a.out, f"shot_{int(t):03d}s.png")
             try:
