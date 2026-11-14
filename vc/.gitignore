@@ -1,0 +1,3 @@
+# Downloaded tools, the user's own base CIA dump, emulator sandbox and build outputs.
+# The base CIA is Nintendo software dumped from the user's console: never commit it.
+local/
