@@ -25,11 +25,12 @@ German text needs `ä ö ü Ä Ö Ü`. The Character set has no free glyph slots
 - **Look:**
   - **Capitals** keep their height and baseline. The dots sit in the top row, and one repeated straight row of the letter is dropped to make room.
   - **Lowercase** letters get dots in the free rows above.
-  - Every font follows this scheme in its own style. Reference sketch (normal font, `#` = ink):
+  - The normal font is Kristall's typeface (its letters are byte-identical), so it takes Kristall's six umlaut tiles unchanged. They match the scheme above, with the dots always in pixel columns 2 and 4.
+  - Every other font follows the same scheme in its own style. Normal font (`#` = ink):
 
     ```
       Ä         Ö         Ü         ä         ö         ü
-    .#...#..  .#...#..  ..#.#...  ..#..#..  ..#..#..  ..#.#...
+    ..#.#...  ..#.#...  ..#.#...  ..#.#...  ..#.#...  ..#.#...
     ...#....  ..###...  #.....#.  ........  ........  ........
     ..#.#...  .#...#..  #.....#.  ..###...  ..####..  .#...#..
     .#...#..  #.....#.  #.....#.  .....#..  .#....#.  .#...#..
@@ -53,8 +54,9 @@ German text needs `ä ö ü Ä Ö Ü`. The Character set has no free glyph slots
 
 ## Checks
 
-- A zoomed preview sheet of the six new glyphs in all 9 images, for the user to approve before anything is committed. Kristall's own umlauts appear next to the normal font for comparison (the builder's call: they're the official look).
-- A throwaway test build that shows `ÄÖÜ äöü` in each selectable font and in VWF text, screenshotted in SameBoy.
+- A zoomed preview sheet of the six new glyphs in all 9 images, for the user to approve before anything is committed.
+- A throwaway test build that shows `ÄÖÜ äöü` in each selectable font, screenshotted in Azahar on the real Virtual Console emulator. The options menu reloads the font live, so one screen serves all 8 fonts.
+- VWF text is checked by rendering a test string from the build's own `vwf.vwf.1bpp` and `vwf.vwf.widths`. No VWF screen is reachable early in a new game, and the VWF engine itself is unchanged.
 - `make` and `make vc` build without new warnings. The `make huffman` text dump differs from before only in Pilar's lines.
 
 ## Left to the builder
