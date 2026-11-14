@@ -156,14 +156,14 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 	charmap "'v",       $c7
 
 	charmap "é",        $c8
-	charmap "É",        $c9
-	charmap "á",        $ca
+	charmap "Ä",        $c9
+	charmap "ä",        $ca
 	charmap "<BOLDH>",  $cb
-	charmap "í",        $cc
-	charmap "ó",        $cd
+	charmap "Ö",        $cc
+	charmap "ö",        $cd
 
-	charmap "¿",        $ce
-	charmap "¡",        $cf
+	charmap "Ü",        $ce
+	charmap "ü",        $cf
 
 	charmap "<PO>",     $d0
 	charmap "<KE>",     $d1
