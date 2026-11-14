@@ -1,6 +1,6 @@
 # Write "ss" instead of ß
 
-The translation writes "ss" wherever standard German spelling has ß, Official names included. The Character set has room for exactly six new letters, ä ö ü Ä Ö Ü, without breaking English text that hasn't been translated yet. A seventh glyph for ß would have to replace the `<KE>` ligature tile, which the start menu uses to fit "POKégear" into 7 tiles. "ss" is the established spelling in Swiss Standard German, so readers see a familiar convention rather than a misspelling.
+The translation writes "ss" wherever standard German spelling has ß, Official names included. The Character set has room for exactly six new letters, ä ö ü Ä Ö Ü, while untranslated Source text keeps displaying correctly. A seventh glyph for ß would have to replace the `<KE>` ligature tile, which the start menu uses to fit "POKégear" into 7 tiles. "ss" is the established spelling in Swiss Standard German, so readers see a familiar convention rather than a misspelling.
 
 ## Considered Options
 

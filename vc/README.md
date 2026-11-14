@@ -39,6 +39,7 @@ python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/b
 - Azahar runs with `HOME=vc/local/azahar-home`, so nothing touches `~/Library`. A window opens for the duration of the run.
 - On every start, Virtual Console shows a "Restore points / Suspension points not supported" notice that needs an A press. The sample schedule taps A every 2 s until 20 s, which also skips the intro.
 - Under a movie the game plays deterministically (fixed clock), but screenshots are timed by wall clock. Early shots shift with boot speed, so compare later or static screens. In the sample run, 34 s shows the options screen and 62 s shows "Will you check the clock for me?".
+- Azahar stops at a modal "run Azahar via the app bundle" warning whenever its parent isn't launchd. `playtest.py` therefore starts it through a shell that exits at once. Being detached, it reports no exit code: Azahar's console output is in `<out>/azahar_stdout.txt`, and after a full run the emulator log is copied to `<out>/azahar_log.txt`.
 - Azahar ignores SIGTERM, so `playtest.py` kills it. That rules out recording movies with `-r` by script, because a recording is only saved on a clean exit.
 
 ## Install on the 3DS

@@ -18,7 +18,7 @@
   - Mail upper, row 5: `rawchar "ÄÖÜ<PK><MN><PO><KE>&♂♀"` = `c9 cc ce d2 d3 d0 d1 d8 be bf`
   - Mail lower, row 4: `rawchar "äöüé's¥×/()"` = `ca cd cf c8 c5 ea db dc 9a 9b`
 - Every other row of every grid stays byte-identical.
-- `make vc` keeps exactly the 2 upstream `-Wassert` warnings.
+- `make vc` prints no `-Wunmapped-char` warning. (A clean build also prints the 2 upstream `-Wassert` warnings; an incremental build may print fewer, so count by flag, not by "warning".)
 - Commits end with the `Claude-Session:` trailer. Work happens on branch `naming-screen-umlauts`, which reaches `master` through a squash-merged PR (CLAUDE.md "Upstream").
 - `$SCRATCH` is a scratch directory outside the repo.
 
@@ -59,10 +59,10 @@ Run it with the base ROM as both base and new. Expected: FAIL on all 8 tables ("
 - [ ] **Step 4: Build and check**
 
 ```sh
-make -j8 vc 2>&1 | grep -c warning   # expect 2
+make -j8 vc 2>&1 | tee $SCRATCH/build.log | grep -c 'Wunmapped-char'   # expect 0
 python3 -I $SCRATCH/check_keyboards.py $SCRATCH/base.gbc $SCRATCH/base.sym polishedcrystal-3.2.3.gbc polishedcrystal-3.2.3.sym
 ```
-Expected: 2 warnings, 0 failures.
+Expected: 0 `-Wunmapped-char` warnings, 0 failures.
 
 - [ ] **Step 5: Update `CLAUDE.md`**
 
@@ -84,14 +84,14 @@ Replace "The naming screen (`engine/menus/naming_screen.asm`) still has no umlau
 
 - [ ] **Step 2: Find the timing with dense screenshots**
 
-With no save, `A` at 4 s and 6 s reaches the main menu (`New Game` selected). From there, the new-game flow goes to the initial options ("Please choose how you want to play"; START leaves the menu), then the clock ("Will you check the clock for me?"), then Elm's speech and the name choice (pick the first entry, `New name`). Tune a movie step by step with `--shots` every 2 s until the naming screen shows.
+With no save, `A` at 4 s and 6 s reaches the main menu (`New Game` selected). From there, the new-game flow goes to the initial options ("Please choose how you want to play"; START leaves the menu), then the clock ("Will you check the clock for me?"), then Elm's speech, the player picture ("Are you a boy? Or are you a girl?", then "So this is you?") and "Please tell me your name.", which needs one more A. The naming screen then opens directly; there is no preset-name menu. Tune a movie step by step with `--shots` every 2 s until the naming screen shows.
 
 - [ ] **Step 3: Type a name and screenshot**
 
 On the naming screen (ABC layout, upper page, cursor on `A`):
 1. Screenshot the upper page: row 4 reads `Ä Ö Ü ¥ <PK> <MN> ★ ♥ ♪`.
 2. Type `J` (row 2, column 1).
-3. SELECT, then screenshot the lower page: row 4 reads `ä ö ü é ' ( ) / 0`.
+3. Screenshot the lower page, which typing the first letter switches to: row 4 reads `ä ö ü é ' ( ) / 0`.
 4. Type `ü` (row 4, column 3), B to delete it, then `ü` again, then `r g e n`.
 5. Screenshot the field (`Jürgen`) and press START, then A to confirm.
 6. Screenshot the first dialogue line that prints the name.
