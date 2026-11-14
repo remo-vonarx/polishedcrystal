@@ -2,12 +2,12 @@
 
 ## Intent
 
-German text needs `ä ö ü Ä Ö Ü`. The Character set has no free glyph slots, so six existing slots are reassigned. English text must keep working, because the translation will replace it gradually.
+German text needs `ä ö ü Ä Ö Ü`. The Character set has no free glyph slots, so six existing slots are reassigned. Untranslated Source text must keep displaying correctly, because the Translation replaces it gradually.
 
 ## Approaches
 
-- **A. The Spanish slots `É á í ó ¿ ¡` (chosen).** `É` is never used. The other five appear only in Sightseer Pilar's three texts on Shamouti Coast (`maps/ShamoutiCoast.asm`), a Spanish-speaking tourist Polished invented. English keeps working; Pilar loses those accents.
-- **B. The contraction slots `'d 'l 'm 'r 's 't 'v`.** This gives the cleanest final layout, but the contractions appear about 5,300 times in English text, which would show wrong letters for the whole translation.
+- **A. The Spanish slots `É á í ó ¿ ¡` (chosen).** `É` is never used. The other five appear only in Sightseer Pilar's three texts on Shamouti Coast (`maps/ShamoutiCoast.asm`), a Spanish-speaking tourist Polished invented. Source text keeps working; Pilar loses those accents.
+- **B. The contraction slots `'d 'l 'm 'r 's 't 'v`.** This gives the cleanest final layout, but the contractions appear about 5,300 times in the Source text, which would show wrong letters for the whole translation.
 - **ß as a seventh glyph in the `<KE>` slot:** dropped together with ß itself (`docs/adr/0003-ss-instead-of-eszett.md`).
 
 ## Decisions
@@ -21,7 +21,7 @@ German text needs `ä ö ü Ä Ö Ü`. The Character set has no free glyph slots
 
   `é` (`$C8`), `<BOLDH>` (`$CB`), the contractions and `<PO>`/`<KE>` stay as they are.
 - **No ß.** Text writes "ss" (ADR 0003).
-- **Pilar:** her texts print `á í ó` as plain `a i o` and drop `¿ ¡`, so "acá, montón, duraría, más" become "aca, monton, duraria, mas". `é` survives. What she says in German is decided when she's translated. Once no English text is left, the slots `'d 'l 'm 'r 't 'v` free up and could take `á í ó ¿ ¡` back.
+- **Pilar:** her texts print `á í ó` as plain `a i o` and drop `¿ ¡`, so "acá, montón, duraría, más" become "aca, monton, duraria, mas". `é` survives. What she says in German is decided when she's translated. Once no Source text is left, the slots `'d 'l 'm 'r 't 'v` free up and could take `á í ó ¿ ¡` back.
 - **Look:**
   - **Capitals** keep their height and baseline. The dots sit in the top row, and one repeated straight row of the letter is dropped to make room.
   - **Lowercase** letters get dots in the free rows above.
