@@ -12,6 +12,7 @@ import argparse
 import os
 import re
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -38,6 +39,26 @@ def ensure_config():
     open(CONFIG, "w", encoding="utf-8").write(text)
 
 
+def launch(args, stdout_path):
+    """Start Azahar orphaned, so launchd (pid 1) is its parent, and return its pid.
+
+    Azahar blocks on a modal "run via the Azahar.app bundle" warning, before booting the game,
+    whenever getppid() != 1. A shell that backgrounds it and exits hands it to launchd.
+    """
+    r = subprocess.run(["/bin/sh", "-c", '"$@" >"$AZAHAR_STDOUT" 2>&1 </dev/null & echo $!', "sh", *args],
+                       env=dict(os.environ, HOME=HOME, AZAHAR_STDOUT=stdout_path),
+                       capture_output=True, text=True, check=True)
+    return int(r.stdout)
+
+
+def alive(pid):
+    try:
+        os.kill(pid, 0)
+        return True
+    except ProcessLookupError:
+        return False
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("title")
@@ -52,15 +73,13 @@ def main():
 
     os.makedirs(a.out, exist_ok=True)
     args = [EXE, "-w"] + (["-p", os.path.abspath(a.movie)] if a.movie else []) + [os.path.abspath(a.title)]
-    with open(os.path.join(a.out, "azahar_stdout.txt"), "w") as stdout:
-        proc = subprocess.Popen(args, env=dict(os.environ, HOME=HOME),
-                                stdout=stdout, stderr=subprocess.STDOUT)
+    pid = launch(args, os.path.join(a.out, "azahar_stdout.txt"))
     rpc, start = AzaharRPC(timeout=2), time.monotonic()
     try:
         for t in [float(x) for x in a.shots.split(",")]:
             time.sleep(max(0.0, start + t - time.monotonic()))
-            if proc.poll() is not None:
-                print(f"{t:5.0f}s  Azahar exited early (code {proc.returncode})")
+            if not alive(pid):
+                print(f"{t:5.0f}s  Azahar exited early")
                 return 1
             path = os.path.join(a.out, f"shot_{int(t):03d}s.png")
             try:
@@ -69,8 +88,10 @@ def main():
             except Exception as e:
                 print(f"{t:5.0f}s  screenshot failed ({type(e).__name__})", flush=True)
     finally:
-        proc.kill()  # Azahar ignores SIGTERM; there is no unsaved state worth keeping
-        proc.wait()
+        if alive(pid):
+            os.kill(pid, signal.SIGKILL)  # Azahar ignores SIGTERM; there is no unsaved state worth keeping
+        while alive(pid):
+            time.sleep(0.1)
 
     shutil.copy(LOG, os.path.join(a.out, "azahar_log.txt"))
     movie_lines = [l for l in open(LOG, errors="replace") if "Movie" in l]
