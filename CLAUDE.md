@@ -27,5 +27,6 @@ This fork of Polished Crystal is being translated into German, to be played on a
 ## Text engine
 
 - Text is Huffman-compressed with tables built from the current text. After changing text, regenerate them as described in `utils/huffman.py`'s docstring. Its context model hardcodes `VOWELS = "AEIOUaeiou"`; add `äöüÄÖÜ` for German.
-- All 128 printable slots in `constants/charmap.asm` are taken. The English contractions `'d 'l 'm 'r 's 't 'v` (`$c1`–`$c7`) are the candidate slots for `ä ö ü Ä Ö Ü ß`. Every new glyph goes into each selectable font in `gfx/font/` and into `vwf.png`/`vwf_bw.png`, and the naming screen (`engine/menus/naming_screen.asm`) needs keys for it.
+- The Character set is full. `Ä ä Ö ö Ü ü` took the Spanish slots `$c9`–`$cf` (not `$cb`); the mapping and the reasons are in `docs/superpowers/specs/2026-11-14-umlaut-glyphs-design.md`. ß is written "ss" (`docs/adr/0003-ss-instead-of-eszett.md`). Every glyph lives in each selectable font in `gfx/font/` and in `vwf.png`, where gray columns set the glyph's width; `vwf_bw.png` is unused. After editing a font PNG, run `python3 utils/grayscale.py <png>` to restore 2-bit grayscale. The naming screen (`engine/menus/naming_screen.asm`) still has no umlaut keys.
+- The assembler only warns (`-Wunmapped-char`) on a character missing from the charmap, such as ß or á, and that text assembles to garbage. Treat that warning as an error.
 - Name limits come from `constants/text_constants.asm`. The `*_LENGTH` values include the `@` terminator.
