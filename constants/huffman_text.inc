@@ -55,7 +55,7 @@ huffmap b, "d", 111001 ; 2221
 huffmap b, "e", 011100 ; 1588
 huffmap b, "f", 01111 ; 3223
 huffmap b, "g", 111000 ; 2196
-huffmap b, "h", 10010 ; 3535
+huffmap b, "h", 10010 ; 3534
 huffmap b, "i", 0001 ; 5382
 huffmap b, "j", 10011001 ; 437
 huffmap b, "k", 11111110 ; 681
@@ -66,7 +66,7 @@ huffmap b, "o", 10100 ; 3760
 huffmap b, "p", 110100 ; 2028
 huffmap b, "q", 1100001010 ; 115
 huffmap b, "r", 100111 ; 1879
-huffmap b, "s", 0000 ; 5272
+huffmap b, "s", 0000 ; 5273
 huffmap b, "t", 010 ; 11704
 huffmap b, "u", 1111001 ; 1178
 huffmap b, "v", 111110101 ; 333
@@ -194,8 +194,8 @@ huffmap v, "o", 100011 ; 2869
 huffmap v, "p", 010111 ; 2339
 huffmap v, "q", 11001101000 ; 69
 huffmap v, "r", 000 ; 15805
-huffmap v, "s", 1001 ; 11291
-huffmap v, "t", 1111 ; 14881
+huffmap v, "s", 1001 ; 11290
+huffmap v, "t", 1111 ; 14880
 huffmap v, "u", 0011 ; 8340
 huffmap v, "v", 111001 ; 3489
 huffmap v, "w", 110100 ; 2957
@@ -304,13 +304,13 @@ huffmap o, ".", 00001 ; 5986
 huffmap o, ",", 000100 ; 2960
 huffmap o, "?", 0110000 ; 1768
 huffmap o, "!", 011001 ; 3990
-huffmap o, "a", 1001 ; 20142
+huffmap o, "a", 1001 ; 20141
 huffmap o, "b", 100010110 ; 525
 huffmap o, "c", 0001111 ; 1678
 huffmap o, "d", 100001 ; 4463
-huffmap o, "e", 110 ; 45420
+huffmap o, "e", 110 ; 45419
 huffmap o, "f", 00011101 ; 833
-huffmap o, "g", 100011 ; 4705
+huffmap o, "g", 100011 ; 4704
 huffmap o, "h", 0101 ; 15350
 huffmap o, "i", 0111 ; 16446
 huffmap o, "j", 101100000000 ; 71

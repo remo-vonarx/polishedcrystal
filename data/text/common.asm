@@ -2688,8 +2688,8 @@ _PokecenterPCCantUseText::
 
 SECTION "_PlayersPCTurnOnText", ROMX
 _PlayersPCTurnOnText::
-	text "<PLAYER> hat den"
-	line "PC eingeschaltet."
+	text "<PLAYER> schaltet"
+	line "den PC ein."
 	prompt
 
 SECTION "_PlayersPCAskWhatDoText", ROMX
