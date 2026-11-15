@@ -38,20 +38,7 @@ ReadMapSetupScript:
 	ld h, [hl]
 	ld l, a
 
-	; Bit 7 of the bank indicates a parameter.
-	; This is left unused.
-	bit 7, b
-	jr z, .go
-
-	pop de
-	ld a, [de]
-	ld c, a
-	inc de
-	push de
-
-.go
-	ld a, b
-	and $7f
+	ld a, b ; full bank byte: map setup functions may sit above bank $7F
 	call FarCall_hl
 
 	pop hl
