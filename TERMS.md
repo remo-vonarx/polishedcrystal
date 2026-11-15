@@ -36,3 +36,8 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | What's trendy? | Was ist hip? | Naming screen (Shamouti Hotel artist) | Own; the user's choice |
 | Shift / Del / End | Umsch / Lösch / Ende | Naming screen key row | Lösch and Ende from Kristall; Umsch own. Columns 2, 8, 14 as in Kristall, to fit the 5-tile cursor frames |
 | Chris / Kris / Crys / Krys | Chris / Krista / Crys / Krys | Default player names | Kristall (Chris, Krista); Crys and Krys only exist in Polished and stay |
+| DJ Mary | DJ Margit | Radio | Kristall |
+| Prof. Oak's Pokémon Talk | Prof. Eichs #mon-Talk | Radio | Kristall |
+| Pokémon Channel | #mon-Programm | Radio | Kristall |
+| Town Map | Karte | Player's room poster | Kristall |
+| Pokémon Journal | #mon-Journal | Player's room bookshelf | Own |

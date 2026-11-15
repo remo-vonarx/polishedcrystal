@@ -306,7 +306,7 @@ _AlreadySetUpText::
 
 SECTION "_LookTownMapText", ROMX
 _LookTownMapText::
-	text "It's the Town Map."
+	text "Das ist die Karte."
 	done
 
 SECTION "_LookPikachuPosterText", ROMX
@@ -2688,8 +2688,8 @@ _PokecenterPCCantUseText::
 
 SECTION "_PlayersPCTurnOnText", ROMX
 _PlayersPCTurnOnText::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> hat den"
+	line "PC eingeschaltet."
 	prompt
 
 SECTION "_PlayersPCAskWhatDoText", ROMX
