@@ -42,6 +42,28 @@ python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/b
 - Azahar stops at a modal "run Azahar via the app bundle" warning whenever its parent isn't launchd. `playtest.py` therefore starts it through a shell that exits at once. Being detached, it reports no exit code: Azahar's console output is in `<out>/azahar_stdout.txt`, and after a full run the emulator log is copied to `<out>/azahar_log.txt`.
 - Azahar ignores SIGTERM, so `playtest.py` kills it. That rules out recording movies with `-r` by script, because a recording is only saved on a clean exit.
 
+## Reach the player's room
+
+This movie plays a new game from power-on to the player's room. It taps through the intro, the options and the clock, types the name "Jürgen" on the naming screen and taps A through Elm's speech. The room shows at about 170 s. The taps are timed for the English new-game text: re-tune them after translating it, using the shots to see where the movie got to.
+
+```sh
+base="A:4:0.15;A:6:0.15;A:9:0.15;A:13:0.15;A:15:0.15;START:20:0.15;A:24:0.15;A:28:0.15;A:32:0.15;A:36:0.15;A:40:0.15;A:44:0.15;A:48:0.15;A:52:0.15"
+fast=$(python3 -I -c "print(';'.join(f'A:{t}:0.12' for t in range(56,77)))")
+typing="A:81:0.12;A:85:0.12;DOWN:89:0.12;A:90:0.12;DOWN:93:0.12;DOWN:94:0.12;RIGHT:95:0.12;RIGHT:96:0.12;A:97:0.12;B:100:0.12;A:103:0.12;UP:104:0.12;UP:105:0.12;RIGHT:106:0.12;RIGHT:107:0.12;RIGHT:108:0.12;RIGHT:109:0.12;RIGHT:110:0.12;RIGHT:111:0.12;A:112:0.12;UP:113:0.12;LEFT:114:0.12;LEFT:115:0.12;A:116:0.12;LEFT:117:0.12;LEFT:118:0.12;A:119:0.12;DOWN:120:0.12;A:121:0.12;START:124:0.12;A:125:0.12"
+tail=$(python3 -I -c "print(';'.join(f'A:{t}:0.12' for t in range(128,162,3)))")
+python3 -I vc/gen_ctm.py vc/local/movies/room.ctm 0004000000172800 180 "$base;$fast;$typing;$tail"
+python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/room.ctm --shots 34,62,125,150,170,178
+```
+
+**Kristall, for comparison.** Azahar doesn't launch a `.cia` directly, so extract the Base CIA's game content once, then play it with a movie for Kristall's program ID. The same `base` and `fast` taps reach the German main menu (20 s), the clock question (50 s) and Elm's speech (75 s):
+
+```sh
+vc/local/bin/ctrtool --contents=vc/local/out/kristall vc/local/dumps/kristall-vc-v0.1.0.standard.cia
+mv vc/local/out/kristall.0000.00000002 vc/local/out/kristall.game.cxi
+python3 -I vc/gen_ctm.py vc/local/movies/kristall.ctm 0004000000172B00 90 "$base;$fast"
+python3 -I vc/playtest.py vc/local/out/kristall.game.cxi --movie vc/local/movies/kristall.ctm --shots 20,50,75,88
+```
+
 ## Install on the 3DS
 
 1. Copy the `.cia` into the SD card's `cia/` folder.
