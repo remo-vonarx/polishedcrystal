@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Boot a 3DS title in a sandboxed Azahar, optionally replay an input movie, take screenshots.
 
-Usage: python3 -I vc/playtest.py <title.cxi|.cia> --shots 10,20,40 [--movie m.ctm] [--out DIR]
+Usage: python3 -I vc/playtest.py <title.cxi> --shots 10,20,40 [--movie m.ctm] [--out DIR]
+
+Azahar exits at once on a .cia; extract its game content first (vc/README.md).
 
 Azahar lives in vc/local/azahar/ and runs with HOME=vc/local/azahar-home, so nothing touches
 ~/Library. The first run creates that sandbox config and enables the RPC server (screenshots).
