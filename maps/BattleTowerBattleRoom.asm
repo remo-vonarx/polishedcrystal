@@ -41,7 +41,7 @@ Script_BattleRoomLoop:
 	closetext
 	special Special_BattleTower_Battle ; calls StartBattle
 	special FadeOutPalettes
-	ifequalfwd BTCHALLENGE_LOST, Script_LostBattleTower
+	ifequal BTCHALLENGE_LOST, Script_LostBattleTower
 	reloadmap
 	applymovement BATTLETOWERBATTLEROOM_OPPONENT, MovementData_BattleTowerBattleRoomOpponentWalksOut
 	warpsound
