@@ -320,9 +320,9 @@ ClearSpritesUnderYesNoBox:
 	ld a, [hli]
 	cp 8 * TILE_WIDTH + 1
 	jr c, .next
-	; Check if XCoord >= 14 * TILE_WIDTH + 1
+	; Check if XCoord >= 13 * TILE_WIDTH + 1
 	ld a, [hl]
-	cp 14 * TILE_WIDTH + 1
+	cp 13 * TILE_WIDTH + 1
 	jr nc, .clear_sprite
 ; fallthrough
 .next
@@ -352,8 +352,9 @@ HandleYesNoMenu:
 	call CopyMenuHeader
 	pop bc
 	ld a, b
+	dec a ; one column wider than b, for "Nein"
 	ld [wMenuBorderLeftCoord], a
-	add 5
+	add 6
 	ld [wMenuBorderRightCoord], a
 	ld a, c
 	ld [wMenuBorderTopCoord], a
@@ -382,21 +383,21 @@ YesNoMenuDataHeader::
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2
 YesString::
-	db "Yes@"
+	db "Ja  @"
 NoString::
-	db "No @"
+	db "Nein@"
 
 NoYesMenuDataHeader::
 	db MENU_BACKUP_TILES
-	menu_coords 14, 7, 19, 11
+	menu_coords 13, 7, 19, 11
 	dw .MenuData2
 	db 1 ; default option
 
 .MenuData2:
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2
-	db "No@"
-	db "Yes@"
+	db "Nein@"
+	db "Ja@"
 
 OffsetMenuDataHeader::
 	call _OffsetMenuDataHeader
