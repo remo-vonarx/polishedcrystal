@@ -44,7 +44,7 @@ python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/b
 
 ## Reach the player's room
 
-This movie plays a new game from power-on to the player's room. It taps through the intro, the options and the clock, types the name "Jürgen" on the naming screen and taps A through Elm's speech. The room shows at about 170 s.
+This movie plays a new game from power-on to the player's room. It taps through the intro, the options and the clock, types the name "Jürgen" on the naming screen and taps A through Elm's speech. The room shows at about 170 s. The taps are timed for the English new-game text: re-tune them after translating it, using the shots to see where the movie got to.
 
 ```sh
 base="A:4:0.15;A:6:0.15;A:9:0.15;A:13:0.15;A:15:0.15;START:20:0.15;A:24:0.15;A:28:0.15;A:32:0.15;A:36:0.15;A:40:0.15;A:44:0.15;A:48:0.15;A:52:0.15"
