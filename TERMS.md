@@ -29,3 +29,6 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Pokémon Stadium | PKMN Stadium (`<PK><MN> Stadium`) | Initial options | The user's choice |
 | Morning / Day / Evening / Night | Vormittag / Tag / Abend / Nacht | Clock, Pokégear, summary | Kristall (Vormittag, Tag, Nacht); Abend own, as Kristall has no evening |
 | o'clock / min. | Uhr / min. | Clock | Kristall |
+| Prof. Elm | Prof. Lind | Everywhere | Kristall; written with a space, as in CLAUDE.md's casing example |
+| Prof. Oak | Prof. Eich | Everywhere | Kristall |
+| Trainer Card | Trainerpass | Everywhere | Kristall |

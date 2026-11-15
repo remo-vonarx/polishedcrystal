@@ -2373,13 +2373,13 @@ _AskItemMoveText::
 
 SECTION "Text_AreYouABoyOrAreYouAGirl", ROMX
 Text_AreYouABoyOrAreYouAGirl::
-	text "Which photo is on"
-	line "your Trainer Card?"
+	text "Welches Foto zeigt"
+	line "dein Trainerpass?"
 	done
 
 SECTION "Text_SoThisIsYou", ROMX
 Text_SoThisIsYou::
-	text "So this is you?"
+	text "Das bist also du?"
 	done
 
 SECTION "Text_BattleUser", ROMX
@@ -3147,84 +3147,90 @@ _InitialOptionsText::
 
 SECTION "_ElmText1", ROMX
 _ElmText1::
-	text "Hello! Sorry to"
-	line "keep you waiting!"
+	text "Hi! Entschuldige"
+	line "die Verspätung!"
 
 if !DEF(DEBUG)
-	para "Welcome to the"
-	line "world of #mon!"
+	para "Willkommen in der"
+	line "Welt der #mon!"
 
-	para "My name is Elm."
+	para "Mein Name ist"
+	line "Lind!"
+	cont "Man nennt mich"
 
-	para "People call me the"
-	line "#mon Prof."
+	para "den #mon-"
+	line "Professor."
 endc
 	prompt
 
 SECTION "_ElmText2", ROMX
 _ElmText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#mon.@"
+	text "Diese Welt wird"
+	line "von Wesen"
+	cont "bewohnt, die wir"
+	cont "#mon nennen.@"
 	text_end
 
 SECTION "_ElmText4", ROMX
 _ElmText4::
-	text "People and #mon"
-	line "live together by"
+	text "Menschen und"
+	line "#mon leben"
 
-	para "supporting each"
-	line "other."
+	para "zusammen und"
+	line "helfen einander."
 
-	para "Some people play"
-	line "with #mon, some"
-	cont "battle with them."
+	para "Manche spielen mit"
+	line "#mon, andere"
+	cont "tragen Kämpfe mit"
+	cont "ihnen aus."
 	prompt
 
 SECTION "_ElmText5", ROMX
 _ElmText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#mon yet."
+	text "Leider wissen wir"
+	line "noch nicht alles"
+	cont "über #mon."
 
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
+	para "Es gibt noch"
+	line "viele Geheimnisse"
+	cont "zu lüften."
 
-	para "That's why I study"
-	line "#mon every day."
+	para "Darum studiere"
+	line "ich #mon"
+	cont "tagaus, tagein!"
 	prompt
 
 SECTION "_ElmText6", ROMX
 _ElmText6::
-	text "Please tell me"
-	line "your name."
+	text "Wie lautet dein"
+	line "Name?"
 	prompt
 
 SECTION "_ElmText7", ROMX
 _ElmText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	text "<PLAYER>, bist du"
+	line "bereit?"
 
 if !DEF(DEBUG)
-	para "Your very own"
-	line "#mon story is"
-	cont "about to unfold."
+	para "Dein eigenes"
+	line "#mon-Abenteuer"
+	cont "erwartet dich."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Dich erwarten tol-"
+	line "le Dinge, aber"
+	cont "auch harte Zeiten."
 
-	para "A world of dreams"
-	line "and adventures"
+	para "Eine Welt voller"
+	line "Träume und aufre-"
+	cont "gender #mon-"
 
-	para "with #mon"
-	line "awaits! Let's go!"
+	para "Abenteuer erwar-"
+	line "tet dich! Mach"
+	cont "dich bereit!"
 endc
 
-	para "I'll be seeing you"
-	line "later!"
+	para "Ich treffe dich"
+	line "später!"
 	done
 
 SECTION "_WarnVBAText", ROMX
