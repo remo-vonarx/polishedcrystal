@@ -52,6 +52,7 @@ Settled choices for this hack. If a topic below isn't decided yet and a task tou
 - Faithful-only text (inside `if DEF(FAITHFUL)` blocks) gets translated too.
 - Debug-only text (inside `if DEF(DEBUG)` blocks) stays English.
 - Translation happens on the current `master`; the drift guard catches later Upstream changes.
+- Script jumps: when longer text (or regenerated Huffman tables) pushes a short script jump (`ifequalfwd`, `iftruefwd`, `sjumpfwd`, …) past 255 bytes, the build warns `Value $100 is not 8-bit` (`-Wtruncation`) and the jump lands in the wrong place. Switch that jump to its long form (`ifequal`, `iftrue`, `sjump`, …) in the same PR without asking, and list it in the PR body. When text gets shorter, the long macros warn "… can be …fwd"; switch back the same way.
 
 ## Source priority
 
