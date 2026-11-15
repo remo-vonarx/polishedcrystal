@@ -15,7 +15,9 @@ goes wrong:
   without waiting for a button.
 - a text still open at the next label: the printer runs on into it. A text
   ends at done, prompt, text_end, text_farend or text_asm. A string closed by
-  "@" may belong to a PlaceString text, so it counts as ended here.
+  "@" may belong to a PlaceString text, so it counts as ended here, and
+  `stop_compressing_text` right before the label marks an intended fall-through
+  into a shared tail.
 
 Plain strings (db, rawchar, li) aren't texts. Checks maps/, data/, engine/
 and home/ when no paths are given. Exits with status 1 if anything is found.
@@ -71,6 +73,7 @@ def check_file(path):
     problems = []
     state = OUTSIDE
     last = None  # (number, line) of the last text command
+    fallthrough = False  # the last command was stop_compressing_text
 
     def report(number, message, line):
         problems.append(f'{display_path(path)}:{number}: {message}: {line.strip()}')
@@ -79,14 +82,16 @@ def check_file(path):
         code = strip_comment(line)
         match = LABEL.match(code)
         if match:
-            if state in {OPEN, BETWEEN}:
+            if state in {OPEN, BETWEEN} and not fallthrough:
                 report(last[0], f'text runs into {match.group(1)}', last[1])
             state = OUTSIDE
+            fallthrough = False
             code = code[match.end():]  # a command may follow on the same line
         match = COMMAND.match(code)
         if not match:
             continue
         command, rest = match.groups()
+        fallthrough = command == 'stop_compressing_text'
         if command in STRING_COMMANDS:
             state = after_string(rest)
         elif command == 'db' and state == OPEN:
