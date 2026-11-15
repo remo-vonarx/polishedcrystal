@@ -84,9 +84,11 @@ Original content has no Kristall text, so translate it faithfully:
 - Code, labels, comments, file names and commit messages stay in English. Only player-visible text is translated.
 - Read `TERMS.md` before every task; add every new decision to it.
 - State assumptions. Ask rather than guess, especially for names.
-- Collect open questions during a task and ask them together, as a table:
-
-  | File:line | English | German candidate(s) | Source | Where in game | Why unsure / what differs |
+- Collect open questions during a task and ask them together, in question dialogs (AskUserQuestion), never as a table in chat:
+  - Up to 4 questions per dialog, more dialogs in a row if needed.
+  - Each question names the file:line, the English, the source and where it shows in the game, so it stands on its own.
+  - Options are the German candidates, my pick first, marked "(Recommended)", each saying what differs.
+  - Show a draft as a short preview, laid out as it appears in the box; one preview per text, never several texts in one.
 
 - Keep each task scoped to one area (one map, one data file, one menu). No drive-by refactors.
 - Change string contents only. Don't rename labels, reorder data or touch game logic. If a translation needs a code change (e.g. wider menu), propose it first.
