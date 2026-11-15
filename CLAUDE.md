@@ -17,9 +17,9 @@ This fork of Polished Crystal is being translated into German, to be played on a
 
 ## ROM space
 
-- The 2 MB ROM is full: about 24 KB was free on 2026-11-14. Re-measure with `make freespace`, which writes `bank_ends.txt`. German text runs roughly 20–30% longer than the source text and won't fit.
-- The translation targets a 4 MB MBC3 ROM (`docs/adr/0001-4mb-rom-for-virtual-console.md`). Stock Virtual Console reaches only 2 MB; poke-cia's `build_mbc30` applies the MBC30 patch. The Kristall VC v0.1.0 base CIA has an emulator byte-identical to the English release's, so the patch applies unchanged. Verified 2026-11-14 in Azahar and on a New 3DS.
-- For 4 MB, `tools/bankends.c` needs `#define BANKS 256` instead of 128. Engine far pointers store the bank as a full byte (their flag bits live in address bit 15), so content above bank `$7F` works.
+- The ROM is 4 MB MBC3 ("MBC30"), because German text doesn't fit in 2 MB (`docs/adr/0001-4mb-rom-for-virtual-console.md`). `layout.link` pins the `"Title"` section to bank `$FF`, so every build is 4 MB and Virtual Console without the MBC30 patch fails at the title screen. Floating sections fill the banks below; `tools/bankends` (256 banks) stops the build if anything lands above `$FF`. Measure unused ROM space with `make freespace`, which writes `bank_ends.txt`.
+- Stock Virtual Console reaches only 2 MB; `vc/build_cia.sh` applies poke-cia's MBC30 patch. The Kristall VC v0.1.0 Base CIA has an emulator byte-identical to the English release's, so the patch applies unchanged.
+- Engine far pointers store the bank as a full byte (their flag bits live in address bit 15), so content above bank `$7F` works. Keep flags out of bank bytes in new code too: the linker can move any floating section above `$7F`.
 
 ## Names
 
