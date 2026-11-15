@@ -32,3 +32,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Prof. Elm | Prof. Lind | Everywhere | Kristall; written with a space, as in CLAUDE.md's casing example |
 | Prof. Oak | Prof. Eich | Everywhere | Kristall |
 | Trainer Card | Trainerpass | Everywhere | Kristall |
+| Your name? / Rival's name? / Box name? | Dein Name? / Gegner-Name? / Box Name? | Naming screen | Kristall |
+| What's trendy? | Was ist hip? | Naming screen (Shamouti Hotel artist) | Own; the user's choice |
+| Shift / Del / End | Umsch / Lösch / Ende | Naming screen key row | Lösch and Ende from Kristall; Umsch own. Columns 2, 8, 14 as in Kristall, to fit the 5-tile cursor frames |
+| Chris / Kris / Crys / Krys | Chris / Krista / Crys / Krys | Default player names | Kristall (Chris, Krista); Crys and Krys only exist in Polished and stay |
