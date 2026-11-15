@@ -1361,9 +1361,6 @@ ScriptCall:
 	ret
 
 CallCallback::
-	ldh a, [hScriptBank]
-	or $80
-	ldh [hScriptBank], a
 	jr ScriptCall
 
 Script_scalltable:
@@ -2405,7 +2402,6 @@ ExitScriptSubroutine:
 	add hl, de
 	ld a, [hli]
 	ld b, a
-	and ' '
 	ldh [hScriptBank], a
 	ld a, [hli]
 	ld e, a
