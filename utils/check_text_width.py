@@ -3,7 +3,8 @@
 
 Usage: python3 -I utils/check_text_width.py [file.asm|directory ...]
 
-Dialogue, signs and phone calls print 18 tiles per line, Pokédex entries 19.
+Dialogue, signs and phone calls print 18 tiles per line, Pokédex entries 19,
+and the few texts placed on a plain screen from column 0 (SCREEN_TEXTS) 20.
 Checks maps/, data/, engine/ and home/ when no paths are given.
 
 - A line whose width depends on a runtime value (text_ram, <USER>, {d:...})
@@ -25,6 +26,12 @@ DEX_WIDTH = 19  # engine/pokedex/pokedex.asm clears 5 x 19 tiles from column 1
 UNKNOWN = -1000  # pushes a line with a runtime-sized part below any limit
 SKIP_FILES = {'credits_strings.asm'}  # the credits have their own layout
 DEX_ENTRIES = 'dex_entries.asm'
+SCREEN_WIDTH = 20
+# texts placed on a plain screen from column 0, by file and label
+SCREEN_TEXTS = {
+    'engine/menus/save.asm': {'.SaveUpgradeScreen'},
+    'engine/battle/core.asm': {'.Format', '.Result', '.Total'},
+}
 
 # tiles printed for each token (constants/charmap.asm); 1 tile if not listed
 TOKEN_WIDTHS = {
@@ -39,8 +46,7 @@ TOKEN = re.compile(r"#mon|<[^>]+>|'[dlmrstv]|{[^}]*}|.")
 
 NEW_LINE = {'line', 'cont', 'para', 'next', 'next1', 'page'}
 RUNTIME = {'text_ram', 'text_decimal', 'text_today', 'text_plural'}
-RESET = {'done', 'prompt', 'text_end', 'text_far', 'text_farend', 'text_asm',
-         'text_promptbutton', 'text_start'}
+RESET = {'done', 'prompt', 'text_end', 'text_far', 'text_farend', 'text_asm'}
 COMMAND = re.compile(r'^\s*(\w+)\b(.*)$')
 LABEL = re.compile(r'^([A-Za-z_.][\w.]*)::?')
 STRING = re.compile(r'"([^"]*)"')
@@ -70,9 +76,16 @@ def display_path(path):
     return path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
 
 
+def screen_labels(path):
+    posix = path.as_posix()
+    return next((labels for name, labels in SCREEN_TEXTS.items() if posix.endswith('/' + name)), set())
+
+
 def check_file(path):
     problems = []
-    max_width = DEX_WIDTH if path.name == DEX_ENTRIES else MAX_WIDTH
+    file_width = DEX_WIDTH if path.name == DEX_ENTRIES else MAX_WIDTH
+    max_width = file_width
+    screen = screen_labels(path)
     width = 0
     branches = []  # per open "if": [width before it, widest branch end, has else]
     for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
@@ -80,6 +93,7 @@ def check_file(path):
         match = LABEL.match(code)
         if match:
             width = 0
+            max_width = SCREEN_WIDTH if match.group(1) in screen else file_width
             code = code[match.end():]  # a command may follow on the same line
         match = COMMAND.match(code)
         if not match:
