@@ -3136,9 +3136,10 @@ _MayRegisterItemText::
 
 SECTION "_InitialOptionsText", ROMX
 _InitialOptionsText::
-	text "Please choose how"
-	line "you want to play"
-	cont "Polished Crystal."
+	text "Bitte wähle aus,"
+	line "wie du Polished"
+	cont "Crystal spielen"
+	cont "möchtest."
 	prompt
 
 SECTION "_ElmText1", ROMX

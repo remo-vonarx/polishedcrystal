@@ -16,156 +16,161 @@ InitialOptionDescriptions:
 	assert_table_length NUM_INITIAL_MENU_OPTIONS
 
 .Natures:
-	text "Natures raise one"
-	line "stat but lower"
-	cont "another by 10%."
+	text "Wesen heben einen"
+	line "Wert, senken einen"
+	cont "anderen um 10%."
 
-	para "Introduced in"
-	line "Gen 3."
+	para "Eingeführt in der"
+	line "3. Generation."
 	prompt
 
 .Abilities:
-	text "Abilities may have"
-	line "effects inside"
+	text "Fähigkeiten können"
+	line "innerhalb und"
 
-	para "and outside of"
-	line "battle."
+	para "ausserhalb von"
+	line "Kämpfen wirken."
 
-	para "Introduced in"
-	line "Gen 3."
+	para "Eingeführt in der"
+	line "3. Generation."
 	prompt
 
 .PSS:
-	text "Moves are physical"
-	line "or special inde-"
-	cont "pendently of type."
+	text "Ob eine Attacke"
+	line "physisch oder spe-"
+	cont "ziell ist, hängt"
 
-	para "Introduced in"
-	line "Gen 4."
+	para "nicht vom Typ ab."
+
+	para "Eingeführt in der"
+	line "4. Generation."
 	prompt
 
 .EVs:
 	assert MODERN_MAX_EV % 4 == 0
-	text "EVs boost stats by"
-	line STRFMT("up to %d points,", MODERN_MAX_EV / 4) ; 252 / 4 == 63
-	cont "one per 4 EVs."
+	text "Je 4 Fleisspunkte"
+	line "erhöhen einen Wert"
+	cont STRFMT("um 1, bis zu %d.", MODERN_MAX_EV / 4) ; 252 / 4 == 63
 
-	para "You can choose to"
-	line "allow maxing every"
+	para "Du kannst jedem"
+	line "Wert bis zu {d:MODERN_MAX_EV}"
+	cont "erlauben, wie bei"
 
-	para "stat to {d:MODERN_MAX_EV} EVs,"
-	line "like stat exp did,"
+	para "Status-EP, oder"
+	line "insgesamt nur {d:MODERN_EV_LIMIT}."
 
-	para "or limit them to"
-	line "a total of {d:MODERN_EV_LIMIT}."
-
-	para "Replaced stat exp-"
-	line "erience in Gen 3."
+	para "Ersetzten in der"
+	line "3. Generation die"
+	cont "Status-EP."
 	prompt
 
 .Experience:
-	text "The old experience"
-	line "gain formula, in"
+	text "Die alte EP-Formel"
+	line "aus der 1. bis 4."
 
-	para "Gen 1 to Gen 4,"
-	line "was unscaled."
+	para "Generation war"
+	line "nicht skaliert."
 
-	para "The new one, in"
-	line "Gen 5 and reintro-"
-	cont "duced in Gen 7,"
+	para "Die neue, aus der"
+	line "5. und wieder ab"
+	cont "der 7. Generation,"
 
-	para "gives more Exp. by"
-	line "defeating higher-"
-	cont "leveled foes,"
+	para "gibt mehr EP für"
+	line "Siege über Gegner"
+	cont "mit höherem Level"
 
-	para "and less from low-"
-	line "er leveled ones."
+	para "und weniger bei"
+	line "niedrigerem."
 
-	para "Exp. gain can also"
-	line "be turned off for"
-	cont "a challenge, but"
+	para "EP lassen sich als"
+	line "Herausforderung"
+	cont "auch abschalten,"
 
-	para "Exp.Candy and Rare"
-	line "Candy will still"
-	cont "work if you do so."
+	para "aber EP-Bonbons"
+	line "und Sonderbonbons"
+	cont "wirken auch dann."
 	prompt
 
 .AffectionBonus:
-	text "Your #mon will"
-	line "gain benefits in"
-	cont "battle when they"
+	text "Deine #mon er-"
+	line "halten Vorteile im"
+	cont "Kampf, wenn sie"
 
-	para "are close friends"
-	line "with you."
+	para "eng mit dir be-"
+	line "freundet sind."
 
-	para "Introduced in"
-	line "Gen 6."
+	para "Eingeführt in der"
+	line "6. Generation."
 	prompt
 
 .RTC:
-	text "Use the Real-Time"
-	line "Clock function to"
-	cont "track the time."
+	text "Verfolge die Zeit"
+	line "mit der Funktion"
+	cont "der Echtzeituhr."
 
-	para "If your cartridge"
-	line "or emulator does"
-	cont "not support RTC,"
+	para "Hat dein Modul"
+	line "oder Emulator kei-"
+	cont "ne Echtzeituhr,"
 
 	assert 24 % NO_RTC_SPEEDUP == 0
-	para "disable this to"
-	line "make each in-game"
-	cont STRFMT("day last %d hours.", 24 / NO_RTC_SPEEDUP) ; 24 / 6 == 4
+	para "schalte dies aus:"
+	line "Jeder Tag im Spiel"
+	cont STRFMT("dauert %d Stunden.", 24 / NO_RTC_SPEEDUP) ; 24 / 6 == 4
 	prompt
 
 .PerfectIVs:
-	text "Stats are calcu-"
-	line "lated as if IVs"
+	text "Werte werden be-"
+	line "rechnet, als wären"
 
-	para "were perfect 15s,"
-	line "for your #mon"
-	cont "and opponents'."
+	para "alle DVs perfekte"
+	line "15er, bei dir wie"
+	cont "bei den Gegnern."
 	prompt
 
 .TradedMon:
-	text "Traded #mon"
-	line "will obey you and"
-	cont "can be nicknamed,"
+	text "Getauschte #mon"
+	line "gehorchen dir und"
+	cont "können umbenannt"
 
-	para "but Exp.Points"
-	line "won't be boosted."
+	para "werden, erhalten"
+	line "aber nicht mehr"
+	cont "Erfahrungspunkte."
 	prompt
 
 .EvolveInBattle:
-	text "Your #mon can"
-	line "evolve during"
-	cont "trainer battles."
+	text "Deine #mon kön-"
+	line "nen sich während"
+	cont "Trainerkämpfen"
 
-	para "Inspired by anime"
-	line "battles."
+	para "entwickeln."
+
+	para "Inspiriert von den"
+	line "Kämpfen im Anime."
 	prompt
 
 .ColorVariation:
-	text "Individual #-"
-	line "mon, both regular"
-	cont "and shiny, will"
+	text "Jedes #mon, ob"
+	line "normal oder schil-"
+	cont "lernd, erhält"
 
-	para "have their colors"
-	line "subtly varied."
+	para "leicht abgewandel-"
+	line "te Farben."
 
-	para "The variation is"
-	line "pseudorandom, not"
+	para "Die Abweichung ist"
+	line "pseudozufällig und"
 
-	para "correlated with"
-	line "stat quality."
+	para "unabhängig von der"
+	line "Güte der Werte."
 
-	para "Inspired by"
-	line "Stadium's color"
+	para "Inspiriert von der"
+	line "Farbvariation in"
 
-	para "variation based"
-	line "on nicknames."
+	para "<PK><MN> Stadium, die"
+	line "vom Spitznamen ab-"
+	cont "hing."
 	prompt
 
 InitialOptionsDoneDescription:
-	text "Save your choices"
-	line "and play the game!"
+	text "Speichere deine"
+	line "Wahl und leg los!"
 	prompt

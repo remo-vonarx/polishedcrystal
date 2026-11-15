@@ -12,3 +12,18 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Music Player | Musik Player | Main menu | Own; the user's wording |
 | Time not set | Uhr nicht gestellt | Main menu | Kristall |
 | Yes / No | Ja / Nein | Yes/No box, option values | Kristall; option values padded to 4 tiles ("Ja  ") |
+| Nature | Wesen | Initial options | Official (PokeAPI `nature`, de) |
+| Ability | Fähigkeit | Initial options | Official |
+| Move | Attacke | Initial options | Kristall |
+| Stat | Wert | Initial options | Short form where "Statuswert" doesn't fit |
+| EVs | Fleisspunkte | Initial options | The user's choice: the official term up to Gen 4 (PokéWiki), chosen over the modern "Basispunkte" (ADR 0002 exception). No abbreviation: "BP" means Battle Points in Polished |
+| IVs | DVs | Initial options | The user's choice: Gen 2's own term, matching the 0–15 scale |
+| Stat exp | Status-EP | Initial options | The user's choice; no official German term exists (PokéWiki) |
+| Exp. Points | EP, Erfahrungspunkte | Initial options | Kristall |
+| Exp. Candy | EP-Bonbon | Initial options | Official (SV) |
+| Rare Candy | Sonderbonbon | Initial options | Kristall |
+| Shiny | schillernd | Initial options | Official |
+| Affection | Zuneigung | Initial options | Official (Gen 6) |
+| Real-time clock | Echtzeituhr | Initial options | Own |
+| Done | Fertig | Options menus | Kristall |
+| Pokémon Stadium | PKMN Stadium (`<PK><MN> Stadium`) | Initial options | The user's choice |
