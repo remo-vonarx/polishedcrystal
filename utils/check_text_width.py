@@ -24,7 +24,7 @@ MAX_WIDTH = 18
 DEX_WIDTH = 19  # engine/pokedex/pokedex.asm clears 5 x 19 tiles from column 1
 UNKNOWN = -1000  # pushes a line with a runtime-sized part below any limit
 SKIP_FILES = {'credits_strings.asm'}  # the credits have their own layout
-DEX_ENTRIES = 'dex_entries.asm'  # "db" holds the category, not a text line
+DEX_ENTRIES = 'dex_entries.asm'
 
 # tiles printed for each token (constants/charmap.asm); 1 tile if not listed
 TOKEN_WIDTHS = {
@@ -72,15 +72,15 @@ def display_path(path):
 
 def check_file(path):
     problems = []
-    dex_entries = path.name == DEX_ENTRIES
-    max_width = DEX_WIDTH if dex_entries else MAX_WIDTH
+    max_width = DEX_WIDTH if path.name == DEX_ENTRIES else MAX_WIDTH
     width = 0
     branches = []  # per open "if": [width before it, widest branch end, has else]
     for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
         code = strip_comment(line)
-        if LABEL.match(code):
+        match = LABEL.match(code)
+        if match:
             width = 0
-            continue
+            code = code[match.end():]  # a command may follow on the same line
         match = COMMAND.match(code)
         if not match:
             continue
@@ -100,7 +100,7 @@ def check_file(path):
             ends = [width] + ([] if widest is None else [widest]) + ([] if has_else else [before])
             width = max(ends)
             continue
-        if command in RESET or (dex_entries and command == 'db'):
+        if command in RESET:
             width = 0
             continue
         if command in RUNTIME:
