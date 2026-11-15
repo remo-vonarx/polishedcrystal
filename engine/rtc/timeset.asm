@@ -235,7 +235,7 @@ Text_WhatTimeIsIt:
 	; What time is it?
 	text_farend _OakTimeWhatTimeIsItText
 String_oclock:
-	db "o'clock@"
+	db "Uhr@"
 
 Text_HowManyMinutes:
 	; How many minutes?
@@ -536,10 +536,10 @@ TimeOfDayStrings:
 	dr EVE_String
 	assert_table_length NUM_DAYTIMES
 
-NITE_String: db "Night@"
-MORN_String: db "Morning@"
-DAY_String:  db "Day@"
-EVE_String:  db "Evening@"
+NITE_String: db "Nacht@"
+MORN_String: db "Vormittag@"
+DAY_String:  db "Tag@"
+EVE_String:  db "Abend@"
 
 PlaceCaughtTimeOfDayString::
 	and CAUGHT_TIME_MASK

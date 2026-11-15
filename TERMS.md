@@ -27,3 +27,5 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Real-time clock | Echtzeituhr | Initial options | Own |
 | Done | Fertig | Options menus | Kristall |
 | Pokémon Stadium | PKMN Stadium (`<PK><MN> Stadium`) | Initial options | The user's choice |
+| Morning / Day / Evening / Night | Vormittag / Tag / Abend / Nacht | Clock, Pokégear, summary | Kristall (Vormittag, Tag, Nacht); Abend own, as Kristall has no evening |
+| o'clock / min. | Uhr / min. | Clock | Kristall |

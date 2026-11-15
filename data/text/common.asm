@@ -179,26 +179,27 @@ _OakTimeWokeUpText::
 	text "………………………………"
 	line "………………………………"
 
-	para "Zzz… Hm? Wha…?"
-	line "You woke me up!"
+	para "Zzz… Hm? Was…?"
+	line "Du hast mich auf-"
+	cont "geweckt. Kannst du"
 
-	para "Will you check the"
-	line "clock for me?"
+	para "mir sagen, wie"
+	line "spät es ist?"
 	prompt
 
 SECTION "_OakTimeWhatTimeIsItText", ROMX
 _OakTimeWhatTimeIsItText::
-	text "What time is it?"
+	text "Wie spät ist es?"
 	done
 
 SECTION "_OakTimeHowManyMinutesText", ROMX
 _OakTimeHowManyMinutesText::
-	text "How many minutes?"
+	text "Wie viele Minuten?"
 	done
 
 SECTION "_OakTimeWhoaText", ROMX
 _OakTimeWhoaText::
-	text "Whoa!"
+	text "Wow!"
 	done
 
 SECTION "_OakTimeQuestionMarkText", ROMX
@@ -209,28 +210,30 @@ _OakTimeQuestionMarkText::
 SECTION "_OakTimeOversleptText", ROMX
 _OakTimeOversleptText::
 	text "!"
-	line "I overslept!"
+	line "Ich habe"
+	cont "verschlafen!"
 	done
 
 SECTION "_OakTimeYikesText", ROMX
 _OakTimeYikesText::
 	text "!"
-	line "Yikes! I over-"
-	cont "slept!"
+	line "Uah! Ich habe"
+	cont "verschlafen!"
 	done
 
 SECTION "ProfElmNappedText", ROMX
 ProfElmNappedText::
 	text "!"
-	line "I napped for"
-	cont "too long!"
+	line "Ich habe zu lange"
+	cont "ein Nickerchen"
+	cont "gemacht!"
 	done
 
 SECTION "_OakTimeSoDarkText", ROMX
 _OakTimeSoDarkText::
 	text "!"
-	line "No wonder it's so"
-	cont "dark!"
+	line "Kein Wunder, dass"
+	cont "es so dunkel ist!"
 	done
 
 SECTION "_OakTimeWhatDayIsItText", ROMX
