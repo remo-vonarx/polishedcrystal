@@ -133,7 +133,7 @@ InitialOptionDescriptions:
 	cont "können umbenannt"
 
 	para "werden, erhalten"
-	line "aber nicht mehr"
+	line "aber keine Bonus-"
 	cont "Erfahrungspunkte."
 	prompt
 

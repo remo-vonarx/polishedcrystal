@@ -40,4 +40,4 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Prof. Oak's Pokémon Talk | Prof. Eichs #mon-Talk | Radio | Kristall |
 | Pokémon Channel | #mon-Programm | Radio | Kristall |
 | Town Map | Karte | Player's room poster | Kristall |
-| Pokémon Journal | #mon-Journal | Player's room bookshelf | Own |
+| Pokémon Journal | #mon-Journal | Player's room bookshelf; about 40 more places | The user's spelling, chosen over Kristall's "#MON JOURNAL" (6c:4528) |
