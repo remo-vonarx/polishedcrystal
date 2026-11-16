@@ -60,7 +60,7 @@ python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/r
 The shots show the clock, the Ja/Nein box, the photo choice, the naming screen, the room, the radio, the PC, the journal and the poster.
 
 - **Timing.** Screenshots go by wall-clock time, inputs by emulated time, and the emulator falls 1–5 s behind as a run goes on. A shot can show the state of one or two steps back, or a scroll half done. Leave at least 2 s between inputs that wait for a text box to close.
-- **Other clock responses.** Drop the A taps at 32.2 s and later in `speech`, then press DOWN or UP every 0.35 s from 33 s, and A one second later. From 10, 4×DOWN gives 6 (Vormittag), 8×UP gives 18 (Abend) and 6×DOWN gives 4 (Nacht).
+- **Other clock responses.** Drop the A taps at 32.2 s and later in `speech`, then press DOWN or UP every 0.35 s from 33 s, and A one second later. The remaining A taps follow, shifted by the time the presses take. From 10, 4×DOWN gives 6 (Vormittag), 8×UP gives 18 (Abend) and 6×DOWN gives 4 (Nacht).
 - **Each option description.** On the options screen (from about 20 s), A turns a description's pages and DOWN moves to the next option, one input every 1.5 s.
 
 **Kristall, for comparison.** Azahar doesn't launch a `.cia` directly, so extract the Base CIA's game content once, then play it with a movie for Kristall's program ID. Kristall asks Junge or Mädchen first, confirms the hour and the minutes separately, and prints text more slowly. These taps reach the main menu (20 s), the clock (44–58 s), Oak's speech (64–108 s), the naming screen (112 s) and the room (about 184 s). From the room they read the PC (213 s) and the poster (233 s):

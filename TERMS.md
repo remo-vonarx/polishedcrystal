@@ -25,6 +25,13 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Shiny | schillernd | Initial options | Official |
 | Affection | Zuneigung | Initial options | Official (Gen 6) |
 | Real-time clock | Echtzeituhr | Initial options | Own |
+| Phys/Spcl split | Phys/Spez-Split | Initial options | Own |
+| Experience gain | EP-Zuwachs | Initial options | Own |
+| Affection bonus | Zuneigungsbonus | Initial options | Own |
+| Perfect stats | Perfekte Werte | Initial options | Own |
+| Traded PKMN obey | Tausch-PKMN folgen (`Tausch-<PK><MN> folgen`) | Initial options | Own; "gehorchen" doesn't fit the 17 tiles |
+| Evolve in battle | Kampfentwicklung | Initial options | Own |
+| Color variation | Farbvariation | Initial options | Own |
 | Done | Fertig | Options menus | Kristall |
 | Pokémon Stadium | PKMN Stadium (`<PK><MN> Stadium`) | Initial options | The user's choice |
 | Morning / Day / Evening / Night | Vormittag / Tag / Abend / Nacht | Clock, Pokégear, summary | Kristall (Vormittag, Tag, Nacht); Abend own, as Kristall has no evening |
