@@ -27,7 +27,7 @@ DATA = os.path.join(HOME, "Library", "Application Support", "Azahar")
 CONFIG = os.path.join(DATA, "config", "qt-config.ini")
 LOG = os.path.join(DATA, "log", "azahar_log.txt")
 SETTINGS = {"enable_rpc_server": "true", "check_for_update_on_start": "false",
-            "confirmClose": "false", "firstStart": "false"}
+            "confirmClose": "false", "firstStart": "false", "volume": "0"}  # volume 0: playtests run muted
 
 
 def ensure_config():
