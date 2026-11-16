@@ -205,9 +205,9 @@ InitialOptions_EVs:
 	jmp OptionsShared_PlaceStringAtValueCoord
 
 .AllString:
-	db "All@"
+	db "Alle@"
 .ModernString:
-	db "{-3d:MODERN_EV_LIMIT}@"
+	db "{-4d:MODERN_EV_LIMIT}@" ; padded to the width of "Alle" and "Nein"
 
 InitialOptions_ExpScaling:
 	; set e to a sequential value for exp
@@ -262,9 +262,9 @@ InitialOptions_ExpScaling:
 	jmp OptionsShared_PlaceStringAtValueCoord
 
 .Old:
-	db "Old@"
+	db "Alt @"
 .New:
-	db "New@"
+	db "Neu @"
 
 InitialOptions_AffectionBonus:
 	ld hl, wInitialOptions

@@ -362,18 +362,19 @@ PokemonJournalProfElmScript:
 	setflag ENGINE_READ_PROF_ELM_JOURNAL
 	jumpthistext
 
-	text "#mon Journal"
+	text "#mon-Journal"
 
-	para "Special Feature:"
-	line "#mon Prof.Elm!"
+	para "Sonderthema:"
+	line "#mon-Professor"
+	cont "Lind!"
 
-	para "Prof.Elm was the"
-	line "top student of"
-	cont "Prof.Oak."
+	para "Prof. Lind war der"
+	line "beste Schüler von"
+	cont "Prof. Eich."
 
-	para "They're said to"
-	line "often argue about"
-	cont "research."
+	para "Angeblich streiten"
+	line "die beiden oft"
+	cont "über Forschung."
 	done
 
 PlayersHousePC:
@@ -385,21 +386,24 @@ PlayersHousePC:
 	end
 
 InitialRadioText1:
-	text "Prof.Oak's #mon"
-	line "Talk! Please tune"
-	cont "in next time!"
+	text "Prof. Eichs #-"
+	line "mon-Talk! Schal-"
+	cont "ten Sie auch das"
+	cont "nächste Mal wieder"
+	cont "ein!"
 	done
 
 InitialRadioText2:
-	text "#mon Channel!"
+	text "#mon-Programm!"
 	done
 
 InitialRadioText3:
-	text "This is DJ Mary,"
-	line "your co-host!"
+	text "Hier ist DJ"
+	line "Margit, Ihr Co-"
+	cont "Moderator!"
 	done
 
 InitialRadioText4:
 	text "#mon!"
-	line "#mon Channel…"
+	line "#mon-Programm!"
 	done

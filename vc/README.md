@@ -44,25 +44,38 @@ python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/b
 
 ## Reach the player's room
 
-This movie plays a new game from power-on to the player's room. It taps through the intro, the options and the clock, types the name "Jürgen" on the naming screen and taps A through Elm's speech. The room shows at about 170 s. The taps are timed for the English new-game text: re-tune them after translating it, using the shots to see where the movie got to.
+This movie plays a new game from power-on to the player's room, timed for the German new-game text. It taps A through the intro, leaves the options with START, keeps the clock at Tag 10:00 and taps A through Elm's speech and the photo choice. On the naming screen it types "Aaaaaaa" (7 letters, the longest name) and moves the cursor over Lösch and Umsch and back to Ende. In the room (at about 128 s) it reads the radio, the PC, the Pokémon Journal and the Town Map poster.
 
 ```sh
-base="A:4:0.15;A:6:0.15;A:9:0.15;A:13:0.15;A:15:0.15;START:20:0.15;A:24:0.15;A:28:0.15;A:32:0.15;A:36:0.15;A:40:0.15;A:44:0.15;A:48:0.15;A:52:0.15"
-fast=$(python3 -I -c "print(';'.join(f'A:{t}:0.12' for t in range(56,77)))")
-typing="A:81:0.12;A:85:0.12;DOWN:89:0.12;A:90:0.12;DOWN:93:0.12;DOWN:94:0.12;RIGHT:95:0.12;RIGHT:96:0.12;A:97:0.12;B:100:0.12;A:103:0.12;UP:104:0.12;UP:105:0.12;RIGHT:106:0.12;RIGHT:107:0.12;RIGHT:108:0.12;RIGHT:109:0.12;RIGHT:110:0.12;RIGHT:111:0.12;A:112:0.12;UP:113:0.12;LEFT:114:0.12;LEFT:115:0.12;A:116:0.12;LEFT:117:0.12;LEFT:118:0.12;A:119:0.12;DOWN:120:0.12;A:121:0.12;START:124:0.12;A:125:0.12"
-tail=$(python3 -I -c "print(';'.join(f'A:{t}:0.12' for t in range(128,162,3)))")
-python3 -I vc/gen_ctm.py vc/local/movies/room.ctm 0004000000172800 180 "$base;$fast;$typing;$tail"
-python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/room.ctm --shots 34,62,125,150,170,178
+base="A:4:0.15;A:6:0.15;A:9:0.15;A:13:0.15;A:15:0.15;A:17:0.15;START:22:0.15"
+speech=$(python3 -I -c "print(';'.join(f'A:{25+i*1.8:g}:0.12' for i in range(35)))")
+name=$(python3 -I -c "print(';'.join(f'A:{t}:0.12' for t in range(90,97)))");name="$name;LEFT:98:0.12;LEFT:100:0.12;RIGHT:102:0.12;RIGHT:103:0.12;A:105:0.12"
+tail=$(python3 -I -c "print(';'.join(f'A:{107+i*1.8:g}:0.12' for i in range(11)))")
+room="UP:130:0.25;A:132:0.12;A:134:0.12;A:136:0.12;A:138:0.12;A:148:0.12;LEFT:156:0.25;UP:158:0.08;A:159.5:0.12;A:162:0.12;B:165:0.12;B:167:0.12;RIGHT:170:0.25;RIGHT:171.5:0.25;RIGHT:173:0.25;UP:175:0.08"
+room="$room;$(python3 -I -c "print(';'.join(f'A:{t}:0.12' for t in range(177,193,2)))");RIGHT:195:0.25;UP:197:0.25;A:199:0.12;A:202:0.12"
+python3 -I vc/gen_ctm.py vc/local/movies/room.ctm 0004000000172800 212 "$base;$speech;$name;$tail;$room"
+python3 -I vc/playtest.py vc/local/out/<name>.game.cxi --movie vc/local/movies/room.ctm --shots 33,37,83,90,102,129,137,163,186,203
 ```
 
-**Kristall, for comparison.** Azahar doesn't launch a `.cia` directly, so extract the Base CIA's game content once, then play it with a movie for Kristall's program ID. The same `base` and `fast` taps reach the German main menu (20 s), the clock question (50 s) and Elm's speech (75 s):
+The shots show the clock, the Ja/Nein box, the photo choice, the naming screen, the room, the radio, the PC, the journal and the poster.
+
+- **Timing.** Screenshots go by wall-clock time, inputs by emulated time, and the emulator falls 1–5 s behind as a run goes on. A shot can show the state of one or two steps back, or a scroll half done. Leave at least 2 s between inputs that wait for a text box to close.
+- **Other clock responses.** Drop the A taps at 32.2 s and later in `speech`, then press DOWN or UP every 0.35 s from 33 s, and A one second later. The remaining A taps follow, shifted by the time the presses take. From 10, 4×DOWN gives 6 (Vormittag), 8×UP gives 18 (Abend) and 6×DOWN gives 4 (Nacht).
+- **Each option description.** On the options screen (from about 20 s), A turns a description's pages and DOWN moves to the next option, one input every 1.5 s.
+
+**Kristall, for comparison.** Azahar doesn't launch a `.cia` directly, so extract the Base CIA's game content once, then play it with a movie for Kristall's program ID. Kristall asks Junge or Mädchen first, confirms the hour and the minutes separately, and prints text more slowly. These taps reach the main menu (20 s), the clock (44–58 s), Oak's speech (64–108 s), the naming screen (112 s) and the room (about 184 s). From the room they read the PC (213 s) and the poster (233 s):
 
 ```sh
 vc/local/bin/ctrtool --contents=vc/local/out/kristall vc/local/dumps/kristall-vc-v0.1.0.standard.cia
 mv vc/local/out/kristall.0000.00000002 vc/local/out/kristall.game.cxi
-python3 -I vc/gen_ctm.py vc/local/movies/kristall.ctm 0004000000172B00 90 "$base;$fast"
-python3 -I vc/playtest.py vc/local/out/kristall.game.cxi --movie vc/local/movies/kristall.ctm --shots 20,50,75,88
+kbase="A:4:0.15;A:6:0.15;A:9:0.15;A:13:0.15;A:15:0.15;START:20:0.15;$(python3 -I -c "print(';'.join(f'A:{t}:0.15' for t in range(24,53,4)))")"
+ktaps=$(python3 -I -c "print(';'.join(f'A:{56+i*1.8:g}:0.12' for i in range(75)))")
+kroom="UP:200:0.25;LEFT:202:0.25;UP:204:0.08;A:205.5:0.12;A:208:0.12;B:211:0.12;B:213:0.12;RIGHT:216:0.25;RIGHT:217.5:0.25;RIGHT:219:0.25;RIGHT:220.5:0.25;UP:222.5:0.25;A:224.5:0.12;A:227.5:0.12"
+python3 -I vc/gen_ctm.py vc/local/movies/kristall.ctm 0004000000172B00 234 "$kbase;$ktaps;$kroom"
+python3 -I vc/playtest.py vc/local/out/kristall.game.cxi --movie vc/local/movies/kristall.ctm --shots 20,44,50,58,64,76,112,190,213,233
 ```
+
+To read Kristall's radio instead, replace `kroom` with the room part above shifted by 70 s: the radio shows at 209–249 s.
 
 ## Install on the 3DS
 
