@@ -28,7 +28,7 @@ PokemonCenterPC:
 
 .TopMenu:
 	db MENU_BACKUP_TILES | MENU_NO_CLICK_SFX
-	menu_coords 0, 0, 15, 12
+	menu_coords 0, 0, 16, 12
 	dw .MenuData2
 	db 1 ; default option
 
@@ -213,7 +213,7 @@ _PlayersPC:
 PlayersPCMenuData:
 	db %01000000
 	db  0,  0 ; top left corner coords (y, x)
-	db 12, 15 ; bottom right corner coords (y, x)
+	db 12, 16 ; bottom right corner coords (y, x)
 	dw .PlayersPCMenuData2
 	db 1 ; default selected option
 
