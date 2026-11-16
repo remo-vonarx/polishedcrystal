@@ -3776,25 +3776,25 @@ _PhoneJustTalkToThemText::
 
 SECTION "_PasswordAskResetText", ROMX
 _PasswordAskResetText::
-	text "Select Continue to"
-	line "set the time."
+	text "Wähle Weiter und"
+	line "stelle die Uhr."
 	prompt
 
 SECTION "_PasswordAskResetClockText", ROMX
 _PasswordAskResetClockText::
-	text "Reset the clock?"
+	text "Uhr neu stellen?"
 	done
 
 SECTION "_ClearAllSaveDataText", ROMX
 _ClearAllSaveDataText::
-	text "Clear all save"
-	line "data?"
+	text "Spielstand"
+	line "löschen?"
 	done
 
 SECTION "ResetInitialOptionsText", ROMX
 ResetInitialOptionsText::
-	text "Reset the initial"
-	line "game options?"
+	text "Die Spieloptionen"
+	line "zurücksetzen?"
 	done
 
 SECTION "_LearnedMoveText", ROMX

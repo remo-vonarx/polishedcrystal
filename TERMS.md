@@ -61,4 +61,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Pokédex Rating System | #dex-Bewertung | Prof. Oak's PC | Kristall |
 | Cancel | Zurück | Item lists (every scrolling menu) | Kristall |
 | _N_ _items_ (a quantity) | _N_ x `<ITEM>` | PC and toss texts; every quantity text | Kristall: the number before the name, singular verb, no plural ending (`text_plural` dropped) |
+| Clear all save data? | Spielstand löschen? | Title screen (Up+B+Select) | Kristall |
+| Reset the clock? | Uhr neu stellen? | Title screen (Down+B) | Kristall |
+| Initial (game) options | Spieloptionen | Title screen (Left+B) | Own; the user's choice. The initial-options screen itself has no title |
 | Pokémon Journal | #mon-Journal | Player's room bookshelf; about 40 more places | The user's spelling, chosen over Kristall's "#MON JOURNAL" (6c:4528) |
