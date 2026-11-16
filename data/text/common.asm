@@ -2681,9 +2681,9 @@ _CaughtAskNicknameText::
 
 SECTION "_PokecenterPCCantUseText", ROMX
 _PokecenterPCCantUseText::
-	text "Bzzzzt! You must"
-	line "have a #mon to"
-	cont "use this!"
+	text "Dies kann nur"
+	line "ein #mon"
+	cont "benutzen!"
 	prompt
 
 SECTION "_PlayersPCTurnOnText", ROMX
@@ -2755,45 +2755,54 @@ _PlayersPCNoRoomDepositText::
 
 SECTION "_PokecenterPCTurnOnText", ROMX
 _PokecenterPCTurnOnText::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> schaltet"
+	line "den PC ein."
 	prompt
 
 SECTION "_PokecenterPCWhoseText", ROMX
 _PokecenterPCWhoseText::
-	text "Access whose PC?"
+	text "Zugriff auf"
+	line "wessen PC?"
 	done
 
 SECTION "_PokecenterBillsPCText", ROMX
 _PokecenterBillsPCText::
-	text "Bill's PC"
-	line "accessed."
+	text "Die Verbindung zu"
+	line "Bills PC wurde"
+	cont "hergestellt."
 
-	para "#mon Storage"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf das #mon-"
+	cont "Lagerungs-System."
 	prompt
 
 SECTION "_PokecenterPlayersPCText", ROMX
 _PokecenterPlayersPCText::
-	text "Accessed own PC."
+	text "Die Verbindung zu"
+	line "deinem PC wurde"
+	cont "hergestellt."
 
-	para "Item Storage"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf das Item-"
+	cont "Lagerungs-System."
 	prompt
 
 SECTION "_PokecenterOaksPCText", ROMX
 _PokecenterOaksPCText::
-	text "Prof.Oak's PC"
-	line "accessed."
+	text "Die Verbindung zu"
+	line "Prof. Eichs PC"
+	cont "wurde hergestellt."
 
-	para "#dex Rating"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf die #dex-"
+	cont "Bewertung."
 	prompt
 
 SECTION "_PokecenterPCOaksClosedText", ROMX
 _PokecenterPCOaksClosedText::
 	text "…"
-	line "Link closed…"
+	line "Verbindung"
+	cont "beendet…"
 	done
 
 SECTION "_OakPCText1", ROMX
