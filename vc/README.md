@@ -77,6 +77,29 @@ python3 -I vc/playtest.py vc/local/out/kristall.game.cxi --movie vc/local/movies
 
 To read Kristall's radio instead, replace `kroom` with the room part above shifted by 70 s: the radio shows at 209–249 s.
 
+## Reach the PC
+
+The room movie turns on the player's PC with `A:159.5`, and `A:162` opens its menu. A new game's PC and Bag are both empty. When a sub-screen closes, the menu cursor goes back to the top entry. Item ablegen opens the Bag on its Items pocket, and RIGHT moves to Medicine.
+
+**Pokémon Center PC.** There's no Pokémon Center near the room, so a test clone, never committed, opens it from the room's PC. In `PlayersHousePC` (`maps/PlayersHouse2F.asm`):
+- replace `special Special_PlayersHousePC` / `iffalse_endtext` with `special PokemonCenterPC` / `endtext`
+- before `opentext`, add `givepoke PIKACHU, 5`, because the PC refuses to open without a party Pokémon
+- add `setflag ENGINE_POKEDEX` to show Eichs PC
+- add items to move, such as `giveitems_unsafe POTION, 12` and `givekeyitem BICYCLE`
+
+`givepoke` asks for a nickname, and the movie answers B. Played after the room movie's `base`, `speech`, `name` and `tail`, these taps deposit 10 Potions, try the Bicycle, withdraw one Potion, toss one and open Bills PC:
+
+```sh
+pcroom="UP:130:0.25;A:132:0.12;A:134:0.12;A:136:0.12;A:138:0.12;A:148:0.12;LEFT:156:0.25;UP:158:0.08;A:159.5:0.12"
+pc="A:162;A:165;B:168;A:171;DOWN:174;A:176;A:179;A:182;A:185;A:188;DOWN:191;A:193;RIGHT:197;A:199;RIGHT:201.5;DOWN:203;A:205;A:208;LEFT:210;LEFT:211.5;A:213;A:216;B:218.5;A:221;A:224;A:227;A:230;B:233;DOWN:235;DOWN:236.5;A:238;A:241;A:244;A:247;A:250;A:253;B:256;B:259;A:262"
+pc=$(python3 -I -c "import sys; print(';'.join(e + (':0.25' if e.split(':')[0] in ('UP','DOWN','LEFT','RIGHT') else ':0.12') for e in sys.argv[1].split(';')))" "$pc")
+python3 -I vc/gen_ctm.py vc/local/movies/pc.ctm 0004000000172800 280 "$base;$speech;$name;$tail;$pcroom;$pc"
+```
+
+From the Pokémon Center menu, two DOWNs reach Eichs PC; B declines the rating and closes it. Three DOWNs reach Ausloggen.
+
+**Title-screen prompts.** Hold a combo from 3 s for 12 s: `UP:3:12;B:3:12;SELECT:3:12` clears the save, `LEFT:3:12;B:3:12` resets the initial options, and `DOWN:3:12;B:3:12` resets the clock, where `DOWN:21:0.15;A:22.5:0.15` answers Ja. The prompts show from about 8 s. Kristall uses Up+Select+B and Down+Select+B, and its clock reset needs a save file.
+
 ## Install on the 3DS
 
 1. Copy the `.cia` into the SD card's `cia/` folder.
