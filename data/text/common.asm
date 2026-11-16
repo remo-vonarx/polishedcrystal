@@ -2313,11 +2313,11 @@ _AskThrowAwayText::
 
 SECTION "_AskQuantityThrowAwayText", ROMX
 _AskQuantityThrowAwayText::
-	text "Throw away "
-	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text "Wegwerfen"
 	line ""
+	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
 	text "?"
 	done
 
@@ -2694,63 +2694,61 @@ _PlayersPCTurnOnText::
 
 SECTION "_PlayersPCAskWhatDoText", ROMX
 _PlayersPCAskWhatDoText::
-	text "What do you want"
-	line "to do?"
+	text "Was möchtest du"
+	line "tun?"
 	done
 
 SECTION "_PlayersPCHowManyWithdrawText", ROMX
 _PlayersPCHowManyWithdrawText::
-	text "How many do you"
-	line "want to withdraw?"
+	text "Wie viele möchtest"
+	line "du mitnehmen?"
 	done
 
 SECTION "_PlayersPCWithdrewItemsText", ROMX
 _PlayersPCWithdrewItemsText::
-	text "Withdrew "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	line ""
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
-	text "."
+	line "wurde mitgenommen."
 	prompt
 
 SECTION "_PlayersPCNoRoomWithdrawText", ROMX
 _PlayersPCNoRoomWithdrawText::
-	text "There's no room"
-	line "for more items."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr tragen."
 	prompt
 
 SECTION "_PlayersPCNoItemsText", ROMX
 _PlayersPCNoItemsText::
-	text "No items here!"
+	text "Du trägst keine"
+	line "Items!"
 	prompt
 
 SECTION "_PlayersPCCantDepositItemText", ROMX
 _PlayersPCCantDepositItemText::
-	text "That item can't"
-	line "be deposited."
+	text "Dieses Item kannst"
+	line "du nicht ablegen."
 	prompt
 
 SECTION "_PlayersPCHowManyDepositText", ROMX
 _PlayersPCHowManyDepositText::
-	text "How many do you"
-	line "want to deposit?"
+	text "Wie viele möchtest"
+	line "du ablegen?"
 	done
 
 SECTION "_PlayersPCDepositItemsText", ROMX
 _PlayersPCDepositItemsText::
-	text "Deposited "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	line ""
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
-	text "."
+	line "wurde abgelegt."
 	prompt
 
 SECTION "_PlayersPCNoRoomDepositText", ROMX
 _PlayersPCNoRoomDepositText::
-	text "There's no room to"
-	line "store items."
+	text "Es ist kein Platz"
+	line "für weitere Items."
 	prompt
 
 SECTION "_PokecenterPCTurnOnText", ROMX
@@ -3001,20 +2999,18 @@ _StartMenuContestEndText::
 
 SECTION "_ItemsTossOutHowManyText", ROMX
 _ItemsTossOutHowManyText::
-	text "Toss out how many"
+	text "Wie viele"
 	line ""
 	text_ram wStringBuffer2
-	text_plural
-	text "?"
+	cont "wegwerfen?"
 	done
 
 SECTION "_ItemsDiscardedText", ROMX
 _ItemsDiscardedText::
-	text "Discarded"
-	line ""
+	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text " x "
 	text_ram wStringBuffer1
-	text_plural
-	text "."
+	line "wurde weggeworfen."
 	prompt
 
 SECTION "_ItemsOakWarningText", ROMX

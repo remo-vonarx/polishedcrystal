@@ -59,4 +59,6 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Pokémon Storage System | #mon-Lagerungs-System | Bill's PC, everywhere | Kristall, re-cased with its hyphen; the user's choice over "Lagerungssystem" |
 | Item Storage System | Item-Lagerungs-System | Player's PC | Kristall, as above |
 | Pokédex Rating System | #dex-Bewertung | Prof. Oak's PC | Kristall |
+| Cancel | Zurück | Item lists (every scrolling menu) | Kristall |
+| _N_ _items_ (a quantity) | _N_ x `<ITEM>` | PC and toss texts; every quantity text | Kristall: the number before the name, singular verb, no plural ending (`text_plural` dropped) |
 | Pokémon Journal | #mon-Journal | Player's room bookshelf; about 40 more places | The user's spelling, chosen over Kristall's "#MON JOURNAL" (6c:4528) |
