@@ -52,12 +52,15 @@ InitialOptionDescriptions:
 	line "erhöhen einen Wert"
 	cont STRFMT("um 1, bis zu %d.", MODERN_MAX_EV / 4) ; 252 / 4 == 63
 
-	para "Du kannst jedem"
-	line "Wert bis zu {d:MODERN_MAX_EV}"
-	cont "erlauben, wie bei"
+	para "Du kannst wählen,"
+	line "ob jeder Wert bis"
 
-	para "Status-EP, oder"
-	line "insgesamt nur {d:MODERN_EV_LIMIT}."
+	para "zu {d:MODERN_MAX_EV} Fleiss-"
+	line "punkte haben darf,"
+	cont "wie bei Status-EP,"
+
+	para "oder alle zusammen"
+	line "höchstens {d:MODERN_EV_LIMIT}."
 
 	para "Ersetzten in der"
 	line "3. Generation die"
