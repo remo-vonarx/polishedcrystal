@@ -35,11 +35,11 @@ MainMenu:
 	dw .Strings
 
 .Strings:
-	db "Continue@"
-	db "New Game@"
-	db "New Game+@"
-	db "Options@"
-	db "Music Player@"
+	db "Weiter@"
+	db "Neues Spiel@"
+	db "Neues Spiel+@"
+	db "Optionen@"
+	db "Musik Player@"
 
 .Jumptable:
 	dw MainMenu_Continue
@@ -194,7 +194,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	ret
 
 .TimeNotSet:
-	db "Time not set@"
+	db "Uhr nicht gestellt@"
 
 MainMenu_NewGame:
 	farjp NewGame
