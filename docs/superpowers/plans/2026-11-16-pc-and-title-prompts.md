@@ -64,7 +64,12 @@ German below is the draft. K = Kristall (bank:address in the dump or ROM), re-ca
 
 N x `<ITEM>` is `text_decimal wItemQuantityChangeBuffer, 1, 2`, `text " x "`, `text_ram` of the text's English buffer; at most 2 + 3 + 12 = 17 tiles, 18 with `?`. Crystal Legacy's `data/text/common_2.asm` shows the same texts in asm.
 
-The three toss texts are shared with the Bag (`TossItemFromPC` in `engine/pokemon/mon_menu.asm`, `_AskQuantityThrowAwayText` also in `engine/items/pack.asm`), so the Bag's toss turns German too.
+The toss confirmation `_AskQuantityThrowAwayText` is shared with the Bag (`engine/items/pack.asm`); the other two toss texts are the PC's only (`TossItemFromPC` has one caller). So that the Bag's toss isn't half German, the final review's fix pass adds the Bag's own two (the user's choice, 2026-11-17):
+
+| Label | German | Source |
+|---|---|---|
+| `_AskThrowAwayText` | Wie viele / wegwerfen? | K 70:4d7f |
+| `_ThrewAwayText` | N x `<ITEM>` / weggeworfen. | K 70:4db5 |
 
 **Item list:** `ScrollingMenu_CancelString` (`engine/menus/scrolling_menu.asm`): Cancel → Zurück (K, Kristall's item list; Task 3 confirms it by screenshot). Every scrolling menu shares it.
 

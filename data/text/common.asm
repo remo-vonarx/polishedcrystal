@@ -2307,8 +2307,8 @@ Text_AnEGGCantHoldAnItem::
 
 SECTION "_AskThrowAwayText", ROMX
 _AskThrowAwayText::
-	text "Throw away how"
-	line "many?"
+	text "Wie viele"
+	line "wegwerfen?"
 	done
 
 SECTION "_AskQuantityThrowAwayText", ROMX
@@ -2323,11 +2323,10 @@ _AskQuantityThrowAwayText::
 
 SECTION "_ThrewAwayText", ROMX
 _ThrewAwayText::
-	text "Threw away"
-	line ""
+	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
-	text "."
+	line "weggeworfen."
 	prompt
 
 SECTION "_OakThisIsntTheTimeText", ROMX
