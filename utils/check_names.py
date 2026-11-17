@@ -12,7 +12,9 @@ Default run: checks the tables.
   same in both languages (SAME_IN_GERMAN).
 - An entry wider than its table's limit is reported, counted in tiles as
   check_text_width.py counts them ("#" is 4 tiles, "#mon" 7, ...).
-- A table whose German and English entry counts differ is reported.
+- A table whose German and English entry counts differ is reported, and so
+  is a table that can't be found: no entries, or a missing start or end label
+  (as after an Upstream rename).
 
 --text: lists English names left in string literals under the given paths
 (default: maps/, data/, engine/ and home/). Comments and SECTION, INCLUDE
@@ -108,11 +110,15 @@ def find_base(base):
 
 
 def entries(text, pattern, first, stop):
-    """Return (line number, name) for each entry of one table, @ stripped."""
+    """Return (line number, name) for each entry of one table, @ stripped,
+    and the labels of `first` and `stop` that were found."""
     found = []
+    labels = set()
     inside = first is None
     for number, line in enumerate(text.splitlines(), 1):
         label = LABEL.match(line)
+        if label and label.group(1) in (first, stop):
+            labels.add(label.group(1))
         if label and label.group(1) == stop:
             break
         if label and label.group(1) == first:
@@ -122,7 +128,7 @@ def entries(text, pattern, first, stop):
         match = pattern.match(line)
         if match:
             found.append((number, match.group(1).rstrip('@')))
-    return found
+    return found, labels
 
 
 def check_tables(base):
@@ -130,8 +136,16 @@ def check_tables(base):
     problems = []
     names = {}
     for path, pattern, first, stop, limit, category in TABLES:
-        german = entries((ROOT / path).read_text(encoding='utf-8'), pattern, first, stop)
-        english = [name for _, name in entries(git('show', f'{base}:{path}'), pattern, first, stop)]
+        german, german_labels = entries((ROOT / path).read_text(encoding='utf-8'), pattern, first, stop)
+        english, english_labels = entries(git('show', f'{base}:{path}'), pattern, first, stop)
+        english = [name for _, name in english]
+        missing = [label for label in (first, stop) if label and label not in german_labels & english_labels]
+        if missing:
+            problems += [f'{path}: label "{label}" not found' for label in missing]
+            continue
+        if not german or not english:
+            problems.append(f'{path}: no entries found')
+            continue
         if len(german) != len(english):
             problems.append(f'{path}: {len(german)} German entries, {len(english)} English')
             continue
