@@ -2722,7 +2722,7 @@ BillsPC_CanReleaseMon:
 .is_egg
 	; Allow release of Bad Eggs.
 	ld a, [wTempMonNickname]
-	cp 'B' ; Assume "Bad Egg" (since the only alternative is "Egg").
+	cp 'S' ; Assume "Schl. Ei" (since the only alternative is "Ei").
 	ld a, RELEASE_EGG
 	ret z
 

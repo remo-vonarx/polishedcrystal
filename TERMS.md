@@ -65,3 +65,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Reset the clock? | Uhr neu stellen? | Title screen (Down+B) | Kristall |
 | Initial (game) options | Spieloptionen | Title screen (Left+B) | Own; the user's choice. The initial-options screen itself has no title |
 | Pokémon Journal | #mon-Journal | Player's room bookshelf; about 40 more places | The user's spelling, chosen over Kristall's "#MON JOURNAL" (6c:4528) |
+| Pokémon names | PokeAPI `pokemon-species` (de), mixed case | `data/pokemon/names.asm`, everywhere | Official; Kristall's 251 equal the modern names apart from capitals. PokéWiki's list agrees on all 289. Upstream's cut "Dudunsparc" is "Dummimisel" in full |
+| Egg | Ei | Species table, every new egg's nickname (gift, Odd Egg, Wonder Trade, Day-Care) | Kristall |
+| Bad Egg | Schl. Ei | Nickname of a corrupted box Pokémon | The user's choice: the official "Schlechtes Ei" (PokéWiki) shortened to fit 10 characters; the PC's release check tests its "S" |
+| A–Z Pokédex order | German names in alphabetical order | Pokédex | A plain sort, as Kristall's own list (ROM 10:4c5e); hyphens and digits sort as in Polished's English list (Ho-Oh, Hoothoot; Porygon, Porygon-Z, Porygon2) |
