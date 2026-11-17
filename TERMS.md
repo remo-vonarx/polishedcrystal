@@ -86,3 +86,4 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Pokégear | #Com (PokéCom) | Key item, everywhere | Kristall ("#COM") |
 | Radio Card | Radio-Modul | Pokégear card | Kristall |
 | Item / Ball / Key Pocket | Item-Tasche / Ball-Tasche / Basis-Items | "put … in the … Pocket" texts | Kristall |
+| HM | VM | HM item names ("VM01"), TM pocket | Kristall ("VM"); the user's choice (2026-11-17). The bold-H glyph (`<BOLDH>`, `$CB`) is a bold V in every font, so it also marks the hidden ability as "V" (Versteckte Fähigkeit) on the summary and in the Pokédex |
