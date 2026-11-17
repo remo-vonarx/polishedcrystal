@@ -76,3 +76,13 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Snow Warning | Hagelalarm | Ability | The user's choice: Polished's Snow Warning summons hail, so its Gen 4–8 name stays, over Gen 9's "Schneeschauer" (ADR 0002 exception) |
 | Nature names | PokeAPI `nature` (de), ss for ß ("Mässig") | Summary | Official |
 | Type labels (graphics) | NORMAL, KAMPF, FLUG, GIFT, BODEN, GESTEIN, KÄFER, GEIST, STAHL, FEUER, WASSER, PFLANZE, ELEKTRO, PSYCHO, EIS, DRACHE, UNLICHT, FEE | `gfx/battle/types.png`: summary, Pokédex, battle move info, party move menu | The user's choice: Crystal Legacy's German letters (`gfx/pokedex/types_light.png`), full names with the 7-letter ones squeezed, white on Polished's black pills; DRACHE is Legacy's DRACHEN without its N. KÄFER's Ä stays inside the pill (the user's choice): dots on the first letter row over a 4-row A, since Legacy's dots on the pill's edge showed as notches |
+| Move names | PokeAPI `move` (de), ss for ß | Everywhere | Official; PokéWiki's Attacken-Liste agrees on all 253. Faithful's Rock Smash: Zertrümmerer |
+| Item names | PokeAPI `item` (de), ss for ß | Bag, marts, everywhere | Official; PokéWiki's item lists (Karmesin/Purpur, Schwert/Schild, Sonne/Mond, HeartGold/SoulSilver) agree on all. Faithful's RageCandyBar, Honey, Guard Spec.: Wutkeks, Honig, Megablock |
+| Mails | Blumenbrief, Surferbrief, Cyanbrief, Abbildbrief, Herzbrief, Anara-Brief, Morph-Brief, Kobaltbrief, Melodiebrief, Trugbrief | Items | Kristall, re-cased: Gen 2-only items, no modern name |
+| Brick Piece / Berserk Gene / GS Ball | Ziegelstein / Berserk-Gen / GS-Ball | Items, key items | Kristall, re-cased: Gen 2-only |
+| Apricorns | Aprikoko Rot, Aprikoko Blu, Aprikoko Glb, Aprikoko Grn, Aprikoko Wss, Aprikoko Swz, Aprikoko Pnk | Items | Kristall's short forms. The modern names (Aprikoko Blau … Aprikoko Schwarz) are 13–16 characters, so Kristall's forms are their Abbreviation; red's "Aprikoko Rot" is the modern name |
+| Exp. Candy XS … XL | EP-Bonbon XS, S, M, L, XL | Items | Official (PokeAPI) |
+| Health Wing … Clever Wing | Heilfeder, Kraftfeder, Abwehrfeder, Flinkfeder, Geniefeder, Espritfeder | Items | Official (PokeAPI) |
+| Pokégear | #Com (PokéCom) | Key item, everywhere | Kristall ("#COM") |
+| Radio Card | Radio-Modul | Pokégear card | Kristall |
+| Item / Ball / Key Pocket | Item-Tasche / Ball-Tasche / Basis-Items | "put … in the … Pocket" texts | Kristall |
