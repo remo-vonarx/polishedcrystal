@@ -100,6 +100,23 @@ From the Pokémon Center menu, two DOWNs reach Eichs PC; B declines the rating a
 
 **Title-screen prompts.** Hold a combo from 3 s for 12 s: `UP:3:12;B:3:12;SELECT:3:12` clears the save, `LEFT:3:12;B:3:12` resets the initial options, and `DOWN:3:12;B:3:12` resets the clock, where `DOWN:21:0.15;A:22.5:0.15` answers Ja. The prompts show from about 8 s. Kristall uses Up+Select+B and Down+Select+B, and its clock reset needs a save file.
 
+## Reach the Pokémon screens
+
+The debug build's radio fills the Pokédex and gives six Pokémon, then warps to Goldenrod. A test clone, never committed, changes three things in the `if DEF(DEBUG)` part of `PlayersHouseRadio` (`maps/PlayersHouse2F.asm`):
+- `ABILITY_2` → `ABILITY_1` in `wPartyMon1Personality`, so the lead Mewtwo's Pressure pops up when it enters battle
+- the Pupitar block (from `; evolve during battle` to `; fill pokedex`) → `giveegg TOGEPI`, an egg in the sixth slot
+- `warpfacing DOWN, GOLDENROD_CITY, 13, 14` → `loadwildmon GYARADOS, 30`, `startbattle`, `reloadmapafterbattle`
+
+Build it with `make debug vc` and package `polishedcrystal-debug-<version>.gbc`. After the room movie's `base`, `speech`, `name` and `tail`, these taps answer the radio's day question with A and tap B through the rest (its clock question, each "received" text and each nickname question), then fight the Gyarados. In battle they open the move list, run away, then open the Pokédex list. From there they search by name and turn through Abra's four pages, set a type and an egg group in the search, and open the party and the third Pokémon's summary pages:
+
+```sh
+radio="UP:130:0.25;A:132:0.12;A:135.5:0.12;A:138:0.12;$(python3 -I -c "print(';'.join(f'B:{140+i*1.5:g}:0.12' for i in range(18)))")"
+tour="A:185:0.12;A:188:0.12;B:191:0.12;A:193:0.12;B:196:0.12;DOWN:198:0.2;RIGHT:199:0.2;A:200.5:0.12;A:203:0.12;START:207:0.12;A:208.5:0.12;START:212:0.12;RIGHT:214:0.2;START:216:0.12;A:220:0.12;RIGHT:222:0.2;RIGHT:224:0.2;RIGHT:226:0.2;B:228:0.12;B:230:0.12;DOWN:232:0.2;RIGHT:233:0.2;RIGHT:234:0.2;DOWN:235:0.2;DOWN:236:0.2;RIGHT:237.5:0.2;RIGHT:238.5:0.2;B:242:0.12;B:243.5:0.12;DOWN:246:0.2;A:247.5:0.12;DOWN:251:0.2;DOWN:252:0.2;A:253.5:0.12;A:255:0.12;RIGHT:258:0.2;RIGHT:260:0.2;RIGHT:262:0.2"
+python3 -I vc/gen_ctm.py vc/local/movies/pokemon.ctm 0004000000172800 268 "$base;$speech;$name;$tail;$radio;$tour"
+```
+
+The debug build runs slower: on 2026-11-17 the screens showed about 18 s after their inputs, so take shots every 2 s from 190 s to 290 s. The Pokédex has no A–Z mode; START opens its search, RIGHT sets "by Name" and START runs it. The Bad Egg appears only after a box checksum error and isn't reached this way.
+
 ## Install on the 3DS
 
 1. Copy the `.cia` into the SD card's `cia/` folder.
