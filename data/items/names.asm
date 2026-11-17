@@ -210,7 +210,7 @@ endc
 	li "Fokusgurt"
 	li "Metronom"
 	li "Eisenkugel"
-	li "Lagging Tail"
+	li "Schwerschwf."
 	li "Fatumknoten"
 	li "Griffklaue"
 	li "Wechselhülle"

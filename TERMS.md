@@ -89,3 +89,4 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | HM | VM | HM item names ("VM01"), TM pocket | Kristall ("VM"); the user's choice (2026-11-17). The bold-H glyph (`<BOLDH>`, `$CB`) is a bold V in every font, so it also marks the hidden ability as "V" (Versteckte Fähigkeit) on the summary and in the Pokédex |
 | A–Z item and TM order | German dictionary order (DIN 5007-1): case-insensitive, Ä/Ö/Ü sorted as A/O/U, é as e | Bag "sort by name", TM pocket | The user's choice (2026-11-17): "Aprikokobox, Äther, Aufwecker"; "Turboball, Überreste, Upgrade" |
 | Map Card / Expn.Card | Karten-Modul / Zusatzset | Pokégear cards | Kristall (ROM 67:40a2, 1f:7349), re-cased |
+| Lagging Tail | Schwerschwf. | Item | Official abbreviation: the item's name from Diamond/Pearl to Omega Ruby/Alpha Sapphire (PokéWiki); the modern "Schwerschweif" is 13 characters |
