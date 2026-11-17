@@ -2307,27 +2307,26 @@ Text_AnEGGCantHoldAnItem::
 
 SECTION "_AskThrowAwayText", ROMX
 _AskThrowAwayText::
-	text "Throw away how"
-	line "many?"
+	text "Wie viele"
+	line "wegwerfen?"
 	done
 
 SECTION "_AskQuantityThrowAwayText", ROMX
 _AskQuantityThrowAwayText::
-	text "Throw away "
-	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text "Wegwerfen"
 	line ""
+	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
 	text "?"
 	done
 
 SECTION "_ThrewAwayText", ROMX
 _ThrewAwayText::
-	text "Threw away"
-	line ""
+	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
-	text "."
+	line "weggeworfen."
 	prompt
 
 SECTION "_OakThisIsntTheTimeText", ROMX
@@ -2681,9 +2680,9 @@ _CaughtAskNicknameText::
 
 SECTION "_PokecenterPCCantUseText", ROMX
 _PokecenterPCCantUseText::
-	text "Bzzzzt! You must"
-	line "have a #mon to"
-	cont "use this!"
+	text "Dies kann nur"
+	line "ein #mon"
+	cont "benutzen!"
 	prompt
 
 SECTION "_PlayersPCTurnOnText", ROMX
@@ -2694,106 +2693,113 @@ _PlayersPCTurnOnText::
 
 SECTION "_PlayersPCAskWhatDoText", ROMX
 _PlayersPCAskWhatDoText::
-	text "What do you want"
-	line "to do?"
+	text "Was möchtest du"
+	line "tun?"
 	done
 
 SECTION "_PlayersPCHowManyWithdrawText", ROMX
 _PlayersPCHowManyWithdrawText::
-	text "How many do you"
-	line "want to withdraw?"
+	text "Wie viele möchtest"
+	line "du mitnehmen?"
 	done
 
 SECTION "_PlayersPCWithdrewItemsText", ROMX
 _PlayersPCWithdrewItemsText::
-	text "Withdrew "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	line ""
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
-	text "."
+	line "wurde mitgenommen."
 	prompt
 
 SECTION "_PlayersPCNoRoomWithdrawText", ROMX
 _PlayersPCNoRoomWithdrawText::
-	text "There's no room"
-	line "for more items."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr tragen."
 	prompt
 
 SECTION "_PlayersPCNoItemsText", ROMX
 _PlayersPCNoItemsText::
-	text "No items here!"
+	text "Du trägst keine"
+	line "Items!"
 	prompt
 
 SECTION "_PlayersPCCantDepositItemText", ROMX
 _PlayersPCCantDepositItemText::
-	text "That item can't"
-	line "be deposited."
+	text "Dieses Item kannst"
+	line "du nicht ablegen."
 	prompt
 
 SECTION "_PlayersPCHowManyDepositText", ROMX
 _PlayersPCHowManyDepositText::
-	text "How many do you"
-	line "want to deposit?"
+	text "Wie viele möchtest"
+	line "du ablegen?"
 	done
 
 SECTION "_PlayersPCDepositItemsText", ROMX
 _PlayersPCDepositItemsText::
-	text "Deposited "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	line ""
+	text " x "
 	text_ram wStringBuffer2
-	text_plural
-	text "."
+	line "wurde abgelegt."
 	prompt
 
 SECTION "_PlayersPCNoRoomDepositText", ROMX
 _PlayersPCNoRoomDepositText::
-	text "There's no room to"
-	line "store items."
+	text "Es ist kein Platz"
+	line "für weitere Items."
 	prompt
 
 SECTION "_PokecenterPCTurnOnText", ROMX
 _PokecenterPCTurnOnText::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> schaltet"
+	line "den PC ein."
 	prompt
 
 SECTION "_PokecenterPCWhoseText", ROMX
 _PokecenterPCWhoseText::
-	text "Access whose PC?"
+	text "Zugriff auf"
+	line "wessen PC?"
 	done
 
 SECTION "_PokecenterBillsPCText", ROMX
 _PokecenterBillsPCText::
-	text "Bill's PC"
-	line "accessed."
+	text "Die Verbindung zu"
+	line "Bills PC wurde"
+	cont "hergestellt."
 
-	para "#mon Storage"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf das #mon-"
+	cont "Lagerungs-System."
 	prompt
 
 SECTION "_PokecenterPlayersPCText", ROMX
 _PokecenterPlayersPCText::
-	text "Accessed own PC."
+	text "Die Verbindung zu"
+	line "deinem PC wurde"
+	cont "hergestellt."
 
-	para "Item Storage"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf das Item-"
+	cont "Lagerungs-System."
 	prompt
 
 SECTION "_PokecenterOaksPCText", ROMX
 _PokecenterOaksPCText::
-	text "Prof.Oak's PC"
-	line "accessed."
+	text "Die Verbindung zu"
+	line "Prof. Eichs PC"
+	cont "wurde hergestellt."
 
-	para "#dex Rating"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf die #dex-"
+	cont "Bewertung."
 	prompt
 
 SECTION "_PokecenterPCOaksClosedText", ROMX
 _PokecenterPCOaksClosedText::
 	text "…"
-	line "Link closed…"
+	line "Verbindung"
+	cont "beendet…"
 	done
 
 SECTION "_OakPCText1", ROMX
@@ -2992,20 +2998,18 @@ _StartMenuContestEndText::
 
 SECTION "_ItemsTossOutHowManyText", ROMX
 _ItemsTossOutHowManyText::
-	text "Toss out how many"
+	text "Wie viele"
 	line ""
 	text_ram wStringBuffer2
-	text_plural
-	text "?"
+	cont "wegwerfen?"
 	done
 
 SECTION "_ItemsDiscardedText", ROMX
 _ItemsDiscardedText::
-	text "Discarded"
-	line ""
+	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text " x "
 	text_ram wStringBuffer1
-	text_plural
-	text "."
+	line "wurde weggeworfen."
 	prompt
 
 SECTION "_ItemsOakWarningText", ROMX
@@ -3771,25 +3775,25 @@ _PhoneJustTalkToThemText::
 
 SECTION "_PasswordAskResetText", ROMX
 _PasswordAskResetText::
-	text "Select Continue to"
-	line "set the time."
+	text "Wähle Weiter und"
+	line "stelle die Uhr."
 	prompt
 
 SECTION "_PasswordAskResetClockText", ROMX
 _PasswordAskResetClockText::
-	text "Reset the clock?"
+	text "Uhr neu stellen?"
 	done
 
 SECTION "_ClearAllSaveDataText", ROMX
 _ClearAllSaveDataText::
-	text "Clear all save"
-	line "data?"
+	text "Spielstand"
+	line "löschen?"
 	done
 
 SECTION "ResetInitialOptionsText", ROMX
 ResetInitialOptionsText::
-	text "Reset the initial"
-	line "game options?"
+	text "Die Spieloptionen"
+	line "zurücksetzen?"
 	done
 
 SECTION "_LearnedMoveText", ROMX

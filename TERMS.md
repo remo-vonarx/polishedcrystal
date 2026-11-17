@@ -47,4 +47,21 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Prof. Oak's Pokémon Talk | Prof. Eichs #mon-Talk | Radio | Kristall |
 | Pokémon Channel | #mon-Programm | Radio | Kristall |
 | Town Map | Karte | Player's room poster | Kristall |
+| Item | Item, Items | Everywhere | Kristall |
+| `<PLAYER>`'s PC | PC von `<PLAYER>` | Pokémon Center PC menu | Kristall; 14 tiles, so the PC menus end one column further right, as Kristall's |
+| Bill's PC | Bills PC | PC menu, everywhere | Kristall |
+| Prof. Oak's PC | Eichs PC (menu), Prof. Eichs PC (text) | Pokémon Center PC | Kristall |
+| Hall of Fame | Ruhmeshalle | PC menu, everywhere | Kristall |
+| Turn Off, Log Off | Ausloggen | PC menus | Kristall uses it for both |
+| Withdraw / Deposit / Toss Item | Item aufnehmen / Item ablegen / Item wegwerfen | Player's PC menu | Kristall; its texts say "mitnehmen" for withdrawing |
+| Mail Box | Briefkasten | Player's PC menu | Kristall |
+| Decoration | Dekoration | Player's PC menu | Kristall |
+| Pokémon Storage System | #mon-Lagerungs-System | Bill's PC, everywhere | Kristall, re-cased with its hyphen; the user's choice over "Lagerungssystem" |
+| Item Storage System | Item-Lagerungs-System | Player's PC | Kristall, as above |
+| Pokédex Rating System | #dex-Bewertung | Prof. Oak's PC | Kristall |
+| Cancel | Zurück | Item lists (every scrolling menu) | Kristall |
+| _N_ _items_ (a quantity) | _N_ x `<ITEM>` | PC and toss texts; every quantity text | Kristall: the number before the name, singular verb, no plural ending (`text_plural` dropped) |
+| Clear all save data? | Spielstand löschen? | Title screen (Up+B+Select) | Kristall |
+| Reset the clock? | Uhr neu stellen? | Title screen (Down+B) | Kristall |
+| Initial (game) options | Spieloptionen | Title screen (Left+B) | Own; the user's choice. The initial-options screen itself has no title |
 | Pokémon Journal | #mon-Journal | Player's room bookshelf; about 40 more places | The user's spelling, chosen over Kristall's "#MON JOURNAL" (6c:4528) |

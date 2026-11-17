@@ -495,7 +495,7 @@ ScrollingMenu_IsTerminator:
 	ret
 
 ScrollingMenu_CancelString:
-	db "Cancel@"
+	db "Zurück@"
 
 ScrollingMenu_CallFunctions1and2:
 	push hl
