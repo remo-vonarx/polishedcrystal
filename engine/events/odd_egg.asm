@@ -113,6 +113,6 @@ endr
 	ret
 
 .EggName:
-	rawchar "Egg@"
+	rawchar "Ei@"
 
 INCLUDE "data/events/odd_eggs.asm"

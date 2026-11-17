@@ -65,3 +65,14 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Reset the clock? | Uhr neu stellen? | Title screen (Down+B) | Kristall |
 | Initial (game) options | Spieloptionen | Title screen (Left+B) | Own; the user's choice. The initial-options screen itself has no title |
 | Pokémon Journal | #mon-Journal | Player's room bookshelf; about 40 more places | The user's spelling, chosen over Kristall's "#MON JOURNAL" (6c:4528) |
+| Pokémon names | PokeAPI `pokemon-species` (de), mixed case | `data/pokemon/names.asm`, everywhere | Official; Kristall's 251 equal the modern names apart from capitals. PokéWiki's list agrees on all 289. Upstream's cut "Dudunsparc" is "Dummimisel" in full |
+| Egg | Ei | Species table, every new egg's nickname (gift, Odd Egg, Wonder Trade, Day-Care) | Kristall |
+| Bad Egg | Schl. Ei | Nickname of a corrupted box Pokémon | The user's choice: the official "Schlechtes Ei" (PokéWiki) shortened to fit 10 characters; the PC's release check tests its "S" |
+| A–Z Pokédex order | German names in alphabetical order | Pokédex | A plain sort, as Kristall's own list (ROM 10:4c5e); hyphens and digits sort as in Polished's English list (Ho-Oh, Hoothoot; Porygon, Porygon-Z, Porygon2) |
+| Types | Normal, Kampf, Flug, Gift, Boden, Gestein, Käfer, Geist, Stahl, Feuer, Wasser, Pflanze, Elektro, Psycho, Eis, Drache, Unlicht, Fee | Everywhere | Official (PokeAPI, PokéWiki). Modern "Drache" over Kristall's "Drachen" (ADR 0002) |
+| Egg groups | Monster, Feld, Humanotyp, Mineral, Amorph, Ditto, Unbekannt; the type names for Bug, Flying, Fairy, Grass, Dragon; Faithful: Wasser 1–3 | Pokédex | Official (PokeAPI) |
+| Amphibian / Fish / Invertebrate | Amphibie / Fisch / Wirbellos | Pokédex (non-Faithful egg groups) | Own; the user's choices for Polished's renamed Water 1–3 |
+| Ability names | PokeAPI `ability` (de), ss for ß | Summary, Pokédex, battle | Official. PokéWiki's Gen 9 names where PokeAPI still has the old ones: Gleichmut (Own Tempo), Taumelschritt (Tangled Feet), Giftheilung (Poison Heal) |
+| Snow Warning | Hagelalarm | Ability | The user's choice: Polished's Snow Warning summons hail, so its Gen 4–8 name stays, over Gen 9's "Schneeschauer" (ADR 0002 exception) |
+| Nature names | PokeAPI `nature` (de), ss for ß ("Mässig") | Summary | Official |
+| Type labels (graphics) | NORMAL, KAMPF, FLUG, GIFT, BODEN, GESTEIN, KÄFER, GEIST, STAHL, FEUER, WASSER, PFLANZE, ELEKTRO, PSYCHO, EIS, DRACHE, UNLICHT, FEE | `gfx/battle/types.png`: summary, Pokédex, battle move info, party move menu | The user's choice: Crystal Legacy's German letters (`gfx/pokedex/types_light.png`), full names with the 7-letter ones squeezed, white on Polished's black pills; DRACHE is Legacy's DRACHEN without its N. KÄFER's Ä stays inside the pill (the user's choice): dots on the first letter row over a 4-row A, since Legacy's dots on the pill's edge showed as notches |
