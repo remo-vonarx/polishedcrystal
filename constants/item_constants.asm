@@ -685,11 +685,11 @@ DEF NUM_KEY_ITEMS EQU const_value - 1
 	const NAM_MYSTICTICKET
 	const NAM_SECRETPOTION
 	const NAM_GS_BALL
-	const NAM_POTENT_LURE
+	const NAM_HARSH_LURE
 	const NAM_BASEMENT_KEY
 	const NAM_CLEAR_BELL
-	const NAM_MALIGN_LURE
-	const NAM_HARSH_LURE
+	const NAM_POTENT_LURE
+	const NAM_LIFT_KEY
 	const NAM_COIN_CASE
 	const NAM_ORANGETICKET
 	const NAM_OVAL_CHARM
@@ -705,7 +705,7 @@ DEF NUM_KEY_ITEMS EQU const_value - 1
 	const NAM_CATCH_CHARM
 	const NAM_CARD_KEY
 	const NAM_TYPE_CHART
-	const NAM_LIFT_KEY
+	const NAM_MALIGN_LURE
 	const NAM_GO_GOGGLES
 	assert const_value - 1 == NUM_KEY_ITEMS
 
