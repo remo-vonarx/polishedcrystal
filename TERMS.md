@@ -104,7 +104,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Cake of Rage / Sweet Honey / Guard Stats | Wutkeks / Honig / Megablock | Items, normal build | The official names of the same items, as in Faithful |
 | Mulch / Mint Leaf / Odd Souvenir / Armor Suit | Mulch / Minzblatt / Kuriosum / Rüstung | Items (Polished's own) | Own. Mulch is German too, as in the official mulch family; Minzblatt pairs with Silberblatt and Goldblatt; Kuriosum matches Elm's "oddity" |
 | Wing Case / Type Chart / OrangeTicket | Federbox / Typentabelle / Orangeticket | Key items (Polished's own) | Own |
-| Harsh / Potent / Malign Lure | Herbparfüm / Kraftparfüm / Unheilparfüm | Key items, the Lure menu at Cherrygrove Bay (`engine/menus/lure_menu.asm`) | Own, after the official Lure item "Lockparfüm" |
+| Harsh / Potent / Malign Lure | Herbparfüm / Kraftparfüm / Unheilparfüm | Key items, the Lure menu at Cherrygrove Bay (`engine/menus/lure_menu.asm`) | Own, after the official Lure item "Lockparfüm" (Let's Go, Sword/Shield); "Herb-Lockparfüm" and the like are over the 12-character limit. The user kept "…parfüm" (2026-11-18) |
 | Medicine / TM / Berry Pocket | Medizin-Tasche / TM/VM-Tasche / Beeren-Tasche | "put … in the … Pocket" and "… is full" texts | Official HeartGold/SoulSilver (Medicine, Berry); Kristall's TM-Tasche plus the VMs. A pocket name prints on a text line of its own, so its limit is 14 |
 | Bag tabs (graphics) | Items · Med. · Bälle · TM/VM · Beeren · Bas. | `gfx/pack/pack_top.png` | The user's choices; Bas. is the only Key label that fits its 16 px |
 | Bag picture labels (graphics) | Items, Medizin, Bälle, TM/VM, Beeren, Basis | `gfx/pack/pack_{m,f,b,x}{0-5}.png`, all four bag styles | The user's choice |
