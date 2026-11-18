@@ -733,48 +733,42 @@ _UpdateLandmarkName:
 .loop
 	ld a, [hl]
 	cp '@'
-	jr z, .end
+	jr z, .one_line
 	cp '¯'
-	jr z, .line_break
+	jr z, .two_lines
 	cp '<WBR>'
-	jr z, .line_break
+	jr z, .two_lines
 	cp '<SHY>'
-	jr z, .soft_hyphen
+	jr z, .two_lines
 	inc hl
 	jr .loop
-.soft_hyphen
-; "-" and a line break: shift the rest of the name right by one byte
-	ld [hl], '-'
+
+.two_lines
+; the first line ends at the break, with a "-" for a soft hyphen;
+; the second line starts one tile further left, below the arrow
+	ld [hl], '@'
 	inc hl
-	push de
-	push hl
-.find_end
-	ld a, [hli]
-	cp '@'
-	jr nz, .find_end
-	ld d, h
-	ld e, l
-	dec hl
 	pop bc
-.shift
-	ld a, [hld]
-	ld [de], a
-	dec de
-	inc hl
-	ld a, l
-	cp c
-	jr nz, .shift_next
-	ld a, h
-	cp b
-	jr z, .shifted
-.shift_next
-	dec hl
-	jr .shift
-.shifted
+	push bc
+	push hl
+	push af
+	ld h, b
+	ld l, c
+	rst PlaceString
+	pop af
+	cp '<SHY>'
+	jr nz, .no_hyphen
+	ld a, '-'
+	ld [bc], a
+.no_hyphen
 	pop de
-.line_break
-	ld [hl], '<LNBRK>'
-.end
+	pop hl
+	ld bc, SCREEN_WIDTH - 1
+	add hl, bc
+	rst PlaceString
+	ret
+
+.one_line
 	pop hl
 	rst PlaceString
 	ret
@@ -1648,7 +1642,7 @@ TownMapBubble:
 	ret
 
 .Where:
-	db "Where?@"
+	db "Wo?@"
 
 .Name:
 ; We need the map location of the default flypoint
@@ -1671,7 +1665,7 @@ TownMapBubble:
 	ret
 
 .PokemonLeagueFlyName:
-	rawchar "Pokémon League@"
+	rawchar "Pokémon-Liga@"
 
 GetMapCursorCoordinates:
 	ld a, [wTownMapPlayerIconLandmark]
