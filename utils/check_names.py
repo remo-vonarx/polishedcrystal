@@ -12,6 +12,13 @@ Default run: checks the tables.
   same in both languages in that table (SAME_IN_GERMAN).
 - An entry wider than its table's limit is reported, counted in tiles as
   check_text_width.py counts them ("#" is 4 tiles, "#mon" 7, ...).
+- Place names (data/maps/landmarks.asm) are measured against every screen
+  that shows them (place_problems): at most 18 bytes, the break marks
+  included, for the 19-byte script buffers; on one line, with "¯" as a space
+  and <SHY> and <WBR> as nothing, at most 18 tiles (the sign), 17 for a place
+  with Johto grass Pokémon (Oak's radio show adds a "."), 16 for a flypoint
+  (Fly); on the Pokégear and Town Map at most two lines of 11 tiles, split at
+  "¯", <WBR> or <SHY>, which adds a "-".
 - A table whose German and English entry counts differ is reported, and so
   is a table that can't be found: a missing file, no entries, or a missing
   start or end label (as after an Upstream rename).
@@ -46,6 +53,11 @@ LOCAL_DB = re.compile(r'^\.\w+:\s+db "([^"]*)"')
 LI = re.compile(r'^\s*li "([^"]*)"')
 DB = re.compile(r'^\s+db "([^"]*)"')
 
+PLACE = 'place'
+BREAK_MARKS = ('<SHY>', '<WBR>')
+PLACE_BYTES = 18  # STRING_BUFFER_LENGTH - 1: scripts copy place names into 19-byte buffers
+POKEGEAR_LINE = 11
+
 # path, entry pattern, first label (None: file start), label that ends the
 # table (None: file end), limit in tiles, text category (None: tables only),
 # key into SAME_IN_GERMAN
@@ -64,6 +76,13 @@ TABLES = [
     ('data/items/wing_names.asm', LI, None, None, 12, 'item', 'wings'),
     # a pocket name is printed on a text line of its own ("… in / <POCKET>.")
     ('data/items/pocket_names.asm', DB, 'ItemPocketNames', None, 14, None, 'pockets'),
+    # the limit PLACE measures each name against its screens (place_problems)
+    ('data/maps/landmarks.asm', LABEL_RAWCHAR, None, None, PLACE, 'place', 'places'),
+    # Fly's prompt and its own short form of the Pokémon League Gate: 16 tiles
+    ('engine/pokegear/pokegear.asm', DB, 'Where', 'Name', 16, None, 'fly'),
+    ('engine/pokegear/pokegear.asm', RAWCHAR, 'PokemonLeagueFlyName', 'GetMapCursorCoordinates', 16, 'place', 'fly'),
+    # the summary's place of capture when it isn't a landmark: column 1 to 19
+    ('engine/pokemon/summary/orange_page.asm', DB, 'battle_factory', 'TN_PrintLV', 19, 'place', 'summary'),
 ]
 
 # official names that are the same in English and German, and placeholders,
@@ -96,6 +115,9 @@ SAME_IN_GERMAN = {
     'pokegear': {'#dex'},
     'wings': set(),
     'pockets': set(),
+    'places': {'?'} | {f'Route {n}' for n in range(1, 50)},
+    'fly': set(),
+    'summary': set(),
 }
 
 # English spellings in text that differ from the tables, by category
@@ -103,12 +125,13 @@ TEXT_ALIASES = {
     'mon': {},
     'move': {},
     'item': {},
+    'place': {},
 }
 
 SKIP_LINE = re.compile(r'^\s*(SECTION|INCLUDE|INCBIN)\b')
 STRING = re.compile(r'"([^"]*)"')
 TOKEN = re.compile(r'<[^>]*>')
-LABEL = re.compile(r'^\.?(\w+):')
+LABEL = re.compile(r'^\.?(\w+)(?::|\s*$)')
 
 
 LETTER = 'A-Za-zÄÖÜäöüé_'
@@ -172,10 +195,71 @@ def entries(text, pattern, first, stop):
     return found, labels
 
 
+def place_rooms(root):
+    """Each landmark label's one-line limit: 16 for a flypoint, 17 for a place
+    with Johto grass Pokémon (Oak's show), 18 for the rest."""
+    def lines(rel):
+        return (root / rel).read_text(encoding='utf-8').splitlines()
+    consts = []
+    for line in lines('constants/landmark_constants.asm'):
+        if line.startswith('DEF NUM_LANDMARKS'):
+            break
+        match = re.match(r'^\s*const (\w+)', line)
+        if match:
+            consts.append(match.group(1))
+    labels = [m.group(1) for line in lines('data/maps/landmarks.asm')
+              for m in [re.match(r'^\s*landmark\s+-?\d+,\s*-?\d+,\s*(\w+)', line)] if m]
+    if len(consts) != len(labels):
+        raise BaseError(f'{len(consts)} landmark constants, {len(labels)} landmarks')
+    label_of = dict(zip(consts, labels))
+    map_consts = [m.group(1) for line in lines('constants/map_constants.asm')
+                  for m in [re.match(r'^\s*map_const (\w+),', line)] if m]
+    map_landmarks = [m.group(1) for line in lines('data/maps/maps.asm')
+                     for m in [re.match(r'^\s*map \w+,\s*\w+,\s*\w+,\s*\w+,\s*(\w+),', line)] if m]
+    if len(map_consts) != len(map_landmarks):
+        raise BaseError(f'{len(map_consts)} map constants, {len(map_landmarks)} maps')
+    landmark_of_map = dict(zip(map_consts, map_landmarks))
+    rooms = {label: 18 for label in labels}
+    for line in lines('data/wild/johto_grass.asm'):
+        match = re.match(r'^\s*def_grass_wildmons (\w+)', line)
+        if match:
+            rooms[label_of[landmark_of_map[match.group(1)]]] = 17
+    for line in lines('data/maps/flypoints.asm'):
+        match = re.match(r'^\s*db ([A-Z]\w*),', line)
+        # Fly prints its own short form for the Pokémon League Gate (TownMapBubble)
+        if match and match.group(1) != 'POKEMON_LEAGUE':
+            rooms[label_of[match.group(1)]] = 16
+    return rooms
+
+
+def place_problems(name, one_line_limit):
+    """What keeps a place name from fitting its screens (see the docstring)."""
+    problems = []
+    nbytes = string_width(TOKEN.sub(lambda t: 'x' if t.group() in BREAK_MARKS else t.group(), name))
+    if nbytes > PLACE_BYTES:
+        problems.append(f'too many bytes ({nbytes} > {PLACE_BYTES})')
+    one_line = string_width(name.replace('<SHY>', '').replace('<WBR>', '').replace('¯', ' '))
+    if one_line > one_line_limit:
+        problems.append(f'too long on one line ({one_line} > {one_line_limit})')
+    parts = re.split(r'(¯|<WBR>|<SHY>)', name)
+    lines = [parts[0]]
+    for mark, text in zip(parts[1::2], parts[2::2]):
+        if mark == '<SHY>':
+            lines[-1] += '-'
+        lines.append(text)
+    if len(lines) > 2:
+        problems.append('more than two Pokégear lines')
+    for line in lines:
+        if string_width(line) > POKEGEAR_LINE:
+            problems.append(f'Pokégear line too long ({string_width(line)} > {POKEGEAR_LINE})')
+    return problems
+
+
 def check_tables(base):
     """Return (problems, {category: {English: German}})."""
     problems = []
     names = {}
+    rooms = None
     for path, pattern, first, stop, limit, category, same in TABLES:
         if not (ROOT / path).is_file():
             problems.append(f'{path}: file not found')
@@ -198,14 +282,20 @@ def check_tables(base):
         if len(german) != len(english):
             problems.append(f'{path}: {len(german)} German entries, {len(english)} English')
             continue
+        german_lines = (ROOT / path).read_text(encoding='utf-8').splitlines()
         for (number, de), en in zip(german, english):
-            tiles = string_width(de)
-            if tiles > limit:
-                problems.append(f'{path}:{number}: too long ({tiles} > {limit}): "{de}"')
+            if limit == PLACE:
+                rooms = rooms or place_rooms(ROOT)
+                label = LABEL.match(german_lines[number - 1]).group(1)
+                for problem in place_problems(de, rooms.get(label, 18)):
+                    problems.append(f'{path}:{number}: {problem}: "{de}"')
+            elif string_width(de) > limit:
+                problems.append(f'{path}:{number}: too long ({string_width(de)} > {limit}): "{de}"')
             if de == en and en not in SAME_IN_GERMAN[same]:
                 problems.append(f'{path}:{number}: still English: "{de}"')
             elif category and de != en:
-                names.setdefault(category, {})[en] = de
+                plain = lambda s: s.replace('<SHY>', '').replace('<WBR>', '').replace('¯', ' ')
+                names.setdefault(category, {})[plain(en)] = plain(de)
     for category, aliases in TEXT_ALIASES.items():
         names.setdefault(category, {}).update(aliases)
     return problems, names
@@ -247,7 +337,9 @@ def main():
     try:
         problems, names = check_tables(find_base(args.base))
         if args.text is not None:
-            problems = [p for p in problems if ': still English: ' not in p and ': too long ' not in p]
+            name_problems = (': still English: ', ': too long ', ': too many bytes ', ': Pokégear line too long ',
+                             ': more than two Pokégear lines')
+            problems = [p for p in problems if not any(kind in p for kind in name_problems)]
             problems += check_text(args.text or DEFAULT_PATHS, names)
     except BaseError as error:
         print(f'check_names.py: {error}', file=sys.stderr)
