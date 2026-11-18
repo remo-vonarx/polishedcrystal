@@ -745,7 +745,7 @@ _UpdateLandmarkName:
 
 .two_lines
 ; the first line ends at the break, with a "-" for a soft hyphen;
-; the second line starts one tile further left, below the arrow
+; the second line starts below the first
 	ld [hl], '@'
 	inc hl
 	pop bc
@@ -763,7 +763,7 @@ _UpdateLandmarkName:
 .no_hyphen
 	pop de
 	pop hl
-	ld bc, SCREEN_WIDTH - 1
+	ld bc, SCREEN_WIDTH
 	add hl, bc
 	rst PlaceString
 	ret

@@ -43,7 +43,7 @@ Every place name is copied by `GetLandmarkName` (`engine/overworld/landmarks.asm
 
 | Screen | Code | Room |
 |---|---|---|
-| Pokégear map card, Town Map | `_UpdateLandmarkName`, `engine/pokegear/pokegear.asm:716` | 2 lines in a 2 × 12 box at 8,0 or 0,0: 11 tiles after the arrow, then 12 starting below it (the user's choice, 2026-11-18, for "Fels-" / "schlundhöhle"); `¯` breaks the line |
+| Pokégear map card, Town Map | `_UpdateLandmarkName`, `engine/pokegear/pokegear.asm:716` | 2 lines of 11 tiles after an arrow (a 2 × 12 box at 8,0 or 0,0), the second aligned with the first as in English and Kristall (the user kept this on 2026-11-18 over starting the second line below the arrow); `¯` breaks the line |
 | Fly | `TownMapBubble`, `engine/pokegear/pokegear.asm:1574` | one line, 16 tiles (2,1 up to the arrow at 18,1); only the 33 places in `data/maps/flypoints.asm`. The Pokémon League Gate prints Fly's own `.PokemonLeagueFlyName`, "Pokémon League" (line 1640), because its landmark name doesn't fit |
 | Sign when entering an area | `engine/events/map_name_sign.asm` | one line, 18 tiles (`POPUP_MAP_NAME_SIZE`), centred; `¯` is a space |
 | Summary, place of capture | `engine/pokemon/summary/orange_page.asm:71` | one line from column 1, 19 tiles |
@@ -53,7 +53,7 @@ Every place name is copied by `GetLandmarkName` (`engine/overworld/landmarks.asm
 So each name:
 - is at most 18 bytes, the break marks included, so it fits a script buffer with its `@`;
 - shows at most 18 tiles on one line (17 for a place with wild Pokémon, 16 for a flypoint), counting `¯` as a space and the break marks as nothing;
-- splits into at most 2 Pokégear lines, the first of at most 11 tiles and the second of at most 12, counting the "-" a soft hyphen adds.
+- splits into at most 2 Pokégear lines of at most 11 tiles, counting the "-" a soft hyphen adds.
 
 Kristall's spellings are reused verbatim except for the casing (Project decisions), ss for ß, and Kristall's break codes, which map to Polished's: its line-break `¯` to `¯`, its soft hyphen (`$1E`) to the new soft hyphen, its break after a hyphen (`%`) to the new silent break.
 
@@ -116,7 +116,7 @@ In question dialogs, as CLAUDE.md says, each with its candidates, the plan's pic
 ### Name checker
 
 - A new table in `utils/check_names.py`'s `TABLES`: `data/maps/landmarks.asm`, label and `rawchar "…@"` entries, paired with Upstream by position.
-- A place measure in place of the plain length limit: at most 18 bytes; at most 18 tiles on one line, or 17 for a place with wild Pokémon; at most two Pokégear lines of at most 11 and 12 tiles, with the soft hyphen's "-".
+- A place measure in place of the plain length limit: at most 18 bytes; at most 18 tiles on one line, or 17 for a place with wild Pokémon; at most two Pokégear lines of at most 11 tiles, with the soft hyphen's "-".
 - The flypoints' 16-tile limit, and Fly's `.PokemonLeagueFlyName` as a table of its own.
 - `SAME_IN_GERMAN['places']`: the routes ("Route 29") and "?".
 - `--text` knows the place names, matching the English with `¯` read as a space ("New Bark Town").

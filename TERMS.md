@@ -127,7 +127,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Event #mon (summary) | Pokémon Event (`#mon Event`) | Place of capture | Official (HeartGold/SoulSilver, X/Y); the Modern "Pokémon-Veranstaltung" (BDSP, Scarlet/Violet) is 21. The user's choice |
 | Cerulean Cape | Kap bei Azuria | Place names | Kristall's sign "KAP bei AZURIA CITY" without "City": 19, and Fly has 16. The user's choice |
 | Celadon University | Prismania-Uni | Place names | Anime name "Prismania-Universität" (21) with one word shortened. The user's choice |
-| Cliff Cave | Felsschlundhöhle (`Fels<SHY>schlundhöhle`) | Place names | Official (HeartGold/SoulSilver). Its second Pokégear line needs 12 tiles: the user chose the engine change that starts the second line below the arrow |
+| Cliff Cave | Felsschlundhöhle (`Felsschlund<WBR>höhle`) | Place names | Official (HeartGold/SoulSilver). Neither hyphen split fits the Pokégear's 11 tiles, so it breaks there without a hyphen ("Felsschlund" / "höhle"); the user kept the English layout |
 | Violet Outskirts | Viola-Stadtrand | Place names | Own; the user's choice |
 | Cinnabar Volcano | Zinnobervulkan | Place names | Own, written like Kristall's "Zinnoberinsel"; the user's choice |
 | Lucky Island | Glücksinsel | Place names | Own; the user's choice |

@@ -17,8 +17,8 @@ Default run: checks the tables.
   included, for the 19-byte script buffers; on one line, with "¯" as a space
   and <SHY> and <WBR> as nothing, at most 18 tiles (the sign), 17 for a place
   with Johto grass Pokémon (Oak's radio show adds a "."), 16 for a flypoint
-  (Fly); on the Pokégear and Town Map at most two lines, split at "¯", <WBR>
-  or <SHY>, which adds a "-": 11 tiles after the arrow, then 12 below it.
+  (Fly); on the Pokégear and Town Map at most two lines of 11 tiles, split at
+  "¯", <WBR> or <SHY>, which adds a "-".
 - A table whose German and English entry counts differ is reported, and so
   is a table that can't be found: a missing file, no entries, or a missing
   start or end label (as after an Upstream rename).
@@ -56,7 +56,7 @@ DB = re.compile(r'^\s+db "([^"]*)"')
 PLACE = 'place'
 BREAK_MARKS = ('<SHY>', '<WBR>')
 PLACE_BYTES = 18  # STRING_BUFFER_LENGTH - 1: scripts copy place names into 19-byte buffers
-POKEGEAR_LINES = (11, 12)  # the first line starts after the arrow, the second below it
+POKEGEAR_LINE = 11
 
 # path, entry pattern, first label (None: file start), label that ends the
 # table (None: file end), limit in tiles, text category (None: tables only),
@@ -249,9 +249,9 @@ def place_problems(name, one_line_limit):
         lines.append(text)
     if len(lines) > 2:
         problems.append('more than two Pokégear lines')
-    for line, limit in zip(lines, POKEGEAR_LINES):
-        if string_width(line) > limit:
-            problems.append(f'Pokégear line too long ({string_width(line)} > {limit})')
+    for line in lines:
+        if string_width(line) > POKEGEAR_LINE:
+            problems.append(f'Pokégear line too long ({string_width(line)} > {POKEGEAR_LINE})')
     return problems
 
 
