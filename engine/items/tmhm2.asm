@@ -257,7 +257,7 @@ TMHMPocket_GetCurrentLineCoord:
 	ret
 
 TMHM_String_Cancel:
-	db "Cancel@"
+	db "Zurück@"
 
 TMHM_GetCurrentPocketPosition:
 	ld a, [wTMHMPocketScrollPosition]
@@ -579,7 +579,7 @@ _GetTMHMName::
 	db "@"
 
 .HMText:
-	db "HM"
+	db "VM"
 .HMTextEnd:
 	db "@"
 

@@ -1,8 +1,8 @@
 SpecialItemNames::
 	list_start
 	li "#dex"
-	li "Map Card"
-	li "Radio Card"
-	li "Expn.Card"
-	li "#gear"
+	li "Karten-Modul"
+	li "Radio-Modul"
+	li "Zusatzset"
+	li "#Com"
 	assert_list_length NUM_SPECIAL_ITEMS
