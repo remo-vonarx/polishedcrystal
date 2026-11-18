@@ -14,10 +14,16 @@
 	charmap "<PLURAL>", $09
 DEF NUM_TEXT_COMMANDS EQU $0a
 
-	; unused: $0a - $4c
+	; unused: $0a - $4a
 	; (Low values can be used for additional text commands; high values can be
 	; used for additional n-grams; or existing n-grams can be shifted down to
 	; make room for additional special characters.)
+
+; Place-name break marks: nothing on one line (PlaceString, the map sign),
+; a line break on the Pokégear and Town Map (_UpdateLandmarkName)
+DEF BREAK_MARKS_START EQU $4b
+	charmap "<SHY>",    $4b ; soft hyphen: "-" and a line break
+	charmap "<WBR>",    $4c ; silent break: a line break
 
 	; n-grams: $4d - $51 (defined below)
 

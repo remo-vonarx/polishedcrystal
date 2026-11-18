@@ -736,8 +736,42 @@ _UpdateLandmarkName:
 	jr z, .end
 	cp '¯'
 	jr z, .line_break
+	cp '<WBR>'
+	jr z, .line_break
+	cp '<SHY>'
+	jr z, .soft_hyphen
 	inc hl
 	jr .loop
+.soft_hyphen
+; "-" and a line break: shift the rest of the name right by one byte
+	ld [hl], '-'
+	inc hl
+	push de
+	push hl
+.find_end
+	ld a, [hli]
+	cp '@'
+	jr nz, .find_end
+	ld d, h
+	ld e, l
+	dec hl
+	pop bc
+.shift
+	ld a, [hld]
+	ld [de], a
+	dec de
+	inc hl
+	ld a, l
+	cp c
+	jr nz, .shift_next
+	ld a, h
+	cp b
+	jr z, .shifted
+.shift_next
+	dec hl
+	jr .shift
+.shifted
+	pop de
 .line_break
 	ld [hl], '<LNBRK>'
 .end
