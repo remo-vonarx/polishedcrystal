@@ -11,12 +11,12 @@ ItemPocketNames:
 .Item:
 	db "Item-Tasche@"
 .Medicine:
-	db "Med.Pocket@"
+	db "Medizin-Tasche@"
 .Ball:
 	db "Ball-Tasche@"
 .TM:
-	db "TM Pocket@"
+	db "TM/VM-Tasche@"
 .Berry:
-	db "Berry Pocket@"
+	db "Beeren-Tasche@"
 .Key:
 	db "Basis-Items@"

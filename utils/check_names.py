@@ -62,7 +62,8 @@ TABLES = [
     ('data/items/exp_candy_names.asm', LI, None, None, 12, 'item', 'exp candy'),
     ('data/items/special_names.asm', LI, None, None, 12, 'item', 'pokegear'),
     ('data/items/wing_names.asm', LI, None, None, 12, 'item', 'wings'),
-    ('data/items/pocket_names.asm', DB, 'ItemPocketNames', None, 12, None, 'pockets'),
+    # a pocket name is printed on a text line of its own ("… in / <POCKET>.")
+    ('data/items/pocket_names.asm', DB, 'ItemPocketNames', None, 14, None, 'pockets'),
 ]
 
 # official names that are the same in English and German, and placeholders,
@@ -88,7 +89,7 @@ SAME_IN_GERMAN = {
     'abilities': {'---', 'Chlorophyll', 'Download', 'Filter', 'Hydration', 'Insomnia'},
     'natures': {'---', 'Mild'},
     'moves': {'Blizzard', 'Explosion', 'Octazooka', 'Tackle', 'Teleport', 'Whirlpool'},
-    'items': {'Lucky Punch', 'Magnet', 'Nugget', 'Protein', 'Upgrade'},
+    'items': {'Lucky Punch', 'Magnet', 'Mulch', 'Nugget', 'Protein', 'Upgrade'},
     'key items': set(),
     'apricorns': set(),
     'exp candy': set(),

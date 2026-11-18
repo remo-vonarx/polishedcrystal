@@ -44,7 +44,14 @@
 - Own names: Fresh Snack, Fury Strikes, Healing Light; Cake of Rage, Sweet Honey, Guard Stats, Mulch, Mint Leaf, Odd Souvenir, Armor Suit; Harsh Lure, Potent Lure, Malign Lure, Type Chart, Wing Case, OrangeTicket.
 - Itemfinder (Detektor or Itemradar); Map Card and Expn.Card if no official name turns up; the TM, Medicine and Berry pocket names; the six Bag tab labels; the Type Chart's labels.
 
-**Answers:** (filled in as the user answers)
+**Answers** (2026-11-18, dialogs; all in `TERMS.md`):
+- Rule: Kristall's name wins when the Modern name is over its limit (ADR 0002 amendment): Giftblick, Hackattack, Schattenglas, Schutzband, Drachenhaut, Türöffner.
+- Further ADR 0002 exceptions: the X items as the Gen 4–6 set (X-Angriff, X-Abwehr, X-Tempo, X-Spezial, X-SpezialVer, X-Treffer, Angriffplus, Megablock); Detektor; Seegesang; Liftöffner.
+- Shortened: Fäh.-Tausch, Fäh.-Kapsel, Fäh.Pflaster, Zenkopfstoss, Marmoria-Kr., Schwä.schutz, Offens.weste, Schutzpolst., Plat.schuhe, Fehl.schutz, Bizarroserv., Neutralschm., Gez. Würfel, Kronkorken (without "Silber").
+- Own: Frischsnack, Furienhieb, Heillicht; Wutkeks, Honig, Megablock (official names of the same items); Mulch, Minzblatt, Kuriosum, Rüstung, Linkkabel; Federbox, Typentabelle, Orangeticket; Herbparfüm, Kraftparfüm, Unheilparfüm (also the Lure menu, `engine/menus/lure_menu.asm`).
+- Pockets: Medizin-Tasche, TM/VM-Tasche, Beeren-Tasche; the checker's pocket limit is 14 (the name prints on a line of its own).
+- Bag tabs: Items · Med. · Bälle · TM/VM · Beeren · Bas. Bag picture labels (24 PNGs, added to Task 7): Items, Medizin, Bälle, TM/VM, Beeren, Basis.
+- Type Chart: rows in full, with the pills widened 4 px (a layout change the user approved); heads NRML KMPF FLUG GIFT BODN GEST KÄFR GEIS STHL FEUR WASR PFL ELEK PSYC EIS DRCH UNLI FEE; corner ANGR / VER.
 
 ## Review Focus
 

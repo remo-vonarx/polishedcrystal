@@ -47,7 +47,7 @@ Settled choices for this hack. If a topic below isn't decided yet and a task tou
 - Spelling: `du`, `dein`, `dich`, `dir` in lowercase as in Kristall; capital only at a sentence start. ß is written "ss" (see Style).
 - "Pokémon": the `#mon` token, which prints "Pokémon".
 - Player address: the player picks one of four pictures, boys and girls. Kristall's own lines stay as they are; new text addresses the player neutrally. Propose every such wording and let me confirm it.
-- Names: a Modern name wins over a Gen 2 name (`docs/adr/0002-modern-names-over-gen-2-names.md`). Characters from later games get their official German name from that game. A name over its Name limit gets one Abbreviation, reused everywhere.
+- Names: a Modern name wins over a Gen 2 name (`docs/adr/0002-modern-names-over-gen-2-names.md`). Characters from later games get their official German name from that game. A name over its Name limit takes Kristall's name where Kristall has one (ADR 0002 amendment), otherwise one Abbreviation, reused everywhere.
 - One-off NPC names without an official source: propose a German name and flag it.
 - Faithful-only text (inside `if DEF(FAITHFUL)` blocks) gets translated too.
 - Debug-only text (inside `if DEF(DEBUG)` blocks) stays English.

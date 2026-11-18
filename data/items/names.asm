@@ -74,9 +74,9 @@ ItemNames::
 if DEF(FAITHFUL)
 	li "Wutkeks"
 else
-	li "Cake of Rage"
+	li "Wutkeks"
 endc
-	li "PewterCrunch"
+	li "Marmoria-Kr."
 
 	li "Energiestaub"
 	li "Kraftwurzel"
@@ -137,24 +137,24 @@ endc
 if DEF(FAITHFUL)
 	li "Honig"
 else
-	li "Sweet Honey"
+	li "Honig"
 endc
 
 	li "X-Angriff"
-	li "X Defend"
-	li "X-Initiative"
-	li "X-Sp.-Ang."
-	li "X-Sp.-Vert."
-	li "X Accuracy"
-	li "Dire Hit"
+	li "X-Abwehr"
+	li "X-Tempo"
+	li "X-Spezial"
+	li "X-SpezialVer"
+	li "X-Treffer"
+	li "Angriffplus"
 if DEF(FAITHFUL)
 	li "Megablock"
 else
-	li "Guard Stats"
+	li "Megablock"
 endc
 
-	li "Ability Cap"
-	li "AbilityPatch"
+	li "Fäh.-Kapsel"
+	li "Fäh.Pflaster"
 
 	li "Blattstein"
 	li "Feuerstein"
@@ -171,7 +171,7 @@ endc
 
 	li "Seidenschal"
 	li "Schwarzgurt"
-	li "Sharp Beak"
+	li "Hackattack"
 	li "Giftstich"
 	li "Pudersand"
 	li "Granitstein"
@@ -185,7 +185,7 @@ endc
 	li "Krummlöffel"
 	li "Ewiges Eis"
 	li "Drachenzahn"
-	li "BlackGlasses"
+	li "Schattenglas"
 	li "Feendaune"
 
 	li "Berserk-Gen"
@@ -193,14 +193,14 @@ endc
 	li "Flinkklaue"
 	li "King-Stein"
 	li "Münzamulett"
-	li "Cleanse Tag"
+	li "Schutzband"
 	li "Rauchball"
 	li "Fokusband"
 	li "Glücks-Ei"
 	li "Überreste"
 
 	li "Sanftglocke"
-	li "Shell Bell"
+	li "Seegesang"
 
 	li "Muskelband"
 	li "Schlaubrille"
@@ -223,23 +223,23 @@ endc
 	li "Klammerband"
 	li "Fluchtknopf"
 
-	li "Weak Policy"
-	li "Assault Vest"
+	li "Schwä.schutz"
+	li "Offens.weste"
 	li "Schutzbrille"
 
-	li "Protect Pads"
+	li "Schutzpolst."
 
 	li "Halsspray"
 	li "Fluchttasche"
-	li "Heavy Boots"
-	li "BlundrPolicy"
-	li "Room Service"
+	li "Plat.schuhe"
+	li "Fehl.schutz"
+	li "Bizarroserv."
 
-	li "Clear Amulet"
+	li "Neutralschm."
 	li "Kopierkraut"
 	li "Boxhandschuh"
 	li "Tarnumhang"
-	li "Loaded Dice"
+	li "Gez. Würfel"
 
 	li "Kugelblitz"
 	li "Lauchstange"
@@ -247,7 +247,7 @@ endc
 	li "Lucky Punch"
 	li "Metallstaub"
 	li "Flottstaub"
-	li "Armor Suit"
+	li "Rüstung"
 
 	li "Scope-Linse"
 	li "Grosslinse"
@@ -278,7 +278,7 @@ endc
 	li "Machtband"
 	li "Machtkette"
 
-	li "Dragon Scale"
+	li "Drachenhaut"
 	li "Upgrade"
 	li "Dubiosdisc"
 	li "Schützer"
@@ -287,13 +287,13 @@ endc
 	li "Scharfzahn"
 	li "Scharfklaue"
 	li "Ovaler Stein"
-	li "Odd Souvenir"
-	li "Linking Cord"
+	li "Kuriosum"
+	li "Linkkabel"
 
 	li "Silberblatt"
 	li "Goldblatt"
-	li "Mint Leaf"
-	li "Bottle Cap"
+	li "Minzblatt"
+	li "Kronkorken"
 
 	li "Nugget"
 	li "Riesennugget"
