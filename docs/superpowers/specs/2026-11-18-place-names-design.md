@@ -14,7 +14,7 @@ Signs, the Pokégear, Fly, the summary, the radio, the phone and much of the dia
 |---|---|---|
 | Kristall, re-cased | 99 | 98 by label, plus Underground Path (Kristall's "UNTERGRUND" under another label) |
 | … where a Modern name differs | 5 of the 99 | Bell Tower: Glockenturm (Kristall: Zinnturm); Pokémon Mansion: Pokémon-Villa (PKMN-Haus); Diglett's Cave: Digda-Höhle (Digdas Höhle); Indigo Plateau: Indigo-Plateau (PokéWiki; Kristall writes no hyphen); Fast Ship: M.S. Aqua (Schnellboot). PokeAPI's "Radio-Turm" is an error: PokéWiki and Kristall write "Radioturm" |
-| Later games, found | 8 | Glockenklangpfad, Route 47, Route 48, Felsklippentor, Felsschlundhöhle, Nabelfels, Fern-Eiland (PokeAPI: "Ferneiland"), Sinjoh-Ruinen |
+| Later games, found | 8 | Glockenklangpfad, Route 47, Route 48, Felsklippentor, Felsschlundhöhle, Nabelfels, Ferneiland (the research found "Fern-Eiland" is FireRed/LeafGreen's Outcast Island; PokéWiki, PKHeX and PokeAPI agree on "Ferneiland"), Sinjoh-Ruinen |
 | Later games, not yet looked up | 25 | Pokémon League Gate (PokeAPI's "Tor zur Pokémon Liga" is a Kalos gate, location 686, not this one), Violet Outskirts, House of Souls, Celadon University, Cinnabar Volcano, Cerulean Cape, Lucky Island, Yellow Forest, Quiet Cave, Cherrygrove Bay, Goldenrod Harbor, Magnet Tunnel, Route 32/34/35 Coast, Stormy Beach, Murky Swamp, Rugged Road, Snowtop Mountain, Scary Cave, Dim Cave, Uraga Channel, Route 49, Mystri Stage, Pokémon Lab. Each without a game name is Original content: an own name |
 | The second movie's places | 12 | Shamouti Island, Beautiful Beach, Rocky Beach, Noisy Forest, Shrine Ruins, Shamouti Tunnel, Warm Beach, Shamouti Coast, Fire Island, Ice Island, Lightning Island, Valencia Island. PokéWiki has Anime names for the main ones: Shamouti, Insel des Feuers, Insel des Eises, Insel der Blitze |
 | "?" | 1 | `SpecialMapName`, unchanged |
@@ -32,7 +32,7 @@ Eleven of Kristall's names break inside a word on the Pokégear map: eight with 
   - The crash screen's "Old Battle Tower" (`engine/movie/bsod.asm`): the menus PR.
   - Trainer classes and names: part 4.
 - **Anti-goals**
-  - A name silently cut, or a word split without a hyphen.
+  - A name silently cut, or a word split without a hyphen. One exception, the user's choice (2026-11-18): Cliff Cave's official "Felsschlundhöhle" fits no hyphen split of 11 tiles, so the Pokégear and Town Map break it as "Felsschlund" / "höhle"; every other screen shows it whole.
   - A soft hyphen or a stray space showing on a one-line screen ("Einheits- tunnel").
   - A place with two names, such as "Teak City" on the sign and "Teak" on the map.
   - A name that overflows a 19-byte script buffer: no visible fault until a phone call or script prints it.
@@ -96,7 +96,7 @@ Source priority as in CLAUDE.md, with one addition the user made on 2026-11-18: 
 | Kristall's 99 | Kristall's ROM, re-cased, ss for ß, with its breaks | Kristall's own Abbreviation "Radioturm Lav." and its "Untergrund" stay unless a later game has the place |
 | Bell Tower, Pokémon Mansion, Diglett's Cave, Indigo Plateau | Glockenturm, Pokémon-Villa, Digda-Höhle, Indigo-Plateau | Modern names (ADR 0002), spelling and hyphens included; Polished's English uses the same name in both eras |
 | Fast Ship | asked | Polished keeps the Gen 2 English "Fast Ship" where HeartGold/SoulSilver say "S.S. Aqua", as with the Itemfinder: Kristall's "Schnellboot" or the Modern "M.S. Aqua" |
-| The 9 found in later games | PokeAPI, checked on PokéWiki | PokéWiki wins where they differ ("Fern-Eiland"), and the PR says so |
+| The 9 found in later games | PokeAPI, checked on PokéWiki | PokéWiki wins where they differ, and the PR says so (Faraway Island is "Ferneiland") |
 | The 25 not yet looked up | PokéWiki first; else an own name | Each own name asked |
 | Fly's "Pokémon League" | the League's Official name, as PokéWiki writes it ("Pokémon-Liga") | Fits Fly's 16 tiles; agrees with the gate's name in wording and spelling |
 | Fly's "Where?" (`engine/pokegear/pokegear.asm:1617`) | Kristall's Fly map, read from its ROM | The only other English on the Fly screen |

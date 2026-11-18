@@ -238,6 +238,7 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 	newcharmap compressing, no_ngrams
 
 DEF NGRAMS_START EQU $4d
+	assert BREAK_MARKS_START + 2 == NGRAMS_START, "the place-name break marks must sit right below the n-grams"
 	charmap "#",        $4d
 	charmap "#mon",     $4e
 DEF NGRAMS_VAR_START EQU $4f
