@@ -30,7 +30,7 @@ _TypeChart:
 
 	ld hl, TypeChartBG1GFX
 	ld de, vTiles2
-	lb bc, BANK(TypeChartBG1GFX), 30
+	lb bc, BANK(TypeChartBG1GFX), 43
 	call DecompressRequest2bpp
 
 	ld hl, TypeChartOBGFX
@@ -135,10 +135,10 @@ ENDM
 	oamdata  82,  16, $0a, 1 ; Normal x0 Ghost, Fighting x0 Ghost
 	oamdata  90,  16, $0c, 2 ; Normal x0.5 Steel
 	; left Ghost+Steel
-	oamdata   8,  66, $0e, 1
-	oamdata  16,  66, $10, 1
-	oamdata  24,  66, $12, 1
-	oamdata  32,  66, $14, 1
+	oamdata   4,  66, $0e, 1
+	oamdata  12,  66, $10, 1
+	oamdata  20,  66, $12, 1
+	oamdata  28,  66, $14, 1
 	; ineffective
 	oamdata  90,  31, $16, 1 ; Poison x0 Steel
 	oamdata  48,  38, $16, 1 ; Ground x0 Flying
