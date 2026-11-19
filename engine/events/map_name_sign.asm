@@ -257,6 +257,10 @@ LoadMapNameSignGFX:
 	ld a, [hli]
 	cp '@'
 	jr z, .got_length
+	cp '<SHY>'
+	jr z, .length_loop
+	cp '<WBR>'
+	jr z, .length_loop
 	inc c
 	jr .length_loop
 .got_length
@@ -299,6 +303,11 @@ LoadMapNameSignGFX:
 	ret
 
 .continue
+	; place-name break marks print nothing on the sign
+	cp '<SHY>'
+	jr z, .loop
+	cp '<WBR>'
+	jr z, .loop
 	; save position in landmark name
 	push hl
 	; spaces are unique

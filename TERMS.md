@@ -109,3 +109,39 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Bag tabs (graphics) | Items · Med. · Bälle · TM/VM · Beeren · Bas. | `gfx/pack/pack_top.png` | The user's choices; Bas. is the only Key label that fits its 16 px |
 | Bag picture labels (graphics) | Items, Medizin, Bälle, TM/VM, Beeren, Basis | `gfx/pack/pack_{m,f,b,x}{0-5}.png`, all four bag styles | The user's choice |
 | Type Chart (graphics) | Rows: the full type names, in pills widened by 4 px. Column heads: NRML KMPF FLUG GIFT BODN GEST KÄFR GEIS STHL FEUR WASR PFL ELEK PSYC EIS DRCH UNLI FEE. Corner: ANGR / VER | `gfx/type_chart/` | The user's choices. No official German type abbreviations exist (Kristall has no Type Chart); GEST and PFL echo "Gest." (XD) and "Pfl." (Kristall's Miracle Seed). ANGR / VER are Kristall's stat labels (ROM 14:4ba7, 0d:64a6) |
+| Place names | Kristall's names, re-cased: "Neuborkia", "Rosalia City", "See des Zorns" | `data/maps/landmarks.asm`: signs, Pokégear, Town Map, Fly, summary, scripts | Kristall (its map's place names, read from the ROM). Mixed case, "des"/"der" lowercase inside a name; ss for ß ("Siegesstrasse"). Kristall's breaks stay where they were: its line break as `¯`, its soft hyphen as `<SHY>` ("Einheits<SHY>tunnel"), its break after a hyphen as `<WBR>` ("Flegmon-<WBR>Brunnen") |
+| Bell Tower / Pokémon Mansion / Diglett's Cave / Indigo Plateau | Glockenturm / Pokémon-Villa / Digda-Höhle / Indigo-Plateau | Place names | Modern names (ADR 0002) over Kristall's Zinnturm / PKMN-Haus / Digdas Höhle / Indigo Plateau: Glockenturm from HeartGold/SoulSilver, the other three from Let's Go |
+| Underground Path | Unterführung | Place names | Modern name (Let's Go, PokéWiki) over Kristall's map label "Untergrund" and its signs' "Tunnelpfad" |
+| Bellchime Trail / Cliff Edge Gate / Navel Rock / Faraway Island / Sinjoh Ruins | Glockenklangpfad / Felsklippentor / Nabelfels / Ferneiland / Sinjoh-Ruinen | Place names | Official (HeartGold/SoulSilver, Emerald; PokéWiki). Faraway Island is "Ferneiland"; "Fern-Eiland" is Outcast Island in FireRed/LeafGreen |
+| House of Souls | Ruhestätte | Place names | Kristall's sign for the same house; the Modern "Haus der Erinnerungen" (HeartGold/SoulSilver) is 21 characters (ADR 0002 amendment) |
+| Mystri Stage | Trysteriumaltar | Place names | Official term from HeartGold/SoulSilver (Cynthia at the Sinjoh Ruins, PokéWiki); the game has no map name for it |
+| Pokémon Lab | Pokémon-Labor | Place names | Official (FireRed/LeafGreen, Let's Go) |
+| Cerulean Cave | Azuria-Höhle (`Azuria-<WBR>Höhle`) | Place names | Kristall, with a break Kristall's map didn't need |
+| Shamouti Island / Fire / Ice / Lightning Island / Valencia Island | Shamouti / Insel des Feuers / Insel des Eises / Insel der Blitze / Valencia Insel | Place names | Anime names (Pokémon: The Movie 2000, the Orange Islands; PokéWiki). The islands: PokéWiki's section titles, the user's choice over its intro's "Feuer-, Eis- und Donnerinsel" |
+| Fast Ship | M.S. Aqua | Place names | Modern name (HeartGold/SoulSilver); the user's choice over Kristall's "Schnellboot" |
+| Silver Cave | Silberhöhle | Place names | Kristall; the user's choice (ADR 0002 exception) over HeartGold/SoulSilver's "Silberberg": Polished keeps the Gen 2 English |
+| Pokémon League Gate | PKMN-Liga-Empfang (`<PK><MN>-Liga-<WBR>Empfang`) | Place names | Kristall's Route 26 sign ("#MON LIGA EMPFANG") with Kristall's Abbreviation PKMN; "Pokémon-Liga-Empfang" is 20. The user's choice |
+| Pokémon League (Fly) | Pokémon-Liga | Fly's own name for the gate (`engine/pokegear/pokegear.asm`) | Official (PokéWiki: "früher Pokémon Liga") |
+| Where? (Fly) | Wo? | Fly map | Kristall (its Fly map, 24:5c15) |
+| Battle Factory (summary) | Kampffabrik | Place of capture | Official (Emerald, Platinum, HeartGold/SoulSilver) |
+| Event #mon (summary) | Pokémon Event (`#mon Event`) | Place of capture | Official (HeartGold/SoulSilver, X/Y); the Modern "Pokémon-Veranstaltung" (BDSP, Scarlet/Violet) is 21. The user's choice |
+| Cerulean Cape | Kap bei Azuria | Place names | Kristall's sign "KAP bei AZURIA CITY" without "City": 19, and Fly has 16. The user's choice |
+| Celadon University | Prismania-Uni | Place names | Anime name "Prismania-Universität" (21) with one word shortened. The user's choice |
+| Cliff Cave | Felsschlundhöhle (`Felsschlund<WBR>höhle`) | Place names | Official (HeartGold/SoulSilver). Neither hyphen split fits the Pokégear's 11 tiles, so it breaks there without a hyphen ("Felsschlund" / "höhle"); the user kept the English layout |
+| Violet Outskirts | Viola-Stadtrand | Place names | Own; the user's choice |
+| Cinnabar Volcano | Zinnobervulkan | Place names | Own, written like Kristall's "Zinnoberinsel"; the user's choice |
+| Lucky Island | Glücksinsel | Place names | Own; the user's choice |
+| Yellow Forest | Gelber Wald | Place names | Own, a nod to the Gelbe Edition; the user's choice |
+| Quiet Cave | Stille Höhle | Place names | Own; the user's choice |
+| Cherrygrove Bay / Goldenrod Harbor | Rosalia-Bucht / Dukatia-Hafen | Place names | Own, Kristall's city compounds ("Azuria-Höhle"); the user's choice |
+| Magnet Tunnel | Magnettunnel | Place names | Own; the user's choice |
+| Route 32 / 34 / 35 Coast | Route 32 Küste / Route 34 Küste / Route 35 Küste | Place names | Own; the user's wording |
+| Stormy Beach / Rocky Beach / Beautiful Beach / Warm Beach | Sturmstrand / Felsstrand / Prachtstrand / Warmer Strand | Place names | Own; the user's choice |
+| Murky Swamp | Düstersumpf | Place names | Own; the user's choice |
+| Rugged Road | Steiniger Steig | Place names | Own, keeps the alliteration; the user's choice |
+| Snowtop Mountain | Schneegipfel | Place names | Own; the user's choice |
+| Scary Cave / Dim Cave | Gruselhöhle / Dämmerhöhle | Place names | Own; Dämmerhöhle stays apart from Kristall's "Dunkelhöhle". The user's choice |
+| Uraga Channel | Uraga-Kanal | Place names | Own, the real channel's German name; the user's choice |
+| Noisy Forest | Summender Wald | Place names | Own, from the forest's buzzing bugs; the user's choice |
+| Shrine Ruins | Tempelruinen | Place names | Own; no game uses it on its own (Legends: Arceus has "Elysien-Tempelruinen"). The user's choice |
+| Shamouti Tunnel / Shamouti Coast | Shamouti-Tunnel / Shamouti-Küste | Place names | Own; the user's choice |
