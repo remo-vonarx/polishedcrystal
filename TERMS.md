@@ -145,3 +145,95 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Noisy Forest | Summender Wald | Place names | Own, from the forest's buzzing bugs; the user's choice |
 | Shrine Ruins | Tempelruinen | Place names | Own; no game uses it on its own (Legends: Arceus has "Elysien-Tempelruinen"). The user's choice |
 | Shamouti Tunnel / Shamouti Coast | Shamouti-Tunnel / Shamouti-Küste | Place names | Own; the user's choice |
+| Trainer classes (list) | — | `data/trainers/class_names.asm` | Modern name (PokéWiki: the latest game with that English class), feminine for a female entry; Kristall's name where the Modern one is over 12 bytes or 14 tiles; own names asked. `#mon` (Pokémon) and `<PK><MN>` (PKMN) as in the charmap |
+| PKMN Trainer | Trainer (cal, jacky, red, riley, buck, kukui) / Trainerin (carrie, euna, leaf, lyra1, lyra2, cheryl, marley, mira, anabel, yellow) | Trainer classes | Trainer: Kristall ("TRAINER"; "Pokémon-Trainer" is 15 tiles); Trainerin: the user's choice. Jacky, the non-binary player picture, gets "Trainer": the user's choice |
+| Leader | Leiter (falkner, bugsy, morty, chuck, pryce, brock, lt_surge, blaine, blue, blanche, spark_t) / Leiterin (whitney, jasmine, clair, misty, erika, janine, sabrina, candela) | Trainer classes | Leiter: Kristall ("LEITER"; "Arenaleiter Hartwig" would be 19); Leiterin: the user's choice ("Arenaleiterin" is 13). Pokémon GO's Blanche and Spark get "Leiter", Candela "Leiterin", following the English; Blanche (no official gender) the user's choice |
+| Elite Four | Top Vier | Trainer classes | Modern name (Karmesin/Purpur) |
+| Champion | Champ | Trainer classes | Modern name (Karmesin/Purpur) |
+| Strange | Seltsamer | Trainer classes | Own; the user's choice: the rival's first battle reads "Seltsamer Junge" (name "Junge"). HeartGold/SoulSilver show it as "Passant Junge" |
+| Rival | Rivale | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Youngster | Knirps | Trainer classes | Modern name (Karmesin/Purpur); Kristall "TEENAGER" |
+| Bug Catcher | Käfersammler | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Camper | Camper | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Picnicker | Picknickerin | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "PICKNICKER" |
+| Twins | Zwillinge | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "ZWIL." |
+| Fisherman | Angler | Trainer classes | Modern name (Angler: Strahlender Diamant/Leuchtende Perle) |
+| Bird Keeper | Vogel-Profi | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "VOGELFÄNGER" |
+| Hiker | Wanderer | Trainer classes | Modern name (Wanderer: Strahlender Diamant/Leuchtende Perle) |
+| Rocket | Rocket | Trainer classes | Kristall ("ROCKET") |
+| Pokéfan | Pokéfan | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Officer | Polizist (officerm) / Polizistin (officerf) | Trainer classes | Modern name (Legenden: Z-A); Kristall "WÄCHTER" |
+| Nurse | Pflegerin | Trainer classes | Modern name (Schwarz 2/Weiß 2) |
+| PokéManiac | Pokémaniac | Trainer classes | Modern name (Karmesin/Purpur) |
+| Cosplayer | Cosplayerin | Trainer classes | Own; the user's choice |
+| Super Nerd | Tüftler | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!); Kristall "STREBER" |
+| Lass | Göre | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Beauty | Schönheit | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Bug Maniac | Käfermaniac | Trainer classes | Modern name (Omega Rubin/Alpha Saphir) |
+| Ruin Maniac | Ruinenmaniac | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Firebreather | Feuerspucker | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Juggler | Jongleur | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Schoolboy | Schüler | Trainer classes | Modern name (Schwert/Schild); Kristall "SCHULJUNGE" |
+| Schoolgirl | Schülerin | Trainer classes | Modern name (Schwert/Schild) |
+| Psychic | Seher | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "PSYCHO" |
+| Hex Maniac | Hexe | Trainer classes | Modern name (Legenden: Z-A) |
+| Sage | Weiser | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Medium | Medium | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Kimono Girl | Kimono-Girl | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Elder | Weisester | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Sr.& Jr. | Sr.& Jr. | Trainer classes | As in English; the user's choice. Omega Rubin/Alpha Saphir's "Senior&Junior" is 13; pair names fit up to 9 |
+| Couple | Junges Glück | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Gentleman | Gentleman | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Rich Boy | Schnösel | Trainer classes | Modern name (Legenden: Z-A) |
+| Lady | Lady | Trainer classes | Modern name (Legenden: Z-A) |
+| Breeder | PKMN-Züchterin | Trainer classes | Modern name "Pokémon-Züchterin" (17 tiles) shortened with PKMN; the user's choice. Pairs leave 5 tiles for a name |
+| Baker | Bäckerin | Trainer classes | Modern name (Schwarz 2/Weiß 2) |
+| Cowgirl | Cowgirl | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Sailor | Matrose | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Swimmer | Schwimmer (swimmerm, marlon) / Schwimmerin (swimmerf) | Trainer classes | Schwimmer: Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "SCHWIMMER♂"; Schwimmerin: Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "SCHWIMMER♀" |
+| Burglar | Dieb | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Agent | Agent | Trainer classes | Own; the user's choice |
+| Scientist | Forscher | Trainer classes | Modern name (Forscher: Karmesin/Purpur) |
+| Boarder | Snowboarder | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Skier | Skifahrerin | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "SKIFAHRER" |
+| Black Belt | Schwarzgurt | Trainer classes | Modern name (Karmesin/Purpur) |
+| Battle Girl | Kämpferin | Trainer classes | Modern name (Legenden: Z-A) |
+| Dragon Tamer | Drachenprofi | Trainer classes | Modern name (Karmesin/Purpur) |
+| Engineer | Elektriker | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Teacher | Lehrerin (teacher_f) / Lehrer (teacher_m) | Trainer classes | Lehrerin: Modern name (Ultrasonne/Ultramond), Kristall "LEHRERIN"; Lehrer: own, the user's choice |
+| Guitarist | Gitarrist (guitaristm) / Gitarristin (guitaristf) | Trainer classes | Gitarrist: Modern name (Gitarrist: Strahlender Diamant/Leuchtende Perle); Gitarristin: Modern name (Gitarristin: Schwarz 2/Weiß 2) |
+| Biker | Rowdy | Trainer classes | Modern name (Schwarz 2/Weiß 2); Kristall "BIKER" |
+| Roughneck | Raufbold | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Tamer | Dompteur | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Artist | Künstler | Trainer classes | Modern name (Künstler: Strahlender Diamant/Leuchtende Perle) |
+| Aroma Lady | Aromalady | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Soldier | Soldat | Trainer classes | Own; the user's choice |
+| Waiter | Servierer | Trainer classes | Modern name (Legenden: Z-A) |
+| Waitress | Serviererin | Trainer classes | Modern name (Legenden: Z-A) |
+| Sightseer | Urlauber (sightseerm) / Urlauberin (sightseerf) | Trainer classes | Urlauber: Modern name (Legenden: Z-A); Urlauberin: Modern name (Legenden: Z-A) |
+| Sightseers | Urlauber | Trainer classes | Own; the user's choice (pairs; Ultrasonne/Ultramond's nearest class is "Touri-Paar") |
+| Ace Trainer | Ass-Trainer | Trainer classes | Modern name (Legenden: Z-A) |
+| Ace Duo | Duo | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Veteran | Veteran (veteranm) / Veteranin (veteranf) | Trainer classes | Veteran: Modern name (Legenden: Z-A); Veteranin: Modern name (Legenden: Z-A) |
+| Executive | Vorstand | Trainer classes | HeartGold/SoulSilver ("Vorstand" for the English "Executive"); Let's Go's "Rocket-Vorstand" is 15 tiles. Kristall had no class (class "ROCKET", name "VORSTAND") |
+| Boss | Boss | Trainer classes | FireRed/LeafGreen (class "Boss", as in Polished's English); HeartGold/SoulSilver and Let's Go have "Rocket Boss"/"Rocket-Boss" for "Team Rocket Boss" |
+| Pokémon Prof. | Pokémon Prof. | Trainer classes | Kristall ("#MON PROF."); "Pokémon-Professor" is 17 tiles |
+| Mystery Man | Unbekannter | Trainer classes | Modern name (HeartGold/SoulSilver); Kristall "MYSTIKER" |
+| Karate King | Schwarzgurt | Trainer classes | His battle class in Kristall's data and HeartGold/SoulSilver; the user's choice over "Karate-Mstr." (Kristall's title "KARATE-MEISTER" is 14) |
+| TowerTycoon | Kampfkoloss | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| FactryHead | Fabrikleiter | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Jessie | Jessie | Trainer classes | As in English; the battle line reads "Jessie & James" (name "& James") |
+| Ex-Elite | Ex-Top Vier | Trainer classes | Own, from "Top Vier"; the user's choice (Lorelei, Agatha) |
+| Rock Hound | Steinsammler | Trainer classes | Own; the user's choice (Steven/Troy) |
+| Researcher | Forscherin | Trainer classes | Own; the user's choice (Cynthia) |
+| Valet | Kammerdiener | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Trainer | Trainerin | Trainer classes | Flannery/Flavia, English "Trainer": as the female PKMN Trainers; the user's choice |
+| Fighter | Kämpferin | Trainer classes | Own, as Battle Girl's official "Kämpferin"; the user's choice (Maylene/Hilda) |
+| Designer | Designerin | Trainer classes | Own; the user's choice (Valerie) |
+| Vocalist | Sänger | Trainer classes | Own; the user's choice (Piers/Nezz) |
+| Businessman | Angestellter | Trainer classes | Official class word (Office Worker); the user's choice (Larry/Aoki; Scarlet/Violet fight him as Arenaleiter and Top Vier) |
+| Surfer | Surfer | Trainer classes | Modern name (Ultrasonne/Ultramond) |
+| Ex-Leader | Ex-Leiter | Trainer classes | Own, from "Leiter"; the user's choice (Walker) |
+| Student | Student | Trainer classes | Own; the user's choice (Imakuni; the official "Akademieschüler" is 16 tiles) |
+| Collector | PKMN-Sammler | Trainer classes | Modern name "Pokémon-Sammler" (15 tiles) shortened with PKMN; the user's choice |
+| Shrine | Priesterin | Trainer classes | Own; the user's choice: "Priesterin Rei" (name "Rei" for "Maiden Rei") |
