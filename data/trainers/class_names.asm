@@ -35,8 +35,8 @@ TrainerClassNames::
 	li "Knirps"           ; YOUNGSTER
 	li "Käfersammler"     ; BUG_CATCHER
 	li "Camper"           ; CAMPER
-	li "Picknickerin"     ; PICNICKER
-	li "Zwillinge"        ; TWINS
+	li "Picknicker"       ; PICNICKER
+	li "Zwill."           ; TWINS
 	li "Angler"           ; FISHER
 	li "Vogel-Profi"      ; BIRD_KEEPER
 	li "Wanderer"         ; HIKER
@@ -62,10 +62,10 @@ TrainerClassNames::
 	li "Hexe"             ; HEX_MANIAC
 	li "Weiser"           ; SAGE
 	li "Medium"           ; MEDIUM
-	li "Kimono-Girl"      ; KIMONO_GIRL
+	li "Kimonogirl"       ; KIMONO_GIRL
 	li "Weisester"        ; ELDER
 	li "Sr.& Jr."         ; SR_AND_JR
-	li "Junges Glück"     ; COUPLE
+	li "Pärchen"          ; COUPLE
 	li "Gentleman"        ; GENTLEMAN
 	li "Schnösel"         ; RICH_BOY
 	li "Lady"             ; LADY
@@ -80,7 +80,7 @@ TrainerClassNames::
 	li "Forscher"         ; SCIENTIST
 	li "Forscher"         ; ROCKET_SCIENTIST
 	li "Snowboarder"      ; BOARDER
-	li "Skifahrerin"      ; SKIER
+	li "Skifahrer"        ; SKIER
 	li "Schwarzgurt"      ; BLACKBELT_T
 	li "Kämpferin"        ; BATTLE_GIRL
 	li "Drachenprofi"     ; DRAGON_TAMER
@@ -116,10 +116,10 @@ TrainerClassNames::
 	li "Unbekannter"      ; MYSTICALMAN
 	li "Schwarzgurt"      ; KARATE_KING
 	li "Kampfkoloss"      ; TOWERTYCOON
-	li "Fabrikleiter"     ; FACTORYHEAD
+	li "Fabrikltr."       ; FACTORYHEAD
 	li "Jessie"           ; JESSIE_JAMES
-	li "Ex-Top Vier"      ; LORELEI
-	li "Ex-Top Vier"      ; AGATHA
+	li "Ex-Top 4"         ; LORELEI
+	li "Ex-Top 4"         ; AGATHA
 	li "Steinsammler"     ; STEVEN
 	li "Forscherin"       ; CYNTHIA
 	li "Seher"            ; INVER
@@ -129,7 +129,7 @@ TrainerClassNames::
 	li "Trainerin"        ; MARLEY
 	li "Trainerin"        ; MIRA
 	li "Trainerin"        ; ANABEL
-	li "Kammerdiener"     ; DARACH
+	li "Diener"           ; DARACH
 	li "Lady"             ; CAITLIN
 	li "Leiterin"         ; CANDELA
 	li "Leiter"           ; BLANCHE
@@ -146,7 +146,7 @@ TrainerClassNames::
 	li "Trainerin"        ; YELLOW
 	li "Ex-Leiter"        ; WALKER
 	li "Student"          ; IMAKUNI
-	li "<PK><MN>-Sammler" ; LAWRENCE
+	li "Sammler"          ; LAWRENCE
 	li "Priesterin"       ; REI
 	li "Feuerspucker"     ; FIREBREATHER_ASHES
 	assert_list_length NUM_TRAINER_CLASSES

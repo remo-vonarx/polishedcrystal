@@ -155,8 +155,8 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Youngster | Knirps | Trainer classes | Modern name (Karmesin/Purpur); Kristall "TEENAGER" |
 | Bug Catcher | Käfersammler | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Camper | Camper | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
-| Picnicker | Picknickerin | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "PICKNICKER" |
-| Twins | Zwillinge | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "ZWIL." |
+| Picnicker | Picknicker | Trainer classes | Kristall and HeartGold/SoulSilver ("PICKNICKER"); the Modern "Picknickerin" (12) leaves 5 tiles for a name. The user's choice |
+| Twins | Zwill. | Trainer classes | Own abbreviation of the Modern "Zwillinge" (9), whose pair names reach 10; Kristall writes "ZWIL.". The user's choice |
 | Fisherman | Angler | Trainer classes | Modern name (Angler: Strahlender Diamant/Leuchtende Perle) |
 | Bird Keeper | Vogel-Profi | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "VOGELFÄNGER" |
 | Hiker | Wanderer | Trainer classes | Modern name (Wanderer: Strahlender Diamant/Leuchtende Perle) |
@@ -179,10 +179,10 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Hex Maniac | Hexe | Trainer classes | Modern name (Legenden: Z-A) |
 | Sage | Weiser | Trainer classes | Modern name (HeartGold/SoulSilver) |
 | Medium | Medium | Trainer classes | Modern name (HeartGold/SoulSilver) |
-| Kimono Girl | Kimono-Girl | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Kimono Girl | Kimonogirl | Trainer classes | Kristall and Modern "Kimono-Girl" without the hyphen; "Kimono-Girl Satsuki" would be 19. The user's choice |
 | Elder | Weisester | Trainer classes | Modern name (HeartGold/SoulSilver) |
 | Sr.& Jr. | Sr.& Jr. | Trainer classes | As in English; the user's choice. Omega Rubin/Alpha Saphir's "Senior&Junior" is 13; pair names fit up to 9 |
-| Couple | Junges Glück | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Couple | Pärchen | Trainer classes | Own; the Modern "Junges Glück" (12) leaves 5 tiles, and the pair names are 9–10. The user's choice |
 | Gentleman | Gentleman | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Rich Boy | Schnösel | Trainer classes | Modern name (Legenden: Z-A) |
 | Lady | Lady | Trainer classes | Modern name (Legenden: Z-A) |
@@ -195,7 +195,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Agent | Agent | Trainer classes | Own; the user's choice |
 | Scientist | Forscher | Trainer classes | Modern name (Forscher: Karmesin/Purpur) |
 | Boarder | Snowboarder | Trainer classes | Modern name (HeartGold/SoulSilver) |
-| Skier | Skifahrerin | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "SKIFAHRER" |
+| Skier | Skifahrer | Trainer classes | Kristall ("SKIFAHRER", for its female Skiers too); "Skifahrerin Gabriela" would be 20. The user's choice |
 | Black Belt | Schwarzgurt | Trainer classes | Modern name (Karmesin/Purpur) |
 | Battle Girl | Kämpferin | Trainer classes | Modern name (Legenden: Z-A) |
 | Dragon Tamer | Drachenprofi | Trainer classes | Modern name (Karmesin/Purpur) |
@@ -221,12 +221,12 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Mystery Man | Unbekannter | Trainer classes | Modern name (HeartGold/SoulSilver); Kristall "MYSTIKER" |
 | Karate King | Schwarzgurt | Trainer classes | His battle class in Kristall's data and HeartGold/SoulSilver; the user's choice over "Karate-Mstr." (Kristall's title "KARATE-MEISTER" is 14) |
 | TowerTycoon | Kampfkoloss | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
-| FactryHead | Fabrikleiter | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| FactryHead | Fabrikltr. | Trainer classes | Modern name "Fabrikleiter" (Platinum, HeartGold/SoulSilver) abbreviated like Upstream's "FactryHead"; "Fabrikleiter Distmar" would be 20. The user's choice |
 | Jessie | Jessie | Trainer classes | As in English; the battle line reads "Jessie & James" (name "& James") |
-| Ex-Elite | Ex-Top Vier | Trainer classes | Own, from "Top Vier"; the user's choice (Lorelei, Agatha) |
+| Ex-Elite | Ex-Top 4 | Trainer classes | Own, from "Top Vier"; "Ex-Top Vier Lorelei" would be 19. The user's choice (Lorelei, Agatha) |
 | Rock Hound | Steinsammler | Trainer classes | Own; the user's choice (Steven/Troy) |
 | Researcher | Forscherin | Trainer classes | Own; the user's choice (Cynthia) |
-| Valet | Kammerdiener | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Valet | Diener | Trainer classes | Modern name "Kammerdiener" (Platinum, HeartGold/SoulSilver) without "Kammer"; "Kammerdiener Perenus" would be 20. The user's choice |
 | Trainer | Trainerin | Trainer classes | Flannery/Flavia, English "Trainer": as the female PKMN Trainers; the user's choice |
 | Fighter | Kämpferin | Trainer classes | Own, as Battle Girl's official "Kämpferin"; the user's choice (Maylene/Hilda) |
 | Designer | Designerin | Trainer classes | Own; the user's choice (Valerie) |
@@ -235,5 +235,77 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Surfer | Surfer | Trainer classes | Modern name (Ultrasonne/Ultramond) |
 | Ex-Leader | Ex-Leiter | Trainer classes | Own, from "Leiter"; the user's choice (Walker) |
 | Student | Student | Trainer classes | Own; the user's choice (Imakuni; the official "Akademieschüler" is 16 tiles) |
-| Collector | PKMN-Sammler | Trainer classes | Modern name "Pokémon-Sammler" (15 tiles) shortened with PKMN; the user's choice |
+| Collector | Sammler | Trainer classes | Modern name "Pokémon-Sammler" (15 tiles) without "Pokémon-"; "PKMN-Sammler Lawrence" would be 19. The user's choice |
 | Shrine | Priesterin | Trainer classes | Own; the user's choice: "Priesterin Rei" (name "Rei" for "Maiden Rei") |
+| Trainer names (list) | — | `data/trainers/parties.asm` | The trainer's German name in the latest game that has the trainer (PokéWiki, matched by place and team), else Kristall's by class and English name, else an own name. Where HeartGold/SoulSilver renamed a trainer in English too and Polished keeps Crystal's English name, Kristall's German stands (Norman Andre, Gilbert Cyrille, Jed Theodor, Miller Pelle). Trainers Polished renamed keep their official German name (the user's choice): Lo & Zoe Tia & Tara, Valencia Jutta, Reilly Hannes, Mayu Gerda, Dennett Oskar. Pair names write " & " when they fit 10 tiles, else "&" ("Jana&Nana") |
+| Kristall trainers renamed in HeartGold/SoulSilver | Mikey Dietrich, Gordon Tommy, Lloyd Waldemar, Erin Nanette, Henry Selim, Bret Melvin, Kenny Hilmar, Jim Dejan, Linda Svantje, Laura Adriana, Julia Vivian, Otis Fitz, Tucker Ottmar, Duncan Pit, Shirley Hiltrude, Harris Francois, Kenji Timon; Kimono Girls Naoko Umeko, Sayo Sakura, Zuki Tamao, Kuni Komomo, Miki Satsuki | Trainer names | Modern name over Kristall's (ADR 0002): same trainer, same English name, HeartGold/SoulSilver's German. Kristall's dialogue lines that name them change too |
+| Official names dropped for the battle line | French, Salma (Ace Trainers), Piper (Picnicker), Viola (Swimmer), Kinsey (Bird Keeper), Kenta, Stacey (Bug Maniacs) | Trainer names | Their HeartGold/SoulSilver or Let's Go names (Stanislaus, Valentina, Josefine, Charlotte, Benedikt, Benjamin, Hinrich) don't fit next to their class; the class stays and they get own names. Bonita and Boone, female in Polished but male in HeartGold/SoulSilver (Heiner, Guillaume), get own female names. Polished's own Scientist Oskar gets an own name, since Dennett is "Oskar". The user's choices |
+| Cal | Hermann | Trainer names | Kristall (Trainer House opponent "HERMANN", Crystal's Cal) |
+| Falkner | Falk | Trainer names | Kristall |
+| Bugsy | Kai | Trainer names | Kristall |
+| Whitney | Bianka | Trainer names | Kristall |
+| Morty | Jens | Trainer names | Kristall |
+| Chuck | Hartwig | Trainer names | Kristall |
+| Jasmine | Jasmin | Trainer names | Kristall |
+| Pryce | Norbert | Trainer names | Kristall |
+| Clair | Sandra | Trainer names | Kristall |
+| Will | Willi | Trainer names | Kristall |
+| Koga | Koga | Trainer names | Kristall |
+| Bruno | Bruno | Trainer names | Kristall |
+| Karen | Melanie | Trainer names | Kristall |
+| Lance | Siegfried | Trainer names | Kristall |
+| Brock | Rocko | Trainer names | Kristall |
+| Misty | Misty | Trainer names | Kristall |
+| Lt.Surge | Major Bob | Trainer names | Kristall |
+| Erika | Erika | Trainer names | Kristall |
+| Janine | Janina | Trainer names | Kristall |
+| Sabrina | Sabrina | Trainer names | Kristall |
+| Blaine | Pyro | Trainer names | Kristall |
+| Blue | Blau | Trainer names | Kristall |
+| Red | Rot | Trainer names | Kristall |
+| Green | Grün | Trainer names | Let's Go's Green, like Rot and Blau; the user's choice over FireRed/LeafGreen's "Leaf" |
+| boy | Junge | Trainer names | The user's choice: the rival's first battle reads "Seltsamer Junge" |
+| Lyra | Lyra | Trainer names | Modern name (HeartGold/SoulSilver) |
+| Grunt | Rüpel | Trainer names | Kristall ("RÜPEL") |
+| Looker | LeBelle | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Proton | Lance | Trainer names | HeartGold/SoulSilver; not Lance the Champion, who is "Siegfried" |
+| Petrel | Lambda | Trainer names | Modern name (HeartGold/SoulSilver) |
+| Archer | Atlas | Trainer names | Kristall's data and HeartGold/SoulSilver (Kristall's battles read "VORSTAND") |
+| Ariana | Athena | Trainer names | Kristall's data and HeartGold/SoulSilver (Kristall's battles read "VORSTAND") |
+| Giovanni | Giovanni | Trainer names | Kristall |
+| Oak | Eich | Trainer names | Modern name (Kristall and later games) |
+| Elm | Lind | Trainer names | Modern name (Kristall and HeartGold/SoulSilver) |
+| Ivy | Ivy | Trainer names | Anime name (Professor Felina Ivy) |
+| Eusine | Eusin | Trainer names | Kristall |
+| Kiyo | Leif | Trainer names | Kristall (Crystal's Black Belt Kiyo, class "SCHWARZGURT") |
+| Palmer | Viktor | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Thorton | Distmar | Trainer names | Modern name (Platinum) |
+| & James | & James | Trainer names | Anime name; the battle line reads "Jessie & James" |
+| Lorelei | Lorelei | Trainer names | Modern name (FireRed/LeafGreen) |
+| Agatha | Agathe | Trainer names | Modern name (FireRed/LeafGreen) |
+| Steven | Troy | Trainer names | Modern name (Ruby/Sapphire/Emerald) |
+| Cynthia | Cynthia | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Cheryl | Raissa | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Riley | Urs | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Buck | Avenaro | Trainer names | Modern name (Platinum) |
+| Marley | Charlie | Trainer names | Modern name (Platinum) |
+| Mira | Orisa | Trainer names | Modern name (Platinum) |
+| Anabel | Anabel | Trainer names | Modern name (Emerald) |
+| Darach | Perenus | Trainer names | Modern name (Platinum) |
+| Caitlin | Kattlea | Trainer names | Modern name (Platinum, Black/White) |
+| Candela | Candela | Trainer names | Modern name (Pokémon GO) |
+| Blanche | Blanche | Trainer names | Modern name (Pokémon GO) |
+| Spark | Spark | Trainer names | Modern name (Pokémon GO) |
+| Flannery | Flavia | Trainer names | Modern name (Ruby/Sapphire/Emerald) |
+| Maylene | Hilda | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Marlon | Benson | Trainer names | Modern name (Black 2/White 2) |
+| Valerie | Valerie | Trainer names | Modern name (X/Y) |
+| Kukui | Kukui | Trainer names | Modern name (Sun/Moon) |
+| Piers | Nezz | Trainer names | Modern name (Sword/Shield) |
+| Larry | Aoki | Trainer names | Modern name (Scarlet/Violet) |
+| Bill | Bill | Trainer names | Kristall |
+| Yellow | Gelb | Trainer names | Manga name (Pocket Monsters SPECIAL); the user's choice |
+| Walker | Luc | Trainer names | Manga name (Pocket Monsters SPECIAL, Falkner's father); the user's choice |
+| Imakuni | Imakuni | Trainer names | As in English: Polished drops the "?" of the Trading Card Game's "Imakuni?" |
+| Lawrence | Lawrence | Trainer names | Anime name (Lawrence III., Movie 2000) |
+| Maiden Rei | Rei | Trainer names | The user's choice: "Priesterin Rei" |
