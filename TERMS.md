@@ -205,7 +205,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Biker | Rowdy | Trainer classes | Modern name (Schwarz 2/Weiß 2); Kristall "BIKER" |
 | Roughneck | Raufbold | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Tamer | Dompteur | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
-| Artist | Künstler | Trainer classes | Modern name (Künstler: Strahlender Diamant/Leuchtende Perle) |
+| Artist | Künstlerin | Trainer classes | Modern name (Legenden: Z-A), feminine: Polished's four Artists are women (Reina, Alina, Marlene, Rin) |
 | Aroma Lady | Aromalady | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Soldier | Soldat | Trainer classes | Own; the user's choice |
 | Waiter | Servierer | Trainer classes | Modern name (Legenden: Z-A) |
@@ -239,7 +239,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Shrine | Priesterin | Trainer classes | Own; the user's choice: "Priesterin Rei" (name "Rei" for "Maiden Rei") |
 | Trainer names (list) | — | `data/trainers/parties.asm` | The trainer's German name in the latest game that has the trainer (PokéWiki, matched by place and team), else Kristall's by class and English name, else an own name. Where HeartGold/SoulSilver renamed a trainer in English too and Polished keeps Crystal's English name, Kristall's German stands (Norman Andre, Gilbert Cyrille, Jed Theodor, Miller Pelle). Trainers Polished renamed keep their official German name (the user's choice): Lo & Zoe Tia & Tara, Valencia Jutta, Reilly Hannes, Mayu Gerda, Dennett Oskar. Pair names write " & " when they fit 10 tiles, else "&" ("Jana&Nana") |
 | Kristall trainers renamed in HeartGold/SoulSilver | Mikey Dietrich, Gordon Tommy, Lloyd Waldemar, Erin Nanette, Henry Selim, Bret Melvin, Kenny Hilmar, Jim Dejan, Linda Svantje, Laura Adriana, Julia Vivian, Otis Fitz, Tucker Ottmar, Duncan Pit, Shirley Hiltrude, Harris Francois, Kenji Timon; Kimono Girls Naoko Umeko, Sayo Sakura, Zuki Tamao, Kuni Komomo, Miki Satsuki | Trainer names | Modern name over Kristall's (ADR 0002): same trainer, same English name, HeartGold/SoulSilver's German. Kristall's dialogue lines that name them change too |
-| Official names dropped for the battle line | French, Salma (Ace Trainers), Piper (Picnicker), Viola (Swimmer), Kinsey (Bird Keeper), Kenta, Stacey (Bug Maniacs) | Trainer names | Their HeartGold/SoulSilver or Let's Go names (Stanislaus, Valentina, Josefine, Charlotte, Benedikt, Benjamin, Hinrich) don't fit next to their class; the class stays and they get own names. Bonita and Boone, female in Polished but male in HeartGold/SoulSilver (Heiner, Guillaume), get own female names. Polished's own Scientist Oskar gets an own name, since Dennett is "Oskar". The user's choices |
+| Official names dropped for the battle line | French → Franz, Salma (kept), Piper → Pia (Picnicker), Viola (kept), Kinsey → Knut, Kenta (kept), Stacey → Sven | Trainer names | Their HeartGold/SoulSilver or Let's Go names (Stanislaus, Valentina, Josefine, Charlotte, Benedikt, Benjamin, Hinrich) don't fit next to their class; the class stays and they get own names. Bonita (kept) and Boone → Bonnie, female in Polished but male in HeartGold/SoulSilver (Heiner, Guillaume), get own female names. Polished's own Scientist Oskar → Otto, since Dennett is "Oskar". Swimmer Wendy keeps Kristall's "Gerda" (HeartGold/SoulSilver's "Gerarda" doesn't fit), so Mayu, HeartGold/SoulSilver's Gerda, keeps "Mayu". Lass Amanda, Polished's rename of Crystal's Fuchsia Gym Lass Alice, is Kristall's "Gabriele"; Polished's new Lass Alice keeps "Alice". The user's choices |
 | Cal | Hermann | Trainer names | Kristall (Trainer House opponent "HERMANN", Crystal's Cal) |
 | Falkner | Falk | Trainer names | Kristall |
 | Bugsy | Kai | Trainer names | Kristall |
@@ -309,3 +309,65 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Imakuni | Imakuni | Trainer names | As in English: Polished drops the "?" of the Trading Card Game's "Imakuni?" |
 | Lawrence | Lawrence | Trainer names | Anime name (Lawrence III., Movie 2000) |
 | Maiden Rei | Rei | Trainer names | The user's choice: "Priesterin Rei" |
+| PKMN Trainer (Carrie) (own names) | Carrie → Carla | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| PKMN Trainer (Jacky) (own names) | Jacky (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| PKMN Trainer (Euna) (own names) | Euna (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Youngster (own names) | Alfie (kept), Oliver (kept), Chaz → Jonas, Tyler → Timo, Arden → Arne | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Bug Catcher (own names) | Oscar → Oskar | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Camper (own names) | Craig → Gregor, Felix (kept), Amos (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Picnicker (own names) | Lily → Lilli, Piper → Pia, Zane → Zita | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Fisherman (own names) | Paton → Arnold, Kiley → August, Francis → Achim, Virgil → Ambros, Hall → Aaron, Dallas → Andreas, Carlos → Alonso | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Bird Keeper (own names) | Mick → Micha, Powell → Konrad, Tony → Toni, Julian → Jan, Kinsey → Knut, Trent → Theo, Salim (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Hiker (own names) | Seamus → Severin, Tony → Toni, Gerard → Gerhard, Dent (kept), Lester → Lothar, Grady → Gottfried, Steve → Steffen, Derrick → Dietmar, Floyd → Florian, Elijah → Elias, Maynard → Meinhard | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Pokéfan ♀ (own names) | Boone → Bonnie | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Officer ♀ (own names) | Jamie (kept), Mara (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Nurse (own names) | Beatrice (kept), Keiko (kept), Winifred (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| #Maniac (own names) | Enzo → Eiji, Aidan → Daiki | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Cosplayer (own names) | Clara (kept), Chloe → Chloé, Brooke → Britta, Kuroko (kept), Lyric → Aria | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Super Nerd (own names) | Luis → Ludger, Rory → Rupert, Foote → Folkert, Kouta (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Lass (own names) | Abigail → Annika, Layla → Lena, Rose → Rosa, Meadow → Flora, Jennifer → Josi, Gina (kept), Alice (kept), Mavis → Marlies | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Beauty (own names) | Bridget → Brigitte, Nicole → Natascha, Ioana (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Bug Maniac (own names) | Lou → Lutz, Stacey → Sven, Kenta (kept), Pierre (kept), Dylan → Dirk, Kai → Kurt | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ruin Maniac (own names) | Jones (kept), Leland → Heinz, Petry → Petri, Glyn (kept), Smilte → Emil | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Firebreather (own names) | Jay → Jo, Oleg (kept), Tala → Theo, Cyd → Sid | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Schoolgirl (own names) | Molly → Milla, Eliza → Elisa, Faith → Frieda, Sarah (kept), Isabel (kept), Imogen → Ines | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Psychic (own names) | Leon → Léon, Uri (kept), Virgil → Virgile | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Hex Maniac (own names) | Tamara (kept), Ashley (kept), Amy → Amalie, Luna (kept), Natalie (kept), Vivian (kept), Esther (kept), Matilda → Mathilde, Bethany → Brunhild, Coryn → Morgana | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Kimono Girl (own names) | Mako (kept), Ami (kept), Mina (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sr.& Jr. (own names) | Jo & Cath → Jo & Kati, Ivy & Amy → Ida & Uta, Bea & May → Bea & Mia | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Couple (own names) | Gail & Eli → Gabi & Eli, Fox & Rae → Flo & Ria, Joe & Jo (kept), Erik&Sara (kept), Sara&Erik (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Gentleman (own names) | Camus (kept), Geoffrey → Georg | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Rich Boy (own names) | Winston (kept), Gerald (kept), Irving → Julius, Tobin → Tobias | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Lady (own names) | Jessica (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Breeder (own names) | Julie (kept), Theresa → Tessa, Jody → Judit, Carlene → Lene, Sophie → Sofie, Brenda → Britt | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Baker (own names) | Chelsie (kept), Sharyn → Sabine, Margaret → Margot, Olga (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Cowgirl (own names) | Annie (kept), April (kept), Daniela (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sailor (own names) | Harvey (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Swimmer ♂ (own names) | Michel → Mischa, Lucas → Lukas, Frank (kept), Nadar (kept), Conrad (kept), Romeo (kept), Malcolm (kept), Armand (kept), Thomas (kept), Ezra (kept), Ashe → Sascha | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Swimmer ♀ (own names) | Viola (kept), Alison (kept), Stephanie → Steffi, Caroline → Caro, Natalia → Talia, Barbara → Babsi, Sally → Sanne, Mayu (kept), Woda (kept), Rachel → Rahel, Marina (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Burglar (own names) | Pete (kept), Louis (kept), Pierce → Piet | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Scientist (own names) | Oskar → Otto, Braydon → Bastian, Carl (kept), Dexter (kept), Joseph → Josef, Nigel → Niklas, Piotr (kept), Sanders → Sandro | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Boarder (own names) | Stefan (kept), Max (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Skier (own names) | Maria (kept), Becky (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Black Belt (own names) | Inigo (kept), Takeo (kept), Rylan → Robin | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Battle Girl (own names) | Subaru (kept), Diane (kept), Kagami (kept), Nozomi (kept), Ronda (kept), Padma (kept), Emy (kept), Sasha (kept), Mei (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Dragon Tamer (own names) | Adam (kept), Erick → Erik, Kazu (kept), Aegon (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Engineer (own names) | Smith → Schmidt, Camden → Carsten, Lang (kept), Hugo (kept), Howard → Henrik, Graden → Gerrit, Gustav (kept), Nicolas (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Teacher ♀ (own names) | Kathryn → Katrin, Serena (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Teacher ♂ (own names) | Nolan → Nils | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Guitarist ♂ (own names) | Roger (kept), Ezekiel (kept), Biff (kept), Geddy (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Guitarist ♀ (own names) | Janet (kept), Morgan (kept), Ritsuko → Ritsu, Wanda (kept), Jaclyn (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Biker (own names) | Tyrone (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Roughneck (own names) | Brian (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Tamer (own names) | Brett → Björn, Vince (kept), Oswald (kept), Jordan (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Artist (own names) | Reina (kept), Alina (kept), Marlene (kept), Rin (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Aroma Lady (own names) | Dahlia (kept), Bryony → Malve, Heather (kept), Holly (kept), Peony → Rosalie | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sightseer ♂ (own names) | Jaska (kept), Blaise (kept), Gareth (kept), Chester (kept), Hari (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sightseer ♀ (own names) | Rosie (kept), Kamila (kept), Noelle (kept), Pilar (kept), Lenie → Leni | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sightseers (own names) | Li & Su (kept), Cy & Vi (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ace Trainer ♂ (own names) | French → Franz, Henri (kept), Connor (kept), Kieran (kept), Finch → Fink, Petrie (kept), Corey (kept), Ray (kept), Fergus (kept), Daric (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ace Trainer ♀ (own names) | Salma (kept), Bonita (kept), Sera → Svea, Neesha (kept), Chiara (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ace Duo (own names) | Ara & Bela (kept), Jake & Bri → Jan & Rike, Dan & Cara (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Veteran ♂ (own names) | Matthew → Matthias, Remy (kept), Barkhorn → Bernhard, En (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Veteran ♀ (own names) | Joanne → Johanna, Jonet (kept), Litvyak → Lydia, Madoka (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Surfer (own names) | Victor (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |

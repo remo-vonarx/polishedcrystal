@@ -92,7 +92,7 @@ TrainerClassNames::
 	li "Rowdy"            ; BIKER
 	li "Raufbold"         ; ROUGHNECK
 	li "Dompteur"         ; TAMER
-	li "Künstler"         ; ARTIST
+	li "Künstlerin"       ; ARTIST
 	li "Aromalady"        ; AROMA_LADY
 	li "Soldat"           ; SOLDIER
 	li "Servierer"        ; WAITER

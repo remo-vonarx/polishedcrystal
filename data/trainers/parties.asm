@@ -42,7 +42,7 @@ SECTION "CarrieGroup", ROMX
 CarrieGroup:
 
 	def_trainer_class CARRIE
-	def_trainer 1, "Carrie"
+	def_trainer 1, "Carla"
 	tr_mon 60, MEGANIUM @ SITRUS_BERRY
 		tr_moves GIGA_DRAIN, PROTECT, LEECH_SEED, TOXIC
 	tr_mon 60, TYPHLOSION @ QUICK_CLAW
@@ -2344,18 +2344,18 @@ YoungsterGroup:
 	tr_mon 54, RATICATE
 	end_trainer
 
-	def_trainer CHAZ, "Chaz"
+	def_trainer CHAZ, "Jonas"
 	tr_mon 54, SANDSHREW
 	tr_mon 55, RATICATE
 	end_trainer
 
-	def_trainer TYLER, "Tyler"
+	def_trainer TYLER, "Timo"
 	tr_mon LEVEL_FROM_BADGES + 8, WEEPINBELL
 	tr_mon LEVEL_FROM_BADGES + 9, QUAGSIRE
 	tr_mon LEVEL_FROM_BADGES + 8, SANDSLASH
 	end_trainer
 
-	def_trainer ARDEN, "Arden"
+	def_trainer ARDEN, "Arne"
 	tr_mon 55, FLAREON
 	tr_mon 53, TAUROS
 	tr_mon 55, RAPIDASH
@@ -2462,7 +2462,7 @@ BugCatcherGroup:
 	tr_mon 10, PINECO
 	end_trainer
 
-	def_trainer OSCAR, "Oscar"
+	def_trainer OSCAR, "Oskar"
 	tr_mon LEVEL_FROM_BADGES + 4, LEDIAN
 	tr_mon LEVEL_FROM_BADGES + 5, SCYTHER
 	end_trainer
@@ -2567,7 +2567,7 @@ CamperGroup:
 	tr_mon LEVEL_FROM_BADGES + 1, MARILL
 	end_trainer
 
-	def_trainer CRAIG, "Craig"
+	def_trainer CRAIG, "Gregor"
 	tr_mon LEVEL_FROM_BADGES + 5, PIDGEOTTO
 	tr_mon LEVEL_FROM_BADGES + 5, MANKEY
 	tr_mon LEVEL_FROM_BADGES + 6, SANDSLASH
@@ -2742,13 +2742,13 @@ endc
 	tr_mon 61, EXEGGUTOR
 	end_trainer
 
-	def_trainer LILY, "Lily"
+	def_trainer LILY, "Lilli"
 	tr_mon LEVEL_FROM_BADGES + 4, NIDORINA
 	tr_mon LEVEL_FROM_BADGES + 2, BELLSPROUT
 	tr_mon LEVEL_FROM_BADGES + 6, WEEPINBELL
 	end_trainer
 
-	def_trainer PIPER, "Piper"
+	def_trainer PIPER, "Pia"
 	tr_mon 55, HYPNO
 	end_trainer
 
@@ -2764,7 +2764,7 @@ endc
 	tr_mon 62, PARASECT
 	end_trainer
 
-	def_trainer ZANE, "Zane"
+	def_trainer ZANE, "Zita"
 	tr_mon 54, JOLTEON
 	tr_mon 53, RAICHU
 	tr_mon 55, ELECTIVIRE
@@ -3014,25 +3014,25 @@ FisherGroup:
 	tr_mon 42, SEAKING
 	end_trainer
 
-	def_trainer PATON, "Paton"
+	def_trainer PATON, "Arnold"
 	tr_mon LEVEL_FROM_BADGES + 0, GOLDEEN
 	tr_mon LEVEL_FROM_BADGES + 2, MANTINE
 	end_trainer
 
-	def_trainer KILEY, "Kiley"
+	def_trainer KILEY, "August"
 	tr_mon LEVEL_FROM_BADGES + 5, MAGIKARP, MALE | PLAIN_FORM
 	tr_mon LEVEL_FROM_BADGES + 5, MAGIKARP, MALE | MAGIKARP_DAPPLES_FORM
 	tr_mon LEVEL_FROM_BADGES + 5, MAGIKARP, MALE | MAGIKARP_TIGER_FORM
 	tr_mon LEVEL_FROM_BADGES + 5, MANTINE, MALE
 	end_trainer
 
-	def_trainer FRANCIS, "Francis"
+	def_trainer FRANCIS, "Achim"
 	tr_mon LEVEL_FROM_BADGES + 4, REMORAID
 	tr_mon LEVEL_FROM_BADGES + 5, CHINCHOU
 	tr_mon LEVEL_FROM_BADGES + 4, QWILFISH
 	end_trainer
 
-	def_trainer LEROY, "Virgil" ; MISMATCH
+	def_trainer LEROY, "Ambros" ; MISMATCH
 	tr_mon 51, MAGIKARP, MALE | MAGIKARP_MASK1_FORM
 	tr_mon 52, MAGIKARP, MALE | MAGIKARP_CALICO1_FORM
 	tr_mon 53, MAGIKARP, MALE | MAGIKARP_CALICO2_FORM
@@ -3063,18 +3063,18 @@ FisherGroup:
 	tr_mon 56, MANTINE
 	end_trainer
 
-	def_trainer HALL, "Hall"
+	def_trainer HALL, "Aaron"
 	tr_mon 56, "Dopefish", QWILFISH
 		tr_dvs 8 HP, 7 Atk, 13 Def, 8 Spe, 2 SAt, 8 SDf ; green
 	end_trainer
 
-	def_trainer DALLAS, "Dallas"
+	def_trainer DALLAS, "Andreas"
 	tr_mon 61, QWILFISH
 	tr_mon 63, LANTURN
 	tr_mon 65, GYARADOS
 	end_trainer
 
-	def_trainer CARLOS, "Carlos"
+	def_trainer CARLOS, "Alonso"
 	tr_mon LEVEL_FROM_BADGES + 0, GOLDEEN
 	tr_mon LEVEL_FROM_BADGES + 1, SEAKING
 	tr_mon LEVEL_FROM_BADGES + 3, QWILFISH, HISUIAN_FORM
@@ -3179,17 +3179,17 @@ BirdKeeperGroup:
 	tr_mon 57, FEAROW
 	end_trainer
 
-	def_trainer MICK, "Mick"
+	def_trainer MICK, "Micha"
 	tr_mon 62, PIDGEOT
 	tr_mon 60, MURKROW
 	tr_mon 60, NOCTOWL
 	end_trainer
 
-	def_trainer POWELL, "Powell"
+	def_trainer POWELL, "Konrad"
 	tr_mon LEVEL_FROM_BADGES + 8, PIDGEOT
 	end_trainer
 
-	def_trainer BIRD_KEEPER_TONY, "Tony"
+	def_trainer BIRD_KEEPER_TONY, "Toni"
 	tr_mon LEVEL_FROM_BADGES + 4, PIDGEOTTO
 		tr_moves GUST, QUICK_ATTACK, RAGE, MUD_SLAP
 	tr_mon LEVEL_FROM_BADGES + 4, PIDGEOTTO
@@ -3198,7 +3198,7 @@ BirdKeeperGroup:
 		tr_moves SURF, DISABLE, SCREECH, ZEN_HEADBUTT
 	end_trainer
 
-	def_trainer JULIAN, "Julian"
+	def_trainer JULIAN, "Jan"
 	tr_mon LEVEL_FROM_BADGES + 0, HOOTHOOT
 	tr_mon LEVEL_FROM_BADGES + 4, PIDGEOTTO
 	tr_mon LEVEL_FROM_BADGES + 5, MURKROW
@@ -3227,7 +3227,7 @@ BirdKeeperGroup:
 	tr_mon 61, PIDGEOT
 	end_trainer
 
-	def_trainer KINSLEY, "Kinsey" ; MISMATCH
+	def_trainer KINSLEY, "Knut" ; MISMATCH
 	tr_mon 58, FARFETCH_D
 	tr_mon 58, DODRIO
 	tr_mon 58, PIDGEOTTO
@@ -3245,7 +3245,7 @@ BirdKeeperGroup:
 	tr_mon LEVEL_FROM_BADGES + 1, PIDGEOTTO
 	end_trainer
 
-	def_trainer TRENT, "Trent"
+	def_trainer TRENT, "Theo"
 	tr_mon 33, PIDGEY
 	tr_mon 44, PIDGEOTTO
 	tr_mon 55, PIDGEOT
@@ -3399,14 +3399,14 @@ HikerGroup:
 	tr_mon LEVEL_FROM_BADGES + 1, LARVITAR
 	end_trainer
 
-	def_trainer SEAMUS, "Seamus"
+	def_trainer SEAMUS, "Severin"
 	tr_mon 56, DUDUNSPARCE
 	tr_mon 53, ONIX
 	tr_mon 54, GOLEM
 	tr_mon 53, ONIX
 	end_trainer
 
-	def_trainer TONY, "Tony"
+	def_trainer TONY, "Toni"
 	tr_mon LEVEL_FROM_BADGES + 2, DUNSPARCE
 	tr_mon LEVEL_FROM_BADGES + 3, ONIX
 	tr_mon LEVEL_FROM_BADGES + 2, DUNSPARCE
@@ -3419,7 +3419,7 @@ HikerGroup:
 	tr_mon 62, ONIX
 	end_trainer
 
-	def_trainer GERARD, "Gerard"
+	def_trainer GERARD, "Gerhard"
 	tr_mon 59, RHYHORN
 	tr_mon 61, RHYDON
 	end_trainer
@@ -3441,38 +3441,38 @@ HikerGroup:
 	tr_mon 62, STEELIX
 	end_trainer
 
-	def_trainer LESTER, "Lester"
+	def_trainer LESTER, "Lothar"
 	tr_mon 55, CLEFABLE
 	tr_mon 53, SCYTHER
 	tr_mon 54, MACHOKE
 	end_trainer
 
-	def_trainer GRADY, "Grady"
+	def_trainer GRADY, "Gottfried"
 	tr_mon LEVEL_FROM_BADGES + 4, GRAVELER
 	tr_mon LEVEL_FROM_BADGES + 4, GRAVELER
 	tr_mon LEVEL_FROM_BADGES + 5, SANDSLASH
 	end_trainer
 
-	def_trainer STEVE, "Steve"
+	def_trainer STEVE, "Steffen"
 	tr_mon LEVEL_FROM_BADGES + 7, STEELIX
 	end_trainer
 
-	def_trainer DERRICK, "Derrick"
+	def_trainer DERRICK, "Dietmar"
 	tr_mon 53, CLODSIRE
 	tr_mon 53, DUGTRIO
 	tr_mon 55, GOLEM
 	end_trainer
 
-	def_trainer FLOYD, "Floyd"
+	def_trainer FLOYD, "Florian"
 	tr_mon 57, STEELIX
 	end_trainer
 
-	def_trainer ELIJAH, "Elijah"
+	def_trainer ELIJAH, "Elias"
 	tr_mon LEVEL_FROM_BADGES + 1, GRAVELER
 	tr_mon LEVEL_FROM_BADGES + 2, GLIGAR
 	end_trainer
 
-	def_trainer MAYNARD, "Maynard"
+	def_trainer MAYNARD, "Meinhard"
 	tr_mon LEVEL_FROM_BADGES + 0, GRAVELER, MALE | ALOLAN_FORM
 	tr_mon LEVEL_FROM_BADGES + 1, DONPHAN, MALE
 	tr_mon LEVEL_FROM_BADGES + 2, SHUCKLE, MALE
@@ -3799,7 +3799,7 @@ PokefanFGroup:
 	tr_mon 16, MEOWTH @ ORAN_BERRY
 	end_trainer
 
-	def_trainer BOONE, "Boone"
+	def_trainer BOONE, "Bonnie"
 	tr_mon 57, PERSIAN @ SITRUS_BERRY
 	tr_mon 55, WIGGLYTUFF @ SITRUS_BERRY
 	end_trainer
@@ -3936,7 +3936,7 @@ PokemaniacGroup:
 	tr_mon 37, RHYHORN
 	end_trainer
 
-	def_trainer ENZO, "Enzo"
+	def_trainer ENZO, "Eiji"
 	tr_mon LEVEL_FROM_BADGES + 8, SHUCKLE
 	end_trainer
 
@@ -3945,7 +3945,7 @@ PokemaniacGroup:
 	tr_mon LEVEL_FROM_BADGES + 7, NIDOQUEEN
 	end_trainer
 
-	def_trainer AIDAN, "Aidan"
+	def_trainer AIDAN, "Daiki"
 	tr_mon LEVEL_FROM_BADGES + 7, SNORLAX
 		tr_moves HEADBUTT, DEFENSE_CURL, ROLLOUT, EXPLOSION
 	tr_mon LEVEL_FROM_BADGES + 7, PORYGON2
@@ -3962,13 +3962,13 @@ CosplayerGroup:
 	tr_mon 14, VULPIX
 	end_trainer
 
-	def_trainer CHLOE, "Chloe"
+	def_trainer CHLOE, "Chloé"
 	tr_mon LEVEL_FROM_BADGES + 5, VULPIX
 	tr_mon LEVEL_FROM_BADGES + 5, PIKACHU
 	tr_mon LEVEL_FROM_BADGES + 5, VULPIX
 	end_trainer
 
-	def_trainer BROOKE, "Brooke"
+	def_trainer BROOKE, "Britta"
 	tr_mon 62, NINETALES
 	tr_mon 60, VULPIX
 	end_trainer
@@ -3978,7 +3978,7 @@ CosplayerGroup:
 	tr_mon 62, NINETALES @ CHARCOAL
 	end_trainer
 
-	def_trainer LYRIC, "Lyric"
+	def_trainer LYRIC, "Aria"
 	tr_mon 54, LANTURN
 	tr_mon 53, MAGNEZONE
 	tr_mon 55, ELECTRODE
@@ -4048,7 +4048,7 @@ SuperNerdGroup:
 	tr_mon 63, MAGCARGO
 	end_trainer
 
-	def_trainer LUIS, "Luis"
+	def_trainer LUIS, "Ludger"
 	tr_mon 62, MAGMAR
 	tr_mon 63, WEEZING
 	tr_mon 59, MAGMAR
@@ -4067,7 +4067,7 @@ SuperNerdGroup:
 		tr_extra SHINY
 	end_trainer
 
-	def_trainer RORY, "Rory"
+	def_trainer RORY, "Rupert"
 	tr_mon 26, PORYGON
 	end_trainer
 
@@ -4076,7 +4076,7 @@ SuperNerdGroup:
 	tr_mon 55, PORYGON2
 	end_trainer
 
-	def_trainer FOOTE, "Foote"
+	def_trainer FOOTE, "Folkert"
 	tr_mon 54, SNORLAX
 	end_trainer
 
@@ -4142,7 +4142,7 @@ endc
 		tr_moves SCARY_FACE, CHARM, BITE, LICK
 	end_trainer
 
-	def_trainer AMANDA, "Amanda"
+	def_trainer AMANDA, "Gabriele"
 	tr_mon 57, GLOOM
 	tr_mon 60, ARBOK
 	tr_mon 57, GLOOM
@@ -4201,30 +4201,30 @@ endc
 	tr_mon 61, WIGGLYTUFF
 	end_trainer
 
-	def_trainer ABIGAIL, "Abigail"
+	def_trainer ABIGAIL, "Annika"
 	tr_mon LEVEL_FROM_BADGES + 3, SKIPLOOM
 	tr_mon LEVEL_FROM_BADGES + 4, FLAAFFY
 	tr_mon LEVEL_FROM_BADGES + 5, GOLDUCK
 	end_trainer
 
-	def_trainer LAYLA, "Layla"
+	def_trainer LAYLA, "Lena"
 	tr_mon LEVEL_FROM_BADGES + 5, CLEFAIRY
 	tr_mon LEVEL_FROM_BADGES + 5, TOGETIC
 	end_trainer
 
-	def_trainer ROSE, "Rose"
+	def_trainer ROSE, "Rosa"
 	tr_mon LEVEL_FROM_BADGES + 2, ESPEON, FEMALE
 		tr_extra SHINY
 	tr_mon LEVEL_FROM_BADGES + 2, TOGETIC, FEMALE
 	end_trainer
 
-	def_trainer MEADOW, "Meadow"
+	def_trainer MEADOW, "Flora"
 	tr_mon 53, MEOWTH
 	tr_mon 53, MEOWTH
 	tr_mon 55, PERSIAN
 	end_trainer
 
-	def_trainer JENNIFER, "Jennifer"
+	def_trainer JENNIFER, "Josi"
 	tr_mon 52, CLEFAIRY
 	tr_mon 52, MARILL
 	tr_mon 54, CLEFABLE
@@ -4236,7 +4236,7 @@ endc
 		tr_moves THUNDERBOLT, SURF, THUNDER_WAVE, SUBSTITUTE
 	end_trainer
 
-	def_trainer ALICE, "Gabriele"
+	def_trainer ALICE, "Alice"
 	tr_mon 60, "VuiVui", EEVEE @ EVIOLITE, FEMALE
 		tr_extra SPE_UP_DEF_DOWN
 		tr_moves RETURN, SHADOW_BALL, PROTECT, ATTRACT
@@ -4254,7 +4254,7 @@ endc
 	tr_mon LEVEL_FROM_BADGES + 9, DITTO @ FOCUS_SASH
 	end_trainer
 
-	def_trainer MAVIS, "Mavis"
+	def_trainer MAVIS, "Marlies"
 	tr_mon 55, TOGEKISS
 	tr_mon 53, JOLTEON
 	tr_mon 52, AMPHAROS
@@ -4314,7 +4314,7 @@ BeautyGroup:
 		tr_extra SHINY
 	end_trainer
 
-	def_trainer BRIDGET, "Bridget"
+	def_trainer BRIDGET, "Brigitte"
 	tr_mon 55, CORSOLA
 	tr_mon 55, SUNFLORA
 	end_trainer
@@ -4325,7 +4325,7 @@ BeautyGroup:
 	tr_mon 56, CLEFABLE
 	end_trainer
 
-	def_trainer BEAUTY_NICOLE, "Nicole"
+	def_trainer BEAUTY_NICOLE, "Natascha"
 	tr_mon 60, MARILL @ EVIOLITE, FEMALE
 		tr_extra HUGE_POWER
 	tr_mon 63, AZUMARILL @ LEFTOVERS, FEMALE
@@ -4351,7 +4351,7 @@ SECTION "BugManiacGroup", ROMX
 BugManiacGroup:
 
 	def_trainer_class BUG_MANIAC
-	def_trainer LOU, "Lou"
+	def_trainer LOU, "Lutz"
 	tr_mon 19, YANMA
 		tr_moves BUG_BITE, QUICK_ATTACK, DOUBLE_TEAM, SONIC_BOOM
 	end_trainer
@@ -4381,7 +4381,7 @@ BugManiacGroup:
 	tr_mon 63, ARIADOS
 	end_trainer
 
-	def_trainer STACEY, "Stacey"
+	def_trainer STACEY, "Sven"
 	tr_mon 60, METAPOD
 	tr_mon 62, METAPOD
 	tr_mon 64, METAPOD
@@ -4417,12 +4417,12 @@ BugManiacGroup:
 	tr_mon 56, YANMEGA
 	end_trainer
 
-	def_trainer DYLAN, "Dylan"
+	def_trainer DYLAN, "Dirk"
 	tr_mon 55, LEDIAN
 	tr_mon 55, BUTTERFREE
 	end_trainer
 
-	def_trainer KAI, "Kai"
+	def_trainer KAI, "Kurt"
 	tr_mon LEVEL_FROM_BADGES + 7, VENONAT
 	tr_mon LEVEL_FROM_BADGES + 9, VENOMOTH
 	end_trainer
@@ -4437,12 +4437,12 @@ RuinManiacGroup:
 	tr_mon 8, KABUTO
 	end_trainer
 
-	def_trainer LELAND, "Leland"
+	def_trainer LELAND, "Heinz"
 	tr_mon 23, DUNSPARCE
 	tr_mon 25, AERODACTYL
 	end_trainer
 
-	def_trainer PETRY, "Petry"
+	def_trainer PETRY, "Petri"
 	tr_mon 23, OMANYTE
 	tr_mon 23, KABUTO
 	tr_mon 25, AERODACTYL
@@ -4453,7 +4453,7 @@ RuinManiacGroup:
 	tr_mon 25, KABUTOPS
 	end_trainer
 
-	def_trainer SMILTE, "Smilte"
+	def_trainer SMILTE, "Emil"
 	tr_mon 54, SANDSLASH
 	tr_mon 54, DUGTRIO
 	tr_mon 56, AERODACTYL
@@ -4505,7 +4505,7 @@ FirebreatherGroup:
 	tr_mon 45, WEEZING
 	end_trainer
 
-	def_trainer JAY, "Jay"
+	def_trainer JAY, "Jo"
 	tr_mon 26, MAGMAR
 	end_trainer
 
@@ -4513,12 +4513,12 @@ FirebreatherGroup:
 	tr_mon LEVEL_FROM_BADGES + 6, WEEZING
 	end_trainer
 
-	def_trainer TALA, "Tala"
+	def_trainer TALA, "Theo"
 	tr_mon 61, WEEZING
 	tr_mon 62, MAGMORTAR
 	end_trainer
 
-	def_trainer CYD, "Cyd"
+	def_trainer CYD, "Sid"
 	tr_mon 53, CHARMANDER
 	tr_mon 55, CHARMELEON
 	tr_mon 57, CHARIZARD
@@ -4738,18 +4738,18 @@ SECTION "SchoolgirlGroup", ROMX
 SchoolgirlGroup:
 
 	def_trainer_class SCHOOLGIRL
-	def_trainer MOLLY, "Molly"
+	def_trainer MOLLY, "Milla"
 	tr_mon 7, "Teddy", TEDDIURSA
 	tr_mon 6, PHANPY
 	end_trainer
 
-	def_trainer ELIZA, "Eliza"
+	def_trainer ELIZA, "Elisa"
 	tr_mon 18, "Silver", ODDISH @ SILVER_LEAF
 	tr_mon 16, "Lady", LEDYBA
 	tr_mon 17, "Tret", SENTRET @ ORAN_BERRY
 	end_trainer
 
-	def_trainer FAITH, "Faith"
+	def_trainer FAITH, "Frieda"
 	tr_mon 57, BELLSPROUT
 	tr_mon 58, WEEPINBELL
 	tr_mon 59, "Audrey", VICTREEBEL
@@ -4767,7 +4767,7 @@ SchoolgirlGroup:
 	tr_mon LEVEL_FROM_BADGES + 1, PIKACHU
 	end_trainer
 
-	def_trainer IMOGEN, "Imogen"
+	def_trainer IMOGEN, "Ines"
 	tr_mon 13, "Garlic", BULBASAUR
 	tr_mon 11, POLIWAG
 	end_trainer
@@ -4843,7 +4843,7 @@ PsychicGroup:
 	tr_mon 47, HYPNO
 	end_trainer
 
-	def_trainer LEON, "Leon"
+	def_trainer LEON, "Léon"
 	tr_mon 54, NOCTOWL
 	tr_mon 55, HYPNO
 	tr_mon 53, GIRAFARIG
@@ -4854,7 +4854,7 @@ PsychicGroup:
 	tr_mon 57, "Pocus", KADABRA
 	end_trainer
 
-	def_trainer VIRGIL, "Virgil"
+	def_trainer VIRGIL, "Virgile"
 	tr_mon LEVEL_FROM_BADGES + 4, NATU
 	tr_mon LEVEL_FROM_BADGES + 6, XATU
 	end_trainer
@@ -4874,7 +4874,7 @@ HexManiacGroup:
 	tr_mon LEVEL_FROM_BADGES + 6, MISMAGIUS
 	end_trainer
 
-	def_trainer AMY, "Amy"
+	def_trainer AMY, "Amalie"
 	tr_mon 53, MISDREAVUS
 	tr_mon 56, GENGAR
 	tr_mon 53, HAUNTER
@@ -4906,19 +4906,19 @@ HexManiacGroup:
 	tr_mon 62, MISMAGIUS
 	end_trainer
 
-	def_trainer MATILDA, "Matilda"
+	def_trainer MATILDA, "Mathilde"
 	tr_mon LEVEL_FROM_BADGES + 3, DROWZEE
 	tr_mon LEVEL_FROM_BADGES + 4, MISDREAVUS
 	tr_mon LEVEL_FROM_BADGES + 5, HYPNO
 	end_trainer
 
-	def_trainer BETHANY, "Bethany"
+	def_trainer BETHANY, "Brunhild"
 	tr_mon 53, HAUNTER
 	tr_mon 55, GENGAR
 	tr_mon 54, MISDREAVUS
 	end_trainer
 
-	def_trainer CORYN, "Coryn"
+	def_trainer CORYN, "Morgana"
 	tr_mon 53, MISMAGIUS
 	tr_mon 52, ESPEON
 	tr_mon 55, GENGAR
@@ -5070,32 +5070,32 @@ SECTION "SrAndJrGroup", ROMX
 SrAndJrGroup:
 
 	def_trainer_class SR_AND_JR
-	def_trainer JOANDCATH1, "Jo & Cath"
+	def_trainer JOANDCATH1, "Jo & Kati"
 	tr_mon 18, TEDDIURSA
 	tr_mon 16, JIGGLYPUFF
 	end_trainer
 
-	def_trainer JOANDCATH2, "Jo & Cath"
+	def_trainer JOANDCATH2, "Jo & Kati"
 	tr_mon 16, JIGGLYPUFF
 	tr_mon 18, TEDDIURSA
 	end_trainer
 
-	def_trainer IVYANDAMY1, "Ivy & Amy"
+	def_trainer IVYANDAMY1, "Ida & Uta"
 	tr_mon 30, FLAAFFY
 	tr_mon 28, GLOOM
 	end_trainer
 
-	def_trainer IVYANDAMY2, "Ivy & Amy"
+	def_trainer IVYANDAMY2, "Ida & Uta"
 	tr_mon 28, GLOOM
 	tr_mon 30, FLAAFFY
 	end_trainer
 
-	def_trainer BEAANDMAY1, "Bea & May"
+	def_trainer BEAANDMAY1, "Bea & Mia"
 	tr_mon LEVEL_FROM_BADGES + 4, IVYSAUR
 	tr_mon LEVEL_FROM_BADGES + 0, BULBASAUR
 	end_trainer
 
-	def_trainer BEAANDMAY2, "Bea & May"
+	def_trainer BEAANDMAY2, "Bea & Mia"
 	tr_mon LEVEL_FROM_BADGES + 0, BULBASAUR
 	tr_mon LEVEL_FROM_BADGES + 4, IVYSAUR
 	end_trainer
@@ -5105,14 +5105,14 @@ SECTION "CoupleGroup", ROMX
 CoupleGroup:
 
 	def_trainer_class COUPLE
-	def_trainer GAILANDELI1, "Gail & Eli"
+	def_trainer GAILANDELI1, "Gabi & Eli"
 	tr_mon 13, SANDSHREW, MALE
 	tr_mon 15, MARILL, MALE
 	tr_mon 15, PIKACHU, FEMALE
 	tr_mon 13, POLIWAG, FEMALE
 	end_trainer
 
-	def_trainer GAILANDELI2, "Gail & Eli"
+	def_trainer GAILANDELI2, "Gabi & Eli"
 	tr_mon 15, PIKACHU, FEMALE
 	tr_mon 13, POLIWAG, FEMALE
 	tr_mon 13, SANDSHREW, MALE
@@ -5129,12 +5129,12 @@ CoupleGroup:
 	tr_mon LEVEL_FROM_BADGES + 2, CLOYSTER, FEMALE
 	end_trainer
 
-	def_trainer FOXANDRAE1, "Fox & Rae"
+	def_trainer FOXANDRAE1, "Flo & Ria"
 	tr_mon LEVEL_FROM_BADGES + 6, FLAREON, MALE
 	tr_mon LEVEL_FROM_BADGES + 6, GLACEON, FEMALE
 	end_trainer
 
-	def_trainer FOXANDRAE2, "Fox & Rae"
+	def_trainer FOXANDRAE2, "Flo & Ria"
 	tr_mon LEVEL_FROM_BADGES + 6, GLACEON, FEMALE
 	tr_mon LEVEL_FROM_BADGES + 6, FLAREON, MALE
 	end_trainer
@@ -5224,7 +5224,7 @@ GentlemanGroup:
 	tr_mon 54, PERSIAN
 	end_trainer
 
-	def_trainer GEOFFREY, "Geoffrey"
+	def_trainer GEOFFREY, "Georg"
 	tr_mon 50, MEOWTH
 	end_trainer
 
@@ -5244,7 +5244,7 @@ RichBoyGroup:
 	tr_mon 40, BLISSEY @ NUGGET
 	end_trainer
 
-	def_trainer IRVING, "Irving"
+	def_trainer IRVING, "Julius"
 	tr_mon LEVEL_FROM_BADGES + 4, TOGETIC @ KINGS_ROCK , MALE
 		tr_extra SERENE_GRACE
 		tr_dvs 14 All
@@ -5263,7 +5263,7 @@ endc
 		tr_moves HEADBUTT, ATTRACT, MUD_SLAP, DISARM_VOICE
 	end_trainer
 
-	def_trainer TOBIN, "Tobin"
+	def_trainer TOBIN, "Tobias"
 	tr_mon 53, MAGMAR
 	tr_mon 54, GOLEM
 	tr_mon 55, MACHOKE
@@ -5290,13 +5290,13 @@ BreederGroup:
 	tr_mon 8, TOGEPI @ EVIOLITE
 	end_trainer
 
-	def_trainer THERESA, "Theresa"
+	def_trainer THERESA, "Tessa"
 	tr_mon 15, MAGBY @ EVIOLITE, FEMALE
 	tr_mon 16, ELEKID @ EVIOLITE, FEMALE
 		tr_extra SHINY
 	end_trainer
 
-	def_trainer JODY, "Jody"
+	def_trainer JODY, "Judit"
 	tr_mon 27, TYROGUE @ EVIOLITE
 		tr_moves TACKLE, RAGE, FORESIGHT, HI_JUMP_KICK
 	tr_mon 28, MUNCHLAX @ EVIOLITE
@@ -5305,7 +5305,7 @@ BreederGroup:
 		tr_moves TRANSFORM
 	end_trainer
 
-	def_trainer CARLENE, "Carlene"
+	def_trainer CARLENE, "Lene"
 	tr_mon 58, SMEARGLE @ WISE_GLASSES, FEMALE
 		tr_moves SPORE, NASTY_PLOT, HYPER_VOICE, PSYCHIC_M
 	tr_mon 58, SMEARGLE @ MUSCLE_BAND, FEMALE
@@ -5315,13 +5315,13 @@ BreederGroup:
 		tr_moves TRANSFORM
 	end_trainer
 
-	def_trainer SOPHIE, "Sophie"
+	def_trainer SOPHIE, "Sofie"
 	tr_mon LEVEL_FROM_BADGES + 2, PICHU @ EVIOLITE
 	tr_mon LEVEL_FROM_BADGES + 3, PIKACHU @ LIGHT_BALL
 	tr_mon LEVEL_FROM_BADGES + 4, RAICHU @ DESTINY_KNOT
 	end_trainer
 
-	def_trainer BRENDA, "Brenda"
+	def_trainer BRENDA, "Britt"
 	tr_mon 55, CLEFABLE @ FAIRYFEATHER
 	tr_mon 54, WIGGLYTUFF @ SITRUS_BERRY
 	tr_mon 56, SNORLAX @ LEFTOVERS
@@ -5341,12 +5341,12 @@ else
 endc
 	end_trainer
 
-	def_trainer SHARYN, "Sharyn"
+	def_trainer SHARYN, "Sabine"
 	tr_mon 46, MILTANK
 	tr_mon 46, TAUROS
 	end_trainer
 
-	def_trainer MARGARET, "Margaret"
+	def_trainer MARGARET, "Margot"
 	tr_mon 55, CHANSEY
 	tr_mon 55, MILTANK
 	end_trainer
@@ -5576,12 +5576,12 @@ SwimmerMGroup:
 	tr_mon 20, HORSEA
 	end_trainer
 
-	def_trainer MICHEL, "Michel"
+	def_trainer MICHEL, "Mischa"
 	tr_mon LEVEL_FROM_BADGES + 2, STARYU
 	tr_mon LEVEL_FROM_BADGES + 4, STARMIE
 	end_trainer
 
-	def_trainer LUCAS, "Lucas"
+	def_trainer LUCAS, "Lukas"
 	tr_mon LEVEL_FROM_BADGES + 8, VAPOREON
 	end_trainer
 
@@ -5645,7 +5645,7 @@ SwimmerMGroup:
 	tr_mon 56, KINGDRA
 	end_trainer
 
-	def_trainer ASHE, "Ashe"
+	def_trainer ASHE, "Sascha"
 	tr_mon 63, POLITOED
 	tr_mon 63, POLIWRATH
 	end_trainer
@@ -5749,27 +5749,27 @@ SwimmerFGroup:
 	tr_mon LEVEL_FROM_BADGES + 4, SEEL
 	end_trainer
 
-	def_trainer STEPHANIE, "Stephanie"
+	def_trainer STEPHANIE, "Steffi"
 	tr_mon LEVEL_FROM_BADGES + 3, STARYU
 	tr_mon LEVEL_FROM_BADGES + 5, SEADRA
 	end_trainer
 
-	def_trainer CAROLINE, "Caroline"
+	def_trainer CAROLINE, "Caro"
 	tr_mon LEVEL_FROM_BADGES + 3, REMORAID
 	tr_mon LEVEL_FROM_BADGES + 3, REMORAID
 	tr_mon LEVEL_FROM_BADGES + 3, REMORAID
 	end_trainer
 
-	def_trainer NATALIA, "Natalia"
+	def_trainer NATALIA, "Talia"
 	tr_mon LEVEL_FROM_BADGES + 4, STARYU
 	tr_mon LEVEL_FROM_BADGES + 4, STARYU
 	end_trainer
 
-	def_trainer BARBARA, "Barbara"
+	def_trainer BARBARA, "Babsi"
 	tr_mon LEVEL_FROM_BADGES + 5, STARMIE
 	end_trainer
 
-	def_trainer SALLY, "Sally"
+	def_trainer SALLY, "Sanne"
 	tr_mon LEVEL_FROM_BADGES + 1, REMORAID
 	tr_mon LEVEL_FROM_BADGES + 3, MANTINE
 	end_trainer
@@ -5779,7 +5779,7 @@ SwimmerFGroup:
 	tr_mon LEVEL_FROM_BADGES + 2, CORSOLA
 	end_trainer
 
-	def_trainer MAYU, "Gerda"
+	def_trainer MAYU, "Mayu"
 	tr_mon 58, CORSOLA
 	tr_mon 59, CORSOLA
 	tr_mon 60, CORSOLA
@@ -5802,7 +5802,7 @@ SwimmerFGroup:
 	tr_mon 57, OCTILLERY
 	end_trainer
 
-	def_trainer RACHEL, "Rachel"
+	def_trainer RACHEL, "Rahel"
 	tr_mon 53, REMORAID
 	tr_mon 53, REMORAID
 	tr_mon 53, REMORAID
@@ -5848,7 +5848,7 @@ BurglarGroup:
 	tr_mon 62, RAPIDASH
 	end_trainer
 
-	def_trainer PIERCE, "Pierce"
+	def_trainer PIERCE, "Piet"
 	tr_mon LEVEL_FROM_BADGES + 3, WEEZING
 	tr_mon LEVEL_FROM_BADGES + 4, MUK
 	tr_mon LEVEL_FROM_BADGES + 5, MAGMAR
@@ -5882,13 +5882,13 @@ ScientistGroup:
 	tr_mon 60, MAGMAR
 	end_trainer
 
-	def_trainer OSKAR, "Oskar"
+	def_trainer OSKAR, "Otto"
 	tr_mon 64, PORYGON2
 	tr_mon 62, NINETALES
 	tr_mon 60, MAGNEZONE
 	end_trainer
 
-	def_trainer BRAYDON, "Braydon"
+	def_trainer BRAYDON, "Bastian"
 	tr_mon 60, MAGNETON
 	tr_mon 62, MAGNEZONE
 	tr_mon 63, ELECTRODE
@@ -5905,13 +5905,13 @@ ScientistGroup:
 	tr_mon 55, ALAKAZAM
 	end_trainer
 
-	def_trainer JOSEPH, "Joseph"
+	def_trainer JOSEPH, "Josef"
 	tr_mon 54, DITTO
 	tr_mon 55, GOLDUCK
 	tr_mon 53, KADABRA
 	end_trainer
 
-	def_trainer NIGEL, "Nigel"
+	def_trainer NIGEL, "Niklas"
 	tr_mon 54, ELECTABUZZ
 	tr_mon 55, LANTURN
 	end_trainer
@@ -5921,7 +5921,7 @@ ScientistGroup:
 	tr_mon 55, ALAKAZAM
 	end_trainer
 
-	def_trainer SANDERS, "Sanders"
+	def_trainer SANDERS, "Sandro"
 	tr_mon 52, ALAKAZAM
 	tr_mon 54, LAPRAS
 	tr_mon 53, NOCTOWL
@@ -6107,7 +6107,7 @@ BlackbeltGroup:
 	tr_mon 56, POLIWRATH
 	end_trainer
 
-	def_trainer RYLAN, "Rylan"
+	def_trainer RYLAN, "Robin"
 	tr_mon 54, MAGMORTAR
 	tr_mon 52, ARCANINE
 	tr_mon 53, HOUNDOOM
@@ -6200,7 +6200,7 @@ DragonTamerGroup:
 	tr_mon 39, DRATINI
 	end_trainer
 
-	def_trainer ERICK, "Erick"
+	def_trainer ERICK, "Erik"
 	tr_mon 39, DRAGONAIR
 		tr_moves THUNDER_WAVE, DRAGON_RAGE, AQUA_TAIL, BODY_SLAM
 	tr_mon 38, SEADRA
@@ -6244,7 +6244,7 @@ SECTION "EngineerGroup", ROMX
 EngineerGroup:
 
 	def_trainer_class ENGINEER
-	def_trainer SMITH, "Smith"
+	def_trainer SMITH, "Schmidt"
 	tr_mon 58, MAGNETON
 	tr_mon 60, MAGNEZONE
 	end_trainer
@@ -6255,7 +6255,7 @@ EngineerGroup:
 	tr_mon 54, MAGNEMITE
 	end_trainer
 
-	def_trainer CAMDEN, "Camden"
+	def_trainer CAMDEN, "Carsten"
 	tr_mon 56, MAGNETON
 	tr_mon 56, ELECTRODE
 	end_trainer
@@ -6270,11 +6270,11 @@ EngineerGroup:
 	tr_mon 56, STEELIX
 	end_trainer
 
-	def_trainer HOWARD, "Howard"
+	def_trainer HOWARD, "Henrik"
 	tr_mon 57, MAGNEZONE
 	end_trainer
 
-	def_trainer GRADEN, "Graden"
+	def_trainer GRADEN, "Gerrit"
 	tr_mon LEVEL_FROM_BADGES + 2, GEODUDE, MALE | ALOLAN_FORM
 		tr_extra GALVANIZE
 		tr_moves EXPLOSION
@@ -6330,7 +6330,7 @@ TeacherFGroup:
 	tr_mon 47, WIGGLYTUFF
 	end_trainer
 
-	def_trainer KATHRYN, "Kathryn"
+	def_trainer KATHRYN, "Katrin"
 	tr_mon LEVEL_FROM_BADGES + 5, BELLOSSOM
 	tr_mon LEVEL_FROM_BADGES + 3, PIDGEOTTO
 	tr_mon LEVEL_FROM_BADGES + 2, FURRET
@@ -6351,7 +6351,7 @@ SECTION "TeacherMGroup", ROMX
 TeacherMGroup:
 
 	def_trainer_class TEACHER_M
-	def_trainer NOLAN, "Nolan"
+	def_trainer NOLAN, "Nils"
 	tr_mon 54, ELECTRODE
 	tr_mon 55, MAGNEZONE
 	tr_mon 56, ELECTIVIRE
@@ -6410,7 +6410,7 @@ GuitaristFGroup:
 	tr_mon 55, JOLTEON
 	end_trainer
 
-	def_trainer RITSUKO, "Ritsuko"
+	def_trainer RITSUKO, "Ritsu"
 	tr_mon 56, JOLTEON
 	tr_mon 58, JOLTEON
 	end_trainer
@@ -6525,7 +6525,7 @@ SECTION "TamerGroup", ROMX
 TamerGroup:
 
 	def_trainer_class TAMER
-	def_trainer BRETT, "Brett"
+	def_trainer BRETT, "Björn"
 	tr_mon LEVEL_FROM_BADGES + 8, ARBOK
 	tr_mon LEVEL_FROM_BADGES + 8, TAUROS
 	tr_mon LEVEL_FROM_BADGES + 9, URSARING
@@ -6590,7 +6590,7 @@ AromaLadyGroup:
 	tr_mon 58, BELLOSSOM
 	end_trainer
 
-	def_trainer BRYONY, "Bryony"
+	def_trainer BRYONY, "Malve"
 	tr_mon 55, BELLOSSOM
 		tr_moves SOLAR_BEAM, SUNNY_DAY, STUN_SPORE, GROWTH
 	tr_mon 55, BELLOSSOM
@@ -6608,7 +6608,7 @@ AromaLadyGroup:
 	tr_mon 62, SUNFLORA
 	end_trainer
 
-	def_trainer PEONY, "Peony"
+	def_trainer PEONY, "Rosalie"
 	tr_mon 50, BULBASAUR
 	end_trainer
 
@@ -6679,7 +6679,7 @@ SightseerFGroup:
 	tr_mon 65, "Linterna", LANTURN, FEMALE
 	end_trainer
 
-	def_trainer LENIE, "Lenie"
+	def_trainer LENIE, "Leni"
 	tr_mon LEVEL_FROM_BADGES + 6, ALAKAZAM @ FLAME_ORB, FEMALE
 		tr_extra SYNCHRONIZE, SATK_UP_ATK_DOWN
 		tr_evs 168 SAt
@@ -6817,7 +6817,7 @@ CooltrainerMGroup:
 		tr_moves THUNDER_WAVE, THUNDERBOLT, TRI_ATTACK, FLASH_CANNON
 	end_trainer
 
-	def_trainer FRENCH, "French"
+	def_trainer FRENCH, "Franz"
 	tr_mon 62, HOUNDOOM
 	tr_mon 63, ALAKAZAM
 	end_trainer
@@ -6840,7 +6840,7 @@ CooltrainerMGroup:
 	tr_mon 55, PRIMEAPE
 	end_trainer
 
-	def_trainer FINCH, "Finch"
+	def_trainer FINCH, "Fink"
 	tr_mon LEVEL_FROM_BADGES + 4, GEODUDE @ AIR_BALLOON, MALE
 		tr_extra STURDY, DEF_UP_SPE_DOWN
 		tr_dvs 13 All
@@ -7071,7 +7071,7 @@ endc
 	tr_mon 65, SUDOWOODO
 	end_trainer
 
-	def_trainer SERA, "Sera"
+	def_trainer SERA, "Svea"
 	tr_mon 63, CHARMELEON @ EVIOLITE
 	tr_mon 61, AMPHAROS @ MAGNET
 	tr_mon 61, XATU @ TWISTEDSPOON
@@ -7152,14 +7152,14 @@ AceDuoGroup:
 	tr_mon 62, DUGTRIO, MALE
 	end_trainer
 
-	def_trainer JAKEANDBRI1, "Jake & Bri"
+	def_trainer JAKEANDBRI1, "Jan & Rike"
 	tr_mon 37, SANDSLASH, MALE
 	tr_mon 39, GOLDUCK, MALE
 	tr_mon 37, PARASECT, FEMALE
 	tr_mon 39, VAPOREON, FEMALE
 	end_trainer
 
-	def_trainer JAKEANDBRI2, "Jake & Bri"
+	def_trainer JAKEANDBRI2, "Jan & Rike"
 	tr_mon 37, PARASECT, FEMALE
 	tr_mon 39, VAPOREON, FEMALE
 	tr_mon 37, SANDSLASH, MALE
@@ -7185,7 +7185,7 @@ SECTION "VeteranMGroup", ROMX
 VeteranMGroup:
 
 	def_trainer_class VETERANM
-	def_trainer MATT, "Matthew" ; MISMATCH
+	def_trainer MATT, "Matthias" ; MISMATCH
 	tr_mon 41, FERALIGATR @ KINGS_ROCK
 		tr_moves SCARY_FACE, METAL_CLAW, CRUNCH, WATERFALL
 	tr_mon 40, AMPHAROS @ MAGNET
@@ -7219,7 +7219,7 @@ endc
 		tr_moves DRILL_PECK, SWIFT, STEEL_WING, ROCK_SMASH
 	end_trainer
 
-	def_trainer BARKHORN, "Barkhorn"
+	def_trainer BARKHORN, "Bernhard"
 
 	tr_mon LEVEL_FROM_BADGES + 5, PUPITAR @ ROCKY_HELMET, MALE
 if DEF(FAITHFUL)
@@ -7263,7 +7263,7 @@ SECTION "VeteranFGroup", ROMX
 VeteranFGroup:
 
 	def_trainer_class VETERANF
-	def_trainer JOANNE, "Joanne"
+	def_trainer JOANNE, "Johanna"
 	tr_mon 41, VENUSAUR @ MIRACLE_SEED
 		tr_moves GROWTH, SLUDGE_BOMB, PETAL_DANCE, SLEEP_POWDER
 	tr_mon 38, PIDGEOT @ QUICK_CLAW
@@ -7293,7 +7293,7 @@ VeteranFGroup:
 		tr_moves EARTHQUAKE, ROCK_SLIDE, SCARY_FACE, DARK_PULSE
 	end_trainer
 
-	def_trainer LITVYAK, "Litvyak"
+	def_trainer LITVYAK, "Lydia"
 
 	tr_mon LEVEL_FROM_BADGES + 11, ALAKAZAM @ CHOICE_SPECS, FEMALE
 		tr_extra TRACE, SATK_UP_ATK_DOWN
