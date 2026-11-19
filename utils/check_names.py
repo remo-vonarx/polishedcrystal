@@ -19,12 +19,19 @@ Default run: checks the tables.
   with Johto grass Pokémon (Oak's radio show adds a "."), 16 for a flypoint
   (Fly); on the Pokégear and Town Map at most two lines of 11 tiles, split at
   "¯", <WBR> or <SHY>, which adds a "-".
+- Trainer classes fit their 12-byte buffer ("#" and "#mon" are one byte each)
+  and the phone list's 14 tiles.
+- Trainers (data/trainers/parties.asm) are measured against the battle line
+  (trainer_pairs): the German class of each def_trainer, a space and the name,
+  at most 18 tiles, with <RIVAL> as 7.
 - A table whose German and English entry counts differ is reported, and so
   is a table that can't be found: a missing file, no entries, or a missing
   start or end label (as after an Upstream rename).
 
 --text: lists English names left in string literals under the given paths
-(default: maps/, data/, engine/ and home/). Comments and SECTION, INCLUDE
+(default: maps/, data/, engine/ and home/). Of the trainers it knows the class
+names and the named characters (named_trainers), not generic trainers' names,
+which are often short everyday words. Comments and SECTION, INCLUDE
 and INCBIN lines are skipped, and so is anything inside <...> tokens. Names
 match as whole words (umlauts count as letters), case-sensitively, longest
 first.
@@ -52,11 +59,23 @@ LABEL_DB = re.compile(r'^\w+:\s+db "([^"]*)"')
 LOCAL_DB = re.compile(r'^\.\w+:\s+db "([^"]*)"')
 LI = re.compile(r'^\s*li "([^"]*)"')
 DB = re.compile(r'^\s+db "([^"]*)"')
+TRAINER_NAME = re.compile(r'^\s*def_trainer [^,]+, "([^"]*)"')
+NICKNAME = re.compile(r'^\s*tr_mon \d+, "([^"]*)"')
+TRADE_NICKNAME = re.compile(r'^\s*rawchar "([^"]*)"\s*$')
+TRADE_OT = re.compile(r'^\s*rawchar "([^"]*)", \$00')
+PHONE_LINE = re.compile(r'^\s*(?:text|next1)\s+"([^"]*)"')
 
 PLACE = 'place'
 BREAK_MARKS = ('<SHY>', '<WBR>')
 PLACE_BYTES = 18  # STRING_BUFFER_LENGTH - 1: scripts copy place names into 19-byte buffers
 POKEGEAR_LINE = 11
+
+TRAINER = 'trainer'
+CLASS = 'class'
+CLASS_BYTES = 12  # TRAINER_CLASS_NAME_LENGTH - 1: the class buffer (wOTClassName)
+CLASS_TILES = 14  # the phone list prints the class from column 5 to 18
+NAME_LENGTH = 10  # NAME_LENGTH - 1
+BATTLE_LINE = 18  # "<CLASS> <NAME>" starts the battle box's first line (PlaceEnemysName)
 
 # path, entry pattern, first label (None: file start), label that ends the
 # table (None: file end), limit in tiles, text category (None: tables only),
@@ -83,6 +102,17 @@ TABLES = [
     ('engine/pokegear/pokegear.asm', RAWCHAR, 'PokemonLeagueFlyName', 'GetMapCursorCoordinates', 16, 'place', 'fly'),
     # the summary's place of capture when it isn't a landmark: column 1 to 19
     ('engine/pokemon/summary/orange_page.asm', DB, 'battle_factory', 'TN_PrintLV', 19, 'place', 'summary'),
+    # 12 bytes ("#mon" is one) and 14 tiles (name_bytes, CLASS_TILES)
+    ('data/trainers/class_names.asm', LI, None, None, CLASS, 'class', 'classes'),
+    # 10 tiles each, and each class + name pair against the battle line (trainer_pairs)
+    ('data/trainers/parties.asm', TRAINER_NAME, None, None, TRAINER, 'person', 'trainers'),
+    ('data/trainers/parties.asm', NICKNAME, None, None, 10, None, 'nicknames'),
+    ('data/events/npc_trades.asm', TRADE_NICKNAME, None, None, 10, None, 'trades'),
+    ('data/events/npc_trades.asm', TRADE_OT, None, None, 7, 'person', 'trades'),
+    # the Pokégear's phone list: columns 2 to 18
+    ('data/phone/non_trainer_names.asm', PHONE_LINE, None, None, 17, None, 'phone'),
+    ('engine/events/specials.asm', RAWCHAR, 'DefaultRivalName', 'SpecialTrendyPhrase', 7, None, 'rival'),
+    ('engine/menus/intro_menu.asm', DB, 'Ralph', 'InitializeNPCNames', 10, None, 'ralph'),
 ]
 
 # official names that are the same in English and German, and placeholders,
@@ -118,6 +148,13 @@ SAME_IN_GERMAN = {
     'places': {'?'} | {f'Route {n}' for n in range(1, 50)},
     'fly': set(),
     'summary': set(),
+    'classes': set(),
+    'trainers': {'<RIVAL>'},
+    'nicknames': set(),
+    'trades': set(),
+    'phone': set(),
+    'rival': set(),
+    'ralph': set(),
 }
 
 # English spellings in text that differ from the tables, by category
@@ -126,6 +163,8 @@ TEXT_ALIASES = {
     'move': {},
     'item': {},
     'place': {},
+    'class': {},
+    'person': {},
 }
 
 SKIP_LINE = re.compile(r'^\s*(SECTION|INCLUDE|INCBIN)\b')
@@ -255,11 +294,58 @@ def place_problems(name, one_line_limit):
     return problems
 
 
+def name_bytes(name):
+    """Bytes a name takes: a <token>, "#" and "#mon" are one byte each."""
+    return len(TOKEN.sub('x', name).replace('#mon', 'x').replace('#', 'x'))
+
+
+def trainer_pairs(root):
+    """(line number, German class, name) for every def_trainer in
+    data/trainers/parties.asm."""
+    def lines(rel):
+        return (root / rel).read_text(encoding='utf-8').splitlines()
+    consts = []
+    for line in lines('constants/trainer_constants.asm'):
+        if line.startswith('DEF NUM_TRAINER_CLASSES'):
+            break
+        match = re.match(r'^\s*trainerclass (\w+)', line)
+        if match and match.group(1) != 'TRAINER_NONE':
+            consts.append(match.group(1))
+    names = [m.group(1) for line in lines('data/trainers/class_names.asm') for m in [LI.match(line)] if m]
+    if len(consts) != len(names):
+        raise BaseError(f'{len(consts)} trainer classes, {len(names)} class names')
+    class_of = dict(zip(consts, names))
+    pairs = []
+    current = None
+    for number, line in enumerate(lines('data/trainers/parties.asm'), 1):
+        match = re.match(r'^\s*def_trainer_class (\w+)', line)
+        if match:
+            current = match.group(1)
+            continue
+        match = TRAINER_NAME.match(line)
+        if match:
+            if current not in class_of:
+                raise BaseError(f'data/trainers/parties.asm:{number}: unknown trainer class {current}')
+            pairs.append((number, class_of[current], match.group(1)))
+    return pairs
+
+
+def named_trainers(pairs):
+    """The names of classes whose trainers all carry one name: named characters
+    (Falkner, Lyra), not generic trainers. Tokens such as <RIVAL> are left out."""
+    by_class = {}
+    for _, cls, name in pairs:
+        by_class.setdefault(cls, set()).add(name)
+    return {next(iter(names)) for names in by_class.values()
+            if len(names) == 1 and not TOKEN.search(next(iter(names)))}
+
+
 def check_tables(base):
     """Return (problems, {category: {English: German}})."""
     problems = []
     names = {}
     rooms = None
+    trainers = None
     for path, pattern, first, stop, limit, category, same in TABLES:
         if not (ROOT / path).is_file():
             problems.append(f'{path}: file not found')
@@ -289,11 +375,26 @@ def check_tables(base):
                 label = LABEL.match(german_lines[number - 1]).group(1)
                 for problem in place_problems(de, rooms.get(label, 18)):
                     problems.append(f'{path}:{number}: {problem}: "{de}"')
+            elif limit == CLASS:
+                if name_bytes(de) > CLASS_BYTES:
+                    problems.append(f'{path}:{number}: too many bytes ({name_bytes(de)} > {CLASS_BYTES}): "{de}"')
+                if string_width(de) > CLASS_TILES:
+                    problems.append(f'{path}:{number}: too long ({string_width(de)} > {CLASS_TILES}): "{de}"')
+            elif limit == TRAINER:
+                if trainers is None:
+                    pairs = trainer_pairs(ROOT)
+                    trainers = ({n: (cls, name) for n, cls, name in pairs}, named_trainers(pairs))
+                if string_width(de) > NAME_LENGTH:
+                    problems.append(f'{path}:{number}: too long ({string_width(de)} > {NAME_LENGTH}): "{de}"')
+                cls, name = trainers[0][number]
+                width = string_width(f'{cls} {name}')
+                if width > BATTLE_LINE:
+                    problems.append(f'{path}:{number}: class and name too long ({width} > {BATTLE_LINE}): "{cls} {name}"')
             elif string_width(de) > limit:
                 problems.append(f'{path}:{number}: too long ({string_width(de)} > {limit}): "{de}"')
             if de == en and en not in SAME_IN_GERMAN[same]:
                 problems.append(f'{path}:{number}: still English: "{de}"')
-            elif category and de != en:
+            elif category and de != en and (limit != TRAINER or de in trainers[1]):
                 plain = lambda s: s.replace('<SHY>', '').replace('<WBR>', '').replace('¯', ' ')
                 names.setdefault(category, {})[plain(en)] = plain(de)
     for category, aliases in TEXT_ALIASES.items():
@@ -338,7 +439,7 @@ def main():
         problems, names = check_tables(find_base(args.base))
         if args.text is not None:
             name_problems = (': still English: ', ': too long ', ': too many bytes ', ': Pokégear line too long ',
-                             ': more than two Pokégear lines')
+                             ': more than two Pokégear lines', ': class and name too long ')
             problems = [p for p in problems if not any(kind in p for kind in name_problems)]
             problems += check_text(args.text or DEFAULT_PATHS, names)
     except BaseError as error:
