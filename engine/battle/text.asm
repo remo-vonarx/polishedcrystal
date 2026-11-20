@@ -50,12 +50,23 @@ _StdBattleTextbox:
 	jmp BattleTextbox
 
 .CountCharacters:
-	; Returns length including terminator.
+	; Returns length in tiles including terminator: "#" prints 4 tiles, "#mon" 7.
 	inc b
 	ld a, [hli]
 	cp '@'
+	ret z
+	cp '#'
+	jr z, .poke
+	cp '#mon'
 	jr nz, .CountCharacters
-	ret
+	inc b
+	inc b
+	inc b
+.poke
+	inc b
+	inc b
+	inc b
+	jr .CountCharacters
 
 .EnemyLinebreakTable:
 	dw TiedAgainstText
