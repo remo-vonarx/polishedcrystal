@@ -283,7 +283,7 @@ InitializeMagikarpHouse:
 	jmp CopyName2
 
 .Ralph:
-	db "Ralph@"
+	db "Angelo@"
 
 InitializeNPCNames:
 	ld hl, .Rival

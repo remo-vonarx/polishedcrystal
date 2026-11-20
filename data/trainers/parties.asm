@@ -2024,15 +2024,15 @@ Lyra1Group:
 
 	def_trainer_class LYRA1
 	def_trainer LYRA1_1, "Lyra"
-	tr_mon 5, "Chicory", CHIKORITA
+	tr_mon 5, "Endivchen", CHIKORITA
 	end_trainer
 
 	def_trainer LYRA1_2, "Lyra"
-	tr_mon 5, "Cinder", CYNDAQUIL
+	tr_mon 5, "Feuri", CYNDAQUIL
 	end_trainer
 
 	def_trainer LYRA1_3, "Lyra"
-	tr_mon 5, "Toto", TOTODILE
+	tr_mon 5, "Nimi", TOTODILE
 	end_trainer
 
 	def_trainer LYRA1_4, "Lyra"
@@ -2045,7 +2045,7 @@ Lyra1Group:
 	tr_mon 15, MAREEP
 		tr_evs 36 HP, 36 SAt
 		tr_moves THUNDER_WAVE, THUNDERSHOCK, MUD_SLAP, SPARK ; default for level
-	tr_mon 18, "Chicory", BAYLEEF @ ORAN_BERRY
+	tr_mon 18, "Endivchen", BAYLEEF @ ORAN_BERRY
 		tr_evs 72 HP
 		tr_moves RAZOR_LEAF, POISONPOWDER, HEALINGLIGHT, REFLECT ; No Light Screen
 	end_trainer
@@ -2057,7 +2057,7 @@ Lyra1Group:
 		tr_evs 36 SAt, 36 Spe
 	tr_mon 15, MAREEP
 		tr_evs 36 HP, 36 SAt
-	tr_mon 18, "Cinder", QUILAVA @ ORAN_BERRY
+	tr_mon 18, "Feuri", QUILAVA @ ORAN_BERRY
 		tr_evs 72 Spe
 	end_trainer
 
@@ -2068,7 +2068,7 @@ Lyra1Group:
 		tr_evs 36 HP, 36 Atk
 	tr_mon 15, MAREEP
 		tr_evs 36 HP, 36 SAt
-	tr_mon 18, "Toto", CROCONAW @ ORAN_BERRY
+	tr_mon 18, "Nimi", CROCONAW @ ORAN_BERRY
 		tr_evs 72 Atk
 	end_trainer
 
@@ -2081,7 +2081,7 @@ Lyra1Group:
 		tr_evs 200 Atk
 	tr_mon 32, FLAAFFY
 		tr_evs 100 HP, 100 SAt
-	tr_mon 37, "Chicory", BAYLEEF @ ORAN_BERRY
+	tr_mon 37, "Endivchen", BAYLEEF @ ORAN_BERRY
 		tr_evs 200 HP
 	end_trainer
 
@@ -2094,7 +2094,7 @@ Lyra1Group:
 		tr_evs 200 Atk
 	tr_mon 32, FLAAFFY
 		tr_evs 100 HP, 100 SAt
-	tr_mon 37, "Cinder", QUILAVA @ ORAN_BERRY
+	tr_mon 37, "Feuri", QUILAVA @ ORAN_BERRY
 		tr_evs 200 Spe
 	end_trainer
 
@@ -2107,7 +2107,7 @@ Lyra1Group:
 		tr_evs 100 HP, 100 Atk
 	tr_mon 32, FLAAFFY
 		tr_evs 100 HP, 100 SAt
-	tr_mon 37, "Toto", CROCONAW @ ORAN_BERRY
+	tr_mon 37, "Nimi", CROCONAW @ ORAN_BERRY
 		tr_evs 200 Atk
 	end_trainer
 
@@ -2122,7 +2122,7 @@ Lyra1Group:
 		tr_evs 252 Atk, 12 Spe
 	tr_mon 46, AMPHAROS
 		tr_evs 132 HP, 132 SAt
-	tr_mon 47, "Chicory", MEGANIUM @ SITRUS_BERRY
+	tr_mon 47, "Endivchen", MEGANIUM @ SITRUS_BERRY
 		tr_evs 252 HP, 12 SAt
 	end_trainer
 
@@ -2137,7 +2137,7 @@ Lyra1Group:
 		tr_evs 252 Atk, 12 Spe
 	tr_mon 46, AMPHAROS
 		tr_evs 132 HP, 132 SAt
-	tr_mon 47, "Cinder", TYPHLOSION @ SITRUS_BERRY
+	tr_mon 47, "Feuri", TYPHLOSION @ SITRUS_BERRY
 		tr_evs 12 Atk, 252 Spe
 	end_trainer
 
@@ -2152,7 +2152,7 @@ Lyra1Group:
 		tr_evs 132 HP, 132 Atk
 	tr_mon 46, AMPHAROS
 		tr_evs 132 HP, 132 SAt
-	tr_mon 47, "Toto", FERALIGATR @ SITRUS_BERRY
+	tr_mon 47, "Nimi", FERALIGATR @ SITRUS_BERRY
 		tr_evs 252 Atk, 12 Spe
 	end_trainer
 
@@ -2182,7 +2182,7 @@ Lyra2Group:
 		tr_extra CUD_CHEW, SATK_UP_ATK_DOWN
 		tr_evs 252 HP, 4 Def, 252 SAt
 		tr_moves PSYCHIC_M, DARK_PULSE, THUNDER_WAVE, SUBSTITUTE
-	tr_mon 72, "Chicory", MEGANIUM @ LEFTOVERS, FEMALE
+	tr_mon 72, "Endivchen", MEGANIUM @ LEFTOVERS, FEMALE
 if DEF(FAITHFUL)
 		tr_extra LEAF_GUARD, SATK_UP_ATK_DOWN
 else
@@ -2213,7 +2213,7 @@ endc
 		tr_extra CUD_CHEW, SATK_UP_ATK_DOWN
 		tr_evs 252 HP, 4 Def, 252 SAt
 		tr_moves PSYCHIC_M, DARK_PULSE, THUNDER_WAVE, SUBSTITUTE
-	tr_mon 72, "Cinder", TYPHLOSION @ HEAT_ROCK, FEMALE
+	tr_mon 72, "Feuri", TYPHLOSION @ HEAT_ROCK, FEMALE
 		tr_extra FLASH_FIRE, SPE_UP_ATK_DOWN
 		tr_evs 252 SAt, 4 SDf, 252 SAt
 		tr_moves FLAMETHROWER, SOLAR_BEAM, EARTH_POWER, SUNNY_DAY
@@ -2240,7 +2240,7 @@ endc
 		tr_extra CUD_CHEW, SATK_UP_ATK_DOWN
 		tr_evs 252 HP, 4 Def, 252 SAt
 		tr_moves PSYCHIC_M, DARK_PULSE, THUNDER_WAVE, SUBSTITUTE
-	tr_mon 72, "Toto", FERALIGATR @ LIFE_ORB, FEMALE
+	tr_mon 72, "Nimi", FERALIGATR @ LIFE_ORB, FEMALE
 		tr_extra SHEER_FORCE, SPE_UP_ATK_DOWN
 		tr_evs 252 Atk, 4 Def, 252 Spe
 		tr_moves WATERFALL, CRUNCH, ICE_PUNCH, SWORDS_DANCE
@@ -4310,7 +4310,7 @@ BeautyGroup:
 	end_trainer
 
 	def_trainer CHARLOTTE, "Lucinda"
-	tr_mon 20, "Blossom", BELLOSSOM, FEMALE
+	tr_mon 20, "Bella", BELLOSSOM, FEMALE
 		tr_extra SHINY
 	end_trainer
 
@@ -4674,8 +4674,8 @@ SchoolboyGroup:
 
 	def_trainer JOHNNY, "Niklas"
 	tr_mon 18, "Gold", BELLSPROUT @ GOLD_LEAF
-	tr_mon 16, "Spin", SPINARAK
-	tr_mon 17, "Rat", RATTATA @ ORAN_BERRY
+	tr_mon 16, "Spinni", SPINARAK
+	tr_mon 17, "Ratti", RATTATA @ ORAN_BERRY
 	end_trainer
 
 	def_trainer DANNY, "Björn"
@@ -4744,9 +4744,9 @@ SchoolgirlGroup:
 	end_trainer
 
 	def_trainer ELIZA, "Elisa"
-	tr_mon 18, "Silver", ODDISH @ SILVER_LEAF
+	tr_mon 18, "Silber", ODDISH @ SILVER_LEAF
 	tr_mon 16, "Lady", LEDYBA
-	tr_mon 17, "Tret", SENTRET @ ORAN_BERRY
+	tr_mon 17, "Wiesi", SENTRET @ ORAN_BERRY
 	end_trainer
 
 	def_trainer FAITH, "Frieda"
@@ -4768,7 +4768,7 @@ SchoolgirlGroup:
 	end_trainer
 
 	def_trainer IMOGEN, "Ines"
-	tr_mon 13, "Garlic", BULBASAUR
+	tr_mon 13, "Knobi", BULBASAUR
 	tr_mon 11, POLIWAG
 	end_trainer
 
@@ -4850,8 +4850,8 @@ PsychicGroup:
 	end_trainer
 
 	def_trainer URI, "Uri"
-	tr_mon 57, "Hocus", KADABRA
-	tr_mon 57, "Pocus", KADABRA
+	tr_mon 57, "Hokus", KADABRA
+	tr_mon 57, "Pokus", KADABRA
 	end_trainer
 
 	def_trainer VIRGIL, "Virgile"
@@ -6882,7 +6882,7 @@ CooltrainerMGroup:
 		tr_evs 192 Atk, 192 Spe
 	tr_mon 63, SANDSLASH @ KINGS_ROCK
 		tr_evs 132 HP, 252 Atk ; has Gyro Ball, so no Speed.
-	tr_mon 64, "Bruteroot", VENUSAUR @ LEFTOVERS
+	tr_mon 64, "Wurzelwut", VENUSAUR @ LEFTOVERS
 		tr_evs 252 HP, 132 SAt
 	end_trainer
 
@@ -6897,7 +6897,7 @@ CooltrainerMGroup:
 		tr_evs 192 Atk, 192 Spe
 	tr_mon 63, MACHAMP @ FOCUS_BAND
 		tr_evs 132 HP, 252 Atk
-	tr_mon 64, "Firebrand", CHARIZARD @ LEFTOVERS
+	tr_mon 64, "Feuerbrand", CHARIZARD @ LEFTOVERS
 		tr_evs 192 Atk, 192 SAt
 	end_trainer
 
@@ -6912,7 +6912,7 @@ CooltrainerMGroup:
 		tr_evs 192 SAt, 192 Spe
 	tr_mon 63, KINGDRA @ QUICK_CLAW
 		tr_evs 192 SAt, 192 Spe
-	tr_mon 64, "Empress", NIDOQUEEN @ LEFTOVERS
+	tr_mon 64, "Kaiserin", NIDOQUEEN @ LEFTOVERS
 		tr_evs 192 Atk, 192 Spe
 	end_trainer
 
@@ -7088,7 +7088,7 @@ endc
 		tr_evs 132 SAt, 252 Spe
 	tr_mon 63, NINETALES @ CHARCOAL
 		tr_evs 132 SAt, 252 Spe
-	tr_mon 63, "Shellshock", BLASTOISE @ LEFTOVERS
+	tr_mon 63, "Granate", BLASTOISE @ LEFTOVERS
 		tr_evs 132 HP, 252 Spe
 	end_trainer
 
@@ -9176,23 +9176,23 @@ YellowGroup:
 	end_trainer
 
 	def_trainer 2, "Gelb"
-	tr_mon 72, "Omny", OMASTAR @ FOCUS_SASH, FEMALE
+	tr_mon 72, "Amoni", OMASTAR @ FOCUS_SASH, FEMALE
 		tr_extra SHELL_ARMOR, SPE_UP_ATK_DOWN
 		tr_evs 252 SAt, 4 Def, 252 Spe
 		tr_moves SCALD, ANCIENTPOWER, SPIKES, ICE_BEAM
-	tr_mon 73, "Ratty", RATICATE @ FLAME_ORB, FEMALE
+	tr_mon 73, "Ratzi", RATICATE @ FLAME_ORB, FEMALE
 		tr_extra GUTS, ATK_UP_SATK_DOWN
 		tr_evs 252 Atk, 4 Def, 252 Spe
 		tr_moves SWORDS_DANCE, QUICK_ATTACK, BODY_SLAM, CRUNCH
-	tr_mon 71, "Free", BUTTERFREE @ SILVERPOWDER, FEMALE
+	tr_mon 71, "Raups", BUTTERFREE @ SILVERPOWDER, FEMALE
 		tr_extra TINTED_LENS, SPE_UP_ATK_DOWN
 		tr_evs 252 SAt, 4 SDf, 252 Spe
 		tr_moves PSYCHIC_M, BUG_BUZZ, SLEEP_POWDER, AIR_SLASH
-	tr_mon 74, "Dody", DODRIO @ SHARP_BEAK, FEMALE
+	tr_mon 74, "Dodi", DODRIO @ SHARP_BEAK, FEMALE
 		tr_extra TANGLED_FEET, SPE_UP_SATK_DOWN
 		tr_evs 252 Atk, 4 Def, 252 Spe
 		tr_moves DRILL_PECK, THRASH, DOUBLE_TEAM, BODY_SLAM
-	tr_mon 73, "Gravvy", GOLEM @ CUSTAP_BERRY, FEMALE
+	tr_mon 73, "Geon", GOLEM @ CUSTAP_BERRY, FEMALE
 		tr_extra STURDY, ATK_UP_SATK_DOWN
 		tr_evs 252 HP, 4 SDf, 252 Atk
 		tr_moves ROLLOUT, DEFENSE_CURL, EARTHQUAKE, STONE_EDGE

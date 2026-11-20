@@ -27,7 +27,7 @@ huffmap b, "H", 011000 ; 1404
 huffmap b, "I", 0011 ; 5548
 huffmap b, "J", 111110100 ; 290
 huffmap b, "K", 110000110 ; 269
-huffmap b, "L", 1001101 ; 881
+huffmap b, "L", 1001101 ; 882
 huffmap b, "M", 1101010 ; 1062
 huffmap b, "N", 10000111 ; 420
 huffmap b, "O", 1000010 ; 835
@@ -42,10 +42,10 @@ huffmap b, "W", 011010 ; 1479
 huffmap b, "X", 110000101111001 ; 4
 huffmap b, "Y", 001011 ; 1402
 huffmap b, "Z", 01100111111 ; 52
-huffmap b, "(", 0110011011 ; 94
+huffmap b, "(", 0110011110 ; 94
 huffesc b, ")", 110000101011110011011 ; 0
 huffmap b, ".", 011001110 ; 188
-huffmap b, ",", 011001111001 ; 24
+huffmap b, ",", 011001101101 ; 24
 huffmap b, "?", 01100110101 ; 43
 huffmap b, "!", 1100001111 ; 142
 huffmap b, "a", 1011 ; 7814
@@ -71,12 +71,12 @@ huffmap b, "t", 010 ; 11694
 huffmap b, "u", 1111000 ; 1178
 huffmap b, "v", 111110101 ; 337
 huffmap b, "w", 11101 ; 4668
-huffmap b, "x", 01100111100000 ; 5
+huffmap b, "x", 01100110110000 ; 5
 huffmap b, "y", 10101 ; 3822
 huffmap b, "z", 110000101001 ; 29
 huffmap b, "“", 11000010001 ; 57
 huffesc b, "”", 110000101011110111011 ; 1
-huffmap b, "-", 01100111101 ; 48
+huffmap b, "-", 01100110111 ; 48
 huffesc b, ":", 110000101011110111101 ; 1
 huffesc b, "♂", 110000101011110111110 ; 0
 huffesc b, "♀", 110000101011110111111 ; 0
@@ -98,7 +98,7 @@ huffesc b, "Ü", 110000101011111001110 ; 0
 huffesc b, "ü", 110000101011111001111 ; 3
 huffesc b, "<PO>", 110000101011111010000 ; 0
 huffesc b, "<KE>", 110000101011111010001 ; 0
-huffmap b, "<PK>", 01100111110101 ; 7
+huffmap b, "<PK>", 01100110110011 ; 6
 huffesc b, "<MN>", 110000101011111010011 ; 0
 huffmap b, "<ID>", 110000101111010 ; 4
 huffesc b, "№", 110000101011111010101 ; 2
@@ -112,7 +112,7 @@ huffesc b, "/", 110000101011111011100 ; 0
 huffesc b, "%", 110000101011111011101 ; 0
 huffesc b, "+", 110000101011111011110 ; 0
 huffesc b, "<SHARP>", 110000101011111011111 ; 0
-huffmap b, "0", 01100111100001 ; 5
+huffmap b, "0", 01100110110001 ; 5
 huffmap b, "1", 0110011001 ; 82
 huffmap b, "2", 11000010110 ; 62
 huffmap b, "3", 11110010100 ; 68
@@ -121,13 +121,13 @@ huffmap b, "5", 110000101010 ; 29
 huffmap b, "6", 1111001010101 ; 18
 huffmap b, "7", 11000010101101 ; 7
 huffesc b, "8", 110000101011111101000 ; 2
-huffmap b, "9", 01100111110100 ; 5
+huffmap b, "9", 01100110110010 ; 5
 huffmap b, "¥", 01100110001 ; 41
 huffmap b, "…", 10000110 ; 418
 huffmap b, "#", 111100100 ; 273
 huffmap b, "#mon", 110001 ; 1982
 huffmap b, "<PLAYER>", 11110011 ; 618
-huffmap b, "<RIVAL>", 0110011110001 ; 12
+huffmap b, "<RIVAL>", 0110011111010 ; 12
 huffmap b, "<TRENDY>", 11000010111000 ; 7
 
 ; Context v: 71 leaves, 70 parent nodes, 9 escaped symbols
@@ -136,7 +136,7 @@ huffmap v, "<DONE>", 0100000010 ; 121
 huffmap v, "@", 0100000100 ; 136
 huffesc v, "<PROMPT>", 010000001101001010100 ; 2
 huffmap v, "<LNBRK>", 11001101010111 ; 15
-huffmap v, "<NEXT>", 111000000 ; 380
+huffmap v, "<NEXT>", 110011011 ; 380
 huffmap v, "<LINE>", 01001 ; 4254
 huffmap v, "<CONT>", 0101101 ; 1069
 huffmap v, "<PARA>", 11100010 ; 854
@@ -187,9 +187,9 @@ huffmap v, "h", 1000100 ; 1174
 huffmap v, "i", 110110 ; 3097
 huffmap v, "j", 110011010010 ; 37
 huffmap v, "k", 010001 ; 2120
-huffmap v, "l", 11101 ; 7911
+huffmap v, "l", 11101 ; 7910
 huffmap v, "m", 10000 ; 4653
-huffmap v, "n", 011 ; 20988
+huffmap v, "n", 011 ; 20990
 huffmap v, "o", 100011 ; 2867
 huffmap v, "p", 010111 ; 2333
 huffmap v, "q", 11001101000 ; 69
@@ -205,7 +205,7 @@ huffmap v, "z", 010000000 ; 236
 huffesc v, "“", 010000001101010111010 ; 0
 huffmap v, "”", 01000000111101 ; 8
 huffmap v, "-", 111000010 ; 411
-huffmap v, ":", 110011011 ; 379
+huffmap v, ":", 111000000 ; 380
 huffesc v, "♂", 010000001101010111110 ; 0
 huffesc v, "♀", 010000001101010111111 ; 0
 huffmap v, "'", 110011010101001 ; 6
@@ -276,7 +276,7 @@ huffmap o, "A", 101100101011 ; 90
 huffmap o, "B", 10110000011000 ; 21
 huffmap o, "C", 101100101000 ; 86
 huffmap o, "D", 1000000011000 ; 32
-huffmap o, "E", 101100000001 ; 73
+huffmap o, "E", 101100000001 ; 72
 huffmap o, "F", 100000001011 ; 63
 huffmap o, "G", 10000000110111 ; 17
 huffmap o, "H", 00011100111 ; 119
@@ -304,21 +304,21 @@ huffmap o, ".", 00000 ; 5991
 huffmap o, ",", 000100 ; 2961
 huffmap o, "?", 0110000 ; 1771
 huffmap o, "!", 011001 ; 3990
-huffmap o, "a", 1001 ; 20134
+huffmap o, "a", 1001 ; 20136
 huffmap o, "b", 100010110 ; 529
 huffmap o, "c", 0001111 ; 1680
-huffmap o, "d", 100001 ; 4473
+huffmap o, "d", 100001 ; 4474
 huffmap o, "e", 110 ; 45463
 huffmap o, "f", 00011101 ; 843
 huffmap o, "g", 100011 ; 4717
 huffmap o, "h", 0101 ; 15344
-huffmap o, "i", 0111 ; 16461
+huffmap o, "i", 0111 ; 16463
 huffmap o, "j", 100000001111 ; 71
 huffmap o, "k", 1000001 ; 2004
 huffmap o, "l", 01000 ; 6922
-huffmap o, "m", 10000001 ; 1022
+huffmap o, "m", 10000001 ; 1021
 huffmap o, "n", 1000100 ; 2248
-huffmap o, "o", 001 ; 29535
+huffmap o, "o", 001 ; 29534
 huffmap o, "p", 0110001 ; 1980
 huffmap o, "q", 000111001010 ; 51
 huffmap o, "r", 101101 ; 5729
@@ -333,7 +333,7 @@ huffmap o, "z", 101100000100 ; 79
 huffesc o, "“", 10000000110110010111010 ; 0
 huffmap o, "”", 000111001001 ; 48
 huffmap o, "-", 10110001 ; 1430
-huffmap o, ":", 100000000 ; 461
+huffmap o, ":", 100000000 ; 460
 huffesc o, "♂", 10000000110110010111110 ; 0
 huffesc o, "♀", 10000000110110010111111 ; 0
 huffmap o, "'", 1000000011001 ; 32
@@ -355,7 +355,7 @@ huffmap o, "ü", 101100000110110 ; 10
 huffesc o, "<PO>", 10000000110110011010000 ; 0
 huffesc o, "<KE>", 10000000110110011010001 ; 0
 huffesc o, "<PK>", 10000000110110011010010 ; 0
-huffmap o, "<MN>", 000111001101110 ; 7
+huffmap o, "<MN>", 000111001101110 ; 6
 huffesc o, "<ID>", 10000000110110011010100 ; 0
 huffmap o, "№", 1011000000000100 ; 4
 huffesc o, "<LV>", 10000000110110011010110 ; 0

@@ -168,9 +168,10 @@ SAME_IN_GERMAN = {
                  'Ronda', 'Rosie', 'Ruth', 'Sabrina', 'Salim', 'Salma', 'Sara&Erik', 'Sarah', 'Sasha', 'Serena',
                  'Spark', 'Stefan', 'Subaru', 'Takeo', 'Tamara', 'Teddy', 'Thomas', 'Tyrone', 'Uri', 'Valerie',
                  'Victor', 'Vince', 'Viola', 'Vivian', 'Wanda', 'Winifred', 'Winston', 'Woda'},
-    'nicknames': set(),
-    'trades': set(),
-    'phone': set(),
+    'nicknames': {'Antorcha', 'Audrey', 'Bruce', 'Bulbasaur', 'Campfire', 'Chuchu', 'Dopefish', 'Eon', 'Gold', 'Huesitos',
+                  'Jackie', 'Lady', 'Linterna', 'Luna', 'Milky', 'Puka', 'Teddy', 'Vee', 'VuiVui'},
+    'trades': {'Chance', 'Clarence', 'Doris', 'Gail', 'Hari', 'Jacques', 'Jeeves', 'Joey', 'Kim', 'Mimic', 'Tim'},
+    'phone': {'Bill:', '   #maniac', '   #mon Prof.', 'Miracle Cycle:', 'Lyra:', 'Buena:', '   Disc Jockey'},
     'rival': set(),
     'ralph': set(),
 }
