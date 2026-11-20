@@ -319,8 +319,8 @@ def name_bytes(name):
 
 
 def trainer_pairs(root):
-    """(line number, German class, name) for every def_trainer in
-    data/trainers/parties.asm."""
+    """(line number, class constant, German class, name) for every def_trainer
+    in data/trainers/parties.asm."""
     def lines(rel):
         return (root / rel).read_text(encoding='utf-8').splitlines()
     consts = []
@@ -345,18 +345,20 @@ def trainer_pairs(root):
         if match:
             if current not in class_of:
                 raise BaseError(f'data/trainers/parties.asm:{number}: unknown trainer class {current}')
-            pairs.append((number, class_of[current], match.group(1)))
+            pairs.append((number, current, class_of[current], match.group(1)))
     return pairs
 
 
 def named_trainers(pairs):
-    """The names of classes whose trainers all carry one name: named characters
-    (Falkner, Lyra), not generic trainers. Tokens such as <RIVAL> are left out."""
+    """The line numbers of named characters (Falkner, Lyra): the trainers of a
+    class constant that has a single name, not generic trainers. Grouped by
+    constant, since constants share class names ("Leader"). Tokens such as
+    <RIVAL> are left out."""
     by_class = {}
-    for _, cls, name in pairs:
-        by_class.setdefault(cls, set()).add(name)
-    return {next(iter(names)) for names in by_class.values()
-            if len(names) == 1 and not TOKEN.search(next(iter(names)))}
+    for number, const, _, name in pairs:
+        by_class.setdefault(const, {}).setdefault(name, []).append(number)
+    return {number for names in by_class.values() if len(names) == 1
+            for name, numbers in names.items() if not TOKEN.search(name) for number in numbers}
 
 
 def check_tables(base):
@@ -402,7 +404,7 @@ def check_tables(base):
             elif limit == TRAINER:
                 if trainers is None:
                     pairs = trainer_pairs(ROOT)
-                    trainers = ({n: (cls, name) for n, cls, name in pairs}, named_trainers(pairs))
+                    trainers = ({n: (cls, name) for n, _, cls, name in pairs}, named_trainers(pairs))
                 if string_width(de) > NAME_LENGTH:
                     problems.append(f'{path}:{number}: too long ({string_width(de)} > {NAME_LENGTH}): "{de}"')
                 cls, name = trainers[0][number]
@@ -413,7 +415,7 @@ def check_tables(base):
                 problems.append(f'{path}:{number}: too long ({string_width(de)} > {limit}): "{de}"')
             if de == en and en not in SAME_IN_GERMAN[same]:
                 problems.append(f'{path}:{number}: still English: "{de}"')
-            elif category and de != en and (limit != TRAINER or de in trainers[1]):
+            elif category and de != en and (limit != TRAINER or number in trainers[1]):
                 plain = lambda s: s.replace('<SHY>', '').replace('<WBR>', '').replace('¯', ' ')
                 names.setdefault(category, {})[plain(en)] = plain(de)
     for category, aliases in TEXT_ALIASES.items():
