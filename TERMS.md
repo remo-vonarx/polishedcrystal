@@ -170,6 +170,10 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Lass | Göre | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Beauty | Schönheit | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Bug Maniac | Käfermaniac | Trainer classes | Modern name (Omega Rubin/Alpha Saphir) |
+| Bug Catcher (Battle Tower) | Käfersamml. | Trainer classes | Abbreviation in Battle Tower battles only (`data/battle_tower/short_class_names.asm`), so Käfersamml. Darwin and Tajiri fit 18 tiles; the user's choice (2026-11-21) |
+| Bug Maniac (Battle Tower) | Käferman. | Trainer classes | Abbreviation in Battle Tower battles only, so Käferman. Satoshi fits; the user's choice (2026-11-21) |
+| Beauty (Battle Tower) | Schönh. | Trainer classes | Abbreviation in Battle Tower battles only, so Schönh. Valentine fits; the user's choice (2026-11-21) |
+| Cosplayer (Battle Tower) | Cosplayer | Trainer classes | Short form in Battle Tower battles only, so Cosplayer Patricia fits; the user's choice (2026-11-21) |
 | Ruin Maniac | Ruinenmaniac | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
 | Firebreather | Feuerspucker | Trainer classes | Modern name (HeartGold/SoulSilver) |
 | Juggler | Jongleur | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
@@ -280,6 +284,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Kiyo | Leif | Trainer names | Kristall (Crystal's Black Belt Kiyo, class "SCHWARZGURT") |
 | Palmer | Viktor | Trainer names | Modern name (Diamond/Pearl/Platinum) |
 | Thorton | Distmar | Trainer names | Modern name (Platinum) |
+| Battle Tower names | kept as in English, except Palmer → Viktor and Thorton → Distmar | Trainer names (`data/battle_tower/classes.asm`) | The user's choice (2026-11-21): the facility gathers trainers from everywhere, and many names are references (Hopper, Dijkstra, Fagin) |
 | & James | & James | Trainer names | Anime name; the battle line reads "Jessie & James" |
 | Lorelei | Lorelei | Trainer names | Modern name (FireRed/LeafGreen) |
 | Agatha | Agathe | Trainer names | Modern name (FireRed/LeafGreen) |
