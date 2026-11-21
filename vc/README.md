@@ -117,6 +117,47 @@ python3 -I vc/gen_ctm.py vc/local/movies/pokemon.ctm 0004000000172800 268 "$base
 
 The debug build runs slower: on 2026-11-17 the screens showed about 18 s after their inputs, so take shots every 2 s from 190 s to 290 s. The Pokédex has no A–Z mode; START opens its search, RIGHT sets "by Name" and START runs it. The Bad Egg appears only after a box checksum error and isn't reached this way.
 
+## Play Kristall in stages
+
+Kristall's screens past the room take minutes of play, and Azahar here has no save states. Kristall's own save carries over, though: Virtual Console keeps it in the sandbox. One movie plays a stage and saves in the game, and the next movie continues from that save. Keep each stage's save, so a failed stage replays from the one before:
+
+```sh
+kdata="vc/local/azahar-home/Library/Application Support/Azahar/sdmc/Nintendo 3DS/00000000000000000000000000000000/00000000000000000000000000000000/title/00040000/00172b00/data/00000001"
+mkdir -p vc/local/saves/empty && cp -p "$kdata/sav.dat" "$kdata/SecureValue" vc/local/saves/empty/   # once, while no game is saved
+mkdir -p vc/local/saves/<stage> && cp -p "$kdata/sav.dat" "$kdata/SecureValue" vc/local/saves/<stage>/
+cp -p vc/local/saves/<stage>/sav.dat vc/local/saves/<stage>/SecureValue "$kdata/"                 # replay from a stage
+```
+
+Put the empty save back when you're done, so the new-game movie above starts on NEUES SPIEL again. These stages reach the Pokégear's phone list with Mama and Prof. Lind:
+
+1. **Pokégear** (from the empty save). After the new-game taps `kbase` and `ktaps` above, the player walks downstairs, and Mom gives the Pokégear and asks for the day, summer time and the phone. The movie then sets TEXT-TEMPO to 3 (fast), saves and opens the phone card. Shots every 1.5 s from 200 s show Mom's texts, the options (about 350 s), the save and "MAMA:" (about 385 s).
+2. **Starter** (from stage 1's save). Continue, out of the house and into Elm's lab, through his speech, Feurigel's ball (its question has two boxes, so A turns the page before A answers JA), B through the nickname question (NEIN) and Elm's directions, "AAAAAAA erhält LINDs Nummer.", then save over the old save. Shots every 1.5 s from 40 s; the number shows at about 160 s, the save at about 200 s.
+3. **Phone list** (from stage 2's save). Continue, then the Pokégear's phone card with MAMA and PROF. LIND at about 30 s.
+
+The times are from a run with little lag; on a busy machine the screens show up to a minute later. Screenshots fail once the movie has played to its end, so each movie runs a few seconds past its last screen.
+
+```sh
+k1="UP:194:0.25;RIGHT:194.4:1.05;UP:195.6:0.52;DOWN:198.8:1.05;$(python3 -I -c "print(';'.join(f'A:{201+i*1.2:g}:0.12' for i in range(110)))")"
+k1="$k1;$(python3 -I -c "print(';'.join(f'B:{333+i*1.2:g}:0.12' for i in range(8)))");START:343.6:0.12;DOWN:345.2:0.12;DOWN:345.8:0.12;DOWN:346.4:0.12;DOWN:347:0.12;A:347.6:0.12"
+k1="$k1;LEFT:350.2:0.12;B:351.8:0.12;UP:355.6:0.12;A:356.2:0.12;A:359.4:0.12;B:368.6:0.12;B:371.3:0.12;START:374.5:0.12;UP:376.1:0.12;UP:376.7:0.12;A:377.3:0.12;RIGHT:381.5:0.12"
+python3 -I vc/gen_ctm.py vc/local/movies/k-stage1.ctm 0004000000172B00 390 "$kbase;$ktaps;$k1"
+
+kcont="A:4:0.12;A:6:0.12;A:9:0.12;A:13:0.12;A:15:0.12;B:19:0.12"
+k2="$kcont;DOWN:22:0.52;LEFT:22.7:0.52;DOWN:23.4:0.25;DOWN:26.3:0.25;LEFT:26.7:1.85;UP:28.7:1.05"
+k2="$k2;UP:31:0.25;LEFT:31.7:0.25;UP:32.1:0.25;LEFT:32.8:0.25;UP:33.2:0.25;LEFT:33.9:0.25;UP:34.3:0.25"
+k2="$k2;$(python3 -I -c "print(';'.join(f'A:{40+i*1.2:g}:0.12' for i in range(60)))");RIGHT:112:0.52;UP:112.7:0.12;A:113.8:0.12;A:118:0.12;A:122.2:0.12;A:126.4:0.12"
+k2="$k2;$(python3 -I -c "print(';'.join(f'B:{129.5+i*1.5:g}:0.12' for i in range(30)))");START:174.5:0.12;DOWN:176:0.12;DOWN:176.6:0.12;DOWN:177.2:0.12;DOWN:177.8:0.12"
+k2="$k2;A:178.4:0.12;A:181.6:0.12;A:185.8:0.12;A:189.5:0.12;B:198.7:0.12"
+python3 -I vc/gen_ctm.py vc/local/movies/k-stage2.ctm 0004000000172B00 205 "$k2"
+
+python3 -I vc/gen_ctm.py vc/local/movies/k-stage3.ctm 0004000000172B00 50 "$kcont;START:21:0.12;DOWN:22.6:0.12;DOWN:23.2:0.12;A:23.8:0.12;RIGHT:28:0.12"
+```
+
+- **Continue.** These taps reach the game at about 16 s. The start menu's cursor starts at the top after Continue: it lives in RAM that isn't saved, shared with the battle menu's cursor.
+- **Walking.** Holding a direction for 16n − 1 frames walks n tiles. Replays from the same save can still end a tile apart, so a walk lines up on a wall before it turns: stage 2 alternates UP into the lab's wall with LEFT until UP enters the door.
+- **Saving.** Over an existing save, Kristall first says "Es gibt bereits einen Spielstand." and then asks "Spielstand überschreiben?", one A each.
+- **Further.** The first trainer before the Mystery Egg is Youngster Mikey on Route 30, (5,23): west through Route 29 to Cherrygrove, then north. Joey appears only after the egg.
+
 ## Install on the 3DS
 
 1. Copy the `.cia` into the SD card's `cia/` folder.
