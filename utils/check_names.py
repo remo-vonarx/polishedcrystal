@@ -24,6 +24,13 @@ Default run: checks the tables.
 - Trainers (data/trainers/parties.asm) are measured against the battle line
   (trainer_pairs): the German class of each def_trainer, a space and the name,
   at most 18 tiles, with <RIVAL> as 7.
+- Battle Tower names (data/battle_tower/classes.asm) fit 9 tiles and are
+  measured the same way (tower_pairs), with the Battle Tower's short class
+  where data/battle_tower/short_class_names.asm has one; a short class fits
+  12 bytes. The list counts as kept in English, except Palmer and Thorton.
+- Wonder Trade names (data/events/wonder_trade/ot_names.asm) fit 7 tiles.
+- Psychic Inver's name (data/trainers/psychic_inver.asm) fits 5 tiles: his
+  party picker hardcodes the length of "Inver".
 - A table whose German and English entry counts differ is reported, and so
   is a table that can't be found: a missing file, no entries, or a missing
   start or end label (as after an Upstream rename).
@@ -76,6 +83,11 @@ CLASS_BYTES = 12  # TRAINER_CLASS_NAME_LENGTH - 1: the class buffer (wOTClassNam
 CLASS_TILES = 14  # the phone list prints the class from column 5 to 18
 NAME_LENGTH = 10  # NAME_LENGTH - 1
 BATTLE_LINE = 18  # "<CLASS> <NAME>" starts the battle box's first line (PlaceEnemysName)
+TOWER = 'tower'
+TOWER_NAME = 9  # NAME_LENGTH - 2: a full Battle Tower name has no terminator
+TOWER_CLASSES = 'data/battle_tower/short_class_names.asm'
+TOWER_TRAINER = re.compile(r'^\s*rawchar "([^"]*)",\s*(\w+)')
+SHORT_CLASS = re.compile(r'^\s*db (\w+),\s*"([^"]*)"')
 
 # path, entry pattern, first label (None: file start), label that ends the
 # table (None: file end), limit in tiles, text category (None: tables only),
@@ -107,6 +119,12 @@ TABLES = [
     # 10 tiles each, and each class + name pair against the battle line (trainer_pairs)
     ('data/trainers/parties.asm', TRAINER_NAME, None, None, TRAINER, 'person', 'trainers'),
     ('data/trainers/parties.asm', NICKNAME, None, None, 10, None, 'nicknames'),
+    # Psychic Inver's own party file: PickPsychicInverParty hardcodes the 8-byte prefix of
+    # "Inver@", so a longer name breaks his party; the name stays "Inver" (the user's choice)
+    ('data/trainers/psychic_inver.asm', TRAINER_NAME, None, None, 5, 'person', 'trainers'),
+    # 9 tiles each, and each class + name pair against the battle line (tower_pairs)
+    ('data/battle_tower/classes.asm', RAWCHAR, None, None, TOWER, None, 'tower'),
+    ('data/events/wonder_trade/ot_names.asm', RAWCHAR, None, None, 7, None, 'wonder trade'),
     ('data/events/npc_trades.asm', TRADE_NICKNAME, None, None, 10, None, 'trades'),
     ('data/events/npc_trades.asm', TRADE_OT, None, None, 7, 'person', 'trades'),
     # the Pokégear's phone list: columns 2 to 18
@@ -114,6 +132,15 @@ TABLES = [
     ('engine/events/specials.asm', RAWCHAR, 'DefaultRivalName', 'SpecialTrendyPhrase', 7, None, 'rival'),
     ('engine/menus/intro_menu.asm', DB, 'Ralph', 'InitializeNPCNames', 10, None, 'ralph'),
 ]
+
+
+
+class AllBut(frozenset):
+    """A set of every name except these: for a table kept in English."""
+
+    def __contains__(self, name):
+        return not frozenset.__contains__(self, name)
+
 
 # official names that are the same in English and German, and placeholders,
 # per table: a name allowed in one table is still reported in another
@@ -157,7 +184,7 @@ SAME_IN_GERMAN = {
                  'Cynthia', 'Dahlia', 'Dan & Cara', 'Daniela', 'Daric', 'Dent', 'Dexter', 'Diane', 'Dirk',
                  'Duplica', 'Emy', 'En', 'Erik&Sara', 'Erika', 'Esther', 'Euna', 'Ezekiel', 'Ezra', 'Felix',
                  'Fergus', 'Frank', 'Gareth', 'Geddy', 'Gerald', 'Gina', 'Giovanni', 'Glyn', 'Gustav', 'Hari',
-                 'Harvey', 'Heather', 'Henri', 'Holly', 'Hugo', 'Imakuni', 'Inigo', 'Ioana', 'Iris', 'Isabel',
+                 'Harvey', 'Heather', 'Henri', 'Holly', 'Hugo', 'Imakuni', 'Inigo', 'Inver', 'Ioana', 'Iris', 'Isabel',
                  'Ivy', 'Jacky', 'Jaclyn', 'Jaime', 'Jamie', 'Janet', 'Jaska', 'Jessica', 'Joe & Jo', 'Jones',
                  'Jonet', 'Jordan', 'Joy', 'Julie', 'Kagami', 'Kamila', 'Kazu', 'Keiko', 'Kenta', 'Kieran',
                  'Koga', 'Kouta', 'Kukui', 'Kuroko', 'Lang', 'Lawrence', 'Li & Su', 'Lorelei', 'Louis', 'Luna',
@@ -174,6 +201,35 @@ SAME_IN_GERMAN = {
     'phone': {'Bill:', '   #maniac', '   #mon Prof.', 'Miracle Cycle:', 'Lyra:', 'Buena:', '   Disc Jockey'},
     'rival': set(),
     'ralph': set(),
+    # the user's choice (2026-11-21): the Battle Tower keeps its names
+    'tower': AllBut({'Palmer', 'Thorton'}),
+    # kept as in English (2026-11-21): real people, developers, Japanese names,
+    # other franchises, letters, and names that are the same in German
+    'wonder trade': {'A', 'A.J.', 'Abe', 'Aizawa', 'Alain', 'Aliana', 'Alice', 'Alpha', 'Ami', 'Amos', 'Anabel', 'Aoooo',
+                     'Argenta', 'Artemis', 'Arty', 'Ash', 'Assunta', 'Asuka', 'Attila', 'Aya', 'Baba', 'Babs', 'Baoba',
+                     'Barry', 'Bel', 'Ben', 'Bill', 'Blanche', 'Bonnie', 'Bridget', 'Bruno', 'Bryan', 'Buena', 'Butch',
+                     'Camila', 'Candela', 'Casey', 'Cassidy', 'Celio', 'Cetsa', 'Charles', 'Charon', 'Cheren', 'Cissy',
+                     'Clara', 'Cly', 'Clyde', 'Cyan', 'Cynthia', 'Dahlia', 'Danny', 'Daru', 'Daruku', 'Delia', 'Delta',
+                     'Dexio', 'Dexter', 'Diana', 'Diantha', 'Dio', 'Dirk', 'Domino', 'Don', 'Drayano', 'Duplica', 'Earl',
+                     'Erika', 'Evan', 'Everyle', 'Fredrik', 'Frieda', 'Fuji', 'Gaius', 'Gary', 'Gendo', 'Giovani',
+                     'Giselle', 'Gold', 'Greta', 'Hala', 'Hana', 'Hari', 'Haruhi', 'Haruka', 'Hayate', 'Heart', 'Helena',
+                     'Hibiki', 'Hikari', 'Hiro', 'Hisashi', 'Hlin', 'Hun', 'Imakuni', 'Itsuki', 'Ivy', 'Iwata',
+                     'Jacques', 'Jade', 'James', 'Jessie', 'Jimmy', 'Jojo', 'Josuke', 'Jotaro', 'Joy', 'Juan', 'Jun',
+                     'Junichi', 'Jupiter', 'Kagaya', 'Kahili', 'Kaito', 'Kamon', 'Karuta', 'Kaworu', 'Kei', 'Keita',
+                     'Kersh', 'Kiawe', 'Kim', 'Kloe', 'Koga', 'Koji', 'Kotone', 'Kouki', 'Kukui', 'Kurisu', 'Kurt',
+                     'Kyon', 'Kyouhei', 'Lambda', 'Lanette', 'Len', 'Leo', 'Lexus', "Li'l D", 'Lorelei', 'Luana',
+                     'Lucian', 'Luka', 'Luke', 'Lun', 'Luna', 'Lyra', 'Lyrra', 'Makoto', 'Mamoru', 'Marckus', 'Mari',
+                     'Mars', 'Masuda', 'Mateo', 'Matsuda', 'Matthew', 'Mayuri', 'Mei', 'Meiko', 'Melanie', 'Michael',
+                     'Miguel', 'Mikey', 'Miku', 'Mikuru', 'Minako', 'Mind', 'Misty', 'Mitsuru', 'Miyuki', 'Mohn',
+                     'Mr.<PK><MN>', 'N', 'Nagisa', 'Nishino', 'Norman', 'Nozomi', 'Okabe', 'Omega', 'Oota', 'Orange',
+                     'Orville', 'Paul', 'Phil', 'Pia', 'Prima', 'Pum', 'Pyro', 'Rainer', 'Rangi', 'Rapp', 'Rei', 'Reiko',
+                     'Remy', 'Revo', 'Rhue', 'Richie', 'Rin', 'Rudy', 'Ruka', 'Ryo', 'Ryoko', 'Ryuki', 'Sabrina',
+                     'Saika', 'Sakura', 'Samuel', 'Satoru', 'Satoshi', 'Saturn', 'Scott', 'Selene', 'Serena', 'Shigeki',
+                     'Shigeru', 'Shinji', 'Silktre', 'Sina', 'Slade', 'Slash', 'Sogabe', 'Sorya', 'Sosuke', 'Soul',
+                     'Spark', 'Sparky', 'Strata', 'Suki', 'Suzuha', 'Syaoran', 'Sylvie', 'Tajiri', 'Talan', 'Tamada',
+                     'Teala', 'Teto', 'Tetsuya', 'Theta', 'Tierno', 'Tim', 'Todd', 'Tomoyo', 'Touko', 'Touya', 'Tracey',
+                     'Traziun', 'Tsuruya', 'Tupp', 'Turner', 'Usagi', 'Valerie', 'Viola', 'Volkner', 'Willow', 'X', 'Y',
+                     'Yoshi', 'Yui', 'Yuki', 'Yuuki', 'Z', 'Zeta', 'Zetsu', 'Zipp'},
 }
 
 # English spellings in text that differ from the tables, by category
@@ -318,9 +374,8 @@ def name_bytes(name):
     return len(TOKEN.sub('x', name).replace('#mon', 'x').replace('#', 'x'))
 
 
-def trainer_pairs(root):
-    """(line number, class constant, German class, name) for every def_trainer
-    in data/trainers/parties.asm."""
+def class_names(root):
+    """Each trainer class constant's German class (data/trainers/class_names.asm)."""
     def lines(rel):
         return (root / rel).read_text(encoding='utf-8').splitlines()
     consts = []
@@ -333,7 +388,15 @@ def trainer_pairs(root):
     names = [m.group(1) for line in lines('data/trainers/class_names.asm') for m in [LI.match(line)] if m]
     if len(consts) != len(names):
         raise BaseError(f'{len(consts)} trainer classes, {len(names)} class names')
-    class_of = dict(zip(consts, names))
+    return dict(zip(consts, names))
+
+
+def trainer_pairs(root):
+    """(line number, class constant, German class, name) for every def_trainer
+    in data/trainers/parties.asm."""
+    def lines(rel):
+        return (root / rel).read_text(encoding='utf-8').splitlines()
+    class_of = class_names(root)
     pairs = []
     current = None
     for number, line in enumerate(lines('data/trainers/parties.asm'), 1):
@@ -347,6 +410,45 @@ def trainer_pairs(root):
                 raise BaseError(f'data/trainers/parties.asm:{number}: unknown trainer class {current}')
             pairs.append((number, current, class_of[current], match.group(1)))
     return pairs
+
+
+def tower_short_classes(root, class_of):
+    """The Battle Tower's short classes by constant, and the problems with them:
+    a short class over its 12-byte buffer. No table means no short classes."""
+    path = root / TOWER_CLASSES
+    if not path.is_file():
+        return {}, []
+    shorts = {}
+    problems = []
+    for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+        match = SHORT_CLASS.match(line)
+        if not match:
+            continue
+        const, short = match.group(1), match.group(2).rstrip('@')
+        if const not in class_of:
+            raise BaseError(f'{TOWER_CLASSES}:{number}: unknown trainer class {const}')
+        if name_bytes(short) > CLASS_BYTES:
+            problems.append(f'{TOWER_CLASSES}:{number}: too many bytes ({name_bytes(short)} > {CLASS_BYTES}): "{short}"')
+        shorts[const] = short
+    return shorts, problems
+
+
+def tower_pairs(root):
+    """{line number: (class shown, name)} for every Battle Tower trainer, with
+    the short class where the Battle Tower has one, and the short classes'
+    problems."""
+    class_of = class_names(root)
+    shorts, problems = tower_short_classes(root, class_of)
+    pairs = {}
+    path = 'data/battle_tower/classes.asm'
+    for number, line in enumerate((root / path).read_text(encoding='utf-8').splitlines(), 1):
+        match = TOWER_TRAINER.match(line)
+        if match:
+            name, const = match.group(1).rstrip('@'), match.group(2)
+            if const not in class_of:
+                raise BaseError(f'{path}:{number}: unknown trainer class {const}')
+            pairs[number] = (shorts.get(const, class_of[const]), name)
+    return pairs, problems
 
 
 def named_trainers(pairs):
@@ -367,6 +469,7 @@ def check_tables(base):
     names = {}
     rooms = None
     trainers = None
+    tower = None
     for path, pattern, first, stop, limit, category, same in TABLES:
         if not (ROOT / path).is_file():
             problems.append(f'{path}: file not found')
@@ -408,6 +511,16 @@ def check_tables(base):
                 if string_width(de) > NAME_LENGTH:
                     problems.append(f'{path}:{number}: too long ({string_width(de)} > {NAME_LENGTH}): "{de}"')
                 cls, name = trainers[0][number]
+                width = string_width(f'{cls} {name}')
+                if width > BATTLE_LINE:
+                    problems.append(f'{path}:{number}: class and name too long ({width} > {BATTLE_LINE}): "{cls} {name}"')
+            elif limit == TOWER:
+                if tower is None:
+                    tower, short_problems = tower_pairs(ROOT)
+                    problems += short_problems
+                if string_width(de) > TOWER_NAME:
+                    problems.append(f'{path}:{number}: too long ({string_width(de)} > {TOWER_NAME}): "{de}"')
+                cls, name = tower[number]
                 width = string_width(f'{cls} {name}')
                 if width > BATTLE_LINE:
                     problems.append(f'{path}:{number}: class and name too long ({width} > {BATTLE_LINE}): "{cls} {name}"')

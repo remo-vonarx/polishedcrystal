@@ -2,7 +2,12 @@ GetOTName:
 	ld de, wOTPlayerName
 	ld a, [wLinkMode]
 	and a
-	call z, GetTrainerClassName
+	jr nz, .got_name
+	call GetTrainerClassName
+	ld a, [wInBattleTowerBattle]
+	and a
+	call nz, GetBattleTowerShortClassName
+.got_name
 	ld h, d
 	ld l, e
 	ld bc, TRAINER_CLASS_NAME_LENGTH
@@ -10,6 +15,29 @@ GetOTName:
 	push de
 	rst CopyBytes
 	pop de
+	ret
+
+GetBattleTowerShortClassName:
+; If the Battle Tower has a short name for [wTrainerClass], return it in de;
+; otherwise keep de.
+	ld a, [wTrainerClass]
+	ld b, a
+	ld hl, BattleTowerShortClassNames
+.loop
+	ld a, [hli]
+	cp -1
+	ret z
+	cp b
+	jr z, .found
+.skip
+	ld a, [hli]
+	cp '@'
+	jr nz, .skip
+	jr .loop
+
+.found
+	ld d, h
+	ld e, l
 	ret
 
 GetTrainerAttributes:
@@ -52,3 +80,4 @@ ComputeTrainerReward:
 	ret
 
 INCLUDE "data/trainers/attributes.asm"
+INCLUDE "data/battle_tower/short_class_names.asm"
