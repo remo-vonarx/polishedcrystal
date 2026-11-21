@@ -29,6 +29,7 @@ Default run: checks the tables.
   where data/battle_tower/short_class_names.asm has one; a short class fits
   12 bytes. The list counts as kept in English, except Palmer and Thorton.
 - Wonder Trade names (data/events/wonder_trade/ot_names.asm) fit 7 tiles.
+- Psychic Inver's name (data/trainers/psychic_inver.asm) fits 10 tiles.
 - A table whose German and English entry counts differ is reported, and so
   is a table that can't be found: a missing file, no entries, or a missing
   start or end label (as after an Upstream rename).
@@ -117,6 +118,8 @@ TABLES = [
     # 10 tiles each, and each class + name pair against the battle line (trainer_pairs)
     ('data/trainers/parties.asm', TRAINER_NAME, None, None, TRAINER, 'person', 'trainers'),
     ('data/trainers/parties.asm', NICKNAME, None, None, 10, None, 'nicknames'),
+    # Psychic Inver's own party file: "Seher" + a 10-tile name always fits the battle line
+    ('data/trainers/psychic_inver.asm', TRAINER_NAME, None, None, 10, 'person', 'trainers'),
     # 9 tiles each, and each class + name pair against the battle line (tower_pairs)
     ('data/battle_tower/classes.asm', RAWCHAR, None, None, TOWER, None, 'tower'),
     ('data/events/wonder_trade/ot_names.asm', RAWCHAR, None, None, 7, None, 'wonder trade'),
@@ -198,7 +201,33 @@ SAME_IN_GERMAN = {
     'ralph': set(),
     # the user's choice (2026-11-21): the Battle Tower keeps its names
     'tower': AllBut({'Palmer', 'Thorton'}),
-    'wonder trade': set(),
+    # kept as in English (2026-11-21): real people, developers, Japanese names,
+    # other franchises, letters, and names that are the same in German
+    'wonder trade': {'A', 'A.J.', 'Abe', 'Aizawa', 'Alain', 'Aliana', 'Alice', 'Alpha', 'Ami', 'Amos', 'Anabel', 'Aoooo',
+                     'Argenta', 'Artemis', 'Arty', 'Ash', 'Assunta', 'Asuka', 'Attila', 'Aya', 'Baba', 'Babs', 'Baoba',
+                     'Barry', 'Bel', 'Ben', 'Bill', 'Blanche', 'Bonnie', 'Bridget', 'Bruno', 'Bryan', 'Buena', 'Butch',
+                     'Camila', 'Candela', 'Casey', 'Cassidy', 'Celio', 'Cetsa', 'Charles', 'Charon', 'Cheren', 'Cissy',
+                     'Clara', 'Cly', 'Clyde', 'Cyan', 'Cynthia', 'Dahlia', 'Danny', 'Daru', 'Daruku', 'Delia', 'Delta',
+                     'Dexio', 'Dexter', 'Diana', 'Diantha', 'Dio', 'Dirk', 'Domino', 'Don', 'Drayano', 'Duplica', 'Earl',
+                     'Erika', 'Evan', 'Everyle', 'Fredrik', 'Frieda', 'Fuji', 'Gaius', 'Gary', 'Gendo', 'Giovani',
+                     'Giselle', 'Gold', 'Greta', 'Hala', 'Hana', 'Hari', 'Haruhi', 'Haruka', 'Hayate', 'Heart', 'Helena',
+                     'Hibiki', 'Hikari', 'Hiro', 'Hisashi', 'Hlin', 'Hun', 'Imakuni', 'Itsuki', 'Ivy', 'Iwata',
+                     'Jacques', 'Jade', 'James', 'Jessie', 'Jimmy', 'Jojo', 'Josuke', 'Jotaro', 'Joy', 'Juan', 'Jun',
+                     'Junichi', 'Jupiter', 'Kagaya', 'Kahili', 'Kaito', 'Kamon', 'Karuta', 'Kaworu', 'Kei', 'Keita',
+                     'Kersh', 'Kiawe', 'Kim', 'Kloe', 'Koga', 'Koji', 'Kotone', 'Kouki', 'Kukui', 'Kurisu', 'Kurt',
+                     'Kyon', 'Kyouhei', 'Lambda', 'Lanette', 'Len', 'Leo', 'Lexus', "Li'l D", 'Lorelei', 'Luana',
+                     'Lucian', 'Luka', 'Luke', 'Lun', 'Luna', 'Lyra', 'Lyrra', 'Makoto', 'Mamoru', 'Marckus', 'Mari',
+                     'Mars', 'Masuda', 'Mateo', 'Matsuda', 'Matthew', 'Mayuri', 'Mei', 'Meiko', 'Melanie', 'Michael',
+                     'Miguel', 'Mikey', 'Miku', 'Mikuru', 'Minako', 'Mind', 'Misty', 'Mitsuru', 'Miyuki', 'Mohn',
+                     'Mr.<PK><MN>', 'N', 'Nagisa', 'Nishino', 'Norman', 'Nozomi', 'Okabe', 'Omega', 'Oota', 'Orange',
+                     'Orville', 'Paul', 'Phil', 'Pia', 'Prima', 'Pum', 'Pyro', 'Rainer', 'Rangi', 'Rapp', 'Rei', 'Reiko',
+                     'Remy', 'Revo', 'Rhue', 'Richie', 'Rin', 'Rudy', 'Ruka', 'Ryo', 'Ryoko', 'Ryuki', 'Sabrina',
+                     'Saika', 'Sakura', 'Samuel', 'Satoru', 'Satoshi', 'Saturn', 'Scott', 'Selene', 'Serena', 'Shigeki',
+                     'Shigeru', 'Shinji', 'Silktre', 'Sina', 'Slade', 'Slash', 'Sogabe', 'Sorya', 'Sosuke', 'Soul',
+                     'Spark', 'Sparky', 'Strata', 'Suki', 'Suzuha', 'Syaoran', 'Sylvie', 'Tajiri', 'Talan', 'Tamada',
+                     'Teala', 'Teto', 'Tetsuya', 'Theta', 'Tierno', 'Tim', 'Todd', 'Tomoyo', 'Touko', 'Touya', 'Tracey',
+                     'Traziun', 'Tsuruya', 'Tupp', 'Turner', 'Usagi', 'Valerie', 'Viola', 'Volkner', 'Willow', 'X', 'Y',
+                     'Yoshi', 'Yui', 'Yuki', 'Yuuki', 'Z', 'Zeta', 'Zetsu', 'Zipp'},
 }
 
 # English spellings in text that differ from the tables, by category
