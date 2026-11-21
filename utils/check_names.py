@@ -29,7 +29,8 @@ Default run: checks the tables.
   where data/battle_tower/short_class_names.asm has one; a short class fits
   12 bytes. The list counts as kept in English, except Palmer and Thorton.
 - Wonder Trade names (data/events/wonder_trade/ot_names.asm) fit 7 tiles.
-- Psychic Inver's name (data/trainers/psychic_inver.asm) fits 10 tiles.
+- Psychic Inver's name (data/trainers/psychic_inver.asm) fits 5 tiles: his
+  party picker hardcodes the length of "Inver".
 - A table whose German and English entry counts differ is reported, and so
   is a table that can't be found: a missing file, no entries, or a missing
   start or end label (as after an Upstream rename).
@@ -118,8 +119,9 @@ TABLES = [
     # 10 tiles each, and each class + name pair against the battle line (trainer_pairs)
     ('data/trainers/parties.asm', TRAINER_NAME, None, None, TRAINER, 'person', 'trainers'),
     ('data/trainers/parties.asm', NICKNAME, None, None, 10, None, 'nicknames'),
-    # Psychic Inver's own party file: "Seher" + a 10-tile name always fits the battle line
-    ('data/trainers/psychic_inver.asm', TRAINER_NAME, None, None, 10, 'person', 'trainers'),
+    # Psychic Inver's own party file: PickPsychicInverParty hardcodes the 8-byte prefix of
+    # "Inver@", so a longer name breaks his party; the name stays "Inver" (the user's choice)
+    ('data/trainers/psychic_inver.asm', TRAINER_NAME, None, None, 5, 'person', 'trainers'),
     # 9 tiles each, and each class + name pair against the battle line (tower_pairs)
     ('data/battle_tower/classes.asm', RAWCHAR, None, None, TOWER, None, 'tower'),
     ('data/events/wonder_trade/ot_names.asm', RAWCHAR, None, None, 7, None, 'wonder trade'),
@@ -182,7 +184,7 @@ SAME_IN_GERMAN = {
                  'Cynthia', 'Dahlia', 'Dan & Cara', 'Daniela', 'Daric', 'Dent', 'Dexter', 'Diane', 'Dirk',
                  'Duplica', 'Emy', 'En', 'Erik&Sara', 'Erika', 'Esther', 'Euna', 'Ezekiel', 'Ezra', 'Felix',
                  'Fergus', 'Frank', 'Gareth', 'Geddy', 'Gerald', 'Gina', 'Giovanni', 'Glyn', 'Gustav', 'Hari',
-                 'Harvey', 'Heather', 'Henri', 'Holly', 'Hugo', 'Imakuni', 'Inigo', 'Ioana', 'Iris', 'Isabel',
+                 'Harvey', 'Heather', 'Henri', 'Holly', 'Hugo', 'Imakuni', 'Inigo', 'Inver', 'Ioana', 'Iris', 'Isabel',
                  'Ivy', 'Jacky', 'Jaclyn', 'Jaime', 'Jamie', 'Janet', 'Jaska', 'Jessica', 'Joe & Jo', 'Jones',
                  'Jonet', 'Jordan', 'Joy', 'Julie', 'Kagami', 'Kamila', 'Kazu', 'Keiko', 'Kenta', 'Kieran',
                  'Koga', 'Kouta', 'Kukui', 'Kuroko', 'Lang', 'Lawrence', 'Li & Su', 'Lorelei', 'Louis', 'Luna',
