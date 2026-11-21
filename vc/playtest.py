@@ -7,8 +7,8 @@ Azahar exits at once on a .cia; extract its game content first (vc/README.md).
 
 Azahar lives in vc/local/azahar/ and runs with HOME=vc/local/azahar-home, so nothing touches
 ~/Library. The first run creates that sandbox config and enables the RPC server (screenshots).
-Screenshots are taken over RPC at the given seconds after launch; ones taken while Azahar is
-still booting fail, which is expected. A window opens on screen for the duration of the run.
+Screenshots are taken over RPC at the given seconds after launch and named by that time in tenths,
+shot_0245.5s.png; ones taken while Azahar is still booting fail, which is expected. A window opens on screen for the duration of the run.
 """
 import argparse
 import os
@@ -64,10 +64,14 @@ def alive(pid):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("title")
-    p.add_argument("--shots", required=True, help="comma-separated seconds after launch")
+    p.add_argument("--shots", required=True, help="comma-separated seconds after launch, to 0.1 s")
     p.add_argument("--movie")
     p.add_argument("--out", default=os.path.join(VC, "local", "playtest"))
     a = p.parse_args()
+    shots = [float(x) for x in a.shots.split(",")]
+    names = [f"shot_{t:06.1f}s.png" for t in shots]
+    if len(set(names)) < len(names):
+        p.error("--shots: two times share a tenth of a second, so one screenshot would overwrite the other")
 
     ensure_config()
     sys.path.insert(0, os.path.join(AZAHAR_DIR, "scripting"))
@@ -79,17 +83,17 @@ def main():
     pid = launch(args, stdout_path)
     rpc, start = AzaharRPC(timeout=2), time.monotonic()
     try:
-        for t in [float(x) for x in a.shots.split(",")]:
+        for t, name in zip(shots, names):
             time.sleep(max(0.0, start + t - time.monotonic()))
             if not alive(pid):
-                print(f"{t:5.0f}s  Azahar exited early; see {stdout_path} and {LOG}")
+                print(f"{t:6.1f}s  Azahar exited early; see {stdout_path} and {LOG}")
                 return 1
-            path = os.path.join(a.out, f"shot_{int(t):03d}s.png")
+            path = os.path.join(a.out, name)
             try:
                 rpc.save_screenshot(path)
-                print(f"{t:5.0f}s  {path}", flush=True)
+                print(f"{t:6.1f}s  {path}", flush=True)
             except Exception as e:
-                print(f"{t:5.0f}s  screenshot failed ({type(e).__name__})", flush=True)
+                print(f"{t:6.1f}s  screenshot failed ({type(e).__name__})", flush=True)
     finally:
         if alive(pid):
             os.kill(pid, signal.SIGKILL)  # Azahar ignores SIGTERM; there is no unsaved state worth keeping
