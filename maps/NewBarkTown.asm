@@ -160,9 +160,9 @@ NewBarkTownTeacherScript:
 	iftrue_jumptextfaceplayer Text_YourMonIsAdorable
 	jumpthistextfaceplayer
 
-	text "There's always"
-	line "such a refreshing"
-	cont "breeze here."
+	text "Hier weht immer"
+	line "eine erfrischende"
+	cont "Brise."
 	done
 
 NewBarkTownRivalScript:
@@ -246,184 +246,192 @@ Movement_LyraSaysGoodbye3_NBT:
 	step_end
 
 Text_GearIsImpressive:
-	text "Wow, your #gear"
-	line "is impressive!"
+	text "Wow, dein #Com"
+	line "ist beeindruckend!"
 
-	para "Did your mom get"
-	line "it for you?"
+	para "Hast du den von"
+	line "Mama bekommen?"
 	done
 
 
 Text_WaitPlayer:
-	text "Wait, <PLAYER>!"
+	text "Warte, <PLAYER>!"
 	done
 
 Text_WhatDoYouThinkYoureDoing:
-	text "What do you think"
-	line "you're doing?"
+	text "Was hast du vor?"
 	done
 
 Text_ItsDangerousToGoAlone:
-	text "It's dangerous to"
-	line "go out without a"
-	cont "#mon!"
+	text "Es ist gefährlich,"
+	line "ohne #mon das"
+	cont "Haus zu verlassen!"
 
-	para "Wild #mon"
-	line "jump out of the"
+	para "Auf dem Weg zur"
+	line "nächsten Stadt"
 
-	para "grass on the way"
-	line "to the next town."
+	para "können jederzeit"
+	line "wilde #mon"
+
+	para "auftauchen."
 	done
 
 Text_YourMonIsAdorable:
-	text "Oh! Your #mon"
-	line "is adorable!"
-	cont "I wish I had one!"
+	text "Oh! Dein #mon"
+	line "ist bezaubernd!"
+
+	para "Ich wünschte, ich"
+	line "hätte auch eines."
 	done
 
 Text_TellMomIfLeaving:
 	text "Hi, <PLAYER>!"
-	line "Leaving again?"
+	line "Du gehst schon?"
 
-	para "You should tell"
-	line "your mom if you"
-	cont "are leaving."
+	para "Gib deiner Mama"
+	line "Bescheid, wenn du"
+	cont "gehst."
 	done
 
 Text_CallMomOnGear:
-	text "Call your mom on"
-	line "your #gear to"
+	text "Ruf deine Mama mit"
+	line "dem #Com an,"
 
-	para "let her know how"
-	line "you're doing."
+	para "damit sie weiss,"
+	line "was du machst."
 	done
 
 Text_ElmDiscoveredNewMon:
 	text "Yo, <PLAYER>!"
 
-	para "I hear Prof.Elm"
-	line "discovered some"
-	cont "new #mon."
+	para "Ich habe gehört,"
+	line "Prof. Lind hat"
+	cont "neue #mon"
+	cont "entdeckt."
 	done
 
 NewBarkTownRivalText1:
 	text "……"
 
-	para "So this is the"
-	line "famous Elm #mon"
-	cont "Lab…"
+	para "Das ist also das"
+	line "berühmte Lind-"
+	cont "#mon-Labor…"
 	done
 
 NewBarkTownRivalText2:
-	text "…What are you"
-	line "staring at?"
+	text "…Was starrst du"
+	line "so?"
 	done
 
 Text_LyraIntro:
-	text "Lyra: Oh, hello,"
+	text "Lyra: Oh, hallo,"
 	line "<PLAYER>!"
 
-	para "I came by your"
-	line "house earlier,"
+	para "Ich war vorhin bei"
+	line "dir zu Hause,"
 
-	para "but you were"
-	line "still sleeping."
+	para "aber du hast noch"
+	line "geschlafen."
 
-	para "You know how I"
-	line "assist Prof.Elm"
-	cont "sometimes?"
+	para "Du weisst ja, dass"
+	line "ich Prof. Lind"
+	cont "manchmal helfe?"
 
-	para "He's starting new"
-	line "#mon research"
+	para "Er fängt mit einer"
+	line "neuen #mon-"
+	cont "Forschung an"
 
-	para "and would like us"
-	line "both to help."
+	para "und möchte, dass"
+	line "wir beide helfen."
 
-	para "Let's go and see"
-	line "what he wants!"
+	para "Komm, wir sehen"
+	line "nach, was er will!"
 	done
 
 Text_LyraGoodbye1:
 	text "Lyra: <PLAYER>!"
 
-	para "I heard that you"
-	line "have all the Gym"
-	cont "Badges in Johto."
+	para "Ich habe gehört,"
+	line "dass du alle Orden"
+	cont "von Johto hast."
 
-	para "…You're really"
-	line "something,"
+	para "…Du bist echt"
+	line "unglaublich,"
 	cont "<PLAYER>."
 
-	para "To think that we"
-	line "both started our"
+	para "Wenn ich daran"
+	line "denke, dass wir"
 
-	para "journeys in this"
-	line "town…"
+	para "beide unsere Reise"
+	line "in dieser Stadt"
+	cont "begonnen haben…"
 
-	para "I do what I can"
-	line "to help the Prof-"
-	cont "essor, but I could"
+	para "Ich helfe dem"
+	line "Professor, so gut"
+	cont "ich kann, aber ich"
 
-	para "never take on the"
-	line "League Champion."
+	para "könnte es nie mit"
+	line "dem Liga-Champ"
+	cont "aufnehmen."
 
-	para "…Before you go…"
+	para "…Bevor du gehst…"
 
-	para "How about one"
-	line "more battle?"
+	para "Wie wär's mit"
+	line "noch einem Kampf?"
 
-	para "I want to see the"
-	line "kind of trainer"
-	cont "you've become!"
+	para "Ich will sehen,"
+	line "wie stark du"
+	cont "geworden bist!"
 	done
 
 Text_LyraGoodbyeWin:
-	text "You're as talented"
-	line "as I expected!"
+	text "Du bist so begabt,"
+	line "wie ich dachte!"
 	done
 
 Text_LyraGoodbyeLoss:
-	text "I hope you didn't"
-	line "let me win…"
+	text "Ich hoffe, du hast"
+	line "mich nicht gewin-"
+	cont "nen lassen…"
 	done
 
 Text_LyraGoodbye2:
-	text "…Thanks, <PLAYER>."
+	text "…Danke, <PLAYER>."
 
-	para "I can tell how"
-	line "much work and"
+	para "Ich sehe, wie viel"
+	line "Arbeit und Liebe"
 
-	para "love you put into"
-	line "raising your"
-	cont "#mon."
+	para "du in die Aufzucht"
+	line "deiner #mon"
+	cont "gesteckt hast."
 
-	para "…So, this is"
-	line "goodbye."
+	para "…Das ist also"
+	line "der Abschied."
 
-	para "I know you can win"
-	line "at the #mon"
-	cont "League!"
+	para "Ich weiss, dass du"
+	line "die #mon-Liga"
+	cont "gewinnen kannst!"
 
-	para "You're going to be"
-	line "a great Champion!"
+	para "Du wirst ein"
+	line "toller Champ!"
 	done
 
 NewBarkTownSignText:
-	text "New Bark Town"
+	text "Neuborkia"
 
-	para "The Town Where the"
-	line "Winds of a New"
-	cont "Beginning Blow"
+	para "Die Stadt, in der"
+	line "der Wind der Er-"
+	cont "neuerung weht"
 	done
 
 PlayersHouseSignText:
-	text "<PLAYER>'s House"
+	text "Haus von <PLAYER>"
 	done
 
 ElmsLabSignText:
-	text "Elm #mon Lab"
+	text "Lind-#mon-Labor"
 	done
 
 LyrasHouseSignText:
-	text "Lyra's House"
+	text "Lyras Haus"
 	done

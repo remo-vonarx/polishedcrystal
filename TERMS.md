@@ -403,3 +403,9 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Sunday … Saturday | Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag | Mom's weekday question (`engine/rtc/timeset.asm`) | Kristall, re-cased; the picker box is one tile wider than English to fit "Donnerstag" (provisional, the user was offline 2026-11-21) |
 | Bank of Mom: Saved / Withdraw / Deposit / Held | Erspartes / Abheben / Einzahlen / Besitz | Bank of Mom (`engine/events/mom.asm`) | Kristall, except "Erspartes" (own, provisional): Kristall's "Ersparnisse" is 11 tiles, and Polished prints the amount from column 11 |
 | Bank of Mom menu: Get / Save / Change / Cancel | Abheben / Sparen / Ändern / Zurück | Bank of Mom menu | Kristall |
+| Champion / champ (addressing the player) | Champ, also with an article ("ein toller Champ") | New dialogue | The user's choice (2026-11-21): "Champ" counts as neutral, like "ein Star"; German games call female Champions "Champ" too |
+| A talented trainer like yourself | ein Talent wie du | New dialogue | The user's choice (2026-11-21): "das Talent" is neuter, so the player stays neutral |
+| The Wizard of Oz's (yellow) brick road | gelbe Ziegelsteinstrasse | Lyra's TV (`maps/LyrasHouse1F.asm`) | The user's choice (2026-11-21): "gelb" added from the German dub, so the reference survives |
+| <Name>'s House (signs) | Haus von <PLAYER> / Lyras Haus / Prof. Linds Haus | House signs | Kristall ("Haus von <PLAYER>", "PROF. LINDs HAUS"); "Lyras Haus" own after that pattern |
+| Elm #mon Lab | Lind-#mon-Labor | Sign, dialogue | Kristall ("LIND-#MON-LABOR") |
+| Rice balls | Reisbällchen | Lyra's fridge | Own |
