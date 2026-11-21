@@ -409,3 +409,12 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | <Name>'s House (signs) | Haus von <PLAYER> / Lyras Haus / Prof. Linds Haus | House signs | Kristall ("Haus von <PLAYER>", "PROF. LINDs HAUS"); "Lyras Haus" own after that pattern |
 | Elm #mon Lab | Lind-#mon-Labor | Sign, dialogue | Kristall ("LIND-#MON-LABOR") |
 | Rice balls | Reisbällchen | Lyra's fridge | Own |
+| Gym / #mon Gym | Arena / PKMN-Arena | Dialogue | Kristall ("PKMN-ARENA", "PKMN-ARENEN"); PKMN stays in capitals |
+| Elite Four | Top Vier | Dialogue | Kristall |
+| "<PLAYER> received/gained <item or #mon>" | "<PLAYER> erhält / <name>." ("!" for a #mon) | Gift texts | Kristall |
+| "<PLAYER> put the <item> in the <pocket>" | "<PLAYER> steckt / <item> in / <pocket>." | Item gift texts | Kristall's frame, no article before the pocket; fits 15 tiles at the longest item and pocket |
+| "The <pocket> is full…" | "Die <pocket> / ist voll…" | Item gift texts | Kristall's "ist voll…"; "Die" fits every pocket that can be full (all "…-Tasche") |
+| Give a nickname to <#mon>? | Möchtest du / <#mon> einen / Spitznamen geben? | Gift and caught #mon | Kristall |
+| The criminal always returns to the scene of the crime | Der Täter kehrt immer an den Tatort zurück | Officer in Elm's lab | Own, the German idiom |
+| "So you're the thief?" (to the player) | "Dann warst du das also?" | Officer in Elm's lab | Own, neutral for the player (provisional, the user was offline 2026-11-21) |
+| oddity (the Odd Souvenir) | Kuriosität (item: Kuriosum) | Elm's lab | Own; keeps the link to the item name |

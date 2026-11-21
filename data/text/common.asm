@@ -2520,7 +2520,7 @@ MailMovedFromBoxText::
 
 SECTION "_ReceivedGiftMonText", ROMX
 _ReceivedGiftMonText::
-	text "<PLAYER> received"
+	text "<PLAYER> erhält"
 	line ""
 	text_ram wMonOrItemNameBuffer
 	text "!"
@@ -2676,11 +2676,11 @@ _LuckyNumberMatchPCText::
 
 SECTION "_CaughtAskNicknameText", ROMX
 _CaughtAskNicknameText::
-	text "Give a nickname to"
-	line "the "
+	text "Möchtest du"
+	line ""
 	text_ram wStringBuffer1
-	text " you"
-	cont "received?"
+	text " einen"
+	cont "Spitznamen geben?"
 	done
 
 SECTION "_PokecenterPCCantUseText", ROMX
@@ -3357,7 +3357,7 @@ _SaveFileCorruptedText::
 
 SECTION "_GainedItemText", ROMX
 _GainedItemText::
-	text "<PLAYER> gained"
+	text "<PLAYER> erhält"
 	line ""
 	text_ram wStringBuffer4
 	text "."
@@ -3375,20 +3375,20 @@ _GainedMultipleItemsText::
 
 SECTION "_PutItemInPocketText", ROMX
 _PutItemInPocketText::
-	text "<PLAYER> put the"
+	text "<PLAYER> steckt"
 	line ""
 	text_ram wStringBuffer1
 	text " in"
-	cont "the "
+	cont ""
 	text_ram wStringBuffer3
 	text "."
 	prompt
 
 SECTION "_PocketIsFullText", ROMX
 _PocketIsFullText::
-	text "The "
+	text "Die "
 	text_ram wStringBuffer3
-	line "is full…"
+	line "ist voll…"
 	prompt
 
 SECTION "_FoundWingsText", ROMX
