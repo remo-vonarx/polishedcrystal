@@ -145,3 +145,238 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Noisy Forest | Summender Wald | Place names | Own, from the forest's buzzing bugs; the user's choice |
 | Shrine Ruins | Tempelruinen | Place names | Own; no game uses it on its own (Legends: Arceus has "Elysien-Tempelruinen"). The user's choice |
 | Shamouti Tunnel / Shamouti Coast | Shamouti-Tunnel / Shamouti-Küste | Place names | Own; the user's choice |
+| Trainer classes (list) | — | `data/trainers/class_names.asm` | Modern name (PokéWiki: the latest game with that English class), feminine for a female entry; Kristall's name where the Modern one is over 12 bytes or 14 tiles; own names asked. `#mon` (Pokémon) and `<PK><MN>` (PKMN) as in the charmap |
+| PKMN Trainer | Trainer (cal, jacky, red, riley, buck, kukui) / Trainerin (carrie, euna, leaf, lyra1, lyra2, cheryl, marley, mira, anabel, yellow) | Trainer classes | Trainer: Kristall ("TRAINER"; "Pokémon-Trainer" is 15 tiles); Trainerin: the user's choice. Jacky, the non-binary player picture, gets "Trainer": the user's choice |
+| Leader | Leiter (falkner, bugsy, morty, chuck, pryce, brock, lt_surge, blaine, blue, blanche, spark_t) / Leiterin (whitney, jasmine, clair, misty, erika, janine, sabrina, candela) | Trainer classes | Leiter: Kristall ("LEITER"; "Arenaleiter Hartwig" would be 19); Leiterin: the user's choice ("Arenaleiterin" is 13). Pokémon GO's Blanche and Spark get "Leiter", Candela "Leiterin", following the English; Blanche (no official gender) the user's choice |
+| Elite Four | Top Vier | Trainer classes | Modern name (Karmesin/Purpur) |
+| Champion | Champ | Trainer classes | Modern name (Karmesin/Purpur) |
+| Strange | Seltsamer | Trainer classes | Own; the user's choice: the rival's first battle reads "Seltsamer Junge" (name "Junge"). HeartGold/SoulSilver show it as "Passant Junge" |
+| Rival | Rivale | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Youngster | Knirps | Trainer classes | Modern name (Karmesin/Purpur); Kristall "TEENAGER" |
+| Bug Catcher | Käfersammler | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Camper | Camper | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Picnicker | Picknicker | Trainer classes | Kristall and HeartGold/SoulSilver ("PICKNICKER"); the Modern "Picknickerin" (12) leaves 5 tiles for a name. The user's choice |
+| Twins | Zwill. | Trainer classes | Own abbreviation of the Modern "Zwillinge" (9), whose pair names reach 10; Kristall writes "ZWIL.". The user's choice |
+| Fisherman | Angler | Trainer classes | Modern name (Angler: Strahlender Diamant/Leuchtende Perle) |
+| Bird Keeper | Vogel-Profi | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "VOGELFÄNGER" |
+| Hiker | Wanderer | Trainer classes | Modern name (Wanderer: Strahlender Diamant/Leuchtende Perle) |
+| Rocket | Rocket | Trainer classes | Kristall ("ROCKET") |
+| Pokéfan | Pokéfan | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Officer | Polizist (officerm) / Polizistin (officerf) | Trainer classes | Modern name (Legenden: Z-A); Kristall "WÄCHTER" |
+| Nurse | Pflegerin | Trainer classes | Modern name (Schwarz 2/Weiß 2) |
+| PokéManiac | Pokémaniac | Trainer classes | Modern name (Karmesin/Purpur) |
+| Cosplayer | Cosplayerin | Trainer classes | Own; the user's choice |
+| Super Nerd | Tüftler | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!); Kristall "STREBER" |
+| Lass | Göre | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Beauty | Schönheit | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Bug Maniac | Käfermaniac | Trainer classes | Modern name (Omega Rubin/Alpha Saphir) |
+| Ruin Maniac | Ruinenmaniac | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Firebreather | Feuerspucker | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Juggler | Jongleur | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Schoolboy | Schüler | Trainer classes | Modern name (Schwert/Schild); Kristall "SCHULJUNGE" |
+| Schoolgirl | Schülerin | Trainer classes | Modern name (Schwert/Schild) |
+| Psychic | Seher | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "PSYCHO" |
+| Hex Maniac | Hexe | Trainer classes | Modern name (Legenden: Z-A) |
+| Sage | Weiser | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Medium | Medium | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Kimono Girl | Kimonogirl | Trainer classes | Kristall and Modern "Kimono-Girl" without the hyphen; "Kimono-Girl Satsuki" would be 19. The user's choice |
+| Elder | Weisester | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Sr.& Jr. | Sr.& Jr. | Trainer classes | As in English; the user's choice. Omega Rubin/Alpha Saphir's "Senior&Junior" is 13; pair names fit up to 9 |
+| Couple | Pärchen | Trainer classes | Own; the Modern "Junges Glück" (12) leaves 5 tiles, and the pair names are 9–10. The user's choice |
+| Gentleman | Gentleman | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Rich Boy | Schnösel | Trainer classes | Modern name (Legenden: Z-A) |
+| Lady | Lady | Trainer classes | Modern name (Legenden: Z-A) |
+| Breeder | PKMN-Züchterin | Trainer classes | Modern name "Pokémon-Züchterin" (17 tiles) shortened with PKMN; the user's choice. Pairs leave 5 tiles for a name |
+| Baker | Bäckerin | Trainer classes | Modern name (Schwarz 2/Weiß 2) |
+| Cowgirl | Cowgirl | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Sailor | Matrose | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Swimmer | Schwimmer (swimmerm, marlon) / Schwimmerin (swimmerf) | Trainer classes | Schwimmer: Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "SCHWIMMER♂"; Schwimmerin: Modern name (Strahlender Diamant/Leuchtende Perle); Kristall "SCHWIMMER♀" |
+| Burglar | Dieb | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Agent | Agent | Trainer classes | Own; the user's choice |
+| Scientist | Forscher | Trainer classes | Modern name (Forscher: Karmesin/Purpur) |
+| Boarder | Snowboarder | Trainer classes | Modern name (HeartGold/SoulSilver) |
+| Skier | Skifahrer | Trainer classes | Kristall ("SKIFAHRER", for its female Skiers too); "Skifahrerin Gabriela" would be 20. The user's choice |
+| Black Belt | Schwarzgurt | Trainer classes | Modern name (Karmesin/Purpur) |
+| Battle Girl | Kämpferin | Trainer classes | Modern name (Legenden: Z-A) |
+| Dragon Tamer | Drachenprofi | Trainer classes | Modern name (Karmesin/Purpur) |
+| Engineer | Elektriker | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Teacher | Lehrerin (teacher_f) / Lehrer (teacher_m) | Trainer classes | Lehrerin: Modern name (Ultrasonne/Ultramond), Kristall "LEHRERIN"; Lehrer: own, the user's choice |
+| Guitarist | Gitarrist (guitaristm) / Gitarristin (guitaristf) | Trainer classes | Gitarrist: Modern name (Gitarrist: Strahlender Diamant/Leuchtende Perle); Gitarristin: Modern name (Gitarristin: Schwarz 2/Weiß 2) |
+| Biker | Rowdy | Trainer classes | Modern name (Schwarz 2/Weiß 2); Kristall "BIKER" |
+| Roughneck | Raufbold | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Tamer | Dompteur | Trainer classes | Modern name (Let's Go, Pikachu!/Evoli!) |
+| Artist | Künstlerin | Trainer classes | Modern name (Legenden: Z-A), feminine: Polished's four Artists are women (Reina, Alina, Marlene, Rin) |
+| Aroma Lady | Aromalady | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Soldier | Soldat | Trainer classes | Own; the user's choice |
+| Waiter | Servierer | Trainer classes | Modern name (Legenden: Z-A) |
+| Waitress | Serviererin | Trainer classes | Modern name (Legenden: Z-A) |
+| Sightseer | Urlauber (sightseerm) / Urlauberin (sightseerf) | Trainer classes | Urlauber: Modern name (Legenden: Z-A); Urlauberin: Modern name (Legenden: Z-A) |
+| Sightseers | Urlauber | Trainer classes | Own; the user's choice (pairs; Ultrasonne/Ultramond's nearest class is "Touri-Paar") |
+| Ace Trainer | Ass-Trainer | Trainer classes | Modern name (Legenden: Z-A) |
+| Ace Duo | Duo | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| Veteran | Veteran (veteranm) / Veteranin (veteranf) | Trainer classes | Veteran: Modern name (Legenden: Z-A); Veteranin: Modern name (Legenden: Z-A) |
+| Executive | Vorstand | Trainer classes | HeartGold/SoulSilver ("Vorstand" for the English "Executive"); Let's Go's "Rocket-Vorstand" is 15 tiles. Kristall had no class (class "ROCKET", name "VORSTAND") |
+| Boss | Boss | Trainer classes | FireRed/LeafGreen (class "Boss", as in Polished's English); HeartGold/SoulSilver and Let's Go have "Rocket Boss"/"Rocket-Boss" for "Team Rocket Boss" |
+| Pokémon Prof. | Pokémon Prof. | Trainer classes | Kristall ("#MON PROF."); "Pokémon-Professor" is 17 tiles |
+| Mystery Man | Unbekannter | Trainer classes | Modern name (HeartGold/SoulSilver); Kristall "MYSTIKER" |
+| Karate King | Schwarzgurt | Trainer classes | His battle class in Kristall's data and HeartGold/SoulSilver; the user's choice over "Karate-Mstr." (Kristall's title "KARATE-MEISTER" is 14) |
+| TowerTycoon | Kampfkoloss | Trainer classes | Modern name (Strahlender Diamant/Leuchtende Perle) |
+| FactryHead | Fabrikltr. | Trainer classes | Modern name "Fabrikleiter" (Platinum, HeartGold/SoulSilver) abbreviated like Upstream's "FactryHead"; "Fabrikleiter Distmar" would be 20. The user's choice |
+| Jessie | Jessie | Trainer classes | As in English; the battle line reads "Jessie & James" (name "& James") |
+| Ex-Elite | Ex-Top 4 | Trainer classes | Own, from "Top Vier"; "Ex-Top Vier Lorelei" would be 19. The user's choice (Lorelei, Agatha) |
+| Rock Hound | Steinsammler | Trainer classes | Own; the user's choice (Steven/Troy) |
+| Researcher | Forscherin | Trainer classes | Own; the user's choice (Cynthia) |
+| Valet | Diener | Trainer classes | Modern name "Kammerdiener" (Platinum, HeartGold/SoulSilver) without "Kammer"; "Kammerdiener Perenus" would be 20. The user's choice |
+| Trainer | Trainerin | Trainer classes | Flannery/Flavia, English "Trainer": as the female PKMN Trainers; the user's choice |
+| Fighter | Kämpferin | Trainer classes | Own, as Battle Girl's official "Kämpferin"; the user's choice (Maylene/Hilda) |
+| Designer | Designerin | Trainer classes | Own; the user's choice (Valerie) |
+| Vocalist | Sänger | Trainer classes | Own; the user's choice (Piers/Nezz) |
+| Businessman | Angestellter | Trainer classes | Official class word (Office Worker); the user's choice (Larry/Aoki; Scarlet/Violet fight him as Arenaleiter and Top Vier) |
+| Surfer | Surfer | Trainer classes | Modern name (Ultrasonne/Ultramond) |
+| Ex-Leader | Ex-Leiter | Trainer classes | Own, from "Leiter"; the user's choice (Walker) |
+| Student | Student | Trainer classes | Own; the user's choice (Imakuni; the official "Akademieschüler" is 16 tiles) |
+| Collector | Sammler | Trainer classes | Modern name "Pokémon-Sammler" (15 tiles) without "Pokémon-"; "PKMN-Sammler Lawrence" would be 19. The user's choice |
+| Shrine | Priesterin | Trainer classes | Own; the user's choice: "Priesterin Rei" (name "Rei" for "Maiden Rei") |
+| Trainer names (list) | — | `data/trainers/parties.asm` | The trainer's German name in the latest game that has the trainer (PokéWiki, matched by place and team), else Kristall's by class and English name, else an own name. Where HeartGold/SoulSilver renamed a trainer in English too and Polished keeps Crystal's English name, Kristall's German stands (Norman Andre, Gilbert Cyrille, Jed Theodor, Miller Pelle). Trainers Polished renamed keep their official German name (the user's choice): Lo & Zoe Tia & Tara, Valencia Jutta, Reilly Hannes, Mayu Gerda, Dennett Oskar. Pair names write " & " when they fit 10 tiles, else "&" ("Jana&Nana") |
+| Kristall trainers renamed in HeartGold/SoulSilver | Mikey Dietrich, Gordon Tommy, Lloyd Waldemar, Erin Nanette, Henry Selim, Bret Melvin, Kenny Hilmar, Jim Dejan, Linda Svantje, Laura Adriana, Julia Vivian, Otis Fitz, Tucker Ottmar, Duncan Pit, Shirley Hiltrude, Harris Francois, Kenji Timon; Kimono Girls Naoko Umeko, Sayo Sakura, Zuki Tamao, Kuni Komomo, Miki Satsuki | Trainer names | Modern name over Kristall's (ADR 0002): same trainer, same English name, HeartGold/SoulSilver's German. Kristall's dialogue lines that name them change too |
+| Official names dropped for the battle line | French → Franz, Salma (kept), Piper → Pia (Picnicker), Viola (kept), Kinsey → Knut, Kenta (kept), Stacey → Sven | Trainer names | Their HeartGold/SoulSilver or Let's Go names (Stanislaus, Valentina, Josefine, Charlotte, Benedikt, Benjamin, Hinrich) don't fit next to their class; the class stays and they get own names. Bonita (kept) and Boone → Bonnie, female in Polished but male in HeartGold/SoulSilver (Heiner, Guillaume), get own female names. Polished's own Scientist Oskar → Otto, since Dennett is "Oskar". Swimmer Wendy keeps Kristall's "Gerda" (HeartGold/SoulSilver's "Gerarda" doesn't fit), so Mayu, HeartGold/SoulSilver's Gerda, keeps "Mayu". Lass Amanda, Polished's rename of Crystal's Fuchsia Gym Lass Alice, is Kristall's "Gabriele"; Polished's new Lass Alice keeps "Alice". The user's choices |
+| Cal | Hermann | Trainer names | Kristall (Trainer House opponent "HERMANN", Crystal's Cal) |
+| Falkner | Falk | Trainer names | Kristall |
+| Bugsy | Kai | Trainer names | Kristall |
+| Whitney | Bianka | Trainer names | Kristall |
+| Morty | Jens | Trainer names | Kristall |
+| Chuck | Hartwig | Trainer names | Kristall |
+| Jasmine | Jasmin | Trainer names | Kristall |
+| Pryce | Norbert | Trainer names | Kristall |
+| Clair | Sandra | Trainer names | Kristall |
+| Will | Willi | Trainer names | Kristall |
+| Koga | Koga | Trainer names | Kristall |
+| Bruno | Bruno | Trainer names | Kristall |
+| Karen | Melanie | Trainer names | Kristall |
+| Lance | Siegfried | Trainer names | Kristall |
+| Brock | Rocko | Trainer names | Kristall |
+| Misty | Misty | Trainer names | Kristall |
+| Lt.Surge | Major Bob | Trainer names | Kristall |
+| Erika | Erika | Trainer names | Kristall |
+| Janine | Janina | Trainer names | Kristall |
+| Sabrina | Sabrina | Trainer names | Kristall |
+| Blaine | Pyro | Trainer names | Kristall |
+| Blue | Blau | Trainer names | Kristall |
+| Red | Rot | Trainer names | Kristall |
+| Green | Grün | Trainer names | Let's Go's Green, like Rot and Blau; the user's choice over FireRed/LeafGreen's "Leaf" |
+| boy | Junge | Trainer names | The user's choice: the rival's first battle reads "Seltsamer Junge" |
+| Lyra | Lyra | Trainer names | Modern name (HeartGold/SoulSilver) |
+| Grunt | Rüpel | Trainer names | Kristall ("RÜPEL") |
+| Looker | LeBelle | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Proton | Lance | Trainer names | HeartGold/SoulSilver; not Lance the Champion, who is "Siegfried" |
+| Petrel | Lambda | Trainer names | Modern name (HeartGold/SoulSilver) |
+| Archer | Atlas | Trainer names | Kristall's data and HeartGold/SoulSilver (Kristall's battles read "VORSTAND") |
+| Ariana | Athena | Trainer names | Kristall's data and HeartGold/SoulSilver (Kristall's battles read "VORSTAND") |
+| Giovanni | Giovanni | Trainer names | Kristall |
+| Oak | Eich | Trainer names | Modern name (Kristall and later games) |
+| Elm | Lind | Trainer names | Modern name (Kristall and HeartGold/SoulSilver) |
+| Ivy | Ivy | Trainer names | Anime name (Professor Felina Ivy) |
+| Eusine | Eusin | Trainer names | Kristall |
+| Kiyo | Leif | Trainer names | Kristall (Crystal's Black Belt Kiyo, class "SCHWARZGURT") |
+| Palmer | Viktor | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Thorton | Distmar | Trainer names | Modern name (Platinum) |
+| & James | & James | Trainer names | Anime name; the battle line reads "Jessie & James" |
+| Lorelei | Lorelei | Trainer names | Modern name (FireRed/LeafGreen) |
+| Agatha | Agathe | Trainer names | Modern name (FireRed/LeafGreen) |
+| Steven | Troy | Trainer names | Modern name (Ruby/Sapphire/Emerald) |
+| Cynthia | Cynthia | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Cheryl | Raissa | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Riley | Urs | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Buck | Avenaro | Trainer names | Modern name (Platinum) |
+| Marley | Charlie | Trainer names | Modern name (Platinum) |
+| Mira | Orisa | Trainer names | Modern name (Platinum) |
+| Anabel | Anabel | Trainer names | Modern name (Emerald) |
+| Darach | Perenus | Trainer names | Modern name (Platinum) |
+| Caitlin | Kattlea | Trainer names | Modern name (Platinum, Black/White) |
+| Candela | Candela | Trainer names | Modern name (Pokémon GO) |
+| Blanche | Blanche | Trainer names | Modern name (Pokémon GO) |
+| Spark | Spark | Trainer names | Modern name (Pokémon GO) |
+| Flannery | Flavia | Trainer names | Modern name (Ruby/Sapphire/Emerald) |
+| Maylene | Hilda | Trainer names | Modern name (Diamond/Pearl/Platinum) |
+| Marlon | Benson | Trainer names | Modern name (Black 2/White 2) |
+| Valerie | Valerie | Trainer names | Modern name (X/Y) |
+| Kukui | Kukui | Trainer names | Modern name (Sun/Moon) |
+| Piers | Nezz | Trainer names | Modern name (Sword/Shield) |
+| Larry | Aoki | Trainer names | Modern name (Scarlet/Violet) |
+| Bill | Bill | Trainer names | Kristall |
+| Yellow | Gelb | Trainer names | Manga name (Pocket Monsters SPECIAL); the user's choice |
+| Walker | Luc | Trainer names | Manga name (Pocket Monsters SPECIAL, Falkner's father); the user's choice |
+| Imakuni | Imakuni | Trainer names | As in English: Polished drops the "?" of the Trading Card Game's "Imakuni?" |
+| Lawrence | Lawrence | Trainer names | Anime name (Lawrence III., Movie 2000) |
+| Maiden Rei | Rei | Trainer names | The user's choice: "Priesterin Rei" |
+| PKMN Trainer (Carrie) (own names) | Carrie → Carla | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| PKMN Trainer (Jacky) (own names) | Jacky (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| PKMN Trainer (Euna) (own names) | Euna (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Youngster (own names) | Alfie (kept), Oliver (kept), Chaz → Jonas, Tyler → Timo, Arden → Arne | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Bug Catcher (own names) | Oscar → Oskar | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Camper (own names) | Craig → Gregor, Felix (kept), Amos (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Picnicker (own names) | Lily → Lilli, Piper → Pia, Zane → Zita | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Fisherman (own names) | Paton → Arnold, Kiley → August, Francis → Achim, Virgil → Ambros, Hall → Aaron, Dallas → Andreas, Carlos → Alonso | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Bird Keeper (own names) | Mick → Micha, Powell → Konrad, Tony → Toni, Julian → Jan, Kinsey → Knut, Trent → Theo, Salim (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Hiker (own names) | Seamus → Severin, Tony → Toni, Gerard → Gerhard, Dent (kept), Lester → Lothar, Grady → Gottfried, Steve → Steffen, Derrick → Dietmar, Floyd → Florian, Elijah → Elias, Maynard → Meinhard | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Pokéfan ♀ (own names) | Boone → Bonnie | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Officer ♀ (own names) | Jamie (kept), Mara (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Nurse (own names) | Beatrice (kept), Keiko (kept), Winifred (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| #Maniac (own names) | Enzo → Eiji, Aidan → Daiki | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Cosplayer (own names) | Clara (kept), Chloe → Chloé, Brooke → Britta, Kuroko (kept), Lyric → Aria | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Super Nerd (own names) | Luis → Ludger, Rory → Rupert, Foote → Folkert, Kouta (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Lass (own names) | Abigail → Annika, Layla → Lena, Rose → Rosa, Meadow → Flora, Jennifer → Josi, Gina (kept), Alice (kept), Mavis → Marlies | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Beauty (own names) | Bridget → Brigitte, Nicole → Natascha, Ioana (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Bug Maniac (own names) | Lou → Lutz, Stacey → Sven, Kenta (kept), Pierre (kept), Dylan → Dirk, Kai → Kurt | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ruin Maniac (own names) | Jones (kept), Leland → Heinz, Petry → Petri, Glyn (kept), Smilte → Emil | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Firebreather (own names) | Jay → Jo, Oleg (kept), Tala → Theo, Cyd → Sid | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Schoolgirl (own names) | Molly → Milla, Eliza → Elisa, Faith → Frieda, Sarah (kept), Isabel (kept), Imogen → Ines | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Psychic (own names) | Leon → Léon, Uri (kept), Virgil → Virgile | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Hex Maniac (own names) | Tamara (kept), Ashley (kept), Amy → Amalie, Luna (kept), Natalie (kept), Vivian (kept), Esther (kept), Matilda → Mathilde, Bethany → Brunhild, Coryn → Morgana | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Kimono Girl (own names) | Mako (kept), Ami (kept), Mina (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sr.& Jr. (own names) | Jo & Cath → Jo & Kati, Ivy & Amy → Ida & Uta, Bea & May → Bea & Mia | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Couple (own names) | Gail & Eli → Gabi & Eli, Fox & Rae → Flo & Ria, Joe & Jo (kept), Erik&Sara (kept), Sara&Erik (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Gentleman (own names) | Camus (kept), Geoffrey → Georg | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Rich Boy (own names) | Winston (kept), Gerald (kept), Irving → Julius, Tobin → Tobias | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Lady (own names) | Jessica (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Breeder (own names) | Julie (kept), Theresa → Tessa, Jody → Judit, Carlene → Lene, Sophie → Sofie, Brenda → Britt | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Baker (own names) | Chelsie (kept), Sharyn → Sabine, Margaret → Margot, Olga (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Cowgirl (own names) | Annie (kept), April (kept), Daniela (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sailor (own names) | Harvey (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Swimmer ♂ (own names) | Michel → Mischa, Lucas → Lukas, Frank (kept), Nadar (kept), Conrad (kept), Romeo (kept), Malcolm (kept), Armand (kept), Thomas (kept), Ezra (kept), Ashe → Sascha | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Swimmer ♀ (own names) | Viola (kept), Alison (kept), Stephanie → Steffi, Caroline → Caro, Natalia → Talia, Barbara → Babsi, Sally → Sanne, Mayu (kept), Woda (kept), Rachel → Rahel, Marina (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Burglar (own names) | Pete (kept), Louis (kept), Pierce → Piet | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Scientist (own names) | Oskar → Otto, Braydon → Bastian, Carl (kept), Dexter (kept), Joseph → Josef, Nigel → Niklas, Piotr (kept), Sanders → Sandro | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Boarder (own names) | Stefan (kept), Max (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Skier (own names) | Maria (kept), Becky (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Black Belt (own names) | Inigo (kept), Takeo (kept), Rylan → Robin | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Battle Girl (own names) | Subaru (kept), Diane (kept), Kagami (kept), Nozomi (kept), Ronda (kept), Padma (kept), Emy (kept), Sasha (kept), Mei (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Dragon Tamer (own names) | Adam (kept), Erick → Erik, Kazu (kept), Aegon (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Engineer (own names) | Smith → Schmidt, Camden → Carsten, Lang (kept), Hugo (kept), Howard → Henrik, Graden → Gerrit, Gustav (kept), Nicolas (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Teacher ♀ (own names) | Kathryn → Katrin, Serena (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Teacher ♂ (own names) | Nolan → Nils | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Guitarist ♂ (own names) | Roger (kept), Ezekiel (kept), Biff (kept), Geddy (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Guitarist ♀ (own names) | Janet (kept), Morgan (kept), Ritsuko → Ritsu, Wanda (kept), Jaclyn (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Biker (own names) | Tyrone (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Roughneck (own names) | Brian (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Tamer (own names) | Brett → Björn, Vince (kept), Oswald (kept), Jordan (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Artist (own names) | Reina (kept), Alina (kept), Marlene (kept), Rin (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Aroma Lady (own names) | Dahlia (kept), Bryony → Malve, Heather (kept), Holly (kept), Peony → Rosalie | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sightseer ♂ (own names) | Jaska (kept), Blaise (kept), Gareth (kept), Chester (kept), Hari (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sightseer ♀ (own names) | Rosie (kept), Kamila (kept), Noelle (kept), Pilar (kept), Lenie → Leni | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Sightseers (own names) | Li & Su (kept), Cy & Vi (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ace Trainer ♂ (own names) | French → Franz, Henri (kept), Connor (kept), Kieran (kept), Finch → Fink, Petrie (kept), Corey (kept), Ray (kept), Fergus (kept), Daric (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ace Trainer ♀ (own names) | Salma (kept), Bonita (kept), Sera → Svea, Neesha (kept), Chiara (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Ace Duo (own names) | Ara & Bela (kept), Jake & Bri → Jan & Rike, Dan & Cara (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Veteran ♂ (own names) | Matthew → Matthias, Remy (kept), Barkhorn → Bernhard, En (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Veteran ♀ (own names) | Joanne → Johanna, Jonet (kept), Litvyak → Lydia, Madoka (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| Surfer (own names) | Victor (kept) | Trainer names | Own; the user's choices (2026-11-19). "Kept": the English name works in German |
+| In-game trades (list) | — | `data/events/npc_trades.asm` | The OT follows the person: Crystal's trade partners keep Kristall's names for them (Mike Ralf, Kyle Tobi, Emy Carmen, Chris Paul; Tim and Kim stay). A nickname takes Kristall's where Polished kept Crystal's English nickname (Muscle Herakles, Doris; Chris's Paul → Pollo, since Kristall's OT is already Paul) |
+| Trade nicknames (own) | Mimic (kept), Joey (kept), Chance (kept), Gail (kept), Clarence (kept), Batty → Schrulli | In-game trades | Own; the user's choices (2026-11-19). Polished's own partners Jacques, Hari and Jeeves keep their names |
+| Mom / Bill / Prof.Elm | Mama / Bill / Prof. Lind | Phone list | Kristall ("MAMA:", "BILL:", "PROF. LIND:"); the subtitles use the class names ("#maniac", "#mon Prof.") |
+| Miracle Cycle | Miracle Cycle | Phone list | As in English, a shop name; no German game names it (Kristall: "FAHRRADLADEN", PokéWiki: "Radladen"). The user's choice |
+| Lyra / Buena | Lyra (Trainerin) / Buena (Disc Jockey) | Phone list | Modern name; Kristall ("BUENA:", "DISC JOCKEY"); Lyra's subtitle is her class "Trainerin" |
+| Silver (default rival name) | Silber | Rival naming screen | Kristall |
+| Ralph (Magikarp record holder) | Angelo | Magikarp length record | Kristall: Fisherman Ralph is "Angelo" |
+| Trainer nicknames (own) | Lyra's Chicory → Endivchen, Cinder → Feuri, Toto → Nimi; Lucinda's Blossom → Bella; Niklas's Spin → Spinni, Rat → Ratti; Elisa's Silver → Silber, Tret → Wiesi; Ines's Garlic → Knobi; Uri's Hocus → Hokus, Pocus → Pokus; Corey's Bruteroot → Wurzelwut, Ray's Firebrand → Feuerbrand, Fergus's Empress → Kaiserin, Neesha's Shellshock → Granate | Trainer nicknames | Own; the user's choices (2026-11-19/20). Kept as in English: Milky, Campfire, Dopefish, VuiVui, Eon, Vee, Gold, Teddy, Lady, Audrey, Bruce, Jackie, Bulbasaur, Pilar's Spanish Antorcha, Huesitos, Luna, Linterna, and Puka |
+| Yellow's nicknames | Omny → Amoni, Ratty → Ratzi, Free → Raups, Dody → Dodi, Gravvy → Geon, Chuchu (kept) | Trainer nicknames | Manga names (the German edition of Pocket Monsters SPECIAL, PokéWiki); the user's choice |
