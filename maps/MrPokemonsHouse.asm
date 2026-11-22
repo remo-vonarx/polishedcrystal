@@ -187,249 +187,272 @@ MrPokemonsHouse_OakExits:
 	step_end
 
 MrPokemonIntroText1:
-	text "Hello, hello! You"
-	line "must be <PLAYER>."
+	text "Hallo! Du musst"
+	line "<PLAYER> sein."
 
-	para "Prof.Elm said that"
-	line "you would visit."
+	para "Prof. Lind sagte,"
+	line "dass du vorbei-"
+	cont "kommen würdest."
 	done
 
 MrPokemonIntroText2:
-	text "This is what I"
-	line "want Prof.Elm to"
-	cont "examine."
+	text "Prof. Lind soll"
+	line "das hier unter-"
+	cont "suchen."
 	done
 
 MrPokemonIntroText3:
-	text "I know a couple"
-	line "who run a #mon"
-	cont "Day-Care service."
+	text "Ich kenne ein"
+	line "Paar, das eine"
+	cont "#mon-Pension"
+	cont "leitet."
 
-	para "They gave me that"
-	line "Egg."
+	para "Sie gaben mir"
+	line "das Ei."
 
-	para "I was intrigued,"
-	line "so I sent mail to"
-	cont "Prof.Elm."
+	para "Ich war derart"
+	line "fasziniert, dass"
+	cont "ich Prof. Lind ei-"
+	cont "ne E-Mail schrieb."
 
-	para "For #mon evolu-"
-	line "tion, Prof.Elm is"
-	cont "the authority."
+	para "Was die Entwick-"
+	line "lung von #mon"
+	cont "betrifft, ist"
+	cont "Prof. Lind eine"
+	cont "Kapazität."
 	done
 
 MrPokemonIntroText4:
-	text "Even Prof.Oak here"
-	line "recognizes that."
+	text "Sogar Prof. Eich"
+	line "schätzt ihn sehr."
 	done
 
 MrPokemonIntroText5:
-	text "If my assumption"
-	line "is correct, Prof."
-	cont "Elm will know it."
+	text "Ich gehe davon"
+	line "aus, dass Prof."
+	cont "Lind mehr darüber"
+	cont "weiss."
 	done
 
 MrPokemonsHouse_MrPokemonHealText:
-	text "You are returning"
-	line "to Prof.Elm?"
+	text "Kehrst du zu Prof."
+	line "Lind zurück?"
 
-	para "Here. Your #mon"
-	line "should have some"
-	cont "rest."
+	para "Dein #mon"
+	line "sieht müde aus."
+	cont "Du solltest eine"
+	cont "kurze Pause"
+	cont "einlegen."
 	done
 
 MrPokemonText_OddSouvenir:
-	text "Oh! That souvenir!"
+	text "Oh! Das Souvenir!"
 
-	para "I got one of those"
-	line "on my trip to the"
-	cont "Orange Islands."
+	para "So eines habe ich"
+	line "auf meiner Reise"
+	cont "zu den Orange-"
+	cont "Inseln bekommen."
 
-	para "I saw some oddly-"
-	line "formed #mon"
-	cont "there too!"
+	para "Dort sah ich auch"
+	line "#mon mit selt-"
+	cont "samen Formen!"
 
-	para "Hmm… I wonder…"
+	para "Hmm… Ich frage"
+	line "mich…"
 
-	para "Is there a conn-"
-	line "ection between"
+	para "Gibt es eine Ver-"
+	line "bindung zwischen"
 
-	para "that souvenir and"
-	line "those unusual"
-	cont "forms of #mon?"
+	para "dem Souvenir und"
+	line "diesen ungewöhn-"
+	cont "lichen Formen von"
+	cont "#mon?"
 	done
 
 MrPokemonText_ImDependingOnYou:
-	text "I'm depending on"
-	line "you!"
+	text "Ich bin auf dich"
+	line "angewiesen!"
 	done
 
 MrPokemonText_AlwaysNewDiscoveries:
-	text "Life is delight-"
-	line "ful! Always, new"
+	text "Das Leben ist"
+	line "schön! Es gibt"
 
-	para "discoveries to be"
-	line "made!"
+	para "immer etwas Neues"
+	line "zu entdecken!"
 	done
 
 MrPokemonsHouse_OakText1:
-	text "Oak: Aha! So"
-	line "you're <PLAYER>!"
+	text "Eich: Aha! Du bist"
+	line "also <PLAYER>!"
 
 if !DEF(DEBUG)
-	para "I'm Oak! A #mon"
-	line "researcher."
+	para "Mein Name"
+	line "ist Prof. Eich!"
+	cont "Ich bin von Beruf"
+	cont "#mon-Forscher."
 
-	para "I was just visit-"
-	line "ing my old friend"
-	cont "Mr.#mon."
+	para "Ich besuche gerade"
+	line "meinen alten"
+	cont "Freund Mr. #-"
+	cont "mon."
 
-	para "I heard you were"
-	line "running an errand"
+	para "Ich hörte, du hast"
+	line "etwas für Prof."
 
-	para "for Prof.Elm, so I"
-	line "waited here."
+	para "Lind besorgt, also"
+	line "habe ich gewartet."
 
-	para "Oh! What's this?"
-	line "A rare #mon!"
+	para "Oh! Was ist das?"
+	line "Ein seltenes"
+	cont "#mon!"
 
-	para "Let's see…"
+	para "Mal sehen…"
 
-	para "Hm, I see!"
+	para "Hm, ich verstehe!"
 
-	para "I understand why"
-	line "Prof.Elm gave you"
+	para "Ich weiss, warum"
+	line "Prof. Lind dir ein"
 
-	para "a #mon for this"
-	line "errand."
+	para "#mon für die"
+	line "Besorgung gab."
 
-	para "To researchers"
-	line "like Prof.Elm and"
+	para "Für Forscher wie"
+	line "Prof. Lind und"
 
-	para "I, #mon are our"
-	line "friends."
+	para "mich sind #mon"
+	line "unsere Freunde."
 
-	para "He saw that you"
-	line "would treat your"
+	para "Er erkannte, dass"
+	line "du deine #mon"
 
-	para "#mon with love"
-	line "and care."
+	para "liebevoll und"
+	line "umsichtig"
+	cont "umsorgst."
 
 	para "…Ah!"
 
-	para "You seem to be"
-	line "dependable."
+	para "Du scheinst zuver-"
+	line "lässig zu sein."
 
-	para "How would you like"
-	line "to help me out?"
+	para "Möchtest du mir"
+	line "auch helfen?"
 
-	para "See? This is the"
-	line "latest version of"
-	cont "#dex."
+	para "Dies ist die"
+	line "neueste Version"
+	cont "des #dex."
 
-	para "It automatically"
-	line "records data on"
+	para "Er erfasst"
+	line "automatisch Daten"
 
-	para "#mon you've"
-	line "seen or caught."
+	para "über #mon,"
+	line "die man gefangen"
+	cont "oder gesehen hat!"
 
-	para "It's a hi-tech"
-	line "encyclopedia!"
+	para "Er ist eine Art"
+	line "Hi-Tech-Lexikon!"
 endc
 	done
 
 MrPokemonsHouse_OakText2:
-	text "Go meet many kinds"
-	line "of #mon and"
+	text "Triff auf viele"
+	line "verschiedene #-"
+	cont "mon und vervoll-"
 
-	para "complete that"
+	para "ständige den"
 	line "#dex!"
 
 if !DEF(DEBUG)
-	para "But I've stayed"
-	line "too long."
+	para "Ich bin schon zu"
+	line "lange hier."
 
-	para "I have to get to"
-	line "Goldenrod for my"
-	cont "usual radio show."
+	para "Ich muss nach"
+	line "Dukatia City zu"
+	cont "meiner Radioshow."
 
-	para "<PLAYER>, I'm"
-	line "counting on you!"
+	para "<PLAYER>, ich"
+	line "zähle auf dich!"
 endc
 	done
 
 MrPokemonText_GimmeTheScale:
-	text "Hm? That Scale!"
-	line "What's that?"
-	cont "A red Gyarados?"
+	text "Hm? Diese Schuppe!"
+	line "Was ist das?"
+	cont "Ein rotes Garados?"
 
-	para "It must have kept"
-	line "its coloration as"
-	cont "a Magikarp!"
+	para "Es muss seine"
+	line "Farbe als Karpador"
+	cont "behalten haben!"
 
-	para "That could be"
-	line "one of a kind!"
-	cont "I, I want it…"
+	para "Das könnte ein"
+	line "Einzelstück sein!"
+	cont "Ich… ich will es…"
 
-	para "<PLAYER>, would you"
-	line "care to trade it?"
+	para "<PLAYER>, möchtest"
+	line "du es tauschen?"
 
-	para "I can offer you"
-	line "a rare #mon."
+	para "Ich kann dir ein"
+	line "seltenes #mon"
+	cont "anbieten."
 	done
 
 MrPokemonText_GotShinyDitto:
-	text "<PLAYER> received a"
-	line "#mon."
+	text "<PLAYER> erhält"
+	line "ein #mon."
 	done
 
 MrPokemonText_SentToPC:
-	text "The #mon was"
-	line "sent to "
+	text "Das #mon kam"
+	line "in "
 	text_ram wStringBuffer1
 	text "."
 	done
 
 MrPokemonText_PartyAndBoxFull:
-	text "You don't have any"
-	line "room for this,"
-	cont "even in your Box!"
+	text "Du hast keinen"
+	line "Platz dafür, nicht"
+	cont "mal in deiner Box!"
 	done
 
 MrPokemonText_Disappointed:
-	text "That's disappoint-"
-	line "ing. That happens"
-	cont "to be very rare."
+	text "Wirklich schade!"
+	line "Das gibt es nur"
+	cont "selten."
 	done
 
 MrPokemonsHouse_ForeignMagazinesText:
-	text "It's packed with"
-	line "foreign magazines."
+	text "Das sind auslän-"
+	line "dische Zeitungen."
 
-	para "Can't even read"
-	line "their titles…"
+	para "Ich kann die"
+	line "Schlagzeilen"
+	cont "nicht lesen…"
 	done
 
 MrPokemonsHouse_BrokenComputerText:
-	text "It's a big com-"
-	line "puter. Hmm. It's"
-	cont "broken."
+	text "Dies ist ein"
+	line "grosser Computer."
+	cont "Hm, er ist kaputt."
 	done
 
 MrPokemonsHouse_StrangeCoinsText:
-	text "A whole pile of"
-	line "strange coins!"
+	text "Ein ganzer Stapel"
+	line "seltsamer Münzen!"
 
-	para "Maybe they're from"
-	line "another country…"
+	para "Vielleicht sind"
+	line "sie aus einem"
+	cont "anderen Land…"
 	done
 
 MrPokemonsHouse_CabinetText:
-	text "A collection of"
-	line "rare curiosities"
-	cont "from all over!"
+	text "Eine Sammlung"
+	line "seltener Kuriosi-"
+	cont "täten aus aller"
+	cont "Welt!"
 	done
 
 MrPokemonsHouse_RedScaleCabinetText:
-	text "One of them is the"
-	line "shiny Red Scale!"
+	text "Darunter ist auch"
+	line "die glänzende"
+	cont "Rote Schuppe!"
 	done

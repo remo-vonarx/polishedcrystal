@@ -4047,7 +4047,8 @@ Text_Waitbutton_2::
 SECTION "_CurBoxFullText", ROMX
 _CurBoxFullText::
 	text_ram wStringBuffer1
-	text " is full."
+	text " ist"
+	line "voll."
 	prompt
 
 SECTION "_MonSentToPCText", ROMX

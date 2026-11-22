@@ -438,3 +438,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | #mon Communication Center / #Com Center | #mon-Kommunikations-Center / #Kom-Center | Nurse, Pokémon Center | Kristall; Kristall left its Day and Nite versions half English, so all four take the morning text's German |
 | Great Tree, Lure (dialogue) | Grosser Baum von Rosalia; Parfüm ("Möchtest du ein Parfüm am Grossen Baum benutzen?") | Cherrygrove Bay | The user's choice for the tree (2026-11-21); "Parfüm" for a generic Lure is own |
 | Pidgey's cry "Pijji!" | Taubsi: Gurr! | Cherrygrove City | Own, a German pigeon sound like Kristall's "SNOBILIKAT: Fauch!" |
+| Berry Master's House (sign) | Haus des / Beerenmeisters | Route 30 | Own: "Beerenmeister" taken as the Ruby/Sapphire/Emerald name of the Berry Master, not verified against PokéWiki; the layout follows Kristall's "Haus des Fremdenführers" (provisional, the user was offline 2026-11-22) |
+| Orange Islands | Orange-Inseln | Mr. #mon's souvenir text | Anime name (the German dub's second season), flagged as such like the Shamouti place names |
+| Red Scale (dialogue) | Schuppe ("Hm? Diese Schuppe!") | Mr. #mon | Kristall's "HAUT" would contradict the key item "Rote Schuppe" |
+| "The #mon was sent to <box>." / "<box> is full." | "Das #mon kam / in <box>." / "<box> ist / voll." | Mr. #mon's gift; the same frames for later gifts | Own: "ist jetzt in" or "wurde nach … geschickt" don't fit a 9-character box name with "<mon>" later (provisional) |
