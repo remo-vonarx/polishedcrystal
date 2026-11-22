@@ -23,19 +23,19 @@ PokemonJournalKurtScript:
 	setflag ENGINE_READ_KURT_JOURNAL
 	jumpthistext
 
-	text "#mon Journal"
+	text "#mon-Journal"
 
-	para "Special Feature:"
-	line "Craftsman Kurt!"
+	para "Sonderbericht:"
+	line "Handwerker Kurt!"
 
-	para "Kurt does not let"
-	line "anyone near while"
+	para "Während Kurt"
+	line "#bälle fertigt,"
 
-	para "he is making #"
-	line "Balls except his"
+	para "lässt er niemanden"
+	line "in seine Nähe,"
 
-	para "granddaughter"
-	line "Maizie."
+	para "ausser seiner"
+	line "Enkelin Maisy."
 	done
 
 Route32Pokecenter1FFishingGuruScript:
@@ -56,43 +56,50 @@ Route32Pokecenter1FFishingGuruScript:
 	end
 
 .IntroText:
-	text "This is a great"
-	line "fishing spot."
+	text "Das ist ein"
+	line "hervorragender"
+	cont "Platz zum Angeln."
 
-	para "You saw people"
-	line "fishing? How"
-	cont "about you?"
+	para "Du hast Leute"
+	line "beim Angeln"
 
-	para "Would you like one"
-	line "of my Rods?"
+	para "gesehen? Wie"
+	line "steht es mit dir?"
+
+	para "Hättest du gerne"
+	line "eine Angel"
+	cont "von mir?"
 	done
 
 .YesText:
-	text "Heh, that's good"
-	line "to hear."
+	text "He! Das höre ich"
+	line "wirklich gerne!"
 
-	para "Now you're an"
-	line "angler too!"
+	para "Jetzt bist du"
+	line "auch ein Angler!"
 	done
 
 .AfterText:
-	text "Fishing is great!"
+	text "Angeln ist toll!"
 
-	para "If there's water,"
-	line "be it the sea or a"
+	para "Probiere überall,"
+	line "wo Wasser ist,"
 
-	para "stream, try out"
-	line "your Rod."
+	para "deine Angel aus,"
+	line "sei es am Meer"
+
+	para "oder an einem"
+	line "Fluss."
 	done
 
 .NoText:
-	text "Oh. That's rather"
-	line "disappointing…"
+	text "Na, das ist aber"
+	line "ziemlich mager…"
 	done
 
 .DoneText:
-	text "Yo, kid. How are"
-	line "they biting?"
+	text "Moin, lüttes Ding."
+	line "Und beissen sie?"
 	done
 
 Route32PokeCenter1FPokefanMScript:
@@ -113,15 +120,16 @@ Route32PokeCenter1FPokefanMScript:
 	setevent EVENT_GOT_LURE_BALL_FROM_FRENCHMAN
 	jumpthisopenedtext
 
-	text "This Ball easily"
-	line "catches #mon"
-	cont "hooked on a Rod!"
+	text "Dieser Ball fängt"
+	line "geangelte #mon"
+	cont "ganz leicht!"
 
-	para "Kurt of Azalea"
-	line "Town made it from"
-	cont "an Apricorn."
+	para "Kurt aus Azalea"
+	line "City hat ihn aus"
+	cont "einer Aprikoko"
+	cont "gemacht."
 
-	para "Apricorns,"
+	para "Aprikokos,"
 	line "hourrah!"
 	done
 
@@ -129,41 +137,43 @@ Route32PokeCenter1FPokefanMScript:
 	endtext
 
 .Text1:
-	text "Bonjour. How are"
-	line "you? Do you know"
-	cont "about Apricorns?"
+	text "Bonjour. Wie geht"
+	line "es dir? Kennst du"
+	cont "Aprikokos?"
 	done
 
 .Text2:
-	text "Non? What a waste!"
-	line "I will show you"
+	text "Non? Wie schade!"
+	line "Ich zeige dir,"
 
-	para "how great Apri-"
-	line "corns are!"
+	para "wie toll"
+	line "Aprikokos sind!"
 	done
 
 .Text3:
-	text "Youpi! Way to go!"
-	line "I feel so great,"
+	text "Youpi! Super!"
+	line "Ich fühle mich so"
 
-	para "I want to give you"
-	line "this!"
+	para "gut, dass ich dir"
+	line "das geben möchte!"
 	done
 
 .Text5:
-	text "Kurt is the hero"
-	line "of every Apricorn"
-	cont "collector."
+	text "Kurt ist der Held"
+	line "aller Aprikoko-"
+	cont "Sammler."
 
-	para "Apricorns,"
+	para "Aprikokos,"
 	line "hourrah!"
 	done
 
 Route32Pokecenter1FCooltrainerFText:
-	text "What should I make"
-	line "my #mon hold?"
+	text "Was soll mein"
+	line "#mon tragen?"
 
-	para "Maybe an item that"
-	line "increases Attack"
-	cont "power…"
+	para "Vielleicht ein"
+	line "Item, das seinen"
+
+	para "ANGR-Wert"
+	line "verstärkt…"
 	done

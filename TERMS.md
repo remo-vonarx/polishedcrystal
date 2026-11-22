@@ -453,3 +453,9 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Gym statue: "<city> #mon Gym / Leader: <name>", "Winning Trainers:" | "<city> / PKMN-Arena / Leitung: <name>", "Bisherige Sieger:" | Every Gym statue | Kristall (6c:47e9) |
 | Walker (Falkner's father, Ex-Leader) | Luc ("Ex-Leiter Luc!") | Earl's Academy journal | German manga name (PokéWiki "Luc"); no game names him (provisional until the user answers) |
 | "A Bellsprout over 100 feet tall" (imperial units) | "Ein über 100 Fuss / grosses Knofensa…" | Sprout Tower 1F | Own, beside Kristall's metric "Ein über 30 m grosses KNOFENSA…" for the metric option |
+| Hidden Grotto(es) | Versteckte Lichtung(en) | Lyra on Route 32 | Official (PokéWiki "Versteckte Lichtung", Black 2/White 2) |
+| Maizie (Kurt's granddaughter) | Maisy | Kurt's journal (Route 32 Pokémon Center) | Anime name (PokéWiki "Maisy"); no game names her |
+| Craftsman Kurt! | Handwerker Kurt! | Kurt's journal | Own |
+| Apricorns (dialogue) | Aprikoko (feminine, "eine Aprikoko"), plural Aprikokos | Dialogue | Kristall ("Hast du eine APRIKOKO für mich?", "APRIKOKOS") |
+| Fishing: "Oh! A bite!" / "Not even a nibble! Keep fishing?" | "Uah! / Da hat etwas / angebissen!" / "Nicht einmal / angeknabbert!" + "Weiter angeln?" | Every rod | Kristall (70:4a9c, 70:4abb); "Weiter angeln?" own (Polished's added question) |
+| Attack (stat, in dialogue) | ANGR-Wert | Dialogue | Kristall ("ANGR-Wert"); the abbreviation stays in capitals, as on the type chart |

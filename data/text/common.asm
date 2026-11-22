@@ -2148,15 +2148,17 @@ endc
 
 SECTION "_RodBiteText", ROMX
 _RodBiteText::
-	text "Oh!"
-	line "A bite!"
+	text "Uah!"
+	line "Da hat etwas"
+	cont "angebissen!"
 	prompt
 
 SECTION "_RodNothingText", ROMX
 _RodNothingText::
-	text "Not even a nibble!"
+	text "Nicht einmal"
+	line "angeknabbert!"
 
-	para "Keep fishing?"
+	para "Weiter angeln?"
 	done
 
 SECTION "_CantGetOffBikeText", ROMX
