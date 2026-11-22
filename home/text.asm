@@ -433,7 +433,18 @@ TextCommand_PLURAL:
 	dec a
 	ret z
 
-	; Try to pattern match the previous string with the plural table below.
+	; The table lives in ROMX; keep its bank while matching and placing.
+	ldh a, [hROMBank]
+	push af
+	ld a, BANK(PluralTable)
+	rst Bankswitch
+	call .pluralize
+	pop af
+	rst Bankswitch
+	ret
+
+.pluralize
+	; Try to pattern match the previous string with the plural table.
 	push hl
 	push bc
 
@@ -487,8 +498,6 @@ TextCommand_PLURAL:
 	pop bc
 	push bc
 	jr .check_match_loop
-
-INCLUDE "data/text/plural_table.asm"
 
 TextScroll::
 	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY
