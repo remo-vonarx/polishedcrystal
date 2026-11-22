@@ -28,17 +28,18 @@ PokemonJournalFalknerScript:
 	setflag ENGINE_READ_FALKNER_JOURNAL
 	jumpthistext
 
-	text "#mon Journal"
+	text "#mon-Journal"
 
-	para "Special Feature:"
-	line "Leader Falkner!"
+	para "Sonderbericht:"
+	line "Arenaleiter Falk!"
 
-	para "People say that"
-	line "Falkner reveres"
-	cont "his father, who"
+	para "Man sagt, Falk"
+	line "verehre seinen"
+	cont "Vater, der vor ihm"
 
-	para "led the Violet Gym"
-	line "before him."
+	para "die Arena von"
+	line "Viola City"
+	cont "leitete."
 	done
 
 VioletPokeCenter1FElmsAideScript:
@@ -78,68 +79,82 @@ VioletPokeCenter1FElmsAideScript:
 	end
 
 .PartyAndBoxFull:
-	text "Oh, no. You can't"
-	line "carry any more"
-	cont "#mon with you."
+	text "Oh, du hast keinen"
+	line "Platz mehr für ein"
+	cont "weiteres #mon."
 
-	para "You have no space"
-	line "in your Box, too."
+	para "Auch in deiner Box"
+	line "ist kein Platz."
 
-	para "I'll wait here"
-	line "while you make"
-	cont "room for the Egg."
+	para "Ich warte hier,"
+	line "bis du Platz für"
+	cont "das Ei geschaffen"
+	cont "hast."
 	done
 
 .RefusedEgg:
 	setevent EVENT_REFUSED_TO_TAKE_EGG_FROM_ELMS_AIDE
 	jumpthisopenedtext
 
-	text "B-but… Prof.Elm"
-	line "asked for you…"
+	text "A-Aber… Prof."
+	line "Lind hat nach dir"
+	cont "gefragt…"
 	done
 
 .IntroText:
-	text "<PLAYER>, long"
-	line "time, no see."
+	text "<PLAYER>, lange"
+	line "nicht gesehen."
 
-	para "I was browsing the"
-	line "#mon Journal"
-	cont "while I waited."
+	para "Beim Warten habe"
+	line "ich das #mon-"
+	cont "Journal durchge-"
+	cont "blättert."
 
-	para "Its gossip is a"
-	line "good pastime…"
+	para "Der Klatsch darin"
+	line "ist ein guter"
+	cont "Zeitvertreib…"
 
-	para "Anyway, Prof.Elm"
-	line "has another favor"
-	cont "to ask you."
+	para "Wie auch immer,"
+	line "Prof. Lind hat"
+	cont "noch eine Bitte"
+	cont "an dich."
 
-	para "Would you take the"
-	line "#mon Egg?"
+	para "Nimm bitte das"
+	line "#mon-Ei!"
 	done
 
 .QuestionText:
-	text "<PLAYER>, will you"
-	line "take the Egg?"
+	text "<PLAYER>, nimmst du"
+	line "das Ei?"
 	done
 
 .GoodbyeText:
-	text "We discovered that"
-	line "a #mon will not"
+	text "Wir haben ent-"
+	line "deckt, dass ein"
 
-	para "hatch until it"
-	line "grows in the Egg."
+	para "#mon erst"
+	line "schlüpft, nachdem"
 
-	para "It also has to be"
-	line "with other active"
-	cont "#mon to hatch."
+	para "es im Ei gewachsen"
+	line "ist."
 
-	para "<PLAYER>, you're"
-	line "the only person"
-	cont "we can rely on."
+	para "Ausserdem muss es"
+	line "sich in der Nähe"
 
-	para "Please call Prof."
-	line "Elm when that Egg"
-	cont "hatches!"
+	para "anderer #mon"
+	line "befinden, um zu"
+	cont "schlüpfen."
+
+	para "<PLAYER>, du bist"
+	line "die einzige Per-"
+	cont "son, auf die wir"
+
+	para "uns verlassen"
+	line "können."
+
+	para "Bitte ruf Prof."
+	line "Lind an, wenn das"
+	cont "Ei so weit ist!"
 	done
 
 .WalkAroundMovement:
@@ -164,48 +179,54 @@ VioletPokeCenter1FElmsAideScript:
 	step_end
 
 VioletPokeCenter1FGameboyKidText:
-	text "A guy named Bill"
-	line "made the #mon"
-	cont "PC storage system."
+	text "Ein Kerl namens"
+	line "Bill hat das"
+
+	para "#mon-PC-Lage-"
+	line "rungs-System"
+
+	para "erfunden."
 	done
 
 VioletPokeCenter1FGentlemanText:
-	text "It was around"
-	line "three years ago."
+	text "Es war vor etwa"
+	line "drei Jahren."
 
-	para "Team Rocket was up"
-	line "to no good with"
-	cont "#mon."
+	para "Team Rocket hatte"
+	line "etwas Übles mit"
+	cont "den #mon vor."
 
-	para "But justice pre-"
-	line "vailed--a young"
-	cont "kid broke 'em up."
+	para "Aber die Gerech-"
+	line "tigkeit hat ge-"
+	cont "siegt! Ein junger"
+	cont "Trainer hat sie"
+	cont "zerschlagen."
 	done
 
 VioletPokeCenter1FSageText:
-	text "Some Bellsprout"
-	line "are found with"
-	cont "Gold Leaves."
+	text "Manche Knofensa"
+	line "findet man mit"
+	cont "Goldblättern."
 
-	para "And some Oddish"
-	line "are found with"
-	cont "Silver Leaves."
+	para "Und manche Myrapla"
+	line "findet man mit"
+	cont "Silberblättern."
 
-	para "These are valued"
-	line "by a certain type"
-	cont "of person."
+	para "Eine gewisse Art"
+	line "von Leuten schätzt"
+	cont "sie sehr."
 	done
 
 VioletPokeCenter1FYoungsterText:
-	text "#mon are smart."
-	line "They won't obey a"
+	text "#mon sind"
+	line "schlau. Sie gehor-"
+	cont "chen nur Trainern,"
+	cont "vor denen sie auch"
+	cont "Respekt haben."
 
-	para "trainer they don't"
-	line "respect."
+	para "Hat der Trainer"
+	line "nicht genug Orden,"
 
-	para "Without the right"
-	line "Gym Badges, they"
-
-	para "will just do as"
-	line "they please."
+	para "machen sie, was"
+	line "sie wollen."
 	done
