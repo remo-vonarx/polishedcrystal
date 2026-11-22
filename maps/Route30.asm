@@ -344,7 +344,7 @@ Route30TrainerTipsText:
 	done
 
 Route30AdvancedTipsText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Drücke im Kampf"
 	line "SELECT, um #mon"

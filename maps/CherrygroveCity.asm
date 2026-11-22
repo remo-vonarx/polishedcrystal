@@ -321,8 +321,8 @@ GuideGentRoute30Text:
 	done
 
 GuideGentAdvancedTipsText:
-	text "Schilder mit"
-	line "Profi-Tipps sehen"
+	text "Schilder mit Tipps"
+	line "für Profis sehen"
 	cont "ungewöhnlich aus."
 
 	para "Sie sind voller"
@@ -484,7 +484,7 @@ GuideGentsHouseSignText:
 	done
 
 CherrygroveCityAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Im PKMN-Supermarkt"
 	line "gibt es zu je zehn"
