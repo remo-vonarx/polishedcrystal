@@ -128,82 +128,88 @@ Route32CooltrainerMTrigger:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "Your experiences"
-	line "in Violet City"
+	text "Die Erfahrungen"
+	line "von Viola City"
 
-	para "should be useful"
-	line "for your journey."
+	para "werden dir auf"
+	line "deiner Reise von"
+	cont "grossem Nutzen"
+	cont "sein."
 	done
 
 .IntroText:
-	text "You have some good"
-	line "#mon there."
+	text "Du besitzt einige"
+	line "gute #mon."
 
-	para "It must be from"
-	line "the training you"
+	para "Sie sind bestimmt"
+	line "wegen der vielen"
 
-	para "gave them around"
-	line "Violet City."
+	para "Kämpfe, die du mit"
+	line "ihnen bei Viola"
+	cont "City absolviert"
+	cont "hast, so gut."
 
-	para "You should have no"
-	line "trouble beating"
+	para "Du solltest alle"
+	line "Trainer auf dieser"
 
-	para "all the trainers"
-	line "on this route."
+	para "Route problemlos"
+	line "besiegen können."
 
-	para "If you can do"
-	line "that, I'll face you"
-	cont "myself."
+	para "Schaffst du das,"
+	line "trete ich selbst"
+	cont "gegen dich an."
 	done
 
 .QuestionText:
-	text "It looks like you"
-	line "beat everyone else"
-	cont "here."
+	text "Wie es aussieht,"
+	line "hast du hier alle"
+	cont "anderen besiegt."
 
-	para "Your training at"
-	line "the Gym must have"
+	para "Das Training in"
+	line "der PKMN-Arena"
 
-	para "been especially"
-	line "helpful."
+	para "muss von grossem"
+	line "Nutzen gewesen"
+	cont "sein."
 
-	para "I, too, have a"
-	line "Zephyr Badge."
+	para "Auch ich besitze"
+	line "den Flügelorden."
 
-	para "Will you battle"
-	line "with me?"
+	para "Willst du gegen"
+	line "mich kämpfen?"
 	done
 
 .RefusedText:
-	text "So you would ra-"
-	line "ther journey on…"
+	text "Du ziehst also"
+	line "lieber weiter…"
 	done
 
 .SeenText:
-	text "My training in"
-	line "Sprout Tower over-"
-	cont "came even Falkner."
+	text "Mit dem Training"
+	line "im Knofensa-Turm"
+	cont "habe ich sogar"
+	cont "Falk bezwungen."
 
-	para "Let's see how you"
-	line "compare!"
+	para "Mal sehen, wie du"
+	line "dich schlägst!"
 	done
 
 .BeatenText:
-	text "My team was up-"
-	line "rooted!"
+	text "Mein Team wurde"
+	line "entwurzelt!"
 	done
 
 .AfterText1:
-	text "Your training was"
-	line "superior to mine."
+	text "Dein Training war"
+	line "meinem überlegen."
 
-	para "As a souvenir of"
-	line "our battle, take"
-	cont "this."
+	para "Nimm dies als"
+	line "Andenken an"
+	cont "unseren Kampf."
 
-	para "It increases the"
-	line "power of Grass-"
-	cont "type moves."
+	para "Damit werden"
+	line "Pflanzen-Attacken"
+	cont "verstärkt."
 	done
 
 Route32CooltrainerMStopsYou:
@@ -306,53 +312,59 @@ Route32LyraIntroducesHiddenGrottoesMainScript:
 
 .GreetingText:
 	text "<PLAYER>!"
-	line "Hi there!"
+	line "Hallo!"
 
-	para "Prof.Elm said his"
-	line "aide was deliver-"
-	cont "ing an Egg to you."
+	para "Prof. Lind meinte,"
+	line "sein Assistent"
+	cont "bringt dir ein Ei."
 	done
 
 .NoEggText:
-	text "Be sure to carry"
-	line "it with you."
+	text "Trag es unbedingt"
+	line "bei dir."
 
-	para "I'm so curious"
-	line "what #mon it"
-	cont "could be!"
+	para "Ich bin so"
+	line "gespannt, welches"
+	cont "#mon das sein"
+	cont "könnte!"
 	done
 
 .HaveEggText:
-	text "Oh good! You're"
-	line "carrying it just"
-	cont "like he wanted."
+	text "Oh, gut! Du trägst"
+	line "es bei dir, ganz"
+	cont "wie er wollte."
 
-	para "I'm so curious"
-	line "what #mon it"
-	cont "could be!"
+	para "Ich bin so"
+	line "gespannt, welches"
+	cont "#mon das sein"
+	cont "könnte!"
 	done
 
 .HatchedEggText:
-	text "…What? You already"
-	line "hatched it?"
+	text "…Was? Du hast es"
+	line "schon ausgebrütet?"
 
-	para "Oh my gosh! So it"
-	line "was a Togepi!"
-	cont "They're so rare!"
+	para "Ach du meine Güte!"
+	line "Es war also ein"
+	cont "Togepi!"
+	cont "Die sind so"
+	cont "selten!"
 
-	para "You should show"
-	line "it to Prof.Elm"
+	para "Du solltest es"
+	line "Prof. Lind zeigen,"
 
-	para "while you're not"
-	line "too far from home!"
+	para "solange du noch"
+	line "nicht zu weit von"
+	cont "zu Hause weg bist!"
 	done
 
 .QuestionText:
-	text "<PLAYER>, did you"
-	line "hear that?"
+	text "<PLAYER>, hast du"
+	line "das gehört?"
 
-	para "It came from some-"
-	line "where nearby…"
+	para "Es kam von"
+	line "irgendwo hier in"
+	cont "der Nähe…"
 	done
 
 .LookAroundMovement:
@@ -388,34 +400,40 @@ Route32LyraIntroducesHiddenGrottoesOutroScript:
 	end
 
 .GrottoText:
-	text "Here it is!"
-	line "There's a gap in"
-	cont "the trees!"
+	text "Hier ist es!"
+	line "Da ist eine Lücke"
+	cont "zwischen den"
+	cont "Bäumen!"
 
-	para "I've heard of these"
-	line "places before."
+	para "Von solchen Orten"
+	line "habe ich schon"
+	cont "gehört."
 
-	para "It's a Hidden"
-	line "Grotto!"
+	para "Das ist eine"
+	line "Versteckte"
+	cont "Lichtung!"
 
-	para "Hidden Grottoes"
-	line "are found among"
-	cont "trees and cliff-"
-	cont "sides."
+	para "Versteckte"
+	line "Lichtungen findet"
+	cont "man zwischen"
+	cont "Bäumen und an"
+	cont "Klippen."
 
-	para "Some amazing #-"
-	line "mon might be"
-	cont "hiding in there!"
+	para "Dort könnten sich"
+	line "tolle #mon"
+	cont "verstecken!"
 
-	para "I wish I had time"
-	line "to look around,"
+	para "Ich wünschte, ich"
+	line "hätte Zeit, mich"
+	cont "umzusehen,"
 
-	para "but I have things"
-	line "to do."
+	para "aber ich habe noch"
+	line "einiges zu tun."
 
-	para "<PLAYER>, keep an"
-	line "eye out for more"
-	cont "Hidden Grottoes!"
+	para "<PLAYER>, achte"
+	line "auf weitere"
+	cont "Versteckte"
+	cont "Lichtungen!"
 	done
 
 .LeaveMovement1:
@@ -446,16 +464,18 @@ _OfferToSellSlowpokeTail:
 	iffalsefwd .refused
 	jumpthisopenedtext
 
-	text "Tch! I thought"
-	line "kids these days"
-	cont "were loaded…"
+	text "Ts! Ich dachte,"
+	line "die Kinder von"
+	cont "heute wären"
+	cont "stinkreich…"
 	done
 
 .refused
 	jumpthisopenedtext
 
-	text "You don't want it?"
-	line "Then scram. Shoo!"
+	text "Du möchtest sie"
+	line "nicht? Dann mach"
+	cont "dich vom Acker!"
 	done
 
 Route32RoarTMGuyScript:
@@ -473,19 +493,21 @@ Route32RoarTMGuyScript:
 GenericTrainerCamperRoland:
 	generictrainer CAMPER, ROLAND, EVENT_BEAT_CAMPER_ROLAND, CamperRolandSeenText, CamperRolandBeatenText
 
-	text "If you don't want"
-	line "to battle, just"
-	cont "avoid eye contact."
+	text "Wenn du nicht"
+	line "kämpfen möchtest,"
+	cont "vermeide Blick-"
+	cont "kontakt."
 	done
 
 GenericTrainerFisherJustin:
 	generictrainer FISHER, JUSTIN, EVENT_BEAT_FISHER_JUSTIN, FisherJustinSeenText, FisherJustinBeatenText
 
-	text "Calm, collected…"
-	line "The essence of"
+	text "Geduld…"
+	line "Die Voraussetzung"
 
-	para "fishing and #-"
-	line "mon is the same."
+	para "für das Angeln und"
+	line "für #mon ist"
+	cont "dieselbe."
 	done
 
 TrainerFisherRalph1:
@@ -581,14 +603,15 @@ TrainerFisherRalph1:
 .Swarm:
 	jumpthisopenedtext
 
-	text "One, two, three…"
-	line "Muahahaha, what a"
+	text "Eins, Zwei, Drei…"
+	line "Muahahaha, welch"
 
-	para "great haul!"
-	line "I'm done! Go ahead"
+	para "ein Fang!"
+	line "Ich bin fertig!"
 
-	para "and catch as many"
-	line "as you can, kid!"
+	para "Mach weiter und"
+	line "fange so viel du"
+	cont "kannst, Kiddie!"
 	done
 
 .NumberAccepted:
@@ -603,11 +626,12 @@ TrainerFisherRalph1:
 GenericTrainerFisherHenry:
 	generictrainer FISHER, HENRY, EVENT_BEAT_FISHER_HENRY, FisherHenrySeenText, FisherHenryBeatenText
 
-	text "Freshly caught"
-	line "#mon are no"
+	text "Frisch gefangene"
+	line "#mon können"
 
-	para "match for properly"
-	line "raised ones."
+	para "gut trainierten"
+	line "nicht Paroli"
+	cont "bieten."
 	done
 
 TrainerPicnickerLiz1:
@@ -710,28 +734,29 @@ TrainerPicnickerLiz1:
 GenericTrainerYoungsterAlbert:
 	generictrainer YOUNGSTER, ALBERT, EVENT_BEAT_YOUNGSTER_ALBERT, YoungsterAlbertSeenText, YoungsterAlbertBeatenText
 
-	text "I'm going to try"
-	line "to be the best"
-	cont "with my favorites."
+	text "Ich versuche, mit"
+	line "meinen Lieblingen"
+	cont "der Beste zu sein."
 
-	para "I'm not using the"
-	line "same tough #mon"
-	cont "as everyone else."
+	para "Ich setze nicht"
+	line "auf zähe #mon,"
+	cont "wie die anderen."
 	done
 
 GenericTrainerYoungsterGordon:
 	generictrainer YOUNGSTER, GORDON, EVENT_BEAT_YOUNGSTER_GORDON, YoungsterGordonSeenText, YoungsterGordonBeatenText
 
-	text "The grass is full"
-	line "of clingy things."
+	text "Im Gras findest"
+	line "du viele Dinge."
 	done
 
 GenericTrainerBird_keeperPeter:
 	generictrainer BIRD_KEEPER, PETER, EVENT_BEAT_BIRD_KEEPER_PETER, Bird_keeperPeterSeenText, Bird_keeperPeterBeatenText
 
-	text "I should train"
-	line "again at the Gym"
-	cont "in Violet City."
+	text "Ich sollte in der"
+	line "PKMN-Arena von"
+	cont "Viola City weiter"
+	cont "trainieren."
 	done
 
 FriedaScript:
@@ -753,27 +778,30 @@ FriedaScript:
 	setevent EVENT_GOT_POISON_BARB_FROM_FRIEDA
 	jumpthisopenedtext
 
-	text "Frieda: Give it to"
-	line "a #mon that has"
-	cont "Poison-type moves."
+	text "Frieda: Gib es"
+	line "einem #mon, das"
+	cont "über Gift-Attacken"
+	cont "verfügt."
 
 	para "Oh!"
 
-	para "It's wicked!"
+	para "Es ist gemein!"
 
-	para "You'll be shocked"
-	line "how good it makes"
-	cont "Poison moves!"
+	para "Du wirst dich"
+	line "wundern, wie"
+	cont "effektiv deine"
+	cont "Gift-Attacken"
+	cont "werden!"
 	done
 
 .NotFriday:
 	jumpthistextfaceplayer
 
-	text "Frieda: Isn't it"
-	line "Friday today?"
+	text "Frieda: Ist heute"
+	line "nicht Freitag?"
 
-	para "It's so boring"
-	line "when it's not!"
+	para "Es wäre langwei-"
+	line "lig, wenn nicht!"
 	done
 
 Movement_Route32CooltrainerMPushesYouBackToViolet:
@@ -787,244 +815,265 @@ Movement_Route32CooltrainerMReset:
 	step_end
 
 Route32CooltrainerMText_WhatsTheHurry:
-	text "Wait up!"
-	line "What's the hurry?"
+	text "Warte!"
+	line "Warum die Eile?"
 	done
 
 Route32CooltrainerMText_AideIsWaiting:
-	text "<PLAYER>, right?"
-	line "Some guy wearing"
+	text "<PLAYER>, oder?"
+	line "Ein Typ mit einer"
 
-	para "glasses was look-"
-	line "ing for you."
+	para "Brille hat nach"
+	line "dir gefragt."
 
-	para "See for yourself."
-	line "He's waiting for"
+	para "Kümmere dich um"
+	line "ihn. Er erwartet"
 
-	para "you at the #mon"
+	para "dich im #mon-"
 	line "Center."
 	done
 
 Route32CooltrainerMText_VioletGym:
-	text "Have you gone to"
-	line "the #mon Gym?"
+	text "Warst du schon in"
+	line "der PKMN-Arena?"
 
-	para "You can test your"
-	line "#mon and your-"
-	cont "self there."
+	para "Dort kannst du"
+	line "deine #mon und"
+	cont "dich auf die Probe"
+	cont "stellen."
 
-	para "It's a rite of"
-	line "passage for all"
-	cont "trainers!"
+	para "Es ist eine Art"
+	line "Ritus für alle"
+	cont "Trainer!"
 	done
 
 Text_MillionDollarSlowpokeTail:
-	text "How would you like"
-	line "to have this"
+	text "Wie möchtest du"
+	line "die schmackhafte,"
 
-	para "tasty, nutritious"
-	line "SlowpokeTail?"
+	para "gehaltvolle"
+	line "Flegmonrute"
+	cont "zubereitet haben?"
 
-	para "For you right now,"
-	line "just ¥10,000,000!"
+	para "Für dich jetzt nur"
+	line "¥10,000,000!"
 
-	para "You'll want this!"
+	para "Möchtest du sie?"
 	done
 
 
 
 FisherJustinSeenText:
-	text "Whoa!"
+	text "Wow!"
 
-	para "You made me lose"
-	line "that fish!"
+	para "Wegen dir habe ich"
+	line "den Fisch ver-"
+	cont "loren!"
 	done
 
 FisherJustinBeatenText:
-	text "Sploosh!"
+	text "Platsch!"
 	done
 
 FisherRalph1SeenText:
-	text "I'm really good at"
-	line "both fishing and"
+	text "Ich beherrsche"
+	line "beides, Angeln und"
 	cont "#mon."
 
-	para "I'm not about to"
-	line "lose to any kid!"
+	para "Darum werde ich"
+	line "nicht verlieren!"
 	done
 
 FisherRalph1BeatenText:
-	text "Tch! I tried to"
-	line "rush things…"
+	text "Ts! Ich wollte"
+	line "die Sache"
+	cont "beschleunigen…"
 	done
 
 FisherRalphAfterText:
-	text "Fishing is a life-"
-	line "long passion."
+	text "Angeln ist eine"
+	line "Leidenschaft für"
 
-	para "#mon are life-"
-	line "long friends!"
+	para "das ganze Leben."
+	line "#mon sind"
+	cont "Kameraden fürs"
+	cont "Leben!"
 	done
 
 
 FisherHenrySeenText:
-	text "My #mon?"
-	line "Freshly caught!"
+	text "Meine #mon?"
+	line "Frisch gefangen!"
 	done
 
 FisherHenryBeatenText:
-	text "Splash?"
+	text "Platscher?"
 	done
 
 YoungsterAlbertSeenText:
-	text "I haven't seen you"
-	line "around before."
+	text "Ich habe dich hier"
+	line "noch nie gesehen."
 
-	para "So you think you"
-	line "are pretty tough?"
+	para "Du denkst also,"
+	line "du bist stark?"
 	done
 
 YoungsterAlbertBeatenText:
-	text "You're strong!"
+	text "Du bist stark!"
 	done
 
 YoungsterGordonSeenText:
-	text "I found some good"
-	line "#mon in the"
-	cont "grass!"
+	text "Ich habe gute"
+	line "#mon im"
+	cont "Gras gefunden!"
 
-	para "I think they'll do"
-	line "it for me!"
+	para "Ich denke, sie"
+	line "passen ganz gut"
+	cont "zu mir!"
 	done
 
 YoungsterGordonBeatenText:
-	text "Darn. I thought I"
-	line "could win."
+	text "Mist. Ich dachte,"
+	line "ich könnte"
+	cont "gewinnen."
 	done
 
 CamperRolandSeenText:
-	text "That glance…"
-	line "It's intriguing."
+	text "Dieser Blick…"
+	line "Wie faszinierend."
 	done
 
 CamperRolandBeatenText:
-	text "Hmmm. This is"
-	line "disappointing."
+	text "Hm. Das ist"
+	line "enttäuschend."
 	done
 
 PicnickerLiz1SeenText:
-	text "Uh-huh. Yeah, and"
-	line "you know…"
+	text "A-ha. Ja,"
+	line "du weisst…"
 
-	para "Pardon? Battle?"
-	line "I'm on the phone."
+	para "Wie bitte? Kampf?"
+	line "Ich telefoniere."
 
-	para "Oh, all right. But"
-	line "make it fast."
+	para "Oh, O.K. Aber"
+	line "mach schnell."
 	done
 
 PicnickerLiz1BeatenText:
-	text "Oh! I've got to"
-	line "relieve my anger!"
+	text "Ich muss meinem"
+	line "Ärger Luft machen!"
 	done
 
 PicnickerLiz1AfterText:
-	text "I was having a"
-	line "nice chat too."
+	text "Ich hatte einen"
+	line "netten Plausch."
 	done
 
 Bird_keeperPeterSeenText:
-	text "That Badge! It's"
-	line "from Violet City!"
+	text "Dieser Orden! Er"
+	line "ist aus Viola"
+	cont "City!"
 
-	para "You beat Falkner?"
+	para "Du hast Falk"
+	line "besiegt?"
 	done
 
 Bird_keeperPeterBeatenText:
-	text "I know what my"
-	line "weaknesses are."
+	text "Ich kenne meine"
+	line "Schwächen."
 	done
 
 Text_RoarIntro: ; text > text
-	text "WROOOOAR!"
-	line "PEOPLE RUN WHEN I"
+	text "BRÜLL!"
+	line "DIE LEUTE LAUFEN"
 
-	para "ROAR! BUT YOU"
-	line "CAME LOOKING!"
+	para "DAVON, WENN ICH"
+	line "BRÜLLE! DU ABER"
+	cont "WOLLTEST MICH"
+	cont "SEHEN!"
 
-	para "THAT PLEASES ME!"
-	line "NOW TAKE THIS!"
+	para "DAS GEFÄLLT MIR!"
+	line "HIER BITTE SCHÖN!"
 	done
 
 Text_RoarOutro: ; text > text
-	text "WROOOAR!"
-	line "IT'S ROAR!"
+	text "BRÜLL!"
+	line "ES IST BRÜLLER!"
 
-	para "EVEN POKéMON RUN"
-	line "FROM A GOOD ROAR!"
+	para "SOGAR POKéMON"
+	line "LAUFEN DAVON,"
+	cont "WENN DU IHN"
+	cont "EINSETZT!"
 	done
 
 MeetFriedaText:
-	text "Frieda: Yahoo!"
-	line "It's Friday!"
+	text "Frieda: Juhu!"
+	line "Es ist Freitag!"
 
-	para "I'm Frieda of"
-	line "Friday!"
+	para "Ich bin Frieda"
+	line "von Freitag!"
 
-	para "Nice to meet you!"
+	para "Schön dich"
+	line "kennen zu lernen!"
 	done
 
 FriedaGivesGiftText:
-	text "Here's a Poison"
-	line "Barb for you!"
+	text "Hier, Giftstich"
+	line "ist für dich!"
 	done
 
 
 FriedaFridayText:
-	text "Frieda: Hiya! What"
-	line "day do you like?"
+	text "Frieda: Hossa!"
+	line "Welchen Wochentag"
+	cont "hast du am"
+	cont "liebsten?"
 
-	para "I love Friday. No"
-	line "doubt about it!"
+	para "Ich liebe Freitag."
+	line "Daran gibt es"
+	cont "keinen Zweifel!"
 
-	para "Don't you think"
-	line "it's great too?"
+	para "Denkst du nicht"
+	line "auch, dass Freitag"
+	cont "grossartig ist?"
 	done
 
 
 Route32SignText:
 	text "Route 32"
 
-	para "Violet City -"
-	line "Azalea Town"
+	para "Viola City -"
+	line "Azalea City"
 	done
 
 Route32RuinsSignText:
-	text "Ruins of Alph"
-	line "East Entrance"
+	text "Alph-Ruinen"
+	line "Osteingang"
 	done
 
 Route32UnionCaveSignText:
-	text "Union Cave"
-	line "Ahead"
+	text "Einheitstunnel"
+	line "Geradeaus"
 	done
 
 Route32AdvancedTips1Text:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Items may be found"
-	line "by fishing or by"
-	cont "smashing rocks!"
+	para "Beim Angeln oder"
+	line "beim Zertrümmern"
+	cont "von Felsen kannst"
+	cont "du Items finden!"
 	done
 
 Route32AdvancedTips2Text:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "If you lose a bat-"
-	line "tle with another"
-	cont "trainer, you pay"
+	para "Verlierst du einen"
+	line "Kampf gegen einen"
+	cont "anderen Trainer,"
 
-	para "them money based"
-	line "on how many Badges"
-	cont "you own!"
+	para "zahlst du ihm"
+	line "Geld, je nachdem,"
+	cont "wie viele Orden"
+	cont "du besitzt!"
 	done

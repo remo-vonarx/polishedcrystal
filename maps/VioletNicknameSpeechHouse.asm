@@ -23,31 +23,33 @@ VioletNicknameSpeechHouseBirdScript:
 	end
 
 VioletNicknameSpeechHouseTeacherText:
-	text "She uses the names"
-	line "of her favorite"
-	cont "things to eat."
+	text "Sie verwendet die"
+	line "Namen ihrer Lieb-"
+	cont "lingsspeisen,"
 
-	para "For the nicknames"
-	line "she gives to her"
-	cont "#mon, I mean."
+	para "als Spitznamen für"
+	line "ihre #mon,"
+	cont "meine ich."
 	done
 
 VioletNicknameSpeechHouseLassText:
-	text "I call my Eevee"
-	line "Strawberry!"
+	text "Ich nenne mein"
+	line "Evoli Erdbeere!"
 	done
 
 VioletNicknameSpeechHouseGrampsText:
-	text "The Zephyr Badge"
-	line "is named after an"
+	text "Der Flügelorden"
+	line "zeigt Flügel wie"
 
-	para "ancient god of the"
-	line "west wind."
+	para "Zephyros, der alte"
+	line "Gott des West-"
+	cont "winds."
 
-	para "Very fitting for a"
-	line "Flying-type Gym."
+	para "Sehr passend für"
+	line "eine Arena mit"
+	cont "Flug-#mon."
 	done
 
 VioletNicknameSpeechHouseBirdText:
-	text "Strawberry: Vui!"
+	text "Erdbeere: Vui!"
 	done

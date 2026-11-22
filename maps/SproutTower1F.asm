@@ -33,74 +33,76 @@ SproutTower1FGrannyScript:
 	iftrue_jumptextfaceplayer .MetricText
 	jumpthistextfaceplayer
 
-	text "A Bellsprout over"
-	line "100 feet tall…"
+	text "Ein über 100 Fuss"
+	line "grosses Knofensa…"
 
-	para "People say that it"
-	line "became the center"
-	cont "pillar here."
+	para "Man sagt, es wurde"
+	line "die Trägersäule"
+	cont "des Turmes."
 	done
 
 .MetricText:
-	text "A Bellsprout over"
-	line "30 meters tall…"
+	text "Ein über 30 m"
+	line "grosses Knofensa…"
 
-	para "People say that it"
-	line "became the center"
-	cont "pillar here."
+	para "Man sagt, es wurde"
+	line "die Trägersäule"
+	cont "des Turmes."
 	done
 
 GenericTrainerSageChow:
 	generictrainer SAGE, CHOW, EVENT_BEAT_SAGE_CHOW, SageChowSeenText, SageChowBeatenText
 
-	text "All living beings"
-	line "coexist through"
-	cont "cooperation."
+	text "Die Basis jeder"
+	line "Koexistenz ist"
+	cont "Zusammenarbeit."
 
-	para "We must always be"
-	line "thankful for this."
+	para "Lasst uns dies"
+	line "nie vergessen!"
 	done
 
 SageChowSeenText:
-	text "We stand guard in"
-	line "this tower."
+	text "Wir bewachen"
+	line "diesen Turm."
 
-	para "Here, we express"
-	line "our gratitude to"
-	cont "honor all #mon."
+	para "In tiefster Dank-"
+	line "barkeit ehren wir"
+	cont "hier alle #mon."
 	done
 
 SageChowBeatenText:
-	text "Th-Thank you!"
+	text "Da-Danke!"
 	done
 
 SproutTower1FSage1Text:
-	text "Only if you reach"
-	line "the top will you"
-	cont "obtain a TM."
+	text "Nur wenn du es bis"
+	line "ganz nach oben"
+	cont "schaffst, erhältst"
+	cont "du eine TM."
 	done
 
 SproutTower1FSage2Text:
-	text "Sprout Tower was"
-	line "built long ago"
+	text "Der Knofensa-Turm"
+	line "wurde vor langer"
 
-	para "as a place for"
-	line "#mon training."
+	para "Zeit als #mon-"
+	line "Trainingsstätte"
+	cont "errichtet."
 	done
 
 SproutTower1FTeacherText:
-	text "See the pillar"
-	line "shaking?"
+	text "Siehst du, wie sie"
+	line "sich bewegt?"
 
-	para "People are train-"
-	line "ing upstairs."
+	para "Die Trainer fin-"
+	line "dest du oben."
 	done
 
 SproutTower1FStatueText:
-	text "A #mon statue…"
+	text "Eine PKMN-Statue…"
 
-	para "It looks very"
-	line "distinguished."
+	para "Sie sieht sehr"
+	line "erhaben aus."
 	done
 
 KimonoGirlMakoScript:
@@ -135,55 +137,61 @@ KimonoGirlMakoScript:
 	jumpthisopenedtext
 
 .OutroText:
-	text "We Kimono Girls"
-	line "dance, but we also"
-	cont "battle."
+	text "Wir Kimonogirls"
+	line "tanzen, aber wir"
+	cont "kämpfen auch."
 	done
 
 .IntroText:
-	text "Hello, trainer."
+	text "Sei gegrüsst,"
+	line "Trainer."
 
-	para "I am a Kimono"
-	line "Girl."
+	para "Ich bin ein"
+	line "Kimonogirl."
 
-	para "I journeyed here"
-	line "from Ecruteak"
+	para "Ich bin aus Teak"
+	line "City hierher-"
 
-	para "City, through for-"
-	line "est and cavern,"
+	para "gereist, durch"
+	line "Wälder und Höhlen,"
 
-	para "to train in this"
-	line "tower."
+	para "um in diesem Turm"
+	line "zu trainieren."
 
-	para "Have you met my"
-	line "five dancing cou-"
-	cont "sins in Ecruteak?"
+	para "Kennst du schon"
+	line "meine fünf tanzen-"
+	cont "den Cousinen in"
+	cont "Teak City?"
 
-	para "Come back and"
-	line "tell me if you do!"
+	para "Komm wieder und"
+	line "erzähl es mir,"
+	cont "wenn du sie"
+	cont "triffst!"
 	done
 
 .SeenText:
-	text "Me oh my…"
-	line "You defeated my"
+	text "Oh, meine Güte…"
+	line "Du hast meine fünf"
 
-	para "five dancing"
-	line "cousins?"
+	para "tanzenden Cousinen"
+	line "besiegt?"
 
-	para "Then allow me to"
-	line "challenge you and"
-	cont "your #mon!"
+	para "Dann lass mich"
+	line "dich und deine"
+	cont "#mon heraus-"
+	cont "fordern!"
 	done
 
 .BeatenText:
-	text "Oh, you are"
-	line "truly strong…"
+	text "Oh, du bist"
+	line "wahrhaft stark…"
 	done
 
 .AfterText:
-	text "Excellent fighting"
-	line "spirit!"
+	text "Ein ausgezeichne-"
+	line "ter Kampfgeist!"
 
-	para "You will know what"
-	line "to do with this!"
+	para "Du wirst wissen,"
+	line "was damit zu tun"
+	cont "ist!"
 	done

@@ -84,41 +84,41 @@ VioletOutskirtsHouseCaretakerScript:
 
 	text "…… ……"
 
-	para "You found my"
-	line "friend…"
+	para "Du hast meinen"
+	line "Freund gefunden…"
 
-	para "It would guide"
-	line "departed spirits"
-	cont "to the next life…"
+	para "Er geleitete die"
+	line "Seelen der Toten"
+	cont "ins nächste Leben…"
 
-	para "As I tended to"
-	line "their graves…"
-
-	para "…… ……"
-
-	para "That was so"
-	line "long ago…"
-
-	para "No one visits"
-	line "any more…"
-
-	para "The graves are"
-	line "left untended…"
-
-	para "But you… still"
-	line "came here…"
+	para "Während ich ihre"
+	line "Gräber pflegte…"
 
 	para "…… ……"
 
-	para "Thank you…"
+	para "Das ist so lange"
+	line "her…"
 
-	para "Please take care"
-	line "of my… friend…"
+	para "Niemand kommt mehr"
+	line "zu Besuch…"
+
+	para "Die Gräber sind"
+	line "verwahrlost…"
+
+	para "Aber du… bist"
+	line "trotzdem gekommen…"
+
+	para "…… ……"
+
+	para "Danke…"
+
+	para "Bitte kümmere dich"
+	line "um meinen… Freund…"
 	done
 
 VioletOutskirtsHouseOldShrineText:
-	text "It's a very old"
-	line "shrine."
+	text "Das ist ein sehr"
+	line "alter Schrein."
 	done
 
 VioletOutskirtsHouseAhText:
@@ -132,36 +132,38 @@ VioletOutskirtsHouseAhText:
 VioletOutskirtsHouseCaretakerThankYouText:
 	text "…… ……"
 
-	para "Thank you…"
-	line "dear…"
+	para "Danke…"
+	line "Liebes…"
 	done
 
 VioletOutskirtsHouseStillAPresenceText:
-	text "The spirit is"
-	line "gone, but there's"
-	cont "still a presence…"
+	text "Der Geist ist"
+	line "fort, aber noch"
+	cont "immer ist etwas"
+	cont "hier…"
 	done
 
 VioletOutskirtsHouseNotSafeHereText:
-	text "There's still a"
-	line "strong presence."
+	text "Hier ist noch eine"
+	line "starke Präsenz."
 
-	para "It's not safe here!"
+	para "Hier ist es nicht"
+	line "sicher!"
 	done
 
 VioletOutskirtsHouseRadioText:
-	text "It doesn't seem"
-	line "to work."
+	text "Es scheint nicht"
+	line "zu funktionieren."
 	done
 
 VioletOutskirtsHouseDustText:
-	text "It's covered in a"
-	line "thick layer of"
-	cont "dust."
+	text "Es ist von einer"
+	line "dicken Staub-"
+	cont "schicht bedeckt."
 	done
 
 VioletOutskirtsHouseNotAloneText:
-	text "You have a sense"
-	line "that something"
-	cont "is watching you…"
+	text "Du spürst, dass"
+	line "dich etwas"
+	cont "beobachtet…"
 	done

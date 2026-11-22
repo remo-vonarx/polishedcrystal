@@ -390,8 +390,8 @@ _MomItsInYourRoomText::
 SECTION "_MonWasSentToText", ROMX
 _MonWasSentToText::
 	text_ram wPlayerTrademonSpeciesName
-	text " was"
-	line "sent to "
+	text " ge-"
+	line "sendet an "
 	text_ram wOTTrademonSenderName
 	text "."
 	done
@@ -399,8 +399,8 @@ _MonWasSentToText::
 SECTION "_BidsFarewellToMonText", ROMX
 _BidsFarewellToMonText::
 	text_ram wOTTrademonSenderName
-	text " bids"
-	line "farewell to"
+	text " nimmt"
+	line "Abschied von"
 	done
 
 SECTION "_MonNameBidsFarewellText", ROMX
@@ -411,7 +411,7 @@ _MonNameBidsFarewellText::
 
 SECTION "_TakeGoodCareOfMonText", ROMX
 _TakeGoodCareOfMonText::
-	text "Take good care of"
+	text "Kümmere dich um"
 	line ""
 	text_ram wOTTrademonSpeciesName
 	text "."
@@ -419,18 +419,19 @@ _TakeGoodCareOfMonText::
 
 SECTION "_ForYourMonSendsText", ROMX
 _ForYourMonSendsText::
-	text "For "
+	text "Für "
 	text_ram wPlayerTrademonSenderName
-	text "'s"
+	text "s"
 	line ""
 	text_ram wPlayerTrademonSpeciesName
-	text ","
+	text ""
 	done
 
 SECTION "_OTSendsText", ROMX
 _OTSendsText::
+	text "überträgt "
 	text_ram wOTTrademonSenderName
-	text " sends"
+	text ""
 	line ""
 	text_ram wOTTrademonSpeciesName
 	text "."
@@ -439,16 +440,16 @@ _OTSendsText::
 SECTION "_WillTradeText", ROMX
 _WillTradeText::
 	text_ram wOTTrademonSenderName
-	text " will"
-	line "trade "
+	text " tauscht"
+	line ""
 	text_ram wOTTrademonSpeciesName
 	text_end
 
 SECTION "_ForYourMonWillTradeText", ROMX
 _ForYourMonWillTradeText::
-	text "for "
+	text "gegen "
 	text_ram wPlayerTrademonSenderName
-	text "'s"
+	text "s"
 	line ""
 	text_ram wPlayerTrademonSpeciesName
 	text "."
@@ -1130,16 +1131,16 @@ _NoCoinCaseText::
 
 SECTION "_NPCTradeCableText", ROMX
 _NPCTradeCableText::
-	text "OK, connect the"
-	line "Game Link Cable."
+	text "O.K., benutze das"
+	line "Game Link-Kabel."
 	prompt
 
 SECTION "Text_NPCTraded", ROMX
 Text_NPCTraded::
-	text "<PLAYER> traded"
+	text "<PLAYER> tauscht"
 	line ""
 	text_ram wMonOrItemNameBuffer
-	text " for"
+	text " gegen"
 	cont ""
 	text_ram wStringBuffer2
 	text "."
@@ -1153,140 +1154,149 @@ _NPCTradeFanfareText::
 
 SECTION "_NPCTradeIntroText1", ROMX
 _NPCTradeIntroText1::
-	text "I collect #mon."
-	line "Do you have"
+	text "Ich sammle #-"
+	line "mon. Hast du ein"
 	cont ""
 	text_ram wStringBuffer1
 	text "?"
 
-	para "Want to trade it"
-	line "for my "
+	para "Möchtest du es"
+	line "gegen mein"
+	para ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "tauschen?"
 	done
 
 SECTION "_NPCTradeCancelText1", ROMX
 _NPCTradeCancelText1::
-	text "You don't want to"
-	line "trade? Aww…"
+	text "Du möchtest nicht"
+	line "tauschen? Schade…"
 	done
 
 SECTION "_NPCTradeWrongText1", ROMX
 _NPCTradeWrongText1::
-	text "Huh? That's not"
+	text "Häh? Das ist kein"
 	line ""
 	text_ram wStringBuffer1
 	text "."
-	cont "What a letdown…"
+	cont "Wie enttäuschend…"
 	done
 
 SECTION "_NPCTradeCompleteText1", ROMX
 _NPCTradeCompleteText1::
-	text "Yay! I got myself"
+	text "Yo! Ich habe mir"
 	line ""
 	text_ram wStringBuffer1
-	text "!"
-	cont "Thanks!"
+	text ""
+	cont "besorgt! Danke!"
 	done
 
 SECTION "_NPCTradeAfterText1", ROMX
 _NPCTradeAfterText1::
-	text "Hi, how's my old"
-	line ""
+	text "Hi, wie geht es"
+	line "meinem "
 	text_ram wStringBuffer2
-	text " doing?"
+	text "?"
 	done
 
 SECTION "_NPCTradeIntroText2", ROMX
 _NPCTradeIntroText2::
-	text "Hi, I'm looking"
-	line "for this #mon."
+	text "Hi, ich suche"
+	line "ein #mon."
 
-	para "If you have"
+	para "Wenn du ein"
 	line ""
 	text_ram wStringBuffer1
-	text ", would"
+	text " hast,"
 
-	para "you trade it for"
-	line "my "
+	para "tauschst du es"
+	line "gegen mein"
+	cont ""
 	text_ram wStringBuffer2
 	text "?"
 	done
 
 SECTION "_NPCTradeCancelText2", ROMX
 _NPCTradeCancelText2::
-	text "You don't have"
-	line "one either?"
+	text "Du hast auch"
+	line "keines?"
 
-	para "Gee, that's really"
-	line "disappointing…"
+	para "Das ist wirklich"
+	line "enttäuschend…"
 	done
 
 SECTION "_NPCTradeWrongText2", ROMX
 _NPCTradeWrongText2::
-	text "You don't have"
+	text "Du hast kein"
 	line ""
 	text_ram wStringBuffer1
-	text "? That's"
-	cont "too bad, then."
+	text "? Das"
+	cont "ist schade, na ja."
 	done
 
 SECTION "_NPCTradeCompleteText2", ROMX
 _NPCTradeCompleteText2::
-	text "Great! Thank you!"
+	text "Grossartig! Danke!"
 
-	para "I finally got"
-	line ""
+	para "Endlich habe ich"
+	line "ein "
 	text_ram wStringBuffer1
 	text "."
 	done
 
 SECTION "_NPCTradeAfterText2", ROMX
 _NPCTradeAfterText2::
-	text "Hi! The "
+	text "Hi!"
+	line "Dem "
 	text_ram wMonOrItemNameBuffer
-	line "you traded me is"
-	cont "doing great!"
+	text ","
+	cont "das du mit mir"
+	cont "getauscht hast,"
+	cont "geht es gut!"
 	done
 
 SECTION "_NPCTradeIntroText3", ROMX
 _NPCTradeIntroText3::
 	text_ram wMonOrItemNameBuffer
-	text "'s cute,"
-	line "but I don't have"
+	text " ist"
+	line "niedlich, aber ich"
 
-	para "it. Do you have"
-	line ""
+	para "habe keines. Hast"
+	line "du ein "
 	text_ram wStringBuffer1
 	text "?"
 
-	para "Want to trade it"
-	line "for my "
+	para "Möchtest du es"
+	line "gegen mein"
+	para ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "tauschen?"
 	done
 
 SECTION "_NPCTradeCancelText3", ROMX
 _NPCTradeCancelText3::
-	text "You don't want to"
-	line "trade? Oh, darn…"
+	text "Du möchtest nicht"
+	line "tauschen? Schade…"
 	done
 
 SECTION "_NPCTradeWrongText3", ROMX
 _NPCTradeWrongText3::
-	text "That's not"
+	text "Das ist kein"
 	line ""
 	text_ram wStringBuffer1
 	text "."
 
-	para "Please trade with"
-	line "me if you get one."
+	para "Komm wieder, wenn"
+	line "du tauschen"
+	cont "möchtest."
 	done
 
 SECTION "_NPCTradeCompleteText3", ROMX
 _NPCTradeCompleteText3::
-	text "Wow! Thank you!"
-	line "I always wanted"
+	text "Danke! Ich wollte"
+	line "immer schon ein"
 	cont ""
 	text_ram wMonOrItemNameBuffer
 	text "!"
@@ -1294,29 +1304,30 @@ _NPCTradeCompleteText3::
 
 SECTION "_NPCTradeAfterText3", ROMX
 _NPCTradeAfterText3::
-	text "How is that"
-	line ""
+	text "Wie geht es dem"
+	line "getauschten"
+	cont ""
 	text_ram wStringBuffer2
-	text " I"
-	cont "traded you doing?"
+	text "?"
 
-	para "Your "
+	para "Dein "
 	text_ram wMonOrItemNameBuffer
-	text "'s"
-	line "so cute!"
+	text ""
+	line "ist so niedlich!"
 	done
 
 SECTION "_NPCTradeCompleteText4", ROMX
 _NPCTradeCompleteText4::
-	text "Uh? What happened?"
+	text "Was ist passiert?"
 	done
 
 SECTION "_NPCTradeAfterText4", ROMX
 _NPCTradeAfterText4::
-	text "Trading is so odd…"
+	text "Tauschen ist"
+	line "seltsam…"
 
-	para "I still have a lot"
-	line "to learn about it."
+	para "Ich muss noch viel"
+	line "darüber lernen."
 	done
 
 SECTION "_MomLeavingText1", ROMX
@@ -2105,45 +2116,48 @@ _AskHeadbuttText::
 SECTION "_UseRockSmashText", ROMX
 _UseRockSmashText::
 	text_ram wStringBuffer2
-	text " used"
+	text " setzt"
 if DEF(FAITHFUL)
-	line "Rock Smash!"
+	line "Zertrümmerer ein!"
 else
-	line "Brick Break!"
+	line "Durchbruch ein!"
 endc
 	prompt
 
 SECTION "_MaySmashText", ROMX
 _MaySmashText::
-	text "Maybe a #mon"
-	line "can break this."
+	text "Ein #mon könnte"
+	line "das vielleicht"
+	cont "zertrümmern."
 	done
 
 SECTION "_AskRockSmashText", ROMX
 _AskRockSmashText::
-	text "This rock looks"
-	line "breakable."
+	text "Dieser Fels sieht"
+	line "zerbrechlich aus."
 
 if DEF(FAITHFUL)
-	para "Want to use Rock"
-	line "Smash?"
+	para "Soll Zertrümmerer"
+	line "eingesetzt werden?"
 else
-	para "Want to use Brick"
-	line "Break?"
+	para "Soll Durchbruch"
+	line "eingesetzt werden?"
 endc
 	done
 
 SECTION "_RodBiteText", ROMX
 _RodBiteText::
-	text "Oh!"
-	line "A bite!"
+	text "Uah!"
+	line "Da hat etwas"
+	cont "angebissen!"
 	prompt
 
 SECTION "_RodNothingText", ROMX
 _RodNothingText::
-	text "Not even a nibble!"
+	text "Nicht einmal"
+	line "angeknabbert!"
 
-	para "Keep fishing?"
+	para "Weiter angeln?"
 	done
 
 SECTION "_CantGetOffBikeText", ROMX
@@ -2182,8 +2196,9 @@ _AskCutText::
 
 SECTION "_CanCutText", ROMX
 _CanCutText::
-	text "This tree can be"
-	line "Cut!"
+	text "Der Zerschneider"
+	line "kann hier"
+	cont "eingesetzt werden!"
 	done
 
 SECTION "_FoundItemText", ROMX
@@ -2204,10 +2219,10 @@ _GotTheItemText:
 
 SECTION "_ReceivedTheBadgeText", ROMX
 _ReceivedTheBadgeText:
-	text "<PLAYER> received"
-	line "the "
+	text "<PLAYER> erhält"
+	line "den "
 	text_ram wStringBuffer4
-	text " Badge."
+	text "orden."
 	done
 
 SECTION "WhiteoutText", ROMX

@@ -307,25 +307,25 @@ ContestResults_PartyFullText:
 
 GymStatue_CityGymText:
 	text_ram wStringBuffer3
-	line "#mon Gym"
+	line "PKMN-Arena"
 
-	para "Leader: "
+	para "Leitung: "
 	text_ram wStringBuffer4
 	done
 
 GymStatue_WinningTrainersText:
-	text "Winning Trainers:"
+	text "Bisherige Sieger:"
 	line "<RIVAL>"
 	done
 
 GymStatue_TwoWinningTrainersText:
-	text "Winning Trainers:"
+	text "Bisherige Sieger:"
 	line "<RIVAL>"
 	cont "<PLAYER>"
 	done
 
 GymStatue_ThreeWinningTrainersText:
-	text "Winning Trainers:"
+	text "Bisherige Sieger:"
 	line "<RIVAL>"
 	cont "<PLAYER>"
 	cont "Lyra"
