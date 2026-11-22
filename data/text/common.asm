@@ -2219,8 +2219,8 @@ _GotTheItemText:
 
 SECTION "_ReceivedTheBadgeText", ROMX
 _ReceivedTheBadgeText:
-	text "<PLAYER> erhält den"
-	line ""
+	text "<PLAYER> erhält"
+	line "den "
 	text_ram wStringBuffer4
 	text "orden."
 	done

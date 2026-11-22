@@ -105,7 +105,9 @@ TABLES = [
     ('data/items/exp_candy_names.asm', LI, None, None, 12, 'item', 'exp candy'),
     ('data/items/special_names.asm', LI, None, None, 12, 'item', 'pokegear'),
     ('data/items/wing_names.asm', LI, None, None, 12, 'item', 'wings'),
-    ('data/events/badge_names.asm', LI, None, None, 12, None, 'badges'),
+    # a badge stem is printed as "den <stem>orden." on the line under the badge
+    # icon (_ReceivedTheBadgeText): 18 - len("den ") - len("orden.")
+    ('data/events/badge_names.asm', LI, None, None, 8, None, 'badges'),
     # a pocket name is printed on a text line of its own ("… in / <POCKET>.")
     ('data/items/pocket_names.asm', DB, 'ItemPocketNames', None, 14, None, 'pockets'),
     # the limit PLACE measures each name against its screens (place_problems)
