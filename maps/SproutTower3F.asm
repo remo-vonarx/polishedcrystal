@@ -85,12 +85,12 @@ ElderLiScript:
 	line "du die dunkelsten"
 	cont "Orte erhellen."
 
-	para "Du musst es deinen"
-	line "#mon nur bei-"
+	para "Nur wenn du Blitz"
+	line "im Kampf einsetzen"
 
-	para "bringen, wenn du"
-	line "Blitz im Kampf"
-	cont "einsetzen willst."
+	para "willst, musst du"
+	line "ihn deinen #mon"
+	cont "beibringen."
 
 	para "Drücke einfach A"
 	line "im Dunkeln."

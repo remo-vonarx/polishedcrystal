@@ -1262,9 +1262,8 @@ _NPCTradeIntroText3::
 	text " ist"
 	line "niedlich, aber ich"
 
-	para "habe keines."
-	line "Hast du ein"
-	cont ""
+	para "habe keines. Hast"
+	line "du ein "
 	text_ram wStringBuffer1
 	text "?"
 
@@ -2117,11 +2116,11 @@ _AskHeadbuttText::
 SECTION "_UseRockSmashText", ROMX
 _UseRockSmashText::
 	text_ram wStringBuffer2
-	text " used"
+	text " setzt"
 if DEF(FAITHFUL)
-	line "Rock Smash!"
+	line "Zertrümmerer ein!"
 else
-	line "Brick Break!"
+	line "Durchbruch ein!"
 endc
 	prompt
 
@@ -2197,8 +2196,9 @@ _AskCutText::
 
 SECTION "_CanCutText", ROMX
 _CanCutText::
-	text "This tree can be"
-	line "Cut!"
+	text "Der Zerschneider"
+	line "kann hier"
+	cont "eingesetzt werden!"
 	done
 
 SECTION "_FoundItemText", ROMX

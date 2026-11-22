@@ -856,7 +856,7 @@ Text_MillionDollarSlowpokeTail:
 	cont "zubereitet haben?"
 
 	para "Für dich jetzt nur"
-	line "¥1,000,000!"
+	line "¥10,000,000!"
 
 	para "Möchtest du sie?"
 	done

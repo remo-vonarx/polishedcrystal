@@ -314,6 +314,6 @@ SproutTowerSignText:
 	done
 
 EarlsPokemonAcademySignText:
-	text "Earls"
-	line "#mon-Akademie"
+	text "Earls #-"
+	line "mon-Akademie"
 	done

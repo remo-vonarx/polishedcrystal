@@ -868,7 +868,7 @@ TrademonStats_OTMonData:
 	next "<ID>№.@"
 
 TrademonStats_EggData:
-	db   "Egg"
+	db   "Ei"
 	next "OT/?????"
 	next "<ID>№.?????@"
 
