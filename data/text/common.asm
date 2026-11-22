@@ -238,12 +238,13 @@ _OakTimeSoDarkText::
 
 SECTION "_OakTimeWhatDayIsItText", ROMX
 _OakTimeWhatDayIsItText::
-	text "What day is it?"
+	text "Welcher Tag ist"
+	line "heute?"
 	done
 
 SECTION "_OakTimeIsItText", ROMX
 _OakTimeIsItText::
-	text ", is it?"
+	text ", oder?"
 	done
 
 SECTION "_NothingToChooseText", ROMX
@@ -1320,138 +1321,142 @@ _NPCTradeAfterText4::
 
 SECTION "_MomLeavingText1", ROMX
 _MomLeavingText1::
-	text "Wow, that's a cute"
-	line "#mon."
+	text "Das ist ein nied-"
+	line "liches #mon."
 
-	para "Where did you get"
-	line "it?"
+	para "Wo hast du es"
+	line "her?"
 
 	para "…"
 
-	para "So, you're leaving"
-	line "on an adventure…"
+	para "Du beginnst also"
+	line "ein Abenteuer…"
 
-	para "OK!"
-	line "I'll help too."
+	para "O.K.! Auch ich"
+	line "werde dir helfen."
 
-	para "But what can I do"
-	line "for you?"
+	para "Aber was kann ich"
+	line "für dich tun?"
 
-	para "I know! I'll save"
-	line "money for you."
+	para "Ich weiss! Ich"
+	line "werde für dich"
+	cont "sparen."
 
-	para "On a long journey,"
-	line "money's important."
+	para "Auf einer langen"
+	line "Reise ist Geld"
+	cont "sehr wichtig."
 
-	para "Do you want me to"
-	line "save your money?"
+	para "Soll ich dein"
+	line "Geld sparen?"
 	done
 
 SECTION "_MomLeavingText2", ROMX
 _MomLeavingText2::
-	text "OK, I'll take care"
-	line "of your money."
+	text "O.K., ich verwalte"
+	line "deine Ersparnisse."
 
 	para "………………"
 	prompt
 
 SECTION "_MomLeavingText3", ROMX
 _MomLeavingText3::
-	text "Be careful."
+	text "Sei auf der Hut."
 
-	para "#mon are your"
-	line "friends. You need"
-	cont "to work as a team."
+	para "#mon sind"
+	line "deine Kameraden."
+	cont "Ihr müsst als Team"
+	cont "auftreten."
 
-	para "Now, go on!"
+	para "Also mach's gut!"
 	done
 
 SECTION "_MomIsThisAboutYourMoneyText", ROMX
 _MomIsThisAboutYourMoneyText::
-	text "Hi! Welcome home!"
-	line "You're trying very"
-	cont "hard, I see."
+	text "Hi! Willkommen!"
+	line "Ich sehe, du"
+	cont "bemühst dich sehr."
 
-	para "I've kept your"
-	line "room tidy."
+	para "Ich habe dein"
+	line "Zimmer aufgeräumt."
 
-	para "Or is this about"
-	line "your money?"
+	para "Ist es wegen"
+	line "deinem Geld?"
 	done
 
 SECTION "_MomBankWhatDoYouWantToDoText", ROMX
 _MomBankWhatDoYouWantToDoText::
-	text "What do you want"
-	line "to do?"
+	text "Was wirst du"
+	line "tun?"
 	done
 
 SECTION "_MomStoreMoneyText", ROMX
 _MomStoreMoneyText::
-	text "How much do you"
-	line "want to save?"
+	text "Wie viel möchtest"
+	line "du sparen?"
 	done
 
 SECTION "_MomTakeMoneyText", ROMX
 _MomTakeMoneyText::
-	text "How much do you"
-	line "want to take?"
+	text "Wie viel möchtest"
+	line "du mitnehmen?"
 	done
 
 SECTION "_MomSaveMoneyText", ROMX
 _MomSaveMoneyText::
-	text "Do you want to"
-	line "save some money?"
+	text "Möchtest du weiter"
+	line "Geld sparen?"
 	done
 
 SECTION "_MomHaventSavedThatMuchText", ROMX
 _MomHaventSavedThatMuchText::
-	text "You haven't saved"
-	line "that much."
+	text "So viel hast du"
+	line "nicht gespart."
 	prompt
 
 SECTION "_MomNotEnoughRoomInWalletText", ROMX
 _MomNotEnoughRoomInWalletText::
-	text "You can't take"
-	line "that much."
+	text "So viel kannst du"
+	line "nicht mitnehmen."
 	prompt
 
 SECTION "_MomInsufficientFundsInWalletText", ROMX
 _MomInsufficientFundsInWalletText::
-	text "You don't have"
-	line "that much."
+	text "So viel hast"
+	line "du nicht."
 	prompt
 
 SECTION "_MomNotEnoughRoomInBankText", ROMX
 _MomNotEnoughRoomInBankText::
-	text "You can't save"
-	line "that much."
+	text "So viel kannst"
+	line "du nicht sparen."
 	prompt
 
 SECTION "_MomStartSavingMoneyText", ROMX
 _MomStartSavingMoneyText::
-	text "OK, I'll save your"
-	line "money. Trust me!"
+	text "O.K., ich spare"
+	line "für dich! Traue"
+	cont "mir!"
 
-	para "<PLAYER>, stick"
-	line "with it!"
+	para "<PLAYER>, bleib"
+	line "dabei!"
 	done
 
 SECTION "_MomStoredMoneyText", ROMX
 _MomStoredMoneyText::
-	text "Your money's safe"
-	line "here! Get going!"
+	text "Dein Geld ist hier"
+	line "sicher! Tschüss!"
 	done
 
 SECTION "_MomTakenMoneyText", ROMX
 _MomTakenMoneyText::
-	text "<PLAYER>, don't"
-	line "give up!"
+	text "<PLAYER>, nur nicht"
+	line "aufgeben!"
 	done
 
 SECTION "_MomJustDoWhatYouCanText", ROMX
 _MomJustDoWhatYouCanText::
-	text "Just do what"
-	line "you can."
+	text "Gib immer dein"
+	line "Bestes."
 	done
 
 SECTION "_DayCareManIntroText", ROMX
@@ -2184,8 +2189,8 @@ _FoundItemText::
 
 SECTION "_GotTheItemText", ROMX
 _GotTheItemText:
-	text "<PLAYER> got"
-	line "the "
+	text "<PLAYER> erhält"
+	line ""
 	text_ram wStringBuffer4
 	text "."
 	done
@@ -2515,7 +2520,7 @@ MailMovedFromBoxText::
 
 SECTION "_ReceivedGiftMonText", ROMX
 _ReceivedGiftMonText::
-	text "<PLAYER> received"
+	text "<PLAYER> erhält"
 	line ""
 	text_ram wMonOrItemNameBuffer
 	text "!"
@@ -2671,11 +2676,11 @@ _LuckyNumberMatchPCText::
 
 SECTION "_CaughtAskNicknameText", ROMX
 _CaughtAskNicknameText::
-	text "Give a nickname to"
-	line "the "
+	text "Möchtest du"
+	line ""
 	text_ram wStringBuffer1
-	text " you"
-	cont "received?"
+	text " einen"
+	cont "Spitznamen geben?"
 	done
 
 SECTION "_PokecenterPCCantUseText", ROMX
@@ -3352,7 +3357,7 @@ _SaveFileCorruptedText::
 
 SECTION "_GainedItemText", ROMX
 _GainedItemText::
-	text "<PLAYER> gained"
+	text "<PLAYER> erhält"
 	line ""
 	text_ram wStringBuffer4
 	text "."
@@ -3370,20 +3375,20 @@ _GainedMultipleItemsText::
 
 SECTION "_PutItemInPocketText", ROMX
 _PutItemInPocketText::
-	text "<PLAYER> put the"
+	text "<PLAYER> steckt"
 	line ""
 	text_ram wStringBuffer1
 	text " in"
-	cont "the "
+	cont ""
 	text_ram wStringBuffer3
 	text "."
 	prompt
 
 SECTION "_PocketIsFullText", ROMX
 _PocketIsFullText::
-	text "The "
+	text "Die "
 	text_ram wStringBuffer3
-	line "is full…"
+	line "ist voll…"
 	prompt
 
 SECTION "_FoundWingsText", ROMX
@@ -4286,59 +4291,59 @@ _DeleterAskWhichMonText::
 
 SECTION "Text_DSTIsThatOK", ROMX
 Text_DSTIsThatOK::
-	text " DST,"
-	line "is that OK?"
+	text " SZ,"
+	line "in Ordnung?"
 	done
 
 SECTION "_TimeAskOkayText", ROMX
 _TimeAskOkayText::
 	text ","
-	line "is that OK?"
+	line "in Ordnung?"
 	done
 
 SECTION "_TimesetAskDSTText", ROMX
 _TimesetAskDSTText::
-	text "Do you want to"
-	line "switch to Daylight"
-	cont "Saving Time?"
+	text "Möchtest du auf"
+	line "Sommerzeit um-"
+	cont "stellen?"
 	done
 
 SECTION "_TimesetDSTText", ROMX
 _TimesetDSTText::
-	text "I set the clock"
-	line "forward by one"
-	cont "hour."
+	text "Ich stelle die Uhr"
+	line "eine Stunde vor."
 	prompt
 
 SECTION "_TimesetAskNotDSTText", ROMX
 _TimesetAskNotDSTText::
-	text "Is Daylight Saving"
-	line "Time over?"
+	text "Ist die Sommer-"
+	line "zeit vorüber?"
 	done
 
 SECTION "_TimesetNotDSTText", ROMX
 _TimesetNotDSTText::
-	text "I put the clock"
-	line "back one hour."
+	text "Ich stelle die Uhr"
+	line "eine Stunde zu-"
+	cont "rück."
 	prompt
 
 SECTION "_TimesetAskAdjustDSTText", ROMX
 _TimesetAskAdjustDSTText::
-	text "Do you want to"
-	line "adjust your clock"
+	text "Möchtest du die"
+	line "Uhrzeit der"
 
-	para "for Daylight"
-	line "Saving Time?"
+	para "Sommerzeit an-"
+	line "passen?"
 	done
 
 SECTION "_MomLostGearBookletText", ROMX
 _MomLostGearBookletText::
-	text "I lost the in-"
-	line "struction booklet"
-	cont "for the #gear."
+	text "Ich habe die An-"
+	line "leitung für den"
+	cont "#Com verloren."
 
-	para "Come back again in"
-	line "a while."
+	para "Komm später noch"
+	line "mal wieder."
 	prompt
 
 SECTION "WonderTradeQuestionText", ROMX

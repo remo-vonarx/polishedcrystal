@@ -105,37 +105,41 @@ MomEventScript:
 	end
 
 PlayersHouse1FFridgeText:
-	text "Let's see what's"
-	line "in the fridge…"
+	text "Mal sehen, was da"
+	line "im Kühlschrank zu"
+	cont "finden ist…"
 
-	para "Fresh Water and"
-	line "tasty Lemonade!"
+	para "Tafelwasser"
+	line "und leckere Limo-"
+	cont "nade!"
 	done
 
 PlayersHouse1FSinkText:
-	text "The sink is spot-"
-	line "less. Mom likes it"
-	cont "clean."
+	text "Die Spüle ist"
+	line "fleckenlos rein,"
+	cont "so wie es Mama"
+	cont "mag."
 	done
 
 PlayersHouse1FStoveText:
-	text "Mom's specialty!"
+	text "Mamas Spezialität!"
 
-	para "Cinnabar Volcano"
+	para "Zinnober-Vulkan-"
 	line "Burger!"
 	done
 
 PlayersHouse1FTVScript:
 	jumpthistext
 
-	text "There's a movie on"
-	line "TV: Stars dot the"
+	text "Es läuft ein Film"
+	line "im TV: Die Sterne"
 
-	para "sky as two boys"
-	line "ride on a train…"
+	para "leuchten und zwei"
+	line "Jungen fahren Zug…"
 
-	para "I'd better get"
-	line "rolling too!"
+	para "Ich sollte mich"
+	line "auch in Bewegung"
+	cont "setzen!"
 	done
 
 MomScript:
@@ -153,10 +157,10 @@ MomScript:
 	iftrue_jumpopenedtext MomErrandText
 	jumpthisopenedtext
 
-	text "Prof.Elm is wait-"
-	line "ing for you."
+	text "Prof. Lind wartet"
+	line "auf dich."
 
-	para "Hurry up, baby!"
+	para "Beeile dich, Baby!"
 	done
 
 .FirstTimeBanking:
@@ -177,98 +181,109 @@ if DEF(DEBUG)
 	done
 else
 	text "Oh, <PLAYER>!"
-	line "You're awake."
+	line "Du bist wach."
 
-	para "Your friend Lyra"
-	line "was just here."
+	para "Deine Freundin"
+	line "Lyra war eben da."
 
-	para "She said that our"
-	line "neighbor, Prof."
+	para "Sie sagte, dass"
+	line "unser Nachbar,"
 
-	para "Elm, was looking"
-	line "for you."
+	para "Prof. Lind, nach"
+	line "dir gesucht hat."
 
-	para "Oh! I almost for-"
-	line "got! Your #mon"
+	para "Oh! Fast hätte ich"
+	line "es vergessen! Dein"
 
-	para "Gear is back from"
-	line "the repair shop."
+	para "#mon-Com ist"
+	line "von der Reparatur"
+	cont "zurück."
 
-	para "Here you go!"
+	para "Da hast du ihn!"
 	done
 endc
 
 MomPokegearText:
-	text "#mon Gear, or"
-	line "just #gear."
+	text "#mon-Com oder"
+	line "einfach nur"
+	cont "#Com."
 
-	para "It's essential if"
-	line "you want to be a"
-	cont "good trainer."
+	para "Ein wichtiges Ge-"
+	line "rät auf deinem"
+	cont "Pfad als Trainer."
 
-	para "Oh, the day of the"
-	line "week isn't set."
+	para "Oh, der Wochentag"
+	line "ist noch nicht"
+	cont "eingestellt."
 
-	para "You mustn't forget"
-	line "that!"
+	para "Das darfst du"
+	line "nicht vergessen!"
 	done
 
 MomDSTText:
-	text "Is it Daylight"
-	line "Saving Time now?"
+	text "Haben wir"
+	line "Sommerzeit?"
 	done
 
 MomRunningShoesText:
-	text "Come home to"
-	line "adjust your clock"
+	text "Geh nach Hause, um"
+	line "deine Uhr auf SZ"
+	cont "oder WZ einzu-"
+	cont "stellen."
 
-	para "for Daylight"
-	line "Saving Time."
-
-	para "By the way, do"
-	line "you know how to"
-
-	para "use your new"
-	line "Running Shoes?"
+	para "Übrigens, weisst"
+	line "du, wie man die"
+	cont "neuen Turbotreter"
+	cont "benutzt?"
 	done
 
 MomInstructionsText:
-	text "I'll read the"
-	line "instructions."
+	text "Ich werde die An-"
+	line "leitung lesen."
 
-	para "Just hold down the"
-	line "B Button to run,"
-	cont "indoors or out."
+	para "Halte den B-Knopf"
+	line "gedrückt, um zu"
+	cont "rennen, drinnen"
+	cont "wie draussen."
 
-	para "Or use the Option"
-	line "to always run, and"
-	cont "hold B to walk."
+	para "Oder stell in den"
+	line "Optionen ein, dass"
+	cont "du immer rennst,"
+
+	para "und halte B, um zu"
+	line "gehen."
 	done
 
 MomOutroText:
-	text "Gee, aren't they"
-	line "convenient?"
+	text "Na, sind die nicht"
+	line "praktisch?"
 	done
 
 MomErrandText:
-	text "So, what was Prof."
-	line "Elm's errand?"
+	text "Wie lautete der"
+	line "Auftrag von Prof."
+	cont "Lind?"
 
 	para "…"
 
-	para "That does sound"
-	line "challenging."
+	para "Das klingt nach"
+	line "einer wahren He-"
+	cont "rausforderung."
 
-	para "But, you should be"
-	line "proud that people"
-	cont "rely on you."
+	para "Aber du kannst"
+	line "stolz darauf sein,"
+	cont "dass sich die Leu-"
+	cont "te auf dich ver-"
+	cont "lassen!"
 	done
 
 MomDoItText:
-	text "<PLAYER>, do it!"
+	text "<PLAYER>, du"
+	line "schaffst es!"
 
-	para "I'm behind you all"
-	line "the way!"
+	para "Ich werde dir"
+	line "immer zur Seite"
+	cont "stehen!"
 	done
 
 NeighborScript:
@@ -304,34 +319,34 @@ NeighborScript:
 	end
 
 .MornIntroText:
-	text "Good morning,"
+	text "Guten Morgen,"
 	line "<PLAYER>!"
 
-	para "I'm visiting!"
+	para "Ich bin zu Besuch!"
 	done
 
 .DayIntroText:
-	text "Hello, <PLAYER>!"
-	line "I'm visiting!"
+	text "Hallo, <PLAYER>!"
+	line "Ich bin zu Besuch!"
 	done
 
 .NiteIntroText:
-	text "Good evening,"
+	text "Guten Abend,"
 	line "<PLAYER>!"
 
-	para "I'm visiting!"
+	para "Ich bin zu Besuch!"
 	done
 
 .NeighborText:
-	text "<PLAYER>, have you"
-	line "heard?"
+	text "<PLAYER>, hast"
+	line "du schon gehört?"
 
-	para "My daughter is"
-	line "adamant about"
+	para "Meine Tochter will"
+	line "unbedingt Prof."
 
-	para "becoming Prof."
-	line "Elm's assistant."
+	para "Linds Assistentin"
+	line "werden."
 
-	para "She really loves"
-	line "#mon!"
+	para "Sie liebt #mon"
+	line "von ganzem Herzen!"
 	done

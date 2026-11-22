@@ -606,16 +606,16 @@ MomJustDoWhatYouCanText:
 	; Just do what you can.
 	text_farend _MomJustDoWhatYouCanText
 Mom_SavedString:
-	db "Saved@"
+	db "Erspartes@"
 
 Mom_WithdrawString:
-	db "Withdraw@"
+	db "Abheben@"
 
 Mom_DepositString:
-	db "Deposit@"
+	db "Einzahlen@"
 
 Mom_HeldString:
-	db "Held@"
+	db "Besitz@"
 
 BankOfMom_MenuHeader:
 	db MENU_BACKUP_TILES
@@ -626,7 +626,7 @@ BankOfMom_MenuHeader:
 .MenuData:
 	db $80 ; flags
 	db 4 ; items
-	db "Get@"
-	db "Save@"
-	db "Change@"
-	db "Cancel@"
+	db "Abheben@"
+	db "Sparen@"
+	db "Ändern@"
+	db "Zurück@"

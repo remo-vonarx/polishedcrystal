@@ -397,3 +397,27 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Wonder Trade names over 7 letters | squeezed to 7 like Upstream's English (Giovani, Courtny, Lysandr): a doubled letter, an inner vowel or the last letters dropped, no period | Wonder Trade names | The user's choice (2026-11-21); this list only, since its names stand in for player names typed into 7 letters. Other lists keep the Abbreviation rule |
 | Wonder Trade names (kept) | as in English: real people (Tajiri, Iwata, Masuda …), Polished's developers, Japanese names of Pokémon characters (Satoshi, Hibiki …), other franchises by their Japanese names (Usagi, Shinji, Miku …), Greek letters and letter versions (Alpha, Omega, X, Y, Z), fan-game characters, names the same in German, Orange, Jade, Mind, Phil (German X/Y names him only by the title "Kamerakauz"), and the unidentified Bonnie, Clyde, Everyle, Zetsu, Karuta, Nozomi, Amos, Kei, Clara, Hana, Miyuki | Wonder Trade names | The approved design (2026-11-21); Phil, the unidentified names: the user's choices |
 | Psychic Inver | Inver (kept) | Trainer names (`data/trainers/psychic_inver.asm`) | The official German name is Estefan (X/Y, PokéWiki), but `PickPsychicInverParty` hardcodes the length of "Inver@", so a longer name breaks his party; the user's choice (2026-11-21). The Wonder Trade entry for him is Estefan |
+| Running Shoes | Turbotreter | Mom's scene (`maps/PlayersHouse1F.asm`) | Official (PokéWiki, Gen 3–6) |
+| B Button | B-Knopf | Dialogue | Kristall ("A-Knopf", "B-Knopf") |
+| Daylight Saving Time / DST | Sommerzeit / SZ (WZ for standard time) | Mom's scene, clock prompts | Kristall |
+| Sunday … Saturday | Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag | Mom's weekday question (`engine/rtc/timeset.asm`) | Kristall, re-cased; the picker box is one tile wider than English to fit "Donnerstag" (provisional, the user was offline 2026-11-21) |
+| Bank of Mom: Saved / Withdraw / Deposit / Held | Erspartes / Abheben / Einzahlen / Besitz | Bank of Mom (`engine/events/mom.asm`) | Kristall, except "Erspartes" (own, provisional): Kristall's "Ersparnisse" is 11 tiles, and Polished prints the amount from column 11 |
+| Bank of Mom menu: Get / Save / Change / Cancel | Abheben / Sparen / Ändern / Zurück | Bank of Mom menu | Kristall |
+| Champion / champ (addressing the player) | Champ, also with an article ("ein toller Champ") | New dialogue | The user's choice (2026-11-21): "Champ" counts as neutral, like "ein Star"; German games call female Champions "Champ" too |
+| A talented trainer like yourself | ein Talent wie du | New dialogue | The user's choice (2026-11-21): "das Talent" is neuter, so the player stays neutral |
+| The Wizard of Oz's (yellow) brick road | gelbe Ziegelsteinstrasse | Lyra's TV (`maps/LyrasHouse1F.asm`) | The user's choice (2026-11-21): "gelb" added from the German dub, so the reference survives |
+| <Name>'s House (signs) | Haus von <PLAYER> / Lyras Haus / Prof. Linds Haus | House signs | Kristall ("Haus von <PLAYER>", "PROF. LINDs HAUS"); "Lyras Haus" own after that pattern |
+| Elm #mon Lab | Lind-#mon-Labor | Sign, dialogue | Kristall ("LIND-#MON-LABOR") |
+| Rice balls | Reisbällchen | Lyra's fridge | Own |
+| Gym / #mon Gym | Arena / PKMN-Arena | Dialogue | Kristall ("PKMN-ARENA", "PKMN-ARENEN"); PKMN stays in capitals |
+| Elite Four | Top Vier | Dialogue | Kristall |
+| "<PLAYER> received/gained <item or #mon>" | "<PLAYER> erhält / <name>." ("!" for a #mon) | Gift texts | Kristall |
+| "<PLAYER> put the <item> in the <pocket>" | "<PLAYER> steckt / <item> in / <pocket>." | Item gift texts | Kristall's frame, no article before the pocket; fits 15 tiles at the longest item and pocket |
+| "The <pocket> is full…" | "Die <pocket> / ist voll…" | Item gift texts | Kristall's "ist voll…"; "Die" fits every pocket that can be full (all "…-Tasche") |
+| Give a nickname to <#mon>? | Möchtest du / <#mon> einen / Spitznamen geben? | Gift and caught #mon | Kristall |
+| The criminal always returns to the scene of the crime | Der Täter kehrt immer an den Tatort zurück | Officer in Elm's lab | Own, the German idiom |
+| "So you're the thief?" (to the player) | "Dann warst du das also?" | Officer in Elm's lab | Own, neutral for the player (provisional, the user was offline 2026-11-21) |
+| oddity (the Odd Souvenir) | Kuriosität (item: Kuriosum) | Elm's lab | Own; keeps the link to the item name |
+| Pokémon League (dialogue) | #mon-Liga | Dialogue | Own, the modern compound spelling (PokéWiki "Pokémon-Liga", as in the Fly row); Kristall writes "#MON LIGA", and its reused lines get the hyphen too, like ß → ss (provisional, the user was offline 2026-11-21) |
+| START, SELECT (buttons) | START, SELECT | Dialogue (Elm's lab travel tips) | Kristall: the button labels stay in capitals, as printed on the console |
+| Daylight Saving Time adjust (Mom) | Möchtest du auf Sommerzeit umstellen? / Ich stelle die Uhr eine Stunde vor. / Ist die Sommerzeit vorüber? / … zurück. | Bank of Mom's "No" path | Kristall (ROM 71:634c–6417) |
