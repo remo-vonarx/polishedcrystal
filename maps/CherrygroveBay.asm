@@ -122,19 +122,20 @@ CherrygroveBayGalarianBirdsScript:
 
 .LikeToUseItemText
 	text "Möchtest du ein"
-	line "Parfüm am Grossen"
-	cont "Baum benutzen?"
+	line "Lockparfüm am"
+	cont "Grossen Baum"
+	cont "benutzen?"
 	done
 
 .WhichLureText
-	text "Welches Parfüm"
+	text "Welches Lockparfüm"
 	line "möchtest du"
 	cont "benutzen?"
 	done
 
 .YouSprayedTheLureText
 	text "Du sprühst das"
-	line "Parfüm auf den"
+	line "Lockparfüm auf den"
 	cont "Baum."
 	done
 

@@ -297,7 +297,7 @@ GuideGentPokeCenterText:
 GuideGentMartText:
 	text "Das ist ein PKMN-"
 	line "Supermarkt, kurz"
-	cont "#markt."
+	cont "#-Markt."
 
 	para "Hier werden Bälle"
 	line "verkauft, mit de-"
@@ -486,7 +486,7 @@ GuideGentsHouseSignText:
 CherrygroveCityAdvancedTipsSignText:
 	text "Tipps für Profis!"
 
-	para "Im PKMN-Supermarkt"
+	para "Im #-Markt"
 	line "gibt es zu je zehn"
 
 	para "#bällen einen"
