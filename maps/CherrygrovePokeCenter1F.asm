@@ -24,19 +24,20 @@ PokemonJournalRedScript:
 	setflag ENGINE_READ_RED_JOURNAL
 	jumpthistext
 
-	text "#mon Journal"
+	text "#mon-Journal"
 
-	para "Special Feature:"
-	line "<PK><MN> Trainer Red!"
+	para "Sonderbericht:"
+	line "<PK><MN>-Trainer Rot!"
 
-	para "Red is said to"
-	line "have defeated his"
+	para "Rot soll seinen"
+	line "Rivalen Blau im"
 
-	para "rival Blue for the"
-	line "title of #mon"
+	para "Kampf um den Titel"
+	line "des Champs der"
 
-	para "League Champion in"
-	line "record time."
+	para "#mon-Liga in"
+	line "Rekordzeit be-"
+	cont "siegt haben."
 	done
 
 CherrygrovePokeCenter1FTeacherScript:
@@ -44,48 +45,54 @@ CherrygrovePokeCenter1FTeacherScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "The Communication"
-	line "Center upstairs"
-	cont "was just built."
+	text "Das Kommuni-"
+	line "kations-Center im"
+	cont "ersten Stock ist"
+	cont "gerade fertig."
 
-	para "But they're still"
-	line "finishing it up."
+	para "Aber der Fein-"
+	line "schliff fehlt"
+	cont "noch."
 	done
 
 .Text2:
-	text "The Communication"
-	line "Center upstairs"
-	cont "was just built."
+	text "Das Kommuni-"
+	line "kations-Center im"
+	cont "ersten Stock ist"
+	cont "gerade fertig."
 
-	para "I traded #mon"
-	line "there already!"
+	para "Ich habe schon"
+	line "#mon getauscht!"
 	done
 
 CherrygrovePokeCenter1FFisherText:
-	text "It's great. I can"
-	line "store any number"
+	text "Das ist toll! Ich"
+	line "kann so viele"
 
-	para "of #mon, and"
-	line "it's all free."
+	para "#mon lagern,"
+	line "wie ich will, und"
+	cont "das umsonst!"
 	done
 
 CherrygrovePokeCenter1FGentlemanText:
-	text "That PC is free"
-	line "for any trainer"
-	cont "to use."
+	text "Dieser PC steht"
+	line "jedem Trainer kos-"
+	cont "tenfrei zur Verfü-"
+	cont "gung."
 	done
 
 CherrygrovePokeCenter1FLadyText:
-	text "#mon Journal"
-	line "has such fascin-"
-	cont "ating stories!"
+	text "Im #mon-Journal"
+	line "stehen so faszi-"
+	cont "nierende Artikel!"
 
-	para "I come to #mon"
-	line "Centers for the"
+	para "Ich komme für die"
+	line "neuesten Ausgaben"
 
-	para "latest issues, but"
-	line "they're not the"
+	para "in die #mon-"
+	line "Center, aber sie"
 
-	para "only place with"
-	line "a subscription."
+	para "sind nicht die"
+	line "einzigen mit einem"
+	cont "Abonnement."
 	done

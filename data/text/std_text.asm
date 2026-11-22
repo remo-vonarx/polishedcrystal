@@ -1,158 +1,152 @@
 NurseMornText:
-	text "Good morning!"
-	line "Welcome to our"
-	cont "#mon Center."
+	text "Guten Morgen!"
+	line "Willkommen im"
+	cont "#mon-Center!"
 	done
 
 NurseDayText:
-	text "Hello!"
-	line "Welcome to our"
-	cont "#mon Center."
+	text "Guten Tag!"
+	line "Willkommen im"
+	cont "#mon-Center."
 	done
 
 NurseEveText:
-	text "Good evening!"
-	line "Welcome to our"
-	cont "#mon Center."
+	text "Guten Abend!"
+	line "Willkommen im"
+	cont "#mon-Center."
 	done
 
 NurseNiteText:
-	text "Good evening!"
-	line "You're out late."
+	text "Guten Abend!"
+	line "Du bist spät dran."
 
-	para "Welcome to our"
-	line "#mon Center."
+	para "Willkommen im"
+	line "#mon-Center."
 	done
 
 PokeComNurseMornText:
-	text "Good morning!"
+	text "Guten Morgen!"
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon-Kommunika-"
+	cont "tions-Center, oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 PokeComNurseDayText:
-	text "Hello!"
+	text "Hallo!"
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon-Kommunika-"
+	cont "tions-Center, oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 PokeComNurseEveText:
-	text "Good evening!"
+	text "Guten Abend!"
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon-Kommunika-"
+	cont "tions-Center, oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 PokeComNurseNiteText:
-	text "Good to see you"
-	line "working so late."
+	text "Schön dass du noch"
+	line "unterwegs bist."
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon-Kommunika-"
+	cont "tions-Center, oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 NurseAskHealText:
-	text "We can heal your"
-	line "#mon to perfect"
-	cont "health."
-
-	para "Shall we heal your"
-	line "#mon?"
+	text "Wir heilen deine"
+	line "#mon und"
+	cont "machen sie wieder"
+	cont "fit!"
 	done
 
 NurseTrainerStarText:
-	text "We can heal your"
-	line "#mon to perfect"
-	cont "health."
+	text "Wir heilen deine"
+	line "#mon und"
+	cont "machen sie wieder"
+	cont "fit!"
 
-	para "Shall we…"
+	para "Sollen wir…"
 
-	para "Th-that Trainer"
-	line "Card!"
+	para "D-dieser Trainer-"
+	line "pass!"
 
-	para "That wonderful"
-	line "shade! And that"
-	cont "shiny star!"
+	para "Diese herrliche"
+	line "Farbe! Und dieser"
+	cont "glänzende Stern!"
 
-	para "You're an impres-"
-	line "sive Trainer."
+	para "Du bist wirklich"
+	line "beeindruckend."
 
-	para "Please, <PLAYER>,"
-	line "may I heal your"
-	cont "#mon?"
+	para "Bitte, <PLAYER>,"
+	line "darf ich deine"
+	cont "#mon heilen?"
 	done
 
 NurseTheUsualText:
-	text "Great to see you"
-	line "again, <PLAYER>!"
+	text "Toll, dich wieder-"
+	line "zusehen, <PLAYER>!"
 
-	para "You want the"
-	line "usual, right?"
+	para "Das Übliche, oder?"
 	done
 
 NurseTakePokemonText:
-	text "OK, may I see your"
-	line "#mon?"
+	text "O.K. Wir benötigen"
+	line "deine #mon."
 	done
 
 NurseReturnPokemonText:
-	text "Thank you for"
-	line "waiting."
-
-	para "Your #mon are"
-	line "fully healed."
+	text "Danke! Deine"
+	line "#mon sind"
+	cont "wieder topfit!"
 	done
 
 NurseGoodbyeText:
-	text "We hope to see you"
-	line "again."
+	text "Komm jederzeit"
+	line "wieder vorbei!"
 	done
 
 NursePokerusText:
-	text "Your #mon"
-	line "appear to be"
+	text "An deinen #mon"
+	line "sitzen winzige"
 
-	para "infected by tiny"
-	line "life forms."
+	para "Lebewesen."
+	line "Deine #mon"
 
-	para "Your #mon are"
-	line "healthy and seem"
-	cont "to be fine."
+	para "sehen gesund und"
+	line "kräftig aus."
 
-	para "But we can't tell"
-	line "you anything more"
+	para "Leider können wir"
+	line "dir hier auch"
 
-	para "at a #mon"
-	line "Center."
+	para "nicht mehr sagen."
 	done
 
 PokeComNursePokerusText:
-	text "Your #mon"
-	line "appear to be"
+	text "Es scheint, als ob"
+	line "deine #mon von"
 
-	para "infected by tiny"
-	line "life forms."
+	para "winzigen Lebewesen"
+	line "befallen sind."
 
-	para "Your #mon are"
-	line "healthy and seem"
-	cont "to be fine."
+	para "Deine #mon"
+	line "sind wohlauf und"
+	cont "gesund."
 
-	para "But we can't tell"
-	line "you anything more."
+	para "Mehr können wir"
+	line "dir nicht sagen."
 	done
 
 DifficultBookshelfText:
@@ -419,17 +413,19 @@ HappinessText1:
 	done
 
 RegisteredNumber1Text:
-	text "<PLAYER> registered"
-	line ""
+	text "<PLAYER> speichert"
+	line "die Nummer von"
+	cont ""
 	text_ram wStringBuffer3
-	text "'s number."
+	text "."
 	done
 
 RegisteredNumber2Text:
-	text "<PLAYER> registered"
-	line ""
+	text "<PLAYER> speichert"
+	line "die Nummer von"
+	cont ""
 	text_ram wStringBuffer3
-	text "'s number."
+	text "."
 	done
 
 VendingMachineText:
@@ -463,9 +459,10 @@ VendingMachineNoSpaceText:
 	done
 
 HiddenGrottoText:
-	text "Look! You've found"
-	line "a narrow path!"
+	text "Sieh mal! Du hast"
+	line "einen engen Pfad"
+	cont "entdeckt!"
 
-	para "Will you follow"
-	line "it?"
+	para "Möchtest du ihm"
+	line "folgen?"
 	done

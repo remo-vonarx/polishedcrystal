@@ -1,12 +1,12 @@
 SECTION "_FruitBearingTreeText", ROMX
 _FruitBearingTreeText::
-	text "It's a fruit-"
-	line "bearing tree."
+	text "Es ist ein"
+	line "Obstbaum."
 	done
 
 SECTION "_HeyItsFruitText", ROMX
 _HeyItsFruitText::
-	text "Hey! It's"
+	text "Hey! Das ist eine"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -14,7 +14,7 @@ _HeyItsFruitText::
 
 SECTION "_ObtainedOneFruitText", ROMX
 _ObtainedOneFruitText::
-	text "Obtained a"
+	text "Du erhältst eine"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -22,7 +22,7 @@ _ObtainedOneFruitText::
 
 SECTION "_ObtainedTwoFruitText", ROMX
 _ObtainedTwoFruitText::
-	text "Obtained two"
+	text "Du erhältst zwei"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -30,7 +30,7 @@ _ObtainedTwoFruitText::
 
 SECTION "_ObtainedThreeFruitText", ROMX
 _ObtainedThreeFruitText::
-	text "Obtained three"
+	text "Du erhältst drei"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -38,8 +38,8 @@ _ObtainedThreeFruitText::
 
 SECTION "_FruitPackIsFullText", ROMX
 _FruitPackIsFullText::
-	text "But the Bag is"
-	line "full…"
+	text "Aber der Beutel"
+	line "ist voll…"
 	done
 
 SECTION "_NoApricornBoxText", ROMX
@@ -65,23 +65,23 @@ _PutAwayTheApricornText::
 
 SECTION "_NothingHereText", ROMX
 _NothingHereText::
-	text "There's nothing"
-	line "here…"
+	text "Hier ist"
+	line "nichts…"
 	done
 
 SECTION "_WantToUseMulchText", ROMX
 _WantToUseMulchText::
-	text "Want to use"
-	line "Mulch?"
+	text "Möchtest du"
+	line "Mulch benutzen?"
 	done
 
 SECTION "_UsedMulchText", ROMX
 _UsedMulchText::
-	text "<PLAYER> used"
+	text "<PLAYER> benutzt"
 	line "Mulch!"
 
-	para "The tree was"
-	line "fertilized!"
+	para "Der Baum wurde"
+	line "gedüngt!"
 	done
 
 SECTION "_WhichApricornText", ROMX
@@ -1897,16 +1897,17 @@ _ContainedMoveText::
 SECTION "_TMHMNotCompatibleText", ROMX
 _TMHMNotCompatibleText::
 	text_ram wStringBuffer2
-	text " is"
-	line "not compatible"
-	cont "with "
+	text " ist"
+	line "nicht kompatibel"
+	cont "mit "
 	text_ram wStringBuffer1
 	text "."
 
-	para "It can't learn"
+	para "Es kann"
 	line ""
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	cont "nicht erlernen."
 	prompt
 
 SECTION "_BadgeRequiredText", ROMX
@@ -1924,14 +1925,16 @@ _CantUseItemText::
 SECTION "_UseCutText", ROMX
 _UseCutText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Cut!"
+	text " setzt"
+	line "den Zerschneider"
+	cont "ein!"
 	prompt
 
 SECTION "_CutNothingText", ROMX
 _CutNothingText::
-	text "There's nothing to"
-	line "Cut here."
+	text "Hier kann"
+	line "man nichts"
+	cont "zerschneiden."
 	prompt
 
 SECTION "_AskFlashText", ROMX
@@ -2167,10 +2170,14 @@ _GotOffBikeText::
 
 SECTION "_AskCutText", ROMX
 _AskCutText::
-	text "This tree can be"
-	line "Cut!"
+	text "Du kannst den"
+	line "Zerschneider hier"
+	cont "einsetzen!"
 
-	para "Want to use Cut?"
+	para "Möchtest du den"
+	line "Zerschneider"
+
+	para "einsetzen?"
 	done
 
 SECTION "_CanCutText", ROMX
@@ -2181,7 +2188,7 @@ _CanCutText::
 
 SECTION "_FoundItemText", ROMX
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> findet"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -3365,7 +3372,7 @@ _GainedItemText::
 
 SECTION "_GainedMultipleItemsText", ROMX
 _GainedMultipleItemsText::
-	text "<PLAYER> gained"
+	text "<PLAYER> erhält"
 	line ""
 	text_decimal wItemQuantityChangeBuffer, 1, 2
 	text " "
@@ -3431,7 +3438,7 @@ _EvolvingText::
 
 SECTION "_MartHowManyText", ROMX
 _MartHowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_MartFinalPriceText", ROMX
@@ -3440,7 +3447,7 @@ _MartFinalPriceText::
 	text " "
 	text_ram wStringBuffer2
 	text_plural
-	line "will be ¥"
+	line "macht ¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 	done
@@ -3594,66 +3601,69 @@ _PharmacyComeAgainText::
 
 SECTION "_MartSellHowManyText", ROMX
 _MartSellHowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_MartSellPriceText", ROMX
 _MartSellPriceText::
-	text "I can pay you"
+	text "Ich zahle dir"
 	line "¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 
-	para "Is that OK?"
+	para "Reicht das?"
 	done
 
 SECTION "_MartWelcomeText", ROMX
 _MartWelcomeText::
-	text "Welcome! How may I"
-	line "help you?"
+	text "Willkommen! Womit"
+	line "kann ich dienen?"
 	done
 
 SECTION "_MartThanksText", ROMX
 _MartThanksText::
-	text "Here you are."
-	line "Thank you!"
+	text "Hier, bitte."
+	line "Danke schön!"
 	done
 
 SECTION "_MartNoMoneyText", ROMX
 _MartNoMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 SECTION "_MartPackFullText", ROMX
 _MartPackFullText::
-	text "You can't carry"
-	line "any more items."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr tragen."
 	done
 
 SECTION "_MartCantBuyText", ROMX
 _MartCantBuyText::
-	text "Sorry, I can't buy"
-	line "that from you."
+	text "Ich kann dir das"
+	line "nicht abkaufen."
 	prompt
 
 SECTION "_MartComeAgainText", ROMX
 _MartComeAgainText::
-	text "Please come again!"
+	text "Komm wieder!"
 	done
 
 SECTION "_MartAskMoreText", ROMX
 _MartAskMoreText::
-	text "Can I do anything"
-	line "else for you?"
+	text "Kann ich noch"
+	line "etwas für dich"
+	cont "tun?"
 	done
 
 SECTION "_MartBoughtText", ROMX
 _MartBoughtText::
-	text "Got ¥"
+	text "Erhält"
+	line "¥"
 	text_decimal hMoneyTemp, 3, 7
-	text " for"
-	line ""
+	text " für"
+	cont ""
 	text_ram wStringBuffer2
 	text_plural
 	text "."
@@ -3804,7 +3814,7 @@ ResetInitialOptionsText::
 SECTION "_LearnedMoveText", ROMX
 _LearnedMoveText::
 	text_ram wMonOrItemNameBuffer
-	text " learned"
+	text " erlernt"
 	line ""
 	text_ram wStringBuffer2
 	text "!"
@@ -3814,69 +3824,72 @@ _LearnedMoveText::
 
 SECTION "_MoveAskForgetText", ROMX
 _MoveAskForgetText::
-	text "Which move should"
-	next "be forgotten?"
+	text "Welche Attacke"
+	next "soll es vergessen?"
 
 	para ""
 	done
 
 SECTION "_StopLearningMoveText", ROMX
 _StopLearningMoveText::
-	text "Stop learning"
-	line ""
+	text ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "nicht erlernen?"
 	done
 
 SECTION "_DidNotLearnMoveText", ROMX
 _DidNotLearnMoveText::
 	text_ram wMonOrItemNameBuffer
-	line "did not learn"
-	cont ""
+	line "hat "
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	cont "nicht erlernt."
 	prompt
 
 SECTION "_AskForgetMoveText", ROMX
 _AskForgetMoveText::
 	text_ram wMonOrItemNameBuffer
-	line "wants to learn"
-	cont ""
+	line "will "
 	text_ram wStringBuffer2
-	text "!"
+	text ""
+	cont "erlernen!"
 
-	para "Should it forget"
-	line "an old move for"
-	cont ""
+	para "Soll eine andere"
+	line "Attacke zugunsten"
+	cont "von "
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	cont "vergessen werden?"
 	done
 
 SECTION "Text_MoveForgetCount", ROMX
 Text_MoveForgetCount::
-	text "1, 2 and…"
+	text "1, 2 und…"
 	text_pause
 	text_end
 
 SECTION "_MoveForgotText", ROMX
 _MoveForgotText::
-	text " Poof!"
+	text " Schwupp!"
 	text_pause
 
 	para ""
 	text_ram wMonOrItemNameBuffer
-	text " forgot"
+	text " hat"
 	line ""
 	text_ram wStringBuffer1
-	text "."
+	text ""
+	cont "vergessen!"
 
-	para "And…"
+	para "Und…"
 	prompt
 
 SECTION "_MoveCantForgetHMText", ROMX
 _MoveCantForgetHMText::
-	text "HM moves can't be"
-	line "forgotten now."
+	text "VM-Attacken"
+	line "können jetzt nicht"
+	cont "gelöscht werden!"
 	prompt
 
 SECTION "_CardFlipPlayWithThreeCoinsText", ROMX
@@ -4038,7 +4051,8 @@ Text_Waitbutton_2::
 SECTION "_CurBoxFullText", ROMX
 _CurBoxFullText::
 	text_ram wStringBuffer1
-	text " is full."
+	text " ist"
+	line "voll."
 	prompt
 
 SECTION "_MonSentToPCText", ROMX
@@ -4454,10 +4468,10 @@ AlreadyHaveTMText::
 
 SECTION "MartPremierBallText", ROMX
 MartPremierBallText::
-	text "You also get a"
-	line "Premier Ball as"
+	text "Du bekommst noch"
+	line "einen Premierball"
 	text_sound SFX_TRANSACTION
-	cont "an added bonus."
+	cont "als Bonus dazu."
 	done
 
 SECTION "ItemCantBeSelectedText", ROMX

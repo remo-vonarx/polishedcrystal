@@ -44,6 +44,11 @@ INCLUDE "engine/events/bug_contest/display_stats.asm"
 INCLUDE "engine/items/item_effects.asm"
 
 
+SECTION "Plural Table", ROMX
+
+INCLUDE "data/text/plural_table.asm"
+
+
 SECTION "Print Number", ROMX
 
 INCLUDE "engine/math/print_num.asm"
