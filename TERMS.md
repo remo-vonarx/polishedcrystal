@@ -412,7 +412,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Gym / #mon Gym | Arena / PKMN-Arena | Dialogue | Kristall ("PKMN-ARENA", "PKMN-ARENEN"); PKMN stays in capitals |
 | Elite Four | Top Vier | Dialogue | Kristall |
 | "<PLAYER> received/gained <item or #mon>" | "<PLAYER> erhält / <name>." ("!" for a #mon) | Gift texts | Kristall |
-| Badges: Zephyr … Earth, "<PLAYER> received the <name> Badge." | Flügel-, Insekt-, Basis-, Phantom-, Stahl-, Faust-, Eis-, Drachen-, Fels-, Quell-, Donner-, Farb-, Seelen-, Sumpf-, Vulkan-, Erdorden; "<PLAYER> erhält / <name>orden." | `data/events/badge_names.asm` (stems), `_ReceivedTheBadgeText` | Kristall ("<PLAYER> erhält BASISORDEN."), the same names as HeartGold/SoulSilver |
+| Badges: Zephyr … Earth, "<PLAYER> received the <name> Badge." | Flügel-, Insekt-, Basis-, Phantom-, Stahl-, Faust-, Eis-, Drachen-, Fels-, Quell-, Donner-, Farb-, Seelen-, Sumpf-, Vulkan-, Erdorden; "<PLAYER> erhält den / <name>orden." | `data/events/badge_names.asm` (stems), `_ReceivedTheBadgeText` | Kristall: Falkner's "<PLAYER> erhält den / FLÜGELORDEN." (1a:462e; later badges drop "den"), the same names as HeartGold/SoulSilver |
 | "<PLAYER> put the <item> in the <pocket>" | "<PLAYER> steckt / <item> in / <pocket>." | Item gift texts | Kristall's frame, no article before the pocket; fits 15 tiles at the longest item and pocket |
 | "The <pocket> is full…" | "Die <pocket> / ist voll…" | Item gift texts | Kristall's "ist voll…"; "Die" fits every pocket that can be full (all "…-Tasche") |
 | Give a nickname to <#mon>? | Möchtest du / <#mon> einen / Spitznamen geben? | Gift and caught #mon | Kristall |
@@ -449,3 +449,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Trade screen: "<name> bids farewell to" + "<mon>." | "<name> nimmt / Abschied von" + "<mon>." | Trade animation | Own: Kristall's "Lebwohl, <mon>" + "sagt <name>." swaps which name prints in which box |
 | Violet Cemetery Caretaker's House (sign) | Viola-Friedhof / Haus des Wärters | Violet Outskirts | Own, after "Viola-Stadtrand" (provisional until the user answers) |
 | Zephyr Badge "named after an ancient god of the west wind" | "Der Flügelorden zeigt Flügel wie Zephyros, der alte Gott des Westwinds." | Violet nickname house | Own: the German badge name lost the god's name, so the line ties it to his wings (provisional until the user answers) |
+| Earl's blackboard menu: Psn / Par / Slp / Brn / Frz / Quit | Gif / Par / Slf / Brt / Gfr / Zur. | Earl's Academy | Kristall (1a:4c86), re-cased; Kristall's box is Polished's (0,0)–(11,8), 3 × 2, 5 apart |
+| Gym statue: "<city> #mon Gym / Leader: <name>", "Winning Trainers:" | "<city> / PKMN-Arena / Leitung: <name>", "Bisherige Sieger:" | Every Gym statue | Kristall (6c:47e9) |
+| Walker (Falkner's father, Ex-Leader) | Luc ("Ex-Leiter Luc!") | Earl's Academy journal | German manga name (PokéWiki "Luc"); no game names him (provisional until the user answers) |
+| "A Bellsprout over 100 feet tall" (imperial units) | "Ein über 100 Fuss / grosses Knofensa…" | Sprout Tower 1F | Own, beside Kristall's metric "Ein über 30 m grosses KNOFENSA…" for the metric option |

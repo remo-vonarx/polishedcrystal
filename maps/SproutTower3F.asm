@@ -81,51 +81,53 @@ ElderLiScript:
 	setevent EVENT_BEAT_ELDER_LI
 	jumpthisopenedtext
 
-	text "Flash illuminates"
-	line "even the darkest"
-	cont "of all places."
+	text "Mit Blitz kannst"
+	line "du die dunkelsten"
+	cont "Orte erhellen."
 
-	para "You need not teach"
-	line "it to your #mon"
+	para "Du musst es deinen"
+	line "#mon nur bei-"
 
-	para "unless you wish"
-	line "to use Flash in"
-	cont "battle."
+	para "bringen, wenn du"
+	line "Blitz im Kampf"
+	cont "einsetzen willst."
 
-	para "Simply press A in"
-	line "the darkness, and"
+	para "Drücke einfach A"
+	line "im Dunkeln."
 
-	para "if any of your"
-	line "#mon can use"
-	cont "Flash, they will."
+	para "Beherrscht eines"
+	line "deiner #mon"
+	cont "Blitz, setzt es"
+	cont "ihn ein."
 	done
 
 GenericTrainerSageJin:
 	generictrainer SAGE, JIN, EVENT_BEAT_SAGE_JIN, SageJinSeenText, SageJinBeatenText
 
-	text "As #mon grow"
-	line "stronger, so does"
-	cont "the trainer."
+	text "Je stärker die"
+	line "#mon werden,"
+	cont "desto stärker wird"
+	cont "auch ihr Trainer."
 
-	para "No, wait. As the"
-	line "trainer grows"
-
-	para "stronger, so do"
-	line "the #mon."
+	para "Nein, warte! Je"
+	line "stärker der Trai-"
+	cont "ner wird, desto"
+	cont "stärker werden"
+	cont "auch die #mon."
 	done
 
 GenericTrainerSageTroy:
 	generictrainer SAGE, TROY, EVENT_BEAT_SAGE_TROY, SageTroySeenText, SageTroyBeatenText
 
-	text "It is not far to"
-	line "the Elder."
+	text "Du triffst bald"
+	line "auf den Weisen."
 	done
 
 GenericTrainerSageNeal:
 	generictrainer SAGE, NEAL, EVENT_BEAT_SAGE_NEAL, SageNealSeenText, SageNealBeatenText
 
-	text "Let there be light"
-	line "on your journey."
+	text "Möge dein Weg"
+	line "erleuchtet sein."
 	done
 
 SproutTower3FPlayerApproachesRivalMovement:
@@ -141,143 +143,154 @@ SproutTower3FRivalLeavesElderMovement:
 	step_end
 
 SproutTowerElderLecturesRivalText:
-	text "Elder: You are in-"
-	line "deed skilled as a"
-	cont "trainer."
+	text "Weiser: Du bist"
+	line "wirklich ein"
+	cont "begabter Trainer."
 
-	para "As promised, here"
-	line "is your TM."
+	para "Wie abgemacht, be-"
+	line "kommst du die TM."
 
-	para "But let me say"
-	line "this: You should"
+	para "Eines gebe ich dir"
+	line "noch mit:"
 
-	para "treat your"
-	line "#mon better."
+	para "Behandle deine"
+	line "#mon besser."
 
-	para "The way you battle"
-	line "is far too harsh."
+	para "Dein Kampfstil"
+	line "ist zu aggressiv."
 
-	para "#mon are not"
-	line "tools of war…"
+	para "#mon sind keine"
+	line "Kampfspielzeuge…"
 	done
 
 SproutTowerRivalOnlyCareAboutStrongText:
 	text "…"
-	line "…Humph!"
+	line "…Hmpf!"
 
-	para "He claims to be"
-	line "the Elder but"
-	cont "he's weak."
+	para "Er behauptet,"
+	line "ein Weiser zu"
+	cont "sein. Aber er ist"
+	cont "schwach."
 
-	para "It stands to"
-	line "reason."
+	para "Das muss noch"
+	line "geklärt werden."
 
-	para "I'd never lose to"
-	line "fools who babble"
+	para "Ich würde nie ge-"
+	line "gen so einen Nar-"
+	cont "ren verlieren, der"
 
-	para "about being nice"
-	line "to #mon."
+	para "mir rät, meine"
+	line "#mon gut zu"
+	cont "behandeln."
 
-	para "I only care about"
-	line "strong #mon"
-	cont "that can win."
+	para "Für mich zählen"
+	line "nur starke"
+	cont "#mon."
 
-	para "I really couldn't"
-	line "care less about"
-	cont "weak #mon."
+	para "Schwache #mon"
+	line "interessieren mich"
+	cont "gar nicht."
 	done
 
 SproutTowerRivalUsedEscapeRopeText:
-	text "<RIVAL> used an"
-	line "Escape Rope!"
+	text "<RIVAL> benutzt"
+	line "Fluchtseil!"
 	done
 
 SageLiSeenText:
-	text "So good of you to"
-	line "come here!"
+	text "Schön, dass du"
+	line "gekommen bist!"
 
-	para "Sprout Tower is a"
-	line "place of training."
+	para "Der Knofensa-Turm"
+	line "ist eine"
 
-	para "People and #mon"
-	line "test their bonds"
+	para "Trainingsstätte."
+	line "Trainer und"
 
-	para "to build a bright"
-	line "future together."
+	para "#mon prüfen"
+	line "ihre Freundschaft,"
 
-	para "I am the final"
-	line "test."
+	para "um gemeinsam eine"
+	line "rosige Zukunft"
 
-	para "Allow me to check"
-	line "the ties between"
+	para "aufzubauen."
+	line "Und ich bin der"
 
-	para "your #mon and"
-	line "you!"
+	para "letzte Test."
+	line "Erlaube, dass ich"
+
+	para "die Freundschaft"
+	line "zwischen dir und"
+
+	para "deinen #mon"
+	line "überprüfe!"
 	done
 
 SageLiBeatenText:
-	text "Ah, excellent!"
+	text "Ah, sehr gut!"
 	done
 
 SageLiTakeThisFlashText:
-	text "You and your #-"
-	line "mon should have"
+	text "Du und dein #-"
+	line "mon dürftet keine"
 
-	para "no problem using"
-	line "this move."
+	para "Probleme mit die-"
+	line "ser Attacke haben."
 
-	para "Take this Flash"
-	line "TM."
+	para "Nimm diese TM."
+	line "Sie enthält Blitz."
 	done
 
 SageLiAfterBattleText:
-	text "I hope you learn"
-	line "and grow from your"
-	cont "journey."
+	text "Ich hoffe, du"
+	line "lernst viel auf"
+	cont "deiner Reise."
 	done
 
 SageJinSeenText:
-	text "I train to find"
-	line "enlightenment in"
-	cont "#mon!"
+	text "Ich trainiere, um"
+	line "durch #mon die"
+	cont "Erleuchtung"
+	cont "zu finden!"
 	done
 
 SageJinBeatenText:
-	text "My training is"
-	line "incomplete…"
+	text "Mein Training ist"
+	line "unvollständig…"
 	done
 
 SageTroySeenText:
-	text "Let me see how"
-	line "much you trust"
-	cont "your #mon."
+	text "Ich will sehen,"
+	line "wie sehr du deinen"
+	cont "#mon vertraust."
 	done
 
 SageTroyBeatenText:
-	text "Yes, your trust is"
-	line "real!"
+	text "Ja, du vertraust"
+	line "ihnen wirklich!"
 	done
 
 SageNealSeenText:
-	text "The Elder's TM"
-	line "lights even pitch-"
-	cont "black darkness."
+	text "Mit der TM des"
+	line "Weisen kannst du"
+	cont "selbst dunkelste"
+	cont "Orte erhellen."
 	done
 
 SageNealBeatenText:
-	text "It is my head that"
-	line "is bright!"
+	text "Denken ist eben"
+	line "meine Stärke!"
 	done
 
 SproutTower3FPaintingText:
-	text "It's a powerful"
-	line "painting of a"
-	cont "Bellsprout."
+	text "Dies ist ein dy-"
+	line "namisches Gemälde"
+	cont "von Knofensa."
 	done
 
 SproutTower3FStatueText:
-	text "A #mon statue…"
+	text "Eine PKMN-Statue…"
 
-	para "It looks very"
-	line "distinguished."
+	para "Sie sieht sehr"
+	line "erhaben aus."
 	done
