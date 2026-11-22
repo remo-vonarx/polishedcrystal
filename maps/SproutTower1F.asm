@@ -143,7 +143,8 @@ KimonoGirlMakoScript:
 	done
 
 .IntroText:
-	text "Sei gegrüsst!"
+	text "Sei gegrüsst,"
+	line "Trainer."
 
 	para "Ich bin ein"
 	line "Kimonogirl."

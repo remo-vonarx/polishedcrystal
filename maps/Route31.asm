@@ -162,8 +162,8 @@ TrainerCooltrainermFinch:
 	line "unseres Kampfes."
 	cont "Ein Luftballon!"
 
-	para "Nimm ihn, mein"
-	line "starkes Gegenüber!"
+	para "Nimm ihn,"
+	line "starker Freund!"
 	done
 
 TrainerBug_catcherWade1:

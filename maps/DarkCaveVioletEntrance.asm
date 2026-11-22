@@ -132,8 +132,9 @@ DarkCaveVioletEntranceFalknerReturnText:
 	done
 
 DarkCaveVioletEntranceFalknerIntroText:
-	text "Oh! Du trainierst"
-	line "sicher #mon."
+	text "Oh! Du bist sicher"
+	line "ein #mon-"
+	cont "Trainer."
 	prompt
 
 DarkCaveVioletEntranceFalknerDarkIntroText:
