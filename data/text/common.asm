@@ -3437,7 +3437,7 @@ _EvolvingText::
 
 SECTION "_MartHowManyText", ROMX
 _MartHowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_MartFinalPriceText", ROMX
@@ -3446,7 +3446,7 @@ _MartFinalPriceText::
 	text " "
 	text_ram wStringBuffer2
 	text_plural
-	line "will be ¥"
+	line "macht ¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 	done
@@ -3600,66 +3600,69 @@ _PharmacyComeAgainText::
 
 SECTION "_MartSellHowManyText", ROMX
 _MartSellHowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_MartSellPriceText", ROMX
 _MartSellPriceText::
-	text "I can pay you"
+	text "Ich zahle dir"
 	line "¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 
-	para "Is that OK?"
+	para "Reicht das?"
 	done
 
 SECTION "_MartWelcomeText", ROMX
 _MartWelcomeText::
-	text "Welcome! How may I"
-	line "help you?"
+	text "Willkommen! Womit"
+	line "kann ich dienen?"
 	done
 
 SECTION "_MartThanksText", ROMX
 _MartThanksText::
-	text "Here you are."
-	line "Thank you!"
+	text "Hier, bitte."
+	line "Danke schön!"
 	done
 
 SECTION "_MartNoMoneyText", ROMX
 _MartNoMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 SECTION "_MartPackFullText", ROMX
 _MartPackFullText::
-	text "You can't carry"
-	line "any more items."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr tragen."
 	done
 
 SECTION "_MartCantBuyText", ROMX
 _MartCantBuyText::
-	text "Sorry, I can't buy"
-	line "that from you."
+	text "Ich kann dir das"
+	line "nicht abkaufen."
 	prompt
 
 SECTION "_MartComeAgainText", ROMX
 _MartComeAgainText::
-	text "Please come again!"
+	text "Komm wieder!"
 	done
 
 SECTION "_MartAskMoreText", ROMX
 _MartAskMoreText::
-	text "Can I do anything"
-	line "else for you?"
+	text "Kann ich noch"
+	line "etwas für dich"
+	cont "tun?"
 	done
 
 SECTION "_MartBoughtText", ROMX
 _MartBoughtText::
-	text "Got ¥"
+	text "Erhält"
+	line "¥"
 	text_decimal hMoneyTemp, 3, 7
-	text " for"
-	line ""
+	text " für"
+	cont ""
 	text_ram wStringBuffer2
 	text_plural
 	text "."
@@ -4460,10 +4463,10 @@ AlreadyHaveTMText::
 
 SECTION "MartPremierBallText", ROMX
 MartPremierBallText::
-	text "You also get a"
-	line "Premier Ball as"
+	text "Du bekommst noch"
+	line "einen Premierball"
 	text_sound SFX_TRANSACTION
-	cont "an added bonus."
+	cont "als Bonus dazu."
 	done
 
 SECTION "ItemCantBeSelectedText", ROMX
