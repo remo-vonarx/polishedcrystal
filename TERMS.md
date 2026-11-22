@@ -412,6 +412,7 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Gym / #mon Gym | Arena / PKMN-Arena | Dialogue | Kristall ("PKMN-ARENA", "PKMN-ARENEN"); PKMN stays in capitals |
 | Elite Four | Top Vier | Dialogue | Kristall |
 | "<PLAYER> received/gained <item or #mon>" | "<PLAYER> erhält / <name>." ("!" for a #mon) | Gift texts | Kristall |
+| Badges: Zephyr … Earth, "<PLAYER> received the <name> Badge." | Flügel-, Insekt-, Basis-, Phantom-, Stahl-, Faust-, Eis-, Drachen-, Fels-, Quell-, Donner-, Farb-, Seelen-, Sumpf-, Vulkan-, Erdorden; "<PLAYER> erhält / <name>orden." | `data/events/badge_names.asm` (stems), `_ReceivedTheBadgeText` | Kristall ("<PLAYER> erhält BASISORDEN."), the same names as HeartGold/SoulSilver |
 | "<PLAYER> put the <item> in the <pocket>" | "<PLAYER> steckt / <item> in / <pocket>." | Item gift texts | Kristall's frame, no article before the pocket; fits 15 tiles at the longest item and pocket |
 | "The <pocket> is full…" | "Die <pocket> / ist voll…" | Item gift texts | Kristall's "ist voll…"; "Die" fits every pocket that can be full (all "…-Tasche") |
 | Give a nickname to <#mon>? | Möchtest du / <#mon> einen / Spitznamen geben? | Gift and caught #mon | Kristall |

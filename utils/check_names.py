@@ -105,6 +105,7 @@ TABLES = [
     ('data/items/exp_candy_names.asm', LI, None, None, 12, 'item', 'exp candy'),
     ('data/items/special_names.asm', LI, None, None, 12, 'item', 'pokegear'),
     ('data/items/wing_names.asm', LI, None, None, 12, 'item', 'wings'),
+    ('data/events/badge_names.asm', LI, None, None, 12, None, 'badges'),
     # a pocket name is printed on a text line of its own ("… in / <POCKET>.")
     ('data/items/pocket_names.asm', DB, 'ItemPocketNames', None, 14, None, 'pockets'),
     # the limit PLACE measures each name against its screens (place_problems)
@@ -171,6 +172,7 @@ SAME_IN_GERMAN = {
     'exp candy': set(),
     'pokegear': {'#dex'},
     'wings': set(),
+    'badges': set(),
     'pockets': set(),
     'places': {'?'} | {f'Route {n}' for n in range(1, 50)},
     'fly': set(),
