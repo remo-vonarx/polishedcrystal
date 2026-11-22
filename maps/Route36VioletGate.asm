@@ -24,33 +24,33 @@ Route36VioletGateOfficerScript:
 	iftruefwd .ClearedSudowoodo
 	jumpthisopenedtext
 
-	text "Lately, I don't"
-	line "see people coming"
+	text "In letzter Zeit"
+	line "sehe ich kaum"
 
-	para "from Goldenrod"
-	line "City."
+	para "Leute aus Dukatia"
+	line "City kommen."
 	done
 
 .ClearedSudowoodo
 	jumpthisopenedtext
 
-	text "Things are busy"
-	line "lately, because"
+	text "In letzter Zeit"
+	line "ist viel los, weil"
 
-	para "many people are"
-	line "coming from"
+	para "viele Leute aus"
+	line "Dukatia City und"
 
-	para "Goldenrod and"
-	line "Ecruteak!"
+	para "Teak City"
+	line "kommen!"
 	done
 
 
 
 Route36VioletGateYoungsterText:
-	text "Plants are living"
-	line "things too!"
+	text "Auch Pflanzen sind"
+	line "Lebewesen!"
 
-	para "They would want to"
-	line "move around from"
-	cont "time to time!"
+	para "Sie wollen sich"
+	line "sicher ab und zu"
+	cont "mal bewegen!"
 	done

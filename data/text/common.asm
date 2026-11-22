@@ -2115,21 +2115,22 @@ endc
 
 SECTION "_MaySmashText", ROMX
 _MaySmashText::
-	text "Maybe a #mon"
-	line "can break this."
+	text "Ein #mon könnte"
+	line "das vielleicht"
+	cont "zertrümmern."
 	done
 
 SECTION "_AskRockSmashText", ROMX
 _AskRockSmashText::
-	text "This rock looks"
-	line "breakable."
+	text "Dieser Fels sieht"
+	line "zerbrechlich aus."
 
 if DEF(FAITHFUL)
-	para "Want to use Rock"
-	line "Smash?"
+	para "Soll Zertrümmerer"
+	line "eingesetzt werden?"
 else
-	para "Want to use Brick"
-	line "Break?"
+	para "Soll Durchbruch"
+	line "eingesetzt werden?"
 endc
 	done
 
