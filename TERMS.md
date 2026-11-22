@@ -421,3 +421,12 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | Pokémon League (dialogue) | #mon-Liga | Dialogue | Own, the modern compound spelling (PokéWiki "Pokémon-Liga", as in the Fly row); Kristall writes "#MON LIGA", and its reused lines get the hyphen too, like ß → ss (provisional, the user was offline 2026-11-21) |
 | START, SELECT (buttons) | START, SELECT | Dialogue (Elm's lab travel tips) | Kristall: the button labels stay in capitals, as printed on the console |
 | Daylight Saving Time adjust (Mom) | Möchtest du auf Sommerzeit umstellen? / Ich stelle die Uhr eine Stunde vor. / Ist die Sommerzeit vorüber? / … zurück. | Bank of Mom's "No" path | Kristall (ROM 71:634c–6417) |
+| Trainer Tips (signs) | Tipps für Trainer | Signs | Kristall ("TIPPS für TRAINER") |
+| Advanced Tips! (signs) | Profi-Tipps! | Signs (Route 29, Cherrygrove City, Route 30, …) | Own: Polished's own heading, next to Kristall's "Tipps für Trainer" (provisional, the user was offline 2026-11-22) |
+| initial game options (title-screen reset) | Startoptionen | Route 29 tips sign | Own |
+| Tuscany, Monica, Wesley (dialogue) | Dietlinde, Monja, Mitko | Route 29 and the other weekday siblings | Kristall; the Wonder Trade list squeezes Dietlinde to "Ditlind" (row above) |
+| Fruit tree: "It's a fruit-bearing tree." / "Hey! It's <fruit>!" / "Obtained a/two/three <fruit>!" | "Es ist ein Obstbaum." / "Hey! Das ist eine <fruit>!" / "Du erhältst eine/zwei/drei <fruit>!" | Fruit trees | Kristall, except the counts: Polished's own, and Kristall's "<fruit> erhalten!" can't follow a count in Polished's command order. "eine" fits every fruit (all "…beere", "Aprikoko") |
+| "<PLAYER> found <item>!" / "<PLAYER> gained <n> <items>." | "<PLAYER> findet <item>!" / "<PLAYER> erhält <n> <items>." | Item balls, hidden items, gifts of several | Kristall's frames |
+| Move tutor: "I'll teach your #mon how to use <move> for a Silver Leaf." / "Should I teach your #mon <move>?" / "All done! Your #mon learned to use <move>!" | "Gegen ein Silberblatt bringe ich deinem #mon <move> bei." / "Soll ich deinem #mon <move> beibringen?" / "Fertig! Dein #mon beherrscht jetzt <move>!" | Polished's Silver Leaf tutors | Own |
+| Hidden Grotto: "Look! You've found a narrow path! Will you follow it?" | "Sieh mal! Du hast einen engen Pfad entdeckt! Möchtest du ihm folgen?" | Hidden grottoes | Own |
+| "<PLAYER> registered <name>'s number." | "<PLAYER> speichert <name>s Nummer." | Phone numbers | Kristall; the longest contact name (Rosemarie, 9) fits |

@@ -1,12 +1,12 @@
 SECTION "_FruitBearingTreeText", ROMX
 _FruitBearingTreeText::
-	text "It's a fruit-"
-	line "bearing tree."
+	text "Es ist ein"
+	line "Obstbaum."
 	done
 
 SECTION "_HeyItsFruitText", ROMX
 _HeyItsFruitText::
-	text "Hey! It's"
+	text "Hey! Das ist eine"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -14,7 +14,7 @@ _HeyItsFruitText::
 
 SECTION "_ObtainedOneFruitText", ROMX
 _ObtainedOneFruitText::
-	text "Obtained a"
+	text "Du erhältst eine"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -22,7 +22,7 @@ _ObtainedOneFruitText::
 
 SECTION "_ObtainedTwoFruitText", ROMX
 _ObtainedTwoFruitText::
-	text "Obtained two"
+	text "Du erhältst zwei"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -30,7 +30,7 @@ _ObtainedTwoFruitText::
 
 SECTION "_ObtainedThreeFruitText", ROMX
 _ObtainedThreeFruitText::
-	text "Obtained three"
+	text "Du erhältst drei"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -38,8 +38,8 @@ _ObtainedThreeFruitText::
 
 SECTION "_FruitPackIsFullText", ROMX
 _FruitPackIsFullText::
-	text "But the Bag is"
-	line "full…"
+	text "Aber der Beutel"
+	line "ist voll…"
 	done
 
 SECTION "_NoApricornBoxText", ROMX
@@ -65,23 +65,23 @@ _PutAwayTheApricornText::
 
 SECTION "_NothingHereText", ROMX
 _NothingHereText::
-	text "There's nothing"
-	line "here…"
+	text "Hier ist"
+	line "nichts…"
 	done
 
 SECTION "_WantToUseMulchText", ROMX
 _WantToUseMulchText::
-	text "Want to use"
-	line "Mulch?"
+	text "Möchtest du"
+	line "Mulch benutzen?"
 	done
 
 SECTION "_UsedMulchText", ROMX
 _UsedMulchText::
-	text "<PLAYER> used"
+	text "<PLAYER> benutzt"
 	line "Mulch!"
 
-	para "The tree was"
-	line "fertilized!"
+	para "Der Baum wurde"
+	line "gedüngt!"
 	done
 
 SECTION "_WhichApricornText", ROMX
@@ -1924,14 +1924,16 @@ _CantUseItemText::
 SECTION "_UseCutText", ROMX
 _UseCutText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Cut!"
+	text " setzt"
+	line "den Zerschneider"
+	cont "ein!"
 	prompt
 
 SECTION "_CutNothingText", ROMX
 _CutNothingText::
-	text "There's nothing to"
-	line "Cut here."
+	text "Hier kann"
+	line "man nichts"
+	cont "zerschneiden."
 	prompt
 
 SECTION "_AskFlashText", ROMX
@@ -2167,10 +2169,14 @@ _GotOffBikeText::
 
 SECTION "_AskCutText", ROMX
 _AskCutText::
-	text "This tree can be"
-	line "Cut!"
+	text "Du kannst den"
+	line "Zerschneider hier"
+	cont "einsetzen!"
 
-	para "Want to use Cut?"
+	para "Möchtest du den"
+	line "Zerschneider"
+
+	para "einsetzen?"
 	done
 
 SECTION "_CanCutText", ROMX
@@ -2181,7 +2187,7 @@ _CanCutText::
 
 SECTION "_FoundItemText", ROMX
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> findet"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -3365,7 +3371,7 @@ _GainedItemText::
 
 SECTION "_GainedMultipleItemsText", ROMX
 _GainedMultipleItemsText::
-	text "<PLAYER> gained"
+	text "<PLAYER> erhält"
 	line ""
 	text_decimal wItemQuantityChangeBuffer, 1, 2
 	text " "

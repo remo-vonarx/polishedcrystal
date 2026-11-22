@@ -419,17 +419,17 @@ HappinessText1:
 	done
 
 RegisteredNumber1Text:
-	text "<PLAYER> registered"
+	text "<PLAYER> speichert"
 	line ""
 	text_ram wStringBuffer3
-	text "'s number."
+	text "s Nummer."
 	done
 
 RegisteredNumber2Text:
-	text "<PLAYER> registered"
+	text "<PLAYER> speichert"
 	line ""
 	text_ram wStringBuffer3
-	text "'s number."
+	text "s Nummer."
 	done
 
 VendingMachineText:
@@ -463,9 +463,10 @@ VendingMachineNoSpaceText:
 	done
 
 HiddenGrottoText:
-	text "Look! You've found"
-	line "a narrow path!"
+	text "Sieh mal! Du hast"
+	line "einen engen Pfad"
+	cont "entdeckt!"
 
-	para "Will you follow"
-	line "it?"
+	para "Möchtest du ihm"
+	line "folgen?"
 	done
