@@ -418,3 +418,6 @@ The general rules are in `CLAUDE.md` (Project decisions).
 | The criminal always returns to the scene of the crime | Der Täter kehrt immer an den Tatort zurück | Officer in Elm's lab | Own, the German idiom |
 | "So you're the thief?" (to the player) | "Dann warst du das also?" | Officer in Elm's lab | Own, neutral for the player (provisional, the user was offline 2026-11-21) |
 | oddity (the Odd Souvenir) | Kuriosität (item: Kuriosum) | Elm's lab | Own; keeps the link to the item name |
+| Pokémon League (dialogue) | #mon-Liga | Dialogue | Own, the modern compound spelling (PokéWiki "Pokémon-Liga", as in the Fly row); Kristall writes "#MON LIGA", and its reused lines get the hyphen too, like ß → ss (provisional, the user was offline 2026-11-21) |
+| START, SELECT (buttons) | START, SELECT | Dialogue (Elm's lab travel tips) | Kristall: the button labels stay in capitals, as printed on the console |
+| Daylight Saving Time adjust (Mom) | Möchtest du auf Sommerzeit umstellen? / Ich stelle die Uhr eine Stunde vor. / Ist die Sommerzeit vorüber? / … zurück. | Bank of Mom's "No" path | Kristall (ROM 71:634c–6417) |

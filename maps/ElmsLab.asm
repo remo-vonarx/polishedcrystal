@@ -745,7 +745,8 @@ ElmsLabPC:
 	jumpthistext
 
 	text "Aufzeichnungen zur"
-	line "#mon-Evolution"
+	line "#mon-Entwick-"
+	cont "lung"
 
 	para "…steht auf dem"
 	line "Bildschirm…"
@@ -941,29 +942,28 @@ if !DEF(DEBUG)
 	line "beide um etwas"
 	cont "bitten."
 
-	para "Wisst ihr…"
+	para "Versteht ihr…"
 
-	para "Ich schreibe eine"
-	line "Arbeit, die ich"
+	para "Ich schreibe an"
+	line "etwas, das ich bei"
 
-	para "auf einer Konfe-"
-	line "renz vorstellen"
-	cont "will."
+	para "einer Konferenz"
+	line "vorlegen möchte."
 
-	para "Aber es gibt ein"
-	line "paar Dinge, die"
+	para "Aber da sind noch"
+	line "einige Dinge, die"
 
-	para "ich noch nicht"
-	line "ganz verstehe."
+	para "ich nicht ganz"
+	line "verstehe."
 
-	para "Also!"
+	para "Darum!"
 
 	para "Ich möchte, dass"
 	line "ihr beide #mon"
 
-	para "aufzieht, die ich"
-	line "kürzlich gefangen"
-	cont "habe."
+	para "trainiert, die"
+	line "ich vor kurzem"
+	cont "gefangen habe."
 endc
 	done
 
@@ -1538,7 +1538,7 @@ LyraAnnouncesGymChallengeText:
 
 	para "Auch wenn ich das"
 	line "nie erreiche…"
-	cont "Ich will es ver-"
+	cont "ich will es ver-"
 	cont "suchen."
 
 	para "Ich will sehen,"
@@ -1547,8 +1547,8 @@ LyraAnnouncesGymChallengeText:
 
 	para "Prof. Lind, tut"
 	line "mir leid, dass ich"
-	cont "nicht mehr helfen"
-	cont "kann."
+	cont "hier nicht mehr"
+	cont "helfen kann."
 
 	para "Ich werde alle"
 	line "Arenen in Johto"
@@ -1572,8 +1572,9 @@ ElmAfterTicketText:
 	para "Ob sie wohl zuerst"
 	line "die Liga erreicht?"
 
-	para "Grüss Prof. Eich"
-	line "in Kanto von mir!"
+	para "Überbringe Prof."
+	line "Eich in Kanto"
+	cont "meine Grüsse!"
 	done
 
 ElmBeforeBattleText:
@@ -1672,7 +1673,8 @@ AideText_TheftTestimony:
 ElmsLabOfficerText1:
 	text "Ich hörte, dass"
 	line "hier ein #mon"
-	cont "gestohlen wurde."
+	cont "gestohlen worden"
+	cont "sei."
 
 	para "Regel Nummer eins!"
 	line "“Der Täter kehrt"
@@ -1685,14 +1687,15 @@ ElmsLabOfficerText1:
 	done
 
 ElmsLabOfficerText2:
-	text "Was?"
+	text "Wie?"
 
-	para "Du hast gegen so"
-	line "einen Trainer ge-"
-	cont "kämpft?"
+	para "Du hast gegen ei-"
+	line "nen solchen"
+	cont "Trainer gekämpft?"
 
-	para "Kennst du zufällig"
-	line "seinen Namen?"
+	para "Hat er dir auch"
+	line "seinen Namen ge-"
+	cont "nannt?"
 	done
 
 ElmsLabOfficerText3:

@@ -4303,47 +4303,47 @@ _TimeAskOkayText::
 
 SECTION "_TimesetAskDSTText", ROMX
 _TimesetAskDSTText::
-	text "Do you want to"
-	line "switch to Daylight"
-	cont "Saving Time?"
+	text "Möchtest du auf"
+	line "Sommerzeit um-"
+	cont "stellen?"
 	done
 
 SECTION "_TimesetDSTText", ROMX
 _TimesetDSTText::
-	text "I set the clock"
-	line "forward by one"
-	cont "hour."
+	text "Ich stelle die Uhr"
+	line "eine Stunde vor."
 	prompt
 
 SECTION "_TimesetAskNotDSTText", ROMX
 _TimesetAskNotDSTText::
-	text "Is Daylight Saving"
-	line "Time over?"
+	text "Ist die Sommer-"
+	line "zeit vorüber?"
 	done
 
 SECTION "_TimesetNotDSTText", ROMX
 _TimesetNotDSTText::
-	text "I put the clock"
-	line "back one hour."
+	text "Ich stelle die Uhr"
+	line "eine Stunde zu-"
+	cont "rück."
 	prompt
 
 SECTION "_TimesetAskAdjustDSTText", ROMX
 _TimesetAskAdjustDSTText::
-	text "Do you want to"
-	line "adjust your clock"
+	text "Möchtest du die"
+	line "Uhrzeit der"
 
-	para "for Daylight"
-	line "Saving Time?"
+	para "Sommerzeit an-"
+	line "passen?"
 	done
 
 SECTION "_MomLostGearBookletText", ROMX
 _MomLostGearBookletText::
-	text "I lost the in-"
-	line "struction booklet"
-	cont "for the #gear."
+	text "Ich habe die An-"
+	line "leitung für den"
+	cont "#Com verloren."
 
-	para "Come back again in"
-	line "a while."
+	para "Komm später noch"
+	line "mal wieder."
 	prompt
 
 SECTION "WonderTradeQuestionText", ROMX

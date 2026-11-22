@@ -156,8 +156,9 @@ PokeComNursePokerusText:
 	done
 
 DifficultBookshelfText:
-	text "It's full of"
-	line "difficult books."
+	text "Hier gibt es"
+	line "unzählige komplexe"
+	cont "Bücher."
 	done
 
 PictureBookshelfText:
