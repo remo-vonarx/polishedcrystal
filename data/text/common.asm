@@ -1897,16 +1897,17 @@ _ContainedMoveText::
 SECTION "_TMHMNotCompatibleText", ROMX
 _TMHMNotCompatibleText::
 	text_ram wStringBuffer2
-	text " is"
-	line "not compatible"
-	cont "with "
+	text " ist"
+	line "nicht kompatibel"
+	cont "mit "
 	text_ram wStringBuffer1
 	text "."
 
-	para "It can't learn"
+	para "Es kann"
 	line ""
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	cont "nicht erlernen."
 	prompt
 
 SECTION "_BadgeRequiredText", ROMX
@@ -3813,7 +3814,7 @@ ResetInitialOptionsText::
 SECTION "_LearnedMoveText", ROMX
 _LearnedMoveText::
 	text_ram wMonOrItemNameBuffer
-	text " learned"
+	text " erlernt"
 	line ""
 	text_ram wStringBuffer2
 	text "!"
@@ -3823,69 +3824,72 @@ _LearnedMoveText::
 
 SECTION "_MoveAskForgetText", ROMX
 _MoveAskForgetText::
-	text "Which move should"
-	next "be forgotten?"
+	text "Welche Attacke"
+	next "soll es vergessen?"
 
 	para ""
 	done
 
 SECTION "_StopLearningMoveText", ROMX
 _StopLearningMoveText::
-	text "Stop learning"
-	line ""
+	text ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "nicht erlernen?"
 	done
 
 SECTION "_DidNotLearnMoveText", ROMX
 _DidNotLearnMoveText::
 	text_ram wMonOrItemNameBuffer
-	line "did not learn"
-	cont ""
+	line "hat "
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	cont "nicht erlernt."
 	prompt
 
 SECTION "_AskForgetMoveText", ROMX
 _AskForgetMoveText::
 	text_ram wMonOrItemNameBuffer
-	line "wants to learn"
-	cont ""
+	line "will "
 	text_ram wStringBuffer2
-	text "!"
+	text ""
+	cont "erlernen!"
 
-	para "Should it forget"
-	line "an old move for"
-	cont ""
+	para "Soll eine andere"
+	line "Attacke zugunsten"
+	cont "von "
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	cont "vergessen werden?"
 	done
 
 SECTION "Text_MoveForgetCount", ROMX
 Text_MoveForgetCount::
-	text "1, 2 and…"
+	text "1, 2 und…"
 	text_pause
 	text_end
 
 SECTION "_MoveForgotText", ROMX
 _MoveForgotText::
-	text " Poof!"
+	text " Schwupp!"
 	text_pause
 
 	para ""
 	text_ram wMonOrItemNameBuffer
-	text " forgot"
+	text " hat"
 	line ""
 	text_ram wStringBuffer1
-	text "."
+	text ""
+	cont "vergessen!"
 
-	para "And…"
+	para "Und…"
 	prompt
 
 SECTION "_MoveCantForgetHMText", ROMX
 _MoveCantForgetHMText::
-	text "HM moves can't be"
-	line "forgotten now."
+	text "VM-Attacken"
+	line "können jetzt nicht"
+	cont "gelöscht werden!"
 	prompt
 
 SECTION "_CardFlipPlayWithThreeCoinsText", ROMX

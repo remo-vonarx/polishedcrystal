@@ -414,16 +414,18 @@ HappinessText1:
 
 RegisteredNumber1Text:
 	text "<PLAYER> speichert"
-	line ""
+	line "die Nummer von"
+	cont ""
 	text_ram wStringBuffer3
-	text "s Nummer."
+	text "."
 	done
 
 RegisteredNumber2Text:
 	text "<PLAYER> speichert"
-	line ""
+	line "die Nummer von"
+	cont ""
 	text_ram wStringBuffer3
-	text "s Nummer."
+	text "."
 	done
 
 VendingMachineText:

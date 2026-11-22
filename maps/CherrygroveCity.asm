@@ -486,10 +486,10 @@ GuideGentsHouseSignText:
 CherrygroveCityAdvancedTipsSignText:
 	text "Profi-Tipps!"
 
-	para "Wer zehn #bälle"
-	line "kauft, bekommt im"
+	para "Im PKMN-Supermarkt"
+	line "gibt es zu je zehn"
 
-	para "PKMN-Supermarkt"
-	line "einen Premierball"
-	cont "gratis dazu!"
+	para "#bällen einen"
+	line "Premierball gratis"
+	cont "dazu!"
 	done
