@@ -1298,7 +1298,7 @@ GiftEggSentToPCText:
 	; The Egg was sent to <BOX>.
 	text_farend _EggSentToPCText
 String_Egg:
-	rawchar "Egg@"
+	rawchar "Ei@"
 
 InitNickname:
 	push de

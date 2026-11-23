@@ -90,12 +90,13 @@ Its internals get a short design of their own before coding. Fixed here:
 
 ### Task 1: Pokémon names, types, abilities, natures
 
-- [ ] All 251 Gen 2 Pokémon names (Kristall's table, re-cased).
-- [ ] All other Pokémon names (Polished's later-generation ones, PokeAPI); `Egg`, `Bad Egg`.
-- [ ] The A–Z Pokédex order, re-sorted for the German names.
-- [ ] The 18 types, the type label and type chart graphics, the egg groups (Faithful's too).
-- [ ] All ability names, all natures.
-- [ ] Test: every name in the Pokédex list, summary, party and a battle; types, abilities and natures on the summary and in the Pokédex.
+- [x] All 251 Gen 2 Pokémon names (Kristall's table, re-cased).
+- [x] All other Pokémon names (Polished's later-generation ones, PokeAPI); `Egg`, `Bad Egg`.
+- [x] The A–Z Pokédex order, re-sorted for the German names.
+- [x] The 18 types, the type label and type chart graphics, the egg groups (Faithful's too).
+- [x] All ability names, all natures.
+- [x] Test: every name in the Pokédex list, summary, party and a battle; types, abilities and natures on the summary and in the Pokédex.
+- Decided 2026-11-23: Drache (not Kristall's Drachen); the four abilities renamed with Gen 9 keep their older names (Tempomacher, Fußangel, Aufheber, Hagelalarm); Regular's water egg groups Amphibie, Fisch, Wirbellos; the first attempt's type graphics (GLOSSARY.md).
 - [ ] Ship.
 
 ### Task 2: Moves, TMs and HMs
