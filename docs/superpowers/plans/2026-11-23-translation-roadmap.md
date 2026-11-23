@@ -64,13 +64,13 @@
 
 ### Task G3: Font
 
-- [ ] Ä ä Ö ö Ü ü ß in the 7 selectable fonts and in `vwf.png` with their widths; `utils/grayscale.py` after each edit.
-- [ ] Charmap slots: the umlauts as the first attempt placed them, ß in a slot to propose (the first attempt found only `<KE>`, `$d1`). Ask before committing to the slots.
-- [ ] Naming screen: umlauts and ß on the keyboards (`data/text/input_chars.asm`), layout proposed first.
-- [ ] Propose whether the Huffman vowel set takes Ä Ö Ü ä ö ü (three places, ROM0 cost).
-- [ ] Update the profile's **Charmap and font** row; the first entries go into a new `GLOSSARY.md`.
-- [ ] Test: every new glyph in each font on the naming screen and in a text box, and in the variable-width font in Bill's PC.
-- [ ] Ship.
+- [x] Ä ä Ö ö Ü ü ß in the 8 selectable fonts (Unown included) and in `vwf.png` with their widths; `utils/grayscale.py` after each edit.
+- [x] Charmap slots: the umlauts as the first attempt placed them, ß in a slot to propose (the first attempt found only `<KE>`, `$d1`). Ask before committing to the slots. (Chosen 2026-11-23: umlauts in the Spanish slots, ß in `'d`.)
+- [x] Naming screen: umlauts and ß on the keyboards (`data/text/input_chars.asm`), layout proposed first. (Chosen: as Kristall, no ß key.)
+- [x] Propose whether the Huffman vowel set takes Ä Ö Ü ä ö ü (three places, ROM0 cost). (Chosen: no.)
+- [x] Update the profile's **Charmap and font** row; the first entries go into a new `GLOSSARY.md`.
+- [x] Test: every new glyph in each font on the naming screen and in a text box, and in the variable-width font in Bill's PC.
+- [x] Ship.
 
 ### Task G4: Kristall tool and checks
 
