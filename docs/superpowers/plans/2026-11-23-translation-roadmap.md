@@ -29,7 +29,7 @@
 2. Capitalised words that aren't names, or names split across a break (`des NACHTs`, `ARENA-` / `LEITER`): re-cased as German writes them (`des Nachts`, `Arena-` / `leiter`). Test in Task G4.
 3. A name swap that lengthens a Kristall line past 18 tiles (`ZINNTURM` → `Glockenturm`): the tool re-breaks that paragraph, and the width check passes. Test in Task G4.
 4. A Faithful twin left in English while its Regular line is German: the English-left check reads both branches. Test in Task G4.
-5. Texts missing from the dump (Oak at Mr. Pokémon's house, 65:78xx; the Route 31 letter scene, 69:5acd): the tool pairs them through the scripts' pointers. Test in Task G4.
+5. Texts missing from the dump (Oak at Mr. Pokémon's house, 65:78xx; the Route 31 letter scene, 69:5abc): the tool pairs them through the scripts' pointers. Test in Task G4.
 
 ## Every chunk
 
@@ -76,12 +76,14 @@
 
 Its internals get a short design of their own before coding. Fixed here:
 
-- [ ] `utils/kristall_pairs.py`: from `~/Development/pokecrystal`'s `pokecrystal.gbc` and `.sym` and Kristall's ROM, follow the same script and text pointers in both ROMs and write `.claude/upload/kristall_pairs.json` (pret label, English, Kristall text with its commands, Kristall address). Nintendo text stays in `.claude/upload/`, never committed.
-- [ ] `utils/kristall_write.py`: for each Polished text whose English equals a pret text (ignoring case and line breaks), write Kristall's text, re-cased and with names swapped as **Project decisions** say; re-break a paragraph only when a swap overflows a line.
-- [ ] `utils/check_kristall.py`: re-derives every inherited text and fails on any difference.
-- [ ] The first attempt's `check_text_width.py`, `check_text_mode.py`, `check_names.py`, `check_order.py`, adapted to this `master`, plus an English-left check over both ROMs' text, skipping only `DEBUG` blocks.
-- [ ] Tests in `utils/tests/test_kristall.py`, one per **Review Focus** line: `test_ambiguous_english_is_flagged`, `test_recase_non_names_and_split_words`, `test_name_swap_rebreaks_paragraph`, `test_faithful_twin_left_english_is_reported`, `test_dump_gaps_are_paired` (Oak 65:78xx, Route 31 69:5acd). Run: `python3 -I -m pytest utils/tests -q`, all pass.
-- [ ] Update the profile's **Check scripts** row.
+- [x] `utils/kristall_pairs.py`: from `~/Development/pokecrystal`'s `pokecrystal.gbc` and `.sym` and Kristall's ROM, follow the same script and text pointers in both ROMs and write `.claude/upload/kristall_pairs.json` (pret label, English, Kristall text with its commands, Kristall address). Nintendo text stays in `.claude/upload/`, never committed.
+- [x] `utils/kristall_write.py`: for each Polished text whose English equals a pret text (ignoring case and line breaks), write Kristall's text, re-cased and with names swapped as **Project decisions** say; re-break a paragraph only when a swap overflows a line.
+- [x] `utils/check_kristall.py`: re-derives every inherited text and fails on any difference.
+- [x] The first attempt's `check_text_width.py`, `check_text_mode.py`, `check_names.py`, `check_order.py`, adapted to this `master`, plus an English-left check over both ROMs' text, skipping only `DEBUG` blocks.
+- [x] Tests in `utils/tests/test_kristall.py`, one per **Review Focus** line: `test_ambiguous_english_is_flagged`, `test_recase_non_names_and_split_words`, `test_name_swap_rebreaks_paragraph`, `test_faithful_twin_left_english_is_reported`, `test_dump_gaps_are_paired` (Oak 65:78xx, Route 31 69:5abc). Run: `python3 -I -m pytest utils/tests -q`, all pass.
+- [x] `utils/dex_sources.py` (asked for 2026-11-23): the game each Pokédex entry not from Crystal comes from, through PokeAPI, and that game's German.
+- [x] Update the profile's **Check scripts** row.
+- Result (2026-11-23): 6,017 pret texts paired with Kristall's (map 3,464, engine 671, section 653, phone 536, dex 251, move descriptions 251, item descriptions 191; a text counts under the walk that reached it first). Left unpaired: 75 texts of mobile features Polished removed, 20 unused, 46 engine texts reached only through code Kristall moved (taken from the dump in their chunks), and the radio's `_OPT_IntroText1` with its stub, which Kristall splits in two (`KRISTALL_SPLITS`). Polished's 9,362 texts: 4,633 word for word, 33 ambiguous, 959 changed, 3,737 new. The writer's dry run: 2,059 texts ready; flags: 2,509 capitals for `kristall_case.tsv` (K), 33 ambiguous, 7 partly Faithful, 4 with ";" (no glyph), 2 with a Kristall variable Polished lacks, 1 where Polished added a pause, 1 with code inside. Pokédex entries: 247 Crystal's, 1 Crystal's edited, 20 from PokeAPI's German (6 edited), 29 from PokéWiki (18 edited), 39 regional forms, 1 without a source (Dudunsparce).
 - [ ] Ship (no in-game pass: the tool writes nothing yet).
 
 ## Names
@@ -162,6 +164,7 @@ From here each task holds only what K left: Polished's changed lines, starting f
 ### Task 10: Pokédex
 
 - [ ] The entries K left, the categories, the Pokédex screens (search, area page, variable-width labels).
+- [ ] The entries not from Crystal: the German of the game each comes from (`utils/dex_sources.py`; **Project decisions**), PokéWiki where PokeAPI has none.
 - [ ] Test: entries of every kind of Pokémon (Gen 2, later, forms), every Pokédex screen.
 - [ ] Ship.
 
