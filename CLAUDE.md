@@ -1,0 +1,207 @@
+# CLAUDE.md
+
+Guardrails for translating a Pokémon ROM hack into German. They apply to every task unless the task explicitly overrides them.
+
+Everything game-specific lives in **Project profile** and **Project decisions**. The rest of this file is the same for every hack, Game Boy or GBA, and refers to those two sections: engine, emulator and tool details belong in the profile.
+
+## Project profile
+
+Fill in once per hack. If a field is empty or turns out wrong, find the right value, tell me, and propose the change.
+
+| Field | Value |
+|---|---|
+| Hack and repo | Polished Crystal, `Rangi42/polishedcrystal` (remote `upstream`). Work happens on the fork `remo-vonarx/polishedcrystal` (remote `origin`): each change gets its own branch and a PR there (`gh pr create --repo remo-vonarx/polishedcrystal`), merged as **Git** says, except Upstream merges (see **Upstream merges** below the table).|
+| Based on | pret `pokecrystal`: Polished shares pret's early git history (initial commit 2012-03-04) and has diverged since. Its English writes pret's capitals in mixed case (`Sprout Tower` for `SPROUT TOWER`, `#mon` for `#MON`), has `<PLAYER>` where pret has `<PLAY_G>`, and re-breaks or rewords many lines, so compare a text with pret's ignoring case and line breaks. Local reference clone, read-only: `~/Development/pokecrystal` at `9ce4c4e50` (2026-11-16); `make -j8 compare` builds every English ROM with its `.sym` (labels and addresses), all matching the official SHA-1s. Crystal Legacy at `9a5b41a27` is pret's English with Legacy's edits, not pret itself |
+| German original | Pokémon Kristall-Edition. ROM: `.claude/upload/Pokemon - Kristall-Edition (Germany).gbc` (SHA-1 `accb5842…`). `.claude/upload/` is excluded locally in `.git/info/exclude`. Text dump: `.claude/upload/german_text_dump.txt` (`[texts]` 5,692, `[pokemon names]` 251, `[trainers]` 541 by class and position, `[names]` 393 lists; each line starts with bank:address), made by `.claude/upload/dump_german_text.py`; verbatim, but it skips texts that start with a line break or a RAM name (`text_ram`), such as Oak's speech at Mr. Pokémon's house (65:78xx) and the Route 31 letter scene (69:5acd); read such blocks from the ROM, text command by text command. The ROM uses the new spelling (`dass`, never `daß`; `Straße`), lowercase `du`/`dein`, the lowercase possessive s (`LINDs`, `BILLs`) and names in capitals (`PROF. LIND`) |
+| Previous translations to reuse | Crystal Legacy's German: `~/Development/Pokemon_Crystal_Legacy`, branch `main`, German in all its maps since its slice 34; its English before translation is at `9a5b41a27`. It follows the German original (capitals, ß). The first attempt (`archive/first-attempt`) is not a source for text |
+| Textbox | 18 characters × 2 lines (`TEXTBOX_INNERW`, `constants/text_constants.asm`), fixed-width font (one tile per character). The ▼ sits on the bottom border (`LoadBlinkingCursor` in `home/text.asm`, tile 18,17), not on a text tile, so every line keeps all 18 tiles. The variable-width font (`gfx/font/vwf.png`, measured in pixels) prints in Bill's PC, the battle ability pop-ups, the Pokédex (`engine/pokedex/pokedex.asm`, `area.asm`) and the judge machine |
+| Text commands | `text`, `next1` (one row down), `next`, `line`, `cont`, `para`, `done`, `prompt`, `page` (`macros/scripts/text.asm`); inline: `text_start`, `text_ram`, `text_promptbutton`, `text_asm`, `text_decimal`, `text_pause`, `text_sound`, `text_today`, `text_far`, `text_farend`, `text_plural`, `text_end`, and `stop_compressing_text` before a label that a text falls through into. Pokédex entries (`data/pokemon/dex_entries.asm`): a category `db "…@"`, then 3 lines per page (`next`), 2 pages (`page`), ending in `@` |
+| Length constants | `constants/text_constants.asm`: `NAME_LENGTH` and `MON_NAME_LENGTH` 11 (10 characters + terminator), `PLAYER_NAME_LENGTH` 8 (7 + terminator), `BOX_NAME_LENGTH` 9, `MOVE_NAME_LENGTH`, `ITEM_NAME_LENGTH` and `TRAINER_CLASS_NAME_LENGTH` 13 (12 + terminator) |
+| Charmap and font | `constants/charmap.asm`; fonts in `gfx/font/` (`normal`, `bold`, `chicago`, `italic`, `micr`, `narrow`, `serif`, picked in the options, plus `vwf.png`). No German letters yet: `$c8`–`$cf` hold `é É á <BOLDH> í ó ¿ ¡`. The first attempt put Ä ä Ö ö Ü ü into the Spanish slots and found no slot for ß but `<KE>` (`$d1`); its designs are on `archive/first-attempt` (`docs/superpowers/specs/2026-11-14-umlaut-glyphs-design.md`, `docs/adr/0003-ss-instead-of-eszett.md`). `#` (`$4d`) prints "Poké", the token `#mon` (`$4e`) "Pokémon"; `<PK>` `<MN>` are one tile each. After editing a font PNG, run `python3 utils/grayscale.py <png>` |
+| Huffman tables | Text is Huffman-compressed with tables built from the current text (`constants/huffman_text.inc`); regenerate them after a text change as `utils/huffman.py`'s docstring says. Its context model treats `AEIOUaeiou` as vowels in three places that must agree: `utils/huffman.py` (`VOWELS`), the encoder in `macros/scripts/text.asm` and the decoder in `home/text.asm` (`.check_vowel`, ROM0) |
+| ROM space | 2 MB MBC3; Upstream's `c321e5284` has 24,324 bytes free (1.16%, `make freespace`), far too little for German text. The first attempt's 4 MB build (`docs/adr/0001-4mb-rom-for-virtual-console.md` on the archive) is not on `master` |
+| Build | `brew install rgbds coreutils` (RGBDS 1.0 or newer, here 1.0.4). `make` builds `polishedcrystal-<version>.gbc`; `make vc` also the `_vc.gbc` helper and the VC patch. The variants `faithful`, `debug`, `monochrome`, `noir`, `hgss` and `pocket` share object files: run `make tidy` whenever you switch, also back to plain `make vc`. A clean build prints Upstream's 2 `-Wassert` warnings (unnecessary `farcall GetKeyItemAttr`; they compare banks at link time, so longer text can add or remove one without a text bug) and, when the tools compile, 9 clang "unknown warning option" lines; a task adds no other warning. `-Wunmapped-char` is an error: the character assembles to garbage. make 3.81 compares times to the second: to force a relink, delete both ROMs and the `.patch` |
+| Debug build | `make tidy && make debug vc` builds `polishedcrystal-debug-<version>.gbc`. The radio in the player's room (`PlayersHouseRadio`, `maps/PlayersHouse2F.asm`) sets the clock and gives every Pokégear card, the Pokédex, the judge machine, all key items, TMs and HMs, useful items, decorations, money and all badges; holding A+B walks through walls (`engine/overworld/player_movement.asm`) |
+| Virtual Console | The deliverable is the game as a Virtual Console title on the New Nintendo 3DS: a change counts as working once it holds there. `make vc` builds the VC patch from `vc.patch.template`, which refers to labels in the link code; those labels keep their names. Base CIA: `vc/local/dumps/kristall-vc-v0.1.0.standard.cia`, the user's Kristall VC dump, never committed (`vc/local/` is excluded in `.git/info/exclude`). Stock Virtual Console reaches only 2 MB; poke-cia's MBC30 patch (in `vc/local/poke-cia`) fits this Base CIA unchanged. Packaging scripts and their README are on `archive/first-attempt` (`vc/`) |
+| Check scripts | None on `master`. The first attempt's (`utils/check_text_width.py`, `check_text_mode.py`, `check_names.py`, `check_order.py`) are on `archive/first-attempt` |
+| Emulator | Not chosen. Azahar (in `vc/local/azahar`) runs the real Virtual Console from the Base CIA: input by movie, screenshots by wall-clock time, no RAM access (the first attempt's `vc/playtest.py` and `vc/gen_ctm.py`). PyBoy reads and writes RAM; untested with a 4 MB ROM |
+| Reading the screen | The tilemap `wTilemap` (`ram/wram0.asm`), 20×18 tiles at `$C440` |
+| Test entry points | None yet. `vc/local/saves/` holds the first attempt's saves (`polished-before-nbt`, `polished-nbt-town`, `kristall-elms-lab`, `empty`), untested with Upstream's build |
+
+### Upstream merges
+
+- Upstream fixes bugs within days: merge `upstream/master` regularly and keep the fork's diff limited to the translation. German replaces the English in place, so a merge conflicts wherever Upstream changed a translated line.
+- Each Upstream merge gets its own PR, merged with `gh pr merge --merge`: a squash would drop the link to Upstream's history, and every later merge would conflict again on the same translated lines.
+- **Drift guard.** Before merging, find the Upstream text that changed under the translation without a conflict:
+  1. `git fetch upstream`, then `base=$(git merge-base master upstream/master)`: the last merged Upstream commit, `c321e5284` until the first merge.
+  2. `git diff --name-only $base master`: the files this fork changed.
+  3. `git diff $base upstream/master -- <those files>`: Upstream's changes to them.
+  4. `git diff --name-only --diff-filter=A $base upstream/master`: files Upstream added. Those in a translated area hold new English text too.
+  5. Translate every changed or new text line from steps 3 and 4 in the merge PR.
+
+## Project decisions
+
+Settled choices for this hack. If one of the topics below is not decided yet and a task touches it, ask before translating.
+
+- Choices from the first attempt (`archive/first-attempt`: its `TERMS.md`, ADRs and design docs) are not settled: follow the German original and ask again when one comes up. Its code (4 MB build, umlauts, check scripts, `vc/` scripts) comes back only as a task of its own.
+- Name casing: as in Upstream's English, mixed case, with the `#mon` token for "Pokémon". Lines from the German original keep their words and line breaks; only the case of the words it writes in capitals changes (`PROF. LIND` → `Prof. Lind`, `KNOFENSA-TURM` → `Knofensa-Turm`, `#MON` → `#mon`).
+- ß: as the German original writes it. Its lines keep their spelling verbatim: mostly the new spelling (`dass`, `Straße`), and the few older forms such as `erfaßt` stay. A word it writes in capitals gets its ß back when re-cased (`SIEGESSTRASSE` → `Siegesstraße`). New text writes ß as the new spelling does. The font needs a slot for ß first (see the profile).
+- Names that changed after Gen 2: the modern German name where Upstream's English uses the modern English name (Bell Tower: `Glockenturm`), the German original's name where Upstream keeps the Gen 2 one (Silver Cave: `Silberhöhle`). A modern name over its Name limit takes the German original's name instead, where the original has one. Where it has none, flag the name and ask me in a question, with your suggested abbreviations as the options, proposed as **When text doesn't fit** describes.
+- ROM space: 4 MB, the first attempt's build brought back as groundwork (see the profile).
+- Order of work: `docs/superpowers/specs/2026-11-23-translation-roadmap-design.md`. Every text that is still pret's English word for word goes in through the Kristall tool in one pass after the name chunks, never typed by hand.
+- Both ROMs, Regular and Faithful (`make faithful`, canon stats, types and names), are translated. Faithful-only text (`if DEF(FAITHFUL)`, about 50 lines) goes with its Regular twin in the same chunk, and every chunk also builds `make tidy && make faithful vc`.
+- Debug-only text (`if DEF(DEBUG)`) stays English; the assembler leaves it out of both ROMs, and it must stay out. Where a debug line replaces a normal one (Mom's first talk in `maps/PlayersHouse1F.asm`), test the normal line in the normal build.
+- Player address: the player picks one of four pictures (`PLAYER_MALE`, `PLAYER_FEMALE`, `PLAYER_ENBY`, `PLAYER_BETA`). Keep the German original's lines as they are; propose every wording that addresses the player in Polished's own text and let me confirm it.
+- Characters from later games: official German names from the game they come from (PokéWiki).
+- One-off NPC names without an official source: propose a German name and flag it.
+- Script jumps: when longer text pushes a short script jump (`ifequalfwd`, `iftruefwd`, `sjumpfwd`, …) past 255 bytes, the build warns `Value $1xx is not 8-bit` (`-Wtruncation`) and the jump lands in the wrong place. Switch that jump to its long form (`ifequal`, `iftrue`, `sjump`, …) in the same PR without asking, and list it in the PR body. When text gets shorter and the long macro warns "… can be …fwd", switch back the same way.
+
+## Source priority
+
+For each string, use the first source that covers it:
+
+1. `GLOSSARY.md`: decisions already made are final unless I reopen them.
+2. Dump of the German original: if the string exists there, take it verbatim. If the hack changed the English text, start from the original German wording and change only what differs.
+3. Previous translations: reuse them if they match the current English text.
+4. Official German text from later games: PokéWiki (pokewiki.de); PokeAPI (pokeapi.co, language `de`) for species, moves, items, abilities and natures.
+5. Own translation: allowed, but always flagged as such and listed for review. See "New content from the hack" below.
+
+- Take each menu string from the German original's same screen, not from a glossary row for the same English word elsewhere: the original can use different words on different screens (Yellow Legacy: CANCEL is ZURÜCK in lists, ABBRECHEN on the trade screen). If the dump lacks a string, search the original ROM for its bytes and read the box setup in the code that loads it.
+- PokeAPI documentation: https://pokeapi.co/docs/v2. Useful endpoints: `pokemon-species`, `move`, `item`, `ability`, `nature`. German text is in the `names`, `genera` and `flavor_text_entries` lists, filtered by `language.name == "de"` (e.g. https://pokeapi.co/api/v2/item/assault-vest).
+- PokeAPI's German data is incomplete for some entries. If a German value is missing or looks wrong, check PokéWiki; if the two disagree, PokéWiki wins and you mention the difference.
+- Cache PokeAPI responses locally in the scratchpad instead of requesting the same resource again.
+- Bulbapedia and other English sources are for understanding context only, never for German wording.
+- Never present a name as "official" without a source. If nothing is found, say so.
+
+### New content from the hack
+
+Text the hack added has no German original, so translate it faithfully:
+
+- Keep the full meaning: every piece of information, instruction and hint. Add nothing, leave nothing out, don't "improve" or rewrite the content.
+- Keep the tone, the character's voice, jokes and references. Write natural German, not word for word, but don't adapt freely beyond what German needs.
+- Terms that already exist in the game (items, moves, places, characters) use their official German names, even inside new text.
+- Wordplay, puns and references that don't work in German: propose a German equivalent that keeps the effect, explain the original, and flag it.
+- Match the German original's style so new text doesn't stand out next to the old.
+
+## Working agreement
+
+- Code, labels, comments, file names and commit messages stay in English. Only player-visible text is translated.
+- Read `GLOSSARY.md` before every task; add every new decision to it.
+- State assumptions. Ask rather than guess, especially for names.
+- Show every own or changed text for review in two parts, wherever a text is up for review:
+  1. **Context**: the situation (where in the game, who speaks to whom, what just happened) and what is said right before and after the text.
+  2. The text side by side in three columns: the hack's English, the German original and the new German, each column as wide as the textbox and laid out as the lines appear in the box, with a blank line between boxes. Write `(none: new in the hack)` in the middle column where the original has no such text.
+
+  ```
+  ENGLISH           | GERMAN ORIGINAL    | OURS
+  ------------------+--------------------+------------------
+  We'll be waiting  | Ich werde auf dich | Wir werden auf
+  for you, <PLAYER>.| warten, <PLAYER>.  | dich warten,
+                    |                    | <PLAYER>.
+  ```
+
+- Collect open questions during a task and ask them together in question dialogs (AskUserQuestion), up to 4 per dialog. Each question opens with the text's context and names the file:line, the English and the source, so it stands on its own. Its options are the German candidates, your pick first and marked "(Recommended)", each saying what differs and previewing its three columns, one text per preview.
+- Scope each task to one kind of text, all of it across the game: all Pokédex entries, all Pokémon names, all types, all TMs and HMs, all receiving texts, all trainer names, everything on the Pokégear, and so on. No drive-by refactors.
+- Change string contents only. Don't rename labels, reorder data or touch game logic. If a translation needs a code change (e.g. wider menu), propose it first.
+- Reference material (dumps, original ROMs, previous translations) is read-only.
+
+## Text constraints
+
+- Never exceed the textbox from the profile. With variable-width fonts, measure in pixels, not characters.
+- If the profile says the ▼ covers a text tile, a line in the box's bottom row that waits for a button (before a scroll, a new box or a prompt) holds one character less: the character under the ▼ is lost.
+- Pokédex entries: follow the line limits and the ending in the profile (some engines add a closing "." themselves).
+- Keep the semantics of the text commands: re-breaking lines is fine; changing how a box ends is not.
+- Count variables (player and rival name, Pokémon, item and move names, numbers) at their maximum length. Take the limits from the length constants, never from memory.
+- Names and fixed-width strings (menus, padded labels) must respect their length constant or exact padded width.
+- Use only characters defined in the charmap. Verify that ä, ö, ü, Ä, Ö, Ü, ß and any punctuation you use map to glyphs in the font. Don't add charmap entries or font graphics without asking.
+- Know the special charmap tokens (e.g. `#` for "POKé") and follow the project decisions on whether to use them.
+- Avoid German constructions whose article, case or gender depends on a variable (e.g. "einen/eine <ITEM>"). Rephrase neutrally.
+- If the player can be male or female, avoid gendered forms for the player, or follow how the German original handles it.
+
+### When text doesn't fit
+
+Never leave out a word, a piece of information or a nuance to make something fit. Work through these steps in order:
+
+1. Fit the full words. In dialogue, re-break the lines or add another line or box before touching any word.
+2. Look for an official abbreviation: the German original, later German games (PokéWiki) or `GLOSSARY.md`, in that order.
+3. If none exists, suggest abbreviations yourself and ask before using them. For each, show the full word, the limit, one or two abbreviation options, and why each one stays unambiguous next to similar terms.
+4. Abbreviate as little as possible: shorten one word, not several, and keep the meaning unambiguous. Use the same abbreviation for the same word everywhere and add it to `GLOSSARY.md`.
+
+Example: *Assault Vest* is officially "Offensivweste" (13 characters); the item name limit is 12.
+
+| Option | Verdict |
+|---|---|
+| Offensivwest | Bad: silently cut, looks like a typo |
+| Weste | Bad: drops what makes this item distinct |
+| Offensivw. | Weak: keeps the distinct part, but loses what kind of item it is |
+| Offens.weste | Good: one word shortened, item type intact, still recognisable |
+
+Ask me with the last two options, then record the choice in `GLOSSARY.md`.
+
+When a name and a generic part (trainer class, title) share a limited space, shorten the generic part. Never shorten the name: it is what identifies the character.
+
+Example: *OFFICER ROCKY* doesn't fit.
+
+| Option | Verdict |
+|---|---|
+| OFFICER ROC | Bad: name silently cut |
+| OFFICER RO. | Bad: the name is abbreviated and no longer recognisable |
+| ROCKY | Bad: drops the trainer class |
+| OFF. ROCKY | Good: class shortened, name intact |
+
+Use the same class abbreviation for every trainer of that class.
+
+Exceptions to these rules exist only where the project decisions say so (e.g. Pokédex entries that may be shortened).
+
+## Style
+
+- Write ß as the project decisions say.
+- Match the tone of the German original; keep each NPC's voice (kids, elders, villain teams, gym leaders) consistent.
+- Reuse the original's in-game terminology (e.g. "Arena", "Orden", "Beutel") rather than modern synonyms, unless the glossary says otherwise.
+
+## Validation (every task)
+
+- The build must succeed without errors. If a section or bank overflows because German text is longer, stop and report, unless the project decisions say how to handle that overflow. Don't move sections on your own otherwise.
+- If the profile names a Virtual Console build, it must build too, without errors or warnings.
+- Re-check every changed line against the textbox and length limits.
+- Test in the game once the task's whole chunk is translated, in one pass over all of it (see below): translate every menu text, say, then play through the menus.
+- Before a merge, run the profile's merge check, if it names one, on the PR against main. Every text it shows as changed must be one the PR touched.
+- Finish with a summary: files touched, strings translated, own proposals (flagged), open questions, screens seen and screens not reached.
+
+## Testing in the game
+
+A text, menu or graphics change is done when you have seen it in the emulator and it matches the German original **by position**: the same characters in the same places, unless the hack itself changed that spot or the new spelling writes ss where the original has ß (dass for daß). Where it did, compare against the hack's English screen instead: same layout, German text fits. A string existing somewhere in the ROM proves nothing.
+
+1. After any text edit, run the check scripts from the profile. Ignore only the known false alarms listed there.
+2. Clone the repo into the scratchpad and do all test work there. Hooks, ROM patches and save states stay in that clone and are never committed.
+3. Build the debug ROM (or the normal one if there is none) as described in the profile.
+4. Drive it from a script with the emulator from the profile, with its dependencies in a venv in the scratchpad. Read the screen as the profile's **Reading the screen** says to check each position, and save a screenshot for me. Hand the emulator its save as a stream and stop it without writing a save file (the profile's **Emulator** row says how): for the original ROM, the file would land in the read-only reference folder.
+5. Open the same screen in the German original ROM and compare it position by position: tile by tile with a fixed-width font, in pixels with a variable-width one. For menus, compare the box coordinates too, and every state of the menu: after a choice, markers can overwrite letters. The original ROM's RAM addresses differ from the hack's symbol file: never reuse those addresses on it. Where the two ROMs give the same glyph different tile ids (see the profile), compare by glyph. Compare screens that stay still: frames caught while text is still being typed differ by timing alone.
+6. Tell me which screens you saw, and name the ones you could not reach.
+
+### Reaching a screen
+
+- Use the debug menu if the hack has one.
+- For screens you can't reach directly, add a hook at the top of a routine that runs every overworld frame. The hook reads an unused RAM byte and jumps to a test case: a warp, a battle, or a call to any routine. Save a state in the overworld and reload it for each case.
+- Battles can often be started by setting the opponent and level variables in the overworld and taking one step.
+- If a warp keeps the old position (e.g. between maps with the same tileset), warp through an interior first.
+- If the game has a real-time clock, set it so time-of-day and weekday texts appear.
+- Screens that show saved data (a Hall of Fame list, say) need that data in the save: write it into the save RAM before booting.
+- Where save states don't work (printer, link), boot from a prepared in-game save. Find walking paths in a run with save states, then replay the inputs.
+- When you find a reliable way to reach a kind of screen, propose adding it to the profile.
+
+### Link features (trades, link battles)
+
+- Run two emulator instances joined by an emulated link cable; the profile's **Emulator** row says how.
+- Save states break the link, so each run boots from scratch. Prepare an in-game save standing in front of the link receptionist.
+- One side clocks the link (master), the other follows (slave), and the handshake decides the roles. Where the emulator differs from hardware and the handshake fails, patch each copy so it takes its own role, then check both roles in RAM right after connecting. Record every patch in the profile.
+- If the link menu misses inputs, hold each button longer (about 12 frames was needed in Yellow Legacy).
+
+### Printer
+
+- If the game prints (Game Boy Printer), compare the printouts with the German original's too, not only the screens. The profile's **Emulator** row says how to capture them.
+
+## Git
+
+- One-line commit messages, no `Co-Authored-By` or session trailers.
+- Push a chunk's branch once the chunk is verified (both builds, the check scripts, the in-game pass). Then open its PR, review it, and squash-merge it with one summarising sentence as the subject, one line and never a PR number: `gh pr merge <n> --repo remo-vonarx/polishedcrystal --squash --subject "<sentence>" --body "" --delete-branch`. Confirm `gh pr view <n> --json state` says `MERGED` and that `git log -1 --format=%B origin/master` holds only that line, update the local `master`, and start the next chunk.
