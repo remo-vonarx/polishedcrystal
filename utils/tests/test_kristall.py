@@ -29,8 +29,8 @@ def test_decode_pret_text_ram(pret_rom):
 
 def test_decode_kristall_text(kristall_rom):
     t = decode_text(kristall_rom, 0x69, 0x5A91, KRISTALL_CHARS, {})
-    assert t.commands == [("text", "<PLAYER> übergibt"), ("line", "das #MON, das"),
-                          ("cont", "den BRIEF trägt."), ("done",)]
+    # Kristall's text is checked by its hash and one word: Nintendo's text stays out of the repo
+    assert digest(t.commands) == "6c137db10ee6" and "übergibt" in t.commands[0][1]
 
 
 # --- Task 2: the lockstep walk -------------------------------------------------------------
@@ -42,6 +42,12 @@ from kristall_script import EVENT_COMMANDS, LockstepError, walk_script  # noqa: 
 
 COMMAND_ID = {m.name: i for i, m in EVENT_COMMANDS.items()}
 IFEQUAL, JUMPTEXT, SCALL, END = (COMMAND_ID[n] for n in ("ifequal", "jumptext", "scall", "end"))
+
+
+def digest(value):
+    """A short hash of a Kristall text, to check it exactly without committing Nintendo's words."""
+    import hashlib
+    return hashlib.sha1(repr(value).encode()).hexdigest()[:12]
 
 
 def fake_rom(chunks):
@@ -67,7 +73,7 @@ def test_dump_gaps_are_paired(pairs):
 
 def test_map_text_pairs_with_dump(pairs):
     p = by_label(pairs, "Text_Route31HandOverMailMon")
-    assert p["de_addr"] == "69:5a91" and p["de"][0] == ("text", "<PLAYER> übergibt")
+    assert p["de_addr"] == "69:5a91" and "übergibt" in p["de"][0][1]
 
 
 def test_shared_text_pairs_once(pairs):  # Review Focus 1
@@ -133,8 +139,15 @@ def test_structure_ignores_line_breaks():
 # --- Task 3: phone, text sections, tables, names, coverage ---------------------------------
 
 def test_text_sections_pair_by_order(pairs):
-    sec = [p for p in pairs["texts"] if p["kind"] == "section"]
-    assert len(sec) >= 1651
+    # all 1,651 texts of pret's text sections, but the one Kristall splits; a text a pointer
+    # reached first keeps that kind, so count by address
+    from kristall_pairs import PRET, TEXT_SECTIONS
+    from kristall_rom import read_sections
+    sections = read_sections(PRET / "pokecrystal.map")
+    ranges = [sections[name] for name in TEXT_SECTIONS]
+    inside = [p for p in pairs["texts"] if any(
+        int(p["en_addr"][:2], 16) == b and lo <= int(p["en_addr"][3:], 16) <= hi for b, lo, hi in ranges)]
+    assert len(inside) == 1651 - 1
     assert by_label(pairs, "_StoppedEvolvingText")["structure_differs"] is True
     assert by_label(pairs, "_CantUseTeleportText")["structure_differs"] is True
 
@@ -418,9 +431,9 @@ def test_pret_stub_is_not_a_candidate():
 def test_item_descriptions_pair_with_dump(pairs):
     def words(label):
         return " ".join(c[1] for c in by_label(pairs, label)["de"] if len(c) > 1)
-    assert words("PotionDesc") == "Füllt KP um 20 auf."
-    assert words("BicycleDesc") == "Ein Klapprad, um schneller zu sein."
-    assert words("MasterBallDesc").startswith("Der beste BALL")
+    assert digest(words("PotionDesc")) == "bd09ea60871e" and "KP" in words("PotionDesc")
+    assert digest(words("BicycleDesc")) == "d20783a135b0" and "Klapprad" in words("BicycleDesc")
+    assert "BALL." in words("MasterBallDesc").split()[:3]
 
 
 def test_hyphens_dont_matter():
@@ -432,7 +445,7 @@ def test_hyphens_dont_matter():
 
 def test_same_label_settles_ambiguous():
     from kristall_index import classify
-    a = fake_pair("ThrashDescription", en=EN, de=[("text", "Hält 2-3 Runden."), ("done",)])
+    a = fake_pair("ThrashDescription", en=EN, de=[("text", "Hallo, Welt."), ("done",)])
     b = fake_pair("OutrageDescription", en=EN, de=[("text", "Wirkt 2-3 Runden."), ("done",)])
     [e] = classify([fake_text(commands=EN, label="OutrageDescription")], {"texts": [a, b]}, [], {}, {})
     assert e.cls == "word" and e.pair is b
@@ -600,9 +613,9 @@ def test_dex_entry_keeps_its_at_sign():
     from kristall_write import german_for
     ours = [("category", "Seed"), ("text", "While it is young."), ("page", "It grows.@")]
     pret = [("category", "SEED"), ("text", "While it is young."), ("page", "It grows.")]
-    de = [("category", "SAMEN"), ("text", "Da es noch klein"), ("page", "ist, wächst es.")]
+    de = [("category", "SAMEN"), ("text", "Solange es jung"), ("page", "ist, wächst es.")]
     assert german_for(word_entry(polished=ours, pret_en=pret, de=de), {}, {"SAMEN": "Samen"}).commands == [
-        ("category", "Samen"), ("text", "Da es noch klein"), ("page", "ist, wächst es.@")]
+        ("category", "Samen"), ("text", "Solange es jung"), ("page", "ist, wächst es.@")]
 
 
 def test_writer_is_idempotent(tmp_path):
@@ -639,9 +652,9 @@ def test_text_with_code_inside_is_not_written(tmp_path):
 def test_kristall_contraction_tiles(pairs):
     def words(label):
         return " ".join(c[1] for c in by_label(pairs, label)["de"] if len(c) > 1 and isinstance(c[1], str))
-    assert "Wie steht's?" in words("HaveGoodRodText")
-    assert "Was soll's!" in words("SailorStanlySeenText")
-    assert "Ich bin's, BILL!" in words("BillPhoneNewlyFullText")
+    assert "steht's?" in words("HaveGoodRodText").split()  # one word each: no Nintendo text
+    assert "soll's!" in words("SailorStanlySeenText").split()
+    assert "bin's," in words("BillPhoneNewlyFullText").split()
 
 
 def test_render_category():
@@ -725,3 +738,160 @@ def test_writer_matches_texts_sharing_a_label(tmp_path):
     entries = classify(list(iter_texts(tmp_path, ("maps",))), {"texts": [fake_pair("P", en=HI, de=HALLO)]}, [], {}, {})
     write([e for e in entries if e.cls == "word"], {}, {}, dry_run=False, root=tmp_path)
     assert (tmp_path / "maps/X.asm").read_text() == 'T:\n\ttext "Something else"\n\tdone\n\n\ttext "Hallo!"\n\tdone\n'
+
+
+# --- final review: sections pair only between proven pairs (C1) ------------------------------
+
+def bare_builder(en, de):
+    from kristall_pairs import Builder
+    b = Builder.__new__(Builder)
+    b.en, b.de, b.texts, b.labels, b.ram, b.notes = en, de, {}, {}, {}, []
+    b.context = {"kind": "map", "where": None}
+    return b
+
+
+def tiny(*glyphs):
+    return [0x00, *glyphs, 0x57]  # TX_START, glyphs, done
+
+
+def test_order_and_pointer_pairings_must_agree():
+    en = fake_rom({0x4000: tiny(0x80)})
+    de = fake_rom({0x4000: tiny(0x80), 0x4010: tiny(0x81)})
+    b = bare_builder(en, de)
+    b.add_text((1, 0x4000), (1, 0x4000), ["Text 1", "0"], by="order")
+    with pytest.raises(LockstepError):
+        b.add_text((1, 0x4000), (1, 0x4010), ["map"], by="pointer")
+
+
+def test_two_pointer_twins_are_both_kept():
+    en = fake_rom({0x4000: tiny(0x80)})
+    de = fake_rom({0x4000: tiny(0x80), 0x4010: tiny(0x81)})
+    b = bare_builder(en, de)
+    b.add_text((1, 0x4000), (1, 0x4000), ["map"])
+    assert [a["de_addr"] for a in b.add_text((1, 0x4000), (1, 0x4010), ["map"])["de_alts"]] == ["01:4010"]
+
+
+def test_section_pairs_only_between_proven_pairs():
+    # pret P0 P1 P2 P3; Kristall splits P1 in two: K0 K1a K1b K2 K3, then padding; P2 -> K2 is proven
+    en = fake_rom({0x4000: tiny(0x80) + tiny(0x81) + tiny(0x82) + tiny(0x83)})
+    de = fake_rom({0x4000: tiny(0x80) + tiny(0x91) + tiny(0x92) + tiny(0x82) + tiny(0x83) + [0, 0, 0, 0]})
+    b = bare_builder(en, de)
+    b.add_text((1, 0x4006), (1, 0x4009), ["map"])
+    b.pair_section("Text 1", 1, 0x4000, 0x400b)
+    assert b.texts[(1, 0x4009)]["de_addr"] == "01:400c"  # P3 -> K3, after the proven pair
+    assert (1, 0x4000) not in b.texts and (1, 0x4003) not in b.texts  # P0, P1: counts differ, unpaired
+    assert any("unpaired" in n for n in b.notes)
+
+
+def test_section_without_padding_after_it_is_unpaired():
+    en = fake_rom({0x4000: tiny(0x80) + tiny(0x81)})
+    de = fake_rom({0x4000: tiny(0x80) + tiny(0x90) + tiny(0x81) + [0, 0, 0, 0]})  # one text more
+    b = bare_builder(en, de)
+    b.pair_section("Text 1", 1, 0x4000, 0x4005)
+    assert b.texts == {}
+
+
+def test_known_kristall_split_is_stepped_over(monkeypatch):
+    import kristall_pairs
+    monkeypatch.setattr(kristall_pairs, "KRISTALL_SPLITS", {"_Split": 2})
+    en = fake_rom({0x4000: tiny(0x80) + tiny(0x81) + tiny(0x82)})
+    de = fake_rom({0x4000: tiny(0x80) + tiny(0x91) + tiny(0x92) + tiny(0x82) + [0, 0, 0, 0]})
+    b = bare_builder(en, de)
+    b.labels = {(1, 0x4003): "_Split"}
+    b.pair_section("Text 1", 1, 0x4000, 0x4008)
+    assert b.texts[(1, 0x4000)]["de_addr"] == "01:4000" and b.texts[(1, 0x4006)]["de_addr"] == "01:4009"
+    assert (1, 0x4003) not in b.texts and any("split" in n for n in b.notes)
+
+
+def test_text_1_follows_kristalls_split(pairs):
+    assert by_label(pairs, "_OPT_IntroText2")["de_addr"] == "6f:4979"
+    assert by_label(pairs, "_ComeAgainText")["de_addr"] == "6f:61d0"  # was 6f:61bf, the text before its twin
+    assert by_label(pairs, "_NoCoinCaseText")["de_addr"] == "6f:5597"
+    assert not any(p["label"] == "_OPT_IntroText1" for p in pairs["texts"])
+
+
+def test_label_doesnt_settle_twins_with_different_german():
+    from kristall_index import classify
+    p = fake_pair("T", en=EN, de=[("text", "Bis bald!"), ("done",)])
+    p["de_alts"] = [{"de_addr": "01:4100", "de": [("text", "Tschüss!"), ("done",)], "path": []}]
+    [e] = classify([fake_text(commands=EN, label="T")], {"texts": [p]}, [], {}, {})
+    assert e.cls == "ambiguous"
+
+
+def test_choice_by_kristall_address_takes_that_twin():
+    from kristall_index import classify
+    p = fake_pair("T", en=EN, de=[("text", "Bis bald!"), ("done",)])
+    p["de_alts"] = [{"de_addr": "01:4100", "de": [("text", "Tschüss!"), ("done",)], "path": []}]
+    [e] = classify([fake_text(commands=EN, label="T")], {"texts": [p]}, [], {}, {"T": "01:4100"})
+    assert e.cls == "word" and e.pair["de"] == [("text", "Tschüss!"), ("done",)] and e.pair["de_addr"] == "01:4100"
+
+
+def test_fit_flags_runtime_line_too_wide_on_its_own():  # Review Focus 3
+    from kristall_write import fit
+    assert fit([("text", "<USER> flieht in den Glockenturm!"), ("done",)]) is None
+
+
+def test_fit_flags_runtime_paragraph_a_swap_lengthened():  # Review Focus 3
+    from kristall_write import fit
+    original = [("text", "Zum "), ("text_ram", "wStringBuffer1"), ("text", " ZINNTURM!"), ("done",)]
+    swapped = [("text", "Zum "), ("text_ram", "wStringBuffer1"), ("text", " Glockenturm!"), ("done",)]
+    assert fit(swapped, original=original) is None
+
+
+def test_fit_keeps_runtime_paragraph_recasing_didnt_lengthen():
+    from kristall_write import fit
+    original = [("text", "<USER> nutzt"), ("line", "#MON-KRAFT!"), ("done",)]
+    recased = [("text", "<USER> nutzt"), ("line", "#mon-Kraft!"), ("done",)]
+    assert fit(recased, original=original) == recased
+
+
+def test_text_opening_with_line_after_its_label_is_parsed(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "data/r.asm", '_RadioText1:\n\tline "Mary: Prof.Oak\'s"\n\tdone\n\n_RadioText2:\n\tline "#mon Talk!"\n\tdone\n')
+    assert [(t.label, t.commands) for t in iter_texts(tmp_path, ("data",))] == [
+        ("_RadioText1", [("line", "Mary: Prof.Oak's"), ("done",)]), ("_RadioText2", [("line", "#mon Talk!"), ("done",)])]
+
+
+def test_empty_text_before_line_becomes_polisheds_form():
+    from kristall_write import german_for
+    e = word_entry(polished=[("line", "Hi!"), ("done",)], pret_en=[("text", ""), ("line", "Hi!"), ("done",)],
+                   de=[("text", ""), ("line", "Hallo!"), ("done",)])
+    assert german_for(e, {}, {}).commands == [("line", "Hallo!"), ("done",)]
+
+
+def test_kristall_sound_takes_polisheds_command():
+    from kristall_write import german_for
+    e = word_entry(polished=[("text", "Got it!"), ("text_sound", "SFX_ITEM"), ("text_promptbutton",), ("done",)],
+                   pret_en=[("text", "Got it!"), ("sound_item",), ("text_promptbutton",), ("done",)],
+                   de=[("text", "Erhalten!"), ("sound_item",), ("text_promptbutton",), ("done",)])
+    assert german_for(e, {}, {}).commands == [
+        ("text", "Erhalten!"), ("text_sound", "SFX_ITEM"), ("text_promptbutton",), ("done",)]
+
+
+def test_polished_added_prompt_is_not_word_for_word():
+    from kristall_index import classify
+    polished = fake_text(commands=[("text", "Hi!"), ("text_promptbutton",), ("done",)])
+    [e] = classify([polished], {"texts": [fake_pair("P", en=HI)]}, [], {}, {})
+    assert e.cls != "word"
+
+
+def test_kristall_without_polisheds_pause_is_flagged():
+    from kristall_write import german_for
+    e = word_entry(polished=[("text", "A"), ("text_pause",), ("line", "B"), ("done",)],
+                   pret_en=[("text", "A"), ("text_pause",), ("line", "B"), ("done",)],
+                   de=[("text", "A"), ("line", "B"), ("done",)])
+    r = german_for(e, {}, {})
+    assert r.commands is None and any("pause" in f for f in r.flags)
+
+
+def test_kristall_command_polished_lacks_is_flagged():
+    from kristall_write import german_for
+    e = word_entry(de=[("text", "Hallo!"), ("text_low",), ("done",)])
+    r = german_for(e, {}, {})
+    assert r.commands is None and any("text_low" in f for f in r.flags)
+
+
+def test_swapped_split_name_leaves_no_leading_space():
+    from kristall_write import recase
+    out, unknown = recase([("text", "Der ZINN-"), ("line", "TURM ist hoch."), ("done",)], {"ZINNTURM": "Glockenturm"}, {})
+    assert out == [("text", "Der Glockenturm"), ("line", "ist hoch."), ("done",)] and unknown == []

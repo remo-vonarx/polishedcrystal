@@ -3,7 +3,8 @@
 
 A text runs from its start to done, prompt, text_end, text_farend or text_asm. It starts at a
 text command (text, text_ram, text_far, ...) after a label, or inline after a script command
-(jumpthistext, generictrainer, ...); either way its label is the nearest label above it. Labels
+(jumpthistext, generictrainer, ...), or at any string command (line, para, ...) right after a
+label; either way its label is the nearest label above it. Labels
 and stop_compressing_text inside a text are passed over: the text falls through.
 
 Each file is read twice, as the Regular ROM and as the Faithful ROM assemble it (`if DEF(FAITHFUL)`
@@ -31,6 +32,17 @@ STARTS = {"text", "text_start", "text_ram", "text_far", "text_farend", "text_dec
 INLINE = {"text_start", "text_ram", "text_promptbutton", "text_decimal", "text_pause", "text_sound",
           "text_today", "text_far", "text_plural"}
 ENDS = {"done", "prompt", "text_end", "text_farend", "text_asm"}
+# inline commands that print nothing but change how the text plays: a pause, a wait for a button,
+# a sound (Polished's text_sound SFX_…, pret's sound_item, sound_dex_fanfare_50_79, …), pret's
+# text_low (Polished has none)
+MARKS = {"text_pause", "text_promptbutton", "text_sound", "text_low"}
+
+
+def mark(command):
+    """The kind of a MARKS command ("sound" for every sound), else None."""
+    if command[0] == "text_sound" or command[0].startswith("sound_"):
+        return "sound"
+    return command[0] if command[0] in MARKS else None
 PASS_OVER = {"stop_compressing_text", "assert", "static_assert"}  # passed over inside a text
 
 LABEL = re.compile(r"^(\.?[A-Za-z_][\w.]*)::?")
@@ -134,7 +146,11 @@ def texts_in(numbered, path):
         if command is None:
             previous = None
             continue
-        if (command[0] in STARTS or command[0] == "category") and previous != "text":
+        # a text starts at a text command, or at any string command right after a label (radio
+        # texts open with `line`, printed on the box's second row)
+        opens = command[0] in STARTS or command[0] == "category" or \
+            (previous == "label" and command[0] in STRING_COMMANDS)
+        if opens and previous != "text":
             starts.append((i, label))
         previous = "text" if command[0] in STRING_COMMANDS | INLINE | ENDS | PASS_OVER | {"category"} else None
         if ends(command):
@@ -166,7 +182,7 @@ def parse_file(path, root=ROOT, source=None):
     rel = Path(path).as_posix()
     text = source(rel) if source else (Path(root) / rel).read_text(encoding="utf-8")
     lines = text.splitlines()
-    if not any(start in text for start in ("text", "text_far")):
+    if "text" not in text and '"' not in text:  # no text command and no string: nothing to parse
         return []
     regular = {(lab, start): (end, cmds) for lab, start, end, cmds in texts_in(assemble(lines, set()), rel)}
     faithful = {(lab, start): (end, cmds) for lab, start, end, cmds in texts_in(assemble(lines, {"FAITHFUL"}), rel)}

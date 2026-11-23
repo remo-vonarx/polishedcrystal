@@ -64,7 +64,7 @@ def test_shortened_entry_is_traced_as_edited():
     species = {"flavor_text_entries": [
         flavor("After deflecting attacks with its hard leaf shield, it strikes back with its sharp leek "
                "stalk. The leek stalk is both weapon and food.", "en", "shield"),
-        flavor("Nachdem es mit seinem Schild pariert hat, schlägt es mit seiner Lauchstange zurück.", "de", "shield")]}
+        flavor("Ein erfundener Satz statt des Spieltexts.", "de", "shield")]}
     o = origin([("text", "After deflecting attacks with its hard leaf shield, it strikes back with its sharp"),
                 ("next", "leek stalk.@")], species)
     assert (o.cls, o.versions, o.edited) == ("pokeapi", ["shield"], True) and o.score == 1.0

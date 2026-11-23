@@ -28,7 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # python3 -I leaves the script's directory out
 
-from asm_text import ROOT, STRING_COMMANDS, assemble, iter_texts, strip_comment  # noqa: E402
+from asm_text import ROOT, STRING_COMMANDS, assemble, iter_texts, mark, strip_comment  # noqa: E402
 
 RENAMES = ROOT / "utils" / "english_renames.tsv"
 CHOICES = ROOT / "utils" / "kristall_choices.tsv"
@@ -51,7 +51,8 @@ LETTER = "A-Za-zÄÖÜäöüéß"
 
 def normalize(commands, renames):
     """A text's words for comparing: lower case, line breaks as spaces, a hyphen between letters
-    dropped (so "bat-" / "tle" and "dark-type" compare as one word), variables as <var>, "#mon"
+    dropped (so "bat-" / "tle" and "dark-type" compare as one word), variables as <var>, pauses,
+    prompts and sounds as <kind> (asm_text.mark), "#mon"
     as pokémon, "#" as poké. Typography doesn't count: pret's <……> glyph is "……", curly quotes
     are "'", "1,500" is "1500", and spaces next to a variable or between "……" go. The box ending
     doesn't count. Renames (pret -> Polished) apply first, in one pass, to whole words written
@@ -68,6 +69,8 @@ def normalize(commands, renames):
             out += "<var>"
         elif c[0] in ("text_far", "text_farend"):
             out += " <far> "
+        elif mark(c):
+            out += f"<{mark(c)}>"
     s = re.sub(r"\s+", " ", out.replace("<BSP>", " ").replace("¯", " ")).strip()
     if renames:
         table = dict(renames)
@@ -77,7 +80,7 @@ def normalize(commands, renames):
     s = re.sub(f"(?<=[{LETTER}#])-(?=[{LETTER}])", "", s)
     s = s.replace("<……>", "……").replace("“", "'").replace("”", "'").replace("‘", "'").replace("’", "'")
     s = re.sub(r"(?<=\d),(?=\d{3})", "", s)
-    s = re.sub(r"\s*(<var>|……)\s*", r"\1", s)
+    s = re.sub(r"\s*(<var>|<sound>|<text_\w+>|……)\s*", r"\1", s)
     return s.replace("#mon", "pokémon").replace("#", "poké")
 
 
@@ -299,7 +302,8 @@ def label_lines(lines):
 # -- sorting ----------------------------------------------------------------------------------
 
 def load_choices(root=ROOT):
-    """Polished label -> pret label, the answers to ambiguous texts (kristall_choices.tsv)."""
+    """Polished label -> pret label or Kristall address (bb:aaaa), the answers to ambiguous texts
+    (kristall_choices.tsv); an address picks one of a pret text's Kristall twins."""
     path = Path(root) / "utils" / "kristall_choices.tsv"
     out = {}
     if path.exists():
@@ -308,6 +312,11 @@ def load_choices(root=ROOT):
                 polished, pret, *_ = line.split("\t")
                 out[polished] = pret
     return out
+
+
+def one_german(pair):
+    """True if all of a pret text's Kristall twins say the same."""
+    return len({german_key(pair["de"])} | {german_key(a["de"]) for a in pair["de_alts"]}) == 1
 
 
 def is_stub(commands):
@@ -388,11 +397,15 @@ def classify(texts, pairs, renames, locations, choices):
             cands = [plist[i] for i in found]
             germans = {german_key(p["de"]) for p in cands} | {german_key(a["de"]) for p in cands for a in p["de_alts"]}
             here = [p for p in cands if where and p.get("where") == where]
-            same = [p for p in cands if p["label"] == t.label]
-            chosen = [p for p in cands if p["label"] == choices.get(t.label)]
+            # a pret label or Where can't tell a text's Kristall twins apart: only a choice of address can
+            same = [p for p in cands if p["label"] == t.label and one_german(p)]
+            choice = choices.get(t.label)
+            chosen = [p for p in cands if p["label"] == choice and one_german(p)] + [
+                {**p, "de": twin["de"], "de_addr": twin["de_addr"], "de_alts": []}
+                for p in cands for twin in [p] + p["de_alts"] if twin["de_addr"] == choice]
             if len(germans) == 1:
                 out.append(Entry(t, "word", (here or cands)[0], cands, 1.0))
-            elif len({german_key(p["de"]) for p in here}) == 1 and not any(p["de_alts"] for p in here):
+            elif len({german_key(p["de"]) for p in here}) == 1 and all(one_german(p) for p in here):
                 out.append(Entry(t, "word", here[0], cands, 1.0))
             elif same:
                 out.append(Entry(t, "word", same[0], cands, 1.0))

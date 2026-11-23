@@ -42,6 +42,12 @@ OBJECTTYPE_SCRIPT, OBJECTTYPE_ITEMBALL, OBJECTTYPE_TRAINER = 0, 1, 2
 BGEVENT_SCRIPTS = range(0, 5)  # read, up, down, right, left
 BGEVENT_IFSET, BGEVENT_IFNOTSET, BGEVENT_ITEM = 5, 6, 7
 
+# pret texts that Kristall splits into several texts in an order-paired section, with the count:
+# the section walk steps over all of Kristall's parts and leaves the pret text unpaired (its chunk
+# takes it from the dump). Read from both ROMs: Kristall prints "MARGIT:" (6f:4961) and
+# "PROF. EICHs" (6f:496b) where pret has one text, MARY: PROF.OAK'S.
+KRISTALL_SPLITS = {"_OPT_IntroText1": 2}
+
 
 def map_constants(pret_dir):
     """(group, number) -> map constant, counted as pret's constants/map_constants.asm counts them."""
@@ -203,10 +209,18 @@ class Builder:
         else:
             self.other[kind] += 1
 
-    def add_text(self, en_ptr, de_ptr, path, kind=None, where_=None):
+    def add_text(self, en_ptr, de_ptr, path, kind=None, where_=None, by="pointer"):
+        """Pair a pret text with its Kristall twin. `by`: "pointer" when both ROMs' pointers lead
+        there, "order" when it's paired by its place in a run or section. A second twin reached by
+        pointers is kept as an alt (classify weighs their German); a second twin where either
+        pairing is by order means the order pairing is wrong, and the build stops."""
         known = self.texts.get(en_ptr)
-        if known is not None:  # a second Kristall twin: kept, and flagged later if its German differs
+        if known is not None:
             if known["de_addr"] != where(de_ptr) and where(de_ptr) not in [a["de_addr"] for a in known["de_alts"]]:
+                if by == "order" or known.get("by") == "order":
+                    raise LockstepError(f'{known["label"]}: paired with {known["de_addr"]} by {known.get("by")} '
+                                        f'({" > ".join(known["path"])}), with {where(de_ptr)} by {by} '
+                                        f'({" > ".join(path)})')
                 try:
                     de = decode_text(self.de, *de_ptr, KRISTALL_CHARS, self.ram)
                 except ValueError as e:
@@ -227,13 +241,14 @@ class Builder:
             "en": self.named(en.commands), "de": self.named(de.commands, kristall=True),
             "structure_differs": shape(en.commands) != shape(de.commands),
             "de_alts": [],  # other Kristall twins: {"de_addr", "path", "de"}
+            "by": by,
         }
         self.texts[en_ptr] = record
         far_en = [c[1] for c in en.commands if c[0] == "text_far"]
         far_de = [c[1] for c in de.commands if c[0] == "text_far"]
         if len(far_en) == len(far_de):
             for fe, fd in zip(far_en, far_de):
-                self.add_text(fe, fd, path + [f"text_far@{where(fe)}"], record["kind"], record["where"])
+                self.add_text(fe, fd, path + [f"text_far@{where(fe)}"], record["kind"], record["where"], by)
         return record
 
     def named(self, commands, kristall=False):
@@ -410,29 +425,63 @@ class Builder:
     def walk_sections(self):
         sections = read_sections(self.pret_dir / "pokecrystal.map")
         for name in TEXT_SECTIONS:
-            bank, start, end = sections[name]
-            ea = da = start
-            count = 0
-            while ea <= end:
-                while self.en.byte(bank, ea) == 0x50 and ea <= end:  # a stray "@" (text_end) between
-                    ea += 1                                            # texts: pret has an unused one
-                while self.de.byte(bank, da) == 0x50:  # after _BlindingFlashText, Kristall a few others
-                    self.notes.append(f"{name}: stray @ at Kristall {where((bank, da))}")
-                    da += 1
-                if ea > end:
-                    break
-                text = decode_text(self.en, bank, ea, PRET_CHARS, self.ram)
-                twin = decode_text(self.de, bank, da, KRISTALL_CHARS, self.ram)
-                record = self.texts.get((bank, ea))
-                if record is not None and where((bank, da)) not in [record["de_addr"]] + [
-                        a["de_addr"] for a in record["de_alts"]]:
-                    raise LockstepError(f'{name}: {record["label"]} was paired with {record["de_addr"]} '
-                                        f'through {" > ".join(record["path"])}, but its place gives {where((bank, da))}')
-                record = self.add_text((bank, ea), (bank, da), [name, str(count)])
+            self.pair_section(name, *sections[name])
+
+    def pair_section(self, name, bank, start, end):
+        """Pair a text section's texts by order, but only between proven pairs: the section start,
+        the texts pointers already paired (scripts, phone, code), and Kristall's end (padding,
+        "00 00"). A stretch whose count differs between the ROMs (Kristall splits a text) stays
+        unpaired, with a note: an order pairing there would be a guess."""
+        en_starts, ea = [], start
+        while True:
+            while self.en.byte(bank, ea) == 0x50 and ea <= end:  # a stray "@" (text_end) between texts:
+                ea += 1                                            # pret has an unused one
+            if ea > end:
+                break
+            en_starts.append(ea)
+            ea += decode_text(self.en, bank, ea, PRET_CHARS, self.ram).length
+        if ea != end + 1:
+            raise LockstepError(f"{name}: texts end at {where((bank, ea))}, the section at {where((bank, end))}")
+
+        def skip(da):  # Kristall's stray "@"s, after _BlindingFlashText and a few others
+            while self.de.byte(bank, da) == 0x50:
+                da += 1
+            return da
+        anchors = [(-1, None)]
+        for i, ea in enumerate(en_starts):
+            record = self.texts.get((bank, ea))
+            if record is not None:
+                db, da = (int(x, 16) for x in record["de_addr"].split(":"))
+                if db != bank:
+                    raise LockstepError(f'{name}: {record["label"]} was paired into bank {db:02x}')
+                anchors.append((i, da))
+        anchors.append((len(en_starts), "end"))
+        for (i0, d0), (i1, d1) in zip(anchors, anchors[1:]):
+            if i1 - i0 < 2:
+                continue
+            da = skip(start if d0 is None else d0 + decode_text(self.de, bank, d0, KRISTALL_CHARS, self.ram).length)
+            twins = []
+            try:
+                for k in range(i0 + 1, i1):
+                    parts = KRISTALL_SPLITS.get(self.labels.get((bank, en_starts[k])), 1)
+                    twins.append(da if parts == 1 else None)
+                    for _ in range(parts):
+                        da = skip(da + decode_text(self.de, bank, da, KRISTALL_CHARS, self.ram).length)
+            except ValueError:
+                da = None
+            lands = da is not None and (da == d1 if d1 != "end" else self.de.byte(bank, da) == 0 and
+                                        self.de.byte(bank, da + 1) == 0)
+            if not lands:
+                self.notes.append(f"{name}: pret texts {i0 + 1}–{i1 - 1} don't line up with Kristall's "
+                                  f"after {where((bank, d0 or start))}: unpaired")
+                continue
+            for k, twin in zip(range(i0 + 1, i1), twins):
+                if twin is None:
+                    label = self.labels.get((bank, en_starts[k]), where((bank, en_starts[k])))
+                    self.notes.append(f"{name}: {label} is split in {KRISTALL_SPLITS[label]} texts in Kristall: unpaired")
+                    continue
+                record = self.add_text((bank, en_starts[k]), (bank, twin), [name, str(k)], by="order")
                 record["kind"] = "section"
-                ea, da, count = ea + text.length, da + twin.length, count + 1
-            if ea != end + 1:
-                raise LockstepError(f"{name}: texts end at {where((bank, ea))}, the section at {where((bank, end))}")
 
     # -- texts in code banks ------------------------------------------------------------------
 
@@ -463,7 +512,7 @@ class Builder:
             for e, d, *_ in run:
                 done.add(e)
                 fresh = e not in self.texts
-                record = self.add_text(e, d, ["code", where(start)], kind="engine")
+                record = self.add_text(e, d, ["code", where(start)], kind="engine", by="order")
                 if fresh:
                     record["kind"] = "engine"
 
@@ -491,7 +540,8 @@ class Builder:
         for e in sorted(known):
             record = self.texts[e]
             for ge, gd, *_ in pair_gap(self.en, self.de, e, known[e], starts, known):
-                new = self.add_text(ge, gd, ["between pairs", record["label"]], kind=record["kind"], where_=None)
+                new = self.add_text(ge, gd, ["between pairs", record["label"]], kind=record["kind"], where_=None,
+                                    by="order")
                 new["where"] = None
 
     # -- tables ------------------------------------------------------------------------------
@@ -703,8 +753,8 @@ def build_pairs(pret_dir=PRET, kristall=KRISTALL_ROM):
     trainers = trainer_constants(b.pret_dir)
     b.walk_maps()
     b.walk_phone(trainers)
+    b.walk_code_texts()  # first: its text_far stubs prove pairs that anchor the sections
     b.walk_sections()
-    b.walk_code_texts()
     b.fill_gaps()
     b.walk_tables()
     return b.result(b.read_name_tables(trainers))

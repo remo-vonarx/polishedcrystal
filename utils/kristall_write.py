@@ -28,7 +28,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # python3 -I leaves the script's directory out
 
-from asm_text import ENDS, LABEL, ROOT, STRING_COMMANDS, parse_file, render, strip_comment  # noqa: E402
+from asm_text import ENDS, LABEL, ROOT, STRING_COMMANDS, mark, parse_file, render, strip_comment  # noqa: E402
 from check_text_width import FILE_WIDTHS, TOKEN, string_width  # noqa: E402
 from kristall_index import git_source, polished_names  # noqa: E402
 
@@ -162,7 +162,8 @@ def recase(commands, names, case):
             else:  # a name of another length: whole on the first line, fit re-breaks
                 part1, part2 = new, ""
             out[a][1] = first[:head.start()] + part1
-            out[b][1] = part2 + second[tail.end():]
+            rest = second[tail.end():]
+            out[b][1] = part2 + (rest if part2 else rest.lstrip())  # no space left at the line's start
             done_head[a], done_tail[b] = head.start(), len(part2)
             break
     for i in strings:
@@ -190,6 +191,13 @@ def rebuild(polished_en, pret_en, kristall_de, ram=None):
     if len(ours_vars) != len(pret_vars):
         return None, [f"variables differ: pret {len(pret_vars)}, Polished {len(ours_vars)}"]
     mapping = {variable_key(p): o for p, o in zip(pret_vars, ours_vars)}
+    # pauses, prompts and sounds: Polished's own commands, in Kristall's places, one for one
+    ours_marks = [c for c in polished_en if mark(c)]
+    de_marks = [c for c in kristall_de if mark(c)]
+    if [mark(c) for c in de_marks] != [mark(c) for c in ours_marks]:
+        return None, [f"pauses, prompts or sounds differ: Kristall {' '.join(c[0] for c in de_marks) or 'none'}, "
+                      f"Polished {' '.join(c[0] for c in ours_marks) or 'none'}"]
+    ours_marks = iter(ours_marks)
     out = []
     for c in kristall_de:
         if c[0] in ENDS:
@@ -203,6 +211,8 @@ def rebuild(polished_en, pret_en, kristall_de, ram=None):
                 out.append(tuple(c))
             else:
                 flags.append(f"Kristall variable {c[1]} has no Polished form")
+        elif mark(c):
+            out.append(tuple(next(ours_marks)))
         elif c[0] in STRING_COMMANDS or c[0] == "category":
             s = c[1]
             for old, new in TOKEN_MAP.items():
@@ -210,6 +220,9 @@ def rebuild(polished_en, pret_en, kristall_de, ram=None):
             out.append((c[0], s))
         else:
             out.append(tuple(c))
+    # Kristall's `text ""` before a line command: Polished opens such a text with the line command
+    if len(out) > 1 and out[0] == ("text", "") and out[1][0] in ("line", "next", "cont"):
+        out = out[1:]
     last = polished_en[-1] if polished_en else None
     if last and last[0] in ENDS:
         out.append(tuple(last))
@@ -239,27 +252,50 @@ def paragraphs(commands):
     return out
 
 
-def line_widths(cmds):
+def known_width(s):
+    """Tiles of a string, a runtime token (<USER>, whose width isn't known) counted as none."""
+    return sum(max(string_width(token), 0) for token in TOKEN.findall(s.split("@")[0]))
+
+
+def line_widths(cmds, measure=string_width):
     widths = []
     for c in cmds:
         if c[0] in STRING_COMMANDS:
             if c[0] == "text" and widths:
-                widths[-1] += string_width(c[1])
+                widths[-1] += measure(c[1])
             else:
-                widths.append(string_width(c[1]))
+                widths.append(measure(c[1]))
     return widths
 
 
-def fit(commands, width=WIDTH):
+def has_runtime(cmds):
+    """True if a line's width depends on a value known only at runtime: a variable command, or a
+    token check_text_width.py can't measure (<USER>, <TARGET>, <ENEMY>)."""
+    return any(c[0] in VARIABLES or (c[0] in STRING_COMMANDS and string_width(c[1]) != known_width(c[1]))
+               for c in cmds)
+
+
+def fit(commands, width=WIDTH, original=None):
     """Commands with each paragraph that has a line wider than `width` re-broken greedily, its
-    para/page boundary and the ending kept; None when such a paragraph holds a variable (its width
-    isn't known), has a word wider than `width`, or, in a Pokédex entry, takes over 3 lines."""
+    para/page boundary and the ending kept; None when such a paragraph has a word wider than
+    `width` or, in a Pokédex entry, takes over 3 lines. A paragraph with a runtime value (has_runtime)
+    can't be measured or re-broken: it's kept as Kristall wrote it if no line grew against
+    `original` (Kristall's commands before re-casing, same shape) and none is too wide even without
+    the runtime value, else None."""
     out, done = [], 0
     dex = any(c[0] == "category" for c in commands)
     for start, end in paragraphs(commands):
         out += commands[done:start]
         para = commands[start:end]
         done = end
+        if has_runtime(para):
+            grown = original is not None and any(
+                new > old for new, old in zip(line_widths(para, known_width),
+                                              line_widths(original[start:end], known_width)))
+            if grown or any(w > width for w in line_widths(para, known_width)):
+                return None
+            out += para
+            continue
         if all(w <= width for w in line_widths(para)) and not (dex and len(line_widths(para)) > DEX_LINES):
             out += para
             continue
@@ -324,6 +360,7 @@ def german_for(entry, names, case, charmap=None, ram=None):
     commands, flags = rebuild(t.commands, entry.pair["en"], entry.pair["de"], ram)
     if flags:
         return Result(None, [f"{where}: {f}" for f in flags])
+    before = commands
     commands, unknown = recase(commands, names, case)
     if unknown:
         return Result(None, [f"{where}: unknown capitals {' '.join(sorted(set(unknown)))}"])
@@ -331,7 +368,7 @@ def german_for(entry, names, case, charmap=None, ram=None):
     if bad:
         return Result(None, [f"{where}: no glyph in Polished's charmap for {' '.join(bad)}"])
     width = next((w for suffix, w in FILE_WIDTHS.items() if t.path.endswith(suffix)), WIDTH)
-    fitted = fit(commands, width)
+    fitted = fit(commands, width, original=before)
     if fitted is None:
         return Result(None, [f"{where}: doesn't fit {width} tiles"])
     return Result(fitted, [])
