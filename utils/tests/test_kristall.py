@@ -241,3 +241,249 @@ def test_code_in_step_allows_moved_addresses():
     assert not code_in_step(bytes([0xCD, 0x55, 0x3C, 0x3E, 0x01, 0xC9, 0, 0]),
                             bytes([0xCD, 0x55, 0x3C, 0x3E, 0x02, 0xC9, 0, 0]))  # ld a, 1 against ld a, 2
     assert not code_in_step(bytes([0xC9, 0, 0, 0]), bytes([0x00, 0xC9, 0, 0]))  # out of step
+
+
+# --- Task 6: Polished's texts and the index ------------------------------------------------
+
+from collections import Counter  # noqa: E402
+
+W1 = {"map": "ROUTE_30", "event": "object", "x": 2, "y": 3}
+W2 = {"map": "ROUTE_31", "event": "object", "x": 4, "y": 5}
+EN = [("text", "We hope to see"), ("line", "you again!"), ("done",)]
+
+
+def put(path, text):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text)
+
+
+def fake_pair(label, en, de=None, where=None, structure_differs=False):
+    return {"label": label, "kind": "map", "en_addr": "01:4000", "de_addr": "01:4000", "de_len": 1,
+            "path": [], "where": where, "en": en, "de": de or [("text", "Hallo!"), ("done",)],
+            "structure_differs": structure_differs, "de_alts": []}
+
+
+def fake_text(commands, variant="both", path="maps/X.asm", label="T", partial_faithful=False):
+    from asm_text import AsmText
+    return AsmText(label, path, 1, len(commands), variant, commands, partial_faithful)
+
+
+def test_faithful_variants_parse_both(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "maps/X.asm",
+        "T:\n\ttext \"A\"\nif DEF(FAITHFUL)\n\tline \"B\"\nelse\n\tline \"C\"\nendc\n\tdone\n"
+        "if DEF(DEBUG)\nD:\n\ttext \"dbg\"\n\tdone\nendc\n")
+    texts = list(iter_texts(tmp_path, ("maps",)))
+    assert [(t.variant, t.commands[1]) for t in texts] == [("regular", ("line", "C")), ("faithful", ("line", "B"))]
+    assert all(t.partial_faithful for t in texts)
+
+
+def test_inline_texts_take_their_script_label(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "maps/X.asm",
+        "GenericTrainerYoungsterMikey:\n\tgenerictrainer YOUNGSTER, MIKEY, EVENT_X, MikeySeenText, MikeyBeatenText\n\n"
+        "\ttext \"Becoming a good\"\n\tdone\n\nSignScript:\n\tjumpthistext\n\n\ttext \"A sign.\"\n\tdone\n")
+    assert [(t.label, t.commands[0]) for t in iter_texts(tmp_path, ("maps",))] == [
+        ("GenericTrainerYoungsterMikey", ("text", "Becoming a good")), ("SignScript", ("text", "A sign."))]
+
+
+def test_render_round_trip():
+    from asm_text import render
+    assert render([("text", "A"), ("line", "B"), ("text_ram", "wStringBuffer1"), ("done",)]) == [
+        '\ttext "A"', '\tline "B"', "\ttext_ram wStringBuffer1", "\tdone"]
+
+
+def test_rename_counts_as_word_for_word():
+    from kristall_index import classify
+    pair = fake_pair("TinTowerSignText", en=[("text", "TIN TOWER"), ("done",)])
+    text = fake_text(commands=[("text", "Bell Tower"), ("done",)])
+    [e] = classify([text], {"texts": [pair]}, [("TIN TOWER", "Bell Tower")], {}, {})
+    assert e.cls == "word" and e.pair is pair
+
+
+def test_ambiguous_english_is_flagged():
+    from kristall_index import classify
+    a = fake_pair("A", en=EN, de=[("text", "Bis bald!"), ("done",)], where=W1)
+    b = fake_pair("B", en=EN, de=[("text", "Auf Wiedersehen!"), ("done",)], where=W2)
+    [e] = classify([fake_text(commands=EN)], {"texts": [a, b]}, [], {}, {})
+    assert e.cls == "ambiguous" and {p["label"] for p in e.candidates} == {"A", "B"}
+    [e] = classify([fake_text(commands=EN)], {"texts": [a, b]}, [], {("maps/X.asm", "T"): W2}, {})
+    assert e.cls == "word" and e.pair is b
+
+
+def test_same_german_twins_are_word_for_word():
+    from kristall_index import classify
+    a = fake_pair("A", en=EN, de=[("text", "Bis bald!"), ("done",)], where=W1)
+    b = fake_pair("B", en=EN, de=[("text", "Bis bald!"), ("done",)], where=W2)
+    [e] = classify([fake_text(commands=EN)], {"texts": [a, b]}, [], {}, {})
+    assert e.cls == "word"
+
+
+def test_choice_settles_ambiguous():
+    from kristall_index import classify
+    a = fake_pair("A", en=EN, de=[("text", "Bis bald!"), ("done",)])
+    b = fake_pair("B", en=EN, de=[("text", "Auf Wiedersehen!"), ("done",)])
+    [e] = classify([fake_text(commands=EN)], {"texts": [a, b]}, [], {}, {"T": "B"})
+    assert e.cls == "word" and e.pair is b
+
+
+def test_text_far_stub_is_one_text(tmp_path):  # Review Focus 4
+    from asm_text import iter_texts
+    put(tmp_path / "maps/X.asm", "S:\n\ttext_far _T\n\ttext_end\n")
+    put(tmp_path / "data/text/t.asm", "_T:\n\ttext \"A\"\n\tdone\n")
+    texts = [t for t in iter_texts(tmp_path, ("maps", "data")) if ("text", "A") in t.commands]
+    assert [(t.path, t.label) for t in texts] == [("data/text/t.asm", "_T")]
+
+
+def test_faithful_variants_classified_separately():  # Review Focus 5
+    from kristall_index import classify
+    regular = fake_text(commands=[("text", "Come again!"), ("done",)], variant="regular")
+    faithful = fake_text(commands=[("text", "See you, trainer!"), ("done",)], variant="faithful")
+    pair = fake_pair("P", en=[("text", "Come again!"), ("done",)])
+    entries = classify([regular, faithful], {"texts": [pair]}, [], {}, {})
+    assert entries[0].cls == "word" and entries[1].cls != "word"
+
+
+def test_line_breaks_and_case_dont_matter():
+    from kristall_index import normalize
+    assert normalize([("text", "I'm going to bat-"), ("line", "tle!"), ("done",)], []) == \
+        normalize([("text", "I'M GOING TO"), ("line", "BATTLE!"), ("prompt",)], [])
+
+
+def test_index_on_real_data(pairs, root):
+    from asm_text import iter_texts
+    from kristall_index import classify, load_renames, locate
+    entries = classify(list(iter_texts(root)), pairs, load_renames(root), locate(root), {})
+    by = Counter(e.cls for e in entries)
+    assert by["word"] > 1000 and by["new"] > 0
+
+
+def test_at_sign_ends_a_text(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "data/c.asm", '.A:\ttext "   Satoshi@"\n.B:\ttext "   Junichi@"\n')
+    assert [t.commands for t in iter_texts(tmp_path, ("data",))] == [[("text", "   Satoshi@")],
+                                                                     [("text", "   Junichi@")]]
+
+
+def test_dex_entry_keeps_its_category(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "data/pokemon/dex_entries.asm",
+        'BulbasaurPokedexEntry::\n\tdb "Seed@"\n\ttext "While it is young,"\n\tnext "it uses the"\n'
+        '\tpage "stored in the"\n\tnext "in order to grow.@"\n')
+    [t] = iter_texts(tmp_path, ("data",))
+    assert t.commands[0] == ("category", "Seed") and t.commands[-1] == ("next", "in order to grow.@")
+
+
+def test_asserts_inside_a_text_are_passed_over(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "maps/X.asm", 'T:\n\ttext "Advanced Tips!"\n\n\tassert NUM_FRAMES == 20\n\tpara "You can"\n\tprompt\n')
+    assert [t.commands for t in iter_texts(tmp_path, ("maps",))] == [
+        [("text", "Advanced Tips!"), ("para", "You can"), ("prompt",)]]
+
+
+def test_renames_match_pret_capitals_only():
+    from kristall_index import normalize
+    renames = [("BERRY", "Oran Berry"), ("STICK", "Leek")]
+    assert normalize([("text", "A BERRY! I stick to it."), ("done",)], renames) == "a oran berry! i stick to it."
+
+
+def test_renames_apply_in_one_pass():
+    from kristall_index import normalize
+    renames = [("GOLD BERRY", "Sitrus Berry"), ("BERRY", "Oran Berry")]
+    assert normalize([("text", "GOLD BERRY"), ("done",)], renames) == "sitrus berry"
+
+
+def test_renames_follow_the_build():
+    from kristall_index import classify
+    pair = fake_pair("P", en=[("text", "Use ROCK SMASH!"), ("done",)])
+    renames = [("ROCK SMASH", "Brick Break", "regular")]
+    regular = fake_text(commands=[("text", "Use Brick Break!"), ("done",)], variant="regular")
+    faithful = fake_text(commands=[("text", "Use Rock Smash!"), ("done",)], variant="faithful")
+    both = fake_text(commands=[("text", "Use Rock Smash!"), ("done",)], variant="both")
+    assert [e.cls for e in classify([regular, faithful, both], {"texts": [pair]}, renames, {}, {})] == \
+        ["word", "word", "word"]
+
+
+def test_pret_stub_is_not_a_candidate():
+    from kristall_index import classify
+    target = fake_pair("_T", en=EN, de=[("text", "Bis bald!"), ("done",)])
+    stub = fake_pair("T", en=[("text_far", "_T"), ("text_end",)], de=[("text_far", "7b:4000"), ("text_end",)])
+    [e] = classify([fake_text(commands=EN)], {"texts": [stub, target]}, [], {}, {})
+    assert e.cls == "word" and e.pair is target
+    [e] = classify([fake_text(commands=[("text", "Changed!"), ("done",)], label="T")],
+                   {"texts": [stub, target]}, [], {}, {})
+    assert e.cls == "changed" and e.pair is target
+
+
+def test_item_descriptions_pair_with_dump(pairs):
+    def words(label):
+        return " ".join(c[1] for c in by_label(pairs, label)["de"] if len(c) > 1)
+    assert words("PotionDesc") == "Füllt KP um 20 auf."
+    assert words("BicycleDesc") == "Ein Klapprad, um schneller zu sein."
+    assert words("MasterBallDesc").startswith("Der beste BALL")
+
+
+def test_hyphens_dont_matter():
+    from kristall_index import normalize
+    assert normalize([("text", "Powers up dark-"), ("next", "type moves.")], []) == \
+        normalize([("text", "Powers up Dark-type"), ("next", "moves.")], [])
+    assert normalize([("text", "Heilt jedes #-"), ("next", "MON.")], []) == "heilt jedes pokémon."
+
+
+def test_same_label_settles_ambiguous():
+    from kristall_index import classify
+    a = fake_pair("ThrashDescription", en=EN, de=[("text", "Hält 2-3 Runden."), ("done",)])
+    b = fake_pair("OutrageDescription", en=EN, de=[("text", "Wirkt 2-3 Runden."), ("done",)])
+    [e] = classify([fake_text(commands=EN, label="OutrageDescription")], {"texts": [a, b]}, [], {}, {})
+    assert e.cls == "word" and e.pair is b
+
+
+def test_text_farend_stub_leaves_only_its_target(tmp_path):  # Review Focus 4
+    from asm_text import iter_texts
+    from kristall_index import classify
+    put(tmp_path / "maps/X.asm", "S:\n\ttext_farend _T\n")
+    put(tmp_path / "data/text/t.asm", "_T:\n\ttext \"A\"\n\tdone\n")
+    texts = list(iter_texts(tmp_path, ("maps", "data")))
+    assert [t.commands for t in texts if t.label == "S"] == [[("text_farend", "_T")]]
+    assert [e.text.label for e in classify(texts, {"texts": []}, [], {}, {})] == ["_T"]
+
+
+def test_target_takes_its_stubs_where():
+    from kristall_index import classify
+    a = fake_pair("A", en=EN, de=[("text", "Bis bald!"), ("done",)], where=W1)
+    b = fake_pair("B", en=EN, de=[("text", "Auf Wiedersehen!"), ("done",)], where=W2)
+    stub = fake_text(commands=[("text_farend", "_T")], path="maps/X.asm", label="S")
+    target = fake_text(commands=EN, path="data/text/t.asm", label="_T")
+    [e] = classify([stub, target], {"texts": [a, b]}, [], {("maps/X.asm", "S"): W2}, {})
+    assert e.cls == "word" and e.pair is b
+
+
+def test_typography_doesnt_matter():
+    from kristall_index import normalize
+    pret = [("text", "Say 'welcome,'<……><……>"), ("line", "for ¥1500, No."), ("text_ram", "wX"), ("done",)]
+    ours = [("text", "Say “welcome,”……"), ("next", "…… for ¥1,500, No. "), ("text_ram", "wX"), ("done",)]
+    assert normalize(pret, []) == normalize(ours, [])
+
+
+def test_longer_rename_wins_over_its_part():
+    from kristall_index import normalize
+    renames = [("UNDERGROUND", "Underground Path"), ("UNDERGROUND PATH", "Underground Path")]
+    assert normalize([("text", "the UNDERGROUND PATH")], renames) == "the underground path"
+
+
+def test_columns_match_claude_md():
+    from kristall_lookup import columns
+    assert columns(["We'll be waiting", "for you, <PLAYER>."], ["Ich werde auf dich", "warten, <PLAYER>."],
+                   ["Wir werden auf", "dich warten,", "<PLAYER>."]) == "\n".join([
+        "ENGLISH           | GERMAN ORIGINAL    | OURS",
+        "------------------+--------------------+------------------",
+        "We'll be waiting  | Ich werde auf dich | Wir werden auf",
+        "for you, <PLAYER>.| warten, <PLAYER>.  | dich warten,",
+        "                  |                    | <PLAYER>."])
+
+
+def test_box_lines_follow_the_text_commands():
+    from kristall_lookup import box_lines
+    assert box_lines([("text", "<PLAYER> received"), ("line", "the "), ("text_ram", "wStringBuffer4"),
+                      ("text", " Badge."), ("para", "Next box."), ("done",)]) == [
+        "<PLAYER> received", "the <wStringBuffer4> Badge.", "", "Next box."]

@@ -529,11 +529,19 @@ class Builder:
             pe = (en_table[0], en.word(en_table[0], en_table[1] + 2 * m))
             pd = (de_table[0], de.word(de_table[0], de_table[1] + 2 * m))
             self.add_table_text("move_desc", pe, pd, decode_lines)
-        # item descriptions: at the same address in both ROMs
+        # item descriptions: the table PrintItemDescription.not_a_tm loads (ld hl, ItemDescriptions);
+        # Kristall's sits elsewhere in the same bank, its texts with it
+        start = self.sym["PrintItemDescription.not_a_tm"]
+        length = self.sym["ItemDescriptions"][1] - start[1]
+        code = en.data[en.offset(*start):en.offset(*start) + length]
+        at = code.index(0x21) + 1
+        jump = len(code) - 2  # jp PlaceString: home moved
+        twin = find_twin(en, de, start, length, holes=(at, at + 1, jump, jump + 1))
         ibank, itable = self.sym["ItemDescriptions"]
+        de_table = de.word(twin[0], twin[1] + at)
         for i in range(self.num_items):
             pe = (ibank, en.word(ibank, itable + 2 * i))
-            pd = (ibank, de.word(ibank, itable + 2 * i))
+            pd = (twin[0], de.word(twin[0], de_table + 2 * i))
             self.add_table_text("item_desc", pe, pd, decode_lines)
 
     def add_table_text(self, kind, pe, pd, decode):
