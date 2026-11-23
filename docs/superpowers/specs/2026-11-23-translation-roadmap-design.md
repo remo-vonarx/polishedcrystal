@@ -67,7 +67,7 @@ From here on a chunk holds only what K left: Polished's changed lines (starting 
 |---|---|---|---|
 | 6 | Receiving and shared texts: items, Pokémon, badges, PC, Pokémon Center, Mart, field moves, day care | 1,780 lines | 83% / 71% |
 | 7 | Battle texts and battle menus | 930 lines + menus | 38% |
-| 8 | Menus and screens: start menu, party, summary, bag, boxes, trainer card, options, naming, save, title | ~390 strings, 136 option lines | options are Polished's own |
+| 8 | Menus and screens: start menu, party, summary, bag, boxes, trainer card, options, naming, save, main menu, title prompts | ~390 strings, 136 option lines | options are Polished's own |
 | 9 | Descriptions: moves, items, abilities | 184 + 278 + 155 | 57% / 45% / 0% |
 | 10 | Pokédex: entries, categories, screens | 334 entries | 73% |
 | 11 | Pokégear: phone list and calls, radio, map card, clock | 4,730 phone lines + radio | 91% |
@@ -80,6 +80,7 @@ From here on a chunk holds only what K left: Polished's changed lines (starting 
 | 18 | Kanto north and east: Cerulean, Vermilion, Lavender, Saffron, Celadon | 5,100 | — |
 | 19 | Kanto west and south: Pallet to Pewter, Fuchsia, Seafoam, Cinnabar | 4,100 | — |
 | 20 | Polished's own areas: Celadon University, the Orange Islands, Sinjoh Ruins, Mystri Stage, Faraway Island, Navel Rock | 2,400 | 0% |
+| 21 | Title screen and credits: the logo's "Polished Crystal" subtitle, the credits' roles and staff blocks, the "The End" graphic | 1 logo, 30 credit roles, 1 graphic | Kristall's credits roles |
 
 Region sizes include their trainer lines and signs, which chunks 12 and 13 take out (about a third).
 

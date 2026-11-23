@@ -149,7 +149,7 @@ From here each task holds only what K left: Polished's changed lines, starting f
 
 ### Task 8: Menus and screens
 
-- [ ] Start menu, party, summary, Bag menus, boxes, trainer card, options, naming screen, save, title and main menu, move reminder and deleter, intro, credits, Hall of Fame.
+- [ ] Start menu, party, summary, Bag menus, boxes, trainer card, options, naming screen, save, the main menu and the title screen's prompts, move reminder and deleter, intro, Hall of Fame.
 - [ ] Test: every screen and every menu state.
 - [ ] Ship.
 
@@ -198,4 +198,12 @@ The people and story scenes K left, in story order. Each task: the region's maps
 
 - [ ] Celadon University, the Orange Islands (Shamouti Island and its beaches, Valencia Island), Sinjoh Ruins, Mystri Stage, Faraway Island, Navel Rock: all own translation, in Kristall's style.
 - [ ] Test: a pass through each area's scenes.
+- [ ] Ship.
+
+### Task 21: Title screen and credits
+
+- [ ] The title logo's subtitle "Polished Crystal" (`gfx/title/logo.png`): German wording proposed and asked (Kristall's logo says "Kristall-Edition"), drawn in the logo's style.
+- [ ] The credits (`data/credits_strings.asm`), what K left: the role lines as in Kristall's credits, the "#mon Crystal Version Staff" heading, and the US version staff block (keep it, or Kristall's German staff block in its place: ask).
+- [ ] The "The End" graphic (`gfx/credits/theend.png`) as Kristall's "Ende".
+- [ ] Test: the title screen in both ROMs; the credits through to the end, compared with Kristall's by position.
 - [ ] Ship.
