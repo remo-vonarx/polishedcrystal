@@ -668,3 +668,60 @@ def test_text_far_inside_own_text_is_flagged():
     mixed = [("text", "Hi "), ("text_far", "Text_Gained"), ("text_end",)]
     r = german_for(word_entry(polished=mixed, pret_en=mixed), {}, {})
     assert r.commands is None and any("text_far" in f for f in r.flags)
+
+
+# --- Task 8: the drift check ----------------------------------------------------------------
+
+FAKE_PAIRS = {"texts": [fake_pair("T", en=HI, de=HALLO)], "names": {}}
+
+
+def asm(*commands):
+    from asm_text import render
+    return "\n".join(["T:"] + render(list(commands))) + "\n"
+
+
+def test_drift_check_passes_on_tree(pairs, root, base):
+    import check_kristall
+    failures, english = check_kristall.check(root, base, pairs)
+    assert failures == [] and english > 1000
+
+
+def test_drift_check_passes_written_text(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(*HI)}, {"maps/X.asm": asm(*HALLO)})
+    assert check_kristall.check(repo, "base", FAKE_PAIRS) == ([], 0)
+
+
+def test_drift_check_counts_english(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(*HI)}, {"maps/X.asm": asm(*HI)})
+    assert check_kristall.check(repo, "base", FAKE_PAIRS) == ([], 1)
+
+
+def test_hand_edit_of_inherited_text_fails(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(*HI)}, {"maps/X.asm": asm(("text", "Hallo, du!"), ("done",))})
+    assert check_kristall.check(repo, "base", FAKE_PAIRS)[0]
+
+
+def test_upstream_change_under_inherited_text_fails(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(("text", "Hi there!"), ("done",))}, {"maps/X.asm": asm(*HALLO)})
+    assert check_kristall.check(repo, "base", FAKE_PAIRS)[0]
+
+
+def test_iter_texts_takes_files_too(tmp_path):
+    from asm_text import iter_texts
+    put(tmp_path / "maps/X.asm", 'T:\n\ttext "A"\n\tdone\n')
+    put(tmp_path / "maps/Y.asm", 'U:\n\ttext "B"\n\tdone\n')
+    assert [t.label for t in iter_texts(tmp_path, ("maps/X.asm",))] == ["T"]
+
+
+def test_writer_matches_texts_sharing_a_label(tmp_path):
+    from asm_text import iter_texts
+    from kristall_index import classify
+    from kristall_write import write
+    put(tmp_path / "maps/X.asm", 'T:\n\ttext "Something else"\n\tdone\n\n\ttext "Hi!"\n\tdone\n')
+    entries = classify(list(iter_texts(tmp_path, ("maps",))), {"texts": [fake_pair("P", en=HI, de=HALLO)]}, [], {}, {})
+    write([e for e in entries if e.cls == "word"], {}, {}, dry_run=False, root=tmp_path)
+    assert (tmp_path / "maps/X.asm").read_text() == 'T:\n\ttext "Something else"\n\tdone\n\n\ttext "Hallo!"\n\tdone\n'

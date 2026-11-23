@@ -341,6 +341,22 @@ ALLOWED = re.compile(r"^\s*(?:" + "|".join(sorted(STRING_COMMANDS | ENDS | VARIA
     "text_start", "text_promptbutton", "text_pause", "text_sound", "text_far", "text_farend", "db"})) + r")\b")
 
 
+def current_texts(entries, root=ROOT):
+    """Each entry's text as the tree at `root` has it now (an AsmText, or None), found by file,
+    label, variant and index: lines move as texts turn German."""
+    root = Path(root)
+    out, by_path = {}, defaultdict(list)
+    for e in entries:
+        by_path[e.text.path].append(e)
+    for path, group in by_path.items():
+        current = {}
+        if (root / path).exists():
+            current = {(t.label, t.variant, t.index): t for t in parse_file(path, root)}
+        for e in group:
+            out[id(e)] = current.get((e.text.label, e.text.variant, e.text.index))
+    return out
+
+
 def write(entries, names, case, dry_run=True, root=ROOT):
     """Write each word-for-word entry's German over its text in the tree at `root`, found there by
     file, label and variant (lines may have moved since Upstream's English). Changed and new texts
@@ -353,25 +369,19 @@ def write(entries, names, case, dry_run=True, root=ROOT):
     for e in entries:
         if e.cls in ("word", "ambiguous"):
             by_path[e.text.path].append(e)
+    now = current_texts([e for group in by_path.values() for e in group], root)
     for path in sorted(by_path):
-        current = defaultdict(list)
-        for t in parse_file(path, root):
-            current[(t.label, t.variant)].append(t)
-        seen = Counter()
         lines = (root / path).read_text(encoding="utf-8").split("\n")
         edits = []
         for e in sorted(by_path[path], key=lambda e: e.text.start):
-            key = (e.text.label, e.text.variant)
-            k = seen[key]
-            seen[key] += 1
             result = german_for(e, names, case, charmap, ram)
             if result.commands is None:
                 flags += result.flags
                 continue
-            if k >= len(current[key]):
+            here = now[id(e)]
+            if here is None:
                 flags.append(f"{path}:{e.text.label}: not found in the tree")
                 continue
-            here = current[key][k]
             old = lines[here.start - 1:here.end]
             extra = [line.strip() for line in old[1:] if line.strip() and not ALLOWED.match(line)]
             if extra or any(strip_comment(line) != line for line in old):

@@ -62,3 +62,34 @@ def test_order_clean_on_tree(root):
 def test_order_checks_german_tables(root):
     import check_order
     assert check_order.check(root, german={"key items"})  # Upstream's LIFT_KEY entries 31-34
+
+
+FAITHFUL_TEXT = ('T:\n\ttext "{0}"\nif DEF(FAITHFUL)\n\tline "{1}"\nelse\n\tline "{2}"\nendc\n\tdone\n')
+
+
+def test_faithful_twin_left_english_is_reported(git_repo):
+    import check_english_left
+    repo = git_repo({"maps/X.asm": FAITHFUL_TEXT.format("Hello", "Faithful there", "Regular there")},
+                    {"maps/X.asm": FAITHFUL_TEXT.format("Hallo", "Faithful there", "Regulär dort")})
+    assert check_english_left.check(repo, "base", ["maps"]) == ["maps/X.asm:4: Faithful there"]
+
+
+def test_english_left_skips_debug(git_repo):
+    import check_english_left
+    text = 'T:\n\ttext "{}"\n\tdone\nif DEF(DEBUG)\nD:\n\ttext "Debug only"\n\tdone\nendc\n'
+    repo = git_repo({"maps/X.asm": text.format("Hello")}, {"maps/X.asm": text.format("Hallo")})
+    assert check_english_left.check(repo, "base", ["maps"]) == []
+
+
+def test_english_left_passes_lines_same_in_german(git_repo):
+    import check_english_left
+    text = 'T:\n\ttext "{}"\n\tline "OK"\n\tcont "<PLAYER>!"\n\tdone\n'
+    repo = git_repo({"maps/X.asm": text.format("Hello")}, {"maps/X.asm": text.format("Hallo")})
+    assert check_english_left.check(repo, "base", ["maps"]) == []
+
+
+def test_english_left_only_under_given_paths(git_repo):
+    import check_english_left
+    text = 'T:\n\ttext "Hello"\n\tdone\n'
+    repo = git_repo({"maps/X.asm": text, "data/Y.asm": text}, {"maps/X.asm": text, "data/Y.asm": text})
+    assert check_english_left.check(repo, "base", ["data"]) == ["data/Y.asm:2: Hello"]

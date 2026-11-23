@@ -56,3 +56,27 @@ def base():
     if out.returncode:
         pytest.skip("no upstream/master")
     return out.stdout.strip()
+
+
+@pytest.fixture
+def git_repo(tmp_path):
+    """A factory: git_repo(base_files, head_files) -> a repo with a `base` tag and a head commit."""
+    import subprocess
+
+    def make(base_files, head_files):
+        def git(*args):
+            subprocess.run(["git", "-C", str(tmp_path), *args], check=True, capture_output=True)
+        git("init", "-q")
+        git("config", "user.email", "test@example.invalid")
+        git("config", "user.name", "test")
+        for files, message in ((base_files, "base"), (head_files, "head")):
+            for rel, text in files.items():
+                path = tmp_path / rel
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(text)
+            git("add", "-A")
+            git("commit", "-q", "--allow-empty", "-m", message)
+            if message == "base":
+                git("tag", "base")
+        return tmp_path
+    return make

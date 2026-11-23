@@ -15,13 +15,15 @@ Commands are tuples, as kristall_rom.decode_text gives them: ("text", "Hello"), 
 ("text_ram", "wStringBuffer1"), ("text_far", "_Label"), ("done",).
 """
 import re
-from collections import namedtuple
+from collections import Counter, namedtuple
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_PATHS = ("maps", "data", "engine", "home")
 
-AsmText = namedtuple("AsmText", "label path start end variant commands partial_faithful")
+# index: the text's place among the texts of its file with the same label and variant (a script
+# label can hold several inline texts), so the same text is found again after lines moved
+AsmText = namedtuple("AsmText", "label path start end variant commands partial_faithful index", defaults=(0,))
 
 STRING_COMMANDS = {"text", "line", "cont", "para", "next", "next1", "page"}
 STARTS = {"text", "text_start", "text_ram", "text_far", "text_farend", "text_decimal", "text_promptbutton",
@@ -168,18 +170,22 @@ def parse_file(path, root=ROOT, source=None):
         return []
     regular = {(lab, start): (end, cmds) for lab, start, end, cmds in texts_in(assemble(lines, set()), rel)}
     faithful = {(lab, start): (end, cmds) for lab, start, end, cmds in texts_in(assemble(lines, {"FAITHFUL"}), rel)}
-    out = []
+    out, seen = [], Counter()
+
+    def add(label, start, end, variant, commands, partial):
+        out.append(AsmText(label, rel, start, end, variant, commands, partial, seen[(label, variant)]))
+        seen[(label, variant)] += 1
     for key in sorted(regular.keys() | faithful.keys(), key=lambda k: k[1]):
         label, start = key
         r, f = regular.get(key), faithful.get(key)
         if r and f and r[1] == f[1]:
-            out.append(AsmText(label, rel, start, r[0], "both", r[1], False))
+            add(label, start, r[0], "both", r[1], False)
             continue
         partial = bool(r and f)
         if r:
-            out.append(AsmText(label, rel, start, r[0], "regular", r[1], partial))
+            add(label, start, r[0], "regular", r[1], partial)
         if f:
-            out.append(AsmText(label, rel, start, f[0], "faithful", f[1], partial))
+            add(label, start, f[0], "faithful", f[1], partial)
     return out
 
 
@@ -188,7 +194,8 @@ def iter_texts(root=ROOT, paths=DEFAULT_PATHS, source=None, files=None):
     (relative paths) when they don't come from the disk, as with `source` reading git."""
     root = Path(root)
     if files is None:
-        files = sorted(p.relative_to(root).as_posix() for d in paths for p in (root / d).rglob("*.asm"))
+        files = sorted({p.relative_to(root).as_posix() for d in paths
+                        for p in ([root / d] if (root / d).is_file() else (root / d).rglob("*.asm"))})
     for rel in files:
         yield from parse_file(rel, root, source)
 

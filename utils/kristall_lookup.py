@@ -73,8 +73,9 @@ def git_tree(base, root=ROOT, paths=DEFAULT_PATHS):
         contents[f] = out[header_end + 1:header_end + 1 + size].decode("utf-8")
         at = header_end + 1 + size + 1
     attributes = subprocess.run(["git", "-C", str(root), "show", f"{base}:data/maps/attributes.asm"],
-                                capture_output=True, text=True, check=True).stdout
-    contents.setdefault("data/maps/attributes.asm", attributes)
+                                capture_output=True, text=True)
+    if attributes.returncode == 0:  # locate() reads it to name the maps
+        contents.setdefault("data/maps/attributes.asm", attributes.stdout)
     return files, lambda f: contents.get(f, "")  # a file the tree has and base hasn't: no texts
 
 
