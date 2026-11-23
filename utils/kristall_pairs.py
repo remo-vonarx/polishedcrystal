@@ -22,12 +22,20 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # python3 -I leaves the script's directory out
 
-from kristall_rom import (KRISTALL_CHARS, KRISTALL_ROM, PAIRS_JSON, PRET, PRET_CHARS, Rom, decode_text,
-                          labels_at, ram_names, read_sym)
+from kristall_rom import (KRISTALL_CHARS, KRISTALL_ROM, PAIRS_JSON, PRET, PRET_CHARS, ROOT, TEXT_MACROS, Rom, decode_dex,
+                          decode_lines, decode_text, labels_at, ram_names, read_constants, read_names,
+                          read_sections, read_sym)
 from kristall_script import ENGINE_SCRIPTS, TEXT, LockstepError, Walker, where
 
 MAP_HEADER_SIZE = 9
 NULL_POINTERS = (0, 0xFFFF)
+DUMP = ROOT / ".claude" / "upload" / "german_text_dump.txt"
+# pret's text-only sections, read text by text from their start in both ROMs ("Miscellaneous Text"
+# holds code and name lists too, so its texts are paired only through pointers)
+TEXT_SECTIONS = ("Text 1", "Text 2", "Text 3", "Phone Text", "Phone Text 2", "Crystal Phone Text",
+                 "Crystal Phone Text 2", "Special Phone Text", "Battle Tower Text")
+PHONE_CONTACT_SIZE = 12  # class, id, map group, map number, callee time, callee (dba), caller time, caller (dba)
+SPECIAL_CALL_SIZE = 6  # condition (dw, code), contact, script (dba)
 OBJECT_SIZE = 13
 OBJECTTYPE_SCRIPT, OBJECTTYPE_ITEMBALL, OBJECTTYPE_TRAINER = 0, 1, 2
 BGEVENT_SCRIPTS = range(0, 5)  # read, up, down, right, left
@@ -56,6 +64,111 @@ def trainer_constants(pret_dir):
             names[cls, tid] = (cls_name, m.group(1))
             tid += 1
     return names
+
+
+def pret_text_labels(pret_dir):
+    """Every pret label (Parent.local for local ones) whose first code line is a text command."""
+    starts = {m.name for m in TEXT_MACROS.values()} | {"text"}
+    found, parent, pending = set(), None, []
+    for path in sorted(Path(pret_dir).rglob("*.asm")):
+        for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+            code = line.split(";")[0].rstrip()
+            if not code.strip():
+                continue
+            if m := re.match(r"^([A-Za-z_][\w]*)::?(.*)$", code):
+                parent, rest = m.group(1), m.group(2).strip()
+                pending.append(parent)
+            elif m := re.match(r"^\.([\w]+):?(.*)$", code):
+                rest = m.group(2).strip()
+                pending.append(f"{parent}.{m.group(1)}")
+            else:
+                rest = code.strip()
+            if rest:
+                if rest.split()[0] in starts:
+                    found.update(pending)
+                pending = []
+    return found
+
+
+# Game Boy (SM83) opcodes with a 16-bit operand, and with an 8-bit one; all others take none
+# (CB-prefixed ones take one byte after the prefix, counted as an 8-bit operand).
+OPCODES_16 = {0x01, 0x08, 0x11, 0x21, 0x31, 0xC2, 0xC3, 0xC4, 0xCA, 0xCC, 0xCD, 0xD2, 0xD4, 0xDA, 0xDC, 0xEA, 0xFA}
+OPCODES_8 = {0x06, 0x0E, 0x16, 0x1E, 0x26, 0x2E, 0x36, 0x3E, 0x18, 0x20, 0x28, 0x30, 0x38, 0xC6, 0xCE, 0xD6,
+             0xDE, 0xE6, 0xEE, 0xF6, 0xFE, 0xE0, 0xF0, 0xE8, 0xF8, 0xCB}
+
+
+def code_in_step(a, b):
+    """True if pret's code `a` and Kristall's `b` are the same instructions: equal opcodes and 8-bit
+    operands; 16-bit operands (addresses Kristall moved) may differ."""
+    i = 0
+    while i < len(a):
+        if i >= len(b) or a[i] != b[i]:
+            return False
+        if a[i] in OPCODES_16:
+            i += 3
+        elif a[i] in OPCODES_8:
+            if a[i + 1:i + 2] != b[i + 1:i + 2]:
+                return False
+            i += 2
+        else:
+            i += 1
+    return True
+
+
+def pair_run(en, de, start, starts, tail=8):
+    """Pair a run of back-to-back texts that starts at the same address in both ROMs: it goes on
+    while pret's next text start is in `starts`, and holds only if the `tail` bytes after it are
+    the same code in both ROMs (code_in_step: the code after the texts resumes in step).
+    [(en_ptr, de_ptr, en, de)] or []."""
+    bank, ea = start
+    da, out = ea, []
+    try:
+        while True:
+            t = decode_text(en, bank, ea, PRET_CHARS, {})
+            u = decode_text(de, bank, da, KRISTALL_CHARS, {})
+            out.append(((bank, ea), (bank, da), t, u))
+            ea, da = ea + t.length, da + u.length
+            while en.byte(bank, ea) == 0x50 and (bank, ea) not in starts:
+                ea += 1
+            while de.byte(bank, da) == 0x50:
+                da += 1
+            if (bank, ea) not in starts:
+                break
+    except ValueError:
+        return []
+    o, q = en.offset(bank, ea), de.offset(bank, da)
+    return out if code_in_step(en.data[o:o + tail], de.data[q:q + tail + 2]) else []
+
+
+def pair_gap(en, de, en_ptr, de_ptr, starts, known):
+    """The texts between a proven pair (en_ptr, de_ptr) and the next proven pair after it: pret's
+    unused texts that no pointer reaches. The chain must end exactly where `known` (pret pointer ->
+    Kristall pointer) puts the next pair, else []. [(en_ptr, de_ptr, en, de)]."""
+    (eb, ea), (db, da) = en_ptr, de_ptr
+    out = []
+    try:
+        while True:
+            ea += decode_text(en, eb, ea, PRET_CHARS, {}).length
+            da += decode_text(de, db, da, KRISTALL_CHARS, {}).length
+            while en.byte(eb, ea) == 0x50 and (eb, ea) not in starts:
+                ea += 1
+            while de.byte(db, da) == 0x50:
+                da += 1
+            if (eb, ea) in known:
+                return out if out and known[eb, ea] == (db, da) else []
+            if (eb, ea) not in starts:
+                return []
+            out.append(((eb, ea), (db, da), decode_text(en, eb, ea, PRET_CHARS, {}),
+                        decode_text(de, db, da, KRISTALL_CHARS, {})))
+    except ValueError:
+        return []
+
+
+def trainer_classes(pret_dir):
+    """Class number -> class constant for every trainer class but TRAINER_NONE (0)."""
+    found = re.findall(r"^\s*trainerclass (\w+)", (Path(pret_dir) / "constants" / "trainer_constants.asm")
+                       .read_text(encoding="utf-8"), re.M)
+    return {i: name for i, name in enumerate(found) if i >= 1}
 
 
 def same(a, b, what):
@@ -97,7 +210,7 @@ class Builder:
                     de = decode_text(self.de, *de_ptr, KRISTALL_CHARS, self.ram)
                 except ValueError as e:
                     raise LockstepError(f"{e} ({' > '.join(path)})") from None
-                known["de_alts"].append({"de_addr": where(de_ptr), "path": path,
+                known["de_alts"].append({"de_addr": where(de_ptr), "de_len": de.length, "path": path,
                                          "de": self.named(de.commands, kristall=True)})
             return known
         try:
@@ -108,7 +221,7 @@ class Builder:
         record = {
             "label": self.labels.get(en_ptr, where(en_ptr)),
             "kind": kind or self.context["kind"],
-            "en_addr": where(en_ptr), "de_addr": where(de_ptr), "path": path,
+            "en_addr": where(en_ptr), "de_addr": where(de_ptr), "de_len": de.length, "path": path,
             "where": where_ if where_ is not None else self.context["where"],
             "en": self.named(en.commands), "de": self.named(de.commands, kristall=True),
             "structure_differs": shape(en.commands) != shape(de.commands),
@@ -257,10 +370,306 @@ class Builder:
 
     # -- output ------------------------------------------------------------------------------
 
-    def result(self):
-        return {"texts": list(self.texts.values()), "names": {},
-                "coverage": {"unreached_dump": [], "unpaired_labels": []},
+    # -- phone -------------------------------------------------------------------------------
+
+    def walk_phone(self, trainers):
+        """PhoneContacts and SpecialPhoneCallList: Kristall moved both; found by their bytes, the
+        script pointers (and the special calls' condition code pointers) left open."""
+        en, de = self.en, self.de
+        bank, start = self.sym["PhoneContacts"]
+        _, special = self.sym["SpecialPhoneCallList"]
+        contacts = (special - start) // PHONE_CONTACT_SIZE
+        holes = {i * PHONE_CONTACT_SIZE + k for i in range(contacts) for k in (5, 6, 7, 9, 10, 11)}
+        dbank, dstart = find_twin(en, de, (bank, start), contacts * PHONE_CONTACT_SIZE, holes)
+        for i in range(contacts):
+            e, d = start + PHONE_CONTACT_SIZE * i, dstart + PHONE_CONTACT_SIZE * i
+            raw = [en.byte(bank, e + k) for k in range(PHONE_CONTACT_SIZE)]
+            twin = [de.byte(dbank, d + k) for k in range(PHONE_CONTACT_SIZE)]
+            cname, iname = trainers.get((raw[0], raw[1]), (str(raw[0]), str(raw[1])))
+            who = {"trainer": cname, "id": iname}
+            for k, role in ((5, "callee"), (9, "caller")):
+                pe = (raw[k], raw[k + 1] | raw[k + 2] << 8)
+                pd = (twin[k], twin[k + 1] | twin[k + 2] << 8)
+                if pe[1]:
+                    self.context = {"kind": "phone", "where": who}
+                    self.walker.walk(pe, pd, ["phone", cname, iname, role])
+        calls = len(re.findall(r"^\s*specialcall ", (self.pret_dir / "data/phone/special_calls.asm")
+                               .read_text(encoding="utf-8"), re.M))
+        holes = {i * SPECIAL_CALL_SIZE + k for i in range(calls) for k in (0, 1, 3, 4, 5)}
+        sbank, sstart = find_twin(en, de, (bank, special), calls * SPECIAL_CALL_SIZE, holes)
+        for i in range(calls):
+            e, d = special + SPECIAL_CALL_SIZE * i, sstart + SPECIAL_CALL_SIZE * i
+            pe = (en.byte(bank, e + 3), en.word(bank, e + 4))
+            pd = (de.byte(sbank, d + 3), de.word(sbank, d + 4))
+            self.context = {"kind": "phone", "where": {"special_call": i}}
+            self.walker.walk(pe, pd, ["special call", str(i)])
+
+    # -- text sections -----------------------------------------------------------------------
+
+    def walk_sections(self):
+        sections = read_sections(self.pret_dir / "pokecrystal.map")
+        for name in TEXT_SECTIONS:
+            bank, start, end = sections[name]
+            ea = da = start
+            count = 0
+            while ea <= end:
+                while self.en.byte(bank, ea) == 0x50 and ea <= end:  # a stray "@" (text_end) between
+                    ea += 1                                            # texts: pret has an unused one
+                while self.de.byte(bank, da) == 0x50:  # after _BlindingFlashText, Kristall a few others
+                    self.notes.append(f"{name}: stray @ at Kristall {where((bank, da))}")
+                    da += 1
+                if ea > end:
+                    break
+                text = decode_text(self.en, bank, ea, PRET_CHARS, self.ram)
+                twin = decode_text(self.de, bank, da, KRISTALL_CHARS, self.ram)
+                record = self.texts.get((bank, ea))
+                if record is not None and where((bank, da)) not in [record["de_addr"]] + [
+                        a["de_addr"] for a in record["de_alts"]]:
+                    raise LockstepError(f'{name}: {record["label"]} was paired with {record["de_addr"]} '
+                                        f'through {" > ".join(record["path"])}, but its place gives {where((bank, da))}')
+                record = self.add_text((bank, ea), (bank, da), [name, str(count)])
+                record["kind"] = "section"
+                ea, da, count = ea + text.length, da + twin.length, count + 1
+            if ea != end + 1:
+                raise LockstepError(f"{name}: texts end at {where((bank, ea))}, the section at {where((bank, end))}")
+
+    # -- texts in code banks ------------------------------------------------------------------
+
+    def walk_code_texts(self):
+        """Runs of texts in code sections (battle texts, item texts, ...): a run starts where the 8
+        bytes before it are equal in both ROMs and is paired by order (pair_run)."""
+        names = pret_text_labels(self.pret_dir)
+        starts = {self.sym[n] for n in names if n in self.sym and self.sym[n][0] and self.sym[n][1] >= 0x4000}
+        sections = read_sections(self.pret_dir / "pokecrystal.map")
+        in_sections = {(b, lo, hi) for n, (b, lo, hi) in sections.items() if n in TEXT_SECTIONS}
+        label_starts = sorted({w for n, w in self.sym.items() if w[0] and w[1] >= 0x4000})
+        done = set()
+        for start in sorted(starts):
+            bank, addr = start
+            if start in done or any(b == bank and lo <= addr <= hi for b, lo, hi in in_sections):
+                continue
+            if not self.anchored(start, label_starts):
+                continue
+            run = pair_run(self.en, self.de, start, starts)
+            if not run:
+                self.notes.append(f"text run at {where(start)}: its end doesn't meet Kristall's")
+                continue
+            known = [(e, d) for e, d, *_ in run if e in self.texts and self.texts[e]["de_addr"] != where(d)
+                     and where(d) not in [a["de_addr"] for a in self.texts[e]["de_alts"]]]
+            if known:
+                self.notes.append(f"text run at {where(start)}: disagrees with script pairs at {where(known[0][0])}")
+                continue
+            for e, d, *_ in run:
+                done.add(e)
+                fresh = e not in self.texts
+                record = self.add_text(e, d, ["code", where(start)], kind="engine")
+                if fresh:
+                    record["kind"] = "engine"
+
+    def anchored(self, start, label_starts):
+        """A run may start at `start` (the same address in both ROMs) when what precedes it is in
+        step: the 8 bytes before are equal, or the code from pret's previous label is the same
+        instructions (code_in_step; calls into Kristall's shifted home bank may differ)."""
+        o = self.en.offset(*start)
+        if self.en.data[o - 8:o] == self.de.data[o - 8:o]:
+            return True
+        import bisect
+        i = bisect.bisect_left(label_starts, start) - 1
+        if i < 0 or label_starts[i][0] != start[0]:
+            return False
+        p = self.en.offset(*label_starts[i])
+        return code_in_step(self.en.data[p:o], self.de.data[p:o + 2]) and self.en.data[p:o] != b""
+
+    def fill_gaps(self):
+        """pret's unused texts between two proven pairs (pair_gap)."""
+        names = pret_text_labels(self.pret_dir)
+        starts = {self.sym[n] for n in names if n in self.sym and self.sym[n][0] and self.sym[n][1] >= 0x4000}
+        known = {}
+        for e, t in self.texts.items():
+            known[e] = tuple(int(x, 16) for x in t["de_addr"].split(":"))
+        for e in sorted(known):
+            record = self.texts[e]
+            for ge, gd, *_ in pair_gap(self.en, self.de, e, known[e], starts, known):
+                new = self.add_text(ge, gd, ["between pairs", record["label"]], kind=record["kind"], where_=None)
+                new["where"] = None
+
+    # -- tables ------------------------------------------------------------------------------
+
+    def routine_twin(self, label, length, operand_opcode):
+        """Kristall's copy of a pret routine (its first `length` bytes, the operand of the first
+        `operand_opcode` instruction left open); returns (pret start, Kristall start, operand offset)."""
+        start = self.sym[label]
+        code = self.en.data[self.en.offset(*start):self.en.offset(*start) + length]
+        at = code.index(operand_opcode)
+        return start, find_twin(self.en, self.de, start, length, holes=(at + 1, at + 2)), at + 1
+
+    def walk_tables(self):
+        en, de = self.en, self.de
+        species = 251
+        # Pokédex: GetDexEntryPointer's table (ld hl, PokedexDataPointerTable) and the bank list
+        # right after it (.PokedexEntryBanks, one bank per 64 species); Kristall moved both
+        start = self.sym["GetDexEntryPointer"]
+        length = self.sym["GetDexEntryPointer.PokedexEntryBanks"][1] - start[1]
+        code = en.data[en.offset(*start):en.offset(*start) + length]
+        holes = {i + k for i in range(length - 2) if code[i] == 0x21 for k in (1, 2)}  # ld hl, nn
+        twin = find_twin(en, de, start, length, holes)
+        en_banks = [en.byte(start[0], start[1] + length + k) for k in range(4)]
+        de_banks = [de.byte(twin[0], twin[1] + length + k) for k in range(4)]
+        tbank, en_table = self.sym["PokedexDataPointerTable"]
+        de_table = de.word(twin[0], twin[1] + code.index(0x21) + 1)
+        for s in range(1, species + 1):
+            pe = (en_banks[(s - 1) >> 6], en.word(tbank, en_table + 2 * (s - 1)))
+            pd = (de_banks[(s - 1) >> 6], de.word(twin[0], de_table + 2 * (s - 1)))
+            self.add_table_text("dex", pe, pd, decode_dex)
+        # move descriptions: the table PrintMoveDescription loads
+        start, twin, at = self.routine_twin("PrintMoveDescription", 16, 0x21)
+        en_table = (self.sym["MoveDescriptions"])
+        de_table = (twin[0], de.word(*twin[:1], twin[1] + at))
+        for m in range(species):
+            pe = (en_table[0], en.word(en_table[0], en_table[1] + 2 * m))
+            pd = (de_table[0], de.word(de_table[0], de_table[1] + 2 * m))
+            self.add_table_text("move_desc", pe, pd, decode_lines)
+        # item descriptions: at the same address in both ROMs
+        ibank, itable = self.sym["ItemDescriptions"]
+        for i in range(self.num_items):
+            pe = (ibank, en.word(ibank, itable + 2 * i))
+            pd = (ibank, de.word(ibank, itable + 2 * i))
+            self.add_table_text("item_desc", pe, pd, decode_lines)
+
+    def add_table_text(self, kind, pe, pd, decode):
+        try:
+            en = decode(self.en, *pe, PRET_CHARS)
+            de = decode(self.de, *pd, KRISTALL_CHARS)
+        except ValueError as e:
+            raise LockstepError(f"{kind} at {where(pe)} / {where(pd)}: {e}") from None
+        if pe in self.texts:
+            return
+        self.texts[pe] = {
+            "label": self.labels.get(pe, where(pe)), "kind": kind,
+            "en_addr": where(pe), "de_addr": where(pd), "de_len": de.length, "path": [kind],
+            "where": None, "en": en.commands, "de": de.commands,
+            "structure_differs": False, "de_alts": [],
+        }
+
+    # -- names -------------------------------------------------------------------------------
+
+    @property
+    def num_items(self):
+        items = read_constants(self.pret_dir / "constants" / "item_constants.asm")
+        return max(v for v in items if v < 0x100)
+
+    def read_name_tables(self, trainers):
+        en, de, sym, c = self.en, self.de, self.sym, self.pret_dir / "constants"
+        out = {}
+
+        def table(key, constants, en_names, de_names, strip=""):
+            out[key] = {constants[i].removeprefix(strip): [e, d]
+                        for i, e, d in zip(sorted(constants), en_names, de_names)}
+
+        # GetName's NamesPointers (home bank, 8 dba entries): Kristall moved it and some tables
+        nb, na = sym["NamesPointers"]
+        holes = {3 * e + k for e in (0, 1, 3, 6, 7) for k in range(3)}  # the entries naming a table
+        twin = find_twin(en, de, (nb, na), 24, holes)
+
+        def names_table(entry):
+            e = (en.byte(nb, na + 3 * entry), en.word(nb, na + 3 * entry + 1))
+            d = (de.byte(*twin[:1], twin[1] + 3 * entry), de.word(twin[0], twin[1] + 3 * entry + 1))
+            return e, d
+
+        mons = {v: n for v, n in read_constants(c / "pokemon_constants.asm").items() if 1 <= v <= 251}
+        e, d = names_table(0)
+        same(e, sym["PokemonNames"], "NamesPointers' PokemonNames entry")
+        table("pokemon", mons, read_names(en, *e, 251, PRET_CHARS, 10), read_names(de, *d, 251, KRISTALL_CHARS, 10))
+        moves = {v: n for v, n in read_constants(c / "move_constants.asm").items() if 1 <= v <= 251}
+        e, d = names_table(1)
+        table("moves", moves, read_names(en, *e, 251, PRET_CHARS), read_names(de, *d, 251, KRISTALL_CHARS))
+        items = {v: n for v, n in read_constants(c / "item_constants.asm").items() if 1 <= v <= self.num_items}
+        e, d = names_table(3)
+        table("items", items, read_names(en, *e, len(items), PRET_CHARS),
+              read_names(de, *d, len(items), KRISTALL_CHARS))
+        classes = trainer_classes(self.pret_dir)
+        e, d = names_table(6)
+        table("trainer_classes", classes, read_names(en, *e, len(classes), PRET_CHARS),
+              read_names(de, *d, len(classes), KRISTALL_CHARS))
+        marks = {v: n for v, n in read_constants(c / "landmark_constants.asm").items() if 0 <= v < 0x7F}
+        start, twin, at = self.routine_twin("GetLandmarkName", 16, 0x11)
+        lb, la = start[0], en.word(start[0], start[1] + at)  # pret: ld de, Landmarks + 2
+        kb, ka = twin[0], de.word(twin[0], twin[1] + at)
+        en_names = [read_names(en, lb, en.word(lb, la + 4 * i), 1, PRET_CHARS)[0] for i in range(len(marks))]
+        de_names = [read_names(de, kb, de.word(kb, ka + 4 * i), 1, KRISTALL_CHARS)[0] for i in range(len(marks))]
+        table("landmarks", marks, en_names, de_names, strip="LANDMARK_")
+        return out
+
+    # -- coverage ----------------------------------------------------------------------------
+
+    def unpaired_labels(self):
+        """pret's text labels (from its source) with no pair, leaving out text_far stubs whose
+        target is paired: a stub holds no words of its own."""
+        paired = {t["label"] for t in self.texts.values()} | {
+            a["label"] for t in self.texts.values() for a in t.get("de_alts", []) if "label" in a}
+        targets = {t["en_addr"] for t in self.texts.values()}
+        out = []
+        for name in sorted(pret_text_labels(self.pret_dir)):
+            if name not in self.sym or name in paired:
+                continue
+            bank, addr = self.sym[name]
+            if not bank or addr < 0x4000 or self.labels.get((bank, addr), name) in paired:
+                continue
+            try:
+                cmds = decode_text(self.en, bank, addr, PRET_CHARS, {}).commands
+            except ValueError:
+                cmds = []
+            if [c[0] for c in cmds] == ["text_far", "text_end"] and where(cmds[0][1]) in targets:
+                continue
+            out.append(name)
+        return out
+
+    def result(self, names):
+        texts = list(self.texts.values())
+        return {"texts": texts, "names": names,
+                "coverage": {"unreached_dump": unreached(dump_addresses(), texts),
+                             "unpaired_labels": self.unpaired_labels()},
                 "other_pointers": dict(self.other), "notes": self.notes}
+
+
+def find_twin(en, de, start, length, holes=()):
+    """Kristall's (bank, address) of pret's `length` bytes at `start`, the `holes` (offsets) open.
+    It must match exactly once in Kristall's ROM."""
+    code = en.data[en.offset(*start):en.offset(*start) + length]
+    pattern = b"".join(b"." if i in holes else re.escape(code[i:i + 1]) for i in range(length))
+    hits = [m.start() for m in re.finditer(pattern, de.data, re.S)]
+    if len(hits) != 1:
+        raise LockstepError(f"{len(hits)} matches in Kristall for {where(start)} ({code.hex(' ')})")
+    bank = hits[0] // 0x4000
+    return bank, hits[0] - bank * 0x4000 + (0x4000 if bank else 0)
+
+
+def dump_addresses(path=DUMP):
+    """The bank:address of every text in the dump's [texts] section ([] without the dump)."""
+    if not Path(path).exists():
+        return []
+    out, inside = [], False
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        if line.startswith("["):
+            inside = line.strip() == "[texts]"
+        elif inside and re.match(r"[0-9a-f]{2}:[0-9a-f]{4} ", line):
+            out.append(line[:7])
+    return out
+
+
+def unreached(dump, texts):
+    """Dump addresses no pair's Kristall text (or second twin) covers."""
+    spans = []
+    for t in texts:
+        for twin in [t] + t.get("de_alts", []):
+            bank, addr = (int(x, 16) for x in twin["de_addr"].split(":"))
+            spans.append((bank, addr, addr + twin["de_len"]))
+    out = []
+    for item in dump:
+        bank, addr = (int(x, 16) for x in item.split(":"))
+        if not any(b == bank and lo <= addr < hi for b, lo, hi in spans):
+            out.append(item)
+    return out
 
 
 STRING_COMMANDS = ("text", "line", "cont", "para", "next", "page")
@@ -282,8 +691,14 @@ def shape(commands):
 
 def build_pairs(pret_dir=PRET, kristall=KRISTALL_ROM):
     b = Builder(pret_dir, kristall)
+    trainers = trainer_constants(b.pret_dir)
     b.walk_maps()
-    return b.result()
+    b.walk_phone(trainers)
+    b.walk_sections()
+    b.walk_code_texts()
+    b.fill_gaps()
+    b.walk_tables()
+    return b.result(b.read_name_tables(trainers))
 
 
 def write_pairs(pairs, out=PAIRS_JSON):

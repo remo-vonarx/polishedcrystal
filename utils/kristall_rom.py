@@ -172,6 +172,7 @@ KRISTALL_CHARS = {**PRET_CHARS, **{
     0xBA: "à", 0xBB: "è", 0xBC: "é", 0xBD: "ù", 0xBE: "ß", 0xBF: "ç",
     0xC0: "Ä", 0xC1: "Ö", 0xC2: "Ü", 0xC3: "ä", 0xC4: "ö", 0xC5: "ü", 0xC6: "ë", 0xC7: "ï",
     0xC8: "â", 0xC9: "ô", 0xCA: "û", 0xCB: "ê", 0xCC: "î", 0xF2: "<DOT>",
+    0xE4: "+",  # blank in pret's font; Kristall draws a plus (move descriptions: "Verfehlt evtl. + …")
 }}
 
 TEXT_MACROS = read_macros(PRET / "macros" / "scripts" / "text.asm") if PRET.exists() else {}
@@ -237,3 +238,89 @@ def decode_text(rom, bank, addr, chars, ram):
         if macro.name in ENDING_COMMANDS:
             break
     return Text(commands, offset - start)
+
+
+def _glyph(rom, offset, chars):
+    b = rom.data[offset]
+    if b not in chars:
+        raise ValueError(f"byte ${b:02x} isn't a letter (offset {offset:#x})")
+    return chars[b]
+
+
+def decode_lines(rom, bank, addr, chars):
+    """A move or item description: lines split by <NEXT>, ending at "@"."""
+    start = offset = rom.offset(bank, addr)
+    commands, command, buf = [], "text", []
+    while True:
+        b = rom.data[offset]
+        offset += 1
+        if b == TERMINATOR:
+            commands.append((command, "".join(buf)))
+            return Text(commands, offset - start)
+        if b == 0x4E:  # <NEXT>
+            commands.append((command, "".join(buf)))
+            command, buf = "next", []
+        else:
+            buf.append(_glyph(rom, offset - 1, chars))
+        if offset - start > 200:
+            raise ValueError(f"no end of description at {bank:02x}:{addr:04x}")
+
+
+def decode_dex(rom, bank, addr, chars):
+    """A Pokédex entry: its category up to "@", height and weight (4 bytes), then two pages of
+    lines split by <NEXT>, the first page ending at "@" and the second at "@"."""
+    start = offset = rom.offset(bank, addr)
+    category = []
+    while rom.data[offset] != TERMINATOR:
+        category.append(_glyph(rom, offset, chars))
+        offset += 1
+        if len(category) > 12:
+            raise ValueError(f"no end of category at {bank:02x}:{addr:04x}")
+    offset += 1 + 4  # "@", height, weight
+    commands, command, buf, pages = [("category", "".join(category))], "text", [], 0
+    while True:
+        b = rom.data[offset]
+        offset += 1
+        if b in (TERMINATOR, 0x4E):
+            commands.append((command, "".join(buf)))
+            buf = []
+            if b == 0x4E:
+                command = "next"
+            else:
+                pages += 1
+                if pages == 2:
+                    return Text(commands, offset - start)
+                command = "page"
+        else:
+            buf.append(_glyph(rom, offset - 1, chars))
+        if offset - start > 300:
+            raise ValueError(f"no end of Pokédex entry at {bank:02x}:{addr:04x}")
+
+
+def read_names(rom, bank, addr, count, chars, width=None):
+    """`count` names from bank:addr: each `width` bytes (padded with "@"), or "@"-terminated."""
+    names, offset = [], rom.offset(bank, addr)
+    for _ in range(count):
+        buf, i = [], offset
+        while rom.data[i] != TERMINATOR and (width is None or i - offset < width):
+            buf.append(_glyph(rom, i, chars))
+            i += 1
+        names.append("".join(buf))
+        offset = offset + width if width else i + 1
+    return names
+
+
+def read_constants(path):
+    """value -> constant name, for `const` lines counted from const_def (start and step)."""
+    names, value, step = {}, 0, 1
+    for line in Path(path).read_text(encoding="utf-8").splitlines():
+        if m := re.match(r"\s*const_def\s*(-?\$?[0-9a-f]*)\s*(?:,\s*(-?\d+))?", line, re.I):
+            v = m.group(1) or "0"
+            value = -int(v[2:], 16) if v.startswith("-$") else int(v[1:], 16) if v.startswith("$") else int(v)
+            step = int(m.group(2) or 1)
+        elif re.match(r"\s*const_skip\b", line):
+            value += step
+        elif m := re.match(r"\s*const\s+(\w+)", line):
+            names.setdefault(value, m.group(1))
+            value += step
+    return names
