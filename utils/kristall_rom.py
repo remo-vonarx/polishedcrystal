@@ -86,6 +86,9 @@ def read_sections(map_path):
 
 OPERAND_LINE = re.compile(r"\s*(db|dw|dba|dn|dwb|dbw)\s+([^;]*?)\s*(?:;\s*(.*))?$")
 
+# Macros used inside a command macro for its operands (pret's macros/scripts/maps.asm, legacy.asm)
+SUB_MACROS = {"map_id": ["db", "db"], "bigdt": ["db", "db", "db"]}
+
 # Macros whose operands depend on `if`/`_NARG`: their full form, by hand (pret's events.asm).
 # givepoke adds two pointers (nickname, OT name: strings, not texts) when its 4th byte is nonzero;
 # the script interpreter reads those itself.
@@ -142,6 +145,10 @@ def read_macros(asm_path):
                             size, items, note = om.group(1), om.group(2), om.group(3) or ""
                             count = 1 if size == "dn" else len([x for x in items.split(",") if x.strip()])
                             operands += [Operand(size, note.strip())] * count
+                        elif (sm := re.match(r"\s*(\w+)\b[^;]*(?:;\s*(.*))?$", b)) and sm.group(1) in SUB_MACROS:
+                            operands += [Operand(size, (sm.group(2) or "").strip()) for size in SUB_MACROS[sm.group(1)]]
+                        elif b.split(";")[0].strip():
+                            raise ValueError(f"{asm_path}: {name}: can't read operand line {b.strip()!r}")
                     macros[command] = Macro(name, operands)
         i += 1
     return macros
@@ -211,7 +218,8 @@ def decode_text(rom, bank, addr, chars, ram):
             continue
         macro = TEXT_MACROS.get(cmd)
         if macro is None:
-            raise ValueError(f"unknown text command ${cmd:02x} at {bank:02x}:{addr + offset - start - 1:04x}")
+            raise ValueError(f"unknown text command ${cmd:02x} at {bank:02x}:{addr + offset - start - 1:04x} "
+                             f"(text at {bank:02x}:{addr:04x})")
         values = []
         for operand in macro.operands:
             if operand.size == "dw":
