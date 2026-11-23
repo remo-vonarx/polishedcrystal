@@ -487,3 +487,184 @@ def test_box_lines_follow_the_text_commands():
     assert box_lines([("text", "<PLAYER> received"), ("line", "the "), ("text_ram", "wStringBuffer4"),
                       ("text", " Badge."), ("para", "Next box."), ("done",)]) == [
         "<PLAYER> received", "the <wStringBuffer4> Badge.", "", "Next box."]
+
+
+def test_dex_entries_pair_with_dump(pairs):
+    # Kristall keeps height and weight in 3 bytes (metric), pret in 4
+    assert by_label(pairs, "BulbasaurPokedexEntry")["de"][:2] == [("category", "SAMEN"), ("text", "Da es noch klein")]
+    dex = [p for p in pairs["texts"] if p["kind"] == "dex"]
+    assert all(p["de"][1][1][:1].isupper() or p["de"][1][1][:1] == "#" for p in dex)
+
+
+# --- Task 7: the writer ---------------------------------------------------------------------
+
+HI = [("text", "Hi!"), ("done",)]
+HALLO = [("text", "Hallo!"), ("done",)]
+
+
+def word_entry(polished=HI, pret_en=HI, de=HALLO, partial_faithful=False, structure_differs=False):
+    from kristall_index import Entry
+    text = fake_text(commands=polished, partial_faithful=partial_faithful)
+    pair = fake_pair("P", en=pret_en, de=de, structure_differs=structure_differs)
+    return Entry(text, "word", pair, [pair], 1.0)
+
+
+def entries_for(tmp_path, en, de):
+    from asm_text import iter_texts
+    from kristall_index import classify
+    from asm_text import render
+    path = tmp_path / "maps/X.asm"
+    if not path.exists():
+        put(path, "\n".join(["T:"] + render(en)) + "\n")
+    return classify(list(iter_texts(tmp_path, ("maps",))), {"texts": [fake_pair("P", en=en, de=de)]}, [], {}, {})
+
+
+def test_recase_non_names_and_split_words():
+    from kristall_write import recase
+    case = {"NACHTs": "Nachts", "ARENALEITER": "Arenaleiter"}
+    out, unknown = recase([("text", "des NACHTs"), ("line", "ARENA-"), ("cont", "LEITER ist da."), ("done",)], {}, case)
+    assert out[:3] == [("text", "des Nachts"), ("line", "Arena-"), ("cont", "leiter ist da.")] and unknown == []
+
+
+def test_unknown_capitals_are_reported():
+    from kristall_write import recase
+    assert recase([("text", "Der FOO"), ("done",)], {}, {})[1] == ["FOO"]
+
+
+def test_multi_word_names_are_looked_up_whole():
+    from kristall_write import recase
+    out, unknown = recase([("text", "PROF. LINDs Labor"), ("done",)], {}, {"PROF. LINDs": "Prof. Linds"})
+    assert out[0] == ("text", "Prof. Linds Labor") and unknown == []
+
+
+def test_name_swap_rebreaks_paragraph():
+    from check_text_width import string_width
+    from kristall_write import fit, recase
+    cmds = [("text", "Das ist der"), ("line", "ZINNTURM, so hoch"), ("cont", "wie nie."), ("done",)]
+    out, _ = recase(cmds, {"ZINNTURM": "Glockenturm"}, {})
+    fitted = fit(out)
+    assert fitted and all(string_width(c[1]) <= 18 for c in fitted if len(c) > 1)
+    assert " ".join(c[1] for c in fitted if len(c) > 1) == "Das ist der Glockenturm, so hoch wie nie."
+    assert fitted[-1] == ("done",)
+
+
+def test_fit_keeps_a_paragraph_that_fits():
+    from kristall_write import fit
+    cmds = [("text", "Kurz."), ("para", "Auch kurz."), ("done",)]
+    assert fit(cmds) == cmds
+
+
+def test_fit_with_runtime_variable_is_flagged():  # Review Focus 3
+    from kristall_write import fit
+    assert fit([("text", "Der GLOCKENTURM von"), ("text_ram", "wStringBuffer1"), ("done",)]) is None
+
+
+def test_unmapped_kristall_char_is_flagged():  # Review Focus 2
+    from kristall_write import german_for
+    r = german_for(word_entry(de=[("text", "Crème brûlée"), ("done",)]), {}, {})
+    assert r.commands is None and any("û" in f for f in r.flags)
+
+
+def test_structure_differs_follows_kristall():
+    from kristall_write import german_for
+    e = word_entry(
+        polished=[("text_ram", "wStringBuffer1"), ("text", " stopped"), ("line", "evolving!"), ("prompt",)],
+        pret_en=[("text_ram", "wStringBuffer2"), ("text", " stopped"), ("line", "evolving!"), ("prompt",)],
+        de=[("text", "Entwicklung von"), ("text_ram", "wStringBuffer2"), ("line", "gestoppt!"), ("done",)],
+        structure_differs=True)
+    assert german_for(e, {}, {}).commands == [  # Kristall's order, Polished's variable and ending
+        ("text", "Entwicklung von"), ("text_ram", "wStringBuffer1"), ("line", "gestoppt!"), ("prompt",)]
+
+
+def test_unmappable_kristall_variable_is_flagged():
+    from kristall_write import german_for
+    e = word_entry(polished=HI, pret_en=HI, de=[("text", "Hallo"), ("text_ram", "wNotInPolished"), ("done",)],
+                   structure_differs=True)
+    r = german_for(e, {}, {})
+    assert r.commands is None and any("wNotInPolished" in f for f in r.flags)
+
+
+def test_partial_faithful_is_flagged():
+    from kristall_write import german_for
+    assert german_for(word_entry(partial_faithful=True), {}, {}).commands is None
+
+
+def test_only_word_for_word_texts_are_written():
+    from kristall_index import Entry
+    from kristall_write import german_for
+    e = word_entry()
+    assert german_for(Entry(e.text, "changed", e.pair, [], 0.8), {}, {}).commands is None
+
+
+def test_dex_entry_keeps_its_at_sign():
+    from kristall_write import german_for
+    ours = [("category", "Seed"), ("text", "While it is young."), ("page", "It grows.@")]
+    pret = [("category", "SEED"), ("text", "While it is young."), ("page", "It grows.")]
+    de = [("category", "SAMEN"), ("text", "Da es noch klein"), ("page", "ist, wächst es.")]
+    assert german_for(word_entry(polished=ours, pret_en=pret, de=de), {}, {"SAMEN": "Samen"}).commands == [
+        ("category", "Samen"), ("text", "Da es noch klein"), ("page", "ist, wächst es.@")]
+
+
+def test_writer_is_idempotent(tmp_path):
+    from kristall_write import write
+    entries = entries_for(tmp_path, en=HI, de=HALLO)
+    assert write(entries, {}, {}, dry_run=False, root=tmp_path).changed
+    before = (tmp_path / "maps/X.asm").read_bytes()
+    assert b'text "Hallo!"' in before
+    again = entries_for(tmp_path, en=HI, de=HALLO)
+    assert write(again, {}, {}, dry_run=False, root=tmp_path).changed == []
+    assert (tmp_path / "maps/X.asm").read_bytes() == before
+
+
+def test_writer_finds_its_text_after_lines_moved(tmp_path):
+    from asm_text import iter_texts
+    from kristall_index import classify
+    from kristall_write import write
+    put(tmp_path / "maps/X.asm", 'A:\n\ttext "One"\n\tline "two"\n\tdone\n\nB:\n\ttext "Hi!"\n\tdone\n')
+    english = list(iter_texts(tmp_path, ("maps",)))
+    put(tmp_path / "maps/X.asm", 'A:\n\ttext "Eins"\n\tdone\n\nB:\n\ttext "Hi!"\n\tdone\n')  # A got shorter
+    entries = [e for e in classify(english, {"texts": [fake_pair("P", en=HI, de=HALLO)]}, [], {}, {}) if e.cls == "word"]
+    write(entries, {}, {}, dry_run=False, root=tmp_path)
+    assert (tmp_path / "maps/X.asm").read_text() == 'A:\n\ttext "Eins"\n\tdone\n\nB:\n\ttext "Hallo!"\n\tdone\n'
+
+
+def test_text_with_code_inside_is_not_written(tmp_path):
+    from kristall_write import write
+    put(tmp_path / "maps/X.asm", 'T:\n\ttext "Hi!"\n\tassert 1 == 1\n\tdone\n')
+    entries = entries_for(tmp_path, en=HI, de=HALLO)
+    report = write(entries, {}, {}, dry_run=False, root=tmp_path)
+    assert report.changed == [] and any("assert" in f for f in report.flags)
+
+
+def test_kristall_contraction_tiles(pairs):
+    def words(label):
+        return " ".join(c[1] for c in by_label(pairs, label)["de"] if len(c) > 1 and isinstance(c[1], str))
+    assert "Wie steht's?" in words("HaveGoodRodText")
+    assert "Was soll's!" in words("SailorStanlySeenText")
+    assert "Ich bin's, BILL!" in words("BillPhoneNewlyFullText")
+
+
+def test_render_category():
+    from asm_text import render
+    assert render([("category", "Samen"), ("text", "Da es"), ("next", "klein ist.@")]) == [
+        '\tdb "Samen@"', '\ttext "Da es"', '\tnext "klein ist.@"']
+
+
+def test_tokens_are_not_capitals():
+    from kristall_write import recase
+    out, unknown = recase([("text", "<PLAYER> und <USER>!"), ("done",)], {}, {})
+    assert out[0] == ("text", "<PLAYER> und <USER>!") and unknown == []
+
+
+def test_text_far_with_asm_is_left_to_its_target():
+    from kristall_write import german_for
+    far = [("text_far", "Text_Gained"), ("text_asm",)]
+    r = german_for(word_entry(polished=far, pret_en=[("text_far", "_Text_Gained"), ("text_asm",)]), {}, {})
+    assert r == (None, [])
+
+
+def test_text_far_inside_own_text_is_flagged():
+    from kristall_write import german_for
+    mixed = [("text", "Hi "), ("text_far", "Text_Gained"), ("text_end",)]
+    r = german_for(word_entry(polished=mixed, pret_en=mixed), {}, {})
+    assert r.commands is None and any("text_far" in f for f in r.flags)

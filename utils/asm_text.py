@@ -199,6 +199,8 @@ def render(commands):
     for c in commands:
         if c[0] in STRING_COMMANDS:
             out.append(f'\t{c[0]} "{c[1]}"')
+        elif c[0] == "category":
+            out.append(f'\tdb "{c[1]}@"')
         elif len(c) > 1:
             out.append(f"\t{c[0]} {', '.join(str(x) for x in c[1:])}")
         else:

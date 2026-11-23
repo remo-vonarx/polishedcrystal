@@ -173,6 +173,9 @@ KRISTALL_CHARS = {**PRET_CHARS, **{
     0xC0: "Ä", 0xC1: "Ö", 0xC2: "Ü", 0xC3: "ä", 0xC4: "ö", 0xC5: "ü", 0xC6: "ë", 0xC7: "ï",
     0xC8: "â", 0xC9: "ô", 0xCA: "û", 0xCB: "ê", 0xCC: "î", 0xF2: "<DOT>",
     0xE4: "+",  # blank in pret's font; Kristall draws a plus (move descriptions: "Verfehlt evtl. + …")
+    # Kristall's contraction tiles, where pret has kana; read from the words they sit in:
+    # "Was so<l'>s!", "Ich bi<n'>s", "Wie steht<'s>?"
+    0xD7: "l'", 0xD9: "n'", 0xDC: "'s",
 }}
 
 TEXT_MACROS = read_macros(PRET / "macros" / "scripts" / "text.asm") if PRET.exists() else {}
@@ -266,9 +269,10 @@ def decode_lines(rom, bank, addr, chars):
             raise ValueError(f"no end of description at {bank:02x}:{addr:04x}")
 
 
-def decode_dex(rom, bank, addr, chars):
-    """A Pokédex entry: its category up to "@", height and weight (4 bytes), then two pages of
-    lines split by <NEXT>, the first page ending at "@" and the second at "@"."""
+def decode_dex(rom, bank, addr, chars, measures=4):
+    """A Pokédex entry: its category up to "@", height and weight (`measures` bytes: 4 in pret,
+    3 in Kristall, which keeps them metric), then two pages of lines split by <NEXT>, the first
+    page ending at "@" and the second at "@"."""
     start = offset = rom.offset(bank, addr)
     category = []
     while rom.data[offset] != TERMINATOR:
@@ -276,7 +280,7 @@ def decode_dex(rom, bank, addr, chars):
         offset += 1
         if len(category) > 12:
             raise ValueError(f"no end of category at {bank:02x}:{addr:04x}")
-    offset += 1 + 4  # "@", height, weight
+    offset += 1 + measures  # "@", height, weight
     commands, command, buf, pages = [("category", "".join(category))], "text", [], 0
     while True:
         b = rom.data[offset]

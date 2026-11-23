@@ -15,6 +15,7 @@ JSON layout:
 """
 import argparse
 import json
+from functools import partial
 import re
 import sys
 from collections import Counter
@@ -520,7 +521,7 @@ class Builder:
         for s in range(1, species + 1):
             pe = (en_banks[(s - 1) >> 6], en.word(tbank, en_table + 2 * (s - 1)))
             pd = (de_banks[(s - 1) >> 6], de.word(twin[0], de_table + 2 * (s - 1)))
-            self.add_table_text("dex", pe, pd, decode_dex)
+            self.add_table_text("dex", pe, pd, decode_dex, partial(decode_dex, measures=3))
         # move descriptions: the table PrintMoveDescription loads
         start, twin, at = self.routine_twin("PrintMoveDescription", 16, 0x21)
         en_table = (self.sym["MoveDescriptions"])
@@ -544,10 +545,10 @@ class Builder:
             pd = (twin[0], de.word(twin[0], de_table + 2 * i))
             self.add_table_text("item_desc", pe, pd, decode_lines)
 
-    def add_table_text(self, kind, pe, pd, decode):
+    def add_table_text(self, kind, pe, pd, decode, de_decode=None):
         try:
             en = decode(self.en, *pe, PRET_CHARS)
-            de = decode(self.de, *pd, KRISTALL_CHARS)
+            de = (de_decode or decode)(self.de, *pd, KRISTALL_CHARS)
         except ValueError as e:
             raise LockstepError(f"{kind} at {where(pe)} / {where(pd)}: {e}") from None
         if pe in self.texts:

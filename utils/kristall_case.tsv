@@ -1,0 +1,5 @@
+# Kristall's spelling in capitals -> ours, for kristall_write.py: a name or word Kristall writes in
+# capitals (PROF. LIND, KNOFENSA-TURM, #MON, des NACHTs). Words only, never sentences.
+# A word Kristall splits at a line end ("ARENA-" / "LEITER") is listed joined, as German writes it
+# (ARENALEITER -> Arenaleiter) or with its hyphen (KNOFENSA-TURM -> Knofensa-Turm).
+# Columns: Kristall, ours. The name chunks and chunk K fill it.
