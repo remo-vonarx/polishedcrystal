@@ -147,7 +147,7 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 	charmap "♀",        $bf
 
 	charmap "'",        $c0
-	charmap "'d",       $c1
+	charmap "ß",        $c1 ; was 'd (German has no contractions; English 'd prints as two tiles)
 	charmap "'l",       $c2
 	charmap "'m",       $c3
 	charmap "'r",       $c4
@@ -156,14 +156,13 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 	charmap "'v",       $c7
 
 	charmap "é",        $c8
-	charmap "É",        $c9
-	charmap "á",        $ca
+	charmap "Ä",        $c9 ; was É
+	charmap "ä",        $ca ; was á
 	charmap "<BOLDH>",  $cb
-	charmap "í",        $cc
-	charmap "ó",        $cd
-
-	charmap "¿",        $ce
-	charmap "¡",        $cf
+	charmap "Ö",        $cc ; was í
+	charmap "ö",        $cd ; was ó
+	charmap "Ü",        $ce ; was ¿
+	charmap "ü",        $cf ; was ¡
 
 	charmap "<PO>",     $d0
 	charmap "<KE>",     $d1
