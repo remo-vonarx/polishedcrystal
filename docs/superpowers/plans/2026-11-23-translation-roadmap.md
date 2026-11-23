@@ -101,15 +101,16 @@ Its internals get a short design of their own before coding. Fixed here:
 
 ### Task 2: Moves, TMs and HMs
 
-- [ ] All move names (Kristall's, modern names as decided).
-- [ ] TM and HM item names, the TM pocket's A–Z order (`data/moves/tmhm_order.asm`).
-- [ ] Test: moves on the summary and in the battle menu, the whole TM pocket.
+- [x] All move names (Kristall's, modern names as decided).
+- [x] TM and HM item names, the TM pocket's A–Z order (`data/moves/tmhm_order.asm`).
+- [x] Test: moves on the summary and in the battle menu, the whole TM pocket.
+- Decided 2026-11-23: Konfusstrahl, Staffette, Giftblick, Schnabel, Wandler, Gesichte; Wertewechsel for Skill Swap; own translations Frischsnack, Furienhieb, Heillicht; HM as VM, as in Kristall (GLOSSARY.md).
 - [ ] Ship.
 
 ### Task 3: Items
 
 - [ ] All item names, key items, Apricorns, wings, candies; the Faithful names (Honey, RageCandyBar, Guard Spec.).
-- [ ] Pocket names; the Bag's A–Z order (`constants/item_constants.asm`, `data/items/name_order.asm`).
+- [ ] Pocket names; the Bag's A–Z order (`constants/item_constants.asm`, `data/items/name_order.asm`). The TM pocket's tab reads TM/HM: check Kristall's pocket name, since its HMs are VMs.
 - [ ] Test: every pocket (the debug radio fills the Bag), a Mart, both ROMs.
 - [ ] Ship.
 

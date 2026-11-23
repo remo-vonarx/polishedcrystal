@@ -48,3 +48,24 @@ _Avoid_: Wirbellose
 
 **Type chart labels**:
 The Type Chart screen names the attacker ANGR and the defender VER (Kristall's forms) and heads its columns NRML, KAMPF, FLUG, GIFT, BODEN, GEST, KÄFR, GEIS, STHL, FEUR, WASR, PFL, ELEK, PSYC, EIS, DRCH, UNLI, FEE.
+
+## Moves
+
+**Move names**:
+Kristall's names for the moves of Gen 2, in mixed case (DONNERBLITZ → Donnerblitz), and today's official German names for Polished's later ones. Where a Kristall name was renamed later, the choice per move is: Konfusstrahl, Staffette, Giftblick, Schnabel, Wandler, Gesichte.
+_Avoid_: Konfustrahl, Stafette, Schlangenblick, Pikser, Verwandler, Scharfblick
+
+**Wertewechsel**:
+Skill Swap, by its official name from Gen 3 to 7; today's name doesn't fit the 12-character limit.
+_Avoid_: Fähigkeitstausch
+
+**Säuselstimme**:
+Disarming Voice (in Polished's English squeezed to "Disarm Voice").
+
+**Frischsnack**, **Furienhieb**, **Heillicht**:
+Own translations of Polished's own moves: Fresh Snack (replaces Milchgetränk and Weichei), Fury Strikes (replaces Furienschlag and Kratzfurie), Healing Light (replaces Mondschein, Morgengrauen and Synthese).
+_Avoid_: Furienhiebe, Lichtheilung
+
+**VM**:
+An HM is a VM (Versteckte Maschine), as in Kristall: VM01. A TM stays a TM.
+_Avoid_: HM

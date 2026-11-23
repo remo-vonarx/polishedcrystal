@@ -579,7 +579,7 @@ _GetTMHMName::
 	db "@"
 
 .HMText:
-	db "HM"
+	db "VM"
 .HMTextEnd:
 	db "@"
 
