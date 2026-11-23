@@ -49,11 +49,11 @@
 
 ### Task G1: Test setup
 
-- [ ] Bring back the first attempt's `vc/` scripts (`build_cia.sh`, `gen_ctm.py`, `playtest.py`, `README.md`) from `archive/first-attempt`; they work with `vc/local/`.
-- [ ] Choose how screens are read: Azahar alone (screenshots), or a scriptable emulator that reads `wTilemap` as well, if one runs the 4 MB ROM. Propose it and ask.
-- [ ] Fill in the profile's **Emulator**, **Test entry points** and **Virtual Console** rows.
-- [ ] Test: Upstream's ROM, packaged as a CIA, boots in Azahar to the player's room; Kristall reaches the same room.
-- [ ] Ship.
+- [x] Bring back the first attempt's `vc/` scripts (`build_cia.sh`, `gen_ctm.py`, `playtest.py`, `README.md`) from `archive/first-attempt`; they work with `vc/local/`.
+- [x] Choose how screens are read: Azahar alone (screenshots), or a scriptable emulator that reads `wTilemap` as well, if one runs the 4 MB ROM. Propose it and ask. (Chosen 2026-11-23: both; PyBoy through `utils/pyboy_play.py` for every screen, Azahar for the VC.)
+- [x] Fill in the profile's **Emulator**, **Test entry points** and **Virtual Console** rows.
+- [x] Test: Upstream's ROM, packaged as a CIA, boots in Azahar to the player's room; Kristall reaches the same room.
+- [x] Ship.
 
 ### Task G2: 4 MB ROM
 
