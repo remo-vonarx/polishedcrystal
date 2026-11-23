@@ -57,10 +57,10 @@
 
 ### Task G2: 4 MB ROM
 
-- [ ] Bring back the first attempt's 4 MB build (`layout.link` pins `"Title"` to `ROMX $FF`, `tools/bankends.c` counts 256 banks, the bank-bit-7 fixes in map setup and the script stack) and the ADR `docs/adr/0001-4mb-rom-for-virtual-console.md`.
-- [ ] Update the profile's **ROM space** row.
-- [ ] Test: header byte `$148` is `$07`; the `.sym` puts `_TitleScreen` in bank `$FF`; the MBC30-patched CIA boots to the player's room, and an unpatched one stops at the title screen.
-- [ ] Ship.
+- [x] Bring back the first attempt's 4 MB build (`layout.link` pins `"Title"` to `ROMX $FF`, `tools/bankends.c` counts 256 banks, the bank-bit-7 fixes in map setup and the script stack) and the ADR `docs/adr/0001-4mb-rom-for-virtual-console.md`.
+- [x] Update the profile's **ROM space** row.
+- [x] Test: header byte `$148` is `$07`; the `.sym` puts `_TitleScreen` in bank `$FF`; the MBC30-patched CIA boots to the player's room, and an unpatched one stops at the title screen. (2026-11-23: it crashes there with "Error: 001", `rst 38h`.)
+- [x] Ship.
 
 ### Task G3: Font
 

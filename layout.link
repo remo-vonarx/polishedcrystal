@@ -210,6 +210,9 @@ ROMX $49
 ROMX $4A
 	"Dynamic Pals System"
 
+ROMX $FF
+	"Title" ; pinned last: every build is 4 MB, and Virtual Console without the MBC30 patch fails at the title screen
+
 VRAM $0
 	"VRAM0"
 

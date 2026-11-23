@@ -27,7 +27,7 @@ make vc
 vc/build_cia.sh polishedcrystal-<version>.gbc [name]   # -> vc/local/out/<name>.cia and .game.cxi
 ```
 
-The script always applies poke-cia's MBC30 patch, so a 4 MB ROM runs too; stock Virtual Console reaches only 2 MB. It stops unless the patched byte is in place. The title installs as `0004000000172800` (from poke-cia's `game.rsf`), separate from Kristall's `0004000000172B00`. The CIA bytes vary from build to build, but the `.game.cxi` is reproducible.
+The script always applies poke-cia's MBC30 patch: stock Virtual Console reaches only 2 MB, and the 4 MB ROM crashes at its title screen without it. It stops unless the patched byte is in place. The title installs as `0004000000172800` (from poke-cia's `game.rsf`), separate from Kristall's `0004000000172B00`. The CIA bytes vary from build to build, but the `.game.cxi` is reproducible.
 
 ## Run in Azahar
 
