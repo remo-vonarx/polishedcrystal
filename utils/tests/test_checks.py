@@ -46,7 +46,8 @@ def test_names_clean_on_tree(root):
 def test_german_table_with_english_fails(monkeypatch, base):
     import check_names
     monkeypatch.setattr(check_names, "GERMAN_TABLES", {"types"})
-    assert any('"Fire"' in p for p in check_names.check(base))  # "Normal" is German too
+    monkeypatch.setitem(check_names.SAME_IN_GERMAN, "types", {"???"})  # "Normal" no longer allowed
+    assert any('still English: "Normal"' in p for p in check_names.check(base))
 
 
 def test_untranslated_table_is_not_reported(base):
