@@ -27,3 +27,24 @@ _Avoid_: free translation, adaptation
 
 **ß**:
 Written as Kristall writes it (mostly the new spelling: Straße, but dass; a few older forms such as erfaßt), and in Own translation as the new spelling has it. The naming keyboards have no ß key, as in Kristall.
+
+## Pokémon
+
+**Pokémon names**:
+Kristall's names for the 251 Pokémon of Gen 2, in mixed case (BISASAM → Bisasam), and today's official German names for Polished's later ones (Pantifrost, Dummimisel). An Egg is an Ei, a Bad Egg a Schl. Ei (Emerald's form).
+_Avoid_: Kristall's capitals in tables
+
+**Drache**:
+The Dragon type and the Dragon egg group, as the games write it since Gen 4.
+_Avoid_: Drachen (Kristall's name for the type)
+
+**Abilities**:
+The official German names from before Gen 9, the era of Polished's mechanics: Tempomacher (Own Tempo), Fußangel (Tangled Feet), Aufheber (Poison Heal), Hagelalarm (Snow Warning, which summons hail in Polished).
+_Avoid_: Gleichmut, Taumelschritt, Giftheilung, Schneeschauer
+
+**Egg groups**:
+The official German names (Monster, Feld, Humanotyp, Amorph, Unbekannt …); in Faithful also Wasser 1, Wasser 2, Wasser 3. Regular's own names for the water groups are an Own translation: Amphibie (Water 1), Fisch (Water 2), Wirbellos (Water 3).
+_Avoid_: Wirbellose
+
+**Type chart labels**:
+The Type Chart screen names the attacker ANGR and the defender VER (Kristall's forms) and heads its columns NRML, KAMPF, FLUG, GIFT, BODEN, GEST, KÄFR, GEIS, STHL, FEUR, WASR, PFL, ELEK, PSYC, EIS, DRCH, UNLI, FEE.
