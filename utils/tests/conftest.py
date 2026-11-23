@@ -45,3 +45,14 @@ def pairs(tmp_path_factory):
     out = tmp_path_factory.mktemp("pairs") / "kristall_pairs.json"
     kristall_pairs.write_pairs(kristall_pairs.build_pairs(kr.PRET, kr.KRISTALL_ROM), out)
     return kristall_pairs.load_pairs(out)
+
+
+@pytest.fixture(scope="session")
+def base():
+    """The last merged Upstream commit: Upstream's English."""
+    import subprocess
+    out = subprocess.run(["git", "-C", str(ROOT), "merge-base", "HEAD", "upstream/master"],
+                         capture_output=True, text=True)
+    if out.returncode:
+        pytest.skip("no upstream/master")
+    return out.stdout.strip()
