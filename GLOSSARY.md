@@ -47,7 +47,7 @@ The official German names (Monster, Feld, Humanotyp, Amorph, Unbekannt …); in 
 _Avoid_: Wirbellose
 
 **Type chart labels**:
-The Type Chart screen names the attacker ANGR and the defender VER (Kristall's forms) and heads its columns NRML, KAMPF, FLUG, GIFT, BODEN, GEST, KÄFR, GEIS, STHL, FEUR, WASR, PFL, ELEK, PSYC, EIS, DRCH, UNLI, FEE.
+The Type Chart screen names the attacker ANGR and the defender VERT (Kristall's abbreviations for Angriff and Verteidigung) and heads its columns NRML, KAMPF, FLUG, GIFT, BODEN, GEST, KÄFR, GEIS, STHL, FEUR, WASR, PFL, ELEK, PSYC, EIS, DRCH, UNLI, FEE.
 
 ## Moves
 
