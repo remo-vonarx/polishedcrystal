@@ -117,8 +117,9 @@ Its internals get a short design of their own before coding. Fixed here:
 
 ### Task 4: Trainers
 
-- [ ] All trainer classes and trainer names; Battle Tower classes and names; Wonder Trade names; in-game trade nicknames and partners; default player and rival names.
-- [ ] Test: a battle intro of each class, the phone list, a Battle Tower opponent, a Wonder Trade.
+- [x] All trainer classes and trainer names; Battle Tower classes and names; Wonder Trade names; in-game trade nicknames and partners; default player and rival names.
+- [x] Test: a battle intro of each class, the phone list, a Battle Tower opponent, a Wonder Trade.
+- Decided 2026-11-24 on a review page: classes, names, nicknames, trades and Wonder Trade names in GLOSSARY.md (Trainers); Psychic Inver is Estefan, with his party picker counting the longer name.
 - [ ] Ship.
 
 ### Task 5: Places and badges
