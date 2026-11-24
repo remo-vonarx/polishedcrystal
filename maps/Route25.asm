@@ -31,50 +31,63 @@ Route25_MapScriptHeader:
 GenericTrainerSchoolboyDudley:
 	generictrainer SCHOOLBOY, DUDLEY, EVENT_BEAT_SCHOOLBOY_DUDLEY, SchoolboyDudleySeenText, SchoolboyDudleyBeatenText
 
-	text "I did my best."
-	line "I have no regrets."
+	text "Ich gab mein"
+	line "Bestes. Ich habe"
+	cont "mir nichts"
+	cont "vorzuwerfen."
 	done
 
 GenericTrainerLassEllen:
 	generictrainer LASS, ELLEN, EVENT_BEAT_LASS_ELLEN, LassEllenSeenText, LassEllenBeatenText
 
-	text "I did my best."
-	line "I have no regrets."
+	text "Ich habe alles"
+	line "gegeben. Ich kann"
+	cont "mir nichts"
+	cont "vorwerfen."
 	done
 
 GenericTrainerSchoolboyJoe:
 	generictrainer SCHOOLBOY, JOE, EVENT_BEAT_SCHOOLBOY_JOE, SchoolboyJoeSeenText, SchoolboyJoeBeatenText
 
-	text "I did my best."
-	line "I have no regrets."
+	text "Ich habe alles"
+	line "gegeben. Ich kann"
+	cont "mir nichts"
+	cont "vorwerfen."
 	done
 
 GenericTrainerLassLaura:
 	generictrainer LASS, LAURA, EVENT_BEAT_LASS_LAURA, LassLauraSeenText, LassLauraBeatenText
 
-	text "I did my best."
-	line "I have no regrets."
+	text "Ich gab mein"
+	line "Bestes. Ich habe"
+	cont "mir nichts"
+	cont "vorzuwerfen."
 	done
 
 GenericTrainerCamperLloyd:
 	generictrainer CAMPER, LLOYD, EVENT_BEAT_CAMPER_LLOYD, CamperLloydSeenText, CamperLloydBeatenText
 
-	text "I did my best."
-	line "I have no regrets."
+	text "Ich gab mein"
+	line "Bestes. Ich habe"
+	cont "mir nichts"
+	cont "vorzuwerfen."
 	done
 
 GenericTrainerLassShannon:
 	generictrainer LASS, SHANNON, EVENT_BEAT_LASS_SHANNON, LassShannonSeenText, LassShannonBeatenText
 
-	text "I did my best."
-	line "I have no regrets."
+	text "Ich gab mein"
+	line "Bestes. Ich habe"
+	cont "mir nichts"
+	cont "vorzuwerfen."
 	done
 
 GenericTrainerSupernerdPat:
 	generictrainer SUPER_NERD, PAT, EVENT_BEAT_SUPER_NERD_PAT, SupernerdPatSeenText, SupernerdPatBeatenText
 
-	text "I'm sorry… I won't"
-	line "cheat anymore…"
+	text "Tut mir Leid… Ich"
+	line "werde nicht mehr"
+	cont "mogeln…"
 	done
 
 Route25SlowpokeScript:
@@ -119,81 +132,90 @@ Route25CooltrainerMovementData:
 	step_end
 
 SchoolboyDudleySeenText:
-	text "Beat the six of us"
-	line "trainers to win a"
-	cont "fabulous prize!"
+	text "Besiege alle sechs"
+	line "Trainer und du"
+	cont "erhältst einen"
+	cont "wunderbaren Preis!"
 
-	para "Think you've got"
-	line "what it takes?"
+	para "Glaubst du, du"
+	line "hast das Zeug"
+	cont "dazu?"
 	done
 
 SchoolboyDudleyBeatenText:
-	text "Whoo! Good stuff."
+	text "Wow! Gut gemacht."
 	done
 
 LassEllenSeenText:
-	text "I'm second."
-	line "Now it's serious!"
+	text "Ich bin Numero 2!"
+	line "Jetzt wird es"
+	cont "ernst!"
 	done
 
 LassEllenBeatenText:
-	text "How could I lose?"
+	text "Wie konnte ich"
+	line "nur verlieren?"
 	done
 
 SchoolboyJoeSeenText:
-	text "Here's No. 3!"
-	line "I won't be easy."
+	text "Ich bin Nummer 3!"
+	line "Das wird nicht"
+	cont "leicht."
 	done
 
 SchoolboyJoeBeatenText:
-	text "Ow! Stomped flat!"
+	text "Oh! Vermöbelt!"
 	done
 
 LassLauraSeenText:
-	text "I'm No. 4!"
-	line "Getting tired?"
+	text "Der Vierte!"
+	line "Bist du müde?"
 	done
 
 LassLauraBeatenText:
-	text "I lost too…"
+	text "Auch ich habe"
+	line "verloren…"
 	done
 
 CamperLloydSeenText:
-	text "OK! I'm No. 5."
-	line "I'll stomp you!"
+	text "O.K.! Nummer 5."
+	line "Ich zermalme dich!"
 	done
 
 CamperLloydBeatenText:
-	text "Whoa! Too much."
+	text "Uff! Zu stark."
 	done
 
 LassShannonSeenText:
-	text "I'm the last in"
-	line "line, but I tell"
-	cont "you, I'm tough!"
+	text "Ich bin der"
+	line "Letzte, aber ich"
+	cont "sage dir, ich bin"
+	cont "eine harte Nuss!"
 	done
 
 LassShannonBeatenText:
-	text "You're kidding."
+	text "Du machst Witze."
 	done
 
 SupernerdPatSeenText:
-	text "Mufufufu…"
+	text "Uffuffuff…"
 
-	para "I have nothing to"
-	line "do with the six-"
-	cont "pack trainers."
+	para "Ich habe mit den"
+	line "sechs Trainern"
+	cont "nichts zu tun."
 
-	para "I waited here to"
-	line "beat you when you"
+	para "Ich habe hier auf"
+	line "dich gewartet, um"
 
-	para "were tired out by"
-	line "all the battles."
+	para "dich zu besiegen,"
+	line "da du nach den"
+	cont "vielen Kämpfen"
+	cont "müde sein musst."
 	done
 
 SupernerdPatBeatenText:
-	text "Aren't you tired"
-	line "at all?"
+	text "Bist du überhaupt"
+	line "nicht müde?"
 	done
 
 Route25MewYoungsterText:
@@ -206,49 +228,55 @@ Route25MewYoungsterText:
 	done
 
 Route25SlowpokeText1:
-	text "Slowpoke: …"
+	text "Flegmon: …"
 
 	para "…… …… ……"
 	done
 
 Route25SlowpokeText2:
-	text "…… ……Yawn?"
+	text "…… ……Gähn?"
 	done
 
 CooltrainermKevinNuggetText:
-	text "You took on one"
-	line "more battle than"
+	text "Du hast einen"
+	line "Kampf mehr be-"
+	cont "stritten, als du"
 
-	para "you expected, but"
-	line "you won anyway."
+	para "erwartet hast."
+	line "Dennoch hast du"
+	cont "gewonnen."
 
-	para "As promised, you"
-	line "win a prize."
+	para "Wie versprochen,"
+	line "hier ist der"
+	cont "Preis."
 	done
 
 CooltrainermKevinSeenText:
-	text "But after seeing"
-	line "how you battle, I"
+	text "Nachdem ich ge-"
+	line "sehen habe, wie"
 
-	para "want to see how"
-	line "I'll fare."
+	para "du kämpfst, möchte"
+	line "ich sehen, wie es"
+	cont "mir ergeht."
 
-	para "How about it? Let"
-	line "me take you on."
+	para "Wie sieht's aus?"
+	line "Ich fordere dich"
+	cont "heraus."
 	done
 
 CooltrainermKevinBeatenText:
-	text "I've never had a"
-	line "battle this good!"
+	text "Das war der beste"
+	line "Kampf meines"
+	cont "Lebens!"
 	done
 
 CooltrainermKevinAfterBattleText:
-	text "That was a great"
-	line "battle!"
+	text "Der Kampf war"
+	line "großartig!"
 
-	para "You and your #-"
-	line "mon are truly out-"
-	cont "standing!"
+	para "Du und deine #-"
+	line "mon seid ein"
+	cont "perfektes Team!"
 	done
 
 NuggetBridgeNotClearedText:

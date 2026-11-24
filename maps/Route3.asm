@@ -61,76 +61,83 @@ GenericTrainerYoungsterRegis:
 GenericTrainerYoungsterJimmy:
 	generictrainer YOUNGSTER, JIMMY, EVENT_BEAT_YOUNGSTER_JIMMY, .SeenText, .BeatenText
 
-	text "I wear shorts the"
-	line "whole year round."
+	text "Ich trage das"
+	line "ganze Jahr Shorts."
 
-	para "That's my fashion"
-	line "policy."
+	para "Das ist meine"
+	line "Auffassung von"
+	cont "Mode."
 	done
 
 .SeenText:
-	text "I can run like the"
-	line "wind!"
+	text "Ich bin schnell"
+	line "wie der Wind!"
 	done
 
 .BeatenText:
-	text "Blown away!"
+	text "Hinfortgeweht!"
 	done
 
 GenericTrainerYoungsterWarren:
 	generictrainer YOUNGSTER, WARREN, EVENT_BEAT_YOUNGSTER_WARREN, .SeenText, .BeatenText
 
-	text "You looked strong."
+	text "Du hast gleich"
+	line "einen starken"
+	cont "Eindruck gemacht."
 
-	para "I was afraid to"
-	line "take you on…"
+	para "Ich hatte Angst,"
+	line "gegen dich zu"
+	cont "kämpfen…"
 	done
 
 .SeenText:
-	text "Hmmm… I don't know"
-	line "what to do…"
+	text "Hmmm… Ich weiß"
+	line "nicht, was ich"
+	cont "tun soll…"
 	done
 
 .BeatenText:
-	text "I knew I'd lose…"
+	text "Ich wusste es…"
 	done
 
 GenericTrainerFirebreatherOtis:
 	generictrainer FIREBREATHER, OTIS, EVENT_BEAT_FIREBREATHER_OTIS, .SeenText, .BeatenText
 
-	text "When it rains,"
-	line "it's hard to get"
-	cont "ignition…"
+	text "Bei Regen ist"
+	line "eine Zündung sehr"
+	cont "schwierig…"
 	done
 
 .SeenText:
-	text "Ah! The weather's"
-	line "as fine as ever."
+	text "Ah! Das Wetter"
+	line "ist so schön"
+	cont "wie immer."
 	done
 
 .BeatenText:
-	text "It's sunny, but"
-	line "I'm all wet…"
+	text "Die Sonne scheint,"
+	line "dennoch bin ich"
+	cont "nass…"
 	done
 
 GenericTrainerFirebreatherBurt:
 	generictrainer FIREBREATHER, BURT, EVENT_BEAT_FIREBREATHER_BURT, .SeenText, .BeatenText
 
-	text "The greatest fire-"
-	line "breather in Kanto,"
-	cont "that's me."
+	text "Ich bin der beste"
+	line "Feuerspucker"
+	cont "in Kanto."
 
-	para "But not the best"
-	line "trainer…"
+	para "Aber nicht der"
+	line "beste Trainer…"
 	done
 
 .SeenText:
-	text "Step right up and"
-	line "take a look!"
+	text "Komm schnell her"
+	line "und schau!"
 	done
 
 .BeatenText:
-	text "Yow! That's hot!"
+	text "Wow! Das ist heiß!"
 	done
 
 GenericTrainerBlackbeltManford:

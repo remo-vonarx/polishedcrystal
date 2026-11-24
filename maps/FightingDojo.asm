@@ -172,14 +172,14 @@ FightingDojoBlackBelt:
 	iftrue_jumptextfaceplayer BlackBeltText_ExplainsRematches
 	jumpthistextfaceplayer
 
-	text "Hello!"
+	text "Hallo!"
 
-	para "Karate King, the"
-	line "Fighting Dojo's"
+	para "Der Karate-"
+	line "Meister, der"
 
-	para "master, is in a"
-	line "cave in Johto for"
-	cont "training."
+	para "Leiter des Karate"
+	line "Dojo, übt in einer"
+	cont "Höhle in Johto."
 	done
 
 MapFightingDojoSignpost2Script:
@@ -257,13 +257,13 @@ BlackBeltText_ExplainsRematches:
 	done
 
 FightingDojoSign1Text:
-	text "What goes around"
-	line "comes around!"
+	text "Es geschieht, was"
+	line "geschehen muss!"
 	done
 
 FightingDojoSign2Text:
-	text "Enemies on every"
-	line "side!"
+	text "Feinde, wo man"
+	line "hinsieht!"
 	done
 
 MACRO rematch_script

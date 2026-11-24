@@ -67,31 +67,39 @@ GoldenrodPokecenter1FNurseScript:
 	jumpstd pokecenternurse
 
 GoldenrodPokecenter1FGameboyKidText:
-	text "The Colosseum"
-	line "upstairs is for"
-	cont "link battles."
+	text "Im oberen Stock-"
+	line "werk findest du"
 
-	para "Battle records are"
-	line "posted on the"
+	para "das Kolosseum."
+	line "Hier kannst du"
 
-	para "wall, so I can't"
-	line "afford to lose."
+	para "gegen Freunde"
+	line "antreten."
+
+	para "Kampfergebnisse"
+	line "werden an der Wand"
+
+	para "ausgehängt. Ich"
+	line "kann es mir nicht"
+
+	para "erlauben, zu ver-"
+	line "lieren."
 	done
 
 GoldenrodPokecenter1FLassText:
-	text "A higher level"
-	line "#mon doesn't"
-	cont "always win."
+	text "Ein starkes #-"
+	line "mon muss nicht"
+	cont "zwingend gewinnen."
 
-	para "After all, it may"
-	line "have a type dis-"
-	cont "advantage."
+	para "Meist entscheidet"
+	line "der Vor- oder"
+	cont "Nachteil des Typs."
 
-	para "I don't think"
-	line "there is a single"
-
-	para "#mon that is"
-	line "the toughest."
+	para "Ich glaube nicht,"
+	line "dass es ein #-"
+	cont "mon gibt, das al-"
+	cont "len anderen über-"
+	cont "legen ist."
 	done
 
 GoldenrodPokecenter1FPokefanF:
@@ -115,8 +123,8 @@ GoldenrodPokecenter1FPokefanF:
 	setevent EVENT_GOT_EVIOLITE_IN_GOLDENROD
 	jumpthisopenedtext
 
-	text "My daughter will"
-	line "be delighted!"
+	text "Meine Tochter wird"
+	line "entzückt sein!"
 	done
 
 .NoRoomForEviolite:
@@ -124,8 +132,8 @@ GoldenrodPokecenter1FPokefanF:
 	giveitem_unsafe EON_MAIL
 	jumpthisopenedtext
 
-	text "Oh… Well, another"
-	line "time, then."
+	text "Oh… Ein anderes"
+	line "Mal vielleicht."
 	done
 
 GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
@@ -144,26 +152,27 @@ GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
 	done
 
 GoldenrodPokecenter1FAskGiveAwayAnEonMailText:
-	text "Give away an Eon"
-	line "Mail?"
+	text "Anara-Brief"
+	line "weggeben?"
 	done
 
 GoldenrodPokecenter1FPokefanFThisIsForYouText:
-	text "Oh, that's great!"
-	line "Thank you, honey!"
+	text "Oh, großartig!"
+	line "Danke, Schatz!"
 
-	para "Here, this is for"
-	line "you in return!"
+	para "Hier, als Aus-"
+	line "gleich sollst"
+	cont "du das haben!"
 	done
 
 GoldenrodPokecenter1FPokefanFTooBadText:
-	text "Oh? You don't have"
-	line "one? Too bad."
+	text "Oh? Du hast"
+	line "keinen? Schade."
 	done
 
 GoldenrodPokecenter1FPlayerGaveAwayTheEonMailText:
-	text "<PLAYER> gave away"
-	line "the Eon Mail."
+	text "<PLAYER> gibt den"
+	line "Anara-Brief weg."
 	done
 
 GoldenrodPokecenter1FPokefanFGotEvioliteText:
@@ -204,8 +213,8 @@ WonderTradeReceptionistScript:
 .done
 	jumpthisopenedtext
 
-	text "We hope to see you"
-	line "again."
+	text "Komm jederzeit"
+	line "wieder vorbei!"
 	done
 
 WonderTradeIntroText:
@@ -468,9 +477,10 @@ GoldenrodPokecenter1FRockerText:
 	done
 
 GoldenrodPokecenter1FGrampsText:
-	text "Just seeing all"
-	line "these new things"
+	text "Allein das Be-"
+	line "trachten dieser"
 
-	para "here makes me feel"
-	line "younger!"
+	para "neuen Errungen-"
+	line "schaften macht"
+	cont "mich jünger!"
 	done

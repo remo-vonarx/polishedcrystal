@@ -99,11 +99,11 @@ Route34IlexForestGateTeacherText:
 	done
 
 Route34IlexForestGateTeacher_ForestIsRestless:
-	text "Something's wrong"
-	line "in Ilex Forest…"
+	text "Etwas stimmt nicht"
+	line "im Steineichen-"
+	cont "wald!"
 
-	para "You should stay"
-	line "away right now."
+	para "Geh nicht hinein!"
 	done
 
 Route34IlexForestGateHeracrossText:
@@ -111,15 +111,16 @@ Route34IlexForestGateHeracrossText:
 	done
 
 Route34IlexForestGateLassText:
-	text "Did you see the"
-	line "shrine honoring"
-	cont "the protector?"
+	text "Hast du den"
+	line "Schrein gesehen,"
+	cont "der dem Schutz-"
+	cont "patron huldigt?"
 
-	para "It watches over"
-	line "the Forest from"
-	cont "across time."
+	para "Er wacht über den"
+	line "Wald, aus einer"
+	cont "anderen Zeit."
 
-	para "I think that it"
-	line "must be a Grass-"
-	cont "type #mon."
+	para "Ich glaube, das"
+	line "ist ein"
+	cont "Pflanzen-#mon."
 	done

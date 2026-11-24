@@ -163,45 +163,48 @@ CianwoodGymChuckScript:
 	setevent EVENT_GOT_TM01_DYNAMICPUNCH
 	jumpthisopenedtext
 
-	text "That is Dynamic-"
-	line "Punch."
+	text "Das ist Wucht-"
+	line "schlag."
 
-	para "It doesn't always"
-	line "hit, but when it"
+	para "Er trifft zwar"
+	line "nicht immer, aber"
 
-	para "does, it causes"
-	line "confusion!"
+	para "wenn er es tut,"
+	line "verwirrt er den"
+	cont "Gegner!"
 	done
 
 GenericTrainerBlackbeltYoshi:
 	generictrainer BLACKBELT_T, YOSHI, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText
 
-	text "You seem to have a"
-	line "strong bond with"
-	cont "your #mon too!"
+	text "Es scheint, als"
+	line "stündest auch du"
+	cont "deinen #mon"
+	cont "sehr nahe!"
 	done
 
 GenericTrainerBlackbeltLao:
 	generictrainer BLACKBELT_T, LAO, EVENT_BEAT_BLACKBELT_LAO, BlackbeltLaoSeenText, BlackbeltLaoBeatenText
 
-	text "Fighting #mon"
-	line "are afraid of psy-"
-	cont "chics…"
+	text "Kampf-#mon"
+	line "fürchten sich vor"
+	cont "Psycho-Attacken…"
 	done
 
 GenericTrainerBlackbeltNob:
 	generictrainer BLACKBELT_T, NOB, EVENT_BEAT_BLACKBELT_NOB, BlackbeltNobSeenText, BlackbeltNobBeatenText
 
-	text "I lost!"
-	line "I'm speechless!"
+	text "Ich habe verloren!"
+	line "Ich bin sprachlos!"
 	done
 
 GenericTrainerBlackbeltLung:
 	generictrainer BLACKBELT_T, LUNG, EVENT_BEAT_BLACKBELT_LUNG, BlackbeltLungSeenText, BlackbeltLungBeatenText
 
-	text "My #mon lost…"
-	line "My… my pride is"
-	cont "shattered…"
+	text "Meine #mon ha-"
+	line "ben verloren…"
+	cont "Mein Stolz ist"
+	cont "zerstört…"
 	done
 
 CianwoodGymStatue:
@@ -250,24 +253,24 @@ ChuckIntroText1:
 	done
 
 ChuckIntroText2:
-	text "Chuck: Urggh!"
+	text "Hartwig: Urggh!"
 	line "…"
 
 	para "Oooarrgh!"
 	done
 
 ChuckIntroText3:
-	text "There! Scared now,"
-	line "are you?"
+	text "Da! Jetzt hast du"
+	line "dich erschreckt!"
 
-	para "What?"
-	line "It has nothing to"
+	para "Wie?"
+	line "Es hat nichts mit"
 
-	para "do with #mon?"
-	line "That's true!"
+	para "#mon zu tun?"
+	line "Das ist wahr!"
 
-	para "Come on. We shall"
-	line "do battle!"
+	para "Komm her. Lass uns"
+	line "kämpfen!"
 	done
 
 ChuckLossText:
@@ -292,43 +295,47 @@ ChuckExplainBadgeText:
 	done
 
 ChuckAfterText:
-	text "WAHAHAH! I enjoyed"
-	line "battling you!"
+	text "WAHAHAH! Es hat"
+	line "Spaß gemacht, ge-"
+	cont "gen dich zu kämp-"
+	cont "fen."
 
-	para "But a loss is a"
-	line "loss!"
+	para "Aber eine Nieder-"
+	line "lage bleibt eine"
+	cont "Niederlage!"
 
-	para "From now on, I'm"
-	line "going to train 24"
-	cont "hours a day!"
+	para "Von jetzt an werde"
+	line "ich 24 Stunden am"
+	cont "Tag trainieren!"
 	done
 
 BlackbeltYoshiSeenText:
-	text "My #mon and I"
-	line "are bound togeth-"
-	cont "er by friendship."
+	text "Meine #mon und"
+	line "mich verbindet un-"
+	cont "sere Freundschaft."
 
-	para "Our bond will"
-	line "never be broken!"
+	para "Dieses Band wird"
+	line "nie zerreißen!"
 	done
 
 BlackbeltYoshiBeatenText:
-	text "This isn't real!"
+	text "Das ist unmöglich!"
 	done
 
 BlackbeltLaoSeenText:
-	text "We martial artists"
-	line "fear nothing!"
+	text "Wir Meister der"
+	line "Kampfkunst haben"
+	cont "vor nichts Angst!"
 	done
 
 BlackbeltLaoBeatenText:
-	text "That's shocking!"
+	text "Schockierend!"
 	done
 
 BlackbeltNobSeenText:
-	text "Words are useless."
-	line "Let your fists do"
-	cont "the talking!"
+	text "Worte sind nutz-"
+	line "los. Lass deine"
+	cont "Fäuste sprechen!"
 	done
 
 BlackbeltNobBeatenText: ; text > text
@@ -336,13 +343,15 @@ BlackbeltNobBeatenText: ; text > text
 	done
 
 BlackbeltLungSeenText:
-	text "My raging fists"
-	line "will shatter your"
-	cont "#mon!"
+	text "Gegen die Wut mei-"
+	line "ner Fäuste können"
+	cont "deine #mon"
+	cont "nichts ausrichten!"
 	done
 
 BlackbeltLungBeatenText:
-	text "I got shattered!"
+	text "Ich wurde zer-"
+	line "schmettert!"
 	done
 
 CianwoodGymBlackBeltText:

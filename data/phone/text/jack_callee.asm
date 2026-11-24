@@ -1,71 +1,73 @@
 JackAnswerPhoneText:
-	text "Hello. This is"
+	text "Hallo. Hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "…"
 
-	para "Good morning,"
+	para "Guten Morgen,"
 	line "<PLAYER>!"
 	done
 
 JackAnswerPhoneDayText:
-	text "Hello. This is"
+	text "Hallo. Hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "…"
 
-	para "How's it going,"
+	para "Wie geht's"
 	line "<PLAYER>?"
 	done
 
 JackAnswerPhoneNiteText:
-	text "Hello. This is"
+	text "Hallo. Hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "…"
 
-	para "Good evening,"
+	para "Guten Abend,"
 	line "<PLAYER>!"
 	done
 
 JackGreetText:
-	text "<PLAYER>, good"
-	line "morning!"
+	text "<PLAYER>,"
+	line "guten Morgen!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "How are you doing?"
+	line "Wie geht es dir?"
 	done
 
 JackGreetDayText:
-	text "<PLAYER>, howdy!"
+	text "<PLAYER>, Tach!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "Isn't it nice out?"
+	line "Ist es heute"
+	cont "nicht schön?"
 	done
 
 JackGreetNiteText:
-	text "<PLAYER>, good"
-	line "evening!"
+	text "<PLAYER>,"
+	line "guten Abend!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "Got a minute?"
+	line "Hast du Zeit?"
 	done
 
 JackGenericText:
-	text "How are your"
-	line "#mon doing?"
+	text "Wie geht es deinen"
+	line "#mon?"
 
-	para "My "
+	para "Mein "
 	text_ram wStringBuffer4
-	text " is"
-	line "so curious, it's a"
+	text ""
+	line "ist so neugierig."
 
-	para "problem. Maybe"
-	line "it's like me…"
+	para "Das ist ein Pro-"
+	line "blem. Es ist"
+	cont "ein wenig wie ich…"
 	done

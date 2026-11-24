@@ -41,7 +41,7 @@ Script_BattleRoomLoop:
 	closetext
 	special Special_BattleTower_Battle ; calls StartBattle
 	special FadeOutPalettes
-	ifequalfwd BTCHALLENGE_LOST, Script_LostBattleTower
+	ifequal BTCHALLENGE_LOST, Script_LostBattleTower
 	reloadmap
 	applymovement BATTLETOWERBATTLEROOM_OPPONENT, MovementData_BattleTowerBattleRoomOpponentWalksOut
 	warpsound
@@ -62,10 +62,10 @@ Script_BattleRoomLoop:
 	ifequalfwd BTCHALLENGE_FACILITYBRAIN, .WarnAboutTycoon
 .AskNextBattle:
 	writethistext
-		text "Next up, opponent"
-		line "No. "
+		text "Als Nächstes kommt"
+		line "Gegner Nr."
 		text_decimal wStringBuffer3, 2, 5
-		text ". Ready?"
+		text "."
 		done
 	sjumpfwd .ShownText
 .WarnAboutTycoon
@@ -94,8 +94,9 @@ Script_BattleRoomLoop:
 
 .DontBattleNextOpponent:
 	writethistext
-		text "Save and end the"
-		line "session?"
+		text "Sichern und die"
+		line "Herausforderung"
+		cont "beenden?"
 		done
 	yesorno
 	iffalsefwd .DontSaveAndEndTheSession

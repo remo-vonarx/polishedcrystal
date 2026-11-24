@@ -91,8 +91,8 @@ MountMoonSquareCableCarGateReceptionistScript:
 	done
 
 .StepThisWayText:
-	text "Please step this"
-	line "way."
+	text "Hier entlang"
+	line "bitte."
 	done
 
 .ApproachCableCarMovement:

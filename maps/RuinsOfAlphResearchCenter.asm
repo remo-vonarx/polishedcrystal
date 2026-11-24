@@ -171,34 +171,35 @@ RuinsOfAlphResearchCenterScientist1Script:
 	iftruefwd .UnownAppeared
 	jumpthisopenedtext
 
-	text "The ruins are"
-	line "about 1,500 years"
-	cont "old."
+	text "Die Ruinen sind"
+	line "zirka 1500"
+	cont "Jahre alt."
 
-	para "But it's not known"
-	line "why they were"
-	cont "built--or by whom."
+	para "Aber niemand weiß,"
+	line "warum sie erbaut"
+	cont "wurden."
 	done
 
 .UnownAppeared:
 	jumpthisopenedtext
 
-	text "#mon appeared"
-	line "in the ruins?"
+	text "Es gibt #mon"
+	line "in den Ruinen?"
 
-	para "That's incredible"
-	line "news!"
+	para "Das sind unfass-"
+	line "bare Neuigkeiten!"
 
-	para "We'll need to"
-	line "investigate this."
+	para "Das müssen wir"
+	line "erforschen."
 	done
 
 .GotUnownDex:
 	jumpthisopenedtext
 
-	text "I wonder how many"
-	line "kinds of #mon"
-	cont "are in the ruins?"
+	text "Ich frage mich,"
+	line "wie viele #mon"
+	cont "wohl in den Ruinen"
+	cont "leben?"
 	done
 
 .GotAllUnown:
@@ -217,36 +218,37 @@ RuinsOfAlphResearchCenterScientist2Script:
 	iftruefwd .UnownAppeared
 	jumpthisopenedtext
 
-	text "There are odd pat-"
-	line "terns drawn on the"
+	text "An die Wände der"
+	line "Ruinen sind selt-"
+	cont "same Zeichen"
 
-	para "walls of the"
-	line "ruins."
+	para "gemalt."
+	line "Sie sind der"
 
-	para "They must be the"
-	line "keys for unravel-"
-	cont "ing the mystery"
-	cont "of the ruins."
+	para "Schlüssel zur"
+	line "Lösung des Rätsels"
+	cont "um die Ruinen."
 	done
 
 .UnownAppeared:
 	jumpthisopenedtext
 
-	text "The strange #-"
-	line "mon you saw in the"
-	cont "ruins?"
+	text "Die seltsamen"
+	line "#mon, die du in"
+	cont "den Ruinen gesehen"
+	cont "hast?"
 
-	para "They appear to be"
-	line "very much like the"
+	para "Es scheint, sie"
+	line "ähneln den"
 
-	para "drawings on the"
-	line "walls there."
+	para "Zeichnungen an"
+	line "den Wänden."
 
 	para "Hmm…"
 
-	para "That must mean"
-	line "there are many"
-	cont "kinds of them…"
+	para "Das bedeutet, es"
+	line "gibt viele"
+	cont "von ihnen…"
 	done
 
 .GotAllUnown:
@@ -256,14 +258,14 @@ RuinsOfAlphResearchCenterScientist2Script:
 	ifgreater 10, .ResearchOngoing
 	jumpthisopenedtext
 
-	text "Why did those"
-	line "ancient patterns"
+	text "Warum sind diese"
+	line "antiken Muster"
 
-	para "appear on the wall"
-	line "now?"
+	para "jetzt an den Wän-"
+	line "den aufgetaucht?"
 
-	para "The mystery"
-	line "deepens…"
+	para "Das wird immer"
+	line "geheimnisvoller…"
 	done
 
 .ResearchComplete:
@@ -276,14 +278,17 @@ RuinsOfAlphResearchCenterScientist2Script:
 .ResearchOngoing:
 	jumpthisopenedtext
 
-	text "We think something"
-	line "caused the cryptic"
+	text "Wir denken, dass"
+	line "irgendetwas für"
 
-	para "patterns to appear"
-	line "in the ruins."
+	para "die rätselhaften"
+	line "Muster in den"
 
-	para "We've focused our"
-	line "studies on that."
+	para "Ruinen verantwort-"
+	line "lich war."
+
+	para "Darauf basiert"
+	line "unsere Forschung."
 	done
 
 RuinsOfAlphResearchCenterScientist4Script:
@@ -374,10 +379,8 @@ MapRuinsofAlphResearchCenterSignpost1Script:
 	iftruefwd .SkipChecking
 	jumpthisopenedtext
 
-	text "Ruins of Alph"
-
-	para "Exploration"
-	line "Year 10"
+	text "Alph-Ruinen"
+	line "10. Forschungsjahr"
 	done
 
 .SkipChecking:
@@ -409,8 +412,8 @@ RuinsOfAlphResearchCenterModifiedDexText:
 	done
 
 RuinsOfAlphResearchCenterDexUpgradedText:
-	text "<PLAYER>'s #dex"
-	line "was upgraded."
+	text "<PLAYER>s #dex"
+	line "wurde erweitert."
 	done
 
 RuinsOfAlphResearchCenterScientist3Text:
@@ -468,34 +471,36 @@ RuinsofAlphResearchCenterScientistShockedText:
 	done
 
 RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
-	text "Our investigation,"
-	line "with your help, is"
+	text "Unsere Forschung"
+	line "und deine Hilfe"
 
-	para "giving us insight"
-	line "into the ruins."
+	para "geben uns einen"
+	line "tiefen Einblick in"
+	cont "die Ruinen."
 
-	para "The ruins appear"
-	line "to have been built"
+	para "Es scheint, als ob"
+	line "die Ruinen als"
 
-	para "as a habitat for"
-	line "#mon."
+	para "Habitat für #-"
+	line "mon gebaut wurden."
 	done
 
 RuinsOfAlphResearchCenterScientist2Text_RadioWaves:
-	text "According to my"
-	line "research…"
+	text "Unsere Forschung"
+	line "hat ergeben…,"
 
-	para "Those mysterious"
-	line "patterns appeared"
+	para "diese selt-"
+	line "samen Muster ent-"
+	cont "standen, als das"
 
-	para "when the #Com"
-	line "Center was built."
+	para "#Kom-Center"
+	line "errichtet wurde."
 
-	para "It must mean that"
-	line "radio waves have"
+	para "Das bedeutet, dass"
+	line "Radiowellen einen"
 
-	para "some sort of a"
-	line "link…"
+	para "gewissen Einfluß"
+	line "haben…"
 	done
 
 RuinsOfAlphResearchCenterComputerText_GotAllUnown:
@@ -533,10 +538,11 @@ RuinsOfAlphResearchCenterFossilComputerText:
 	done
 
 RuinsOfAlphResearchCenterAcademicBooksText:
-	text "There are many"
-	line "academic books."
+	text "Es gibt viele"
+	line "wissenschaftliche"
+	cont "Bücher dort."
 
-	para "Ancient Ruins…"
-	line "Mysteries of the"
-	cont "Ancients…"
+	para "Antike Ruinen…"
+	line "Geheimnisse der"
+	cont "Antike…"
 	done

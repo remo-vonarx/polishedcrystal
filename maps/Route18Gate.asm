@@ -73,12 +73,13 @@ Route17Route18GateOfficerText:
 	done
 
 Route17Route18GateCannotPassText:
-	text "Hang on! Don't you"
-	line "have a Bicycle?"
+	text "Warte! Hast du"
+	line "kein Fahrrad?"
 
-	para "The Cycling Road"
-	line "is beyond here."
+	para "Der Radweg"
+	line "beginnt da vorne."
 
-	para "You have to have a"
-	line "Bicycle to go on."
+	para "Ohne Fahrrad"
+	line "darfst du ihn"
+	cont "nicht benutzen."
 	done

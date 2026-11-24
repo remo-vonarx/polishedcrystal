@@ -46,48 +46,52 @@ LavRadioTower1FGentlemanScript:
 	jumpthisopenedtext
 
 .GotExpnCardText:
-	text "With that thing,"
-	line "you can tune into"
+	text "Damit kannst du"
+	line "die Radioprogramme"
 
-	para "the radio programs"
-	line "here in Kanto."
+	para "in Kanto"
+	line "empfangen."
 
-	para "Gahahahaha!"
+	para "Hahahahaha!"
 	done
 
 .OffTheAirText:
-	text "Oh, no, no, no!"
+	text "Nein, nein, nein!"
 
-	para "We've been off the"
-	line "air ever since the"
+	para "Wir sind nicht"
+	line "mehr auf Sendung,"
 
-	para "Power Plant shut"
-	line "down."
+	para "seit das Kraftwerk"
+	line "nicht mehr läuft."
 
-	para "All my efforts to"
-	line "start this station"
+	para "Alle Bemühungen,"
+	line "diese Station zum"
 
-	para "would be wasted if"
-	line "I can't broadcast."
+	para "Laufen zu bringen,"
+	line "sind vergebens,"
+	cont "wenn ich nichts"
+	cont "senden kann."
 
-	para "I'll be ruined!"
+	para "Ich bin ruiniert!"
 	done
 
 .ReturnedMachinePartText:
-	text "Ah! So you're the"
-	line "<PLAYER> who solved"
+	text "Ah! Dann bist du"
+	line "<PLAYER>. Du hast"
 
-	para "the Power Plant's"
-	line "problem?"
+	para "das Problem mit"
+	line "dem Kraftwerk"
+	cont "gelöst?"
 
-	para "Thanks to you, I"
-	line "never lost my job."
+	para "Dir habe ich es zu"
+	line "verdanken, dass"
 
-	para "I tell you, you're"
-	line "a real lifesaver!"
+	para "ich nicht arbeits-"
+	line "los wurde! Du bist"
+	cont "mein Lebensretter!"
 
-	para "Please take this"
-	line "as my thanks."
+	para "Zum Dank gebe ich"
+	line "dir das hier."
 	done
 
 LavRadioTower1FSuperNerd2Script:
@@ -114,74 +118,74 @@ LavRadioTower1FSuperNerd2Script:
 	done
 
 LavRadioTower1FReceptionistText:
-	text "Welcome!"
-	line "Feel free to look"
+	text "Willkommen!"
+	line "Schau dich auf"
 
-	para "around anywhere on"
-	line "this floor."
+	para "dieser Etage"
+	line "ruhig um."
 	done
 
 LavRadioTower1FOfficerText:
-	text "Sorry, but you can"
-	line "only tour the"
-	cont "ground floor."
+	text "Du darfst leider"
+	line "nur das Erd-"
+	cont "geschoss erkunden."
 
-	para "Ever since Johto's"
-	line "Radio Tower was"
+	para "Seit der Radioturm"
+	line "in Johto von einer"
 
-	para "taken over by a"
-	line "criminal gang, we"
+	para "Verbrechergang"
+	line "besetzt wurde,"
 
-	para "have had to step"
-	line "up our security."
+	para "mussten wir unsere"
+	line "Sicherheitsmaß-"
+	cont "nahmen erhöhen."
 	done
 
 LavRadioTower1FSuperNerd1Text:
-	text "Many people are"
-	line "hard at work here"
+	text "Viele Menschen"
+	line "arbeiten sehr hart"
+	cont "im Radioturm."
 
-	para "in the Radio"
-	line "Tower."
-
-	para "They must be doing"
-	line "their best to put"
-	cont "on good shows."
+	para "Sie müssen ihr"
+	line "Bestes geben für"
+	cont "eine gute Sendung."
 	done
 
 LavRadioTower1FSuperNerd2Text_GotExpnCard:
-	text "Hey there!"
+	text "Hi, mein Freund!"
 
-	para "I am the super"
-	line "Music Director!"
+	para "Ich bin der"
+	line "tolle Musik-"
+	cont "redakteur!"
 
-	para "I'm responsible"
-	line "for the gorgeous"
+	para "Ich bin derjenige,"
+	line "der diese wunder-"
+	cont "vollen Melodien"
 
-	para "melodies that go"
-	line "out over the air."
+	para "auf Sendung"
+	line "bringt."
 
-	para "Don't be square."
-	line "Grab your music"
-	cont "off the air!"
+	para "Sei so frei"
+	line "und lausche der"
+	cont "schönen Melodei!"
 	done
 
 LavRadioTower1FDirectoryText:
-	text "1F Reception"
-	line "2F Sales"
-
-	para "3F Personnel"
-	line "4F Production"
-
-	para "5F Director's"
-	line "   Office"
+	text "EG Rezeption"
+	line "1S Verkauf"
+	cont "2S Personal"
+	cont "3S Produktion"
+	cont "4S Büro des"
+	cont "   Intendanten"
 	done
 
 LavRadioTower1FPokeFluteSignText:
-	text "Perk Up #mon"
-	line "with Mellow Sounds"
+	text "Mach deine #mon"
+	line "mit den Fröhlichen"
 
-	para "of the # Flute"
-	line "on Channel 20"
+	para "Melodien der #-"
+	line "Flöte auf Programm"
+	cont "20 wieder munter."
 	done
 
 ; TODO: use this text

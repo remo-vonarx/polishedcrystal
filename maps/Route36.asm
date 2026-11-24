@@ -134,29 +134,31 @@ Route36FloriaScript:
 	iftrue_jumptextfaceplayer FloriaTextAfterSquirtBottle
 	jumpthistextfaceplayer
 
-	text "I'm the Flower"
-	line "Shop's Floria!"
+	text "Ich bin Flora"
+	line "vom Blumenladen!"
 
-	para "Listen, listen!"
+	para "Stell dir vor:"
 
-	para "When I sprinkled"
-	line "water on that"
+	para "Als ich den wacke-"
+	line "ligen Baum mit"
 
-	para "wiggly tree, it"
-	line "jumped right up!"
+	para "Wasser benetzte,"
+	line "ist er hoch-"
+	cont "geschreckt!"
 
-	para "It just has to be"
-	line "a #mon."
+	para "Es muss einfach"
+	line "ein #mon sein."
 
-	para "I bet it would be"
-	line "shocked out of its"
+	para "Ich wette, es gibt"
+	line "seine Verkleidung"
 
-	para "disguise if you"
-	line "soaked it!"
+	para "auf, wenn man es"
+	line "gießt!"
 
-	para "I know! I'll tell"
-	line "my sis and borrow"
-	cont "her water bottle!"
+	para "Genau! Ich sage es"
+	line "meiner Schwester"
+	cont "und leihe mir"
+	cont "ihre Gießkanne!"
 	done
 
 Route36RockSmashGuyScript:
@@ -168,16 +170,17 @@ Route36RockSmashGuyScript:
 	iftruefwd .ClearedSudowoodo
 	jumpthisopenedtext
 
-	text "Wa-hey!"
+	text "Oje!"
 
-	para "I was going to"
-	line "snap that tree"
+	para "Ich wollte den"
+	line "Baum mit einem"
 
-	para "with my straight-"
-	line "arm punch."
+	para "mächtigen Hieb"
+	line "entzweibrechen."
 
-	para "But I couldn't!"
-	line "I'm a failure!"
+	para "Aber ich habe es"
+	line "nicht geschafft."
+	cont "Ich habe versagt!"
 	done
 
 .ClearedSudowoodo:
@@ -188,26 +191,25 @@ Route36RockSmashGuyScript:
 .AlreadyGotRockSmash:
 	jumpthisopenedtext
 
-	text "That happens to be"
+	text "Das ist der"
 if DEF(FAITHFUL)
-	line "Rock Smash."
+	line "Zertrümmerer."
 else
-	line "Brick Break."
+	line "Durchbruch."
 endc
 
-	para "You can shatter"
-	line "rocks with just a"
+	para "Damit kannst du"
+	line "Felsen mit einem"
 
-	para "single well-aimed"
-	line "smack."
+	para "einzigen, gut "
+	line "gezielten Schlag"
+	cont "zertrümmern."
 
-	para "If any rocks are"
-	line "in your way, just"
-if DEF(FAITHFUL)
-	cont "smash 'em up!"
-else
-	cont "break 'em up!"
-endc
+	para "Sind dir irgend-"
+	line "welche Steine im"
+	cont "Weg, dann"
+	cont "zertrümmere sie"
+	cont "einfach!"
 	done
 
 Route36LassScript:
@@ -215,15 +217,15 @@ Route36LassScript:
 	iftrue_jumptextfaceplayer Route36LassText_ClearedSudowoodo
 	jumpthistextfaceplayer
 
-	text "An odd tree is"
-	line "blocking the way"
-	cont "to Goldenrod City."
+	text "Ein alter Baum"
+	line "versperrt den Weg"
+	cont "nach Dukatia City."
 
-	para "I wanted to go see"
-	line "the huge #mon"
-
-	para "Center they just"
-	line "opened…"
+	para "Ich wollte mir das"
+	line "riesige #mon-"
+	cont "Center, das vor"
+	cont "kurzem eröffnet"
+	cont "wurde, ansehen…"
 	done
 
 TrainerSchoolboyAlan1:
@@ -452,11 +454,11 @@ Route36CooltrainerfChiaraScript:
 GenericTrainerPsychicMark:
 	generictrainer PSYCHIC_T, MARK, EVENT_BEAT_PSYCHIC_MARK, PsychicMarkSeenText, PsychicMarkBeatenText
 
-	text "I'd be strong if"
-	line "only I could tell"
+	text "Ich wäre wirklich"
+	line "stark, wenn ich "
 
-	para "what my opponent"
-	line "was thinking."
+	para "wüsste, was mein"
+	line "Gegner denkt."
 	done
 
 GenericTrainerSchoolgirlMolly:
@@ -485,14 +487,16 @@ ArthurScript:
 	setevent EVENT_GOT_HARD_STONE_FROM_ARTHUR
 	jumpthisopenedtext
 
-	text "Arthur: A #mon"
-	line "that uses Rock-"
+	text "Donatus: Ein"
+	line "#mon, das"
 
-	para "type moves should"
-	line "hold on to that."
+	para "Gestein-Attacken"
+	line "benutzt, sollte"
+	cont "dies mit sich"
+	cont "tragen."
 
-	para "It pumps up Rock-"
-	line "type attacks."
+	para "Es verstärkt"
+	line "Gestein-Attacken."
 	done
 
 .AlreadyGotStone:
@@ -504,9 +508,9 @@ ArthurScript:
 ArthurNotThursdayScript:
 	jumpthisopenedtext
 
-	text "Arthur: Today's"
-	line "not Thursday. How"
-	cont "disappointing."
+	text "Donatus: Heute ist"
+	line "nicht Donnerstag."
+	cont "Wie bedauerlich!"
 	done
 
 WeirdTreeMovement_Flee:
@@ -549,22 +553,26 @@ Route36SuicuneMovement:
 	step_end
 
 UseSquirtbottleText:
-	text "It's a weird tree."
-	line "Use SquirtBottle?"
+	text "Das ist ein merk-"
+	line "würdiger Baum."
+	cont "Möchtest du die"
+	cont "Schiggykanne"
+	cont "benutzen?"
 	done
 
 UsedSquirtbottleText:
-	text "<PLAYER> used the"
-	line "SquirtBottle."
+	text "<PLAYER> benutzt"
+	line "Schiggykanne."
 	done
 
 SudowoodoAttackedText:
-	text "The weird tree"
-	line "doesn't like the"
-	cont "SquirtBottle!"
+	text "Der merkwürdige"
+	line "Baum mag die"
+	cont "Schiggykanne"
+	cont "nicht!"
 
-	para "The weird tree"
-	line "attacked!"
+	para "Der merkwürdige"
+	line "Baum greift an!"
 	done
 
 
@@ -613,32 +621,37 @@ FloriaTextAfterSudowoodo:
 
 
 RockSmashGuyText2:
-	text "Did you clear that"
-	line "wretched tree?"
+	text "Hast du diesen"
+	line "seltsamen Baum"
+	cont "weggeschafft?"
 
-	para "I'm impressed!"
-	line "I want you to"
-	cont "have this."
+	para "Ich bin"
+	line "beeindruckt! Ich"
+	cont "möchte dir dies"
+	cont "geben."
 	done
 
 
 
 Route36LassText_ClearedSudowoodo:
-	text "That odd tree dis-"
-	line "appeared without a"
-	cont "trace."
+	text "Dieser merkwürdige"
+	line "Baum ist spurlos"
+	cont "verschwunden."
 
-	para "Oh! That tree was"
-	line "really a #mon?"
+	para "Ach! Der Baum war"
+	line "in Wirklichkeit"
+	cont "ein #mon?"
 	done
 
 PsychicMarkSeenText:
-	text "I'm going to read"
-	line "your thoughts!"
+	text "Ich werde jetzt"
+	line "deine Gedanken"
+	cont "lesen!"
 	done
 
 PsychicMarkBeatenText:
-	text "I misread you!"
+	text "Ich habe mich wohl"
+	line "bei dir verlesen!"
 	done
 
 SchoolgirlMollySeenText:
@@ -652,45 +665,51 @@ SchoolgirlMollyBeatenText:
 	done
 
 SchoolboyAlan1SeenText:
-	text "Thanks to my stud-"
-	line "ies, I'm ready for"
-	cont "any #mon!"
+	text "Dank meiner"
+	line "Studien bin ich"
+	cont "für jedes #mon"
+	cont "bereit!"
 	done
 
 SchoolboyAlan1BeatenText:
-	text "Oops! Computation"
-	line "error?"
+	text "Ups! Ein Fehler"
+	line "in der Berechnung?"
 	done
 
 SchoolboyAlanBooksText:
-	text "Darn. I study five"
-	line "hours a day too."
+	text "Mist! Ich lerne"
+	line "auch fünf Stunden"
+	cont "am Tag."
 
-	para "There's more to"
-	line "learning than just"
-	cont "reading books."
+	para "Es gibt vieles,"
+	line "das du nicht aus"
+	cont "Büchern lernen"
+	cont "kannst."
 	done
 
 MeetArthurText:
-	text "Arthur: Who are"
-	line "you?"
+	text "Donatus: Wer bist"
+	line "du?"
 
-	para "I'm Arthur of"
-	line "Thursday."
+	para "Ich bin Donatus"
+	line "von Donnerstag."
 	done
 
 ArthurGivesGiftText:
-	text "Here. You can have"
-	line "this."
+	text "Hier bitte. Das"
+	line "kannst du haben."
 	done
 
 
 ArthurThursdayText:
-	text "Arthur: I'm Arthur"
-	line "of Thursday. I'm"
+	text "Donatus: Ich bin"
+	line "Donatus von"
 
-	para "the second son out"
-	line "of seven children."
+	para "Donnerstag. Ich"
+	line "bin der zweite"
+
+	para "Sohn von"
+	line "sieben Kindern."
 	done
 
 
@@ -699,39 +718,47 @@ Route36SignText:
 	done
 
 RuinsOfAlphNorthSignText:
-	text "Ruins of Alph"
-	line "North Entrance"
+	text "Alph-Ruinen"
+	line "Nordeingang"
 	done
 
 Route36TrainerTips1Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
+	line "Der Status der"
 
-	para "#mon stats"
-	line "vary--even within"
-	cont "the same species."
+	para "#mon ist unter-"
+	line "schiedlich, sogar"
 
-	para "Their stats may be"
-	line "similar at first."
+	para "innerhalb der-"
+	line "selben Spezies."
 
-	para "However, differ-"
-	line "ences will become"
+	para "Zu Beginn ist er"
+	line "vielleicht noch"
+	cont "ähnlich."
 
-	para "pronounced as the"
-	line "#mon grow."
+	para "Doch die Unter-"
+	line "schiede werden "
+
+	para "deutlicher, wenn"
+	line "die #mon"
+	cont "heranwachsen."
 	done
 
 Route36TrainerTips2Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
+	line "Setze den"
 
-	para "Use Dig to return"
-	line "to the entrance of"
-	cont "any place."
+	para "Schaufler ein, um"
+	line "an den Eingang"
 
-	para "It is convenient"
-	line "for exploring"
+	para "eines Ortes"
+	line "zurückzugelangen."
 
-	para "caves and other"
-	line "landmarks."
+	para "Das ist sehr nütz-"
+	line "lich beim Erkunden"
+
+	para "von Höhlen und an-"
+	line "deren Umgebungen."
 	done
 
 Route36AdvancedTips1Text:

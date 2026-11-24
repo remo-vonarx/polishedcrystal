@@ -383,7 +383,7 @@ CinnabarLabRoom4SignText:
 	done
 
 CinnabarLabLockedDoorText:
-	text "It's locked…"
+	text "Es ist verriegelt…"
 	done
 
 CinnabarLabContinueTestingText:

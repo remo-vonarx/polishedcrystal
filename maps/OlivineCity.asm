@@ -140,10 +140,9 @@ OlivineCityYoungster1Script:
 	iffalse_jumptextfaceplayer OlivineCityStandingYoungsterPokedexText
 	jumpthistextfaceplayer
 
-	text "That thing you"
-	line "have--it's a #-"
-	cont "gear, right? Wow,"
-	cont "that's cool."
+	text "Dieses Ding da ist"
+	line "doch ein #Com."
+	cont "Wow, das ist cool!"
 	done
 
 OlivineCityPokefanMScript:
@@ -151,11 +150,13 @@ OlivineCityPokefanMScript:
 	iffalse_jumptextfaceplayer OlivineCityPokefanMText
 	jumpthistextfaceplayer
 
-	text "Fast Ship S.S.Aqua"
-	line "sails to Kanto on"
+	text "Die M.S. Aqua"
+	line "fährt immer"
 
-	para "Mondays and Fri-"
-	line "days."
+	para "montags und"
+	line "freitags nach"
+
+	para "Kanto."
 	done
 
 OlivineCityPanUpMovementData:
@@ -198,41 +199,41 @@ OlivineCityMovementData_RivalLeavesLighthouse:
 OlivineCityRivalGymText:
 	text "…"
 
-	para "You again?"
+	para "Du schon wieder?"
 
-	para "There's no need to"
-	line "panic. I don't"
+	para "Kein Grund zur Pa-"
+	line "nik. Mit Verlie-"
+	cont "rern wie dir gebe"
+	cont "ich mich nicht ab."
 
-	para "bother with wimps"
-	line "like you."
+	para "Apropos Verlierer:"
+	line "die Arenaleiterin"
 
-	para "Speaking of weak-"
-	line "lings, the city's"
+	para "dieser Stadt ist"
+	line "nicht hier."
 
-	para "Gym Leader isn't"
-	line "here."
+	para "Sie kümmert sich"
+	line "wohl gerade um ein"
 
-	para "Supposedly taking"
-	line "care of a sick"
+	para "krankes #mon im"
+	line "Leuchtturm."
 
-	para "#mon at the"
-	line "Lighthouse."
+	para "Hmpf! Bu-Huu!"
+	line "Wozu soll das nur"
+	cont "gut sein?"
 
-	para "Humph! Boo-hoo!"
-	line "Just let sick"
-	cont "#mon go!"
+	para "Ein #mon, das"
+	line "nicht kämpfen"
+	cont "kann, ist wertlos!"
 
-	para "A #mon that"
-	line "can't battle is"
-	cont "worthless!"
+	para "Warum trainierst"
+	line "du nicht im"
+	cont "Leuchtturm?"
 
-	para "Why don't you go"
-	line "train at the"
-	cont "Lighthouse?"
-
-	para "Who knows. It may"
-	line "make you a bit"
-	cont "less weak!"
+	para "Wer weiß, viel-"
+	line "leicht wirst du"
+	cont "dadurch ein wenig"
+	cont "stärker!"
 	done
 
 OlivineCityRivalLighthouseText:
@@ -272,29 +273,29 @@ OlivineCityRivalLighthouseText:
 	done
 
 OlivineCityStandingYoungsterPokedexText:
-	text "Wow, you have a"
+	text "Wow, du hast einen"
 	line "#dex!"
 
-	para "That is just so"
-	line "awesome."
+	para "Das ist so toll!"
 	done
 
 OlivineCitySailor1Text:
-	text "Dark roads are"
-	line "dangerous at"
-	cont "night."
+	text "Nachts sind dunkle"
+	line "Straßen gefähr-"
+	cont "lich."
 
-	para "But in the pitch-"
-	line "black of night,"
+	para "Auch das Meer"
+	line "wirkt viel bedroh-"
+	cont "licher in der"
 
-	para "the sea is even"
-	line "more treacherous!"
+	para "pechschwarzen"
+	line "Finsternis!"
 
-	para "Without the beacon"
-	line "of the Lighthouse"
+	para "Ohne das Licht des"
+	line "Leuchtturms könnte"
 
-	para "to guide it, no"
-	line "ship can sail."
+	para "kein Schiff das"
+	line "Meer bereisen."
 	done
 
 OlivineCitySailor2Text:
@@ -410,35 +411,37 @@ OlivineCityLass2Text:
 	done
 
 OlivineCitySignText:
-	text "Olivine City"
+	text "Oliviana City"
 
-	para "The Port Closest"
-	line "to Foreign Lands"
+	para "Das Tor zu einer"
+	line "neuen Welt"
 	done
 
 OlivineCityPortSignText:
-	text "Olivine Port"
-	line "Fast Ship Pier"
+	text "Hafen von Oliviana"
+	line "City"
+	cont "Schnellboot-Pier"
 	done
 
 OlivineGymSignText:
-	text "Olivine City"
-	line "#mon Gym"
-	cont "Leader: Jasmine"
+	text "PKMN-Arena von"
+	line "Oliviana City"
+	cont "Leitung: Jasmin"
 
-	para "The Steel-Clad"
-	line "Defense Girl"
+	para "Ein stahlhartes"
+	line "Mädchen!"
 	done
 
 OlivineLighthouseSignText:
-	text "Olivine Lighthouse"
-	line "Also known as the"
-	cont "Glitter Lighthouse"
+	text "Leuchtturm von"
+	line "Oliviana City,"
+	cont "auch bekannt als"
+	cont "Glitzer-Leuchtturm"
 	done
 
 OlivineCityBattleTowerSignText:
-	text "Battle Tower Ahead"
-	line "Opening Now!"
+	text "Duellturm voraus"
+	line "Geöffnet!"
 	done
 
 OlivineCityCafeSignText:

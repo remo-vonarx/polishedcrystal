@@ -113,9 +113,11 @@ MapRuinsofAlphHoOhChamberSignpost4Script:
 	endtext
 
 RuinsOfAlphHoOhChamberDescriptionText:
-	text "A #mon that"
-	line "flew gracefully on"
+	text "Ein #mon, das"
+	line "mittels"
 
-	para "rainbow-colored"
-	line "wings."
+	para "regenbogenfarbener"
+	line "Schwingen grazil"
+	cont "durch die"
+	cont "Lüfte schwebte."
 	done

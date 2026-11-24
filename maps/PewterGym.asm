@@ -54,14 +54,14 @@ PewterGymBrockScript:
 GenericTrainerCamperJerry:
 	generictrainer CAMPER, JERRY, EVENT_BEAT_CAMPER_JERRY, CamperJerrySeenText, CamperJerryBeatenText
 
-	text "Hey, you! Trainer"
-	line "from Johto! Brock"
+	text "He, du da! Trainer"
+	line "aus Johto! Rocko"
 
-	para "is tough. He'll"
-	line "punish you if you"
+	para "ist stark. Es wird"
+	line "dir übel bekommen,"
 
-	para "don't take him"
-	line "seriously."
+	para "wenn du ihn nicht"
+	line "ernst nimmst."
 	done
 
 GenericTrainerHikerEdwin:
@@ -76,20 +76,20 @@ PewterGymGuyScript:
 	iftrue_jumptextfaceplayer PewterGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Yo! Champ in"
-	line "making! You're"
+	text "He! Ein Champ"
+	line "in spe!"
 
-	para "really rocking."
-	line "Are you battling"
+	para "Das ist cool!"
+	line "Kämpfst du gegen"
 
-	para "the Gym Leaders of"
+	para "die Arenaleiter in"
 	line "Kanto?"
 
-	para "They're strong and"
-	line "dedicated people,"
+	para "Sie sind stark und"
+	line "ambitioniert, wie"
 
-	para "just like Johto's"
-	line "Gym Leaders."
+	para "die Arenaleiter in"
+	line "Johto."
 	done
 
 PewterGymStatue:
@@ -101,41 +101,48 @@ PewterGymStatue:
 	jumpstd gymstatue2
 
 BrockIntroText:
-	text "Brock: Wow, it's"
-	line "not often that we"
+	text "Rocko: Wow, es"
+	line "kommt nicht oft"
 
-	para "get a challenger"
-	line "from Johto."
+	para "vor, dass wir von"
+	line "einem Heraus-"
+	cont "forderer aus Johto"
+	cont "besucht werden."
 
-	para "I'm Brock, the"
-	line "Pewter Gym Leader."
+	para "Ich bin Rocko, der"
+	line "Arenaleiter von"
 
-	para "I'm an expert on"
-	line "Rock-type #mon."
+	para "Marmoria. Ich habe"
+	line "mich auf Gestein-"
+	cont "#mon"
+	cont "spezialisiert."
 
-	para "My #mon are im-"
-	line "pervious to most"
+	para "Meine #mon sind"
+	line "gegen die meisten"
 
-	para "physical attacks."
-	line "You'll have a hard"
+	para "physischen Atta-"
+	line "cken immun. Es"
+	cont "wird dir schwer"
 
-	para "time inflicting"
-	line "any damage."
-
-	para "Come on!"
+	para "fallen, ihnen"
+	line "Schaden zuzufügen."
+	cont "Na los!"
 	done
 
 BrockWinLossText:
-	text "Brock: Your #-"
-	line "mon's powerful at-"
-	cont "tacks overcame my"
-	cont "rock-hard defense…"
+	text "Rocko: Die mäch-"
+	line "tigen Attacken"
+	cont "deiner #mon"
+	cont "haben meine"
+	cont "felsenfeste"
+	cont "Verteidigung"
+	cont "überwunden…"
 
-	para "You're stronger"
-	line "than I expected…"
+	para "Du bist stärker,"
+	line "als ich dachte…"
 
-	para "Go ahead--take"
-	line "this Badge."
+	para "Komm - Nimm dir"
+	line "diesen Orden."
 	done
 
 BrockBoulderBadgeText:
@@ -152,36 +159,38 @@ BrockBoulderBadgeText:
 	done
 
 BrockFightDoneText:
-	text "Brock: The world"
-	line "is huge. There are"
+	text "Rocko: Die Welt"
+	line "ist groß. Es gibt"
 
-	para "still many strong"
-	line "trainers like you."
+	para "immer noch viele"
+	line "starke Trainer wie"
+	cont "dich."
 
-	para "Just wait and see."
-	line "I'm going to be-"
-	cont "come a lot strong-"
-	cont "er too."
+	para "Warte nur ab. Ich"
+	line "werde auch noch"
+	cont "viel stärker."
 	done
 
 CamperJerrySeenText:
-	text "The trainers of"
-	line "this Gym use Rock-"
-	cont "type #mon."
+	text "Die Trainer dieser"
+	line "PKMN-Arena setzen"
+	cont "Gestein-#mon"
+	cont "ein."
 
-	para "The Rock-type has"
-	line "high Defense."
+	para "Gestein-#mon"
+	line "haben hohe"
+	cont "VERT-Werte."
 
-	para "Battles could end"
-	line "up going a long"
+	para "Die Kämpfe können"
+	line "sehr lange"
 
-	para "time. Are you"
-	line "ready for this?"
+	para "dauern. Bist du"
+	line "bereit dafür?"
 	done
 
 CamperJerryBeatenText:
-	text "I have to win"
-	line "these battles…"
+	text "Ich muss diese"
+	line "Kämpfe gewinnen…"
 	done
 
 HikerEdwinSeenText: ; text > text
@@ -194,15 +203,18 @@ HikerEdwinBeatenText: ; text > text
 
 
 PewterGymGuyWinText:
-	text "Yo! Champ in"
-	line "making! That Gym"
+	text "He! Ein Champ"
+	line "in spe!"
 
-	para "didn't give you"
-	line "much trouble."
+	para "Diese PKMN-Arena"
+	line "stellte kein"
 
-	para "The way you took"
-	line "charge was really"
+	para "Problem für dich"
+	line "dar."
 
-	para "inspiring. I mean"
-	line "that seriously."
+	para "Dein Einsatz"
+	line "ist wirklich"
+
+	para "beeindruckend. Das"
+	line "meine ich ehrlich."
 	done

@@ -176,18 +176,18 @@ FuchsiaGymGuyScript:
 	iftrue_jumptextfaceplayer FuchsiaGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Yo, Champ in"
-	line "making!"
+	text "He! Ein Champ"
+	line "in spe!"
 
-	para "Whoops! Take a"
-	line "good look around"
+	para "Nanu! Sieh dich"
+	line "mal um. Alle"
 
-	para "you. The trainers"
-	line "all look like the"
-	cont "Leader, Janine."
+	para "Trainer sehen aus"
+	line "wie die Arena-"
+	cont "leiterin Janina."
 
-	para "Which of them is"
-	line "the real Janine?"
+	para "Welche davon ist"
+	line "die echte Janina?"
 	done
 
 FuchsiaGymStatue:
@@ -215,17 +215,22 @@ Movement_NinjaSpin:
 	step_end
 
 JanineText_DisappointYou:
-	text "Fufufufu…"
+	text "Hehehehe…"
 
-	para "I'm sorry to dis-"
-	line "appoint you…"
+	para "Es tut mir Leid,"
+	line "dich enttäuschen"
+	cont "zu müssen…"
 
-	para "I'm only joking!"
+	para "Ich mache"
+	line "nur Witze!"
 
-	para "I'm the real deal!"
+	para "Jetzt geht es"
+	line "rund!"
 
-	para "Janine of Fuchsia"
-	line "Gym, that's me!"
+	para "Ich bin Janina,"
+	line "Arenaleiterin von"
+
+	para "Fuchsania City!"
 	done
 
 JanineText_ToughOne:
@@ -248,92 +253,101 @@ JanineText_ToxicSpeech:
 	done
 
 JanineText_ApplyMyself:
-	text "Janine: I'm going"
-	line "to really apply"
+	text "Janina: Ich werde"
+	line "mich jetzt mehr"
 
-	para "myself and improve"
-	line "my skills."
+	para "anstrengen und"
+	line "meine Fähigkeiten"
+	cont "optimieren."
 
-	para "I want to become"
-	line "better than both"
-	cont "Father and you!"
+	para "Ich möchte meinen"
+	line "Vater und dich"
+	cont "übertreffen!"
 	done
 
 LassAmandaBeforeText:
-	text "Fufufu!"
+	text "Hehehe!"
 
-	para "I'm Janine, the"
-	line "Gym Leader!"
+	para "Ich bin Janina,"
+	line "die Arenaleiterin!"
 
-	para "No, I'm not!"
-	line "Gotcha, sucker!"
+	para "Bin ich doch"
+	line "nicht! Reinge-"
+	cont "fallen, Blödmann!"
 	done
 
 LassAmandaBeatenText:
-	text "I had you fooled…"
+	text "Ich habe dich"
+	line "reingelegt…"
 	done
 
 LassAmandaAfterText:
-	text "How will you dis-"
-	line "tinguish our real"
-	cont "Leader?"
+	text "Wie erkennst du"
+	line "die Echte"
+	cont "Arenaleiterin?"
 	done
 
 LassLindaBeforeText:
-	text "Fooled you!"
+	text "Reingelegt!"
 	line "Hahaha!"
 	done
 
 LassLindaBeatenText:
-	text "Ooh… I lost…"
-	line "You're not weak…"
+	text "Oh… Ich habe"
+	line "verloren… Du bist"
+	cont "kein Schwächling…"
 	done
 
 LassLindaAfterText:
-	text "Well? Wasn't my"
-	line "disguise perfect?"
+	text "Na, war meine"
+	line "Maskerade nicht"
+	cont "perfekt?"
 	done
 
 PicnickerCindyBeforeText:
-	text "I'm Janine!"
+	text "Ich bin Janina!"
 
-	para "How did you know I"
-	line "was real?"
+	para "Woher wusstest du,"
+	line "dass ich die Echte"
+	cont "bin?"
 
-	para "Let's battle!"
+	para "Auf in den Kampf!"
 	done
 
 PicnickerCindyBeatenText:
-	text "Darn it!"
-	line "I wanted to win!"
+	text "Mist! Ich"
+	line "wollte gewinnen!"
 	done
 
 PicnickerCindyAfterText:
-	text "You must be"
-	line "getting tired."
+	text "Du musst langsam"
+	line "müde werden."
 	done
 
 CamperBarryBeforeText:
-	text "Wahahaha!"
+	text "Hahahaha!"
 
-	para "You betcha!"
-	line "I'm Janine!"
+	para "Du kannst Gift"
+	line "darauf nehmen,"
+	cont "dass ich Janina"
+	cont "bin!"
 	done
 
 CamperBarryBeatenText:
-	text "My disguise was"
-	line "right on! Dang!"
+	text "Meine Verkleidung"
+	line "hat funktioniert!"
 	done
 
 CamperBarryAfterText:
-	text "Hey, you. Was my"
-	line "disguise cute or"
-	cont "what, huh?"
+	text "He, Holzkopf. War"
+	line "meine Verkleidung"
+	cont "nicht hübsch?"
 	done
 
 
 FuchsiaGymGuyWinText:
-	text "That was a great"
-	line "battle, trainer"
-	cont "from Johto!"
+	text "Das war ein"
+	line "hervorragender"
+	cont "Kampf, Trainer"
+	cont "aus Johto!"
 	done

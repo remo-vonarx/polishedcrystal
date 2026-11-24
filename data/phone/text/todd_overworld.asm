@@ -1,58 +1,68 @@
 ToddAskNumber1Text:
-	text "From here, I can"
-	line "see Goldenrod's"
+	text "Von hier kann ich"
+	line "das Kaufhaus von"
 
-	para "Dept.Store. They"
-	line "have bargain sales"
+	para "Dukatia City"
+	line "sehen. Sie ver-"
 
-	para "up on the rooftop"
-	line "every so often."
+	para "kaufen hin und"
+	line "wieder Sonderan-"
+	cont "gebote auf dem"
+	cont "Dach."
 
-	para "Could I get your"
-	line "phone number?"
+	para "Gibst du mir deine"
+	line "Telefonnummer?"
 
-	para "I'll call you when"
-	line "they have a sale."
+	para "Ich melde mich,"
+	line "wenn sie wieder"
+	cont "Angebote haben."
 	done
 
 ToddAskNumber2Text:
-	text "If you give me"
-	line "your number, I'll"
+	text "Wenn du mir deine"
+	line "Nummer gibst, rufe"
 
-	para "call you when they"
-	line "have a sale."
+	para "ich an, wenn sie"
+	line "Angebote haben."
 	done
 
 ToddNumberAcceptedText:
-	text "I check Goldenrod"
-	line "Dept.Store every"
+	text "Ich gehe täglich"
+	line "in das Kaufhaus"
 
-	para "day, so I know"
-	line "when there's a"
-	cont "sale."
+	para "von Dukatia City."
+	line "Daher weiß ich,"
+
+	para "wann sie Angebote"
+	line "haben."
 	done
 
 ToddNumberDeclinedText:
-	text "Anyway…"
+	text "Egal…"
 
-	para "If you're short on"
-	line "money, take down"
-	cont "my number."
+	para "Bist du knapp bei"
+	line "Kasse, notiere"
+	cont "meine Nummer."
 
-	para "I'll call you when"
-	line "there's a sale."
+	para "Ich rufe dich an,"
+	line "wenn sie Angebote"
+	cont "haben."
 	done
 
 ToddPhoneFullText:
-	text "Your phone doesn't"
-	line "have enough memory"
-	cont "for more numbers."
+	text "Dein Telefon hat"
+	line "keinen freien"
+	cont "Speicherplatz"
+	cont "mehr."
 	done
 
 ToddRematchText:
-	text "I waited for you!"
-	line "I even cut back my"
+	text "Ich erwartete"
+	line "dich! Ich war"
 
-	para "shopping to raise"
-	line "my #mon better!"
+	para "nicht mehr so"
+	line "oft Einkaufen, um"
+
+	para "mein #mon bes-"
+	line "ser zu trainieren!"
 	done

@@ -65,14 +65,14 @@ RageCandyBarMerchantScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
-	text "Good! Savor it!"
+	text "Gut! Genieße ihn!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht ge-"
+	line "nug Geld."
 	done
 
 MahoganyTownGrampsScript:
@@ -80,9 +80,9 @@ MahoganyTownGrampsScript:
 	iftrue_jumptextfaceplayer MahoganyTownGrampsText_ClearedRocketHideout
 	jumpthistextfaceplayer
 
-	text "Are you off to see"
-	line "the Gyarados ram-"
-	cont "page at the lake?"
+	text "Hast du vor, die"
+	line "Garados am See an-"
+	cont "zusehen?"
 	done
 
 MahoganyTownSouvenirShopSign:
@@ -106,34 +106,27 @@ MahoganyTownRageCandyBarMerchantReturnsMovement:
 	step_end
 
 RageCandyBarMerchantTryOneText:
-	text "Hiya, kid!"
+	text "Hi, Zwerg!"
 
-	para "I see you're new"
-	line "in Mahogany Town."
+	para "Ich sehe, du bist"
+	line "neu in Mahagonia."
 
-	para "Since you're new,"
-	line "you should try a"
+	para "Du musst unbedingt"
+	line "einen Wutkeks"
+	cont "probieren!"
 
-if DEF(FAITHFUL)
-	para "yummy RageCandy-"
-	line "Bar!"
-else
-	para "yummy Cake of"
-	line "Rage!"
-endc
-
-	para "Right now, it can"
-	line "be yours for just"
-	cont "¥300! Want one?"
+	para "Ich habe einen da-"
+	line "bei. Für nur ¥300"
+	cont "gehört er dir."
 	done
 
 RageCandyBarMerchantRefusedText:
-	text "Oh, fine then…"
+	text "Dann eben nicht…"
 	done
 
 RageCandyBarMerchantNoRoomText:
-	text "You don't have"
-	line "room for this."
+	text "Du hast keinen"
+	line "Platz mehr."
 	done
 
 RageCandyBarMerchantSoldOutText:
@@ -151,42 +144,47 @@ endc
 
 
 MahoganyTownGrampsText_ClearedRocketHideout:
-	text "Magikarp have"
-	line "returned to Lake"
-	cont "of Rage."
+	text "Die Karpador sind"
+	line "zum See des Zorns"
+	cont "zurückgekehrt."
 
-	para "That should be"
-	line "good news for the"
-	cont "anglers there."
+	para "Das sind gute Neu-"
+	line "igkeiten für die"
+	cont "Angler."
 	done
 
 MahoganyTownFisherText:
-	text "Since you came"
-	line "this far, take the"
+	text "Wenn du schon so"
+	line "weit gekommen"
 
-	para "time to do some"
-	line "sightseeing."
+	para "bist, solltest du"
+	line "dir die Zeit neh-"
+	cont "men, um etwas"
 
-	para "You should head"
-	line "north and check"
+	para "Sightseeing zu un-"
+	line "ternehmen."
 
-	para "out Lake of Rage"
-	line "right now."
+	para "Geh nach Norden"
+	line "und sieh dir den"
+
+	para "See des Zorns an."
 	done
 
 MahoganyTownLassText:
-	text "Visit Grandma's"
-	line "shop. She sells"
+	text "Besuche Großmut-"
+	line "ters Laden. Sie"
 
-	para "stuff that nobody"
-	line "else has."
+	para "verkauft Artikel,"
+	line "die du sonst nir-"
+	cont "gends bekommen"
+	cont "kannst."
 	done
 
 MahoganyTownSignText:
-	text "Mahogany Town"
+	text "Mahagonia City"
 
-	para "Welcome to the"
-	line "Home of the Ninja"
+	para "Willkommen in der"
+	line "Stadt der Ninja"
 	done
 
 MahoganyTownSouvenirShopSignText1:
@@ -201,10 +199,11 @@ MahoganyTownSouvenirShopSignText1:
 	done
 
 MahoganyGymSignText:
-	text "Mahogany Town"
-	line "#mon Gym"
-	cont "Leader: Pryce"
+	text "PKMN-Arena von"
+	line "Mahagonia City"
 
-	para "The Teacher of"
-	line "Winter's Harshness"
+	para "Leitung: Norbert"
+	line "Der Lehrer der"
+
+	para "Härte des Winters"
 	done

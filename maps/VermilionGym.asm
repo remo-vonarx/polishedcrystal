@@ -98,11 +98,11 @@ VermilionGymSurgeScript:
 GenericTrainerGentlemanGregory:
 	generictrainer GENTLEMAN, GREGORY, EVENT_BEAT_GENTLEMAN_GREGORY, GentlemanGregorySeenText, GentlemanGregoryBeatenText
 
-	text "When I was still"
-	line "in the army, Lt."
+	text "Als ich noch bei"
+	line "der Armee war, hat"
 
-	para "Surge saved my"
-	line "life."
+	para "Major Bob mein"
+	line "Leben gerettet."
 	done
 
 GenericTrainerGuitaristmVincent:
@@ -119,11 +119,12 @@ GenericTrainerGuitaristmVincent:
 GenericTrainerJugglerHorton:
 	generictrainer JUGGLER, HORTON, EVENT_BEAT_JUGGLER_HORTON, JugglerHortonSeenText, JugglerHortonBeatenText
 
-	text "Don't get too com-"
-	line "fortable about"
+	text "Lass dir den Sieg"
+	line "über mich nicht zu"
 
-	para "beating me…"
-	line "Lt.Surge is tough."
+	para "Kopf steigen…"
+	line "Major Bob ist"
+	cont "stark."
 	done
 
 GenericTrainerGuitaristfJanet:
@@ -211,26 +212,33 @@ VermilionGymStatue:
 	jumpstd gymstatue2
 
 LtSurgeIntroText:
-	text "Surge: Hey, you"
-	line "little tyke!"
+	text "Major Bob: Heh, du"
+	line "Windelpupser!"
 
-	para "I have to hand it"
-	line "to you. It may not"
+	para "Das muss ich dir"
+	line "lassen. Es ist"
 
-	para "be very smart to"
-	line "challenge me, but"
-	cont "it takes guts!"
+	para "nicht sehr weise,"
+	line "mich herauszufor-"
+	cont "dern, aber es ist"
+	cont "mutig!"
 
-	para "When it comes to"
-	line "electric #mon,"
-	cont "I'm number one!"
+	para "Wenn es um"
+	line "Elektro-#mon"
+	cont "geht, bin ich die"
+	cont "Nummer eins!"
 
-	para "I've never lost on"
-	line "the battlefield."
+	para "Ich habe das"
+	line "Schlachtfeld nie"
 
-	para "I'll zap you just"
-	line "like I did my"
-	cont "enemies in war!"
+	para "als Verlierer"
+	line "verlassen."
+
+	para "Ich grille dich,"
+	line "wie ich es mit"
+
+	para "meinen Feinden im"
+	line "Krieg tat!"
 	done
 
 LtSurgeWinLossText:
@@ -259,52 +267,56 @@ LtSurgeThunderBadgeText:
 
 
 LtSurgeFightDoneText:
-	text "Surge: Hey, kid!"
-	line "Still slugging and"
-	cont "chugging away?"
+	text "Major Bob: Zwerg!"
+	line "Immer noch bei"
+	cont "der Sache?"
 
-	para "My #mon and I"
-	line "are still at it!"
+	para "Meine #mon und"
+	line "ich sind noch"
+	cont "dabei!"
 	done
 
 GentlemanGregorySeenText:
-	text "You're here to"
-	line "defeat Lt.Surge?"
+	text "Du willst Major"
+	line "Bob besiegen?"
 
-	para "Not if I can help"
-	line "it!"
+	para "Da musst du erst"
+	line "an mir vorbei!"
 	done
 
 GentlemanGregoryBeatenText:
-	text "Sorry I failed"
-	line "you, Lt.Surge,"
-	cont "sir!"
+	text "Ich habe versagt,"
+	line "Major Bob. Es tut"
+	cont "mir Leid!"
 	done
 
 GuitaristmVincentSeenText:
-	text "Lt.Surge recog-"
-	line "nized my potential"
+	text "Major Bob hat mein"
+	line "Talent für"
 
-	para "with Electric"
-	line "#mon."
+	para "Elektro-#mon"
+	line "erkannt."
 
-	para "Think you can beat"
-	line "me?"
+	para "Glaubst du, du"
+	line "kannst mich"
+	cont "besiegen?"
 	done
 
 GuitaristmVincentBeatenText:
-	text "Ooh, how shocking!"
+	text "Oh, wie"
+	line "schockierend!"
 	done
 
 JugglerHortonSeenText:
-	text "I'm going to take"
-	line "you down! Prepare"
-	cont "to be shocked!"
+	text "Ich werde dich"
+	line "fertig machen! Du"
+	cont "wirst gleich einen"
+	cont "Schlag bekommen!"
 	done
 
 JugglerHortonBeatenText:
-	text "Gwaaah!"
-	line "I was overpowered…"
+	text "Ahh! Ich stand zu"
+	line "sehr unter Strom…"
 	done
 
 GuitaristfJanetSeenText:
@@ -319,11 +331,13 @@ GuitaristfJanetBeatenText:
 
 
 VermilionGymGuyWinText:
-	text "Whew! That was an"
-	line "electrifying bout!"
+	text "Puh! Das war ein"
+	line "elektrisierendes"
+	cont "Erlebnis!"
 
-	para "It sure made me"
-	line "nervous."
+	para "Das hat meine"
+	line "Nerven sehr"
+	cont "strapaziert."
 	done
 
 VermilionGymFoundSwitchText:
@@ -353,8 +367,8 @@ VermilionGymResetSwitchesText:
 	done
 
 VermilionGymTrashCanText:
-	text "Nope! Nothing here"
-	line "but trash."
+	text "Nein! Hier ist"
+	line "nur Müll."
 	done
 
 VermilionGymElectricFenceText:

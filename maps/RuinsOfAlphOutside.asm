@@ -136,20 +136,22 @@ RuinsOfAlphOutsideFisherScript:
 	jumpthisopenedtext
 
 RuinsOfAlphOutsideFisherText2:
-	text "The ruins hide a"
-	line "huge secret!"
+	text "Den Ruinen wohnt"
+	line "ein großes"
+	cont "Geheimnis inne!"
 
-	para "…I think…"
+	para "…Ich denke…"
 	done
 
 RuinsOfAlphOutsideYoungster1Script:
 	jumpthistextfaceplayer
 
-	text "There are many"
-	line "kinds of Unown, so"
+	text "Es gibt viele un-"
+	line "terschiedliche"
 
-	para "we use them for"
-	line "our secret codes."
+	para "Icognito, die wir"
+	line "für unsere Geheim-"
+	cont "codes benötigen."
 	done
 
 RuinsOfAlphOutsideYoungster2Script:
@@ -160,27 +162,28 @@ RuinsOfAlphOutsideYoungster2Script:
 GenericTrainerPsychicNathan:
 	generictrainer PSYCHIC_T, NATHAN, EVENT_BEAT_PSYCHIC_NATHAN, PsychicNathanSeenText, PsychicNathanBeatenText
 
-	text "I like thinking"
-	line "here."
+	text "Ich komme oft"
+	line "hierher, um nach-"
+	cont "zudenken."
 	done
 
 GenericTrainerSuperNerdStan:
 	generictrainer SUPER_NERD, STAN, EVENT_BEAT_SUPER_NERD_STAN, SuperNerdStanSeenText, SuperNerdStanBeatenText
 
-	text "The ruins are from"
-	line "about 1,500 years"
-	cont "ago."
+	text "Die Ruinen"
+	line "sind ungefähr"
+	cont "1500 Jahre alt."
 
-	para "Nobody knows who"
-	line "built them."
+	para "Niemand weiß,"
+	line "wer sie erbaute."
 
-	para "It's also not"
-	line "known if the #-"
-	cont "mon statues have"
-	cont "any meaning."
+	para "Die Bedeutung der "
+	line "#mon-Statuen"
+	cont "ist auch noch"
+	cont "nicht geklärt."
 
-	para "It's all one big"
-	line "mystery…"
+	para "Das Ganze ist ein"
+	line "großes Rätsel…"
 	done
 
 RuinsOfAlphOutsideScientistWalkToLabMovement:
@@ -214,51 +217,56 @@ endr
 	step_end
 
 RuinsOfAlphOutsideScientistText:
-	text "Hm? That's a #-"
-	line "dex, isn't it?"
-	cont "May I see it?"
+	text "Hm? Das ist doch"
+	line "ein #dex, nicht"
+	cont "wahr? Darf ich"
+	cont "ihn sehen?"
 
-	para "There are so many"
-	line "kinds of #mon."
+	para "Es gibt so viele"
+	line "unterschiedliche"
+	cont "#mon."
 
-	para "Hm? What's this?"
+	para "Hm? Was ist das?"
 
-	para "What is this"
-	line "#mon?"
+	para "Was ist das für"
+	line "ein #mon?"
 
-	para "It looks like the"
-	line "strange writing on"
+	para "Es sieht aus wie"
+	line "die merkwürdigen"
 
-	para "the walls of the"
-	line "ruins."
+	para "Zeichen an den"
+	line "Wänden in den"
+	cont "Ruinen."
 
-	para "If those drawings"
-	line "are really #-"
-	cont "mon, there should"
-	cont "be many more."
+	para "Falls diese Zei-"
+	line "chen tatsächlich "
+	cont "#mon sind, dann"
+	cont "gibt es noch"
+	cont "viel mehr davon."
 
-	para "I know! Let me up-"
-	line "grade your #-"
-	cont "dex. Follow me."
+	para "Ich weiß! Lass"
+	line "mich deinen #-"
+	cont "dex erweitern."
+	cont "Mir nach!"
 	done
 
 SuperNerdStanSeenText:
-	text "What do you want?"
-	line "I'm studying--"
-	cont "don't disturb me!"
+	text "Was willst du?"
+	line "Ich lerne--"
+	cont "stör mich nicht!"
 	done
 
 SuperNerdStanBeatenText:
-	text "Sorry…"
-	line "I'm frustrated by"
+	text "Entschuldigung…"
+	line "Unser Mangel an"
 
-	para "our lack of real"
-	line "understanding…"
+	para "Verständnis"
+	line "frustriert mich…"
 	done
 
 PsychicNathanSeenText:
-	text "Hmmm… This is a"
-	line "strange place."
+	text "Hm… Dies ist ein"
+	line "merkwürdiger Ort."
 	done
 
 PsychicNathanBeatenText: ; text > text
@@ -266,8 +274,8 @@ PsychicNathanBeatenText: ; text > text
 	done
 
 RuinsOfAlphOutsideMysteryChamberSignText:
-	text "Mystery Stone"
-	line "Panel Chamber"
+	text "Rätselstein"
+	line "Puzzlekammer"
 	done
 
 RuinsOfAlphOutsideMysteriousHallSignText:
@@ -278,16 +286,16 @@ RuinsOfAlphOutsideMysteriousHallSignText:
 	done
 
 RuinsOfAlphSignText:
-	text "Ruins of Alph"
-	line "Visitors Welcome"
+	text "Alph-Ruinen"
+	line "Fremde willkommen!"
 	done
 
 RuinsOfAlphResearchCenterSignText:
-	text "Ruins of Alph"
-	line "Research Center"
+	text "Alph-Ruinen"
+	line "Forschungszentrum"
 
-	para "The Authority On"
-	line "The Ruins of Alph"
+	para "Die Autorität in"
+	line "Sachen Alph-Ruinen"
 	done
 
 RuinsOfAlphAdvancedTipsSignText:
@@ -314,28 +322,29 @@ MapRuinsofAlphOutsideSealedCaveSign:
 	done
 
 RuinsOfAlphOutsideFisherText1:
-	text "While exploring"
-	line "the ruins, we"
+	text "Beim Erkunden der"
+	line "Ruinen haben wir"
 
-	para "suddenly noticed"
-	line "an odd presence."
+	para "plötzlich eine"
+	line "seltsame Gegenwart"
+	cont "gespürt."
 
-	para "We all got scared"
-	line "and ran away."
+	para "Alle hatten Angst"
+	line "und liefen davon."
 
-	para "You should be"
-	line "careful too."
+	para "Du solltest auch"
+	line "vorsichtig sein."
 	done
 
 
 RuinsOfAlphOutsideYoungster2Text:
-	text "A… H… E… A… D…"
+	text "V… O… R… A… U… S…"
 	line "Hmm…"
 
-	para "What?"
+	para "Wie?"
 
-	para "I'm decoding this"
-	line "message!"
+	para "Ich dechiffriere"
+	line "diese Nachricht!"
 	done
 
 RuinsofAlphScientistClimax1Text:

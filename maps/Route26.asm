@@ -41,18 +41,19 @@ Route26SetUpPaletteSwap:
 GenericTrainerDragonTamerKazu:
 	generictrainer DRAGON_TAMER, KAZU, EVENT_BEAT_DRAGON_TAMER_KAZU, DragonTamerKazuSeenText, DragonTamerKazuBeatenText
 
-	text "It's going to be"
-	line "tough to win at"
-	cont "the League."
+	text "Es ist sehr"
+	line "schwer, in der"
+	cont "Liga zu gewinnen."
 
-	para "I need to do some"
-	line "more training."
+	para "Ich muss mehr"
+	line "trainieren."
 
-	para "I hear that the"
-	line "League's Elite"
+	para "Ich habe gehört,"
+	line "dass die Top Vier"
 
-	para "Four are tougher"
-	line "than Gym Leaders."
+	para "aus der Liga noch"
+	line "stärker sind als"
+	cont "die Arenaleiter."
 	done
 
 TrainerCooltrainermGaven1:
@@ -143,14 +144,15 @@ TrainerCooltrainermGaven1:
 GenericTrainerCooltrainerfJoyce:
 	generictrainer COOLTRAINERF, JOYCE, EVENT_BEAT_COOLTRAINERF_JOYCE, CooltrainerfJoyceSeenText, CooltrainerfJoyceBeatenText
 
-	text "I've defeated"
-	line "eight Gym Leaders,"
+	text "Ich bezwang acht"
+	line "Arenaleiter, also"
 
-	para "so I was feeling"
-	line "confident."
+	para "hatte ich genug"
+	line "Selbstbewusstsein."
 
-	para "I'll have to try"
-	line "harder next time."
+	para "Das nächste Mal"
+	line "muss ich mich mehr"
+	cont "anstrengen."
 	done
 
 TrainerCooltrainerfBeth1:
@@ -241,12 +243,13 @@ TrainerCooltrainerfBeth1:
 GenericTrainerPsychicRichard:
 	generictrainer PSYCHIC_T, RICHARD, EVENT_BEAT_PSYCHIC_RICHARD, PsychicRichardSeenText, PsychicRichardBeatenText
 
-	text "People and #mon"
-	line "grow from their"
-	cont "experiences."
+	text "Menschen und #-"
+	line "mon wachsen mit"
+	cont "ihren Erfahrungen."
 
-	para "Don't get lazy and"
-	line "complacent."
+	para "Du darfst nicht"
+	line "faul und selbstge-"
+	cont "fällig werden."
 	done
 
 GenericTrainerBattleGirlRonda:
@@ -265,11 +268,12 @@ GenericTrainerBattleGirlRonda:
 GenericTrainerFisherScott:
 	generictrainer FISHER, SCOTT, EVENT_BEAT_FISHER_SCOTT, FisherScottSeenText, FisherScottBeatenText
 
-	text "Just like in fish-"
-	line "ing, it's all over"
+	text "Das Angeln und"
+	line "#mon sind sehr"
 
-	para "in #mon if you"
-	line "give up."
+	para "ähnlich. Wenn du"
+	line "aufgibst, ist es"
+	cont "vorüber."
 	done
 
 GenericTrainerDragonTamerErick:
@@ -284,26 +288,27 @@ GenericTrainerDragonTamerErick:
 	done
 
 DragonTamerKazuSeenText:
-	text "I'm making my"
-	line "final preparations"
-
-	para "for the #mon"
-	line "League."
+	text "Ich treffe die"
+	line "letzten Vorberei-"
+	cont "tungen für die"
+	cont "#mon Liga."
 	done
 
 DragonTamerKazuBeatenText:
-	text "I blew it!"
+	text "Ich habe es"
+	line "vermasselt!"
 	done
 
 CooltrainermGaven1SeenText:
-	text "By experiencing"
-	line "tough battles, you"
-	cont "gain power."
+	text "Wenn du harte"
+	line "Kämpfe bestrei-"
+	cont "test, wirst du"
+	cont "stärker."
 	done
 
 CooltrainermGaven1BeatenText:
-	text "Gaah! Life is even"
-	line "tougher!"
+	text "Gah! Das Leben ist"
+	line "noch härter!"
 	done
 
 CooltrainermGavenAfterText:
@@ -322,60 +327,63 @@ CooltrainermGavenAfterText:
 	done
 
 CooltrainerfJoyceSeenText:
-	text "Since you've come"
-	line "this far, you must"
-	cont "be good."
+	text "Da du es bis"
+	line "hierher geschafft"
+	cont "hast, musst du"
+	cont "gut sein."
 
-	para "I'm going to give"
-	line "this battle every-"
-	cont "thing I've got!"
+	para "Ich werde in"
+	line "diesem Kampf"
+	cont "alles geben!"
 	done
 
 CooltrainerfJoyceBeatenText:
-	text "No! I don't"
-	line "believe this!"
+	text "Nein! Ich kann"
+	line "das nicht glauben!"
 	done
 
 CooltrainerfBeth1SeenText:
-	text "I lost to a train-"
-	line "er named <RIVAL>."
+	text "Ich habe gegen"
+	line "einen Trainer"
+	cont "namens <RIVAL>"
+	cont "verloren."
 
-	para "He was really"
-	line "strong, but…"
+	para "Er war sehr"
+	line "stark, aber…"
 
-	para "It was as if he"
-	line "absolutely had to"
-	cont "win at any cost."
+	para "Es schien, als"
+	line "sei er vom Siegen"
+	cont "besessen."
 
-	para "I felt sorry for"
-	line "his #mon."
+	para "Seine #mon"
+	line "taten mir Leid."
 	done
 
 CooltrainerfBeth1BeatenText:
-	text "#mon aren't"
-	line "tools of war."
+	text "#mon sind keine"
+	line "Kriegswerkzeuge."
 	done
 
 CooltrainerfBethAfterText:
-	text "#mon are in-"
-	line "valuable, lifelong"
-	cont "partners."
+	text "#mon sind"
+	line "unschätzbare,"
+	cont "lebenslange"
+	cont "Partner."
 	done
 
 PsychicRichardSeenText:
-	text "Wow, look at all"
-	line "those Badges!"
-	cont "I'm impressed."
+	text "Wow, sieh dir all"
+	line "die Orden an! Ich"
+	cont "bin beeindruckt."
 
-	para "But you're not"
-	line "satisfied by just"
+	para "Aber es reicht dir"
+	line "nicht, sie nur zu"
 
-	para "collecting them,"
-	line "right?"
+	para "sammeln, oder?"
 	done
 
 PsychicRichardBeatenText:
-	text "Good battle!"
+	text "Guter Kampf!"
 	done
 
 BattleGirlRondaSeenText:
@@ -388,17 +396,18 @@ BattleGirlRondaBeatenText:
 	done
 
 FisherScottSeenText:
-	text "I'm feeling great"
-	line "today!"
+	text "Heute fühle ich"
+	line "mich grossartig!"
 
-	para "I feel like I"
-	line "could boot even"
-	cont "the League Champ!"
+	para "Ich fühle mich so"
+	line "stark, dass ich"
+	cont "den Liga-Champ"
+	cont "besiegen könnte!"
 	done
 
 FisherScottBeatenText:
-	text "No! Not in this"
-	line "battle!"
+	text "Nein! Nicht in"
+	line "diesem Kampf!"
 	done
 
 DragonTamerErickSeenText:
@@ -413,6 +422,6 @@ DragonTamerErickBeatenText:
 Route26SignText:
 	text "Route 26"
 
-	para "#mon League"
-	line "Reception Gate"
+	para "#mon Liga"
+	line "Empfang"
 	done

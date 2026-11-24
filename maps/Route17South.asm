@@ -38,56 +38,61 @@ Route17SouthAlwaysOnBikeCallback:
 GenericTrainerBikerReilly:
 	generictrainer BIKER, REILLY, EVENT_BEAT_BIKER_REILLY, BikerReillySeenText, BikerReillyBeatenText
 
-	text "Don't get cocky,"
-	line "you Johto punk!"
+	text "Wer't nicht frech,"
+	line "du Null aus Johto!"
 	done
 
 BikerReillySeenText:
-	text "Hey, you! You're"
-	line "from Johto, huh?"
+	text "Heh, du! Bist"
+	line "du aus Johto?"
 	done
 
 BikerReillyBeatenText:
-	text "Whoa, you kick!"
+	text "Boah, du legst"
+	line "aber los!"
 	done
 
 GenericTrainerBikerJoel:
 	generictrainer BIKER, JOEL, EVENT_BEAT_BIKER_JOEL, BikerJoelSeenText, BikerJoelBeatenText
 
-	text "I look cool, but"
-	line "I'm weak, so I'm"
-	cont "not really cool."
+	text "Ich sehe zwar cool"
+	line "aus, bin aber"
+	cont "schwach, also bin"
+	cont "ich nicht wirklich"
+	cont "cool."
 
-	para "I have to train"
-	line "harder…"
+	para "Ich muss härter"
+	line "trainieren…"
 	done
 
 BikerJoelSeenText:
-	text "Wow. That's a cool"
-	line "Bicycle!"
+	text "Wow! Das ist ein"
+	line "tolles Fahrrad!"
 	done
 
 BikerJoelBeatenText:
-	text "But you don't just"
-	line "look cool…"
+	text "Aber du siehst"
+	line "nicht nur cool"
+	cont "aus…"
 	done
 
 GenericTrainerBikerGlenn:
 	generictrainer BIKER, GLENN, EVENT_BEAT_BIKER_GLENN, BikerGlennSeenText, BikerGlennBeatenText
 
-	text "Hands-free riding"
-	line "is considered cool"
-	cont "on Cycling Road."
+	text "Freihändig fahren"
+	line "gilt als cool"
+	cont "auf dem Radweg."
 	done
 
 BikerGlennSeenText:
-	text "Hey! Want to have"
-	line "a speed battle?"
+	text "Hey! Wie wäre"
+	line "es mit einem"
+	cont "Schnellkampf?"
 	done
 
 BikerGlennBeatenText:
-	text "Yikes! You've got"
-	line "awesome torque!"
+	text "Ups! Du hast"
+	line "ganz schön Kraft!"
 	done
 
 GenericTrainerBikerDale:

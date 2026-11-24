@@ -63,7 +63,7 @@ FlowerShopTeacherScript:
 	ifequalfwd $2, .Buy10
 	jumpthisopenedtext
 
-	text "Please come again!"
+	text "Komm wieder!"
 	done
 
 .Buy1:
@@ -126,20 +126,17 @@ FlowerShopFloriaScript:
 	done
 
 GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
-	text "Have you seen that"
-	line "wiggly tree that's"
+	text "Hast du den wacke-"
+	line "ligen Baum auf"
+	cont "Route 36 gesehen?"
 
-	para "growing on Route"
-	line "36?"
+	para "Meine kleine"
+	line "Schwester war auf-"
+	cont "geregt und wollte"
+	cont "ihn sich ansehen…"
 
-	para "My little sister"
-	line "got all excited"
-
-	para "and went to see"
-	line "it…"
-
-	para "I'm worried… Isn't"
-	line "it dangerous?"
+	para "Ich bin besorgt…"
+	line "Ist das riskant?"
 	done
 
 GoldenrodFlowerShopTeacherStopMySisterText:
@@ -157,14 +154,14 @@ GoldenrodFlowerShopTeacherStopMySisterText:
 	done
 
 GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
-	text "Do you want to"
-	line "borrow the water"
+	text "Möchtest du auch"
+	line "die Gießkanne aus-"
+	cont "leihen? Ich werde"
+	cont "nicht zulassen,"
 
-	para "bottle too?"
-	line "I don't want you"
-
-	para "doing anything"
-	line "dangerous with it."
+	para "dass du etwas Ge-"
+	line "fährliches damit"
+	cont "anstellst."
 	done
 
 GoldenrodFlowerShopTeacherBetterThanWhitneyText:
@@ -193,22 +190,25 @@ GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
 	done
 
 GoldenrodFlowerShopTeacherDontDoAnythingDangerousText:
-	text "Don't do anything"
-	line "too dangerous!"
+	text "Unternimm nichts"
+	line "Gefährliches!"
 	done
 
 GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
-	text "When I told my sis"
-	line "about the jiggly"
+	text "Als ich meiner"
+	line "Schwester von dem"
 
-	para "tree, she told me"
-	line "it's dangerous."
+	para "wackeligen Baum"
+	line "erzählte, sagte"
 
-	para "If I beat Whitney,"
-	line "I wonder if she'll"
+	para "sie mir, dass er"
+	line "gefährlich sei."
 
-	para "lend me her water"
-	line "bottle…"
+	para "Ich frage mich, ob"
+	line "sie mir ihre Gieß-"
+	cont "kanne leiht, wenn"
+	cont "ich Bianka"
+	cont "besiege…"
 	done
 
 GoldenrodFlowerShopFloriaYouBeatWhitneyText:

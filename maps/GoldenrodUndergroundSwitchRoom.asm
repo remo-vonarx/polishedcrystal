@@ -182,39 +182,42 @@ UndergroundRivalBattleScript2:
 	playmusic MUSIC_RIVAL_AFTER
 	jumpthistext
 
-	text "…I don't under-"
-	line "stand…"
+	text "…Ich verstehe"
+	line "es nicht…"
 
-	para "Is what that Lance"
-	line "guy said true?"
+	para "Ist es wahr, was"
+	line "dieser Siegfried"
+	cont "erzählt?"
 
-	para "That I don't treat"
-	line "#mon properly?"
+	para "Dass ich meine"
+	line "#mon nicht"
+	cont "richtig behandle?"
 
-	para "Love…"
+	para "Liebe…"
 
-	para "Trust…"
+	para "Vertrauen…"
 
-	para "Are they really"
-	line "what I lack?"
+	para "Fehlt mir das"
+	line "wirklich?"
 
-	para "Are they keeping"
-	line "me from winning?"
+	para "Verhindern diese"
+	line "Mängel, dass ich"
+	cont "gewinne?"
 
-	para "I… I just don't"
-	line "understand."
+	para "Ich… ich verstehe"
+	line "es nicht."
 
-	para "But it's not going"
-	line "to end here."
+	para "Aber es wird"
+	line "hier nicht enden."
 
-	para "Not now. Not"
-	line "because of this."
+	para "Nicht jetzt."
+	line "Nicht deswegen."
 
-	para "I won't give up my"
-	line "dream of becoming"
-
-	para "the world's best"
-	line "#mon trainer!"
+	para "Ich werde meinen"
+	line "Traum, der welt-"
+	cont "beste #mon-"
+	cont "Trainer zu sein,"
+	cont "nicht aufgeben!"
 	done
 
 GenericTrainerGruntM11:
@@ -244,9 +247,10 @@ GenericTrainerGruntM25:
 GenericTrainerBurglarDuncan:
 	generictrainer BURGLAR, DUNCAN, EVENT_BEAT_BURGLAR_DUNCAN, BurglarDuncanSeenText, BurglarDuncanBeatenText
 
-	text "Steal and sell!"
-	line "That's basic in"
-	cont "crime, kid!"
+	text "Stehlen und"
+	line "Hehlen! Das ist"
+	cont "die Basis aller"
+	cont "Verbrechen!"
 	done
 
 GenericTrainerBurglarOrson:
@@ -265,17 +269,21 @@ GenericTrainerBurglarOrson:
 GenericTrainerGruntM13:
 	generictrainer GRUNTM, 13, EVENT_BEAT_ROCKET_GRUNTM_13, GruntM13SeenText, GruntM13BeatenText
 
-	text "You must have ice"
-	line "in your veins to"
-	cont "dis Team Rocket."
+	text "Durch deine Venen"
+	line "fließt wohl Eis,"
+	cont "da du Team Rocket"
+	cont "nicht für bare"
+	cont "Münze nimmst."
 	done
 
 GenericTrainerGruntF3:
 	generictrainer GRUNTF, 3, EVENT_BEAT_ROCKET_GRUNTF_3, GruntF3SeenText, GruntF3BeatenText
 
-	text "Go wherever you'd"
-	line "like! Get lost!"
-	cont "See if I care!"
+	text "Geh nur! Verlaufe"
+	line "dich! Dann wirst"
+	cont "du feststellen,"
+	cont "dass es mir egal"
+	cont "ist!"
 	done
 
 RedSwitchScript:
@@ -337,132 +345,148 @@ UndergroundRivalRetreatMovement:
 	step_end
 
 UndergroundRivalBeforeText:
-	text "Hold it!"
+	text "Stehen bleiben!"
 
-	para "I saw you, so I"
-	line "tailed you."
+	para "Ich sah dich und"
+	line "bin dir gefolgt."
 
-	para "I don't need you"
-	line "underfoot while I"
+	para "Hör auf, mir"
+	line "nachzustellen, ich"
 
-	para "take care of Team"
-	line "Rocket."
+	para "muss mich um Team"
+	line "Rocket kümmern."
 
-	para "…Wait a second."
-	line "You beat me be-"
-	cont "fore, didn't you?"
+	para "…Moment."
+	line "Du hast mich schon"
+	cont "besiegt, oder?"
 
-	para "That was just a"
-	line "fluke."
+	para "Das war nur"
+	line "Dusel."
 
-	para "But I repay my"
-	line "debts!"
+	para "Ich begleiche"
+	line "meine Rechnungen!"
 	done
 
 UndergroundRivalWinText:
-	text "…Why…"
-	line "Why do I lose?"
+	text "…Warum…"
+	line "Warum habe ich"
+	cont "verloren?"
 
-	para "I've assembled the"
-	line "toughest #mon."
+	para "Ich habe die"
+	line "stärksten #mon"
+	cont "zusammengetragen."
 
-	para "I didn't ease up"
-	line "on the gas."
+	para "Ich habe mich so"
+	line "angestrengt."
 
-	para "So why do I lose?"
+	para "Warum habe ich"
+	line "bloß verloren?"
 	done
 
 UndergroundRivalLossText:
-	text "Humph. This is my"
-	line "real power, wimp."
+	text "Hm. Das ist meine"
+	line "wahre Stärke,"
+	cont "du Schwächling."
 
-	para "I'll make Team"
-	line "Rocket history."
+	para "Team Rocket wird"
+	line "dank mir nur noch"
+	cont "Geschichte sein."
 
-	para "And I'm going to"
-	line "grind that Lance"
-	cont "under my heels."
+	para "Ich werde diesen"
+	line "Siegfried wie"
+	cont "einen Wurm"
+	cont "zertreten."
 	done
 
 GruntM11SeenText:
-	text "Open one shutter,"
-	line "another closes."
+	text "Öffne einen Roll-"
+	line "laden und ein an-"
+	cont "derer schließt."
 
-	para "Bet you can't get"
-	line "where you want!"
+	para "Ich wette, du"
+	line "kommst nicht so"
+	cont "weit, wie du es"
+	cont "dir vorstellst!"
 	done
 
 GruntM11BeatenText:
-	text "Drat! I was sunk"
-	line "by indecision!"
+	text "Verflixt! Meine"
+	line "Unentschlossenheit"
+	cont "war mein Ruin!"
 	done
 
 GruntM25SeenText:
-	text "Kwahaha!"
+	text "Uff!"
 
-	para "Confounded by the"
-	line "shutters, are we?"
+	para "Wir sind von den"
+	line "Rollläden ver-"
+	cont "wirrt!"
 
-	para "I'll let you in on"
-	line "a secret if you"
-	cont "can beat me!"
+	para "Ich verrate dir"
+	line "ein Geheimnis,"
+	cont "wenn du mich"
+	cont "besiegst!"
 	done
 
 GruntM25BeatenText:
-	text "Uwww…"
-	line "I blew it."
+	text "Arghh… Ich"
+	line "hab's vermasselt."
 	done
 
 BurglarDuncanSeenText:
-	text "Fork over your"
-	line "goodies!"
+	text "Wirf deine"
+	line "Goodies herüber!"
 	done
 
 BurglarDuncanBeatenText:
-	text "Mercy!"
+	text "Gnade!"
 	done
 
 BurglarOrsonSeenText:
-	text "They ditched this"
-	line "project before"
-	cont "they finished."
+	text "Sie haben das"
+	line "Projekt abge-"
+	cont "brochen, noch ehe"
+	cont "sie fertig waren."
 
-	para "I'm searching for"
-	line "leftover loot."
+	para "Ich suche nach"
+	line "Überresten der"
+	cont "Beute."
 	done
 
 BurglarOrsonBeatenText:
-	text "Over the top!"
+	text "Das ist zu viel!"
 	done
 
 GruntM13SeenText:
-	text "I don't care if"
-	line "you're lost."
+	text "Es ist mir egal,"
+	line "wenn du dich"
+	cont "verläufst."
 
-	para "You show up here,"
-	line "you're nothing but"
-	cont "a victim!"
+	para "Du tauchst hier"
+	line "auf! Du bist nur"
+	cont "ein Opfer!"
 	done
 
 GruntM13BeatenText:
-	text "Urk! Yeah, think"
-	line "you're cool, huh?"
+	text "Urk! Du glaubst,"
+	line "du bist cool, häh?"
 	done
 
 GruntF3SeenText:
-	text "Are you lost? No,"
-	line "you can't be."
+	text "Hast du dich"
+	line "verirrt? Nein, das"
+	cont "kann nicht sein."
 
-	para "You don't have"
-	line "that scared look."
+	para "Es ist keine Angst"
+	line "in deinem Blick."
 
-	para "I'll give you"
-	line "something to be"
-	cont "scared about!"
+	para "Ich zeige dir"
+	line "etwas, das dir"
+	cont "Angst macht!"
 	done
 
 GruntF3BeatenText:
-	text "How could you?"
+	text "Wie konntest du?"
 	done
 
 SwitchRoomText_RedSwitch:

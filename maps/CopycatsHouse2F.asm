@@ -176,11 +176,13 @@ CopycatRetortScript:
 	special RefreshSprites
 	jumpthistext
 
-	text "Copycat: Hmm?"
-	line "Quit mimicking?"
+	text "Nachahmerin: Hm?"
+	line "Das Nachahmen"
+	cont "aufgeben?"
 
-	para "But that's my"
-	line "favorite hobby!"
+	para "Aber das ist"
+	line "meine liebste"
+	cont "Beschäftigung!"
 	done
 
 CopycatWorriedScript:
@@ -191,15 +193,17 @@ CopycatWorriedScript:
 	setevent EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM
 	jumpthistext
 
-	text "Copycat: Pardon?"
+	text "Nachahmerin:"
+	line "Bitte?"
 
-	para "I shouldn't decide"
-	line "what you should"
-	cont "do?"
+	para "Ich soll dir nicht"
+	line "sagen, was du zu"
+	cont "tun hast?"
 
-	para "But I'm really"
-	line "worried… What if"
-	cont "someone finds it?"
+	para "Aber ich mache mir"
+	line "wirklich Sorgen…"
+	cont "Was, wenn jemand"
+	cont "sie findet?"
 	done
 
 CopycatFoundLostItemScript:
@@ -212,15 +216,15 @@ CopycatFoundLostItemScript:
 	sjumpfwd CopycatGivePassScript
 
 .FoundDollText:
-	text "Copycat: Yay!"
-	line "That's my Clefairy"
-	cont "# Doll!"
+	text "Nachahmerin: Jaa!"
+	line "Das ist meine"
+	cont "Piepi-#puppe!"
 
-	para "See the tear where"
-	line "the right leg is"
+	para "Siehst du die"
+	line "Naht am rechten"
 
-	para "sewn on? That's"
-	line "proof!"
+	para "Bein? Das ist"
+	line "der Beweis!"
 	done
 
 CopycatReturnedLostItemScript:
@@ -233,22 +237,24 @@ CopycatGivePassScript:
 	setevent EVENT_GOT_PASS_FROM_COPYCAT
 	jumpthisopenedtext
 
-	text "Copycat: That's"
-	line "the pass for the"
-	cont "Magnet Train."
+	text "Nachahmerin: Das"
+	line "ist der Fahrschein"
+	cont "für den Magnetzug."
 
-	para "The rail company"
-	line "man gave me that"
+	para "Der Mann von der"
+	line "Eisenbahn gab mir"
 
-	para "when they tore"
-	line "down our old house"
-	cont "for the station."
+	para "das, als sie unser"
+	line "altes Haus nieder-"
+	cont "rissen, um den"
+	cont "Bahnhof zu bauen."
 	done
 
 .GivePassText:
-	text "OK. Here's the"
-	line "Magnet Train Pass"
-	cont "like I promised!"
+	text "Also gut. Hier ist"
+	line "der Fahrschein für"
+	cont "den Magnetzug! Wie"
+	cont "versprochen."
 	done
 
 CopycatFinalScript:
@@ -258,93 +264,106 @@ CopycatFinalScript:
 	special RefreshSprites
 	jumpthistext
 
-	text "Copycat: You bet!"
-	line "It's a scream!"
+	text "Nachahmerin: "
+	line "Darauf kannst du"
+	cont "wetten!"
 	done
 
 CopycatGreeting1Text:
-	text "<PLAYER>: Hi! Do"
-	line "you like #mon?"
+	text "<PLAYER>: Hi! Magst"
+	line "du #mon?"
 
-	para "<PLAYER>: Uh, no, I"
-	line "just asked you."
+	para "<PLAYER>: Äh, nein,"
+	line "ich frage dich."
 
-	para "<PLAYER>: Huh?"
-	line "You're strange!"
+	para "<PLAYER>: Was?"
+	line "Du bist komisch!"
 	done
 
 CopycatLostDoll1Text:
 	text "<PLAYER>: Hi!"
-	line "I heard that you"
+	line "Ich habe gehört,"
 
-	para "lost your favorite"
-	line "# Doll."
+	para "dass du deine"
+	line "Lieblings-"
+	cont "#puppe"
+	cont "verloren hast."
 
-	para "<PLAYER>: If I find"
-	line "it, you'll give me"
-	cont "a rail pass?"
+	para "<PLAYER>: Gibst du"
+	line "mir einen Fahr-"
+	cont "schein, wenn ich"
+	cont "sie finde?"
 
-	para "<PLAYER>: I'll go"
-	line "find it for you."
+	para "<PLAYER>: Ich suche"
+	line "sie für dich."
 
-	para "You think you lost"
-	line "it when you went"
-	cont "to Vermilion City?"
+	para "Du glaubst, sie"
+	line "auf dem Weg nach"
+	cont "Orania City"
+	cont "verloren zu haben?"
 	done
 
 CopycatThanks1Text:
 	text "<PLAYER>: Hi!"
-	line "Thanks a lot for"
-	cont "the rail pass!"
+	line "Vielen Dank für"
+	cont "den Fahrschein!"
 
-	para "<PLAYER>: Pardon?"
+	para "<PLAYER>: Bitte?"
 
-	para "<PLAYER>: Is it"
-	line "that fun to mimic"
-	cont "my every move?"
+	para "<PLAYER>: Ist es"
+	line "wirklich so toll,"
+	cont "jede Bewegung"
+	cont "nachzuahmen?"
 	done
 
 CopycatGreeting2Text:
-	text "<PLAYER>: Hi. You"
-	line "must like #mon."
+	text "<PLAYER>: Hi. Du"
+	line "musst #mon"
+	cont "mögen."
 
-	para "<PLAYER>: No, not"
-	line "me. I asked you."
+	para "<PLAYER>: Nein,"
+	line "nicht ich. Ich"
+	cont "habe dich gefragt."
 
-	para "<PLAYER>: Pardon?"
-	line "You're weird!"
+	para "<PLAYER>: Bitte?"
+	line "Du bist seltsam!"
 	done
 
 CopycatLostDoll2Text:
-	text "<PLAYER>: Hi. Did"
-	line "you really lose"
-	cont "your # Doll?"
+	text "<PLAYER>: Hi."
+	line "Hast du wirklich"
+	cont "deine #puppe"
+	cont "verloren?"
 
-	para "<PLAYER>: You'll"
-	line "really give me a"
+	para "<PLAYER>: Du"
+	line "gibst mir wirklich"
 
-	para "rail pass if I"
-	line "find it for you?"
+	para "einen Fahrschein,"
+	line "falls ich sie"
+	cont "finde?"
 
-	para "<PLAYER>: Sure,"
-	line "I'll look for it!"
+	para "<PLAYER>: Gewiss,"
+	line "ich halte die"
+	cont "Augen offen!"
 
-	para "You think you lost"
-	line "it when you were"
-	cont "in Vermilion?"
+	para "Du denkst, du hast"
+	line "sie in Orania City"
+	cont "verloren?"
 	done
 
 CopycatThanks2Text:
-	text "<PLAYER>: Thank you"
-	line "for the rail pass!"
+	text "<PLAYER>: Danke für"
+	line "den Fahrschein!"
 
-	para "<PLAYER>: …Pardon?"
+	para "<PLAYER>: …Bitte?"
 
-	para "<PLAYER>: Is it"
-	line "really that fun to"
+	para "<PLAYER>: Macht"
+	line "es wirklich so"
 
-	para "copy what I say"
-	line "and do?"
+	para "viel Spaß mir"
+	line "alles nachzu-"
+	cont "sprechen und alles"
+	cont "nachzuahmen?"
 	done
 
 CopycatSpinMovement:
@@ -364,24 +383,29 @@ CopycatsDodrioScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "Mirror, mirror on"
-	line "the wall, who's"
+	text "Spieglein, Spieg-"
+	line "lein an der Wand,"
 
-	para "the fairest one of"
-	line "all?"
+	para "wer ist die"
+	line ""
+	line "Schönste im ganzen"
+
+	para "Land?"
 	done
 
 .Text1:
-	text "Dodrio: Gii giii!"
+	text "Dodri: Gii giii!"
 	done
 
 CopycatsHouse2FDollScript:
 	jumpthistext
 
-	text "This is a rare"
-	line "#mon! Huh?"
+	text "Das ist ein"
+	line "seltenes #mon!"
+	cont "Was?"
 
-	para "It's only a doll…"
+	para "Es ist nur eine"
+	line "Puppe…"
 	done
 
 CopycatsHouse2FDittoText:

@@ -80,11 +80,12 @@ BellchimeTrailPanUpTrigger:
 	step_end
 
 TinTowerSignText:
-	text "Bell Tower"
+	text "Glockenturm"
 
-	para "A legendary #-"
-	line "mon is said to"
-	cont "roost here."
+	para "Man sagt, ein le-"
+	line "gendäres #mon"
+
+	para "soll dort sein."
 	done
 
 BellchimeTrailValerieScript:

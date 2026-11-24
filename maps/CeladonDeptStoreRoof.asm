@@ -51,12 +51,12 @@ CeladonDeptStoreRoofGameboyKid2Script:
 	done
 
 CeladonDeptStoreRoofSuperNerdText:
-	text "A vending machine"
-	line "with a prize rou-"
-	cont "lette…"
+	text "Ein Spielautomat"
+	line "mit einem"
+	cont "Roulette…"
 
-	para "You never see"
-	line "those anymore."
+	para "Die gibt es schon"
+	line "lange nicht mehr."
 	done
 
 CeladonDeptStoreRoofYoungsterText:
@@ -72,6 +72,6 @@ CeladonDeptStoreRoofYoungsterText:
 	done
 
 CeladonDeptStoreRoofDirectoryText:
-	text "6F: Rooftop Square"
-	line "Vending Machines"
+	text "5S: Dachterrasse"
+	line "Spielautomaten"
 	done

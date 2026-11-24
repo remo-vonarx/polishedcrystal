@@ -60,41 +60,48 @@ Route19ClearRocks:
 GenericTrainerSwimmerfDawn:
 	generictrainer SWIMMERF, DAWN, EVENT_BEAT_SWIMMERF_DAWN, SwimmerfDawnSeenText, SwimmerfDawnBeatenText
 
-	text "It's a quick swim"
-	line "between Fuchsia"
+	text "Es ist nur eine"
+	line "kurze Distanz"
 
-	para "and Seafoam Is-"
-	line "lands…"
+	para "zwischen Fuchsania"
+	line "City und den"
+	cont "Seeschauminseln…"
 
-	para "Sheesh, some big"
-	line "man my boyfriend"
-	cont "is! What a wimp!"
+	para "Uah, mein Freund"
+	line "ist so groß und"
+
+	para "dennoch ein"
+	line "Schwächling!"
 	done
 
 GenericTrainerSwimmermTucker:
 	generictrainer SWIMMERM, TUCKER, EVENT_BEAT_SWIMMERM_TUCKER, SwimmermTuckerSeenText, SwimmermTuckerBeatenText
 
-	text "I… asked my girl-"
-	line "friend to swim to"
-	cont "Fuchsia… Gasp…"
+	text "Ich… bat meine"
+	line "Freundin nach"
+	cont "Fuchsania City…"
+	cont "zu schwimmen…"
 	done
 
 GenericTrainerSwimmermJerome:
 	generictrainer SWIMMERM, JEROME, EVENT_BEAT_SWIMMERM_JEROME, SwimmermJeromeSeenText, SwimmermJeromeBeatenText
 
-	text "I might be bad at"
-	line "swimming, but I"
-	cont "love the sea."
+	text "Schwimmen mag"
+	line "nicht meine Stärke"
+	cont "sein, dennoch"
+	cont "liebe ich das"
+	cont "Meer."
 	done
 
 GenericTrainerSwimmermHarold:
 	generictrainer SWIMMERM, HAROLD, EVENT_BEAT_SWIMMERM_HAROLD, SwimmermHaroldSeenText, SwimmermHaroldBeatenText
 
-	text "At night, the sea"
-	line "turns black. It"
+	text "Nachts wird das"
+	line "Meer schwarz. Es"
 
-	para "feels like it will"
-	line "swallow you up."
+	para "scheint, als"
+	line "wollte es dich"
+	cont "verschlingen."
 	done
 
 GenericTrainerCosplayerBrooke:
@@ -114,8 +121,10 @@ Route19Fisher1Script:
 	iffalse_jumptextfaceplayer Route19Fisher1Text
 	jumpthistextfaceplayer
 
-	text "I'm all sweaty."
-	line "Time for a swim!"
+	text "Ich bin total"
+	line "verschwitzt. Es"
+	cont "ist Zeit zum"
+	cont "Schwimmen."
 	done
 
 Route19Fisher2Script:
@@ -123,57 +132,58 @@ Route19Fisher2Script:
 	iffalse_jumptextfaceplayer Route19EngineerText1
 	jumpthistextfaceplayer
 
-	text "The roadwork is"
-	line "finally finished."
+	text "Die Bauarbeiten"
+	line "sind beendet."
 
-	para "Now I can go"
-	line "fishing again."
+	para "Jetzt kann ich"
+	line "wieder angeln."
 	done
 
 SwimmerfDawnSeenText:
-	text "I'm disgusted by"
-	line "wimpy people!"
+	text "Schwächlinge"
+	line "widern mich an!"
 	done
 
 SwimmerfDawnBeatenText:
-	text "I could beat you"
-	line "at swimming…"
+	text "Ich schlage dich"
+	line "beim Schwimmen…"
 	done
 
 SwimmermTuckerSeenText:
-	text "Pant, pant…"
-	line "Just… a little…"
+	text "Uff, uff…"
+	line "Nur… noch… ein"
 
-	para "farther… to…"
-	line "Fuchsia…"
+	para "kleines Stück… bis"
+	line "…Fuchsania City…"
 	done
 
 SwimmermTuckerBeatenText:
-	text "I'm drowning!"
+	text "Ich ertrinke!"
 	done
 
 SwimmermJeromeSeenText:
-	text "Swimming?"
-	line "I'm lousy at it."
+	text "Schwimmen? Ich bin"
+	line "ein miserabler"
+	cont "Schwimmer."
 
-	para "I'm just splashing"
-	line "around in these"
-	cont "shallow waters."
+	para "Ich plansche"
+	line "lieber in dieser"
+	cont "Riesenpfütze."
 	done
 
 SwimmermJeromeBeatenText:
-	text "I thought I could"
-	line "win."
+	text "Ich dachte, ich"
+	line "könnte gewinnen."
 	done
 
 SwimmermHaroldSeenText:
-	text "Have you ever gone"
-	line "swimming in the"
-	cont "sea at night?"
+	text "Warst du schon"
+	line "einmal nachts im"
+	cont "Meer?"
 	done
 
 SwimmermHaroldBeatenText: ; text > text
-	text "Glub…"
+	text "Gulp…"
 	done
 
 CosplayerBrookeSeenText:
@@ -188,37 +198,40 @@ CosplayerBrookeBeatenText:
 	done
 
 Route19Fisher1Text:
-	text "Sorry. This road"
-	line "is closed for"
-	cont "construction."
+	text "Tut mir Leid."
+	line "Die Straße ist"
+	cont "aufgrund von Bau-"
+	cont "arbeiten gesperrt."
 
-	para "If you want to get"
-	line "to Cinnabar, you'd"
+	para "Wenn du zu der"
+	line "Zinnoberinsel"
 
-	para "better go south"
-	line "from Pallet Town."
+	para "möchtest, gehst"
+	line "du von Alabastia"
+	cont "gen Süden."
 	done
 
 
 Route19EngineerText1:
-	text "Who knows how long"
-	line "it would take to"
-	cont "move this boulder…"
+	text "Es würde zu lange"
+	line "dauern, diesen"
+	cont "Felsen zu bewegen…"
 	done
 
 
 Route19SignText:
 	text "Route 19"
 
-	para "Fuchsia City -"
-	line "Seafoam Islands"
+	para "Fuchsania City -"
+	line "Seeschauminseln"
 	done
 
 CarefulSwimmingSignText:
-	text "Please be careful"
-	line "if you are swim-"
-	cont "ming to Seafoam"
-	cont "Islands."
+	text "Sei auf der Hut,"
+	line "wenn du zu den"
+	cont "Seeschauminseln"
+	cont "schwimmst."
 
-	para "Fuchsia Police"
+	para "Ordnungsamt von"
+	line "Fuchsania City"
 	done

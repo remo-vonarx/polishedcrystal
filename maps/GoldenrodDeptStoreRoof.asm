@@ -81,29 +81,29 @@ GoldenrodDeptStoreRoofSuperNerdScript:
 Binoculars1:
 	jumpthistext
 
-	text "These binoculars"
-	line "let me see far"
+	text "Mit diesem Fern-"
+	line "glas kann ich weit"
 
-	para "away. Maybe I can"
-	line "see my own house."
+	para "sehen. Vielleicht"
+	line "sogar mein Haus."
 
-	para "Is it the one with"
-	line "the green roof?"
+	para "Ist es das mit dem"
+	line "grünen Dach?"
 	done
 
 Binoculars2:
 	jumpthistext
 
-	text "Hey! Some trainers"
-	line "are battling on"
-	cont "the road!"
+	text "Heh! Einige"
+	line "Trainer kämpfen"
+	cont "auf dem Weg!"
 
-	para "A #mon fired a"
-	line "flurry of leaves!"
+	para "Ein #mon schoss"
+	line "mit Blättern!"
 
-	para "That makes me feel"
-	line "like battling"
-	cont "right now!"
+	para "Wenn ich das sehe,"
+	line "will ich sofort"
+	cont "kämpfen!"
 	done
 
 Binoculars3:
@@ -202,25 +202,27 @@ PokeDollVendingMachine:
 	db "Cancel@"
 
 GoldenrodDeptStoreRoofPokefanFText:
-	text "Whew, I'm tired."
+	text "Puh, bin ich müde."
 
-	para "I sometimes come"
-	line "up to the rooftop"
+	para "Manchmal gehe ich"
+	line "auf die Dach-"
+	cont "terrasse, um eine"
 
-	para "to take a break"
-	line "from shopping."
+	para "Einkaufspause"
+	line "einzulegen."
 	done
 
 GoldenrodDeptStoreRoofFisherText:
-	text "Pardon? Who says"
-	line "an adult can't get"
-	cont "into this?"
+	text "Bitte? Wer sagt,"
+	line "dass das nichts"
+	cont "für Erwachsene"
+	cont "ist?"
 
-	para "I'm going to be"
-	line "back every day to"
+	para "Ich komme jeden"
+	line "Tag, um wirklich"
 
-	para "collect all the"
-	line "dolls!"
+	para "alle Puppen zu"
+	line "bekommen!"
 	done
 
 GoldenrodDeptStoreRoofFisherDuplicateText:
@@ -245,9 +247,8 @@ GoldenrodDeptStoreRoofFisherCatchEmAllText:
 	done
 
 GoldenrodDeptStoreRoofTwinText:
-	text "They have bargain"
-	line "sales here every"
-	cont "so often."
+	text "Oft gibt es hier"
+	line "Sonderangebote."
 	done
 
 GoldenrodDeptStoreRoofSuperNerdOhWowText:
@@ -255,42 +256,45 @@ GoldenrodDeptStoreRoofSuperNerdOhWowText:
 	done
 
 GoldenrodDeptStoreRoofSuperNerdQuitBotheringMeText:
-	text "Will you quit"
-	line "bothering me?"
+	text "Hörst du auf, mich"
+	line "zu belästigen?"
 	done
 
 GoldenrodDeptStoreRoofPokefanMText:
-	text "There's something"
-	line "I really want, but"
+	text "Es gibt etwas, das"
+	line "ich unbedingt"
 
-	para "I don't have the"
-	line "necessary cash…"
+	para "möchte, aber mir"
+	line "fehlt das nötige"
+	cont "Kleingeld…"
 
-	para "Maybe I'll sell"
-	line "off the Berries"
-	cont "I've collected…"
+	para "Soll ich meine"
+	line "gesammelten Beeren"
+	cont "verkaufen…"
 	done
 
 GoldenrodDeptStoreRoofTeacherText:
-	text "Oh, everything is"
-	line "so cheap!"
+	text "Oh, alles ist so"
+	line "billig!"
 
-	para "I bought so much,"
-	line "my Bag's crammed!"
+	para "Ich habe soviel"
+	line "gekauft, dass mein"
+	cont "Beutel voll ist!"
 	done
 
 GoldenrodDeptStoreRoofBugCatcherText:
-	text "My #mon always"
-	line "get paralyzed or"
+	text "Meine #mon"
+	line "sind immer para-"
+	cont "lysiert oder ver-"
+	cont "giftet, wenn es"
+	cont "darauf ankommt…"
 
-	para "poisoned when the"
-	line "chips are down…"
+	para "Daher möchte ich"
+	line "Hyperheiler"
+	cont "kaufen."
 
-	para "So I came to buy"
-	line "some Full Heal."
-
-	para "I wonder if"
-	line "there's any left?"
+	para "Hoffentlich gibt"
+	line "es noch welche?"
 	done
 
 

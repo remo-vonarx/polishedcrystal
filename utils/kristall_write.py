@@ -38,12 +38,15 @@ DEX_LINES = 3  # lines per Pokédex page
 Result = namedtuple("Result", "commands flags")
 Report = namedtuple("Report", "changed flags")
 
-# pret's spelling of a token -> Polished's (constants/charmap.asm of each)
-TOKEN_MAP = {"<PLAY_G>": "<PLAYER>", "<……>": "……"}
+# pret's spelling of a token -> Polished's (constants/charmap.asm of each); Polished's font has no ";"
+TOKEN_MAP = {"<PLAY_G>": "<PLAYER>", "<……>": "……", ";": ","}
 VARIABLES = {"text_ram", "text_decimal", "text_bcd", "text_plural", "text_today"}
 LINE_STARTS = {"text", "line", "cont", "next", "next1"}
 LETTERS = "A-Za-zÄÖÜäöüÉéß"
 CAPITALS = "A-ZÄÖÜÉ"
+# texts Kristall left in pret's English (the Pokécom Center's day and night greetings, the research
+# center's photo): no German to inherit, so they're flagged and written as new text later
+KRISTALL_ENGLISH = {"PokeComNurseDayText", "PokeComNurseNiteText", "RuinsOfAlphResearchCenterProfSilktreePhotoText"}
 WORD = re.compile(f"[#{LETTERS}0-9]+(?:[-.'][#{LETTERS}0-9]+)*\\.?")
 
 
@@ -62,28 +65,42 @@ def ram_labels(root=ROOT):
 # -- names and case ---------------------------------------------------------------------------
 
 def load_case(path=CASE):
-    """Kristall's spelling -> ours, from kristall_case.tsv (words, not sentences)."""
+    """Kristall's spelling -> ours, from kristall_case.tsv (words, not sentences). A row with a
+    third column, a text's label, answers for that text only: its key is (label, spelling)."""
     out = {}
     path = Path(path)
     if path.exists():
         for line in path.read_text(encoding="utf-8").splitlines():
-            if line and not line.startswith("#"):
-                kristall, ours, *_ = line.split("\t")
-                out[kristall] = ours
+            if line and not line.startswith("# "):  # "#MON" is a row, "# …" a comment
+                kristall, ours, *rest = line.split("\t")
+                out[(rest[0], kristall) if rest and rest[0] else kristall] = ours
     return out
 
 
-def name_map(root, pairs, base):
-    """Kristall's name -> ours, for each table entry whose Polished name is no longer Upstream's
-    English (a name chunk translated it). A Kristall name that maps to two of ours is left out."""
-    constant_pairs = {}
-    renames = Path(root) / "utils" / "english_renames.tsv"
-    if renames.exists():
-        for line in renames.read_text(encoding="utf-8").splitlines():
-            if m := re.search(r"constant (\w+) is (\w+)", line):
-                constant_pairs[m.group(1)] = m.group(2)
-    now = polished_names(lambda rel: (Path(root) / rel).read_text(encoding="utf-8"))
-    then = polished_names(git_source(base, root))
+def case_for(case, label):
+    """The answers that hold in one text: every word's, with that text's own on top."""
+    own = {k[1]: v for k, v in case.items() if isinstance(k, tuple) and k[0] == label}
+    if not own and not any(isinstance(k, tuple) for k in case):
+        return case
+    return {**{k: v for k, v in case.items() if isinstance(k, str)}, **own}
+
+
+def translated_tables():
+    """The tables of pairs["names"] whose name chunk is done (check_names.GERMAN_TABLES)."""
+    from check_names import GERMAN_TABLES
+    ours = {"trainer_classes": "classes", "landmarks": "places", "key items": "key items"}
+    return {t for t in ("pokemon", "moves", "items", "key items", "trainer_classes", "landmarks")
+            if ours.get(t, t) in GERMAN_TABLES}
+
+
+def name_pairs(pairs, now, then, constant_pairs=None, translated=None):
+    """Kristall's name -> ours, for each table entry a name chunk translated: its Polished name is
+    no longer Upstream's English, or its table is done (a name the same in both languages, Pikachu).
+    Place-name break marks are dropped on both sides, since dialogue writes the names whole
+    (ZINNOBER<TTE>INSEL -> ZINNOBERINSEL, Zinnober<SHY>insel -> Zinnoberinsel). A Kristall name
+    that maps to two of ours is left out."""
+    constant_pairs = constant_pairs or {}
+    translated = translated_tables() if translated is None else translated
     found = defaultdict(set)
     for table, entries in pairs["names"].items():
         tables = [table] + (["key items"] if table == "items" else [])
@@ -91,22 +108,67 @@ def name_map(root, pairs, base):
             ours_const = constant_pairs.get(const, const)
             for t in tables:
                 ours, english = now.get(t, {}).get(ours_const), then.get(t, {}).get(ours_const)
-                if ours is not None and ours != english:
-                    found[german.replace("<BSP>", " ")].add(ours.replace("¯", " "))
+                if ours is not None and (ours != english or t in translated):
+                    kristall = german.replace("<BSP>", " ").replace("<TTE>", "").replace("<WBR>", "")
+                    found[kristall].add(ours.replace("¯", " ").replace("<SHY>", "").replace("<WBR>", ""))
     return {k: next(iter(v)) for k, v in found.items() if len(v) == 1}
 
 
+class Names(dict):
+    """Kristall's name -> ours in the Regular build; .variants holds the map for each kind of text:
+    "regular", "faithful", and "both" (only the names the two builds agree on)."""
+    variants = {}
+
+
+def name_map(root, pairs, base):
+    """Kristall's name -> ours from the translated name tables (name_pairs), for each build."""
+    constant_pairs = {}
+    renames = Path(root) / "utils" / "english_renames.tsv"
+    if renames.exists():
+        for line in renames.read_text(encoding="utf-8").splitlines():
+            if m := re.search(r"constant (\w+) is (\w+)", line):
+                constant_pairs[m.group(1)] = m.group(2)
+    now, then = (lambda rel: (Path(root) / rel).read_text(encoding="utf-8")), git_source(base, root)
+    regular = name_pairs(pairs, polished_names(now), polished_names(then), constant_pairs)
+    faithful = name_pairs(pairs, polished_names(now, {"FAITHFUL"}), polished_names(then, {"FAITHFUL"}),
+                          constant_pairs)
+    names = Names(regular)
+    names.variants = {"regular": regular, "faithful": faithful,
+                      "both": {k: v for k, v in regular.items() if faithful.get(k) == v}}
+    return names
+
+
 def is_capital_run(word):
-    return len(re.findall(f"[{CAPITALS}]", word)) >= 2
+    """Two capitals in a row (#MON, LINDs, ANGR-Wert); single capitals (E-Mail, I-I-Ich, O.K.)
+    are German as it stands."""
+    return re.search(f"[{CAPITALS}]{{2}}", word) is not None
 
 
 def look_up(key, names, case):
-    for k in (key, key[:-1] if key.endswith(".") else None):
-        if k and k in names:
-            return names[k] + key[len(k):]
-        if k and k in case:
-            return case[k] + key[len(k):]
+    """Ours for one capital run: whole, without its final ".", or a name with a lowercase ending
+    (LINDs, KAUFHAUSes), the ending kept."""
+    tries = [key] + ([key[:-1]] if key.endswith(".") else [])
+    if m := re.fullmatch(f"(.*[{CAPITALS}])[a-zäöüß]+\\.?", key):
+        tries.append(m.group(1))
+    for k in tries:
+        for table in (case, names):  # an answer wins over a derived name (SCHNELLBOOT isn't the M.S. Aqua)
+            if k in table:
+                return table[k] + key[len(k):]
     return None
+
+
+def recase_parts(word, names, case):
+    """A hyphenated compound looked up part by part (Käfer-#MON, LIND-#MON-LABOR): (ours, the
+    capital parts found nowhere)."""
+    parts, missing = word.split("-"), []
+    for k, part in enumerate(parts):
+        if is_capital_run(part):
+            new = look_up(part, names, case)
+            if new is None:
+                missing.append(part.rstrip("."))
+            else:
+                parts[k] = new
+    return "-".join(parts), missing
 
 
 def recase_string(s, names, case, unknown):
@@ -131,7 +193,12 @@ def recase_string(s, names, case, unknown):
                 at, i = words[k].end(), k + 1
                 break
         else:
-            unknown.append(words[i].group().rstrip("."))
+            new, missing = recase_parts(words[i].group(), names, case)
+            if missing:
+                unknown += missing
+            else:
+                out.append(s[at:words[i].start()] + new)
+                at = words[i].end()
             i += 1
     return "".join(out) + s[at:]
 
@@ -139,7 +206,8 @@ def recase_string(s, names, case, unknown):
 def recase(commands, names, case):
     """Commands with each run of capitals re-cased, and the runs found in neither names nor
     case. A word split by "-" at a line end ("ARENA-" / "LEITER") is looked up joined, with the
-    hyphen first, and split again where it was."""
+    hyphen first, and split again where it was; found in neither form, it is reported joined with
+    its hyphen and left alone, since its halves re-cased apart could be wrong ("Arena-" / "Leiter")."""
     out, unknown = [list(c) for c in commands], []
     done_head, done_tail = {}, {}  # command index -> where its split part starts / ends (already re-cased)
     strings = [i for i, c in enumerate(out) if c[0] in STRING_COMMANDS | {"category"}]
@@ -153,7 +221,7 @@ def recase(commands, names, case):
             continue
         left, right = head.group()[:-1], tail.group()
         for key, hyphen in ((f"{left}-{right}", True), (left + right, False)):
-            new = names.get(key, case.get(key))
+            new = look_up(key, names, case)
             if new is None:
                 continue
             cut = len(left) + (1 if hyphen else 0)
@@ -166,6 +234,19 @@ def recase(commands, names, case):
             out[b][1] = part2 + (rest if part2 else rest.lstrip())  # no space left at the line's start
             done_head[a], done_tail[b] = head.start(), len(part2)
             break
+        else:
+            new_left, new_right = left, right
+            if is_capital_run(left) and is_capital_run(right):
+                # a compound (#MON-CENTER) or one word broken at the line end (ARENALEITER): the answer says
+                unknown.append(f"{left}-{right}")
+            else:  # a compound broken at its own hyphen (Käfer- / #MON): part by part
+                (left_new, left_missing), (right_new, right_missing) = (recase_parts(w, names, case) for w in (left, right))
+                unknown += left_missing + right_missing
+                if not left_missing + right_missing:
+                    new_left, new_right = left_new, right_new
+            out[a][1] = first[:head.start()] + new_left + "-"
+            out[b][1] = new_right + second[tail.end():]
+            done_head[a], done_tail[b] = head.start(), len(new_right)
     for i in strings:
         text = out[i][1]
         start, end = done_tail.get(i, 0), done_head.get(i, len(text))
@@ -343,6 +424,16 @@ def unmapped(commands, names_ok):
     return sorted(set(bad))
 
 
+PRET_CATEGORY = 10  # pret's longest dex category
+
+
+def own_category(ours, pret):
+    """Whether Polished's dex category is another word than pret's, not only spaced or cut
+    differently (pret cuts at 10 letters)."""
+    ours, cut = (re.sub(r"[^a-z]", "", c.lower()) for c in (ours, pret))
+    return ours != cut and not (len(pret) == PRET_CATEGORY and ours.startswith(cut))
+
+
 def german_for(entry, names, case, charmap=None, ram=None):
     """Our German for one indexed text, or None and why."""
     t = entry.text
@@ -352,6 +443,8 @@ def german_for(entry, names, case, charmap=None, ram=None):
         return Result(None, [f"{where}: {entry.cls}" + (f" ({alts})" if alts else "")])
     if t.partial_faithful:
         return Result(None, [f"{where}: partly inside if DEF(FAITHFUL)"])
+    if t.label in KRISTALL_ENGLISH:
+        return Result(None, [f"{where}: Kristall left it in English"])
     far = {"text_far", "text_farend"}
     if any(c[0] in far for c in t.commands):
         if all(c[0] in far | {"text_asm", "text_end"} for c in t.commands):
@@ -360,8 +453,17 @@ def german_for(entry, names, case, charmap=None, ram=None):
     commands, flags = rebuild(t.commands, entry.pair["en"], entry.pair["de"], ram)
     if flags:
         return Result(None, [f"{where}: {f}" for f in flags])
+    category = next((c[1] for c in t.commands if c[0] == "category"), None)
+    pret_category = next((c[1] for c in entry.pair["en"] if c[0] == "category"), None)
+    if category and pret_category and own_category(category, pret_category):
+        commands = [("category", category) if c[0] == "category" else c for c in commands]
     before = commands
-    commands, unknown = recase(commands, names, case)
+    answers = case_for(case, t.label)
+    if answers.get("*") == "*":  # the text keeps Kristall's capitals, as Polished's English keeps its own
+        own = {k[1]: v for k, v in case.items() if isinstance(k, tuple) and k[0] == t.label and k[1] != "*"}
+        commands, unknown = recase(commands, {}, own)[0], []  # but for its own answers
+    else:
+        commands, unknown = recase(commands, getattr(names, "variants", {}).get(t.variant, names), answers)
     if unknown:
         return Result(None, [f"{where}: unknown capitals {' '.join(sorted(set(unknown)))}"])
     bad = unmapped(commands, charmap_names() if charmap is None else charmap)
@@ -426,6 +528,10 @@ def write(entries, names, case, dry_run=True, root=ROOT):
                 flags.append(f"{path}:{e.text.label}: not written, its lines hold {why}")
                 continue
             new = render(result.commands)
+            indent = next((line[:len(line) - len(line.lstrip())] for line in old
+                           if line.strip() and not LABEL.match(line)), "\t")
+            if indent != "\t":  # a text nested in a script (writethistext) keeps its indentation
+                new = [indent + line[1:] if line.startswith("\t") else line for line in new]
             if any(not line.strip() for line in old):  # Polished's style: a blank line before para
                 new = [x for line in new for x in ([""] if line.startswith("\tpara ") else []) + [line]]
             if m := LABEL.match(old[0]):  # a label on the text's first line stays, with its gap

@@ -30,45 +30,46 @@ Route11_MapScriptHeader:
 GenericTrainerYoungsterOwen:
 	generictrainer YOUNGSTER, OWEN, EVENT_BEAT_YOUNGSTER_OWEN, YoungsterOwenSeenText, YoungsterOwenBeatenText
 
-	text "I fought fair and"
-	line "square with honor."
+	text "Ich habe immer"
+	line "fair und ehrenhaft"
+	cont "gekämpft."
 
-	para "I don't regret"
-	line "this at all."
+	para "Ich habe es noch"
+	line "nie bedauert."
 	done
 
 YoungsterOwenSeenText:
-	text "There's no cheat-"
-	line "ing in #mon."
+	text "Bei #mon wird"
+	line "nicht gemogelt."
 
-	para "Let's keep it fair"
-	line "and square!"
+	para "Immer fair"
+	line "spielen."
 	done
 
 YoungsterOwenBeatenText:
-	text "Huh? How did this"
-	line "happen?"
+	text "Huch? Wie konnte"
+	line "das passieren?"
 	done
 
 GenericTrainerYoungsterJason:
 	generictrainer YOUNGSTER, JASON, EVENT_BEAT_YOUNGSTER_JASON, YoungsterJasonSeenText, YoungsterJasonBeatenText
 
-	text "I'm going to catch"
-	line "more #mon in"
-	cont "the grass."
+	text "Im Gras werde ich"
+	line "mehr #mon"
+	cont "fangen."
 	done
 
 YoungsterJasonSeenText:
-	text "It itches and"
-	line "tickles a bit when"
+	text "Es juckt und"
+	line "sticht, wenn ich"
 
-	para "I wear shorts in"
-	line "the grass."
+	para "mit meinen Shorts"
+	line "durchs Gras laufe."
 	done
 
 YoungsterJasonBeatenText:
 	text "Aiyaaah!"
-	line "I got stomped!"
+	line "Ich bekam Dresche!"
 	done
 
 GenericTrainerYoungsterAlfie:
@@ -93,8 +94,9 @@ GenericTrainerPsychicHerman:
 
 	text "…"
 
-	para "I lost while I had"
-	line "my eyes closed…"
+	para "Ich verlor, als"
+	line "ich meine Augen"
+	cont "schloss…"
 	done
 
 PsychicHermanSeenText: ; text > text
@@ -105,24 +107,25 @@ PsychicHermanBeatenText:
 GenericTrainerPsychicFidel:
 	generictrainer PSYCHIC_T, FIDEL, EVENT_BEAT_PSYCHIC_FIDEL, PsychicFidelSeenText, PsychicFidelBeatenText
 
-	text "Strength in con-"
-	line "viction…"
+	text "Deine Überzeugung"
+	line "ist stark…"
 
-	para "You're strong be-"
-	line "cause you believe"
-	cont "in your #mon."
+	para "Du bist stark,"
+	line "weil du an deine"
+	cont "#mon glaubst."
 	done
 
 PsychicFidelSeenText:
-	text "I can see it…"
+	text "Ich kann es sehen…"
 
-	para "Everything to see"
-	line "about you…"
+	para "Ich kann alles"
+	line "über dich sehen…"
 	done
 
 PsychicFidelBeatenText:
-	text "I couldn't foresee"
-	line "your power…"
+	text "Deine Stärke"
+	line "konnte ich nicht"
+	cont "sehen…"
 	done
 
 GenericTrainerPsychicUri:

@@ -19,10 +19,10 @@ Route5_MapScriptHeader:
 	def_object_events
 
 Route5UndergroundPathSignText:
-	text "Underground Path"
+	text "Tunnelpfad"
 
-	para "Cerulean City -"
-	line "Vermilion City"
+	para "Azuria City -"
+	line "Orania City"
 	done
 
 Route5AdvancedTipsSignText:
@@ -42,8 +42,9 @@ Route5AdvancedTipsSignText:
 	done
 
 HouseForSaleSignText:
-	text "What's this?"
+	text "Was ist das?"
 
-	para "House for Sale…"
-	line "Nobody lives here."
+	para "Haus zu verkaufen…"
+	line "Hier wohnt"
+	cont "niemand."
 	done

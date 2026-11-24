@@ -56,14 +56,14 @@ GoldenrodUndergroundEntrancesVeteranMScript:
 	done
 
 GoldenrodUndergroundEntrances_TeacherText:
-	text "There are some"
-	line "shops downstairs…"
+	text "Da unten gibt es"
+	line "Geschäfte…"
 
-	para "But there are"
-	line "also trainers."
+	para "Aber da unten sind"
+	line "auch Trainer. Ich"
 
-	para "I'm scared to go"
-	line "down there."
+	para "traue mich nicht"
+	line "hinunter."
 	done
 
 GoldenrodUndergroundEntrances_SuperNerd1Text:
@@ -80,13 +80,13 @@ GoldenrodUndergroundEntrances_SuperNerd1Text:
 	done
 
 GoldenrodUndergroundEntrances_SuperNerd2Text:
-	text "I was challenged"
-	line "to a battle down-"
-	cont "stairs."
+	text "Ich wurde da unten"
+	line "zu einem Kampf"
+	cont "herausgefordert."
 
-	para "It's rough down"
-	line "there. You'd"
-	cont "better be careful."
+	para "Da unten herrschen"
+	line "rauhe Sitten. Sei"
+	cont "auf der Hut."
 	done
 
 GoldenrodUndergroundEntrances_BeautyText:

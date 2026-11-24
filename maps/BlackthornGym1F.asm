@@ -76,36 +76,37 @@ BlackthornGymClairScript:
 	end
 
 .IntroText:
-	text "I am Clair."
+	text "Ich bin Sandra."
 
-	para "The world's best"
-	line "dragon master."
+	para "Der beste Drachen-"
+	line "meister der Welt."
 
-	para "I can hold my own"
-	line "against even the"
+	para "Ich bestehe sogar"
+	line "gegen die Top Vier"
+	cont "der #mon Liga."
 
-	para "#mon League's"
-	line "Elite Four."
+	para "Willst du immer"
+	line "noch gegen mich"
+	cont "antreten?"
 
-	para "Do you still want"
-	line "to take me on?"
+	para "…Gut."
+	line "Auf geht's!"
 
-	para "…Fine."
-	line "Let's do it!"
+	para "Da ich eine Arena-"
+	line "leiterin bin,"
 
-	para "As a Gym Leader,"
-	line "I will use my full"
-
-	para "power against any"
-	line "opponent!"
+	para "bringe ich mein"
+	line "ganzes Können ge-"
+	cont "gen jeden Gegner"
+	cont "auf!"
 	done
 
 .WinText:
-	text "I lost?"
+	text "Ich habe verloren?"
 
-	para "I don't believe"
-	line "it. There must be"
-	cont "some mistake…"
+	para "Ich kann es nicht"
+	line "glauben. Das muss"
+	cont "ein Irrtum sein…"
 	done
 
 .GoToDragonsDenText:
@@ -143,10 +144,10 @@ BlackthornGymClairScript:
 	done
 
 .TooMuchToExpectText:
-	text "What's the matter?"
+	text "Was ist los?"
 
-	para "Is it too much to"
-	line "expect of you?"
+	para "Erwarte ich etwa"
+	line "zu viel von dir?"
 	done
 
 ClairPokemonLeagueDirectionsText:
@@ -185,108 +186,114 @@ BlackthornGymGuyScript:
 	iftrue_jumptextfaceplayer .WinText
 	jumpthistextfaceplayer
 
-	text "Yo! Champ in"
-	line "making!"
+	text "Yo! Champ in spe!"
 
-	para "It's been a long"
-	line "journey, but we"
+	para "Es war eine lange"
+	line "Reise, aber bald"
 
-	para "are almost done!"
-	line "Count on me!"
+	para "sind wir da! Zähle"
+	line "auf mich!"
 
-	para "Clair uses the"
-	line "mythical and sac-"
-	cont "red Dragon-type"
-	cont "#mon."
+	para "Sandra setzt die"
+	line "mythischen und"
+	cont "heiligen"
+	cont "Drachen-#mon"
+	cont "ein."
 
-	para "You can't damage"
-	line "them very easily."
+	para "So leicht sind die"
+	line "nicht zu besiegen."
 
-	para "But you know,"
-	line "they're supposed"
+	para "Aber angeblich"
+	line "sind sie anfällig"
 
-	para "to be weak against"
-	line "Ice-type moves."
+	para "gegen Eis-"
+	line "Attacken."
 	done
 
 .WinText:
-	text "You were great to"
-	line "beat Clair!"
+	text "Gegen Sandra zu"
+	line "gewinnen ist eine"
+	cont "Meisterleistung."
 
-	para "All that's left is"
-	line "the #mon League"
-	cont "challenge."
+	para "Alles was dir nun"
+	line "noch bevorsteht,"
+	cont "ist die #mon"
+	cont "Liga."
 
-	para "You're on the way"
-	line "to becoming the"
-	cont "#mon Champion!"
+	para "Du bist auf dem"
+	line "besten Weg, der"
+	cont "#mon-Champ"
+	cont "zu werden!"
 	done
 
 GenericTrainerDragonTamerPaul:
 	generictrainer DRAGON_TAMER, PAUL, EVENT_BEAT_DRAGON_TAMER_PAUL, .SeenText, .BeatenText
 
-	text "Lance told you"
-	line "that he'd like to"
+	text "Siegfried sagte"
+	line "dir, er möchte"
 
-	para "see you again?"
-	line "Not a chance!"
+	para "dich noch einmal"
+	line "sehen? Das kann"
+	cont "nicht sein!"
 	done
 
 .SeenText:
-	text "Your first battle"
-	line "against dragons?"
+	text "Ist das dein ers-"
+	line "ter Kampf gegen"
+	cont "Drachen?"
 
-	para "I'll show you how"
-	line "tough they are!"
+	para "Ich zeige dir, wie"
+	line "stark sie sind!"
 	done
 
 .BeatenText:
-	text "My dragon #mon"
-	line "lost?"
+	text "Mein Drachen-"
+	line "#mon hat"
+	cont "verloren?"
 	done
 
 GenericTrainerCooltrainermMike:
 	generictrainer COOLTRAINERM, MIKE, EVENT_BEAT_COOLTRAINERM_MIKE, .SeenText, .BeatenText
 
-	text "I know my short-"
-	line "comings now."
-
-	para "Thanks for showing"
-	line "me!"
+	text "Ich kenne jetzt"
+	line "meine Schwachstel-"
+	cont "len. Danke für den"
+	cont "Hinweis!"
 	done
 
 .SeenText:
-	text "My chance of"
-	line "losing? Not even"
-	cont "one percent!"
+	text "Die Chancen, gegen"
+	line "dich zu verlieren?"
+	cont "Nicht mal ein Pro-"
+	cont "zent!"
 	done
 
 .BeatenText:
-	text "That's odd."
+	text "Hm, eigenartig."
 	done
 
 GenericTrainerCooltrainerfLola:
 	generictrainer COOLTRAINERF, LOLA, EVENT_BEAT_COOLTRAINERF_LOLA, .SeenText, .BeatenText
 
-	text "Dragons are weak"
-	line "against Dragon-"
-	cont "type moves."
+	text "Drachen sind"
+	line "schwach gegen Dra-"
+	cont "chen-Attacken."
 	done
 
 .SeenText:
-	text "Dragons are sacred"
-	line "#mon."
+	text "Drachen sind hei-"
+	line "lige #mon."
 
-	para "They are full of"
-	line "life energy."
+	para "Sie sind voller"
+	line "Lebensenergie."
 
-	para "If you're not"
-	line "serious, you won't"
+	para "Wenn du es nicht"
+	line "ernst meinst, dann"
 
-	para "be able to beat"
-	line "them."
+	para "wirst du sie nicht"
+	line "besiegen können."
 	done
 
 .BeatenText:
-	text "Way to go!"
+	text "Großartig!"
 	done

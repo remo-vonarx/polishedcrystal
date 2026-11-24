@@ -26,43 +26,45 @@ Route6_MapScriptHeader:
 GenericTrainerPokefanmRex:
 	generictrainer POKEFANM, REX, EVENT_BEAT_POKEFANM_REX, PokefanmRexSeenText, PokefanmRexBeatenText
 
-	text "Look how adorable"
-	line "my Phanpy acts!"
+	text "Sieh, wie grazil"
+	line "sich mein Phanpy"
+	cont "bewegt!"
 
-	para "Isn't it cute"
-	line "enough to make"
-	cont "your heart melt?"
+	para "Es ist so süß,"
+	line "dass dein Herz"
+	cont "dahinschmilzt."
 	done
 
 PokefanmRexSeenText:
-	text "My Phanpy is the"
-	line "cutest in the"
-	cont "world."
+	text "Mein Phanpy ist"
+	line "das niedlichste"
+	cont "der ganzen Welt."
 	done
 
 PokefanmRexBeatenText:
-	text "My Phanpy!"
+	text "Mein Phanpy!"
 	done
 
 GenericTrainerPokefanmAllan:
 	generictrainer POKEFANM, ALLAN, EVENT_BEAT_POKEFANM_ALLAN, PokefanmAllanSeenText, PokefanmAllanBeatenText
 
-	text "Look how adorable"
-	line "my Teddiursa acts!"
+	text "Sieh, wie grazil"
+	line "sich mein"
+	cont "Teddiursa bewegt!"
 
-	para "Isn't it cute"
-	line "enough to make"
-	cont "your heart melt?"
+	para "Es ist so süß,"
+	line "dass dein Herz"
+	cont "dahinschmilzt."
 	done
 
 PokefanmAllanSeenText:
-	text "My Teddiursa is"
-	line "the cutest in the"
-	cont "world."
+	text "Mein Teddiursa ist"
+	line "das niedlichste"
+	cont "der ganzen Welt."
 	done
 
 PokefanmAllanBeatenText:
-	text "My Teddiursa!"
+	text "Mein Teddiursa!"
 	done
 
 GenericTrainerTwinsDayanddani1:

@@ -136,64 +136,70 @@ MapRuinsofAlphKabutoChamberSignpost4Script:
 	endtext
 
 RuinsOfAlphKabutoChamberReceptionistText:
-	text "Welcome to this"
-	line "chamber."
+	text "Willkommen in"
+	line "diesem Raum."
 
-	para "There are sliding"
-	line "panels that depict"
+	para "Hier gibt es ver-"
+	line "schiebbare Plat-"
+	cont "ten, die ein #-"
+	cont "mon darstellen,"
 
-	para "a #mon drawn by"
-	line "the ancients."
+	para "das aus der Antike"
+	line "stammt."
 
-	para "Slide the panels"
-	line "around to form the"
-	cont "picture."
+	para "Verschiebe die"
+	line "Platten so, dass"
+	cont "ein Bild entsteht."
 
-	para "To the right is a"
-	line "description of the"
-	cont "#mon."
+	para "Rechts findest du"
+	line "eine Beschreibung"
+	cont "des #mon."
 
-	para "Scientists in the"
-	line "back are examining"
-
-	para "some newly found"
-	line "patterns."
+	para "Die Forscher im"
+	line "Hintergrund unter-"
+	cont "suchen neu ent-"
+	cont "deckte Muster."
 	done
 
 RuinsOfAlphKabutoChamberScientistCrypticText:
-	text "Recently, strange,"
-	line "cryptic patterns"
-	cont "have appeared."
+	text "Neulich sind"
+	line "seltsame Muster"
+	cont "aufgetaucht."
 
-	para "It's odd. They"
-	line "weren't here a"
-	cont "little while ago…"
+	para "Es ist merkwürdig."
+	line "Vor kurzem waren"
+	cont "sie noch nicht da…"
 
-	para "You should take a"
-	line "look at the walls."
+	para "Wirf einen Blick"
+	line "auf die Wände."
 	done
 
 RuinsOfAlphKabutoChamberScientistHoleText:
-	text "Ah! Here's another"
-	line "huge hole!"
+	text "Ah! Hier ist noch"
+	line "ein großes Loch!"
 
-	para "It's big enough to"
-	line "go through!"
+	para "Es ist groß genug,"
+	line "um durchzugehen!"
 	done
 
 RuinsOfAlphKabutoChamberScientistTremorText:
-	text "That tremor was"
-	line "pretty scary!"
+	text "Das Beben war"
+	line "Furcht erregend!"
 
-	para "But I'm more"
-	line "concerned about"
-	cont "this wall here…"
+	para "Aber die Wand hier"
+	line "macht mir mehr"
+	cont "Sorgen…"
 	done
 
 RuinsOfAlphKabutoChamberDescriptionText:
-	text "A #mon that hid"
-	line "on the sea floor."
+	text "Ein #mon, das"
+	line "sich am Meeres-"
+	cont "grund versteckte"
 
-	para "Eyes on its back"
-	line "scanned the area."
+	para "und mit seinen"
+	line "Augen auf dem"
+
+	para "Rücken die Um-"
+	line "gebung genau"
+	cont "beobachtete."
 	done

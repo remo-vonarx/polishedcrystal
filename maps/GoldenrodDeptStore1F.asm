@@ -21,50 +21,55 @@ GoldenrodDeptStore1F_MapScriptHeader:
 	object_event 11,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodDeptStore1FGentlemanText, -1
 
 GoldenrodDeptStore1FReceptionistText:
-	text "Welcome to Golden-"
-	line "rod Dept.Store."
+	text "Willkommen im"
+	line "Kaufhaus von"
+	cont "Dukatia City."
 	done
 
 GoldenrodDeptStore1FGentlemanText:
-	text "The Dept.Store"
-	line "has a decent se-"
-	cont "lection."
+	text "Das Kaufhaus"
+	line "bietet eine große"
+	cont "Auswahl."
 
-	para "But some items"
-	line "are only available"
+	para "Aber einige Items"
+	line "erhält man nur als"
 
-	para "as Game Corner"
-	line "prizes."
+	para "Preis in der"
+	line "Spielhalle."
 	done
 
 GoldenrodDeptStore1FPokefanFText:
-	text "I'm raring to shop"
-	line "again today!"
+	text "Ich freue mich"
+	line "heute schon wieder"
+	cont "aufs Einkaufen!"
 	done
 
 GoldenrodDeptStore1FBugCatcherText:
-	text "Mom's good at"
-	line "bargain hunting."
+	text "Mama ist sehr gut"
+	line "im Schnäppchen-"
+	cont "finden."
 
-	para "She always buys"
-	line "stuff at lower"
-	cont "prices."
+	para "Sie kauft ständig"
+	line "Waren unter dem"
+	cont "Normalpreis."
 	done
 
 GoldenrodDeptStore1FDirectoryText:
-	text "1F Service Counter"
+	text "EG Info-Schalter"
 
-	para "2F Trainer's"
-	line "   Market"
+	para "1S Trainer-"
+	line "   Markt"
 
-	para "3F Battle"
-	line "   Collection"
+	para "2S Kampf-"
+	line "   Kollektion"
 
-	para "4F Medicine Box"
+	para "3S Arznei"
 
-	para "5F TM Corner"
+	para "4S TM-Ecke"
 
-	para "6F Tranquil Square"
+	para "5S Platz der"
+	line "   ewigen Stille"
 
-	para "Rooftop Lookout"
+	para "Dachterrassen"
+	line "Aussichtsplattform"
 	done

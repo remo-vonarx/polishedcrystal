@@ -69,44 +69,49 @@ AzaleaPokeCenter1FCooltrainermScript:
 	done
 
 AzaleaPokeCenter1FGentlemanText:
-	text "Do your #mon"
-	line "know HM moves?"
+	text "Beherrschen deine"
+	line "#mon VM-"
+	cont "Attacken?"
 
-	para "Those moves can"
-	line "be used even if"
+	para "Diese Attacken"
+	line "können auch einge-"
+	cont "setzt werden, wenn"
 
-	para "your #mon has"
-	line "fainted."
+	para "dein #mon be-"
+	line "siegt worden ist."
 	done
 
 AzaleaPokeCenter1FSightseermText:
-	text "This Bill guy"
-	line "created the system"
+	text "Dieser Bill hat"
+	line "das #mon-"
+	cont "Lagerungs-System"
+	cont "für PC entwickelt."
 
-	para "for storing"
-	line "#mon in a PC."
-
-	para "Bill's PC can"
-	line "store up to 20"
-	cont "#mon per Box."
+	para "Auf Bills PC kön-"
+	line "nen bis zu 20"
+	cont "#mon pro Box"
+	cont "gelagert werden."
 	done
 
 AzaleaPokeCenter1FPokefanfText:
-	text "Do you know about"
-	line "Apricorns?"
+	text "Weißt du über"
+	line "Aprikokos Be-"
+	cont "scheid?"
 
-	para "Crack one open,"
-	line "hollow it out and"
+	para "Brich eine auf,"
+	line "höhle sie aus und"
 
-	para "fit it with a"
-	line "special device."
+	para "verbinde sie mit"
+	line "einer speziellen"
+	cont "Vorrichtung."
 
-	para "Then you can catch"
-	line "#mon with it."
+	para "Dann kannst du"
+	line "#mon damit"
+	cont "fangen."
 
-	para "Before # Balls"
-	line "were invented,"
+	para "Vor der Erfindung"
+	line "von #bällen hat"
 
-	para "everyone used"
-	line "Apricorns."
+	para "jeder Aprikokos"
+	line "verwendet."
 	done

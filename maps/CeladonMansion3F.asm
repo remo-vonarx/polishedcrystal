@@ -84,15 +84,16 @@ MapCeladonMansion3FSignpost0Script:
 	jumpthistext
 
 	text "Game Freak"
-	line "Development Room"
+	line "Entwicklungsraum"
 	done
 
 MapCeladonMansion3FSignpost1Script:
 	jumpthistext
 
-	text "It's a detailed"
-	line "drawing of a"
-	cont "pretty girl."
+	text "Das ist eine sehr"
+	line "detaillierte"
+	cont "Zeichnung eines"
+	cont "hübschen Mädchens."
 	done
 
 MapCeladonMansion3FSignpost2Script:
@@ -113,29 +114,30 @@ MapCeladonMansion3FSignpost2Script:
 MapCeladonMansion3FSignpost3Script:
 	jumpthistext
 
-	text "It's crammed with"
-	line "reference materi-"
-	cont "als. There's even"
-	cont "a # Doll."
+	text "Es ist angefüllt"
+	line "mit Utensilien."
+	cont "Da ist sogar eine"
+	cont "#puppe."
 	done
 
 GameFreakGameDesignerText:
-	text "Is that right?"
+	text "Ist das richtig?"
 
-	para "I'm the Game"
-	line "Designer!"
+	para "Ich bin der"
+	line "Spieldesigner!"
 
-	para "Filling up your"
-	line "#dex is tough,"
-	cont "but don't give up!"
+	para "Es ist schwer,"
+	line "den #dex zu"
+	cont "erstellen, aber"
+	cont "gib nicht auf!"
 	done
 
 GameFreakGameDesignerCompletedPokedexText:
-	text "Wow! Excellent!"
-	line "You completed your"
-	cont "#dex!"
+	text "Wow! Hervorragend!"
+	line "Dein #dex ist"
+	cont "komplett!"
 
-	para "Congratulations!"
+	para "Gratuliere!"
 	done
 
 GameFreakGameDesignerPauseForDiplomaText:
@@ -168,10 +170,12 @@ GameFreakDesignerGaveDiplomaText:
 	done
 
 GameFreakGraphicArtistText:
-	text "I'm the Graphic"
-	line "Artist."
+	text "Ich bin der"
+	line "Grafiker."
 
-	para "I drew you!"
+	para "Ich habe eine"
+	line "Zeichnung von dir"
+	cont "angefertigt!"
 	done
 
 GameFreakGraphicArtistPrintDiplomaText:
@@ -186,9 +190,10 @@ GameFreakGraphicArtistPrintDiplomaText:
 	done
 
 GameFreakGraphicArtistRefusedText:
-	text "Give me a shout if"
-	line "you want your"
-	cont "Diploma printed."
+	text "Gib mir Bescheid,"
+	line "wenn ich dir dein"
+	cont "Diplom ausdrucken"
+	cont "soll."
 	done
 
 GameFreakProgrammerText:

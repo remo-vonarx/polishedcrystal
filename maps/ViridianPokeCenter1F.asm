@@ -41,11 +41,12 @@ ViridianPokeCenter1FCooltrainermScript:
 	iftrue_jumptextfaceplayer .BlueText
 	jumpthistextfaceplayer
 
-	text "Where in the world"
-	line "is Viridian's Gym"
+	text "Wo um Himmels"
+	line "Willen ist der"
 
-	para "Leader? I wanted"
-	line "to challenge him."
+	para "Arenaleiter von"
+	line "Vertania? Ich will"
+	cont "ihn herausfordern."
 	done
 
 .BlueText:
@@ -58,16 +59,20 @@ ViridianPokeCenter1FCooltrainermScript:
 	done
 
 ViridianPokeCenter1FCooltrainerfText:
-	text "I heard that the"
-	line "Gym in Cinnabar is"
-	cont "gone."
+	text "Ich habe gehört,"
+	line "dass die PKMN-"
+	cont "Arena auf der"
+	cont "Zinnoberinsel"
+	cont "verschwunden ist."
 
-	para "I wonder what be-"
-	line "came of Blaine,"
-	cont "the Gym Leader."
+	para "Ich frage mich,"
+	line "was aus Pyro, dem"
+	cont "Arenaleiter"
+	cont "geworden ist."
 	done
 
 ViridianPokeCenter1FBugCatcherText:
-	text "My dream is to be-"
-	line "come a Gym Leader."
+	text "Mein großer Traum"
+	line "ist es, Arena-"
+	cont "leiter zu werden."
 	done

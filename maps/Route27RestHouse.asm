@@ -31,15 +31,16 @@ Route27RestHouseGranny:
 	ifgreater FRIEND_BALL_HAPPINESS - 1, .Loyal
 	jumpthisopenedtext
 
-	text "If it doesn't come"
-	line "to trust you some"
+	text "Falls es dir nicht"
+	line "mehr Vertrauen"
 
-	para "more, it could be"
-	line "tough going."
+	para "schenkt, wird es"
+	line "schwer für dich."
 
-	para "Trust is the tie"
-	line "that binds #mon"
-	cont "and trainers."
+	para "Vertrauen ist der"
+	line "Bund zwischen"
+	cont "#mon und den"
+	cont "Trainern."
 	done
 
 .Loyal:

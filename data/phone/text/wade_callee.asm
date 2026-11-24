@@ -1,77 +1,79 @@
 WadeAnswerPhoneText:
-	text "Hello? This is"
+	text "Hallo? Hier ist"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking."
+	text "."
 
 	para "Oh. Hi, <PLAYER>!"
-	line "Good morning!"
+	line "Guten Morgen!"
 	done
 
 WadeAnswerPhoneDayText:
-	text "Hello? This is"
+	text "Hallo? Hier ist"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking."
+	text "."
 
 	para "Oh, hi, <PLAYER>!"
 	done
 
 WadeAnswerPhoneNiteText:
-	text "Hello? This is"
+	text "Hallo? Hier ist"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking."
+	text "."
 
 	para "Oh, hi, <PLAYER>!"
-	line "Good evening!"
+	line "Guten Abend!"
 	done
 
 WadeGreetText:
-	text "<PLAYER>, good"
-	line "morning!"
+	text "<PLAYER>,"
+	line "guten Morgen!"
 
-	para "It's me, "
+	para ""
 	text_ram wStringBuffer3
-	text "."
-	line "Isn't it nice out?"
+	text ", hallo!"
+	line "Schön heute, oder?"
 	done
 
 WadeGreetDayText:
-	text "<PLAYER>, howdy!"
+	text "<PLAYER>,"
+	line "alles senkrecht?"
 
-	para "It's me, "
+	para ""
 	text_ram wStringBuffer3
 	text "."
-	line "Isn't it nice out?"
+	line "Schön heute, oder?"
 	done
 
 WadeGreetNiteText:
-	text "Good evening,"
+	text "Guten Abend,"
 	line "<PLAYER>!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "Were you awake?"
+	line "Bist du wach?"
 	done
 
 WadeGenericText:
-	text "How are your"
-	line "#mon doing?"
+	text "Wie geht es deinen"
+	line "#mon?"
 
-	para "My #mon have"
-	line "too much energy to"
+	para "Meine #mon"
+	line "haben zu viel"
 
-	para "burn. It gets to"
-	line "be a problem."
+	para "Energie. Das ist"
+	line "ein Problem."
 
-	para "Of all my #mon,"
-	line ""
+	para "Von all meinen"
+	line "#mon ist"
+	cont ""
 	text_ram wStringBuffer4
-	text " is the"
-	cont "hardest to handle."
+	text " am"
+	cont "schwierigsten."
 
-	para "Working with it is"
-	line "exhausting."
+	para "Mit ihm zu arbei-"
+	line "ten ist ermüdend."
 	done

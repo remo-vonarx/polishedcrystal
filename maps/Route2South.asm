@@ -23,46 +23,49 @@ Route2South_MapScriptHeader:
 GenericTrainerBug_maniacRob:
 	generictrainer BUG_MANIAC, ROB, EVENT_BEAT_BUG_MANIAC_ROB, Bug_maniacRobSeenText, Bug_maniacRobBeatenText
 
-	text "I'm going to look"
-	line "for stronger bug"
-	cont "#mon."
+	text "Ich werde mir"
+	line "stärkere Käfer-"
+	cont "#mon suchen."
 	done
 
 GenericTrainerBug_maniacDoug:
 	generictrainer BUG_MANIAC, DOUG, EVENT_BEAT_BUG_MANIAC_DOUG, Bug_maniacDougSeenText, Bug_maniacDougBeatenText
 
-	text "Bug #mon squish"
-	line "like plush toys"
+	text "Käfer-#mon"
+	line "zischen wie"
 
-	para "when you squeeze"
-	line "their bellies."
+	para "Plüschtiere, wenn"
+	line "du sie auf den"
+	cont "Bauch drückst."
 
-	para "I love how they"
-	line "feel!"
+	para "Ich mag das"
+	line "Gefühl!"
 	done
 
 Bug_maniacRobSeenText:
-	text "My bug #mon are"
-	line "tough. Prepare to"
-	cont "lose!"
+	text "Meine Käfer-#-"
+	line "mon sind zäh. Du"
+	cont "wirst verlieren!"
 	done
 
 Bug_maniacRobBeatenText:
-	text "I was whipped…"
+	text "Ich wurde"
+	line "vermöbelt…"
 	done
 
 Bug_maniacDougSeenText:
-	text "Why don't girls"
-	line "like bug #mon?"
+	text "Warum mögen"
+	line "Mädchen keine"
+	cont "Käfer-#mon?"
 	done
 
 Bug_maniacDougBeatenText:
-	text "No good!"
+	text "Sinnlos!"
 	done
 
 Route2SignText:
 	text "Route 2"
 
-	para "Viridian City -"
-	line "Pewter City"
+	para "Vertania City -"
+	line "Marmoria City"
 	done

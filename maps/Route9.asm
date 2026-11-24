@@ -27,75 +27,83 @@ Route9_MapScriptHeader:
 GenericTrainerCamperDean:
 	generictrainer CAMPER, DEAN, EVENT_BEAT_CAMPER_DEAN, CamperDeanSeenText, CamperDeanBeatenText
 
-	text "My #mon were"
-	line "hurt before even"
+	text "Meine #mon"
+	line "wurden verletzt,"
 
-	para "entering Rock"
-	line "Tunnel."
+	para "obwohl ich den"
+	line "Felstunnel noch"
+	cont "nicht betreten"
+	cont "hatte."
 
-	para "I'd better take"
-	line "them to a #mon"
-	cont "Center right away."
+	para "Ich bringe sie"
+	line "besser sofort in"
+	cont "ein #mon-"
+	cont "Center."
 	done
 
 GenericTrainerPicnickerHeidi:
 	generictrainer PICNICKER, HEIDI, EVENT_BEAT_PICNICKER_HEIDI, PicnickerHeidiSeenText, PicnickerHeidiBeatenText
 
-	text "We bake lots of"
-	line "goodies and share"
+	text "Wir backen viele"
+	line "gute Sachen, die"
 
-	para "them all around."
-	line "They're delicious!"
+	para "wir mit allen"
+	line "teilen. Sie"
+	cont "schmecken lecker!"
 	done
 
 GenericTrainerCamperSid:
 	generictrainer CAMPER, SID, EVENT_BEAT_CAMPER_SID, CamperSidSeenText, CamperSidBeatenText
 
-	text "Sorry. You weren't"
-	line "littering. It was"
-	cont "my mistake."
+	text "Entschuldige!"
+	line "Ich habe mich"
+	cont "geirrt."
 	done
 
 GenericTrainerPicnickerEdna:
 	generictrainer PICNICKER, EDNA, EVENT_BEAT_PICNICKER_EDNA, PicnickerEdnaSeenText, PicnickerEdnaBeatenText
 
-	text "Conserving energy"
-	line "is important, but"
+	text "Energiesparen ist"
+	line "wichtig, aber die"
 
-	para "the environment is"
-	line "even more vital."
+	para "Natur ist noch"
+	line "viel wichtiger."
 	done
 
 GenericTrainerHikerTim:
 	generictrainer HIKER, TIM, EVENT_BEAT_HIKER_TIM, HikerTimSeenText, HikerTimBeatenText
 
-	text "Battles are about"
-	line "concentration."
+	text "Bei Kämpfen spielt"
+	line "Konzentration eine"
+	cont "wichtige Rolle."
 	done
 
 GenericTrainerHikerSidney:
 	generictrainer HIKER, SIDNEY, EVENT_BEAT_HIKER_SIDNEY, HikerSidneySeenText, HikerSidneyBeatenText
 
-	text "The Power Plant is"
-	line "across a small"
-	cont "river."
+	text "Du musst einen"
+	line "kleinen Fluss"
+	cont "durchqueren, um"
+	cont "zum Kraftwerk"
+	cont "zu gelangen."
 	done
 
 CamperDeanSeenText:
-	text "I came to explore"
-	line "Rock Tunnel."
+	text "Ich möchte den"
+	line "Felstunnel"
+	cont "erforschen."
 	done
 
 CamperDeanBeatenText:
-	text "Whoa! Danger, man."
+	text "Boah! Vorsicht!"
 	done
 
 PicnickerHeidiSeenText:
-	text "Have you ever been"
-	line "to a picnic?"
+	text "Warst du schon"
+	line "beim Picknicken?"
 
-	para "They're so much"
-	line "fun!"
+	para "Das macht großen"
+	line "Spaß!"
 	done
 
 PicnickerHeidiBeatenText:
@@ -103,23 +111,26 @@ PicnickerHeidiBeatenText:
 	done
 
 CamperSidSeenText:
-	text "Hey, you!"
-	line "Don't litter!"
+	text "Hey, du Lump!"
+	line "Wirf deinen Müll"
+	cont "nicht hier hin!"
 	done
 
 CamperSidBeatenText:
-	text "I was just point-"
-	line "ing out…"
+	text "Ich wollte nur"
+	line "klarstellen, dass…"
 	done
 
 PicnickerEdnaSeenText:
-	text "People shouldn't"
-	line "leave any litter"
-	cont "behind."
+	text "Die Leute sollten"
+	line "ihren Müll nicht"
+	cont "hier liegen"
+	cont "lassen."
 	done
 
 PicnickerEdnaBeatenText:
-	text "Ohh… I lost…"
+	text "Ohh… Ich habe"
+	line "verloren…"
 	done
 
 HikerTimSeenText:
@@ -132,28 +143,29 @@ HikerTimSeenText:
 	done
 
 HikerTimBeatenText:
-	text "I was too busy"
-	line "singing…"
+	text "Ich war zu sehr"
+	line "mit Singen"
+	cont "beschäftigt…"
 	done
 
 HikerSidneySeenText:
-	text "I'll tell you a"
-	line "secret."
+	text "Ich verrate dir"
+	line "ein Geheimnis."
 
-	para "But first, we"
-	line "battle!"
+	para "Aber zuerst müssen"
+	line "wir kämpfen!"
 	done
 
 HikerSidneyBeatenText:
-	text "Oh, dang!"
-	line "I lost that…"
+	text "Oh, Mist!"
+	line "Ich habe verloren…"
 	done
 
 Route9SignText:
 	text "Route 9"
 
-	para "Cerulean City -"
-	line "Rock Tunnel"
+	para "Azuria City -"
+	line "Felstunnel"
 	done
 
 Route9AdvancedTipsSignText:

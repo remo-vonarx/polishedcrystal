@@ -46,20 +46,23 @@ PokemonJournalKarenScript:
 	done
 
 TrainerHouse1FReceptionistText:
-	text "Welcome to Trainer"
-	line "House, the newest"
+	text "Willkommen im"
+	line "Trainer-Haus, dem"
 
-	para "and most happening"
-	line "place in Viridian."
+	para "neuesten und"
+	line "erlebnisreichsten"
+	cont "Ort von Vertania"
+	cont "City."
 
-	para "We're open to"
-	line "trainers only."
+	para "Nur Trainer haben"
+	line "hier Zutritt."
 
-	para "You can battle"
-	line "against the best"
+	para "Du kannst gegen"
+	line "die Besten der"
 
-	para "of the best right"
-	line "downstairs."
+	para "Besten antreten!"
+	line "Geh nur die Treppe"
+	cont "hinunter."
 	done
 
 TrainerHouse1FCooltrainerMText:
@@ -82,70 +85,74 @@ TrainerHouse1FCooltrainerMText:
 	done
 
 TrainerHouse1FCooltrainerFText:
-	text "They hold practice"
-	line "battles downstairs"
-	cont "here."
+	text "Hier unten werden"
+	line "Übungskämpfe"
+	cont "abgehalten."
 
-	para "I would love to"
-	line "see how well a"
+	para "Ich würde liebend"
+	line "gerne sehen, wie"
 
-	para "trainer from Johto"
-	line "battles."
+	para "Trainer aus Johto"
+	line "kämpfen."
 	done
 
 TrainerHouse1FYoungsterText:
-	text "I guess you can't"
-	line "become the Champ"
+	text "Ich nehme an, du"
+	line "kannst nur dann"
 
-	para "unless you go all"
-	line "over the place and"
+	para "Champ werden, wenn"
+	line "du viel herum-"
+	cont "kommst und so"
 
-	para "battle all kinds"
-	line "of people."
+	para "viele Kämpfe wie"
+	line "möglich austrägst."
 
-	para "The Champion from"
-	line "Pallet traveled to"
+	para "Der Champ von"
+	line "Alabastia bereiste"
 
-	para "all the cities and"
-	line "towns in Kanto."
+	para "alle großen und"
+	line "kleinen Städte"
+	cont "in Kanto."
 	done
 
 TrainerHouse1FGentlemanText:
-	text "Whew… I'm taking a"
-	line "rest from #mon"
-	cont "battles."
+	text "Puh… Ich höre"
+	line "eine Zeit lang auf"
+	cont "mit Kämpfen."
 	done
 
 TrainerHouseSign1Text:
-	text "Practice battles"
-	line "are held in the"
+	text "Übungskämpfe"
+	line "werden unten in"
 
-	para "Training Hall"
-	line "downstairs."
+	para "der Übungshalle"
+	line "abgehalten."
 
-	para "Skilled trainers"
-	line "are invited to"
-	cont "participate."
+	para "Auch erfahrene"
+	line "Trainer können"
+	cont "gerne teilnehmen."
 	done
 
 TrainerHouseSign2Text:
-	text "There are no rules"
-	line "or regulations for"
+	text "Bei den Trainings-"
+	line "kämpfen gelten"
 
-	para "practice matches."
-	line "Just like in field"
+	para "keine Regeln oder"
+	line "Vorgaben. Wie bei"
 
-	para "battles, anything"
-	line "goes!"
+	para "den Feldkämpfen"
+	line "ist alles erlaubt!"
 	done
 
 TrainerHouseIllegibleText:
-	text "…What's this?"
-	line "A strategy memo?"
+	text "…Was ist das?"
+	line "Eine strategische"
+	cont "Notiz?"
 
-	para "This writing looks"
-	line "like Onix tracks…"
+	para "Dieses Schrift-"
+	line "stück sieht aus"
 
-	para "It's completely"
-	line "illegible…"
+	para "wie die Spur eines"
+	line "Onix…"
+	cont "Völlig unlesbar…"
 	done

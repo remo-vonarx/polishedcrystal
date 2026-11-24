@@ -20,20 +20,21 @@ DaisyScript:
 	readvar VAR_HOUR
 	ifequalfwd 15, .Massage
 	checkflag ENGINE_TEA_IN_BLUES_HOUSE
-	iftruefwd .After
+	iftrue .After
 	jumpthistextfaceplayer
 
-	text "Daisy: Hi! My kid"
-	line "brother is the Gym"
+	text "Sarah: Hi! Mein"
+	line "kleiner Bruder ist"
 
-	para "Leader in Viridian"
-	line "City."
+	para "Arenaleiter in"
+	line "Vertania City."
 
-	para "But he goes out"
-	line "of town so often,"
+	para "Aber er verlässt"
+	line "die Stadt so oft,"
 
-	para "it causes problems"
-	line "for the trainers."
+	para "dass die Trainer"
+	line "Schwierigkeiten"
+	cont "bekommen."
 	done
 
 .Massage:
@@ -41,7 +42,7 @@ DaisyScript:
 	opentext
 	writetext .IntroText
 	yesorno
-	iffalsefwd .NoMassage
+	iffalse .NoMassage
 	writetext .QuestionText
 	waitbutton
 	special Special_DaisyMassage
@@ -64,72 +65,83 @@ DaisyScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "Daisy: There you"
-	line "go! All done."
+	text "Sarah: Hier bitte."
+	line "Schon fertig."
 
-	para "See? Doesn't it"
-	line "look nice?"
+	para "Siehst du? Ist es"
+	line "jetzt nicht"
+	cont "wunderschön?"
 
-	para "It's such a cute"
-	line "#mon."
+	para "Es ist so ein"
+	line "süßes #mon."
 	done
 
 .IntroText:
-	text "Daisy: Hi! Good"
-	line "timing. I'm about"
-	cont "to have some tea."
+	text "Sarah: Hi! Gutes"
+	line "Timing. Ich war"
+	cont "gerade dabei, Tee"
+	cont "zu machen."
 
-	para "Would you like to"
-	line "join me?"
+	para "Hättest du auch"
+	line "gern eine"
+	cont "Tasse Tee?"
 
-	para "Oh, your #mon"
-	line "are a bit dirty."
+	para "Oh, deine #mon"
+	line "sehen ein bisschen"
+	cont "mitgenommen aus."
 
-	para "Would you like me"
-	line "to groom one?"
+	para "Möchtest du, dass"
+	line "ich eines für dich"
+	cont "verschönere?"
 	done
 
 .After:
 	jumpthistextfaceplayer
 
-	text "Daisy: I always"
-	line "have tea around"
+	text "Sarah: Um diese"
+	line "Zeit trinke ich"
 
-	para "this time. Come"
-	line "join me."
+	para "immer meinen Tee."
+	line "Möchtest du auch"
+	cont "eine Tasse Tee?"
 	done
 
 .NoMassage:
 	jumpthistext
 
-	text "Daisy: You don't"
-	line "want to have one"
+	text "Sarah: Möchtest du"
+	line "keines deiner"
 
-	para "groomed? OK, we'll"
-	line "just have tea."
+	para "#mon ver-"
+	line "schönern lassen?"
+	cont "Gut, dann trinken"
+	cont "wir eben nur Tee."
 	done
 
 .QuestionText:
-	text "Daisy: Which one"
-	line "should I groom?"
+	text "Sarah: Welches"
+	line "soll ich ver-"
+	cont "schönern?"
 	done
 
 .OkayText:
-	text "Daisy: OK, I'll"
-	line "get it looking"
-	cont "nice in no time."
+	text "Sarah: Gut. In"
+	line "kürzester Zeit"
+	cont "wird es hübsch und"
+	cont "adrett aussehen."
 	done
 
 .LooksContentText:
 	text_ram wStringBuffer3
-	text " looks"
-	line "content."
+	text " sieht"
+	line "zufrieden aus."
 	done
 
 .EggMassage:
 	jumpthistext
 
-	text "Daisy: Oh, sorry."
-	line "I honestly can't"
-	cont "groom an Egg."
+	text "Sarah: Es tut mir"
+	line "Leid, aber ich"
+	cont "kann wirklich kein"
+	cont "Ei verschönern."
 	done

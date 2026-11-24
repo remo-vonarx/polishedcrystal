@@ -16,11 +16,11 @@ TiffanyAskNumber1Text:
 	done
 
 TiffanyAskNumber2Text:
-	text "I want to know"
-	line "your phone number!"
+	text "Gib mir doch deine"
+	line "Telefonnummer!"
 
-	para "Let's talk about"
-	line "Clefairy!"
+	para "Wir können über"
+	line "Piepi reden!"
 	done
 
 TiffanyNumberAcceptedText:
@@ -29,23 +29,23 @@ TiffanyNumberAcceptedText:
 	done
 
 TiffanyNumberDeclinedText:
-	text "Aww… Oh well."
-	line "Look for me if you"
+	text "Argh… Oh, nun."
+	line "Melde dich, wenn"
 
-	para "want to talk about"
-	line "Clefairy."
+	para "du über Piepi"
+	line "reden möchtest."
 	done
 
 TiffanyPhoneFullText:
-	text "Oh? Your phone"
-	line "registry is full."
+	text "Oh? Dein Nummern-"
+	line "speicher ist voll."
 	done
 
 TiffanyRematchText:
-	text "There you are!"
+	text "Bitte schön!"
 
-	para "Clefairy, I want"
-	line "you to try hard!"
+	para "Piepi, gib dein"
+	line "Bestes!"
 	done
 
 TiffanyGiftText:
@@ -58,6 +58,6 @@ TiffanyGiftText:
 	done
 
 TiffanyPackFullText:
-	text "Uh-oh. Your Bag"
-	line "is crammed full."
+	text "Oh-oh. Dein Beutel"
+	line "platzt gleich."
 	done

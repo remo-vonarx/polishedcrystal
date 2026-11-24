@@ -17,8 +17,10 @@ PewterSnoozeSpeechHouse_MapScriptHeader:
 	object_event  2,  4, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, PewterSnoozeSpeechHouseGrannyText, -1
 
 PewterSnoozeSpeechHouseGrampsText:
-	text "I like snoozing"
-	line "with the radio on…"
+	text "Ich mache gerne"
+	line "ein Nickerchen,"
+	cont "während das Radio"
+	cont "läuft…"
 	cont "…Zzzz…"
 	done
 

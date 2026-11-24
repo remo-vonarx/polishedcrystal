@@ -97,9 +97,10 @@ Route35RematchM:
 GenericTrainerCamperIvan:
 	generictrainer CAMPER, IVAN, EVENT_BEAT_CAMPER_IVAN, CamperIvanSeenText, CamperIvanBeatenText
 
-	text "Music on the radio"
-	line "changes the moods"
-	cont "of wild #mon."
+	text "Die Musik aus dem"
+	line "Radio beeinflusst"
+	cont "die Stimmung von"
+	cont "wilden #mon."
 	done
 
 GenericTrainerCoupleGailandeli1:
@@ -121,9 +122,10 @@ GenericTrainerCoupleGailandeli2:
 GenericTrainerPicnickerKim:
 	generictrainer PICNICKER, KIM, EVENT_BEAT_PICNICKER_KIM, PicnickerKimSeenText, PicnickerKimBeatenText
 
-	text "The Gym Badges are"
-	line "pretty. I collect"
-	cont "them."
+	text "Die Orden"
+	line "sind hübsch."
+	cont "Deshalb sammle ich"
+	cont "sie."
 	done
 
 TrainerBug_catcherArnie1:
@@ -220,19 +222,21 @@ TrainerBug_catcherArnie1:
 .YanmaSwarming:
 	jumpthisopenedtext
 
-	text "Wow… Look at all"
-	line "those Yanma!"
+	text "Wow… Sieh, all"
+	line "die Yanma!"
 
-	para "I'm so blown away,"
-	line "I can't move."
+	para "Ich bin über-"
+	line "wältigt und kann"
+	cont "mich nicht rühren."
 	done
 
 GenericTrainerFirebreatherWalt:
 	generictrainer FIREBREATHER, WALT, EVENT_BEAT_FIREBREATHER_WALT, FirebreatherWaltSeenText, FirebreatherWaltBeatenText
 
-	text "The #mon March"
-	line "on the radio lures"
-	cont "wild #mon."
+	text "Der #mon-"
+	line "Marsch im Radio"
+	cont "lockt wilde"
+	cont "#mon an."
 	done
 
 TrainerOfficerDirk:
@@ -257,34 +261,37 @@ TrainerOfficerDirk:
 .AfterBattle:
 	jumpthisopenedtext
 
-	text "You know, night-"
-	line "time is fun in its"
-	cont "own ways."
+	text "Du weißt, dass"
+	line "die Nacht auf"
+	cont "ihre Weise"
+	cont "schön sein kann."
 
-	para "But don't overdo"
-	line "it, OK?"
+	para "Aber übertreibe"
+	line "es nicht, O.K.?"
 	done
 
 .NotNight:
 	jumpthisopenedtext
 
-	text "Your #mon look"
-	line "pretty tough."
+	text "Deine #mon"
+	line "sehen ziemlich"
+	cont "stark aus."
 
-	para "You could go any-"
-	line "where safely."
+	para "Du wärst über-"
+	line "all sicher."
 	done
 
 CamperIvanSeenText:
-	text "I've been getting"
-	line "#mon data off"
+	text "Ich habe aus dem"
+	line "Radio #mon-"
+	cont "Daten erhalten."
 
-	para "my radio. I think"
-	line "I'm good."
+	para "Ich glaube, ich"
+	line "bin gut."
 	done
 
 CamperIvanBeatenText:
-	text "I give!"
+	text "Ich teile aus!"
 	done
 
 CoupleGailandeli1SeenText:
@@ -310,13 +317,13 @@ CoupleGailandeli2BeatenText:
 	done
 
 PicnickerKimSeenText:
-	text "Are you going to"
-	line "the Gym? Me too!"
+	text "Gehst du auch"
+	line "zur PKMN-Arena?"
 	done
 
 PicnickerKimBeatenText:
-	text "Oh. I couldn't"
-	line "win…"
+	text "Oh, ich habe"
+	line "verloren…"
 	done
 
 BreederTheresaSeenText:
@@ -330,61 +337,68 @@ BreederTheresaBeatenText:
 	done
 
 JugglerIrwin1SeenText:
-	text "Behold my graceful"
-	line "Ball dexterity!"
+	text "Siehe meine"
+	line "Virtuosität, mit"
+	cont "der ich die Bälle"
+	cont "jongliere!"
 	done
 
 JugglerIrwin1BeatenText:
-	text "Whew! That was a"
-	line "jolt!"
+	text "Puh, das war ein"
+	line "Ruck!"
 	done
 
 JugglerIrwinAfterBattleText:
-	text "I was going to"
-	line "dazzle you with my"
-	cont "prize #mon."
+	text "Ich wollte dich"
+	line "mit meinen"
 
-	para "But your prowess"
-	line "electrified me!"
+	para "prämierten #mon"
+	line "fritzeln."
+
+	para "Aber dein Können"
+	line "elektrisierte"
+	cont "mich!"
 	done
 
 Bug_catcherArnie1SeenText:
-	text "I'll go anywhere"
-	line "if bug #mon"
-	cont "appear there."
+	text "Ich gehe überall-"
+	line "hin, wo es Käfer-"
+	cont "#mon gibt."
 	done
 
 Bug_catcherArnie1BeatenText:
-	text "Huh? I shouldn't"
-	line "have lost that…"
+	text "Ich hätte nicht"
+	line "verlieren dürfen…"
 	done
 
 BugCatcherArnieAfterBattleText:
-	text "My Venonat won me"
-	line "the Bug-Catching"
+	text "Mit meinem Bluzuk"
+	line "habe ich das"
 
-	para "Contest at the"
-	line "National Park."
+	para "Käferturnier"
+	line "im Nationalpark"
+	cont "gewonnen."
 	done
 
 
 FirebreatherWaltSeenText:
-	text "I'm practicing my"
-	line "fire breathing."
+	text "Ich übe mich im"
+	line "Feuerspucken."
 	done
 
 FirebreatherWaltBeatenText:
-	text "Ow! I scorched the"
-	line "tip of my nose!"
+	text "Aua! Ich habe mir"
+	line "die Nasenspitze"
+	cont "verbrannt!"
 	done
 
 OfficerDirkSeenText:
-	text "Danger lurks in"
-	line "the night!"
+	text "Bei Nacht lauern"
+	line "Gefahren!"
 	done
 
 OfficerDirkBeatenText:
-	text "Whoops!"
+	text "Schwupps!"
 	done
 
 

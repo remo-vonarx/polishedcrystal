@@ -27,21 +27,22 @@ Route2North_MapScriptHeader:
 GenericTrainerBug_maniacEd:
 	generictrainer BUG_MANIAC, ED, EVENT_BEAT_BUG_MANIAC_ED, Bug_maniacEdSeenText, Bug_maniacEdBeatenText
 
-	text "They'll really"
-	line "sting when you"
-	cont "take a bath."
+	text "Sie stechen,"
+	line "wenn du ein Bad"
+	cont "nimmst."
 	done
 
 Bug_maniacEdSeenText:
-	text "If you walk in"
-	line "tall grass wearing"
+	text "Wenn du mit Shorts"
+	line "in hohem Gras"
 
-	para "shorts, do you get"
-	line "nicks and cuts?"
+	para "läufst, bekommst"
+	line "du dann Schrammen"
+	cont "an deinen Beinen?"
 	done
 
 Bug_maniacEdBeatenText:
-	text "Ouch, ouch, ouch!"
+	text "Au, Aua, Aua!"
 	done
 
 Route2NorthCooltrainermText:
@@ -56,5 +57,5 @@ Route2NorthCooltrainermText:
 	done
 
 Route2DiglettsCaveSignText:
-	text "Diglett's Cave"
+	text "Digdas Höhle"
 	done

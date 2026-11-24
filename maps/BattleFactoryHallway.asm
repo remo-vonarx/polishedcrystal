@@ -60,10 +60,10 @@ BattleFactoryHallwayEnterScene:
 	ifequalfwd BTCHALLENGE_FACILITYBRAIN, .WarnAboutHead
 .AskNextBattle:
 	writethistext
-		text "Next up, opponent"
-		line "No. "
+		text "Als Nächstes kommt"
+		line "Gegner Nr."
 		text_decimal wStringBuffer3, 2, 5
-		text ". Ready?"
+		text "."
 		done
 	sjumpfwd .ShownText
 .WarnAboutHead:
@@ -91,8 +91,9 @@ BattleFactoryHallwayEnterScene:
 
 .DontBattleNextOpponent:
 	writethistext
-		text "Save and end the"
-		line "session?"
+		text "Sichern und die"
+		line "Herausforderung"
+		cont "beenden?"
 		done
 	yesorno
 	iffalsefwd .DontSaveAndEndTheSession
@@ -174,8 +175,8 @@ BattleFactoryHallwayEnterScene:
 	step_end
 
 .PleaseStepThisWayText:
-	text "Please step this"
-	line "way."
+	text "Hier entlang"
+	line "bitte."
 	prompt
 
 .StepAbovePlayerMovement:

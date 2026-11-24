@@ -134,10 +134,10 @@ Decided 2026-11-24 on a review page and in dialogs: Kristall's soft hyphen and s
 
 ### Task K: Every inherited text
 
-- [ ] Run `utils/kristall_write.py` over the whole game: dialogue, phone calls, receiving texts, Pokédex entries, move and item descriptions.
-- [ ] Answer every flagged case in dialogs (ambiguous English, a name with no Kristall form).
-- [ ] Test: `utils/check_kristall.py` passes on every text; in the game one screen of each kind (map dialogue in every region, a phone call, a Pokédex entry, a move and an item description), compared with Kristall by position.
-- [ ] Ship.
+- [x] Run `utils/kristall_write.py` over the whole game: dialogue, phone calls, receiving texts, Pokédex entries, move and item descriptions.
+- [x] Answer every flagged case in dialogs (ambiguous English, a name with no Kristall form).
+- [x] Test: `utils/check_kristall.py` passes on every text; in the game one screen of each kind (map dialogue in every region, a phone call, a Pokédex entry, a move and an item description), compared with Kristall by position.
+- [x] Ship.
 
 ## The rest, by kind
 

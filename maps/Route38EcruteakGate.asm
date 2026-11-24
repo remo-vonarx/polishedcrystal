@@ -60,16 +60,20 @@ ProfOaksAide2Script:
 	done
 
 Route38EcruteakGateOfficerText:
-	text "Where did you say"
-	line "you're from?"
+	text "Wo sagtest du,"
+	line "kommst du her?"
 
-	para "New Bark Town?"
+	para "Neuborkia?"
 
-	para "Prof.Elm lives"
-	line "over there, right?"
+	para "Prof. Lind wohnt"
+	line "dort,"
+	cont "nicht wahr?"
 
-	para "You've come a long"
-	line "way to get here."
+	para "Du hast einen"
+	line "langen Weg auf"
+	cont "dich genommen, um"
+	cont "hierher zu ge-"
+	cont "langen."
 	done
 
 ProfOaksAide2HiText:

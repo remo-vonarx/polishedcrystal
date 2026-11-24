@@ -71,17 +71,18 @@ FastShipB1FSailorScript:
 	clearevent EVENT_FAST_SHIP_CABINS_NNW_NNE_NE_SAILOR
 	jumpthisopenedtext
 
-	text "Hey, kid. Could I"
-	line "get you to look"
-	cont "for my buddy?"
+	text "Heh, könntest"
+	line "du mal nach meinem"
+	cont "Kollegen suchen?"
 
-	para "He's goofing off"
-	line "somewhere, that"
-	cont "lazy bum!"
+	para "Er faulenzt"
+	line "irgendwo. Dieser"
+	cont "Müßiggänger!"
 
-	para "I want to go find"
-	line "him, but I'm on"
-	cont "duty right now."
+	para "Ich würde ihn"
+	line "selbst suchen,"
+	cont "aber ich bin"
+	cont "gerade im Dienst."
 	done
 
 .LazySailor:
@@ -94,38 +95,45 @@ FastShipB1FSailorScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "A little girl?"
+	text "Ein kleines"
+	line "Mädchen?"
 
-	para "I may have seen"
-	line "her go by here."
+	para "Ich glaube, sie"
+	line "ist hier vorbei-"
+	cont "gekommen."
 	done
 
 GenericTrainerSailorJeff:
 	generictrainer SAILOR, JEFF, EVENT_BEAT_SAILOR_JEFF, SailorJeffSeenText, SailorJeffBeatenText
 
-	text "I guess I can't"
-	line "win if I don't get"
-	cont "serious."
+	text "Ich denke, ich"
+	line "werde nie"
+	cont "gewinnen, wenn ich"
+	cont "die Sache nicht"
+	cont "ernst nehme."
 	done
 
 GenericTrainerPicnickerDebra:
 	generictrainer PICNICKER, DEBRA, EVENT_BEAT_PICNICKER_DEBRA, PicnickerDebraSeenText, PicnickerDebraBeatenText
 
-	text "Saffron, Celadon…"
-	line "I hear there are"
+	text "Saffronia,"
+	line "Prismania…"
+	cont "Ich habe gehört,"
 
-	para "many big cities"
-	line "in Kanto."
+	para "es gibt viele"
+	line "große Städte"
+	cont "in Kanto."
 	done
 
 GenericTrainerJugglerFritz:
 	generictrainer JUGGLER, FRITZ, EVENT_BEAT_JUGGLER_FRITZ, JugglerFritzSeenText, JugglerFritzBeatenText
 
-	text "No more ships for"
-	line "me. Next time,"
+	text "Ich reise nie"
+	line "mehr mit dem"
 
-	para "I'm taking the"
-	line "Magnet Train."
+	para "Schiff. Das"
+	line "nächste Mal nehme"
+	cont "ich den Magnetzug."
 	done
 
 GenericTrainerBakerSharyn:
@@ -145,59 +153,61 @@ TrainerSailorGarrett:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "We get different"
-	line "passengers from"
+	text "Wir bringen unsere"
+	line "Passagiere von"
 
-	para "Vermilion City to"
-	line "Olivine City."
+	para "Orania City nach"
+	line "Oliviana City."
 	done
 
 GenericTrainerFisherJonah:
 	generictrainer FISHER, JONAH, EVENT_BEAT_FISHER_JONAH, FisherJonahSeenText, FisherJonahBeatenText
 
-	text "I plan to fish off"
-	line "Vermilion's pier."
+	text "Ich werde am Kai"
+	line "von Orania angeln."
 	done
 
 GenericTrainerBlackbeltWai:
 	generictrainer BLACKBELT_T, WAI, EVENT_BEAT_BLACKBELT_WAI, BlackbeltWaiSeenText, BlackbeltWaiBeatenText
 
-	text "I couldn't find"
-	line "the Karate King in"
-	cont "Johto."
+	text "Ich konnte den"
+	line "Karate-Meister in"
+	cont "Johto nicht"
+	cont "finden."
 
-	para "He's supposed to"
-	line "be training in a"
-	cont "cave somewhere."
+	para "Er soll irgendwo"
+	line "in einer Höhle"
+	cont "trainieren."
 	done
 
 GenericTrainerSailorKenneth:
 	generictrainer SAILOR, KENNETH, EVENT_BEAT_SAILOR_KENNETH, SailorKennethSeenText, SailorKennethBeatenText
 
-	text "Eight Badges!"
-	line "They must prove"
+	text "Acht Orden!"
+	line "Das heißt, du"
 
-	para "that you've beaten"
-	line "Gym Leaders."
+	para "hast die Arena-"
+	line "leiter besiegt."
 
-	para "No wonder you're"
-	line "so good!"
+	para "Kein Wunder, dass"
+	line "du so stark bist!"
 	done
 
 GenericTrainerTeacherShirley:
 	generictrainer TEACHER_F, SHIRLEY, EVENT_BEAT_TEACHER_SHIRLEY, TeacherShirleySeenText, TeacherShirleyBeatenText
 
-	text "We're on a field"
-	line "trip to the ruins"
-	cont "outside Violet."
+	text "Wir machen einen"
+	line "Ausflug zu den"
+	cont "Ruinen bei"
+	cont "Viola City."
 	done
 
 GenericTrainerSchoolboyNate:
 	generictrainer SCHOOLBOY, NATE, EVENT_BEAT_SCHOOLBOY_NATE, SchoolboyNateSeenText, SchoolboyNateBeatenText
 
-	text "Radios pick up"
-	line "strange signals"
-	cont "inside the ruins."
+	text "In den Ruinen"
+	line "empfängt das Radio"
+	cont "seltsame Signale."
 	done
 
 GenericTrainerSchoolboyRicky:
@@ -234,58 +244,63 @@ FastShipB1FJugglerFritzSeasickTrashScript:
 	done
 
 FastShipB1FOnDutySailorRefusedText:
-	text "Oh, gee…"
+	text "Oh, oh…"
 
-	para "The Captain will"
-	line "be furious…"
+	para "Der Kapitän"
+	line "wird wütend sein…"
 	done
 
 FastShipB1FOnDutySailorThanksText:
-	text "Thanks, kid!"
-	line "I chewed him out"
+	text "Danke!"
+	line "Ich habe mit ihm"
 
-	para "good so he'll quit"
-	line "slacking off!"
+	para "geredet, er wird"
+	line "nicht mehr"
+	cont "faulenzen!"
 	done
 
 FastShipB1FOnDutySailorDirectionsText:
-	text "The dining room is"
-	line "up ahead."
+	text "Der Speisesaal"
+	line "ist geradeaus."
 
-	para "The stairs at the"
-	line "end lead to the"
-	cont "Captain's cabin."
+	para "Die Treppen am"
+	line "Ende führen in"
+	cont "die Kapitäns-"
+	cont "kajüte."
 	done
 
 SailorJeffSeenText:
-	text "Nothing beats a"
-	line "battle when I'm"
-	cont "on my break."
+	text "In den Pausen ist"
+	line "Kämpfen meine"
+	cont "Lieblingsbeschäf-"
+	cont "tigung."
 	done
 
 SailorJeffBeatenText:
-	text "Win or lose, my"
-	line "break's over!"
+	text "Sieg oder"
+	line "Niederlage, meine"
+	cont "Pause ist vorüber!"
 	done
 
 PicnickerDebraSeenText:
-	text "I'm so bored."
-	line "Want to battle?"
+	text "Mir ist lang-"
+	line "weilig. Willst du"
+	cont "kämpfen?"
 	done
 
 PicnickerDebraBeatenText:
-	text "Yow! You're too"
-	line "strong!"
+	text "Au! Du bist zu"
+	line "stark!"
 	done
 
 JugglerFritzSeenText:
-	text "Urrf…"
-	line "I'm seasick!"
+	text "Uff…"
+	line "Ich bin seekrank!"
 	done
 
 JugglerFritzBeatenText:
-	text "I can't move any-"
-	line "more…"
+	text "Ich kann mich"
+	line "nicht bewegen…"
 	done
 
 BakerSharynSeenText:
@@ -300,79 +315,86 @@ BakerSharynBeatenText:
 	done
 
 SailorGarrettSeenText:
-	text "This is where we"
-	line "sailors work!"
+	text "Hier arbeiten wir"
+	line "Matrosen!"
 	done
 
 SailorGarrettBeatenText:
-	text "I lost on my home"
-	line "field…"
+	text "Ich habe auf"
+	line "eigenem Terrain"
+	cont "verloren…"
 	done
 
 FisherJonahSeenText:
-	text "Even though we're"
-	line "out on the sea, I"
-	cont "can't fish!"
+	text "Auch wenn wir"
+	line "mit dem Schiff"
+	cont "fahren, kann ich"
+	cont "nicht angeln!"
 
-	para "This is boring!"
-	line "Let's battle!"
+	para "Wie langweilig!"
+	line "Lass uns kämpfen!"
 	done
 
 FisherJonahBeatenText:
-	text "I… I'm not bored"
-	line "anymore…"
+	text "M-mir ist nicht"
+	line "mehr langweilig…"
 	done
 
 BlackbeltWaiSeenText:
-	text "I'm building up my"
-	line "legs by bracing"
+	text "Ich trainiere"
+	line "meine Beine, indem"
 
-	para "against the ship's"
-	line "rocking!"
+	para "ich das Schaukeln"
+	line "des Schiffes"
+	cont "ausgleiche!"
 	done
 
 BlackbeltWaiBeatenText:
-	text "Rocked and rolled"
-	line "over!"
+	text "Gestürzt und platt"
+	line "gemacht!"
 	done
 
 SailorKennethSeenText:
-	text "I'm a sailor man!"
+	text "Ich bin Matrose!"
 
-	para "But I'm training"
-	line "#mon, so I can"
-	cont "become the Champ!"
+	para "Aber ich trainiere"
+	line "#mon, um"
+	cont "der Champ zu"
+	cont "werden!"
 	done
 
 SailorKennethBeatenText:
-	text "My lack of train-"
-	line "ing is obvious…"
+	text "Mein Trainings-"
+	line "rückstand ist"
+	cont "offensichtlich…"
 	done
 
 TeacherShirleySeenText:
-	text "Don't lay a finger"
-	line "on my students!"
+	text "Lass die Finger"
+	line "von meinen"
+	cont "Schülern!"
 	done
 
 TeacherShirleyBeatenText:
-	text "Aaack!"
+	text "Ah!"
 	done
 
 SchoolboyNateSeenText:
-	text "Do you know the"
-	line "Ruins of Alph?"
+	text "Kennst du die"
+	line "Alph-Ruinen?"
 	done
 
 SchoolboyNateBeatenText:
-	text "Yaargh!"
+	text "Ah!"
 	done
 
 SchoolboyRickySeenText:
-	text "There are some odd"
-	line "stone panels in"
-	cont "the Ruins of Alph."
+	text "In den Alph-Ruinen"
+	line "gibt es seltsame"
+	cont "Steinplatten."
 	done
 
 SchoolboyRickyBeatenText:
-	text "I was done in!"
+	text "Ich wurde"
+	line "vermöbelt!"
 	done

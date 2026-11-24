@@ -26,13 +26,13 @@ GenericTrainerFisherKyle:
 	done
 
 FisherKyleSeenText:
-	text "Do you remember?"
+	text "Erinnerst du dich?"
 	done
 
 FisherKyleBeatenText:
-	text "You do remember?"
+	text "Du erinnerst dich?"
 	done
 
 FishingSpotSignText:
-	text "Fishing Spot"
+	text "Angelplatz"
 	done

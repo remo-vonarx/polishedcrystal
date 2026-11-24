@@ -191,41 +191,44 @@ RocketText_TollFee:
 	done
 
 RocketText_ThankYou:
-	text "Thank you very"
-	line "much!"
+	text "Vielen Dank!"
 	done
 
 RocketText_AllYouGot:
-	text "Then pay what you"
-	line "have, please."
+	text "Dann zahle bitte,"
+	line "so viel du hast."
 	done
 
 RocketText_MakingABundle:
-	text "He-he-he. We're"
-	line "making a bundle."
+	text "Ha, ha, ha. Wir"
+	line "machen viel Geld."
 
-	para "Everyone wants to"
-	line "see what's going"
+	para "Jeder möchte"
+	line "wissen, was los"
 
-	para "on up at Lake of"
-	line "Rage."
+	para "ist am"
+	line "See des Zorns."
 	done
 
 OfficerText_FoundTM:
-	text "I got chased from"
-	line "my post by these"
-	cont "thugs in black."
+	text "Diese Schläger-"
+	line "typen in Schwarz"
+	cont "haben mich von"
+	cont "meinem Posten"
+	cont "verjagt."
 
-	para "They left this"
-	line "behind."
+	para "Sie haben das hier"
+	line "zurückgelassen."
 
-	para "It makes me uncom-"
-	line "fortable. Could"
-	cont "you take it away?"
+	para "Ich bekomme bei"
+	line "diesem Ding eine"
+	cont "Gänsehaut. Kannst"
+	cont "du es bitte"
+	cont "mitnehmen?"
 	done
 
 OfficerText_AvoidGrass:
-	text "Use this gate to"
-	line "avoid walking in"
-	cont "the grass."
+	text "Gehe durch dieses"
+	line "Tor. Dann meidest"
+	cont "du das Gras."
 	done

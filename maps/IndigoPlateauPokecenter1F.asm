@@ -218,30 +218,33 @@ PlateauRivalText1:
 
 PlateauRivalWinText:
 	text "…"
+	line "O.K. - Ich habe"
 
-	para "OK--I lost…"
+	para "verloren…"
 	done
 
 PlateauRivalText2:
-	text "…Darn… I still"
-	line "can't win…"
+	text "…Mist… Ich"
+	line "kann nicht"
+	cont "gewinnen…"
 
-	para "I… I have to think"
-	line "more about my"
-	cont "#mon…"
+	para "Ich… ich muss mich"
+	line "mehr um meine"
+	cont "#mon kümmern…"
 
-	para "Humph! Try not to"
-	line "lose!"
+	para "Versuche, nicht"
+	line "zu verlieren!"
 	done
 
 PlateauRivalLoseText:
 	text "…"
 
-	para "Whew…"
-	line "With my partners,"
+	para "Wow…"
+	line "Mit meinen"
 
-	para "I'm going to be"
-	line "the Champion!"
+	para "Partnern werde"
+	line "ich der Champ"
+	cont "sein!"
 	done
 
 PlateauLyraText1:
@@ -488,34 +491,35 @@ IndigoPlateauTeleportGuyScript:
 	end
 
 .Text:
-	text "Ah! You're chal-"
-	line "lenging the Elite"
+	text "Ah! Du forderst"
+	line "also die Top Vier"
 
-	para "Four? Are you sure"
-	line "you're ready?"
+	para "heraus? Bist du"
+	line "wirklich bereit?"
 
-	para "If you need to"
-	line "train some more,"
+	para "Wenn du mehr"
+	line "trainieren willst,"
 
-	para "my Abra can help"
-	line "you."
+	para "kann dir mein"
+	line "Abra helfen."
 
-	para "It can Teleport"
-	line "you home."
+	para "Es kann dich"
+	line "nach Hause"
+	cont "teleportieren."
 
-	para "Would you like to"
-	line "go home now?"
+	para "Möchtest du jetzt"
+	line "nach Hause?"
 	done
 
 .YesText:
-	text "OK, OK. Picture"
-	line "your house in your"
-	cont "mind…"
+	text "O.K. Stell"
+	line "dir dein Haus"
+	cont "vor…"
 	done
 
 .NoText:
-	text "OK, OK. The best"
-	line "of luck to you!"
+	text "O.K. Alles"
+	line "Gute!"
 	done
 
 IndigoPlateauAbraText:
@@ -523,15 +527,16 @@ IndigoPlateauAbraText:
 	done
 
 IndigoPlateauCooltrainermText:
-	text "At the #mon"
-	line "League, you'll get"
+	text "In der #mon"
+	line "Liga stellen dich"
 
-	para "tested by the"
-	line "Elite Four."
+	para "die Top Vier auf"
+	line "eine harte Probe."
 
-	para "You have to beat"
-	line "them all. If you"
+	para "Du musst sie alle"
+	line "schlagen. Wenn du"
 
-	para "lose, you have to"
-	line "start all over!"
+	para "verlierst, musst"
+	line "du ganz von vorne"
+	cont "anfangen!"
 	done

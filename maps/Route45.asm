@@ -199,22 +199,22 @@ BlackbeltKenji1Script:
 .Morning:
 	jumpthisopenedtext
 
-	text "I'm going to train"
-	line "a bit more before"
-	cont "I break for lunch."
+	text "Ich trainiere noch"
+	line "ein wenig bis zur"
+	cont "Mittagspause."
 	done
 
 .Night:
 	jumpthisopenedtext
 
-	text "We had plenty of"
-	line "rest at lunch, so"
+	text "Wir hatten alle"
+	line "eine ausgedehnte"
 
-	para "now we're all"
-	line "ready to go again!"
+	para "Mittagspause und"
+	line "sind wieder fit!"
 
-	para "We're going to"
-	line "train again!"
+	para "Wir setzen das"
+	line "Training fort!"
 	done
 
 .NoRoom:
@@ -258,23 +258,27 @@ Route45RematchGiftM:
 GenericTrainerHikerErik:
 	generictrainer HIKER, ERIK, EVENT_BEAT_HIKER_ERIK, HikerErikSeenText, HikerErikBeatenText
 
-	text "I'll head back to"
-	line "Blackthorn's Ice"
+	text "Ich gehe zum"
+	line "Eispfad bei"
 
-	para "Path and train"
-	line "some more."
+	para "Ebenholz City,"
+	line "um etwas mehr"
+	cont "zu trainieren."
 	done
 
 GenericTrainerHikerMichael:
 	generictrainer HIKER, MICHAEL, EVENT_BEAT_HIKER_MICHAEL, HikerMichaelSeenText, HikerMichaelBeatenText
 
-	text "Boy, do I love"
-	line "HP Up! Mmmm, yum!"
+	text "Mensch, wie ich"
+	line "diese KP-Plus"
+	cont "liebe! Mm, lecker!"
 
-	para "I keep drinking my"
-	line "#mon's!"
+	para "Ich trinke immer"
+	line "die von meinen"
+	cont "#mon!"
 
-	para "I can't help it!"
+	para "Ich kann nichts"
+	line "dagegen tun!"
 	done
 
 TrainerHikerParry:
@@ -363,45 +367,50 @@ HikerParry1Script:
 GenericTrainerHikerTimothy:
 	generictrainer HIKER, TIMOTHY, EVENT_BEAT_HIKER_TIMOTHY, HikerTimothySeenText, HikerTimothyBeatenText
 
-	text "The best thing to"
-	line "ever happen to me"
+	text "#mon zu"
+	line "entdecken, war das"
 
-	para "was discovering"
-	line "#mon."
+	para "Beste, was mir"
+	line "passieren konnte."
 	done
 
 GenericTrainerCooltrainermRyan:
 	generictrainer COOLTRAINERM, RYAN, EVENT_BEAT_COOLTRAINERM_RYAN, CooltrainermRyanSeenText, CooltrainermRyanBeatenText
 
-	text "I see you're rais-"
-	line "ing your #mon"
-	cont "with care."
+	text "Wie ich sehe,"
+	line "ziehst du deine"
+	cont "#mon mit"
+	cont "Sorgfalt auf."
 
-	para "The bond you build"
-	line "will save you in"
-	cont "tough situations."
+	para "Die Gemeinschaft,"
+	line "die du bildest,"
+	cont "wird dich in"
+	cont "gefährlichen"
+	cont "Situationen"
+	cont "retten."
 	done
 
 GenericTrainerCooltrainerfKelly:
 	generictrainer COOLTRAINERF, KELLY, EVENT_BEAT_COOLTRAINERF_KELLY, CooltrainerfKellySeenText, CooltrainerfKellyBeatenText
 
-	text "I'm not in favor"
-	line "of overly power-"
-	cont "ful moves."
+	text "Ich mag keine"
+	line "übermäßig starken"
+	cont "Attacken."
 
-	para "I want to win, but"
-	line "I also don't want"
-	cont "to harm #mon."
+	para "Ich will gewinnen,"
+	line "aber ich möchte"
+	cont "dabei keine #-"
+	cont "mon verletzen."
 	done
 
 GenericTrainerCamperQuentin:
 	generictrainer CAMPER, QUENTIN, EVENT_BEAT_CAMPER_QUENTIN, CamperQuentinSeenText, CamperQuentinBeatenText
 
-	text "Have you been to"
-	line "the Battle Tower?"
+	text "Warst du schon im"
+	line "Duellturm?"
 
-	para "I never, ever lose"
-	line "there, but…"
+	para "Ich verliere dort"
+	line "niemals, aber…"
 	done
 
 BattleGirlNozomiSeenText:
@@ -414,146 +423,165 @@ BattleGirlNozomiBeatenText:
 	done
 
 HikerErikSeenText:
-	text "Be prepared for"
-	line "anything!"
+	text "Sei auf alles"
+	line "vorbereitet!"
 
-	para "Let me see if your"
-	line "#mon have been"
-	cont "raised properly!"
+	para "Lass mich mal"
+	line "sehen, wie gut"
+	cont "deine #mon"
+	cont "trainiert sind!"
 	done
 
 HikerErikBeatenText:
-	text "Oh, I lost that!"
+	text "Oh, ich habe"
+	line "verloren!"
 	done
 
 HikerMichaelSeenText:
-	text "Yo! You're spunky!"
-	line "But you know what?"
+	text "He! Du hast Mumm"
+	line "in den Knochen!"
+	cont "Aber weißt du was?"
 
-	para "When it comes to"
-	line "sheer spunkiness,"
-	cont "I'm the man!"
+	para "Wenn es um echte"
+	line "Courage geht, bin"
+	cont "ich der Mann!"
 	done
 
 HikerMichaelBeatenText:
-	text "My #mon weren't"
-	line "spunky enough!"
+	text "Meine #mon"
+	line "waren leider nicht"
+	cont "couragiert genug!"
 	done
 
 HikerParry1SeenText:
-	text "My #mon are"
-	line "power packed!"
+	text "Meine #mon"
+	line "sind voller"
+	cont "Energie!"
 	done
 
 HikerParry1BeatenText:
-	text "Wahahah! I'm the"
-	line "big loser!"
+	text "Ojemine! Ich bin"
+	line "der große"
+	cont "Verlierer!"
 	done
 
 HikerParryAfterBattleText:
-	text "I'm not much good"
-	line "at thinking, see?"
+	text "Ich bin eher"
+	line "langsam, was das"
+	cont "Denken betrifft,"
+	cont "weißt du?"
 
-	para "So, I just plow"
-	line "ahead with power!"
+	para "Deswegen setze ich"
+	line "alles auf Kraft."
 	done
 
 HikerTimothySeenText:
-	text "Why do I climb"
-	line "mountains?"
+	text "Warum ich auf"
+	line "Berge klettere?"
 
-	para "Because they're"
-	line "there."
+	para "Weil es sie"
+	line "gibt."
 
-	para "Why do I train"
-	line "#mon?"
+	para "Warum ich"
+	line "#mon trainiere?"
 
-	para "Because they're"
-	line "there!"
+	para "Weil es sie"
+	line "gibt!"
 	done
 
 HikerTimothyBeatenText:
-	text "Losses…"
-	line "They're there too!"
+	text "Niederlagen…"
+	line "Die gibt es auch!"
 	done
 
 HikerParryGivesIronText:
-	text "I just can't find"
-	line "a way to win!"
+	text "Ich weiß nicht,"
+	line "wie ich gewinnen"
+	cont "kann!"
 
-	para "Keep it up!"
+	para "Mach weiter!"
 
-	para "Oh, and take this"
-	line "--it's the gift"
+	para "Oh, und nimm dies"
+	line "- dies ist das"
 
-	para "you couldn't take"
-	line "when we last met."
+	para "Geschenk, das du"
+	line "beim letzten Mal"
+
+	para "nicht mitnehmen"
+	line "konntest."
 	done
 
 BlackbeltKenji1SeenText:
-	text "I was training"
-	line "here alone."
+	text "Ich habe hier"
+	line "ganz allein"
+	cont "trainiert."
 
-	para "Behold the fruits"
-	line "of my labor!"
+	para "Sieh die Früchte"
+	line "meiner Arbeit!"
 	done
 
 BlackbeltKenji1BeatenText:
-	text "Waaaargh!"
+	text "Aahh!"
 	done
 
 BlackbeltKenjiAfterBattleText:
-	text "This calls for"
-	line "extreme measures."
+	text "Das schreit nach"
+	line "extremen"
+	cont "Maßnahmen."
 
-	para "I must take to the"
-	line "hills and train in"
-	cont "solitude."
+	para "Ich ziehe mich"
+	line "zurück in die"
+	cont "Berge, um mich im"
+	cont "Alleinsein zu"
+	cont "üben."
 	done
 
 CooltrainermRyanSeenText:
-	text "What are your"
-	line "thoughts on rais-"
-	cont "ing #mon?"
+	text "Was hältst du vom"
+	line "#mon-Training?"
 	done
 
 CooltrainermRyanBeatenText:
-	text "You've won my"
-	line "respect."
+	text "Du verdienst meine"
+	line "ganze Hochachtung."
 	done
 
 CooltrainerfKellySeenText:
-	text "What is your"
-	line "battle strategy?"
+	text "Welche Kampf-"
+	line "technik verwendest"
+	cont "du?"
 
-	para "It is foolish to"
-	line "use strong moves"
-	cont "indiscriminately."
+	para "Setze starke"
+	line "Attacken nicht"
+	cont "völlig willkürlich"
+	cont "ein!"
 	done
 
 CooltrainerfKellyBeatenText:
-	text "Fine. I lost."
+	text "Gut. Dann habe ich"
+	line "eben verloren."
 	done
 
 CamperQuentinSeenText:
-	text "I'm really, really"
-	line "tough!"
+	text "Ich bin wirklich"
+	line "stark!"
 
-	para "Is there anywhere"
-	line "I can prove how"
-	cont "tough I really am?"
+	para "Gibt es hier"
+	line "die Möglichkeit"
+	cont "meine Stärke zu"
+	cont "beweisen?"
 	done
 
 CamperQuentinBeatenText:
-	text "I was tough at the"
-	line "Battle Tower…"
+	text "Ich habe im Duell-"
+	line "turm gut gekämpft…"
 	done
 
 Route45SignText:
 	text "Route 45"
-	line "Mountain Rd. Ahead"
+	line "Bergweg voraus"
 	done
 
 Route45DarkCaveSignText:
-	text "Dark Cave"
+	text "Dunkelhöhle"
 	done

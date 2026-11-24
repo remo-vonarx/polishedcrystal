@@ -154,8 +154,8 @@ VermilionSnorlax:
 	iftruefwd .Awake
 	jumpthisopenedtext
 
-	text "Snorlax is snoring"
-	line "peacefully…"
+	text "Relaxo schläft"
+	line "friedlich…"
 	done
 
 .Awake:
@@ -180,40 +180,43 @@ VermilionGymBadgeGuy:
 	ifgreater 9, .SomeBadges
 	jumpthistextfaceplayer
 
-	text "Skilled trainers"
-	line "gather in Kanto."
+	text "In Kanto treffen"
+	line "sich talentierte"
+	cont "Trainer."
 
-	para "Gym Leaders are"
-	line "especially strong."
+	para "Arenaleiter sind"
+	line "besonders stark."
 
-	para "They won't be easy"
-	line "to defeat."
+	para "Es ist nicht"
+	line "leicht, sie zu"
+	cont "besiegen."
 	done
 
 .SomeBadges:
 	jumpthistextfaceplayer
 
-	text "You've started to"
-	line "collect Kanto Gym"
-	cont "Badges?"
+	text "Du sammelst Orden"
+	line "der Arenen in"
+	cont "Kanto?"
 
-	para "Don't you agree"
-	line "that the trainers"
-	cont "here are tough?"
+	para "Findest du nicht"
+	line "auch, dass die"
+	cont "Trainer hier stark"
+	cont "sind?"
 	done
 
 .MostBadges:
 	jumpthistextfaceplayer
 
-	text "I guess you'll be"
-	line "finished with your"
+	text "Ich schätze, du"
+	line "hast diesen Wett-"
+	cont "kampf der Arenen"
+	cont "in Kanto bald"
+	cont "beendet."
 
-	para "conquest of Kanto"
-	line "Gyms soon."
-
-	para "Let me know if"
-	line "you get all eight"
-	cont "Badges."
+	para "Lass mich wissen,"
+	line "wenn du alle acht"
+	cont "Orden hast."
 	done
 
 .AllBadges:
@@ -260,15 +263,17 @@ VermilionCitySuperNerd2Script:
 	done
 
 VermilionCityBadgeGuyBattleEdgeText:
-	text "Having a variety"
-	line "of #mon types"
+	text "Es ist vorteil-"
+	line "haft, wenn du"
 
-	para "should give you an"
-	line "edge in battle."
+	para "#mon verschie-"
+	line "dener Elemente"
+	cont "kämpfen lässt."
 
-	para "I'm sure the Kanto"
-	line "Gym Badges will"
-	cont "help you."
+	para "Ich bin sicher,"
+	line "dass die Orden der"
+	cont "Arenen in Kanto"
+	cont "dir helfen werden."
 	done
 
 LawrenceOverheardText:
@@ -323,13 +328,14 @@ LawrenceIntroText:
 	done
 
 VermilionCityTeacherText:
-	text "Vermilion Port is"
-	line "Kanto's seaside"
-	cont "gateway."
+	text "Der Hafen von"
+	line "Orania City ist"
+	cont "das Tor Kantos"
+	cont "zum Meer."
 
-	para "Luxury liners from"
-	line "around the world"
-	cont "dock here."
+	para "Hier legen Luxus-"
+	line "dampfer aus aller"
+	cont "Welt an."
 	done
 
 VermilionMachokeOwnerText:
@@ -352,12 +358,12 @@ VermilionMachokeText:
 	done
 
 VermilionCitySuperNerdText:
-	text "There are eight"
-	line "Gyms in Kanto."
+	text "Es gibt acht"
+	line "Arenen in Kanto."
 
-	para "That big building"
-	line "is Vermilion's"
-	cont "#mon Gym."
+	para "Das große Gebäude"
+	line "ist die PKMN-Arena"
+	cont "von Orania City."
 	done
 
 VermilionCitySuperNerd2Text:
@@ -387,55 +393,62 @@ VermilionCitySailorText:
 	done
 
 VermilionCityRadioNearSnorlaxText:
-	text "The #gear was"
-	line "placed near the"
-	cont "sleeping Snorlax…"
+	text "Der #Com wird"
+	line "in der Nähe des"
+	cont "schlafenden"
+	cont "Relaxos platziert…"
 
 	para "…"
 
-	para "Snorlax woke up!"
+	para "Relaxo ist"
+	line "aufgewacht!"
 	done
 
 VermilionCityBadgeGuyAllBadgesText:
-	text "Congratulations!"
+	text "Gratuliere!"
 
-	para "You got all the"
-	line "Kanto Gym Badges."
+	para "Du hast alle Orden"
+	line "der Arenen in"
+	cont "Kanto."
 
-	para "I've got a reward"
-	line "for your efforts."
+	para "Ich habe hier eine"
+	line "Belohnung für"
+	cont "deine"
+	cont "Anstrengungen."
 	done
 
 VermilionCitySignText:
-	text "Vermilion City"
+	text "Orania City"
 
-	para "The Port of"
-	line "Exquisite Sunsets"
+	para "Der Hafen Der"
+	line "Stimmungsvollen"
+	cont "Sonnenuntergänge"
 	done
 
 VermilionGymSignText:
-	text "Vermilion City"
-	line "#mon Gym"
-	cont "Leader: Lt.Surge"
+	text "PKMN-Arena von"
+	line "Orania City"
 
-	para "The Lightning"
-	line "American"
+	para "Leitung: Major Bob"
+	line "Der Blitzschnelle"
+
+	para "Amerikaner"
 	done
 
 PokemonFanClubSignText:
-	text "#mon Fan Club"
+	text "#mon-Fanclub"
 
-	para "All #mon Fans"
-	line "Welcome!"
+	para "Alle #mon-Fans"
+	line "sind willkommen!"
 	done
 
 VermilionCityDiglettsCaveSignText:
-	text "Diglett's Cave"
+	text "Digdas Höhle"
 	done
 
 VermilionCityPortSignText:
-	text "Vermilion Port"
-	line "Entrance"
+	text "Eingang zum Hafen"
+	line "von Orania City"
 	done
 
 VermilionCityPierSignText:

@@ -308,23 +308,23 @@ ExpCandyDescriptions:
 	assert_table_length NUM_CANDIES
 
 PokeBallDesc:
-	text "An item for catch-"
-	next "ing #mon."
+	text "Damit fängst du"
+	next "#mon."
 	done
 
 GreatBallDesc:
-	text "A Ball with a de-"
-	next "cent success rate."
+	text "Ein Ball mit guter"
+	next "Erfolgsquote."
 	done
 
 UltraBallDesc:
-	text "A Ball with a high"
-	next "rate of success."
+	text "Ein Ball mit hoher"
+	next "Erfolgsquote."
 	done
 
 MasterBallDesc:
-	text "The best Ball. It"
-	next "never misses."
+	text "Der beste Ball."
+	next "Erfolg garantiert!"
 	done
 
 SafariBallDesc:
@@ -333,33 +333,33 @@ SafariBallDesc:
 	done
 
 LevelBallDesc:
-	text "A Ball for lower-"
-	next "level #mon."
+	text "Ein Ball für"
+	next "schwache #mon."
 	done
 
 LureBallDesc:
-	text "A Ball for #mon"
-	next "hooked by a Rod."
+	text "Ein Ball für #-"
+	next "mon an der Angel."
 	done
 
 MoonBallDesc:
-	text "A Ball for Moon"
-	next "Stone evolvers."
+	text "Fängt Mondst.-Ent-"
+	next "wickler eher ein."
 	done
 
 FriendBallDesc:
-	text "A Ball that makes"
-	next "#mon friendly."
+	text "Fördert Sympathie"
+	next "bei wilden PKMN."
 	done
 
 FastBallDesc:
-	text "A Ball for catch-"
-	next "ing fast #mon."
+	text "Ein Ball für"
+	next "schnelle #mon."
 	done
 
 HeavyBallDesc:
-	text "A Ball for catch-"
-	next "ing heavy #mon."
+	text "Damit fängst du"
+	next "schwere #mon."
 	done
 
 LoveBallDesc:
@@ -433,13 +433,13 @@ CherishBallDesc:
 	done
 
 PotionDesc:
-	text "Restores #mon"
-	next "HP by 20."
+	text "Füllt KP um"
+	next "20 auf."
 	done
 
 SuperPotionDesc:
-	text "Restores #mon"
-	next "HP by 60."
+	text "Füllt KP um"
+	next "60 auf."
 	done
 
 HyperPotionDesc:
@@ -448,95 +448,95 @@ HyperPotionDesc:
 	done
 
 MaxPotionDesc:
-	text "Fully restores"
-	next "#mon HP."
+	text "Füllt KP"
+	next "vollständig auf."
 	done
 
 AntidoteDesc:
-	text "Cures poisoned"
-	next "#mon."
+	text "Heilt"
+	next "Vergiftungen."
 	done
 
 BurnHealDesc:
-	text "Heals burned"
-	next "#mon."
+	text "Heilt"
+	next "Verbrennungen."
 	done
 
 ParalyzeHealDesc:
-	text "Heals paralyzed"
-	next "#mon."
+	text "Heilt "
+	next "Paralyse."
 	done
 
 AwakeningDesc:
-	text "Awakens sleeping"
+	text "Weckt schlafende"
 	next "#mon."
 	done
 
 IceHealDesc:
-	text "Defrosts frozen"
-	next "#mon."
+	text "Taut #mon"
+	next "wieder auf."
 	done
 
 FullHealDesc:
 RageCandyBarDesc:
 PewterCrunchDesc:
-	text "Eliminates all"
-	next "status problems."
+	text "Beseitigt alle"
+	next "Statusprobleme."
 	done
 
 FullRestoreDesc:
-	text "Fully restores HP"
-	next "& status."
+	text "Stellt KP und"
+	next "Status wieder her."
 	done
 
 ReviveDesc:
-	text "Restores a fainted"
-	next "#mon to 1/2 HP."
+	text "Belebt #mon"
+	next "plus halbe KP."
 	done
 
 MaxReviveDesc:
-	text "Fully restores a"
-	next "fainted #mon."
+	text "Belebt #mon"
+	next "plus volle KP."
 	done
 
 EtherDesc:
-	text "Restores PP of one"
-	next "move by 10."
+	text "Füllt AP um"
+	next "10 auf."
 	done
 
 MaxEtherDesc:
-	text "Fully restores PP"
-	next "of one move."
+	text "Füllt AP"
+	next "vollständig auf."
 	done
 
 ElixirDesc:
-	text "Restores PP of all"
-	next "moves by 10."
+	text "Füllt alle AP"
+	next "um 10 auf."
 	done
 
 MaxElixirDesc:
-	text "Fully restores the"
-	next "PP of one #mon."
+	text "Füllt alle AP"
+	next "auf."
 	done
 
 HPUpDesc:
-	text "Raises the HP of"
-	next "one #mon."
+	text "Erhöht KP"
+	next "eines #mon."
 	done
 
 ProteinDesc:
-	text "Raises Attack of"
-	next "one #mon."
+	text "Erhöht den"
+	next "ANGR-Wert."
 	done
 
 IronDesc:
-	text "Raises Defense of"
-	next "one #mon."
+	text "Erhöht den"
+	next "VERT-Wert."
 	done
 
 CarbosDesc:
-	text "Raises Speed of"
-	next "one #mon."
+	text "Erhöht den"
+	next "INIT-Wert."
 	done
 
 CalciumDesc:
@@ -550,13 +550,13 @@ ZincDesc:
 	done
 
 RareCandyDesc:
-	text "Raises level of a"
-	next "#mon by one."
+	text "Hebt Level um"
+	next "eins an."
 	done
 
 PPUpDesc:
-	text "Raises max PP of"
-	next "a selected move."
+	text "Hebt die max."
+	next "Anzahl der AP."
 	done
 
 PPMaxDesc:
@@ -570,8 +570,8 @@ FreshWaterDesc:
 	done
 
 SodaPopDesc:
-	text "Restores #mon"
-	next "HP by 50."
+	text "Füllt KP um"
+	next "50 auf."
 	done
 
 LemonadeDesc:
@@ -580,13 +580,13 @@ LemonadeDesc:
 	done
 
 MoomooMilkDesc:
-	text "Restores #mon"
-	next "HP by 100."
+	text "Füllt KP um"
+	next "100 auf."
 	done
 
 SacredAshDesc:
-	text "Fully revives all"
-	next "fainted #mon."
+	text "Belebt alle be-"
+	next "siegten #mon."
 	done
 
 EnergyPowderDesc:
@@ -600,13 +600,13 @@ EnergyRootDesc:
 	done
 
 HealPowderDesc:
-	text "Cures all status"
-	next "problems. Bitter."
+	text "Heilt alle Status-"
+	next "probleme. Bitter."
 	done
 
 RevivalHerbDesc:
-	text "Revives fainted"
-	next "#mon. Bitter."
+	text "Belebt besiegte"
+	next "#mon wieder."
 	done
 
 XAttackDesc:
@@ -650,28 +650,28 @@ XAccuracyDesc:
 	done
 
 RepelDesc:
-	text "Repels weak #-"
-	next "mon for 100 steps."
+	text "Hält schwache"
+	next "#mon ab."
 	done
 
 SuperRepelDesc:
-	text "Repels weak #-"
-	next "mon for 200 steps."
+	text "Starker Schutz vor"
+	next "#mon."
 	done
 
 MaxRepelDesc:
-	text "Repels weak #-"
-	next "mon for 250 steps."
+	text "Bester Schutz vor"
+	next "#mon."
 	done
 
 EscapeRopeDesc:
-	text "Use for escaping"
-	next "from caves, etc."
+	text "Ermöglicht Flucht"
+	next "aus Höhlen, etc."
 	done
 
 PokeDollDesc:
-	text "Use to escape from"
-	next "a wild #mon."
+	text "Flucht vor wilden"
+	next "#mon."
 	done
 
 AbilityCapDesc:
@@ -689,43 +689,43 @@ DuskStoneDesc:
 ShinyStoneDesc:
 IceStoneDesc:
 LinkingCordDesc:
-	text "Evolves certain"
-	next "kinds of #mon."
+	text "Entwickelt manche"
+	next "#mon."
 	done
 
 EverstoneDesc:
-	text "Stops evolution."
-	next "(Hold)"
+	text "Entwicklungsstopp."
+	next "(Tragen)"
 	done
 
 ExpShareDesc:
-	text "Shares battle Exp."
-	next "Points. (Hold)"
+	text "Teilt Kampf-EP."
+	next "(Tragen)"
 	done
 
 CheriBerryDesc:
-	text "A self-cure for"
-	next "paralysis. (Hold)"
+	text "Selbstheilung bei"
+	next "Paralyse. (Tragen)"
 	done
 
 ChestoBerryDesc:
-	text "A self-awakening"
-	next "for sleep. (Hold)"
+	text "Auto-Aufwecker bei"
+	next "Schlaf. (Tragen)"
 	done
 
 PechaBerryDesc:
-	text "A self-cure for"
-	next "poison. (Hold)"
+	text "Selbstheilung bei"
+	next "Gift. (Tragen)"
 	done
 
 RawstBerryDesc:
-	text "A self-heal for a"
-	next "burn. (Hold)"
+	text "Selbstheilung bei"
+	next "Brand. (Tragen)"
 	done
 
 AspearBerryDesc:
-	text "A self-cure for"
-	next "freezing. (Hold)"
+	text "Selbstheilung bei"
+	next "Frost. (Tragen)"
 	done
 
 LeppaBerryDesc:
@@ -734,18 +734,18 @@ LeppaBerryDesc:
 	done
 
 OranBerryDesc:
-	text "A self-restore"
-	next "item. (10HP, Hold)"
+	text "Selbstheilung um"
+	next "10 KP. (Tragen)"
 	done
 
 PersimBerryDesc:
-	text "A self-cure for"
-	next "confusion. (Hold)"
+	text "Selbstheilung bei"
+	next "Verwirr. (Tragen)"
 	done
 
 LumBerryDesc:
-	text "Cures all status"
-	next "problems. (Hold)"
+	text "Setzt Status in"
+	next "Urzustand.(Tragen)"
 	done
 
 SitrusBerryDesc:
@@ -859,88 +859,88 @@ BerryJuiceDesc:
 	done
 
 SilkScarfDesc:
-	text "Powers up Normal-"
-	next "type moves. (Hold)"
+	text "Verstärkt Normal-"
+	next "Attacken. (Tragen)"
 	done
 
 BlackBeltDesc:
-	text "Boosts Fighting-"
-	next "type moves. (Hold)"
+	text "Verstärkt Kampf-"
+	next "Attacken. (Tragen)"
 	done
 
 SharpBeakDesc:
-	text "Powers up Flying-"
-	next "type moves. (Hold)"
+	text "Verstärkt Flug-"
+	next "Attacken. (Tragen)"
 	done
 
 PoisonBarbDesc:
-	text "Powers up Poison-"
-	next "type moves. (Hold)"
+	text "Verstärkt Gift-"
+	next "Attacken. (Tragen)"
 	done
 
 SoftSandDesc:
-	text "Powers up Ground-"
-	next "type moves. (Hold)"
+	text "Verstärkt Boden-"
+	next "Attacken. (Tragen)"
 	done
 
 HardStoneDesc:
-	text "Powers up Rock-"
-	next "type moves. (Hold)"
+	text "Verstärkt Gestein-"
+	next "Attacken. (Tragen)"
 	done
 
 SilverPowderDesc:
-	text "Powers up Bug-type"
-	next "moves. (Hold)"
+	text "Verstärkt Käfer-"
+	next "Attacken. (Tragen)"
 	done
 
 SpellTagDesc:
-	text "Powers up Ghost-"
-	next "type moves. (Hold)"
+	text "Verstärkt Geist-"
+	next "Attacken. (Tragen)"
 	done
 
 MetalCoatDesc:
-	text "Powers up Steel-"
-	next "type moves. (Hold)"
+	text "Verstärkt Stahl-"
+	next "Attacken. (Tragen)"
 	done
 
 CharcoalDesc:
-	text "Powers up Fire-"
-	next "type moves. (Hold)"
+	text "Verstärkt Feuer-"
+	next "Attacken. (Tragen)"
 	done
 
 MysticWaterDesc:
-	text "Powers up Water-"
-	next "type moves. (Hold)"
+	text "Verstärkt Wasser-"
+	next "Attacken. (Tragen)"
 	done
 
 MiracleSeedDesc:
-	text "Powers up Grass-"
-	next "type moves. (Hold)"
+	text "Verstärkt Pfl.-"
+	next "Attacken. (Tragen)"
 	done
 
 MagnetDesc:
-	text "Boosts Electric-"
-	next "type moves. (Hold)"
+	text "Verstärkt Elektro-"
+	next "Attacken. (Tragen)"
 	done
 
 TwistedSpoonDesc:
-	text "Powers up Psychic-"
-	next "type moves. (Hold)"
+	text "Verstärkt Psycho-"
+	next "Attacken. (Tragen)"
 	done
 
 NeverMeltIceDesc:
-	text "Powers up Ice-type"
-	next "moves. (Hold)"
+	text "Verstärkt Eis-"
+	next "Attacken. (Tragen)"
 	done
 
 DragonFangDesc:
-	text "Powers up Dragon-"
-	next "type moves. (Hold)"
+	text "Verstärkt Drachen-"
+	next "Attacken. (Tragen)"
 	done
 
 BlackGlassesDesc:
-	text "Powers up Dark-"
-	next "type moves. (Hold)"
+	text "Verstärkt Unlicht-"
+	next "Attacken. (Tragen)"
 	done
 
 FairyFeatherDesc:
@@ -949,14 +949,14 @@ FairyFeatherDesc:
 	done
 
 BrightPowderDesc:
-	text "Lowers the foe's"
-	next "accuracy. (Hold)"
+	text "Senkt Genauigkeit."
+	next "(Tragen)"
 	done
 
 ScopeLensDesc:
 RazorClawDesc:
-	text "Raises critical"
-	next "hit ratio. (Hold)"
+	text "Hebt Volltreffer-"
+	next "quote. (Tragen)"
 	done
 
 QuickClawDesc:
@@ -966,43 +966,43 @@ QuickClawDesc:
 
 KingsRockDesc:
 RazorFangDesc:
-	text "May make the foe"
-	next "flinch. (Hold)"
+	text "Feind flieht"
+	next "evtl. (Tragen)"
 	done
 
 FocusBandDesc:
-	text "May prevent faint-"
-	next "ing. (Hold)"
+	text "Könnte K.O. ver-"
+	next "hindern. (Tragen)"
 	done
 
 LeftoversDesc:
-	text "Restores HP during"
-	next "battle. (Hold)"
+	text "Füllt KP im Kampf"
+	next "auf. (Tragen)"
 	done
 
 LuckyEggDesc:
-	text "Earns extra Exp."
-	next "points. (Hold)"
+	text "Erhält Extra-EP."
+	next "(Tragen)"
 	done
 
 AmuletCoinDesc:
-	text "Doubles monetary"
-	next "earnings. (Hold)"
+	text "Doppeltes Ein-"
+	next "kommen. (Tragen)"
 	done
 
 CleanseTagDesc:
-	text "Helps repel wild"
-	next "#mon. (Hold)"
+	text "Schutz vor wilden"
+	next "#mon. (Tragen)"
 	done
 
 SmokeBallDesc:
-	text "Escape from wild"
-	next "#mon. (Hold)"
+	text "Flucht vor wilden"
+	next "#mon. (Tragen)"
 	done
 
 BerserkGeneDesc:
-	text "Boosts Attack but"
-	next "causes confusion."
+	text "Hebt ANGR-Wert und"
+	next "bewirkt Verwirr."
 	done
 
 LightBallDesc:
@@ -1021,13 +1021,13 @@ ThickClubDesc:
 	done
 
 LuckyPunchDesc:
-	text "Ups critical hit"
-	next "ratio of Chansey."
+	text "Erhöht Chaneiras"
+	next "Volltrefferquote."
 	done
 
 MetalPowderDesc:
-	text "Raises Defense of"
-	next "Ditto. (Hold)"
+	text "Hebt VERT-Wert von"
+	next "Ditto. (Tragen)"
 	done
 
 QuickPowderDesc:
@@ -1266,13 +1266,13 @@ WiseGlassesDesc:
 	done
 
 DragonScaleDesc:
-	text "A rare Dragon-type"
-	next "item."
+	text "Ein seltenes"
+	next "Drachen-Item."
 	done
 
 UpgradeDesc:
-	text "A mysterious box"
-	next "made by Silph Co."
+	text "Eine mysteriöse"
+	next "Box der Silph Co."
 	done
 
 DubiousDiscDesc:
@@ -1306,8 +1306,8 @@ OddSouvenirDesc:
 	done
 
 NuggetDesc:
-	text "Made of pure gold."
-	next "Sell high."
+	text "Aus purem Gold."
+	next "Wert hoch."
 	done
 
 BigNuggetDesc:
@@ -1316,13 +1316,13 @@ BigNuggetDesc:
 	done
 
 TinyMushroomDesc:
-	text "An ordinary mush-"
-	next "room. Sell low."
+	text "Ein gemeiner Pilz."
+	next "Wert gering."
 	done
 
 BigMushroomDesc:
-	text "A rare mushroom."
-	next "Sell high."
+	text "Ein seltener Pilz."
+	next "Wert hoch."
 	done
 
 BalmMushroomDesc:
@@ -1331,13 +1331,13 @@ BalmMushroomDesc:
 	done
 
 PearlDesc:
-	text "A beautiful pearl."
-	next "Sell low."
+	text "Eine Perle."
+	next "Wert niedrig."
 	done
 
 BigPearlDesc:
-	text "A big, beautiful"
-	next "pearl. Sell high."
+	text "Eine schöne Perle."
+	next "Wert hoch."
 	done
 
 PearlStringDesc:
@@ -1346,13 +1346,13 @@ PearlStringDesc:
 	done
 
 StardustDesc:
-	text "Pretty, red sand."
-	next "Sell high."
+	text "Schöner roter"
+	next "Sand. Wert hoch."
 	done
 
 StarPieceDesc:
-	text "A hunk of red gem."
-	next "Sell very high."
+	text "Roter Edelstein."
+	next "Wert sehr hoch."
 	done
 
 BrickPieceDesc:
@@ -1366,18 +1366,18 @@ RareBoneDesc:
 	done
 
 SilverLeafDesc:
-	text "A strange, silver-"
-	next "colored leaf."
+	text "Ein seltsames"
+	next "silbernes Blatt."
 	done
 
 GoldLeafDesc:
-	text "A strange, gold-"
-	next "colored leaf."
+	text "Ein seltsames"
+	next "goldenes Blatt."
 	done
 
 SlowpokeTailDesc:
-	text "Very tasty. Sell"
-	next "high."
+	text "Sehr lecker."
+	next "Wert hoch."
 	done
 
 BottleCapDesc:
@@ -1397,53 +1397,53 @@ OldAmberDesc:
 	done
 
 FlowerMailDesc:
-	text "Flower-print Mail."
-	next "(Hold)"
+	text "Umschlag mit Blu-"
+	next "mendruck.(Tragen)"
 	done
 
 SurfMailDesc:
-	text "Lapras-print Mail."
-	next "(Hold)"
+	text "Umschlag mit"
+	next "Lapras. (Tragen)"
 	done
 
 LiteBlueMailDesc:
-	text "Dratini-print"
-	next "Mail. (Hold)"
+	text "Umschlag mit"
+	next "Dratini. (Tragen)"
 	done
 
 PortraitMailDesc:
-	text "Mail featuring the"
-	next "holder's likeness."
+	text "Umschlag mit"
+	next "Besitzerportrait."
 	done
 
 LovelyMailDesc:
-	text "Heart-print Mail."
-	next "(Hold)"
+	text "Umschlag mit Herz-"
+	next "Aufdruck. (Tragen)"
 	done
 
 EonMailDesc:
-	text "Eevee-print Mail."
-	next "(Hold)"
+	text "Umschlag mit"
+	next "Evoli. (Tragen)"
 	done
 
 MorphMailDesc:
-	text "Ditto-print Mail."
-	next "(Hold)"
+	text "Umschlag mit"
+	next "Ditto. (Tragen)"
 	done
 
 BlueSkyMailDesc:
-	text "Sky-print Mail."
-	next "(Hold)"
+	text "Himmelblauer"
+	next "Umschlag. (Tragen)"
 	done
 
 MusicMailDesc:
-	text "Natu-print Mail."
-	next "(Hold)"
+	text "Umschlag mit Natu-"
+	next "Aufdruck. (Tragen)"
 	done
 
 MirageMailDesc:
-	text "Mew-print Mail."
-	next "(Hold)"
+	text "Umschlag mit Mew-"
+	next "Aufdruck. (Tragen)"
 	done
 
 EjectButtonDesc:
@@ -1522,23 +1522,24 @@ MintLeafDesc:
 	done
 
 BicycleDesc:
-	text "A collapsible bike"
-	next "for fast movement."
+	text "Ein Klapprad, um"
+	next "schneller zu sein."
 	done
 
 OldRodDesc:
-	text "Use by water to"
-	next "fish for #mon."
+	text "Damit kannst du"
+	next "#mon angeln."
+	next ""
 	done
 
 GoodRodDesc:
-	text "A good Rod for"
-	next "catching #mon."
+	text "Eine gute Angel"
+	next "zum Fischen."
 	done
 
 SuperRodDesc:
-	text "The best Rod for"
-	next "catching #mon."
+	text "Die beste Angel"
+	next "zum Fischen."
 	done
 
 CoinCaseDesc:
@@ -1547,18 +1548,18 @@ CoinCaseDesc:
 	done
 
 ItemfinderDesc:
-	text "Checks for unseen"
-	next "items in the area."
+	text "Scannt die Umge-"
+	next "bung nach Items."
 	done
 
 MysteryEggDesc:
-	text "An Egg obtained"
-	next "from Mr.#mon."
+	text "Ein Ei von"
+	next "Mr. #mon."
 	done
 
 SquirtBottleDesc:
-	text "A bottle used for"
-	next "watering plants."
+	text "Eine Kanne, um"
+	next "Bäume zu wässern."
 	done
 
 GoGogglesDesc:
@@ -1567,62 +1568,62 @@ GoGogglesDesc:
 	done
 
 SecretPotionDesc:
-	text "Fully heals any"
-	next "#mon."
+	text "Heilt jedes #-"
+	next "mon vollständig."
 	done
 
 RedScaleDesc:
-	text "A scale from the"
-	next "red Gyarados."
+	text "Haut vom roten"
+	next "Garados."
 	done
 
 CardKeyDesc:
-	text "Opens shutters in"
-	next "the Radio Tower."
+	text "Öffnet die Rollos"
+	next "im Radioturm."
 	done
 
 BasementKeyDesc:
-	text "Opens doors."
+	text "Öffnet Türen."
 	done
 
 SSTicketDesc:
-	text "A ticket for the"
-	next "S.S.Aqua."
+	text "Ein Ticket für die"
+	next "M.S. Aqua."
 	done
 
 PassDesc:
-	text "A ticket for the"
-	next "Magnet Train."
+	text "Ticket für"
+	next "Magnetzug."
 	done
 
 MachinePartDesc:
-	text "A machine part for"
-	next "the Power Plant."
+	text "Ein Maschinenteil"
+	next "für das Kraftwerk."
 	done
 
 LostItemDesc:
-	text "The # Doll lost"
-	next "by the Copycat."
+	text "#puppe der"
+	next "Nachahmerin."
 	done
 
 RainbowWingDesc:
-	text "A mystical feather"
-	next "of rainbow colors."
+	text "Mystische Regen-"
+	next "bogen-Feder."
 	done
 
 SilverWingDesc:
-	text "A strange, silver-"
-	next "colored feather."
+	text "Eine seltsame"
+	next "silberne Feder."
 	done
 
 ClearBellDesc:
-	text "Makes a gentle"
-	next "ringing."
+	text "Erzeugt ein"
+	next "angenehmes Läuten."
 	done
 
 GSBallDesc:
-	text "The mysterious"
-	next "Ball."
+	text "Ein geheimnis-"
+	next "voller Ball."
 	done
 
 GBCSoundsDesc:
@@ -1631,8 +1632,8 @@ GBCSoundsDesc:
 	done
 
 BlueCardDesc:
-	text "Card to save"
-	next "points."
+	text "Karte zum Punkte-"
+	next "sammeln."
 	done
 
 OrangeTicketDesc:

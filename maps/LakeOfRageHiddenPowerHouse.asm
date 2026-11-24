@@ -62,20 +62,21 @@ HiddenPowerGuy:
 	done
 
 .Text1:
-	text "…You have strayed"
-	line "far…"
+	text "…Du bist viel he-"
+	line "rumgekommen…"
 
-	para "Here I have medi-"
-	line "tated. Inside me,"
+	para "Ich habe hier me-"
+	line "ditiert. In mir"
 
-	para "a new power has"
-	line "been awakened."
+	para "ist eine neue"
+	line "Kraft zum Leben"
+	cont "erwacht."
 
-	para "Let me share my"
-	line "power with your"
-	cont "#mon."
+	para "Lass mich meine"
+	line "Kraft mit deinen"
 
-	para "Take this, child."
+	para "#mon teilen."
+	line "Nimm dies, Kind."
 	done
 
 .Text2:
@@ -99,7 +100,7 @@ HiddenPowerGuy:
 	done
 
 .Text4:
-	text "I am meditating…"
+	text "Ich meditiere…"
 	done
 
 .Text5:

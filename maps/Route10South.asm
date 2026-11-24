@@ -32,19 +32,20 @@ Route10SouthSetUpPaletteSwap:
 GenericTrainerHikerJim:
 	generictrainer HIKER, JIM, EVENT_BEAT_HIKER_JIM, HikerJimSeenText, HikerJimBeatenText
 
-	text "Hay fever is"
-	line "making me sneeze!"
-	cont "Ahahah-CHOO!"
+	text "Ich habe Heu-"
+	line "schnupfen!"
+	para "Haha-hatschi!"
 	done
 
 GenericTrainerPokefanmRobert:
 	generictrainer POKEFANM, ROBERT, EVENT_BEAT_POKEFANM_ROBERT, PokefanmRobertSeenText, PokefanmRobertBeatenText
 
-	text "Look what you did"
-	line "to my #mon…"
+	text "Sieh nur, was du"
+	line "meinen #mon"
+	cont "angetan hast…"
 
-	para "I won't forget"
-	line "this…"
+	para "Das werde ich dir"
+	line "nie verzeihen…"
 	done
 
 GenericTrainerHexManiacAmy:
@@ -60,19 +61,19 @@ HikerJimSeenText:
 	done
 
 HikerJimBeatenText:
-	text "Hahaha-hachoo!"
+	text "Hahaha-hatschi!"
 	done
 
 PokefanmRobertSeenText:
-	text "You like #mon,"
-	line "don't you?"
+	text "Du magst #mon,"
+	line "nicht wahr?"
 
-	para "Me too!"
+	para "Ich auch!"
 	done
 
 PokefanmRobertBeatenText:
-	text "I'd have to say"
-	line "that's my loss."
+	text "Ich gebe zu, ich"
+	line "habe verloren."
 	done
 
 HexManiacAmySeenText:
@@ -91,6 +92,6 @@ HexManiacAmyBeatenText:
 Route10SignText:
 	text "Route 10"
 
-	para "Cerulean City -"
-	line "Lavender Town"
+	para "Azuria City -"
+	line "Lavandia"
 	done

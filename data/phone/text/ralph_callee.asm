@@ -1,59 +1,59 @@
 RalphAnswerPhoneText:
-	text "Yes? Ah, <PLAYER>."
+	text "Ja? Ah, <PLAYER>."
 
-	para "You're courteous"
-	line "enough to state"
+	para "Du bist wenigstens"
+	line "so höflich und"
 
-	para "your name when you"
-	line "call on the phone."
+	para "meldest dich mit"
+	line "deinem Namen."
 	done
 
 RalphAnswerPhoneDayText:
-	text "Yes? Ah, <PLAYER>."
+	text "Ja? Ah, <PLAYER>."
 
-	para "You're courteous"
-	line "enough to state"
+	para "Du bist wenigstens"
+	line "so höflich und"
 
-	para "your name when you"
-	line "call on the phone."
+	para "meldest dich mit"
+	line "deinem Namen."
 	done
 
 RalphAnswerPhoneNiteText:
-	text "Yes? Ah, <PLAYER>."
+	text "Ja? Ah, <PLAYER>."
 
-	para "You're courteous"
-	line "enough to state"
+	para "Du bist wenigstens"
+	line "so höflich und"
 
-	para "your name when you"
-	line "call on the phone."
+	para "meldest dich mit"
+	line "deinem Namen."
 	done
 
 RalphGreetText:
-	text "Hiya, it's Uncle"
+	text "Hier ist Onkel"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 	done
 
 RalphGreetDayText:
-	text "Hiya, it's Uncle"
+	text "Hier ist Onkel"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 	done
 
 RalphGreetNiteText:
-	text "Hiya, it's Uncle"
+	text "Hier ist Onkel"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 	done
 
 RalphGenericText:
-	text "Are you taking"
-	line "good care of your"
+	text "Versorgst du deine"
+	line "#mon auch gut?"
 
-	para "#mon? You have"
-	line "to be good to your"
-	cont "partners!"
+	para "Behandle sie gut,"
+	line "sie sind deine"
+	cont "Kameraden!"
 	done

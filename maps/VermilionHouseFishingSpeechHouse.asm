@@ -44,9 +44,10 @@ FishingGuruText:
 	done
 
 FishingGurusHousePhotoText:
-	text "It's a photo of"
-	line "people fishing…"
+	text "Das ist ein Foto,"
+	line "auf dem Angler zu"
+	cont "sehen sind…"
 
-	para "They're having a"
-	line "great time…"
+	para "Sie haben viel"
+	line "Spaß beim Angeln…"
 	done

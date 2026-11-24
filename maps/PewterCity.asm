@@ -158,43 +158,49 @@ PewterCityCooltrainermText:
 	done
 
 PewterCityBugCatcherText:
-	text "At night, Clefairy"
-	line "come out to play"
-	cont "at Mt.Moon."
+	text "Nachts spielen"
+	line "Piepi beim"
+	cont "Mondberg."
 
-	para "But not every"
-	line "night."
+	para "Aber nicht in"
+	line "jeder Nacht."
 	done
 
 PewterCityGrampsText:
-	text "Ah, you came all"
-	line "the way out here"
-	cont "from Johto?"
+	text "Oh, du bist den"
+	line "ganzen Weg "
+	cont "von Johto bis"
+	cont "hierher gekommen?"
 
-	para "That brings back"
-	line "memories. When I"
+	para "Das weckt"
+	line "Erinnerungen. Als"
 
-	para "was young, I went"
-	line "to Johto to train."
+	para "ich noch jung war,"
+	line "habe ich in Johto"
+	cont "oft trainiert."
 
-	para "You remind me so"
-	line "much of what I was"
+	para "Du erinnerst"
+	line "mich an mich"
 
-	para "like as a young"
-	line "man."
+	para "selbst als junger"
+	line "Mann."
 
-	para "Here. I want you"
-	line "to have this item"
-	cont "I found in Johto."
+	para "Hier. Ich möchte,"
+	line "dass du dieses"
+	cont "Item, das ich in"
+	cont "Johto fand,"
+	cont "behältst."
 	done
 
 PewterCityGrampsText_GotSilverWing:
-	text "Going to new, un-"
-	line "known places and"
-	cont "seeing new people…"
+	text "Neue und un-"
+	line "bekannte Orte zu"
+	cont "erforschen und"
+	cont "fremde Menschen"
+	cont "kennen zu lernen…"
 
-	para "Those are the joys"
-	line "of travel."
+	para "Das ist das Schöne"
+	line "am Reisen."
 	done
 
 PewterCityYoungsterText1:
@@ -219,17 +225,18 @@ PewterCityMeowthText:
 	done
 
 PewterCitySignText:
-	text "Pewter City"
-	line "A Stone Gray City"
+	text "Marmoria City"
+	line "Eine Steingraue"
+	cont "Stadt"
 	done
 
 PewterGymSignText:
-	text "Pewter City"
-	line "#mon Gym"
-	cont "Leader: Brock"
+	text "PKMN-Arena von"
+	line "Marmoria City"
+	cont "Leitung: Rocko"
 
-	para "The Rock Solid"
-	line "#mon Trainer"
+	para "Der Felsenharte"
+	line "#mon-Trainer"
 	done
 
 PewterMuseumOfScienceSignText:
@@ -238,11 +245,12 @@ PewterMuseumOfScienceSignText:
 	done
 
 PewterCityMtMoonGiftShopSignText:
-	text "There's a notice"
-	line "here…"
+	text "Hier ist eine"
+	line "Nachricht…"
 
-	para "Mt.Moon Gift Shop"
-	line "Now open!"
+	para "Souvenirladen am"
+	line "Mondberg"
+	cont "Jetzt geöffnet!"
 	done
 
 PewterCityTrainerTipsText:

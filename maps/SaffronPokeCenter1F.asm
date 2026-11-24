@@ -42,53 +42,54 @@ SaffronPokeCenter1FFisherScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "I just happened to"
-	line "come through Rock"
+	text "Ich bin gerade"
+	line "durch den Fels-"
+	cont "tunnel gekommen."
 
-	para "Tunnel. There was"
-	line "some commotion at"
-	cont "the Power Plant."
+	para "Da war irgendetwas"
+	line "im Gange beim"
+	cont "Kraftwerk."
 	done
 
 .Text2:
-	text "Caves collapse"
-	line "easily."
+	text "Die Höhlen stürzen"
+	line "leicht ein."
 
-	para "Several caves have"
-	line "disappeared in the"
+	para "In letzter Zeit"
+	line "sind einige Höhlen"
 
-	para "past few years,"
-	line "like the one out-"
-	cont "side Cerulean."
+	para "verschwunden. Wie"
+	line "die Höhle vor"
+	cont "Azuria City."
 
-	para "As a pro Hiker,"
-	line "that's common"
-	cont "knowledge."
+	para "Für einen Profi-"
+	line "Wanderer ist das"
+	cont "Grundwissen."
 	done
 
 SaffronPokeCenter1FTeacherText:
-	text "What are Johto's"
-	line "#mon Centers"
-	cont "like?"
+	text "Wie sehen die"
+	line "#mon-Center in"
+	cont "Johto aus?"
 
-	para "…Oh, I see. So"
-	line "they're not much"
+	para "…Oh, aha. Sie"
+	line "unterscheiden sich"
 
-	para "different from the"
-	line "ones in Kanto."
+	para "kaum von denen"
+	line "in Kanto."
 
-	para "I can go to Johto"
-	line "without worrying,"
-	cont "then!"
+	para "Ich kann also nach"
+	line "Johto gehen, ohne"
+	cont "mich zu sorgen!"
 	done
 
 SaffronPokeCenter1FYoungsterText:
-	text "Silph Co.'s Head"
-	line "Office and the"
+	text "Die Zentrale von"
+	line "Silph Co. und der"
 
-	para "Magnet Train Sta-"
-	line "tion--they're the"
+	para "Magnetzug-Bahnhof"
+	line "sind sehenswürdige"
 
-	para "places to see in"
-	line "Saffron."
+	para "Orte in Saffronia"
+	line "City."
 	done

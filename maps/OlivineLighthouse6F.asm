@@ -34,9 +34,10 @@ OlivineLighthouseJasmine:
 .ExplainedSickness:
 	jumpthisopenedtext
 
-	text "…May I ask you to"
-	line "get some medicine"
-	cont "for me? Please?"
+	text "…Vielleicht"
+	line "könntest du die"
+	cont "Medizin für mich"
+	cont "besorgen? Bitte!"
 	done
 
 .BroughtSecretpotion:
@@ -94,7 +95,8 @@ OlivineLighthouseJasmine:
 	pause 15
 	jumpthistext
 
-	text "…Amphy, hang on!"
+	text "…Amphi, halte"
+	line "durch!"
 	done
 
 OlivineLighthouseAmphy:
@@ -108,8 +110,8 @@ OlivineLighthouseAmphy:
 	promptbutton
 	jumpthisopenedtext
 
-	text "Its breathing is"
-	line "terribly labored…"
+	text "Es hat Probleme"
+	line "mit der Atmung…"
 	done
 
 .HealthyNow:
@@ -179,60 +181,61 @@ JasmineCianwoodPharmacyText:
 
 
 JasmineCureAmphyText:
-	text "Jasmine: …Will"
-	line "that medicine cure"
-	cont "Amphy?"
+	text "Jasmin: …Wird"
+	line "diese Arznei Amphi"
+	cont "helfen?"
 	done
 
 PlayerHandedSecretpotionText:
-	text "<PLAYER> handed the"
-	line "SecretPotion to"
-	cont "Jasmine."
+	text "<PLAYER> übergibt"
+	line "Jasmin den"
+	cont "Geheimtrank."
 	done
 
 JasmineDontBeOffendedText:
-	text "Jasmine: …Um,"
-	line "please don't be"
-	cont "offended…"
+	text "Jasmin: …Hm,"
+	line "sei bitte nicht"
+	cont "beleidigt…"
 
-	para "…Amphy will not"
-	line "take anything from"
-	cont "anyone but me…"
+	para "…Amphi nimmt"
+	line "die Arznei nur"
+	cont "von mir…"
 	done
 
 JasmineAmphyHowAreYouFeelingText:
-	text "Jasmine: …"
+	text "Jasmin: …"
 
-	para "Amphy, how are you"
-	line "feeling?"
+	para "Amphi, wie geht"
+	line "es dir?"
 	done
 
 JasmineThankYouText:
-	text "Jasmine: …Oh, I'm"
-	line "so relieved…"
+	text "Jasmin: …Oh, ich"
+	line "bin erleichtert…"
 
-	para "This is just so"
-	line "wonderful…"
+	para "Das ist einfach"
+	line "wundervoll…"
 
-	para "Thank you so very,"
-	line "very much."
+	para "Ich danke dir"
+	line "vielmals."
 
-	para "…I will return to"
-	line "the Gym…"
+	para "…Ich kehre in die"
+	line "PKMN-Arena zurück."
 	done
 
 JasmineISeeText:
-	text "Jasmine: …I see…"
+	text "Jasmin: …Ich ver-"
+	line "stehe…"
 	done
 
 
 AmphyPalPalooText:
-	text "Amphy: …"
-	line "…Pa… paloo…"
+	text "Amphi: …"
+	line "…Pa…Paluu…"
 	done
 
 
 AmphyPaluPaluluText:
-	text "Amphy: Palu!"
+	text "Amphi: Palu!"
 	line "Palulu!"
 	done

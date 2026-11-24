@@ -103,67 +103,77 @@ CeladonCafeFisher3:
 ChefText_Eatathon:
 	text "Hi!"
 
-	para "We're holding an"
-	line "eatathon contest."
+	para "Wir halten gerade"
+	line "ein Wettessen ab."
 
-	para "We can't serve you"
-	line "right now. Sorry."
+	para "Wir können dich"
+	line "im Moment leider"
+	cont "nicht bedienen."
 	done
 
 Fisher1Text_Snarfle:
-	text "…Snarfle, chew…"
+	text "…Schlürf,"
+	line "schlabber…"
 	done
 
 Fisher1Text_Concentration:
-	text "Don't talk to me!"
+	text "Sprich mich"
+	line "nicht an!"
 
-	para "You'll break my"
-	line "concentration!"
+	para "Du störst meine"
+	line "Konzentration!"
 	done
 
 Fisher2Text_GulpChew:
-	text "…Gulp… Chew…"
+	text "…Schluck…"
+	line "Schling…"
 	done
 
 Fisher2Text_Quantity:
-	text "I take quantity"
-	line "over quality!"
+	text "Quantität ist mir"
+	line "wichtiger als"
+	cont "Qualität!"
 
-	para "I'm happy when I'm"
-	line "full!"
+	para "Ich bin erst"
+	line "glücklich, wenn"
+	cont "ich platze!"
 	done
 
 Fisher3Text_MunchMunch:
-	text "Munch, munch…"
+	text "Mampf, mampf…"
 	done
 
 Fisher3Text_GoldenrodIsBest:
-	text "The food is good"
-	line "here, but Golden-"
-	cont "rod has the best"
-	cont "food anywhere."
+	text "Das Essen hier ist"
+	line "gut, aber in"
+	cont "Dukatia City gibt"
+	cont "es die besten"
+	cont "Speisen der Welt."
 	done
 
 TeacherText_CrunchCrunch:
-	text "Crunch… Crunch…"
+	text "Krümel… Mampf…"
 	done
 
 TeacherText_NoCoinCase:
-	text "Nobody here will"
-	line "give you a Coin"
+	text "Hier wird dir"
+	line "niemand einen"
 
-	para "Case. You should"
-	line "look in Johto."
+	para "Münzkorb geben."
+	line "Den bekommst du"
+	cont "in Johto."
 	done
 
 TeacherText_KeepEating:
-	text "Crunch… Crunch…"
+	text "Krümel… Kau…"
 
-	para "I can keep eating!"
+	para "Ich esse immer"
+	line "weiter!"
 	done
 
 TeacherText_MoreChef:
-	text "More, Chef!"
+	text "Nachschub,"
+	line "Chefkoch!"
 	done
 
 MayleneText1:
@@ -240,14 +250,14 @@ CeladonCafeBakerText:
 	done
 
 EatathonContestPosterText:
-	text "Eatathon Contest!"
-	line "No time limit!"
+	text "Wettessen! Essen"
+	line "bis zum Umfallen!"
 
-	para "A battle without"
-	line "end! The biggest"
+	para "Kein Zeitlimit!"
+	line "Der größte"
 
-	para "muncher gets it"
-	line "all for free!"
+	para "Vielfraß bekommt"
+	line "alles umsonst!"
 	done
 
 EatathonContestTrashCanText:

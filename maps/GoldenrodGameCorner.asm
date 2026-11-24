@@ -187,8 +187,9 @@ GoldenrodGameCornerPrizeVendor_AlreadyHaveTMScript:
 GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript:
 	jumpthisopenedtext
 
-	text "Sorry! You need"
-	line "more coins."
+	text "Tut mir Leid, aber"
+	line "du brauchst mehr"
+	cont "Münzen."
 	done
 
 GoldenrodGameCornerTMVendorMenuData:
@@ -316,10 +317,11 @@ GoldenrodGameCornerGentlemanScript:
 GoldenrodGameCornerLeftTheirDrinkScript:
 	jumpthistext
 
-	text "Someone left their"
-	line "drink."
+	text "Jemand hat sein"
+	line "Getränk stehen"
 
-	para "It smells sweet."
+	para "lassen. Es riecht"
+	line "süß!"
 	done
 
 GoldenrodGameCornerSlotsMachineScript:
@@ -342,26 +344,26 @@ GoldenrodGameCornerCardFlipMachineScript:
 	endtext
 
 GoldenrodGameCornerPrizeVendorIntroText:
-	text "Welcome!"
+	text "Willkommen!"
 
-	para "We exchange your"
-	line "game coins for"
-	cont "fabulous prizes!"
+	para "Wir tauschen deine"
+	line "Spielmünzen gegen"
+	cont "tolle Preise!"
 	done
 
 GoldenrodGameCornerPrizeVendorWhichPrizeText:
-	text "Which prize would"
-	line "you like?"
+	text "Welchen Preis"
+	line "möchtest du?"
 	done
 
 GoldenrodGameCornerPrizeVendorConfirmPrizeText:
 	text_ram wStringBuffer3
 	text "."
-	line "Is that right?"
+	line "Ist das O.K.?"
 	done
 
 GoldenrodGameCornerPrizeVendorHereYouGoText:
-	text "Here you go!"
+	text "Hier, bitte!"
 	done
 
 GoldenrodGameCornerPrizeVendorAlreadyHaveTMText:
@@ -380,14 +382,14 @@ GoldenrodGameCornerPrizeVendorNoMoreRoomText:
 	done
 
 GoldenrodGameCornerPrizeVendorQuitText:
-	text "OK. Please save"
-	line "your coins and"
-	cont "come again!"
+	text "Sammle ein paar"
+	line "Münzen und komm"
+	cont "dann wieder!"
 	done
 
 GoldenrodGameCornerPrizeVendorNoCoinCaseText:
-	text "Oh? You don't have"
-	line "a Coin Case."
+	text "Oh? Du hast keinen"
+	line "Münzkorb."
 	done
 
 GoldenrodGameCornerFisherText:
@@ -411,44 +413,50 @@ Text_GoldenrodGameCornerTutorPayDayQuestion:
 
 
 GoldenrodGameCornerPharmacistText:
-	text "I always play this"
-	line "slot machine. It"
+	text "Ich spiele nur an"
+	line "diesem Automaten."
 
-	para "pays out more than"
-	line "others, I think."
+	para "Ich glaube, er"
+	line "spuckt mehr aus"
+
+	para "als die anderen."
 	done
 
 GoldenrodGameCornerPokefanM1Text:
-	text "I just love this"
-	line "new slot machine."
+	text "Ich liebe diesen"
+	line "neuen Automaten."
 
-	para "It's more of a"
-	line "challenge than the"
-	cont "ones in Celadon."
+	para "Er stellt eine"
+	line "größere Herausfor-"
+	cont "derung dar als"
+	cont "jene in Prismania"
+	cont "City."
 	done
 
 GoldenrodGameCornerCooltrainerMText:
-	text "Life is a gamble."
-	line "I'm going to flip"
-	cont "cards till I drop!"
+	text "Das Leben ist ein"
+	line "Spiel. Ich werde"
+	cont "Karten spielen,"
+	cont "bis ich umfalle!"
 	done
 
 GoldenrodGameCornerPokefanFText:
-	text "Card flip…"
+	text "Karten…"
 
-	para "I prefer it over"
-	line "the slots because"
+	para "Ich ziehe sie den"
+	line "Automaten vor,"
 
-	para "it's easier to"
-	line "figure the odds."
+	para "weil man seine"
+	line "Chancen besser ab-"
+	cont "schätzen kann."
 
-	para "But the payout is"
-	line "much lower."
+	para "Aber der Gewinn"
+	line "ist viel geringer."
 	done
 
 GoldenrodGameCornerCooltrainerFText:
-	text "I won't quit until"
-	line "I win!"
+	text "Ich höre erst auf,"
+	line "wenn ich gewinne!"
 	done
 
 GoldenrodGameCornerGentlemanText:
@@ -477,6 +485,6 @@ GoldenrodGameCornerPokefanM2Text:
 	done
 
 GoldenrodGameCornerPokefanM3Text:
-	text "Wahahah! The coins"
-	line "keep rolling in!"
+	text "Wahaha! Die Münzen"
+	line "fallen weiter!"
 	done

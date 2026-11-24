@@ -369,17 +369,17 @@ GenericTrainerFisherLeroy:
 	done
 
 .SeenText:
-	text "I keep catching"
-	line "the same #mon…"
+	text "Ich fange die"
+	line "gleichen #mon…"
 
-	para "Maybe a battle"
-	line "will turn things"
-	cont "around for me."
+	para "Vielleicht ändert"
+	line "ein Kampf"
+	cont "die Sache."
 	done
 
 .BeatenText:
-	text "Nothing ever goes"
-	line "right for me now…"
+	text "Mir gelingt ein-"
+	line "fach nichts…"
 	done
 
 Route25MistysDateLeavesMovement2:
@@ -416,42 +416,46 @@ Route25MistyLeavesMovement:
 	step_end
 
 Route25MistyDateText:
-	text "Misty: Aww! Why"
-	line "did you have to"
+	text "Misty: Aww! Warum"
+	line "musst du jetzt"
 
-	para "show up and bug us"
-	line "now?"
+	para "auftauchen und uns"
+	line "stören?"
 
-	para "Do you know what"
-	line "they call people"
-	cont "like you?"
+	para "Weißt du, wie"
+	line "man Menschen wie"
+	cont "dich nennt?"
 
-	para "Pests! You heard"
-	line "me right, pest!"
+	para "Plage! Du hast"
+	line "richtig gehört,"
+	cont "Plage!"
 
 	para "…"
 
-	para "…Oh? Those Badges"
-	line "you have… Are they"
-	cont "Johto Gym Badges?"
+	para "…Oh? Die Orden,"
+	line "die du hast… Sind"
+	cont "das Arena-Orden"
+	cont "aus Johto?"
 
-	para "If you have eight,"
-	line "you must be good."
+	para "Wenn du acht hast,"
+	line "musst du gut sein."
 
-	para "OK, then. Come to"
-	line "Cerulean Gym."
+	para "O.K. Komm in die"
+	line "PKMN-Arena von"
+	cont "Azuria City."
 
-	para "I'll be happy to"
-	line "take you on."
+	para "Ich freue mich,"
+	line "gegen dich zu"
+	cont "kämpfen."
 
-	para "I'm Misty, the"
-	line "Gym Leader in"
-	cont "Cerulean."
+	para "Ich bin Misty, die"
+	line "Arenaleiterin von"
+	cont "Azuria City."
 	done
 
 BillsHouseSignText:
-	text "Sea Cottage"
-	line "Bill's House"
+	text "Küstenhaus"
+	line "Bills Haus"
 	done
 
 CeruleanCapeSailboatText:

@@ -18,27 +18,30 @@ BlackthornMart_MapScriptHeader:
 	object_event 11,  3, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BlackthornMartSuperNerdText, -1
 
 BlackthornMartCooltrainermText:
-	text "You can't buy Max"
-	line "Revive, but it"
+	text "Du kannst Top-Be-"
+	line "leber zwar nicht"
 
-	para "fully restores a"
-	line "fainted #mon."
+	para "kaufen, aber er"
+	line "füllt die KP be-"
+	cont "siegter #mon"
 
-	para "Beware--it won't"
-	line "restore PP, the"
+	para "wieder vollständig"
+	line "auf."
 
-	para "Power Points"
-	line "needed for moves."
+	para "Vorsicht! Die AP,"
+	line "oder Angriffspunk-"
+	cont "te, werden nicht"
+	cont "aufgefüllt."
 	done
 
 BlackthornMartBlackbeltText:
-	text "Max Repel keeps"
-	line "weak #mon away"
-	cont "from you."
+	text "Top-Schutz hält"
+	line "dir schwache #-"
+	cont "mon vom Leib."
 
-	para "It's the longest"
-	line "lasting of the"
-	cont "Repel sprays."
+	para "Von allen Schutz-"
+	line "Sprays hält es am"
+	cont "längsten an."
 	done
 
 BlackthornMartSuperNerdText:

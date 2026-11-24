@@ -212,11 +212,12 @@ SchoolboyJack1Script:
 GenericTrainerPokefanmWilliam:
 	generictrainer POKEFANM, WILLIAM, EVENT_BEAT_POKEFANM_WILLIAM, PokefanmWilliamSeenText, PokefanmWilliamBeatenText
 
-	text "I lost the battle,"
-	line "but my #mon win"
+	text "Ich habe zwar den"
+	line "Kampf verloren,"
 
-	para "the prize for"
-	line "being most lovely."
+	para "aber meine #mon"
+	line "gewinnen den"
+	cont "Schönheitspreis."
 	done
 
 TrainerPokefanfBeverly1:
@@ -261,14 +262,14 @@ PokefanfBeverly1Script:
 .NoMarill:
 	jumpthisopenedtext
 
-	text "My friend keeps a"
-	line "Marill!"
+	text "Mein Freund hat"
+	line "ein Marill!"
 
-	para "I find them very"
-	line "endearing."
+	para "Ich finde es"
+	line "liebenswert."
 
-	para "Oh, I wish for a"
-	line "Marill of my own…"
+	para "Ich hätte gerne"
+	line "selbst ein Marill…"
 	done
 
 .AskNumber1:
@@ -298,9 +299,9 @@ PokefanfBeverly1Script:
 GenericTrainerLassKrise:
 	generictrainer LASS, KRISE, EVENT_BEAT_LASS_KRISE, LassKriseSeenText, LassKriseBeatenText
 
-	text "I thought you were"
-	line "staring at me"
-	cont "because I'm cute!"
+	text "Ich dachte, du"
+	line "starrst mich an,"
+	cont "weil ich süß bin!"
 	done
 
 NationalParkLassText:
@@ -312,38 +313,39 @@ NationalParkLassText:
 	done
 
 NationalParkPokefanFText:
-	text "This is Mail I got"
-	line "from my daughter."
-	cont "It cheers me up."
+	text "Das ist ein"
+	line "Brief von meiner"
+	cont "Tochter. Das macht"
+	cont "mir Freude."
 	done
 
 NationalParkTeacher1Text:
-	text "Pay attention,"
-	line "please!"
+	text "Pass bitte auf!"
 
-	para "…Oops, I have to"
-	line "quit thinking like"
+	para "…Ohh, ich muss"
+	line "aufhören, immer"
 
-	para "a teacher all the"
-	line "time."
+	para "wie ein Lehrer zu"
+	line "denken."
 
-	para "You must be a"
-	line "#mon trainer."
+	para "Du musst ein"
+	line "#mon-Trainer"
+	cont "sein."
 
-	para "Since you're work-"
-	line "ing so hard, I"
+	para "Da du so hart"
+	line "arbeitest, möchte"
 
-	para "want you to have"
-	line "this."
+	para "ich dir dies"
+	line "überreichen."
 	done
 
 NationalParkTeacher1Text_GotQuickClaw:
-	text "Let a #mon hold"
-	line "that Quick Claw."
+	text "Gib die Flinkklaue"
+	line "einem #mon."
 
-	para "Sometimes it will"
-	line "strike first"
-	cont "during battle."
+	para "Manchmal erhält es"
+	line "durch sie die"
+	cont "Initiative."
 	done
 
 SchoolgirlElizaSeenText:
@@ -378,7 +380,7 @@ NationalParkTeacher2Text:
 	done
 
 NationalParkPersianText:
-	text "Persian: Fufushaa!"
+	text "Snobilikat: Fauch!"
 	done
 
 NationalParkGameboyKidText:
@@ -393,19 +395,19 @@ NationalParkGameboyKidText:
 	done
 
 SchoolboyJack1SeenText:
-	text "The world of"
-	line "#mon is deep."
+	text "Die #mon-Welt"
+	line "bietet dir viel."
 
-	para "There are still"
-	line "lots of things we"
-	cont "don't know."
+	para "Es gibt noch viele"
+	line "Dinge, über die"
+	cont "wir nichts wissen."
 
-	para "But I know more"
-	line "than you do!"
+	para "Aber ich weiß"
+	line "mehr als du!"
 	done
 
 SchoolboyJack1BeatenText:
-	text "Wha-wha-what?"
+	text "Wa-Wa-Was?"
 	done
 
 SchoolboyJackTradeMonText:
@@ -422,44 +424,47 @@ SchoolboyJackTradeMonText:
 	done
 
 PokefanfBeverly1SeenText:
-	text "My #mon are"
-	line "simply darling."
+	text "Meine #mon sind"
+	line "entzückend."
 
-	para "Let me tell you"
-	line "how proud my"
-	cont "darlings make me."
+	para "Ich will dir"
+	line "sagen, wie stolz"
+	cont "sie mich machen."
 	done
 
 PokefanfBeverly1BeatenText:
-	text "I can beat you in"
-	line "pride, but…"
+	text "Was Stolz angeht,"
+	line "kann ich dich"
+	cont "schlagen, aber…"
 	done
 
 PokefanBeverlyCuteMonText:
-	text "I must say, your"
-	line "#mon are quite"
-	cont "cute, too."
+	text "Ich muss zugeben,"
+	line "dass deine #mon"
+	cont "auch süß sind."
 	done
 
 PokefanmWilliamSeenText:
-	text "We adore our #-"
-	line "mon, even if they"
-	cont "dislike us."
+	text "Wir bewundern"
+	line "unsere #mon,"
+	cont "auch wenn sie uns"
+	cont "nicht mögen."
 
-	para "That's what being"
-	line "a fan is about."
+	para "Das macht eben den"
+	line "wahren Fan aus."
 	done
 
 PokefanmWilliamBeatenText:
-	text "M-my #mon!"
+	text "Mei-Mein #mon!"
 	done
 
 
 LassKriseSeenText:
-	text "Hello? Why are you"
-	line "staring at me?"
+	text "Was ist? Warum"
+	line "starrst du mich"
+	cont "so an?"
 
-	para "Oh, a battle?"
+	para "Oh, ein Kampf?"
 	done
 
 LassKriseBeatenText: ; text > text
@@ -508,19 +513,19 @@ OfficermKeithDaytimeText:
 	done
 
 NationalParkRelaxationSquareText:
-	text "Relaxation Square"
-	line "National Park"
+	text "Erholungsort"
+	line "Nationalpark"
 	done
 
 NationalParkBattleNoticeText:
-	text "What is this"
-	line "notice?"
+	text "Was steht denn"
+	line "hier?"
 
-	para "Please battle only"
-	line "in the grass."
+	para "Kämpfe sind nur"
+	line "im Gras gestattet."
 
-	para "National Park"
-	line "Warden's Office"
+	para "Nationalpark"
+	line "Büro des Wächters"
 	done
 
 NationalParkTrainerTipsText:

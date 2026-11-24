@@ -212,22 +212,24 @@ GenericTrainerSrandjrIvyandamy2:
 GenericTrainerCamperSpencer:
 	generictrainer CAMPER, SPENCER, EVENT_BEAT_CAMPER_SPENCER, CamperSpencerSeenText, CamperSpencerBeatenText
 
-	text "What is going on"
-	line "at Lake of Rage?"
+	text "Was geht da vor"
+	line "sich am"
+	cont "See des Zorns?"
 
-	para "We were planning"
-	line "to camp there."
+	para "Wir wollen dort"
+	line "zelten."
 	done
 
 GenericTrainerPokemaniacBen:
 	generictrainer POKEMANIAC, BEN, EVENT_BEAT_POKEMANIAC_BEN, PokemaniacBenSeenText, PokemaniacBenBeatenText
 
-	text "What else do I"
-	line "like besides"
-	cont "#mon?"
+	text "Du fragst, was ich"
+	line "außer #mon"
+	cont "noch mag?"
 
-	para "Mary on the radio."
-	line "I bet she's cute!"
+	para "Margit vom Radio!"
+	line "Die ist bestimmt"
+	cont "süß!"
 	done
 
 TrainerPokemaniacBrent1:
@@ -342,15 +344,17 @@ GenericTrainerPokemaniacRon:
 GenericTrainerFisherMarvin:
 	generictrainer FISHER, MARVIN, EVENT_BEAT_FISHER_MARVIN, FisherMarvinSeenText, FisherMarvinBeatenText
 
-	text "Kurt's Lure Ball"
-	line "is the best for"
+	text "Kurts Köderball"
+	line "eignet sich am"
 
-	para "catching hooked"
-	line "#mon."
+	para "besten, um #-"
+	line "mon, die an der"
+	cont "Angel hängen,"
+	cont "einzufangen."
 
-	para "It's much more"
-	line "effective than a"
-	cont "Ultra Ball."
+	para "Er ist viel"
+	line "effektiver als"
+	cont "der Hyperball."
 	done
 
 TrainerPicnickerTiffany1:
@@ -446,9 +450,9 @@ PicnickerTiffany1Script:
 .NoClefairy:
 	jumpthisopenedtext
 
-	text "Isn't my Clefairy"
-	line "just the most"
-	cont "adorable thing?"
+	text "Ist mein Piepi"
+	line "nicht"
+	cont "herzallerliebst?"
 	done
 
 .AskNumber1:
@@ -479,66 +483,77 @@ PicnickerTiffany1Script:
 	jumpstd packfullf
 
 PokemaniacBenSeenText:
-	text "I love #mon!"
+	text "Ich liebe #mon!"
 
-	para "That's why I"
-	line "started--and why"
+	para "Deshalb habe ich"
+	line "angefangen, #-"
+	cont "mon zu sammeln und"
 
-	para "I'll keep on col-"
-	line "lecting #mon!"
+	para "damit werde ich"
+	line "auch nicht mehr"
+	cont "aufhören!"
 	done
 
 PokemaniacBenBeatenText:
-	text "How could you do"
-	line "this to me?"
+	text "Wie konntest du"
+	line "mir das antun?"
 	done
 
 PokemaniacBrent1SeenText:
-	text "Hey! Do you have"
-	line "any rare #mon?"
+	text "Heh! Hast du"
+	line "seltene #mon?"
 	done
 
 PokemaniacBrent1BeatenText:
-	text "Oh, my poor #-"
-	line "mon! Darlings!"
+	text "Meine armen #-"
+	line "mon-Lieblinge!"
 	done
 
 PokemaniacBrentAfterBattleText:
-	text "I'd be happy just"
-	line "to own a single"
-	cont "rare #mon."
+	text "Ich wäre schon"
+	line "froh, wenn ich nur"
+	cont "ein einziges"
+	cont "seltenes #mon"
+	cont "hätte."
 	done
 
 PokemaniacRonSeenText:
-	text "Would you get"
-	line "this?"
+	text "Stell dir mal vor!"
 
-	para "Some <RIVAL> guy"
-	line "made fun of my"
-	cont "#mon!"
+	para "So ein <RIVAL>"
+	line "hat sich über"
+	cont "mein #mon"
+	cont "lustig gemacht!"
 
-	para "Darn it! My #-"
-	line "mon's great!"
+	para "Unverschämtheit!"
+	line "Mein #mon"
+	cont "ist toll!"
 	done
 
 PokemaniacRonBeatenText:
-	text "My Nidoking did"
-	line "pretty right on!"
+	text "Mein Nidoking hat"
+	line "sich wacker ge-"
+	cont "schlagen!"
 	done
 
 FisherMarvinSeenText:
-	text "I'm in a slump."
+	text "Ich bin gerade"
+	line "ziemlich am Boden."
 
-	para "Maybe it's the"
-	line "gear I'm using."
+	para "Vielleicht liegt"
+	line "das an dem Item,"
+	cont "das ich benutze."
 
-	para "Let's battle for a"
-	line "change of pace!"
+	para "Kämpfen wir! Das"
+	line "hebt vielleicht"
+	cont "meine Laune!"
 	done
 
 FisherMarvinBeatenText:
-	text "I lost, but I feel"
-	line "better anyway."
+	text "Ich habe verloren,"
+	line "aber ich fühle"
+	cont "mich trotzdem"
+	cont "besser."
 	done
 
 CamperSpencerSeenText:
@@ -548,27 +563,31 @@ CamperSpencerSeenText:
 	done
 
 CamperSpencerBeatenText:
-	text "Losing isn't fun"
-	line "at all…"
+	text "Verlieren macht"
+	line "überhaupt keinen"
+	cont "Spaß…"
 	done
 
 PicnickerTiffany1SeenText:
-	text "Are you going to"
-	line "Lake of Rage too?"
+	text "Gehst du auch zum"
+	line "See des Zorns?"
 
-	para "Let's play for a"
-	line "little while!"
+	para "Spielen wir ein"
+	line "bisschen!"
 	done
 
 PicnickerTiffany1BeatenText:
-	text "I played too much!"
+	text "Ich habe zu lange"
+	line "gespielt!"
 	done
 
 PicnickerTiffanyWantsPicnicText:
-	text "I'm having a pic-"
-	line "nic with #mon."
+	text "Ich mache ein"
+	line "Picknick mit"
+	cont "meinen #mon."
 
-	para "Won't you join us?"
+	para "Setz dich doch zu"
+	line "uns."
 	done
 
 
@@ -608,37 +627,44 @@ SrandjrIvyandamy2BeatenText:
 Route43Sign1Text:
 	text "Route 43"
 
-	para "Lake of Rage -"
-	line "Mahogany Town"
+	para "See des Zorns -"
+	line "Mahagonia City"
 	done
 
 Route43Sign2Text:
 	text "Route 43"
 
-	para "Lake of Rage -"
-	line "Mahogany Town"
+	para "See des Zorns -"
+	line "Mahagonia City"
 	done
 
 Route43TrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "All #mon have"
-	line "pros and cons"
+	para "Alle #mon haben"
+	line "Vor- und Nach-"
 
-	para "depending on their"
-	line "types."
+	para "teile. Das hängt"
+	line "ganz davon ab,"
+	cont "welchem Element"
+	cont "sie angehören."
 
-	para "If their types"
-	line "differ, a higher-"
+	para "Sind zwei #mon"
+	line "unterschiedlicher"
 
-	para "level #mon may"
-	line "lose in battle."
+	para "Elemente, kann"
+	line "sogar ein #mon"
+	cont "verlieren, das"
+	cont "einen höheren"
+	cont "Level hat."
 
-	para "Learn which types"
-	line "are strong and"
+	para "Finde heraus,"
+	line "welche Elemente"
 
-	para "weak against your"
-	line "#mon's type."
+	para "effektiv oder"
+	line "ineffektiv gegen"
+	cont "deine #mon"
+	cont "sind."
 	done
 
 Route43AdvancedTipsText:

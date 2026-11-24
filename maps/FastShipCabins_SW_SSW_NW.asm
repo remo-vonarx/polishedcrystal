@@ -26,19 +26,20 @@ FastShipCabins_SW_SSW_NW_MapScriptHeader:
 GenericTrainerFirebreatherLyle:
 	generictrainer FIREBREATHER, LYLE, EVENT_BEAT_FIREBREATHER_LYLE, FirebreatherLyleSeenText, FirebreatherLyleBeatenText
 
-	text "I guess fire is"
-	line "weak on the sea."
+	text "Ich denke, Feuer"
+	line "ist schwach auf"
+	cont "hoher See."
 
-	para "It doesn't matter?"
-	line "Really?"
+	para "Das ist egal?"
+	line "Wirklich?"
 	done
 
 GenericTrainerBug_catcherKen:
 	generictrainer BUG_CATCHER, KEN, EVENT_BEAT_BUG_CATCHER_KEN, Bug_catcherKenSeenText, Bug_catcherKenBeatenText
 
-	text "You can find lots"
-	line "of #mon in the"
-	cont "trees of Johto!"
+	text "In Johto findest"
+	line "du viele #mon"
+	cont "in den Bäumen!"
 	done
 
 GenericTrainerRichBoyWinston:
@@ -51,13 +52,16 @@ GenericTrainerRichBoyWinston:
 GenericTrainerBeautyCassie:
 	generictrainer BEAUTY, CASSIE, EVENT_BEAT_BEAUTY_CASSIE, BeautyCassieSeenText, BeautyCassieBeatenText
 
-	text "A voyage is best"
-	line "for getting over"
-	cont "a broken heart."
+	text "Eine Schiffsreise"
+	line "ist am besten,"
+	cont "um ein gebrochenes"
+	cont "Herz zu vergessen."
 
-	para "But a Fast Ship"
-	line "trip is too short"
-	cont "for grieving."
+	para "Aber eine Reise"
+	line "mit dem Schnell-"
+	cont "boot ist für"
+	cont "die Trauer zu"
+	cont "kurz."
 	done
 
 TrainerGuitaristmClyde:
@@ -70,23 +74,25 @@ GuitaristmClydeScript:
 	iffalsefwd .BattleTower
 	jumpthisopenedtext
 
-	text "Speaking of the"
-	line "Radio Station,"
+	text "Apropos Radio-"
+	line "station: Wie "
 
-	para "what's this week's"
-	line "lucky number?"
+	para "lauten die"
+	line "Glückszahlen für"
+	cont "diese Woche?"
 	done
 
 .BattleTower:
 	jumpthisopenedtext
 
-	text "I was going to"
-	line "make my debut at"
-	cont "the Battle Tower…"
+	text "Ich wollte mein"
+	line "Debut im Duellturm"
+	cont "geben…"
 
-	para "I should go back"
-	line "to Vermilion and"
-	cont "redo my training…"
+	para "Ich sollte nach"
+	line "Orania City zu-"
+	cont "rückgehen und"
+	cont "härter trainieren…"
 	done
 
 FastShipBed:
@@ -124,25 +130,26 @@ FastShipBed:
 	end
 
 FirebreatherLyleSeenText:
-	text "I'm going to Kanto"
-	line "to put on fire-"
-	cont "breathing shows!"
+	text "Ich gehe nach"
+	line "Kanto, um meine"
+	cont "Feuerspuck-Künste"
+	cont "vorzuführen!"
 	done
 
 FirebreatherLyleBeatenText:
-	text "Fizzle… The"
-	line "flame's tiny…"
+	text "Zisch… Die"
+	line "Flamme ist klein…"
 	done
 
 Bug_catcherKenSeenText:
-	text "I'm visiting my"
-	line "grandma to catch"
-	cont "me some bugs!"
+	text "Ich besuche meine"
+	line "Oma, um einige"
+	cont "Käfer zu fangen!"
 	done
 
 Bug_catcherKenBeatenText:
-	text "Ooh, wow."
-	line "You're tough!"
+	text "Oh, wow."
+	line "Du bist stark!"
 	done
 
 RichBoyWinstonSeenText:
@@ -160,48 +167,50 @@ RichBoyWinstonBeatenText:
 	done
 
 BeautyCassieSeenText:
-	text "I'm trying to"
-	line "forget my woes."
-	cont "Let's battle!"
+	text "Ich versuche,"
+	line "meine Leiden zu"
+	cont "vergessen. Lass"
+	cont "uns kämpfen!"
 	done
 
 BeautyCassieBeatenText:
-	text "My heart weeps…"
+	text "Mein Herz weint…"
 	done
 
 GuitaristmClydeSeenText:
-	text "I'm going to audi-"
-	line "tion my songs at"
+	text "Ich werde meine"
+	line "Lieder bei der"
 
-	para "Goldenrod's Radio"
-	line "Station."
+	para "Radiostation in"
+	line "Dukatia City"
+	cont "vorspielen."
 	done
 
 GuitaristmClydeBeatenText:
 	text "Yowza!"
-	line "Total distortion!"
+	line "Total verzerrt!"
 	done
 
 
 
 FastShipBedText1:
-	text "A comfy bed!"
-	line "Time to sleep…"
+	text "Ein weiches Bett!"
+	line "Schlafenszeit…"
 	done
 
 FastShipBedText2:
-	text "Ah, refreshed and"
-	line "restored!"
+	text "Ah, ausgeruht und"
+	line "frisch!"
 	done
 
 FastShipArrivedOlivineText:
-	text "Fast Ship S.S.Aqua"
-	line "has arrived in"
-	cont "Olivine City."
+	text "Die M.S. Aqua"
+	line "legt in"
+	para "Oliviana City an."
 	done
 
 FastShipArrivedVermilionText:
-	text "Fast Ship S.S.Aqua"
-	line "has arrived in"
-	cont "Vermilion City."
+	text "Die M.S. Aqua legt"
+	line "in"
+	para "Orania City an."
 	done

@@ -1,12 +1,12 @@
 SECTION "_FruitBearingTreeText", ROMX
 _FruitBearingTreeText::
-	text "It's a fruit-"
-	line "bearing tree."
+	text "Es ist ein"
+	line "Obstbaum."
 	done
 
 SECTION "_HeyItsFruitText", ROMX
 _HeyItsFruitText::
-	text "Hey! It's"
+	text "Hey! Das ist eine"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -38,8 +38,8 @@ _ObtainedThreeFruitText::
 
 SECTION "_FruitPackIsFullText", ROMX
 _FruitPackIsFullText::
-	text "But the Bag is"
-	line "full…"
+	text "Aber der Beutel"
+	line "ist voll…"
 	done
 
 SECTION "_NoApricornBoxText", ROMX
@@ -65,8 +65,8 @@ _PutAwayTheApricornText::
 
 SECTION "_NothingHereText", ROMX
 _NothingHereText::
-	text "There's nothing"
-	line "here…"
+	text "Hier ist"
+	line "nichts…"
 	done
 
 SECTION "_WantToUseMulchText", ROMX
@@ -86,14 +86,14 @@ _UsedMulchText::
 
 SECTION "_WhichApricornText", ROMX
 _WhichApricornText::
-	text "Which Apricorn"
-	line "should I use?"
+	text "Welche Aprikoko"
+	line "soll ich benutzen?"
 	done
 
 SECTION "_HowManyShouldIMakeText", ROMX
 _HowManyShouldIMakeText::
-	text "How many should I"
-	line "make?"
+	text "Wie viele soll ich"
+	line "fertigen?"
 	done
 
 SECTION "_HowManyDoYouWantToSellText", ROMX
@@ -105,62 +105,72 @@ _HowManyDoYouWantToSellText::
 SECTION "_RecoveredSomeHPText", ROMX
 _RecoveredSomeHPText::
 	text_ram wStringBuffer1
-	line "recovered "
+	text ""
+	line "erhält "
 	text_decimal wCurHPAnimDeltaHP, 2, 3
-	text "HP!"
+	text " KP!"
 	done
 
 SECTION "_CuredOfPoisonText", ROMX
 _CuredOfPoisonText::
+	text "Die Vergiftung von"
+	line ""
 	text_ram wStringBuffer1
-	text "'s"
-	line "cured of poison."
+	text ""
+	cont "wurde geheilt."
 	done
 
 SECTION "_RidOfParalysisText", ROMX
 _RidOfParalysisText::
+	text "Die Paralyse von"
+	line ""
 	text_ram wStringBuffer1
-	text "'s"
-	line "rid of paralysis."
+	text ""
+	cont "wurde aufgehoben."
 	done
 
 SECTION "_BurnWasHealedText", ROMX
 _BurnWasHealedText::
+	text "Verbrennung von"
+	line ""
 	text_ram wStringBuffer1
-	text "'s"
-	line "burn was healed."
+	text ""
+	cont "wurde geheilt."
 	done
 
 SECTION "_WasDefrostedText", ROMX
 _WasDefrostedText::
 	text_ram wStringBuffer1
-	line "was defrosted."
+	text ""
+	line "wurde aufgetaut."
 	done
 
 SECTION "_WokeUpText", ROMX
 _WokeUpText::
 	text_ram wStringBuffer1
-	line "woke up."
+	text ""
+	line "ist aufgewacht."
 	done
 
 SECTION "_HealthReturnedText", ROMX
 _HealthReturnedText::
 	text_ram wStringBuffer1
-	text "'s"
-	line "health returned."
+	text ""
+	line "ist wieder fit."
 	done
 
 SECTION "_RevitalizedText", ROMX
 _RevitalizedText::
 	text_ram wStringBuffer1
-	line "is revitalized."
+	text ""
+	line "ist wieder fit."
 	done
 
 SECTION "_GrewToLevelText", ROMX
 _GrewToLevelText::
 	text_ram wStringBuffer1
-	text " grew to"
-	line "level "
+	text " er-"
+	line "reicht Level "
 	text_decimal wCurPartyLevel, 1, 3
 	text "!"
 	text_sound SFX_DEX_FANFARE_50_79
@@ -170,8 +180,8 @@ _GrewToLevelText::
 SECTION "_CameToItsSensesText", ROMX
 _CameToItsSensesText::
 	text_ram wStringBuffer1
-	text " came"
-	line "to its senses."
+	text " kommt"
+	line "wieder zu sich."
 	done
 
 SECTION "_OakTimeWokeUpText", ROMX
@@ -179,26 +189,27 @@ _OakTimeWokeUpText::
 	text "………………………………"
 	line "………………………………"
 
-	para "Zzz… Hm? Wha…?"
-	line "You woke me up!"
+	para "Zzz… Hm? Was…?"
+	line "Du hast mich auf-"
+	cont "geweckt. Kannst du"
 
-	para "Will you check the"
-	line "clock for me?"
+	para "mir sagen, wie"
+	line "spät es ist?"
 	prompt
 
 SECTION "_OakTimeWhatTimeIsItText", ROMX
 _OakTimeWhatTimeIsItText::
-	text "What time is it?"
+	text "Wie spät ist es?"
 	done
 
 SECTION "_OakTimeHowManyMinutesText", ROMX
 _OakTimeHowManyMinutesText::
-	text "How many minutes?"
+	text "Wie viele Minuten?"
 	done
 
 SECTION "_OakTimeWhoaText", ROMX
 _OakTimeWhoaText::
-	text "Whoa!"
+	text "Wow!"
 	done
 
 SECTION "_OakTimeQuestionMarkText", ROMX
@@ -209,14 +220,15 @@ _OakTimeQuestionMarkText::
 SECTION "_OakTimeOversleptText", ROMX
 _OakTimeOversleptText::
 	text "!"
-	line "I overslept!"
+	line "Ich habe"
+	cont "verschlafen!"
 	done
 
 SECTION "_OakTimeYikesText", ROMX
 _OakTimeYikesText::
 	text "!"
-	line "Yikes! I over-"
-	cont "slept!"
+	line "Uah! Ich habe"
+	cont "verschlafen!"
 	done
 
 SECTION "ProfElmNappedText", ROMX
@@ -229,67 +241,70 @@ ProfElmNappedText::
 SECTION "_OakTimeSoDarkText", ROMX
 _OakTimeSoDarkText::
 	text "!"
-	line "No wonder it's so"
-	cont "dark!"
+	line "Kein Wunder, dass"
+	cont "es so dunkel ist!"
 	done
 
 SECTION "_OakTimeWhatDayIsItText", ROMX
 _OakTimeWhatDayIsItText::
-	text "What day is it?"
+	text "Welcher Tag ist"
+	line "heute?"
 	done
 
 SECTION "_OakTimeIsItText", ROMX
 _OakTimeIsItText::
-	text ", is it?"
+	text ", oder?"
 	done
 
 SECTION "_NothingToChooseText", ROMX
 _NothingToChooseText::
-	text "There's nothing to"
-	line "choose."
+	text "Es gibt nichts"
+	line "zum Auswählen."
 	prompt
 
 SECTION "_WhichSidePutOnText", ROMX
 _WhichSidePutOnText::
-	text "Which side do you"
-	line "want to put it on?"
+	text "Auf welcher Seite"
+	line "willst du sie"
+	cont "ablegen?"
 	done
 
 SECTION "_WhichSidePutAwayText", ROMX
 _WhichSidePutAwayText::
-	text "Which side do you"
-	line "want to put away?"
+	text "Welche Seite"
+	line "willst du ablegen?"
 	done
 
 SECTION "_PutAwayTheDecoText", ROMX
 _PutAwayTheDecoText::
-	text "Put away the"
-	line ""
 	text_ram wStringBuffer3
-	text "."
+	text ""
+	line "ablegen."
 	prompt
 
 SECTION "_NothingToPutAwayText", ROMX
 _NothingToPutAwayText::
-	text "There's nothing to"
-	line "put away."
+	text "Hier ist nichts"
+	line "zum Ablegen."
 	prompt
 
 SECTION "_SetUpTheDecoText", ROMX
 _SetUpTheDecoText::
-	text "Set up the"
-	line ""
+	text "Dekoriere dein"
+	line "Zimmer mit"
+	para ""
 	text_ram wStringBuffer3
 	text "."
 	prompt
 
 SECTION "_PutAwayAndSetUpText", ROMX
 _PutAwayAndSetUpText::
-	text "Put away the"
+	text "Entferne"
 	line ""
 	text_ram wStringBuffer3
+	text ""
 
-	para "and set up the"
+	para "und dekoriere mit"
 	line ""
 	text_ram wStringBuffer4
 	text "."
@@ -297,25 +312,27 @@ _PutAwayAndSetUpText::
 
 SECTION "_AlreadySetUpText", ROMX
 _AlreadySetUpText::
-	text "That's already set"
-	line "up."
+	text "Das ist schon"
+	line "in deinem Zimmer."
 	prompt
 
 SECTION "_LookTownMapText", ROMX
 _LookTownMapText::
-	text "It's the Town Map."
+	text "Das ist die Karte."
 	done
 
 SECTION "_LookPikachuPosterText", ROMX
 _LookPikachuPosterText::
-	text "It's a poster of a"
-	line "cute Pikachu."
+	text "Das ist ein Poster"
+	line "eines niedlichen"
+	cont "Pikachus."
 	done
 
 SECTION "_LookClefairyPosterText", ROMX
 _LookClefairyPosterText::
-	text "It's a poster of a"
-	line "cute Clefairy."
+	text "Das ist ein Poster"
+	line "eines niedlichen"
+	cont "Piepis."
 	done
 
 SECTION "_LookJigglypuffPosterText", ROMX
@@ -326,7 +343,7 @@ _LookJigglypuffPosterText::
 
 SECTION "_LookAdorableDecoText", ROMX
 _LookAdorableDecoText::
-	text "It's an adorable"
+	text "Sehr bezaubernd:"
 	line ""
 	text_ram wStringBuffer3
 	text "."
@@ -342,72 +359,81 @@ DecoConsoleText::
 
 SECTION "_LookGiantDecoText", ROMX
 _LookGiantDecoText::
-	text "A giant doll! It's"
-	line "fluffy and cuddly."
+	text "Eine Riesenpuppe!"
+	line "Sie ist flauschig"
+	cont "und weich."
 	done
 
 SECTION "_MomHiHowAreYouText", ROMX
 _MomHiHowAreYouText::
 	text "Hi, <PLAYER>!"
-	line "How are you?"
+	line "Wie geht es dir?"
 	prompt
 
 SECTION "_MomFoundAnItemText", ROMX
 _MomFoundAnItemText::
-	text "I found a useful"
-	line "item shopping, so"
+	text "Ich habe beim"
+	line "Einkaufen ein"
+	cont "nützliches Item"
+	cont "gefunden und"
 	prompt
 
 SECTION "_MomBoughtWithYourMoneyText", ROMX
 _MomBoughtWithYourMoneyText::
-	text "I bought it with"
-	line "your money. Sorry!"
+	text "ich habe dieses"
+	line "dekorative Item"
+	para "von deinem Geld"
+	line "gekauft!"
 	prompt
 
 SECTION "_MomItsInPCText", ROMX
 _MomItsInPCText::
-	text "It's in your PC."
-	line "You'll like it!"
+	text "Es ist in deinem"
+	line "PC. Es wird dir"
+	cont "gefallen!"
 	done
 
 SECTION "_MomFoundADollText", ROMX
 _MomFoundADollText::
-	text "While shopping"
-	line "today, I saw this"
-	cont "adorable doll, so"
+	text "Beim Einkaufen"
+	line "heute habe ich"
+	cont "eine tolle Puppe"
+	cont "gesehen und"
 	prompt
 
 SECTION "_MomItsInYourRoomText", ROMX
 _MomItsInYourRoomText::
-	text "It's in your room."
-	line "You'll love it!"
+	text "Sie ist in deinem"
+	line "Zimmer. Du wirst"
+	cont "sie lieben!"
 	done
 
 SECTION "_MonWasSentToText", ROMX
 _MonWasSentToText::
 	text_ram wPlayerTrademonSpeciesName
-	text " was"
-	line "sent to "
+	text " ge-"
+	line "sendet an "
 	text_ram wOTTrademonSenderName
 	text "."
 	done
 
 SECTION "_BidsFarewellToMonText", ROMX
 _BidsFarewellToMonText::
-	text_ram wOTTrademonSenderName
-	text " bids"
-	line "farewell to"
+	text "Lebwohl,"
+	line ""
+	text_ram wOTTrademonSpeciesName
 	done
 
 SECTION "_MonNameBidsFarewellText", ROMX
 _MonNameBidsFarewellText::
-	text_ram wOTTrademonSpeciesName
+	text "sagt "
+	text_ram wOTTrademonSenderName
 	text "."
 	done
 
 SECTION "_TakeGoodCareOfMonText", ROMX
 _TakeGoodCareOfMonText::
-	text "Take good care of"
+	text "Kümmere dich um"
 	line ""
 	text_ram wOTTrademonSpeciesName
 	text "."
@@ -415,18 +441,18 @@ _TakeGoodCareOfMonText::
 
 SECTION "_ForYourMonSendsText", ROMX
 _ForYourMonSendsText::
-	text "For "
+	text "Für "
 	text_ram wPlayerTrademonSenderName
-	text "'s"
+	text "s"
 	line ""
 	text_ram wPlayerTrademonSpeciesName
-	text ","
 	done
 
 SECTION "_OTSendsText", ROMX
 _OTSendsText::
+	text "überträgt "
 	text_ram wOTTrademonSenderName
-	text " sends"
+	text ""
 	line ""
 	text_ram wOTTrademonSpeciesName
 	text "."
@@ -435,16 +461,16 @@ _OTSendsText::
 SECTION "_WillTradeText", ROMX
 _WillTradeText::
 	text_ram wOTTrademonSenderName
-	text " will"
-	line "trade "
+	text " tauscht"
+	line ""
 	text_ram wOTTrademonSpeciesName
 	text_end
 
 SECTION "_ForYourMonWillTradeText", ROMX
 _ForYourMonWillTradeText::
-	text "for "
+	text "gegen "
 	text_ram wPlayerTrademonSenderName
-	text "'s"
+	text "s"
 	line ""
 	text_ram wPlayerTrademonSpeciesName
 	text "."
@@ -459,23 +485,23 @@ _OPT_IntroText1::
 
 SECTION "_OPT_IntroText2", ROMX
 _OPT_IntroText2::
-	line "#mon Talk!"
+	line "#mon-Talk!"
 	done
 
 SECTION "_OPT_IntroText3", ROMX
 _OPT_IntroText3::
-	line "With me, Mary!"
+	line "Mit Margit!"
 	done
 
 SECTION "_OPT_OakText1", ROMX
 _OPT_OakText1::
-	line "Oak: "
+	line "Eich: "
 	text_ram wMonOrItemNameBuffer
 	done
 
 SECTION "_OPT_OakText2", ROMX
 _OPT_OakText2::
-	line "may be seen around"
+	line "wurde gesehen auf"
 	done
 
 SECTION "_OPT_OakText3", ROMX
@@ -487,169 +513,168 @@ _OPT_OakText3::
 
 SECTION "_OPT_MaryText1", ROMX
 _OPT_MaryText1::
-	line "Mary: "
+	line "Margit: "
 	text_ram wStringBuffer1
-	text "'s"
 	done
 
 SECTION "OPT_SweetAdorably", ROMX
 OPT_SweetAdorably::
-	line "sweet and adorably"
+	line "Wie bezaubernd."
 	done
 
 SECTION "OPT_WigglySlickly", ROMX
 OPT_WigglySlickly::
-	line "wiggly and slickly"
+	line "Wie smart."
 	done
 
 SECTION "OPT_AptlyNamed", ROMX
 OPT_AptlyNamed::
-	line "aptly named and"
+	line "Wie reizend."
 	done
 
 SECTION "OPT_UndeniablyKindOf", ROMX
 OPT_UndeniablyKindOf::
-	line "undeniably kind of"
+	line "Wie freundlich."
 	done
 
 SECTION "OPT_Unbearably", ROMX
 OPT_Unbearably::
-	line "so, so unbearably"
+	line "Nicht zu ertragen…"
 	done
 
 SECTION "OPT_WowImpressively", ROMX
 OPT_WowImpressively::
-	line "wow, impressively"
+	line "Wow, faszinierend."
 	done
 
 SECTION "OPT_AlmostPoisonously", ROMX
 OPT_AlmostPoisonously::
-	line "almost poisonously"
+	line "Fast giftig."
 	done
 
 SECTION "OPT_Sensually", ROMX
 OPT_Sensually::
-	line "ooh, so sensually"
+	line "Wie einfühlsam."
 	done
 
 SECTION "OPT_Mischievously", ROMX
 OPT_Mischievously::
-	line "so mischievously"
+	line "So schelmisch."
 	done
 
 SECTION "OPT_Topically", ROMX
 OPT_Topically::
-	line "so very topically"
+	line "Sehr aktuell."
 	done
 
 SECTION "OPT_Addictively", ROMX
 OPT_Addictively::
-	line "sure addictively"
+	line "Suchterregend."
 	done
 
 SECTION "OPT_LooksInWater", ROMX
 OPT_LooksInWater::
-	line "looks in water is"
+	line "Schaut ins Wasser."
 	done
 
 SECTION "OPT_EvolutionMustBe", ROMX
 OPT_EvolutionMustBe::
-	line "evolution must be"
+	line "Entwicklung, ja."
 	done
 
 SECTION "OPT_Provocatively", ROMX
 OPT_Provocatively::
-	line "provocatively"
+	line "Wie provozierend."
 	done
 
 SECTION "OPT_FlippedOut", ROMX
 OPT_FlippedOut::
-	line "so flipped out and"
+	line "Wie ausgeflippt."
 	done
 
 SECTION "OPT_HeartMeltingly", ROMX
 OPT_HeartMeltingly::
-	line "heart-meltingly"
+	line "Wie wunderbar."
 	done
 
 SECTION "OPT_Cute", ROMX
 OPT_Cute::
-	line "cute."
+	line "Wie niedlich."
 	done
 
 SECTION "OPT_Weird", ROMX
 OPT_Weird::
-	line "weird."
+	line "Wie verrückt."
 	done
 
 SECTION "OPT_Pleasant", ROMX
 OPT_Pleasant::
-	line "pleasant."
+	line "Wie angenehm."
 	done
 
 SECTION "OPT_BoldSortOf", ROMX
 OPT_BoldSortOf::
-	line "bold, sort of."
+	line "Wie dreist."
 	done
 
 SECTION "OPT_Frightening", ROMX
 OPT_Frightening::
-	line "frightening."
+	line "Furchterregend."
 	done
 
 SECTION "OPT_SuaveDebonair", ROMX
 OPT_SuaveDebonair::
-	line "suave & debonair!"
+	line "Wie weltmännisch!"
 	done
 
 SECTION "OPT_Powerful", ROMX
 OPT_Powerful::
-	line "powerful."
+	line "Wie stark."
 	done
 
 SECTION "OPT_Exciting", ROMX
 OPT_Exciting::
-	line "exciting."
+	line "Wie aufregend."
 	done
 
 SECTION "OPT_Groovy", ROMX
 OPT_Groovy::
-	line "groovy!"
+	line "Jetzt!"
 	done
 
 SECTION "OPT_Inspiring", ROMX
 OPT_Inspiring::
-	line "inspiring."
+	line "Wie inspirierend."
 	done
 
 SECTION "OPT_Friendly", ROMX
 OPT_Friendly::
-	line "friendly."
+	line "Wie freundlich."
 	done
 
 SECTION "OPT_HotHotHot", ROMX
 OPT_HotHotHot::
-	line "hot, hot, hot!"
+	line "Wie interessant!"
 	done
 
 SECTION "OPT_Stimulating", ROMX
 OPT_Stimulating::
-	line "stimulating."
+	line "Wie anregend."
 	done
 
 SECTION "OPT_Guarded", ROMX
 OPT_Guarded::
-	line "guarded."
+	line "Gut geschützt."
 	done
 
 SECTION "OPT_Lovely", ROMX
 OPT_Lovely::
-	line "lovely."
+	line "Wie lieblich."
 	done
 
 SECTION "OPT_Speedy", ROMX
 OPT_Speedy::
-	line "speedy."
+	line "Wie rasant."
 	done
 
 SECTION "_OPT_PokemonChannelText", ROMX
@@ -661,7 +686,7 @@ _OPT_PokemonChannelText::
 
 SECTION "_BenIntroText1", ROMX
 _BenIntroText1::
-	line "Ben: #mon Music"
+	line "Ben: #mon-Musik"
 	done
 
 SECTION "_BenIntroText2", ROMX
@@ -686,9 +711,9 @@ _FernIntroText2::
 
 SECTION "_BenFernText1", ROMX
 _BenFernText1::
-	line "Today's "
+	line "Es ist "
 	text_today
-	text ","
+	text "!"
 	done
 
 SECTION "_BenFernText2A", ROMX
@@ -698,49 +723,49 @@ _BenFernText2A::
 
 SECTION "_BenFernText2B", ROMX
 _BenFernText2B::
-	line "so chill out to"
+	line "Entspann dich beim"
 	done
 
 SECTION "_BenFernText3A", ROMX
 _BenFernText3A::
-	line "#mon March!"
+	line "#mon-Marsch!"
 	done
 
 SECTION "_BenFernText3B", ROMX
 _BenFernText3B::
-	line "#mon Lullaby!"
+	line "PKMN-Schlaflied!"
 	done
 
 ; Lucky Channel
 
 SECTION "_LC_Text1", ROMX
 _LC_Text1::
-	line "Reed: Yeehaw! How"
+	line "Bastian: Yeah! Wie"
 	done
 
 SECTION "_LC_Text2", ROMX
 _LC_Text2::
-	line "y'all doin' now?"
+	line "geht es euch nun?"
 	done
 
 SECTION "_LC_Text3", ROMX
 _LC_Text3::
-	line "Whether you're up"
+	line "Geht es gut, oder"
 	done
 
 SECTION "_LC_Text4", ROMX
 _LC_Text4::
-	line "or way down low,"
+	line "geht es nicht,"
 	done
 
 SECTION "_LC_Text5", ROMX
 _LC_Text5::
-	line "don't you miss the"
+	line "die Glückszahlshow"
 	done
 
 SECTION "_LC_Text6", ROMX
 _LC_Text6::
-	line "Lucky Number Show!"
+	line "ist immer Pflicht!"
 	done
 
 SECTION "_LC_Text7", ROMX
@@ -750,7 +775,7 @@ _LC_Text7::
 
 SECTION "_LC_Text8", ROMX
 _LC_Text8::
-	line "Number is "
+	line ""
 	text_pause
 	text_ram wStringBuffer1
 	text "!"
@@ -758,44 +783,44 @@ _LC_Text8::
 
 SECTION "_LC_Text9", ROMX
 _LC_Text9::
-	line "I'll repeat that!"
+	line "Ich wiederhole!"
 	done
 
 SECTION "_LC_Text10", ROMX
 _LC_Text10::
-	line "Match it and go to"
+	line "Gewonnen? Kommt"
 	done
 
 SECTION "_LC_Text11", ROMX
 _LC_Text11::
-	line "the Radio Tower!"
+	line "zum Radioturm!"
 	done
 
 SECTION "_LC_DragText1", ROMX
 _LC_DragText1::
-	line "…Repeating myself"
+	line "…Die Wiederholung"
 	done
 
 SECTION "_LC_DragText2", ROMX
 _LC_DragText2::
-	line "gets to be a drag…"
+	line "verzögert alles…"
 	done
 
 ; Places and People
 
 SECTION "_PnP_Text1", ROMX
 _PnP_Text1::
-	line "Places and People!"
+	line "Orte und Personen!"
 	done
 
 SECTION "_PnP_Text2", ROMX
 _PnP_Text2::
-	line "Brought to you by"
+	line "Moderiert von"
 	done
 
 SECTION "_PnP_Text3", ROMX
 _PnP_Text3::
-	line "me, DJ Lily!"
+	line "DJ Lilly!"
 	done
 
 SECTION "_PnP_Text4", ROMX
@@ -808,82 +833,82 @@ _PnP_Text4::
 
 SECTION "_PnP_cute", ROMX
 _PnP_cute::
-	line "is cute."
+	line "ist niedlich."
 	done
 
 SECTION "_PnP_lazy", ROMX
 _PnP_lazy::
-	line "is sort of lazy."
+	line "irgendwie faul."
 	done
 
 SECTION "_PnP_happy", ROMX
 _PnP_happy::
-	line "is always happy."
+	line "ist immer heiter."
 	done
 
 SECTION "_PnP_noisy", ROMX
 _PnP_noisy::
-	line "is quite noisy."
+	line "ist ziemlich laut."
 	done
 
 SECTION "_PnP_precocious", ROMX
 _PnP_precocious::
-	line "is precocious."
+	line "ist frühreif."
 	done
 
 SECTION "_PnP_bold", ROMX
 _PnP_bold::
-	line "is somewhat bold."
+	line "ist wohl dreist."
 	done
 
 SECTION "_PnP_picky", ROMX
 _PnP_picky::
-	line "is too picky!"
+	line "ist zu wählerisch!"
 	done
 
 SECTION "_PnP_sortofok", ROMX
 _PnP_sortofok::
-	line "is sort of OK."
+	line "ist O.K."
 	done
 
 SECTION "_PnP_soso", ROMX
 _PnP_soso::
-	line "is just so-so."
+	line "geht so."
 	done
 
 SECTION "_PnP_great", ROMX
 _PnP_great::
-	line "is actually great."
+	line "ist großartig."
 	done
 
 SECTION "_PnP_mytype", ROMX
 _PnP_mytype::
-	line "is just my type."
+	line "ist mein Typ."
 	done
 
 SECTION "_PnP_cool", ROMX
 _PnP_cool::
-	line "is so cool, no?"
+	line "ist so cool, oder?"
 	done
 
 SECTION "_PnP_inspiring", ROMX
 _PnP_inspiring::
-	line "is inspiring!"
+	line "ist inspirierend!"
 	done
 
 SECTION "_PnP_weird", ROMX
 _PnP_weird::
-	line "is kind of weird."
+	line "ist verrückt."
 	done
 
 SECTION "_PnP_rightforme", ROMX
 _PnP_rightforme::
-	line "is right for me?"
+	line "ist genau richtig?"
 	done
 
 SECTION "_PnP_odd", ROMX
 _PnP_odd::
-	line "is definitely odd!"
+	line "ist merkwürdig!"
 	done
 
 SECTION "_PnP_Text5", ROMX
@@ -894,7 +919,7 @@ _PnP_Text5::
 
 SECTION "_RocketRadioText1", ROMX
 _RocketRadioText1::
-	line "… …Ahem, we are"
+	line "… …Ähm, wir sind"
 	done
 
 SECTION "_RocketRadioText2", ROMX
@@ -904,65 +929,65 @@ _RocketRadioText2::
 
 SECTION "_RocketRadioText3", ROMX
 _RocketRadioText3::
-	line "After three years"
+	line "Nach drei Jahren"
 	done
 
 SECTION "_RocketRadioText4", ROMX
 _RocketRadioText4::
-	line "of preparation, we"
+	line "Vorbereitung sind"
 	done
 
 SECTION "_RocketRadioText5", ROMX
 _RocketRadioText5::
-	line "have risen again"
+	line "wir bereit für"
 	done
 
 SECTION "_RocketRadioText6", ROMX
 _RocketRadioText6::
-	line "from the ashes!"
+	line "unser Comeback!"
 	done
 
 SECTION "_RocketRadioText7", ROMX
 _RocketRadioText7::
 	line "Giovanni! "
 	text_pause
-	text "Can you"
+	text "Hörst"
 	done
 
 SECTION "_RocketRadioText8", ROMX
 _RocketRadioText8::
-	line "hear?"
+	line "du uns?"
 	text_pause
-	text " We did it!"
+	text " Geschafft!"
 	done
 
 SECTION "_RocketRadioText9", ROMX
 _RocketRadioText9::
 	line ""
 	text_pause
-	text "Where is our boss?"
+	text "Wo ist unser Boss?"
 	done
 
 SECTION "_RocketRadioText10", ROMX
 _RocketRadioText10::
 	line ""
 	text_pause
-	text "Is he listening?"
+	text "Hört er zu?"
 	done
 
 SECTION "_BuenaRadioText1", ROMX
 _BuenaRadioText1::
-	line "Buena: Buena here!"
+	line "Buena: Buena hier!"
 	done
 
 SECTION "_BuenaRadioText2", ROMX
 _BuenaRadioText2::
-	line "Today's password!"
+	line "Heutiges Passwort!"
 	done
 
 SECTION "_BuenaRadioText3", ROMX
 _BuenaRadioText3::
-	line "Let me think… It's"
+	line "Moment… es lautet"
 	done
 
 SECTION "_BuenaRadioText4", ROMX
@@ -974,67 +999,67 @@ _BuenaRadioText4::
 
 SECTION "_BuenaRadioText5", ROMX
 _BuenaRadioText5::
-	line "Don't forget it!"
+	line "Vergesst es nicht!"
 	done
 
 SECTION "_BuenaRadioText6", ROMX
 _BuenaRadioText6::
-	line "I'm in Goldenrod's"
+	line "Ich bin im Radio-"
 	done
 
 SECTION "_BuenaRadioText7", ROMX
 _BuenaRadioText7::
-	line "Radio Tower!"
+	line "Turm von Dukatia!"
 	done
 
 SECTION "_BuenaRadioMidnightText1", ROMX
 _BuenaRadioMidnightText1::
-	line "Buena: Oh my…"
+	line "Buena: Oh, es ist…"
 	done
 
 SECTION "_BuenaRadioMidnightText2", ROMX
 _BuenaRadioMidnightText2::
-	line "It's midnight! I"
+	line "Mitternacht!"
 	done
 
 SECTION "_BuenaRadioMidnightText3", ROMX
 _BuenaRadioMidnightText3::
-	line "have to shut down!"
+	line "Ich muss aufhören!"
 	done
 
 SECTION "_BuenaRadioMidnightText4", ROMX
 _BuenaRadioMidnightText4::
-	line "Thanks for tuning"
+	line "Danke, Zuhörer!"
 	done
 
 SECTION "_BuenaRadioMidnightText5", ROMX
 _BuenaRadioMidnightText5::
-	line "in to the end! But"
+	line "Das Ende naht!"
 	done
 
 SECTION "_BuenaRadioMidnightText6", ROMX
 _BuenaRadioMidnightText6::
-	line "don't stay up too"
+	line "Bleibt nicht zu"
 	done
 
 SECTION "_BuenaRadioMidnightText7", ROMX
 _BuenaRadioMidnightText7::
-	line "late! Presented to"
+	line "lange auf! Euer"
 	done
 
 SECTION "_BuenaRadioMidnightText8", ROMX
 _BuenaRadioMidnightText8::
-	line "you by DJ Buena!"
+	line "DJ Buena!"
 	done
 
 SECTION "_BuenaRadioMidnightText9", ROMX
 _BuenaRadioMidnightText9::
-	text "I'm outta here!"
+	line "Ich muss weg!"
 	done
 
 SECTION "_BuenaRadioMidnightText10", ROMX
 _BuenaRadioMidnightText10::
-	text "…"
+	line "…"
 	done
 
 SECTION "_BuenaOffTheAirText", ROMX
@@ -1053,35 +1078,39 @@ Text_EnemyUsed::
 SECTION "Text_EnemyUsedOn", ROMX
 Text_EnemyUsedOn::
 	text "<ENEMY>"
-	line "used "
+	line "setzt "
 	text_ram wMonOrItemNameBuffer
-	cont "on "
+	text ""
+	cont "bei"
+	para ""
 	text_ram wEnemyMonNickname
-	text "!"
+	text ""
+	line "ein!"
 	prompt
 
 SECTION "_AskFloorElevatorText", ROMX
 _AskFloorElevatorText::
-	text "Which floor?"
+	text "Welcher Stock?"
 	done
 
 SECTION "_BugCatchingContestTimeUpText", ROMX
 _BugCatchingContestTimeUpText::
-	text "Announcer: BEEEP!"
+	text "Sprecher: BIEP!"
 
-	para "Time's up!"
+	para "Die Zeit ist um!"
 	done
 
 SECTION "_BugCatchingContestIsOverText", ROMX
 _BugCatchingContestIsOverText::
-	text "Announcer: The"
-	line "Contest is over!"
+	text "Sprecher: Der"
+	line "Wettkampf ist"
+	cont "vorbei!"
 	done
 
 SECTION "_RepelWoreOffText", ROMX
 _RepelWoreOffText::
-	text "Repel's effect"
-	line "wore off."
+	text "Schutz wirkt"
+	line "nicht mehr."
 	done
 
 SECTION "UseAnotherRepelText", ROMX
@@ -1094,48 +1123,50 @@ UseAnotherRepelText::
 
 SECTION "_JustSawSomeRareMonText", ROMX
 _JustSawSomeRareMonText::
-	text "I just saw some"
-	line "rare "
+	text "Ich sah seltene"
+	line ""
 	text_ram wStringBuffer1
-	text " in"
+	text " bei"
 	cont ""
 	text_ram wStringBuffer2
 	text "."
 
-	para "I'll call you if I"
-	line "see another rare"
-	cont "#mon, OK?"
+	para "Ich rufe an, wenn"
+	line "ich ein anderes"
+	cont "seltenes #mon"
+	cont "sehe, in Ordnung?"
 	prompt
 
 SECTION "_SavingRecordText", ROMX
 _SavingRecordText::
-	text "Saving record…"
-	line "Don't turn off!"
+	text "Speichern…"
+	line ""
 	done
 
 SECTION "_NoCoinsText", ROMX
 _NoCoinsText::
-	text "You have no coins."
+	text "Du hast keine"
+	line "Münzen."
 	prompt
 
 SECTION "_NoCoinCaseText", ROMX
 _NoCoinCaseText::
-	text "You don't have a"
-	line "Coin Case."
+	text "Du hast keinen"
+	line "Münzkorb."
 	prompt
 
 SECTION "_NPCTradeCableText", ROMX
 _NPCTradeCableText::
-	text "OK, connect the"
-	line "Game Link Cable."
+	text "O.K., benutze das"
+	line "Game Link-Kabel."
 	prompt
 
 SECTION "Text_NPCTraded", ROMX
 Text_NPCTraded::
-	text "<PLAYER> traded"
+	text "<PLAYER> tauscht"
 	line ""
 	text_ram wMonOrItemNameBuffer
-	text " for"
+	text " gegen"
 	cont ""
 	text_ram wStringBuffer2
 	text "."
@@ -1149,140 +1180,150 @@ _NPCTradeFanfareText::
 
 SECTION "_NPCTradeIntroText1", ROMX
 _NPCTradeIntroText1::
-	text "I collect #mon."
-	line "Do you have"
+	text "Ich sammle #-"
+	line "mon. Hast du ein"
 	cont ""
 	text_ram wStringBuffer1
 	text "?"
 
-	para "Want to trade it"
-	line "for my "
+	para "Möchtest du es"
+	line "gegen mein"
+
+	para ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "tauschen?"
 	done
 
 SECTION "_NPCTradeCancelText1", ROMX
 _NPCTradeCancelText1::
-	text "You don't want to"
-	line "trade? Aww…"
+	text "Du möchtest nicht"
+	line "tauschen? Schade…"
 	done
 
 SECTION "_NPCTradeWrongText1", ROMX
 _NPCTradeWrongText1::
-	text "Huh? That's not"
+	text "Häh? Das ist kein"
 	line ""
 	text_ram wStringBuffer1
 	text "."
-	cont "What a letdown…"
+	cont "Wie enttäuschend…"
 	done
 
 SECTION "_NPCTradeCompleteText1", ROMX
 _NPCTradeCompleteText1::
-	text "Yay! I got myself"
+	text "Yo! Ich habe mir"
 	line ""
 	text_ram wStringBuffer1
-	text "!"
-	cont "Thanks!"
+	text ""
+	cont "besorgt! Danke!"
 	done
 
 SECTION "_NPCTradeAfterText1", ROMX
 _NPCTradeAfterText1::
-	text "Hi, how's my old"
-	line ""
+	text "Hi, wie geht es"
+	line "meinem "
 	text_ram wStringBuffer2
-	text " doing?"
+	text "?"
 	done
 
 SECTION "_NPCTradeIntroText2", ROMX
 _NPCTradeIntroText2::
-	text "Hi, I'm looking"
-	line "for this #mon."
+	text "Hi, ich suche"
+	line "ein #mon."
 
-	para "If you have"
+	para "Wenn du ein"
 	line ""
 	text_ram wStringBuffer1
-	text ", would"
+	text " hast,"
 
-	para "you trade it for"
-	line "my "
+	para "tauschst du es"
+	line "gegen mein"
+	cont ""
 	text_ram wStringBuffer2
 	text "?"
 	done
 
 SECTION "_NPCTradeCancelText2", ROMX
 _NPCTradeCancelText2::
-	text "You don't have"
-	line "one either?"
+	text "Du hast auch"
+	line "keines?"
 
-	para "Gee, that's really"
-	line "disappointing…"
+	para "Das ist wirklich"
+	line "enttäuschend…"
 	done
 
 SECTION "_NPCTradeWrongText2", ROMX
 _NPCTradeWrongText2::
-	text "You don't have"
+	text "Du hast kein"
 	line ""
 	text_ram wStringBuffer1
-	text "? That's"
-	cont "too bad, then."
+	text "? Das"
+	cont "ist schade, na ja."
 	done
 
 SECTION "_NPCTradeCompleteText2", ROMX
 _NPCTradeCompleteText2::
-	text "Great! Thank you!"
+	text "Großartig! Danke!"
 
-	para "I finally got"
-	line ""
+	para "Endlich habe ich"
+	line "ein "
 	text_ram wStringBuffer1
 	text "."
 	done
 
 SECTION "_NPCTradeAfterText2", ROMX
 _NPCTradeAfterText2::
-	text "Hi! The "
+	text "Dem "
 	text_ram wMonOrItemNameBuffer
-	line "you traded me is"
-	cont "doing great!"
+	text ","
+	line "das du mit mir"
+	cont "getauscht hast,"
+	cont "geht es gut!"
 	done
 
 SECTION "_NPCTradeIntroText3", ROMX
 _NPCTradeIntroText3::
 	text_ram wMonOrItemNameBuffer
-	text "'s cute,"
-	line "but I don't have"
+	text " ist"
+	line "niedlich, aber ich"
 
-	para "it. Do you have"
-	line ""
+	para "habe keines. Hast"
+	line "du ein "
 	text_ram wStringBuffer1
 	text "?"
 
-	para "Want to trade it"
-	line "for my "
+	para "Möchtest du es"
+	line "gegen mein"
+
+	para ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "tauschen?"
 	done
 
 SECTION "_NPCTradeCancelText3", ROMX
 _NPCTradeCancelText3::
-	text "You don't want to"
-	line "trade? Oh, darn…"
+	text "Du möchtest nicht"
+	line "tauschen? Schade…"
 	done
 
 SECTION "_NPCTradeWrongText3", ROMX
 _NPCTradeWrongText3::
-	text "That's not"
+	text "Das ist kein"
 	line ""
 	text_ram wStringBuffer1
 	text "."
 
-	para "Please trade with"
-	line "me if you get one."
+	para "Komm wieder, wenn"
+	line "du tauschen"
+	cont "möchtest."
 	done
 
 SECTION "_NPCTradeCompleteText3", ROMX
 _NPCTradeCompleteText3::
-	text "Wow! Thank you!"
-	line "I always wanted"
+	text "Danke! Ich wollte"
+	line "immer schon ein"
 	cont ""
 	text_ram wMonOrItemNameBuffer
 	text "!"
@@ -1290,275 +1331,292 @@ _NPCTradeCompleteText3::
 
 SECTION "_NPCTradeAfterText3", ROMX
 _NPCTradeAfterText3::
-	text "How is that"
-	line ""
+	text "Wie geht es dem"
+	line "getauschten"
+	cont ""
 	text_ram wStringBuffer2
-	text " I"
-	cont "traded you doing?"
+	text "?"
 
-	para "Your "
+	para "Dein "
 	text_ram wMonOrItemNameBuffer
-	text "'s"
-	line "so cute!"
+	text ""
+	line "ist so niedlich!"
 	done
 
 SECTION "_NPCTradeCompleteText4", ROMX
 _NPCTradeCompleteText4::
-	text "Uh? What happened?"
+	text "Was ist passiert?"
 	done
 
 SECTION "_NPCTradeAfterText4", ROMX
 _NPCTradeAfterText4::
-	text "Trading is so odd…"
+	text "Tauschen ist"
+	line "seltsam…"
 
-	para "I still have a lot"
-	line "to learn about it."
+	para "Ich muss noch viel"
+	line "darüber lernen."
 	done
 
 SECTION "_MomLeavingText1", ROMX
 _MomLeavingText1::
-	text "Wow, that's a cute"
-	line "#mon."
+	text "Das ist ein nied-"
+	line "liches #mon."
 
-	para "Where did you get"
-	line "it?"
+	para "Wo hast du es"
+	line "her?"
 
 	para "…"
 
-	para "So, you're leaving"
-	line "on an adventure…"
+	para "Du beginnst also"
+	line "ein Abenteuer…"
 
-	para "OK!"
-	line "I'll help too."
+	para "O.K.! Auch ich"
+	line "werde dir helfen."
 
-	para "But what can I do"
-	line "for you?"
+	para "Aber was kann ich"
+	line "für dich tun?"
 
-	para "I know! I'll save"
-	line "money for you."
+	para "Ich weiß! Ich"
+	line "werde für dich"
+	cont "sparen."
 
-	para "On a long journey,"
-	line "money's important."
+	para "Auf einer langen"
+	line "Reise ist Geld"
+	cont "sehr wichtig."
 
-	para "Do you want me to"
-	line "save your money?"
+	para "Soll ich dein"
+	line "Geld sparen?"
 	done
 
 SECTION "_MomLeavingText2", ROMX
 _MomLeavingText2::
-	text "OK, I'll take care"
-	line "of your money."
+	text "O.K., ich verwalte"
+	line "deine Ersparnisse."
 
 	para "………………"
 	prompt
 
 SECTION "_MomLeavingText3", ROMX
 _MomLeavingText3::
-	text "Be careful."
+	text "Sei auf der Hut."
 
-	para "#mon are your"
-	line "friends. You need"
-	cont "to work as a team."
+	para "#mon sind"
+	line "deine Kameraden."
+	cont "Ihr müsst als Team"
+	cont "auftreten."
 
-	para "Now, go on!"
+	para "Also mach's gut!"
 	done
 
 SECTION "_MomIsThisAboutYourMoneyText", ROMX
 _MomIsThisAboutYourMoneyText::
-	text "Hi! Welcome home!"
-	line "You're trying very"
-	cont "hard, I see."
+	text "Hi! Willkommen!"
+	line "Ich sehe, du"
+	cont "bemühst dich sehr."
 
-	para "I've kept your"
-	line "room tidy."
+	para "Ich habe dein"
+	line "Zimmer aufgeräumt."
 
-	para "Or is this about"
-	line "your money?"
+	para "Ist es wegen"
+	line "deinem Geld?"
 	done
 
 SECTION "_MomBankWhatDoYouWantToDoText", ROMX
 _MomBankWhatDoYouWantToDoText::
-	text "What do you want"
-	line "to do?"
+	text "Was wirst du"
+	line "tun?"
 	done
 
 SECTION "_MomStoreMoneyText", ROMX
 _MomStoreMoneyText::
-	text "How much do you"
-	line "want to save?"
+	text "Wie viel möchtest"
+	line "du sparen?"
 	done
 
 SECTION "_MomTakeMoneyText", ROMX
 _MomTakeMoneyText::
-	text "How much do you"
-	line "want to take?"
+	text "Wie viel möchtest"
+	line "du mitnehmen?"
 	done
 
 SECTION "_MomSaveMoneyText", ROMX
 _MomSaveMoneyText::
-	text "Do you want to"
-	line "save some money?"
+	text "Möchtest du weiter"
+	line "Geld sparen?"
 	done
 
 SECTION "_MomHaventSavedThatMuchText", ROMX
 _MomHaventSavedThatMuchText::
-	text "You haven't saved"
-	line "that much."
+	text "So viel hast du"
+	line "nicht gespart."
 	prompt
 
 SECTION "_MomNotEnoughRoomInWalletText", ROMX
 _MomNotEnoughRoomInWalletText::
-	text "You can't take"
-	line "that much."
+	text "So viel kannst du"
+	line "nicht mitnehmen."
 	prompt
 
 SECTION "_MomInsufficientFundsInWalletText", ROMX
 _MomInsufficientFundsInWalletText::
-	text "You don't have"
-	line "that much."
+	text "So viel hast"
+	line "du nicht."
 	prompt
 
 SECTION "_MomNotEnoughRoomInBankText", ROMX
 _MomNotEnoughRoomInBankText::
-	text "You can't save"
-	line "that much."
+	text "So viel kannst"
+	line "du nicht sparen."
 	prompt
 
 SECTION "_MomStartSavingMoneyText", ROMX
 _MomStartSavingMoneyText::
-	text "OK, I'll save your"
-	line "money. Trust me!"
+	text "O.K., ich spare"
+	line "für dich! Traue"
+	cont "mir!"
 
-	para "<PLAYER>, stick"
-	line "with it!"
+	para "<PLAYER>, bleib"
+	line "dabei!"
 	done
 
 SECTION "_MomStoredMoneyText", ROMX
 _MomStoredMoneyText::
-	text "Your money's safe"
-	line "here! Get going!"
+	text "Dein Geld ist hier"
+	line "sicher! Tschüss!"
 	done
 
 SECTION "_MomTakenMoneyText", ROMX
 _MomTakenMoneyText::
-	text "<PLAYER>, don't"
-	line "give up!"
+	text "<PLAYER>, nur nicht"
+	line "aufgeben!"
 	done
 
 SECTION "_MomJustDoWhatYouCanText", ROMX
 _MomJustDoWhatYouCanText::
-	text "Just do what"
-	line "you can."
+	text "Gib immer dein"
+	line "Bestes."
 	done
 
 SECTION "_DayCareManIntroText", ROMX
 _DayCareManIntroText::
-	text "I'm the Day-Care"
-	line "Man. Want me to"
-	cont "raise a #mon?"
+	text "Ich bin der"
+	line "Pensionsleiter."
+	cont "Soll ich eines"
+	cont "deiner #mon"
+	cont "aufziehen?"
 	done
 
 SECTION "_DayCareManIntroEggText", ROMX
 _DayCareManIntroEggText::
-	text "I'm the Day-Care"
-	line "Man. Do you know"
-	cont "about Eggs?"
+	text "Ich bin der"
+	line "Pensionsleiter."
+	cont "Kennst du dich"
+	cont "mit Eiern aus?"
 
-	para "I was raising"
-	line "#mon with my"
-	cont "wife, you see."
+	para "Ich habe #mon"
+	line "mit meiner"
+	cont "Frau aufgezogen."
 
-	para "We were shocked to"
-	line "find an Egg!"
+	para "Wir waren ent-"
+	line "setzt, als wir ein"
+	cont "Ei fanden!"
 
-	para "How incredible is"
-	line "that?"
+	para "Das ist doch"
+	line "unglaublich, oder?"
 
-	para "So, want me to"
-	line "raise a #mon?"
+	para "Soll ich ein"
+	line "#mon aufziehen?"
 	done
 
 SECTION "_DayCareLadyIntroText", ROMX
 _DayCareLadyIntroText::
-	text "I'm the Day-Care"
-	line "Lady."
+	text "Ich bin die"
+	line "Pensionsleiterin."
 
-	para "Should I raise a"
-	line "#mon for you?"
+	para "Soll ich eines"
+	line "deiner #mon"
+	cont "aufziehen?"
 	done
 
 SECTION "_DayCareLadyIntroEggText", ROMX
 _DayCareLadyIntroEggText::
-	text "I'm the Day-Care"
-	line "Lady. Do you know"
-	cont "about Eggs?"
+	text "Ich bin die"
+	line "Pensionsleiterin."
+	cont "Kennst du dich"
+	cont "mit Eiern aus?"
 
-	para "My husband and I"
-	line "were raising some"
-	cont "#mon, you see."
+	para "Mein Mann und ich"
+	line "haben #mon"
+	cont "aufgezogen."
 
-	para "We were shocked to"
-	line "find an Egg!"
+	para "Wir waren er-"
+	line "staunt, als wir"
+	cont "ein Ei fanden!"
 
-	para "How incredible"
-	line "could that be?"
+	para "Das ist doch"
+	line "unglaublich, oder?"
 
-	para "Should I raise a"
-	line "#mon for you?"
+	para "Soll ich eines"
+	line "deiner #mon"
+	cont "aufziehen?"
 	done
 
 SECTION "_WhatShouldIRaiseText", ROMX
 _WhatShouldIRaiseText::
-	text "What should I"
-	line "raise for you?"
+	text "Welches soll"
+	line "ich aufziehen?"
 	prompt
 
 SECTION "_OnlyOneMonText", ROMX
 _OnlyOneMonText::
-	text "Oh? But you have"
-	line "just one #mon."
+	text "Oh? Aber du hast"
+	line "nur ein #mon."
 	prompt
 
 SECTION "_CantAcceptEggText", ROMX
 _CantAcceptEggText::
-	text "Sorry, but I can't"
-	line "accept an Egg."
+	text "Tut mir Leid, aber"
+	line "ich kann kein Ei"
+	cont "annehmen."
 	prompt
 
 SECTION "_RemoveMailText", ROMX
 _RemoveMailText::
-	text "Remove Mail before"
-	line "you come see me."
+	text "Entferne den"
+	line "Brief, ehe du mich"
+	cont "aufsuchst."
 	prompt
 
 SECTION "_LastHealthyMonText", ROMX
 _LastHealthyMonText::
-	text "If you give me"
-	line "that, what will"
-	cont "you battle with?"
+	text "Wenn du mir das"
+	line "gibst, wer soll"
+	cont "dann kämpfen?"
 	prompt
 
 SECTION "_IllRaiseYourMonText", ROMX
 _IllRaiseYourMonText::
-	text "OK. I'll raise"
-	line "your "
+	text "O.K. Ich kümmere"
+	line "mich um dein"
+	cont ""
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 SECTION "_ComeBackLaterText", ROMX
 _ComeBackLaterText::
-	text "Come back for it"
-	line "later."
+	text "Hole es später"
+	line "wieder ab."
 	done
 
 SECTION "_AreWeGeniusesText", ROMX
 _AreWeGeniusesText::
-	text "Are we geniuses or"
-	line "what? Want to see"
-	cont "your "
+	text "Wir sind genial,"
+	line "oder? Möchtest du"
+	cont "dein "
 	text_ram wStringBuffer1
-	text "?"
+	text ""
+	cont "sehen?"
 	done
 
 SECTION "_YourMonHasGrownText", ROMX
@@ -1581,13 +1639,13 @@ _YourMonHasGrownText::
 
 SECTION "_PerfectHeresYourMonText", ROMX
 _PerfectHeresYourMonText::
-	text "Perfect! Here's"
-	line "your #mon."
+	text "Perfekt! Hier ist"
+	line "dein #mon."
 	prompt
 
 SECTION "_GotBackMonText", ROMX
 _GotBackMonText::
-	text "<PLAYER> got back"
+	text "<PLAYER> erhält"
 	line ""
 	text_ram wStringBuffer1
 	text "."
@@ -1595,43 +1653,45 @@ _GotBackMonText::
 
 SECTION "_BackAlreadyText", ROMX
 _BackAlreadyText::
-	text "Huh? Back already?"
-	line "Your "
+	text "Huh? Schon zurück?"
+	line "Dein "
 	text_ram wStringBuffer1
+	text ""
 
-	para "needs a little"
-	line "more time with us."
+	para "sollte noch ein"
+	line "wenig hierbleiben."
 
-	para "If you want your"
-	line "#mon back, it"
-	cont "will cost ¥100."
+	para "Wenn du dein"
+	line "#mon zurück-"
+	cont "haben möchtest,"
+	cont "zahle ¥100."
 	done
 
 SECTION "_HaveNoRoomText", ROMX
 _HaveNoRoomText::
-	text "You have no room"
-	line "for it."
+	text "Du hast keinen"
+	line "Platz mehr."
 	prompt
 
 SECTION "_NotEnoughMoneyText", ROMX
 _NotEnoughMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht"
+	line "genügend Geld."
 	prompt
 
 SECTION "_OhFineThenText", ROMX
 _OhFineThenText::
-	text "Oh, fine then."
+	text "Oh, in Ordnung."
 	prompt
 
 SECTION "_ComeAgainText", ROMX
 _ComeAgainText::
-	text "Come again."
+	text "Komm wieder."
 	done
 
 SECTION "_NotYetText", ROMX
 _NotYetText::
-	text "Not yet…"
+	text "Noch nicht…"
 	done
 
 SECTION "_FoundAnEggAgainText", ROMX
@@ -1646,40 +1706,42 @@ _FoundAnEggAgainText::
 
 SECTION "_FoundAnEggText", ROMX
 _FoundAnEggText::
-	text "Ah, it's you!"
+	text "Ah, du bist's!"
 
-	para "We were raising"
-	line "your #mon, and"
+	para "Wir haben uns um"
+	line "dein #mon"
 
-	para "my goodness, were"
-	line "we surprised!"
+	para "gekümmert und"
+	line "waren sehr"
+	cont "erstaunt!"
 
-	para "Your #mon had"
-	line "an Egg!"
+	para "Dein #mon hatte"
+	line "ein Ei!"
 
-	para "We don't know how"
-	line "it got there, but"
+	para "Wir wissen nicht,"
+	line "wie es dahin"
 
-	para "your #mon had"
-	line "it. You want it?"
+	para "gekommen ist, dein"
+	line "#mon hat es."
+	cont "Möchtest du es?"
 	done
 
 SECTION "_ReceivedEggText", ROMX
 _ReceivedEggText::
-	text "<PLAYER> received"
-	line "the Egg!"
+	text "<PLAYER> erhält"
+	line "das Ei!"
 	done
 
 SECTION "_TakeGoodCareOfEggText", ROMX
 _TakeGoodCareOfEggText::
-	text "Take good care of"
-	line "it."
+	text "Pass gut darauf"
+	line "auf."
 	done
 
 SECTION "_IllKeepItThanksText", ROMX
 _IllKeepItThanksText::
-	text "Well then, I'll"
-	line "keep it. Thanks!"
+	text "Gut, ich passe"
+	line "darauf auf. Danke!"
 	done
 
 SECTION "_NoRoomForEggText", ROMX
@@ -1692,21 +1754,22 @@ _NoRoomForEggText::
 
 SECTION "_NameRaterHelloText", ROMX
 _NameRaterHelloText::
-	text "Hello, hello! I'm"
-	line "the Name Rater."
+	text "Hallo! Ich bin der"
+	line "Namen-Bewerter."
 
-	para "I rate the names"
-	line "of #mon."
+	para "Ich bewerte die"
+	line "Namen deiner"
+	cont "#mon."
 
-	para "Would you like me"
-	line "to rate names?"
+	para "Soll ich einen"
+	line "Namen bewerten?"
 	done
 
 SECTION "_NameRaterWhichMonText", ROMX
 _NameRaterWhichMonText::
-	text "Which #mon's"
-	line "nickname should I"
-	cont "rate for you?"
+	text "Welchen #mon-"
+	line "Spitznamen soll"
+	cont "ich bewerten?"
 	prompt
 
 SECTION "_NameRaterBetterNameText", ROMX
@@ -1714,36 +1777,37 @@ _NameRaterBetterNameText::
 	text "Hm… "
 	text_ram wStringBuffer1
 	text "…"
-	line "That's a fairly"
-	cont "decent name."
+	line "Das ist kein"
+	cont "schlechter Name."
 
-	para "But, how about a"
-	line "slightly better"
-	cont "nickname?"
+	para "Aber überlege dir"
+	line "einen besseren"
+	cont "Spitznamen!"
 
-	para "Want me to give it"
-	line "a better name?"
+	para "Soll ich ihm einen"
+	line "neuen Namen geben?"
 	done
 
 SECTION "_NameRaterWhatNameText", ROMX
 _NameRaterWhatNameText::
-	text "All right. What"
-	line "name should we"
-	cont "give it, then?"
+	text "O.K. Welchen"
+	line "Namen möchtest"
+	cont "du haben?"
 	prompt
 
 SECTION "_NameRaterFinishedText", ROMX
 _NameRaterFinishedText::
-	text "That's a better"
-	line "name than before!"
+	text "Dieser Name"
+	line "ist besser!"
 
-	para "Well done!"
+	para "Gut gemacht!"
 	done
 
 SECTION "_NameRaterComeAgainText", ROMX
 _NameRaterComeAgainText::
-	text "OK, then. Come"
-	line "again sometime."
+	text "O.K. Du kannst"
+	line "mich immer be-"
+	cont "suchen."
 	done
 
 SECTION "_NameRaterPerfectNameText", ROMX
@@ -1751,36 +1815,37 @@ _NameRaterPerfectNameText::
 	text "Hm… "
 	text_ram wStringBuffer1
 	text "?"
-	line "What a great name!"
-	cont "It's perfect."
+	line "Ein wirklich"
+	cont "tadelloser Name!"
 
-	para "Treat "
+	para "Kümmere dich gut"
+	line "um "
 	text_ram wStringBuffer1
-	line "with loving care."
+	text "."
 	done
 
 SECTION "_NameRaterEggText", ROMX
 _NameRaterEggText::
-	text "Whoa… That's just"
-	line "an Egg."
+	text "Wow… Das ist nur"
+	line "ein Ei."
 	done
 
 SECTION "_NameRaterSameNameText", ROMX
 _NameRaterSameNameText::
-	text "It might look the"
-	line "same as before,"
+	text "Er sieht genauso"
+	line "aus, wie der alte,"
 
-	para "but this new name"
-	line "is much better!"
+	para "aber er ist "
+	line "viel besser."
 
-	para "Well done!"
+	para "Gut gemacht!"
 	done
 
 SECTION "_NameRaterNamedText", ROMX
 _NameRaterNamedText::
-	text "All right. This"
-	line "#mon is now"
-	cont "named "
+	text "O.K. Der neue Name"
+	line "dieses #mon"
+	cont "ist "
 	text_ram wStringBuffer1
 	text "."
 	prompt
@@ -1788,7 +1853,7 @@ _NameRaterNamedText::
 SECTION "Text_Gained", ROMX
 Text_Gained::
 	text_ram wStringBuffer1
-	text " gained@"
+	text " erhält@"
 	text_end
 
 SECTION "Text_ABoostedStringBuffer2ExpPoints", ROMX
@@ -1808,28 +1873,29 @@ Text_StringBuffer2ExpPoints::
 
 SECTION "Text_GoPkmn", ROMX
 Text_GoPkmn::
-	text "Go! @"
+	text "Los! @"
 	text_end
 
 SECTION "Text_DoItPkmn", ROMX
 Text_DoItPkmn::
-	text "Do it! @"
+	text "Los! @"
 	text_end
 
 SECTION "Text_GoForItPkmn", ROMX
 Text_GoForItPkmn::
-	text "Go for it,"
+	text "Los,"
 	line "@"
 	text_end
 
 SECTION "Text_YourFoesWeakGetmPkmn", ROMX
 Text_YourFoesWeakGetmPkmn::
-	text "Your foe's weak!"
-	line "Get'm, @"
+	text "Mach es fertig!"
+	line "Los, @"
 	text_end
 
 SECTION "Text_BattleMonNick01", ROMX
 Text_BattleMonNick01::
+	line ""
 	text_ram wBattleMonNickname
 	text "!"
 	done
@@ -1842,88 +1908,93 @@ Text_BattleMonNickComma::
 
 SECTION "Text_ThatsEnoughComeBack", ROMX
 Text_ThatsEnoughComeBack::
-	text " that's"
-	line "enough! Come back!@"
+	text " genug!"
+	line "Komm zurück!@"
 	text_end
 
 SECTION "Text_OKComeBack", ROMX
 Text_OKComeBack::
-	text " OK!"
-	line "Come back!@"
+	text " O.K.!"
+	line "Komm zurück!@"
 	text_end
 
 SECTION "Text_GoodComeBack", ROMX
 Text_GoodComeBack::
-	text " good!"
-	line "Come back!@"
+	text " super!"
+	line "Komm zurück!@"
 	text_end
 
 SECTION "Text_ComeBack", ROMX
 Text_ComeBack::
-	text " come"
-	line "back!"
+	text " komm"
+	line "zurück!"
 	done
 
 SECTION "_BootedTMText", ROMX
 _BootedTMText::
-	text "Booted up a TM."
+	text "TM aktiviert."
 	done
 
 SECTION "_BootedHMText", ROMX
 _BootedHMText::
-	text "Booted up an HM."
+	text "VM aktiviert."
 	done
 
 SECTION "_ContainedMoveText", ROMX
 _ContainedMoveText::
-	text "It contained"
+	text "Sie enthält"
 	line ""
 	text_ram wStringBuffer2
 	text "."
 
-	para "Teach "
+	para ""
 	text_ram wStringBuffer2
-	line "to a #mon?"
+	text ""
+	line "einem #mon"
+	cont "beibringen?"
 	done
 
 SECTION "_TMHMNotCompatibleText", ROMX
 _TMHMNotCompatibleText::
 	text_ram wStringBuffer2
-	text " is"
-	line "not compatible"
-	cont "with "
+	text " ist"
+	line "nicht kompatibel"
+	cont "mit "
 	text_ram wStringBuffer1
 	text "."
 
-	para "It can't learn"
+	para "Es kann"
 	line ""
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	cont "nicht erlernen."
 	prompt
 
 SECTION "_BadgeRequiredText", ROMX
 _BadgeRequiredText::
-	text "Sorry! A new Badge"
-	line "is required."
+	text "Du benötigst einen"
+	line "neuen Orden."
 	prompt
 
 SECTION "_CantUseItemText", ROMX
 _CantUseItemText::
-	text "Can't use that"
-	line "here."
+	text "Du kannst das hier"
+	line "nicht benutzen."
 	prompt
 
 SECTION "_UseCutText", ROMX
 _UseCutText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Cut!"
+	text " setzt"
+	line "den Zerschneider"
+	cont "ein!"
 	prompt
 
 SECTION "_CutNothingText", ROMX
 _CutNothingText::
-	text "There's nothing to"
-	line "Cut here."
+	text "Hier kann"
+	line "man nichts"
+	cont "zerschneiden."
 	prompt
 
 SECTION "_AskFlashText", ROMX
@@ -1934,198 +2005,208 @@ _AskFlashText::
 
 SECTION "_BlindingFlashText", ROMX
 _BlindingFlashText::
-	text "A blinding Flash"
-	line "lights the area!"
+	text "Ein gleißender"
+	line "Blitz erhellt"
+	cont "das Gebiet!"
 	text_promptbutton
 	text_end
 
 SECTION "_UsedSurfText", ROMX
 _UsedSurfText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Surf!"
+	text " setzt"
+	line "Surfer ein!"
 	done
 
 SECTION "_CantSurfText", ROMX
 _CantSurfText::
-	text "You can't Surf"
-	line "here."
+	text "Surfer kann hier"
+	line "nicht eingesetzt"
+	cont "werden."
 	prompt
 
 SECTION "_AlreadySurfingText", ROMX
 _AlreadySurfingText::
-	text "You're already"
-	line "Surfing."
+	text "Surfer ist bereits"
+	line "eingesetzt."
 	prompt
 
 SECTION "_AskSurfText", ROMX
 _AskSurfText::
-	text "The water is calm."
-	line "Want to Surf?"
+	text "Die See ist ruhig."
+	line "Möchtest du Surfer"
+	cont "einsetzen?"
 	done
 
 SECTION "_UseWaterfallText", ROMX
 _UseWaterfallText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Waterfall!"
+	text " setzt"
+	line "Kaskade ein!"
 	done
 
 SECTION "_HugeWaterfallText", ROMX
 _HugeWaterfallText::
-	text "Wow, it's a huge"
-	line "waterfall."
+	text "Wow, das ist ein"
+	line "großer Wasserfall."
 	done
 
 SECTION "_AskWaterfallText", ROMX
 _AskWaterfallText::
-	text "Do you want to use"
-	line "Waterfall?"
+	text "Möchtest du"
+	line "Kaskade einsetzen?"
 	done
 
 SECTION "_UseDigText", ROMX
 _UseDigText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Dig!"
+	text " setzt"
+	line "Schaufler ein!"
 	done
 
 SECTION "_UseEscapeRopeText", ROMX
 _UseEscapeRopeText::
-	text "<PLAYER> used an"
-	line "Escape Rope."
+	text "<PLAYER> setzt"
+	line "Fluchtseil ein."
 	done
 
 SECTION "_CantUseDigText", ROMX
 _CantUseDigText::
-	text "Can't use that"
-	line "here."
+	text "Das kann hier"
+	line "nicht eingesetzt"
+	cont "werden."
 	done
 
 SECTION "_CantUseTeleportText", ROMX
 _CantUseTeleportText::
-	text "Can't use that"
-	line "here."
-
-	para ""
+	text "Das kann hier"
+	line "nicht eingesetzt"
+	cont "werden."
 	done
 
 SECTION "_UseStrengthText", ROMX
 _UseStrengthText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Strength!"
+	text " setzt"
+	line "Stärke ein!"
 	done
 
 SECTION "_MoveBoulderText", ROMX
 _MoveBoulderText::
 	text_ram wStringBuffer1
-	text " can"
-	line "move boulders."
+	text " kann"
+	line "Felsen bewegen."
 	prompt
 
 SECTION "_AskStrengthText", ROMX
 _AskStrengthText::
-	text "A #mon may be"
-	line "able to move this."
+	text "Ein #mon könnte"
+	line "das vielleicht"
+	cont "bewegen."
 
-	para "Want to use"
-	line "Strength?"
+	para "Möchtest du Stärke"
+	line "einsetzen?"
 	done
 
 SECTION "_BouldersMoveText", ROMX
 _BouldersMoveText::
-	text "Boulders may now"
-	line "be moved!"
+	text "Du kannst jetzt"
+	line "Felsen bewegen!"
 	done
 
 SECTION "_BouldersMayMoveText", ROMX
 _BouldersMayMoveText::
-	text "A #mon may be"
-	line "able to move this."
+	text "Ein #mon könnte"
+	line "das vielleicht"
+	cont "bewegen."
 	done
 
 SECTION "_UseWhirlpoolText", ROMX
 _UseWhirlpoolText::
 	text_ram wStringBuffer2
-	text " used"
-	line "Whirlpool!"
+	text " setzt"
+	line "Whirlpool ein!"
 	prompt
 
 SECTION "_MayPassWhirlpoolText", ROMX
 _MayPassWhirlpoolText::
-	text "It's a vicious"
-	line "whirlpool!"
+	text "Das ist ein"
+	line "teuflischer"
+	cont "Strudel!"
 
-	para "A #mon may be"
-	line "able to pass it."
+	para "Ein #mon könnte"
+	line "den Strudel"
+	cont "durchqueren."
 	done
 
 SECTION "_AskWhirlpoolText", ROMX
 _AskWhirlpoolText::
-	text "A whirlpool is in"
-	line "the way."
+	text "Ein Strudel ist"
+	line "im Weg."
 
-	para "Want to use"
-	line "Whirlpool?"
+	para "Möchtest du"
+	line "Whirlpool"
+	cont "einsetzen?"
 	done
 
 SECTION "_UseHeadbuttText", ROMX
 _UseHeadbuttText::
 	text_ram wStringBuffer2
-	text " did a"
-	line "Headbutt!"
+	text " setzt"
+	line "Kopfnuss ein!"
 	prompt
 
 SECTION "_HeadbuttNothingText", ROMX
 _HeadbuttNothingText::
-	text "Nope. Nothing…"
+	text "Nein. Nichts…"
 	done
 
 SECTION "_AskHeadbuttText", ROMX
 _AskHeadbuttText::
-	text "A #mon could be"
-	line "in this tree."
+	text "Vielleicht steckt"
+	line "ein #mon in"
+	cont "diesem Baum."
 
-	para "Want to Headbutt"
-	line "it?"
+	para "Möchtest du Kopf-"
+	line "nuss einsetzen?"
 	done
 
 SECTION "_UseRockSmashText", ROMX
 _UseRockSmashText::
 	text_ram wStringBuffer2
-	text " used"
+	text " setzt"
 if DEF(FAITHFUL)
-	line "Rock Smash!"
+	line "Zertrümmerer ein!"
 else
-	line "Brick Break!"
+	line "Durchbruch ein!"
 endc
 	prompt
 
 SECTION "_MaySmashText", ROMX
 _MaySmashText::
-	text "Maybe a #mon"
-	line "can break this."
+	text "Ein #mon könnte"
+	line "ihn vielleicht"
+	cont "zerschmettern."
 	done
 
 SECTION "_AskRockSmashText", ROMX
 _AskRockSmashText::
-	text "This rock looks"
-	line "breakable."
+	text "Dieser Fels sieht"
+	line "zerbrechlich aus."
 
 if DEF(FAITHFUL)
-	para "Want to use Rock"
-	line "Smash?"
+	para "Soll Zertrümmerer"
 else
-	para "Want to use Brick"
-	line "Break?"
+	para "Soll Durchbruch"
 endc
+	line "eingesetzt werden?"
 	done
 
 SECTION "_RodBiteText", ROMX
 _RodBiteText::
-	text "Oh!"
-	line "A bite!"
+	text "Uah!"
+	line "Da hat etwas"
+	cont "angebissen!"
 	prompt
 
 SECTION "_RodNothingText", ROMX
@@ -2137,43 +2218,48 @@ _RodNothingText::
 
 SECTION "_CantGetOffBikeText", ROMX
 _CantGetOffBikeText::
-	text "You can't get off"
-	line "here!"
+	text "Du kannst hier"
+	line "nicht absteigen!"
 	done
 
 SECTION "_GotOnBikeText", ROMX
 _GotOnBikeText::
-	text "<PLAYER> got on the"
-	line ""
+	text "<PLAYER> steigt"
+	line "aufs "
 	text_ram wStringBuffer2
 	text "."
 	done
 
 SECTION "_GotOffBikeText", ROMX
 _GotOffBikeText::
-	text "<PLAYER> got off"
-	line "the "
+	text "<PLAYER> steigt von"
+	line ""
 	text_ram wStringBuffer2
-	text "."
+	text " ab."
 	done
 
 SECTION "_AskCutText", ROMX
 _AskCutText::
-	text "This tree can be"
-	line "Cut!"
+	text "Du kannst den"
+	line "Zerschneider hier"
+	cont "einsetzen!"
 
-	para "Want to use Cut?"
+	para "Möchtest du den"
+	line "Zerschneider"
+
+	para "einsetzen?"
 	done
 
 SECTION "_CanCutText", ROMX
 _CanCutText::
-	text "This tree can be"
-	line "Cut!"
+	text "Der Zerschneider"
+	line "kann hier"
+	cont "eingesetzt werden!"
 	done
 
 SECTION "_FoundItemText", ROMX
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> findet"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
@@ -2278,35 +2364,35 @@ endc
 
 SECTION "_SweetHoneyNothingText", ROMX
 _SweetHoneyNothingText::
-	text "Looks like there's"
-	line "nothing here…"
+	text "Hier ist wohl"
+	line "nichts…"
 	done
 
 SECTION "_SquirtbottleNothingText", ROMX
 _SquirtbottleNothingText::
-	text "<PLAYER> sprinkled"
-	line "water."
+	text "<PLAYER>"
+	line "verspritzt Wasser."
 
-	para "But nothing"
-	line "happened…"
+	para "Nichts geschieht…"
 	done
 
 SECTION "_UseSacredAshText", ROMX
 _UseSacredAshText::
-	text "<PLAYER>'s #mon"
-	line "were all healed!"
+	text "Die #mon"
+	line "von <PLAYER>"
+	cont "wurden geheilt!"
 	done
 
 SECTION "Text_AnEGGCantHoldAnItem", ROMX
 Text_AnEGGCantHoldAnItem::
-	text "An Egg can't hold"
-	line "an item."
+	text "Ein Ei kann kein"
+	line "Item tragen."
 	prompt
 
 SECTION "_AskThrowAwayText", ROMX
 _AskThrowAwayText::
-	text "Throw away how"
-	line "many?"
+	text "Wie viele"
+	line "wegwerfen?"
 	done
 
 SECTION "_AskQuantityThrowAwayText", ROMX
@@ -2330,23 +2416,23 @@ _ThrewAwayText::
 
 SECTION "_OakThisIsntTheTimeText", ROMX
 _OakThisIsntTheTimeText::
-	text "Oak: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "Eich: <PLAYER>!"
+	line "Es ist noch nicht"
+	cont "an der Zeit, dies"
+	cont "zu benutzen!"
 	prompt
 
 SECTION "Text_YouDontHaveAPkmn", ROMX
 Text_YouDontHaveAPkmn::
-	text "You don't have a"
+	text "Du hast kein"
 	line "#mon!"
 	prompt
 
 SECTION "_RegisteredItemText", ROMX
 _RegisteredItemText::
-	text "Registered the"
-	line ""
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	line "eingetragen."
 	prompt
 
 SECTION "UnregisteredItemText", ROMX
@@ -2359,14 +2445,15 @@ UnregisteredItemText::
 
 SECTION "_CantRegisterText", ROMX
 _CantRegisterText::
-	text "You can't register"
-	line "that item."
+	text "Du kannst dieses"
+	line "Item nicht"
+	cont "eintragen."
 	prompt
 
 SECTION "_AskItemMoveText", ROMX
 _AskItemMoveText::
-	text "Where should this"
-	line "be moved to?"
+	text "Wo soll das"
+	line "hin?"
 	done
 
 SECTION "Text_AreYouABoyOrAreYouAGirl", ROMX
@@ -2387,134 +2474,141 @@ Text_BattleUser::
 
 SECTION "_BattleTookSunlightText", ROMX
 _BattleTookSunlightText::
-	line "took in sunlight!"
+	line "badet im Licht!"
 	prompt
 
 SECTION "_BattleFlewText", ROMX
 _BattleFlewText::
-	line "flew up high!"
+	line "fliegt empor!"
 	prompt
 
 SECTION "_BattleDugText", ROMX
 _BattleDugText::
-	line "dug a hole!"
+	line "gräbt ein Loch!"
 	prompt
 
 SECTION "Text_BreedHuh", ROMX
 Text_BreedHuh::
-	text "Huh?"
+	text "Huch?"
 	para "@"
 	text_end
 
 SECTION "_BreedEggHatchText", ROMX
 _BreedEggHatchText::
 	text_ram wStringBuffer1
-	text " came"
-	line "out of its Egg!"
+	text ""
+	line "schlüpft aus dem"
+	cont "Ei!"
 	text_sound SFX_CAUGHT_MON
 	text_promptbutton
 	text_end
 
 SECTION "_BreedAskNicknameText", ROMX
 _BreedAskNicknameText::
-	text "Give a nickname to"
+	text "Möchtest du"
 	line ""
 	text_ram wStringBuffer1
-	text "?"
+	text " einen"
+	cont "Spitznamen geben?"
 	done
 
 SECTION "_LeftWithDayCareLadyText", ROMX
 _LeftWithDayCareLadyText::
-	text "It's "
 	text_ram wBreedMon2Nickname
-	line "that was left with"
-	cont "the Day-Care Lady."
+	text " hast du"
+	line "der Pensionslei-"
+	cont "terin anvertraut."
 	done
 
 SECTION "_LeftWithDayCareManText", ROMX
 _LeftWithDayCareManText::
-	text "It's "
 	text_ram wBreedMon1Nickname
-	line "that was left with"
-	cont "the Day-Care Man."
+	text " hast du"
+	line "dem Pensionsleiter"
+	cont "anvertraut."
 	done
 
 SECTION "_BreedNoInterestText", ROMX
 _BreedNoInterestText::
-	text "It has no interest"
-	line "in "
 	text_ram wStringBuffer1
-	text "."
+	text ""
+	line "ist nicht"
+	cont "interessiert."
 	prompt
 
 SECTION "_BreedAppearsToCareForText", ROMX
 _BreedAppearsToCareForText::
-	text "It appears to care"
-	line "for "
+	text "Es kümmert sich um"
+	line ""
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 SECTION "_BreedFriendlyText", ROMX
 _BreedFriendlyText::
-	text "It's friendly with"
-	line ""
+	text "Es ist freundlich"
+	line "gegenüber"
+	para ""
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 SECTION "_BreedShowsInterestText", ROMX
 _BreedShowsInterestText::
-	text "It shows interest"
-	line "in "
+	text "Es zeigt Interesse"
+	line "an "
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 SECTION "_EmptyMailboxText", ROMX
 _EmptyMailboxText::
-	text "There's no Mail"
-	line "here."
+	text "Hier sind keine"
+	line "Briefe."
 	prompt
 
 SECTION "ClearedMailPutAwayText", ROMX
 ClearedMailPutAwayText::
-	text "The cleared Mail"
-	line "was put away."
+	text "Der leere Brief"
+	line "wurde eingesteckt."
 	prompt
 
 SECTION "MailPackFullText", ROMX
 MailPackFullText::
-	text "The Bag is full."
+	text "Dein Beutel"
+	line "ist voll."
 	prompt
 
 SECTION "MailMessageLostText", ROMX
 MailMessageLostText::
-	text "The Mail's message"
-	line "will be lost. OK?"
+	text "Soll der Inhalt"
+	line "des Briefes"
+	cont "gelöscht werden?"
 	done
 
 SECTION "MailAlreadyHoldingItemText", ROMX
 MailAlreadyHoldingItemText::
-	text "It's already hold-"
-	line "ing an item."
+	text "Es hat schon"
+	line "ein Item."
 	prompt
 
 SECTION "MailEggText", ROMX
 MailEggText::
-	text "An Egg can't hold"
-	line "any Mail."
+	text "Du kannst einem Ei"
+	line "keinen Brief"
+	cont "geben."
 	prompt
 
 SECTION "MailMovedFromBoxText", ROMX
 MailMovedFromBoxText::
-	text "The Mail was moved"
-	line "from the Mailbox."
+	text "Der Brief wurde"
+	line "aus dem Brief-"
+	cont "kasten gelöscht."
 	prompt
 
 SECTION "_ReceivedGiftMonText", ROMX
 _ReceivedGiftMonText::
-	text "<PLAYER> received"
+	text "<PLAYER> erhält"
 	line ""
 	text_ram wMonOrItemNameBuffer
 	text "!"
@@ -2530,61 +2624,66 @@ _EggSentToPCText::
 
 SECTION "_PCGottaHavePokemonText", ROMX
 _PCGottaHavePokemonText::
-	text "You gotta have"
-	line "#mon to call!"
+	text "Du benötigst"
+	line "#mon!"
 	prompt
 
 SECTION "_ContestCaughtMonText", ROMX
 _ContestCaughtMonText::
-	text "Caught "
 	text_ram wStringBuffer1
-	text "!"
+	text " wurde"
+	line "gefangen!"
 	prompt
 
 SECTION "_ContestAskSwitchText", ROMX
 _ContestAskSwitchText::
-	text "Switch #mon?"
+	text "#mon tauschen?"
 	done
 
 SECTION "_ContestAlreadyCaughtText", ROMX
 _ContestAlreadyCaughtText::
-	text "You already caught"
-	line "a "
+	text "Du hast bereits"
+	line "ein "
 	text_ram wStringBuffer1
-	text "."
+	text ""
+	cont "gefangen."
 	prompt
 
 SECTION "ContestJudging_FirstPlaceText", ROMX
 ContestJudging_FirstPlaceText::
-	text "This Bug-Catching"
-	line "Contest winner is"
+	text "Der Gewinner des"
+	line "Käferturniers ist"
 	text_pause
 	text "…"
 
 	para ""
 	text_ram wBugContestWinnerName
 	text ","
-	line "who caught a"
-	cont ""
+	line "mit einem"
+
+	para ""
 	text_ram wStringBuffer1
 	text "!@"
 	text_end
 
 SECTION "ContestJudging_FirstPlaceScoreText", ROMX
 ContestJudging_FirstPlaceScoreText::
-	para "The winning score"
-	line "was "
+	text ""
+	para "Mit einer Punkt-"
+	line "zahl von "
 	text_decimal wBugContestFirstPlaceScore, 2, 3
-	text " points!"
+	text ""
+	cont "Punkten!"
 	prompt
 
 SECTION "ContestJudging_SecondPlaceText", ROMX
 ContestJudging_SecondPlaceText::
-	text "Placing second was"
+	text "Zweiter wurde"
 	line ""
 	text_ram wBugContestWinnerName
 	text ","
-	para "who caught a"
+	para "mit einem"
+	line ""
 	line ""
 	text_ram wStringBuffer1
 	text "!@"
@@ -2592,19 +2691,20 @@ ContestJudging_SecondPlaceText::
 
 SECTION "ContestJudging_SecondPlaceScoreText", ROMX
 ContestJudging_SecondPlaceScoreText::
-	para "The score was"
+	text ""
+	para "Die Punktzahl ist"
 	line ""
 	text_decimal wBugContestSecondPlaceScore, 2, 3
-	text " points!"
+	text "!"
 	prompt
 
 SECTION "ContestJudging_ThirdPlaceText", ROMX
 ContestJudging_ThirdPlaceText::
-	text "Placing third was"
+	text "Dritter wurde"
 	line ""
 	text_ram wBugContestWinnerName
 	text ","
-	para "who caught a"
+	para "mit einem"
 	line ""
 	text_ram wStringBuffer1
 	text "!@"
@@ -2612,45 +2712,47 @@ ContestJudging_ThirdPlaceText::
 
 SECTION "ContestJudging_ThirdPlaceScoreText", ROMX
 ContestJudging_ThirdPlaceScoreText::
-	para "The score was"
-	line ""
+	text ""
+	para "Mit einer Punkt-"
+	line "zahl von "
 	text_decimal wBugContestThirdPlaceScore, 2, 3
-	text " points!"
+	text "!"
 	prompt
 
 SECTION "_MagikarpGuruMeasureText", ROMX
 _MagikarpGuruMeasureText::
-	text "Let me measure"
-	line "that Magikarp."
+	text "Lass mich dein"
+	line "Karpador messen."
 
-	para "…Hm, it measures"
+	para "…Hm, es ist"
 	line ""
 	text_ram wStringBuffer1
-	text "."
+	text "cm"
+	cont "groß."
 	prompt
 
 SECTION "_KarpGuruRecordText", ROMX
 _KarpGuruRecordText::
-	text "Current Record"
+	text "Aktueller Rekord"
 	para ""
 	text_ram wStringBuffer1
-	text " caught by"
-	line ""
+	text "cm gefangen"
+	line "von "
 	text_ram wMagikarpRecordHoldersName
 	text_promptbutton
 	text_end
 
 SECTION "_LuckyNumberMatchPartyText", ROMX
 _LuckyNumberMatchPartyText::
-	text "Congratulations!"
+	text "Glückwunsch!"
 
-	para "We have a match"
-	line "with the ID number"
-
-	para "of "
+	para "Die ID-Nummer"
+	line "von "
 	text_ram wStringBuffer2
-	text " in"
-	line "your party."
+	text ""
+
+	para "in deinem Team"
+	line "ist stimmig."
 	prompt
 
 SECTION "_LuckyNumberMatchPCText", ROMX
@@ -2670,36 +2772,36 @@ _LuckyNumberMatchPCText::
 
 SECTION "_CaughtAskNicknameText", ROMX
 _CaughtAskNicknameText::
-	text "Give a nickname to"
-	line "the "
+	text "Möchtest du"
+	line ""
 	text_ram wStringBuffer1
-	text " you"
-	cont "received?"
+	text " einen"
+	cont "Spitznamen geben?"
 	done
 
 SECTION "_PokecenterPCCantUseText", ROMX
 _PokecenterPCCantUseText::
-	text "Bzzzzt! You must"
-	line "have a #mon to"
-	cont "use this!"
+	text "Dies kann nur"
+	line "ein #mon"
+	cont "benutzen!"
 	prompt
 
 SECTION "_PlayersPCTurnOnText", ROMX
 _PlayersPCTurnOnText::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> schaltet"
+	line "den PC ein."
 	prompt
 
 SECTION "_PlayersPCAskWhatDoText", ROMX
 _PlayersPCAskWhatDoText::
-	text "What do you want"
-	line "to do?"
+	text "Was möchtest du"
+	line "tun?"
 	done
 
 SECTION "_PlayersPCHowManyWithdrawText", ROMX
 _PlayersPCHowManyWithdrawText::
-	text "How many do you"
-	line "want to withdraw?"
+	text "Wie viele möchtest"
+	line "du mitnehmen?"
 	done
 
 SECTION "_PlayersPCWithdrewItemsText", ROMX
@@ -2714,13 +2816,15 @@ _PlayersPCWithdrewItemsText::
 
 SECTION "_PlayersPCNoRoomWithdrawText", ROMX
 _PlayersPCNoRoomWithdrawText::
-	text "There's no room"
-	line "for more items."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr tragen."
 	prompt
 
 SECTION "_PlayersPCNoItemsText", ROMX
 _PlayersPCNoItemsText::
-	text "No items here!"
+	text "Du trägst keine"
+	line "Items!"
 	prompt
 
 SECTION "_PlayersPCCantDepositItemText", ROMX
@@ -2731,8 +2835,8 @@ _PlayersPCCantDepositItemText::
 
 SECTION "_PlayersPCHowManyDepositText", ROMX
 _PlayersPCHowManyDepositText::
-	text "How many do you"
-	line "want to deposit?"
+	text "Wie viele möchtest"
+	line "du ablegen?"
 	done
 
 SECTION "_PlayersPCDepositItemsText", ROMX
@@ -2747,245 +2851,264 @@ _PlayersPCDepositItemsText::
 
 SECTION "_PlayersPCNoRoomDepositText", ROMX
 _PlayersPCNoRoomDepositText::
-	text "There's no room to"
-	line "store items."
+	text "Es ist kein Platz"
+	line "für weitere Items."
 	prompt
 
 SECTION "_PokecenterPCTurnOnText", ROMX
 _PokecenterPCTurnOnText::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> schaltet"
+	line "den PC ein."
 	prompt
 
 SECTION "_PokecenterPCWhoseText", ROMX
 _PokecenterPCWhoseText::
-	text "Access whose PC?"
+	text "Zugriff auf"
+	line "wessen PC?"
 	done
 
 SECTION "_PokecenterBillsPCText", ROMX
 _PokecenterBillsPCText::
-	text "Bill's PC"
-	line "accessed."
+	text "Die Verbindung zu"
+	line "Bills PC wurde"
+	cont "hergestellt."
 
-	para "#mon Storage"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf das #mon-"
+	cont "Lagerungs-System."
 	prompt
 
 SECTION "_PokecenterPlayersPCText", ROMX
 _PokecenterPlayersPCText::
-	text "Accessed own PC."
+	text "Die Verbindung zu"
+	line "deinem PC wurde"
+	cont "hergestellt."
 
-	para "Item Storage"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf das Item-"
+	cont "Lagerungs-System."
 	prompt
 
 SECTION "_PokecenterOaksPCText", ROMX
 _PokecenterOaksPCText::
-	text "Prof.Oak's PC"
-	line "accessed."
+	text "Die Verbindung zu"
+	line "Prof. Eichs PC"
+	cont "wurde hergestellt."
 
-	para "#dex Rating"
-	line "System opened."
+	para "Du hast Zugriff"
+	line "auf die #dex-"
+	cont "Bewertung."
 	prompt
 
 SECTION "_PokecenterPCOaksClosedText", ROMX
 _PokecenterPCOaksClosedText::
 	text "…"
-	line "Link closed…"
+	line "Verbindung"
+	cont "beendet…"
 	done
 
 SECTION "_OakPCText1", ROMX
 _OakPCText1::
-	text "Want to get your"
-	line "#dex rated?"
+	text "Soll dein #dex"
+	line "bewertet werden?"
 	done
 
 SECTION "_OakPCText2", ROMX
 _OakPCText2::
-	text "Current #dex"
-	line "completion level:"
+	text "In deinem #dex"
+	line "steht:"
 	prompt
 
 SECTION "_OakPCText3", ROMX
 _OakPCText3::
+	text "Ges.: "
 	text_decimal wTempDexSeen, 2, 3
-	text " #mon seen"
-	line ""
+	text " #mon"
+	line "Bes.: "
 	text_decimal wTempDexOwn, 2, 3
-	text " #mon owned"
+	text " #mon"
 
-	para "Prof.Oak's"
-	line "Rating:"
+	para "Prof. Eichs"
+	line "Bewertung:"
 	done
 
 SECTION "_OakRating01", ROMX
 _OakRating01::
-	text "Look for #mon"
-	line "in grassy areas!"
+	text "Suche in"
+	line "hohem Gras nach"
+	cont "#mon!"
 	done
 
 SECTION "_OakRating02", ROMX
 _OakRating02::
-	text "Good. I see you"
-	line "understand how to"
-	cont "use # Balls."
+	text "Gut. Ich sehe, du"
+	line "kannst mit #-"
+	cont "bällen umgehen."
 	done
 
 SECTION "_OakRating03", ROMX
 _OakRating03::
-	text "You're getting"
-	line "good at this."
+	text "Du wirst immer"
+	line "besser, hast aber"
 
-	para "But you have a"
-	line "long way to go."
+	para "noch einen langen"
+	line "Weg vor dir."
 	done
 
 SECTION "_OakRating04", ROMX
 _OakRating04::
-	text "You need to fill"
-	line "up the #dex."
+	text "Vervollständige"
+	line "den #dex. Fange"
 
-	para "Catch different"
-	line "kinds of #mon!"
+	para "alle Typen von"
+	line "#mon!"
 	done
 
 SECTION "_OakRating05", ROMX
 _OakRating05::
-	text "You're trying--I"
-	line "can see that."
+	text "Du gibst dir Mühe."
+	line "Dein #dex"
 
-	para "Your #dex is"
-	line "coming together."
+	para "wird immer"
+	line "besser."
 	done
 
 SECTION "_OakRating06", ROMX
 _OakRating06::
-	text "To evolve, some"
-	line "#mon grow,"
+	text "Manche #mon"
+	line "entwickeln sich"
 
-	para "others use the"
-	line "effects of Stones."
+	para "durch Level,"
+	line "andere benötigen"
+	cont "Steine."
 	done
 
 SECTION "_OakRating07", ROMX
 _OakRating07::
-	text "Have you gotten a"
-	line "fishing Rod? You"
+	text "Hast du eine"
+	line "Angel? Du"
 
-	para "can catch #mon"
-	line "by fishing."
+	para "kannst damit"
+	line "#mon fangen."
 	done
 
 SECTION "_OakRating08", ROMX
 _OakRating08::
-	text "Excellent! You"
-	line "seem to like col-"
-	cont "lecting things!"
+	text "Sehr gut! Sammeln"
+	line "scheint dir Spaß"
+	cont "zu machen!"
 	done
 
 SECTION "_OakRating09", ROMX
 _OakRating09::
-	text "Some #mon only"
-	line "appear during"
+	text "Du kannst manchen"
+	line "#mon nur zu"
 
-	para "certain times of"
-	line "the day."
+	para "gewissen Tages-"
+	line "zeiten begegnen."
 	done
 
 SECTION "_OakRating10", ROMX
 _OakRating10::
-	text "Your #dex is"
-	line "filling up. Keep"
-	cont "up the good work!"
+	text "Es wird immer"
+	line "besser. Mach"
+	cont "weiter so!"
 	done
 
 SECTION "_OakRating11", ROMX
 _OakRating11::
-	text "I'm impressed."
-	line "You're evolving"
+	text "Beeindruckend."
+	line "Du fängst nicht"
 
-	para "#mon, not just"
-	line "catching them."
+	para "nur #mon, du"
+	line "trainierst sie"
+	cont "auch."
 	done
 
 SECTION "_OakRating12", ROMX
 _OakRating12::
-	text "Have you met Kurt?"
-	line "His custom Balls"
-	cont "should help."
+	text "Hast du Kurt schon"
+	line "getroffen? Seine"
+	cont "handgefertigten"
+	cont "#bälle werden"
+	cont "dir helfen."
 	done
 
 SECTION "_OakRating13", ROMX
 _OakRating13::
-	text "Wow. You've found"
-	line "more #mon than"
+	text "Wow. Du hast mehr"
+	line "#mon entdeckt,"
 
-	para "the last #dex"
-	line "research project."
+	para "als die letzte"
+	line "#dex-For-"
+	cont "schungsgruppe."
 	done
 
 SECTION "_OakRating14", ROMX
 _OakRating14::
-	text "Are you trading"
-	line "your #mon?"
+	text "Tauschst du deine"
+	line "#mon?"
 
-	para "It's tough to do"
-	line "this alone!"
+	para "Alleine ist das"
+	line "sehr schwierig!"
 	done
 
 SECTION "_OakRating15", ROMX
 _OakRating15::
-	text "Wow! You've hit"
-	line "200! Your #dex"
-	cont "is looking great!"
+	text "Wow! Die 200-Marke"
+	line "ist erreicht! Dein"
+	cont "#dex sieht"
+	cont "großartig aus!"
 	done
 
 SECTION "_OakRating16", ROMX
 _OakRating16::
-	text "You've found so"
-	line "many #mon!"
+	text "Du hast so viele"
+	line "#mon gefunden!"
 
-	para "You've really"
-	line "helped my studies!"
+	para "Du hast mir damit"
+	line "sehr geholfen!"
 	done
 
 SECTION "_OakRating17", ROMX
 _OakRating17::
-	text "Magnificent! You"
-	line "could become a"
+	text "Fantastisch! Du"
+	line "könntest auch ein"
 
-	para "#mon professor"
-	line "right now!"
+	para "#mon-Professor"
+	line "werden!"
 	done
 
 SECTION "_OakRating18", ROMX
 _OakRating18::
-	text "Your #dex is"
-	line "amazing! You're"
+	text "Dein #dex ist"
+	line "Wahnsinn! Du"
 
-	para "ready to turn"
-	line "professional!"
+	para "wirst noch zu"
+	line "einem Profi!"
 	done
 
 SECTION "_OakRating19", ROMX
 _OakRating19::
-	text "Whoa! A perfect"
-	line "#dex! I've"
+	text "Boah! Der perfekte"
+	line "#dex! Davon"
 
-	para "dreamt about this!"
-	line "Congratulations!"
+	para "habe ich immer"
+	line "geträumt!"
+	cont "Gratulation!"
 	done
 
 SECTION "_OakPCText4", ROMX
 _OakPCText4::
-	text "The link to Prof."
-	line "Oak's PC closed."
+	text "Die Verbindung zu"
+	line "Prof. Eichs PC"
+	cont "wurde getrennt."
 	done
 
 SECTION "_StartMenuContestEndText", ROMX
 _StartMenuContestEndText::
-	text "Would you like to"
-	line "end the Contest?"
+	text "Möchtest du den"
+	line "Wettkampf beenden?"
 	done
 
 SECTION "_ItemsTossOutHowManyText", ROMX
@@ -3008,21 +3131,22 @@ _ItemsDiscardedText::
 
 SECTION "_ItemsOakWarningText", ROMX
 _ItemsOakWarningText::
-	text "Oak: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "Eich: <PLAYER>!"
+	line "Es ist noch nicht"
+	cont "an der Zeit, dies"
+	cont "zu benutzen."
 	done
 
 SECTION "_PokemonSwapItemText", ROMX
 _PokemonSwapItemText::
-	text "Took "
-	text_ram wMonOrItemNameBuffer
-	text "'s"
-	line ""
+	text "Nimmt "
 	text_ram wStringBuffer1
-	text " and"
+	text ""
+	line "von "
+	text_ram wMonOrItemNameBuffer
+	text ""
 
-	para "made it hold"
+	para "und gibt ihm"
 	line ""
 	text_ram wStringBuffer2
 	text "."
@@ -3030,37 +3154,40 @@ _PokemonSwapItemText::
 
 SECTION "_PokemonHoldItemText", ROMX
 _PokemonHoldItemText::
-	text "Made "
+	text "Gibt "
 	text_ram wMonOrItemNameBuffer
-	line "hold "
+	text ""
+	line ""
 	text_ram wStringBuffer2
 	text "."
 	prompt
 
 SECTION "_PokemonRemoveMailText", ROMX
 _PokemonRemoveMailText::
-	text "Please remove the"
-	line "Mail first."
+	text "Entferne zuerst"
+	line "den Brief."
 	prompt
 
 SECTION "_PokemonNotHoldingText", ROMX
 _PokemonNotHoldingText::
 	text_ram wMonOrItemNameBuffer
-	text " isn't"
-	line "holding anything."
+	text ""
+	line "trägt kein Item."
 	prompt
 
 SECTION "_ItemStorageFullText", ROMX
 _ItemStorageFullText::
-	text "Item storage space"
-	line "full."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr lagern."
 	prompt
 
 SECTION "_PokemonTookItemText", ROMX
 _PokemonTookItemText::
-	text "Took "
+	text "Nimmt "
 	text_ram wStringBuffer1
-	line "from "
+	text ""
+	line "von "
 	text_ram wMonOrItemNameBuffer
 	text "."
 	prompt
@@ -3068,13 +3195,13 @@ _PokemonTookItemText::
 SECTION "_PokemonAskSwapItemText", ROMX
 _PokemonAskSwapItemText::
 	text_ram wMonOrItemNameBuffer
-	text " is"
-	line "already holding"
+	text " hält"
+	line "schon das Item"
 
 	para ""
 	text_ram wStringBuffer1
 	text "."
-	line "Switch items?"
+	line "Items wechseln?"
 	done
 
 SECTION "_ItemCantHeldText", ROMX
@@ -3085,13 +3212,15 @@ _ItemCantHeldText::
 
 SECTION "_MailLoseMessageText", ROMX
 _MailLoseMessageText::
-	text "The Mail will lose"
-	line "its message. OK?"
+	text "Der Inhalt des"
+	line "Briefes wird"
+	cont "gelöscht"
+	cont "Einverstanden?"
 	done
 
 SECTION "_MailDetachedText", ROMX
 _MailDetachedText::
-	text "Mail detached from"
+	text "Brief entfernt von"
 	line ""
 	text_ram wStringBuffer1
 	text "."
@@ -3099,40 +3228,47 @@ _MailDetachedText::
 
 SECTION "_MailNoSpaceText", ROMX
 _MailNoSpaceText::
-	text "There's no space"
-	line "for removing Mail."
+	text "Es ist nicht"
+	line "genügend Platz"
+	cont "für entfernte"
+	cont "Briefe."
 	prompt
 
 SECTION "_MailAskSendToPCText", ROMX
 _MailAskSendToPCText::
-	text "Send the removed"
-	line "Mail to your PC?"
+	text "Den entfernten"
+	line "Brief auf deinen"
+	cont "PC übertragen?"
 	done
 
 SECTION "_MailboxFullText", ROMX
 _MailboxFullText::
-	text "Your PC's Mailbox"
-	line "is full."
+	text "Du kannst keine"
+	line "weiteren Briefe"
+	cont "auf deinen PC"
+	cont "übertragen."
 	prompt
 
 SECTION "_MailSentToPCText", ROMX
 _MailSentToPCText::
-	text "The Mail was sent"
-	line "to your PC."
+	text "Der Brief wurde"
+	line "auf deinen PC"
+	cont "übertragen."
 	prompt
 
 SECTION "_PokemonNotEnoughHPText", ROMX
 _PokemonNotEnoughHPText::
-	text "Not enough HP!"
+	text "Nicht genügend KP!"
 	prompt
 
 SECTION "_MayRegisterItemText", ROMX
 _MayRegisterItemText::
-	text "An item in your"
-	line "Bag may be"
+	text "Ein Item aus"
+	line "deinem Beutel"
 
-	para "registered for use"
-	line "on Select Button."
+	para "kann auf"
+	line "Select"
+	cont "gelegt werden."
 	done
 
 SECTION "_InitialOptionsText", ROMX
@@ -3160,37 +3296,40 @@ endc
 
 SECTION "_ElmText2", ROMX
 _ElmText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#mon.@"
+	text "Diese Welt wird"
+	line "von Wesen"
+	cont "bewohnt, die man"
+	cont "#mon nennt.@"
 	text_end
 
 SECTION "_ElmText4", ROMX
 _ElmText4::
-	text "People and #mon"
-	line "live together by"
+	text "Menschen und"
+	line "#mon leben"
 
-	para "supporting each"
-	line "other."
+	para "zusammen und"
+	line "helfen einander."
 
-	para "Some people play"
-	line "with #mon, some"
-	cont "battle with them."
+	para "Für manche Leute"
+	line "sind #mon"
+	cont "Haustiere, andere"
+	cont "tragen Kämpfe mit"
+	cont "ihnen aus."
 	prompt
 
 SECTION "_ElmText5", ROMX
 _ElmText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#mon yet."
+	text "Leider wissen wir"
+	line "noch nicht alles"
+	cont "über #mon."
 
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
+	para "Es gibt noch"
+	line "viele Geheimnisse"
+	cont "zu lüften."
 
-	para "That's why I study"
-	line "#mon every day."
+	para "Darum studiere"
+	line "ich #mon"
+	cont "tagaus, tagein!"
 	prompt
 
 SECTION "_ElmText6", ROMX
@@ -3201,27 +3340,29 @@ _ElmText6::
 
 SECTION "_ElmText7", ROMX
 _ElmText7::
-	text "<PLAYER>, are you"
-	line "ready?"
+	text "<PLAYER>, bist du"
+	line "bereit?"
 
 if !DEF(DEBUG)
-	para "Your very own"
-	line "#mon story is"
-	cont "about to unfold."
+	para "Dein eigenes"
+	line "#mon-Abenteuer"
+	cont "erwartet dich."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Dich erwarten tol-"
+	line "le Dinge, aber"
+	cont "auch harte Zeiten."
 
-	para "A world of dreams"
-	line "and adventures"
+	para "Eine Welt voller"
+	line "Träume und aufre-"
+	cont "gender #mon-"
 
-	para "with #mon"
-	line "awaits! Let's go!"
+	para "Abenteuer erwar-"
+	line "tet dich! Mach"
+	cont "dich bereit!"
 endc
 
-	para "I'll be seeing you"
-	line "later!"
+	para "Ich treffe dich"
+	line "später!"
 	done
 
 SECTION "_WarnVBAText", ROMX
@@ -3249,75 +3390,80 @@ endc
 
 SECTION "_ClockTimeMayBeWrongText", ROMX
 _ClockTimeMayBeWrongText::
-	text "The clock's time"
-	line "may be wrong."
+	text "Die Uhr könnte"
+	line "falsch gestellt"
+	cont "sein."
 
-	para "Please reset the"
-	line "time."
+	para "Gib bitte die"
+	line "genaue Uhrzeit an."
 	prompt
 
 SECTION "_ClockSetWithControlPadText", ROMX
 _ClockSetWithControlPadText::
-	text "Set with the"
-	line "Control Pad."
+	text "Benutze dafür das"
+	line "Steuerkreuz."
 
-	para "Confirm: A Button"
-	line "Cancel:  B Button"
+	para "Bestätigen:"
+	line "A-Knopf"
+	cont "Zurück: B-Knopf"
 	done
 
 SECTION "_ClockIsThisOKText", ROMX
 _ClockIsThisOKText::
-	text "Is this OK?"
+	text "Einverstanden?"
 	done
 
 SECTION "_ClockHasResetText", ROMX
 _ClockHasResetText::
-	text "The clock has been"
-	line "reset."
+	text "Die Uhr wurde"
+	line "korrigiert."
 	done
 
 SECTION "_LinkTimeoutText", ROMX
 _LinkTimeoutText::
-	text "Too much time has"
-	line "elapsed. Please"
-	cont "try again."
+	text "Es verging zu viel"
+	line "Zeit. Probier's"
+	cont "noch einmal."
 	prompt
 
 SECTION "_LinkTradeCantBattleText", ROMX
 _LinkTradeCantBattleText::
-	text "If you trade that"
-	line "#mon, you won't"
-	cont "be able to battle."
+	text "Wenn du dieses"
+	line "#mon tauschst,"
+	cont "kannst du nicht"
+	cont "mehr kämpfen."
 	prompt
 
 SECTION "_LinkAbnormalMonText", ROMX
 _LinkAbnormalMonText::
-	text "Your friend's"
-	line ""
+	text "Das "
 	text_ram wStringBuffer1
-	text " appears"
-	cont "to be abnormal!"
+	text ""
+	cont "deines Freundes"
+	cont "scheint nicht in"
+	cont "Ordnung zu sein!"
 	prompt
 
 SECTION "_LinkAskTradeForText", ROMX
 _LinkAskTradeForText::
-	text "Trade "
+	text "Tausche "
 	text_ram wBufferTrademonNickname
-	line "for "
+	text ""
+	line "mit "
 	text_ram wStringBuffer1
 	text "?"
 	done
 
 SECTION "_WouldYouLikeToSaveTheGameText", ROMX
 _WouldYouLikeToSaveTheGameText::
-	text "Would you like to"
-	line "save the game?"
+	text "Möchtest du das"
+	line "Spiel sichern?"
 	done
 
 SECTION "_SavedTheGameText", ROMX
 _SavedTheGameText::
-	text "<PLAYER> saved"
-	line "the game."
+	text "<PLAYER> hat das"
+	line "Spiel gesichert."
 	done
 
 SECTION "_AnotherSaveFileText", ROMX
@@ -3333,8 +3479,8 @@ _AnotherSaveFileText::
 
 SECTION "_SaveFileCorruptedText", ROMX
 _SaveFileCorruptedText::
-	text "The save file is"
-	line "corrupted!"
+	text "Der Spielstand"
+	line "ist zerstört!"
 	prompt
 
 SECTION "_GainedItemText", ROMX
@@ -3357,20 +3503,20 @@ _GainedMultipleItemsText::
 
 SECTION "_PutItemInPocketText", ROMX
 _PutItemInPocketText::
-	text "<PLAYER> put the"
+	text "<PLAYER> steckt"
 	line ""
 	text_ram wStringBuffer1
 	text " in"
-	cont "the "
+	cont ""
 	text_ram wStringBuffer3
 	text "."
 	prompt
 
 SECTION "_PocketIsFullText", ROMX
 _PocketIsFullText::
-	text "The "
 	text_ram wStringBuffer3
-	line "is full…"
+	text ""
+	line "ist voll…"
 	prompt
 
 SECTION "_FoundWingsText", ROMX
@@ -3384,14 +3530,15 @@ _FoundWingsText::
 
 SECTION "_CongratulationsYourPokemonText", ROMX
 _CongratulationsYourPokemonText::
-	text "Congratulations!"
-	line "Your "
+	text "Glückwunsch!"
+	line "Dein "
 	text_ram wStringBuffer2
 	text_end
 
 SECTION "_EvolvedIntoText", ROMX
 _EvolvedIntoText::
-	para "evolved into"
+	text ""
+	para "wurde zu"
 	line ""
 	text_ram wStringBuffer1
 	text "!"
@@ -3399,21 +3546,22 @@ _EvolvedIntoText::
 
 SECTION "_StoppedEvolvingText", ROMX
 _StoppedEvolvingText::
-	text "Huh? "
-	text_ram wStringBuffer2
-	line "stopped evolving!"
+	text "Hmm? Die Entwick-"
+	line "lung wurde abge-"
+	cont "brochen!"
 	prompt
 
 SECTION "_EvolvingText", ROMX
 _EvolvingText::
-	text "What? "
+	text "Hey! "
 	text_ram wStringBuffer2
-	line "is evolving!"
+	text ""
+	line "entwickelt sich!"
 	done
 
 SECTION "_MartHowManyText", ROMX
 _MartHowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_MartFinalPriceText", ROMX
@@ -3429,18 +3577,20 @@ _MartFinalPriceText::
 
 SECTION "_HerbShopLadyIntroText", ROMX
 _HerbShopLadyIntroText::
-	text "Hello, dear."
+	text "Hallo,"
 
-	para "I sell inexpensive"
-	line "herbal medicine."
+	para "ich verkaufe"
+	line "preiswerte"
+	cont "Kräutermedizin."
 
-	para "They're good, but"
-	line "a trifle bitter."
+	para "Sie wirkt, ist"
+	line "aber bitter."
 
-	para "Your #mon may"
-	line "not like them."
+	para "Deine #mon"
+	line "werden sie nicht"
+	cont "mögen."
 
-	para "Hehehehe…"
+	para "Hihihihi…"
 	done
 
 SECTION "_HerbalLadyFinalPriceText", ROMX
@@ -3456,88 +3606,93 @@ _HerbalLadyFinalPriceText::
 
 SECTION "_HerbalLadyThanksText", ROMX
 _HerbalLadyThanksText::
-	text "Thank you, dear."
-	line "Hehehehe…"
+	text "Danke, Kleiner."
+	line "Hihihihi…"
 	done
 
 SECTION "_HerbalLadyPackFullText", ROMX
 _HerbalLadyPackFullText::
-	text "Oh? Your Bag is"
-	line "full, dear."
+	text "Oh? In deinem"
+	line "Beutel ist kein"
+	cont "Platz mehr."
 	done
 
 SECTION "_HerbalLadyNoMoneyText", ROMX
 _HerbalLadyNoMoneyText::
-	text "Hehehe… You don't"
-	line "have the money."
+	text "Hihihi… Du hast"
+	line "nicht genug Geld."
 	done
 
 SECTION "_HerbalLadyComeAgainText", ROMX
 _HerbalLadyComeAgainText::
-	text "Come again, dear."
-	line "Hehehehe…"
+	text "Besuche mich"
+	line "wieder. Hihihihi…"
 	done
 
 SECTION "_BargainShopIntroText", ROMX
 _BargainShopIntroText::
-	text "Hiya! Care to see"
-	line "some bargains?"
+	text "Heh! Bist du an"
+	line "Schnäppchen"
+	cont "interessiert?"
 
-	para "I sell rare items"
-	line "that nobody else"
+	para "Ich verkaufe"
+	line "seltene Items,"
 
-	para "carries--but only"
-	line "one of each item."
+	para "aber leider sind"
+	line "es nur Einzel-"
+	cont "stücke."
 	done
 
 SECTION "_BargainShopFinalPriceText", ROMX
 _BargainShopFinalPriceText::
 	text_ram wStringBuffer2
-	text " costs"
-	line "¥"
+	text ""
+	line "kostet ¥"
 	text_decimal hMoneyTemp, 3, 7
-	text ". Want it?"
+	text "."
+	para "Kaufen?"
 	done
 
 SECTION "_BargainShopThanksText", ROMX
 _BargainShopThanksText::
-	text "Thanks."
+	text "Danke."
 	done
 
 SECTION "_BargainShopPackFullText", ROMX
 _BargainShopPackFullText::
-	text "Uh-oh, your Bag"
-	line "is chock-full."
+	text "Uhh, dein Beutel"
+	line "platzt aus"
+	cont "allen Nähten."
 	done
 
 SECTION "_BargainShopSoldOutText", ROMX
 _BargainShopSoldOutText::
-	text "You bought that"
-	line "already. I'm all"
-	cont "sold out of it."
+	text "Das hast du schon"
+	line "gekauft. Ich"
+	cont "habe keines mehr."
 	done
 
 SECTION "_BargainShopNoFundsText", ROMX
 _BargainShopNoFundsText::
-	text "Uh-oh, you're"
-	line "short on funds."
+	text "Uhh, du bist knapp"
+	line "bei Kasse."
 	done
 
 SECTION "_BargainShopComeAgainText", ROMX
 _BargainShopComeAgainText::
-	text "Come by again"
-	line "sometime."
+	text "Schau mal"
+	line "wieder vorbei."
 	done
 
 SECTION "_PharmacyIntroText", ROMX
 _PharmacyIntroText::
-	text "What's up? Need"
-	line "some medicine?"
+	text "Was ist? Brauchst"
+	line "du Medizin?"
 	done
 
 SECTION "_HowManyText", ROMX
 _HowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_PharmacyFinalPriceText", ROMX
@@ -3553,81 +3708,83 @@ _PharmacyFinalPriceText::
 
 SECTION "_PharmacyThanksText", ROMX
 _PharmacyThanksText::
-	text "Thanks much!"
+	text "Vielen Dank!"
 	done
 
 SECTION "_PharmacyPackFullText", ROMX
 _PharmacyPackFullText::
-	text "You don't have any"
-	line "more space."
+	text "Du hast keinen"
+	line "Platz mehr."
 	done
 
 SECTION "_PharmacyNoMoneyText", ROMX
 _PharmacyNoMoneyText::
-	text "Huh? That's not"
-	line "enough money."
+	text "Wie? Das ist nicht"
+	line "genügend Geld."
 	done
 
 SECTION "_PharmacyComeAgainText", ROMX
 _PharmacyComeAgainText::
-	text "All right."
-	line "See you around."
+	text "In Ordnung."
+	line "Bis die Tage."
 	done
 
 SECTION "_MartSellHowManyText", ROMX
 _MartSellHowManyText::
-	text "How many?"
+	text "Wie viele?"
 	done
 
 SECTION "_MartSellPriceText", ROMX
 _MartSellPriceText::
-	text "I can pay you"
+	text "Ich zahle dir"
 	line "¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 
-	para "Is that OK?"
+	para "Reicht das?"
 	done
 
 SECTION "_MartWelcomeText", ROMX
 _MartWelcomeText::
-	text "Welcome! How may I"
-	line "help you?"
+	text "Willkommen! Womit"
+	line "kann ich dienen?"
 	done
 
 SECTION "_MartThanksText", ROMX
 _MartThanksText::
-	text "Here you are."
-	line "Thank you!"
+	text "Hier, bitte."
+	line "Danke schön!"
 	done
 
 SECTION "_MartNoMoneyText", ROMX
 _MartNoMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 SECTION "_MartPackFullText", ROMX
 _MartPackFullText::
-	text "You can't carry"
-	line "any more items."
+	text "Du kannst keine"
+	line "weiteren Items"
+	cont "mehr tragen."
 	done
 
 SECTION "_MartCantBuyText", ROMX
 _MartCantBuyText::
-	text "Sorry, I can't buy"
-	line "that from you."
+	text "Ich kann dir das"
+	line "nicht abkaufen."
 	prompt
 
 SECTION "_MartComeAgainText", ROMX
 _MartComeAgainText::
-	text "Please come again!"
+	text "Komm wieder!"
 	done
 
 SECTION "_MartAskMoreText", ROMX
 _MartAskMoreText::
-	text "Can I do anything"
-	line "else for you?"
+	text "Kann ich noch"
+	line "etwas für dich"
+	cont "tun?"
 	done
 
 SECTION "_MartBoughtText", ROMX
@@ -3643,8 +3800,7 @@ _MartBoughtText::
 
 SECTION "_SlotsBetHowManyCoinsText", ROMX
 _SlotsBetHowManyCoinsText::
-	text "Bet how many"
-	line "coins?"
+	text "Wie viel setzen?"
 	done
 
 SECTION "TMMartCostsThisMuchText", ROMX
@@ -3704,43 +3860,44 @@ _SlotsStartText::
 
 SECTION "_SlotsNotEnoughCoinsText", ROMX
 _SlotsNotEnoughCoinsText::
-	text "Not enough"
-	line "coins."
+	text "Nicht genügend"
+	line "Münzen."
 	prompt
 
 SECTION "_SlotsRanOutOfCoinsText", ROMX
 _SlotsRanOutOfCoinsText::
-	text "Darn… Ran out of"
-	line "coins…"
+	text "Mist… Ich habe"
+	line "keine Münzen mehr…"
 	done
 
 SECTION "_SlotsPlayAgainText", ROMX
 _SlotsPlayAgainText::
-	text "Play again?"
+	text "Noch einmal?"
 	done
 
 SECTION "_SlotsLinedUpText", ROMX
 _SlotsLinedUpText::
-	text "lined up!"
-	line "Won "
+	text "Bingo!"
+	line ""
 	text_ram wStringBuffer2
-	text " coins!"
+	text " Münzen"
+	cont "gewonnen!"
 	done
 
 SECTION "_SlotsDarnText", ROMX
 _SlotsDarnText::
-	text "Darn!"
+	text "Mist!"
 	done
 
 SECTION "_PhoneWrongNumberText", ROMX
 _PhoneWrongNumberText::
-	text "Huh? Sorry, wrong"
-	line "number!"
+	text "Äh? Ich habe mich"
+	line "verwählt!"
 	done
 
 SECTION "_PhoneClickText", ROMX
 _PhoneClickText::
-	text "Click!"
+	text "Klick!"
 	done
 
 SECTION "_PhoneEllipseText", ROMX
@@ -3750,14 +3907,16 @@ _PhoneEllipseText::
 
 SECTION "_PhoneOutOfAreaText", ROMX
 _PhoneOutOfAreaText::
-	text "That number is out"
-	line "of the area."
+	text "Die Nummer ist"
+	line "außerhalb des"
+	cont "Funknetzes."
 	done
 
 SECTION "_PhoneJustTalkToThemText", ROMX
 _PhoneJustTalkToThemText::
-	text "Just go talk to"
-	line "that person!"
+	text "Du musst diesen"
+	line "Gesprächspartner"
+	cont "zu Fuß aufsuchen!"
 	done
 
 SECTION "_PasswordAskResetText", ROMX
@@ -3768,13 +3927,13 @@ _PasswordAskResetText::
 
 SECTION "_PasswordAskResetClockText", ROMX
 _PasswordAskResetClockText::
-	text "Reset the clock?"
+	text "Uhr neu stellen?"
 	done
 
 SECTION "_ClearAllSaveDataText", ROMX
 _ClearAllSaveDataText::
-	text "Clear all save"
-	line "data?"
+	text "Spielstand"
+	line "löschen?"
 	done
 
 SECTION "ResetInitialOptionsText", ROMX
@@ -3786,7 +3945,7 @@ ResetInitialOptionsText::
 SECTION "_LearnedMoveText", ROMX
 _LearnedMoveText::
 	text_ram wMonOrItemNameBuffer
-	text " learned"
+	text " erlernt"
 	line ""
 	text_ram wStringBuffer2
 	text "!"
@@ -3796,27 +3955,26 @@ _LearnedMoveText::
 
 SECTION "_MoveAskForgetText", ROMX
 _MoveAskForgetText::
-	text "Which move should"
-	next "be forgotten?"
-
-	para ""
+	text "Welche Attacke"
+	next "soll vergessen"
+	cont "werden?"
 	done
 
 SECTION "_StopLearningMoveText", ROMX
 _StopLearningMoveText::
-	text "Stop learning"
-	line ""
 	text_ram wStringBuffer2
-	text "?"
+	text ""
+	line "nicht erlernen?"
 	done
 
 SECTION "_DidNotLearnMoveText", ROMX
 _DidNotLearnMoveText::
 	text_ram wMonOrItemNameBuffer
-	line "did not learn"
-	cont ""
+	text ""
+	line "hat "
 	text_ram wStringBuffer2
-	text "."
+	text ""
+	cont "nicht erlernt."
 	prompt
 
 SECTION "_AskForgetMoveText", ROMX
@@ -3836,72 +3994,76 @@ _AskForgetMoveText::
 
 SECTION "Text_MoveForgetCount", ROMX
 Text_MoveForgetCount::
-	text "1, 2 and…"
+	text "1, 2 und…"
 	text_pause
 	text_end
 
 SECTION "_MoveForgotText", ROMX
 _MoveForgotText::
-	text " Poof!"
+	text "Schwupp!"
 	text_pause
+	text ""
 
 	para ""
 	text_ram wMonOrItemNameBuffer
-	text " forgot"
+	text " hat"
 	line ""
 	text_ram wStringBuffer1
-	text "."
+	text ""
 
-	para "And…"
+	para "vergessen!"
+
+	para "Und…"
 	prompt
 
 SECTION "_MoveCantForgetHMText", ROMX
 _MoveCantForgetHMText::
-	text "HM moves can't be"
-	line "forgotten now."
+	text "VM-Attacken"
+	line "können nicht"
+	cont "gelöscht werden!"
 	prompt
 
 SECTION "_CardFlipPlayWithThreeCoinsText", ROMX
 _CardFlipPlayWithThreeCoinsText::
-	text "Play with three"
-	line "coins?"
+	text "Drei Münzen set-"
+	line "zen?"
 	done
 
 SECTION "_CardFlipNotEnoughCoinsText", ROMX
 _CardFlipNotEnoughCoinsText::
-	text "Not enough coins…"
+	text "Nicht genügend"
+	cont "Münzen…"
 	prompt
 
 SECTION "_CardFlipChooseACardText", ROMX
 _CardFlipChooseACardText::
-	text "Choose a card."
+	text "Zieh eine Karte."
 	done
 
 SECTION "_CardFlipPlaceYourBetText", ROMX
 _CardFlipPlaceYourBetText::
-	text "Place your bet."
+	text "Worauf setzen?"
 	done
 
 SECTION "_CardFlipPlayAgainText", ROMX
 _CardFlipPlayAgainText::
-	text "Want to play"
-	line "again?"
+	text "Noch einmal?"
 	done
 
 SECTION "_CardFlipShuffledText", ROMX
 _CardFlipShuffledText::
-	text "The cards have"
-	line "been shuffled."
+	text "Die Karten"
+	line "wurden gemischt."
 	prompt
 
 SECTION "_CardFlipYeahText", ROMX
 _CardFlipYeahText::
-	text "Yeah!"
+	text "Yoh!"
 	done
 
 SECTION "_CardFlipDarnText", ROMX
 _CardFlipDarnText::
-	text "Darn…"
+	text "Mist…"
 	done
 
 SECTION "_GearTodayText", ROMX
@@ -3916,26 +4078,27 @@ _GearEllipseText::
 
 SECTION "_GearOutOfServiceText", ROMX
 _GearOutOfServiceText::
-	text "You're out of the"
-	line "service area."
+	text "Du bist außerhalb"
+	line "des Service-"
+	cont "gebiets."
 	prompt
 
 SECTION "_PokegearAskWhoCallText", ROMX
 _PokegearAskWhoCallText::
-	text "Whom do you want"
-	line "to call?"
+	text "Wen möchtest du"
+	line "anrufen?"
 	done
 
 SECTION "_PokegearPressButtonText", ROMX
 _PokegearPressButtonText::
-	text "Press any button"
-	line "to exit."
+	text "Drücke B-Knopf,"
+	line "um abzubrechen."
 	done
 
 SECTION "_PokegearAskDeleteText", ROMX
 _PokegearAskDeleteText::
-	text "Delete this stored"
-	line "phone number?"
+	text "Die gespeicherte"
+	line "Nummer löschen?"
 	done
 
 SECTION "_BuenaAskWhichPrizeText", ROMX
@@ -3954,61 +4117,66 @@ SECTION "_BuenaIsThatRightText", ROMX
 _BuenaIsThatRightText::
 	text_ram wStringBuffer1
 	text "?"
-	line "Is that right?"
+	line "Ist das richtig?"
 	done
 
 SECTION "_BuenaHereYouGoText", ROMX
 _BuenaHereYouGoText::
-	text "Here you go!"
+	text "Und los!"
+	para ""
 	done
 
 SECTION "_BuenaNotEnoughPointsText", ROMX
 _BuenaNotEnoughPointsText::
-	text "You don't have"
-	line "enough points."
+	text "Du hast nicht ge-"
+	line "nügend Punkte."
+	para ""
 	done
 
 SECTION "_BuenaNoRoomText", ROMX
 _BuenaNoRoomText::
-	text "You have no room"
-	line "for it."
+	text "Du hast keinen"
+	line "Platz dafür."
+	para ""
 	done
 
 SECTION "_BuenaComeAgainText", ROMX
 _BuenaComeAgainText::
-	text "Oh. Please come"
-	line "back again!"
+	text "Oh. Komme bitte"
+	line "wieder!"
 	done
 
 SECTION "_BallBrokeFreeText", ROMX
 _BallBrokeFreeText::
-	text "Oh no! The #mon"
-	line "broke free!"
+	text "Mist! Das #mon"
+	line "hat sich befreit!"
 	prompt
 
 SECTION "_BallAppearedCaughtText", ROMX
 _BallAppearedCaughtText::
-	text "Aww! It appeared"
-	line "to be caught!"
+	text "Fast hätte es"
+	line "geklappt!"
 	prompt
 
 SECTION "_BallAlmostHadItText", ROMX
 _BallAlmostHadItText::
-	text "Aargh!"
-	line "Almost had it!"
+	text "Mist!"
+	line "Das war knapp!"
 	prompt
 
 SECTION "_BallSoCloseText", ROMX
 _BallSoCloseText::
-	text "Shoot! It was so"
-	line "close too!"
+	text "Verflixt! Es"
+	line "hätte beinahe"
+	cont "geklappt!"
 	prompt
 
 SECTION "Text_BallCaught", ROMX
 Text_BallCaught::
-	text "Gotcha! "
+	text "Toll! "
 	text_ram wEnemyMonNickname
-	line "was caught!"
+	text ""
+	line "wurde gefangen!"
 	text_sound SFX_CAUGHT_MON
 	text_end
 
@@ -4026,28 +4194,31 @@ _CurBoxFullText::
 SECTION "_MonSentToPCText", ROMX
 _MonSentToPCText::
 	text_ram wMonOrItemNameBuffer
-	text " was"
-	line "sent to "
+	text " ge-"
+	line "sendet an "
 	text_ram wStringBuffer1
 	text "."
 	prompt
 
 SECTION "_NewDexDataText", ROMX
 _NewDexDataText::
+	text "Für "
 	text_ram wEnemyMonNickname
-	text "'s data"
-	line "was newly added to"
-	cont "the #dex."
+	text ""
+	line "wird ein neuer"
+	cont "Eintrag im"
+	cont "#dex angelegt."
 	text_sound SFX_SLOT_MACHINE_START
 	text_promptbutton
 	text_end
 
 SECTION "_AskGiveNicknameText", ROMX
 _AskGiveNicknameText::
-	text "Give a nickname to"
+	text "Möchtest du"
 	line ""
 	text_ram wStringBuffer1
-	text "?"
+	text " einen"
+	cont "Spitznamen geben?"
 	done
 
 SECTION "_ItemHappinessRoseButStatFellText", ROMX
@@ -4065,65 +4236,71 @@ _ItemHappinessRoseButStatFellText::
 
 SECTION "_ItemStatRoseText", ROMX
 _ItemStatRoseText::
-	text_ram wStringBuffer1
-	text "'s"
-	line ""
 	text_ram wStringBuffer2
-	text " rose."
+	text " von"
+	line ""
+	text_ram wStringBuffer1
+	text ""
+	para "nimmt zu."
 	prompt
 
 SECTION "_ItemCantUseOnMonText", ROMX
 _ItemCantUseOnMonText::
-	text "That can't be used"
-	line "on this #mon."
+	text "Dieses #mon"
+	line "kann das nicht"
+	cont "einsetzen."
 	prompt
 
 SECTION "Text_RepelUsedEarlierIsStillInEffect", ROMX
 Text_RepelUsedEarlierIsStillInEffect::
-	text "The Repel used"
-	line "earlier is still"
-	cont "in effect."
+	text "Schutz wirkt"
+	line "noch immer."
 	prompt
 
 SECTION "_BlueCardBalanceText", ROMX
 _BlueCardBalanceText::
-	text "You now have"
+	text "Du hast jetzt"
 	line ""
 	text_decimal wBlueCardBalance, 1, 2
-	text " points."
+	text " Punkte."
 	done
 
 SECTION "_CoinCaseCountText", ROMX
 _CoinCaseCountText::
-	text "Coins:"
+	text "Münzen:"
 	line ""
 	text_decimal wCoins, 2, 5
 	text_end
 
 SECTION "Text_RaiseThePPOfWhichMove", ROMX
 Text_RaiseThePPOfWhichMove::
-	text "Raise the PP of"
-	line "which move?"
+	text "Für welche"
+	line "Attacke sollen"
+	cont "die AP aufgefüllt"
+	cont "werden?"
 	done
 
 SECTION "Text_RestoreThePPOfWhichMove", ROMX
 Text_RestoreThePPOfWhichMove::
-	text "Restore the PP of"
-	line "which move?"
+	text "Für welche"
+	line "Attacke sollen"
+	cont "die AP erneuert"
+	cont "werden?"
 	done
 
 SECTION "Text_PPIsMaxedOut", ROMX
 Text_PPIsMaxedOut::
 	text_ram wStringBuffer2
-	text "'s PP"
-	line "is maxed out."
+	text "s AP"
+	line "wurden komplett"
+	cont "aufgefüllt."
 	prompt
 
 SECTION "Text_PPsIncreased", ROMX
 Text_PPsIncreased::
 	text_ram wStringBuffer2
-	text "'s PP"
-	line "increased."
+	text "s AP"
+	line "wurden aufgefüllt."
 	prompt
 
 SECTION "Text_PPsMaximized", ROMX
@@ -4135,42 +4312,44 @@ Text_PPsMaximized::
 
 SECTION "_PPRestoredText", ROMX
 _PPRestoredText::
-	text "PP was restored."
+	text "AP aufgefüllt."
 	prompt
 
 SECTION "_ItemLooksBitterText", ROMX
 _ItemLooksBitterText::
-	text "It looks bitter…"
+	text "Das ist bitter…"
 	prompt
 
 SECTION "_ItemCantUseOnEggText", ROMX
 _ItemCantUseOnEggText::
-	text "That can't be used"
-	line "on an Egg."
+	text "Ein Ei kann das"
+	line "nicht benutzen."
 	prompt
 
 SECTION "_ItemOakWarningText", ROMX
 _ItemOakWarningText::
-	text "Oak: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that!"
+	text "Eich: <PLAYER>!"
+	line "Es ist nicht"
+	cont "an der Zeit,"
+	cont "dies zu benutzen!"
 	prompt
 
 SECTION "_ItemWontHaveEffectText", ROMX
 _ItemWontHaveEffectText::
-	text "It won't have any"
-	line "effect."
+	text "Das hätte keinen"
+	line "Effekt."
 	prompt
 
 SECTION "_BallBlockedText", ROMX
 _BallBlockedText::
-	text "The trainer"
-	line "blocked the Ball!"
+	text "Der Trainer hat"
+	line "den Ball"
+	cont "abgeblockt!"
 	prompt
 
 SECTION "_BallDontBeAThiefText", ROMX
 _BallDontBeAThiefText::
-	text "Don't be a thief!"
+	text "Sei kein Dieb!"
 	prompt
 
 SECTION "_BallStorageFullText", ROMX
@@ -4210,7 +4389,7 @@ _ItemUsedText::
 SECTION "_KnowsMoveText", ROMX
 _KnowsMoveText::
 	text_ram wStringBuffer1
-	text " knows"
+	text " kennt"
 	line ""
 	text_ram wStringBuffer2
 	text "."
@@ -4218,114 +4397,123 @@ _KnowsMoveText::
 
 SECTION "_MoveKnowsOneText", ROMX
 _MoveKnowsOneText::
-	text "That #mon knows"
-	line "only one move."
+	text "Dieses #mon"
+	line "kann nur eine"
+	cont "Attacke."
 	done
 
 SECTION "_AskDeleteMoveText", ROMX
 _AskDeleteMoveText::
-	text "Oh, make it forget"
-	line ""
+	text "Soll "
 	text_ram wStringBuffer1
-	text "?"
+	text ""
+	line "vergessen werden?"
 	done
 
 SECTION "_DeleterForgotMoveText", ROMX
 _DeleterForgotMoveText::
-	text "Done! Your #mon"
-	line "forgot the move."
+	text "Dein #mon hat"
+	line "die Attacke"
+	cont "vergessen."
 	done
 
 SECTION "_DeleterEggText", ROMX
 _DeleterEggText::
-	text "An Egg doesn't"
-	line "know any moves!"
+	text "Ein Ei verfügt"
+	line "über keine"
+	cont "Attacken!"
 	done
 
 SECTION "_DeleterNoComeAgainText", ROMX
 _DeleterNoComeAgainText::
-	text "No? Come visit me"
-	line "again."
+	text "Nein? Besuche mich"
+	line "wieder."
 	done
 
 SECTION "_DeleterAskWhichMoveText", ROMX
 _DeleterAskWhichMoveText::
-	text "Which move should"
-	line "it forget, then?"
+	text "Welche Attacke"
+	line "soll vergessen"
+	cont "werden?"
 	prompt
 
 SECTION "_DeleterIntroText", ROMX
 _DeleterIntroText::
-	text "Um… Oh, yes, I'm"
-	line "the Move Deleter."
+	text "Ähm… Oh, ja, ich"
+	line "bin der Attacken-"
+	cont "Verlerner."
 
-	para "I can make #mon"
-	line "forget moves."
+	para "Ich verfüge über"
+	line "die Fähigkeit,"
+	cont "#mon ihre"
+	cont "Attacken vergessen"
+	cont "zu lassen."
 
-	para "Shall I make a"
-	line "#mon forget?"
+	para "Soll ein #mon "
+	line "eine Attacke"
+	cont "vergessen?"
 	done
 
 SECTION "_DeleterAskWhichMonText", ROMX
 _DeleterAskWhichMonText::
-	text "Which #mon?"
+	text "Welches #mon?"
 	prompt
 
 SECTION "Text_DSTIsThatOK", ROMX
 Text_DSTIsThatOK::
-	text " DST,"
-	line "is that OK?"
+	text " SZ,"
+	line "in Ordnung?"
 	done
 
 SECTION "_TimeAskOkayText", ROMX
 _TimeAskOkayText::
 	text ","
-	line "is that OK?"
+	line "in Ordnung?"
 	done
 
 SECTION "_TimesetAskDSTText", ROMX
 _TimesetAskDSTText::
-	text "Do you want to"
-	line "switch to Daylight"
-	cont "Saving Time?"
+	text "Möchtest du auf"
+	line "Sommerzeit um-"
+	cont "stellen?"
 	done
 
 SECTION "_TimesetDSTText", ROMX
 _TimesetDSTText::
-	text "I set the clock"
-	line "forward by one"
-	cont "hour."
+	text "Ich stelle die Uhr"
+	line "eine Stunde vor."
 	prompt
 
 SECTION "_TimesetAskNotDSTText", ROMX
 _TimesetAskNotDSTText::
-	text "Is Daylight Saving"
-	line "Time over?"
+	text "Ist die Sommer-"
+	line "zeit vorüber?"
 	done
 
 SECTION "_TimesetNotDSTText", ROMX
 _TimesetNotDSTText::
-	text "I put the clock"
-	line "back one hour."
+	text "Ich stelle die Uhr"
+	line "eine Stunde zu-"
+	cont "rück."
 	prompt
 
 SECTION "_TimesetAskAdjustDSTText", ROMX
 _TimesetAskAdjustDSTText::
-	text "Do you want to"
-	line "adjust your clock"
+	text "Möchtest du die"
+	line "Uhrzeit der"
 
-	para "for Daylight"
-	line "Saving Time?"
+	para "Sommerzeit an-"
+	line "passen?"
 	done
 
 SECTION "_MomLostGearBookletText", ROMX
 _MomLostGearBookletText::
-	text "I lost the in-"
-	line "struction booklet"
-	cont "for the #gear."
+	text "Ich habe die An-"
+	line "leitung für den"
+	cont "#Com verloren."
 
-	para "Come back again in"
-	line "a while."
+	para "Komm später noch"
+	line "mal wieder."
 	prompt
 
 SECTION "WonderTradeQuestionText", ROMX

@@ -110,15 +110,19 @@ SilverCavePokeCenterGrampsScript:
 	done
 
 SilverCavePokeCenter1FGrannyText:
-	text "Trainers who seek"
-	line "power climb Mt."
+	text "Trainer, die nach"
+	line "Stärke streben,"
 
-	para "Silver despite its"
-	line "many dangers…"
+	para "erklimmen den Sil-"
+	line "berberg trotz sei-"
+	cont "ner vielen Gefah-"
+	cont "ren…"
 
-	para "With their trusted"
-	line "#mon, they must"
+	para "Durch ihre treuen"
+	line "#mon haben"
 
-	para "feel they can go"
-	line "anywhere…"
+	para "sie das Gefühl,"
+	line "überall hinkommen"
+
+	para "zu können…"
 	done

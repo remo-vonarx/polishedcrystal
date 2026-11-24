@@ -28,25 +28,26 @@ MrFujisHouseSuperNerdText:
 	done
 
 MrFujisHouseLassText:
-	text "Some cold-hearted"
-	line "people stop caring"
-	cont "for their #mon."
+	text "Es gibt kalt-"
+	line "herzige Menschen,"
+	cont "die einfach ihre"
+	cont "#mon im Stich"
+	cont "lassen."
 
-	para "Grandpa takes in"
-	line "the poor homeless"
-
-	para "#mon and takes"
-	line "care of them."
+	para "Großvater nimmt"
+	line "die armen, heimat-"
+	cont "losen #mon auf"
+	cont "und sorgt für sie."
 	done
 
 MrFujisPsyduckText:
-	text "Psyduck: Gu-guwa?"
+	text "Enton: Qua-qua?"
 	done
 
 MrFujisNidorinoText:
-	text "Nidorino: Gyun!"
+	text "Nidorino: Nido!"
 	done
 
 MrFujisPidgeyText:
-	text "Pidgey: Pijji!"
+	text "Taubsi: Gru gru!"
 	done

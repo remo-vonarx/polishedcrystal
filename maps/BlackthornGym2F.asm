@@ -65,43 +65,50 @@ BlackthornGym2FBoulders:
 GenericTrainerCooltrainermCody:
 	generictrainer COOLTRAINERM, CODY, EVENT_BEAT_COOLTRAINERM_CODY, .SeenText, .BeatenText
 
-	text "Members of our"
-	line "dragon-user clan"
+	text "Mitglieder unseres"
+	line "Drachenklans"
 
-	para "can use dragon"
-	line "#mon only after"
+	para "dürfen Drachen-"
+	line "#mon erst"
 
-	para "our Master allows"
-	line "it."
+	para "einsetzen, wenn es"
+	line "unser Meister"
+	cont "erlaubt."
 	done
 
 .SeenText:
-	text "It's not as if we"
-	line "all use Dragon-"
-	cont "type #mon."
+	text "Es ist nicht so,"
+	line "als würden wir"
+	cont "alle Drachen-"
+	cont "#mon einsetzen."
 	done
 
 .BeatenText:
-	text "Rats! If only I"
-	line "had a dragon!"
+	text "Mist! Wenn ich"
+	line "doch nur einen"
+	cont "Drachen hätte!"
 	done
 
 GenericTrainerCooltrainerfFran:
 	generictrainer COOLTRAINERF, FRAN, EVENT_BEAT_COOLTRAINERF_FRAN, .SeenText, .BeatenText
 
-	text "Uh-oh… Clair is"
-	line "going to be mad…"
+	text "Oh-oh… Sandra"
+	line "wird durchdrehen…"
 	done
 
 .SeenText:
-	text "I can't allow a"
-	line "nameless trainer"
-	cont "past me!"
+	text "Ich kann es nicht"
+	line "zulassen, dass ein"
 
-	para "Clair would be"
-	line "livid if I did!"
+	para "unwichtiger Trai-"
+	line "ner an mir vorbei-"
+	cont "kommt!"
+
+	para "Sandra wäre außer"
+	line "sich, wenn ich"
+	cont "dies zulasse!"
 	done
 
 .BeatenText:
-	text "Awww… I lost…"
+	text "Awww… verloren…"
 	done

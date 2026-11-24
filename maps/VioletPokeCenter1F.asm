@@ -94,8 +94,9 @@ VioletPokeCenter1FElmsAideScript:
 	setevent EVENT_REFUSED_TO_TAKE_EGG_FROM_ELMS_AIDE
 	jumpthisopenedtext
 
-	text "B-but… Prof.Elm"
-	line "asked for you…"
+	text "A-Aber… Prof."
+	line "Lind hat nach dir"
+	cont "gefragt…"
 	done
 
 .IntroText:
@@ -118,28 +119,37 @@ VioletPokeCenter1FElmsAideScript:
 	done
 
 .QuestionText:
-	text "<PLAYER>, will you"
-	line "take the Egg?"
+	text "<PLAYER>, nimmst du"
+	line "das Ei?"
 	done
 
 .GoodbyeText:
-	text "We discovered that"
-	line "a #mon will not"
+	text "Wir haben ent-"
+	line "deckt, dass ein"
 
-	para "hatch until it"
-	line "grows in the Egg."
+	para "#mon erst"
+	line "schlüpft, nachdem"
 
-	para "It also has to be"
-	line "with other active"
-	cont "#mon to hatch."
+	para "es im Ei gewachsen"
+	line "ist."
 
-	para "<PLAYER>, you're"
-	line "the only person"
-	cont "we can rely on."
+	para "Außerdem muss es"
+	line "sich in der Nähe"
 
-	para "Please call Prof."
-	line "Elm when that Egg"
-	cont "hatches!"
+	para "anderer #mon"
+	line "befinden, um zu"
+	cont "schlüpfen."
+
+	para "<PLAYER>, du bist"
+	line "die einzige Per-"
+	cont "son, auf die wir"
+
+	para "uns verlassen"
+	line "können."
+
+	para "Bitte ruf Prof."
+	line "Lind an, wenn das"
+	cont "Ei so weit ist!"
 	done
 
 .WalkAroundMovement:
@@ -164,22 +174,26 @@ VioletPokeCenter1FElmsAideScript:
 	step_end
 
 VioletPokeCenter1FGameboyKidText:
-	text "A guy named Bill"
-	line "made the #mon"
-	cont "PC storage system."
+	text "Ein Kerl namens"
+	line "Bill hat das"
+	para "#mon-PC-Lage-"
+	line "rungs-System"
+	para "erfunden."
 	done
 
 VioletPokeCenter1FGentlemanText:
-	text "It was around"
-	line "three years ago."
+	text "Es war vor etwa"
+	line "drei Jahren."
 
-	para "Team Rocket was up"
-	line "to no good with"
-	cont "#mon."
+	para "Team Rocket hatte"
+	line "etwas Übles mit"
+	cont "den #mon vor."
 
-	para "But justice pre-"
-	line "vailed--a young"
-	cont "kid broke 'em up."
+	para "Aber die Gerech-"
+	line "tigkeit hat ge-"
+	cont "siegt! Ein junger"
+	cont "Trainer hat sie"
+	cont "zerschlagen."
 	done
 
 VioletPokeCenter1FSageText:
@@ -197,15 +211,15 @@ VioletPokeCenter1FSageText:
 	done
 
 VioletPokeCenter1FYoungsterText:
-	text "#mon are smart."
-	line "They won't obey a"
+	text "#mon sind"
+	line "schlau. Sie gehor-"
+	cont "chen nur Trainern,"
+	cont "vor denen sie auch"
+	cont "Respekt haben."
 
-	para "trainer they don't"
-	line "respect."
+	para "Hat der Trainer"
+	line "nicht genug Orden,"
 
-	para "Without the right"
-	line "Gym Badges, they"
-
-	para "will just do as"
-	line "they please."
+	para "machen sie, was"
+	line "sie wollen."
 	done

@@ -222,31 +222,35 @@ SupernerdMerleBeatenText:
 	done
 
 BlaineIntroText:
-	text "Blaine: Waaah!"
+	text "Pyro: Wuah!"
 
-	para "My Gym in Cinnabar"
-	line "burned down."
+	para "Meine PKMN-Arena"
+	line "auf der Zinnober-"
+	cont "insel ist abge-"
+	cont "brannt. Meine"
 
-	para "My fire-breathing"
-	line "#mon and I are"
+	para "Feuer-#mon und"
+	line "ich sind wegen des"
 
-	para "homeless because"
-	line "of the volcano."
+	para "Vulkanausbruchs"
+	line "obdachlos."
 
-	para "Waaah!"
+	para "Buah!"
 
-	para "But I'm back in"
-	line "business as a Gym"
+	para "Aber ich führe"
+	line "meine Tätigkeit"
 
-	para "Leader here in"
-	line "this cave."
+	para "als Arenaleiter in"
+	line "dieser Höhle"
+	cont "weiter aus."
 
-	para "If you can beat"
-	line "me, I'll give you"
-	cont "a Badge."
+	para "Wenn du mich"
+	line "besiegst, bekommst"
+	cont "du einen Orden."
 
-	para "Ha! You'd better"
-	line "have Burn Heal!"
+	para "Es wäre besser,"
+	line "du hast"
+	cont "Feuerheiler!"
 	done
 
 BlaineWinLossText:
@@ -263,20 +267,21 @@ BlaineAfterBattleText:
 	done
 
 BlaineFightDoneText:
-	text "Blaine: My fire"
-	line "#mon will be"
+	text "Pyro: Meine Feuer-"
+	line "#mon werden"
 
-	para "even stronger."
-	line "Just you watch!"
+	para "noch stärker sein."
+	line "Du wirst schon"
+	cont "sehen!"
 	done
 
 SeafoamGymGuyWinText2:
-	text "A #mon Gym can"
-	line "be anywhere as"
+	text "Eine PKMN-Arena"
+	line "kann überall sein,"
 
-	para "long as the Gym"
-	line "Leader is there."
+	para "solange der Arena-"
+	line "leiter dort ist."
 
-	para "There's no need"
-	line "for a building."
+	para "Man braucht dafür"
+	line "kein Gebäude."
 	done

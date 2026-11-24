@@ -32,7 +32,7 @@ RadioTower1FReceptionistScript:
 	iftrue_jumptextfaceplayer RadioTower1FReceptionistNoToursText
 	jumpthistextfaceplayer
 
-	text "Welcome!"
+	text "Willkommen!"
 	done
 
 RadioTower1FLuckyNumberManScript:
@@ -76,8 +76,9 @@ RadioTower1FLuckyNumberManScript:
 	ifequalfwd 1, .FifthPlace
 	jumpthisopenedtext
 
-	text "Nope, none of your"
-	line "ID numbers match."
+	text "Leider stimmt"
+	line "keine deiner"
+	cont "Ziffern überein."
 	done
 
 .FirstPlace:
@@ -188,21 +189,22 @@ RadioTower1FRadioCardWomanScript:
 	playsound SFX_WRONG
 	jumpthisopenedtext
 
-	text "Oh, dear."
-	line "Sorry, but you"
+	text "Oh, nein."
+	line "Das war leider"
 
-	para "got it wrong."
-	line "Please try again!"
+	para "falsch. Versuch's"
+	line "noch einmal!"
 	done
 
 GenericTrainerGruntM3:
 	generictrainer GRUNTM, 3, EVENT_BEAT_ROCKET_GRUNTM_3, GruntM3SeenText, GruntM3BeatenText
 
-	text "You're too strong."
+	text "Du bist zu stark."
 
-	para "Our plan could be"
-	line "ruined. I must"
-	cont "warn the others…"
+	para "Du könntest unsere"
+	line "Pläne zerstören."
+	cont "Ich muss die"
+	cont "anderen warnen…"
 	done
 
 RadioTower1FWhitneyScript:
@@ -241,10 +243,10 @@ RadioTower1FWhitneyLeaves2MovementData:
 
 
 RadioTower1FReceptionistNoToursText:
-	text "Hello. I'm sorry,"
-	line "but we're not"
-	cont "offering any tours"
-	cont "today."
+	text "Guten Tag! Leider"
+	line "bieten wir heute"
+	cont "keine Führungen"
+	cont "an."
 	done
 
 RadioTower1FLuckyNumberManAskToPlayText:
@@ -276,8 +278,8 @@ RadioTower1FLuckyNumberManTodayIdIsText:
 	done
 
 RadioTower1FLuckyNumberManCheckIfMatchText:
-	text "Let's see if you"
-	line "have a match."
+	text "Mal sehen, ob"
+	line "du Glück hast."
 	done
 
 RadioTower1FLuckyNumberManDotDotDotText: ; text > text
@@ -286,15 +288,15 @@ RadioTower1FLuckyNumberManDotDotDotText: ; text > text
 	done
 
 WonFirstPlaceText:
-	text "Wow! You have a"
-	line "perfect match of"
-	cont "all five numbers!"
+	text "Wow! Alle fünf"
+	line "Ziffern stimmen"
+	cont "überein!"
 
-	para "We have a grand"
-	line "prize winner!"
+	para "Du gewinnst den"
+	line "Hauptpreis!"
 
-	para "You have won a"
-	line "Master Ball!"
+	para "Du gewinnst einen"
+	line "Meisterball!"
 	done
 
 WonSecondPlaceText:
@@ -338,38 +340,43 @@ WonFifthPlaceText:
 
 
 RadioTower1FLuckyNumberManNoRoomForYourPrizeText:
-	text "You've got no room"
-	line "for your prize."
+	text "Du kannst den"
+	line "Preis nicht"
+	cont "tragen."
 
-	para "Make room and come"
-	line "back right away."
+	para "Schaffe Platz und"
+	line "komm gleich"
+	cont "wieder zurück."
 	done
 
 RadioTower1FRadioCardWomanOfferQuizText:
-	text "We have a special"
-	line "quiz campaign on"
-	cont "right now."
+	text "Bei uns läuft"
+	line "momentan ein"
+	cont "besonderes Quiz."
 
-	para "Answer five ques-"
-	line "tions correctly to"
-	cont "win a Radio Card."
+	para "Beantworte die"
+	line "fünf Fragen"
+	cont "richtig, um ein"
+	cont "Radio-Modul"
+	cont "zu gewinnen."
 
-	para "Slide it into your"
-	line "#gear to play"
+	para "Stecke es in den"
+	line "#Com, um"
 
-	para "the radio anytime,"
-	line "anywhere."
+	para "überall und zu"
+	line "jeder Zeit Radio"
+	cont "hören zu können."
 
-	para "Would you like to"
-	line "take the quiz?"
+	para "Möchtest du am"
+	line "Quiz teilnehmen?"
 	done
 
 RadioTower1FRadioCardWomanQuestion1Text:
-	text "Question 1:"
+	text "Frage 1:"
 
-	para "Is there a #mon"
-	line "that appears only"
-	cont "in the morning?"
+	para "Gibt es ein #-"
+	line "mon, das nur Vor-"
+	cont "mittags erscheint?"
 	done
 
 RadioTower1FRadioCardWomanQuestion2Text:
@@ -400,77 +407,85 @@ RadioTower1FRadioCardWomanQuestion4Text:
 	done
 
 RadioTower1FRadioCardWomanQuestion5Text:
-	text "Wow! Right again!"
-	line "Here's the final"
-	cont "question:"
+	text "Wieder richtig!"
+	line "Hier die letzte"
+	cont "Frage:"
 
-	para "Do Goldenrod Game"
-	line "Corner's slots"
+	para "Ist bei den Ein-"
+	line "armigen Banditen"
 
-	para "have Charmander"
-	line "on their reels?"
+	para "in der Spielhalle"
+	line "von Dukatia City"
+
+	para "ein Glumanda auf"
+	line "einer Rolle abge-"
+	cont "bildet?"
 	done
 
 RadioTower1FRadioCardWomanYouWinText:
-	text "Bingo! You got it!"
-	line "Congratulations!"
+	text "Bingo! Richtig!"
+	line "Glückwunsch!"
 
-	para "Here's your prize,"
-	line "a Radio Card!"
+	para "Hier hast du"
+	line "deinen Preis:"
+	cont "ein Radio-Modul!"
 	done
 
 RadioTower1FPokegearIsARadioText:
-	text "<PLAYER>'s #gear"
-	line "can now double as"
-	cont "a radio!"
+	text "<PLAYER>s #Com"
+	line "kann jetzt auch"
+	cont "als Radio ver-"
+	cont "wendet werden!"
 	done
 
 RadioTower1FRadioCardWomanTuneInText:
-	text "Please tune in to"
-	line "our radio shows."
+	text "Höre dir bitte"
+	line "unsere Shows an!"
 	done
 
 RadioTower1FRadioCardWomanNotTakingQuizText:
-	text "Oh. I see. Please"
-	line "see me if you"
-	cont "change your mind."
+	text "Oh. Ich verstehe."
+	line "Komm wieder, wenn"
+	cont "du deine Meinung"
+	cont "geändert hast."
 	done
 
 RadioTower1FLassText:
-	text "Ben is a fabulous"
-	line "DJ."
+	text "Ben ist ein"
+	line "großartiger DJ."
 
-	para "His sweet voice"
-	line "makes me melt!"
+	para "Seine sonore"
+	line "Stimme lässt mich"
+	cont "dahinschmelzen!"
 	done
 
 RadioTower1FYoungsterText:
-	text "I love Mary, from"
-	line "#mon Talk."
+	text "Ich liebe Margit"
+	line "vom #mon-Talk."
 
-	para "I only know what"
-	line "she sounds like,"
-	cont "though."
+	para "Ich kenne aber"
+	line "nur ihre Stimme."
 	done
 
 GruntM3SeenText:
-	text "We've finally"
-	line "taken over the"
-	cont "Radio Tower!"
+	text "Endlich haben wir"
+	line "den Radioturm"
+	cont "besetzt!"
 
-	para "Now everyone will"
-	line "get to experience"
+	para "Nun wird jeder"
+	line "den Team Rocket-"
 
-	para "the true terror of"
-	line "Team Rocket!"
+	para "Terrorapparat"
+	line "kennenlernen!"
 
-	para "We'll show you"
-	line "how scary we are!"
+	para "Wir zeigen euch,"
+	line "wie böse wir sind!"
 	done
 
 GruntM3BeatenText:
-	text "Too strong! We"
-	line "must watch you…"
+	text "Zu stark! Wir"
+	line "müssen dich im"
+	cont "Auge behalten…"
 	done
 
 RadioTower1FWhitney1Text:
@@ -500,23 +515,24 @@ RadioTower1FWhitney2Text:
 	done
 
 RadioTower1FDirectoryText:
-	text "1F Reception"
-	line "2F Sales"
+	text "EG Rezeption"
+	line "1S Verkauf"
 
-	para "3F Personnel"
-	line "4F Production"
+	para "2S Personal"
+	line "3S Produktion"
 
-	para "5F Director's"
-	line "   Office"
+	para "4S Büro des"
+	line "   Intendanten"
 	done
 
 RadioTower1FLuckyChannelSignText:
-	text "Lucky Channel!"
+	text "Glückskanal!"
 
-	para "Win with #mon"
-	line "ID numbers!"
+	para "Gewinne mit #-"
+	line "mon-ID-Nummern!"
 
-	para "Trade your #mon"
-	line "to collect differ-"
-	cont "ent ID numbers!"
+	para "Tausche deine "
+	line "#mon, um viele"
+	cont "ID-Nummern zu"
+	cont "erhalten!"
 	done

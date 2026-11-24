@@ -17,15 +17,17 @@ Route2Gate_MapScriptHeader:
 	object_event  6,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route2GateScientistText, -1
 
 Route2GateScientistText:
-	text "Are you <PLAYER>?"
+	text "Bist du <PLAYER>?"
 
-	para "I work as Prof."
-	line "Oak's Aide."
+	para "Ich bin der"
+	line "Assistent von"
+	cont "Prof. Eich."
 
-	para "I had no idea that"
-	line "you were out here."
+	para "Ich wusste nicht,"
+	line "dass du hier"
+	cont "bist."
 
-	para "Prof.Oak's Lab is"
-	line "nearby in Pallet"
-	cont "Town."
+	para "Prof. Eichs Labor"
+	line "ist gleich hier"
+	cont "in Alabastia."
 	done

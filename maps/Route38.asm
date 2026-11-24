@@ -40,11 +40,12 @@ TrainerSailorHarry:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "All kinds of peo-"
-	line "ple around the"
+	text "Alle Menschen auf"
+	line "der ganzen Welt"
 
-	para "world live happily"
-	line "with #mon."
+	para "leben glücklich"
+	line "zusammen mit den"
+	cont "#mon."
 	done
 
 TrainerLassDana1:
@@ -256,9 +257,10 @@ TrainerSchoolboyChad1:
 GenericTrainerBeautyValencia:
 	generictrainer BEAUTY, VALENCIA, EVENT_BEAT_BEAUTY_VALENCIA, BeautyValenciaSeenText, BeautyValenciaBeatenText
 
-	text "When I see #-"
-	line "mon, it seems to"
-	cont "soothe my nerves."
+	text "Wenn ich #-"
+	line "mon sehe, scheint"
+	cont "mich das zu"
+	cont "entspannen."
 	done
 
 GenericTrainerBeautyOlivia:
@@ -274,120 +276,134 @@ GenericTrainerBeautyOlivia:
 	done
 
 Bird_keeperTobySeenText:
-	text "Fly high into the"
-	line "sky, my beloved"
-	cont "bird #mon!"
+	text "Fliege hoch in die"
+	line "Luft, mein"
+	cont "herrliches"
+	cont "Vogel-#mon!"
 	done
 
 Bird_keeperTobyBeatenText:
-	text "I feel like just"
-	line "flying away now."
+	text "Ich fühle mich,"
+	line "als würde ich mich"
+	cont "selbst in die"
+	cont "Lüfte erheben."
 	done
 
 SchoolboyChad1SeenText:
-	text "Let me try some-"
-	line "thing I learned"
-	cont "today."
+	text "Jetzt probiere ich"
+	line "etwas aus, das ich"
+	cont "heute gelernt"
+	cont "habe."
 	done
 
 SchoolboyChad1BeatenText:
-	text "I didn't study"
-	line "enough, I guess."
+	text "Ich fürchte, ich"
+	line "habe noch nicht"
+	cont "genug gelernt."
 	done
 
 SchoolboyChadSoManyTestsText:
-	text "I have to take so"
-	line "many tests, I"
+	text "Ich habe so viele"
+	line "Prüfungen, dass"
 
-	para "don't have much"
-	line "time for #mon."
+	para "ich nicht viel"
+	line "Zeit für #mon"
+	cont "habe."
 
-	para "So when I do get"
-	line "to play, I really"
-	cont "concentrate."
+	para "Wenn ich also mal"
+	line "Zeit zum Spielen"
+	cont "habe, dann konzen-"
+	cont "triere ich mich."
 	done
 
 LassDana1SeenText:
-	text "You seem to be"
-	line "good at #mon."
+	text "Du scheinst dich"
+	line "mit #mon"
+	cont "auszukennen."
 
-	para "If you are, how"
-	line "about giving me"
-	cont "some advice?"
+	para "Gibst du mir bitte"
+	line "einige Ratschläge?"
 	done
 
 LassDana1BeatenText:
-	text "I see. So you can"
-	line "battle that way."
+	text "Ich verstehe. So"
+	line "kämpfst du also."
 	done
 
 LassDanaMoomooMilkText:
-	text "I know something"
-	line "good!"
+	text "Ich kenne etwas"
+	line "sehr Bekömmliches!"
 
-	para "Moomoo Farm's milk"
-	line "is famous for its"
-	cont "flavor."
+	para "Die Milch von der"
+	line "Kuhmuh-Farm ist"
+	cont "bekannt für ihren"
+	cont "guten Geschmack."
 	done
 
 BeautyValenciaSeenText:
-	text "Hi! Aren't you a"
-	line "cute trainer!"
+	text "Hallo! Du bist"
+	line "bestimmt so nett"
 
-	para "May I see your"
-	line "#mon?"
+	para "und zeigst mir"
+	line "deine #mon?"
 	done
 
 BeautyValenciaBeatenText:
-	text "I'm glad I got to"
-	line "see your #mon!"
+	text "Ich bin froh, dass"
+	line "ich deine #mon"
+	cont "sehen durfte!"
 	done
 
 SailorHarrySeenText:
-	text "I've been over-"
-	line "seas, so I know"
+	text "Ich war im Aus-"
+	line "land. Deswegen"
 
-	para "about all sorts of"
-	line "#mon!"
+	para "kenne ich alle"
+	line "#mon-Arten!"
 	done
 
 SailorHarryBeatenText:
-	text "Your skill is"
-	line "world class!"
+	text "Deine Fähigkeiten"
+	line "sind Spitzen-"
+	cont "klasse!"
 	done
 
 BeautyOliviaSeenText:
-	text "Don't you think my"
-	line "#mon and I are"
-	cont "beautiful?"
+	text "Meine #mon und"
+	line "ich sind wunder-"
+	cont "schön, nicht wahr?"
 	done
 
 BeautyOliviaBeatenText:
-	text "We drink Moomoo"
-	line "Milk every day."
+	text "Wir trinken täg-"
+	line "lich Kuhmuh-Milch."
 	done
 
 Route38SignText:
 	text "Route 38"
 
-	para "Olivine City -"
-	line "Ecruteak City"
+	para "Oliviana City -"
+	line "Teak City"
 	done
 
 Route38TrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
+	line "Wenn sich ein"
 
-	para "If a #mon is"
-	line "trying to evolve,"
-	cont "you can stop it."
+	para "#mon weiter-"
+	line "entwickelt, kannst"
 
-	para "Press the B But-"
-	line "ton during evolu-"
-	cont "tion."
+	para "du diesen Prozess"
+	line "aufhalten."
 
-	para "That startles the"
-	line "#mon and stops"
-	cont "its evolution."
+	para "Drücke während"
+	line "der Entwicklung"
+	cont "den B-Knopf."
+
+	para "So wird das #-"
+	line "mon erschreckt und"
+	cont "es bricht die"
+	cont "Entwicklung ab."
 	done
 
 Route38AdvancedTipsText:

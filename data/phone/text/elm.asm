@@ -1,99 +1,104 @@
 ElmPhoneStartText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "Try not to overdo"
-	line "it."
+	para "Übertreib es"
+	line "nicht."
 
-	para "Be sure to heal"
-	line "your #mon if"
-	cont "they are hurt."
+	para "Heile deine #-"
+	line "mon, falls sie"
+	cont "verletzt sind."
 	done
 
 ElmPhoneSawMrPokemonText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "Did you meet Mr."
-	line "#mon? Great!"
-	cont "Come back safely!"
+	para "Hast du Mr. #-"
+	line "mon getroffen? "
+	cont "Komm heil wieder!"
 	done
 
 ElmPhonePokemonStolenText:
-	text "<PLAYER>? I'm very"
-	line "upset now."
+	text "<PLAYER>? Ich bin"
+	line "sehr verärgert."
 
-	para "We had a #mon"
-	line "stolen from here."
+	para "Uns wurde ein"
+	line "#mon gestohlen."
 
-	para "How could anyone"
-	line "do that?"
+	para "Wie kann man so"
+	line "etwas nur tun?"
 	prompt
 
 ElmPhoneCheckingEggText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "We're checking the"
-	line "Egg now. It does"
+	para "Wir überprüfen das"
+	line "Ei. Es scheint"
 
-	para "appear to be a"
-	line "#mon Egg."
+	para "ein #mon-Ei"
+	line "zu sein."
 	prompt
 
 ElmPhoneAssistantText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "Did you see my"
-	line "assistant? He's at"
+	para "Hast du meinen"
+	line "Assistenten"
 
-	para "the #mon Center"
-	line "in Violet City."
+	para "getroffen? Er ist"
+	line "im #mon-Center"
+	cont "in Viola City."
 	done
 
 ElmPhoneEggUnhatchedText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "How's the Egg? Has"
-	line "anything changed?"
+	para "Was macht das Ei?"
+	line "Hat es sich"
+	cont "verändert?"
 
-	para "If anything hap-"
-	line "pens, please call."
+	para "Ruf an, falls"
+	line "etwas passiert."
 	prompt
 
 ElmPhoneEggHatchedText:
-	text "Hello, <PLAYER>?"
-	line "How is the Egg?"
+	text "Hallo, <PLAYER>?"
+	line "Was macht das Ei?"
 
-	para "What? It hatched?"
-	line "Wow! What kind of"
-	cont "#mon is it?"
+	para "Wie? Es ist"
+	line "geschlüpft? Wow!"
 
-	para "Please come show"
-	line "me now!"
+	para "Was für ein"
+	line "#mon ist es?"
+
+	para "Komm und zeige es"
+	line "mir bitte!"
 	prompt
 
 ElmPhoneDiscovery1Text:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "I just made a new"
-	line "discovery."
+	para "Ich habe soeben"
+	line "eine neue Ent-"
+	cont "deckung gemacht."
 
-	para "The time it takes"
-	line "for an Egg to"
+	para "Die Zeit, bis es"
+	line "aus dem Ei"
 
-	para "hatch depends on"
-	line "the #mon."
+	para "schlüpft, hängt"
+	line "vom #mon ab."
 	prompt
 
 ElmPhoneDiscovery2Text:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "It's still a"
-	line "mystery what kinds"
+	para "Es ist noch nicht"
+	line "gelöst, welche"
 
-	para "of moves hatched"
-	line "#mon have."
+	para "Attacken junge"
+	line "#mon haben."
 
-	para "We're investigat-"
-	line "ing that now."
+	para "Das untersuchen"
+	line "wir jetzt."
 	prompt
 
 ElmPhonePokerusText:
@@ -130,71 +135,73 @@ ElmPhonePokerusText:
 	done
 
 ElmPhoneDisasterText:
-	text "H-hello? <PLAYER>?"
-	line "It's a disaster!"
+	text "H-hallo? <PLAYER>?"
+	line "Welch Unglück!"
 
-	para "Uh, um, it's just"
-	line "terrible!"
+	para "Uh, um, es ist"
+	line "schrecklich!"
 
-	para "What should I do?"
-	line "It… Oh, no…"
+	para "Was soll ich tun?"
+	line "Es… oh, nein…"
 
-	para "Please get back"
-	line "here now!"
+	para "Bitte komm schnell"
+	line "zurück!"
 	done
 
 ElmPhoneEggAssistantText:
-	text "Hello, <PLAYER>? We"
-	line "discovered some-"
+	text "Hallo, <PLAYER>?"
+	line "Wir haben etwas"
 
-	para "thing about the"
-	line "Egg!"
+	para "über das Ei"
+	line "herausgefunden!"
 
-	para "My assistant is at"
-	line "the #mon Center"
+	para "Mein Assistent ist"
+	line "im #mon-Center"
 
-	para "in Violet City."
-	line "Could you talk to"
-	cont "him?"
+	para "von Viola City. "
+	line "Sprich doch bitte"
+	cont "mit ihm?"
 	done
 
 ElmPhoneRocketText:
-	text "<PLAYER>, how are"
-	line "things going?"
+	text "<PLAYER>, wie"
+	line "stehen die Dinge?"
 
-	para "I called because"
-	line "something weird is"
+	para "Ich rufe an, weil"
+	line "etwas Merkwürdiges"
 
-	para "happening with the"
-	line "radio broadcasts."
+	para "mit den Radiosen-"
+	line "dungen geschieht."
 
-	para "They were talking"
-	line "about Team Rocket."
+	para "Sie redeten über"
+	line "Team Rocket."
 
-	para "<PLAYER>, do you"
-	line "know anything"
-	cont "about it?"
+	para "<PLAYER>, weißt"
+	line "du etwas darüber?"
 
-	para "Maybe Team Rocket"
-	line "has returned. No,"
+	para "Vielleicht feiert"
+	line "Team Rocket ein"
 
-	para "that just can't"
-	line "be true."
+	para "Comeback. Nein,"
+	line "das ist nicht"
+	cont "wahr."
 
-	para "Sorry to bug you."
-	line "Take care!"
+	para "Sorry für die"
+	line "Belästigung. Pass"
+	cont "auf dich auf!"
 	done
 
 ElmPhoneGiftText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "I have something"
-	line "here for you."
+	para "Ich habe hier"
+	line "etwas für dich."
 
-	para "Could you swing by"
-	line "my Lab?"
+	para "Schaust du mal in"
+	line "meinem Labor"
+	cont "vorbei?"
 
-	para "See you later!"
+	para "Bis später!"
 	done
 
 ElmPhoneEvolutionQuestionText:

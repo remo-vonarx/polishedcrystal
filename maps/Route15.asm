@@ -29,11 +29,11 @@ Route15_MapScriptHeader:
 GenericTrainerTeacherColette:
 	generictrainer TEACHER_F, COLETTE, EVENT_BEAT_TEACHER_COLETTE, TeacherColetteSeenText, TeacherColetteBeatenText
 
-	text "Before I became a"
-	line "teacher, I used to"
+	text "Ehe ich Lehrer"
+	line "wurde, vergaß ich"
 
-	para "forget a lot of"
-	line "things."
+	para "immer eine Menge"
+	line "Dinge."
 	done
 
 TrainerTeacherHillary:
@@ -43,43 +43,49 @@ TrainerTeacherHillary:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Studying is impor-"
-	line "tant, but exercise"
-	cont "is just as vital."
+	text "Lernen ist sehr"
+	line "wichtig, aber"
+	cont "Bewegung ist"
+	cont "genauso essen-"
+	cont "tiell."
 	done
 
 GenericTrainerSchoolboyKipp:
 	generictrainer SCHOOLBOY, KIPP, EVENT_BEAT_SCHOOLBOY_KIP, SchoolboyKippSeenText, SchoolboyKippBeatenText
 
-	text "My mom worries so"
-	line "much about me, I"
+	text "Meine Mutter macht"
+	line "sich immer große"
 
-	para "have to phone her"
-	line "all the time."
+	para "Sorgen um mich."
+	line "Ständig muss ich"
+	cont "sie anrufen."
 	done
 
 GenericTrainerSchoolboyTommy:
 	generictrainer SCHOOLBOY, TOMMY, EVENT_BEAT_SCHOOLBOY_TOMMY, SchoolboyTommySeenText, SchoolboyTommyBeatenText
 
-	text "Sayonara! I just"
-	line "learned that in my"
-	cont "Japanese class."
+	text "Sayonara! Das habe"
+	line "ich in meinem"
+	cont "Japanischkurs"
+	cont "gelernt."
 	done
 
 GenericTrainerSchoolboyBilly:
 	generictrainer SCHOOLBOY, BILLY, EVENT_BEAT_SCHOOLBOY_BILLY, SchoolboyBillySeenText, SchoolboyBillyBeatenText
 
-	text "If #mon were a"
-	line "subject at school,"
-	cont "I'd be the best!"
+	text "Wenn #mon ein"
+	line "Unterrichtsfach"
+	cont "wäre, dann wäre"
+	cont "ich bestimmt der"
+	cont "Beste!"
 	done
 
 GenericTrainerSchoolgirlFaith:
 	generictrainer SCHOOLGIRL, FAITH, EVENT_BEAT_SCHOOLGIRL_FAITH, SchoolgirlFaithSeenText, SchoolgirlFaithBeatenText
 
-	text "I'm tired of walk-"
-	line "ing. I need to"
-	cont "take a break."
+	text "Ich bin müde vom"
+	line "Laufen. Ich muss"
+	cont "eine Pause machen."
 	done
 
 GenericTrainerPokefanfBoone:
@@ -116,71 +122,78 @@ GenericTrainerTwinsKayandtia2:
 	done
 
 TeacherColetteSeenText:
-	text "Have you forgotten"
-	line "anything?"
+	text "Hast du etwas"
+	line "vergessen?"
 	done
 
 TeacherColetteBeatenText:
-	text "Kyaaah!"
+	text "Uah!"
 	done
 
 TeacherHillarySeenText:
-	text "On sunny days, I"
-	line "think that the"
+	text "Bei schönem Wetter"
+	line "würden die Kinder"
 
-	para "kids would rather"
-	line "be playing in the"
+	para "lieber im Schulhof"
+	line "spielen, als in"
 
-	para "schoolyard than"
-	line "studying in class."
+	para "den Klassenzimmern"
+	line "zu lernen."
 	done
 
 TeacherHillaryBeatenText:
-	text "I didn't want to"
-	line "lose…"
+	text "Ich wollte nicht"
+	line "verlieren…"
 	done
 
 SchoolboyKippSeenText:
-	text "Hang on. I have to"
-	line "phone my mom."
+	text "Warte! Ich muss"
+	line "meine Mutter"
+	cont "anrufen."
 	done
 
 SchoolboyKippBeatenText:
-	text "Sorry, Mom!"
-	line "I was beaten!"
+	text "Tut mir Leid,"
+	line "Mutter!"
+	cont "Ich wurde besiegt!"
 	done
 
 SchoolboyTommySeenText:
-	text "Let's battle."
-	line "I won't lose!"
+	text "Lass uns kämpfen."
+	line "Ich werde nicht"
+	cont "verlieren!"
 	done
 
 SchoolboyTommyBeatenText:
-	text "I forgot to do my"
-	line "homework!"
+	text "Ich hätte meine"
+	line "Hausaufgaben"
+	cont "machen sollen!"
 	done
 
 SchoolgirlFaithSeenText:
-	text "We're on a field"
-	line "trip to Lavender"
+	text "Wir machen einen"
+	line "Ausflug zum Radio-"
+	cont "turm in Lavandia,"
 
-	para "Radio Tower for"
-	line "social studies."
+	para "um dort etwas in"
+	line "Sozialkunde zu"
+	cont "lernen."
 	done
 
 SchoolgirlFaithBeatenText:
-	text "You're wickedly"
-	line "tough!"
+	text "Du bist unheimlich"
+	line "stark!"
 	done
 
 SchoolboyBillySeenText:
-	text "My favorite class"
-	line "is gym!"
+	text "Sport ist mein"
+	line "Lieblingsfach!"
 	done
 
 SchoolboyBillyBeatenText:
-	text "Oh, no!"
-	line "How could I lose?"
+	text "Oh, nein!"
+	line "Wie konnte ich nur"
+	para "verlieren?"
 	done
 
 PokefanfBooneSeenText:
@@ -235,6 +248,6 @@ TwinsKayandtia2BeatenText:
 Route15SignText:
 	text "Route 15"
 
-	para "Fuchsia City -"
-	line "Lavender Town"
+	para "Fuchsania City -"
+	line "Lavandia"
 	done

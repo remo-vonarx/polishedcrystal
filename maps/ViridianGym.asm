@@ -99,23 +99,25 @@ ViridianGymGuyScript:
 	iftrue_jumptextfaceplayer ViridianGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Yo, Champ in"
-	line "making!"
+	text "He! Ein Champ"
+	line "in spe!"
 
-	para "How's it going?"
-	line "Looks like you're"
-	cont "on a roll."
+	para "Wie läuft es so?"
+	line "Du hast wohl"
+	cont "gerade eine"
+	cont "Glückssträhne."
 
-	para "The Gym Leader is"
-	line "a guy who battled"
+	para "Der Arenaleiter"
+	line "hat den Champ"
 
-	para "the Champion three"
-	line "years ago."
+	para "vor drei Jahren"
+	line "besiegt."
 
-	para "He's no pushover."
+	para "Das wird kein"
+	line "Kinderspiel!"
 
-	para "Give it everything"
-	line "you've got!"
+	para "Gib alles, was"
+	line "du hast!"
 	done
 
 GenericTrainerAceDuoAraandbela1:
@@ -180,35 +182,41 @@ ViridianGymStatue:
 	jumpstd gymstatue2
 
 LeaderBlueBeforeText:
-	text "Blue: Yo! Finally"
-	line "got here, huh?"
+	text "Blau: He! Hast du"
+	line "es endlich hierher"
+	cont "geschafft?"
 
-	para "I wasn't in the"
-	line "mood at Cinnabar,"
+	para "Auf den Zinnober-"
+	line "Inseln war mir"
 
-	para "but now I'm ready"
-	line "to battle you."
+	para "nicht danach, aber"
+	line "jetzt können wir"
+	cont "kämpfen."
 
 	para "…"
 
-	para "You're telling me"
-	line "you conquered all"
-	cont "the Gyms in Johto?"
+	para "Willst du etwa"
+	line "behaupten, du"
 
-	para "Heh! Johto's Gyms"
-	line "must be pretty"
-	cont "pathetic then."
+	para "hättest alle"
+	line "Arenaleiter in"
+	cont "Johto besiegt?"
 
-	para "Hey, don't worry"
-	line "about it."
+	para "He! Dann müssen"
+	line "die Arenaleiter in"
+	cont "Johto ziemliche"
+	cont "Jammerlappen sein."
 
-	para "I'll know if you"
-	line "are good or not by"
+	para "Aber - nur"
+	line "keine Bange."
 
-	para "battling you right"
-	line "now."
+	para "Ich werde dir"
+	line "sofort sagen, ob"
 
-	para "Ready, Johto"
+	para "du ein guter"
+	line "Kämpfer bist."
+
+	para "Fertig, Johto-"
 	line "Champ?"
 	done
 
@@ -234,23 +242,26 @@ LeaderBlueAfterText:
 
 
 LeaderBlueEpilogueText:
-	text "Blue: Listen, you."
+	text "Blau: Hör gut zu."
 
-	para "You'd better not"
-	line "lose until I beat"
-	cont "you. Got it?"
+	para "Es bekommt dir"
+	line "besser, nicht zu"
+	cont "verlieren, bis ich"
+	cont "dich besiegt habe!"
+	cont "Klar?"
 	done
 
 
 ViridianGymGuyWinText:
-	text "Man, you are truly"
-	line "tough…"
+	text "Junge, Junge! Du"
+	line "bist sehr stark…"
 
-	para "That was a heck of"
-	line "an inspirational"
+	para "Das war vielleicht"
+	line "ein erfrischender"
 
-	para "battle. It brought"
-	line "tears to my eyes."
+	para "Kampf. Er hat mir"
+	line "Tränen in die"
+	cont "Augen getrieben."
 	done
 
 AceDuoAraandbela1SeenText:

@@ -65,12 +65,12 @@ EcruteakCityLass2Script:
 	iftrue_jumptextfaceplayer EcruteakCityLass2Text_ReleasedBeasts
 	jumpthistextfaceplayer
 
-	text "The tower that"
-	line "used to be here…"
+	text "Der Turm, der"
+	line "früher hier stand…"
 
-	para "My grandma told me"
-	line "it used to be much"
-	cont "taller."
+	para "Meine Oma sagte"
+	line "mir, dass er"
+	cont "früher höher war."
 	done
 
 EcruteakCityFisherScript:
@@ -78,39 +78,44 @@ EcruteakCityFisherScript:
 	iftrue_jumptextfaceplayer EcruteakCityFisherText_JasmineReturned
 	jumpthistextfaceplayer
 
-	text "I heard a rumor"
-	line "about Olivine"
-	cont "Lighthouse."
+	text "Es kursiert ein"
+	line "Gerücht über den"
+	cont "Leuchtturm in Oli-"
+	cont "viana City."
 
-	para "The #mon that"
-	line "serves as the"
+	para "Das #mon, das"
+	line "als Leuchtfeuer"
 
-	para "beacon fell ill."
-	line "Sounds like they"
-	cont "are in trouble."
+	para "dient, wurde"
+	line "krank. Sieht so"
+
+	para "aus, als wären sie"
+	line "in Schwierig-"
+	cont "keiten."
 	done
 
 EcruteakCityGramps1Text:
-	text "Ecruteak used to"
-	line "have two towers:"
-
-	para "one each in the"
-	line "east and west."
+	text "Es gab zwei Türme"
+	line "in Teak City. Ei-"
+	cont "nen im Osten, ei-"
+	cont "nen im Westen."
 	done
 
 EcruteakCityGramps2Text:
-	text "Ah, child."
-	line "Have you learned"
+	text "Na, Kröte?"
+	line "Hast du gelernt zu"
 
-	para "to dance like the"
-	line "Kimono Girls?"
+	para "tanzen wie die"
+	line "Kimono-Girls?"
 
-	para "If you go to their"
-	line "Dance Theater, an"
+	para "Ich habe gehört,"
+	line "dass dir ein ei-"
+	cont "genartiger Mann"
+	cont "etwas Nettes geben"
 
-	para "odd old man will"
-	line "give you something"
-	cont "nice, I hear."
+	para "wird, wenn du zu"
+	line "ihrem Tanztheater"
+	cont "gehst."
 	done
 
 EcruteakCityLass1Text:
@@ -142,75 +147,86 @@ EcruteakCitySmeargleText:
 
 
 EcruteakCityLass2Text_ReleasedBeasts:
-	text "Three big #mon"
-	line "ran off in differ-"
-	cont "ent directions."
-	cont "What were they?"
+	text "Drei große #mon"
+	line "sind in verschie-"
+	cont "dene Richtungen"
+	cont "davongelaufen! Was"
+	cont "waren das für"
+	cont "welche?"
 	done
 
 
 EcruteakCityFisherText_JasmineReturned:
-	text "The #mon at"
-	line "Olivine Lighthouse"
-	cont "has been cured."
+	text "Das #mon im"
+	line "Leuchtturm von"
+	cont "Oliviana City wur-"
+	cont "de geheilt."
 
-	para "Boats can safely"
-	line "sail out to sea at"
-	cont "night again."
+	para "Jetzt können die"
+	line "Schiffe wieder ge-"
+	cont "fahrlos nachts in"
+	cont "See stechen."
 	done
 
 EcruteakCityYoungsterText:
-	text "I hear #mon are"
-	line "rampaging at the"
+	text "Ich hörte, dass"
+	line "#mon am See des"
 
-	para "Lake of Rage. I'd"
-	line "like to see that."
+	para "Zorns Unruhe stif-"
+	line "ten. Das würde ich"
+	cont "gerne sehen."
 	done
 
 EcruteakCityGramps3Text:
-	text "In the distant"
-	line "past…"
+	text "Vor langer Zeit…"
 
-	para "This tower burned"
-	line "in a fire. Three"
+	para "Dieser Turm ist"
+	line "abgebrannt. Drei"
 
-	para "nameless #mon"
-	line "perished in it."
+	para "namenlose #mon"
+	line "sind dabei"
+	cont "umgekommen."
 
-	para "A rainbow-colored"
-	line "#mon descended"
+	para "Ein regenbogen-"
+	line "farbenes #mon"
 
-	para "from the sky and"
-	line "resurrected them…"
+	para "kam herab und"
+	line "hauchte ihnen wie-"
+	cont "der Leben ein…"
 
-	para "It's a legend that"
-	line "has been passed"
+	para "Diese Legende wird"
+	line "von jedem Leiter"
 
-	para "down by Ecruteak"
-	line "Gym Leaders."
+	para "der PKMN-Arena von"
+	line "Teak City an den"
 
-	para "Me?"
+	para "nächsten"
+	line "weitergegeben."
 
-	para "I was a trainer"
-	line "way back when."
+	para "Ich?"
+
+	para "Damals war ich"
+	line "ein Trainer."
 	cont "Hohoho!"
 	done
 
 EcruteakCitySign:
-	text "Ecruteak City"
-	line "A Historical City"
+	text "Teak City"
+	line "Eine historische"
 
-	para "Where the Past"
-	line "Meets the Present"
+	para "Stadt, wo Vergan-"
+	line "genheit und Gegen-"
+	cont "wart aufeinander-"
+	cont "treffen"
 	done
 
 EcruteakGymSign:
-	text "Ecruteak City"
-	line "#mon Gym"
-	cont "Leader: Morty"
+	text "PKMN-Arena von"
+	line "Teak City"
+	cont "Leitung: Jens"
 
-	para "The Mystic Seer of"
-	line "the Future"
+	para "Der mystische Se-"
+	line "her der Zukunft"
 	done
 
 EcruteakCityAdvancedTips:
@@ -233,19 +249,19 @@ EcruteakCityAdvancedTips:
 	done
 
 EcruteakDanceTheaterSign:
-	text "Ecruteak Dance"
-	line "Theater"
+	text "Tanztheater von"
+	line "Teak City"
 	done
 
 BurnedTowerSign:
-	text "Burned Tower"
+	text "Turmruine"
 
-	para "It was destroyed"
-	line "by a mysterious"
-	cont "fire."
+	para "Er wurde durch ein"
+	line "mysteriöses Feuer"
+	cont "zerstört."
 
-	para "Please stay away,"
-	line "as it is unsafe."
+	para "Bitte nicht betre-"
+	line "ten!"
 	done
 
 EcruteakShrineSign:

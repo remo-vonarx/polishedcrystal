@@ -65,17 +65,15 @@ BattleTower1FContinueChallenge:
 .LeftWithoutSaving2:
 	opentext
 	writethistext
-		text "Excuse me!"
-		line "You didn't save"
-
-		para "before exiting"
-		line "the Battle Room."
-
-		para "I'm awfully sorry,"
-		line "but your challenge"
-
-		para "will be declared"
-		line "invalid."
+		text "Entschuldigung!"
+		line "Du hast vor Ver-"
+		cont "lassen des Kampf-"
+		cont "raums vergessen"
+		cont "zu sichern."
+		para "Es tut mir Leid,"
+		line "aber deine Heraus-"
+		cont "forderung wird für"
+		cont "ungültig erklärt."
 		done
 	waitbutton
 	sjumpfwd Script_CommitBattleTowerResult
@@ -92,13 +90,12 @@ BattleTower1FContinueChallenge:
 .WonChallenge2:
 	opentext
 	writethistext
-		text "Congratulations!"
-
-		para "You've beaten all"
-		line "the trainers!"
-
-		para "For that, you get"
-		line "this great prize!"
+		text "Glückwunsch!"
+		para "Du hast alle Trai-"
+		line "ner besiegt! Dafür"
+		para "erhältst du einen"
+		line "Preis!"
+		para ""
 		prompt
 	; Commit the challenge result even if the Bag cannot fit the prize.
 	verbosegiveitem_unsafe ABILITYPATCH
@@ -109,8 +106,8 @@ Script_CommitBattleTowerResult:
 	setevent EVENT_BEAT_PALMER
 .WeHopeToServeYouAgain:
 	writethistext
-		text "We hope to serve"
-		line "you again."
+		text "Wir stehen stets"
+		line "zu Diensten."
 		done
 	waitbutton
 	endtext
@@ -118,10 +115,9 @@ Script_CommitBattleTowerResult:
 BattleTower1FRulesScript:
 	opentext
 	writethistext
-		text "Battle Tower rules"
-		line "are written here."
-
-		para "Read the rules?"
+		text "Hier stehen die"
+		line "Regeln des Duell-"
+		cont "turms. Lesen?"
 		done
 	yesorno
 	iffalse_endtext
@@ -154,11 +150,10 @@ BattleTower1FStreakText:
 BattleTower1FReceptionistScript:
 	opentext
 	writethistext
-		text "Battle Tower"
-		line "welcomes you!"
-
-		para "I could show you"
-		line "to a Battle Room."
+		text "Willkommen im"
+		line "Duellturm!"
+		para "Ich führe dich in"
+		line "einen Kampfraum."
 		done
 	promptbutton
 	checkevent EVENT_BATTLE_TOWER_INTRO
@@ -167,9 +162,9 @@ BattleTower1FReceptionistScript:
 	; only ask once, so set the flag regardless
 	setevent EVENT_BATTLE_TOWER_INTRO
 	writethistext
-		text "Would you like to"
-		line "hear about the"
-		cont "Battle Tower?"
+		text "Soll ich dich über"
+		line "den Duellturm"
+		cont "aufklären?"
 		done
 	yesorno
 	iffalsefwd .BattleTowerMenu
@@ -213,8 +208,8 @@ BattleTower1FReceptionistScript:
 	; Setscene here in case the player aborted a quicksave prompted by challenge
 	setscene SCENE_BATTLETOWER1F_NOOP
 	writethistext
-		text "Want to go into a"
-		line "Battle Room?"
+		text "Möchtest du in"
+		line "einen Kampfraum?"
 		done
 	loadmenu MenuDataHeader_BattleInfoCancel
 	verticalmenu
@@ -222,8 +217,8 @@ BattleTower1FReceptionistScript:
 	ifequalfwd $1, .Challenge
 	ifequal $2, .Explanation
 	writethistext
-		text "We hope to serve"
-		line "you again."
+		text "Wir stehen stets"
+		line "zu Diensten."
 		prompt
 	endtext
 
@@ -235,11 +230,11 @@ BattleTower1FReceptionistScript:
 	special Special_BattleTower_SelectParticipants
 	iffalse .BattleTowerMenu
 	writethistext
-		text "Before entering"
-		line "the Battle Room,"
-
-		para "your progress will"
-		line "be saved."
+		text "Ehe du einen"
+		line "Kampfraum"
+		para "betrittst, wird"
+		line "der Spielstand"
+		cont "gesichert."
 		done
 	yesorno
 	iffalse .BattleTowerMenu
@@ -261,8 +256,8 @@ Script_ReturnToBattleTowerChallenge:
 
 	; Everything ready to go for challenge start
 	writethistext
-		text "Right this way to"
-		line "your Battle Room."
+		text "Hier entlang in"
+		line "den Kampfraum."
 		done
 	waitbutton
 	closetext
@@ -363,36 +358,37 @@ BattleTowerTutorTrickScript:
 		done
 
 Text_BattleTowerCooltrainerF:
-	text "There are lots of"
-	line "Battle Rooms, but"
+	text "Es gibt viele"
+	line "Kampfräume, aber"
 
-	para "I'm going to win"
-	line "them all!"
+	para "ich werde in allen"
+	line "gewinnen!"
 	done
 
 Text_BattleTowerGranny:
-	text "It's a grueling"
-	line "task, not being"
+	text "Es ist eine zer-"
+	line "mürbende Aufgabe,"
 
-	para "able to use items"
-	line "in battle."
+	para "ohne Items kämpfen"
+	line "zu müssen."
 
-	para "Making your"
-	line "#mon hold items"
+	para "Gib deinen #mon"
+	line "Items. Das ist der"
 
-	para "is the key to"
-	line "winning battles."
+	para "Schlüssel zum"
+	line "Erfolg."
 	done
 
 Text_BattleTowerBugCatcher:
-	text "I'm trying to see"
-	line "how far I can go"
+	text "Ich probiere, wie"
+	line "weit ich nur mit"
 
-	para "using just bug"
-	line "#mon."
+	para "Käfer-#mon"
+	line "komme."
 
-	para "Don't let there be"
-	line "any fire #mon…"
+	para "Hoffentlich treffe"
+	line "ich nicht auf"
+	cont "Feuer-#mon…"
 	done
 
 PokemonJournalPalmerScript:

@@ -178,34 +178,34 @@ AbraDollSentHomeText:
 	done
 
 CeladonEusineText1:
-	text "Eusine: Hi!"
+	text "Eusin: Hi!"
 
-	para "I'm back visiting"
-	line "my hometown."
-
-	para "It's been quite a"
-	line "while."
+	para "Ich komme gerade"
+	line "von meinem Heimat-"
+	cont "ort zurück. Es ist"
+	cont "schon lange her."
 	done
 
 EusineLeavesCeladonText:
-	text "<PLAYER>, have you"
-	line "heard?"
+	text "<PLAYER>, hast du"
+	line "das gehört?"
 
-	para "There have been"
-	line "fresh rumors of a"
+	para "Es gibt neue Ge-"
+	line "rüchte über ein"
 
-	para "rainbow-colored"
-	line "#mon appearing"
-	cont "at Bell Tower."
+	para "regenbogenfarbenes"
+	line "#mon, dass"
 
-	para "I've just had my"
-	line "party healed, so"
+	para "sich am"
+	line "Glockenturm zeigt."
 
-	para "now I'm headed to"
-	line "Ecruteak."
+	para "Ich habe mein Team"
+	line "gerade heilen las-"
+	cont "sen und bin auf"
+	cont "dem Weg nach Teak."
 
-	para "I'll be seeing"
-	line "you, <PLAYER>!"
+	para "Wir sehen uns spä-"
+	line "ter, <PLAYER>!"
 	done
 
 EusineNoBeastsText:

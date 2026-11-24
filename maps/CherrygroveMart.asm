@@ -29,17 +29,20 @@ CherrygroveMartCooltrainerMScript:
 	iftrue_jumptextfaceplayer CherrygroveMartCooltrainerMText_PokeBallsInStock
 	jumpthistextfaceplayer
 
-	text "They're fresh out"
-	line "of # Balls!"
+	text "Die #bälle"
+	line "sind leider aus-"
+	cont "verkauft!"
 
-	para "When will they get"
-	line "more of them?"
+	para "Hoffentlich kommt"
+	line "bald eine neue"
+	cont "Lieferung!"
 	done
 
 CherrygroveMartCooltrainerMText_PokeBallsInStock:
-	text "# Balls are in"
-	line "stock! Now I can"
-	cont "catch #mon!"
+	text "#bälle sind"
+	line "wieder auf Lager!"
+	cont "Jetzt kann ich"
+	cont "#mon fangen!"
 	done
 
 CherrygroveMartYoungsterText:

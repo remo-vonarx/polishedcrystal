@@ -26,18 +26,18 @@ Route26HealHouseTeacherScript:
 	special RestartMapMusic
 	jumpthistext
 
-	text "There!"
+	text "Hier!"
 
-	para "Your #mon are"
-	line "looking good!"
+	para "Deine #mon"
+	line "sehen gut aus!"
 
-	para "Keep at it!"
+	para "Mach weiter so!"
 	done
 
 Route26HealHouseRestAWhileText:
-	text "Your #mon look"
-	line "a little tired."
+	text "Deine #mon"
+	line "sehen müde aus."
 
-	para "You should rest"
-	line "them a while."
+	para "Gönne ihnen eine"
+	line "kleine Pause."
 	done

@@ -84,14 +84,14 @@ EcruteakTinTowerEntranceSageScript:
 	iftrue_jumpopenedtext EcruteakTinTowerEntranceSageText_GotFogBadge
 	jumpthisopenedtext
 
-	text "Bell Tower is off"
-	line "limits to anyone"
+	text "Wenn du nicht im"
+	line "Besitz des Ordens"
 
-	para "without Ecruteak"
-	line "Gym's Badge."
+	para "von Teak City"
+	line "bist, darfst du"
 
-	para "Sorry, but you'll"
-	line "have to leave."
+	para "den Glockenturm"
+	line "nicht betreten."
 	done
 
 .CheckForClearBell:
@@ -103,21 +103,22 @@ EcruteakTinTowerEntranceSageScript:
 	iftruefwd .RingClearBell
 	jumpthisopenedtext
 
-	text "A momentous event"
-	line "has occurred."
+	text "Ein denkwürdiger"
+	line "Augenblick."
 
-	para "I beg your pardon,"
-	line "but I must ask you"
-	cont "to leave."
+	para "Entschuldigung,"
+	line "aber ich muss dich"
+	cont "bitten zu gehen."
 
-	para "…What soothes the"
-	line "soul…"
+	para "…Was lindert"
+	line "Seelenschmerzen…"
 
-	para "The Wise Trio say"
-	line "things that are so"
+	para "Das Trio der"
+	line "Weisen sagt stets"
 
-	para "very difficult to"
-	line "understand…"
+	para "Dinge, die sehr"
+	line "schwierig zu ver-"
+	cont "stehen sind…"
 	done
 
 .RingClearBell:
@@ -135,15 +136,16 @@ EcruteakTinTowerEntranceWanderingSageScript:
 	iftrue_jumptextfaceplayer EcruteakTinTowerEntranceWanderingSageText_GotClearBell
 	jumpthistextfaceplayer
 
-	text "The Bell Tower"
-	line "ahead is a nine-"
+	text "Der Glockenturm da"
+	line "vorne ist ein"
 
-	para "tier tower of"
-	line "divine beauty."
+	para "8-stöckiger Turm"
+	line "von göttlicher"
+	cont "Schönheit."
 
-	para "It soothes the"
-	line "soul of all who"
-	cont "see it."
+	para "Er beruhigt die"
+	line "Seelen derer, die"
+	cont "ihn betrachten."
 	done
 
 EcruteakTinTowerEntranceSageBlocksLeftMovement:
@@ -162,88 +164,96 @@ EcruteakTinTowerEntranceSageBlocksRightMovement:
 
 
 EcruteakTinTowerEntranceSageText_GotFogBadge:
-	text "Bell Tower is off"
-	line "limits to anyone"
+	text "Wenn du nicht im"
+	line "Besitz des Ordens"
 
-	para "without Ecruteak"
-	line "Gym's Badge."
+	para "von Teak City"
+	line "bist, darfst du"
 
-	para "Ah!"
+	para "den Glockenturm"
+	line "nicht betreten."
+	cont "Ah!"
 
-	para "Ecruteak's Gym"
-	line "Badge! Please, go"
-	cont "right through."
+	para "Das ist der Orden"
+	line "von Teak City! Du"
+	cont "darfst passieren."
 	done
 
 
 EcruteakTinTowerEntranceSageText_HearsClearBell:
-	text "A momentous event"
-	line "has occurred."
+	text "Ein denkwürdiger"
+	line "Augenblick."
 
-	para "I beg your pardon,"
-	line "but I must ask you"
-	cont "to leave."
+	para "Entschuldigung,"
+	line "aber ich muss dich"
+	cont "bitten zu gehen."
 
 	para "………………"
 
 	para "Ah!"
 
-	para "The sound of that"
-	line "Clear Bell!"
+	para "Das Läuten der"
+	line "Klarglocke!"
 
-	para "It… It's sublime!"
+	para "Es… ist erhaben!"
 
-	para "I've never heard"
-	line "so beautiful a"
-	cont "sound before!"
+	para "Das schönste Läu-"
+	line "ten, das ich je"
+	cont "hörte!"
 
-	para "That bell's chime"
-	line "is indicative of"
-	cont "the bearer's soul."
+	para "Dieser Ton sagt"
+	line "alles über die"
+	cont "Seele des Trägers"
+	cont "aus."
 
-	para "You…"
+	para "Du…"
 
-	para "You may be able to"
-	line "make it through"
-	cont "Bell Tower."
+	para "Du könntest es"
+	line "durch den"
+	cont "Glockenturm"
+	cont "schaffen."
 
-	para "Please, do go on."
+	para "Schreite voran."
 	done
 
 EcruteakTinTowerEntranceSageText_PleaseDoGoOn:
-	text "Please, do go on."
+	text "Schreite voran."
 	done
 
 EcruteakTinTowerEntranceSageText_HeardClearBell:
-	text "That bell's chime"
-	line "is indicative of"
-	cont "the bearer's soul."
+	text "Dieser Ton sagt"
+	line "alles über die"
+	cont "Seele des Trägers"
+	cont "aus."
 
-	para "You…"
+	para "Du…"
 
-	para "You may be able to"
-	line "make it through"
-	cont "Bell Tower."
+	para "Du könntest es"
+	line "durch den"
+	cont "Glockenturm"
+	cont "schaffen."
 
-	para "Please, do go on."
+	para "Schreite voran."
 	done
 
 
 EcruteakTinTowerEntranceWanderingSageText_GotClearBell:
-	text "The Bell Tower"
-	line "shook! A #mon"
+	text "Der Glockenturm"
+	line "bebt! Ein #mon"
+	cont "muss"
 
-	para "must have returned"
-	line "to the top!"
+	para "auf der Spitze ge-"
+	line "landet sein!"
 	done
 
 EcruteakTinTowerEntranceGrampsText:
-	text "Two towers…"
-	line "Two #mon…"
+	text "Zwei Türme…"
+	line "Zwei #mon…"
 
-	para "But when one"
-	line "burned down, both"
+	para "Aber als einer"
+	line "niederbrannte,"
 
-	para "#mon flew away,"
-	line "never to return."
+	para "flogen beide #-"
+	line "mon fort und kamen"
+	cont "nie wieder zurück."
 	done

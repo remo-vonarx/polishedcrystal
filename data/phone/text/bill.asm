@@ -1,38 +1,38 @@
 BillPhoneMornGreetingText:
-	text "Good morning!"
+	text "Guten Morgen!"
 
-	para "This is the #-"
-	line "mon Storage System"
+	para "Dies ist der Ver-"
+	line "waltungsservice"
 
-	para "Administration"
-	line "Service."
+	para "des #mon-Lage-"
+	line "rungs-Systems."
 	done
 
 BillPhoneDayGreetingText:
-	text "Good day!"
+	text "Guten Tag!"
 
-	para "This is the #-"
-	line "mon Storage System"
+	para "Dies ist der Ver-"
+	line "waltungsservice"
 
-	para "Administration"
-	line "Service."
+	para "des #mon-Lage-"
+	line "rungs-Systems."
 	done
 
 BillPhoneNiteGreetingText:
-	text "Good evening!"
+	text "Guten Abend!"
 
-	para "This is the #-"
-	line "mon Storage System"
+	para "Dies ist der Ver-"
+	line "waltungsservice"
 
-	para "Administration"
-	line "Service."
+	para "des #mon-Lage-"
+	line "rungs-Systems."
 	done
 
 BillPhoneGenericText:
-	text "Who's calling?"
+	text "Wer ist dran?"
 
-	para "<PLAYER>, is it?"
-	line "Hang on a sec…"
+	para "<PLAYER>, oder?"
+	line "Moment noch…"
 
 	para "……"
 	line "……"

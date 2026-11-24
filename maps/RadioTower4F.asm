@@ -36,11 +36,12 @@ RadioTower4FDJMaryScript:
 	iftruefwd .ClearedRockets
 	jumpthisopenedtext
 
-	text "Mary: Why? Why do"
-	line "I have to suffer"
-	cont "through this?"
+	text "Margit: Warum?"
+	line "Warum muss ich"
+	cont "das über mich"
+	cont "ergehen lassen?"
 
-	para "Meowth, help me!"
+	para "Mauzi, hilf mir!"
 	done
 
 .ClearedRockets:
@@ -60,131 +61,140 @@ RadioTower4FDJMaryScript:
 GenericTrainerGruntM10:
 	generictrainer GRUNTM, 10, EVENT_BEAT_ROCKET_GRUNTM_10, GruntM10SeenText, GruntM10BeatenText
 
-	text "I don't believe"
-	line "it! I was beaten!"
+	text "Ich kann es nicht"
+	line "glauben, ich"
+	cont "wurde besiegt!"
 	done
 
 GenericTrainerProton1:
 	generictrainer PROTON, PROTON1, EVENT_BEAT_PROTON_1, Proton1SeenText, Proton1BeatenText
 
-	text "You've earned my"
-	line "respect, so here's"
-	cont "some advice."
+	text "Du hast dir meinen"
+	line "Respekt verdient."
+	cont "Hier ist ein Tipp"
+	cont "für dich."
 
-	para "It's not too late."
-	line "You can still turn"
-	cont "back."
+	para "Es ist noch nicht"
+	line "zu spät. Noch"
+	cont "kannst du"
+	cont "umkehren."
 	done
 
 GenericTrainerGruntF4:
 	generictrainer GRUNTF, 4, EVENT_BEAT_ROCKET_GRUNTF_4, GruntF4SeenText, GruntF4BeatenText
 
-	text "I love my"
-	line "beautiful self!"
+	text "Ich liebe mein"
+	line "hübsches Äußeres!"
 
-	para "Who cares about"
-	line "#mon?"
+	para "Wer schert sich"
+	line "um #mon?"
 	done
 
 GenericTrainerRocketScientistRich:
 	generictrainer ROCKET_SCIENTIST, RICH, EVENT_BEAT_ROCKET_SCIENTIST_RICH, RocketScientistRichSeenText, RocketScientistRichBeatenText
 
-	text "Do you honestly"
-	line "believe you can"
-	cont "stop Team Rocket?"
+	text "Glaubst du allen"
+	line "Ernstes, Team"
+	cont "Rocket aufhalten"
+	cont "zu können?"
 	done
 
 RadioTower4FFisherText:
-	text "I listened to the"
-	line "radio while I was"
-	cont "at the ruins."
+	text "Als ich bei"
+	line "den Ruinen war,"
+	cont "hörte ich Radio."
 
-	para "I heard a strange"
-	line "broadcast there."
+	para "Ich empfing eine"
+	line "seltsame Sendung."
 	done
 
 RadioTower4FDJMaryText_ClearedRockets:
-	text "Mary: Oh! You're"
-	line "my little savior!"
+	text "Margit: Oh! Du"
+	line "hast mich geret-"
+	cont "tet! Nimm dies als"
 
-	para "Will you take this"
-	line "as my thanks?"
+	para "Zeichen meines"
+	line "Dankes!"
 	done
 
 RadioTower4FDJMaryText_After:
-	text "Mary: Please tune"
-	line "into me on Prof."
+	text "Margit: Wir hören"
+	line "uns in Prof."
 
-	para "Oak's #mon Talk"
-	line "show."
+	para "Eichs #mon-"
+	line "Talkshow wieder."
 	done
 
 RadioTowerMeowthText:
-	text "Meowth: Meowth…"
+	text "Mauzi: Mauzi…"
 	done
 
 GruntM10SeenText:
-	text "You plan to rescue"
-	line "the Director?"
+	text "Du hast vor, den"
+	line "Intendanten zu"
+	cont "retten?"
 
-	para "That won't be pos-"
-	line "sible because I'm"
-	cont "going to beat you!"
+	para "Dies wird nicht"
+	line "möglich sein, da"
+	cont "ich dich besiege!"
 	done
 
 GruntM10BeatenText:
-	text "No! Unbelievable!"
+	text "Nein! Unglaublich!"
 	done
 
 Proton1SeenText:
-	text "Stop! I'm known as"
-	line "the Team Rocket"
-	cont "fortress!"
+	text "Stopp! Ich bin als"
+	line "Team Rocket-"
+	cont "Festung bekannt!"
 
-	para "You're not taking"
-	line "another step!"
+	para "Keinen Schritt"
+	line "weiter!"
 	done
 
 Proton1BeatenText:
-	text "The fortress came"
-	line "down!"
+	text "Die Festung wurde"
+	line "gestürmt!"
 	done
 
 GruntF4SeenText:
-	text "Don't I think"
-	line "#mon are cute?"
+	text "Sind #mon"
+	line "nicht wirklich"
+	cont "niedlich?"
 
-	para "I'll think my"
-	line "#mon are cute--"
+	para "Ich denke, meine"
+	line "#mon sind"
 
-	para "after they beat"
-	line "yours!"
+	para "niedlich - nachdem"
+	line "sie deine besiegt"
+	cont "haben!"
 	done
 
 GruntF4BeatenText:
-	text "Oh, no! They're so"
-	line "useless!"
+	text "Oh, nein! Sie sind"
+	line "absolut unnütz!"
 	done
 
 RocketScientistRichSeenText:
-	text "Most excellent."
+	text "Exzellent."
 
-	para "This Radio Tower"
-	line "will fulfill our"
-	cont "grand design."
+	para "Mit dem Radioturm"
+	line "können wir"
+	cont "unser Vorhaben in"
+	cont "die Tat umsetzen."
 	done
 
 RocketScientistRichBeatenText:
 	text "Hmmm…"
 
-	para "All grand plans"
-	line "come with snags."
+	para "Jeder große Plan"
+	line "hat einen Haken."
 	done
 
 RadioTower4FProductionSignText:
-	text "4F Production"
+	text "3S Produktion"
 	done
 
 RadioTower4FStudio2SignText:
-	text "4F Studio 2"
+	text "3S Studio 2"
 	done

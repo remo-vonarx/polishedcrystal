@@ -110,17 +110,18 @@ CianwoodCityChucksWife:
 	iftrue_jumptextfaceplayer ChucksWifeChubbyText
 	jumpthistextfaceplayer
 
-	text "You crossed the"
-	line "sea to get here?"
+	text "Du hast das Meer"
+	line "überquert, um"
 
-	para "That must have"
-	line "been hard."
+	para "hierher zu kommen?"
+	line "Das war sicher"
+	cont "nicht einfach."
 
-	para "It would be much"
-	line "easier if your"
+	para "Es wäre viel ein-"
+	line "facher, wenn deine"
 
-	para "#mon knew how"
-	line "to Fly…"
+	para "#mon Fliegen"
+	line "einsetzen könnten…"
 	done
 
 CianwoodCitySuicuneApproachMovement:
@@ -173,37 +174,42 @@ ChucksWifeChubbyText:
 	done
 
 CianwoodCityYoungsterText:
-	text "If you use Fly,"
-	line "you can get back"
-
-	para "to Olivine in-"
-	line "stantly."
+	text "Setzt du Fliegen"
+	line "ein, kannst du di-"
+	cont "rekt von hier aus"
+	cont "nach Oliviana City"
+	cont "reisen."
 	done
 
 CianwoodCityPokefanMText:
-	text "Boulders to the"
-	line "north of town can"
-	cont "be crushed."
+	text "Die Felsen nörd-"
+	line "lich der Stadt"
+	cont "können zerschmet-"
+	cont "tert werden."
 
-	para "They may be hiding"
-	line "something."
+	para "Vielleicht findest"
+	line "du etwas unter"
+	cont "ihnen."
 
-	para "Your #mon could"
+	para "Deine #mon"
 if DEF(FAITHFUL)
-	line "use Rock Smash to"
-	cont "break them."
+	line "können Zertrümme-"
+	cont "rer einsetzen, um"
 else
-	line "use Brick Break"
-	cont "to smash them."
+	line "können Durchbruch"
+	cont "einsetzen, um"
 endc
+	cont "sie aus dem Weg zu"
+	cont "räumen."
 	done
 
 CianwoodCityLassText:
-	text "Chuck, the Gym"
-	line "Leader, spars with"
+	text "Hartwig, der Are-"
+	line "naleiter steigt"
 
-	para "his fighting #-"
-	line "mon."
+	para "gerne mit seinen"
+	line "#mon in den"
+	cont "Ring."
 	done
 
 CianwoodCityRocketText:
@@ -232,46 +238,52 @@ CianwoodCityFisherText:
 	done
 
 EusineSuicuneText:
-	text "Eusine: Yo,"
+	text "Eusin: Yo,"
 	line "<PLAYER>."
 
-	para "Wasn't that"
-	line "Suicune just now?"
+	para "War das eben nicht"
+	line "Suicune?"
 
-	para "I only caught a"
-	line "quick glimpse, but"
+	para "Ich habe nur einen"
+	line "Blick riskiert,"
 
-	para "I thought I saw"
-	line "Suicune running on"
-	cont "the waves."
+	para "aber ich dachte,"
+	line "ich hätte Suicune"
 
-	para "Suicune is beau-"
-	line "tiful and grand."
+	para "auf den Wellen"
+	line "rennen sehen."
 
-	para "And it races"
-	line "through towns and"
+	para "Suicune ist schön"
+	line "und fabelhaft."
 
-	para "roads at simply"
-	line "awesome speeds."
+	para "Und es rennt durch"
+	line "Städte und Straßen"
 
-	para "It's wonderful…"
+	para "mit wahnsinniger"
+	line "Geschwindigkeit."
 
-	para "I want to see"
-	line "Suicune up close…"
+	para "Es ist wundervoll…"
 
-	para "I've decided."
+	para "Ich möchte Suicune"
+	line "von nahem sehen…"
 
-	para "I'll battle you as"
-	line "a trainer to earn"
-	cont "Suicune's respect!"
+	para "Ich habe mich"
+	line "entschieden."
 
-	para "Come on, <PLAYER>."
-	line "Let's battle now!"
+	para "Ich kämpfe wie ein"
+	line "Trainer, um mir"
+
+	para "Suicunes Respekt"
+	line "zu verdienen!"
+
+	para "Auf, <PLAYER>."
+	line "Lass uns kämpfen!"
 	done
 
 EusineBeatenText:
-	text "I hate to admit"
-	line "it, but you win."
+	text "Ich hasse es, das"
+	line "zuzugeben, aber du"
+	cont "hast gewonnen."
 	done
 
 EusineLossText:
@@ -283,58 +295,63 @@ EusineLossText:
 	done
 
 EusineAfterText:
-	text "You're amazing,"
+	text "Du bist Wahnsinn,"
 	line "<PLAYER>!"
 
-	para "No wonder #mon"
-	line "gravitate to you."
+	para "Darum sind dir"
+	line "#mon so"
+	cont "zugetan."
 
-	para "I get it now."
+	para "Jetzt weiß ich's."
 
-	para "I'm going to keep"
-	line "searching for"
-	cont "Suicune."
+	para "Ich werde weiter"
+	line "nach Suicune"
+	cont "suchen."
 
-	para "I'm sure we'll see"
-	line "each other again."
+	para "Ich bin sicher,"
+	line "dass ich ihm eines"
+	cont "Tages begegne."
 
-	para "See you around!"
+	para "Man sieht sich!"
 	done
 
 CianwoodCitySignText:
-	text "Cianwood City"
+	text "Anemonia City"
 
-	para "A Port Surrounded"
-	line "by Rough Seas"
+	para "Eine Hafenstadt"
+	line "Umgeben von Stür-"
+	cont "mischer See"
 	done
 
 CianwoodGymSignText:
-	text "Cianwood City"
-	line "#mon Gym"
+	text "PKMN-Arena von"
+	line "Anemonia City"
 
-	para "Leader: Chuck"
+	para "Leitung: Hartwig"
+	line "Er spricht durch"
 
-	para "His Roaring Fists"
-	line "Do the Talking"
+	para "seine Fäuste"
 	done
 
 CianwoodPharmacySignText:
-	text "500 Years of"
-	line "Tradition"
+	text "500 Jahre voller"
+	line "Tradition."
 
-	para "Cianwood City"
-	line "Pharmacy"
+	para "Apotheke von"
+	line "Anemonia City"
 
-	para "We Await Your"
-	line "Medicinal Queries"
+	para "Gerne erwarten wir"
+	line "Ihre medizinischen"
+	cont "Fragen"
 	done
 
 CianwoodPhotoStudioSignText:
-	text "Cianwood City"
-	line "Photo Studio"
+	text "Fotostudio von"
+	line "Anemonia City"
 
-	para "Take a Snapshot as"
-	line "a Keepsake!"
+	para "Machen Sie einen"
+	line "Schnappschuss zur"
+	cont "Erinnerung!"
 	done
 
 CianwoodCliffEdgeGateSignText:

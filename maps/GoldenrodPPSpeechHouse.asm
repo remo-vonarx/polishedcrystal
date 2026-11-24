@@ -17,28 +17,29 @@ GoldenrodPPSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodPPSpeechHouseLassText, -1
 
 GoldenrodPPSpeechHouseFisherText:
-	text "Once while I was"
-	line "battling, my"
+	text "Als ich einmal"
+	line "kämpfte, konnte"
 
-	para "#mon couldn't"
-	line "make any moves."
+	para "mein #mon kei-"
+	line "ne Attacken mehr"
+	cont "ausführen."
 
-	para "The Power Points,"
-	line "or PP, of its"
-
-	para "moves were all"
-	line "gone."
+	para "Die Angriffspunk-"
+	line "te, oder AP, sei-"
+	cont "ner Attacken waren"
+	cont "verbraucht."
 	done
 
 GoldenrodPPSpeechHouseLassText:
-	text "Sometimes, a"
-	line "healthy #mon"
+	text "Manchmal kann auch"
+	line "ein gesundes"
 
-	para "may be unable to"
-	line "use its moves."
+	para "#mon nicht mehr"
+	line "angreifen."
 
-	para "If that happens,"
-	line "heal it at a #-"
-	cont "mon Center or use"
-	cont "an item."
+	para "In diesem Fall"
+	line "musst du es in ei-"
+	cont "nem #mon-Center"
+	cont "oder mit einem"
+	cont "Item heilen."
 	done

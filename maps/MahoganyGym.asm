@@ -76,50 +76,58 @@ MahoganyGymPryceScript:
 GenericTrainerSkierRoxanne:
 	generictrainer SKIER, ROXANNE, EVENT_BEAT_SKIER_ROXANNE, SkierRoxanneSeenText, SkierRoxanneBeatenText
 
-	text "If you don't skate"
-	line "with precision,"
+	text "Wenn du nicht ge-"
+	line "nau rutschst,"
 
-	para "you won't get far"
-	line "in this Gym."
+	para "kommst du in die-"
+	line "ser PKMN-Arena"
+	cont "nicht weit."
 	done
 
 GenericTrainerSkierClarissa:
 	generictrainer SKIER, CLARISSA, EVENT_BEAT_SKIER_CLARISSA, SkierClarissaSeenText, SkierClarissaBeatenText
 
-	text "I shouldn't have"
-	line "been bragging"
-	cont "about my skiing…"
+	text "Ich hätte mit mei-"
+	line "nen Ski-Künsten"
+	cont "nicht so angeben"
+	cont "sollen…"
 	done
 
 GenericTrainerBoarderRonald:
 	generictrainer BOARDER, RONALD, EVENT_BEAT_BOARDER_RONALD, BoarderRonaldSeenText, BoarderRonaldBeatenText
 
-	text "I think there's a"
-	line "move a #mon"
+	text "Ich glaube, es"
+	line "gibt eine Attacke,"
 
-	para "can use while it's"
-	line "frozen."
+	para "die #mon"
+	line "auch ausführen"
+
+	para "können, wenn sie"
+	line "gefroren sind."
 	done
 
 GenericTrainerBoarderBrad:
 	generictrainer BOARDER, BRAD, EVENT_BEAT_BOARDER_BRAD, BoarderBradSeenText, BoarderBradBeatenText
 
-	text "This Gym is great."
-	line "I love boarding"
-	cont "with my #mon!"
+	text "Diese PKMN-Arena"
+	line "ist toll. Ich"
+	cont "liebe es, mit mei-"
+	cont "nen #mon hier"
+	cont "zu snowboarden!"
 	done
 
 GenericTrainerBoarderDouglas:
 	generictrainer BOARDER, DOUGLAS, EVENT_BEAT_BOARDER_DOUGLAS, BoarderDouglasSeenText, BoarderDouglasBeatenText
 
-	text "The secret behind"
-	line "Pryce's power…"
+	text "Das Geheimnis von"
+	line "Norberts Kraft…"
 
-	para "He meditates under"
-	line "a waterfall daily"
+	para "Er meditiert täg-"
+	line "lich unter einem"
 
-	para "to strengthen his"
-	line "mind and body."
+	para "Wasserfall, um"
+	line "Geist und Körper"
+	cont "zu stärken."
 	done
 
 MahoganyGymGuyScript:
@@ -127,23 +135,24 @@ MahoganyGymGuyScript:
 	iftrue_jumptextfaceplayer MahoganyGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Pryce is a veteran"
-	line "who has trained"
+	text "Norbert ist ein"
+	line "Veteran, der seine"
 
-	para "#mon for some"
-	line "50 years."
+	para "#mon schon"
+	line "seit fast 50 Jah-"
+	cont "ren trainiert."
 
-	para "He's said to be"
-	line "good at freezing"
+	para "Angeblich friert"
+	line "er seine Gegner"
 
-	para "opponents with"
-	line "ice-type moves."
+	para "gerne mit Eis-"
+	line "Attacken ein."
 
-	para "That means you"
-	line "should melt him"
+	para "Das heißt, du"
+	line "solltest ihn mit"
 
-	para "with your burning"
-	line "ambition!"
+	para "deinem brennenden"
+	line "Ehrgeiz schmelzen!"
 	done
 
 MahoganyGymStatue:
@@ -159,48 +168,52 @@ MahoganyGymStatue:
 	jumpstd gymstatue3
 
 PryceText_Intro:
-	text "#mon have many"
-	line "experiences in"
+	text "#mon machen in"
+	line "ihrem Leben viele"
 
-	para "their lives, just"
-	line "like we do."
+	para "Erfahrungen. Genau"
+	line "wie Menschen."
 
-	para "I, too, have seen"
-	line "and suffered much"
-	cont "in my life."
+	para "Auch ich habe in"
+	line "meinem Leben viel"
+	cont "gesehen und er-"
+	cont "litten."
 
-	para "Since I am your"
-	line "elder, let me show"
-	cont "you what I mean."
+	para "Da ich der Ältere"
+	line "bin, lass mich dir"
+	cont "zeigen, was ich"
+	cont "meine."
 
-	para "I have been with"
-	line "#mon since"
+	para "Ich war schon mit"
+	line "#mon zusammen,"
 
-	para "before you were"
-	line "born."
+	para "bevor du geboren"
+	line "wurdest."
 
-	para "I do not lose"
-	line "easily."
+	para "Ich verliere nicht"
+	line "gerne."
 
-	para "I, Pryce--the"
-	line "winter trainer--"
+	para "Ich, Norbert, der"
+	line "Wintertrainer,"
 
-	para "shall demonstrate"
-	line "my power!"
+	para "werde meine Macht"
+	line "demonstrieren!"
 	done
 
 PryceText_Impressed:
-	text "Ah, I am impressed"
-	line "by your prowess."
+	text "Ich bin von deinem"
+	line "Können beein-"
+	cont "druckt."
 
-	para "With your strong"
-	line "will, I know you"
+	para "Mit deinem starken"
+	line "Willen, wirst du"
 
-	para "will overcome all"
-	line "life's obstacles."
+	para "alle Widrigkeiten"
+	line "in deinem Leben"
+	cont "überstehen."
 
-	para "You are worthy of"
-	line "this Badge!"
+	para "Du bist dieses"
+	line "Ordens würdig!"
 	done
 
 PryceText_GlacierBadgeSpeech:
@@ -215,90 +228,99 @@ PryceText_GlacierBadgeSpeech:
 	done
 
 PryceText_CherishYourPokemon:
-	text "When the ice and"
-	line "snow melt, spring"
-	cont "arrives."
+	text "Wenn Eis und"
+	line "Schnee geschmolzen"
+	cont "sind, kehrt der"
+	cont "Frühling wieder."
 
-	para "You and your #-"
-	line "mon will be to-"
+	para "Du und deine"
+	line "#mon werden"
 
-	para "gether for many"
-	line "years to come."
+	para "noch viele Jahre"
+	line "zusammen sein."
 
-	para "Cherish your time"
-	line "together!"
+	para "Genießt eure ge-"
+	line "meinsame Zeit!"
 	done
 
 BoarderRonaldSeenText:
-	text "I'll freeze your"
-	line "#mon, so you"
-	cont "can't do a thing!"
+	text "Ich werde deine"
+	line "#mon einfrie-"
+	cont "ren, so dass sie"
+	cont "sich nicht bewegen"
+	cont "können."
 	done
 
 BoarderRonaldBeatenText:
-	text "Darn. I couldn't"
-	line "do a thing."
+	text "Mist! Ich konnte"
+	line "nichts tun."
 	done
 
 BoarderBradSeenText:
-	text "This Gym has a"
-	line "slippery floor."
+	text "Diese PKMN-Arena"
+	line "hat einen rutschi-"
+	cont "gen Boden. Das ist"
+	cont "doch lustig, oder?"
 
-	para "It's fun, isn't"
-	line "it?"
-
-	para "But hey--we're"
-	line "not playing games"
-	cont "here!"
+	para "Aber wir sind"
+	line "nicht hier, um zu"
+	cont "spielen!"
 	done
 
 BoarderBradBeatenText:
-	text "Do you see how"
-	line "serious we are?"
+	text "Siehst du jetzt,"
+	line "wie ernst wir es"
+	cont "meinen?"
 	done
 
 BoarderDouglasSeenText:
-	text "I know Pryce's"
-	line "secret."
+	text "Ich kenne Norberts"
+	line "Geheimnis."
 	done
 
 BoarderDouglasBeatenText:
-	text "OK. I'll tell you"
-	line "Pryce's secret."
+	text "O.K. Ich verrate"
+	line "dir Norberts Ge-"
+	cont "heimnis."
 	done
 
 SkierRoxanneSeenText:
-	text "To get to Pryce,"
-	line "our Gym Leader,"
+	text "Um zu Norbert, un-"
+	line "serem Arenaleiter,"
 
-	para "you need to think"
-	line "before you skate."
+	para "zu gelangen, musst"
+	line "du denken, bevor"
+	cont "du loslegst."
 	done
 
 SkierRoxanneBeatenText:
-	text "I wouldn't lose to"
-	line "you in skiing!"
+	text "Beim Skifahren"
+	line "würde ich nie ge-"
+	cont "gen dich verlie-"
+	cont "ren."
 	done
 
 SkierClarissaSeenText:
-	text "Check out my"
-	line "parallel turn!"
+	text "Sieh dir meinen"
+	line "Parallelschwung"
+	cont "an!"
 	done
 
 SkierClarissaBeatenText:
-	text "No! You made me"
-	line "wipe out!"
+	text "Nein! Jetzt bin"
+	line "ich weggerutscht!"
 	done
 
 
 MahoganyGymGuyWinText:
-	text "Pryce is some-"
-	line "thing, but you're"
-	cont "something else!"
+	text "Norbert ist nicht"
+	line "übel, aber du"
+	cont "bist noch besser!"
 
-	para "That was a hot"
-	line "battle that"
+	para "Das war ein heißer"
+	line "Kampf, der die"
 
-	para "bridged the gen-"
-	line "eration gap!"
+	para "Kluft zwischen den"
+	line "Generationen über-"
+	cont "wunden hat."
 	done

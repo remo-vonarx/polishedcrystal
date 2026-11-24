@@ -89,15 +89,15 @@ MahoganyMart1FBlackBeltScript:
 	iftrue_jumptextfaceplayer MahoganyMart1FBlackBeltText_LanceEntered
 	jumpthistextfaceplayer
 
-	text "Heheh! The experi-"
-	line "ment worked like a"
-	cont "charm."
+	text "Heheh! Das"
+	line "Experiment verlief"
+	cont "wie am Schnürchen."
 
-	para "Magikarp are just"
-	line "worthless, but"
+	para "Karpador ist"
+	line "wertlos, aber"
 
-	para "Gyarados are big"
-	line "moneymakers."
+	para "Garados verkauft"
+	line "sich gut."
 	done
 
 MahoganyMart1FVeteranFScript:
@@ -188,46 +188,52 @@ MahoganyMart1FLanceApproachHiddenStairsMovement:
 	step_end
 
 MahoganyMart1FPharmacistText_LanceEntered:
-	text "Arrgh… You found"
-	line "the secret stair-"
-	cont "way…"
+	text "Arrgh… Du hast"
+	line "die Geheimtreppe"
+	cont "gefunden…"
 	done
 
 
 MahoganyMart1FBlackBeltText_LanceEntered:
 	text "Urrgh…"
 
-	para "That guy's dragon"
-	line "#mon are tough…"
+	para "Seine Drachen-"
+	line "#mon sind"
+	cont "stark…"
 	done
 
 MahoganyMart1FLanceDragoniteHyperBeamText:
-	text "Lance: Dragonite,"
-	line "Hyper Beam."
+	text "Siegfried:"
+	line "Dragoran,"
+	para "Hyperstrahl!"
 	done
 
 MahoganyMart1FLanceRadioText:
-	text "What took you,"
+	text "Wo bleibst du,"
 	line "<PLAYER>?"
 
-	para "Just as I thought,"
-	line "that strange radio"
+	para "Das habe ich mir"
+	line "gleich gedacht."
 
-	para "signal is coming"
-	line "from here."
+	para "Die merkwürdigen"
+	line "Radiowellen kommen"
+	cont "von hier."
 	done
 
 MahoganyMart1FLanceStairsText:
-	text "The stairs are"
-	line "right here."
+	text "Die Treppe"
+	line "ist hier."
 	done
 
 MahoganyMart1FLanceSplitUpText:
-	text "Lance: <PLAYER>, we"
-	line "should split up to"
+	text "Siegfried:"
+	line "<PLAYER>,"
 
-	para "check this place."
-	line "I'll go first."
+	para "wir sollten uns"
+	line "trennen, um diesen"
+
+	para "Ort zu erforschen."
+	line "Ich gehe zuerst."
 	done
 
 MahoganyMart1FVeteranFText:

@@ -52,12 +52,15 @@ CeladonPokeCenter1FPharmacistText:
 	done
 
 CeladonPokeCenter1FCooltrainerfText:
-	text "Erika is a master"
-	line "of grass #mon."
+	text "Erika versteht es"
+	line "meisterlich, mit"
 
-	para "She'll make you"
-	line "pay if you don't"
-	cont "watch yourself."
+	para "Pflanzen-#mon"
+	line "umzugehen."
+
+	para "Eine Unachtsamkeit"
+	line "wird dir bei ihr"
+	cont "übel bekommen."
 	done
 
 CeladonPokeCenter1FLassText:

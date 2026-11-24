@@ -44,33 +44,35 @@ MonicaCallback:
 GenericTrainerSwimmerfElaine:
 	generictrainer SWIMMERF, ELAINE, EVENT_BEAT_SWIMMERF_ELAINE, SwimmerfElaineSeenText, SwimmerfElaineBeatenText
 
-	text "I'd say I'm a bet-"
-	line "ter swimmer than"
-	cont "you. Yeah!"
+	text "Ich behaupte,"
+	line "dass ich besser"
+	cont "schwimme als du!"
 	done
 
 GenericTrainerSwimmerfPaula:
 	generictrainer SWIMMERF, PAULA, EVENT_BEAT_SWIMMERF_PAULA, SwimmerfPaulaSeenText, SwimmerfPaulaBeatenText
 
-	text "While I float like"
-	line "this, the waves"
-	cont "carry me along."
+	text "Ich lasse mich im"
+	line "Wasser treiben und"
+	cont "von den Wellen"
+	cont "davontragen."
 	done
 
 GenericTrainerSwimmermSimon:
 	generictrainer SWIMMERM, SIMON, EVENT_BEAT_SWIMMERM_SIMON, SwimmermSimonSeenText, SwimmermSimonBeatenText
 
-	text "Cianwood City is"
-	line "a good distance"
-	cont "away from here."
+	text "Anemonia City ist"
+	line "ziemlich weit"
+	cont "weg von hier."
 	done
 
 GenericTrainerSwimmermRandall:
 	generictrainer SWIMMERM, RANDALL, EVENT_BEAT_SWIMMERM_RANDALL, SwimmermRandallSeenText, SwimmermRandallBeatenText
 
-	text "Swimming exercises"
-	line "your entire body."
-	cont "It's healthy."
+	text "Schwimmen hält"
+	line "deinen ganzen"
+	cont "Körper fit und"
+	cont "gesund."
 	done
 
 Route40PokefanMScript:
@@ -78,10 +80,10 @@ Route40PokefanMScript:
 	iftrue_jumptextfaceplayer Route40PokefanMText2
 	jumpthistextfaceplayer
 
-	text "Hm! There's a big"
-	line "building up ahead!"
+	text "Hm! Das ist ein"
+	line "hohes Gebäude!"
 
-	para "What is it?"
+	para "Was ist das?"
 	done
 
 Route40BeachGuyScript:
@@ -192,75 +194,83 @@ MonicaScript:
 	setevent EVENT_GOT_SHARP_BEAK_FROM_MONICA
 	jumpthisopenedtext
 
-	text "Monica: It's an"
-	line "item that raises"
+	text "Monja: Dieses"
+	line "Item verstärkt"
 
-	para "the power of Fly-"
-	line "ing-type moves."
+	para "Flug-Attacken."
 
-	para "You should equip a"
-	line "bird #mon with"
-	cont "that item."
+	para "Damit solltest du"
+	line "ein Vogel-#mon"
+	cont "ausstatten."
 	done
 
 MonicaNotMondayScript:
 	jumpthistextfaceplayer
 
-	text "Monica: I don't"
-	line "think today is"
-	cont "Monday. How sad…"
+	text "Monja: Ich"
+	line "fürchte, heute ist"
+	cont "nicht Montag. Wie"
+	cont "schade…"
 	done
 
 MonicaDoneScript:
 	end
 
 SwimmermSimonSeenText:
-	text "You have to warm"
-	line "up before going"
-	cont "into the water."
+	text "Du musst dich erst"
+	line "aufwärmen, bevor"
+	cont "du schwimmen"
+	cont "gehst."
 
-	para "That's basic."
+	para "Das ist"
+	line "Grundwissen."
 	done
 
 SwimmermSimonBeatenText:
-	text "OK! Uncle! I give!"
+	text "O.K.! Onkel! Ich"
+	line "gebe auf!"
 	done
 
 SwimmermRandallSeenText:
-	text "Hey, you're young"
-	line "and fit!"
+	text "Heh, du bist jung"
+	line "und fit!"
 
-	para "Don't ride your"
-	line "#mon! Swim!"
+	para "Surfe nicht auf"
+	line "deinem #mon!"
+	cont "Schwimme!"
 	done
 
 SwimmermRandallBeatenText:
-	text "Uh-oh. I lost…"
+	text "Oh, oh. Ich habe"
+	line "verloren…"
 	done
 
 SwimmerfElaineSeenText:
-	text "Are you going to"
-	line "Cianwood?"
+	text "Gehst du nach"
+	line "Anemonia City?"
 
-	para "How about a quick"
-	line "battle first?"
+	para "Wie wäre es erst"
+	line "mit einem kleinen"
+	cont "Kampftraining?"
 	done
 
 SwimmerfElaineBeatenText:
-	text "I lost that one!"
+	text "Diesmal habe ich"
+	line "verloren!"
 	done
 
 SwimmerfPaulaSeenText:
-	text "No inner tube for"
-	line "me."
+	text "Ich habe keine"
+	line "Schwimmreifen."
 
-	para "I'm hanging on to"
-	line "a sea #mon!"
+	para "Ich halte mich an"
+	line "einem Wasser-"
+	cont "#mon fest!"
 	done
 
 SwimmerfPaulaBeatenText:
-	text "Ooh, I'm feeling"
-	line "dizzy!"
+	text "Oh, ich fühle mich"
+	line "so schwindelig!"
 	done
 
 Route40BeachGirlText:
@@ -273,73 +283,81 @@ Route40BeachGirlText:
 
 
 Route40PokefanMText2:
-	text "Hm! Look at all"
-	line "those serious-"
-	cont "looking trainers"
-	cont "streaming in."
+	text "Hm! Sieh die"
+	line "entschlossenen"
+	cont "Trainer, die"
+	cont "hineingehen."
 
-	para "What? What?"
+	para "Was? Was?"
 	done
 
 Route40PicnickerText:
-	text "I came to Olivine"
-	line "by ship to see the"
+	text "Ich reiste mit dem"
+	line "Schiff nach"
 
-	para "sights and soak up"
-	line "the atmosphere."
+	para "Oliviana, um die"
+	line "Sehenswürdigkeiten"
 
-	para "Being a port, it"
-	line "feels so different"
-	cont "from a big city."
+	para "und die Atmosphäre"
+	line "zu genießen."
+
+	para "Da es eine Hafen-"
+	line "stadt ist, unter-"
+
+	para "scheidet sie sich"
+	line "von anderen"
+	cont "großen Städten."
 	done
 
 
 Route40BeachGuyText2:
-	text "Have you gone to"
-	line "the Battle Tower?"
+	text "Warst du schon am"
+	line "Duellturm?"
 
-	para "I think a lot of"
-	line "tough trainers"
+	para "Ich denke, dass"
+	line "sich bereits viele"
 
-	para "have gathered"
-	line "there already."
+	para "starke Trainer"
+	line "dort versammeln."
 
-	para "But since you have"
-	line "so many Badges,"
+	para "Da du so viele"
+	line "Orden besitzt,"
 
-	para "you shouldn't do"
-	line "badly at all."
+	para "wirst du dich dort"
+	line "wacker schlagen."
 	done
 
 MeetMonicaText:
-	text "Monica: Glad to"
-	line "meet you. I'm"
+	text "Monja: Es freut"
+	line "mich, dich kennen"
 
-	para "Monica of Monday."
+	para "zu lernen. Ich bin"
+	line "Monja von Montag."
 	done
 
 MonicaGivesGiftText:
-	text "As a token of our"
-	line "friendship, I have"
-	cont "a gift for you!"
+	text "Als Zeichen"
+	line "unserer Freund-"
+	cont "schaft schenke ich"
+	cont "dir dies!"
 	done
 
 
 MonicaMondayText:
-	text "Monica: My broth-"
-	line "ers and sisters"
+	text "Monja: Meine"
+	line "Geschwister"
 
-	para "are all over the"
-	line "place."
+	para "findest du"
+	line "überall."
 
-	para "See if you could"
-	line "find them all!"
+	para "Du solltest sie"
+	line "alle finden!"
 	done
 
 
 Route40SignText:
 	text "Route 40"
 
-	para "Cianwood City -"
-	line "Olivine City"
+	para "Anemonia City -"
+	line "Oliviana City"
 	done

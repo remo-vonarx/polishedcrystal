@@ -28,15 +28,18 @@ GentlemanAlfredScript:
 	iftrue_jumptextfaceplayer GentlemanAlfredFinalText
 	jumpthistextfaceplayer
 
-	text "Up top is a #-"
-	line "mon that keeps the"
-	cont "Lighthouse lit."
+	text "Ganz oben ist ein"
+	line "#mon, das den"
+	cont "Leuchtturm"
+	cont "betreibt."
 
-	para "But I hear that"
-	line "it's sick now and"
+	para "Ich habe gehört,"
+	line "dass es krank ist"
 
-	para "can't be cured by"
-	line "ordinary medicine."
+	para "und dass normale"
+	line "Medizin nicht"
+
+	para "hilft."
 	done
 
 TrainerSailorHuey1:
@@ -162,24 +165,24 @@ SailorHuey1Script:
 	jumpstd rematchgiftm
 
 SailorHuey1SeenText:
-	text "Men of the sea are"
-	line "always spoiling"
-	cont "for a good fight!"
+	text "Seefahrer scheuen"
+	line "keine harten"
+	cont "Kämpfe!"
 	done
 
 SailorHuey1BeatenText:
-	text "Urf!"
-	line "I lose!"
+	text "Uff!"
+	line "Ich habe verloren!"
 	done
 
 GentlemanAlfredSeenText:
-	text "Hm? This is no"
-	line "place for playing."
+	text "Hm? Dies ist kein"
+	line "Ort für Spielchen."
 	done
 
 GentlemanAlfredBeatenText:
-	text "Ah! I can see that"
-	line "you're serious."
+	text "Ah! Ich sehe, du"
+	line "meinst es ernst."
 	done
 
 GentlemanAlfredFinalText:
@@ -195,10 +198,9 @@ GentlemanAlfredFinalText:
 	done
 
 SailorHueyGiveProteinText:
-	text "Man! You're as"
-	line "tough as ever!"
+	text "Wow! Du bist"
+	line "stark, wie immer!"
 
-	para "Anyway, here's"
-	line "that medicine from"
-	cont "before."
+	para "Egal, hier hast"
+	line "du die Medizin."
 	done

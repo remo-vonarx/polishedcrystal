@@ -133,44 +133,50 @@ TrainerSchoolgirlImogen:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "I'm trying hard so"
-	line "I can be the star"
-	cont "in my class."
+	text "Ich strenge mich"
+	line "sehr an, damit ich"
+	cont "der Star in"
+	cont "meiner Klasse bin."
 	done
 
 HikerAnthony1SeenText:
-	text "I came through the"
-	line "tunnel, but I"
+	text "Ich bin durch den"
+	line "Tunnel gegangen,"
+	cont "aber ich habe noch"
 
-	para "still have plenty"
-	line "of energy left."
+	para "viel Energie"
+	line "übrig."
 	done
 
 HikerAnthony1BeatenText:
-	text "Whoa! You've got"
-	line "more zip than me!"
+	text "Wow! Du hast mehr"
+	line "Mumm als ich!"
 	done
 
 HikerAnthony1AfterText:
-	text "We Hikers are at"
-	line "our best in the"
-	cont "mountains."
+	text "In den Bergen sind"
+	line "wir Wanderer"
+	cont "in unserem"
+	cont "Element."
 	done
 
 HikerAnthonyDunsparceText:
-	text "Hey, did you get a"
-	line "Dunsparce?"
+	text "Heh, hast du ein"
+	line "Dummisel?"
 
-	para "I caught one too."
+	para "Ich habe eines."
 
-	para "Take a look at it"
-	line "in the light. It's"
-	cont "got a funny face!"
+	para "Sieh es dir im"
+	line "Licht an. Es hat"
+
+	para "ein lustiges"
+	line "Gesicht!"
 	done
 
 SchoolgirlImogenSeenText:
-	text "I'm the best in my"
-	line "class at #mon."
+	text "Ich bin der"
+	line "#mon-Experte"
+	cont "in meiner Klasse."
 	done
 
 SchoolgirlImogenBeatenText:

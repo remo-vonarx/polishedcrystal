@@ -181,30 +181,31 @@ TinTower1FSage4Script:
 	iftruefwd .FoughtHoOh
 	jumpthistextfaceplayer
 
-	text "Ho-Oh appears to"
-	line "have descended"
+	text "Es scheint, als ob"
+	line "Ho-Oh vom"
+	cont "Glockenturm"
 
-	para "upon this, the"
-	line "Bell Tower!"
+	para "heruntergekommen"
+	line "ist!"
 	done
 
 .FoughtHoOh:
 	jumpthistextfaceplayer
 
-	text "The legendary"
-	line "#mon are said"
+	text "Die legendären"
+	line "#mon sollen"
 
-	para "to embody three"
-	line "powers…"
+	para "die drei Mächte"
+	line "verkörpern…"
 
-	para "The lightning that"
-	line "struck the tower."
+	para "Die Blitze, die im"
+	line "Turm einschlugen."
 
-	para "The fire that"
-	line "burned the tower."
+	para "Das Feuer, das den"
+	line "Turm zerstörte."
 
-	para "And the rain that"
-	line "put out the fire…"
+	para "Und den Regen, der"
+	line "das Feuer löschte…"
 	done
 
 TinTower1FSage5Script:
@@ -230,30 +231,36 @@ TinTower1FSage5Script:
 .GotRainbowWing:
 	jumpthisopenedtext
 
-	text "Now, go."
+	text "Geh nun!"
 	done
 
 .FoughtHoOh:
 	jumpthisopenedtext
 
-	text "When the legendary"
-	line "#mon appeared…"
+	text "Als das legendäre"
+	line "#mon erschien…"
 
-	para "They struck terror"
-	line "in those who saw"
-	cont "their rise."
+	para "Diejenigen, die"
+	line "ihrem Aufstieg"
 
-	para "And…"
+	para "beiwohnten, wurden"
+	line "Zeugen ihres"
+	cont "Terrors."
 
-	para "Some even took to"
-	line "futile attacks."
+	para "Und…"
 
-	para "The legendary"
-	line "#mon, knowing"
+	para "Einige griffen zu"
+	line "sinnlosen"
+	cont "Attacken."
 
-	para "their own power,"
-	line "fled, ignoring the"
-	cont "frightened people."
+	para "Die legendären"
+	line "#mon, wohl-"
+	cont "wissend ob ihrer"
+
+	para "Kraft, flohen und"
+	line "ignorierten die"
+	cont "geängstigten"
+	cont "Menschen."
 	done
 
 TinTower1FSage6Script:
@@ -261,34 +268,38 @@ TinTower1FSage6Script:
 	iftruefwd .FoughtHoOh
 	jumpthistextfaceplayer
 
-	text "I believe you are"
-	line "being tested."
+	text "Ich glaube, du"
+	line "wirst geprüft."
 
-	para "Free your mind"
-	line "from uncertainty,"
-	cont "and advance."
+	para "Sprenge die Ketten"
+	line "der Unsicherheit"
+	cont "von deinem Ver-"
+	cont "stand und schreite"
+	cont "voran."
 	done
 
 .FoughtHoOh:
 	jumpthistextfaceplayer
 
-	text "Of the legendary"
-	line "#mon, Suicune"
+	text "Von den legendären"
+	line "#mon soll"
 
-	para "is said to be the"
-	line "closest to Ho-Oh."
+	para "Suicune die"
+	line "stärkste Bindung"
+	cont "zu Ho-Oh haben."
 
-	para "I hear there may"
-	line "also be a link to"
+	para "Ich habe gehört,"
+	line "dass es auch eine"
 
-	para "#mon known as"
-	line "Unown."
+	para "Verbindung zu ei-"
+	line "nem #mon namens"
+	cont "Icognito gibt."
 
-	para "The #mon Unown"
-	line "must be sharing a"
+	para "Icognito muss"
+	line "einen kooperativen"
 
-	para "cooperative bond"
-	line "with Suicune."
+	para "Bund mit Suicune"
+	line "haben."
 	done
 
 TinTower1FEusineAfterHoOhScript:
@@ -398,120 +409,125 @@ TinTower1FSage3EntersMovement:
 	step_end
 
 TinTowerEusineSuicuneText:
-	text "Eusine: Awesome!"
-	line "Too awesome, even!"
+	text "Eusin: Wahnsinn!"
+	line "Einfach Wahnsinn!"
 
-	para "I've never seen a"
-	line "battle that great."
+	para "Einen derartigen"
+	line "Kampf habe ich"
+	cont "noch nie gesehen."
 
-	para "That was truly"
-	line "inspiring to see."
+	para "Das hat mich sehr"
+	line "beeindruckt."
 
-	para "Suicune was tough,"
-	line "but you were even"
+	para "Suicune war stark,"
+	line "aber du warst noch"
 
-	para "more incredible,"
+	para "unglaublicher,"
 	line "<PLAYER>."
 
-	para "I heard Suicune's"
-	line "mystic power"
+	para "Ich hörte, dass"
+	line "Suicunes mystische"
 
-	para "summons a rainbow-"
-	line "colored #mon."
+	para "Kraft ein regen-"
+	line "bogenfarbenes"
+	cont "#mon anlockt."
 
-	para "Maybe, just maybe,"
-	line "what went on today"
+	para "Vielleicht zeigt"
+	line "sich dieses #-"
+	cont "mon, nach dem, was"
 
-	para "will cause that"
-	line "#mon to appear."
+	para "sich heute"
+	line "ereignete."
 
-	para "I'm going to study"
-	line "the legends more."
+	para "Ich werde diese"
+	line "Legende noch"
+	cont "einmal nachlesen."
 
-	para "Thanks for showing"
-	line "me that fantastic"
-	cont "battle."
+	para "Danke, dass ich"
+	line "diesem Spitzen-"
 
-	para "Later, <PLAYER>!"
+	para "kampf beiwohnen"
+	line "durfte."
+
+	para "Bis dann, <PLAYER>!"
 	done
 
 TinTower1FSage1Text:
-	text "According to"
-	line "legend…"
+	text "Die Legende besagt"
+	line "…"
 
-	para "When the souls of"
-	line "#mon and humans"
+	para "Kommunizieren die"
+	line "Seelen von #mon"
 
-	para "commune, from the"
-	line "heavens descends a"
+	para "und Menschen,"
+	line "kommt ein regen-"
+	cont "bogenfarbenes"
 
-	para "#mon of rainbow"
-	line "colors…"
+	para "#mon vom Himmel"
+	line "herab…"
 
-	para "Could it mean the"
-	line "legendary #mon"
+	para "Könnte das bedeu-"
+	line "ten, dass die"
 
-	para "are testing us"
-	line "humans?"
+	para "legendären #mon"
+	line "uns Menschen auf"
+	cont "die Probe stellen?"
 	done
 
 TinTower1FSage2Text:
-if DEF(FAITHFUL)
-	text "When the Brass"
-else
-	text "When the Gong"
-endc
-	line "Tower burned down,"
+	text "Als der Bronzeturm"
+	line "abbrannte, sollen"
 
-	para "three nameless"
-	line "#mon were said"
+	para "drei namenlose"
+	line "#mon im Feuer"
 
-	para "to have perished."
-	line "It was tragic."
+	para "umgekommen sein."
+	line "Eine Tragödie."
 
-	para "However…"
+	para "Jedoch…"
 
-	para "A rainbow-colored"
-	line "#mon…"
+	para "Ein regenbogen-"
+	line "farbenes #mon…"
 
-	para "In other words…"
+	para "Genauer gesagt…"
 
-	para "Ho-Oh descended"
-	line "from the sky and"
+	para "Ho-Oh kam vom"
+	line "Himmel herab und"
 
-	para "gave new life to"
-	line "the three #mon."
+	para "erweckte die drei"
+	line "#mon wieder zum"
+	cont "Leben."
 
-	para "They are…"
+	para "Es sind…"
 
-	para "Suicune, Entei and"
+	para "Suicune, Entei und"
 	line "Raikou."
 
-	para "That is what they"
-	line "say."
+	para "So lautet die"
+	line "Legende."
 	done
 
 TinTower1FSage3Text:
-	text "The two towers are"
-	line "said to have been"
+	text "Die beiden Türme"
+	line "wurden errichtet,"
 
-	para "built to foster"
-	line "friendship and"
+	para "um Freundschaft"
+	line "und Hoffnung"
 
-	para "hope between #-"
-	line "mon and people."
+	para "zwischen #mon"
+	line "und den Menschen"
+	cont "zu festigen."
 
-	para "That was 700 years"
-	line "ago, but the ideal"
-
-	para "still remains"
-	line "important today."
+	para "Das war vor 700"
+	line "Jahren, aber die-"
+	cont "se Maxime ist noch"
+	cont "heute gültig."
 	done
 
 
 TinTower1FSage5Text1:
-	text "This will protect"
-	line "you. Take it."
+	text "Dies wird dich"
+	line "schützen. Nimm es!"
 	done
 
 

@@ -79,12 +79,12 @@ LavenderPokeCenter1FYoungsterScript:
 	done
 
 LavenderPokeCenter1FGentlemanText:
-	text "To the north of"
-	line "Lavender is Rock"
+	text "Im Norden von"
+	line "Lavandia ist der"
 
-	para "Tunnel. Go through"
-	line "it to get to the"
-	cont "Power Plant."
+	para "Felstunnel. Er"
+	line "führt zum"
+	cont "Kraftwerk."
 	done
 
 LavenderPokeCenter1FTeacherText:

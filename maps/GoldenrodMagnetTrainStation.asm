@@ -30,14 +30,16 @@ GoldenrodMagnetTrainStationOfficerScript:
 	iftruefwd .MagnetTrainToSaffron
 	jumpthisopenedtext
 
-	text "The train hasn't"
-	line "come in…"
+	text "Der Zug ist nicht"
+	line "gekommen…"
 
-	para "I know! I'll carry"
-	line "the passengers on"
-	cont "my back!"
+	para "Ich hab's! Ich"
+	line "werde die Passa-"
+	cont "giere auf dem"
+	cont "Rücken tragen!"
 
-	para "That won't work."
+	para "Das wird nicht"
+	line "funktionieren."
 	done
 
 .MagnetTrainToSaffron:
@@ -126,49 +128,54 @@ GoldenrodMagnetTrainStationPlayerLeaveTrainAndEnterStationMovement:
 
 
 GoldenrodMagnetTrainStationOfficerAreYouComingAboardText:
-	text "We'll soon depart"
-	line "for Saffron."
+	text "Wir werden in Kür-"
+	line "ze nach Saffronia"
+	cont "City abreisen."
 
-	para "Are you coming"
-	line "aboard?"
+	para "Kommst du mit?"
+	line ""
 	done
 
 GoldenrodMagnetTrainStationOfficerRightThisWayText:
-	text "May I see your"
-	line "rail pass, please?"
+	text "Darf ich deinen"
+	line "Fahrschein sehen?"
 
-	para "OK. Right this"
-	line "way, please."
+	para "O.K. Bitte hier"
+	line "entlang."
 	done
 
 GoldenrodMagnetTrainStationOfficerYouDontHaveARailPassText:
-	text "Sorry. You don't"
-	line "have a rail pass."
+	text "Verzeihung, aber"
+	line "du hast keinen"
+	cont "Fahrschein."
 	done
 
 GoldenrodMagnetTrainStationOfficerHopeToSeeYouAgainText:
-	text "We hope to see you"
-	line "again!"
+	text "Besuche uns"
+	line "wieder!"
 	done
 
 GoldenrodMagnetTrainStationOfficerArrivedInGoldenrodText:
-	text "We have arrived in"
-	line "Goldenrod."
+	text "Wir sind in Duka-"
+	line "tia City angekom-"
+	cont "men."
 
-	para "We hope to see you"
-	line "again."
+	para "Beehre uns bald"
+	line "wieder!"
 	done
 
 GoldenrodMagnetTrainStationGentlemanText:
-	text "I'm the President."
+	text "Ich bin der Präsi-"
+	line "dent."
 
-	para "My dream was to"
-	line "build a train that"
+	para "Mein Traum war es,"
+	line "einen Zug zu bau-"
+	cont "en, der schneller"
 
-	para "is faster than any"
+	para "ist als jedes"
 	line "#mon."
 
-	para "It really brings"
-	line "Johto much closer"
-	cont "to Kanto."
+	para "Dadurch würden"
+	line "Johto und Kanto"
+	cont "näher rücken."
 	done

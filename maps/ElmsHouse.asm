@@ -19,55 +19,58 @@ ElmsHouse_MapScriptHeader:
 	object_event  4,  5, SPRITE_CHILD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, ElmsSonText, -1
 
 ElmsWifeText:
-	text "Hi, <PLAYER>! My"
-	line "husband's always"
+	text "Hi, <PLAYER>! Mein"
+	line "Mann ist immer so"
 
-	para "so busy--I hope"
-	line "he's OK."
+	para "beschäftigt. Ich"
+	line "hoffe, es geht ihm"
+	cont "gut."
 
-	para "When he's caught"
-	line "up in his #mon"
-
-	para "research, he even"
-	line "forgets to eat."
+	para "Wenn er sich in"
+	line "seine #mon-"
+	cont "Forschungen ver-"
+	cont "tieft, vergisst er"
+	cont "sogar zu essen."
 	done
 
 ElmsSonText:
-	text "When I grow up,"
-	line "I'm going to help"
-	cont "my dad!"
+	text "Wenn ich groß bin,"
+	line "helfe ich meinem"
+	cont "Papa!"
 
-	para "I'm going to be a"
-	line "great #mon"
-	cont "professor!"
+	para "Ich werde ein"
+	line "großartiger #-"
+	cont "mon-Professor!"
 	done
 
 ElmsHouseFridgeText:
-	text "There's some food"
-	line "here. This must be"
-	cont "for #mon."
+	text "Hier ist etwas zu"
+	line "essen. Es muss für"
+	cont "die #mon sein."
 	done
 
 ElmsHousePCText:
-	text "#mon. Where do"
-	line "they come from?"
+	text "#mon. Woher"
+	line "kommen sie?"
 
-	para "Where are they"
-	line "going?"
+	para "Wohin gehen sie?"
 
-	para "Why has no one"
-	line "ever witnessed a"
-	cont "#mon's birth?"
+	para "Warum war noch nie"
+	line "jemand Zeuge der"
+	cont "Geburt eines"
+	cont "#mon?"
 
-	para "I want to know! I"
-	line "will dedicate my"
+	para "Ich will es wis-"
+	line "sen. Ich werde"
 
-	para "life to the study"
-	line "of #mon!"
+	para "mein Leben in den"
+	line "Dienst der #-"
+	cont "mon-Forschung"
+	cont "stellen!"
 
 	para "…"
 
-	para "It's a part of"
-	line "Prof.Elm's re-"
-	cont "search papers."
+	para "Dies ist ein Teil"
+	line "von Prof. Linds"
+	cont "Aufzeichnungen."
 	done

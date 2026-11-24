@@ -66,8 +66,8 @@ OfficerfJamieDaytimeText:
 	done
 
 CyclingRoadSignText:
-	text "Cycling Road"
+	text "Radweg"
 
-	para "Downhill coasting"
-	line "all the way!"
+	para "Es geht den ganzen"
+	line "Weg nur bergab!"
 	done

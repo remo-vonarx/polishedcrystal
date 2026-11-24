@@ -206,7 +206,8 @@ IvysLabNidorinoScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "Its cry is weak…"
+	text "Sein Ruf ist"
+	line "schwach…"
 	done
 
 .WeakCry:
@@ -218,7 +219,7 @@ IvysLabNidorinoScript:
 	end
 
 IvysLabNidorinoText:
-	text "Nidorino: Gyun!"
+	text "Nidorino: Nido!"
 	done
 
 IvysLabWindowText:
@@ -246,8 +247,8 @@ IvysLabHealingMachine:
 	endtext
 
 .Text:
-	text "Would you like to"
-	line "heal your #mon?"
+	text "Willst du deine"
+	line "#mon heilen?"
 	done
 
 PokemonJournalProfIvyScript:

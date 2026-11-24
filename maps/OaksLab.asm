@@ -126,9 +126,10 @@ Oak:
 .NoShinyCharm
 	jumpthisopenedtext
 
-	text "If you're in the"
-	line "area, I hope you"
-	cont "come visit again."
+	text "Wenn du mal wieder"
+	line "in der Gegend"
+	cont "bist, dann schau"
+	cont "doch wieder rein."
 	done
 
 .BattleOak:
@@ -198,17 +199,20 @@ EeveeDollScript:
 	done
 
 OakWelcomeKantoText:
-	text "Oak: Ah, <PLAYER>!"
-	line "It's good of you"
+	text "Eich: <PLAYER>!"
+	line "Schön, dass du"
 
-	para "to come all this"
-	line "way to Kanto."
+	para "den weiten Weg"
+	line "nach Kanto gemacht"
+	cont "hast."
 
-	para "What do you think"
-	line "of the trainers"
+	para "Was hältst du von"
+	line "den Trainern hier"
 
-	para "out here?"
-	line "Pretty tough, huh?"
+	para "draußen?"
+	line "Ziemlich stark,"
+
+	para "was?"
 	done
 
 OakLabGiveStarterText:
@@ -238,10 +242,10 @@ OakLabPartyAndBoxFullText:
 	done
 
 OakLabDexCheckText:
-	text "How is your #-"
-	line "dex coming?"
+	text "Wie geht es mit"
+	line "dem #dex voran?"
 
-	para "Let's see…"
+	para "Mal sehen…"
 	done
 
 OakLabCatchMoreText:
@@ -411,19 +415,21 @@ OakOpenMtSilverText:
 	done
 
 OakNoKantoBadgesText:
-	text "Oak: Hmm? You're"
-	line "not collecting"
-	cont "Kanto Gym Badges?"
+	text "Eich: Hm? Du hast"
+	line "keine Orden der"
 
-	para "The Gym Leaders in"
-	line "Kanto are as tough"
+	para "PKMN-Arenen"
+	line "in Kanto?"
 
-	para "as any you battled"
+	para "Die Arenaleiter in"
+	line "Kanto sind genauso"
+
+	para "stark wie die"
 	line "in Johto."
 
-	para "I recommend that"
-	line "you challenge"
-	cont "them."
+	para "Ich schlage vor,"
+	line "du forderst sie"
+	cont "heraus."
 	done
 
 OakNoEliteFourRematchText:
@@ -467,70 +473,76 @@ OakYesKantoBadgesText:
 	done
 
 OaksAssistant1Text:
-	text "The Prof's #mon"
-	line "Talk radio program"
+	text "Prof. Eichs #-"
+	line "mon-Talk wird in"
 
-	para "isn't aired here"
-	line "in Kanto."
+	para "Kanto nicht im"
+	line "Radio gesendet."
 
-	para "It's a shame--I'd"
-	line "like to hear it."
+	para "Das ist schade."
+	line "Ich würde es gerne"
+	cont "hören."
 	done
 
 OaksAssistant2Text:
-	text "Thanks to your"
-	line "work on the #-"
-	cont "dex, the Prof's"
+	text "Die Forschungen"
+	line "des Professors"
+	cont "kommen dank deiner"
 
-	para "research is coming"
-	line "along great."
+	para "Arbeit am #dex"
+	line "sehr gut voran."
 	done
 
 OaksAssistant3Text:
-	text "Don't tell anyone,"
-	line "but Prof.Oak's"
+	text "Erzähl es keinem,"
+	line "aber Prof. Eichs"
 
-	para "#mon Talk isn't"
-	line "a live broadcast."
+	para "#mon-Talk wird"
+	line "nicht live"
+	cont "gesendet."
 	done
 
 OaksLabPoster1Text:
-	text "Press Start to"
-	line "open the Menu."
+	text "Drücke Start, um"
+	line "das Menü zu"
+	cont "öffnen."
 	done
 
 OaksLabPoster2Text:
-	text "The Save option is"
-	line "on the Menu."
+	text "Möchtest du deinen"
+	line "Spielstand von"
 
-	para "Use it in a timely"
-	line "manner."
+	para "Zeit zu Zeit"
+	line "speichern, dann"
+	cont "wähle im Menü die"
+	cont "Option Sichern."
 	done
 
 OaksLabPCText:
-	text "There's an e-mail"
-	line "message on the PC."
+	text "Auf dem PC ist"
+	line "eine E-Mail."
 
 	para "…"
 
-	para "Prof.Oak, how is"
-	line "your research"
-	cont "coming along?"
+	para "Wie kommen Sie"
+	line "mit Ihren"
+	cont "Forschungen voran,"
+	cont "Prof. Eich?"
 
-	para "I'm still plugging"
-	line "away."
+	para "Nun, ich ackere"
+	line "weiter."
 
-	para "I heard rumors"
-	line "that <PLAYER> is"
+	para "Ich habe Gerüchte"
+	line "gehört, dass"
 
-	para "getting quite a"
-	line "reputation."
+	para "sich <PLAYER>"
+	line "einen Namen macht."
 
-	para "I'm delighted to"
-	line "hear that."
+	para "Es freut mich, das"
+	line "zu hören."
 
-	para "Elm in New Bark"
-	line "Town 8-)"
+	para "Prof. Lind in"
+	line "Neuborkia"
 	done
 
 ProfOakEeveeDollTradeText:

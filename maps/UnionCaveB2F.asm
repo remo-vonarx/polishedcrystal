@@ -51,70 +51,76 @@ UnionCaveLapras:
 GenericTrainerCooltrainermNick:
 	generictrainer COOLTRAINERM, NICK, EVENT_BEAT_COOLTRAINERM_NICK, CooltrainermNickSeenText, CooltrainermNickBeatenText
 
-	text "Your #mon style"
-	line "is stunning and"
-	cont "colorful, I admit."
+	text "Dein #mon-Stil"
+	line "ist imposant und"
+	cont "abwechslungsreich,"
+	cont "das gebe ich zu."
 
-	para "You'll just keep"
-	line "getting better!"
+	para "Du wirst immer"
+	line "besser!"
 	done
 
 GenericTrainerCooltrainerfGwen:
 	generictrainer COOLTRAINERF, GWEN, EVENT_BEAT_COOLTRAINERF_GWEN, CooltrainerfGwenSeenText, CooltrainerfGwenBeatenText
 
-	text "I'm going to train"
-	line "by myself until I"
-	cont "improve."
+	text "Ich werde solange"
+	line "trainieren, bis"
+	cont "ich besser bin."
 	done
 
 GenericTrainerCooltrainerfEmma:
 	generictrainer COOLTRAINERF, EMMA, EVENT_BEAT_COOLTRAINERF_EMMA, CooltrainerfEmmaSeenText, CooltrainerfEmmaBeatenText
 
-	text "Just once a week,"
-	line "a #mon comes to"
-	cont "the water's edge."
+	text "Nur einmal in"
+	line "der Woche kommt"
+	cont "ein #mon"
+	cont "ans Wasser."
 
-	para "I wanted to see"
-	line "that #mon…"
+	para "Dieses #mon"
+	line "hätte ich gerne"
+	cont "gesehen…"
 	done
 
 CooltrainermNickSeenText:
-	text "There are two"
-	line "kinds of people."
+	text "Es gibt zwei"
+	line "verschiedene Arten"
+	cont "von Menschen."
 
-	para "Those who have"
-	line "style, and those"
-	cont "who don't."
+	para "Jene mit Stil"
+	line "und jene ohne."
 
-	para "What kind of"
-	line "person are you?"
+	para "Zu welcher zählst"
+	line "du dich?"
 	done
 
 CooltrainermNickBeatenText:
-	text "You've got"
-	line "dazzling style!"
+	text "Dein Stil ist"
+	line "beeindruckend!"
 	done
 
 CooltrainerfGwenSeenText:
-	text "I'm in training."
-	line "Care for a round?"
+	text "Ich trainiere"
+	line "momentan. Möchtest"
+	cont "du kämpfen?"
 	done
 
 CooltrainerfGwenBeatenText:
-	text "Aww, no! You're"
-	line "too good for me."
+	text "Oh, nein! Du bist"
+	line "zu gut für mich."
 	done
 
 CooltrainerfEmmaSeenText:
-	text "If the #mon I"
-	line "liked were there,"
-	cont "I'd go anywhere."
+	text "Für meine Lieb-"
+	line "lings-#mon"
+	cont "würde ich überall"
+	cont "hingehen."
 
-	para "That's what a real"
-	line "trainer does."
+	para "Das würde jeder"
+	line "wahre Trainer tun."
 	done
 
 CooltrainerfEmmaBeatenText:
-	text "I'd rather pet my"
-	line "babies than this!"
+	text "Ich kümmere mich"
+	line "lieber um meine"
+	cont "Babys, aber…!"
 	done

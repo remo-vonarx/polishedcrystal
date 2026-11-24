@@ -26,13 +26,14 @@ Route2NuggetSpeechHouseFisherScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "That's a Nugget."
+	text "Das ist ein"
+	line "Nugget."
 
-	para "I can't give you"
-	line "any nuggets of"
+	para "Ich kann dir keine"
+	line "weisen Ratschläge"
 
-	para "wisdom, so that'll"
-	line "have to do!"
+	para "mitgeben, das hier"
+	line "muss ausreichen!"
 	done
 
 .Text1:

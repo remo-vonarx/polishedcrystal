@@ -26,30 +26,33 @@ SlowpokeWellB2FGymGuideScript:
 	endtext
 
 SlowpokeWellB2FGymGuideText:
-	text "I'm waiting to see"
-	line "Slowpoke's moment"
-	cont "of evolution."
+	text "Ich warte darauf,"
+	line "dass sich Flegmon"
+	cont "entwickelt."
 
-	para "Through observa-"
-	line "tion, I made a new"
-	cont "discovery."
+	para "Aufgrund meiner"
+	line "Beobachtungen"
+	cont "habe ich eine"
+	cont "neue Entdeckung"
+	cont "gemacht."
 
-	para "A Slowpoke with a"
-	line "King's Rock often"
+	para "Trägt Flegmon"
+	line "einen King-Stein"
 
-	para "gets bitten by a"
-	line "Shellder."
+	para "wird es oft von"
+	line "einem Muschas"
+	cont "gebissen."
 
-	para "Here, I'll share a"
-	line "King's Rock with"
-	cont "you."
+	para "Hier, ich gebe"
+	line "dir einen von"
+	cont "meinen."
 	done
 
 SlowpokeWellB2FGymGuideText_GotKingsRock:
-	text "I'm going to be"
-	line "like Slowpoke."
+	text "Ich werde mich wie"
+	line "Flegmon verhalten."
 
-	para "I'll wait patient-"
-	line "ly, so I can see"
-	cont "one evolve."
+	para "Ich werde geduldig"
+	line "abwarten, bis es"
+	cont "sich entwickelt."
 	done
