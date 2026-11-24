@@ -73,10 +73,10 @@ INCLUDE "gfx/stats/orange_page.pal"
 	ret
 
 .battle_factory
-	db "Battle Factory@"
+	db "Kampffabrik@"
 
 .event
-	db "Event #mon@"
+	db "Event-#mon@"
 
 .TN_PrintLV:
 	ld a, [wTempMonCaughtLevel]

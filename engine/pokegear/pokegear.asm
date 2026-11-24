@@ -733,14 +733,42 @@ _UpdateLandmarkName:
 .loop
 	ld a, [hl]
 	cp '@'
-	jr z, .end
+	jr z, .one_line
 	cp '¯'
-	jr z, .line_break
+	jr z, .two_lines
+	cp '<WBR>'
+	jr z, .two_lines
+	cp '<SHY>'
+	jr z, .two_lines
 	inc hl
 	jr .loop
-.line_break
-	ld [hl], '<LNBRK>'
-.end
+
+.two_lines
+; the first line ends at the break, with a "-" for a soft hyphen;
+; the second line starts below the first
+	ld [hl], '@'
+	inc hl
+	pop bc
+	push bc
+	push hl
+	push af
+	ld h, b
+	ld l, c
+	rst PlaceString
+	pop af
+	cp '<SHY>'
+	jr nz, .no_hyphen
+	ld a, '-'
+	ld [bc], a
+.no_hyphen
+	pop de
+	pop hl
+	ld bc, SCREEN_WIDTH
+	add hl, bc
+	rst PlaceString
+	ret
+
+.one_line
 	pop hl
 	rst PlaceString
 	ret
@@ -1614,7 +1642,7 @@ TownMapBubble:
 	ret
 
 .Where:
-	db "Where?@"
+	db "Wo?@"
 
 .Name:
 ; We need the map location of the default flypoint
@@ -1637,7 +1665,7 @@ TownMapBubble:
 	ret
 
 .PokemonLeagueFlyName:
-	rawchar "Pokémon League@"
+	rawchar "Pokémon-Liga@"
 
 GetMapCursorCoordinates:
 	ld a, [wTownMapPlayerIconLandmark]

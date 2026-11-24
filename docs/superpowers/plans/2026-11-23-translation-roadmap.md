@@ -124,9 +124,11 @@ Its internals get a short design of their own before coding. Fixed here:
 
 ### Task 5: Places and badges
 
-- [ ] All place names with their break marks; all 16 badge names.
-- [ ] Test: map signs, the Pokégear and Town Map, Fly, the summary's met place, a badge text.
-- [ ] Ship.
+- [x] All place names with their break marks; all 16 badge names.
+- [x] Test: map signs, the Pokégear and Town Map, Fly, the summary's met place, a badge text.
+- [x] Ship.
+
+Decided 2026-11-24 on a review page and in dialogs: Kristall's soft hyphen and silent break come back as `<SHY>` and `<WBR>` (the first attempt's code); the badge table holds whole names and its receiving text moved here from Task 6; GLOSSARY.md's **Places** section has the names.
 
 ## Kristall pass
 

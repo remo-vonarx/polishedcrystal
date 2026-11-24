@@ -191,6 +191,8 @@ PlaceNextChar::
 	jr nc, _PlaceSpecialChar
 	cp NGRAMS_START
 	jr nc, _PlaceNgramChar
+	cp BREAK_MARKS_START
+	jr nc, NextChar ; place-name break marks print nothing on one line
 	dec de
 	jmp FinishString
 

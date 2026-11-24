@@ -15,11 +15,12 @@ Default run: checks the tables.
   tiles as check_text_width.py counts them ("#" is 4 tiles, "#mon" 7, ...).
   A limit is never below what the entry's own English takes: Upstream ships it.
 - Place names (data/maps/landmarks.asm) are measured against every screen
-  that shows them (place_problems): at most 18 bytes, "¯" included, for the
-  19-byte script buffers; on one line, with "¯" as a space, at most 18 tiles
-  (the sign), 17 for a place with Johto grass Pokémon (Oak's radio show adds
-  a "."), 16 for a flypoint (Fly); on the Pokégear and Town Map at most two
-  lines of 11 tiles, split at "¯".
+  that shows them (place_problems): at most 18 bytes, the break marks
+  included, for the 19-byte script buffers; on one line, with "¯" as a space
+  and <SHY> and <WBR> as nothing, at most 18 tiles (the sign), 17 for a place
+  with Johto grass Pokémon (Oak's radio show adds a "."), 16 for a flypoint
+  (Fly); on the Pokégear and Town Map at most two lines of 11 tiles, split at
+  "¯", <WBR> or <SHY>, which adds a "-".
 - Trainer classes fit their 12-byte buffer ("#" and "#mon" are one byte each)
   and the phone list's 14 tiles.
 - Trainers (data/trainers/parties.asm) are measured against the battle line
@@ -80,6 +81,7 @@ PHONE_LINE = re.compile(r'^\s*(?:text|next1)\s+"([^"]*)"')
 PLACE = 'place'
 PLACE_BYTES = 18  # STRING_BUFFER_LENGTH - 1: scripts copy place names into 19-byte buffers
 POKEGEAR_LINE = 11
+PLACE_BREAK = re.compile(r'(¯|<SHY>|<WBR>)')  # place-name break marks (constants/charmap.asm)
 
 TRAINER = 'trainer'
 CLASS = 'class'
@@ -145,7 +147,8 @@ TABLES = [
 GERMAN_TABLES = {'pokemon', 'types', 'egg groups', 'abilities', 'natures',  # chunk 1
                  'moves',  # chunk 2
                  'items', 'key items', 'apricorns', 'exp candy', 'wings', 'pockets',  # chunk 3
-                 'classes', 'trainers', 'nicknames', 'trades', 'tower', 'wonder trade', 'rival', 'ralph'}  # chunk 4
+                 'classes', 'trainers', 'nicknames', 'trades', 'tower', 'wonder trade', 'rival', 'ralph',  # chunk 4
+                 'places', 'badges', 'fly', 'summary'}  # chunk 5
 
 # official names that are the same in English and German, and placeholders,
 # per table: a name allowed in one table is still reported in another
@@ -178,7 +181,7 @@ SAME_IN_GERMAN = {
     'wings': set(),
     'badges': set(),
     'pockets': set(),
-    'places': {'?'} | {f'Route {n}' for n in range(1, 50)},
+    'places': {'?', 'Indigo¯Plateau'} | {f'Route {n}' for n in range(1, 50)},
     'fly': set(),
     'summary': set(),
     # chunk 4: classes and names that stay as Upstream writes them (Kristall's or official German
@@ -388,9 +391,17 @@ def place_rooms(root):
 
 
 def place_metrics(name):
-    """(bytes, tiles on one line, [tiles per Pokégear line]) of a place name; "¯" breaks it."""
-    lines = name.split('¯')
-    return string_width(name), string_width(name.replace('¯', ' ')), [string_width(line) for line in lines]
+    """(bytes, tiles on one line, [tiles per Pokégear line]) of a place name. On one line "¯" is
+    a space and <SHY> and <WBR> print nothing; the Pokégear breaks the name at each of the three,
+    and <SHY> ends its line with a "-"."""
+    parts = PLACE_BREAK.split(name)
+    lines = [parts[0]]
+    for mark, text in zip(parts[1::2], parts[2::2]):
+        if mark == '<SHY>':
+            lines[-1] += '-'
+        lines.append(text)
+    one_line = name.replace('¯', ' ').replace('<SHY>', '').replace('<WBR>', '')
+    return string_width(name), string_width(one_line), [string_width(line) for line in lines]
 
 
 def place_problems(name, one_line_limit, english=None):

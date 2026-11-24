@@ -140,3 +140,33 @@ Trainers' Pokémon nicknames are German where the English is a word play (Hitzko
 **Default names**:
 The player is Chris, Krista, Crys or Krys by picture, the rival Silber, the Magikarp record holder Angelo (Kristall's names).
 _Avoid_: Kris, Silver, Ralph
+
+## Places
+
+**Place names**:
+Kristall's names for Crystal's places, in mixed case (NEUBORKIA → Neuborkia, SEE DES ZORNS → See des Zorns), with the ß back where Kristall's capitals write SS (Siegesstraße). Where Upstream uses today's English name, today's German one: Glockenturm (Bell Tower), Unterführung (Underground Path). Where Upstream keeps Crystal's, Kristall's: Digdas Höhle, Indigo Plateau, Ruhestätte (House of Souls, Kristall's sign). Chosen otherwise: Pokémon-Villa (today's name; Kristall and FireRed: Pokémon-Haus), M.S. Aqua (Fast Ship, named after the ship as in HeartGold/SoulSilver), Radioturm Lavandia (Kristall: Radioturm Lav.).
+_Avoid_: Zinnturm, Untergrund, Pokémon-Haus, Schnellboot, Digda-Höhle, Indigo-Plateau
+
+**Places from later games**:
+Their official German names: Glockenklangpfad, Felsklippentor, Felsschlundhöhle, Sinjoh-Ruinen and Trysteriumaltar (HeartGold/SoulSilver); Pokémon-Labor, Nabelfels and Ferneiland (FireRed/LeafGreen, Emerald); the Pokéwalker's routes Stürmische Küste, Holpriger Pfad, Gruselhöhle, Finstere Höhle, Malerische Küste, Lauschiger Wald, Sonniger Strand, Stille Höhle and Goldgelber Wald; the anime's Shamouti, Insel des Feuers, Insel des Eises, Insel der Blitze and Valencia Insel.
+
+**Own place names**:
+Own translations for Polished's places: Viola-Stadtrand, Rosalia-Bucht, Dukatia-Hafen, Magnettunnel, Route 32: Küste (and 34, 35), Trüber Sumpf, Schneegipfel, Felsiger Strand, Uraga-Kanal, Schreinruinen, Shamouti-Tunnel, Shamouti-Küste, Prismania-Uni, Zinnober-Vulkan, Kap von Azuria, Glücksinsel, Pokémon-Liga: Tor (Fly writes Pokémon-Liga).
+_Avoid_: Küste Route 32, Universität Prismania
+
+**Pokégear line breaks**:
+A place name over 11 letters takes two lines on the Pokégear and the Town Map, broken where Kristall breaks it, with a hyphen inside a word (Einheits-/tunnel, Sieges-/straße). Two break elsewhere: Stein-/eichenwald (Kristall: Steinei-/chenwald) and Felsschlund/höhle, without a hyphen, since "Felsschlund-" doesn't fit.
+
+**Ships**:
+The M.S. Aqua and the M.S. Anne, as Kristall and the German Red/Blue name them.
+_Avoid_: S.S. Aqua, S.S. Anne
+
+**Orden**:
+A badge, by Kristall's names: Flügelorden, Insektorden, Basisorden, Phantomorden, Stahlorden, Faustorden, Eisorden, Drachenorden; Felsorden, Quellorden, Donnerorden, Farborden, Sumpforden, Seelenorden, Vulkanorden, Erdorden. Receiving one: "<PLAYER> erhält den Flügelorden."
+_Avoid_: Badge, Plakette
+
+**Wo?**:
+Fly's question on the Town Map, as Kristall writes it.
+
+**Kampffabrik**, **Event-Pokémon**:
+The place of capture in the summary for a Battle Factory rental and for an event Pokémon.

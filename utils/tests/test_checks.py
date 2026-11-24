@@ -152,3 +152,21 @@ def test_inver_check_reports_a_missing_party_prefix(root, tmp_path):
     copy_files(root, tmp_path, INVER_FILES)
     edit(tmp_path / INVER_FILES[1], "DEF INVER_PREFIX", "DEF INVER_HEADER")
     assert check_names.inver_problems(tmp_path)
+
+
+def test_soft_hyphen_breaks_a_place_with_a_hyphen_on_the_pokegear():
+    import check_names
+    # 15 bytes with the mark; 14 tiles on one line, where it prints nothing; "Einheits-" over "tunnel"
+    assert check_names.place_metrics("Einheits<SHY>tunnel") == (15, 14, [9, 6])
+
+
+def test_silent_break_splits_a_place_without_a_hyphen():
+    import check_names
+    assert check_names.place_metrics("Knofensa-<WBR>Turm") == (14, 13, [9, 4])
+
+
+def test_soft_hyphen_counts_toward_the_pokegear_line():
+    import check_names
+    # "Felsschlund" fits 11 tiles; with the hyphen the line is 12
+    assert check_names.place_problems("Felsschlund<WBR>höhle", 18) == []
+    assert check_names.place_problems("Felsschlund<SHY>höhle", 18) == ["Pokégear line too long (12 > 11)"]
