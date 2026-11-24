@@ -104,3 +104,39 @@ _Avoid_: Taschen named after the English (Key-Tasche, Medi-Tasche)
 **Zurück**:
 Leaving a list, as Kristall writes it in the Bag and Marts; Kristall's trade screen says Abbrechen instead.
 _Avoid_: Abbrechen in lists
+
+## Trainers
+
+**Trainer classes**:
+Kristall's classes in mixed case (TEENAGER → Teenager), and today's official German class where Upstream's English uses today's: Vogel-Profi (Bird Keeper), Schüler (Schoolboy), Seher (Psychic), Rowdy (Biker), Butler (Darach). Polished's own classes: Cosplayer, Paar (Couple), Duo, Vorstand (Rocket Executive), Ex-Top 4 (Lorelei, Agatha), Steinsammler (Steven); Züchterin and Sammler drop the official "Pokémon-". The stranger in Elm's lab is Fremder Junge, the shrine maiden Schreinmaid Rei.
+_Avoid_: Vogelfänger, Schuljunge, Psycho, Biker, Kammerdiener
+
+**Feminine classes**:
+Women get Leiterin, Trainerin and Wächterin; Blanche and Jacky stay Leiter and Trainer. Ass-Trainer and Skifahrer stay as Kristall writes them for women too.
+
+**Pairs**:
+Twins, couples and duos write their two names without spaces (Nora&Jo, Erik&Sara), and so does the class Sen.&Jun. (Sr. and Jr.). Jessie & James are the class Jessie with the name "& James".
+_Avoid_: Nora & Jo, Sen. & Jun.
+
+**Trainer names**:
+Kristall's name for every trainer from Crystal, in mixed case, also where Polished renamed the trainer (Polished's Wade is Kristall's Greg). Trainers from other games take that game's official German name (FireRed/LeafGreen, HeartGold/SoulSilver); characters take their official German name (Atlas, Athena, Lance and Lambda for the Rocket Executives). Polished's own trainers keep Polished's name, unless an official German one exists. An official name over the limit takes its short form (Josie, Stanis, Tina, Hein, Lee, Ritsu). Names repeat across trainers, as in Kristall.
+
+**Estefan**:
+Psychic Inver, by his official German name.
+_Avoid_: Inver
+
+**Battle Tower names**:
+The Battle Tower's trainers keep their reference names, except the official characters (Viktor for Palmer, Distmar for Thorton) and the references that only work under another name: Tajiri for Satoshi, Fabre for Tajiri, Bates for Darwin, Venus for Valentine.
+
+**Wonder Trade names**:
+The original trainers of Wonder Trade Pokémon: the official German name of each Pokémon character or version where it has at most 7 letters (Krista, Lance, Wilma); every other name stays as Upstream writes it (Alice, Butch, Cassidy).
+
+**In-game trades**:
+Crystal's trade partners and their Pokémon keep Kristall's names (Ralf with Herakles, Tobi, Carmen with Dori, Paul). The Heracross from Pewter City is Herkules: Kristall calls its trainer Paul, so it can't keep Upstream's nickname Paul. The other nicknames stay as Upstream writes them (Mimic, Joey, Chance, Gail, Clarence, Batty).
+
+**Nicknames**:
+Trainers' Pokémon nicknames are German where the English is a word play (Hitzkopf, Kanonade, Wurzelwut) and stay where they're a name, a reference or a foreign word (Milky, Bruce, Jackie, Antorcha). Yellow's team takes the German manga names (Amoni, Ratzi, Raups, Dodi, Geon).
+
+**Default names**:
+The player is Chris, Krista, Crys or Krys by picture, the rival Silber, the Magikarp record holder Angelo (Kristall's names).
+_Avoid_: Kris, Silver, Ralph

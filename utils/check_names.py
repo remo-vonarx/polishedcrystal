@@ -30,8 +30,9 @@ Default run: checks the tables.
   where data/battle_tower/short_class_names.asm has one; a short class fits
   12 bytes. The list counts as kept in English, except Palmer and Thorton.
 - Wonder Trade names (data/events/wonder_trade/ot_names.asm) fit 7 tiles.
-- Psychic Inver's name (data/trainers/psychic_inver.asm) fits 5 tiles: his
-  party picker hardcodes the length of "Inver".
+- Psychic Inver's name (data/trainers/psychic_inver.asm) is the name his
+  party picker counts (INVER_PREFIX), and wInverGroup holds that prefix
+  (inver_problems).
 - Badge names fit the 18 bytes of wStringBuffer4 (Script_givebadge copies
   them there); the line they're printed on (_ReceivedTheBadgeText) depends on
   its German wording and is the badges' chunk's to check.
@@ -124,9 +125,8 @@ TABLES = [
     # 10 tiles each, and each class + name pair against the battle line (trainer_pairs)
     ('data/trainers/parties.asm', TRAINER_NAME, None, None, TRAINER, 'person', 'trainers'),
     ('data/trainers/parties.asm', NICKNAME, None, None, 10, None, 'nicknames'),
-    # Psychic Inver's own party file: PickPsychicInverParty hardcodes the 8-byte prefix of
-    # "Inver@", so a longer name breaks his party
-    ('data/trainers/psychic_inver.asm', TRAINER_NAME, None, None, 5, 'person', 'trainers'),
+    # Psychic Inver's own party file: his name must also be the one INVER_PREFIX counts (inver_problems)
+    ('data/trainers/psychic_inver.asm', TRAINER_NAME, None, None, NAME_LENGTH, 'person', 'trainers'),
     # 9 tiles each, and each class + name pair against the battle line (tower_pairs)
     ('data/battle_tower/classes.asm', RAWCHAR, None, None, TOWER, None, 'tower'),
     ('data/events/wonder_trade/ot_names.asm', RAWCHAR, None, None, 7, None, 'wonder trade'),
@@ -144,7 +144,8 @@ TABLES = [
 # translates. A table not listed is still English and is checked only for its limits.
 GERMAN_TABLES = {'pokemon', 'types', 'egg groups', 'abilities', 'natures',  # chunk 1
                  'moves',  # chunk 2
-                 'items', 'key items', 'apricorns', 'exp candy', 'wings', 'pockets'}  # chunk 3
+                 'items', 'key items', 'apricorns', 'exp candy', 'wings', 'pockets',  # chunk 3
+                 'classes', 'trainers', 'nicknames', 'trades', 'tower', 'wonder trade', 'rival', 'ralph'}  # chunk 4
 
 # official names that are the same in English and German, and placeholders,
 # per table: a name allowed in one table is still reported in another
@@ -180,17 +181,96 @@ SAME_IN_GERMAN = {
     'places': {'?'} | {f'Route {n}' for n in range(1, 50)},
     'fly': set(),
     'summary': set(),
-    # the first attempt's choices for these were not carried over (CLAUDE.md, Project decisions):
-    # each name chunk fills its tables as the user decides
-    'classes': set(),
-    'trainers': set(),
-    'nicknames': set(),
-    'trades': set(),
-    'phone': set(),
+    # chunk 4: classes and names that stay as Upstream writes them (Kristall's or official German
+    # names that are the same, kept English names, references); the review is in GLOSSARY.md (Trainers)
+    'classes': {
+        '#fan', '#mon Prof.', 'Agent', 'Boss', 'Camper', 'Cosplayer', 'Cowgirl', 'Gentleman', 'Jessie', 'Lady',
+        'Medium', 'Rocket', 'Student', 'Surfer', 'Veteran'
+    },
+    'trainers': {
+        '& James', '<RIVAL>', 'Abigail', 'Adam', 'Aegon', 'Aidan', 'Alfie', 'Alina', 'Alison', 'Allan',
+        'Amanda', 'Ami', 'Amos', 'Amy', 'Anabel', 'Annie', 'April', 'Arden', 'Armand', 'Ashe', 'Ashley',
+        'Barkhorn', 'Beatrice', 'Becky', 'Biff', 'Bill', 'Blaise', 'Blanche', 'Brett', 'Bruno', 'Bryony',
+        'Camden', 'Camus', 'Candela', 'Carl', 'Carrie', 'Chaz', 'Chelsie', 'Chester', 'Chiara', 'Chloe',
+        'Cindy', 'Clara', 'Connor', 'Conrad', 'Corey', 'Coryn', 'Craig', 'Cyd', 'Cynthia', 'Dahlia', 'Daniela',
+        'Daric', 'Dennett', 'Dent', 'Derrick', 'Dexter', 'Diane', 'Dirk', 'Duplica', 'Dylan', 'Elijah', 'Eliza',
+        'Emy', 'En', 'Enzo', 'Erik&Sara', 'Erika', 'Esther', 'Euna', 'Ezekiel', 'Ezra', 'Faith', 'Felix',
+        'Fergus', 'Finch', 'Floyd', 'Foote', 'Frank', 'Gareth', 'Geddy', 'Geoffrey', 'Gerald', 'Gerard', 'Gina',
+        'Giovanni', 'Glyn', 'Graden', 'Grady', 'Gustav', 'Hall', 'Hari', 'Heather', 'Henri', 'Holly', 'Howard',
+        'Hugo', 'Imakuni', 'Imogen', 'Inigo', 'Ioana', 'Iris', 'Irving', 'Isabel', 'Ivy', 'Jacky', 'Jaime',
+        'Jamie', 'Janet', 'Jaska', 'Jay', 'Jennifer', 'Joanne', 'Jones', 'Jonet', 'Jordan', 'Joseph', 'Joy',
+        'Julian', 'Kagami', 'Kai', 'Kamila', 'Kathryn', 'Kazu', 'Keiko', 'Kenta', 'Kieran', 'Kinsey', 'Koga',
+        'Kouta', 'Kukui', 'Kuroko', 'Lang', 'Lawrence', 'Layla', 'Lenie', 'Leon', 'Lester', 'Lily', 'Litvyak',
+        'Lorelei', 'Lou', 'Louis', 'Lucas', 'Luis', 'Luna', 'Lyra', 'Lyric', 'Madoka', 'Mako', 'Malcolm',
+        'Mara', 'Margaret', 'Maria', 'Marina', 'Marlene', 'Matilda', 'Matthew', 'Mavis', 'Max', 'Maynard',
+        'Mayu', 'Meadow', 'Mei', 'Michel', 'Mick', 'Miguel', 'Mina', 'Miriam', 'Misty', 'Molly', 'Morgan',
+        'Nadar', 'Natalie', 'Neesha', 'Nicolas', 'Nicole', 'Nigel', 'Noelle', 'Nolan', 'Nozomi', 'Oleg', 'Olga',
+        'Oliver', 'Oscar', 'Oskar', 'Oswald', 'Padma', 'Paul', 'Peony', 'Pete', 'Petrie', 'Petry', 'Pierce',
+        'Pierre', 'Pilar', 'Piotr', 'Powell', 'Quentin', 'Rachel', 'Ray', 'Reilly', 'Reina', 'Remy', 'Rin',
+        'Roger', 'Romeo', 'Ronda', 'Rory', 'Rose', 'Rosie', 'Ruth', 'Rylan', 'Sabrina', 'Salim', 'Sally',
+        'Sanders', 'Sara&Erik', 'Sarah', 'Sasha', 'Seamus', 'Sera', 'Serena', 'Sharyn', 'Smith', 'Sophie',
+        'Spark', 'Stefan', 'Subaru', 'Takeo', 'Tala', 'Tamara', 'Teddy', 'Theresa', 'Tobin', 'Tony', 'Trent',
+        'Tyrone', 'Uri', 'Valencia', 'Valerie', 'Victor', 'Vince', 'Viola', 'Vivian', 'Wanda', 'Winifred',
+        'Winston', 'Woda', 'Zane'
+    },
+    'nicknames': {
+        'Antorcha', 'Audrey', 'Bruce', 'Bulbasaur', 'Chuchu', 'Dopefish', 'Gold', 'Huesitos', 'Jackie', 'Lady',
+        'Linterna', 'Luna', 'Milky', 'Puka', 'Teddy', 'VuiVui'
+    },
+    'trades': {
+        'Batty', 'Chance', 'Clarence', 'Gail', 'Hari', 'Jacques', 'Jeeves', 'Joey', 'Kim', 'Mimic', 'Tim'
+    },
+    # the Battle Tower keeps its reference names, the Wonder Trade the names without an official
+    # German one of 7 letters or fewer
+    'tower': {
+        'Abdul', 'Abed', 'Adam', 'Adrian', 'Alice', 'Alisha', 'Amelia', 'Andre', 'Angelica', 'Annie', 'Argo',
+        'Armstrong', 'Axl', 'Bisom', 'Blake', 'Buckley', 'Charlie', 'Chelsea', 'Chiyo', 'Cobb', 'Collins',
+        'Corey', 'Cramer', 'Daniel', 'Daryl', 'Deedee', 'Dennett', 'Diaz', 'Dijkstra', 'Dorothy', 'Douglas',
+        'Drake', 'Dyrland', 'Ebony', 'Eleni', 'Emily', 'Estée', 'Ethel', 'Fagin', 'Frida', 'Frost', 'Garrett',
+        'Gerald', 'Gwen', 'Hamilton', 'Hare', 'Hatcher', 'Heinlen', 'Hill', 'Hiroto', 'Hitesh', 'Holmes',
+        'Hong', 'Hopper', 'Hughes', 'Ichigo', 'James', 'Joan', 'Joanna', 'Johnson', 'Jorge', 'Kafuka', 'Kim',
+        'Kirby', 'Kubrick', 'Kuroki', 'Laura', 'Lavigne', 'Lenie', 'Mako', 'Marc', 'Mateo', 'McManus', 'Molly',
+        'Monica', 'Mordecai', 'Mori', 'Morse', 'Mott', 'Mozi', 'Murray', 'Nadia', 'Nerai', 'Newandyke',
+        'Newman', 'Newton', 'Nimue', 'Oakley', 'Park', 'Patricia', 'Paul', 'Phelps', 'Pirsig', 'Pitt', 'Pov',
+        'Raine', 'Rajan', 'Rebecca', 'Remy', 'Ricky', 'Sagan', 'Salim', 'Santiago', 'Sawyer', 'Scipio',
+        'Shirley', 'Sidney', 'Siegfried', 'Sophia', 'Suh', 'Sunni', 'Swartz', 'Syd', 'Tara', 'Tatiana',
+        'Tomoyo', 'Toshi', 'Uri', 'Vi', 'Walter', 'Wayne', 'Wilder', 'Wong', 'Yayoi', 'York', 'Yufune', 'Zeke'
+    },
+    'wonder trade': {
+        'A', 'A.J.', 'Abe', 'Aizawa', 'Alain', 'Aliana', 'Alice', 'Alpha', 'Ami', 'Amos', 'Anabel', 'Anthea',
+        'Aoooo', 'Argenta', 'Artemis', 'Arty', 'Ash', 'Assunta', 'Asuka', 'Attila', 'Aya', 'Baba', 'Babs',
+        'Baoba', 'Barry', 'Bel', 'Ben', 'Bill', 'Blanche', 'Bonnie', 'Bridget', 'Brigett', 'Briney', 'Bruno',
+        'Bryan', 'Buena', 'Butch', 'Cameron', 'Camila', 'Candela', 'Carrie', 'Casey', 'Cassidy', 'Cedric',
+        'Celio', 'Cetsa', 'Charles', 'Charon', 'Chaz', 'Cheren', 'Cissy', 'Clara', 'Cly', 'Clyde', 'Concord',
+        'Copycat', 'Courtny', 'Crystal', 'Curtis', 'Cyan', 'Cynthia', 'Dahlia', 'Daisy', 'Danny', 'Daru',
+        'Daruku', 'Delia', 'Delta', 'Dexio', 'Dexter', 'Diana', 'Diantha', 'Dio', 'Dirk', 'Domino', 'Don',
+        'Drayano', 'Duplica', 'Earl', 'Emma', 'Erika', 'Evan', 'Everyle', 'Felicty', 'Fredrik', 'Frieda',
+        'Fuego', 'Fuji', 'Gabby', 'Gaius', 'Gary', 'Gendo', 'Gester', 'Giovani', 'Giselle', 'Gold', 'Grace',
+        'Greta', 'Grimsly', 'Hala', 'Hana', 'Hapu', 'Hari', 'Haruhi', 'Haruka', 'Hayate', 'Heart', 'Helena',
+        'Helios', 'Hibiki', 'Hikari', 'Hiro', 'Hisashi', 'Hlin', 'Hun', 'Imakuni', 'Itsuki', 'Ivy', 'Iwata',
+        'Jacques', 'Jade', 'James', 'Jessie', 'Jimmy', 'Jojo', 'Jordan', 'Josuke', 'Jotaro', 'Joy', 'Juan',
+        'Julia', 'Jun', 'Junichi', 'Jupiter', 'Kagaya', 'Kahili', 'Kaito', 'Kamon', 'Karuta', 'Kaworu', 'Kei',
+        'Keira', 'Keita', 'Kersh', 'Kiawe', 'Kim', 'Kiri', 'Kloe', 'Koga', 'Koji', 'Kotone', 'Kouki', 'Kukui',
+        'Kurisu', 'Kurt', 'Kyon', 'Kyouhei', 'Lambda', 'Lanette', 'Leaf', 'Len', 'Leo', 'Lexus', "Li'l D",
+        'Lorelei', 'Lostele', 'Luana', 'Lucian', 'Luka', 'Luke', 'Lun', 'Luna', 'Lusamin', 'Lyra', 'Lyrra',
+        'Makoto', 'Mamoru', 'Marckus', 'Mari', 'Mars', 'Masuda', 'Mateo', 'Matsuda', 'Matthew', 'Mayuri', 'Mei',
+        'Meiko', 'Melanie', 'Michael', 'Miguel', 'Mikey', 'Miku', 'Mikuru', 'Minako', 'Mind', 'Miror B',
+        'Misty', 'Mitsuru', 'Miyuki', 'Mohn', 'Mr.<PK><MN>', 'N', 'Nagisa', 'Nishino', 'Norman', 'Nozomi',
+        'Okabe', 'Omega', 'Oota', 'Orange', 'Orville', 'Paul', 'Phil', 'Pia', 'Plumera', 'Prima', 'Pum', 'Pyro',
+        'Rainer', 'Randy', 'Rangi', 'Rapp', 'Reed', 'Rei', 'Reiko', 'Remy', 'Revo', 'Rhue', 'Richie', 'Rin',
+        'Rosanne', 'Rudy', 'Ruka', 'Rydel', 'Ryo', 'Ryoko', 'Ryuki', 'Sabrina', 'Saika', 'Sakura', 'Samson',
+        'Samuel', 'Satoru', 'Satoshi', 'Saturn', 'Scott', 'Selene', 'Serena', 'Shigeki', 'Shigeru', 'Shinji',
+        'Silktre', 'Sina', 'Slade', 'Slash', 'Sogabe', 'Sophcls', 'Sorya', 'Sosuke', 'Soul', 'Spark', 'Sparky',
+        'Star', 'Stern', 'Strata', 'Suki', 'Suzuha', 'Syaoran', 'Sylvie', 'Tajiri', 'Talan', 'Tamada', 'Teala',
+        'Teto', 'Tetsuya', 'Theta', 'Tierno', 'Tim', 'Todd', 'Tomoyo', 'Touko', 'Touya', 'Tracey', 'Traziun',
+        'Tsuruya', 'Tupp', 'Turner', 'Ty', 'Usagi', 'Valerie', 'Viola', 'Volkner', 'Wiktrom', 'Willow', 'X',
+        'Y', 'Yoshi', 'Yui', 'Yuki', 'Yuuki', 'Z', 'Zeta', 'Zetsu', 'Zinzoln', 'Zipp'
+    },
     'rival': set(),
     'ralph': set(),
-    'tower': set(),
-    'wonder trade': set(),
+    # the first attempt's choices were not carried over (CLAUDE.md, Project decisions): the
+    # Pokégear's chunk fills this table as the user decides
+    'phone': set(),
 }
 
 # English spellings in text that differ from the tables, by category
@@ -500,9 +580,34 @@ def check_tables(base):
     return problems, names
 
 
+INVER_PARTY = 'data/trainers/psychic_inver.asm'
+INVER_PICKER = 'engine/battle/pick_psychic_inver_party.asm'
+INVER_RAM = 'ram/wram0.asm'
+
+
+def inver_problems(root):
+    """Psychic Inver's name against his party picker: PickPsychicInverParty copies
+    INVER_PREFIX bytes (length, STRLEN of a name with "@", flags) into wInverGroup,
+    so his name must be that name, and wInverGroup must hold the prefix."""
+    def read(rel):
+        return (root / rel).read_text(encoding='utf-8')
+    name = re.search(r'def_trainer 1, "([^"]*)"', read(INVER_PARTY))
+    prefix = re.search(r'DEF INVER_PREFIX = 1 \+ STRLEN\("([^"]*)@"\) \+ 1', read(INVER_PICKER))
+    group = re.search(r'^wInverGroup::\n\tds (\d+)', read(INVER_RAM), re.M)
+    if not (name and prefix and group):
+        return [f'{INVER_PICKER}: Psychic Inver\'s name, INVER_PREFIX or wInverGroup not found']
+    problems = []
+    if name.group(1) != prefix.group(1):
+        problems.append(f'{INVER_PARTY}: "{name.group(1)}" is not the name INVER_PREFIX counts ("{prefix.group(1)}")')
+    size = 1 + name_bytes(prefix.group(1)) + 1 + 1
+    if int(group.group(1)) < size:
+        problems.append(f'{INVER_RAM}: wInverGroup\'s prefix is {group.group(1)} bytes, INVER_PREFIX copies {size}')
+    return problems
+
+
 def check(base=None):
     """The tables' problems, against Upstream's English at `base` (default: the merge-base)."""
-    return check_tables(find_base(base))[0]
+    return check_tables(find_base(base))[0] + inver_problems(ROOT)
 
 
 def check_text(paths, names):
