@@ -1,8 +1,8 @@
 ExpCandyNames::
 	list_start
-	li "Exp.Candy XS"
-	li "Exp.Candy S"
-	li "Exp.Candy M"
-	li "Exp.Candy L"
-	li "Exp.Candy XL"
+	li "EP-Bonbon XS"
+	li "EP-Bonbon S"
+	li "EP-Bonbon M"
+	li "EP-Bonbon L"
+	li "EP-Bonbon XL"
 	assert_list_length NUM_CANDIES
