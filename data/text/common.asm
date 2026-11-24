@@ -2189,10 +2189,11 @@ _GotTheItemText:
 
 SECTION "_ReceivedTheBadgeText", ROMX
 _ReceivedTheBadgeText:
-	text "<PLAYER> received"
-	line "the "
+; ShowBadgeIcon covers the first line's last two tiles
+	text "<PLAYER> erhält"
+	line "den "
 	text_ram wStringBuffer4
-	text " Badge."
+	text "."
 	done
 
 SECTION "WhiteoutText", ROMX
