@@ -895,3 +895,116 @@ def test_swapped_split_name_leaves_no_leading_space():
     from kristall_write import recase
     out, unknown = recase([("text", "Der ZINN-"), ("line", "TURM ist hoch."), ("done",)], {"ZINNTURM": "Glockenturm"}, {})
     assert out == [("text", "Der Glockenturm"), ("line", "ist hoch."), ("done",)] and unknown == []
+
+
+def test_place_break_marks_stay_out_of_dialogue():
+    from kristall_write import name_pairs
+    pairs = {"names": {"landmarks": {"CINNABAR_ISLAND": ["CINNABAR<BSP>ISLAND", "ZINNOBER<TTE>INSEL"],
+                                     "SPROUT_TOWER": ["SPROUT<BSP>TOWER", "KNOFENSA-<WBR>TURM"]}}}
+    now = {"landmarks": {"CINNABAR_ISLAND": "Zinnober<SHY>insel", "SPROUT_TOWER": "Knofensa-<WBR>Turm"}}
+    then = {"landmarks": {"CINNABAR_ISLAND": "Cinnabar¯Island", "SPROUT_TOWER": "Sprout¯Tower"}}
+    assert name_pairs(pairs, now, then) == {"ZINNOBERINSEL": "Zinnoberinsel", "KNOFENSA-TURM": "Knofensa-Turm"}
+
+
+def test_names_same_in_german_map_once_their_table_is_translated():
+    from kristall_write import name_pairs
+    pairs = {"names": {"pokemon": {"PIKACHU": ["PIKACHU", "PIKACHU"]}}}
+    now = then = {"pokemon": {"PIKACHU": "Pikachu"}}
+    assert name_pairs(pairs, now, then, translated={"pokemon"}) == {"PIKACHU": "Pikachu"}
+    assert name_pairs(pairs, now, then, translated=set()) == {}
+
+
+def test_single_capitals_are_not_a_capital_run():
+    from kristall_write import recase
+    cmds = [("text", "O.K., eine E-Mail?"), ("line", "I-I-Ich?"), ("done",)]
+    assert recase(cmds, {}, {}) == (cmds, [])
+
+
+def test_genitive_ending_follows_its_name():
+    from kristall_write import recase
+    out, unknown = recase([("text", "LINDs Labor"), ("done",)], {}, {"LIND": "Lind"})
+    assert out[0] == ("text", "Linds Labor") and unknown == []
+
+
+def test_hyphenated_compound_is_recased_part_by_part():
+    from kristall_write import recase
+    case = {"#MON": "#mon", "LIND": "Lind", "LABOR": "Labor"}
+    out, unknown = recase([("text", "Käfer-#MON im LIND-#MON-LABOR"), ("done",)], {}, case)
+    assert out[0] == ("text", "Käfer-#mon im Lind-#mon-Labor") and unknown == []
+    assert recase([("text", "FOO-#MON"), ("done",)], {}, case)[1] == ["FOO"]
+
+
+def test_unanswered_split_word_is_reported_whole():
+    from kristall_write import recase
+    cmds = [("text", "Der ARENA-"), ("line", "LEITER ist da."), ("done",)]
+    out, unknown = recase(cmds, {}, {"ARENA": "Arena", "LEITER": "Leiter"})
+    assert unknown == ["ARENA-LEITER"] and out == cmds
+
+
+def test_compound_split_at_its_own_hyphen_is_recased_part_by_part():
+    from kristall_write import recase
+    out, unknown = recase([("text", "Ein Käfer-"), ("line", "#MON ist da."), ("done",)], {}, {"#MON": "#mon"})
+    assert out[:2] == [("text", "Ein Käfer-"), ("line", "#mon ist da.")] and unknown == []
+
+
+def test_answer_for_one_text_wins_over_the_word(tmp_path):
+    from kristall_index import Entry
+    from kristall_write import german_for, load_case
+    put(tmp_path / "case.tsv", "# comment\nUND\tund\nUND\tUND\tSignText\n")
+    case = load_case(tmp_path / "case.tsv")
+    pair = fake_pair("P", en=HI, de=[("text", "BIS HIER UND"), ("done",)])
+    sign = Entry(fake_text(HI, label="SignText"), "word", pair, [pair], 1.0)
+    other = Entry(fake_text(HI, label="Other"), "word", pair, [pair], 1.0)
+    case.update({"BIS": "bis", "HIER": "hier"})
+    assert german_for(sign, {}, case).commands[0] == ("text", "bis hier UND")
+    assert german_for(other, {}, case).commands[0] == ("text", "bis hier und")
+
+
+def test_names_follow_the_build_of_the_text():
+    from kristall_index import Entry
+    from kristall_write import Names, german_for
+    names = Names({"ZERTRÜMMERER": "Durchbruch"})
+    names.variants = {"regular": {"ZERTRÜMMERER": "Durchbruch"}, "faithful": {"ZERTRÜMMERER": "Zertrümmerer"},
+                      "both": {}}
+    pair = fake_pair("P", en=HI, de=[("text", "ZERTRÜMMERER!"), ("done",)])
+
+    def german(variant):
+        return german_for(Entry(fake_text(HI, variant=variant), "word", pair, [pair], 1.0), names, {})
+    assert german("regular").commands[0] == ("text", "Durchbruch!")
+    assert german("faithful").commands[0] == ("text", "Zertrümmerer!")
+    assert german("both").commands is None  # the builds disagree: asked, not guessed
+
+
+def test_answer_wins_over_the_name_map():
+    from kristall_write import recase
+    out, _ = recase([("text", "Das SCHNELLBOOT"), ("done",)], {"SCHNELLBOOT": "M.S. Aqua"}, {"SCHNELLBOOT": "Schnellboot"})
+    assert out[0] == ("text", "Das Schnellboot")
+
+
+def test_text_kristall_left_in_english_is_not_written():
+    from kristall_index import Entry
+    from kristall_write import KRISTALL_ENGLISH, german_for
+    label = next(iter(KRISTALL_ENGLISH))
+    pair = fake_pair("P", en=HI, de=[("text", "Hallo! This is the"), ("done",)])
+    r = german_for(Entry(fake_text(HI, label=label), "word", pair, [pair], 1.0), {}, {})
+    assert r.commands is None and any("English" in f for f in r.flags)
+
+
+def test_name_map_splits_by_build(pairs, root, base):  # real data: Regular has Brick Break where Faithful has Rock Smash
+    from kristall_write import name_map
+    names = name_map(root, pairs, base)
+    regular, faithful, both = (names.variants[v] for v in ("regular", "faithful", "both"))
+    assert regular["ZERTRÜMMERER"] != faithful["ZERTRÜMMERER"] and "ZERTRÜMMERER" not in both
+    assert both["BISASAM"] == regular["BISASAM"] == faithful["BISASAM"]
+
+
+def test_row_may_start_with_the_poke_token(tmp_path):
+    from kristall_write import load_case
+    put(tmp_path / "case.tsv", "# a comment\n#MON\t#mon\n")
+    assert load_case(tmp_path / "case.tsv") == {"#MON": "#mon"}
+
+
+def test_semicolon_becomes_a_comma():  # Polished's font has no ';'
+    from kristall_write import german_for
+    r = german_for(word_entry(de=[("text", "Stark; Angreifer"), ("done",)]), {}, {})
+    assert r.commands[0] == ("text", "Stark, Angreifer")

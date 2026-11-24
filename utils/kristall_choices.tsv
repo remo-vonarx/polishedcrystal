@@ -2,3 +2,36 @@
 # equals several pret texts whose German differs, and neither the map event nor the label decides.
 # Columns: Polished label, then the pret label, or the Kristall address (bb:aaaa) where one pret text
 # has twins in Kristall that say different things. Labels and addresses only, never text.
+PewterCrunchDesc	FullHealDesc	an item that heals status, as Full Heal
+DrainPunchDescription	AbsorbDescription	the fuller wording (als KP)
+IronTailDescription	AcidDescription	the fuller wording (des Gegners)
+BubbleBeamDescription	BubblebeamDescription	the same move
+DidntAffectText	DidntAffect1Text	Polished merged the two
+ContestJudging_SecondPlaceScoreText	_ContestJudging_SecondPlaceScoreText	the same text
+ContestJudging_ThirdPlaceScoreText	_ContestJudging_ThirdPlaceScoreText	the same text
+TownMapText	LookTownMapText	the same standard text
+VendingMachineText	GoldenrodVendingText	a menu is an offer
+Script_CommitBattleFactoryResult.WeHopeToServeYouAgain	Text_WeHopeToServeYouAgain	the Battle Tower's own
+BattleFactory1FReceptionistScript.BattleFactoryMenu	Text_WeHopeToServeYouAgain	the Battle Tower's own
+Script_CommitBattleTowerResult.WeHopeToServeYouAgain	Text_WeHopeToServeYouAgain	the Battle Tower's own
+BattleTower1FReceptionistScript.BattleTowerMenu	Text_WeHopeToServeYouAgain	the Battle Tower's own
+PosterClerkNoMoneyText	_NotEnoughMoneyText	the Marts' wording
+FuchsiaSafariBallHouseOfficerScript.NotEnoughMoney	_NotEnoughMoneyText	the Marts' wording
+CharcoalKilnFarfetchdScript.Text	FarfetchdText	the same cry
+CinnabarLabLockedDoorText	Route8LockedDoorText	the wording of two of three
+ValenciaIslandLockedDoorText	Route8LockedDoorText	the wording of two of three
+WonderTradeReceptionistScript	NurseGoodbyeText	a counter in a #mon Center
+HiddenGrottoItemScript.ItemText	_FoundItemText	the standard item text
+OlivinePortAlreadyRodeScript	OlivinePortCantBoardText	the same port
+VermilionPortAlreadyRodeScript	VermilionPortCantBoardText	the same port
+InitialRadioText4	PlayersRadioText4	the player's own radio
+GenericTrainerYoungsterWarren.BeatenText	YoungsterWarrenBeatenText	the same trainer
+SunnyGivesGiftText	SunnyGivesGiftText1	Polished merged the two
+LinkingCordDesc	MoonStoneDesc	all say the same
+Move00Description	_OakTimeHoursQuestionMarkText	all say the same
+BattleText_PkmnFainted	BattleText_MonFainted	all say the same
+_OakTimeQuestionMarkText	_OakTimeHoursQuestionMarkText	all say the same
+Text_BattleMonNick01	_BuenaRadioText4	all say the same
+InitialRadioText1	PlayersRadioText1	all say the same
+BugCatchingContestExplanationText	1a:7081	the twin the Route 35 gate sign shows
+Red.Text2	PsychicNathanBeatenText	all say the same
