@@ -143,7 +143,8 @@ TABLES = [
 # Tables whose entries must be German: each name chunk adds the keys (last column of TABLES) it
 # translates. A table not listed is still English and is checked only for its limits.
 GERMAN_TABLES = {'pokemon', 'types', 'egg groups', 'abilities', 'natures',  # chunk 1
-                 'moves'}  # chunk 2
+                 'moves',  # chunk 2
+                 'items', 'key items', 'apricorns', 'exp candy', 'wings', 'pockets'}  # chunk 3
 
 # official names that are the same in English and German, and placeholders,
 # per table: a name allowed in one table is still reported in another
@@ -169,7 +170,7 @@ SAME_IN_GERMAN = {
     'natures': {'---', 'Mild'},
     'moves': {'Blizzard', 'Explosion', 'Octazooka', 'Tackle', 'Teleport', 'Whirlpool'},
     'items': {'Lucky Punch', 'Magnet', 'Mulch', 'Nugget', 'Protein', 'Upgrade'},
-    'key items': set(),
+    'key items': {'SilphScope2'},
     'apricorns': set(),
     'exp candy': set(),
     'pokegear': {'#dex'},
