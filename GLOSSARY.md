@@ -69,3 +69,38 @@ _Avoid_: Furienhiebe, Lichtheilung
 **VM**:
 An HM is a VM (Versteckte Maschine), as in Kristall: VM01. A TM stays a TM.
 _Avoid_: HM
+
+## Items
+
+**Item names**:
+Kristall's names for the items of Gen 2, in mixed case, and today's official German names for Polished's later ones. Where a Kristall name was renamed later and both fit, the choice per item is: Upgrade, Flegmon-Rute, Fokusband, Krummlöffel (today's), Rote Haut (Kristall's). Where today's name is over 12 characters, Kristall's stays: X-Tempo, X-Treffer, Angriffplus, Hackattack, Schattenglas, Schutzband, Drachenhaut, Türöffner.
+_Avoid_: Up-Grade, Flegmonrute, Fokus-Band, Krümmlöffel, Rote Schuppe, X-Initiative, X-Genauigkeit, X-Volltreffer, Spitzer Schnabel, Schattenbrille, Schutzsticker, Drachenschuppe, Schlüsselkarte
+
+**Pokéball**:
+One word, as today's games write it (Kristall: #BALL); likewise Poképuppe.
+
+**Older official item names**:
+Seegesang (Shell Bell), Schwerschwf. (Lagging Tail) and Liftöffner (Lift Key), the official names of earlier games, because today's don't fit 12 characters.
+_Avoid_: Muschelglocke, Schwerschweif, Aufzugsschlüssel
+
+**Wutkeks**, **Honig**, **Megablock**:
+One name per item in both ROMs, for the items Regular renames (Cake of Rage, Sweet Honey, Guard Stats) and Faithful doesn't (RageCandyBar, Honey, Guard Spec.).
+_Avoid_: Wutkuchen, Süßer Honig, Werteschutz
+
+**Item abbreviations**:
+Official names over 12 characters, each with one word shortened: Marmoria-Kr., Fäh.-Kapsel, Fäh.Pflaster, Schwä.schutz, Offens.weste, Schutzpolst., Plat.schuhe, Fehl.schutz, Bizarroserv., Neutralschm., Gez. Würfel. Fäh. always stands for Fähigkeiten.
+
+**Link-Kabel**, **Kronkorken**:
+Linking Cord and Bottle Cap, in place of the shortened official names (Verbindungsschnur, Silberkronkorken).
+_Avoid_: Verb.schnur, Silberkronk.
+
+**Own item names**:
+Rüstung (Armor Suit), Kuriosum (Odd Souvenir), Minzblatt (Mint Leaf), Mulch, Federbox (Wing Case), Typentabelle (Type Chart), GBC-Player (GBC Sounds, after HeartGold's GB-Player), Orangeticket, and the Lures Herbparfüm, Kraftparfüm, Unheilparfüm (after Let's Go's Lockparfüm).
+
+**Pockets**:
+Item-Tasche, Medizin-Tasche, Ball-Tasche, TM-Tasche, Beeren-Tasche, Basis-Items (Kristall's, with Medizin and Beeren from HeartGold). The Bag's tabs read Items, Med., Bälle, TM/VM, Beeren, Bas.; the label under the Bag reads Items, Medizin, Bälle, TM/VM, Beeren, Basis.
+_Avoid_: Taschen named after the English (Key-Tasche, Medi-Tasche)
+
+**Zurück**:
+Leaving a list, as Kristall writes it in the Bag and Marts; Kristall's trade screen says Abbrechen instead.
+_Avoid_: Abbrechen in lists
