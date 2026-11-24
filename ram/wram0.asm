@@ -796,7 +796,7 @@ SECTION UNION "Misc 1300", WRAM0
 wInverIndexes:: ds NUM_INVER_MONS
 
 wInverGroup::
-	ds 8 ; length + "Inver@" + flags
+	ds 10 ; length + "Estefan@" + flags
 	rept PARTY_LENGTH
 		ds 3 ; dbp <level>, <species>, <form>
 		ds 3 ; db <item>, <dvs>, <nat | abil>

@@ -24,7 +24,7 @@ BattleTowerTrainers:
 	rawchar "Dennett@@", GENTLEMAN
 	rawchar "Vi@@@@@@@", OFFICERF
 	rawchar "Hiroto@@@", WAITER
-	rawchar "Satoshi@@", BUG_MANIAC
+	rawchar "Tajiri@@@", BUG_MANIAC
 	rawchar "Adam@@@@@", YOUNGSTER
 	rawchar "Oakley@@@", COWGIRL
 	rawchar "Annie@@@@", OFFICERF
@@ -87,7 +87,7 @@ BattleTowerTrainers:
 	rawchar "Frida@@@@", ARTIST
 	rawchar "Nimue@@@@", LADY
 	rawchar "Alice@@@@", SIGHTSEERF
-	rawchar "Valentine", BEAUTY
+	rawchar "Venus@@@@", BEAUTY
 	rawchar "Uri@@@@@@", PSYCHIC_T
 	rawchar "Wong@@@@@", FIREBREATHER
 	rawchar "Chiyo@@@@", KIMONO_GIRL
@@ -101,10 +101,10 @@ BattleTowerTrainers:
 	rawchar "Mott@@@@@", TEACHER_M
 	rawchar "Pov@@@@@@", BOARDER
 	rawchar "Collins@@", POKEFANM
-	rawchar "Darwin@@@", BUG_CATCHER
+	rawchar "Bates@@@@", BUG_CATCHER
 	rawchar "Tatiana@@", NURSE
 	rawchar "Pitt@@@@@", RUIN_MANIAC
-	rawchar "Tajiri@@@", BUG_CATCHER
+	rawchar "Fabre@@@@", BUG_CATCHER
 	rawchar "Heinlen@@", CAMPER
 	rawchar "Hughes@@@", FISHER
 	rawchar "Kirby@@@@", BUG_MANIAC
@@ -133,5 +133,5 @@ BattleTowerTrainers:
 	rawchar "Mako@@@@@", BREEDER
 	rawchar "Argo@@@@@", BIRD_KEEPER
 	assert_table_length BATTLETOWER_NUM_TRAINERS
-	rawchar "Palmer@@@", TOWERTYCOON
-	rawchar "Thorton@@", FACTORYHEAD
+	rawchar "Viktor@@@", TOWERTYCOON
+	rawchar "Distmar@@", FACTORYHEAD

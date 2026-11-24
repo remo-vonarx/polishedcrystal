@@ -109,3 +109,46 @@ def test_english_left_only_under_given_paths(git_repo):
     text = 'T:\n\ttext "Hello"\n\tdone\n'
     repo = git_repo({"maps/X.asm": text, "data/Y.asm": text}, {"maps/X.asm": text, "data/Y.asm": text})
     assert check_english_left.check(repo, "base", ["data"]) == ["data/Y.asm:2: Hello"]
+
+
+INVER_FILES = ["data/trainers/psychic_inver.asm", "engine/battle/pick_psychic_inver_party.asm", "ram/wram0.asm"]
+
+
+def copy_files(root, tmp_path, files):
+    for rel in files:
+        (tmp_path / rel).parent.mkdir(parents=True, exist_ok=True)
+        (tmp_path / rel).write_text((root / rel).read_text(encoding="utf-8"), encoding="utf-8")
+
+
+def edit(path, old, new):
+    text = path.read_text(encoding="utf-8")
+    assert text.count(old) == 1, old
+    path.write_text(text.replace(old, new), encoding="utf-8")
+
+
+def test_inver_name_shorter_than_party_prefix_is_reported(root, tmp_path):
+    import re
+    import check_names
+    copy_files(root, tmp_path, INVER_FILES)
+    assert not check_names.inver_problems(tmp_path)
+    party = tmp_path / INVER_FILES[0]
+    name = re.search(r'def_trainer 1, "([^"]*)"', party.read_text(encoding="utf-8")).group(1)
+    edit(party, f'def_trainer 1, "{name}"', f'def_trainer 1, "{name[:-1]}"')
+    assert check_names.inver_problems(tmp_path)
+
+
+def test_inver_group_smaller_than_party_prefix_is_reported(root, tmp_path):
+    import re
+    import check_names
+    copy_files(root, tmp_path, INVER_FILES)
+    wram = tmp_path / INVER_FILES[2]
+    size = re.search(r"wInverGroup::\n\tds (\d+)", wram.read_text(encoding="utf-8")).group(1)
+    edit(wram, f"wInverGroup::\n\tds {size}", f"wInverGroup::\n\tds {int(size) - 1}")
+    assert check_names.inver_problems(tmp_path)
+
+
+def test_inver_check_reports_a_missing_party_prefix(root, tmp_path):
+    import check_names
+    copy_files(root, tmp_path, INVER_FILES)
+    edit(tmp_path / INVER_FILES[1], "DEF INVER_PREFIX", "DEF INVER_HEADER")
+    assert check_names.inver_problems(tmp_path)

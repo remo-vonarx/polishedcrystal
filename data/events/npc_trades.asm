@@ -4,10 +4,10 @@ NPCTrades:
 	db TRADE_DIALOGSET_COLLECTOR
 	dp ABRA, NO_FORM  ; wants
 	dp MACHOP, FEMALE ; gives
-	rawchar "Muscle@@@@@"
+	rawchar "Herakles@@@"
 	db $EE, $EE, $EE, HIDDEN_ABILITY | NAT_ATK_UP_SATK_DOWN,  LEVEL_BALL,   SITRUS_BERRY
 	dw 37460
-	rawchar "Mike@@@", $00
+	rawchar "Ralf@@@", $00
 ; NPC_TRADE_KYLE in Violet City
 	db TRADE_DIALOGSET_COLLECTOR
 	dp POLIWAG, NO_FORM ; wants
@@ -15,7 +15,7 @@ NPCTrades:
 	rawchar "Mimic@@@@@@"
 	db $EE, $EE, $EE, HIDDEN_ABILITY | NAT_SPE_UP_DEF_DOWN,   PREMIER_BALL, PERSIM_BERRY
 	dw 48926
-	rawchar "Kyle@@@", $00
+	rawchar "Tobi@@@", $00
 ; NPC_TRADE_TIM in Olivine City
 	db TRADE_DIALOGSET_HAPPY
 	dp STEELIX, NO_FORM ; wants
@@ -28,18 +28,18 @@ NPCTrades:
 	db TRADE_DIALOGSET_GIRL
 	dp JYNX, NO_FORM    ; wants
 	dp MR__MIME, FEMALE ; gives
-	rawchar "Doris@@@@@@"
+	rawchar "Dori@@@@@@@"
 	db $EE, $EE, $EE, HIDDEN_ABILITY | NAT_SPE_UP_ATK_DOWN,   LOVE_BALL,    FAIRYFEATHER
 	dw 00283
-	rawchar "Emy@@@@", $00
+	rawchar "Carmen@", $00
 ; NPC_TRADE_CHRIS in Pewter City
 	db TRADE_DIALOGSET_NEWBIE
 	dp PINSIR, NO_FORM ; wants
 	dp HERACROSS, MALE ; gives
-	rawchar "Paul@@@@@@@"
+	rawchar "Herkules@@@"
 	db $EE, $EE, $EE, HIDDEN_ABILITY | NAT_SPE_UP_SATK_DOWN,  PARK_BALL,    SILVERPOWDER
 	dw 15616
-	rawchar "Chris@@", $00
+	rawchar "Paul@@@", $00
 ; NPC_TRADE_KIM in Route 14
 	db TRADE_DIALOGSET_GIRL
 	dp WOBBUFFET, NO_FORM ; wants
