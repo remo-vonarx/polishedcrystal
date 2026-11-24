@@ -240,10 +240,10 @@ def recase(commands, names, case):
                 # a compound (#MON-CENTER) or one word broken at the line end (ARENALEITER): the answer says
                 unknown.append(f"{left}-{right}")
             else:  # a compound broken at its own hyphen (Käfer- / #MON): part by part
-                new, missing = recase_parts(f"{left}-{right}", names, case)
-                unknown += missing
-                if not missing:
-                    new_left, new_right = new.split("-")
+                (left_new, left_missing), (right_new, right_missing) = (recase_parts(w, names, case) for w in (left, right))
+                unknown += left_missing + right_missing
+                if not left_missing + right_missing:
+                    new_left, new_right = left_new, right_new
             out[a][1] = first[:head.start()] + new_left + "-"
             out[b][1] = new_right + second[tail.end():]
             done_head[a], done_tail[b] = head.start(), len(new_right)

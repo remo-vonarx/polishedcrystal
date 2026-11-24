@@ -973,6 +973,12 @@ def test_compound_split_at_its_own_hyphen_is_recased_part_by_part():
     assert out[:2] == [("text", "Ein Käfer-"), ("line", "#mon ist da.")] and unknown == []
 
 
+def test_split_compound_takes_an_answer_with_a_hyphen():
+    from kristall_write import recase
+    out, unknown = recase([("text", "Die FLEGMONRUTEN-"), ("line", "Suche")], {}, {"FLEGMONRUTEN": "Flegmon-Ruten"})
+    assert out == [("text", "Die Flegmon-Ruten-"), ("line", "Suche")] and unknown == []
+
+
 def test_answer_for_one_text_wins_over_the_word(tmp_path):
     from kristall_index import Entry
     from kristall_write import german_for, load_case
