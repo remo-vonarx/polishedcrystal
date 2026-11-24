@@ -134,39 +134,39 @@ EcruteakGymClosed:
 GenericTrainerSageJeffrey:
 	generictrainer SAGE, JEFFREY, EVENT_BEAT_SAGE_JEFFREY, SageJeffreySeenText, SageJeffreyBeatenText
 
-	text "Where did #mon"
-	line "come from?"
+	text "Woher kommen"
+	line "#mon?"
 	done
 
 GenericTrainerSagePing:
 	generictrainer SAGE, PING, EVENT_BEAT_SAGE_PING, SagePingSeenText, SagePingBeatenText
 
-	text "We use only Ghost-"
-	line "type #mon."
+	text "Wir setzen nur"
+	line "Geist-#mon ein."
 
-	para "No Normal-type"
-	line "attack can harm"
-	cont "them!"
+	para "Normal-Attacken"
+	line "zeigen bei ihnen"
+	cont "keine Wirkung!"
 	done
 
 GenericTrainerMediumMartha:
 	generictrainer MEDIUM, MARTHA, EVENT_BEAT_MEDIUM_MARTHA, MediumMarthaSeenText, MediumMarthaBeatenText
 
-	text "The one who wants"
-	line "to win most--will!"
+	text "Wer siegen will,"
+	line "wird es auch tun!"
 	done
 
 GenericTrainerMediumGrace:
 	generictrainer MEDIUM, GRACE, EVENT_BEAT_MEDIUM_GRACE, MediumGraceSeenText, MediumGraceBeatenText
 
-	text "Fine. I shall tell"
-	line "you the secret of"
+	text "Gut, ich verrate"
+	line "dir das Geheimnis"
 
-	para "the invisible"
-	line "floor."
+	para "des unsichtbaren"
+	line "Bodens."
 
-	para "The path is right"
-	line "before our eyes!"
+	para "Der Weg liegt vor"
+	line "unseren Augen!"
 	done
 
 EcruteakGymGuyScript:
@@ -174,15 +174,16 @@ EcruteakGymGuyScript:
 	iftrue_jumptextfaceplayer EcruteakGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "The trainers here"
-	line "have secret mo-"
-	cont "tives."
+	text "Die Trainer hier"
+	line "haben geheime Mo-"
+	cont "tive."
 
-	para "If you win, they"
-	line "may tell you some"
+	para "Gewinnst du, so"
+	line "verraten sie dir"
 
-	para "deep secrets about"
-	line "Ecruteak."
+	para "vielleicht ein"
+	line "paar Geheimnisse"
+	cont "über Teak City."
 	done
 
 EcruteakGymStatue:
@@ -204,52 +205,57 @@ EcruteakGymPlayerSlowStepDownMovement:
 	step_end
 
 MortyIntroText:
-	text "Good of you to"
-	line "have come."
+	text "Gut, dass du ge-"
+	line "kommen bist."
 
-	para "Here in Ecruteak,"
-	line "#mon have been"
-	cont "revered."
+	para "Hier in Teak City"
+	line "werden #mon"
+	cont "verehrt."
 
-	para "It's said that a"
-	line "rainbow-colored"
+	para "Man sagt, dass le-"
+	line "gendäre #mon"
 
-	para "#mon will come"
-	line "down to appear"
+	para "nur wahrlich star-"
+	line "ken Trainern er-"
+	cont "scheinen werden."
 
-	para "before a truly"
-	line "powerful trainer."
+	para "Ich glaube an die-"
+	line "se Legende. Daher"
 
-	para "I believed that"
-	line "tale, so I have"
+	para "habe ich mein gan-"
+	line "zes Leben lang im"
 
-	para "secretly trained"
-	line "here all my life."
+	para "Geheimen trai-"
+	line "niert."
 
-	para "As a result, I can"
-	line "now see what"
-	cont "others cannot."
+	para "Als Resultat kann"
+	line "ich nun Dinge"
 
-	para "Just a bit more…"
+	para "sehen, die andere"
+	line "nicht sehen kön-"
+	cont "nen."
 
-	para "With a little"
-	line "more, I could see"
+	para "Noch ein wenig…"
 
-	para "a future in which"
-	line "I meet the #mon"
-	cont "of rainbow colors."
+	para "Mit ein wenig Mehr"
+	line "könnte ich eine"
 
-	para "You're going to"
-	line "help me reach that"
-	cont "level!"
+	para "Zukunft sehen, in"
+	line "der ich das legen-"
+	cont "däre regenbogen-"
+	cont "farbene #mon"
+	cont "treffe."
+
+	para "Du könntest mir"
+	line "dabei helfen!"
 	done
 
 MortyWinLossText:
-	text "I'm not good"
-	line "enough yet…"
+	text "Ich bin noch nicht"
+	line "gut genug…"
 
-	para "All right. This"
-	line "Badge is yours."
+	para "Dieser Orden soll"
+	line "dir gehören."
 	done
 
 MortyText_FogBadgeSpeech:
@@ -271,85 +277,93 @@ MortyText_FogBadgeSpeech:
 
 
 MortyFightDoneText:
-	text "I see…"
+	text "Ich verstehe…"
 
-	para "Your journey has"
-	line "taken you to far-"
-	cont "away places."
+	para "Deine Reise hat"
+	line "dich an die ent-"
+	cont "legensten Orte ge-"
+	cont "führt."
 
-	para "And you have wit-"
-	line "nessed much more"
-	cont "than I."
+	para "Du hast viel mehr"
+	line "gesehen als ich."
 
-	para "I envy you for"
-	line "that…"
+	para "Dafür beneide ich"
+	line "dich…"
 	done
 
 SageJeffreySeenText:
-	text "I spent the spring"
-	line "with my #mon."
+	text "Ich habe den Früh-"
+	line "ling mit meinen"
 
-	para "Then summer, fall"
-	line "and winter…"
+	para "#mon verbracht."
+	line "Dann den Sommer,"
 
-	para "Then spring came"
-	line "again. We have"
+	para "den Herbst und den"
+	line "Winter…"
 
-	para "lived together"
-	line "for a long time."
+	para "Dann kam wieder"
+	line "der Frühling. Wir"
+
+	para "haben viel Zeit"
+	line "miteinander ver-"
+	cont "bracht."
 	done
 
 SageJeffreyBeatenText:
-	text "Wins and losses, I"
-	line "experienced both."
+	text "Siege und Nieder-"
+	line "lagen - ich hatte"
+	cont "beides."
 	done
 
 SagePingSeenText:
-	text "Can you inflict"
-	line "any damage on our"
-	cont "#mon?"
+	text "Hältst du unseren"
+	line "#mon stand?"
 	done
 
 SagePingBeatenText:
-	text "Ah! Well done!"
+	text "Ah! Gut gemacht!"
 	done
 
 MediumMarthaSeenText:
-	text "I shall win!"
+	text "Ich werde siegen!"
 	done
 
 MediumMarthaBeatenText:
-	text "I, I, I lost!"
+	text "I-I-Ich habe"
+	line "verloren!"
 	done
 
 MediumGraceSeenText:
-	text "Stumped by our in-"
-	line "visible floor?"
+	text "Verwirrt dich un-"
+	line "ser unsichtbarer"
 
-	para "Defeat me if you"
-	line "want a hint!"
+	para "Boden? Besiege"
+	line "mich und ich gebe"
+	cont "dir einen Tipp!"
 	done
 
 MediumGraceBeatenText:
-	text "Wha-what?"
+	text "W-Was?"
 	done
 
 
 EcruteakGymGuyWinText:
-	text "Whew, <PLAYER>."
-	line "You did great!"
+	text "Wow, <PLAYER>."
+	line "Du warst großar-"
+	cont "tig!"
 
-	para "I was cowering in"
-	line "the corner out of"
-	cont "pure terror!"
+	para "Vor lauter Angst"
+	line "habe ich mich in"
+	cont "die Ecke gekauert!"
 	done
 
 EcruteakGymClosedText:
-	text "Morty, the Gym"
-	line "Leader, is absent."
+	text "Jens, der Arena-"
+	line "leiter ist nicht"
+	cont "hier."
 
-	para "Sorry, but you'll"
-	line "have to leave."
+	para "Du musst leider"
+	line "wieder gehen."
 
 	para "Hohohoho."
 	done

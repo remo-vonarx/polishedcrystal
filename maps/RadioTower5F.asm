@@ -68,17 +68,17 @@ Petrel1Script:
 GenericTrainerAriana1:
 	generictrainer ARIANA, ARIANA1, EVENT_BEAT_ARIANA_1, Ariana1SeenText, Ariana1BeatenText
 
-	text "<PLAYER>, isn't it?"
+	text "<PLAYER>, oder?"
 
-	para "A brat like you"
-	line "won't appreciate"
+	para "Ein Balg wie du"
+	line "weiß die Größe"
 
-	para "the magnificence"
-	line "of Team Rocket."
+	para "von Team Rocket"
+	line "nicht zu würdigen."
 
-	para "That's too bad."
-	line "I really admire"
-	cont "your power."
+	para "Das ist schade."
+	line "Ich bewundere"
+	cont "deine Stärke."
 	done
 
 RadioTower5FRocketBossTrigger:
@@ -191,8 +191,9 @@ RadioTower5FPlayerTwoStepsLeftMovement:
 	step_end
 
 FakeDirectorTextBefore1:
-	text "Y-you! You came to"
-	line "rescue me?"
+	text "D-Du! Bist du"
+	line "gekommen, um mich"
+	cont "zu retten?"
 	done
 
 FakeDirectorTextBefore2:
@@ -220,8 +221,8 @@ FakeDirectorTextBefore3:
 	done
 
 FakeDirectorWinText:
-	text "OK, OK. I'll tell"
-	line "you where he is."
+	text "O.K. Ich sage"
+	line "dir, wo er ist."
 	done
 
 FakeDirectorTextAfter:
@@ -240,168 +241,185 @@ FakeDirectorTextAfter:
 	done
 
 Ariana1SeenText:
-	text "Remember me from"
-	line "the hideout in"
-	cont "Mahogany Town?"
+	text "Kennst du mich"
+	line "noch aus dem"
+	cont "Versteck in"
+	cont "Mahagonia City?"
 
-	para "I lost then, but I"
-	line "won't this time."
+	para "Damals habe ich"
+	line "verloren, aber das"
+
+	para "wird heute nicht"
+	line "passieren."
 	done
 
 Ariana1BeatenText:
-	text "This can't be"
-	line "happening!"
+	text "Das darf nicht"
+	line "wahr sein!"
 
-	para "I fought hard, but"
-	line "I still lost…"
+	para "Ich habe mich so"
+	line "angestrengt und"
+	cont "dennoch verloren…"
 	done
 
 RadioTower5FRocketBossBeforeText:
-	text "Oh? You managed to"
-	line "get this far?"
+	text "Oh? Du bist"
+	line "so weit gekommen?"
 
-	para "You must be quite"
-	line "the trainer."
+	para "Du musst ein aus-"
+	line "gezeichneter Trai-"
+	cont "ner sein."
 
-	para "We intend to take"
-	line "over this Radio"
+	para "Wir planen, die"
+	line "Radiostation zu"
 
-	para "Station and an-"
-	line "nounce our come-"
-	cont "back."
+	para "annektieren und"
+	line "unsere Rückkehr"
+	cont "bekanntzugeben."
 
-	para "That should bring"
-	line "our boss Giovanni"
+	para "Das sollte unseren"
+	line "Anführer Giovanni"
 
-	para "back from his solo"
-	line "training."
+	para "überzeugen, sein"
+	line "Solo-Training"
+	cont "abzubrechen und"
+	cont "zurückzukehren."
 
-	para "We are going to"
-	line "regain our former"
-	cont "glory."
+	para "Wir werden unseren"
+	line "früheren Ruhm"
+	cont "wiedererlangen."
 
-	para "I won't allow you"
-	line "to interfere with"
-	cont "our plans."
+	para "Ich werde nicht"
+	line "zulassen, dass du"
+	cont "unsere Pläne"
+	cont "durchkreuzt."
 	done
 
 RadioTower5FRocketBossWinText:
-	text "No! Forgive me,"
+	text "Nein! Vergib mir,"
 	line "Giovanni!"
 	done
 
 RadioTower5FRocketBossAfterText:
-	text "How could this be?"
+	text "Wie kann das sein?"
 
-	para "Our dreams have"
-	line "come to naught."
+	para "Unsere Träume wur-"
+	line "den zerschlagen."
 
-	para "I wasn't up to the"
-	line "task after all."
+	para "Ich konnte meine"
+	line "Aufgabe nicht"
+	cont "erfüllen."
 
-	para "Like Giovanni did"
-	line "before me, I will"
+	para "Wie Giovanni"
+	line "werde ich Team"
 
-	para "disband Team"
-	line "Rocket here today."
+	para "Rocket hier und"
+	line "heute auflösen."
 
-	para "Farewell."
+	para "Leb wohl."
 	done
 
 RadioTower5FDirectorThankYouText:
-	text "Director: <PLAYER>,"
-	line "thank you!"
+	text "Intendant:"
+	line "<PLAYER>!"
+	cont "Vielen Dank!"
 
-	para "Your courageous"
-	line "actions have saved"
+	para "Dein couragiertes"
+	line "Handeln hat die"
 
-	para "#mon nation-"
-	line "wide."
+	para "#mon im ganzen"
+	line "Land gerettet."
 
-	para "I know it's not"
-	line "much, but please"
-	cont "take this."
+	para "Ich weiß, es ist"
+	line "nicht viel, aber"
+	cont "nimm dies bitte."
 	done
 
 RadioTower5FDirectorDescribeClearBellText:
-	text "There used to be a"
-	line "tower right here"
-	cont "in Goldenrod City."
+	text "Früher gab es hier"
+	line "einen Turm in"
+	cont "Dukatia City."
 
-	para "But it was old and"
-	line "creaky."
+	para "Aber er war alt"
+	line "und baufällig."
 
-	para "So we replaced it"
-	line "with our Radio"
-	cont "Tower."
+	para "Also haben wir ihn"
+	line "durch unseren"
+	cont "Radioturm ersetzt."
 
-	para "We dug up that"
-	line "bell during"
-	cont "construction."
+	para "Beim Bau haben wir"
+	line "diese Glocke"
+	cont "gefunden."
 
-	para "I heard that all"
-	line "sorts of #mon"
+	para "Ich hörte, dass"
+	line "früher viele ver-"
+	cont "schiedene #mon"
 
-	para "lived in Goldenrod"
-	line "in the past."
+	para "in Dukatia City"
+	line "lebten."
 
-	para "Perhaps…"
+	para "Vielleicht…"
 
-	para "That bell has some"
-	line "connection to the"
+	para "…hat diese Glocke"
+	line "etwas mit dem"
 
-	para "Bell Tower in"
-	line "Ecruteak City…"
+	para "Glockenturm in"
+	line "Teak City zu tun…"
 
 	para "Ah!"
 
-	para "That reminds me…"
+	para "Das erinnert mich…"
 
-	para "I overheard Team"
-	line "Rocket whispering."
+	para "Ich habe Team"
+	line "Rocket zufällig"
+	cont "flüstern hören."
 
-	para "Apparently, some-"
-	line "thing is going on"
-	cont "at the Bell Tower."
+	para "Es scheint, als"
+	line "führten sie etwas"
+	cont "am Glockenturm im"
+	cont "Schilde."
 
-	para "I have no idea"
-	line "what is happening,"
+	para "Ich habe keine"
+	line "Ahnung, was vor"
 
-	para "but you might look"
-	line "into it."
+	para "sich geht. Viel-"
+	line "leicht solltest du"
+	cont "es überprüfen."
 
-	para "OK, I better go to"
-	line "my office."
+	para "O.K., ich gehe in"
+	line "mein Büro zurück."
 	done
 
 RadioTower5FDirectorText:
-	text "Director: Hello,"
+	text "Intendant: Hallo,"
 	line "<PLAYER>!"
 
-	para "You know, I love"
-	line "#mon."
+	para "Du weißt, ich"
+	line "liebe #mon."
 
-	para "I built this Radio"
-	line "Tower so I could"
+	para "Ich errichtete"
+	line "diesen Radioturm,"
 
-	para "express my love"
-	line "of #mon."
+	para "um meiner Liebe zu"
+	line "#mon Ausdruck"
+	cont "zu verleihen."
 
-	para "It would be nice"
-	line "if people enjoyed"
-	cont "our programs."
+	para "Es wäre wunderbar,"
+	line "wenn die Menschen"
+	cont "unsere Sendungen"
+	cont "liebten."
 	done
 
 BenText:
-	text "Ben: Do you listen"
-	line "to our music?"
+	text "Ben: Hörst du dir"
+	line "unsere Musik an?"
 	done
 
 SignpostRadioTower5FOffice:
-	text "5F Director's"
-	line "   Office"
+	text "4S Büro des"
+	line "   Intendanten"
 	done
 
 SignpostRadioTower5FStudio:
-	text "5F Studio 1"
+	text "4S Studio 1"
 	done

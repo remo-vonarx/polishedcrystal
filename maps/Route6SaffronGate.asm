@@ -21,30 +21,31 @@ Route6SaffronGuardScript:
 	iftrue_jumptextfaceplayer Route6SaffronGuardMagnetTrainText
 	jumpthistextfaceplayer
 
-	text "Welcome to Saffron"
-	line "City, home of the"
-	cont "Magnet Train!"
+	text "Willkommen in"
+	line "Saffronia City,"
+	cont "der Heimat des"
+	cont "MAGNETZUGs!"
 
-	para "…That's what I'd"
-	line "normally say, but"
+	para "…Das sage ich"
+	line "sonst immer, aber"
 
-	para "the Magnet Train"
-	line "isn't running now."
+	para "der Magnetzug"
+	line "fährt momentan"
+	cont "nicht."
 
-	para "It's not getting"
-	line "any electricity"
+	para "Die Stromzufuhr"
+	line "ist unterbrochen,"
 
-	para "because there's"
-	line "something wrong"
+	para "weil es im"
+	line "Kraftwerk ein"
 
-	para "with the Power"
-	line "Plant."
+	para "Problem gibt."
 	done
 
 Route6SaffronGuardMagnetTrainText:
-	text "The Magnet Train"
-	line "is the most famous"
+	text "Der Magnetzug ist"
+	line "das Aushängeschild"
 
-	para "thing about Saf-"
-	line "fron."
+	para "von Saffronia"
+	line "City."
 	done

@@ -363,10 +363,13 @@ def test_line_breaks_and_case_dont_matter():
         normalize([("text", "I'M GOING TO"), ("line", "BATTLE!"), ("prompt",)], [])
 
 
-def test_index_on_real_data(pairs, root):
+def test_index_on_real_data(pairs, root, base):  # Upstream's English, at the last merged commit
     from asm_text import iter_texts
     from kristall_index import classify, load_renames, locate
-    entries = classify(list(iter_texts(root)), pairs, load_renames(root), locate(root), {})
+    from kristall_lookup import git_tree
+    files, source = git_tree(base, root)
+    english = list(iter_texts(root, source=source, files=files))
+    entries = classify(english, pairs, load_renames(root), locate(root, source), {})
     by = Counter(e.cls for e in entries)
     assert by["word"] > 1000 and by["new"] > 0
 
@@ -657,6 +660,23 @@ def test_kristall_contraction_tiles(pairs):
     assert "bin's," in words("BillPhoneNewlyFullText").split()
 
 
+@pytest.mark.parametrize("ours, pret, kept", [
+    ("Poison Moth", "POISONMOTH", False),  # spacing only
+    ("FlyScorpion", "FLYSCORPIO", False),  # pret's cut at 10 letters
+    ("Squatter", "HERMITCRAB", True),
+    ("Shell", "SHELLFISH", True),
+    ("Lava Slug", "LAVA", True),  # pret cuts only at 10 letters
+    ("Hibernator", "HIBERNANT", True),
+])
+def test_category_polished_changed_stays_english(ours, pret, kept):
+    from kristall_write import german_for
+    e = word_entry(polished=[("category", ours), ("text", "Some text.@")],
+                   pret_en=[("category", pret), ("text", "Some text.")],
+                   de=[("category", "SAMEN"), ("text", "Ein Text.")])
+    assert german_for(e, {}, {"SAMEN": "Samen"}).commands == [
+        ("category", ours if kept else "Samen"), ("text", "Ein Text.@")]
+
+
 def test_render_category():
     from asm_text import render
     assert render([("category", "Samen"), ("text", "Da es"), ("next", "klein ist.@")]) == [
@@ -693,10 +713,16 @@ def asm(*commands):
     return "\n".join(["T:"] + render(list(commands))) + "\n"
 
 
-def test_drift_check_passes_on_tree(pairs, root, base):
+def test_drift_check_passes_on_tree(pairs, root, base, monkeypatch):
     import check_kristall
-    failures, english = check_kristall.check(root, base, pairs)
-    assert failures == [] and english > 1000
+    compared, derive = [], check_kristall.german_for
+
+    def counted(entry, *args):
+        compared.append(entry)
+        return derive(entry, *args)
+    monkeypatch.setattr(check_kristall, "german_for", counted)
+    failures, _ = check_kristall.check(root, base, pairs)
+    assert failures == [] and len(compared) > 1000  # it compared the German, it didn't skip it
 
 
 def test_drift_check_passes_written_text(git_repo):
@@ -1008,3 +1034,25 @@ def test_semicolon_becomes_a_comma():  # Polished's font has no ';'
     from kristall_write import german_for
     r = german_for(word_entry(de=[("text", "Stark; Angreifer"), ("done",)]), {}, {})
     assert r.commands[0] == ("text", "Stark, Angreifer")
+
+
+def test_writer_keeps_the_indentation_of_a_nested_text(tmp_path):
+    from asm_text import iter_texts
+    from kristall_index import classify
+    from kristall_write import write
+    put(tmp_path / "maps/X.asm", 'S:\n\twritethistext\n\t\ttext "Hi!"\n\t\tdone\n\tend\n')
+    entries = classify(list(iter_texts(tmp_path, ("maps",))), {"texts": [fake_pair("P", en=HI, de=HALLO)]}, [], {}, {})
+    write([e for e in entries if e.cls == "word"], {}, {}, dry_run=False, root=tmp_path)
+    assert (tmp_path / "maps/X.asm").read_text() == 'S:\n\twritethistext\n\t\ttext "Hallo!"\n\t\tdone\n\tend\n'
+
+
+def test_a_text_can_keep_all_its_capitals(tmp_path):  # where Polished's English shouts in capitals too
+    from kristall_index import Entry
+    from kristall_write import german_for, load_case
+    put(tmp_path / "case.tsv", "#MON\t#mon\nDIE\tdie\n*\t*\tShout\n")
+    case = load_case(tmp_path / "case.tsv")
+    pair = fake_pair("P", en=HI, de=[("text", "DIE #MON, LAUF!"), ("done",)])
+    assert german_for(Entry(fake_text(HI, label="Shout"), "word", pair, [pair], 1.0), {}, case).commands[0] == \
+        ("text", "DIE #MON, LAUF!")
+    assert german_for(Entry(fake_text(HI, label="Other"), "word", pair, [pair], 1.0), {}, {**case, "LAUF": "lauf"}
+                      ).commands[0] == ("text", "die #mon, lauf!")

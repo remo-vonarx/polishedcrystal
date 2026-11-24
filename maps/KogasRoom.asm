@@ -81,50 +81,57 @@ KogaScript:
 .SeenText:
 	text "Fwahahahaha!"
 
-	para "I am Koga of the"
-	line "Elite Four."
+	para "Ich bin Koga."
+	line "Einer der Top"
 
-	para "I live in shadows,"
-	line "a ninja!"
+	para "Vier. Da ich ein"
+	line "Ninja bin, lebe"
+	cont "ich in der Dunkel-"
+	cont "heit."
 
-	para "My intricate style"
-	line "will confound and"
-	cont "destroy you!"
+	para "Mein komplizierter"
+	line "Stil wird dich"
+	cont "verwirren und"
+	cont "vernichten!"
 
-	para "Confusion, sleep,"
-	line "poison…"
+	para "Verwirrung,"
+	line "Schlaf, Gift…"
 
-	para "Prepare to be the"
-	line "victim of my sin-"
-	cont "ister technique!"
+	para "Auch du wirst ein"
+	line "Opfer meiner"
+	cont "hinterhältigen"
+	cont "Strategie!"
 
 	para "Fwahahahaha!"
 
-	para "#mon is not"
-	line "merely about brute"
+	para "Bei #mon geht"
+	line "es nicht nur um"
 
-	para "force--you shall"
-	line "see soon enough!"
+	para "Kraft allein - das"
+	line "wirst du noch"
+	cont "herausfinden!"
 	done
 
 .BeatenText:
 	text "Ah!"
-	line "You have proven"
-	cont "your worth!"
+	line "Du hast dich als"
+	cont "würdig erwiesen!"
 	done
 
 .AfterText:
-	text "I subjected you to"
-	line "everything I could"
-	cont "muster."
+	text "Ich habe alle"
+	line "meine Register"
+	cont "gezogen."
 
-	para "But my efforts"
-	line "failed. I must"
-	cont "hone my skills."
+	para "Alles war umsonst."
+	line "Ich muss meine"
+	cont "Fertigkeiten"
+	cont "verbessern."
 
-	para "Go on to the next"
-	line "room, and put your"
-	cont "abilities to test!"
+	para "Betritt den"
+	line "nächsten Raum und"
+	cont "stelle dein Können"
+	cont "unter Beweis!"
 	done
 
 .SeenRematchText:

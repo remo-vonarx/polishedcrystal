@@ -1,70 +1,71 @@
 ToddAnswerPhoneText:
-	text "Yes? This is"
+	text "Ja? Hier spricht"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking."
+	text "."
 
-	para "Hey, <PLAYER>!"
+	para "Heh, <PLAYER>!"
 	done
 
 ToddAnswerPhoneDayText:
-	text "Yes? This is"
+	text "Ja? Hier spricht"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking."
+	text "."
 
-	para "This must be"
-	line "<PLAYER>."
+	para "Wenn das nicht"
+	line "<PLAYER> ist!"
 	done
 
 ToddAnswerPhoneNiteText:
-	text "Yes? This is"
+	text "Ja? Hier spricht"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking."
+	text "."
 
 	para "Ah, <PLAYER>!"
 	done
 
 ToddGreetText:
-	text "Hello, this is"
+	text "Hallo, hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 
-	para "<PLAYER>, right?"
+	para "<PLAYER>, richtig?"
 	done
 
 ToddGreetDayText:
-	text "Hello, this is"
+	text "Hallo, hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 
-	para "<PLAYER>, what are"
-	line "you doing?"
+	para "<PLAYER>, was"
+	line "machst du gerade?"
 	done
 
 ToddGreetNiteText:
-	text "Hello, this is"
+	text "Hallo, hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 
-	para "<PLAYER>, sorry to"
-	line "call you so late."
+	para "<PLAYER>, ent-"
+	line "schuldige die"
+	cont "späte Störung."
 	done
 
 ToddGenericText:
-	text "How do you raise"
-	line "your #mon?"
+	text "Wie trainierst du"
+	line "deine #mon?"
 
-	para "I do all sorts"
-	line "of things, like"
+	para "Ich probiere alles"
+	line "Mögliche aus. Ich"
 
-	para "leaving them in"
-	line "Day-Care and"
+	para "gebe sie in die"
+	line "Pension und stärke"
 
-	para "toughening them up"
-	line "with items."
+	para "sie, indem ich"
+	line "Items einsetze."
 	done

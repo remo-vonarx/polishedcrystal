@@ -1,72 +1,72 @@
 GavenAnswerPhoneText:
-	text "Hello, this is"
+	text "Hallo, hier ist"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking…"
+	text "…"
 
 	para "Hi, <PLAYER>!"
-	line "Good morning!"
+	line "Guten Morgen!"
 	done
 
 GavenAnswerPhoneDayText:
-	text "Hello, this is"
+	text "Hallo, hier ist"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking…"
+	text "…"
 
 	para "Hi, <PLAYER>!"
 	done
 
 GavenAnswerPhoneNiteText:
-	text "Hello, this is"
+	text "Hallo, hier ist"
 	line ""
 	text_ram wStringBuffer3
-	text " speaking…"
+	text "…"
 
 	para "Hi, <PLAYER>!"
-	line "Good evening!"
+	line "Guten Abend!"
 	done
 
 GavenGreetText:
-	text "<PLAYER>, good"
-	line "morning!"
+	text "<PLAYER>,"
+	line "guten Morgen!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "How are you doing?"
+	line "Wie geht es dir?"
 	done
 
 GavenGreetDayText:
 	text "Hi, <PLAYER>!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "How are you doing?"
+	line "Alles in Butter?"
 	done
 
 GavenGreetNiteText:
-	text "<PLAYER>, good"
-	line "evening!"
+	text "<PLAYER>,"
+	line "guten Abend!"
 
-	para "It's me, "
+	para "Ich, "
 	text_ram wStringBuffer3
 	text "."
-	line "How are you doing?"
+	line "Alles paletti?"
 	done
 
 GavenGenericText:
-	text "How are your"
-	line "#mon doing?"
+	text "Wie geht es deinen"
+	line "#mon?"
 
-	para "My "
+	para "Meinem "
 	text_ram wStringBuffer4
-	text "'s"
-	line "doing as great as"
-	cont "ever."
+	text ""
+	line "geht es wie immer"
+	cont "hervorragend."
 
-	para "Let's keep at it"
-	line "and become #mon"
-	cont "Champs!"
+	para "Lass uns am Ball"
+	line "bleiben und #-"
+	cont "mon-Champs werden!"
 	done

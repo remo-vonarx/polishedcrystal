@@ -103,8 +103,8 @@ CeladonPrizeRoom_alreadyhavetm:
 CeladonPrizeRoom_notenoughcoins:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "enough coins."
+	text "Du hast nicht"
+	line "genug Münzen."
 	done
 
 CeladonPrizeRoom_TMMenuDataHeader:
@@ -205,38 +205,40 @@ CeladonGameCornerPokemonVendor:
 	db "Cancel@"
 
 CeladonGameCornerPrizeRoomGentlemanText:
-	text "I wanted Porygon,"
-	line "but I was short by"
-	cont "100 coins…"
+	text "Ich wollte ein"
+	line "Porygon, aber mir"
+	cont "fehlten 100"
+	cont "Münzen…"
 	done
 
 CeladonGameCornerPrizeRoomPharmacistText:
-	text "Whew…"
+	text "Puh…"
 
-	para "I've got to stay"
-	line "calm and cool…"
+	para "Ich muss ruhig"
+	line "Blut bewahren…"
 
-	para "I can't lose my"
-	line "cool, or I'll lose"
-	cont "all my money…"
+	para "Wenn ich nervös"
+	line "werde, könnte ich"
+	cont "mein ganzes Geld"
+	cont "verlieren…"
 	done
 
 CeladonPrizeRoom_PrizeVendorIntroText:
-	text "Welcome!"
+	text "Willkommen!"
 
-	para "We exchange your"
-	line "coins for fabulous"
-	cont "prizes!"
+	para "Wir tauschen deine"
+	line "Münzen ein gegen"
+	cont "fabelhafte Preise!"
 	done
 
 CeladonPrizeRoom_AskWhichPrizeText:
-	text "Which prize would"
-	line "you like?"
+	text "Welchen Preis"
+	line "hättest du gerne?"
 	done
 
 CeladonPrizeRoom_ConfirmPurchaseText:
-	text "OK, so you wanted"
-	line "a "
+	text "Du willst also"
+	line ""
 	text_ram wStringBuffer3
 	text "?"
 	done
@@ -249,7 +251,7 @@ CeladonPrizeRoom_ConfirmTMPurchaseText:
 	done
 
 CeladonPrizeRoom_HereYouGoText:
-	text "Here you go!"
+	text "Hier, bitte sehr!"
 	done
 
 CeladonPrizeRoom_AlreadyHaveTMText:
@@ -267,11 +269,11 @@ CeladonPrizeRoom_NotEnoughRoomText:
 	done
 
 CeladonPrizeRoom_ComeAgainText:
-	text "Oh. Please come"
-	line "back with coins!"
+	text "Oh. Komm bitte"
+	line "mit Münzen wieder!"
 	done
 
 CeladonPrizeRoom_NoCoinCaseText:
-	text "Oh? You don't have"
-	line "a Coin Case."
+	text "Ach, du hast"
+	line "keinen Münzkorb?"
 	done

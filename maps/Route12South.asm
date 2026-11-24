@@ -33,70 +33,73 @@ Route12South_MapScriptHeader:
 GenericTrainerFisherMartin:
 	generictrainer FISHER, MARTIN, EVENT_BEAT_FISHER_MARTIN, FisherMartinSeenText, FisherMartinBeatenText
 
-	text "I'm too impatient"
-	line "for fishing…"
+	text "Ich bin zu unge-"
+	line "duldig für das"
+	cont "Angeln…"
 	done
 
 FisherMartinSeenText:
-	text "Patience is the"
-	line "key to both fish-"
-	cont "ing and #mon."
+	text "Geduld ist das"
+	line "Zauberwort. Das"
+	cont "gilt fürs Angeln"
+	cont "und für #mon."
 	done
 
 FisherMartinBeatenText:
-	text "Gwaaah!"
+	text "Guaah!"
 	done
 
 GenericTrainerFisherStephen:
 	generictrainer FISHER, STEPHEN, EVENT_BEAT_FISHER_STEPHEN, FisherStephenSeenText, FisherStephenBeatenText
 
-	text "Have you checked"
-	line "out Kanto's radio"
+	text "Kennst du schon"
+	line "die Radiosender"
 
-	para "programs? We get a"
-	line "good variety here."
+	para "aus Kanto? Es gibt"
+	line "viele hier."
 	done
 
 FisherStephenSeenText:
-	text "I feel so content,"
-	line "fishing while lis-"
-	cont "tening to some"
-	cont "tunes on my radio."
+	text "Wenn ich beim"
+	line "Angeln Radio hören"
+	cont "kann, bin ich"
+	cont "glücklich."
 	done
 
 FisherStephenBeatenText:
-	text "My stupid radio"
-	line "distracted me!"
+	text "Das blöde Radio"
+	line "beunruhigt mich!"
 	done
 
 GenericTrainerFisherBarney:
 	generictrainer FISHER, BARNEY, EVENT_BEAT_FISHER_BARNEY, FisherBarneySeenText, FisherBarneyBeatenText
 
-	text "I think electric-"
-	line "ity is the most"
+	text "Meiner Meinung"
+	line "nach ist Strom"
 
-	para "important thing in"
-	line "our daily lives."
+	para "das Wichtigste"
+	line "in unserem Leben."
 
-	para "If it weren't,"
-	line "people wouldn't"
+	para "Wenn dem nicht so"
+	line "wäre, hätten die"
 
-	para "have made such a"
-	line "fuss when the"
+	para "Leute nicht so"
+	line "einen Aufstand"
 
-	para "Power Plant went"
-	line "out of commission."
+	para "fabriziert, als"
+	line "das Kraftwerk"
+	cont "außer Betrieb war."
 	done
 
 FisherBarneySeenText:
-	text "What's most impor-"
-	line "tant in our every-"
-	cont "day lives?"
+	text "Was ist in unserem"
+	line "alltäglichen Leben"
+	cont "am wichtigsten?"
 	done
 
 FisherBarneyBeatenText:
-	text "The answer is"
-	line "coming up next!"
+	text "Die Antwort gibt"
+	line "es demnächst!"
 	done
 
 GenericTrainerFisherKyler:
@@ -194,7 +197,5 @@ GenericTrainerCoupleVicandtara2:
 
 Route12SignText:
 	text "Route 12"
-
-	para "North to Lavender"
-	line "Town"
+	line "Norden: Lavandia"
 	done

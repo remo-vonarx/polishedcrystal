@@ -424,6 +424,16 @@ def unmapped(commands, names_ok):
     return sorted(set(bad))
 
 
+PRET_CATEGORY = 10  # pret's longest dex category
+
+
+def own_category(ours, pret):
+    """Whether Polished's dex category is another word than pret's, not only spaced or cut
+    differently (pret cuts at 10 letters)."""
+    ours, cut = (re.sub(r"[^a-z]", "", c.lower()) for c in (ours, pret))
+    return ours != cut and not (len(pret) == PRET_CATEGORY and ours.startswith(cut))
+
+
 def german_for(entry, names, case, charmap=None, ram=None):
     """Our German for one indexed text, or None and why."""
     t = entry.text
@@ -443,9 +453,16 @@ def german_for(entry, names, case, charmap=None, ram=None):
     commands, flags = rebuild(t.commands, entry.pair["en"], entry.pair["de"], ram)
     if flags:
         return Result(None, [f"{where}: {f}" for f in flags])
+    category = next((c[1] for c in t.commands if c[0] == "category"), None)
+    pret_category = next((c[1] for c in entry.pair["en"] if c[0] == "category"), None)
+    if category and pret_category and own_category(category, pret_category):
+        commands = [("category", category) if c[0] == "category" else c for c in commands]
     before = commands
-    commands, unknown = recase(commands, getattr(names, "variants", {}).get(t.variant, names),
-                               case_for(case, t.label))
+    answers = case_for(case, t.label)
+    if answers.get("*") == "*":  # the text keeps Kristall's capitals, as Polished's English keeps its own
+        unknown = []
+    else:
+        commands, unknown = recase(commands, getattr(names, "variants", {}).get(t.variant, names), answers)
     if unknown:
         return Result(None, [f"{where}: unknown capitals {' '.join(sorted(set(unknown)))}"])
     bad = unmapped(commands, charmap_names() if charmap is None else charmap)
@@ -510,6 +527,10 @@ def write(entries, names, case, dry_run=True, root=ROOT):
                 flags.append(f"{path}:{e.text.label}: not written, its lines hold {why}")
                 continue
             new = render(result.commands)
+            indent = next((line[:len(line) - len(line.lstrip())] for line in old
+                           if line.strip() and not LABEL.match(line)), "\t")
+            if indent != "\t":  # a text nested in a script (writethistext) keeps its indentation
+                new = [indent + line[1:] if line.startswith("\t") else line for line in new]
             if any(not line.strip() for line in old):  # Polished's style: a blank line before para
                 new = [x for line in new for x in ([""] if line.startswith("\tpara ") else []) + [line]]
             if m := LABEL.match(old[0]):  # a label on the text's first line stays, with its gap

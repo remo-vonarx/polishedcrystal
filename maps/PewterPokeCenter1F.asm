@@ -43,26 +43,29 @@ PewterJigglypuffText:
 	done
 
 PewterPokeCenter1FTeacherText:
-	text "…Yeah, and the"
-	line "Gym in Cinnabar's"
+	text "…Ja, und die"
+	line "PKMN-Arena auf der"
 
-	para "gone. I was really"
-	line "amazed."
+	para "Zinnoberinsel ist"
+	line "verschwunden. Das"
 
-	para "…Yes? I'm on the"
-	line "phone. Go away!"
+	para "finde ich"
+	line "merkwürdig."
+
+	para "…Ja? Ich"
+	line "telefoniere!"
+	cont "Lass mich in Ruhe!"
 	done
 
 PewterPokeCenter1FChildText:
-	text "Most #mon get"
-	line "drowsy if they"
+	text "Die meisten #-"
+	line "mon werden"
+	cont "schläfrig, wenn"
+	cont "Pummeluff singt."
 
-	para "hear a Jigglypuff"
-	line "singing."
+	para "Manche Attacken"
+	line "kann man nur an-"
 
-	para "There are several"
-	line "moves that can be"
-
-	para "used only while a"
-	line "#mon is asleep."
+	para "wenden, wenn ein"
+	line "#mon schläft."
 	done

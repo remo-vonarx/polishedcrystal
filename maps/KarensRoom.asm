@@ -79,55 +79,61 @@ KarenScript:
 	end
 
 .SeenText:
-	text "I am Karen of the"
-	line "Elite Four."
+	text "Ich bin Melanie."
+	line "Nummer 4 der"
+	cont "Top Vier."
 
-	para "You're <PLAYER>?"
-	line "How amusing."
+	para "Du heißt <PLAYER>?"
+	line "Sehr amüsant."
 
-	para "I love Dark-type"
-	line "#mon."
+	para "Ich liebe #mon"
+	line "des Typs Unlicht."
 
-	para "I find their wild,"
-	line "tough image to be"
+	para "Ihr wilder, harter"
+	line "Ruf gefällt mir."
 
-	para "so appealing. And"
-	line "they're so strong."
+	para "Und sie sind"
+	line "wirklich stark."
 
-	para "Think you can take"
-	line "them? Just try to"
-	cont "entertain me."
+	para "Glaubst du, du"
+	line "kannst es mit uns"
+	cont "aufnehmen? Los,"
+	cont "ich will mich"
+	cont "amüsieren."
 
-	para "Let's go."
+	para "Auf geht's."
 	done
 
 .BeatenText:
-	text "Well, aren't you"
-	line "good. I like that"
-	cont "in a trainer."
+	text "Nun, du bist"
+	line "gut. Das gefällt"
+	cont "mir an einem"
+	cont "Trainer."
 	done
 
 .AfterText:
-	text "Strong #mon."
+	text "Starke #mon."
 
-	para "Weak #mon."
+	para "Schwache #mon."
 
-	para "That is only the"
-	line "selfish perception"
-	cont "of people."
+	para "Das ist nur eine"
+	line "subjektive Ein-"
+	cont "schätzung anderer"
+	cont "Menschen."
 
-	para "Truly skilled"
-	line "trainers should"
+	para "Wirklich begabte"
+	line "Trainer gewinnen"
 
-	para "try to win with"
-	line "their favorites."
+	para "mit ihren Lieb-"
+	line "lings-#mon."
 
-	para "I like your style."
-	line "You understand"
-	cont "what's important."
+	para "Ich mag deinen"
+	line "Stil. Du weißt,"
+	cont "was wichtig ist."
 
-	para "Go on--the Cham-"
-	line "pion is waiting."
+	para "Schreite voran!"
+	line "Der Champ"
+	cont "wartet."
 	done
 
 .SeenRematchText:

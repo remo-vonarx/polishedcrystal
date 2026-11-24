@@ -79,18 +79,19 @@ CeruleanCityCooltrainerMScript:
 	iftrue_jumptextfaceplayer CeruleanCityCooltrainerMText2
 	jumpthistextfaceplayer
 
-	text "Kanto's Power"
-	line "Plant?"
+	text "Das Kraftwerk von"
+	line "Kanto?"
 
-	para "It's near the end"
-	line "of Route 9, the"
+	para "Es befindet"
+	line "sich am Ende von"
 
-	para "road that heads"
-	line "east from here."
+	para "Route 9, auf der"
+	line "Straße östlich"
+	cont "von hier."
 
-	para "I think there was"
-	line "an accident of"
-	cont "some sort there."
+	para "Es muss dort einen"
+	line "Störfall gegeben"
+	cont "haben."
 	done
 
 CeruleanCityCooltrainerFScript:
@@ -141,44 +142,45 @@ CeruleanCityYoungsterScript:
 	turnobject CERULEANCITY_YOUNGSTER, LEFT
 	jumpthistext
 
-	text "Ayuh?"
+	text "Ach ja?"
 
-	para "My Itemfinder is"
-	line "responding…"
+	para "Mein Detektor"
+	line "schlägt aus…"
 	done
 
 
 CeruleanCityCooltrainerMText2:
-	text "You're collecting"
-	line "every single kind"
-	cont "of #mon?"
+	text "Sammelst du jede"
+	line "Art von #mon?"
 
-	para "That must be quite"
-	line "a challenge, but"
-	cont "it sounds fun too."
+	para "Das ist bestimmt"
+	line "sehr schwer. Aber"
+	cont "Spaß macht es"
+	cont "sicher auch."
 	done
 
 CeruleanCitySuperNerdText:
-	text "The Cape in the"
-	line "north is a good"
+	text "Am Kap im Norden"
+	line "treffen sich viele"
 
-	para "place for dates."
-	line "Girls like it!"
+	para "Pärchen. Gerade"
+	line "Mädchen gehen dort"
+	cont "gerne hin!"
 	done
 
 CeruleanCitySlowbroText:
-	text "Slowbro: Yarah?"
+	text "Lahmus: Jarah?"
 	done
 
 CeruleanCityCooltrainerFText1:
-	text "My Slowbro and I"
-	line "make an awesome"
-	cont "combination!"
+	text "Mein Lahmus und"
+	line "ich sind ein un-"
+	cont "schlagbares Team!"
 	done
 
 CeruleanCityCooltrainerFText2:
-	text "Slowbro, show me"
-	line "your Confusion!"
+	text "Lahmus, mach deine"
+	line "Konfusion vor!"
 	done
 
 CeruleanCityCooltrainerFText3: ; text > text
@@ -186,8 +188,10 @@ CeruleanCityCooltrainerFText3: ; text > text
 	done
 
 CeruleanCityFisherText:
-	text "I'm a huge fan of"
-	line "Cerulean Gym's"
+	text "Ich bin ein großer"
+	line "Fan von der Arena-"
+	cont "leiterin in Azuria"
+	cont "City. Ihr Name ist"
 	cont "Misty."
 	done
 
@@ -232,19 +236,20 @@ CeruleanCaveGuardText:
 	done
 
 CeruleanCitySignText:
-	text "Cerulean City"
+	text "Azuria City"
 
-	para "A Mysterious Blue"
-	line "Aura Surrounds It"
+	para "Umgeben Von Einer"
+	line "Mystischen Blauen"
+	cont "Aura"
 	done
 
 CeruleanGymSignText:
-	text "Cerulean City"
-	line "#mon Gym"
-	cont "Leader: Misty"
+	text "PKMN-Arena von"
+	line "Azuria City"
+	cont "Leitung: Misty"
 
-	para "The Tomboyish"
-	line "Mermaid"
+	para "Die Jungenhafte"
+	line "Meerjungfrau"
 	done
 
 CeruleanBikeShopSignText:
@@ -255,21 +260,24 @@ CeruleanBikeShopSignText:
 	done
 
 CeruleanPoliceSignText:
-	text "There's a notice"
-	line "here…"
+	text "Hier ist eine"
+	line "Nachricht…"
 
-	para "Stamp out thievery"
-	line "and make the city"
+	para "Stoppt die Krimi-"
+	line "nalität und macht"
 
-	para "a friendlier, more"
-	line "cheerful place!"
+	para "aus dieser Stadt"
+	line "einen Ort, an dem"
+	cont "man sicher ist und"
+	cont "gerne lebt!"
 
-	para "Cerulean Police"
+	para "Ordnungsamt von"
+	line "Azuria City"
 	done
 
 CeruleanCapeSignText:
-	text "Cerulean Cape"
-	line "Ahead"
+	text "Kap bei Azuria"
+	line "City voraus"
 	done
 
 CeruleanBubblerText:

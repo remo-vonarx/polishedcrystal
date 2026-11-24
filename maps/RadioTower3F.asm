@@ -40,15 +40,16 @@ RadioTower3FGymGuideScript:
 	iftrue_jumptextfaceplayer RadioTower3FGymGuideText
 	jumpthistextfaceplayer
 
-	text "To trainers, #-"
-	line "mon are their"
-	cont "beloved partners."
+	text "Für Trainer sind"
+	line "#mon wie"
+	cont "Lebenspartner."
 
-	para "It's terrible how"
-	line "Team Rocket is"
+	para "Es ist schreck-"
+	line "lich, wie Team"
 
-	para "trying to control"
-	line "#mon."
+	para "Rocket versucht,"
+	line "alle #mon zu"
+	cont "kontrollieren."
 	done
 
 RadioTower3FCooltrainerFScript:
@@ -60,17 +61,19 @@ RadioTower3FCooltrainerFScript:
 	iftrue_jumptextfaceplayer RadioTower3FCooltrainerFIsDirectorSafeText
 	jumpthistextfaceplayer
 
-	text "The Team Rocket"
-	line "boss has locked"
-	cont "himself in."
+	text "Der Anführer von"
+	line "Team Rocket hat"
+	cont "sich selbst"
+	cont "eingeschlossen."
 
-	para "But the Director"
-	line "can open it."
+	para "Aber der Intendant"
+	line "besitzt einen"
+	cont "Schlüssel."
 
-	para "He's up on the"
-	line "fifth floor."
+	para "Du findest ihn"
+	line "im vierten Stock."
 
-	para "Please save him!"
+	para "Bitte rette ihn!"
 	done
 
 .NoRockets:
@@ -89,21 +92,22 @@ RadioTower3FCooltrainerFScript:
 GenericTrainerGruntM7:
 	generictrainer GRUNTM, 7, EVENT_BEAT_ROCKET_GRUNTM_7, GruntM7SeenText, GruntM7BeatenText
 
-	text "I failed in my"
-	line "duties…"
+	text "Ich bin meinen"
+	line "Pflichten nicht"
+	cont "nachgekommen…"
 
-	para "I'll be docked pay"
-	line "for this…"
+	para "Ich werde dafür"
+	line "bezahlen müssen…"
 	done
 
 GenericTrainerGruntM8:
 	generictrainer GRUNTM, 8, EVENT_BEAT_ROCKET_GRUNTM_8, GruntM8SeenText, GruntM8BeatenText
 
-	text "I feel lousy over"
-	line "losing!"
+	text "Verlieren macht"
+	line "mich mürrisch!"
 
-	para "Darn it! I hate"
-	line "useless #mon!"
+	para "Mist! Ich hasse"
+	line "unfähige #mon!"
 	done
 
 GenericTrainerGruntM9:
@@ -119,11 +123,11 @@ GenericTrainerGruntM9:
 GenericTrainerRocketScientistMarc:
 	generictrainer ROCKET_SCIENTIST, MARC, EVENT_BEAT_ROCKET_SCIENTIST_MARC, RocketScientistMarcSeenText, RocketScientistMarcBeatenText
 
-	text "Bwahahaha…"
+	text "Huahahaha…"
 
-	para "I can transmit as"
-	line "strong a signal as"
-	cont "I need from here."
+	para "Ich kann Signale"
+	line "jeder Stärke von"
+	cont "hier aussenden."
 	done
 
 CardKeySlotScript::
@@ -150,40 +154,40 @@ CardKeySlotScript::
 	end
 
 RadioTower3FSuperNerdText:
-	text "We have recordings"
-	line "of the cries of"
+	text "Wir haben die Rufe"
+	line "von allen bekann-"
+	cont "ten #mon auf"
 
-	para "all #mon that"
-	line "have been found."
-
-	para "We must have about"
-	line "200 kinds."
+	para "Tonband."
+	line "Es sind zirka 200."
 	done
 
 
 RadioTower3FGymGuideText:
-	text "We run 24 hours a"
-	line "day to broadcast"
+	text "Bei uns gibt"
+	line "es rund um die Uhr"
 
-	para "entertaining pro-"
-	line "grams."
+	para "Unterhaltungs-"
+	line "sendungen."
 
-	para "I'll do my best to"
-	line "run around the"
-	cont "clock too!"
+	para "Ich versuche"
+	line "auch, rund um die"
+	cont "Uhr zu arbeiten!"
 	done
 
 RadioTower3FCooltrainerFIsDirectorSafeText:
-	text "Is the Director"
-	line "safe?"
+	text "Hast du den"
+	line "Intendanten"
+	cont "retten können?"
 	done
 
 RadioTower3FCooltrainerFYoureMyHeroText:
-	text "Thank you!"
-	line "You're my hero!"
+	text "Danke!"
+	line "Du bist mein Held!"
 
-	para "This is a token of"
-	line "my appreciation."
+	para "Dies ist ein"
+	line "Zeichen meiner"
+	cont "Wertschätzung."
 	done
 
 RadioTower3FCooltrainerFItsAGBCSoundsText:
@@ -208,72 +212,75 @@ RadioTower3FCooltrainerFItsAGBCSoundsText:
 	done
 
 RadioTower3FCooltrainerFYouWereMarvelousText:
-	text "You were simply"
-	line "marvelous!"
+	text "Du warst einfach"
+	line "traumhaft!"
 	done
 
 GruntM7SeenText:
-	text "I've been given"
-	line "strict orders."
+	text "Mir wurden strikte"
+	line "Befehle erteilt."
 
-	para "I'm to crush any-"
-	line "one who challenges"
-	cont "Team Rocket!"
+	para "Ich soll jeden,"
+	line "der Team Rocket"
+	cont "herausfordert,"
+	cont "pulverisieren!"
 	done
 
 GruntM7BeatenText:
-	text "What?!"
+	text "Was?!"
 	done
 
 GruntM8SeenText:
-	text "It feels great"
-	line "ordering #mon"
-	cont "to commit crimes."
+	text "Es ist ein tolles"
+	line "Gefühl, #mon"
+	cont "für Verbrechen"
+	cont "einzusetzen."
 	done
 
 GruntM8BeatenText:
-	text "You're kidding!"
+	text "Machst du Witze?"
 	done
 
 GruntM9SeenText:
-	text "Why did the shut-"
-	line "ter open? Did you"
-
-	para "have something to"
-	line "do with this?"
+	text "Warum hat sich der"
+	line "Rollladen geöff-"
+	cont "net? Hast du etwas"
+	cont "damit zu tun?"
 	done
 
 GruntM9BeatenText:
-	text "I'm done for!"
+	text "Ich bin erledigt!"
 	done
 
 RocketScientistMarcSeenText:
-	text "An unknown child"
-	line "wandering here?"
+	text "Was macht ein"
+	line "fremdes Kind hier?"
 
-	para "Who are you?"
+	para "Wer bist du?"
 	done
 
 RocketScientistMarcBeatenText:
-	text "Tch! I took you"
-	line "too lightly!"
+	text "Ts! Ich habe"
+	line "dich nicht"
+	cont "ernst genommen!"
 	done
 
 RadioTower3FCardKeySlotText:
-	text "It's the Card Key"
-	line "slot."
+	text "Dies ist der"
+	line "Schlitz für"
+	cont "den Türöffner."
 	done
 
 InsertedTheCardKeyText:
-	text "<PLAYER> inserted"
-	line "the Card Key."
+	text "<PLAYER> benutzt"
+	line "den Türöffner."
 	done
 
 RadioTower3FPersonnelSignText:
-	text "3F Personnel"
+	text "2S Personal"
 	done
 
 RadioTower3FPokemonMusicSignText:
-	text "#mon Music with"
-	line "Host DJ Ben"
+	text "#mon-Musik mit"
+	line "DJ Ben"
 	done

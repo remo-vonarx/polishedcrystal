@@ -56,15 +56,16 @@ CianwoodPhotoStudioFishingGuruScript:
 .NoPicture:
 	jumpthisopenedtext
 
-	text "Oh, no picture?"
-	line "Come again, OK?"
+	text "Kein Foto? Schau"
+	line "mal wieder vorbei!"
 	done
 
 .EggPicture:
 	jumpthisopenedtext
 
-	text "An Egg? My talent"
-	line "is worth more…"
+	text "Ein Ei? Mein"
+	line "Talent hat mehr"
+	cont "verdient…"
 	done
 
 PhotoStudioGreetingText:
@@ -88,8 +89,8 @@ PhotoStudioWhichMonText:
 	done
 
 PhotoStudioHoldStillText:
-	text "All righty. Hold"
-	line "still for a bit."
+	text "O.K. Beweg dich"
+	line "nicht."
 	done
 
 PhotoStudioPrestoText:
@@ -110,9 +111,9 @@ PhotoStudioAlreadyDoneText:
 	done
 
 PhotoStudioRefusedText:
-	text "Oh, that's too"
-	line "bad. I thought it"
+	text "Oh, schade. Ich"
+	line "dachte, das wäre"
 
-	para "would be a great"
-	line "memento…"
+	para "ein schönes Anden-"
+	line "ken…"
 	done

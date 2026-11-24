@@ -37,9 +37,10 @@ TrainerBikerDwayne:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "The Kanto #mon"
-	line "Federation will"
-	cont "never fall!"
+	text "Die #mon-"
+	line "Trainergilde aus"
+	cont "Kanto wird"
+	cont "immer existieren!"
 	done
 
 TrainerBikerHarris:
@@ -49,8 +50,9 @@ TrainerBikerHarris:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Wiped out by some"
-	line "punk from Johto…"
+	text "Vermöbelt von"
+	line "einem Rowdy aus"
+	cont "Johto…"
 	done
 
 TrainerBikerZeke:
@@ -60,16 +62,17 @@ TrainerBikerZeke:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "We'll try not to"
-	line "disturb anyone"
-	cont "from now on…"
+	text "Wir versuchen,"
+	line "ab jetzt niemanden"
+	cont "mehr zu stören…"
 	done
 
 GenericTrainerSupernerdSam:
 	generictrainer SUPER_NERD, SAM, EVENT_BEAT_SUPER_NERD_SAM, SupernerdSamSeenText, SupernerdSamBeatenText
 
-	text "The power of mag-"
-	line "nets is awesome!"
+	text "Die Kraft von"
+	line "Magneten ist"
+	cont "beeindruckend!"
 	done
 
 GenericTrainerSupernerdTom:
@@ -142,60 +145,62 @@ Route8BikerZekeProtestText:
 	done
 
 BikerDwayneSeenText:
-	text "We're the Kanto"
-	line "#mon Federation"
-	cont "trainer group."
+	text "Wir repräsentieren"
+	line "die #mon-"
+	cont "Trainergilde aus"
+	cont "Kanto."
 
-	para "We'll drive you"
-	line "under our wheels!"
+	para "Hier kommst du"
+	line "unter die Räder!"
 	done
 
 BikerDwayneBeatenText:
-	text "S-sorry!"
+	text "En-entschuldigung!"
 	done
 
 Route8BikerHarrisProtestText:
 BikerHarrisSeenText:
-	text "The cops shut down"
-	line "our Underground"
+	text "Das Ordnungsamt"
+	line "hat unseren"
 
-	para "Path! That really"
-	line "fries me!"
+	para "Tunnelpfad zu-"
+	line "schütten lassen."
+	cont "Das ängstigt mich!"
 	done
 
 BikerHarrisBeatenText:
-	text "F-forgive me!"
+	text "V-vergib mir!"
 	done
 
 BikerZekeSeenText:
-	text "We're the Kanto"
-	line "#mon Federa-"
-	cont "tion!"
-	cont "Right on!"
+	text "Wir sind die"
+	line "#mon-Trainer-"
+	cont "gilde aus Kanto!"
+	cont "Nimm dich in Acht!"
 	done
 
 BikerZekeBeatenText:
-	text "Yikes! Sorry!"
+	text "Uah! Entschuldige!"
 	done
 
 SupernerdSamSeenText:
-	text "How does the Mag-"
-	line "net Train work?"
+	text "Wie funktioniert"
+	line "der Magnetzug?"
 	done
 
 SupernerdSamBeatenText:
-	text "I just want to see"
-	line "the Magnet Train…"
+	text "Ich möchte nur den"
+	line "Magnetzug sehen…"
 	done
 
 SupernerdTomSeenText:
-	text "Hm… You've got"
-	line "many Gym Badges."
+	text "Hm… Du hast"
+	line "viele Orden."
 	done
 
 SupernerdTomBeatenText:
-	text "Just as I thought…"
-	line "You're tough!"
+	text "Wie ich dachte…"
+	line "Du bist stark!"
 	done
 
 GentlemanMiltonSeenText:
@@ -246,8 +251,9 @@ LassMeadowBeatenText:
 	done
 
 Route8UndergroundPathSignText:
-	text "The flyer's torn."
+	text "Das Flugblatt ist"
+	line "zerrissen."
 
-	para "It's impossible to"
-	line "read…"
+	para "Es ist nicht mehr"
+	line "lesbar…"
 	done

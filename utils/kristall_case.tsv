@@ -4,6 +4,7 @@
 # (ARENALEITER -> Arenaleiter) or with its hyphen (KNOFENSA-TURM -> Knofensa-Turm).
 # Columns: Kristall, ours, and optionally a text's label: that row answers for that text only
 # (a text whose English keeps its capitals, or a word cased otherwise there). Chunk K fills it.
+#BALL	#ball
 #BÄLLE	#bälle
 #BÄLLEN	#bällen
 #COM	#Com
@@ -18,7 +19,7 @@
 #MON-TALK	#mon-Talk
 #MON-TALKSHOW	#mon-Talkshow
 #MON-TRAINERGILDE	#mon-Trainergilde
-ABER	Aber
+#PUPPE	#puppe
 AFFE	Affe
 AKADEMIE	Akademie
 AKTUELLER	Aktueller
@@ -71,10 +72,7 @@ BEUTEL	Beutel
 BEUTELWURM	Beutelwurm
 BEWERTER	Bewerter
 BIANKA	Bianka
-BIEP	Biep
 BILL	Bill
-BIS	Bis
-BITTE	Bitte
 BLAU	Blau
 BLAUE	Blaue
 BLOCKIERT	blockiert
@@ -92,8 +90,6 @@ BRIEFes	BRIEFes
 BRONZETURM	Bronzeturm
 BRUNNEN	Brunnen
 BRUNO	Bruno
-BRÜLL	Brüll
-BRÜLLE	Brülle
 BUENA	Buena
 BÄLLE	Bälle
 BÄLLEN	Bällen
@@ -112,8 +108,6 @@ COIFFEUR-BRÜDER	Coiffeur-Brüder
 COM	Com
 DACHTERRASSE	Dachterrasse
 DACHTERRASSEN	Dachterrassen
-DAS	Das
-DAVON	Davon
 DER	der
 DES	des
 DEX	Dex
@@ -127,7 +121,6 @@ DONATUS	Donatus
 DRACHE	Drache
 DRACHEN	Drachen
 DRACHENSCHREIN	Drachenschrein
-DU	Du
 DUKATIA	Dukatia
 EARL	Earl
 EBENHOLZ	Ebenholz
@@ -142,7 +135,6 @@ EIERN	Eiern
 EINGANG	Eingang
 EINKAUFSZENTRUM	Einkaufszentrum
 EINSAM	Einsam
-EINSETZT	Einsetzt
 EINZELHORN	Einzelhorn
 EIS	Eis
 ELEKTRO	Elektro
@@ -155,7 +147,6 @@ ENTWICKLUNGSRAUM	Entwicklungsraum
 EP	EP
 ERHOLUNGSORT	Erholungsort
 ERIKA	Erika
-ES	Es
 EULE	Eule
 EUSIN	Eusin
 EVA	Eva
@@ -209,7 +200,6 @@ GAME	Game
 GANZEN	ganzen
 GAS	Gas
 GEDULD	Geduld
-GEFÄLLT	Gefällt
 GENMUTANT	Genmutant
 GERADEAUS	Geradeaus
 GESCHENK	Geschenk
@@ -236,17 +226,11 @@ HARTSCHALE	Hartschale
 HARTWIG	Hartwig
 HAUPTQUARTIER	Hauptquartier
 HAUS	Haus
-HEH	Heh
-HIER	Hier
-HIERHER	Hierher
-HILFE	Hilfe
 HOCHDRUCK	Hochdruck
 HUMANOTYP	Humanotyp
 HUND	Hund
 HÖHLE	Höhle
-ICH	Ich
 ID	ID
-IHN	Ihn
 IM	im
 IMITATION	Imitation
 IN	in
@@ -321,7 +305,6 @@ LANGRÜSSEL	Langrüssel
 LANGSCHWEIF	Langschweif
 LARS	Lars
 LAUB	Laub
-LAUFEN	Laufen
 LAVA	Lava
 LEGENDÄR	Legendär
 LEHRLING	Lehrling
@@ -329,7 +312,6 @@ LEITER	Leiter
 LEITERIN	Leiterin
 LEITUNG	Leitung
 LEUCHTE	Leuchte
-LEUTE	Leute
 LIBELLE	Libelle
 LIEFERANT	Lieferant
 LIGA	Liga
@@ -359,12 +341,10 @@ MEISTER	Meister
 MEISTERs	MEISTERs
 MELANIE	Melanie
 MENÜ	Menü
-MICH	Mich
 MICHEL	Michel
 MILCH	Milch
 MILCHKUH	Milchkuh
 MINIKRÖTE	Minikröte
-MIR	Mir
 MISTY	Misty
 MITKO	Mitko
 MODUL	Modul
@@ -387,7 +367,6 @@ NACHAHMERIN	Nachahmerin
 NACHTs	nachts
 NAMEN	Namen
 NEUE	Neue
-NICHT	Nicht
 NIDORAN	Nidoran
 NORBERT	Norbert
 NORDEINGANG	Nordeingang
@@ -493,17 +472,14 @@ SCHREIN	Schrein
 SCHW	Schw
 SCHWEIGEBRÜCKE	Schweigebrücke
 SCHWEIN	Schwein
-SCHÖN	Schön
 SCHÖNSTE	Schönste
 SEE	See
 SEEHUND	Seehund
-SEHEN	Sehen
 SELECT	Select
 SICHERN	sichern
 SIEGFRIED	Siegfried
 SILBERBERG	Silberberg
 SILPH	Silph
-SOGAR	Sogar
 SONNE	Sonne
 SONNFRIED	Sonnfried
 SOUVENIRLADEN	Souvenirladen
@@ -586,21 +562,17 @@ VORSTAND	Vorstand
 VORSTÄNDE	Vorstände
 VULKAN	Vulkan
 VULKAN-BURGER	Vulkan-Burger
-WAHAHAH	Wahahah
 WAISENHAUS	Waisenhaus
 WALD	Wald
 WAND	Wand
 WASSERFALL	Wasserfall
 WEISEN	Weisen
 WEISSNEBEL	Weißnebel
-WEITER	Weiter
-WENN	Wenn
 WER	wer
 WILDBULLE	Wildbulle
 WILDENTE	Wildente
 WILHELM	Wilhelm
 WOLLE	Wolle
-WOLLTEST	Wolltest
 WOOSTER	Wooster
 WSS	Wss
 WURM	Wurm
@@ -625,6 +597,8 @@ NACHTs	Nachts	PewterCityBugCatcherText
 NACHTs	Nachts	SwimmerfWendySeenText
 SICHERN	Sichern	ElmsLabTravelTip2Text
 SICHERN	Sichern	OaksLabPoster2Text
+SICHERN	Sichern	BattleFactoryHallwayEnterScene.DontBattleNextOpponent
+SICHERN	Sichern	Script_BattleRoomLoop.DontBattleNextOpponent
 DIE	Die	RuinsOfAlphResearchCenterSignText
 HILFE	HILFE	RadioTower2FBuenaPasswordIsHelpText
 WAHAHAH	WAHAHAH	ChuckAfterText

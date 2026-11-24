@@ -360,35 +360,38 @@ Route31MailRecipientScript:
 .WrongMail:
 	jumpthisopenedtext
 
-	text "This Mail isn't"
-	line "for me."
+	text "Der Brief ist"
+	line "nicht für mich."
 	done
 
 .NoMail:
 	jumpthisopenedtext
 
-	text "Why is this #-"
-	line "mon so special?"
+	text "Was ist so beson-"
+	line "ders an diesem"
+	cont "#mon?"
 
-	para "It doesn't have"
-	line "any Mail."
+	para "Es trägt keinen"
+	line "Brief."
 	done
 
 .Refused:
 	jumpthisopenedtext
 
-	text "What? You don't"
-	line "want anything?"
+	text "Was? Du möchtest"
+	line "nichts?"
 	done
 
 .LastMon:
 	jumpthisopenedtext
 
-	text "If I take that"
-	line "#mon from you,"
+	text "Wenn ich dir die-"
+	line "ses #mon weg-"
 
-	para "what are you going"
-	line "to use in battle?"
+	para "nehme, womit"
+	line "willst du dann"
+
+	para "kämpfen?"
 	done
 
 ReceivedSpearowMailText:
@@ -398,9 +401,9 @@ ReceivedSpearowMailText:
 	setcharmap default
 
 Bug_catcherWade1SeenText:
-	text "I caught a bunch"
-	line "of #mon. Let me"
-	cont "battle with you!"
+	text "Ich habe einige"
+	line "#mon gefangen."
+	cont "Lass uns kämpfen!"
 	done
 
 Bug_catcherWade1BeatenText:
@@ -408,29 +411,31 @@ Bug_catcherWade1BeatenText:
 	done
 
 Bug_catcherWade1AfterText:
-	text "You can catch"
-	line "#mon even if"
+	text "Du kannst #mon"
+	line "fangen, auch wenn"
 
-	para "you have six with"
-	line "you."
+	para "du bereits sechs"
+	line "bei dir trägst."
 
-	para "If you catch one,"
-	line "it'll go to your"
-	cont "Box automatically."
+	para "Fängst du eines,"
+	line "wird es automa-"
+	cont "tisch auf die Box"
+	cont "im PC übertragen."
 	done
 
 
 Text_Route31SleepyManGotMail:
-	text "…Zzzz… Huh?"
+	text "…Zzzz… Häh?"
 
-	para "What's that? You"
-	line "have Mail for me?"
+	para "Was ist? Du"
+	line "hast einen Brief"
+	cont "für mich?"
 	done
 
 Text_Route31HandOverMailMon:
-	text "<PLAYER> handed"
-	line "over the #mon"
-	cont "holding the Mail."
+	text "<PLAYER> übergibt"
+	line "das #mon, das"
+	cont "den Brief trägt."
 	done
 
 Text_Route31ReadingMail:
@@ -477,27 +482,29 @@ Text_Route31TutorQuestion:
 
 
 Route31YoungsterText:
-	text "I found a good"
-	line "#mon in Dark"
-	cont "Cave."
+	text "Ich habe ein gutes"
+	line "#mon in der"
+	cont "Dunkelhöhle"
+	cont "gefunden."
 
-	para "I'm going to raise"
-	line "it to take on"
-	cont "Falkner."
+	para "Ich ziehe es groß,"
+	line "um später gegen"
+	cont "Falk anzutreten."
 
-	para "He's the leader of"
-	line "Violet City's Gym."
+	para "Er ist der Arena-"
+	line "leiter von Viola"
+	cont "City."
 	done
 
 Route31SignText:
 	text "Route 31"
 
-	para "Violet City -"
-	line "Cherrygrove City"
+	para "Viola City -"
+	line "Rosalia City"
 	done
 
 DarkCaveSignText:
-	text "Dark Cave"
+	text "Dunkelhöhle"
 	done
 
 Route31AdvancedTipsSignText:

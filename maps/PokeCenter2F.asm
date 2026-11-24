@@ -182,9 +182,9 @@ LinkReceptionistScript_HasMail:
 Script_TradeCenterClosed:
 	jumpthistextfaceplayer
 
-	text "I'm sorry--the"
-	line "Trade Machine is"
-	cont "being adjusted."
+	text "Leider wird der"
+	line "Tauschautomat"
+	cont "gerade repariert."
 	done
 
 LinkReceptionistScript_Battle:
@@ -203,9 +203,9 @@ endc
 .BattleRoomClosed:
 	jumpthistextfaceplayer
 
-	text "I'm sorry--the"
-	line "Battle Machine is"
-	cont "being adjusted."
+	text "Leider wird der"
+	line "Kampfautomat"
+	cont "gerade repariert."
 	done
 
 PokeCenter2F_EnterRoom:
@@ -259,64 +259,74 @@ PokeCenter2FMovementData_ReceptionistStepsRightAndDown:
 	step_end
 
 Text_BattleReceptionistIntro:
-	text "Welcome to Cable"
-	line "Club Colosseum."
+	text "Willkommen im"
+	line "Kabel-Club-"
+	cont "Kolosseum."
 
-	para "You may battle a"
-	line "friend here."
+	para "Du kannst hier"
+	line "gegen einen Freund"
+	cont "antreten."
 
-	para "Would you like to"
-	line "battle?"
+	para "Möchtest du gerne"
+	line "kämpfen?"
 	done
 
 Text_TradeReceptionistIntro:
-	text "Welcome to Cable"
-	line "Trade Center."
+	text "Willkommen im"
+	line "Kabel-Club-"
+	cont "Handelscenter."
 
-	para "You may trade your"
-	line "#mon here with"
-	cont "a friend."
+	para "Du kannst hier"
+	line "#mon mit einem"
+	cont "Freund tauschen."
 
-	para "Would you like to"
-	line "trade?"
+	para "Möchtest du gerne"
+	line "tauschen?"
 	done
 
 Text_FriendNotReady:
-	text "Your friend is not"
-	line "ready."
+	text "Dein Freund ist"
+	line "noch nicht fertig."
 	prompt
 
 Text_MustSaveGame:
-	text "Before opening the"
-	line "link, you must"
-	cont "save your game."
+	text "Bevor du die"
+	line "Verbindung her-"
+	cont "stellst, musst du"
+	cont "deinen Spielstand"
+	cont "speichern."
 	done
 
 Text_PleaseWait:
-	text "Please wait."
+	text "Bitte warten!"
 	done
 
 Text_LinkTimedOut:
-	text "The link has been"
-	line "closed because of"
-	cont "inactivity."
+	text "Die Verbindung"
+	line "wurde aufgrund"
+	cont "fehlender Aktionen"
+	cont "abgebrochen."
 
-	para "Please contact"
-	line "your friend and"
-	cont "come again."
+	para "Nimm bitte Kontakt"
+	line "mit deinem Freund"
+	cont "auf und komm dann"
+	cont "wieder."
 	prompt
 
 Text_PleaseComeAgain:
-	text "Please come again."
+	text "Komm später"
+	line "wieder!"
 	prompt
 
 Text_PleaseComeIn:
-	text "Please come in."
+	text "Komm doch herein."
 	prompt
 
 Text_CantLinkToThePast:
-	text "You can't link to"
-	line "the past here."
+	text "Du kannst hier"
+	line "keine Verbindung"
+	cont "zur Vergangenheit"
+	cont "herstellen."
 	prompt
 
 Text_OldVersionDetected:
@@ -371,8 +381,9 @@ Text_WrongOptions:
 	prompt
 
 Text_IncompatibleRooms:
-	text "Incompatible rooms"
-	line "were chosen."
+	text "Dein Freund hat"
+	line "einen anderen Raum"
+	cont "gewählt."
 	prompt
 
 Text_TimeCapsuleClosed:

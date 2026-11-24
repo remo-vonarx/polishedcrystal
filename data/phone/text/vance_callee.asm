@@ -1,80 +1,83 @@
 VanceAnswerPhoneText:
-	text "Yes, hello?"
-	line ""
+	text "Ja, hallo? Hier"
+	line "ist "
 	text_ram wStringBuffer3
-	text " here!"
+	text "!"
 
-	para "Morning, <PLAYER>!"
+	para "Moin, <PLAYER>!"
 
-	para "Are you using bird"
-	line "#mon?"
+	para "Setzt du Vogel-"
+	line "#mon ein?"
 	done
 
 VanceAnswerPhoneDayText:
-	text "Yes, hello?"
-	line ""
+	text "Ja, hallo? Hier"
+	line "ist "
 	text_ram wStringBuffer3
-	text " here!"
+	text "!"
 
-	para "Hi, <PLAYER>!"
+	para "Moin, <PLAYER>!"
 
-	para "Are your bird"
-	line "#mon flying?"
+	para "Fliegen deine"
+	line "Vogel-#mon?"
 	done
 
 VanceAnswerPhoneNiteText:
-	text "Yes, hello?"
-	line ""
+	text "Ja, hallo? Hier"
+	line "ist "
 	text_ram wStringBuffer3
-	text " here!"
+	text "!"
 
-	para "Evening, <PLAYER>!"
-	line "Are you letting"
+	para "N'Abend, <PLAYER>!"
+	line "Dürfen sich deine"
 
-	para "your bird #mon"
-	line "see some action?"
+	para "Vogel-#mon wil-"
+	line "de Sachen ansehen?"
 	done
 
 VanceGreetText:
-	text "Good morning,"
+	text "Guten Morgen,"
 	line "<PLAYER>!"
 
-	para "It's "
+	para ""
 	text_ram wStringBuffer3
-	text "!"
-	line "Good morning!"
+	text " hier!"
+	line "Guten Morgen!"
 	done
 
 VanceGreetDayText:
 	text "Hi, <PLAYER>!"
 
-	para "It's "
+	para ""
 	text_ram wStringBuffer3
-	text "!"
-	line "Remember me?"
+	text " hier!"
+	line "Erinnerst du dich?"
 	done
 
 VanceGreetNiteText:
-	text "Good evening,"
+	text "Guten Abend,"
 	line "<PLAYER>!"
 
-	para "It's "
+	para ""
 	text_ram wStringBuffer3
-	text "!"
-	line "Are you free now?"
+	text " hier!"
+	line "Hast du Zeit?"
 	done
 
 VanceGenericText:
-	text "Are you and your"
-	line "#mon fine?"
+	text "Geht es dir und"
+	line "deinen #mon"
+	cont "gut?"
 
-	para "My "
+	para "Mein "
 	text_ram wStringBuffer4
-	line "looks like it will"
+	text ""
+	line "scheint so stark"
 
-	para "get tough enough"
-	line "to face and beat"
+	para "werden zu wollen,"
+	line "dass es das legen-"
+	cont "däre Vogel-#mon"
 
-	para "the legendary bird"
-	line "#mon!"
+	para "herausfordern und"
+	line "besiegen möchte!"
 	done

@@ -56,9 +56,9 @@ ManiaScript:
 .refusetotakeshuckie
 	jumpthisopenedtext
 
-	text "Oh, no… What'll"
-	line "I do if he comes"
-	cont "back?"
+	text "Oh nein… was soll"
+	line "ich nur tun, wenn"
+	cont "er zurückkommt?"
 	done
 
 .returnshuckie
@@ -79,9 +79,9 @@ ManiaScript:
 .wrong
 	jumpthisopenedtext
 
-	text "Hey, you don't"
-	line "have my #mon"
-	cont "with you."
+	text "Hey, du hast mein"
+	line "#mon gar nicht"
+	cont "dabei!"
 	done
 
 .superhappy
@@ -94,9 +94,9 @@ ManiaScript:
 .refused
 	jumpthisopenedtext
 
-	text "Oh, no, no… That's"
-	line "the same as being"
-	cont "robbed."
+	text "Oh, nein, nein…"
+	line "das ist so, als"
+	cont "würde man beraubt."
 	done
 
 .nothingleft
@@ -112,11 +112,14 @@ ManiaScript:
 .default_postevent
 	jumpthisopenedtext
 
-	text "For #mon, hap-"
-	line "piness is being"
+	text "Für #mon ist"
+	line "es das höchste"
 
-	para "with a person who"
-	line "treats them well."
+	para "Glück, wenn sie"
+	line "bei jemandem sein"
+
+	para "dürfen, der sie"
+	line "gut behandelt."
 	done
 
 ShuckieName:
@@ -126,38 +129,43 @@ ShuckieOTName:
 	rawchar "Kirk@"
 
 ManiaText_AskLookAfterShuckie:
-	text "I, I'm in shock!"
+	text "Ich… ich bin"
+	line "schockiert!"
 
-	para "A guy about your"
-	line "age with piercing"
+	para "Ein Junge in dei-"
+	line "nem Alter mit"
 
-	para "eyes and long hair"
-	line "came in."
+	para "stechenden Augen"
+	line "und langen Haaren"
+	cont "kam hier rein."
 
-	para "He scared me into"
-	line "giving him my"
-	cont "prized #mon!"
+	para "Er hat mich ge-"
+	line "zwungen, ihm meine"
+	cont "preisgekrönten"
+	cont "#mon zu geben!"
 
-	para "I still have one"
-	line "left, but what if"
-	cont "he comes back?"
+	para "Ich habe zwar noch"
+	line "eines übrig, aber"
+	cont "was soll ich tun,"
+	cont "wenn er zurück-"
+	cont "kommt?"
 
-	para "You look strong."
-	line "Could you look"
+	para "Du siehst stark"
+	line "aus. Würdest du"
 
-	para "after my #mon"
-	line "for a while?"
+	para "auf mein #mon"
+	line "aufpassen?"
 	done
 
 ManiaText_TakeCareOfShuckie:
-	text "Oh, thank you!"
+	text "Oh, ich danke dir!"
 
-	para "Take good care of"
-	line "it, please!"
+	para "Bitte pass gut da-"
+	line "rauf auf!"
 	done
 
 ManiaText_GotShuckie:
-	text "<PLAYER> received a"
+	text "<PLAYER> erhält ein"
 	line "#mon."
 	done
 
@@ -175,26 +183,28 @@ ManiaText_PartyAndBoxFull:
 
 
 ManiaText_CanIHaveMyMonBack:
-	text "Hi! How's my #-"
-	line "mon?"
+	text "Hi! Wie geht es"
+	line "meinem #mon?"
 
-	para "I think I'm safe"
-	line "now, so may I have"
-	cont "it back?"
+	para "Ich glaube, ich"
+	line "bin jetzt sicher."
+	cont "Kann ich es zu-"
+	cont "rück haben?"
 	done
 
 ManiaText_ThankYou:
-	text "Thank you!"
+	text "Danke!"
 	done
 
 
 ManiaText_ShuckieLikesYou:
-	text "My #mon has"
-	line "come to like you."
+	text "Mein #mon"
+	line "scheint dich zu"
+	cont "mögen."
 
-	para "All right, you"
-	line "should keep it."
-
-	para "But promise to"
-	line "be good to it!"
+	para "Na gut, dann"
+	line "sollst du es be-"
+	cont "halten. Aber ver-"
+	cont "sprich mir, es gut"
+	cont "zu behandeln."
 	done

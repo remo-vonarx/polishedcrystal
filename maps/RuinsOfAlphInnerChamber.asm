@@ -67,23 +67,25 @@ RuinsOfAlphInnerChamberStrangePresenceScene:
 	end
 
 RuinsOfAlphStrangePresenceText:
-	text "There is a strange"
-	line "presence here…"
+	text "Eine seltsame"
+	line "Anwesenheit ist"
+	cont "hier zu spüren…"
 	done
 
 RuinsOfAlphInnerChamberFisherText:
-	text "This is a big"
-	line "room, but there's"
-	cont "nothing here."
+	text "Dies ist ein"
+	line "großer Raum, aber"
+	cont "er ist leer."
 	done
 
 RuinsOfAlphInnerChamberTeacherText:
-	text "This place has a"
-	line "mystical quality"
-	cont "to it."
+	text "Dieser Ort strahlt"
+	line "eine eigenartige"
+	cont "Mystik aus."
 
-	para "It feels sort of"
-	line "ethereal even."
+	para "Man könnte es fast"
+	line "schon als äthe-"
+	cont "risch bezeichnen."
 	done
 
 RuinsOfAlphInnerChamberGrampsText:
@@ -98,19 +100,19 @@ RuinsOfAlphInnerChamberGrampsText:
 	done
 
 RuinsOfAlphInnerChamberScientistText:
-	text "The patterns on"
-	line "the wall appear to"
-	cont "be words!"
+	text "Die Muster an der"
+	line "Wand sind tatsäch-"
+	cont "lich Worte!"
 
-	para "And those sliding"
-	line "stone panels seem"
+	para "Und die verschieb-"
+	line "baren Steinplatten"
 
-	para "to be signals of"
-	line "some kind."
+	para "scheinen ein"
+	line "Signal zu sein."
 
-	para "I think they make"
-	line "#mon appear,"
-
-	para "but it's not clear"
-	line "yet…"
+	para "Ich glaube sie"
+	line "veranlassen #-"
+	cont "mon sich zu zei-"
+	cont "gen, aber das ist"
+	cont "noch nicht sicher…"
 	done

@@ -21,11 +21,12 @@ Route1_MapScriptHeader:
 GenericTrainerSchoolboyDanny:
 	generictrainer SCHOOLBOY, DANNY, EVENT_BEAT_SCHOOLBOY_DANNY, SchoolboyDannySeenText, SchoolboyDannyBeatenText
 
-	text "For trainers, it's"
-	line "a given that we'll"
+	text "Es ist ein"
+	line "ungeschriebenes"
 
-	para "battle whenever we"
-	line "meet."
+	para "Gesetz, dass Trai-"
+	line "ner kämpfen, wenn"
+	cont "sie sich begegnen."
 	done
 
 GenericTrainerSchoolboySherman:
@@ -47,21 +48,23 @@ GenericTrainerCooltrainermFrench:
 GenericTrainerCooltrainerfQuinn:
 	generictrainer COOLTRAINERF, QUINN, EVENT_BEAT_COOLTRAINERF_QUINN, CooltrainerfQuinnSeenText, CooltrainerfQuinnBeatenText
 
-	text "You're strong."
+	text "Du bist stark."
 
-	para "You obviously must"
-	line "have trained hard."
+	para "Du hast offenbar"
+	line "hart trainiert."
 	done
 
 SchoolboyDannySeenText:
-	text "If trainers meet,"
-	line "the first thing to"
-	cont "do is battle."
+	text "Wenn sich zwei"
+	line "Trainer begegnen,"
+	cont "wollen sie sofort"
+	cont "kämpfen."
 	done
 
 SchoolboyDannyBeatenText:
-	text "Awww… I've got a"
-	line "losing record…"
+	text "Argh… Ich"
+	line "habe erneut"
+	cont "verloren…"
 	done
 
 SchoolboyShermanSeenText:
@@ -89,17 +92,17 @@ CooltrainermFrenchBeatenText:
 	done
 
 CooltrainerfQuinnSeenText:
-	text "You there!"
-	line "Want to battle?"
+	text "Du da!"
+	line "Willst du kämpfen?"
 	done
 
 CooltrainerfQuinnBeatenText:
-	text "Down and out…"
+	text "Versagt und weg…"
 	done
 
 Route1SignText:
 	text "Route 1"
 
-	para "Pallet Town -"
-	line "Viridian City"
+	para "Alabastia -"
+	line "Vertania City"
 	done

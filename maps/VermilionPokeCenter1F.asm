@@ -46,41 +46,49 @@ VermilionPokeCenter1FSightseerMScript:
 	iftrue_jumptextfaceplayer .SnorlaxText
 	jumpthistextfaceplayer
 
-	text "A sleeping #mon"
-	line "is lying in front"
-	cont "of Diglett's Cave."
+	text "Vor Digdas"
+	line "Höhle liegt ein"
+	cont "schlafendes #-"
+	cont "mon."
 
-	para "It's a fantastic"
-	line "opportunity to get"
+	para "Das wäre eine"
+	line "fantastische Gele-"
+	cont "genheit, es zu"
 
-	para "it, but how do you"
-	line "wake it up?"
+	para "fangen! Aber wie"
+	line "weckt man es auf?"
 	done
 
 .SnorlaxText:
-	text "There used to be a"
-	line "sleeping #mon"
+	text "Vor Digdas"
+	line "Höhle lag ein"
 
-	para "lying in front of"
-	line "Diglett's Cave."
+	para "schlafendes #-"
+	line "mon."
 
-	para "But it seems to"
-	line "have disappeared."
+	para "Aber jetzt scheint"
+	line "es verschwunden"
+	cont "zu sein."
 	done
 
 VermilionPokeCenter1FSailorText:
-	text "The Fast Ship is a"
-	line "great place to"
+	text "Auf dem Schnell-"
+	line "boot findet man"
 
-	para "meet and battle"
-	line "trainers."
+	para "viele Trainer,"
+	line "gegen die man"
+	cont "kämpfen kann."
 	done
 
 VermilionPokeCenter1FBugCatcherText:
-	text "Oh? You have some"
-	line "Badges I've never"
-	cont "seen before."
+	text "Ach? Du hast da"
+	line "einige Orden, die"
+	cont "ich noch nie"
+	cont "gesehen habe."
 
-	para "Oh, I get it. You"
-	line "got them in Johto."
+	para "Ah, jetzt begreife"
+	line "ich es. Du hast"
+
+	para "sie in Johto"
+	line "erhalten."
 	done

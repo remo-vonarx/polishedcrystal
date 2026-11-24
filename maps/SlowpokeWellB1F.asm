@@ -32,20 +32,20 @@ SlowpokeWellB1F_MapScriptHeader:
 GenericTrainerGruntM29:
 	generictrainer GRUNTM, 29, EVENT_BEAT_ROCKET_GRUNTM_29, GruntM29SeenText, GruntM29BeatenText
 
-	text "Sure, we've been"
-	line "hacking the tails"
+	text "Klar haben wir den"
+	line "Flegmon die"
 
-	para "off Slowpoke and"
-	line "selling them."
+	para "Ruten abgetrennt"
+	line "und dann verkauft."
 
-	para "Everything we do"
-	line "is for profit."
+	para "Wir wollen nur"
+	line "Profit machen."
 
-	para "That's right!"
-	line "We're Team Rocket,"
+	para "Genau! Wir sind"
+	line "Team Rocket und"
 
-	para "and we'll do any-"
-	line "thing for money!"
+	para "für Geld machen"
+	line "wir alles!"
 	done
 
 TrainerProton2:
@@ -87,22 +87,25 @@ Proton2Script:
 GenericTrainerGruntM2:
 	generictrainer GRUNTM, 2, EVENT_BEAT_ROCKET_GRUNTM_2, GruntM2SeenText, GruntM2BeatenText
 
-	text "We need the money,"
-	line "but selling Slow-"
-	cont "pokeTails?"
+	text "Wir brauchen das"
+	line "Geld, aber mit"
+	cont "Flegmon-Ruten?"
 
-	para "It's tough being a"
-	line "Rocket Grunt!"
+	para "Manchmal ist es"
+	line "hart, ein Rocket"
+	cont "Rüpel zu sein!"
 	done
 
 GenericTrainerGruntF1:
 	generictrainer GRUNTF, 1, EVENT_BEAT_ROCKET_GRUNTF_1, GruntF1SeenText, GruntF1BeatenText
 
-	text "SlowpokeTails"
-	line "grow back fast!"
+	text "Flegmon-Ruten"
+	line "wachsen schnell"
+	cont "nach!"
 
-	para "What's wrong with"
-	line "selling them?"
+	para "Was ist falsch"
+	line "daran, sie"
+	cont "zu verkaufen?"
 	done
 
 SlowpokeWellB1FSlowpokeWithMailScript:
@@ -137,36 +140,38 @@ KurtSlowpokeWellVictoryMovementData:
 	step_end
 
 KurtLeaveSlowpokeWellText:
-	text "Kurt: Way to go,"
+	text "Kurt: Weiter so,"
 	line "<PLAYER>!"
 
-	para "Team Rocket has"
-	line "taken off."
+	para "Team Rocket ist"
+	line "abgehauen."
 
-	para "My back's better"
-	line "too. Let's get out"
-	cont "of here."
+	para "Meinem Rücken geht"
+	line "es schon besser."
+	cont "Lass uns gehen."
 	done
 
 GruntM29SeenText:
-	text "Darn! I was stand-"
-	line "ing guard up top"
+	text "Mist! Ich stand"
+	line "da oben Wache, als"
 
-	para "when some old coot"
-	line "yelled at me."
+	para "ein Verrückter"
+	line "vorbeikam und"
+	cont "mich anschrie."
 
-	para "He startled me so"
-	line "much that I fell"
-	cont "down here."
+	para "Ich bin so"
+	line "erschrocken, dass"
+	cont "ich hier hinunter"
+	cont "gefallen bin."
 
-	para "I think I'll vent"
-	line "my anger by taking"
-	cont "it out on you!"
+	para "Ich glaube, ich"
+	line "lasse meine Wut"
+	cont "an dir aus!"
 	done
 
 GruntM29BeatenText:
-	text "Arrgh! This is NOT"
-	line "my day!"
+	text "Arrgh! Heute ist"
+	line "NICHT mein Tag!"
 	done
 
 Proton2SeenText:
@@ -184,72 +189,84 @@ Proton2SeenText:
 	done
 
 Proton2BeatenText:
-	text "You did OK today,"
-	line "but wait till next"
-	cont "time!"
+	text "Für heute war es"
+	line "O.K., aber beim"
+	cont "nächsten Mal wird"
+	cont "alles anders!"
 	done
 
 TrainerProton2WhenTalkText:
 	text "Yeah, Team Rocket"
-	line "was broken up"
-	cont "three years ago."
+	line "wurde vor drei"
+	cont "Jahren zer-"
+	cont "schlagen."
 
-	para "But we continued"
-	line "our activities"
-	cont "underground."
+	para "Aber wir haben"
+	line "unsere Arbeit im"
+	cont "Untergrund"
+	cont "fortgesetzt."
 
-	para "Now you can have"
-	line "fun watching us"
-	cont "stir up trouble!"
+	para "Nun kannst du"
+	line "zusehen, wie wir"
+	cont "für Unruhe sorgen!"
 	done
 
 GruntM2SeenText:
-	text "Quit taking Slow-"
-	line "pokeTails?"
+	text "Wir sollen auf-"
+	line "hören, den"
+	cont "Flegmon ihre"
+	cont "Ruten abzutrennen?"
 
-	para "If we obeyed you,"
-	line "Team Rocket's rep"
-	cont "would be ruined!"
+	para "Wenn wir auf dich"
+	line "hören würden, wäre"
+	cont "der Ruf von Team"
+	cont "Rocket ruiniert!"
 	done
 
 GruntM2BeatenText:
-	text "Just…"
-	line "Too strong…"
+	text "Du bist…"
+	line "zu stark…"
 	done
 
 GruntF1SeenText:
-	text "Stop taking Tails?"
+	text "Wir sollen auf-"
+	line "hören, den"
+	cont "Flegmon ihre"
+	cont "Ruten abzutrennen?"
 
-	para "Yeah, just try to"
-	line "defeat all of us!"
+	para "Ja, versuche, uns"
+	line "alle zu besiegen!"
 	done
 
 GruntF1BeatenText:
-	text "You rotten brat!"
+	text "Du vorlautes Balg!"
 	done
 
 SlowpokeWellB1FSlowpokeWithMailText:
-	text "A Slowpoke with"
-	line "its tail cut off…"
+	text "Ein Flegmon mit"
+	line "abgetrennter"
+	cont "Rute…"
 
-	para "Huh? It has Mail."
-	line "Read it?"
+	para "Huh? Es trägt"
+	line "einen Brief."
+	cont "Brief lesen?"
 	done
 
 SlowpokeWellB1FSlowpokeMailText:
-	text "<PLAYER> read the"
-	line "Mail."
+	text "<PLAYER> liest den"
+	line "Brief."
 
-	para "Be good and look"
-	line "after the house"
+	para "Sei so lieb und"
+	line "kümmere dich bitte"
 
-	para "with Grandpa and"
-	line "Slowpoke."
+	para "um Opa und das"
+	line "Flegmon."
 
-	para "Love, Dad"
+	para "Danke, Papa"
 	done
 
 SlowpokeWellB1FTaillessSlowpokeText:
-	text "A Slowpoke with"
-	line "its tail cut off…"
+	text "Ein Flegmon mit"
+	line "abgetrennter"
+	cont "Rute…"
 	done

@@ -32,40 +32,44 @@ Route20_MapScriptHeader:
 GenericTrainerSwimmerfNicole:
 	generictrainer SWIMMERF, NICOLE, EVENT_BEAT_SWIMMERF_NICOLE, SwimmerfNicoleSeenText, SwimmerfNicoleBeatenText
 
-	text "Swimming exercises"
-	line "your full body."
+	text "Beim Schwimmen"
+	line "wird der gesamte"
 
-	para "It's really good"
-	line "for you."
+	para "Körper trainiert."
+	line "Schwimmen ist"
+	cont "gesund."
 	done
 
 SwimmerfNicoleSeenText:
-	text "I feel so much"
-	line "lighter in water."
+	text "Im Wasser fühle"
+	line "ich mich so"
+	cont "leicht."
 	done
 
 SwimmerfNicoleBeatenText:
-	text "Oh, no!"
+	text "Oh, nein!"
 	done
 
 GenericTrainerSwimmerfLori:
 	generictrainer SWIMMERF, LORI, EVENT_BEAT_SWIMMERF_LORI, SwimmerfLoriSeenText, SwimmerfLoriBeatenText
 
-	text "Surf is no longer"
-	line "the only HM move"
-	cont "you use in water."
+	text "Surfer ist nicht"
+	line "mehr die einzige"
+	cont "VM, die du im"
+	cont "Wasser einsetzen"
+	cont "kannst."
 	done
 
 SwimmerfLoriSeenText:
-	text "What an impressive"
-	line "collection of Gym"
+	text "Du besitzt eine"
+	line "umwerfende Anzahl"
 
-	para "Badges. We should"
-	line "battle!"
+	para "Arena-Orden. Lass"
+	line "uns kämpfen!"
 	done
 
 SwimmerfLoriBeatenText: ; text > text
-	text "No!"
+	text "Nein!"
 	done
 
 GenericTrainerSwimmerfMayu:
@@ -115,21 +119,22 @@ GenericTrainerSwimmerfLeona:
 GenericTrainerSwimmermCameron:
 	generictrainer SWIMMERM, CAMERON, EVENT_BEAT_SWIMMERM_CAMERON, SwimmermCameronSeenText, SwimmermCameronBeatenText
 
-	text "Besides the sea, I"
-	line "can also swim in"
-	cont "ponds and rivers."
+	text "Ich schwimme auch"
+	line "in Teichen und"
+	cont "Flüssen."
 	done
 
 SwimmermCameronSeenText:
-	text "I guess it's im-"
-	line "possible to swim"
+	text "Ich denke es ist"
+	line "unmöglich, den"
 
-	para "all the way to"
-	line "Johto."
+	para "ganzen Weg nach"
+	line "Johto zu"
+	cont "schwimmen."
 	done
 
 SwimmermCameronBeatenText:
-	text "Aiyah!"
+	text "Yippie!"
 	done
 
 GenericTrainerSwimmermLuis:
@@ -231,7 +236,7 @@ GenericTrainerCamperPedro:
 	done
 
 .BeatenText:
-	text "You're strong!"
+	text "Du bist stark!"
 	done
 
 GenericTrainerBird_keeperBert:

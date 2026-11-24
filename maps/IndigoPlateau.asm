@@ -22,8 +22,10 @@ IndigoPlateauFlyPoint:
 IndigoPlateauSignText:
 	text "Indigo Plateau"
 
-	para "The Ultimate Goal"
-	line "for Trainers!"
+	para "Das Ultimative"
+	line "Ziel Aller"
+	cont "Trainer!"
 
-	para "#mon League HQ"
+	para "Hauptquartier der"
+	line "#mon Liga"
 	done

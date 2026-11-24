@@ -279,32 +279,33 @@ DayCareLyraEmbarassedText:
 	done
 
 Text_GrampsLookingForYou:
-	text "Gramps was looking"
-	line "for you."
+	text "Opa hat nach dir"
+	line "gesucht."
 	done
 
 DayCareManText_GiveOddEgg:
-	text "I'm the Day-Care"
-	line "Man."
+	text "Ich bin der"
+	line "Pensionsleiter."
 
-	para "Do you know about"
-	line "Eggs?"
+	para "Kennst du dich"
+	line "mit Eiern aus?"
 
-	para "I was raising"
-	line "#mon with my"
-	cont "wife, you see."
+	para "Ich habe #mon"
+	line "mit meiner"
+	cont "Frau aufgezogen."
 
-	para "We were shocked to"
-	line "find an Egg!"
+	para "Wir waren ent-"
+	line "setzt, als wir ein"
+	cont "Ei fanden!"
 
-	para "How incredible is"
-	line "that?"
+	para "Das ist doch"
+	line "unglaublich, oder?"
 
-	para "Well, wouldn't you"
-	line "like this Egg?"
+	para "Nun, möchtest du"
+	line "das Ei? Gut, nimm"
 
-	para "Then fine, this is"
-	line "yours to keep!"
+	para "es, du darfst es"
+	line "behalten!"
 	done
 
 DayCareText_GotOddEgg:
@@ -313,17 +314,18 @@ DayCareText_GotOddEgg:
 	done
 
 DayCareText_DescribeOddEgg:
-	text "I found that when"
-	line "I was caring for"
+	text "Ich fand dies, als"
+	line "ich mich um ein"
 
-	para "someone's #mon"
-	line "before."
+	para "#mon eines"
+	line "anderen Trainers"
 
-	para "But the trainer"
-	line "didn't want the"
+	para "kümmerte. Aber der"
+	line "Trainer wollte das"
 
-	para "Egg, so I'd kept"
-	line "it around."
+	para "Ei nicht, also"
+	line "habe ich es"
+	cont "behalten."
 	done
 
 DayCareLadyText_GiveLyrasEgg:

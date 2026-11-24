@@ -33,12 +33,12 @@ SproutTower1FGrannyScript:
 	iftrue_jumptextfaceplayer .MetricText
 	jumpthistextfaceplayer
 
-	text "A Bellsprout over"
-	line "100 feet tall…"
+	text "Ein über 30 m"
+	line "grosses Knofensa…"
 
-	para "People say that it"
-	line "became the center"
-	cont "pillar here."
+	para "Man sagt, es wurde"
+	line "die Trägersäule"
+	cont "des Turmes."
 	done
 
 .MetricText:
@@ -53,25 +53,25 @@ SproutTower1FGrannyScript:
 GenericTrainerSageChow:
 	generictrainer SAGE, CHOW, EVENT_BEAT_SAGE_CHOW, SageChowSeenText, SageChowBeatenText
 
-	text "All living beings"
-	line "coexist through"
-	cont "cooperation."
+	text "Die Basis jeder"
+	line "Koexistenz ist"
+	cont "Zusammenarbeit."
 
-	para "We must always be"
-	line "thankful for this."
+	para "Lasst uns dies"
+	line "nie vergessen!"
 	done
 
 SageChowSeenText:
-	text "We stand guard in"
-	line "this tower."
+	text "Wir bewachen"
+	line "diesen Turm."
 
-	para "Here, we express"
-	line "our gratitude to"
-	cont "honor all #mon."
+	para "In tiefster Dank-"
+	line "barkeit ehren wir"
+	cont "hier alle #mon."
 	done
 
 SageChowBeatenText:
-	text "Th-Thank you!"
+	text "Da-Danke!"
 	done
 
 SproutTower1FSage1Text:
@@ -81,26 +81,27 @@ SproutTower1FSage1Text:
 	done
 
 SproutTower1FSage2Text:
-	text "Sprout Tower was"
-	line "built long ago"
+	text "Der Knofensa-Turm"
+	line "wurde vor langer"
 
-	para "as a place for"
-	line "#mon training."
+	para "Zeit als #mon-"
+	line "Trainingsstätte"
+	cont "errichtet."
 	done
 
 SproutTower1FTeacherText:
-	text "See the pillar"
-	line "shaking?"
+	text "Siehst du, wie sie"
+	line "sich bewegt?"
 
-	para "People are train-"
-	line "ing upstairs."
+	para "Die Trainer fin-"
+	line "dest du oben."
 	done
 
 SproutTower1FStatueText:
-	text "A #mon statue…"
+	text "Eine PKMN-Statue…"
 
-	para "It looks very"
-	line "distinguished."
+	para "Sie sieht sehr"
+	line "erhaben aus."
 	done
 
 KimonoGirlMakoScript:

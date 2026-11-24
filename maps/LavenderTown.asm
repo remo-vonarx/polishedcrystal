@@ -181,24 +181,26 @@ LavenderTownFinishExpositionScript:
 	step_end
 
 LavenderTownSignText:
-	text "Lavender Town"
+	text "Lavandia"
 
-	para "The Noble Purple"
-	line "Town"
+	para "Die Liebliche"
+	line "Lilafarbene Stadt"
 	done
 
 KantoRadioStationSignText:
-	text "Kanto Radio"
-	line "Station"
+	text "Kanto Radio-"
+	line "station"
 
-	para "Your Favorite"
-	line "Programs On-Air"
-	cont "Around the Clock!"
+	para "Deine Lieblings-"
+	line "programme zu jeder"
+	cont "Tages- und Nacht-"
+	cont "zeit!"
 	done
 
 VolunteerPokemonHouseSignText:
-	text "Lavender Volunteer"
-	line "#mon House"
+	text "Waisenhaus für"
+	line "#mon"
+	cont "von Lavandia"
 	done
 
 SoulHouseSignText:
@@ -209,34 +211,39 @@ SoulHouseSignText:
 	done
 
 LavenderTownPokefanMText:
-	text "That's quite some"
-	line "building, eh?"
+	text "Ein recht beein-"
+	line "druckendes"
+	cont "Gebäude, nicht?"
 
-	para "It's Kanto's Radio"
-	line "Tower."
+	para "Das ist der Radio-"
+	line "turm von Kanto."
 	done
 
 LavenderTownTeacherText:
-	text "Kanto has many"
-	line "good radio shows."
+	text "In Kanto werden"
+	line "viele, gute Radio-"
+	cont "programme"
+	cont "gesendet."
 	done
 
 LavenderTownGrampsText:
-	text "People come from"
-	line "all over to pay"
+	text "Die Leute kommen"
+	line "von überall her,"
 
-	para "their respects to"
-	line "the departed souls"
-	cont "of #mon."
+	para "um den Seelen"
+	line "dahingegangener"
+	cont "#mon Respekt"
+	cont "zu erweisen."
 	done
 
 LavenderTownYoungsterText:
-	text "You need a #"
-	line "Flute to wake"
-	cont "sleeping #mon."
+	text "Mit einer #-"
+	line "Flöte weckst du"
+	cont "schlafende"
+	cont "#mon."
 
-	para "Every trainer has"
-	line "to know that!"
+	para "Jeder Trainer muss"
+	line "das wissen!"
 	done
 
 LavenderTownSuperNerdText:

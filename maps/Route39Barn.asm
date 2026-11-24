@@ -157,20 +157,21 @@ Text_MoomooIsSick:
 	done
 
 Text_WereFeedingMoomoo:
-	text "We're feeding"
-	line "Moomoo!"
+	text "Wir füttern"
+	line "Miltank!"
 	done
 
 Text_WeakMoo:
-	text "Miltank: …Moo…"
+	text "Miltank: …Muh…"
 	done
 
 Text_ItsCryIsWeak:
-	text "Its cry is weak…"
+	text "Sein Ruf ist"
+	line "schwach…"
 	done
 
 MoomooHappyMooText:
-	text "Miltank: Mooo!"
+	text "Miltank: Muh!"
 	done
 
 Text_AskGiveBerry:
@@ -192,18 +193,18 @@ Text_GaveSitrusBerry:
 	done
 
 Text_LittleHealthier:
-	text "Miltank became a"
-	line "little healthier!"
+	text "Miltank ist etwas"
+	line "gesünder geworden!"
 	done
 
 Text_QuiteHealthy:
-	text "Miltank became"
-	line "quite healthy!"
+	text "Miltank ist viel"
+	line "gesünder geworden!"
 	done
 
 Text_TotallyHealthy:
-	text "Miltank became"
-	line "totally healthy!"
+	text "Miltank ist völlig"
+	line "gesund geworden!"
 	done
 
 Text_NoBerries:
@@ -213,10 +214,12 @@ Text_NoBerries:
 	done
 
 Text_RefusedToGiveBerry:
-	text "<PLAYER> wouldn't"
-	line "give a Berry."
+	text "<PLAYER> möchte"
+	line "keine Beere"
+	cont "verwenden."
 
-	para "Miltank looks sad."
+	para "Miltank sieht"
+	line "traurig aus."
 	done
 
 Route39BarnBucketText:

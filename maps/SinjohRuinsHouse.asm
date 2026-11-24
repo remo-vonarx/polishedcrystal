@@ -107,14 +107,14 @@ SinjohRuinsHouseGrampsText:
 	done
 
 SinjohRuinsHouseGrampsYesText:
-	text "OK, OK. Picture"
-	line "your house in your"
-	cont "mind…"
+	text "O.K. Stell"
+	line "dir dein Haus"
+	cont "vor…"
 	done
 
 SinjohRuinsHouseGrampsNoText:
-	text "OK, OK. The best"
-	line "of luck to you!"
+	text "O.K. Alles"
+	line "Gute!"
 	done
 
 SinjohRuinsHouseAbraText:

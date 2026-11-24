@@ -31,51 +31,53 @@ UnionCave1F_MapScriptHeader:
 GenericTrainerPokemaniacLarry:
 	generictrainer POKEMANIAC, POKEMANIAC_LARRY, EVENT_BEAT_POKEMANIAC_LARRY, PokemaniacLarrySeenText, PokemaniacLarryBeatenText
 
-	text "Every Friday, you"
-	line "can hear #mon"
+	text "Jeden Freitag"
+	line "kannst du #mon"
 
-	para "roars from deep"
-	line "inside the cave."
+	para "in dieser Höhle"
+	line "brüllen hören."
 	done
 
 GenericTrainerHikerRussell:
 	generictrainer HIKER, RUSSELL, EVENT_BEAT_HIKER_RUSSELL, HikerRussellSeenText, HikerRussellBeatenText
 
-	text "All right, then!"
-	line "I've decided."
+	text "O.K.! Ich habe"
+	line "mich entschieden."
 
-	para "I'm not leaving"
-	line "until my #mon"
-	cont "get tougher!"
+	para "Ich gehe erst,"
+	line "wenn meine #mon"
+	cont "stärker sind!"
 	done
 
 GenericTrainerHikerDaniel:
 	generictrainer HIKER, DANIEL, EVENT_BEAT_HIKER_DANIEL, HikerDanielSeenText, HikerDanielBeatenText
 
-	text "I was conned into"
-	line "buying a Slowpoke-"
-	cont "Tail."
+	text "Ich wurde ge-"
+	line "nötigt, eine"
+	cont "Flegmon-Rute zu"
+	cont "kaufen."
 
-	para "I feel sorry for"
-	line "the poor #mon."
+	para "Mir tut das arme"
+	line "#mon Leid."
 	done
 
 GenericTrainerFirebreatherBill:
 	generictrainer FIREBREATHER, BILL, EVENT_BEAT_FIREBREATHER_BILL, FirebreatherBillSeenText, FirebreatherBillBeatenText
 
-	text "On weekends, you"
-	line "can hear strange"
+	text "Am Wochenende"
+	line "kannst du #mon"
 
-	para "roars from deep in"
-	line "the cave."
+	para "in dieser Höhle"
+	line "brüllen hören."
 	done
 
 GenericTrainerFirebreatherRay:
 	generictrainer FIREBREATHER, RAY, EVENT_BEAT_FIREBREATHER_RAY, FirebreatherRaySeenText, FirebreatherRayBeatenText
 
-	text "It's my #mon's"
-	line "fire that lights"
-	cont "up this cave."
+	text "Das Feuer meines"
+	line "#mon"
+	cont "erleuchtet diese"
+	cont "Höhle."
 	done
 
 GenericTrainerRuin_maniacJones:
@@ -87,12 +89,14 @@ GenericTrainerRuin_maniacJones:
 	done
 
 HikerRussellSeenText:
-	text "You're headed to"
-	line "Azalea, are you?"
+	text "Du bist auf dem"
+	line "Weg nach Azalea"
+	cont "City, nicht wahr?"
 
-	para "Let my #mon see"
-	line "if you are good"
-	cont "enough to battle."
+	para "Lass meine #mon"
+	line "entscheiden, ob"
+	cont "du eines Kampfes"
+	cont "würdig bist."
 	done
 
 HikerRussellBeatenText:
@@ -100,59 +104,65 @@ HikerRussellBeatenText:
 	done
 
 PokemaniacLarrySeenText:
-	text "I roam far and"
-	line "wide in search of"
-	cont "#mon."
+	text "Um #mon zu"
+	line "finden, wandere"
+	cont "ich durch das"
+	cont "Land."
 
-	para "Are you looking"
-	line "for #mon too?"
+	para "Suchst du auch"
+	line "nach #mon?"
 
-	para "Then you're my"
-	line "collecting rival!"
+	para "Dann bist du"
+	line "mein Rivale!"
 	done
 
 PokemaniacLarryBeatenText:
-	text "Ugh. My poor #-"
-	line "mon…"
+	text "Uff. Mein armes"
+	line "#mon…"
 	done
 
 HikerDanielSeenText:
-	text "Whoa! What a"
-	line "surprise!"
+	text "Whoa! Was für"
+	line "eine Überraschung!"
 
-	para "I didn't expect to"
-	line "see anyone here!"
+	para "Ich habe nicht"
+	line "erwartet, hier auf"
+	cont "jemanden zu"
+	cont "treffen!"
 	done
 
 HikerDanielBeatenText:
-	text "Whoa! I'm beaten"
-	line "big time!"
+	text "Whoa! Du hast"
+	line "es mir gegeben!"
 	done
 
 FirebreatherBillSeenText:
-	text "Zubat's Supersonic"
-	line "keeps confusing"
-	cont "my #mon."
+	text "Zubats Superschall"
+	line "verwirrt mein"
+	cont "#mon noch"
+	cont "immer."
 
-	para "I'm seriously"
-	line "upset about that!"
+	para "Das ärgert mich"
+	line "wirklich sehr!"
 	done
 
 FirebreatherBillBeatenText:
-	text "I flamed out!"
+	text "Ich bin durch!"
 	done
 
 FirebreatherRaySeenText:
-	text "If it's light, a"
-	line "cave isn't scary."
+	text "Mit Licht jagt"
+	line "einem eine Höhle"
+	cont "keine Angst ein."
 
-	para "If you're strong,"
-	line "#mon aren't"
-	cont "scary."
+	para "Bist du stark"
+	line "genug, jagen dir"
+	cont "#mon keine"
+	cont "Angst ein."
 	done
 
 FirebreatherRayBeatenText:
-	text "Flash!"
+	text "Blitz!"
 	done
 
 Ruin_maniacJonesSeenText:
@@ -161,5 +171,5 @@ Ruin_maniacJonesSeenText:
 	done
 
 Ruin_maniacJonesBeatenText:
-	text "Gahahah!"
+	text "Hahaha!"
 	done

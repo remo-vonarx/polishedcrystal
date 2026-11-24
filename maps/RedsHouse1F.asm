@@ -24,40 +24,44 @@ RedsMom:
 
 	text "Hi!"
 
-	para "Red's been away"
-	line "for a long time."
+	para "Rot ist schon seit"
+	line "langem fort."
 
-	para "He hasn't called"
-	line "either, so I have"
+	para "Er hat sich auch"
+	line "nicht gemeldet."
 
-	para "no idea where he"
-	line "is or what he's"
-	cont "been doing."
+	para "Ich habe keine"
+	line "Ahnung, wo er ist"
+	cont "oder was er tut."
 
-	para "They say that no"
-	line "word is proof that"
+	para "Wenn man nichts"
+	line "hört, soll das ja"
 
-	para "he's doing fine,"
-	line "but I do worry"
-	cont "about him."
+	para "heißen, dass es"
+	line "ihm gut geht. Aber"
+	cont "ich mache mir"
+	cont "Sorgen um ihn."
 	done
 
 .Text2:
-	text "I worry about Red"
-	line "getting hurt or"
+	text "Ich habe Angst,"
+	line "dass sich Rot"
 
-	para "sick, but he's a"
-	line "boy. I'm proud"
+	para "verletzt oder"
+	line "krank wird. Aber"
 
-	para "that he is doing"
-	line "what he wants to"
-	cont "do."
+	para "er ist ein Junge"
+	line "und ich bin stolz,"
+
+	para "dass er macht, was"
+	line "ihm gefällt."
 	done
 
 RedsHouse1FTVScript:
 	jumpthistext
 
-	text "They have programs"
-	line "that aren't shown"
-	cont "in Johto…"
+	text "Sie haben"
+	line "Programme, die man"
+	cont "in Johto nicht"
+	cont "empfängt…"
 	done

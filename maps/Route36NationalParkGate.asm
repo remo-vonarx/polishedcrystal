@@ -250,9 +250,9 @@ BugCatchingContestant1BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant1BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Don: Wow, you beat"
-	line "me. You're pretty"
-	cont "good."
+	text "Uli: Wow, du hast"
+	line "mich besiegt! Du"
+	cont "bist sehr gut!"
 	done
 
 BugCatchingContestant2BScript:
@@ -270,9 +270,10 @@ BugCatchingContestant3BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant3BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Nick: Well done!"
-	line "I'm going to raise"
-	cont "my #mon better."
+	text "Lars: Gut gemacht!"
+	line "Ich werde meine"
+	cont "#mon besser"
+	cont "trainieren."
 	done
 
 BugCatchingContestant4BScript:
@@ -280,9 +281,9 @@ BugCatchingContestant4BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant4BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "William: You're"
-	line "the winner? What"
-	cont "did you catch?"
+	text "Wilhelm: Du bist"
+	line "der Sieger? Was"
+	cont "hast du gefangen?"
 	done
 
 BugCatchingContestant5BScript:
@@ -290,9 +291,10 @@ BugCatchingContestant5BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant5BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Benny: Congrats!"
-	line "You have earned my"
-	cont "respect!"
+	text "Axel: Meine"
+	line "Gratulation! Du"
+	cont "verdienst meinen"
+	cont "ganzen Respekt!"
 	done
 
 BugCatchingContestant6BScript:
@@ -300,9 +302,10 @@ BugCatchingContestant6BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant6BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Barry: That #-"
-	line "mon you caught…"
-	cont "it's awesome!"
+	text "Till: Das #-"
+	line "mon, das du"
+	cont "gefangen hast…"
+	cont "Das ist cool!"
 	done
 
 BugCatchingContestant7BScript:
@@ -310,12 +313,14 @@ BugCatchingContestant7BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant7BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Cindy: You won?"
-	line "That's great!"
+	text "Cindy: Du hast"
+	line "gewonnen? Das ist"
+	cont "großartig!"
 
-	para "Do you feel like"
-	line "looking for bug"
-	cont "#mon with me?"
+	para "Hättest du Lust,"
+	line "mit mir auf die"
+	cont "Suche nach Käfer-"
+	cont "#mon zu gehen?"
 	done
 
 BugCatchingContestant8BScript:
@@ -323,9 +328,12 @@ BugCatchingContestant8BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant8BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Josh: I… I can't"
-	line "believe I lost at"
-	cont "bug-catching…"
+	text "Enno: Ich… ich"
+	line "glaube einfach"
+	cont "nicht, dass ich"
+	cont "beim Käfer-"
+	cont "turnier verloren"
+	cont "habe…"
 	done
 
 BugCatchingContestant9BScript:
@@ -342,11 +350,12 @@ BugCatchingContestant10BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant10BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Kipp: Could you"
-	line "give me some tips?"
+	text "Michel: Könntest"
+	line "du mir ein paar"
 
-	para "I want to study"
-	line "your style."
+	para "Tipps geben? Ich"
+	line "möchte deinen Stil"
+	cont "erlernen."
 	done
 
 Route36NationalParkGatePlayerWaitWithContestantsMovement:
@@ -356,27 +365,28 @@ Route36NationalParkGatePlayerWaitWithContestantsMovement:
 	step_end
 
 Route36NationalParkGateOfficer1WaitHereForAnnouncementText:
-	text "OK. Please wait"
-	line "here for the"
+	text "Gut. Warte bitte"
+	line "hier auf die"
 
-	para "announcement of"
-	line "the winners."
+	para "Bekanntgabe"
+	line "der Sieger."
 	done
 
 Route36NationalParkGateOfficer1SomeMonOnlySeenInParkText:
-	text "Some #mon can"
-	line "only be seen in"
-	cont "the Park."
+	text "Manche #mon"
+	line "kann man nur im"
+	cont "Park antreffen."
 	done
 
 
 BugCatchingContestant1BStillCompetingText:
-	text "Don: Luck plays a"
-	line "big part in this."
+	text "Uli: Glück spielt"
+	line "natürlich eine"
+	cont "große Rolle dabei."
 
-	para "You never know"
-	line "what #mon will"
-	cont "appear."
+	para "Man weiß nie,"
+	line "welches #mon"
+	cont "auftauchen wird."
 	done
 
 
@@ -387,53 +397,63 @@ BugCatchingContestant2BStillCompetingText:
 
 
 BugCatchingContestant3BStillCompetingText:
-	text "Nick: Maybe you"
-	line "get a higher score"
+	text "Lars: Vielleicht"
+	line "erhältst du eine"
 
-	para "for a #mon of"
-	line "an unusual color."
+	para "höhere Wertung für"
+	line "ein #mon mit"
+	cont "ungewöhnlicher"
+	cont "Farbe."
 	done
 
 
 BugCatchingContestant4BStillCompetingText:
-	text "William: Well, I'm"
-	line "satisfied because"
+	text "Wilhelm: Also, ich"
+	line "bin zufrieden,"
 
-	para "I caught a #mon"
-	line "that I wanted."
+	para "denn ich habe ein"
+	line "#mon gefangen,"
+	cont "das ich haben"
+	cont "wollte."
 	done
 
 
 BugCatchingContestant5BStillCompetingText:
-	text "Benny: I caught a"
-	line "Scyther before,"
-	cont "but I didn't win."
+	text "Axel: Ich habe"
+	line "vorher ein Sichlor"
+	cont "gefangen. Aber ich"
+	cont "konnte nicht"
+	cont "siegen."
 	done
 
 
 BugCatchingContestant6BStillCompetingText:
-	text "Barry: It's easier"
-	line "to win if you get"
+	text "Till: Mit einem"
+	line "Käfer-#mon, das"
 
-	para "a high-level bug"
-	line "#mon."
+	para "einen hohen Level"
+	line "hat, steigen deine"
+	cont "Gewinnchancen."
 
-	para "But I think they"
-	line "also consider some"
-	cont "other points."
+	para "Ich glaube aber,"
+	line "dass auch noch"
+	cont "andere Kriterien"
+	cont "in die Bewertung"
+	cont "eingehen."
 	done
 
 
 BugCatchingContestant7BStillCompetingText:
-	text "Cindy: I really"
-	line "love bug #mon!"
+	text "Cindy: Ich liebe"
+	line "Käfer-#mon!"
 	done
 
 
 BugCatchingContestant8BStillCompetingText:
-	text "Josh: I heard that"
-	line "somebody won with"
-	cont "a Caterpie!"
+	text "Enno: Ich hörte,"
+	line "dass jemand mit"
+	cont "einem Raupy"
+	cont "gewonnen hat!"
 	done
 
 
@@ -445,29 +465,31 @@ BugCatchingContestant9BStillCompetingText:
 
 
 BugCatchingContestant10BStillCompetingText:
-	text "Kipp: I study a"
-	line "lot, but that's"
+	text "Michel: Ich habe"
+	line "viel gelernt, aber"
 
-	para "not good enough to"
-	line "win."
+	para "noch nicht genug,"
+	line "um zu siegen."
 	done
 
 Route36NationalParkGateOfficer1WellHoldPrizeText:
-	text "Uh-oh… Your Bag"
-	line "is full."
+	text "Oh, oh… Dein"
+	line "Beutel ist voll."
 
-	para "We'll hold on to"
-	line "your prize, but"
-	cont "only for today."
+	para "Wir bewahren"
+	line "deinen Preis auf."
+	cont "Aber nur heute."
 
-	para "Please make room,"
-	line "then come see me."
+	para "Schaffe bitte"
+	line "Platz und komm"
+	cont "dann wieder."
 	done
 
 Route36NationalParkGateOfficer1HeresThePrizeText:
 	text "<PLAYER>?"
 
-	para "Here's the prize"
-	line "we were holding"
-	cont "for you."
+	para "Hier ist der"
+	line "Preis, den wir für"
+	cont "dich aufbewahrt"
+	cont "haben."
 	done

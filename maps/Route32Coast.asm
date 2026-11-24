@@ -176,22 +176,24 @@ GenericTrainerCosplayerChloe:
 GenericTrainerFisherKiley:
 	generictrainer FISHER, KILEY, EVENT_BEAT_FISHER_KILEY, .SeenText, .BeatenText
 
-	text "You have to have a"
-	line "good Rod if you"
+	text "Du benötigst die"
+	line "Profiangel, wenn"
 
-	para "want to catch good"
-	line "#mon."
+	para "du gute #mon"
+	line "fangen möchtest."
 	done
 
 .SeenText:
-	text "Heh, I'm on a roll"
-	line "today. How about a"
-	cont "battle, kid?"
+	text "Heh, heute habe"
+	line "ich einen Lauf."
+	cont "Lass uns kämpfen,"
+	cont "Kröte."
 	done
 
 .BeatenText:
-	text "Oof. I wasn't"
-	line "lucky that time."
+	text "Uff. Dieses Mal"
+	line "hatte ich kein"
+	cont "Glück."
 	done
 
 GenericTrainerCamperCraig:
@@ -272,19 +274,22 @@ GenericTrainerCoupleFoxandrae2:
 	done
 
 Route32CoastLassText:
-	text "Pant, pant…"
+	text "Hechel, keuch…"
 
-	para "I finally got"
-	line "through that cave."
+	para "Endlich habe ich"
+	line "es durch diese"
+	cont "Höhle geschafft!"
 
-	para "It was much bigger"
-	line "than I'd expected."
+	para "Sie war größer,"
+	line "als ich annahm."
 
-	para "I got too tired to"
-	line "explore the whole"
+	para "Ich war zu er-"
+	line "schöpft, um alles"
 
-	para "thing, so I came"
-	line "outside."
+	para "zu erkunden, also"
+	line "habe ich sie"
+
+	para "verlassen."
 	done
 
 Route32CoastTrainerTipsText:
@@ -298,6 +303,6 @@ Route32CoastTrainerTipsText:
 	done
 
 Route32CoastUnionCaveSignText:
-	text "Union Cave"
-	line "Ahead"
+	text "Einheitstunnel"
+	line "Geradeaus"
 	done

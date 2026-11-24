@@ -22,35 +22,36 @@ CeladonMansion2FSign:
 	jumpthistext
 
 	text "Game Freak"
-	line "Meeting Room"
+	line "Konferenzraum"
 	done
 
 CeladonMansion2FComputerText:
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> hat den"
+	line "PC eingeschaltet."
 
 	para "…"
 
-	para "Someone was in the"
-	line "middle of compos-"
-	cont "ing an e-mail."
+	para "Jemand war gerade"
+	line "dabei, eine E-Mail"
+	cont "aufzusetzen."
 
-	para "…I hope you'll"
-	line "come visit Kanto."
+	para "…Ich hoffe, du"
+	line "kommst einmal nach"
+	cont "Kanto."
 
-	para "I think you'll be"
-	line "surprised at how"
+	para "Ich glaube, du"
+	line "wärst überrascht,"
 
-	para "much things have"
-	line "changed here."
+	para "wie viel sich hier"
+	line "verändert hat."
 
-	para "You'll also see"
-	line "many #mon that"
+	para "Man sieht auch"
+	line "viele #mon, die"
 
-	para "aren't native to"
-	line "Johto."
+	para "nicht aus Johto"
+	line "stammen."
 
-	para "To the Producer"
+	para "An den Produzenten"
 
 	para "…"
 	done

@@ -39,35 +39,38 @@ GenericTrainerBird_keeperDenis:
 GenericTrainerSailorErnest:
 	generictrainer SAILOR, ERNEST, EVENT_BEAT_SAILOR_ERNEST, SailorErnestSeenText, SailorErnestBeatenText
 
-	text "A Gym Leader isn't"
-	line "just about being"
+	text "Ein Arenaleiter"
+	line "muss nicht nur"
 
-	para "strong. A Leader"
-	line "also needs to be"
-	cont "compassionate."
+	para "stark sein. Auch"
+	line "Mitgefühl"
+	cont "zeichnet ihn aus."
 	done
 
 SailorErnestSeenText:
-	text "I wanted to battle"
-	line "Jasmine, but she's"
+	text "Ich hatte vor,"
+	line "gegen Jasmin zu"
 
-	para "not up to it now."
-	line "So, how about you?"
+	para "kämpfen, aber sie"
+	line "ist nicht da. Wie"
+	cont "wäre es mit dir?"
 	done
 
 SailorErnestBeatenText:
-	text "Whoa, whoa. You're"
-	line "overwhelming!"
+	text "Wow, du hast mich"
+	line "überwältigt!"
 	done
 
 Bird_keeperDenisSeenText:
-	text "We're pretty high"
-	line "up here. My bird"
+	text "Wir fliegen"
+	line "ziemlich hoch."
 
-	para "#mon are in"
-	line "prime form."
+	para "Meine Vogel-#-"
+	line "mon sind in"
+	cont "Bestform."
 	done
 
 Bird_keeperDenisBeatenText:
-	text "Oops…They crashed…"
+	text "Ups… Sie"
+	line "sind abgestürzt…"
 	done

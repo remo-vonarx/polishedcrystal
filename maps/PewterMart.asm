@@ -17,24 +17,28 @@ PewterMart_MapScriptHeader:
 	object_event  6,  6, SPRITE_POKEMANIAC, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, PewterMartSuperNerdText, -1
 
 PewterMartYoungsterText:
-	text "Hi! Check out my"
-	line "Gyarados!"
+	text "Hi! Mach doch"
+	line "Bekanntschaft mit"
+	cont "meinem Garados!"
 
-	para "I raised it from a"
-	line "Magikarp. I can't"
+	para "Ich habe es als"
+	line "Karpador auf-"
+	cont "gezogen. Kaum zu"
 
-	para "believe how strong"
-	line "it has become."
+	para "glauben, wie stark"
+	line "es geworden ist."
 	done
 
 PewterMartSuperNerdText:
-	text "There once was a"
-	line "weird old man who"
-	cont "sold Magikarp."
+	text "Es gab mal einen"
+	line "komischen, alten"
+	cont "Mann, der Karpador"
+	cont "verkaufte."
 
-	para "He was saying the"
-	line "Magikarp from the"
+	para "Er sagte immer,"
+	line "die Karpador im"
 
-	para "Lake of Rage were"
-	line "excellent."
+	para "See des Zorns"
+	line "seien"
+	cont "außergewöhnlich."
 	done

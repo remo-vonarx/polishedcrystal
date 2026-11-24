@@ -385,21 +385,24 @@ PlayersHousePC:
 	end
 
 InitialRadioText1:
-	text "Prof.Oak's #mon"
-	line "Talk! Please tune"
-	cont "in next time!"
+	text "Prof. Eichs #-"
+	line "mon-Talk! Schal-"
+	cont "ten Sie auch das"
+	cont "nächste Mal wieder"
+	cont "ein!"
 	done
 
 InitialRadioText2:
-	text "#mon Channel!"
+	text "#mon-Programm!"
 	done
 
 InitialRadioText3:
-	text "This is DJ Mary,"
-	line "your co-host!"
+	text "Hier ist DJ"
+	line "Margit, Ihr Co-"
+	cont "Moderator!"
 	done
 
 InitialRadioText4:
 	text "#mon!"
-	line "#mon Channel…"
+	line "#mon-Programm!"
 	done

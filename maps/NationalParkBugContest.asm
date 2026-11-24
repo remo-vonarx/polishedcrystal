@@ -34,9 +34,9 @@ NationalParkBugContest_MapScriptHeader:
 BugCatchingContestant1AScript:
 	jumpthistextfaceplayer
 
-	text "Don: I'm going to"
-	line "win! Don't bother"
-	cont "me."
+	text "Uli: Ich werde"
+	line "gewinnen! Lass"
+	cont "mich in Ruhe."
 	done
 
 BugCatchingContestant2AScript:
@@ -50,63 +50,64 @@ BugCatchingContestant2AScript:
 BugCatchingContestant3AScript:
 	jumpthistextfaceplayer
 
-	text "Nick: I'm raising"
-	line "fast #mon for"
-	cont "battles."
+	text "Lars: Ich trai-"
+	line "niere schnelle"
+	cont "#mon für"
+	cont "den Kampf."
 	done
 
 BugCatchingContestant4AScript:
 	jumpthistextfaceplayer
 
-	text "William: I'm not"
-	line "concerned about"
-	cont "winning."
+	text "Wilhelm: Gewin-"
+	line "nen ist mir nicht"
+	cont "wichtig."
 
-	para "I'm just looking"
-	line "for rare #mon."
+	para "Ich suche seltene"
+	line "#mon."
 	done
 
 BugCatchingContestant5AScript:
 	jumpthistextfaceplayer
 
-	text "Benny: Ssh! You'll"
-	line "scare off Scyther."
-
-	para "I'll talk to you"
-	line "later."
+	text "Axel: Pst! Du"
+	line "hast Sichlor ver-"
+	cont "schreckt. Ich rede"
+	cont "später mit dir."
 	done
 
 BugCatchingContestant6AScript:
 	jumpthistextfaceplayer
 
-	text "Barry: You should"
-	line "weaken Bug #mon"
+	text "Till: Schwäche"
+	line "Käfer-#mon, ehe"
 
-	para "first, then throw"
-	line "a Ball."
+	para "du einen #ball"
+	line "wirfst."
 	done
 
 BugCatchingContestant7AScript:
 	jumpthistextfaceplayer
 
-	text "Cindy: I love Bug"
-	line "#mon."
+	text "Cindy: Was ist"
+	line "los?"
 
-	para "I guess you must"
-	line "like them too."
+	para "Du magst Käfer-"
+	line "#mon doch"
+	cont "auch, oder?"
 	done
 
 BugCatchingContestant8AScript:
 	jumpthistextfaceplayer
 
-	text "Josh: I've been"
-	line "collecting Bug"
+	text "Enno: Seit meiner"
+	line "Kindheit sammle"
 
-	para "#mon since I"
-	line "was just a baby."
+	para "ich Käfer-"
+	line "#mon."
 
-	para "There's no way I'm"
-	line "going to lose!"
+	para "Du kannst mich"
+	line "nicht besiegen!"
 	done
 
 BugCatchingContestant9AScript:
@@ -122,10 +123,10 @@ BugCatchingContestant9AScript:
 BugCatchingContestant10AScript:
 	jumpthistextfaceplayer
 
-	text "Kipp: I've studied"
-	line "about Bug #mon"
-	cont "a lot."
+	text "Michel: Ich habe"
+	line "Käfer-#mon"
+	cont "lange studiert."
 
-	para "I'm going to win"
-	line "for sure."
+	para "Ich werde sicher-"
+	line "lich gewinnen."
 	done

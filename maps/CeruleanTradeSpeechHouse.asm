@@ -18,14 +18,16 @@ CeruleanTradeSpeechHouse_MapScriptHeader:
 	pokemon_event  5,  6, IVYSAUR, SPRITEMOVEDATA_POKEMON, -1, PAL_MON_TEAL, CeruleanTradeSpeechHouseZubatText, -1
 
 CeruleanTradeSpeechHouseGrannyText:
-	text "My husband lives"
-	line "happily with #-"
-	cont "mon he got through"
-	cont "trades."
+	text "Mein Mann ist"
+	line "glücklich mit den"
+	cont "#mon, die er im"
+	cont "Tausch erhalten"
+	cont "hat."
 	done
 
 CeruleanTradeSpeechHouseGrampsText:
-	text "Ah… I'm so happy…"
+	text "Ach… Ich bin so"
+	line "glücklich…"
 	done
 
 CeruleanTradeSpeechHouseRhydonText:

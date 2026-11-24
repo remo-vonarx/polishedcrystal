@@ -59,17 +59,15 @@ BattleFactory1FContinueChallenge:
 .LeftWithoutSaving2:
 	opentext
 	writethistext
-		text "Excuse me!"
-		line "You didn't save"
-
-		para "before exiting"
-		line "the Battle Room."
-
-		para "I'm awfully sorry,"
-		line "but your challenge"
-
-		para "will be declared"
-		line "invalid."
+		text "Entschuldigung!"
+		line "Du hast vor Ver-"
+		cont "lassen des Kampf-"
+		cont "raums vergessen"
+		cont "zu sichern."
+		para "Es tut mir Leid,"
+		line "aber deine Heraus-"
+		cont "forderung wird für"
+		cont "ungültig erklärt."
 		done
 	waitbutton
 	sjumpfwd Script_CommitBattleFactoryResult
@@ -85,13 +83,12 @@ BattleFactory1FContinueChallenge:
 .WonChallenge2:
 	opentext
 	writethistext
-		text "Congratulations!"
-
-		para "You've beaten all"
-		line "the trainers!"
-
-		para "For that, you get"
-		line "this great prize!"
+		text "Glückwunsch!"
+		para "Du hast alle Trai-"
+		line "ner besiegt! Dafür"
+		para "erhältst du einen"
+		line "Preis!"
+		para ""
 		prompt
 	; Commit the challenge result even if the Bag cannot fit the prize.
 	verbosegiveitem_unsafe MINT_LEAF
@@ -102,8 +99,8 @@ Script_CommitBattleFactoryResult:
 	setevent EVENT_BEAT_THORTON
 .WeHopeToServeYouAgain:
 	writethistext
-		text "We hope to serve"
-		line "you again."
+		text "Wir stehen stets"
+		line "zu Diensten."
 		done
 	waitbutton
 	endtext
@@ -216,8 +213,8 @@ BattleFactory1FReceptionistScript:
 	ifequalfwd $1, .Challenge
 	ifequal $2, .Explanation
 	writethistext
-		text "We hope to serve"
-		line "you again."
+		text "Wir stehen stets"
+		line "zu Diensten."
 		prompt
 	endtext
 

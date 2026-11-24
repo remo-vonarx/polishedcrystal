@@ -73,18 +73,22 @@ TrainerElderGaku:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Ah, so it is you"
-	line "who claim to have"
+	text "Ah, du behauptest"
+	line "also, Suicune,"
 
-	para "seen Suicune,"
-	line "Entei and Raikou"
-	cont "while they slept?"
+	para "Entei und Raikou"
+	line "während sie"
 
-	para "Unbelievable!"
+	para "schliefen"
+	line "gesehen zu haben?"
 
-	para "Legend has it that"
-	line "they can't be seen"
-	cont "while they sleep…"
+	para "Unglaublich!"
+
+	para "Der Legende nach"
+	line "können sie während"
+
+	para "des Schlafs nicht"
+	line "gesehen werden…"
 	done
 
 TrainerElderMasa:
@@ -187,150 +191,157 @@ WiseTriosRoomSageAllowsPassageMovement:
 	step_end
 
 WiseTriosRoomSage1Text:
-	text "Astounding…"
+	text "Erstaunlich…"
 
-	para "Suicune, Entei and"
-	line "Raikou have arisen"
-	cont "from their sleep…"
+	para "Suicune, Entei und"
+	line "Raikou sind aus"
+	cont "dem Schlaf"
+	cont "erwacht…"
 
-	para "Is the legend"
-	line "coming true?"
+	para "Wird die Legende"
+	line "wahr?"
 	done
 
 WiseTriosRoomSage2Text:
-	text "We train at the"
-	line "Burned Tower, but"
+	text "Wir trainieren bei"
+	line "der Turmruine,"
 
-	para "we've never heard"
-	line "of a hole opening"
+	para "aber wir haben nie"
+	line "von einem Loch ge-"
+	cont "hört, das sich"
+	cont "dort geöffnet"
 
-	para "up there before."
-	line "It must have been"
-
-	para "deliberately made"
-	line "by someone."
+	para "haben soll. Jemand"
+	line "muss das absicht-"
+	cont "lich getan haben."
 	done
 
 WiseTriosRoomSage3BlocksExitText:
-	text "Bell Tower may be"
-	line "entered by those"
+	text "Zutritt zum"
+	line "Glockenturm haben"
+	cont "jene,"
 
-	para "bearing Ecruteak's"
-	line "Gym Badge."
+	para "die den Orden der"
+	line "PKMN-Arena von"
+	cont "Teak City tragen."
 
-	para "However, now that"
-	line "Suicune, Raikou"
+	para "Da Suicune, Raikou"
+	line "und Entei jetzt"
 
-	para "and Entei have"
-	line "arisen, I ask you"
+	para "aber erwacht sind,"
+	line "muss ich dich"
 
-	para "to refrain from"
-	line "entering!"
+	para "bitten, nicht"
+	line "einzutreten!"
 	done
 
 WiseTriosRoomSage3Text:
-	text "We, the Wise Trio,"
-	line "are the protectors"
+	text "Wir, das Trio der"
+	line "Weisen, sind die"
 
-	para "of the legendary"
-	line "#mon."
+	para "Hüter der legen-"
+	line "dären #mon."
 	done
 
 ElderGakuSeenText:
-	text "Legend has it that"
-	line "upon the emergence"
+	text "Die Legende be-"
+	line "sagt, dass beim"
 
-	para "of a trainer who"
-	line "has the ability to"
+	para "Erscheinen eines"
+	line "Trainers, der die"
 
-	para "touch the souls of"
-	line "#mon, a #mon"
+	para "Fähigkeit besitzt,"
+	line "die Seelen der"
 
-	para "will come forth to"
-	line "put that trainer"
+	para "#mon zu be-"
+	line "rühren, ein #-"
+	cont "mon kommt, das ihn"
 
-	para "to test at the"
-	line "Bell Tower."
+	para "beim Glockenturm"
+	line "auf die Probe"
+	cont "stellt."
 
-	para "The legend has"
-	line "come true!"
+	para "Die Legende ist"
+	line "wahr!"
 
-	para "The legendary"
+	para "Das legendäre"
 	line "#mon Suicune"
-	cont "has arrived!"
+	cont "ist gekommen!"
 
-	para "We, the Wise Trio,"
-	line "shall test your"
+	para "Wir, das Trio der"
+	line "Weisen, werden"
 
-	para "worthiness to go"
-	line "inside!"
+	para "prüfen, ob du"
+	line "würdig bist,"
+	cont "einzutreten!"
 	done
 
 ElderGakuBeatenText:
-	text "Stronger than we"
-	line "thought? Perhaps…"
+	text "Stärker als wir"
+	line "dachten? Wer weiß…"
 	done
 
 ElderMasaSeenText:
-	text "Can you be trusted"
-	line "with the truth?"
+	text "Kann man dir die"
+	line "Wahrheit"
+	cont "anvertrauen?"
 
-	para "I must ascertain"
-	line "your worthiness."
+	para "Ich muss prüfen,"
+	line "ob du würdig bist."
 	done
 
 ElderMasaBeatenText:
-	text "…I will tell you"
-	line "the truth…"
+	text "…Ich sage dir"
+	line "die Wahrheit…"
 	done
 
 ElderKojiSeenText:
-	text "Let me see your"
-	line "power!"
+	text "Beweise mir deine"
+	line "Kraft!"
 	done
 
 ElderKojiBeatenText:
-	text "Too strong!"
-	line "Why?"
+	text "Zu stark!"
+	line "Warum?"
 	done
 
 SageKojiAfterBattleQuestionText:
-	text "You… Are you the"
-	line "trainer who is"
+	text "Du… bist du der"
+	line "Trainer, der von"
 
-	para "awaited by the"
-	line "legendary #mon?"
+	para "dem legendären"
+	line "#mon erwartet"
+	cont "wird?"
 	done
 
 SageKojiAfterBattleSpeechText:
-	text "I see…"
+	text "Ich verstehe…"
 
-	para "We, the Wise Trio,"
-	line "have been given"
+	para "Wir, das Trio der"
+	line "Weisen, sind ver-"
+	cont "antwortlich für"
+	cont "den Schutz der"
 
-	para "the responsibility"
-	line "of protecting the"
+	para "legendären #-"
+	line "mon. Wir gestatten"
 
-	para "legendary #mon."
-	line "We are to allow"
+	para "nur jenen Zutritt,"
+	line "die eine reine"
 
-	para "passage only to"
-	line "those people who"
+	para "Seele und wahre"
+	line "Kraft besitzen."
 
-	para "possess the power"
-	line "and soul of truth."
+	para "Schreite voran und"
+	line "betritt den"
+	cont "Glockenturm."
 
-	para "Please, do go on"
-	line "and enter the"
-	cont "Bell Tower ahead."
-
-	para "Suicune will put"
-	line "you to the test."
+	para "Suicune wird dich"
+	line "prüfen."
 	done
 
 SageKojiAfterBattleFinalText:
-	text "Please, do go on."
+	text "Schreite voran!"
 
-	para "Suicune will put"
-	line "you to the test."
+	para "Suicune wird dich"
+	line "prüfen."
 	done

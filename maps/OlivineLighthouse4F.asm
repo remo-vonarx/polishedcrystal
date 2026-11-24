@@ -48,25 +48,29 @@ SailorKentScript:
 	iftrue_jumptextfaceplayer SailorKentFinalText
 	jumpthistextfaceplayer
 
-	text "Speaking of sick,"
-	line "I've heard there's"
+	text "Apropos krank: Mir"
+	line "ist zu Ohren"
 
-	para "a good Pharmacy in"
-	line "Cianwood."
+	para "gekommen, dass es"
+	line "in Anemonia City"
+	cont "eine gute Apotheke"
+	cont "geben soll."
 	done
 
 SailorKentSeenText:
-	text "Jasmine must be"
-	line "worried sick about"
-	cont "the #mon here."
+	text "Jasmin muss krank"
+	line "vor Sorge um das"
+	cont "#mon hier sein."
 
-	para "She won't even"
-	line "smile these days."
+	para "Man sieht sie"
+	line "momentan nicht"
+	cont "einmal lächeln."
 	done
 
 SailorKentBeatenText:
-	text "I can't manage a"
-	line "smile either…"
+	text "Ich habe im"
+	line "Moment auch nichts"
+	cont "zu lachen…"
 	done
 
 SailorKentFinalText:
@@ -79,16 +83,20 @@ SailorKentFinalText:
 	done
 
 LassConnieSeenText:
-	text "Jasmine is this"
-	line "city's Gym Leader."
+	text "Jasmin ist die"
+	line "Arenaleiterin in"
+	cont "dieser Stadt."
 
-	para "I mean to bring"
-	line "her back with me."
+	para "Ich möchte, dass"
+	line "sie mit mir"
+	cont "zurückkommt."
 
-	para "Nobody had better"
-	line "get in my way!"
+	para "Es ist besser,"
+	line "niemand stellt"
+	cont "sich mir in den"
+	cont "Weg!"
 	done
 
 LassConnieBeatenText:
-	text "Aaack! My #mon!"
+	text "Uh! Meine #mon!"
 	done

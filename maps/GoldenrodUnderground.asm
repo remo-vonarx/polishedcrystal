@@ -135,45 +135,49 @@ GoldenrodUndergroundCheckDayOfWeek:
 GenericTrainerSupernerdEric:
 	generictrainer SUPER_NERD, ERIC, EVENT_BEAT_SUPER_NERD_ERIC, SupernerdEricSeenText, SupernerdEricBeatenText
 
-	text "I guess I have to"
-	line "do things fair and"
-	cont "square…"
+	text "Ich glaube, dass"
+	line "ich lieber fair"
+	cont "spielen sollte…"
 	done
 
 GenericTrainerSupernerdTeru:
 	generictrainer SUPER_NERD, TERU, EVENT_BEAT_SUPER_NERD_TERU, SupernerdTeruSeenText, SupernerdTeruBeatenText
 
-	text "I know my #mon"
-	line "type alignments."
+	text "Ich kenne die"
+	line "Stärken und"
+	cont "Schwächen meiner"
+	cont "#mon."
 
-	para "But I only use one"
-	line "type of #mon."
+	para "Aber ich setze nur"
+	line "einen #mon-Typ"
+	cont "ein."
 	done
 
 GenericTrainerPokemaniacIssac:
 	generictrainer POKEMANIAC, ISSAC, EVENT_BEAT_POKEMANIAC_ISSAC, PokemaniacIssacSeenText, PokemaniacIssacBeatenText
 
-	text "Your #mon will"
-	line "like you more if"
+	text "Deine #mon"
+	line "mögen dich mehr,"
 
-	para "you give them"
-	line "haircuts."
+	para "wenn du sie zum"
+	line "Coiffeur bringst."
 	done
 
 GenericTrainerPokemaniacDonald:
 	generictrainer POKEMANIAC, DONALD, EVENT_BEAT_POKEMANIAC_DONALD, PokemaniacDonaldSeenText, PokemaniacDonaldBeatenText
 
-	text "Are you making a"
-	line "#dex? Here's a"
-	cont "hot tip."
+	text "Erstellst du einen"
+	line "#dex? Ich habe"
+	cont "einen heißen"
+	cont "Tipp für dich."
 
-	para "The Hiker on Route"
-	line "33, Anthony, is a"
-	cont "good guy."
+	para "Wanderer Tom auf"
+	line "Route 33 ist sehr"
+	cont "freundlich."
 
-	para "He'll phone you if"
-	line "he sees any rare"
-	cont "#mon."
+	para "Er ruft dich an,"
+	line "wenn er seltene"
+	cont "#mon sieht."
 	done
 
 GenericTrainerCosplayerClara:
@@ -273,23 +277,25 @@ OlderHaircutBrotherScript:
 .Refused:
 	jumpthisopenedtext
 
-	text "Is that right?"
-	line "That's a shame!"
+	text "Ist das wahr? Das"
+	line "ist eine Schande!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You'll need more"
-	line "money than that."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 .AlreadyGotHaircut:
 	jumpthisopenedtext
 
-	text "I do only one"
-	line "haircut a day. I'm"
-	cont "done for today."
+	text "Ich mache nur"
+	line "einen Haarschnitt"
+	cont "pro Tag, und für"
+	cont "heute bin ich"
+	cont "fertig."
 	done
 
 YoungerHaircutBrotherScript:
@@ -359,25 +365,26 @@ YoungerHaircutBrotherScript:
 .Refused:
 	jumpthisopenedtext
 
-	text "No?"
-	line "How disappointing!"
+	text "Nein? "
+	line "Schade!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You're a little"
-	line "short on funds."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 .AlreadyGotHaircut:
 	jumpthisopenedtext
 
-	text "I can do only one"
-	line "haircut a day."
+	text "Ich mache nur"
+	line "einen Haarschnitt"
 
-	para "Sorry, but I'm all"
-	line "done for today."
+	para "pro Tag, und für"
+	line "heute bin ich"
+	cont "fertig."
 	done
 
 EitherHaircutBrotherScript_SlightlyHappier:
@@ -651,58 +658,60 @@ PiersRematchBeatenText:
 	done
 
 SupernerdEricSeenText:
-	text "I got booted out"
-	line "of the Game Cor-"
-	cont "ner."
+	text "Ich wurde aus"
+	line "der Spielhalle"
+	cont "hinausgeworfen."
 
-	para "I was trying to"
-	line "cheat using my"
-	cont "#mon…"
+	para "Ich habe versucht,"
+	line "mit Hilfe meines"
+	cont "#mon zu mogeln…"
 	done
 
 SupernerdEricBeatenText:
-	text "…Grumble…"
+	text "…Grummel…"
 	done
 
 SupernerdTeruSeenText:
-	text "Do you consider"
-	line "type alignments in"
-	cont "battle?"
+	text "Beschränkst du"
+	line "dich beim Kämpfen"
+	cont "nur auf einen Typ?"
 
-	para "If you know your"
-	line "type advantages,"
+	para "Wenn du die Stär-"
+	line "ken deiner Typen"
 
-	para "you'll do better"
-	line "in battle."
+	para "kennst, hast du im"
+	line "Kampf Vorteile."
 	done
 
 SupernerdTeruBeatenText:
-	text "Ow, ow, ow!"
+	text "Oh, oh, oh!"
 	done
 
 PokemaniacIssacSeenText:
-	text "My #mon just"
-	line "got a haircut!"
+	text "Meine #mon"
+	line "kommen gerade vom"
+	cont "Coiffeur!"
 
-	para "I'll show you how"
-	line "strong it is!"
+	para "Ich zeige dir, wie"
+	line "stark sie sind!"
 	done
 
 PokemaniacIssacBeatenText:
-	text "Aiyeeee!"
+	text "Arghhh!"
 	done
 
 PokemaniacDonaldSeenText:
-	text "I think you have"
-	line "some rare #mon"
-	cont "with you."
+	text "Ich glaube, du"
+	line "besitzt seltene"
+	cont "#mon."
 
-	para "Let me see them!"
+	para "Zeig sie mir!"
 	done
 
 PokemaniacDonaldBeatenText:
-	text "Gaah! I lost!"
-	line "That makes me mad!"
+	text "Guah! Ich habe"
+	line "verloren! Ich"
+	cont "dreh durch!"
 	done
 
 CosplayerClaraSeenText:
@@ -718,107 +727,115 @@ CosplayerClaraBeatenText:
 	done
 
 GoldenrodUndergroundTheDoorsLockedText:
-	text "The door's locked…"
+	text "Die Tür ist"
+	line "verschlossen…"
 	done
 
 GoldenrodUndergroundTheDoorIsOpenText:
-	text "The door is open."
+	text "Die Tür ist"
+	line "entriegelt."
 	done
 
 GoldenrodUndergroundBasementKeyOpenedDoorText:
-	text "The Basement Key"
-	line "opened the door."
+	text "Mit dem Keller-"
+	line "öffner wird die"
+	cont "Tür entriegelt."
 	done
 
 GoldenrodUndergroundOlderHaircutBrotherOfferHaircutText:
-	text "Welcome!"
+	text "Willkommen!"
 
-	para "I run the #mon"
-	line "Salon!"
+	para "Ich leite den"
+	line "#mon-Salon!"
 
-	para "I'm the older and"
-	line "better of the two"
-	cont "Haircut Brothers."
+	para "Ich bin der ältere"
+	line "und bessere der"
+	cont "beiden Coiffeur-"
+	cont "Brüder."
 
-	para "I can make your"
-	line "#mon beautiful"
-	cont "for just ¥500."
+	para "Ich verleihe"
+	line "deinen #mon ein"
+	cont "schöneres Äußeres"
+	cont "für nur ¥500."
 
-	para "Would you like me"
-	line "to do that?"
+	para "Soll ich damit"
+	line "anfangen?"
 	done
 
 GoldenrodUndergroundOlderHaircutBrotherAskWhichMonText:
-	text "Which #mon"
-	line "should I work on?"
+	text "Bei welchem"
+	line "#mon soll ich"
+	cont "Hand anlegen?"
 	done
 
 GoldenrodUndergroundOlderHaircutBrotherWatchItBecomeBeautifulText:
-	text "OK! Watch it"
-	line "become beautiful!"
+	text "O.K.! Sieh her,"
+	line "wie schön es wird!"
 	done
 
 GoldenrodUndergroundOlderHaircutBrotherAllDoneText:
-	text "There! All done!"
+	text "Hier! Fertig!"
 	done
 
 GoldenrodUndergroundYoungerHaircutBrotherOfferHaircutText:
-	text "Welcome to the"
-	line "#mon Salon!"
+	text "Willkommen im"
+	line "#mon-Salon!"
 
-	para "I'm the younger"
-	line "and less expen-"
-	cont "sive of the two"
-	cont "Haircut Brothers."
+	para "Ich bin der"
+	line "jüngere und"
+	cont "preiswertere der"
+	cont "beiden Coiffeur-"
+	cont "Brüder."
 
-	para "I'll spiff up your"
-	line "#mon for just"
-	cont "¥300."
+	para "Ich verschönere"
+	line "deine #mon"
+	cont "für nur ¥300."
 
-	para "So? How about it?"
+	para "Also? Wie wär's?"
 	done
 
 GoldenrodUndergroundYoungerHaircutBrotherAskWhichMonText:
-	text "OK, which #mon"
-	line "should I do?"
+	text "Welches #mon"
+	line "soll ich be-"
+	cont "arbeiten?"
 	done
 
 GoldenrodUndergroundYoungerHaircutBrotherIllMakeItLookCoolText:
-	text "OK! I'll make it"
-	line "look cool!"
+	text "O.K.! Es wird"
+	line "cool aussehen!"
 	done
 
 GoldenrodUndergroundYoungerHaircutBrotherAllDoneText:
-	text "There we go!"
-	line "All done!"
+	text "Bitte schön!"
+	line "Fertig!"
 	done
 
 HaircutBrosText_SlightlyHappier:
 	text_ram wStringBuffer3
-	text " looks a"
-	line "little happier."
+	text " sieht"
+	line "fröhlicher aus."
 	done
 
 HaircutBrosText_Happier:
 	text_ram wStringBuffer3
-	text " looks"
-	line "happy."
+	text " sieht"
+	line "glücklich aus."
 	done
 
 HaircutBrosText_MuchHappier:
 	text_ram wStringBuffer3
-	text " looks"
-	line "delighted!"
+	text ""
+	line "ist entzückt!"
 	done
 
 GoldenrodUndergroundWeAreNotOpenTodayText:
-	text "We're not open"
-	line "today."
+	text "Wir haben heute"
+	line "geschlossen."
 	done
 
 GoldenrodUndergroundNoEntryText: ; text > text
-	text "NO ENTRY BEYOND"
-	line "THIS POINT"
+	text "BIS HIERHER"
+	line "UND NICHT WEITER"
 	done
 
 PiersMicrophoneText:

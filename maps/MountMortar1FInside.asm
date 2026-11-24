@@ -31,53 +31,56 @@ MountMortar1FInside_MapScriptHeader:
 GenericTrainerPokemaniacMiller:
 	generictrainer POKEMANIAC, MILLER, EVENT_BEAT_POKEMANIAC_MILLER, PokemaniacMillerSeenText, PokemaniacMillerBeatenText
 
-	text "A while back, this"
-	line "karate dude wanted"
+	text "Vor geraumer Zeit"
+	line "wollte dieser"
 
-	para "to battle. He was"
-	line "ridiculously good."
+	para "Karateka kämpfen."
+	line "Er war sehr gut."
 
-	para "He just thrashed"
-	line "us silly."
+	para "Er hat uns richtig"
+	line "verprügelt."
 
-	para "He went in deeper"
-	line "saying it was for"
+	para "Er murmelte etwas"
+	line "von seinem"
 
-	para "his training. I"
-	line "wonder how he is?"
+	para "Training. Ich"
+	line "frage mich, wie"
+	cont "es ihm geht?"
 	done
 
 GenericTrainerSupernerdMarkus:
 	generictrainer SUPER_NERD, MARKUS, EVENT_BEAT_SUPER_NERD_MARKUS, SupernerdMarkusSeenText, SupernerdMarkusBeatenText
 
-	text "I came to explore"
-	line "Mt.Mortar, but I"
+	text "Ich wollte den"
+	line "Kesselberg erkun-"
+	cont "den, aber ich habe"
 
-	para "got separated from"
-	line "my partner…"
+	para "meinen Kameraden"
+	line "verloren…"
 
-	para "Did you run into a"
-	line "trainer who uses a"
+	para "Bist du einem Geg-"
+	line "ner begegnet, der"
 
-	para "Seadra that knows"
-	line "Waterfall?"
+	para "ein Seemon ein-"
+	line "setzt, das Kaskade"
+	cont "beherrscht?"
 	done
 
 PokemaniacMillerSeenText:
-	text "I'm not losing"
-	line "this time!"
+	text "Heute verliere ich"
+	line "gewiß nicht!"
 	done
 
 PokemaniacMillerBeatenText:
-	text "I lost to some"
-	line "kid…?"
+	text "Ich habe gegen ein"
+	line "Kind verloren…?"
 	done
 
 SupernerdMarkusSeenText:
-	text "Hey! Hugh!"
+	text "Heh! Randalf!"
 	done
 
 SupernerdMarkusBeatenText:
-	text "I mistook you for"
-	line "someone else…"
+	text "Ich habe dich"
+	line "verwechselt…"
 	done

@@ -30,20 +30,21 @@ Route21_MapScriptHeader:
 GenericTrainerSwimmerfNikki:
 	generictrainer SWIMMERF, NIKKI, EVENT_BEAT_SWIMMERF_NIKKI, SwimmerfNikkiSeenText, SwimmerfNikkiBeatenText
 
-	text "I have to watch"
-	line "out for blemishes"
-	cont "caused by the sun."
+	text "Ich muss mich"
+	line "vor Hautreizungen"
+	cont "in Acht nehmen."
 	done
 
 SwimmerfNikkiSeenText:
-	text "If I win, you have"
-	line "to help me with my"
-	cont "suntan lotion!"
+	text "Falls ich gewinne,"
+	line "musst du mich mit"
+	cont "der Sonnencreme"
+	cont "einreiben!"
 	done
 
 SwimmerfNikkiBeatenText:
-	text "I'm worried about"
-	line "sunburn…"
+	text "Ich habe Angst vor"
+	line "einem Sonnenbrand…"
 	done
 
 GenericTrainerSwimmerfChelan:
@@ -84,8 +85,8 @@ GenericTrainerSwimmerfKendra:
 	done
 
 .BeatenText:
-	text "I didn't want to"
-	line "lose…"
+	text "Ich wollte nicht"
+	line "verlieren…"
 	done
 
 GenericTrainerSwimmermEsteban:
@@ -131,18 +132,18 @@ GenericTrainerSwimmermDuane:
 GenericTrainerSwimmermSeth:
 	generictrainer SWIMMERM, SETH, EVENT_BEAT_SWIMMERM_SETH, SwimmermSethSeenText, SwimmermSethBeatenText
 
-	text "This arrogant guy"
-	line "was at Cinnabar's"
-	cont "volcano."
+	text "Dieser arrogante"
+	line "Typ war beim"
+	cont "Vulkan auf der"
+	cont "Zinnoberinsel."
 	done
 
 SwimmermSethSeenText:
-	text "Land ho! Gotta"
-	line "keep going!"
+	text "Mach weiter so!"
 	done
 
 SwimmermSethBeatenText:
-	text "Glug…"
+	text "Gluck…"
 	done
 
 GenericTrainerFisherMurphy:
@@ -169,17 +170,18 @@ GenericTrainerFisherMurphy:
 GenericTrainerFisherArnold:
 	generictrainer FISHER, ARNOLD, EVENT_BEAT_FISHER_ARNOLD, FisherArnoldSeenText, FisherArnoldBeatenText
 
-	text "I'll just go back"
-	line "to fishing…"
+	text "Ich gehe zurück"
+	line "zum Angeln…"
 	done
 
 FisherArnoldSeenText:
-	text "I'm bored by fish-"
-	line "ing. Let's battle!"
+	text "Angeln langweilt"
+	line "mich. Lass uns"
+	cont "kämpfen!"
 	done
 
 FisherArnoldBeatenText:
-	text "Utter failure…"
+	text "Total versagt…"
 	done
 
 GenericTrainerFisherLiam:

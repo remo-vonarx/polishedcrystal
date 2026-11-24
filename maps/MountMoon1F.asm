@@ -170,34 +170,36 @@ MountMoon1FRivalMovementAfter:
 MountMoonRivalTextBefore:
 	text "…… …… ……"
 
-	para "It's been a while,"
-	line "<PLAYER>."
+	para "Es ist schon lange"
+	line "her, <PLAYER>."
 
-	para "…Since I lost to"
-	line "you, I thought"
+	para "…Seit ich gegen"
+	line "dich verlor, mache"
 
-	para "about what I was"
-	line "lacking with my"
-	cont "#mon…"
+	para "ich mir Gedanken,"
+	line "was meinen #mon"
+	cont "noch fehlt…"
 
-	para "And we came up"
-	line "with an answer."
+	para "Nun, wir haben"
+	line "eine Antwort"
+	cont "gefunden."
 
-	para "<PLAYER>, now we'll"
-	line "show you!"
+	para "<PLAYER>, wir"
+	line "beweisen es dir!"
 	done
 
 MountMoonRivalTextWin:
 	text "…… …… ……"
 
-	para "I thought I raised"
-	line "my #mon to be"
+	para "Ich glaubte immer,"
+	line "meine #mon so"
 
-	para "the best they"
-	line "could be…"
+	para "aufgezogen zu ha-"
+	line "ben, dass sie un-"
+	cont "schlagbar seien.…"
 
-	para "…But it still"
-	line "wasn't enough…"
+	para "…Aber ich"
+	line "habe versagt…"
 	done
 
 MountMoonRivalTextAfter:
@@ -233,15 +235,16 @@ MountMoonRivalTextAfter:
 MountMoonRivalTextLoss:
 	text "…… …… ……"
 
-	para "I've repaid my"
-	line "debt to you."
+	para "Ich habe meine"
+	line "Schuld bei dir"
+	cont "abgegolten."
 
-	para "With my #mon,"
-	line "I'm going to beat"
+	para "Mit meinen #mon"
+	line "werde ich den"
 
-	para "the Champion and"
-	line "become the world's"
-	cont "greatest trainer."
+	para "Champ besiegen"
+	line "und weltbester"
+	cont "Trainer werden."
 	done
 
 BugManiacKentaSeenText:
@@ -287,7 +290,7 @@ BugManiacRobbySeenText:
 	done
 
 BugManiacRobbyBeatenText:
-	text "I lost…"
+	text "Ich habe verloren…"
 	done
 
 LassIrisSeenText:

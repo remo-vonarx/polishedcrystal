@@ -39,62 +39,67 @@ GenericTrainerPokefanmTrevor:
 	done
 
 PokefanmTrevorSeenText:
-	text "Hi. Did you know…?"
+	text "Hi. Wusstest du…,"
 
-	para "#mon get more"
-	line "friendly if you"
+	para "dass #mon dich"
+	line "mehr mögen, wenn"
 
-	para "train them in a"
-	line "place that they"
-	cont "remember."
+	para "du sie an einem"
+	line "ihnen bekannten"
+	cont "Platz trainierst?"
 	done
 
 PokefanmTrevorBeatenText:
-	text "Where did I meet"
-	line "this Psyduck?"
+	text "Wo traf ich dieses"
+	line "Enton?"
 	done
 
 GenericTrainerPokefanmCarter:
 	generictrainer POKEFANM, CARTER, EVENT_BEAT_POKEFANM_CARTER, PokefanmCarterSeenText, PokefanmCarterBeatenText
 
-	text "Squirtle, Charman-"
-	line "der and Bulbasaur…"
+	text "Schiggy, Glumanda"
+	line "und Bisasam…"
 
-	para "I think that's a"
-	line "well-balanced mix."
+	para "Ich denke, das ist"
+	line "ein ausgeglichenes"
+	cont "Team."
 	done
 
 PokefanmCarterSeenText:
-	text "Let me tell you,"
-	line "I had a hard time"
+	text "Eines kann ich dir"
+	line "sagen! Es war"
 
-	para "catching my prized"
-	line "#mon."
+	para "harte Arbeit, mei-"
+	line "ne prämierten"
+	cont "#mon zu fangen."
 	done
 
 PokefanmCarterBeatenText:
-	text "Awaaah!"
+	text "Uaaaah!"
 	done
 
 GenericTrainerBird_keeperRoy:
 	generictrainer BIRD_KEEPER, ROY, EVENT_BEAT_BIRD_KEEPER_ROY, Bird_keeperRoySeenText, Bird_keeperRoyBeatenText
 
-	text "You have #mon"
-	line "that know the HM"
+	text "Du hast #mon,"
+	line "welche die VM"
 
-	para "move Fly, don't"
-	line "you? I envy you."
+	para "Fliegen kennen?"
+	line "Ich beneide dich."
 	done
 
 Bird_keeperRoySeenText:
-	text "My dream is to fly"
-	line "with my beloved"
-	cont "bird #mon."
+	text "Ich träume davon,"
+	line "mit meinen ge-"
+	cont "liebten Vogel-"
+	cont "#mon zu"
+	cont "fliegen."
 	done
 
 Bird_keeperRoyBeatenText:
-	text "I can dream, but I"
-	line "can't ever fly…"
+	text "Ich kann träumen,"
+	line "aber ich kann"
+	cont "nicht fliegen…"
 	done
 
 GenericTrainerBird_keeperJosh:

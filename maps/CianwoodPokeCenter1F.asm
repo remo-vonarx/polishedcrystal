@@ -61,42 +61,46 @@ CianwoodGymGuyScript:
 	waitendtext
 
 .Text:
-	text "The #mon Gym"
-	line "trainers here are"
-	cont "macho bullies."
+	text "Die Trainer in"
+	line "der PKMN-Arena"
 
-	para "If I stick around,"
-	line "they might come"
-	cont "after me."
+	para "sind richtige"
+	line "Schlägertypen."
 
-	para "Here's some ad-"
-	line "vice: the Gym"
+	para "Wenn ich dort rum-"
+	line "stehe, schnappen"
+	cont "sie mich."
 
-	para "Leader uses the"
-	line "Fighting-type."
+	para "Ein Tipp: Der Lei-"
+	line "ter setzt gerne"
 
-	para "So you should"
-	line "confound him with"
-	cont "Psychic #mon."
+	para "Kampf-#mon"
+	line "ein."
 
-	para "Wipe out his #-"
-	line "mon before they"
+	para "Du solltest ihn"
+	line "mit Psycho-#-"
+	cont "mon überraschen."
 
-	para "can use their"
-	line "physical strength."
+	para "Besiege seine"
+	line "#mon, bevor sie"
 
-	para "And those boulders"
-	line "in the middle of"
-	cont "the Gym?"
+	para "ihre Kraft ein-"
+	line "setzen können."
 
-	para "If you don't move"
-	line "them correctly,"
+	para "Und die Felsen"
+	line "in der Mitte der"
+	cont "PKMN-Arena?"
 
-	para "you won't reach"
-	line "the Gym Leader."
+	para "Räume sie aus dem"
+	line "Weg, denn sonst"
 
-	para "If you get stuck,"
-	line "go outside."
+	para "wirst du den"
+	line "Arenaleiter nie"
+	cont "erreichen."
+
+	para "Hast du dich ver-"
+	line "schoben, verlasse"
+	cont "die PKMN-Arena."
 	done
 
 .StrengthText1:
@@ -113,32 +117,34 @@ CianwoodGymGuyScript:
 	done
 
 .WinText:
-	text "<PLAYER>! You won!"
-	line "I could tell by"
-	cont "looking at you!"
+	text "<PLAYER>! Du hast"
+	line "gewonnen! Das habe"
+	cont "ich dir gleich an-"
+	cont "gesehen!"
 	done
 
 CianwoodPokeCenter1FLassText:
-	text "Did you meet the"
-	line "#Maniac?"
+	text "Hast du schon den"
+	line "#maniac getrof-"
+	cont "fen?"
 
-	para "He's always brag-"
-	line "ging about his"
-	cont "rare #mon."
+	para "Er gibt immer mit"
+	line "seinen seltenen"
+	cont "#mon an."
 	done
 
 CianwoodPokeCenter1FSuperNerdText:
-	text "I love showing off"
-	line "the #mon that"
+	text "Ich liebe es, mit"
+	line "meinen trainierten"
 
-	para "I've raised."
-	line "Don't you?"
+	para "#mon anzugeben."
+	line "Du etwa nicht?"
 
-	para "I'm going to get"
-	line "into a bunch of"
+	para "Ich werde einige"
+	line "Kämpfe bestreiten,"
 
-	para "battles, and show"
-	line "off my #mon!"
+	para "um mit meinen"
+	line "#mon anzugeben!"
 	done
 
 CianwoodPokeCenter1FRichBoyText:

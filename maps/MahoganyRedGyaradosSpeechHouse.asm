@@ -20,27 +20,32 @@ MahoganyRedGyaradosSpeechHouseTeacherScript:
 	iftrue_jumptextfaceplayer MahoganyRedGyaradosSpeechHouseTeacherText_RocketsInRadioTower
 	jumpthistextfaceplayer
 
-	text "My favorite radio"
-	line "program? I'd say"
-	cont "#mon Music."
+	text "Mein Lieblingspro-"
+	line "gramm im Radio?"
+	cont "Ich würde sagen"
+	cont "#mon-Musik."
 	done
 
 MahoganyRedGyaradosSpeechHouseBlackBeltText:
-	text "I heard that a red"
-	line "Gyarados appeared"
-	cont "at the lake."
+	text "Ich hörte, dass"
+	line "ein rotes Garados"
 
-	para "That's odd, since"
-	line "even ordinary"
+	para "am See erschienen"
+	line "sein soll."
 
-	para "Gyarados are rare"
-	line "in that lake…"
+	para "Das ist seltsam,"
+	line "da schon normale"
+
+	para "Garados in diesem"
+	line "See sehr selten"
+
+	para "sind…"
 	done
 
 MahoganyRedGyaradosSpeechHouseTeacherText_RocketsInRadioTower:
-	text "I've been hearing"
-	line "laughter on the"
+	text "Ich habe Gelächter"
+	line "im Radio gehört…"
 
-	para "radio…"
-	line "It's creepy."
+	para "Das war unheim-"
+	line "lich."
 	done

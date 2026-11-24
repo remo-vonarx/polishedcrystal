@@ -65,11 +65,12 @@ PowerPlantOfficerScript:
 	iftrue_jumptextfaceplayer PowerPlantOfficer1CouldIAskForYourCooperationText
 	jumpthistextfaceplayer
 
-	text "A thief broke into"
-	line "the Power Plant…"
+	text "Ein Dieb ist in"
+	line "das Kraftwerk"
+	cont "eingebrochen…"
 
-	para "What is the world"
-	line "coming to?"
+	para "Was geschieht nur"
+	line "mit dieser Welt?"
 	done
 
 PowerPlantGymGuide1Script:
@@ -77,15 +78,16 @@ PowerPlantGymGuide1Script:
 	iftrue_jumptextfaceplayer PowerPlantGymGuide1GeneratorUpAndRunningText
 	jumpthistextfaceplayer
 
-	text "Someone made off"
-	line "with a part that's"
+	text "Ein wichtiges Teil"
+	line "des Generators"
 
-	para "essential for the"
-	line "generator."
+	para "wurde von dem"
+	line "Dieb entwendet."
 
-	para "Without it, the"
-	line "new generator's"
-	cont "useless!"
+	para "Ohne dieses Teil"
+	line "funktioniert der"
+	cont "neue Generator"
+	cont "nicht!"
 	done
 
 PowerPlantGymGuide2Script:
@@ -93,15 +95,16 @@ PowerPlantGymGuide2Script:
 	iftrue_jumptextfaceplayer PowerPlantGymGuide2GeneratorIsRunningAgainText
 	jumpthistextfaceplayer
 
-	text "This Power Plant"
-	line "had been abandoned"
-	cont "in the past."
+	text "Das Kraftwerk"
+	line "wurde vor langer"
+	cont "Zeit stillgelegt."
 
-	para "We got it back up"
-	line "and running to"
+	para "Wir haben es"
+	line "wieder in Betrieb"
 
-	para "provide power to"
-	line "the Magnet Train."
+	para "genommen und ver-"
+	line "sorgen den Magnet-"
+	cont "zug mit Energie."
 	done
 
 PowerPlantOfficer2Script:
@@ -109,15 +112,15 @@ PowerPlantOfficer2Script:
 	iftrue_jumptextfaceplayer PowerPlantOfficer2ManagerHasBeenCheerfulText
 	jumpthistextfaceplayer
 
-	text "The Power Plant's"
-	line "Manager is up"
-	cont "ahead."
+	text "Der Direktor des"
+	line "Kraftwerks sitzt"
+	cont "da vorne."
 
-	para "But since someone"
-	line "wrecked the gener-"
-	cont "ator, he's been"
-	cont "both sad and"
-	cont "furious…"
+	para "Seit jemand den"
+	line "Generator demo-"
+	cont "lierte, ist er"
+	cont "traurig und wütend"
+	cont "zugleich…"
 	done
 
 PowerPlantGymGuide4Script:
@@ -125,13 +128,13 @@ PowerPlantGymGuide4Script:
 	iftrue_jumptextfaceplayer PowerPlantGymGuide4WeCanGetMagnetTrainRunningText
 	jumpthistextfaceplayer
 
-	text "The Magnet Train"
-	line "consumes a lot of"
-	cont "electricity."
+	text "Der Magnetzug"
+	line "verbraucht viel"
+	cont "Energie."
 
-	para "It can't move if"
-	line "the new generator"
-	cont "isn't operating."
+	para "Ohne den neuen"
+	line "Generator fährt"
+	cont "er nicht."
 	done
 
 PowerPlantManager:
@@ -217,89 +220,93 @@ PowerPlantOfficer1ReturnToPostMovement:
 
 
 PowerPlantOfficer1CeruleanShadyCharacterText:
-	text "I just got word"
-	line "from Cerulean."
+	text "Ich habe Nachricht"
+	line "aus Azuria City."
 
-	para "It appears that a"
-	line "shady character"
+	para "Eine zwielichtige"
+	line "Figur treibt sich"
 
-	para "has been loitering"
-	line "around."
+	para "dort in der"
+	line "Umgebung herum."
 	done
 
 PowerPlantOfficer1CouldIAskForYourCooperationText:
-	text "Could I ask for"
-	line "your cooperation?"
+	text "Kann ich mit"
+	line "deiner Unter-"
+	cont "stützung rechnen?"
 	done
 
 PowerPlantOfficer1HaveToBeefUpSecurityText:
-	text "We'll have to beef"
-	line "up our security"
-	cont "presence."
+	text "Wir müssen mehr"
+	line "Wachpersonal"
+	cont "einstellen."
 	done
 
 
 PowerPlantGymGuide1GeneratorUpAndRunningText:
-	text "The generator's up"
-	line "and running. It's"
-
-	para "making electricity"
-	line "to spare."
+	text "Der Generator"
+	line "funktioniert wie-"
+	cont "der. Jetzt erzeu-"
+	cont "gen wir genügend"
+	cont "Energie."
 	done
 
 
 PowerPlantGymGuide2GeneratorIsRunningAgainText:
-	text "The generator's"
-	line "running again!"
+	text "Der Generator"
+	line "läuft wieder!"
 	done
 
 
 PowerPlantOfficer2ManagerHasBeenCheerfulText:
-	text "Since the gener-"
-	line "ator's been fixed,"
+	text "Seit der Generator"
+	line "wieder läuft, ist"
 
-	para "the Manager has"
-	line "been cheerful."
+	para "der Direktor"
+	line "wieder fröhlich."
 	done
 
 
 PowerPlantGymGuide4WeCanGetMagnetTrainRunningText:
-	text "All right! We can"
-	line "finally get the"
+	text "O.K. Der Magnet-"
+	line "zug fährt"
 
-	para "Magnet Train"
-	line "running again."
+	para "wieder."
 	done
 
 PowerPlantManagerWhoWouldRuinMyGeneratorText:
-	text "Manager: I, I, I'm"
-	line "ready to blast"
-	cont "someone!"
+	text "Direktor: Ich, ich"
+	line "werde ihm nie"
+	cont "verzeihen!"
 
-	para "Who would dare"
-	line "ruin my generator?"
+	para "Wer wagt es,"
+	line "meinen Generator"
+	cont "zu demolieren?"
 
-	para "I spent so much"
-	line "time on it!"
+	para "Ich habe so lange"
+	line "daran gearbeitet!"
 
-	para "If I catch him,"
-	line "he's going to get"
+	para "Wenn ich den"
+	line "erwische, dann"
 
-	para "a taste of my Zap"
-	line "Cannon!"
+	para "lernt er meine"
+	line "Blitzkanone"
+	cont "kennen!"
 	done
 
 PowerPlantManagerIWontForgiveCulpritText:
-	text "Manager: I won't"
-	line "forgive him!"
+	text "Direktor: Das kann"
+	line "ich ihm nicht"
+	cont "verzeihen!"
 
-	para "The culprit can"
-	line "cry and apologize,"
+	para "Der Schurke kann"
+	line "weinen und sich"
 
-	para "but I'll still"
-	line "hammer him!"
+	para "entschuldigen, ich"
+	line "werde ihn trotzdem"
+	cont "bestrafen!"
 
-	para "Gahahahah!"
+	para "Uahahaha!"
 	done
 
 PowerPlantManagerThatsThePartText:

@@ -261,9 +261,9 @@ Route44RematchGiftM:
 GenericTrainerPsychicPhil:
 	generictrainer PSYCHIC_T, PHIL, EVENT_BEAT_PSYCHIC_PHIL, PsychicPhilSeenText, PsychicPhilBeatenText
 
-	text "It's important to"
-	line "have conviction"
-	cont "on your side."
+	text "Es ist wichtig,"
+	line "von sich selbst"
+	cont "überzeugt zu sein."
 	done
 
 TrainerFisherWilton1:
@@ -366,77 +366,91 @@ FisherWilton1Script:
 GenericTrainerFisherEdgar:
 	generictrainer FISHER, EDGAR, EVENT_BEAT_FISHER_EDGAR, FisherEdgarSeenText, FisherEdgarBeatenText
 
-	text "That's 100 wins"
-	line "to 101 losses."
+	text "Das sind 100 Siege"
+	line "und 101 verlorene"
+	cont "Kämpfe."
 
-	para "I won't battle"
-	line "again for a while."
+	para "Ich kämpfe jetzt"
+	line "eine Weile lang"
+	cont "nicht mehr."
 	done
 
 GenericTrainerCooltrainerfCybil:
 	generictrainer COOLTRAINERF, CYBIL, EVENT_BEAT_COOLTRAINERF_CYBIL, CooltrainerfCybilSeenText, CooltrainerfCybilBeatenText
 
-	text "We all get better"
-	line "by experiencing"
-	cont "many battles."
+	text "Mit den Kämpfen"
+	line "steigen unsere"
+	cont "Erfahrungen und"
+	cont "wir werden besser."
 
-	para "I battled a lot to"
-	line "become what I am"
-	cont "today--an elite."
+	para "Ich habe viele"
+	line "Kämpfe ausge-"
+	cont "tragen, um das zu"
+	cont "werden, was ich"
+	cont "heute bin - ein"
+	cont "Profi."
 	done
 
 GenericTrainerPokemaniacZach:
 	generictrainer POKEMANIAC, ZACH, EVENT_BEAT_POKEMANIAC_ZACH, PokemaniacZachSeenText, PokemaniacZachBeatenText
 
-	text "If a #mon has"
-	line "different colors"
+	text "Ein #mon,"
+	line "dessen Färbung"
 
-	para "from usual, it's"
-	line "more valuable."
+	para "sich von der"
+	line "normalen unter-"
+	cont "scheidet, ist"
+	cont "wertvoller."
 
-	para "What? You mean"
-	line "that's not true?"
+	para "Was? Willst du"
+	line "behaupten, das sei"
+	cont "nicht wahr?"
 	done
 
 GenericTrainerCooltrainermAllen:
 	generictrainer COOLTRAINERM, ALLEN, EVENT_BEAT_COOLTRAINERM_ALLEN, CooltrainermAllenSeenText, CooltrainermAllenBeatenText
 
-	text "Wow. You have a"
-	line "lot of Badges."
+	text "Wow! Du hast ja"
+	line "viele Orden!"
 
-	para "No wonder you're"
-	line "so tough."
+	para "Kein Wunder, dass"
+	line "du so stark bist."
 
-	para "I wonder if"
-	line "Ecruteak Gym's"
+	para "Ich frage mich,"
+	line "ob Jens, der"
 
-	para "Morty is still in"
-	line "training?"
+	para "Arenaleiter von"
+	line "Teak City, noch"
+	cont "immer trainiert?"
 
-	para "He really hammered"
-	line "me."
+	para "Er hat mich"
+	line "wirklich fertig"
+	cont "gemacht."
 	done
 
 FisherWilton1SeenText:
-	text "Aack! You made me"
-	line "lose a Poliwag!"
+	text "Aah! Wegen dir"
+	line "habe ich ein"
+	cont "Quapsel verloren!"
 
-	para "What are you going"
-	line "to do about it?"
+	para "Was wirst du"
+	line "deswegen unter-"
+	cont "nehmen?"
 	done
 
 FisherWilton1BeatenText:
-	text "Just forget about"
-	line "it."
+	text "Vergiss es"
+	line "einfach."
 	done
 
 FisherWiltonHugePoliwagText_Imperial:
-	text "That Poliwag that"
-	line "got away…"
-	cont "It was huge."
+	text "Dieses Quapsel,"
+	line "das geflohen ist…"
+	cont "Das war riesig."
 
-	para "I swear it must've"
-	line "been 16 feet long!"
+	para "Ich könnte"
+	line "schwören, dass es"
+	cont "5 Meter lang war!"
 	done
 
 FisherWiltonHugePoliwagText_Metric:
@@ -450,113 +464,127 @@ FisherWiltonHugePoliwagText_Metric:
 	done
 
 FisherEdgarSeenText:
-	text "I fish until I"
-	line "can't anymore."
+	text "Ich angle so"
+	line "lange, bis ich"
+	cont "nicht mehr kann."
 
-	para "I also battle"
-	line "until I drop."
+	para "Und ich kämpfe"
+	line "bis zum Umfallen."
 
-	para "That's my"
-	line "relationship"
-	cont "with my #mon."
+	para "So gehe ich"
+	line "auch mit meinen"
+	cont "#mon um."
 	done
 
 FisherEdgarBeatenText:
-	text "Hmmmm…"
-	line "This isn't right."
+	text "Hmm…"
+	line "Das ist nicht"
+	para "richtig."
 	done
 
 Bird_keeperVance1SeenText:
-	text "Do you know about"
-	line "the legendary bird"
-	cont "#mon?"
+	text "Hast du schon von"
+	line "dem legendären"
+	cont "Vogel-#mon"
+	cont "gehört?"
 	done
 
 Bird_keeperVance1BeatenText:
-	text "Whew! You're hot"
-	line "stuff."
+	text "Puh! Du bist nicht"
+	line "von schlechten"
+	cont "Eltern."
 	done
 
 BirdKeeperVanceLegendaryBirdsText:
-	text "Articuno, Zapdos"
-	line "and Moltres are"
+	text "Arktos, Zapdos"
+	line "und Lavados sind"
 
-	para "the three legend-"
-	line "ary bird #mon."
+	para "die drei"
+	line "legendären Vogel-"
+	cont "#mon."
 
-	para "I heard there are"
-	line "other legendary"
-	cont "birds, though."
+	para "Es gibt aber auch"
+	line "andere legendäre"
+	cont "Vogel-#mon."
 	done
 
 BirdKeeperVance2BeatenText:
-	text "Why can't I ever"
-	line "beat you?"
+	text "Warum kann ich"
+	line "dich nicht"
+	cont "besiegen?"
 
-	para "Oh yeah, here you"
-	line "go. It's that gift"
+	para "Oh yeah, hier. Das"
+	line "ist das Geschenk,"
 
-	para "I couldn't give"
-	line "you last time."
+	para "das ich dir das"
+	line "letzte Mal nicht"
+	cont "geben konnte."
 	done
 
 PsychicPhilSeenText:
-	text "I'm gonna win,"
-	line "for sure!"
+	text "Ich gewinne"
+	line "hundertprozentig!"
 	done
 
 PsychicPhilBeatenText:
-	text "Arrgh… That's a"
-	line "shocking loss…"
+	text "Aah… Das ist"
+	line "eine schockierende"
+	cont "Niederlage…"
 	done
 
 PokemaniacZachSeenText:
-	text "I'll do anything"
-	line "to get my hands on"
-	cont "rare #mon!"
+	text "Ich tue alles,"
+	line "um seltene #mon"
+	cont "in die Finger zu"
+	cont "bekommen!"
 	done
 
 PokemaniacZachBeatenText:
-	text "Oooh, your #mon"
-	line "are so appealing."
+	text "Ach, deine #mon"
+	line "sind ja niedlich."
 	done
 
 CooltrainermAllenSeenText:
-	text "I can tell you're"
-	line "a good trainer by"
-	cont "looking at you."
+	text "Ich kann sehen,"
+	line "dass du ein guter"
+	cont "Trainer bist."
 
-	para "I'm good at #-"
-	line "mon, and I can see"
-	cont "that you are too."
+	para "Ich kenne mich gut"
+	line "mit #mon aus"
+	cont "und ich sehe, dass"
+	cont "du das auch tust."
 	done
 
 CooltrainermAllenBeatenText:
-	text "Tch! It's a total"
-	line "loss on my part."
+	text "Puh! Das war ja"
+	line "der totale"
+	cont "Reinfall!"
 	done
 
 CooltrainerfCybilSeenText:
-	text "You look strong."
+	text "Du siehst sehr"
+	line "stark aus."
 
-	para "Good trainers seek"
-	line "tough opponents"
-	cont "instinctively."
+	para "Gute Trainer"
+	line "suchen instinktiv"
+	cont "nach starken"
+	cont "Gegnern."
 	done
 
 CooltrainerfCybilBeatenText:
-	text "Nope! This won't"
-	line "do at all."
+	text "Nein! So geht das"
+	line "auf gar keinen"
+	cont "Fall."
 	done
 
 Route44Sign1Text:
 	text "Route 44"
-	line "Ice Path Ahead"
+	line "Eispfad voraus"
 	done
 
 Route44Sign2Text:
 	text "Route 44"
 
-	para "Mahogany Town -"
-	line "Blackthorn City"
+	para "Mahagonia City -"
+	line "Ebenholz City"
 	done

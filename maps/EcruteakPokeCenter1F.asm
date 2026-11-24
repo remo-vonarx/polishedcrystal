@@ -90,9 +90,9 @@ EcruteakPokeCenter1FBillScript:
 .NoRoom:
 	jumpthisopenedtext
 
-	text "Whoa, wait. You"
-	line "can't carry any"
-	cont "more #mon."
+	text "Moment! Du hast"
+	line "keinen Platz mehr"
+	cont "in deinem Team."
 	done
 
 .IntroText:
@@ -129,17 +129,17 @@ EcruteakPokeCenter1FBillScript:
 	done
 
 .YesText:
-	text "Bill: I knew you'd"
-	line "come through!"
+	text "Bill: Ich wusste,"
+	line "dass du es"
 
-	para "Way to go! You're"
-	line "the real deal!"
+	para "schaffst! Noch ein"
+	line "kleines Stück! Du"
+	cont "bist einzigartig!"
 
-	para "OK, I'm counting"
-	line "on you."
+	para "O.K., ich zähle"
+	line "auf dich."
 
-	para "Take good care of"
-	line "it!"
+	para "Pass auf dich auf!"
 	done
 
 .GoodbyeText:
@@ -160,8 +160,8 @@ EcruteakPokeCenter1FBillScript:
 	done
 
 .NoText:
-	text "Oh… Now what to"
-	line "do?"
+	text "Oh… Was soll ich"
+	line "tun?"
 	done
 
 .LeaveMovement:
@@ -203,27 +203,30 @@ EcruteakPokeCenter1FPokefanMScript:
 	iftrue_jumptextfaceplayer .SurfText
 	jumpthistextfaceplayer
 
-	text "The way the Kimono"
-	line "Girls dance is"
+	text "Sowohl der Tanz"
+	line "der Kimono-Girls"
 
-	para "marvelous. Just"
-	line "like the way they"
-	cont "use their #mon."
+	para "als auch die Art,"
+	line "wie sie ihre #-"
+	cont "mon einsetzen, ist"
+	cont "wunderbar!"
 	done
 
 .SurfText:
-	text "You must be hoping"
-	line "to battle more"
-	cont "people, right?"
+	text "Du hoffst, hier"
+	line "mehr Kämpfe zu er-"
+	cont "leben, nicht wahr?"
 
-	para "There's apparently"
-	line "some place where"
-	cont "trainers gather."
+	para "Es gibt offen-"
+	line "sichtlich einen"
 
-	para "Where, you ask?"
+	para "Ort, an dem sich"
+	line "Trainer treffen."
 
-	para "It's a little past"
-	line "Olivine City."
+	para "Wo, fragst du?"
+
+	para "Kurz nach"
+	line "Oliviana City."
 	done
 
 EcruteakPokeCenter1FLassScript:
@@ -267,20 +270,21 @@ EcruteakPokeCenter1FLassScript:
 	done
 
 EcruteakPokeCenter1FCooltrainerFText:
-	text "Morty, the Gym"
-	line "Leader, is soooo"
+	text "Jens, der Arena-"
+	line "leiter, ist soooo"
 	cont "cool."
 
-	para "His #mon are"
-	line "really tough too."
+	para "Auch seine #mon"
+	line "sind sehr stark."
 	done
 
 EcruteakPokeCenter1FGymGuyText:
-	text "Lake of Rage…"
+	text "See des Zorns…"
 
-	para "The appearance of"
-	line "a Gyarados swarm…"
+	para "Das Erscheinen ei-"
+	line "nes Garados-"
+	cont "Schwarms…"
 
-	para "I smell a conspir-"
-	line "acy. I know it!"
+	para "Das riecht nach"
+	line "Verschwörung!"
 	done

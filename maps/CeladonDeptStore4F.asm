@@ -108,8 +108,8 @@ PosterClerkText:
 	done
 
 PosterClerkNoMoneyText:
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 PosterClerkAlreadyBoughtText:
@@ -162,8 +162,9 @@ CeladonDeptStore4FYoungsterText:
 	done
 
 CeladonDeptStore4FDirectoryText:
-	text "Express Yourself"
-	line "With Gifts!"
+	text "Lass Geschenke"
+	line "Für Dich Sprechen!"
 
-	para "4F: Wiseman Gifts"
+	para "3S: Geschenk-"
+	line "    Artikel"
 	done

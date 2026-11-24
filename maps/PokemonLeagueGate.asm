@@ -60,21 +60,22 @@ VictoryRoadGateOfficerText:
 	done
 
 VictoryRoadGateLeftBlackBeltText:
-	text "This way leads to"
-	line "Mt.Silver."
+	text "Dieser Weg führt"
+	line "zum Silberberg."
 
-	para "You'll see scary-"
-	line "strong #mon out"
-	cont "there."
+	para "Dir werden be-"
+	line "ängstigend starke"
+	cont "#mon begegnen."
 	done
 
 VictoryRoadGateRightBlackBeltText:
-	text "Off to the #mon"
-	line "League, are you?"
+	text "Du bist auf dem"
+	line "Weg zur #mon"
+	cont "Liga, nicht wahr?"
 
-	para "The Elite Four are"
-	line "so strong it's"
+	para "Die Top Vier sind"
+	line "so stark, dass es"
 
-	para "scary, and they're"
-	line "ready for you!"
+	para "einem Angst macht."
+	line "Sie erwarten dich!"
 	done

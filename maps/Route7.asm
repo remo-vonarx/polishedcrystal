@@ -61,8 +61,8 @@ Route7Snorlax:
 	iftruefwd .Awake
 	jumpthisopenedtext
 
-	text "Snorlax is snoring"
-	line "peacefully…"
+	text "Relaxo schläft"
+	line "friedlich…"
 	done
 
 .Awake:
@@ -79,13 +79,15 @@ Route7Snorlax:
 	end
 
 .AwakeText:
-	text "The #gear was"
-	line "placed near the"
-	cont "sleeping Snorlax…"
+	text "Der #Com wird"
+	line "in der Nähe des"
+	cont "schlafenden"
+	cont "Relaxos platziert…"
 
 	para "…"
 
-	para "Snorlax woke up!"
+	para "Relaxo ist"
+	line "aufgewacht!"
 	done
 
 Route7UndergroundPathSignText:
@@ -108,5 +110,5 @@ Route7UndergroundPathSignText:
 	done
 
 Route7LockedDoorText:
-	text "It's locked…"
+	text "Es ist verriegelt…"
 	done

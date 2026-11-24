@@ -56,40 +56,42 @@ BlackthornCitySantosCallback:
 	endcallback
 
 BlackthornCitySignText:
-	text "Blackthorn City"
+	text "Ebenholz City"
 
-	para "A Quiet Mountain"
-	line "Retreat"
+	para "Ein ruhiger Ort in"
+	line "den Bergen"
 	done
 
 BlackthornGymSignText:
-	text "Blackthorn City"
-	line "#mon Gym"
-	cont "Leader: Clair"
+	text "PKMN-Arena von"
+	line "Ebenholz City"
 
-	para "The Blessed User"
-	line "of Dragon #mon"
+	para "Leitung: Sandra"
+	line "Die gesegnete Dra-"
+	cont "chen-#mon-"
+	cont "Trainerin"
 	done
 
 MoveDeletersHouseSignText:
-	text "Move Deleter's"
-	line "House"
+	text "Haus des Attacken-"
+	line "Verlerners"
 	done
 
 DragonDensSignText:
-	text "Dragon's Den"
-	line "Ahead"
+	text "Drachenhöhle"
+	line "Geradeaus"
 	done
 
 BlackthornCityTrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "A #mon holding"
-	line "a Lum Berry"
+	para "Ein #mon, das"
+	line "eine Prunusbeere"
 
-	para "will cure itself"
-	line "of any status"
-	cont "problem."
+	para "trägt, kann von"
+	line "sich aus Status-"
+	cont "veränderungen hei-"
+	cont "len."
 	done
 
 SantosScript:
@@ -111,45 +113,49 @@ SantosScript:
 	setevent EVENT_GOT_SPELL_TAG_FROM_SANTOS
 	jumpthisopenedtext
 
-	text "Santos: …"
+	text "Samson: …"
 
-	para "Spell Tag…"
+	para "Bannsticker…"
 
-	para "Ghost-type moves"
-	line "get stronger…"
+	para "Geist-Attacken"
+	line "werden stärker…"
 
-	para "It will frighten"
-	line "you…"
+	para "Es ist geradezu"
+	line "beängstigend…"
 	done
 
 .NotSaturday:
 	jumpthistextfaceplayer
 
-	text "Santos: Today's"
-	line "not Saturday…"
+	text "Samson: Heute ist"
+	line "nicht Samstag…"
 	done
 
 .MeetText:
-	text "Santos: …"
+	text "Samson: …"
 
-	para "It's Saturday…"
+	para "Heute ist Samstag…"
 
-	para "I'm Santos of"
-	line "Saturday…"
+	para "Ich bin Samson von"
+	line "Samstag…"
 	done
 
 .GivesGiftText:
-	text "You can have this…"
+	text "Du kannst das"
+	line "haben…"
 	done
 
 .SaturdayText:
-	text "Santos: …"
+	text "Samson: …"
 
-	para "See you again on"
-	line "another Saturday…"
+	para "Wir sehen uns an"
+	line "einem anderen"
+	cont "Samstag wieder…"
 
-	para "I won't have any"
-	line "more gifts…"
+	para "Aber ich werde"
+	line "dann keine Ge-"
+	cont "schenke mehr"
+	cont "haben…"
 	done
 
 BlackthornDragonTamer1Script:
@@ -159,29 +165,32 @@ BlackthornDragonTamer1Script:
 	iftrue_jumptextfaceplayer .ClairIsInText
 	jumpthistextfaceplayer
 
-	text "I am sorry."
+	text "Tut mir Leid."
 
-	para "Clair, our Gym"
-	line "Leader, entered"
+	para "Sandra, unsere"
+	line "Arenaleiterin,"
 
-	para "the Dragon's Den"
-	line "behind the Gym."
+	para "ist in die"
+	line "Drachenhöhle"
 
-	para "I have no idea"
-	line "when our Leader"
-	cont "will return."
+	para "hinter der PKMN-"
+	line "Arena gegangen."
+
+	para "Ich weiß nicht,"
+	line "wann sie wieder-"
+	cont "kommt."
 	done
 
 .ClairIsInText:
-	text "Clair, our Gym"
-	line "Leader, is waiting"
-	cont "for you."
+	text "Sandra, unsere"
+	line "Arenaleiterin,"
+	cont "erwartet dich."
 
-	para "However, it would"
-	line "be impossible for"
+	para "Für einen gewöhn-"
+	line "lichen Trainer"
 
-	para "a run-of-the-mill"
-	line "trainer to win."
+	para "ist es jedoch un-"
+	line "möglich zu siegen."
 	done
 
 .ClairIsBeatenText:
@@ -202,55 +211,62 @@ BlackthornBlackbeltScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "My radio's busted?"
-	line "Lately, I only get"
-	cont "this weird signal."
+	text "Mein Radio ist im"
+	line "Eimer. Seit kurzem"
+	cont "empfange ich nur"
+	cont "dieses eigenartige"
+	cont "Signal."
 	done
 
 .Text2:
-	text "Arooo! Voices in"
-	line "my head!"
+	text "Aruuu! Stimmen in"
+	line "meinem Kopf!"
 
-	para "Huh? I'm listening"
-	line "to my radio!"
+	para "Häh? Ich höre"
+	line "Radio!"
 	done
 
 BlackthornGramps1Text:
-	text "No. Only chosen"
-	line "trainers may train"
-	cont "here."
+	text "Nein. Nur auser-"
+	line "wählte Trainer"
 
-	para "Please leave."
+	para "dürfen hier"
+	line "trainieren."
+	cont "Gehe hinfort."
 	done
 
 BlackthornGramps2Text:
-	text "If Clair allows"
-	line "it, her grand-"
-	cont "father--our Master"
-	cont "--will also."
+	text "Wenn Sandra es dir"
+	line "gestattet, dann"
 
-	para "You may enter."
+	para "wird auch ihr Opa"
+	line "- unser Meister -"
+	cont "zustimmen."
+
+	para "Tritt ein."
 	done
 
 BlackthornLassText:
-	text "Are you going to"
-	line "make your #mon"
-	cont "forget some moves?"
+	text "Willst du, dass"
+	line "deine #mon ei-"
+	cont "nige Attacken ver-"
+	cont "gessen?"
 	done
 
 BlackthornYoungsterText:
-	text "Dragon masters all"
-	line "come from the city"
-	cont "of Blackthorn."
+	text "Alle Drachen-"
+	line "meister kommen aus"
+	cont "Ebenholz City."
 	done
 
 BlackthornCooltrainerF1Text:
-	text "Wow, you came"
-	line "through the Ice"
-	cont "Path?"
+	text "Wow, du bist über"
+	line "den Eispfad gekom-"
+	cont "men?"
 
-	para "You must be a real"
-	line "hotshot trainer!"
+	para "Du musst ein rich-"
+	line "tiger Heißsporn"
+	cont "sein!"
 	done
 
 BlackthornCooltrainerF2Text:

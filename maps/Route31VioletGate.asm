@@ -18,13 +18,14 @@ Route31VioletGate_MapScriptHeader:
 	object_event  1,  2, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route31VioletGateCooltrainerFText, -1
 
 Route31VioletGateOfficerText:
-	text "Hi there!"
-	line "Did you visit"
-	cont "Sprout Tower?"
+	text "Tach auch!"
+	line "Warst du im"
+	cont "Knofensa-Turm?"
 	done
 
 Route31VioletGateCooltrainerFText:
-	text "I came too far"
-	line "out. I'd better"
-	cont "phone home!"
+	text "Ich bin zu weit"
+	line "gelaufen. Ich"
+	cont "sollte zu Hause"
+	cont "anrufen!"
 	done

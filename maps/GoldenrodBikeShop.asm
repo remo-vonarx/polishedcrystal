@@ -41,11 +41,11 @@ GoldenrodBikeShopClerkScript:
 	jumpthisopenedtext
 
 GoldenrodBikeShopClerkFirstRateBikesText:
-	text "My Bicycles are"
-	line "first-rate! You"
+	text "Meine Fahrräder"
+	line "sind erste Klasse!"
 
-	para "can ride them"
-	line "anywhere."
+	para "Du kannst sie"
+	line "überall fahren."
 	done
 
 GoldenrodBikeShopClerkIntroText:
@@ -62,29 +62,29 @@ GoldenrodBikeShopClerkIntroText:
 	done
 
 GoldenrodBikeShopClerkAgreedText:
-	text "Really? Great!"
+	text "Ja? Großartig!"
 
-	para "Give me your name"
-	line "and phone number,"
+	para "Gib mir bitte"
+	line "Namen und Nummer."
 
-	para "and I'll loan you"
-	line "a Bicycle."
+	para "Dann leihe ich dir"
+	line "ein Fahrrad."
 	done
 
 GoldenrodBikeShopClerkRefusedText:
-	text "…sigh… Oh, for"
-	line "the kindness of"
-	cont "people…"
+	text "…Seufz… Oh, für"
+	line "die Güte der"
+	cont "Menschen…"
 	done
 
 GoldenrodBikeShopBicycleText:
-	text "It's a shiny new"
-	line "Bicycle!"
+	text "Ein nagelneues"
+	line "Fahrrad!"
 	done
 
 GoldenrodBikeShopJustReleasedCompactBikeText:
-	text "Just released!"
+	text "Brandneu!"
 
-	para "First-rate compact"
-	line "Bicycles!"
+	para "Erste Klasse Kom-"
+	line "pakt-Fahrräder!"
 	done

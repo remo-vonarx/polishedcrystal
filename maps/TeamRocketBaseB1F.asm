@@ -547,41 +547,44 @@ NoExplodingTrap:
 GenericTrainerRocketScientistJed:
 	generictrainer ROCKET_SCIENTIST, JED, EVENT_BEAT_ROCKET_SCIENTIST_JED, RocketScientistJedSeenText, RocketScientistJedBeatenText
 
-	text "All right. I'll"
-	line "divulge a secret"
-	cont "about our hideout."
+	text "O.K. Ich verrate"
+	line "dir ein Geheimnis"
+	cont "über unseren"
+	cont "Unterschlupf."
 
-	para "That thing on the"
-	line "floor up ahead is"
-	cont "a warp panel."
+	para "Das Feld da vorne"
+	line "am Boden ist ein"
+	cont "Warpfeld."
 
-	para "If you step on it,"
-	line "you'll be warped"
+	para "Sobald du es"
+	line "betrittst, wirst"
 
-	para "back to the en-"
-	line "trance."
+	para "du zurück zum"
+	line "Eingang gewarpt."
 	done
 
 GenericTrainerGruntM16:
 	generictrainer GRUNTM, 16, EVENT_BEAT_ROCKET_GRUNTM_16, GruntM16SeenText, GruntM16BeatenText
 
-	text "I don't even know"
-	line "where the traps"
-	cont "are planted."
+	text "Ich weiß nicht,"
+	line "wo die Fallen"
+	cont "aufgestellt sind."
 
-	para "You'll just have"
-	line "to collect your"
-	cont "courage and walk."
+	para "Du musst deinen"
+	line "ganzen Mut"
+	cont "zusammennehmen"
+	cont "und weitergehen."
 	done
 
 TeamRocketBaseB1FSecurityCamera:
 	jumpthistext
 
-	text "It's a Persian"
-	line "statue…"
+	text "Das ist eine"
+	line "Snobilikat-Statue…"
 
-	para "Its eyes are oddly"
-	line "shiny."
+	para "Es ist ein"
+	line "seltsamer Glanz"
+	cont "in ihren Augen."
 	done
 
 TeamRocketBaseB1FSecretSwitch:
@@ -603,8 +606,8 @@ TeamRocketBaseB1FSecretSwitch:
 .SecretSwitchOff:
 	jumpthisopenedtext
 
-	text "The switch is"
-	line "turned off."
+	text "Der Schalter"
+	line "steht auf Aus."
 	done
 
 SecurityCameraMovement1:
@@ -697,58 +700,65 @@ SecurityCameraMovement9:
 
 CameraGrunt1SeenText:
 	text "Hey!"
-	line "Intruder alert!"
+	line "Eindringling!"
+	cont "Alarm!"
 	done
 
 CameraGrunt1BeatenText:
-	text "Dang… I failed…"
+	text "Mist… Ich habe"
+	line "versagt…"
 	done
 
 CameraGrunt2SeenText:
-	text "It's my turn!"
-	line "There's no escape!"
+	text "Ich bin dran!"
+	line "Es gibt kein"
+	cont "Entkommen!"
 	done
 
 CameraGrunt2BeatenText:
-	text "Surveillance cams"
-	line "are in the #mon"
-	cont "statues."
+	text "In den #mon-"
+	line "Statuen sind Über-"
+	cont "wachungskameras"
+	cont "installiert."
 
-	para "We'll keep appear-"
-	line "ing until you trip"
-	cont "a secret switch."
+	para "Wir greifen weiter"
+	line "an, bis du einen"
+	cont "Geheimschalter"
+	cont "betätigst."
 	done
 
 RocketScientistJedSeenText:
-	text "This was once a"
-	line "ninja hideout."
+	text "Dies war einmal"
+	line "ein Ninjaversteck."
 
-	para "There are traps to"
-	line "confound intruders"
-	cont "like you."
+	para "Es wurden Fallen"
+	line "aufgestellt, um"
+	cont "Eindringlinge wie"
+	cont "dich zu verwirren."
 	done
 
 RocketScientistJedBeatenText:
-	text "I get it…"
+	text "Ich hab's…"
 	done
 
 GruntM16SeenText:
-	text "Heheh. Feeling"
-	line "lucky, punk?"
+	text "Hehe. Bist du"
+	line "glücklich, Punk?"
 
-	para "Go ahead, take"
-	line "another step."
+	para "Los! Mach einen"
+	line "weiteren Schritt."
 
-	para "We've got traps"
-	line "set in the floor!"
+	para "Wir haben Fallen"
+	line "in den Boden"
+	cont "eingebaut!"
 	done
 
 GruntM16BeatenText:
-	text "Kaboom!"
+	text "Kawumm!"
 	done
 
 
 TeamRocketBaseB1FSecretSwitchText:
-	text "A secret switch!"
-	line "Better press it."
+	text "Ein Geheimschal-"
+	line "ter! Betätige ihn!"
 	done

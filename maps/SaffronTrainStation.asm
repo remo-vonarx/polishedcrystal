@@ -110,75 +110,80 @@ SaffronMagnetTrainStationPlayerLeaveTrainAndEnterStationMovement:
 	step_end
 
 SaffronMagnetTrainStationOfficerTrainIsntOperatingText:
-	text "I'm sorry, but the"
-	line "Magnet Train isn't"
-	cont "operating now."
+	text "Es tut mir Leid,"
+	line "aber der Magnetzug"
+	cont "ist im Moment"
+	cont "nicht in Betrieb."
 	done
 
 SaffronMagnetTrainStationOfficerAreYouComingOnBoardText:
-	text "We'll soon depart"
-	line "for Goldenrod."
+	text "Abfahrt nach"
+	line "Dukatia City in"
+	cont "wenigen Minuten."
 
-	para "Are you coming on"
-	line "board?"
+	para "Steigst du auch"
+	line "ein?"
 	done
 
 SaffronMagnetTrainStationOfficerRightThisWayText:
-	text "May I see your"
-	line "rail pass, please?"
+	text "Darf ich bitte"
+	line "deinen Fahrschein"
+	cont "sehen?"
 
-	para "OK. Right this"
-	line "way, please."
+	para "Danke sehr. Hier"
+	line "lang, bitte."
 	done
 
 SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
-	text "Sorry, but you"
-	line "don't have a pass."
+	text "Es tut mir Leid,"
+	line "aber du hast"
+	cont "keinen Fahrschein."
 	done
 
 SaffronMagnetTrainStationOfficerHopeToSeeYouAgainText:
-	text "We hope to see you"
-	line "again."
+	text "Beehre uns"
+	line "bald wieder."
 	done
 
 SaffronMagnetTrainStationOfficerArrivedInSaffronText:
-	text "We have arrived in"
-	line "Saffron."
+	text "Ankunft in"
+	line "Saffronia City."
 
-	para "We hope to see you"
-	line "again."
+	para "Beehre uns"
+	line "bald wieder."
 	done
 
 
 SaffronMagnetTrainStationGymGuideText_ReturnedMachinePart:
-	text "Whew…"
+	text "Puh…"
 
-	para "How many times"
-	line "have I gone back"
+	para "Wie oft bin ich"
+	line "von Kanto nach"
 
-	para "and forth between"
-	line "Kanto and Johto?"
+	para "Johto und zurück"
+	line "gefahren?"
 	done
 
 SaffronMagnetTrainStationTeacherText:
-	text "Before the Magnet"
-	line "Train Station was"
+	text "Bevor der Magnet-"
+	line "zug-Bahnhof erbaut"
 
-	para "built, there was a"
-	line "house there."
+	para "wurde, stand dort"
+	line "ein Haus."
 
-	para "A little girl"
-	line "named Copycat used"
-	cont "to live there."
+	para "Ein kleines"
+	line "Mädchen, Nach-"
+	cont "ahmerin genannt,"
+	cont "lebte dort."
 	done
 
 SaffronMagnetTrainStationLassText:
-	text "Hi. Do you have a"
-	line "rail pass? I have"
+	text "Hi. Hast du einen"
+	line "Fahrschein? Ich"
 
-	para "one. All the peo-"
-	line "ple in Saffron who"
+	para "habe einen. Jeder"
+	line "in Saffronia, der"
 
-	para "ride the Magnet"
-	line "Train have passes."
+	para "mit dem Magnetzug"
+	line "fährt, hat einen."
 	done

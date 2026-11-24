@@ -179,12 +179,12 @@ Route27VeteranfScript:
 GenericTrainerPsychicGilbert:
 	generictrainer PSYCHIC_T, GILBERT, EVENT_BEAT_PSYCHIC_GILBERT, PsychicGilbertSeenText, PsychicGilbertBeatenText
 
-	text "With your skills,"
-	line "you'll do well at"
-	cont "the League."
+	text "Deine Fähigkeiten"
+	line "versprechen gute"
+	cont "Ergebnisse in der"
+	cont "#mon Liga."
 
-	para "That's what my"
-	line "premonition says."
+	para "Ich spüre das."
 	done
 
 TrainerBird_keeperJose1:
@@ -292,15 +292,17 @@ Bird_keeperJose1Script:
 GenericTrainerCooltrainermBlake:
 	generictrainer COOLTRAINERM, BLAKE, EVENT_BEAT_COOLTRAINERM_BLAKE, CooltrainermBlakeSeenText, CooltrainermBlakeBeatenText
 
-	text "If you prevail on"
-	line "this harsh trek,"
+	text "Wenn du das hier"
+	line "erfolgreich über-"
+	cont "stehst, wirst du"
 
-	para "the truth will be"
-	line "revealed!"
+	para "die Wahrheit"
+	line "erkennen!"
 
-	para "Heh, sorry, I just"
-	line "wanted to say"
-	cont "something cool."
+	para "Entschuldigung,"
+	line "ich wollte nur"
+	cont "etwas Geistreiches"
+	cont "sagen."
 	done
 
 GenericTrainerAceDuoJakeandbri1:
@@ -411,17 +413,19 @@ CooltrainerfReena1Script:
 GenericTrainerCooltrainerfMegan:
 	generictrainer COOLTRAINERF, MEGAN, EVENT_BEAT_COOLTRAINERF_MEGAN, CooltrainerfMeganSeenText, CooltrainerfMeganBeatenText
 
-	text "I'm checking out"
-	line "pre- and post-"
-	cont "evolution #mon."
+	text "Ich teste"
+	line "#mon in deren"
+	cont "verschiedenen"
+	cont "Entwicklungs-"
+	cont "stufen."
 
-	para "Evolution really"
-	line "does make #mon"
-	cont "stronger."
+	para "Entwickelte"
+	line "#mon sind"
+	cont "stärker."
 
-	para "But evolved forms"
-	line "also learn moves"
-	cont "later on."
+	para "Sie lernen die"
+	line "Attacken aber erst"
+	cont "mit höherem Level."
 	done
 
 Route27FisherStepLeftTwiceMovement:
@@ -431,29 +435,30 @@ Route27FisherStepLeftTwiceMovement:
 	step_end
 
 Route27FisherHeyText:
-	text "Hey!"
+	text "Heh!"
 	done
 
 Route27FisherText:
-	text "Do you know what"
-	line "you just did?"
+	text "Weißt du, was du"
+	line "gerade getan hast?"
 
-	para "You've taken your"
-	line "first step into"
-	cont "Kanto."
+	para "Du hast deinen"
+	line "ersten Schritt in"
+	cont "Kanto gemacht."
 
-	para "Check your #-"
-	line "gear Map and see."
+	para "Sieh auf die Karte"
+	line "in deinem #Com."
 	done
 
 CooltrainermBlakeSeenText:
-	text "You look pretty"
-	line "strong."
-	cont "Let me battle you!"
+	text "Du siehst sehr"
+	line "stark aus. Ich"
+	cont "will gegen dich"
+	cont "kämpfen!"
 	done
 
 CooltrainermBlakeBeatenText: ; text > text
-	text "Yow!"
+	text "Juhu!"
 	done
 
 AceDuoJakeandbri1SeenText:
@@ -478,76 +483,83 @@ AceDuoJakeandbri2BeatenText:
 	done
 
 CooltrainerfReena1SeenText:
-	text "You shouldn't"
-	line "underestimate the"
+	text "Du solltest die"
+	line "wilden #mon,"
 
-	para "wild #mon in"
-	line "these parts."
+	para "die hier leben,"
+	line "nicht unter-"
+	cont "schätzen."
 	done
 
 CooltrainerfReena1BeatenText:
-	text "Oh! You're much"
-	line "too strong!"
+	text "Oh! Du bist"
+	line "viel zu stark!"
 	done
 
 CooltrainerfReenaAfterBattleText:
-	text "You're just a kid,"
-	line "but you're not to"
+	text "Du bist zwar nur"
+	line "ein Kind, aber man"
 
-	para "be underestimated"
-	line "either."
+	para "darf dich auch"
+	line "nicht unter-"
+	cont "schätzen."
 	done
 
 CooltrainerfMeganSeenText:
-	text "It's rare to see"
-	line "anyone come here."
+	text "Hier kommen nur"
+	line "selten Menschen"
+	cont "vorbei."
 
-	para "Are you training"
-	line "on your own?"
+	para "Trainierst du"
+	line "vollkommen allein?"
 	done
 
 CooltrainerfMeganBeatenText:
-	text "Oh! You're really"
-	line "strong!"
+	text "Oh! Du bist"
+	line "wirklich stark!"
 	done
 
 PsychicGilbertSeenText:
-	text "Don't say a thing!"
+	text "Sag nichts!"
 
-	para "Let me guess what"
-	line "you're thinking."
+	para "Lass mich raten,"
+	line "woran du denkst."
 
 	para "Mmmmmmm…"
 
-	para "I got it! You're"
-	line "on the #mon"
-	cont "League challenge!"
+	para "Ich weiß! Du"
+	line "denkst darüber"
+	cont "nach, zur #mon"
+	cont "Liga zu gehen!"
 	done
 
 PsychicGilbertBeatenText:
-	text "You're too much!"
+	text "Das ist zuviel!"
 	done
 
 Bird_keeperJose1SeenText:
-	text "Tweet! Tweet!"
-	line "Tetweet!"
+	text "Zwitscher!"
+	line "Zwitscher!"
 	done
 
 Bird_keeperJose1BeatenText:
-	text "Tweet!"
+	text "Zwitscher!"
 	done
 
 BirdKeeperJose2AfterBattleText:
-	text "Bird Keepers like"
-	line "me mimic bird"
+	text "Vogel-Profis wie"
+	line "ich, imitieren"
 
-	para "whistles to com-"
-	line "mand #mon."
+	para "Vogelstimmen, um"
+	line "dadurch den"
+	cont "#mon Befehle"
+	cont "zu erteilen."
 	done
 
 TohjoFallsSignText:
-	text "Tohjo Falls"
+	text "Tohjo-Fälle"
 
-	para "The Link Between"
-	line "Kanto and Johto"
+	para "Die Verbindung"
+	line "zwischen"
+	cont "Kanto und Johto"
 	done

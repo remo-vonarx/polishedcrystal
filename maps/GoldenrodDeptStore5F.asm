@@ -50,10 +50,11 @@ GoldenrodDeptStore5FReceptionistScript:
 	ifgreater FRIEND_BALL_HAPPINESS - 1, .VeryHappy
 	jumpthisopenedtext
 
-	text "It's adorable!"
+	text "Oh, wie süß!"
 
-	para "You should teach"
-	line "it good TM moves."
+	para "Du solltest ihm"
+	line "gute TM-Attacken"
+	cont "beibringen."
 	done
 
 .VeryHappy:
@@ -66,11 +67,9 @@ GoldenrodDeptStore5FReceptionistScript:
 .EventIsOver:
 	jumpthisopenedtext
 
-	text "There are sure to"
-	line "be TMs that are"
-
-	para "just perfect for"
-	line "your #mon."
+	text "Es gibt für jedes"
+	line "#mon passen-"
+	cont "de TMs."
 	done
 
 GoldenrodDeptStore5FTwinScript:
@@ -94,17 +93,17 @@ GoldenrodDeptStore5FTwinScript:
 	done
 
 GoldenrodDeptStore5FReceptionistOhYourMonDotDotDotText:
-	text "Hello. Oh, your"
+	text "Hallo! Oh, dein"
 	line "#mon…"
 	done
 
 GoldenrodDeptStore5FReceptionistThisMoveShouldBePerfectText:
-	text "It's very attached"
-	line "to you."
+	text "Es hängt sehr an"
+	line "dir."
 
-	para "This move should"
-	line "be perfect for a"
-	cont "pair like you."
+	para "Diese Attacke"
+	line "passt genau zu"
+	cont "euch beiden."
 	done
 
 
@@ -125,29 +124,32 @@ MysteryGiftGirl_NoRoomText:
 	done
 
 GoldenrodDeptStore5FLassText:
-	text "On Sundays, a lady"
-	line "comes to check out"
-	cont "#mon."
+	text "Sonntags kommt"
+	line "eine Dame, um nach"
+	cont "den #mon zu"
+	cont "sehen."
 
-	para "She even gives"
-	line "away TMs!"
+	para "Sie verteilt sogar"
+	line "TMs!"
 	done
 
 GoldenrodDeptStore5FPokefanMText:
-	text "You can't rename a"
-	line "#mon you get in"
-	cont "a trade."
+	text "Ein #mon, das"
+	line "du durch Tausch"
+	cont "erhalten hast,"
+	cont "kannst du nicht"
+	cont "umbenennen."
 
-	para "The name is a re-"
-	line "flection of the"
+	para "Der Name spiegelt"
+	line "die Gefühle des"
 
-	para "original trainer's"
-	line "feelings for it."
+	para "Original-Trainers"
+	line "wieder."
 	done
 
 GoldenrodDeptStore5FDirectoryText:
-	text "Customize Your"
-	line "#mon"
+	text "Rüste deine #-"
+	line "mon auf."
 
-	para "5F TM Corner"
+	para "4S TM-Ecke"
 	done

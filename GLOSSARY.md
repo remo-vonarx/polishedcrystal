@@ -145,7 +145,11 @@ _Avoid_: Kris, Silver, Ralph
 
 **Place names**:
 Kristall's names for Crystal's places, in mixed case (NEUBORKIA → Neuborkia, SEE DES ZORNS → See des Zorns), with the ß back where Kristall's capitals write SS (Siegesstraße). Where Upstream uses today's English name, today's German one: Glockenturm (Bell Tower), Unterführung (Underground Path). Where Upstream keeps Crystal's, Kristall's: Digdas Höhle, Indigo Plateau, Ruhestätte (House of Souls, Kristall's sign). Chosen otherwise: Pokémon-Villa (today's name; Kristall and FireRed: Pokémon-Haus), M.S. Aqua (Fast Ship, named after the ship as in HeartGold/SoulSilver), Radioturm Lavandia (Kristall: Radioturm Lav.).
-_Avoid_: Zinnturm, Untergrund, Pokémon-Haus, Schnellboot, Digda-Höhle, Indigo-Plateau
+_Avoid_: Zinnturm, Untergrund, Pokémon-Haus, Schnellboot as the place, Digda-Höhle, Indigo-Plateau
+
+**Bronzeturm**:
+The Burned Tower's old name in both ROMs, as Kristall has it (Faithful: Brass Tower, Regular: Gong Tower).
+_Avoid_: Gongturm
 
 **Places from later games**:
 Their official German names: Glockenklangpfad, Felsklippentor, Felsschlundhöhle, Sinjoh-Ruinen and Trysteriumaltar (HeartGold/SoulSilver); Pokémon-Labor, Nabelfels and Ferneiland (FireRed/LeafGreen, Emerald); the Pokéwalker's routes Stürmische Küste, Holpriger Pfad, Gruselhöhle, Finstere Höhle, Malerische Küste, Lauschiger Wald, Sonniger Strand, Stille Höhle and Goldgelber Wald; the anime's Shamouti, Insel des Feuers, Insel des Eises, Insel der Blitze and Valencia Insel.
@@ -170,3 +174,44 @@ Fly's question on the Town Map, as Kristall writes it.
 
 **Kampffabrik**, **Event-Pokémon**:
 The place of capture in the summary for a Battle Factory rental and for an event Pokémon.
+
+## Inherited text
+
+**Inherited text**:
+A text whose English is Crystal's word for word. It has Kristall's German, with its words and line breaks; only names, terms and the case of capitals follow the Translation.
+_Avoid_: copied text
+
+**Kept capitals**:
+Kristall's capitals stay where Upstream's English shouts or stresses in capitals too (NICHT, HILFE, BIEP, the roaring man on Route 32), and in abbreviations (KP, AP, PC, TM, VM, DJ, TV, EG, ID, IQ, SZ, PKMN, ANGR, VERT, INIT).
+
+**PokéCom**:
+The Pokégear, as Kristall calls it (#COM).
+_Avoid_: Pokégear, Pokékom
+
+**PokéKom-Center**:
+The Pokémon Communication Center in Dukatia City, Kristall's #KOM-CENTER.
+_Avoid_: PokéCom-Center
+
+**PKMN-Arena**:
+A Gym in signs and dialogue where Kristall writes PKMN-ARENA; Arena alone where it does.
+_Avoid_: Pokémon-Arena
+
+**Schnellboot**:
+The Fast Ship as a common noun in dialogue (das Schnellboot, Schnellboot-Pier), as Kristall has it. The ship's name is M.S. Aqua.
+
+**nachfliegen**, **zurückfliegen**:
+Fly's verbs in dialogue, lowercase, where Kristall writes nachFLIEGEN.
+
+**Vogel-Profis**:
+The plural of the class Vogel-Profi in dialogue.
+_Avoid_: Vogelfänger
+
+**Mr. Psycho**:
+The psychic in Saffronia City, by Kristall's name on the sign of their house; the trainer class is Seher.
+
+**Flegmon-Ruten**, **Para-Heiler**:
+Items in dialogue follow today's spelling of their names.
+_Avoid_: Flegmonruten, Paraheiler
+
+**Semicolon**:
+The font has none: a semicolon in Kristall's text is a comma.

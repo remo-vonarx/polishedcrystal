@@ -21,15 +21,16 @@ Route43MahoganyGateOfficer:
 	iftrue_jumptextfaceplayer Route43MahoganyGateOfficerRocketsClearedText
 	jumpthistextfaceplayer
 
-	text "Only people headed"
-	line "up to Lake of Rage"
+	text "Hier kamen nur"
+	line "Wanderer vorbei,"
 
-	para "have been through"
-	line "here lately."
+	para "die auf dem Weg"
+	line "zum See des Zorns"
+	cont "waren."
 	done
 
 Route43MahoganyGateOfficerRocketsClearedText:
-	text "Nobody goes up to"
-	line "Lake of Rage these"
-	cont "days."
+	text "In letzter Zeit"
+	line "geht niemand mehr"
+	cont "zum See des Zorns."
 	done

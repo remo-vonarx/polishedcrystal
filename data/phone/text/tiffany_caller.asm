@@ -1,65 +1,68 @@
 TiffanyMonIsAdorableText:
-	text "My "
+	text "Mein "
 	text_ram wStringBuffer4
-	text "'s"
-	line "adorable, don't"
+	text ""
+	line "ist so bezaubernd,"
 
-	para "you think so?"
-	line "I always sleep"
+	para "nicht wahr?"
+	line "Ich schlafe immer"
 
-	para "with it--it's so"
-	line "fluffy and warm!"
+	para "mit ihm - es ist"
+	line "so weich und warm!"
 	done
 
 TiffanyDefeatedMonText:
-	text "Oh, and we had to"
-	line "battle a wild"
+	text "Oh, wir mussten"
+	line "vor kurzem gegen"
 
-	para ""
+	para "ein wildes"
+	line ""
 	text_ram wStringBuffer4
-	text " a while"
-	line "ago…"
+	text ""
+	cont "kämpfen…"
 
-	para "My Clefairy came"
-	line "close to fainting!"
+	para "Mein Piepi war"
+	line "fast besiegt!"
 
-	para "Isn't that awful?"
+	para "Schrecklich, oder?"
 
-	para "I hate those nasty"
+	para "Ich hasse diese"
 	line ""
 	text_ram wStringBuffer4
 	text "!"
 	done
 
 TiffanyLostAMonText:
-	text "Oh, and we had to"
-	line "battle a wild"
+	text "Oh, wir mussten"
+	line "vor kurzem gegen"
 
-	para ""
+	para "ein wildes"
+	line ""
 	text_ram wStringBuffer4
-	text " a while"
-	line "ago…"
+	text ""
+	cont "kämpfen…"
 
-	para "My Clefairy got"
-	line "frightened, so we"
+	para "Mein Piepi hat"
+	line "sich erschrocken"
 
-	para "ran away as fast"
-	line "as we could!"
+	para "und wir flohen so"
+	line "schnell wie wir"
+	cont "konnten!"
 
-	para "I just can't help"
-	line "feeling protective"
-	cont "of my Clefairy."
+	para "Ich muss mein"
+	line "Piepi einfach"
+	cont "beschützen."
 	done
 
 TiffanyBattleRematchText:
-	text "I know this might"
-	line "surprise you, but"
+	text "Ich weiß, das"
+	line "überrascht dich,"
 
-	para "would you like to"
-	line "battle?"
+	para "aber ich möchte"
+	line "kämpfen!"
 
-	para "I'll be waiting"
-	line "with Clefairy on"
+	para "Ich und mein Piepi"
+	line "sind hier:"
 	cont ""
 	text_ram wStringBuffer5
 	text "."
@@ -69,16 +72,16 @@ TiffanyItsAwfulText:
 	text_ram wStringBuffer4
 	text "!"
 
-	para "It's awful."
-	line "My Clefairy…"
+	para "Es ist furchtbar."
+	line "Mein Piepi…"
 
-	para "Huh? <PLAYER>?"
+	para "Hu? <PLAYER>?"
 
-	para "Oh, sorry! I was"
-	line "in a hurry, and I…"
+	para "Oh, sorry! Ich war"
+	line "in Eile und ich…"
 
-	para "I have to go!"
-	line "Bye-bye!"
+	para "Ich muss weg!"
+	line "Und tschüß!"
 	done
 
 TiffanyHangUpText:
@@ -86,51 +89,56 @@ TiffanyHangUpText:
 	done
 
 TiffanyFoundItemText:
-	text "I bought some Pink"
-	line "Bows at Goldenrod"
+	text "Ich kaufte einige"
+	line "rosa Bänder im"
 
-	para "Dept.Store for my"
-	line "Clefairy."
+	para "Kaufhaus von"
+	line "Dukatia City"
+	cont "für Piepi."
 
-	para "I got too many, so"
-	line "I'll give you one!"
+	para "Ich habe zu viele,"
+	line "darum gebe ich dir"
+	cont "eines."
 
-	para "Come collect it on"
+	para "Hole es dir hier:"
 	line ""
 	text_ram wStringBuffer5
 	text "."
 	done
 
 TiffanyNoItemText:
-	text "I love dressing up"
-	line "my Clefairy!"
+	text "Ich liebe es mein"
+	line "Piepi anzuziehen!"
 	done
 
 TiffanyAsleepText:
-	text "What's wrong?"
-	line "Can't you visit?"
+	text "Was ist los?"
+	line "Kannst du nicht"
+	cont "kommen?"
 
-	para "Clefairy got tired"
-	line "and fell asleep."
+	para "Piepi wurde müde"
+	line "und schlief ein."
 
-	para "I'm not sure if I"
-	line "can wake it up…"
+	para "Ich bin nicht"
+	line "sicher, ob ich es"
+	cont "aufwecken kann…"
 
-	para "Please hurry to"
+	para "Komme hierher:"
 	line ""
 	text_ram wStringBuffer5
 	text "!"
 	done
 
 TiffanyHurryText:
-	text "What's wrong?"
-	line "Can't you visit?"
+	text "Was ist los?"
+	line "Kommst du nicht"
+	cont "vorbei?"
 
-	para "I'm sure this will"
-	line "look good on your"
-	cont "Clefairy."
+	para "Ich bin sicher,"
+	line "es sieht gut an"
+	cont "deinem Piepi aus."
 
-	para "Please hurry to"
+	para "Komme hierher:"
 	line ""
 	text_ram wStringBuffer5
 	text "!"

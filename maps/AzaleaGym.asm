@@ -103,44 +103,47 @@ AzaleaGymBugsyScript:
 	done
 
 .SeenText:
-	text "I'm Bugsy!"
-	line "I never lose when"
+	text "Ich bin Kai!"
+	line "Ich verliere nie,"
 
-	para "it comes to bug"
-	line "#mon."
+	para "wenn es um Käfer-"
+	line "#mon geht."
 
-	para "My research is"
-	line "going to make me"
+	para "Meine Forschungen"
+	line "machen mich zu ei-"
+	cont "ner Autorität auf"
+	cont "diesem Gebiet!"
 
-	para "the authority on"
-	line "bug #mon!"
-
-	para "Let me demonstrate"
-	line "what I've learned"
-	cont "from my studies."
+	para "Lass mich demonst-"
+	line "rieren, was ich"
+	cont "gelernt habe!"
 	done
 
 .BeatenText:
-	text "Whoa, amazing!"
-	line "You're an expert"
-	cont "on #mon!"
+	text "Erstaunlich!"
+	line "Du bist ein wahrer"
+	cont "#mon-Experte!"
 
-	para "My research isn't"
-	line "complete yet."
+	para "Meine Forschungen"
+	line "sind noch nicht"
+	cont "abgeschlossen."
 
-	para "OK, you win. Take"
-	line "this Badge."
+	para "O.K., du gewinnst."
+	line "Nimm diesen Orden."
 	done
 
 .AfterText:
-	text "Bug #mon are"
-	line "deep. There are"
+	text "Käfer-#mon"
+	line "sind ein weites"
 
-	para "many mysteries to"
-	line "be explored."
+	para "Gebiet. Es gibt"
+	line "noch viele Geheim-"
+	cont "nisse zu er-"
+	cont "gründen."
 
-	para "Study your favor-"
-	line "ites thoroughly."
+	para "Studiere deine"
+	line "Lieblinge gründ-"
+	cont "lich!"
 	done
 
 AzaleaGymGuyScript:
@@ -170,79 +173,87 @@ AzaleaGymGuyScript:
 	done
 
 .WinText:
-	text "Well done! That"
-	line "was a great clash"
+	text "Gut gemacht! Das"
+	line "war ein Muster-"
+	cont "kampf zweier ta-"
+	cont "lentierter, junger"
+	cont "Trainer."
 
-	para "of talented young"
-	line "trainers."
-
-	para "With people like"
-	line "you, the future of"
-	cont "#mon is bright!"
+	para "Mit Leuten wie dir"
+	line "sieht die Zukunft"
+	cont "der #mon rosig"
+	cont "aus!"
 	done
 
 GenericTrainerBug_catcherBenny:
 	generictrainer BUG_CATCHER, BENNY, EVENT_BEAT_BUG_CATCHER_BENNY, .SeenText, .BeatenText
 
-	text "#mon become"
-	line "stronger if they"
-	cont "evolve. Really!"
+	text "#mon werden"
+	line "stärker, wenn sie"
+	cont "sich entwickeln."
+	cont "Wirklich!"
 	done
 
 .SeenText:
-	text "Bug #mon evolve"
-	line "young. So they get"
+	text "Käfer-#mon"
+	line "entwickeln sich"
 
-	para "stronger that much"
-	line "faster."
+	para "sehr früh. Das"
+	line "heißt, dass sie"
+
+	para "auch schnell stär-"
+	line "ker werden."
 	done
 
 .BeatenText:
-	text "Just evolving"
-	line "isn't enough!"
+	text "Entwicklung allein"
+	line "ist nicht genug!"
 	done
 
 GenericTrainerBug_catcherAl:
 	generictrainer BUG_CATCHER, AL, EVENT_BEAT_BUG_CATCHER_AL, .SeenText, .BeatenText
 
-	text "They're so cool,"
-	line "but most girls"
+	text "Sie sind so cool,"
+	line "aber die meisten"
 
-	para "don't like bug"
-	line "#mon."
+	para "Mädchen mögen kei-"
+	line "ne Käfer-#mon."
 
-	para "I don't know why…"
+	para "Ich weiß nicht,"
+	line "wieso…"
 	done
 
 .SeenText:
-	text "Bug #mon are"
-	line "cool and tough!"
+	text "Käfer-#mon"
+	line "sind cool und"
 
-	para "I'll prove it to"
-	line "you!"
+	para "tough! Ich beweise"
+	line "es dir!"
 	done
 
 .BeatenText:
-	text "You proved how"
-	line "tough you are…"
+	text "Du hast bewiesen,"
+	line "wie tough du bist…"
 	done
 
 GenericTrainerBug_catcherJosh:
 	generictrainer BUG_CATCHER, JOSH, EVENT_BEAT_BUG_CATCHER_JOSH, .SeenText, .BeatenText
 
-	text "I guess I should"
-	line "teach them better"
-	cont "moves…"
+	text "Vielleicht sollte"
+	line "ich sie ein wenig"
+	cont "besser trainieren…"
 	done
 
 .SeenText:
-	text "You saved all the"
-	line "Slowpoke? Whew,"
-	cont "you're mighty!"
+	text "Du hast die Fleg-"
+	line "mon gerettet? Oh"
+	cont "Mann, bist du"
+	cont "stark!"
 
-	para "But my grown-up"
-	line "#mon are pretty"
-	cont "tough too!"
+	para "Aber meine ausge-"
+	line "wachsenen #mon"
+	cont "sind auch sehr"
+	cont "stark!"
 	done
 
 .BeatenText:
@@ -252,14 +263,14 @@ GenericTrainerBug_catcherJosh:
 GenericTrainerTwinsAmyandmimi1:
 	generictrainer TWINS, AMYANDMIMI1, EVENT_BEAT_TWINS_AMY_AND_MAY, .SeenText, TrainerTwinsAmyandmimiBeatenText
 
-	text "Amy: You're"
-	line "really strong!"
+	text "Eva: Du bist"
+	line "wirklich stark!"
 	done
 
 .SeenText:
-	text "Amy: Hi! Are you"
-	line "challenging the"
-	cont "Leader? No way!"
+	text "Eva: Hi! Forderst"
+	line "du den Leiter"
+	cont "heraus? Unmöglich!"
 	done
 
 GenericTrainerTwinsAmyandmimi2:

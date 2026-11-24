@@ -81,8 +81,8 @@ VermilionPortSailorAtGangwayScript:
 VermilionPortAlreadyRodeScript:
 	jumpthisopenedtext
 
-	text "Sorry. You can't"
-	line "board now."
+	text "Du kannst jetzt"
+	line "nicht an Bord."
 	done
 
 VermilionPortWalkUpToShipScript:
@@ -205,67 +205,68 @@ VermilionPortApproachFastShipRightMovement:
 	step_end
 
 VermilionPortDepartingText:
-	text "We're departing"
-	line "soon. Please get"
-	cont "on board."
+	text "Wir legen bald ab."
+	line "Komm bitte"
+	cont "an Bord."
 	done
 
 
 VermilionPortAskBoardingText:
-	text "Welcome to Fast"
-	line "Ship S.S.Aqua."
+	text "Willkommen auf "
+	line "dem Schnellboot"
+	cont "M.S. Aqua."
 
-	para "Will you be board-"
-	line "ing today?"
+	para "Trittst du heute"
+	line "deine Reise an?"
 	done
 
 VermilionPortAskTicketText:
-	text "May I see your"
-	line "S.S.Ticket?"
+	text "Zeige mir bitte"
+	line "dein Bootsticket!"
 	done
 
 VermilionPortComeAgainText:
-	text "We hope to see you"
-	line "again!"
+	text "Komm jederzeit"
+	line "wieder vorbei!"
 	done
 
 VermilionPortSSTicketText:
-	text "<PLAYER> flashed"
-	line "the S.S.Ticket."
+	text "<PLAYER> zeigt"
+	line "das Bootsticket."
 
-	para "That's it."
-	line "Thank you!"
+	para "In Ordnung."
+	line "Dankeschön!"
 	done
 
 VermilionPortNoTicketText:
-	text "<PLAYER> tried to"
-	line "show the S.S."
-	cont "Ticket…"
+	text "<PLAYER> sucht"
+	line "das Boots-"
+	cont "ticket…"
 
-	para "…But no Ticket!"
+	para "…Kein Ticket!"
 
-	para "Sorry!"
-	line "You may board only"
+	para "Tut mir Leid!"
+	line "Du darfst nur"
 
-	para "if you have an"
-	line "S.S.Ticket."
+	para "mit Ticket"
+	line "an Bord."
 	done
 
 VermilionPortSailMondayText:
-	text "The Fast Ship will"
-	line "sail on Wednesday."
+	text "Wir legen nächsten"
+	line "Mittwoch ab."
 	done
 
 VermilionPortSailSundayText:
-	text "The Fast Ship will"
-	line "sail next Sunday."
+	text "Wir legen nächsten"
+	line "Sonntag ab."
 	done
 
 VermilionPortSuperNerdText:
-	text "You came from"
+	text "Du kommst aus"
 	line "Johto?"
 
-	para "I hear many rare"
-	line "#mon live over"
-	cont "there."
+	para "Dort sollen viele"
+	line "seltene #mon"
+	cont "leben."
 	done

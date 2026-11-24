@@ -84,8 +84,8 @@ TrainerPokefanmDerek1:
 .WantsPikachu:
 	jumpthisopenedtext
 
-	text "Pikachu is it!"
-	line "Don't you agree?"
+	text "Pikachu muss sein!"
+	line "Was meinst du?"
 	done
 
 .AskNumber1:
@@ -115,11 +115,12 @@ TrainerPokefanmDerek1:
 GenericTrainerPokefanfRuth:
 	generictrainer POKEFANF, RUTH, EVENT_BEAT_POKEFANF_RUTH, PokefanfRuthSeenText, PokefanfRuthBeatenText
 
-	text "Do you know about"
-	line "baby #mon?"
+	text "Weißt du über"
+	line "Baby-#mon"
+	cont "Bescheid?"
 
-	para "I bet they're just"
-	line "adorable!"
+	para "Die sind bestimmt"
+	line "super-süß!"
 	done
 
 Route39CowgirlAnnieScript:
@@ -247,26 +248,29 @@ Route39CowgirlAnnieScript:
 GenericTrainerSailorEugene:
 	generictrainer SAILOR, EUGENE, EVENT_BEAT_SAILOR_EUGENE, SailorEugeneSeenText, SailorEugeneBeatenText
 
-	text "My #mon were"
-	line "caught and raised"
-	cont "overseas."
+	text "Meine #mon"
+	line "wurden eingefangen"
+	cont "und sind im Aus-"
+	cont "land aufgezogen"
+	cont "worden."
 
-	para "They're my compan-"
-	line "ions on those long"
-	cont "voyages."
+	para "Sie begleiten mich"
+	line "auf meinen langen"
+	cont "Reisen."
 	done
 
 GenericTrainerPsychicNorman:
 	generictrainer PSYCHIC_T, NORMAN, EVENT_BEAT_PSYCHIC_NORMAN, PsychicNormanSeenText, PsychicNormanBeatenText
 
-	text "You know how #-"
-	line "mon have different"
-	cont "abilities?"
+	text "Du weißt von den"
+	line "unterschiedlichen"
+	cont "#-Fähigkeiten?"
 
-	para "People are like"
-	line "that too. Every-"
-	cont "one has different"
-	cont "potential."
+	para "Bei den Menschen"
+	line "ist das ganz"
+	cont "ähnlich. Jeder hat"
+	cont "unterschiedliche"
+	cont "Talente."
 	done
 
 TrainerPokefanfJaime:
@@ -289,105 +293,116 @@ TrainerPokefanfJaime:
 .Beaten:
 	jumpthisopenedtext
 
-	text "I met my Meowth at"
-	line "night, right here"
-	cont "on Route 39."
+	text "Ich traf Mauzi"
+	line "nachts, genau hier"
+	cont "auf Route 39."
 
-	para "I'm not sure why,"
-	line "but it seems to"
+	para "Ich weiß nicht"
+	line "warum, aber es"
 
-	para "like it when I"
-	line "train here."
+	para "scheint es zu"
+	line "mögen, wenn ich"
+	cont "hier trainiere."
 
-	para "It seems to become"
-	line "friendlier by"
+	para "Es scheint mich"
+	line "durch das Training"
 
-	para "training here than"
-	line "anywhere else."
+	para "hier mehr zu"
+	line "mögen, als wenn"
+
+	para "ich woanders"
+	line "trainiere."
 	done
 
 .NotNight:
 	jumpthisopenedtext
 
-	text "Ufufufu… I hope it"
-	line "gets dark soon."
+	text "Ufu… Ich hoffe, es"
+	line "wird bald dunkel."
 	done
 
 Route39MiltankText:
-	text "Miltank: Mooo!"
+	text "Miltank: Muh!"
 	done
 
 SailorEugeneSeenText:
-	text "I just got back to"
-	line "Olivine."
+	text "Ich bin gerade"
+	line "wieder in Oliviana"
+	cont "angekommen."
 
-	para "So how about a"
-	line "#mon battle?"
+	para "Wie steht es nun"
+	line "mit dem #mon-"
+	cont "Kampf?"
 	done
 
 SailorEugeneBeatenText:
-	text "Awaaargh!"
+	text "Aah!"
 	done
 
 PokefanmDerek1SeenText:
-	text "This is a good"
-	line "time to brag about"
-	cont "my Pikachu!"
+	text "Genau der richtige"
+	line "Moment, um mit"
+	cont "Pikachu anzugeben!"
 	done
 
 PokefanmDerek1BeatenText:
-	text "I had no time to"
-	line "show off Pikachu…"
+	text "Ich hatte keine"
+	line "Zeit, mit Pikachu"
+	cont "zu prahlen…"
 	done
 
 PokefanMDerekText_NotBragging:
-	text "I'm not listening"
-	line "to your bragging!"
+	text "Ich höre mir deine"
+	line "Prahlerei gar"
+	cont "nicht an!"
 
-	para "We # Fans have"
-	line "a policy of not"
+	para "Wir #-Fans"
+	line "haben ein Gelübde,"
 
-	para "listening to other"
-	line "people brag!"
+	para "das uns verbietet,"
+	line "Leuten beim"
+	cont "Prahlen zuzuhören!"
 	done
 
 PokefanfRuthSeenText:
-	text "Such darling"
-	line "#mon."
+	text "Was für süße"
+	line "#mon!"
 
-	para "Let's show our"
-	line "#mon together"
-	cont "at the same time."
+	para "Zeigen wir uns"
+	line "gegenseitig unsere"
+	cont "#mon, und zwar"
+	cont "gleichzeitig!"
 	done
 
 PokefanfRuthBeatenText:
-	text "I don't mind"
-	line "losing."
+	text "Mir macht es"
+	line "nichts aus,"
+	cont "zu verlieren."
 	done
 
 
 PsychicNormanSeenText:
-	text "Let me see what"
-	line "your #mon are"
-	cont "capable of."
+	text "Zeig doch mal, was"
+	line "deine #mon"
+	cont "drauf haben."
 	done
 
 PsychicNormanBeatenText:
-	text "Ooh, your #mon"
-	line "have potential."
+	text "He, deine #mon"
+	line "sind sehr fähig!"
 	done
 
 
 PokefanfJaimeSeenText:
-	text "You came at just"
-	line "the right time."
+	text "Du kommst gerade"
+	line "recht."
 
-	para "Let's battle."
+	para "Auf in den Kampf."
 	done
 
 PokefanfJaimeBeatenText:
-	text "Oh, how disap-"
-	line "pointing…"
+	text "Oh, wie"
+	line "ernüchternd…"
 	done
 
 
@@ -433,8 +448,8 @@ Route39HikerText:
 Route39SignText:
 	text "Route 39"
 
-	para "Olivine City -"
-	line "Ecruteak City"
+	para "Oliviana City -"
+	line "Teak City"
 	done
 
 Route39AdvancedTips1Text:
@@ -473,23 +488,26 @@ RuggedRoadAheadSignText:
 	done
 
 MoomooFarmSignText:
-	text "Moomoo Farm"
+	text "Kuhmuh-Farm"
 
-	para "Enjoy Our Fresh"
-	line "and Tasty Milk"
+	para "Unsere Bekömmliche"
+	line "Milch Ist Sehr"
+	cont "Erfrischend"
 	done
 
 Route39TrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
+	line "Benutze Kopfnuss,"
 
-	para "Use Headbutt on"
-	line "trees to shake"
-	cont "#mon out."
+	para "um #mon"
+	line "aus den Bäumen"
+	cont "zu schütteln."
 
-	para "Different kinds of"
-	line "#mon drop out"
-	cont "of trees."
+	para "Auf den Bäumen"
+	line "leben verschiedene"
+	cont "Arten von #mon."
 
-	para "Use Headbutt on"
-	line "any tree you see!"
+	para "Benutze Kopfnuss"
+	line "an jedem Baum, den"
+	cont "du siehst!"
 	done

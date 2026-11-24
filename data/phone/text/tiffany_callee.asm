@@ -1,78 +1,81 @@
 TiffanyAnswerPhoneText:
-	text "Yes? This is"
+	text "Ja? Hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 
 	para "Oh, <PLAYER>."
-	line "Good morning."
+	line "Guten Morgen."
 	done
 
 TiffanyAnswerPhoneDayText:
-	text "Yes? This is"
+	text "Ja? Hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 
 	para "Oh, <PLAYER>."
-	line "Hello."
+	line "Hallo."
 	done
 
 TiffanyAnswerPhoneNiteText:
-	text "Yes? This is"
+	text "Ja? Hier ist"
 	line ""
 	text_ram wStringBuffer3
 	text "."
 
-	para "Oh, <PLAYER>, good"
-	line "evening."
+	para "Oh, <PLAYER>,"
+	line "guten Abend."
 	done
 
 TiffanyGreetText:
-	text "Is this <PLAYER>?"
+	text "Spreche ich mit"
+	line "<PLAYER>?"
 
-	para "Good morning. This"
-	line "is "
+	para "Guten Morgen. Hier"
+	line "ist "
 	text_ram wStringBuffer3
 	text "."
 	done
 
 TiffanyGreetDayText:
-	text "Is this <PLAYER>?"
+	text "Spreche ich mit"
+	line "<PLAYER>?"
 
-	para "Hi, it's "
+	para ""
 	text_ram wStringBuffer3
-	text "."
+	text " hier."
 	done
 
 TiffanyGreetNiteText:
-	text "Is this <PLAYER>?"
+	text "Spreche ich mit"
+	line "<PLAYER>?"
 
-	para "Good evening. This"
-	line "is "
+	para "Guten Abend. Hier"
+	line "ist "
 	text_ram wStringBuffer3
 	text "."
 	done
 
 TiffanyGenericText:
-	text "Are your #mon"
-	line "doing well?"
+	text "Sind deine #mon"
+	line "in Ordnung?"
 
-	para "I hope you take"
-	line "them to a #mon"
-	cont "Center every day."
+	para "Ich hoffe, du"
+	line "bringst sie täg-"
+	cont "lich in ein"
+	cont "#mon-Center."
 
-	para "Don't push them"
-	line "too hard."
+	para "Übertreib es "
+	line "nicht."
 
-	para "My "
+	para "Mein "
 	text_ram wStringBuffer4
-	text " is"
-	line "cute and lively"
+	text ""
+	line "ist süß und leb-"
+	cont "haft, weil ich es"
 
-	para "precisely because"
-	line "I take it to a"
-
-	para "#mon Center"
-	line "every day."
+	para "täglich in ein"
+	line "#mon-Center"
+	cont "bringe."
 	done

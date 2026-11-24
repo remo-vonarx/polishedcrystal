@@ -16,19 +16,21 @@ OlivinePunishmentSpeechHouse_MapScriptHeader:
 	object_event  5,  5, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 2, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, OlivinePunishmentSpeechHouseDaughterText, -1
 
 OlivinePunishmentSpeechHouseDadText:
-	text "Along the way to"
-	line "Cianwood, there"
+	text "Auf dem Weg nach"
+	line "Anemonia City"
 
-	para "are four deserted"
-	line "islands."
+	para "siehst du vier"
+	line "verlassene Inseln."
 
-	para "Bad kids are taken"
-	line "to the islands as"
-	cont "punishment!"
+	para "Ungezogene Kinder"
+	line "werden zur Bestra-"
+	cont "fung auf diese In-"
+	cont "seln geschickt!"
 	done
 
 OlivinePunishmentSpeechHouseDaughterText:
-	text "Whenever I get in"
-	line "trouble, Daddy"
-	cont "always scares me."
+	text "Wenn ich ungezogen"
+	line "bin, macht mir Pa-"
+	cont "pa mit gruseligen"
+	cont "Geschichten Angst."
 	done

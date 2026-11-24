@@ -54,8 +54,8 @@ GoldenrodGymWhitneyScript:
 
 	para "Waaaaah!"
 
-	para "…Snivel, hic…"
-	line "…You meanie!"
+	para "…Schnüff, japs…"
+	line "…Du bist gemein!"
 	done
 
 .StoppedCrying:
@@ -92,8 +92,9 @@ TrainerLassCathy:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Do my #mon"
-	line "think I'm cute?"
+	text "Denken meine #-"
+	line "mon, dass ich"
+	cont "niedlich bin?"
 	done
 
 WhitneyCriesScript:
@@ -134,17 +135,20 @@ GenericTrainerSrandjrJoandcath2:
 GenericTrainerBeautyVictoria:
 	generictrainer BEAUTY, VICTORIA, EVENT_BEAT_BEAUTY_VICTORIA, BeautyVictoriaSeenText, BeautyVictoriaBeatenText
 
-	text "Wow, you must be"
-	line "good to beat me!"
-	cont "Keep it up!"
+	text "Wow, du musst gut"
+	line "sein, wenn du es"
+	cont "schaffst, mich zu"
+	cont "schlagen. Mach"
+	cont "weiter so!"
 	done
 
 GenericTrainerBeautySamantha:
 	generictrainer BEAUTY, SAMANTHA, EVENT_BEAT_BEAUTY_SAMANTHA, BeautySamanthaSeenText, BeautySamanthaBeatenText
 
-	text "I taught Meowth"
-	line "moves for taking"
-	cont "on any type…"
+	text "Ich habe Mauzi die"
+	line "unterschiedlich-"
+	cont "sten Attacken bei-"
+	cont "gebracht…"
 	done
 
 GoldenrodGymGuyScript:
@@ -211,14 +215,14 @@ WhitneyBeforeText:
 	done
 
 WhitneyShouldntBeSoSeriousText:
-	text "Sob…"
+	text "Schluchz…"
 
 	para "…Waaaaaaah!"
-	line "You're mean!"
+	line "Du bist gemein!"
 
-	para "You shouldn't be"
-	line "so serious! You…"
-	cont "you child, you!"
+	para "Du solltest nicht"
+	line "so ernst sein! Du,"
+	cont "du Kind, du!"
 	done
 
 
@@ -245,24 +249,28 @@ WhitneyPlainBadgeText:
 	done
 
 WhitneyGoodCryText:
-	text "Ah, that was a"
-	line "good cry!"
+	text "Ah, die Flennerei"
+	line "hat gut getan! Be-"
 
-	para "Come for a visit"
-	line "again! Bye-bye!"
+	para "suche mich mal"
+	line "wieder! Tschüssi!"
 	done
 
 LassCathySeenText:
-	text "Don't let my"
-	line "#mon's cute"
+	text "Lass dich nicht"
+	line "von dem netten"
 
-	para "looks fool you."
-	line "They can whip you!"
+	para "Äußeren meiner"
+	line "#mon täuschen."
+
+	para "Sie können dich"
+	line "platt machen."
 	done
 
 LassCathyBeatenText:
-	text "Darn… I thought"
-	line "you were weak…"
+	text "Verflixt… Ich"
+	line "dachte, du wärest"
+	cont "schwach…"
 	done
 
 SrandjrJoandcath1SeenText:
@@ -296,14 +304,16 @@ SrandjrJoandcath2BeatenText:
 	done
 
 JoWhitneyCriesText:
-	text "Oh, no. You made"
-	line "Whitney cry."
+	text "Oh nein. Du hast"
+	line "Bianka zum Weinen"
+	cont "gebracht."
 
-	para "It's OK. She'll"
-	line "stop soon. She"
+	para "Keine Sorge. Sie"
+	line "beruhigt sich bald"
 
-	para "always cries when"
-	line "she loses."
+	para "wieder. Sie weint"
+	line "immer, wenn sie"
+	cont "verloren hat."
 	done
 
 BeautyVictoriaSeenText:
@@ -315,23 +325,25 @@ BeautyVictoriaSeenText:
 	done
 
 BeautyVictoriaBeatenText:
-	text "Let's see… Oops,"
-	line "it's over?"
+	text "Mal sehen… Ups,"
+	line "schon vorbei?"
 	done
 
 BeautySamanthaSeenText:
-	text "Give it your best"
-	line "shot, or I'll take"
-	cont "you down!"
+	text "Schlag ordentlich"
+	line "zu, sonst werde"
+	cont "ich es tun!"
 	done
 
 BeautySamanthaBeatenText:
-	text "No! Oh, Meowth,"
-	line "I'm so sorry!"
+	text "Nein! Oh, Mauzi,"
+	line "es tut mir Leid!"
 	done
 
 GoldenrodGymGuyWinText:
-	text "You won? Great! I"
-	line "was busy admiring"
-	cont "the ladies here."
+	text "Du hast gewonnen?"
+	line "Toll! Ich war da-"
+	cont "mit beschäftigt,"
+	cont "die hübschen Damen"
+	cont "hier zu bewundern."
 	done

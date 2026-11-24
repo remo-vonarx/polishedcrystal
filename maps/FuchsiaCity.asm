@@ -82,12 +82,13 @@ FuchsiaCityYoungsterText:
 	done
 
 FuchsiaCityPokefanMText:
-	text "Koga's daughter"
-	line "succeeded him as"
+	text "Kogas Tochter ist"
+	line "jetzt Arena-"
+	cont "leiterin, nachdem"
 
-	para "the Gym Leader"
-	line "after he joined"
-	cont "the Elite Four."
+	para "ihr Vater den Top"
+	line "Vier beigetreten"
+	cont "ist."
 	done
 
 FuchsiaCityTeacherText:
@@ -119,19 +120,20 @@ FuchsiaCityPokefanFText:
 	done
 
 FuchsiaCitySignText:
-	text "Fuchsia City"
+	text "Fuchsania City"
 
-	para "Behold! It's"
-	line "Passion Pink!"
+	para "Sieh nur! Die"
+	line "Rosarote"
+	cont "Lieblichkeit!"
 	done
 
 FuchsiaGymSignText:
-	text "Fuchsia City"
-	line "#mon Gym"
-	cont "Leader: Janine"
+	text "PKMN-Arena von"
+	line "Fuchsania City"
+	cont "Leitung: Janina"
 
-	para "The Poisonous"
-	line "Ninja Master"
+	para "Die Giftige"
+	line "Ninja-Meisterin"
 	done
 
 FuchsiaZooSignText:
@@ -150,8 +152,8 @@ FuchsiaAquariumSignText:
 	done
 
 WardensHomeSignText:
-	text "Safari Zone"
-	line "Warden's Home"
+	text "Safari-Zone"
+	line "Haus des WÄRTERs"
 	done
 
 SafariZoneClosedSignText:
@@ -164,10 +166,13 @@ SafariZoneClosedSignText:
 	done
 
 NoLitteringSignText:
-	text "No littering."
+	text "Verunreinigung des"
+	line "Parks ist"
+	cont "verboten."
 
-	para "Please take your"
-	line "waste with you."
+	para "Hinterlasse"
+	line "bitte keinen"
+	cont "Abfall."
 	done
 
 FuchsiaCityZooDratiniSign:
@@ -335,10 +340,11 @@ FuchsiaCityZooLaprasSign:
 	done
 
 FuchsiaCityCarefulSwimmingSignText:
-	text "Please be careful"
-	line "if you are swim-"
-	cont "ming to Seafoam"
-	cont "Islands."
+	text "Sei auf der Hut,"
+	line "wenn du zu den"
+	cont "Seeschauminseln"
+	cont "schwimmst."
 
-	para "Fuchsia Police"
+	para "Ordnungsamt von"
+	line "Fuchsania City"
 	done

@@ -152,5 +152,5 @@ endc
 	db "Cancel@"
 
 GoldenrodHoneyHouseButterfreeText:
-	text "Butterfree: Freeh!"
+	text "Smettbo: Boh!"
 	done

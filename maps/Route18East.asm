@@ -19,46 +19,49 @@ Route18East_MapScriptHeader:
 GenericTrainerBird_keeperBoris:
 	generictrainer BIRD_KEEPER, BORIS, EVENT_BEAT_BIRD_KEEPER_BORIS, Bird_keeperBorisSeenText, Bird_keeperBorisBeatenText
 
-	text "Since you're so"
-	line "strong, it must be"
-	cont "fun to battle."
+	text "Da du so stark"
+	line "bist, muss es"
+	cont "Spaß machen, gegen"
+	cont "dich zu kämpfen."
 	done
 
 GenericTrainerBird_keeperBob:
 	generictrainer BIRD_KEEPER, BOB, EVENT_BEAT_BIRD_KEEPER_BOB, Bird_keeperBobSeenText, Bird_keeperBobBeatenText
 
-	text "If you don't have"
-	line "a Bicycle, you're"
+	text "Wenn du kein"
+	line "Fahrrad hast,"
 
-	para "not allowed to use"
-	line "the shortcut."
+	para "darfst du die"
+	line "Abkürzung nicht"
+	cont "benutzen."
 	done
 
 Bird_keeperBorisSeenText:
-	text "If you're looking"
-	line "for #mon, you"
+	text "Wenn du nach"
+	line "#mon suchst,"
 
-	para "have to look in"
-	line "the tall grass."
+	para "musst du ins"
+	line "hohe Gras gehen."
 	done
 
 Bird_keeperBorisBeatenText:
-	text "Ayieee!"
+	text "Yippi!"
 	done
 
 Bird_keeperBobSeenText:
-	text "Cycling Road is a"
-	line "quick shortcut to"
-	cont "Celadon."
+	text "Der Radweg ist"
+	line "eine schnelle"
+	cont "Abkürzung nach"
+	cont "Prismania City."
 	done
 
 Bird_keeperBobBeatenText:
-	text "…Whew!"
+	text "…Uff!"
 	done
 
 Route18SignText:
 	text "Route 18"
 
-	para "Celadon City -"
-	line "Fuchsia City"
+	para "Prismania City -"
+	line "Fuchsania City"
 	done

@@ -70,7 +70,7 @@ ValenciaIslandGoneFishingSignText:
 	done
 
 ValenciaIslandLockedDoorText:
-	text "It's locked…"
+	text "Es ist verriegelt…"
 	done
 
 IvysLabSignText:

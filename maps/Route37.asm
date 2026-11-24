@@ -57,10 +57,13 @@ GenericTrainerTwinsToriandtil2:
 GenericTrainerPsychicGreg:
 	generictrainer PSYCHIC_T, GREG, EVENT_BEAT_PSYCHIC_GREG, PsychicGregSeenText, PsychicGregBeatenText
 
-	text "Putting #mon to"
-	line "sleep or paralyz-"
-	cont "ing them are good"
-	cont "battle techniques."
+	text "Im Kampf stellt"
+	line "es eine gute"
+	cont "Taktik dar, die"
+	cont "gegnerischen #-"
+	cont "mon in Schlaf zu"
+	cont "versetzen oder sie"
+	cont "zu paralysieren."
 	done
 
 SunnyScript:
@@ -113,9 +116,10 @@ SunnyDoneScript:
 SunnyNotSundayScript:
 	jumpthisopenedtext
 
-	text "Sunny: Isn't today"
-	line "Sunday?"
-	cont "Um… I forgot!"
+	text "Sonnfried: Ist"
+	line "heute nicht Sonn-"
+	cont "tag? Äh… Das habe"
+	cont "ich vergessen!"
 	done
 
 GenericTrainerBeautyCallie:
@@ -158,43 +162,48 @@ TwinsToriandtil2SeenText:
 	done
 
 PsychicGregSeenText:
-	text "#mon can't do a"
-	line "thing if they are"
-	cont "asleep."
+	text "#mon können"
+	line "nicht agieren,"
+	cont "wenn sie"
+	cont "schlafen."
 
-	para "I'll show you how"
-	line "scary that is!"
+	para "Ich werde dir zei-"
+	line "gen, wie furcht-"
+	cont "erregend das ist!"
 	done
 
 PsychicGregBeatenText:
-	text "I lost. That's"
-	line "pretty sad…"
+	text "Ich habe"
+	line "verloren. Wie"
+	cont "betrüblich…"
 	done
 
 MeetSunnyText:
-	text "Sunny: Hi!"
+	text "Sonnfried: Hi!"
 
-	para "I'm Sunny of Sun-"
-	line "day, meaning it's"
-	cont "Sunday today!"
+	para "Ich bin Sonnfried"
+	line "von Sonntag. Soll"
+	cont "heißen, heute ist"
+	cont "Sonntag!"
 	done
 
 SunnyGivesGiftText:
-	text "I was told to give"
-	line "you this if I saw"
-	cont "you!"
+	text "Man hat mir auf-"
+	line "getragen, dir das"
+	cont "zu geben, wenn ich"
+	cont "dich treffe!"
 	done
 
 
 SunnySundayText:
-	text "Sunny: My sisters"
-	line "and brothers are"
-	cont "Monica, Tuscany,"
-	cont "Wesley, Arthur,"
-	cont "Frieda and Santos."
+	text "Sonnfried: Meine"
+	line "Geschwister heißen"
+	cont "Monja, Dietlinde,"
+	cont "Mitko, Donatus,"
+	cont "Frieda und Samson."
 
-	para "They're all older"
-	line "than me!"
+	para "Sie sind alle"
+	line "älter als ich!"
 	done
 
 

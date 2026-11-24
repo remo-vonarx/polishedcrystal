@@ -39,17 +39,18 @@ CeruleanPokeCenter1FGymGuyScript:
 	iftrue_jumptextfaceplayer .MetricText
 	jumpthistextfaceplayer
 
-	text "The Magnet Train"
-	line "travels at over"
+	text "Mit einer Ge-"
+	line "schwindigkeit von"
 
-	para "340 mph. It goes"
-	line "between Kanto and"
+	para "über 550km/h reist"
+	line "der Magnetzug in"
 
-	para "Johto in almost no"
-	line "time at all."
+	para "null Komma nichts"
+	line "zwischen Kanto und"
+	cont "Johto hin und her."
 
-	para "It really makes"
-	line "Johto accessible."
+	para "Dadurch ist Johto"
+	line "ganz nah."
 	done
 
 .MetricText:
@@ -67,13 +68,15 @@ CeruleanPokeCenter1FGymGuyScript:
 	done
 
 CeruleanPokeCenter1FSuperNerdText:
-	text "For battles, I'd"
-	line "much rather use"
+	text "Ich kämpfe lieber"
+	line "mit #mon, die"
 
-	para "#mon I've been"
-	line "raising, even if"
+	para "ich trainiert"
+	line "habe, auch wenn"
 
-	para "they're weaker"
-	line "than some newly"
-	cont "caught #mon."
+	para "sie schwach sind,"
+	line "als mit #mon,"
+
+	para "die ich neu"
+	line "gefangen habe."
 	done

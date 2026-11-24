@@ -25,30 +25,32 @@ GoldenrodUndergroundWarehouse_MapScriptHeader:
 GenericTrainerGruntM24:
 	generictrainer GRUNTM, 24, EVENT_BEAT_ROCKET_GRUNTM_24, GruntM24SeenText, GruntM24BeatenText
 
-	text "Team Rocket will"
-	line "keep going, wait-"
-	cont "ing for the return"
-	cont "of Giovanni."
+	text "Team Rocket wird"
+	line "weitermachen."
+	cont "Sie warten auf die"
+	cont "Rückkehr von"
+	cont "Giovanni."
 
-	para "We'll do whatever"
-	line "it takes."
+	para "Wir werden alles"
+	line "dafür geben."
 	done
 
 GenericTrainerGruntM14:
 	generictrainer GRUNTM, 14, EVENT_BEAT_ROCKET_GRUNTM_14, GruntM14SeenText, GruntM14BeatenText
 
-	text "I lost…"
+	text "Ich habe verloren…"
 
-	para "Please forgive me,"
+	para "Bitte vergib mir,"
 	line "Giovanni!"
 	done
 
 GenericTrainerGruntM15:
 	generictrainer GRUNTM, 15, EVENT_BEAT_ROCKET_GRUNTM_15, GruntM15SeenText, GruntM15BeatenText
 
-	text "Hyuck-hyuck-hyuck!"
-	line "That was a blast!"
-	cont "I'll remember you!"
+	text "Hiuck-hiuck-hiuck!"
+	line "Das war grandios!"
+	cont "Ich werde dich"
+	cont "nicht vergessen!"
 	done
 
 GoldenrodUndergroundWarehouseDirectorScript:
@@ -68,91 +70,96 @@ GoldenrodUndergroundWarehouseDirectorScript:
 	jumpopenedtext DirectorAfterText
 
 GruntM24SeenText:
-	text "How did you get"
-	line "this far?"
+	text "Wie bist du"
+	line "so weit gekommen?"
 
-	para "I guess it can't"
-	line "be helped. I'll"
-	cont "dispose of you."
+	para "Ich denke, es gibt"
+	line "keine andere"
+	cont "Lösung, um dich"
+	cont "loszuwerden."
 	done
 
 GruntM24BeatenText:
-	text "I got disposed of…"
+	text "Er wurde mich los…"
 	done
 
 GruntM14SeenText:
-	text "You're not going"
-	line "any farther!"
+	text "Weiter kommst"
+	line "du nicht!"
 
-	para "I don't show mercy"
-	line "to my enemies, not"
-	cont "even brats!"
+	para "Ich habe niemals"
+	line "Mitleid mit meinen"
+	cont "Gegnern, auch"
+	cont "nicht mit Kindern!"
 	done
 
 GruntM14BeatenText:
-	text "Blast it!"
+	text "Verdammt!"
 	done
 
 GruntM15SeenText:
-	text "Hyuck-hyuck-hyuck!"
-	line "I remember you!"
+	text "Hiuck-hiuck-hiuck!"
+	line "Ich kenne dich!"
 
-	para "You got me good"
-	line "at our hideout!"
+	para "Du hast mich in"
+	line "unserem Versteck"
+	cont "richtig vermöbelt!"
 	done
 
 GruntM15BeatenText:
-	text "Hyuck-hyuck-hyuck!"
-	line "So, that's how?"
+	text "Hiuck-hiuck-hiuck!"
+	line "So ist das also?"
 	done
 
 DirectorIntroText:
-	text "Director: Who?"
-	line "What? You came to"
-	cont "rescue me?"
+	text "Intendant: Wie?"
+	line "Was? Du willst"
+	cont "mich retten?"
 
-	para "Thank you!"
+	para "Danke!"
 
-	para "The Radio Tower!"
+	para "Der Radioturm!"
 
-	para "What's happening"
-	line "there?"
+	para "Was geschieht"
+	line "dort?"
 
-	para "Taken over by Team"
-	line "Rocket?"
+	para "Von Team Rocket"
+	line "besetzt?"
 
-	para "Here. Take this"
-	line "Card Key."
+	para "Hier, nimm diesen"
+	line "Türöffner."
 	done
 
 DirectorCardKeyText:
-	text "Director: Use that"
-	line "to open the shut-"
-	cont "ters on 3F."
+	text "Intendant: Damit"
+	line "kannst du den"
+	cont "Rollladen im 2S"
+	cont "öffnen."
 	done
 
 DirectorAfterText:
-	text "I'm begging you to"
-	line "help."
+	text "Ich flehe dich an,"
+	line "uns zu helfen."
 
-	para "There's no telling"
-	line "what they'll do if"
+	para "Niemand weiß, was"
+	line "sie vorhaben, wenn"
 
-	para "they control the"
-	line "transmitter."
+	para "sie erst Kontrolle"
+	line "über den Trans-"
+	cont "mitter erlangen."
 
-	para "They may even be"
-	line "able to control"
+	para "Sie könnten sogar"
+	line "mit einem Spezial-"
+	cont "signal alle #-"
+	cont "mon kontrollieren!"
 
-	para "#mon using a"
-	line "special signal!"
+	para "Bitte hilf mir!"
+	line "Du bist meine"
+	cont "letzte Rettung."
 
-	para "You're the only"
-	line "one I can call on."
+	para "Bitte rette den"
+	line "Radioturm…"
 
-	para "Please save the"
-	line "Radio Tower…"
-
-	para "And all the #-"
-	line "mon nationwide!"
+	para "Und alle #mon"
+	line "in diesem Land!"
 	done

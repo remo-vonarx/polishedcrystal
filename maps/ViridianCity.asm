@@ -45,11 +45,12 @@ ViridianCityCoffeeGramps:
 	iffalse_jumpopenedtext ViridianCityCoffeeGrampsDoubtedText
 	jumpthisopenedtext
 
-	text "Good, good. Yes, I"
-	line "was something out"
+	text "Also gut. Ja, ich"
+	line "war wirklich etwas"
 
-	para "of the ordinary,"
-	line "let me tell you!"
+	para "Besonderes, das"
+	line "kann ich dir"
+	cont "sagen!"
 	done
 
 ViridianCityGrampsNearGym:
@@ -57,15 +58,17 @@ ViridianCityGrampsNearGym:
 	iftrue_jumptextfaceplayer ViridianCityGrampsNearGymBlueReturnedText
 	jumpthistextfaceplayer
 
-	text "This Gym didn't"
-	line "have a Leader"
-	cont "until recently."
+	text "Bis vor kurzem"
+	line "gab es in dieser"
+	cont "PKMN-Arena"
+	cont "keinen Leiter."
 
-	para "A young man from"
-	line "Pallet became the"
+	para "Ein junger Mann"
+	line "aus Alabastia ist"
 
-	para "Leader, but he's"
-	line "often away."
+	para "hier der Leiter"
+	line "geworden, aber er"
+	cont "ist oft unterwegs."
 	done
 
 ViridianCityDreamEaterFisher:
@@ -110,44 +113,50 @@ ViridianCityTutorDreamEaterScript:
 	done
 
 ViridianCityCoffeeGrampsQuestionText:
-	text "Hey, kid! I just"
-	line "had a double shot"
+	text "He, Kurzbein! Ich"
+	line "hatte gerade einen"
 
-	para "of espresso, and"
-	line "I am wired!"
+	para "doppelten Espresso"
+	line "und ich bin"
+	cont "total aufgedreht!"
 
-	para "I need to talk to"
-	line "someone, so you'll"
-	cont "have to do!"
+	para "Ich brauche jetzt"
+	line "jemanden zum"
+	cont "Reden und zwar"
+	cont "dich!"
 
-	para "I might not look"
-	line "like much now, but"
+	para "Man sieht es mir"
+	line "jetzt vielleicht"
 
-	para "I was an expert at"
-	line "catching #mon."
+	para "nicht mehr an,"
+	line "aber ich war ein"
+	cont "Experte im Fangen"
+	cont "von #mon."
 
-	para "Do you believe me?"
+	para "Glaubst du mir?"
 	done
 
 
 ViridianCityCoffeeGrampsDoubtedText:
-	text "What? You little"
-	line "whelp!"
+	text "Was? Du kleiner"
+	line "Frechdachs!"
 
-	para "If I were just a"
-	line "bit younger, I'd"
+	para "Wenn ich etwas"
+	line "jünger wäre, würde"
 
-	para "show you a thing"
-	line "or two. Humph!"
+	para "ich dir schon das"
+	line "eine oder andere"
+	cont "zeigen! Grummel."
 	done
 
 
 ViridianCityGrampsNearGymBlueReturnedText:
-	text "Are you going to"
-	line "battle the Leader?"
+	text "Wirst du den"
+	line "Arenaleiter"
+	cont "herausfordern?"
 
-	para "Good luck to you."
-	line "You'll need it."
+	para "Viel Glück! Du"
+	line "wirst es brauchen."
 	done
 
 ViridianCityDreamEaterFisherText:
@@ -193,11 +202,11 @@ Text_ViridianCityTutorRefused: ; text > text
 
 
 ViridianCityYoungsterText:
-	text "I heard that there"
-	line "are many items on"
+	text "Ich habe gehört,"
+	line "dass man viele"
 
-	para "the ground in"
-	line "Viridian Forest."
+	para "Items im Vertania-"
+	line "Wald findet."
 	done
 
 ViridianCityYoungster2Text:
@@ -215,19 +224,19 @@ ViridianCityYoungster2Text:
 	done
 
 ViridianCitySignText:
-	text "Viridian City"
+	text "Vertania City"
 
-	para "The Eternally"
-	line "Green Paradise"
+	para "Das Immergrüne"
+	line "Paradies"
 	done
 
 ViridianGymSignText:
-	text "Viridian City"
-	line "#mon Gym"
-	cont "Leader: …"
+	text "PKMN-Arena von"
+	line "Vertania City"
+	cont "Leitung: …"
 
-	para "The rest of the"
-	line "text is illegible…"
+	para "Der Rest des Tex-"
+	line "tes ist unlesbar…"
 	done
 
 ViridianCityTrainerTips1Text:
@@ -257,8 +266,9 @@ ViridianCityTrainerTips2Text:
 	done
 
 TrainerHouseSignText:
-	text "Trainer House"
+	text "Trainer-Haus"
 
-	para "The Club for Top"
-	line "Trainer Battles"
+	para "Der Club, in dem"
+	line "Top-Trainer"
+	cont "kämpfen"
 	done

@@ -143,107 +143,124 @@ Route41MarlonScript:
 GenericTrainerSwimmerfKaylee:
 	generictrainer SWIMMERF, KAYLEE, EVENT_BEAT_SWIMMERF_KAYLEE, SwimmerfKayleeSeenText, SwimmerfKayleeBeatenText
 
-	text "There's supposed"
-	line "to be a big #-"
-	cont "mon deep beneath"
-	cont "Whirl Islands."
+	text "Tief versteckt"
+	line "auf den Strudel-"
+	cont "inseln soll ein"
+	cont "großes #mon"
+	cont "leben."
 
-	para "I wonder what it"
-	line "could be?"
+	para "Was für ein #-"
+	line "mon das wohl ist?"
 	done
 
 GenericTrainerSwimmerfSusie:
 	generictrainer SWIMMERF, SUSIE, EVENT_BEAT_SWIMMERF_SUSIE, SwimmerfSusieSeenText, SwimmerfSusieBeatenText
 
-	text "Wasn't there a hit"
-	line "song about a boy"
-	cont "riding a Lapras?"
+	text "Gab es da nicht"
+	line "einmal einen Hit,"
+	cont "der von einem"
+	cont "Jungen handelte,"
+	cont "der auf einem"
+	cont "Lapras ritt?"
 	done
 
 GenericTrainerSwimmerfDenise:
 	generictrainer SWIMMERF, DENISE, EVENT_BEAT_SWIMMERF_DENISE, SwimmerfDeniseSeenText, SwimmerfDeniseBeatenText
 
-	text "A sunburn is the"
-	line "worst for skin."
+	text "Ein Sonnenbrand"
+	line "ist sehr schlecht"
+	cont "für die Haut."
 
-	para "But I don't use a"
-	line "sunblock."
+	para "Aber ich benutze"
+	line "keine Sonnencreme."
 
-	para "I won't pollute"
-	line "the water."
+	para "Ich möchte das"
+	line "Wasser nicht"
+	cont "verschmutzen."
 	done
 
 GenericTrainerSwimmerfKara:
 	generictrainer SWIMMERF, KARA, EVENT_BEAT_SWIMMERF_KARA, SwimmerfKaraSeenText, SwimmerfKaraBeatenText
 
-	text "I heard roars from"
-	line "deep inside the"
-	cont "Islands."
+	text "Ich habe tief aus"
+	line "dem Inneren der"
+	cont "Strudelinseln ein"
+	cont "Brüllen gehört."
 	done
 
 GenericTrainerSwimmerfWendy:
 	generictrainer SWIMMERF, WENDY, EVENT_BEAT_SWIMMERF_WENDY, SwimmerfWendySeenText, SwimmerfWendyBeatenText
 
-	text "The clusters of"
-	line "Staryu light up"
-	cont "at the same time."
+	text "In der Gruppe"
+	line "fangen"
+	cont "Sterndu an"
+	cont "zu leuchten."
 
-	para "It's so beautiful,"
-	line "it's scary."
+	para "Das ist"
+	line "wunderschön und"
+	cont "beängstigend"
+	cont "zugleich."
 	done
 
 GenericTrainerSwimmermCharlie:
 	generictrainer SWIMMERM, CHARLIE, EVENT_BEAT_SWIMMERM_CHARLIE, SwimmermCharlieSeenText, SwimmermCharlieBeatenText
 
-	text "Isn't it relaxing"
-	line "just floating like"
-	cont "this?"
+	text "Ist es nicht"
+	line "sehr entspannend,"
+	cont "sich auf dem"
+	cont "Wasser treiben"
+	cont "zu lassen?"
 	done
 
 GenericTrainerSwimmermGeorge:
 	generictrainer SWIMMERM, GEORGE, EVENT_BEAT_SWIMMERM_GEORGE, SwimmermGeorgeSeenText, SwimmermGeorgeBeatenText
 
-	text "It's so far to"
-	line "Cianwood."
+	text "Anemonia City ist"
+	line "noch so weit weg."
 
-	para "But it's no easy"
-	line "return trip to"
-	cont "Olivine either."
+	para "Aber der Rückweg"
+	line "nach Oliviana City"
+	cont "ist auch nicht"
+	cont "viel kürzer."
 
-	para "What should I do?"
+	para "Was soll ich tun?"
 	done
 
 GenericTrainerSwimmermBerke:
 	generictrainer SWIMMERM, BERKE, EVENT_BEAT_SWIMMERM_BERKE, SwimmermBerkeSeenText, SwimmermBerkeBeatenText
 
-	text "It was a dark and"
-	line "stormy night…"
+	text "Die Nacht war"
+	line "dunkel und ein"
+	cont "Sturm wütete…"
 
-	para "I saw this giant"
-	line "#mon flying"
-	cont "from the islands."
+	para "Da sah ich dieses"
+	line "riesige #mon"
+	cont "über den Inseln"
+	cont "aufsteigen."
 
-	para "It was scattering"
-	line "feathers from its"
-	cont "silver wings."
+	para "Aus seinen"
+	line "silbernen Flügeln"
+	cont "fielen ein paar"
+	cont "Federn."
 	done
 
 GenericTrainerSwimmermKirk:
 	generictrainer SWIMMERM, KIRK, EVENT_BEAT_SWIMMERM_KIRK, SwimmermKirkSeenText, SwimmermKirkBeatenText
 
-	text "The currents keep"
-	line "me from reaching"
-	cont "that island."
+	text "Die Strömung ist"
+	line "zu stark. Ich kann"
+	cont "die Insel nicht"
+	cont "erreichen."
 	done
 
 GenericTrainerSwimmermMathew:
 	generictrainer SWIMMERM, MATHEW, EVENT_BEAT_SWIMMERM_MATHEW, SwimmermMathewSeenText, SwimmermMathewBeatenText
 
-	text "A secret about"
-	line "Whirl Islands…"
+	text "Ein Geheimnis"
+	line "der Strudelinseln…"
 
-	para "It's pitch-black"
-	line "inside!"
+	para "Es ist kohlraben-"
+	line "schwarz darinnen!"
 	done
 
 GenericTrainerSwimmermLewis:
@@ -257,64 +274,69 @@ GenericTrainerSwimmermLewis:
 	done
 
 SwimmermCharlieSeenText:
-	text "The water's warm"
-	line "here. I'm loose"
-	cont "and limber."
+	text "Das Wasser ist"
+	line "schön warm. Ich"
+	cont "bin also sehr"
+	cont "locker und gelenk."
 
-	para "Sure, I'll take"
-	line "you on!"
+	para "Natürlich trete"
+	line "ich gegen dich an!"
 	done
 
 SwimmermCharlieBeatenText:
-	text "Yikes! I've got"
-	line "prune skin!"
+	text "Oje! Ich habe eine"
+	line "Gänsehaut!"
 	done
 
 SwimmermGeorgeSeenText:
-	text "I'm a bit tired."
-	line "If I win, lend me"
-	cont "your #mon."
+	text "Ich bin etwas"
+	line "müde. Wenn ich"
+	cont "gewinne, leihst du"
+	cont "mir dein #mon."
 	done
 
 SwimmermGeorgeBeatenText:
-	text "Pant, pant…"
+	text "Keuch, japs…"
 	done
 
 SwimmermBerkeSeenText:
-	text "See those islands"
-	line "that are blocked"
-	cont "by whirlpools?"
+	text "Siehst du diese"
+	line "Inseln, die von"
+	cont "den Strudeln"
+	cont "blockiert werden?"
 
-	para "There just has to"
-	line "be a secret!"
+	para "Dort gibt es"
+	line "bestimmt ein"
+	cont "Geheimnis!"
 	done
 
 SwimmermBerkeBeatenText:
-	text "What's the secret"
-	line "to your strength?"
+	text "Was ist das"
+	line "Geheimnis deiner"
+	cont "Stärke?"
 	done
 
 SwimmermKirkSeenText:
-	text "The waves are wild"
-	line "here."
+	text "Hier gibt es hohe"
+	line "Wellen."
 
-	para "They tire you out"
-	line "while you swim."
+	para "Das macht dich"
+	line "schnell müde."
 	done
 
 SwimmermKirkBeatenText:
-	text "I'm beat!"
+	text "Ich bin besiegt!"
 	done
 
 SwimmermMathewSeenText:
-	text "Are you seeking"
-	line "the secrets of"
-	cont "Whirl Islands?"
+	text "Suchst du die"
+	line "Geheimnisse der"
+	cont "Strudelinseln?"
 	done
 
 SwimmermMathewBeatenText:
-	text "Ooh, you've got"
-	line "great endurance!"
+	text "Ach. Du hast viel"
+	line "Ausdauer!"
 	done
 
 SwimmermLewisSeenText:
@@ -328,32 +350,35 @@ SwimmermLewisBeatenText:
 	done
 
 SwimmerfKayleeSeenText:
-	text "I'm on my way to"
-	line "Whirl Islands."
+	text "Ich bin auf dem"
+	line "Weg zu den"
+	cont "Strudelinseln."
 
-	para "I'm going explor-"
-	line "ing with friends."
+	para "Ich gehe mit"
+	line "meinen Kameraden"
+	cont "auf Erkundungs-"
+	cont "reise."
 	done
 
 SwimmerfKayleeBeatenText:
-	text "Is that how you do"
-	line "it?"
+	text "Ist es so richtig?"
 	done
 
 SwimmerfSusieSeenText:
-	text "You look so ele-"
-	line "gant, riding your"
-	cont "#mon."
+	text "Du gleitest so"
+	line "elegant auf deinem"
+	cont "#mon dahin."
 	done
 
 SwimmerfSusieBeatenText:
-	text "I'm crushed…"
+	text "Ich bin"
+	line "geschlagen…"
 	done
 
 SwimmerfDeniseSeenText:
-	text "The weather is so"
-	line "beautiful, I'm in"
-	cont "a daze!"
+	text "Das Wetter ist so"
+	line "herrlich. Ich bin"
+	cont "richtig benommen!"
 	done
 
 SwimmerfDeniseBeatenText:
@@ -361,28 +386,32 @@ SwimmerfDeniseBeatenText:
 	done
 
 SwimmerfKaraSeenText:
-	text "If you need to"
-	line "rest, just tread"
-	cont "water."
+	text "Wenn du eine Pause"
+	line "brauchst, dann"
+	cont "halte deinen Kopf"
+	cont "über Wasser und"
+	cont "paddle mit den"
+	cont "Füßen."
 
-	para "You'll get your"
-	line "wind back, so you"
+	para "Auf diese Weise"
+	line "legst du eine"
 
-	para "can keep on going"
-	line "strong."
+	para "Ruhepause ein und"
+	line "sammelst Energie."
 	done
 
 SwimmerfKaraBeatenText:
-	text "Oh! You have more"
-	line "energy than I do."
+	text "Oh! Du bist aus-"
+	line "geruhter als ich."
 	done
 
 SwimmerfWendySeenText:
-	text "At night, Staryu"
-	line "gather near the"
-	cont "water's surface."
+	text "Nachts sammeln"
+	line "sich Sterndu"
+	cont "nahe der Wasser-"
+	cont "oberfläche."
 	done
 
 SwimmerfWendyBeatenText:
-	text "Oh, dear…"
+	text "Oje…"
 	done

@@ -275,25 +275,29 @@ FisherTully1Script:
 GenericTrainerHikerBenjamin:
 	generictrainer HIKER, BENJAMIN, EVENT_BEAT_HIKER_BENJAMIN, HikerBenjaminSeenText, HikerBenjaminBeatenText
 
-	text "Losing feels in-"
-	line "significant if you"
+	text "Schaut man auf,"
+	line "in dieses überwäl-"
+	cont "tigend schöne Blau"
 
-	para "look up at the big"
-	line "sky!"
+	para "des Himmels, dann"
+	line "verliert eine"
+	cont "Niederlage völlig"
+	cont "an Bedeutung!"
 	done
 
 GenericTrainerPokemaniacShane:
 	generictrainer POKEMANIAC, SHANE, EVENT_BEAT_POKEMANIAC_SHANE, PokemaniacShaneSeenText, PokemaniacShaneBeatenText
 
-	text "You're working on"
-	line "a #dex?"
+	text "Du erstellst einen"
+	line "#dex?"
 
-	para "Wow, you must know"
-	line "some pretty rare"
+	para "Wow, du kennst"
+	line "bestimmt einige"
+	cont "sehr seltene"
 	cont "#mon!"
 
-	para "May I please see"
-	line "it. Please?"
+	para "Darf ich bitte mal"
+	line "eines sehen?"
 	done
 
 MovementData_Route42LyraApproach4:
@@ -397,48 +401,54 @@ Route42LyraWhirlpoolText:
 	done
 
 FisherTully1SeenText:
-	text "Let me demonstrate"
-	line "the power of the"
-	cont "#mon I caught!"
+	text "Jetzt demonstriere"
+	line "ich dir die Kraft"
+	cont "des #mon,"
+	cont "das ich gefangen"
+	cont "habe!"
 	done
 
 FisherTully1BeatenText:
-	text "What? That's not"
-	line "right."
+	text "Was? Das kann"
+	line "nicht sein."
 	done
 
 FisherTullyAfterBattleText:
-	text "I want to become"
-	line "the trainer Champ"
+	text "Mit dem #mon,"
+	line "das ich gefangen"
 
-	para "using the #mon"
-	line "I caught."
+	para "habe, möchte ich"
+	line "der Champ der"
+	cont "Trainer werden."
 
-	para "That's the best"
-	line "part of fishing!"
+	para "Das ist das Beste"
+	line "am Angeln!"
 	done
 
 HikerBenjaminSeenText:
-	text "Ah, it's good to"
-	line "be outside!"
-	cont "I feel so free!"
+	text "Ach, ist das"
+	line "schön, im Freien"
+	cont "zu sein! Ich fühle"
+	cont "mich so frei!"
 	done
 
 HikerBenjaminBeatenText:
-	text "Gahahah!"
+	text "Hahaha!"
 	done
 
 PokemaniacShaneSeenText:
-	text "HEY!"
+	text "HEH!"
 
-	para "This is my secret"
-	line "place! Get lost,"
-	cont "you outsider!"
+	para "Das ist mein"
+	line "Geheimversteck!"
+	cont "Verschwinde, du"
+	cont "Außenseiter!"
 	done
 
 PokemaniacShaneBeatenText:
-	text "I should have used"
-	line "my Moon Stone…"
+	text "Ich hätte meinen"
+	line "Mondstein benutzen"
+	cont "sollen…"
 	done
 
 Route42OfficerText:
@@ -456,27 +466,27 @@ Route42OfficerText:
 Route42Sign1Text:
 	text "Route 42"
 
-	para "Ecruteak City -"
-	line "Mahogany Town"
+	para "Teak City -"
+	line "Mahagonia City"
 	done
 
 MtMortarSign1Text:
-	text "Mt.Mortar"
+	text "Kesselberg"
 
-	para "Waterfall Cave"
-	line "Inside"
+	para "Wasserfall-Höhle"
+	line "Geradeaus"
 	done
 
 MtMortarSign2Text:
-	text "Mt.Mortar"
+	text "Kesselberg"
 
-	para "Waterfall Cave"
-	line "Inside"
+	para "Wasserfall-Höhle"
+	line "Voraus"
 	done
 
 Route42Sign2Text:
 	text "Route 42"
 
-	para "Ecruteak City -"
-	line "Mahogany Town"
+	para "Teak City -"
+	line "Mahagonia City"
 	done

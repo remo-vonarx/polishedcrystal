@@ -171,41 +171,46 @@ CeladonCityFisherText:
 	done
 
 CeladonCityPoliwrathText:
-	text "Poliwrath: Croak!"
+	text "Quappo: Quaak!"
 	done
 
 CeladonCityTeacher1Text:
-	text "I lost at the slot"
-	line "machines again…"
+	text "Ich habe schon"
+	line "wieder bei dem"
 
-	para "We girls also play"
-	line "the slots now."
+	para "Spielautomaten"
+	line "verloren…"
 
-	para "You should check"
-	line "them out too."
+	para "Wir Mädchen"
+	line "spielen auch an"
+
+	para "den Automaten."
+	line "Versuche es doch"
+	cont "selbst mal."
 	done
 
 CeladonCityGramps1Text:
-	text "Grimer have been"
-	line "appearing lately."
+	text "Hier sind vor"
+	line "kurzem Sleima"
+	cont "aufgetaucht."
 
-	para "See that pond out"
-	line "in front of the"
+	para "Siehst du den"
+	line "Teich da vor dem"
 
-	para "house? Grimer live"
-	line "there now."
+	para "Haus? Dort leben"
+	line "jetzt Sleima."
 
-	para "Where did they"
-	line "come from? This is"
-	cont "a serious problem…"
+	para "Wo kommen sie her?"
+	line "Das ist ein"
+	cont "echtes Problem…"
 	done
 
 CeladonCityGramps2Text:
-	text "Nihihi! This Gym"
-	line "is great! Only"
+	text "Hihihi! Diese"
+	line "PKMN-Arena ist"
 
-	para "girls are allowed"
-	line "here!"
+	para "toll! Sie ist nur"
+	line "für Mädchen!"
 	done
 
 CeladonCityPicnickerText:
@@ -248,38 +253,40 @@ CeladonCityYoungster2Text:
 	done
 
 CeladonCityTeacher2Text:
-	text "Celadon Dept.Store"
-	line "has the biggest"
+	text "Das Einkaufs-"
+	line "zentrum in"
 
-	para "and best selection"
-	line "of merchandise."
+	para "Prismania City"
+	line "bietet die größte"
 
-	para "If you can't get"
-	line "it there, you"
+	para "und beste Auswahl"
+	line "an Artikeln."
 
-	para "can't get it any-"
-	line "where."
+	para "Was du da nicht"
+	line "findest, wirst"
 
-	para "Gee… I sound like"
-	line "a sales clerk."
+	para "du nirgends"
+	line "finden."
+
+	para "Herrje… Ich klinge"
+	line "wie ein Vertreter."
 	done
 
 CeladonCityLassText_PCC:
-	text "I love being"
-	line "surrounded by tall"
-	cont "buildings!"
+	text "Ich liebe es, von"
+	line "hohen Gebäuden"
+	cont "umgeben zu sein!"
 
-	para "Isn't it true that"
-	line "Goldenrod #mon"
+	para "Stimmt es, dass"
+	line "man das #mon-"
+	cont "Center in Dukatia"
+	cont "vergrößert hat?"
 
-	para "Center was made"
-	line "much, much bigger?"
+	para "Das ist toll! Ich"
+	line "wünschte, wir"
 
-	para "That is so neat!"
-	line "I wish we had a"
-
-	para "place like that in"
-	line "Kanto…"
+	para "hätten solch einen"
+	line "Ort in Kanto…"
 	done
 
 CeladonCityLassText:
@@ -291,19 +298,20 @@ CeladonCityLassText:
 	done
 
 CeladonCitySignText:
-	text "Celadon City"
+	text "Prismania City"
 
-	para "The City of"
-	line "Rainbow Dreams"
+	para "Die Stadt der"
+	line "Regenbogen-Träume"
 	done
 
 CeladonGymSignText:
-	text "Celadon City"
-	line "#mon Gym"
-	cont "Leader: Erika"
+	text "PKMN-Arena von"
+	line "Prismania City"
 
-	para "The Nature-Loving"
-	line "Princess"
+	para "Leitung: Erika"
+	line "Die Prinzessin mit"
+
+	para "Herz für die Natur"
 	done
 
 CeladonUniversitySignText:
@@ -314,9 +322,11 @@ CeladonUniversitySignText:
 	done
 
 CeladonCityDeptStoreSignText:
-	text "Find What You"
-	line "Need at Celadon"
-	cont "Dept.Store!"
+	text "Im Einkaufszentrum"
+	line "von Prismania City"
+	cont "Findest Du Alles,"
+	cont "was Dein Herz"
+	cont "Begehrt!"
 	done
 
 CeladonCityHomeDecorStoreSignText:

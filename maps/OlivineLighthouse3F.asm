@@ -151,49 +151,57 @@ Bird_keeperTheoScript:
 	iftrue_jumptextfaceplayer Bird_keeperTheoFinalText
 	jumpthistextfaceplayer
 
-	text "How the heck do"
-	line "you go up?"
+	text "Wie, zum Geier,"
+	line "bist du hier"
+	cont "hochgekommen?"
 
-	para "I want to visit"
-	line "the sick #mon,"
+	para "Ich möchte das"
+	line "kranke #mon"
 
-	para "but I can't get up"
-	line "there…"
+	para "besuchen, aber ich"
+	line "schaffe es nicht"
+	cont "bis nach oben…"
 	done
 
 GenericTrainerGentlemanPreston:
 	generictrainer GENTLEMAN, PRESTON, EVENT_BEAT_GENTLEMAN_PRESTON, GentlemanPrestonSeenText, GentlemanPrestonBeatenText
 
-	text "Jasmine used to"
-	line "use Rock #mon"
-	cont "like Onix."
+	text "Jasmin trainierte"
+	line "früher Gestein-"
+	cont "#mon wie Onix."
 	done
 
 GenericTrainerSailorTerrell:
 	generictrainer SAILOR, TERRELL, EVENT_BEAT_SAILOR_TERRELL, SailorTerrellSeenText, SailorTerrellBeatenText
 
-	text "Every time I come"
-	line "back to Olivine, I"
-	cont "visit the Gym."
+	text "Jedes Mal wenn"
+	line "ich nach Oliviana"
 
-	para "The Gym Leader's"
-	line "#mon type has"
+	para "City komme, gehe"
+	line "ich in die PKMN-"
 
-	para "changed without me"
-	line "noticing."
+	para "Arena. Der #-"
+	line "mon-Typ der Arena-"
+
+	para "Leiterin hat sich"
+	line "geändert, ohne"
+
+	para "dass ich es"
+	line "bemerkte."
 	done
 
 Bird_keeperTheoSeenText:
-	text "Why are you here?"
-	line "Are you just going"
+	text "Warum bist du"
+	line "gekommen? Bist du"
 
-	para "to gawk? I suggest"
-	line "that you leave!"
+	para "zum Gaffen hier?"
+	line "Es ist besser, du"
+	cont "gehst!"
 	done
 
 Bird_keeperTheoBeatenText:
-	text "You really are"
-	line "concerned…"
+	text "Du sorgst dich"
+	line "wirklich…"
 	done
 
 Bird_keeperTheoFinalText:
@@ -207,24 +215,26 @@ Bird_keeperTheoFinalText:
 	done
 
 SailorTerrellSeenText:
-	text "Sailors are both"
-	line "kind and strong."
-	cont "How about you?"
+	text "Matrosen sind"
+	line "nett und stark."
+	cont "Wie bist du?"
 	done
 
 SailorTerrellBeatenText:
-	text "You are both kind"
-	line "and strong…"
+	text "Du bist auch nett"
+	line "und stark…"
 	done
 
 GentlemanPrestonSeenText:
-	text "I travel the world"
-	line "to train my #-"
-	cont "mon. I wish to"
-	cont "battle with you."
+	text "Ich bereise die"
+	line "Welt, um meine"
+	cont "#mon zu"
+	cont "trainieren. Ich"
+	cont "möchte mit dir"
+	cont "kämpfen."
 	done
 
 GentlemanPrestonBeatenText:
-	text "…sigh… I must"
-	line "train some more…"
+	text "…Seufz… Ich muss"
+	line "mehr trainieren…"
 	done

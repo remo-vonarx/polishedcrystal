@@ -270,9 +270,9 @@ BillsGrandpa:
 
 	text "Hm?"
 
-	para "That's not the"
-	line "#mon that I was"
-	cont "told about."
+	para "Das ist nicht das"
+	line "#mon, von dem"
+	cont "ich gehört habe."
 	done
 
 BillsMom:
@@ -280,21 +280,22 @@ BillsMom:
 	iffalse_jumptextfaceplayer BillsMomText_AfterEcruteak
 	jumpthistextfaceplayer
 
-	text "Oh, you collect"
-	line "#mon? My son"
-	cont "Bill is an expert."
+	text "Oh, du sammelst"
+	line "#mon? Mein Sohn"
+	cont "Bill ist ein"
+	cont "Experte."
 
-	para "He just got called"
-	line "to the #mon"
+	para "Er wurde gerade in"
+	line "das #mon-Center"
 
-	para "Center in Ecruteak"
-	line "City."
+	para "von Teak City"
+	line "gerufen."
 
-	para "My husband went"
-	line "off to the Game"
+	para "Mein Mann ging in"
+	line "die Spielhalle,"
 
-	para "Corner without"
-	line "being called…"
+	para "ohne angerufen"
+	line "zu werden…"
 	done
 
 BillsSister:
@@ -315,11 +316,10 @@ BillsSister:
 .GotBillsNumber:
 	jumpthisopenedtext
 
-	text "My big brother"
-	line "Bill made the PC"
-
-	para "#mon storage"
-	line "system."
+	text "Mein großer Bruder"
+	line "Bill hat das PC-"
+	cont "#mon-Lagerungs-"
+	cont "System erfunden."
 	done
 
 .NoRoom:
@@ -328,13 +328,14 @@ BillsSister:
 .Refused:
 	jumpthisopenedtext
 
-	text "My brother made"
-	line "the PC #mon"
-	cont "storage system."
+	text "Mein Bruder hat"
+	line "das PC-#mon-"
+	cont "Lagerungs-System"
+	cont "erfunden."
 
-	para "I was going to"
-	line "give you Bill's"
-	cont "number…"
+	para "Ich wollte dir ge-"
+	line "rade Bills Nummer"
+	cont "geben…"
 	done
 
 BillsGrandpaIntroText:
@@ -349,54 +350,58 @@ BillsGrandpaIntroText:
 	done
 
 BillsGrandpaAskToSeeMonText:
-	text "If you have that"
-	line "#mon, may I see"
-	cont "it, please?"
+	text "Hast du dieses"
+	line "#mon? Darf ich"
+	cont "es sehen?"
 	done
 
 BillsGrandpaExcitedToSeeText:
-	text "You will show me?"
-	line "How good of you!"
+	text "Du zeigst es mir?"
+	line "Wie lieb von dir!"
 	done
 
 BillsGrandpaYouDontHaveItTextText:
-	text "You don't have it?"
-	line "That's too bad…"
+	text "Du hast es nicht?"
+	line "Das ist schade…"
 	done
 
 BillsGrandpaShownPokemonText:
-	text "Ah, so that is"
+	text "Ah, das ist"
 	line ""
 	text_ram wStringBuffer3
 	text "?"
 
-	para "Isn't it cute!"
-	line "That's so kind of"
-	cont "you."
+	para "Ist das nicht"
+	line "niedlich!"
+	cont "Das ist nett "
+	cont "von dir."
 	done
 
 BillsGrandpaTokenOfAppreciationText:
-	text "Thanks!"
+	text "Danke!"
 
-	para "This is a token of"
-	line "my appreciation."
+	para "Das ist ein"
+	line "Zeichen meiner"
+	cont "Anerkennung."
 	done
 
 BillsGrandpaComeAgainText:
-	text "Come visit again"
-	line "sometime."
+	text "Besuche mich bitte"
+	line "wieder."
 	done
 
 BillsGrandpaShownAllThePokemonText:
-	text "Thanks for showing"
-	line "me so many cute"
-	cont "#mon."
+	text "Danke, dass du mir"
+	line "so viele niedliche"
+	cont "#mon gezeigt"
+	cont "hast."
 
-	para "I really enjoyed"
-	line "myself. I'm glad"
+	para "Ich habe mich"
+	line "wirklich amüsiert."
 
-	para "I've lived such a"
-	line "long life."
+	para "Ich bin froh, dass"
+	line "ich das noch"
+	cont "erleben durfte."
 	done
 
 BillsGrandpaSnubbullText:
@@ -462,48 +467,50 @@ BillsGrandpaBellsproutText:
 	done
 
 BillsGrandpaStaryuText:
-	text "Do you know of a"
-	line "sea #mon that"
+	text "Kennst du ein"
+	line "Wasser-#mon"
 
-	para "has a red sphere"
-	line "in its body?"
+	para "mit einer roten"
+	line "Kugel im Körper?"
 
-	para "You know, the one"
-	line "that's shaped like"
-	cont "a star?"
+	para "Es sieht aus wie"
+	line "ein Stern!"
 
-	para "I heard that it"
-	line "appears at night."
+	para "Ich hörte, es"
+	line "taucht nachts auf."
 
-	para "I would surely"
-	line "like to see it."
+	para "Ich würde es"
+	line "gerne sehen."
 	done
 
 BillsGrandpaGrowlitheText:
-	text "Bill told me about"
-	line "a #mon that is"
+	text "Bill erzählte mir"
+	line "von einem #mon,"
 
-	para "very loyal to its"
-	line "trainer."
+	para "das seinem Trainer"
+	line "gegenüber sehr"
+	cont "loyal ist."
 
-	para "It's supposed to"
-	line "Roar well."
+	para "Es scheint ein"
+	line "guter Brüller zu"
+	cont "sein."
 	done
 
 BillsGrandpaPichuText:
-	text "Do you know that"
-	line "hugely popular"
+	text "Kennst du dieses"
+	line "sehr beliebte"
 	cont "#mon?"
 
-	para "The #mon that"
-	line "has a yellow body"
-	cont "and red cheeks."
+	para "Das #mon, mit"
+	line "dem gelben Körper"
+	cont "und den roten"
+	cont "Wangen."
 
-	para "I would love to"
-	line "see what it looks"
+	para "Ich würde gerne"
+	line "sehen, wie es vor"
 
-	para "like before it"
-	line "evolves."
+	para "seiner Entwicklung"
+	line "aussieht."
 	done
 
 
@@ -525,19 +532,21 @@ BillsMomText_AfterEcruteak:
 	done
 
 BillsSisterUsefulNumberText:
-	text "Are you a trainer?"
+	text "Bist du ein"
+	line "Trainer?"
 
-	para "I've got a useful"
-	line "phone number for"
-	cont "you."
+	para "Ich habe eine"
+	line "nützliche Telefon-"
+	cont "nummer für dich."
 	done
 
 RecordedBillsNumberText:
-	text "<PLAYER> recorded"
-	line "Bill's number."
+	text "<PLAYER> speichert"
+	line "Bills Nummer."
 	done
 
 BillsSisterPhoneFullText:
-	text "You can't record"
-	line "any more numbers."
+	text "Du kannst keine"
+	line "Nummern mehr spei-"
+	cont "chern."
 	done

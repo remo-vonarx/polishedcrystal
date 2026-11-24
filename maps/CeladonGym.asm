@@ -68,26 +68,27 @@ CeladonGymErikaScript:
 GenericTrainerLassMichelle:
 	generictrainer LASS, MICHELLE, EVENT_BEAT_LASS_MICHELLE, LassMichelleSeenText, LassMichelleBeatenText
 
-	text "I just got care-"
-	line "less, that's all!"
+	text "Ich wurde nur"
+	line "unvorsichtig, das"
+	cont "ist alles!"
 	done
 
 GenericTrainerPicnickerTanya:
 	generictrainer PICNICKER, TANYA, EVENT_BEAT_PICNICKER_TANYA, PicnickerTanyaSeenText, PicnickerTanyaBeatenText
 
-	text "Oh, look at all"
-	line "your Badges. No"
+	text "Oh, sieh nur, all"
+	line "die Orden. Kein"
 
-	para "wonder I couldn't"
-	line "win!"
+	para "Wunder, dass ich"
+	line "verloren habe!"
 	done
 
 GenericTrainerBeautyJulia:
 	generictrainer BEAUTY, JULIA, EVENT_BEAT_BEAUTY_JULIA, BeautyJuliaSeenText, BeautyJuliaBeatenText
 
-	text "How do I go about"
-	line "becoming ladylike"
-	cont "like Erika?"
+	text "Wie werde ich nur"
+	line "so damenhaft"
+	cont "wie Erika?"
 	done
 
 GenericTrainerAroma_ladyDahlia:
@@ -106,15 +107,15 @@ GenericTrainerAroma_ladyDahlia:
 GenericTrainerTwinsJoandzoe1:
 	generictrainer TWINS, JOANDZOE1, EVENT_BEAT_TWINS_JO_AND_ZOE, TwinsJoandzoe1SeenText, TwinsJoandzoe1BeatenText
 
-	text "Erika will get you"
-	line "back for us!"
+	text "Erika wird es dir"
+	line "heimzahlen!"
 	done
 
 GenericTrainerTwinsJoandzoe2:
 	generictrainer TWINS, JOANDZOE2, EVENT_BEAT_TWINS_JO_AND_ZOE, TwinsJoandzoe2SeenText, TwinsJoandzoe2BeatenText
 
-	text "Erika is much,"
-	line "much stronger!"
+	text "Erika ist viel"
+	line "stärker!"
 	done
 
 CeladonGymStatue:
@@ -126,31 +127,34 @@ CeladonGymStatue:
 	jumpstd gymstatue2
 
 ErikaBeforeBattleText:
-	text "Erika: Hello…"
-	line "Lovely weather,"
+	text "Erika: Hallo…"
+	line "Schönes Wetter,"
 
-	para "isn't it?"
-	line "It's so pleasant…"
+	para "nicht?"
+	line "Einfach herrlich…"
 
-	para "…I'm afraid I may"
-	line "doze off…"
+	para "…Ich könnte gleich"
+	line "einschlafen…"
 
-	para "My name is Erika."
-	line "I am the Leader of"
-	cont "Celadon Gym."
+	para "Ich heiße Erika."
+	line "Ich bin die Arena-"
+	cont "leiterin von"
+	cont "Prismania City."
 
-	para "…Oh? All the way"
-	line "from Johto, you"
-	cont "say? How nice…"
+	para "…Wirklich? Den"
+	line "ganzen Weg von "
+	cont "Johto? Wie nett…"
 
-	para "Oh. I'm sorry, I"
-	line "didn't realize"
+	para "Oh, entschuldige."
+	line "Ich wusste"
 
-	para "that you wished to"
-	line "challenge me."
+	para "nicht, dass du"
+	line "gegen mich kämpfen"
+	cont "willst."
 
-	para "Very well, but I"
-	line "shall not lose."
+	para "Nun gut. Ich werde"
+	line "jedenfalls nicht"
+	cont "verlieren."
 	done
 
 ErikaBeatenText:
@@ -175,45 +179,52 @@ ErikaExplainTMText:
 
 
 ErikaAfterBattleText:
-	text "Erika: Losing"
-	line "leaves a bitter"
-	cont "aftertaste…"
+	text "Erika: Eine"
+	line "Niederlage ist"
 
-	para "But knowing that"
-	line "there are strong"
+	para "nicht sehr"
+	line "angenehm…"
 
-	para "trainers spurs me"
-	line "to do better…"
+	para "Aber es ist ein"
+	line "Ansporn, sich"
+
+	para "mehr anzustrengen,"
+	line "wenn man weiß,"
+
+	para "dass es starke"
+	line "Trainer gibt…"
 	done
 
 LassMichelleSeenText:
-	text "Do you think a"
-	line "girls-only Gym"
-	cont "is rare?"
+	text "Glaubst du, dass"
+	line "eine PKMN-Arena"
+	cont "nur mit Mädchen"
+	cont "selten ist?"
 	done
 
 LassMichelleBeatenText:
-	text "Oh, bleah!"
+	text "Ach nee!"
 	done
 
 PicnickerTanyaSeenText:
-	text "Oh, a battle?"
-	line "That's kind of"
-	cont "scary, but OK!"
+	text "Oh, ein Kampf?"
+	line "Das macht mir ein"
+	cont "bisschen Angst,"
+	cont "aber von mir aus!"
 	done
 
 PicnickerTanyaBeatenText:
-	text "Oh, that's it?"
+	text "Ach, das war es?"
 	done
 
 BeautyJuliaSeenText:
-	text "Were you looking"
-	line "at these flowers"
-	cont "or at me?"
+	text "Hast du die"
+	line "Blumen betrachtet"
+	cont "oder mich?"
 	done
 
 BeautyJuliaBeatenText:
-	text "How annoying!"
+	text "Wie ärgerlich!"
 	done
 
 Aroma_ladyDahliaSeenText:
@@ -228,20 +239,23 @@ Aroma_ladyDahliaBeatenText:
 	done
 
 TwinsJoandzoe1SeenText:
-	text "We'll show you"
-	line "#mon moves that"
-	cont "Erika taught us!"
+	text "Wir zeigen dir"
+	line "#mon-Attacken,"
+	cont "die Erika uns"
+	cont "beigebracht hat!"
 	done
 
 TwinsJoandzoe1BeatenText:
-	text "Oh… We lost…"
+	text "Oh… Wir haben"
+	line "verloren…"
 	done
 
 TwinsJoandzoe2SeenText:
-	text "We're going to"
-	line "protect Erika!"
+	text "Wir werden Erika"
+	line "beschützen!"
 	done
 
 TwinsJoandzoe2BeatenText:
-	text "We couldn't win…"
+	text "Wir hatten keine"
+	line "Chance…"
 	done

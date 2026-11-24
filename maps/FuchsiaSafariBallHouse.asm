@@ -55,8 +55,8 @@ FuchsiaSafariBallHouseOfficerScript:
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "enough money."
+	text "Du hast nicht"
+	line "genügend Geld."
 	done
 
 .IntroText:

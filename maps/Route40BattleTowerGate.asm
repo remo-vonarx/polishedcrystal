@@ -59,20 +59,22 @@ Route40BattleTowerGateTwinScript:
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
-	text "I'm going to train"
-	line "my #mon so I'll"
+	text "Ich trainiere"
+	line "meine #mon,"
 
-	para "be all ready for"
-	line "the Battle Tower."
+	para "damit ich bereit"
+	line "für den Duellturm"
+	cont "bin."
 	done
 
 .OpenText:
-	text "The levels of the"
-	line "#mon I want to"
+	text "Die Level der"
+	line "#mon, die ich"
 
-	para "use are all"
-	line "different."
+	para "einsetzen möchte,"
+	line "sind unter-"
+	cont "schiedlich."
 
-	para "I have to go train"
-	line "them now!"
+	para "Ich muss sie jetzt"
+	line "trainieren!"
 	done

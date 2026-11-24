@@ -78,10 +78,10 @@ BattleTowerOutsidePanUpHelperScript:
 	step_end
 
 BattleTowerOutsideSignText:
-	text "Battle Tower"
+	text "Duellturm"
 
-	para "Take the Ultimate"
-	line "Trainer Challenge!"
+	para "Die ultimative"
+	line "Herausforderung!"
 	done
 
 BattleTowerOutsideAnabelScript:
@@ -178,12 +178,11 @@ BattleTowerOutsideYoungsterScript:
 	done
 
 .OpenText:
-	text "Wow, the Battle"
-	line "Tower is huge!"
+	text "Wow, der Duellturm"
+	line "ist riesig!"
 
-	para "There must be many"
-	line "kinds of #mon"
-	cont "in there!"
+	para "Es muss dort viele"
+	line "#mon geben!"
 	done
 
 BattleTowerOutsideBeautyScript:
@@ -191,36 +190,38 @@ BattleTowerOutsideBeautyScript:
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
-	text "What on earth do"
-	line "they do here?"
+	text "Was geht denn hier"
+	line "vor sich?"
 
-	para "If the name says"
-	line "anything, I guess"
+	para "Nomen est Omen:"
+	line "Hier muss es"
 
-	para "it must be for"
-	line "#mon battles."
+	para "um #mon-Kämpfe"
+	line "gehen."
 	done
 
 .OpenText:
-	text "You can use only"
-	line "three #mon."
+	text "Du darfst nur drei"
+	line "#mon einsetzen."
 
-	para "It's so hard to"
-	line "decide which three"
+	para "Es fällt einem"
+	line "nicht leicht, drei"
 
-	para "should go into"
-	line "battle…"
+	para "#mon für den"
+	line "Kampf auszuwählen…"
 	done
 
 BattleTowerOutsideSailorText:
-	text "Hehehe, I snuck"
-	line "out from work."
+	text "Hehehe, ich drücke"
+	line "mich vor der Ar-"
+	cont "beit. Ich kann"
 
-	para "I can't bail out"
-	line "until I've won!"
+	para "nicht zurück, bis"
+	line "ich siege. Ich"
 
-	para "I have to win it"
-	line "all. That I must!"
+	para "muss alles gewin-"
+	line "nen. Es ist ein"
+	cont "Zwang!"
 	done
 
 BattleTowerOutsideDoorsClosedText:

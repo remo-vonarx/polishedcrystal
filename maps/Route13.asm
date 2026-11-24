@@ -100,40 +100,44 @@ GenericTrainerPicnickerGinger:
 GenericTrainerBird_keeperPerry:
 	generictrainer BIRD_KEEPER, PERRY, EVENT_BEAT_BIRD_KEEPER_PERRY, Bird_keeperPerrySeenText, Bird_keeperPerryBeatenText
 
-	text "Your #mon are"
-	line "remarkably well-"
-	cont "trained."
+	text "Deine #mon sind"
+	line "in der Tat sehr"
+	cont "gut trainiert."
 	done
 
 Bird_keeperPerrySeenText:
-	text "Agility is the key"
-	line "attribute of bird"
+	text "Agilität ist die"
+	line "wichtigste Eigen-"
+	cont "schaft von Vogel-"
 	cont "#mon."
 	done
 
 Bird_keeperPerryBeatenText:
-	text "You beat me with"
-	line "your speed…"
+	text "Du hast mich"
+	line "aufgrund deiner"
+	cont "Schnelligkeit"
+	cont "besiegt…"
 	done
 
 GenericTrainerBird_keeperBret:
 	generictrainer BIRD_KEEPER, BRET, EVENT_BEAT_BIRD_KEEPER_BRET, Bird_keeperBretSeenText, Bird_keeperBretBeatenText
 
-	text "If you groom them,"
-	line "#mon get happy."
+	text "Wenn du deine"
+	line "#mon pflegst,"
+	cont "sind sie fröhlich."
 	done
 
 Bird_keeperBretSeenText:
-	text "Check out my #-"
-	line "mon. Just look at"
+	text "Schau dir meine"
+	line "#mon an. Sieh"
 
-	para "their coloring and"
-	line "their plumage."
+	para "ihre Farben und"
+	line "ihr Gefieder."
 	done
 
 Bird_keeperBretBeatenText:
-	text "Shoot!"
-	line "Not good enough!"
+	text "Verflixt!"
+	line "Nicht gut genug!"
 	done
 
 GenericTrainerCamperTanner:
@@ -221,35 +225,40 @@ GenericTrainerCoupleTimandsue2:
 GenericTrainerPokefanmAlex:
 	generictrainer POKEFANM, ALEX, EVENT_BEAT_POKEFANM_ALEX, PokefanmAlexSeenText, PokefanmAlexBeatenText
 
-	text "Doesn't everyone"
-	line "wish to someday be"
-	cont "a king?"
+	text "Möchte nicht jeder"
+	line "eines Tages einmal"
+	cont "König sein?"
 	done
 
 PokefanmAlexSeenText:
-	text "Bow down before my"
-	line "regal #mon!"
+	text "Verbeuge dich vor"
+	line "meinen königlichen"
+	cont "#mon!"
 	done
 
 PokefanmAlexBeatenText:
-	text "How… How dare you"
-	line "mock royalty!"
+	text "Wie… wie kannst"
+	line "du es wagen, die"
+	cont "Monarchie zu"
+	cont "verspotten?"
 	done
 
 GenericTrainerPokefanmJoshua:
 	generictrainer POKEFANM, JOSHUA, EVENT_BEAT_POKEFANM_JOSHUA, PokefanmJoshuaSeenText, PokefanmJoshuaBeatenText
 
-	text "You look like you"
-	line "have many #mon,"
+	text "Es scheint, dass"
+	line "du viele #mon"
 
-	para "but Pikachu is"
-	line "still the best."
+	para "hast, aber Pikachu"
+	line "ist immer noch das"
+	cont "Beste."
 	done
 
 PokefanmJoshuaSeenText:
-	text "Nihihi! Would you"
-	line "like to battle my"
-	cont "Pikachu gang?"
+	text "Hihi! Möchtest du"
+	line "gegen mein"
+	cont "Pikachu-Team"
+	cont "antreten?"
 	done
 
 PokefanmJoshuaBeatenText:
@@ -259,31 +268,34 @@ PokefanmJoshuaBeatenText:
 GenericTrainerHikerKenny:
 	generictrainer HIKER, KENNY, EVENT_BEAT_HIKER_KENNY, HikerKennySeenText, HikerKennyBeatenText
 
-	text "Geological fea-"
-	line "tures don't appear"
-	cont "to change."
+	text "Es scheint, als"
+	line "würden sich geo-"
+	cont "logische Gegeben-"
+	cont "heiten nicht"
+	cont "ändern."
 
-	para "But they actually"
-	line "change, little by"
-	cont "little."
+	para "Aber sie ändern"
+	line "sich, langsam,"
+	cont "ganz langsam."
 	done
 
 HikerKennySeenText:
-	text "I should go to"
-	line "Rock Tunnel to get"
-	cont "myself an Onix."
+	text "Ich sollte zum"
+	line "Felstunnel gehen"
+	cont "und mir ein Onix"
+	cont "fangen."
 	done
 
 HikerKennyBeatenText:
-	text "I lost…"
+	text "Ich habe verloren…"
 	done
 
 Route13TrainerTips1Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Look! Right there,"
-	line "at the left side"
-	cont "of the post."
+	para "Schau! Hier, an"
+	line "der linken Seite"
+	cont "des Pfostens."
 	done
 
 Route13TrainerTips2Text:
@@ -303,14 +315,14 @@ Route13TrainerTips2Text:
 Route13SignText:
 	text "Route 13"
 
-	para "North to Silence"
-	line "Bridge"
+	para "Nördlich zur"
+	line "Schweigebrücke"
 	done
 
 Route13DirectionsSignText:
-	text "North to Lavender"
-	line "Town"
+	text "Nördlich nach"
+	line "Lavandia"
 
-	para "West to Fuchsia"
-	line "City"
+	para "Westlich nach"
+	line "Fuchsania City"
 	done

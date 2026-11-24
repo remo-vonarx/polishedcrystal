@@ -224,7 +224,7 @@ TrainerCamperGrant:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "See ya!"
+	text "Und tschüß!"
 	done
 
 GenericTrainerAceDuoThomandkae1:

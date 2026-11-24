@@ -30,9 +30,11 @@ ViridianMartLassText:
 	done
 
 ViridianMartCooltrainerMText:
-	text "Have you been to"
-	line "Cinnabar?"
+	text "Warst du schon auf"
+	line "der Zinnober-"
+	cont "insel?"
 
-	para "It's an island way"
-	line "south of here."
+	para "Es ist gleich die"
+	line "nächste Insel süd-"
+	cont "lich von hier."
 	done

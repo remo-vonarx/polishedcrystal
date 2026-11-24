@@ -69,22 +69,28 @@ FarmerMScript_SellMilk:
 .Cancel:
 	jumpthisopenedtext
 
-	text "You don't want it?"
-	line "Come again, hear?"
+	text "Du hast kein"
+	line "Interesse? Komm"
+	cont "aber wieder, hörst"
+	cont "du?"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "Sorry, there."
-	line "No cash, no sale!"
+	text "Tut mir Leid, mein"
+	line "Kind. Wenn du kein"
+	cont "Geld hast, kann"
+	cont "ich dir nichts"
+	cont "verkaufen!"
 	done
 
 .BagFull:
 	jumpthisopenedtext
 
-	text "I reckon yer"
-	line "Bag's full."
+	text "Ich schätze,"
+	line "dein Beutel ist"
+	cont "voll."
 	done
 
 .MenuDataHeader:
@@ -103,8 +109,8 @@ FarmerMScript_SellMilk:
 .Milking:
 	jumpthisopenedtext
 
-	text "I best go do my"
-	line "milkin'."
+	text "Dann melke ich"
+	line "mal weiter."
 	done
 
 PokefanF_AcrobaticsFarmer:
@@ -116,14 +122,16 @@ PokefanF_AcrobaticsFarmer:
 	iftruefwd .GiveAcrobatics
 	jumpthisopenedtext
 
-	text "Our milk even goes"
-	line "out to Kanto."
+	text "Unsere Milch wird"
+	line "sogar nach Kanto"
+	cont "geliefert."
 
-	para "So if our own"
-	line "Miltank won't give"
+	para "Wenn uns unser"
+	line "Miltank keine"
 
-	para "us any milk, we're"
-	line "in trouble."
+	para "Milch mehr gibt,"
+	line "haben wir echte"
+	cont "Probleme."
 	done
 
 .GiveAcrobatics:
@@ -149,40 +157,47 @@ PokefanF_AcrobaticsFarmer:
 	done
 
 FarmerMText_SickCow:
-	text "My Miltank ain't"
-	line "givin' me milk"
-	cont "n'more."
+	text "Mein Miltank gibt"
+	line "keine Milch"
+	cont "mehr."
 
-	para "This here Farm's"
-	line "got famous milk."
+	para "Diese Farm ist"
+	line "berühmt für die"
+	cont "Milch, die hier"
+	cont "produziert wird."
 
-	para "Most everyone"
-	line "wants a drink."
+	para "Fast jeder trinkt"
+	line "sie gern."
 
-	para "It'll give me lots"
-	line "o' milk if'n I"
+	para "Es würde mir viel"
+	line "Milch geben, wenn"
 
-	para "feed it lots o'"
-	line "Berries, I reckon."
+	para "ich es mit vielen"
+	line "Beeren füttern"
+	cont "würde. Glaube ich"
+	cont "zumindest."
 	done
 
 FarmerMText_BuyMilk:
-	text "How'd you like my"
-	line "Moomoo Milk?"
+	text "Wie findest du"
+	line "die Milch von"
+	cont "meinem Miltank?"
 
-	para "It's my pride and"
-	line "joy, there."
+	para "Sie ist mein gan-"
+	line "zer Stolz."
 
-	para "Give it to #mon"
-	line "to restore HP!"
+	para "Gib sie einem"
+	line "#mon, um dessen"
+	cont "KP aufzufrischen!"
 
-	para "I'll give it to ya"
-	line "fer just ¥500."
+	para "Ich gebe sie dir"
+	line "für nur ¥500."
 	done
 
 FarmerMText_GotMilk:
-	text "Here ya go!"
-	line "Drink up'n enjoy!"
+	text "Bitte sehr!"
+	line "Trink aus und"
+	cont "genieße es!"
 	done
 
 
@@ -191,12 +206,12 @@ FarmerMText_GotMilk:
 
 
 FarmerFText_HealedMiltank:
-	text "You fixed our"
-	line "Miltank, hon. Now"
+	text "Du hast unserem"
+	line "Miltank geholfen!"
 
-	para "it gives Moomoo"
-	line "Milk again."
+	para "Jetzt gibt es"
+	line "wieder Milch!"
 
-	para "Here's somethin'"
-	line "fer your trouble."
+	para "Hier, für deine"
+	line "Mühe."
 	done

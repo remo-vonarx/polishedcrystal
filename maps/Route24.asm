@@ -129,85 +129,85 @@ Route24RocketScript:
 	end
 
 Route24RocketSeenText:
-	text "Hey, kid! Me am a"
-	line "Team Rocket member"
-	cont "kind of guy!"
+	text "Hey, Minimensch!"
+	line "Ich sein von Team"
+	cont "Rocket."
 
-	para "Come from another"
-	line "country, a trainer"
-	cont "number one, me!"
+	para "Sein aus fremde"
+	line "Land, Trainer eins"
+	cont "ich sein!"
 
-	para "Think I did, if"
-	line "stop the energy,"
+	para "Geglaubt, wenn"
+	line "nix Energie mehr,"
 
-	para "be big panic for"
-	line "here people!"
+	para "mache viel Panik"
+	line "bei Leute!"
 
-	para "Secret it is my"
-	line "mission, so tell"
-	cont "you I not!"
+	para "Geheim mein"
+	line "Auftrag sein, ich"
+	cont "dir nix verraten!"
 
-	para "But! If win you do"
-	line "versus me, a man I"
+	para "Doch! Wenn mich"
+	line "besiegen, ich sein"
 
-	para "be and mine secret"
-	line "to you I tell."
+	para "lieb und dir"
+	line "verrate Geheimnis."
 
-	para "Hey, kid! Battle"
-	line "begin we do!"
+	para "Du, Kind! Kämpfen"
+	line "lass uns!"
 	done
 
 Route24RocketBeatenText:
-	text "Ayieeeh! No, no,"
-	line "no, believe it I"
-	cont "can't!"
+	text "Uff! Nein,"
+	line "glauben nicht ich"
+	cont "kann!"
 
-	para "Strong very much"
-	line "be you! Match I am"
-	cont "not to you!"
+	para "Stark sehr du"
+	line "sein! Ich nix"
+	cont "Gegner für dich!"
 	done
 
 Route24RocketAfterBattleText:
-	text "OK. Tell you mine"
-	line "secret will I."
+	text "O.K. Verraten dir"
+	line "meine Geheimnis."
 
-	para "Machine Part steal"
-	line "by me, hide it I"
+	para "Spule, gestohlen"
+	line "von mir, versteckt"
 
-	para "did in Gym of the"
-	line "Cerulean."
+	para "in PKMN-Arena der"
+	line "Azuria City."
 
-	para "Inside water put"
-	line "it I did. Look for"
+	para "Wasser sein gute"
+	line "Versteck. In"
 
-	para "in water center of"
-	line "Gym at."
+	para "Mitte von PKMN-"
+	line "Arena Wasser sein."
 
-	para "But you forget me"
-	line "not!"
+	para "Kind, du mich"
+	line "vergessen nicht!"
 
-	para "Beat you for sure"
-	line "will Team Rocket."
+	para "Besiege dir wird"
+	line "Team Rocket tun."
 
-	para "Come from Johto"
-	line "will they, mine"
+	para "Werden kommen aus"
+	line "Johto, mein"
 
-	para "friends, yes. Will"
-	line "revenge they are."
+	para "Freunde. Rächen"
+	line "sie werden tun."
 	done
 
 Route24RocketDisappearsText:
 	text "…"
 
-	para "You say what? Team"
-	line "Rocket bye-bye a"
+	para "Was du sagen? Team"
+	line "Rocket nix mehr"
 
-	para "go-go? Broken it"
-	line "is says you?"
+	para "gibt? Kaputt"
+	line "gemacht, du sagen?"
 
-	para "Oh, no! Should I"
-	line "do what now on"
-	cont "from, me?"
+	para "Oh, nein! Ich"
+	line "tun was jetzt"
+	cont "machen?"
 	done
 
 Route24AdvancedTipsSignText:

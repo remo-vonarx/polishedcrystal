@@ -16,16 +16,18 @@ VermilionMagnetTrainSpeechHouse_MapScriptHeader:
 	object_event  0,  3, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionMagnetTrainSpeechHouseYoungsterText, -1
 
 VermilionMagnetTrainSpeechHousePokefanFText:
-	text "Do you know about"
-	line "the Magnet Train?"
+	text "Hast du schon von"
+	line "dem Magnetzug"
+	cont "gehört?"
 
-	para "It's a railway"
-	line "that goes to Gol-"
-	cont "denrod in Johto."
+	para "Er fährt nach"
+	line "Dukatia City"
+	cont "in Johto."
 	done
 
 VermilionMagnetTrainSpeechHouseYoungsterText:
-	text "I want to go to"
-	line "Saffron to see"
-	cont "the Magnet Train."
+	text "Ich möchte nach"
+	line "Saffronia City, um"
+	cont "den Magnetzug zu"
+	cont "sehen."
 	done

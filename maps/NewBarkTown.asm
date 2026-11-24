@@ -246,77 +246,80 @@ Movement_LyraSaysGoodbye3_NBT:
 	step_end
 
 Text_GearIsImpressive:
-	text "Wow, your #gear"
-	line "is impressive!"
+	text "Wow, dein #Com"
+	line "ist beeindruckend!"
 
-	para "Did your mom get"
-	line "it for you?"
+	para "Hast du den von"
+	line "Mama bekommen?"
 	done
 
 
 Text_WaitPlayer:
-	text "Wait, <PLAYER>!"
+	text "Warte, <PLAYER>!"
 	done
 
 Text_WhatDoYouThinkYoureDoing:
-	text "What do you think"
-	line "you're doing?"
+	text "Was hast du vor?"
 	done
 
 Text_ItsDangerousToGoAlone:
-	text "It's dangerous to"
-	line "go out without a"
-	cont "#mon!"
+	text "Es ist gefährlich,"
+	line "ohne #mon das"
+	cont "Haus zu verlassen!"
 
-	para "Wild #mon"
-	line "jump out of the"
+	para "Auf dem Weg zur"
+	line "nächsten Stadt"
 
-	para "grass on the way"
-	line "to the next town."
+	para "können jederzeit"
+	line "wilde #mon"
+
+	para "auftauchen."
 	done
 
 Text_YourMonIsAdorable:
-	text "Oh! Your #mon"
-	line "is adorable!"
-	cont "I wish I had one!"
+	text "Oh! Dein #mon"
+	line "ist bezaubernd!"
+	para "Ich wünschte, ich"
+	line "hätte auch eines."
 	done
 
 Text_TellMomIfLeaving:
 	text "Hi, <PLAYER>!"
-	line "Leaving again?"
+	line "Du gehst schon?"
 
-	para "You should tell"
-	line "your mom if you"
-	cont "are leaving."
+	para "Gib deiner Mama"
+	line "Bescheid, wenn du"
+	cont "gehst."
 	done
 
 Text_CallMomOnGear:
-	text "Call your mom on"
-	line "your #gear to"
+	text "Ruf deine Mama mit"
+	line "dem #Com an,"
 
-	para "let her know how"
-	line "you're doing."
+	para "damit sie weiß,"
+	line "was du machst."
 	done
 
 Text_ElmDiscoveredNewMon:
 	text "Yo, <PLAYER>!"
 
-	para "I hear Prof.Elm"
-	line "discovered some"
-	cont "new #mon."
+	para "Ich habe gehört,"
+	line "Prof. Lind hat"
+	cont "neue #mon"
+	cont "entdeckt."
 	done
 
 NewBarkTownRivalText1:
 	text "……"
 
-	para "So this is the"
-	line "famous Elm #mon"
-	cont "Lab…"
+	para "Das ist also das"
+	line "berühmte Lind-"
+	cont "#mon-Labor…"
 	done
 
 NewBarkTownRivalText2:
-	text "…What are you"
-	line "staring at?"
+	text "…Was starrst du"
+	line "so?"
 	done
 
 Text_LyraIntro:
@@ -409,19 +412,19 @@ Text_LyraGoodbye2:
 	done
 
 NewBarkTownSignText:
-	text "New Bark Town"
+	text "Neuborkia"
 
-	para "The Town Where the"
-	line "Winds of a New"
-	cont "Beginning Blow"
+	para "Die Stadt, in der"
+	line "der Wind der Er-"
+	cont "neuerung weht"
 	done
 
 PlayersHouseSignText:
-	text "<PLAYER>'s House"
+	text "Haus von <PLAYER>"
 	done
 
 ElmsLabSignText:
-	text "Elm #mon Lab"
+	text "Lind-#mon-Labor"
 	done
 
 LyrasHouseSignText:

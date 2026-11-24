@@ -71,11 +71,14 @@ Route46TutorRoute46Script:
 GenericTrainerCamperTed:
 	generictrainer CAMPER, TED, EVENT_BEAT_CAMPER_TED, CamperTedSeenText, CamperTedBeatenText
 
-	text "I did my best but"
-	line "came up short."
+	text "Ich habe mein"
+	line "Bestes gegeben und"
+	cont "das reichte leider"
+	cont "nicht."
 
-	para "No excuses--I"
-	line "admit I lost."
+	para "Ich gebe ganz"
+	line "offen zu - ich"
+	cont "habe verloren."
 	done
 
 TrainerPicnickerErin1:
@@ -193,9 +196,10 @@ Route46RematchGiftF:
 GenericTrainerHikerBailey:
 	generictrainer HIKER, BAILEY, EVENT_BEAT_HIKER_BAILEY, HikerBaileySeenText, HikerBaileyBeatenText
 
-	text "It's over. I don't"
-	line "mind. We Hikers"
-	cont "are like that."
+	text "Es ist vorbei."
+	line "Auch gut. Wir"
+	cont "Wanderer sind eben"
+	cont "so."
 	done
 
 Route46HikerText:
@@ -230,69 +234,72 @@ Text_Route46TutorQuestion:
 
 
 HikerBaileySeenText:
-	text "Awright! I'll show"
-	line "you the power of"
-	cont "mountain #mon!"
+	text "Also gut! Ich"
+	line "zeige dir die"
+	cont "Kraft von Berg-"
+	cont "#mon!"
 	done
 
 HikerBaileyBeatenText:
-	text "Mercy! You showed"
-	line "me your power!"
+	text "Gnade! Ich kenne"
+	line "jetzt deine Kraft!"
 	done
 
 CamperTedSeenText:
-	text "I'm raising #-"
-	line "mon too!"
+	text "Ich trainiere auch"
+	line "#mon!"
 
-	para "Will you battle"
-	line "with me?"
+	para "Möchtest du gegen"
+	line "mich kämpfen?"
 	done
 
 CamperTedBeatenText: ; text > text
-	text "Wha…?"
+	text "Wah…?"
 	done
 
 PicnickerErin1SeenText:
-	text "I raise #mon"
-	line "too!"
+	text "Ich trainiere auch"
+	line "#mon!"
 
-	para "Will you battle"
-	line "with me?"
+	para "Trittst du gegen"
+	line "mich an?"
 	done
 
 PicnickerErin1BeatenText:
-	text "Oh, rats!"
+	text "Oh, Mistkerle!"
 	done
 
 PicnickerErinAfterBattleText:
-	text "I've been to many"
-	line "Gyms, but the Gym"
+	text "Ich war in vielen"
+	line "PKMN-Arenen, aber"
 
-	para "in Goldenrod is my"
-	line "favorite."
+	para "die PKMN-Arena in"
+	line "Dukatia City"
+	cont "ist am schönsten."
 
-	para "It's filled with"
-	line "pretty flowers!"
+	para "Dort sind wunder-"
+	line "schöne Blumen!"
 	done
 
 PicnickerErin2BeatenText:
-	text "Aww… I keep losing"
-	line "all the time!"
+	text "Arg… Ständig"
+	line "verliere ich! Ich"
 
-	para "I'll just have to"
-	line "try harder!"
+	para "muss es noch"
+	line "härter probieren!"
 
-	para "Anyway, thanks for"
-	line "battling me again"
+	para "Egal, danke, dass"
+	line "du immer wieder"
 
-	para "and again. Here's"
-	line "that present from"
-	cont "the other time."
+	para "gegen mich"
+	line "kämpfst. Hier ist"
+	cont "das Geschenk vom"
+	cont "letzen Mal."
 	done
 
 Route46SignText:
 	text "Route 46"
-	line "Mountain Rd. Ahead"
+	line "Bergweg voraus"
 	done
 
 Route46LassText:

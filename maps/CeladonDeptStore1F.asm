@@ -20,34 +20,36 @@ CeladonDeptStore1F_MapScriptHeader:
 	object_event  5,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonDeptStore1FTeacherText, -1
 
 CeladonDeptStore1FReceptionistText:
-	text "Hello! Welcome to"
-	line "Celadon Dept."
-	cont "Store!"
+	text "Hallo! Willkommen"
+	line "im Einkaufszentrum"
+	cont "von Prismania"
+	cont "City!"
 
-	para "The directory is"
-	line "on the wall."
+	para "Die Übersicht"
+	line "ist an der Wand."
 	done
 
 CeladonDeptStore1FGentlemanText:
-	text "This Dept.Store is"
-	line "part of the same"
+	text "Dieses Einkaufs-"
+	line "zentrum gehört"
 
-	para "chain as the one"
-	line "in Goldenrod City."
+	para "derselben Kette"
+	line "an, wie das in"
+	cont "Dukatia City."
 
-	para "They were both"
-	line "renovated at the"
-	cont "same time."
+	para "Sie wurden beide"
+	line "zur selben Zeit"
+	cont "renoviert."
 	done
 
 CeladonDeptStore1FTeacherText:
-	text "This is my first"
-	line "time here."
+	text "Ich bin zum"
+	line "ersten Mal hier."
 
-	para "It's so big…"
+	para "Es ist so groß…"
 
-	para "I'm afraid I'll"
-	line "get lost."
+	para "Ich habe Angst,"
+	line "mich zu verlaufen."
 	done
 
 CeladonDeptStore1FDirectoryText:

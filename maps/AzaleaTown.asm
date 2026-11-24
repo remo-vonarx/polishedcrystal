@@ -126,20 +126,21 @@ AzaleaTownRivalBattleTrigger2:
 	end
 
 .SeenText:
-	text "…Tell me some-"
-	line "thing."
+	text "…Sag mir"
+	line "etwas."
 
-	para "Is it true that"
-	line "Team Rocket has"
-	cont "returned?"
+	para "Ist es wahr, dass"
+	line "Team Rocket zu-"
+	cont "rückgekehrt ist?"
 
-	para "What? You beat"
-	line "them? Hah! Quit"
-	cont "lying."
+	para "Was? Du hast sie"
+	line "geschlagen? Ha!"
+	cont "Hör auf zu lügen!"
 
-	para "You're not joking?"
-	line "Then let's see how"
-	cont "good you are."
+	para "Du machst keine"
+	line "Witze? Dann lass"
+	cont "uns sehen, wie gut"
+	cont "du bist!"
 	done
 
 .WinText:
@@ -154,38 +155,42 @@ AzaleaTownRivalBattleTrigger2:
 	done
 
 .LossText:
-	text "…Humph! I knew"
-	line "you were lying."
+	text "…Hmpf! Ich wusste,"
+	line "dass du lügst."
 	done
 
 .AfterText:
-	text "I hate the weak."
+	text "Ich hasse"
+	line "Schwäche!"
 
-	para "#mon, trainers."
-	line "It doesn't matter"
-	cont "who or what."
+	para "#mon, Trainer."
+	line "Es macht keinen"
+	cont "Unterschied, wer"
+	cont "oder was."
 
-	para "I'm going to be"
-	line "strong and wipe"
-	cont "out the weak."
+	para "Ich werde stark"
+	line "sein und das"
+	cont "Schwache aus-"
+	cont "löschen!"
 
-	para "That goes for Team"
-	line "Rocket too."
+	para "Das gilt auch für"
+	line "Team Rocket."
 
-	para "They act big and"
-	line "tough in a group."
+	para "Nur gemeinsam sind"
+	line "sie stark. Aber"
 
-	para "But get them"
-	line "alone, and they're"
-	cont "weak."
+	para "triffst du auf ei-"
+	line "nen allein, ist er"
+	cont "schwach."
 
-	para "I hate them all."
+	para "Ich hasse sie."
 
-	para "You stay out of my"
-	line "way. A weakling"
+	para "Geh mir aus dem"
+	line "Weg. Ein Schwäch-"
+	cont "ling wie du, ist"
 
-	para "like you is only a"
-	line "distraction."
+	para "nicht mehr als"
+	line "eine Ablenkung."
 	done
 
 .ApproachMovement:
@@ -207,16 +212,15 @@ AzaleaTown_CelebiTrigger:
 	applymovement PLAYER, .WalkOutOfKurtsHouseMovement
 	opentext
 	writethistext
-		text "Ilex Forest is"
-		line "restless!"
-
-		para "What is going on?"
+		text "Im Steineichenwald"
+		line "herrscht Unruhe!"
+		para "Was ist bloß los?"
 		done
 	promptbutton
 	turnobject AZALEATOWN_KURT, RIGHT
 	writethistext
-		text "<PLAYER>, here's"
-		line "your GS Ball back!"
+		text "<PLAYER>, hier"
+		line "dein GS-Ball!"
 		done
 	promptbutton
 	writetext AzaleaTownKurtText
@@ -237,53 +241,56 @@ AzaleaTown_CelebiTrigger:
 	step_end
 
 AzaleaTownSignText:
-	text "Azalea Town"
-	line "Where People and"
-
-	para "#mon Live in"
-	line "Happy Harmony"
+	text "Azalea City"
+	line "Hier leben Men-"
+	cont "schen und #mon"
+	cont "in Harmonie"
 	done
 
 KurtsHouseSignText:
-	text "Kurt's House"
+	text "Kurts Haus"
 	done
 
 AzaleaGymSignText:
-	text "Azalea Town"
-	line "#mon Gym"
-	cont "Leader: Bugsy"
+	text "PKMN-Arena von"
+	line "Azalea City"
+	cont "Leitung: Kai"
 
-	para "The Walking"
-	line "Bug #mon"
-	cont "Encyclopedia"
+	para "Die lebende Käfer-"
+	line "#mon-Enzyklo-"
+	cont "pädie"
 	done
 
 SlowpokeWellSignText:
-	text "Slowpoke Well"
+	text "Der Flegmon-Brun-"
+	line "nen ist auch be-"
+	cont "kannt als Regen-"
+	cont "macherquelle."
 
-	para "Also known as the"
-	line "Rainmaker Well."
+	para "Die Leute hier"
+	line "glauben, dass das"
+	cont "Gähnen eines Fleg-"
+	cont "mons Regen er-"
+	cont "zeugt."
 
-	para "Locals believe"
-	line "that a Slowpoke's"
-	cont "yawn summons rain."
+	para "Laut den Aufzeich-"
+	line "nungen soll das"
 
-	para "Records show that"
-	line "a Slowpoke's yawn"
-
-	para "ended a drought"
-	line "400 years ago."
+	para "Gähnen eines Fleg-"
+	line "mons vor 400 Jah-"
+	cont "ren eine Dürre be-"
+	cont "endet haben."
 	done
 
 CharcoalKilnSignText:
-	text "Charcoal Kiln"
+	text "Holzkohle-Ofen"
 	done
 
 AzaleaTownIlexForestSignText:
-	text "Ilex Forest"
+	text "Steineichenwald"
 
-	para "Enter through the"
-	line "gate."
+	para "Tritt durch das"
+	line "Tor"
 	done
 
 AzaleaTownAdvancedTipsSignText:
@@ -305,24 +312,22 @@ AzaleaTownGrampsScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "The Slowpoke have"
-	line "disappeared from"
-	cont "town…"
+	text "Alle Flegmon sind"
+	line "aus der Stadt ver-"
+	cont "schwunden…"
 
-	para "I heard their"
-	line "Tails are being"
-	cont "sold somewhere."
+	para "Ich hörte, dass"
+	line "ihre Ruten ver-"
+	cont "kauft werden."
 	done
 
 .Text2:
-	text "The Slowpoke have"
-	line "returned."
+	text "Die Flegmon sind"
+	line "zurückgekehrt."
 
-	para "Knowing them, they"
-	line "could've just been"
-
-	para "goofing off some-"
-	line "where."
+	para "Vermutlich haben"
+	line "sie wieder irgend-"
+	cont "wo gefaulenzt."
 	done
 
 AzaleaTownTeacherScript:
@@ -379,49 +384,54 @@ AzaleaTownWoosterText:
 	done
 
 AzaleaTownYoungsterText:
-	text "Cut through Azalea"
-	line "and you'll be in"
-	cont "Ilex Forest."
+	text "Gehe durch Azalea"
+	line "City und du lan-"
+	cont "dest im Steinei-"
+	cont "chenwald."
 
-	para "But these skinny"
-	line "trees make it"
+	para "Aber diese dürren"
+	line "Bäume machen es"
 
-	para "impossible to get"
-	line "through."
+	para "unmöglich, weiter-"
+	line "zukommen."
 
-	para "The Charcoal Man's"
-	line "#mon can Cut"
-	cont "down trees."
+	para "Die #mon des"
+	line "KÖHLERs können die"
+	cont "Bäume mit dem Zer-"
+	cont "schneider fällen."
 	done
 
 AzaleaTownRocket1Text:
-	text "It's unsafe to go"
-	line "in there, so I'm"
-	cont "standing guard."
+	text "Es ist gefährlich,"
+	line "da hineinzugehen."
+	cont "Deshalb stehe ich"
+	cont "hier Wache."
 
-	para "Aren't I a good"
-	line "Samaritan?"
+	para "Bin ich nicht ein"
+	line "barmherziger"
+	cont "Samariter?"
 	done
 
 AzaleaTownRocket2Text:
-	text "Do you know about"
-	line "SlowpokeTail? I"
-	cont "heard it's tasty!"
+	text "Hast du schon mal"
+	line "eine Flegmon-Rute"
+	cont "probiert? Sie soll"
+	cont "sehr lecker sein."
 
-	para "Aren't you glad I"
-	line "told you that?"
+	para "Du bist sicher"
+	line "froh, dass ich dir"
+	cont "das gesagt habe."
 	done
 
 AzaleaTownSlowpokeScript:
 	opentext
 	writethistext
-		text "Slowpoke: …"
-
+		text "Flegmon: …"
 		para "…… …… ……"
 		done
 	pause 60
 	writethistext
-		text "…… ……Yawn?"
+		text "…… ……Gähn?"
 		done
 	cry SLOWPOKE
 	waitendtext
@@ -432,7 +442,8 @@ AzaleaTownKurtScript:
 	end
 
 AzaleaTownKurtText:
-	text "Could you go see"
-	line "why Ilex Forest is"
-	cont "so restless?"
+	text "Könntest du nach-"
+	line "sehen, was im"
+	cont "Steineichenwald"
+	cont "los ist?"
 	done

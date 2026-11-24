@@ -99,19 +99,20 @@ WardensGranddaughterText3:
 	done
 
 WardenPhotoText:
-	text "It's a photo of a"
-	line "grinning old man"
+	text "Das Foto zeigt"
+	line "einen lächelnden,"
 
-	para "who's surrounded"
-	line "by #mon."
+	para "alten Mann umgeben"
+	line "von #mon."
 	done
 
 SafariZonePhotoText:
-	text "It's a photo of a"
-	line "huge grassy plain"
+	text "Das Foto zeigt"
+	line "eine große Wiese,"
 
-	para "with rare #mon"
-	line "frolicking in it."
+	para "auf der seltene"
+	line "#mon"
+	cont "herumtollen."
 	done
 
 WardensHouseCuriosText:

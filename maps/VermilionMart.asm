@@ -17,11 +17,13 @@ VermilionMart_MapScriptHeader:
 	object_event  8,  6, SPRITE_LADY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionMartBeautyText, -1
 
 VermilionMartSuperNerdText:
-	text "Team Rocket is no"
-	line "longer in Kanto."
+	text "Team Rocket ist"
+	line "nicht mehr in"
+	cont "Kanto."
 
-	para "That alone makes"
-	line "me happy."
+	para "Das allein ist"
+	line "schon ein Grund"
+	cont "zum Feiern."
 	done
 
 VermilionMartBeautyText:

@@ -91,15 +91,15 @@ DragonsDenB1FClairTrigger:
 	end
 
 .WaitText:
-	text "Wait!"
+	text "Moment!"
 	done
 
 .GiveTMText:
-	text "Clair: I'm sorry"
-	line "about this."
+	text "Sandra: Das tut"
+	line "mir Leid."
 
-	para "Here, take this as"
-	line "my apology."
+	para "Hier, nimm das als"
+	line "Entschuldigung."
 	done
 
 .DescribeDragonPulseText:
@@ -126,13 +126,15 @@ DragonsDenB1FClairTrigger:
 	step_end
 
 DragonsDenShrineSignText:
-	text "Dragon Shrine"
+	text "Drachenschrein"
 
-	para "A shrine honoring"
-	line "the dragon #mon"
+	para "Der Schrein ehrt"
+	line "die Drachen #-"
+	cont "mon, die früher"
 
-	para "said to have lived"
-	line "in Dragon's Den."
+	para "in der Drachen-"
+	line "höhle gelebt haben"
+	cont "sollen."
 	done
 
 DragonsDenB1FRivalScript:
@@ -221,53 +223,60 @@ DragonsDenB1FRivalScript:
 
 .Training1Text:
 	text "…"
-	line "What? <PLAYER>?"
+	line "Was? <PLAYER>?"
 
-	para "…No, I won't"
-	line "battle you now…"
+	para "…Nein, ich"
+	line "möchte jetzt nicht"
+	cont "mit dir kämpfen…"
 
-	para "My #mon aren't"
-	line "ready to beat you."
+	para "Meine #mon sind"
+	line "noch nicht bereit,"
+	cont "dich zu schlagen."
 
-	para "I can't push them"
-	line "too hard now."
+	para "Ich darf sie nicht"
+	line "zu schroff"
+	cont "behandeln."
 
-	para "I have to be dis-"
-	line "ciplined to become"
+	para "Ich muss diszipli-"
+	line "nierter sein, wenn"
 
-	para "the greatest #-"
-	line "mon trainer…"
+	para "ich der weltbeste"
+	line "#mon-Trainer"
+	cont "werden möchte…"
 	done
 
 .Training2Text:
 	text "…"
 
-	para "Whew…"
+	para "Wow…"
 
-	para "Learn to stay out"
-	line "of my way…"
+	para "Du musst lernen,"
+	line "mir aus dem Weg"
+	cont "zu gehen…"
 	done
 
 GenericTrainerDragonTamerDarin:
 	generictrainer DRAGON_TAMER, DARIN, EVENT_BEAT_DRAGON_TAMER_DARIN, .SeenText, .BeatenText
 
-	text "The Shrine ahead"
-	line "is home to the"
+	text "In dem Schrein da"
+	line "vorne lebt der"
 
-	para "Master of our"
-	line "dragon-user clan."
+	para "Meister unseres"
+	line "Drachenklans. Du"
 
-	para "You're not allowed"
-	line "to just go in!"
+	para "darfst nicht"
+	line "einfach eintreten!"
 	done
 
 .SeenText:
-	text "You! How dare you"
-	line "enter uninvited!"
+	text "Du! Wie kannst du"
+	line "es wagen! Niemand"
+	para "bat dich"
+	line "einzutreten!"
 	done
 
 .BeatenText:
-	text "S-strong!"
+	text "S-stark!"
 	done
 
 GenericTrainerDragonTamerAdam:
@@ -285,8 +294,8 @@ GenericTrainerDragonTamerAdam:
 	done
 
 .SeenText:
-	text "You shouldn't be"
-	line "in here!"
+	text "Du solltest nicht"
+	line "hier sein!"
 	done
 
 .BeatenText:
@@ -351,32 +360,34 @@ GenericTrainerAceDuoDanandcara2:
 GenericTrainerTwinsLeaandpia1:
 	generictrainer TWINS, LEAANDPIA1, EVENT_BEAT_TWINS_LEA_AND_PIA, .SeenText, .BeatenText
 
-	text "It was like having"
-	line "to battle Lance."
+	text "Es kam mir vor,"
+	line "als würde ich"
+	cont "gegen Siegfried"
+	cont "kämpfen."
 	done
 
 .SeenText:
-	text "It's a stranger we"
-	line "don't know."
+	text "Ein Fremder, den"
+	line "wir nicht kennen."
 	done
 
 .BeatenText:
-	text "Ouchies."
+	text "Aua!"
 	done
 
 GenericTrainerTwinsLeaandpia2:
 	generictrainer TWINS, LEAANDPIA1, EVENT_BEAT_TWINS_LEA_AND_PIA, .SeenText, .BeatenText
 
-	text "We'll tell on you."
+	text "Wir verraten dich."
 
-	para "Master will be"
-	line "angry with you."
+	para "Der Meister wird"
+	line "erzürnt sein."
 	done
 
 .SeenText:
-	text "Who are you?"
+	text "Wer bist du?"
 	done
 
 .BeatenText:
-	text "Meanie."
+	text "Fiesling."
 	done

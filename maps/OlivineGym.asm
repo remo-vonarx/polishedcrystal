@@ -45,9 +45,10 @@ OlivineGymJasmineScript:
 	setevent EVENT_GOT_TM23_IRON_TAIL
 	jumpthisopenedtext
 
-	text "…You could use"
-	line "that TM to teach"
-	cont "Iron Tail."
+	text "…Mit dieser TM"
+	line "kannst du deinen"
+	cont "#mon Eisen-"
+	cont "schweif lehren."
 	done
 
 OlivineGymGuyScript:
@@ -57,12 +58,12 @@ OlivineGymGuyScript:
 	iffalse_jumptextfaceplayer OlivineGymGuyPreText
 	jumpthistextfaceplayer
 
-	text "Jasmine uses the"
-	line "newly discovered"
-	cont "Steel-type."
+	text "Jasmin setzt den"
+	line "neu entdeckten Typ"
+	cont "Stahl ein."
 
-	para "I don't know very"
-	line "much about it."
+	para "Ich weiß nicht"
+	line "viel darüber."
 	done
 
 OlivineGymLassConnie:
@@ -172,17 +173,21 @@ Jasmine_SteelTypeIntro:
 	done
 
 Jasmine_BetterTrainer:
-	text "…You are a better"
-	line "trainer than me,"
+	text "…Du bist ein bes-"
+	line "serer Trainer als"
 
-	para "in both skill and"
-	line "kindness."
+	para "ich. Das betrifft"
+	line "sowohl Geschick,"
 
-	para "In accordance with"
-	line "League rules, I"
+	para "als auch Fein-"
+	line "gefühl."
 
-	para "confer upon you"
-	line "this Badge."
+	para "In Übereinstimmung"
+	line "mit den Regeln der"
+
+	para "Liga überreiche"
+	line "ich dir diesen"
+	cont "Orden."
 	done
 
 Jasmine_BadgeSpeech:
@@ -200,31 +205,34 @@ Jasmine_BadgeSpeech:
 	done
 
 Jasmine_GoodLuck:
-	text "Um… I don't know"
-	line "how to say this,"
-	cont "but good luck…"
+	text "Ähm… Ich weiß"
+	line "nicht, wie ich das"
+	cont "sagen soll, aber…"
+	cont "Viel Glück!"
 	done
 
 OlivineGymGuyWinText:
-	text "That was awesome."
+	text "Das war großartig!"
 
-	para "The Steel-type,"
-	line "huh?"
+	para "Der Typ Stahl,"
+	line "was?"
 
-	para "That was a close"
-	line "encounter of an"
-	cont "unknown kind!"
+	para "Das war eine un-"
+	line "heimliche Begeg-"
+	cont "nung der unbe-"
+	cont "kannten Art."
 	done
 
 OlivineGymGuyPreText:
-	text "Jasmine, the Gym"
-	line "Leader, is at the"
-	cont "Lighthouse."
+	text "Jasmin, die Are-"
+	line "naleiterin, ist im"
+	cont "Leuchtturm."
 
-	para "She's been tending"
-	line "to a sick #mon."
+	para "Sie kümmert sich"
+	line "um ein krankes"
+	cont "#mon."
 
-	para "A strong trainer"
-	line "has to be compas-"
-	cont "sionate."
+	para "Ein starker Trai-"
+	line "ner muss auch Mit-"
+	cont "gefühl zeigen."
 	done

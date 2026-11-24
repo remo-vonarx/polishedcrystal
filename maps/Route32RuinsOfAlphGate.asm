@@ -19,28 +19,37 @@ Route32RuinsOfAlphGate_MapScriptHeader:
 	object_event  1,  6, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route32RuinsOfAlphGateYoungsterText, -1
 
 Route32RuinsOfAlphGateOfficerText:
-	text "Ruins of Alph"
+	text "Alph-Ruinen"
 
-	para "A Look-and-Touch"
-	line "Tourist Site"
+	para "Eine Besichti-"
+	line "gungsstätte"
+	cont "für Touristen."
 
-	para "Try the sliding"
-	line "stone panels!"
+	para "Versuche, die"
+	line "schwenkbaren"
+
+	para "Steintafeln"
+	line "zu bewegen!"
 	done
 
 Route32RuinsOfAlphGatePokefanMText:
-	text "You're studying"
-	line "the ruins?"
+	text "Du untersuchst"
+	line "die Ruinen?"
 
-	para "I see a scientist"
-	line "in the making."
+	para "Ich sehe einen"
+	line "Wissenschaftler"
+	cont "in spe."
 	done
 
 Route32RuinsOfAlphGateYoungsterText:
-	text "There are drawings"
-	line "on stone panels."
+	text "Auf den"
+	line "Steintafeln"
+	cont "sind Zeichnungen."
 
-	para "I tried moving"
-	line "them. I wonder"
-	cont "what they are."
+	para "Ich versuchte, "
+	line "sie zu bewegen."
+
+	para "Ich frage mich, "
+	line "was sie"
+	cont "darstellen."
 	done

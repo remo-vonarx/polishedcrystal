@@ -99,9 +99,11 @@ SaffronGymSabrinaScript:
 GenericTrainerMediumDoris:
 	generictrainer MEDIUM, DORIS, EVENT_BEAT_MEDIUM_DORIS, MediumDorisSeenText, MediumDorisBeatenText
 
-	text "Darn! I forgot"
-	line "that I predicted I"
-	cont "would lose to you."
+	text "Mist! Ich habe"
+	line "vergessen, dass"
+	cont "ich meine Nieder-"
+	cont "lage gegen dich"
+	cont "voraussah."
 	done
 
 GenericTrainerPsychicLeon:
@@ -114,12 +116,13 @@ GenericTrainerPsychicLeon:
 GenericTrainerPsychicJared:
 	generictrainer PSYCHIC_T, JARED, EVENT_BEAT_PSYCHIC_JARED, PsychicJaredSeenText, PsychicJaredBeatenText
 
-	text "Karate King, the"
-	line "master of the"
+	text "Der Karate-"
+	line "Meister, Leiter"
 
-	para "Fighting Dojo, was"
-	line "just destroyed by"
-	cont "Sabrina."
+	para "des Karate Dojo,"
+	line "ist gerade von"
+	cont "Sabrina besiegt"
+	cont "worden."
 	done
 
 GenericTrainerHexManiacLuna:
@@ -144,16 +147,17 @@ GenericTrainerHexManiacNatalie:
 GenericTrainerPsychicFranklin:
 	generictrainer PSYCHIC_T, FRANKLIN, EVENT_BEAT_PSYCHIC_FRANKLIN, PsychicFranklinSeenText, PsychicFranklinBeatenText
 
-	text "You made your soul"
-	line "stronger, not just"
-	cont "your abilities."
+	text "Du hast auch deine"
+	line "Seele gestärkt,"
+	cont "nicht nur deine"
+	cont "Fähigkeiten."
 	done
 
 GenericTrainerMediumRebecca:
 	generictrainer MEDIUM, REBECCA, EVENT_BEAT_MEDIUM_REBECCA, MediumRebeccaSeenText, MediumRebeccaBeatenText
 
-	text "What is the source"
-	line "of your power?"
+	text "Woher kommt deine"
+	line "Kraft?"
 	done
 
 SaffronGymGuyScript:
@@ -161,22 +165,23 @@ SaffronGymGuyScript:
 	iftrue_jumptextfaceplayer SaffronGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Yo, Champ in"
-	line "making!"
+	text "He! Ein Champ"
+	line "in spe!"
 
-	para "A trainer as"
-	line "skilled as you"
+	para "Ein Trainer"
+	line "deines Kalibers"
 
-	para "doesn't need to be"
-	line "told how to deal"
+	para "braucht sicher"
+	line "keine Anweisung,"
 
-	para "with Psychic-type"
-	line "#mon, right?"
+	para "wie mit Psycho-"
+	line "#mon umzugehen"
+	cont "ist, nicht wahr?"
 
-	para "I expect great"
-	line "things from you!"
+	para "Ich erwarte"
+	line "Großes von dir!"
 
-	para "Good luck!"
+	para "Viel Glück!"
 	done
 
 SaffronGymStatue:
@@ -250,30 +255,34 @@ SabrinaMarshBadgeText:
 	done
 
 SabrinaFightDoneText:
-	text "Sabrina: Your love"
-	line "for your #mon"
+	text "Sabrina: Deine Zu-"
+	line "neigung zu deinen"
 
-	para "overwhelmed my"
-	line "psychic power…"
+	para "#mon hat meine"
+	line "Psychostärke"
+	cont "übertroffen…"
 
-	para "The power of love,"
-	line "I think, is also a"
+	para "Die Kraft der"
+	line "Liebe ist meiner"
 
-	para "kind of psychic"
-	line "power…"
+	para "Ansicht nach auch"
+	line "eine Art von"
+	cont "Psychostärke…"
 	done
 
 MediumDorisSeenText:
-	text "Fufufufu…"
-	line "I see it clearly."
+	text "Hehehehe…"
+	line "Ich habe es"
+	cont "deutlich vor mir."
 
-	para "I can see into"
-	line "your soul!"
+	para "Ich kann in deine"
+	line "Seele blicken!"
 	done
 
 MediumDorisBeatenText:
-	text "Though I read you,"
-	line "I still lost…"
+	text "Obwohl ich in dir"
+	line "lesen kann, habe"
+	cont "ich verloren…"
 	done
 
 PsychicLeonSeenText:
@@ -287,13 +296,15 @@ PsychicLeonBeatenText:
 	done
 
 PsychicJaredSeenText:
-	text "The Fighting Dojo"
-	line "next door was once"
-	cont "this city's Gym."
+	text "Das Karate Dojo"
+	line "nebenan war früher"
+	cont "die PKMN-Arena der"
+	cont "Stadt."
 	done
 
 PsychicJaredBeatenText:
-	text "I was no match…"
+	text "Ich war leicht"
+	line "zu besiegen…"
 	done
 
 HexManiacLunaSeenText:
@@ -315,29 +326,32 @@ HexManiacNatalieBeatenText:
 	done
 
 PsychicFranklinSeenText:
-	text "Psychic power is"
-	line "the power of your"
-	cont "soul."
+	text "Psychische Stärke"
+	line "ist die Kraft"
+	cont "deiner Seele."
 	done
 
 PsychicFranklinBeatenText:
-	text "Your soul has more"
-	line "power than mine!"
+	text "Deine Seele ist"
+	line "stärker als meine!"
 	done
 
 MediumRebeccaSeenText:
-	text "The power of all"
-	line "those you defeated"
-	cont "comes to me!"
+	text "Die Kraft all"
+	line "derer, die du"
+	cont "besiegt hast,"
+	cont "offenbart sich"
+	cont "mir!"
 	done
 
 MediumRebeccaBeatenText:
-	text "Strong…"
-	line "Far too strong…"
+	text "Stark…"
+	line "Viel zu stark…"
 	done
 
 
 SaffronGymGuyWinText:
-	text "That was another"
-	line "fantastic battle!"
+	text "Das war wieder ein"
+	line "fantastischer"
+	cont "Kampf!"
 	done

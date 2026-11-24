@@ -65,28 +65,33 @@ MrFujiScript:
 	endtext
 
 MrFujiText:
-	text "Mr.Fuji: Welcome."
+	text "Mr. Fuji: Sei"
+	line "willkommen."
 
-	para "Hmm… You appear to"
-	line "be raising your"
+	para "Hm… Du scheinst"
+	line "deine #mon"
 
-	para "#mon in a kind"
-	line "and loving manner."
+	para "mit Sorgfalt und"
+	line "Liebe aufzuziehen."
 
-	para "#mon lovers"
-	line "come here to pay"
+	para "Solche, die #-"
+	line "mon verehren,"
 
-	para "their respects to"
-	line "departed #mon."
+	para "zollen hier den"
+	line "dahingegangenen"
+	cont "#mon ihren"
+	cont "Respekt."
 
-	para "Please offer con-"
-	line "dolences for the"
+	para "Bekunde bitte dein"
+	line "Beileid für die"
 
-	para "souls of the de-"
-	line "parted #mon."
+	para "Seelen der"
+	line "dahingegangenen"
+	cont "#mon."
 
-	para "I'm sure that will"
-	line "make them happy."
+	para "Ich bin sicher,"
+	line "das macht sie"
+	cont "glücklich."
 	done
 
 MrFujiGiveSilphScopeText:
@@ -105,27 +110,30 @@ MrFujiUseThisText:
 	done
 
 SoulHouseTeacherText:
-	text "There are other"
-	line "graves of #mon"
-	cont "here, I think."
+	text "Ich glaube, hier"
+	line "liegen noch andere"
+	cont "#mon begraben."
 
-	para "There are many"
-	line "chambers that only"
-	cont "Mr.Fuji may enter."
+	para "Es gibt viele"
+	line "Kammern, die nur"
+	cont "Mr. Fuji betreten"
+	cont "darf."
 	done
 
 SoulHouseLassText:
-	text "I came with my mom"
-	line "to visit #mon"
-	cont "graves…"
+	text "Ich besuche mit"
+	line "meiner Mutter die"
+	cont "Grabmale der"
+	cont "#mon…"
 	done
 
 SoulHouseGrannyText:
-	text "The #mon that"
-	line "lived with me…"
+	text "Die #mon, die"
+	line "bei mir lebten…"
 
-	para "I loved them like"
-	line "my grandchildren…"
+	para "Ich hatte sie so"
+	line "lieb wie meine"
+	cont "Enkelkinder…"
 	done
 
 AgathaSeenText:

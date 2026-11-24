@@ -544,12 +544,14 @@ Route34RichBoyIrvingScript:
 GenericTrainerPokefanmBrandon:
 	generictrainer POKEFANM, BRANDON, EVENT_BEAT_POKEFANM_BRANDON, PokefanmBrandonSeenText, PokefanmBrandonBeatenText
 
-	text "My #mon knew"
-	line "moves I didn't"
-	cont "know it had."
+	text "Mein #mon"
+	line "kannte Attacken,"
+	cont "von denen ich"
+	cont "nicht wusste, dass"
+	cont "es sie hat."
 
-	para "That confounded me"
-	line "to no end!"
+	para "Das war überaus"
+	line "erstaunlich!"
 	done
 
 TrainerCooltrainerfIrene:
@@ -561,9 +563,10 @@ TrainerCooltrainerfIrene:
 	iftrue_jumptext CooltrainerfIreneAfterText2
 	jumpthistext
 
-	text "Irene: My sister"
-	line "Kate will get you"
-	cont "for this!"
+	text "Lola: Du wirst"
+	line "meine Schwester"
+	cont "Edna noch"
+	cont "kennenlernen!"
 	done
 
 TrainerCooltrainerfJenn:
@@ -575,9 +578,11 @@ TrainerCooltrainerfJenn:
 	iftrue_jumptext CooltrainerfJennAfterText2
 	jumpthistext
 
-	text "Jenn: Don't get"
-	line "cocky! My sister"
-	cont "Kate is tough!"
+	text "Else: Bilde dir"
+	line "bloß nichts ein!"
+	cont "Meine Schwester"
+	cont "Edna ist sehr"
+	cont "stark!"
 	done
 
 TrainerCooltrainerfKate:
@@ -595,14 +600,17 @@ TrainerCooltrainerfKate:
 	jumpthisopenedtext
 
 CooltrainerfKateAfterText:
-	text "Kate: I'm sorry we"
-	line "jumped you."
+	text "Edna: Bitte "
+	line "entschuldige, dass"
+	cont "wir dich über-"
+	cont "fallen haben."
 
-	para "We never expected"
-	line "anyone to find us"
+	para "Wir hätten nicht"
+	line "gedacht, dass uns"
 
-	para "here. You sure"
-	line "startled us."
+	para "hier jemand"
+	line "findet. Du hast"
+	cont "uns überrascht."
 	done
 
 Route34MovementData_DayCareManWalksBackInside_WalkAroundPlayer:
@@ -683,66 +691,71 @@ BreederJulieSeenText:
 	done
 
 BreederJulieBeatenText:
-	text "Beaten by a"
-	line "passing stranger!"
+	text "Besiegt von einem"
+	line "Passanten!"
 	done
 
 CamperTodd1SeenText:
-	text "I'm confident in"
-	line "my ability to"
-	cont "raise #mon."
+	text "Ich weiß, dass ich"
+	line "#mon gut"
+	cont "aufziehen kann."
 
-	para "Want to see?"
+	para "Möchtest du dich"
+	line "davon überzeugen?"
 	done
 
 CamperTodd1BeatenText:
-	text "Did I screw up my"
-	line "training?"
+	text "Habe ich falsch"
+	line "trainiert?"
 	done
 
 CamperTodd1AfterText:
-	text "Maybe I should"
-	line "take one to a Day-"
+	text "Vielleicht sollte"
+	line "ich eines in die"
 
-	para "Care. Or maybe use"
-	line "some items…"
+	para "Pension geben."
+	line "Oder Items"
+
+	para "benutzen…"
 	done
 
 CamperToddSaleText:
-	text "Shopping under the"
-	line "sky!"
+	text "Einkaufen unter"
+	line "freiem Himmel!"
 
-	para "It feels so nice"
-	line "up on a rooftop."
+	para "Es ist schön"
+	line "auf einem Dach."
 	done
 
 PicnickerGina1SeenText:
-	text "Are you a trainer?"
+	text "Bist du"
+	line "ein Trainer?"
 
-	para "Let's have a"
-	line "practice battle."
+	para "Hast du Lust auf"
+	line "einen Übungskampf?"
 	done
 
 PicnickerGina1BeatenText:
-	text "Oh, no! I just"
-	line "can't win…"
+	text "Oh nein! Ich habe"
+	line "noch nie gewonnen…"
 	done
 
 PicnickerGina1AfterText:
-	text "You're too strong"
-	line "to be a practice"
-	cont "partner."
+	text "Du bist mir zu"
+	line "stark. Das ist"
+	cont "keine Übung"
+	cont "für mich."
 	done
 
 OfficerfMaraSeenText:
-	text "Who goes there?"
-	line "What are you up"
-	cont "to?"
+	text "Wer ist da? Was"
+	line "ist dein Begehr?"
 	done
 
 OfficerfMaraWinText:
-	text "You're a tough"
-	line "little kid."
+	text "Du bist ein"
+	line "starker,"
+	cont "junger Gegner."
 	done
 
 OfficerfMaraAfterText:
@@ -754,100 +767,110 @@ OfficerfMaraAfterText:
 	done
 
 OfficerfMaraDaytimeText:
-	text "I'm on patrol for"
-	line "suspicious indi-"
-	cont "viduals."
+	text "Ich bin auf der"
+	line "Suche nach ver-"
+	cont "dächtigen"
+	cont "Individuen."
 	done
 
 PokefanmBrandonSeenText:
-	text "I just got my"
-	line "#mon back from"
-	cont "Day-Care."
+	text "Ich habe gerade"
+	line "mein #mon"
+	cont "aus der Pension"
+	cont "wieder abgeholt."
 
-	para "Let's see how much"
-	line "stronger it got!"
+	para "Sehen wir mal,"
+	line "wie stark es"
+	cont "geworden ist!"
 	done
 
 PokefanmBrandonBeatenText:
-	text "Why does it end"
-	line "this way?"
+	text "Warum muss es auf"
+	line "diese Weise enden?"
 	done
 
 CooltrainerfIreneSeenText:
-	text "Irene: Kyaaah!"
-	line "Someone found us!"
+	text "Lola: Uargh!"
+	line "Wir sind entdeckt!"
 	done
 
 CooltrainerfIreneBeatenText:
-	text "Irene: Ohhh!"
-	line "Too strong!"
+	text "Lola: Ohhh!"
+	line "Viel zu stark!"
 	done
 
 CooltrainerfIreneAfterText2:
-	text "Irene: Isn't this"
-	line "beach great?"
+	text "Lola: Ist dieser"
+	line "Strand nicht"
+	cont "herrlich?"
 
-	para "It's our secret"
-	line "little getaway!"
+	para "Er ist unsere"
+	line "geheime"
+	cont "Zuflucht!"
 	done
 
 CooltrainerfJennSeenText:
-	text "Jenn: You can't"
-	line "beat Irene and go"
-	cont "unpunished!"
+	text "Else: Dein Sieg"
+	line "über Lola muss"
+	cont "gesühnt werden!"
 	done
 
 CooltrainerfJennBeatenText:
-	text "Jenn: So sorry,"
-	line "Irene! Sis!"
+	text "Else: Es tut"
+	line "mir so Leid,"
+	cont "Schwesterchen!"
 	done
 
 CooltrainerfJennAfterText2:
-	text "Jenn: Sunlight"
-	line "makes your body"
-	cont "stronger."
+	text "Else: Sonnen-"
+	line "licht kräftigt"
+	cont "deinen Körper."
 	done
 
 CooltrainerfKateSeenText:
-	text "Kate: You sure"
-	line "were mean to my"
-	cont "little sisters!"
+	text "Edna: Du warst"
+	line "wirklich gemein"
+	cont "zu meinen kleinen"
+	cont "Schwestern!"
 	done
 
 CooltrainerfKateBeatenText:
-	text "Kate: No! I can't"
-	line "believe I lost."
+	text "Edna: Nein! Ich"
+	line "kann nicht"
+	cont "glauben, dass ich"
+	cont "verloren habe."
 	done
 
 CooltrainerfKateOfferPowerHerbText:
-	text "Kate: You're too"
-	line "strong. I didn't"
-	cont "stand a chance."
+	text "Edna: Du bist zu"
+	line "stark. Ich hatte"
+	cont "keine Chance."
 
-	para "Here. You deserve"
-	line "this."
+	para "Hier. Das hast du"
+	line "dir verdient."
 	done
 
 Route34SignText:
 	text "Route 34"
 
-	para "Goldenrod City -"
-	line "Azalea Town"
+	para "Dukatia City -"
+	line "Azalea City"
 
-	para "Ilex Forest"
-	line "Somewhere Between"
+	para "Steineichenwald"
+	line "Irgendwo"
+	cont "dazwischen"
 	done
 
 Route34TrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
+	line "Bäume mit Beeren"
 
-	para "Berry trees grow"
-	line "new Berries"
-	cont "every day."
+	para "tragen jeden Tag"
+	line "neue Beeren."
 
-	para "Make a note of"
-	line "which trees bear"
-	cont "which Berries."
+	para "Merke dir, welche"
+	line "Beeren an den"
+	cont "Bäumen wachsen."
 	done
 
 Route34AdvancedTipsSignText:
@@ -868,8 +891,9 @@ Route34AdvancedTipsSignText:
 	done
 
 DayCareSignText:
-	text "Day-Care"
+	text "Pension"
 
-	para "Let Us Raise Your"
-	line "#mon For You!"
+	para "Wir Ziehen Dein"
+	line "#mon Für"
+	cont "Dich Auf!"
 	done

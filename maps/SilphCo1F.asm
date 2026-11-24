@@ -70,9 +70,10 @@ SilphCoOfficerScript:
 	done
 
 SilphCoReceptionistText:
-	text "Welcome. This is"
-	line "Silph Co.'s Head"
-	cont "Office Building."
+	text "Willkommen. Das"
+	line "ist das Büro-"
+	cont "gebäude der"
+	cont "Silph Co."
 	done
 
 

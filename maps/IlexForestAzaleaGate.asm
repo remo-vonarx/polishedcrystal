@@ -59,18 +59,20 @@ ProfOaksAide1Script:
 	done
 
 IlexForestAzaleaGateOfficerText:
-	text "Ilex Forest is"
-	line "big. Be careful!"
-	cont "Don't get lost."
+	text "Vorsicht! Verlaufe"
+	line "dich nicht! Der"
+	cont "Steineichenwald"
+	cont "ist groß."
 	done
 
 IlexForestAzaleaGateGrannyText:
-	text "The Forest is"
-	line "watched over by"
-	cont "its protector."
+	text "Der Wald wird von"
+	line "seinem"
+	cont "Schutzpatron"
+	cont "bewacht."
 
-	para "Stay out of"
-	line "mischief!"
+	para "Mach keine"
+	line "Dummheiten!"
 	done
 
 ProfOaksAide1HiText:

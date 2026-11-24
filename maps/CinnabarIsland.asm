@@ -151,10 +151,11 @@ CinnabarIslandGymSignText:
 	done
 
 CinnabarIslandSignText:
-	text "Cinnabar Island"
+	text "Zinnoberinsel"
 
-	para "The Fiery Town of"
-	line "Burning Desire"
+	para "Die Feurige Stadt"
+	line "Brennender"
+	cont "Begierde"
 	done
 
 CinnabarIslandVolcanoWarningSignText:

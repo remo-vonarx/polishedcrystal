@@ -153,9 +153,10 @@ TuscanyScript:
 TuscanyNotTuesdayScript:
 	jumpthisopenedtext
 
-	text "Tuscany: Today is"
-	line "not Tuesday. That"
-	cont "is unfortunate…"
+	text "Dietlinde: Heute"
+	line "ist nicht Diens-"
+	cont "tag. Das ist"
+	cont "schade…"
 	done
 
 LyraMovementData1a:
@@ -231,57 +232,63 @@ CatchingTutorialGoodbyeText:
 	done
 
 Route29YoungsterText:
-	text "Yo. How are your"
-	line "#mon?"
+	text "Yo. Wie geht es"
+	line "deinen #mon?"
 
-	para "If they're weak"
-	line "and not ready for"
+	para "Sind sie schwach"
+	line "und nicht bereit"
 
-	para "battle, keep out"
-	line "of the grass."
+	para "zu kämpfen, halte"
+	line "dich vom Gras"
+	cont "fern."
 	done
 
 Route29TeacherText:
-	text "See those ledges?"
-	line "It's scary to jump"
-	cont "off them."
+	text "Siehst du die"
+	line "Stufen hier?"
 
-	para "But you can go to"
-	line "New Bark without"
+	para "Du kannst nicht"
+	line "hinaufklettern,"
+	cont "dafür aber"
+	cont "herunterspringen!"
 
-	para "walking through"
-	line "the grass."
+	para "Du kannst nach"
+	line "Neuborkia gehen,"
+
+	para "ohne durch das"
+	line "Gras zu laufen."
 	done
 
 Route29FisherText:
-	text "I wanted to take a"
-	line "break, so I saved"
+	text "Ich wollte eine"
+	line "Pause einlegen,"
 
-	para "to record my"
-	line "progress."
+	para "darum habe ich"
+	line "meinen Spielstand"
+	cont "abgespeichert."
 	done
 
 
 Text_WaitingForMorning:
-	text "I'm waiting for"
-	line "#mon that"
+	text "Ich warte auf"
+	line "#mon, die"
 
-	para "appear only in the"
-	line "morning."
+	para "nur am Vormittag"
+	line "auftauchen."
 	done
 
 MeetTuscanyText:
-	text "Tuscany: I do be-"
-	line "lieve that this is"
+	text "Dietlinde: Ich"
+	line "glaube, wir"
 
-	para "the first time"
-	line "we've met?"
+	para "begegnen uns zum"
+	line "ersten Mal!"
 
-	para "Please allow me to"
-	line "introduce myself."
+	para "Darf ich mich"
+	line "vorstellen? Ich"
 
-	para "I am Tuscany of"
-	line "Tuesday."
+	para "bin Dietlinde"
+	line "von Dienstag."
 	done
 
 TuscanyGivesGiftText:
@@ -294,15 +301,18 @@ TuscanyGivesGiftText:
 
 
 TuscanyTuesdayText:
-	text "Tuscany: Have you"
-	line "met Monica, my"
-	cont "older sister?"
+	text "Dietlinde: Bist"
+	line "du Monja meiner"
+	cont "älteren Schwester"
+	cont "schon begegnet?"
 
-	para "Or my younger"
-	line "brother, Wesley?"
+	para "Oder meinem"
+	line "kleinen Bruder"
+	cont "Mitko?"
 
-	para "I am the second of"
-	line "seven children."
+	para "Ich bin das zweite"
+	line "von sieben"
+	cont "Kindern."
 	done
 
 
@@ -316,8 +326,8 @@ Route29Sign1Text:
 Route29Sign2Text:
 	text "Route 29"
 
-	para "Cherrygrove City -"
-	line "New Bark Town"
+	para "Rosalia City -"
+	line "Neuborkia"
 	done
 
 Route29AdvancedTipsSignText:

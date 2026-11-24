@@ -154,72 +154,79 @@ LanceScript:
 	end
 
 .SeenText:
-	text "Lance: I've been"
-	line "waiting for you."
+	text "Siegfried: Ich"
+	line "habe dich"
+	cont "erwartet."
 
 	para "<PLAYER>!"
 
-	para "I knew that you,"
-	line "with your skills,"
+	para "Ich wusste, dass"
+	line "du mir aufgrund"
 
-	para "would eventually"
-	line "reach me here."
+	para "deiner Fähigkeiten"
+	line "eines Tages"
+	cont "gegenüberstehen"
+	cont "würdest."
 
-	para "There's no need"
-	line "for words now."
+	para "Worte sind hier"
+	line "fehl am Platze."
 
-	para "We will battle to"
-	line "determine who is"
+	para "Ein Kampf wird"
+	line "zeigen, wer"
 
-	para "the stronger of"
-	line "the two of us."
+	para "der Stärkere von"
+	line "uns beiden ist."
 
-	para "As the most power-"
-	line "ful trainer and as"
+	para "Ich, der beste"
+	line "aller Trainer und"
 
-	para "the #mon League"
-	line "Champion…"
+	para "Champ der"
+	line "#mon Liga…"
 
-	para "I, Lance the drag-"
-	line "on master, accept"
-	cont "your challenge!"
+	para "Ich, Siegfried"
+	line "der Drachenmeis-"
+	cont "ter, nehme deine"
+
+	para "Herausforderung"
+	line "an!"
 	done
 
 .BeatenText:
-	text "…It's over."
+	text "Das ist ein"
+	line "seltsames Gefühl."
 
-	para "But it's an odd"
-	line "feeling."
+	para "Ich bin nicht"
+	line "wütend, dass ich"
+	cont "verloren habe. Ich"
+	cont "bin glücklich."
 
-	para "I'm not angry that"
-	line "I lost. In fact, I"
-	cont "feel happy."
+	para "Glücklich, dass"
+	line "ich den Aufstieg"
 
-	para "Happy that I"
-	line "witnessed the rise"
-
-	para "of a great new"
-	line "Champion!"
+	para "eines neuen"
+	line "Champs miterleben"
+	cont "durfte."
 	done
 
 .AfterText:
-	text "…Whew."
+	text "…Woa."
 
-	para "You have become"
-	line "truly powerful,"
+	para "Du bist sehr"
+	line "stark geworden,"
 	cont "<PLAYER>."
 
-	para "Your #mon have"
-	line "responded to your"
+	para "Deine #mon"
+	line "haben deine starke"
 
-	para "strong and up-"
-	line "standing nature."
+	para "und aufrechte"
+	line "Persönlichkeit"
+	cont "akzeptiert."
 
-	para "As a trainer, you"
-	line "will continue to"
+	para "Auch du wirst"
+	line "zusammen mit"
 
-	para "grow strong with"
-	line "your #mon."
+	para "deinen #mon"
+	line "stärker werden."
 	done
 
 .SeenRematchText:
@@ -254,43 +261,46 @@ LanceScript:
 	done
 
 .MaryText1:
-	text "Mary: Oh, no!"
-	line "It's all over!"
+	text "Margit: Oh, nein!"
+	line "Alles ist vorbei!"
 
-	para "Prof.Oak, if you"
-	line "weren't so slow…"
+	para "Prof. Eich, wenn"
+	line "du nicht so lang-"
+	cont "sam wärest…"
 	done
 
 .OakSpeechText:
-	text "Prof.Oak: Ah,"
+	text "Prof. Eich: Ah,"
 	line "<PLAYER>!"
 
-	para "It's been a long"
-	line "while."
+	para "Es ist schon"
+	line "lange her."
 
-	para "You certainly look"
-	line "more impressive."
+	para "Du siehst"
+	line "erhabener aus."
 
-	para "Your conquest of"
-	line "the League is just"
-	cont "fantastic!"
+	para "Dein Sieg in der"
+	line "Liga ist einfach"
+	cont "fantastisch!"
 
-	para "Your dedication,"
-	line "trust and love for"
+	para "Deine Hingabe, das"
+	line "Vertrauen und die"
 
-	para "your #mon made"
-	line "this happen."
+	para "Liebe zu deinen"
+	line "#mon haben"
+	cont "dir dies er-"
+	cont "möglicht."
 
-	para "Your #mon were"
-	line "outstanding too."
+	para "Auch deine #-"
+	line "mon waren super."
 
-	para "Because they be-"
-	line "lieved in you as a"
+	para "Ihr Glaube an dich"
+	line "hat sie all das"
 
-	para "trainer, they per-"
-	line "severed."
+	para "durchstehen"
+	line "lassen."
 
-	para "Congratulations,"
+	para "Glückwunsch,"
 	line "<PLAYER>!"
 	done
 
@@ -324,24 +334,25 @@ LanceScript:
 	done
 
 .MaryText2:
-	text "Mary: Let's inter-"
-	line "view the brand new"
-	cont "Champion!"
+	text "Margit: Ein"
+	line "Interview mit dem"
+	cont "neuen Champ!"
 	done
 
 .LanceLeavingText:
-	text "Lance: This is"
-	line "getting to be a"
-	cont "bit too noisy…"
+	text "Siegfried: Das"
+	line "wird mir alles"
+	cont "ein wenig zu laut…"
 
-	para "<PLAYER>, could you"
-	line "come with me?"
+	para "<PLAYER>, kommst"
+	line "du mit mir?"
 	done
 
 .MaryText3:
-	text "Mary: Oh, wait!"
-	line "We haven't done"
-	cont "the interview!"
+	text "Margit: Moment!"
+	line "Wir haben das"
+	cont "Interview fast"
+	cont "vergessen!"
 	done
 
 .RushInMovement:

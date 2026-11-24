@@ -44,35 +44,40 @@ CherrygrovePokeCenter1FTeacherScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "The Communication"
-	line "Center upstairs"
-	cont "was just built."
+	text "Das Kommuni-"
+	line "kations-Center im"
+	cont "ersten Stock ist"
+	cont "gerade fertig."
 
-	para "But they're still"
-	line "finishing it up."
+	para "Aber der Fein-"
+	line "schliff fehlt"
+	cont "noch."
 	done
 
 .Text2:
-	text "The Communication"
-	line "Center upstairs"
-	cont "was just built."
+	text "Das Kommuni-"
+	line "kations-Center im"
+	cont "ersten Stock ist"
+	cont "gerade fertig."
 
-	para "I traded #mon"
-	line "there already!"
+	para "Ich habe schon"
+	line "#mon getauscht!"
 	done
 
 CherrygrovePokeCenter1FFisherText:
-	text "It's great. I can"
-	line "store any number"
+	text "Das ist toll! Ich"
+	line "kann so viele"
 
-	para "of #mon, and"
-	line "it's all free."
+	para "#mon lagern,"
+	line "wie ich will, und"
+	cont "das umsonst!"
 	done
 
 CherrygrovePokeCenter1FGentlemanText:
-	text "That PC is free"
-	line "for any trainer"
-	cont "to use."
+	text "Dieser PC steht"
+	line "jedem Trainer kos-"
+	cont "tenfrei zur Verfü-"
+	cont "gung."
 	done
 
 CherrygrovePokeCenter1FLadyText:

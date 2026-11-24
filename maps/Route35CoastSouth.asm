@@ -53,19 +53,22 @@ GenericTrainerSwimmerfJill:
 GenericTrainerBird_keeperBryan:
 	generictrainer BIRD_KEEPER, BRYAN, EVENT_BEAT_BIRD_KEEPER_BRYAN, Bird_keeperBryanSeenText, Bird_keeperBryanBeatenText
 
-	text "Some #mon flee"
-	line "right away."
+	text "Manche #mon"
+	line "rennen sofort weg."
 
-	para "Try catching them"
-	line "with Kurt's Fast"
-	cont "Ball."
+	para "Versuche, sie mit"
+	line "Kurts Turboball"
+	cont "einzufangen. "
 
-	para "Whenever I find a"
-	line "Wht Apricorn, I"
-	cont "take it to Kurt."
+	para "Sobald ich eine"
+	line "Aprikoko Wss"
+	cont "finde, bringe ich"
+	cont "sie zu Kurt."
 
-	para "He turns it into a"
-	line "custom Ball."
+	para "Er macht dann"
+	line "daraus einen maß-"
+	cont "gefertigten"
+	cont "#ball."
 	done
 
 GenericTrainerSrandjrBeaandmay1:
@@ -87,14 +90,15 @@ GenericTrainerSrandjrBeaandmay2:
 GenericTrainerSailorHarvey:
 	generictrainer SAILOR, HARVEY, EVENT_BEAT_SAILOR_HARVEY, SailorHarveySeenText, SailorHarveyBeatenText
 
-	text "On the sea, the"
-	line "only thing you can"
+	text "Der Einzige, auf"
+	line "den du dich auf"
 
-	para "count on is your"
-	line "own good self!"
+	para "hoher See verlas-"
+	line "sen kannst, bist"
+	cont "du selbst!"
 
-	para "I'm so proud of my"
-	line "buff bod!"
+	para "Ich bin so stolz"
+	line "auf mich selbst!"
 	done
 
 SwimmermWalterSeenText:
@@ -110,9 +114,9 @@ SwimmermWalterBeatenText:
 	done
 
 SwimmerfLisaSeenText:
-	text "The fishermen"
-	line "yelled at me for"
-	cont "bugging them…"
+	text "Die Angler schrien"
+	line "mich an, weil ich"
+	cont "sie belauschte…"
 	done
 
 SwimmerfLisaBeatenText:
@@ -130,13 +134,14 @@ SwimmerfJillBeatenText:
 	done
 
 Bird_keeperBryanSeenText:
-	text "What kinds of"
-	line "Balls do you use?"
+	text "Welche Art von"
+	line "#ball"
+	cont "benutzt du?"
 	done
 
 Bird_keeperBryanBeatenText:
-	text "Yikes! Not fast"
-	line "enough!"
+	text "Mist! Nicht"
+	line "schnell genug!"
 	done
 
 SrandjrBeaandmay1SeenText:
@@ -182,9 +187,9 @@ SailorHarveySeenText:
 	done
 
 SailorHarveyBeatenText:
-	text "What power!"
-	line "How would you like"
+	text "Du hast Power!"
+	line "Möchtest du"
 
-	para "to sail the seas"
-	line "with me?"
+	para "mit mir die Meere"
+	line "unsicher machen?"
 	done

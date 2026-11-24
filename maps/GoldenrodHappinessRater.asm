@@ -43,9 +43,10 @@ GoldenrodHappinessRaterTeacherScript:
 	ifgreater 0, .NotUsedToYou                            ; 1-49
 	jumpthisopenedtext                                    ; 0
 
-	text "It doesn't seem to"
-	line "like you at all."
-	cont "It looks mean."
+	text "Es scheint dich"
+	line "gar nicht zu mö-"
+	cont "gen. Es sieht ge-"
+	cont "mein aus."
 	done
 
 .Egg:
@@ -70,9 +71,10 @@ GoldenrodHappinessRaterTeacherScript:
 .LovesYouALot:
 	jumpthisopenedtext
 
-	text "It looks really"
-	line "happy! It must"
-	cont "love you a lot."
+	text "Es sieht sehr"
+	line "glücklich aus! Es"
+	cont "muss dich sehr"
+	cont "gern haben."
 	done
 
 .Affectionate:
@@ -89,17 +91,19 @@ GoldenrodHappinessRaterTeacherScript:
 .ReallyTrustsYou:
 	jumpthisopenedtext
 
-	text "I get the feeling"
-	line "that it really"
-	cont "trusts you."
+	text "Ich habe den Ein-"
+	line "druck, dass es dir"
+	cont "wirklich vertraut."
 	done
 
 .SortOfHappy:
 	jumpthisopenedtext
 
-	text "It's friendly to-"
-	line "ward you. It looks"
-	cont "sort of happy."
+	text "Es verhält sich"
+	line "dir gegenüber sehr"
+	cont "freundlich. Es"
+	cont "muss glücklich"
+	cont "sein."
 	done
 
 .QuiteCute:
@@ -113,9 +117,11 @@ GoldenrodHappinessRaterTeacherScript:
 .NotUsedToYou:
 	jumpthisopenedtext
 
-	text "You should treat"
-	line "it better. It's"
-	cont "not used to you."
+	text "Du solltest es"
+	line "besser behandeln."
+	cont "Es hat sich noch"
+	cont "nicht an dich ge-"
+	cont "wöhnt."
 	done
 
 .RefusedText:
@@ -143,19 +149,22 @@ GoldenrodHappinessRaterTeacherText:
 	done
 
 GoldenrodHappinessRaterPokefanMText:
-	text "I keep losing in"
-	line "battles, and my"
+	text "Ständig verliere"
+	line "ich in Kämpfen und"
 
-	para "#mon end up"
-	line "fainting…"
+	para "meine #mon"
+	line "werden immer be-"
+	cont "siegt…"
 
-	para "Maybe that's why"
-	line "my #mon don't"
-	cont "like me much…"
+	para "Das mag der Grund"
+	line "sein, warum mich"
+	cont "meine #mon"
+	cont "nicht mögen…"
 	done
 
 GoldenrodHappinessRaterTwinText:
-	text "When I use an item"
-	line "on my #mon, it"
-	cont "acts really glad!"
+	text "Wenn ich meinem"
+	line "#mon ein Item"
+	cont "gebe, dann freut"
+	cont "es sich!"
 	done

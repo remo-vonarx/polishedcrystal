@@ -30,15 +30,16 @@ Route12SuperRodHouseFishingGuruScript:
 	jumpthisopenedtext
 
 .GaveSuperRodText:
-	text "Try your hand at"
-	line "fishing wherever"
-	cont "there is water."
+	text "Wirf sie aus und"
+	line "angle, wo immer"
+	cont "es Wasser gibt."
 
-	para "Remember--you can"
-	line "catch different"
+	para "Denk daran - du"
+	line "kannst mit ver-"
+	cont "schiedenen Angeln"
 
-	para "#mon using"
-	line "different Rods."
+	para "auch verschiedene"
+	line "#mon fangen."
 	done
 
 .Refused:
@@ -48,30 +49,31 @@ Route12SuperRodHouseFishingGuruScript:
 	endtext
 
 OfferSuperRodText:
-	text "I'm the Fishing"
-	line "Guru's younger"
-	cont "brother."
+	text "Ich bin der"
+	line "jüngere Bruder des"
+	cont "Profi-Anglers."
 
-	para "I can see that you"
-	line "like fishing."
+	para "Wie ich sehe,"
+	line "macht dir Angeln"
 
-	para "There's no doubt"
-	line "in my mind at all!"
+	para "Spaß. Darüber gibt"
+	line "es keinen Zweifel!"
 
-	para "So? I know I'm"
-	line "right."
+	para "Na? Das stimmt"
+	line "doch, oder?"
 	done
 
 GiveSuperRodText:
-	text "Yes, yes. Just as"
-	line "I thought!"
+	text "Jawohl! Genau, wie"
+	line "ich dachte!"
 
-	para "Here, fishing fan!"
-	line "Take this--it's a"
-	cont "Super Rod."
+	para "Hier, Angelfreak!"
+	line "Nimm dies - die"
+	cont "Superangel."
 	done
 
 DontWantSuperRodText:
-	text "Huh? My own eyes"
-	line "deceived me?"
+	text "Hä? Meine Augen"
+	line "haben mich"
+	cont "getäuscht."
 	done
