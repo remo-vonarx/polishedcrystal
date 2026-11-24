@@ -60,9 +60,24 @@ def test_order_clean_on_tree(root):
     assert result.returncode == 0, result.stdout + result.stderr
 
 
-def test_order_checks_german_tables(root):
+ORDER_FILES = ["constants/item_constants.asm", "constants/move_constants.asm", "constants/tmhm_constants.asm",
+               "data/items/name_order.asm", "data/items/names.asm", "data/items/key_names.asm",
+               "data/moves/names.asm", "data/moves/tmhm_order.asm", "data/moves/tmhm_moves.asm"]
+
+
+def test_order_checks_german_tables(root, tmp_path):
     import check_order
-    assert check_order.check(root, german={"key items"})  # Upstream's LIFT_KEY entries 31-34
+    for rel in ORDER_FILES:
+        (tmp_path / rel).parent.mkdir(parents=True, exist_ok=True)
+        (tmp_path / rel).write_text((root / rel).read_text(encoding="utf-8"), encoding="utf-8")
+    path = tmp_path / "constants/item_constants.asm"
+    lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+    key_alpha = [i for i, l in enumerate(lines) if l.startswith("; Alphabetical order")][1]
+    first = next(i for i in range(key_alpha, len(lines)) if lines[i].startswith("\tconst NAM_"))
+    lines[first], lines[first + 1] = lines[first + 1], lines[first]  # two key items out of A-Z order
+    path.write_text("".join(lines), encoding="utf-8")
+    assert check_order.check(tmp_path, german={"key items"})
+    assert not check_order.check(tmp_path, german=set())  # an order is checked only once its table is German
 
 
 FAITHFUL_TEXT = ('T:\n\ttext "{0}"\nif DEF(FAITHFUL)\n\tline "{1}"\nelse\n\tline "{2}"\nendc\n\tdone\n')
