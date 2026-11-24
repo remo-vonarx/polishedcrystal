@@ -344,7 +344,7 @@ GoldenrodCityYoungster2Text:
 	line "kommen, weil ich"
 
 	para "im Keller des"
-	line "KAUFHAUSes ge-"
+	line "Kaufhauses ge-"
 	cont "spielt habe."
 	done
 

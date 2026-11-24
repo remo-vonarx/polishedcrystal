@@ -5,7 +5,7 @@ BillPhoneMornGreetingText:
 	line "waltungsservice"
 
 	para "des #mon-Lage-"
-	line "rungs-SYSTEMs."
+	line "rungs-Systems."
 	done
 
 BillPhoneDayGreetingText:
@@ -15,7 +15,7 @@ BillPhoneDayGreetingText:
 	line "waltungsservice"
 
 	para "des #mon-Lage-"
-	line "rungs-SYSTEMs."
+	line "rungs-Systems."
 	done
 
 BillPhoneNiteGreetingText:
@@ -25,7 +25,7 @@ BillPhoneNiteGreetingText:
 	line "waltungsservice"
 
 	para "des #mon-Lage-"
-	line "rungs-SYSTEMs."
+	line "rungs-Systems."
 	done
 
 BillPhoneGenericText:

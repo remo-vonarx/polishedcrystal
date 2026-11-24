@@ -689,8 +689,8 @@ DuskStoneDesc:
 ShinyStoneDesc:
 IceStoneDesc:
 LinkingCordDesc:
-	text "Entwickelt"
-	next "manche #mon."
+	text "Entwickelt manche"
+	next "#mon."
 	done
 
 EverstoneDesc:

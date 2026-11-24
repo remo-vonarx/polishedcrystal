@@ -24,7 +24,7 @@ VioletKylesHousePokefanMText:
 
 	para "Aber wenn du nicht"
 	line "im Besitz des pas-"
-	cont "senden ORDENs"
+	cont "senden Ordens"
 
 	para "bist, gehorchen"
 	line "sie dir vielleicht"

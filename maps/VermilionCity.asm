@@ -330,7 +330,7 @@ LawrenceIntroText:
 VermilionCityTeacherText:
 	text "Der Hafen von"
 	line "Orania City ist"
-	cont "das Tor KANTOs"
+	cont "das Tor Kantos"
 	cont "zum Meer."
 
 	para "Hier legen Luxus-"

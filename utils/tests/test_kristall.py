@@ -1024,6 +1024,13 @@ def test_name_map_splits_by_build(pairs, root, base):  # real data: Regular has 
     assert both["BISASAM"] == regular["BISASAM"] == faithful["BISASAM"]
 
 
+def test_answers_leave_no_half_capitals():  # an answer like ORDENs -> ORDENs shouts in the middle of a word
+    import re
+    from kristall_write import load_case
+    half = re.compile("[A-ZÄÖÜ]{3,}[a-zäöüß]")
+    assert [k for k, v in load_case().items() if isinstance(v, str) and half.search(v)] == []
+
+
 def test_row_may_start_with_the_poke_token(tmp_path):
     from kristall_write import load_case
     put(tmp_path / "case.tsv", "# a comment\n#MON\t#mon\n")
@@ -1056,3 +1063,6 @@ def test_a_text_can_keep_all_its_capitals(tmp_path):  # where Polished's English
         ("text", "DIE #MON, LAUF!")
     assert german_for(Entry(fake_text(HI, label="Other"), "word", pair, [pair], 1.0), {}, {**case, "LAUF": "lauf"}
                       ).commands[0] == ("text", "die #mon, lauf!")
+    put(tmp_path / "case.tsv", "#MON\t#mon\nDIE\tdie\n*\t*\tShout\n#MON\tPOKéMON\tShout\n")
+    assert german_for(Entry(fake_text(HI, label="Shout"), "word", pair, [pair], 1.0), {}, load_case(tmp_path / "case.tsv")
+                      ).commands[0] == ("text", "DIE POKéMON, LAUF!")  # its own answers still hold

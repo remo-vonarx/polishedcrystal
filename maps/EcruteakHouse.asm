@@ -85,7 +85,7 @@ EcruteakTinTowerEntranceSageScript:
 	jumpthisopenedtext
 
 	text "Wenn du nicht im"
-	line "Besitz des ORDENs"
+	line "Besitz des Ordens"
 
 	para "von Teak City"
 	line "bist, darfst du"
@@ -165,7 +165,7 @@ EcruteakTinTowerEntranceSageBlocksRightMovement:
 
 EcruteakTinTowerEntranceSageText_GotFogBadge:
 	text "Wenn du nicht im"
-	line "Besitz des ORDENs"
+	line "Besitz des Ordens"
 
 	para "von Teak City"
 	line "bist, darfst du"

@@ -153,7 +153,7 @@ FuchsiaAquariumSignText:
 
 WardensHomeSignText:
 	text "Safari-Zone"
-	line "Haus des WÄRTERs"
+	line "Haus des Wärters"
 	done
 
 SafariZoneClosedSignText:

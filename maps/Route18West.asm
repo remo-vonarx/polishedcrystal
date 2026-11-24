@@ -43,7 +43,7 @@ GenericTrainerBikerCharles:
 BikerCharlesSeenText:
 	text "Wir sind die"
 	line "furchtlosen Helden"
-	cont "des RADWEGs!"
+	cont "des Radwegs!"
 	done
 
 BikerCharlesBeatenText:

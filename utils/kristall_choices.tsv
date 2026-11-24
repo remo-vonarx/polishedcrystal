@@ -27,7 +27,7 @@ VermilionPortAlreadyRodeScript	VermilionPortCantBoardText	the same port
 InitialRadioText4	PlayersRadioText4	the player's own radio
 GenericTrainerYoungsterWarren.BeatenText	YoungsterWarrenBeatenText	the same trainer
 SunnyGivesGiftText	SunnyGivesGiftText1	Polished merged the two
-LinkingCordDesc	MoonStoneDesc	all say the same
+LinkingCordDesc	FireStoneDesc	all stones say the same; five of six break it here
 Move00Description	_OakTimeHoursQuestionMarkText	all say the same
 BattleText_PkmnFainted	BattleText_MonFainted	all say the same
 _OakTimeQuestionMarkText	_OakTimeHoursQuestionMarkText	all say the same

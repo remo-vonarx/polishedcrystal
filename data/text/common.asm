@@ -2582,7 +2582,7 @@ MailPackFullText::
 SECTION "MailMessageLostText", ROMX
 MailMessageLostText::
 	text "Soll der Inhalt"
-	line "des BRIEFes"
+	line "des Briefes"
 	cont "gelöscht werden?"
 	done
 
@@ -3213,7 +3213,7 @@ _ItemCantHeldText::
 SECTION "_MailLoseMessageText", ROMX
 _MailLoseMessageText::
 	text "Der Inhalt des"
-	line "BRIEFes wird"
+	line "Briefes wird"
 	cont "gelöscht"
 	cont "Einverstanden?"
 	done

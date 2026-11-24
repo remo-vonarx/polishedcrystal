@@ -120,7 +120,7 @@ BlackthornPokeCenter1FGentlemanText:
 	text "Tief im Inneren"
 	line "des fernen Indigo"
 
-	para "PLATEAUs befindet"
+	para "Plateaus befindet"
 	line "sich die #mon"
 	cont "Liga."
 

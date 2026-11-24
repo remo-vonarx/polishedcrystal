@@ -396,7 +396,7 @@ AzaleaTownYoungsterText:
 	line "zukommen."
 
 	para "Die #mon des"
-	line "KÖHLERs können die"
+	line "Köhlers können die"
 	cont "Bäume mit dem Zer-"
 	cont "schneider fällen."
 	done

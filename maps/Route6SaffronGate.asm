@@ -24,7 +24,7 @@ Route6SaffronGuardScript:
 	text "Willkommen in"
 	line "Saffronia City,"
 	cont "der Heimat des"
-	cont "MAGNETZUGs!"
+	cont "Magnetzugs!"
 
 	para "…Das sage ich"
 	line "sonst immer, aber"

@@ -516,7 +516,7 @@ DragonShrineElder2Text:
 
 	para "Trainer die Aner-"
 	line "kennung unseres"
-	cont "MEISTERs bekam."
+	cont "Meisters bekam."
 
 	para "Der letzte war"
 	line "Meister Siegfried."

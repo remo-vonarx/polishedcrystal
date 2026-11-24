@@ -86,7 +86,6 @@ BRENNER	Brenner
 BRIEF	Brief
 BRIEFE	Briefe
 BRIEFKASTEN	Briefkasten
-BRIEFes	BRIEFes
 BRONZETURM	Bronzeturm
 BRUNNEN	Brunnen
 BRUNO	Bruno
@@ -186,7 +185,7 @@ FOSSIL	Fossil
 FOTOSTUDIO	Fotostudio
 FRATZI	Fratzi
 FREAK	Freak
-FREMDENFÜHRERs	FREMDENFÜHRERs
+FREMDENFÜHRERs	Fremdenführers
 FREUDE	Freude
 FREUND	Freund
 FRIEDA	Frieda
@@ -255,7 +254,6 @@ KAMPFAUTOMAT	Kampfautomat
 KAMPFRAUM	Kampfraum
 KAMPFRÄUME	Kampfräume
 KANTO	Kanto
-KANTOs	KANTOs
 KAP	Kap
 KAPITÄN	Kapitän
 KAPITÄNSKAJÜTE	Kapitänskajüte
@@ -264,7 +262,6 @@ KARATE-MEISTER	Karate-Meister
 KARTE	Karte
 KATZE	Katze
 KAUFHAUS	Kaufhaus
-KAUFHAUSes	KAUFHAUSes
 KAULQUAPPE	Kaulquappe
 KICKER	Kicker
 KIMONO	Kimono
@@ -292,7 +289,7 @@ KRÖTE	Kröte
 KUHMUH	Kuhmuh
 KURT	Kurt
 KUSS	Kuss
-KÖHLERs	KÖHLERs
+KÖHLERs	Köhlers
 KÜSTENHAUS	Küstenhaus
 LABOR	Labor
 LAGERUNGS	Lagerungs
@@ -325,7 +322,6 @@ LV	LV
 LÖWENZAHN	Löwenzahn
 MAGNETZUG	Magnetzug
 MAGNETZUG-BAHNHOF	Magnetzug-Bahnhof
-MAGNETZUGs	MAGNETZUGs
 MAHAGONIA	Mahagonia
 MAJOR	Major
 MALER	Maler
@@ -338,7 +334,6 @@ MARMORIA	Marmoria
 MAULWURF	Maulwurf
 MAUS	Maus
 MEISTER	Meister
-MEISTERs	MEISTERs
 MELANIE	Melanie
 MENÜ	Menü
 MICHEL	Michel
@@ -379,7 +374,6 @@ OLIVIANA	Oliviana
 ORANIA	Orania
 ORDEN	Orden
 ORDENS	Ordens
-ORDENs	ORDENs
 ORDNUNGSAMT	Ordnungsamt
 ORTE	Orte
 OSTEINGANG	Osteingang
@@ -404,7 +398,7 @@ PIER	Pier
 PILZ	Pilz
 PKMN	PKMN
 PKMN-ARENA	PKMN-Arena
-PLATEAUs	PLATEAUs
+PLATEAUs	Plateaus
 PLATZ	Platz
 POLARLICHT	Polarlicht
 PREISET	Preiset
@@ -412,7 +406,7 @@ PRISMANIA	Prismania
 PRODUKTION	Produktion
 PRODUZENTEN	Produzenten
 PROF	Prof
-PROFESSORs	PROFESSORs
+PROFESSORs	Professors
 PROFI	Profi
 PROGRAMM	Programm
 PRÄSIDENT	Präsident
@@ -428,7 +422,6 @@ RADIO	Radio
 RADIOKARTE	Radiokarte
 RADIOSTATION	Radiostation
 RADWEG	Radweg
-RADWEGs	RADWEGs
 RANDALF	Randalf
 RANKE	Ranke
 RASSEKATZE	Rassekatze
@@ -507,7 +500,6 @@ SURFEN	Surfen
 SYMBIOSE	Symbiose
 SYMBOL	Symbol
 SYSTEM	System
-SYSTEMs	SYSTEMs
 SZ	SZ
 TAGTRÄUMER	Tagträumer
 TALK	Talk
@@ -577,7 +569,7 @@ WOOSTER	Wooster
 WSS	Wss
 WURM	Wurm
 WÄCHTER	Wächter
-WÄRTERs	WÄRTERs
+WÄRTERs	Wärters
 ZACKENBALL	Zackenball
 ZEITREISE	Zeitreise
 ZENTRALE	Zentrale
@@ -606,3 +598,4 @@ HEH	HEH	PokemaniacShaneSeenText
 BIEP	BIEP	_BugCatchingContestTimeUpText
 NICHT	NICHT	GruntM29BeatenText
 VOGELFÄNGER	Vogel-Profis	BirdKeeperJose2AfterBattleText
+#MON	POKéMON	Text_RoarOutro

@@ -983,7 +983,7 @@ Text_RoarOutro: ; text > text
 	text "BRÜLL!"
 	line "ES IST BRÜLLER!"
 
-	para "SOGAR #MON"
+	para "SOGAR POKéMON"
 	line "LAUFEN DAVON,"
 	cont "WENN DU IHN"
 	cont "EINSETZT!"

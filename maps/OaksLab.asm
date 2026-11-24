@@ -486,7 +486,7 @@ OaksAssistant1Text:
 
 OaksAssistant2Text:
 	text "Die Forschungen"
-	line "des PROFESSORs"
+	line "des Professors"
 	cont "kommen dank deiner"
 
 	para "Arbeit am #dex"

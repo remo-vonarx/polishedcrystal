@@ -460,7 +460,8 @@ def german_for(entry, names, case, charmap=None, ram=None):
     before = commands
     answers = case_for(case, t.label)
     if answers.get("*") == "*":  # the text keeps Kristall's capitals, as Polished's English keeps its own
-        unknown = []
+        own = {k[1]: v for k, v in case.items() if isinstance(k, tuple) and k[0] == t.label and k[1] != "*"}
+        commands, unknown = recase(commands, {}, own)[0], []  # but for its own answers
     else:
         commands, unknown = recase(commands, getattr(names, "variants", {}).get(t.variant, names), answers)
     if unknown:

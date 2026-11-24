@@ -18,7 +18,7 @@ Route16FuchsiaSpeechHouse_MapScriptHeader:
 
 Route16FuchsiaSpeechHouseSuperNerdText:
 	text "Am Ende des"
-	line "RADWEGs ist"
+	line "Radwegs ist"
 
 	para "Fuchsania City."
 	done

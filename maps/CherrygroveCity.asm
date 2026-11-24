@@ -471,7 +471,7 @@ CherrygroveCitySignText:
 
 GuideGentsHouseSignText:
 	text "Haus des"
-	line "FREMDENFÜHRERs"
+	line "Fremdenführers"
 	done
 
 CherrygroveCityAdvancedTipsSignText:
