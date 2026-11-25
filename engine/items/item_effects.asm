@@ -1805,10 +1805,10 @@ WingCase_MonSelected:
 ; one line of 18 tiles, so three names are short
 	db "Erhöht KP@"
 	db "Erhöht Angriff@"
-	db "Erhöht Vert.@"
+	db "Erhöht Vert@"
 	db "Erhöht Initiative@"
-	db "Erhöht Spez.-Angr.@"
-	db "Erhöht Spez.-Vert.@"
+	db "Erhöht Sp.Angr@"
+	db "Erhöht Sp.Vert@"
 
 .CancelStr:
 	db "Nicht einsetzen.  @"

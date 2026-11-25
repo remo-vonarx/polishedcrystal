@@ -265,8 +265,8 @@ Move00Description:
 	done
 
 LowKickDescription:
-	text "Deals more damage"
-	next "to heavier foes."
+	text "Mehr Schaden bei"
+	next "schweren Gegnern."
 	done
 
 KarateChopDescription:
@@ -304,33 +304,33 @@ DrainPunchDescription:
 	done
 
 DrainKissDescription:
-	text "Steals 3/4 of the"
-	next "damage inflicted."
+	text "Erhält 3/4 des"
+	next "Schadens als KP."
 	done
 
 DoubleSlapDescription:
-	text "Trifft bis zu"
+	text "Trifft 2- bis"
 	next "5mal."
 	done
 
 FuryStrikesDescription:
-	text "Scratches or jabs"
-	next "2-5 times."
+	text "Kratzt oder sticht"
+	next "2- bis 5mal."
 	done
 
 PinMissileDescription:
-	text "Trifft Gegner bis"
-	next "zu 5mal."
+	text "Trifft Gegner"
+	next "2- bis 5mal."
 	done
 
 IcicleSpearDescription:
-	text "Fires icicles to"
-	next "hit 2-5 times."
+	text "Eiszapfen treffen"
+	next "2- bis 5mal."
 	done
 
 RockBlastDescription:
-	text "Hurls boulders to"
-	next "hit 2-5 times."
+	text "Felsen treffen"
+	next "2- bis 5mal."
 	done
 
 TakeDownDescription:
@@ -342,8 +342,8 @@ DoubleEdgeDescription:
 FlareBlitzDescription:
 WildChargeDescription:
 BraveBirdDescription:
-	text "A charge that also"
-	next "hurts the user."
+	text "Sturmangriff, der"
+	next "Anwender verletzt."
 	done
 
 StompDescription:
@@ -411,23 +411,23 @@ HurricaneDescription:
 	done
 
 DynamicpunchDescription:
-	text "An attack that"
-	next "confuses the foe."
+	text "Gegner wird"
+	next "verwirrt."
 	done
 
 MetalClawDescription:
 	text "Hebt evtl. den"
-	next "ANGR-Wert."
+	next "Angr-Wert."
 	done
 
 SteelWingDescription:
-	text "An attack that may"
-	next "up user's Defense."
+	text "Angriff, hebt"
+	next "evtl. Vert-Wert."
 	done
 
 FlameChargeDescription:
-	text "An attack that may"
-	next "up user's Speed."
+	text "Angriff, hebt"
+	next "Init-Wert."
 	done
 
 AncientpowerDescription:
@@ -436,46 +436,46 @@ AncientpowerDescription:
 	done
 
 CloseCombatDescription:
-	text "Lowers the user's"
-	next "Def and Sp.Def."
+	text "Senkt eigene Vert"
+	next "und Sp.Vert."
 	done
 
 AuroraBeamDescription:
 PlayRoughDescription:
-	text "Senkt evtl. ANGR-"
+	text "Senkt evtl. Angr-"
 	next "Wert des Gegners."
 	done
 
 RockSmashDescription:
 if !DEF(FAITHFUL)
-	text "Removes Reflect"
-	next "and Light Screen."
+	text "Hebt Reflektor und"
+	next "Lichtschild auf."
 	done
 endc
 CrunchDescription:
 IronTailDescription:
-	text "Senkt evtl. VERT-"
+	text "Senkt evtl. Vert-"
 	next "Wert des Gegners."
 	done
 
 BubbleBeamDescription:
-	text "Senkt evtl. INIT-"
+	text "Senkt evtl. Init-"
 	next "Wert des Gegners."
 	done
 
 BulldozeDescription:
-	text "A Ground attack"
-	next "that lowers Speed."
+	text "Boden-Attacke,"
+	next "senkt Init-Wert."
 	done
 
 IcyWindDescription:
-	text "Senkt INIT-Wert"
+	text "Senkt Init-Wert"
 	next "des Gegners."
 	done
 
 MoonblastDescription:
-	text "An attack that may"
-	next "lower Sp.Atk."
+	text "Angriff, senkt"
+	next "evtl. den Sp.Angr."
 	done
 
 AcidDescription:
@@ -486,18 +486,18 @@ EarthPowerDescription:
 EnergyBallDescription:
 FlashCannonDescription:
 FocusBlastDescription:
-	text "An attack that may"
-	next "lower Sp.Def."
+	text "Angriff, senkt"
+	next "evtl. die Sp.Vert."
 	done
 
 MudSlapDescription:
-	text "An attack that"
-	next "lowers accuracy."
+	text "Angriff, senkt"
+	next "Genauigkeit."
 	done
 
 OctazookaDescription:
-	text "An attack that may"
-	next "lower accuracy."
+	text "Angriff, senkt"
+	next "evtl. Genauigkeit."
 	done
 
 SonicboomDescription:
@@ -512,8 +512,8 @@ DragonRageDescription:
 
 SeismicTossDescription:
 NightShadeDescription:
-	text "Damage equals the"
-	next "user's level."
+	text "Schaden entspricht"
+	next "dem eigenen Level."
 	done
 
 PoisonpowderDescription:
@@ -522,13 +522,13 @@ PoisonpowderDescription:
 	done
 
 WillOWispDescription:
-	text "A move that may"
-	next "burn the foe."
+	text "Gegner erleidet"
+	next "evtl. Verbrennung."
 	done
 
 ThunderWaveDescription:
-	text "A move that"
-	next "paralyzes the foe."
+	text "Gegner wird"
+	next "paralysiert."
 	done
 
 StunSporeDescription:
@@ -545,8 +545,8 @@ HypnosisDescription:
 	done
 
 SporeDescription:
-	text "A move that puts"
-	next "the foe to sleep."
+	text "Versetzt Gegner"
+	next "in Schlaf."
 	done
 
 ToxicDescription:
@@ -557,18 +557,18 @@ ToxicDescription:
 ConfuseRayDescription:
 SupersonicDescription:
 SweetKissDescription:
-	text "A move that may"
-	next "confuse the foe."
+	text "Attacke, verwirrt"
+	next "evtl. den Gegner."
 	done
 
 DefenseCurlDescription:
-	text "Hebt VERT-Wert des"
+	text "Hebt Vert-Wert des"
 	next "Angreifers."
 	done
 
 DoubleTeamDescription:
-	text "Raises the user's"
-	next "evasiveness."
+	text "Fluchtwert nimmt"
+	next "zu."
 	done
 
 FocusEnergyDescription:
@@ -577,94 +577,94 @@ FocusEnergyDescription:
 	done
 
 SwordsDanceDescription:
-	text "Sharply raises the"
-	next "user's Attack."
+	text "Tanz, erhöht Angr-"
+	next "Wert enorm."
 	done
 
 BarrierDescription:
-	text "Hebt VERT-Wert des"
+	text "Hebt Vert-Wert des"
 	next "Angreifers enorm."
 	done
 
 AgilityDescription:
-	text "Sharply raises the"
-	next "user's Speed."
+	text "Hebt Init-Wert des"
+	next "Angreifers enorm."
 	done
 
 NastyPlotDescription:
-	text "Sharply raises the"
-	next "user's Sp.Atk."
+	text "Hebt Sp.Angr des"
+	next "Angreifers enorm."
 	done
 
 AmnesiaDescription:
-	text "Sharply raises the"
-	next "user's Sp.Def."
+	text "Hebt Sp.Vert des"
+	next "Angreifers enorm."
 	done
 
 MinimizeDescription:
-	text "Sharply raises the"
-	next "user's evasiveness."
+	text "Fluchtwert nimmt"
+	next "enorm zu."
 	done
 
 GrowthDescription:
-	text "Raises the user's"
-	next "Atk and Sp.Atk."
+	text "Hebt Angr-Wert und"
+	next "Sp.Angr."
 	done
 
 BulkUpDescription:
-	text "Raises the user's"
-	next "Atk and Def."
+	text "Hebt Angr- und"
+	next "Vert-Wert."
 	done
 
 CalmMindDescription:
-	text "Raises the user's"
-	next "Sp.Atk and Sp.Def."
+	text "Hebt Sp.Angr und"
+	next "Sp.Vert."
 	done
 
 DragonDanceDescription:
-	text "Raises the user's"
-	next "Attack and Speed."
+	text "Hebt Angr- und"
+	next "Init-Wert."
 	done
 
 HoneClawsDescription:
-	text "Raises the user's"
-	next "Atk and accuracy."
+	text "Hebt Angr-Wert und"
+	next "Genauigkeit."
 	done
 
 GrowlDescription:
-	text "A move that lowers"
-	next "the foe's Attack."
+	text "Senkt den Angr-"
+	next "Wert des Gegners."
 	done
 
 LeerDescription:
-	text "A move that lowers"
-	next "the foe's Defense."
+	text "Senkt Vert-Wert"
+	next "des Gegners."
 	done
 
 StringShotDescription:
-	text "Senkt INIT-Wert"
+	text "Senkt Init-Wert"
 	next "des Gegners."
 	done
 
 SmokescreenDescription:
 FlashDescription:
-	text "A move that lowers"
-	next "the foe's accuracy."
+	text "Senkt Genauigkeit"
+	next "des Gegners."
 	done
 
 CharmDescription:
-	text "Senkt ANGR-Wert"
+	text "Senkt Angr-Wert"
 	next "des Gegners enorm."
 	done
 
 ScreechDescription:
-	text "Sharply lowers the"
-	next "foe's Defense."
+	text "Senkt Vert-Wert"
+	next "des Gegners enorm."
 	done
 
 ScaryFaceDescription:
-	text "Sharply lowers the"
-	next "foe's Speed."
+	text "Senkt Init-Wert"
+	next "des Gegners enorm."
 	done
 
 HazeDescription:
@@ -678,13 +678,13 @@ SafeguardDescription:
 	done
 
 ReflectDescription:
-	text "Hebt VERT-Wert"
+	text "Hebt Vert-Wert"
 	next "mittels Barriere."
 	done
 
 LightScreenDescription:
-	text "Raises Sp.Def with"
-	next "a wall of light."
+	text "Hebt Sp.Vert"
+	next "durch Lichtwand."
 	done
 
 RecoverDescription:
@@ -698,8 +698,8 @@ FreshSnackDescription:
 	done
 
 RoostDescription:
-	text "Lands to restore"
-	next "1/2 the max HP."
+	text "Landet und füllt"
+	next "KP zur Hälfte auf."
 	done
 
 ThrashDescription:
@@ -712,13 +712,13 @@ OutrageDescription:
 FireSpinDescription:
 WhirlpoolDescription:
 WrapDescription:
-	text "Trifft Gegner bis"
-	next "zu 5mal."
+	text "Trifft Gegner"
+	next "2- bis 5mal."
 	done
 
 TrickRoomDescription:
-	text "Slow #mon move"
-	next "first for 5 turns."
+	text "Langsame PKMN zu-"
+	next "erst für 5 Runden."
 	done
 
 ExplosionDescription:
@@ -727,8 +727,8 @@ ExplosionDescription:
 	done
 
 EndureDescription:
-	text "Endures any hit"
-	next "with at least 1HP."
+	text "Mindestens 1 KP"
+	next "bleibt übrig."
 	done
 
 FalseSwipeDescription:
@@ -758,23 +758,23 @@ DigDescription:
 	done
 
 AcrobaticsDescription:
-	text "Damage doubles if"
-	next "user has no item."
+	text "2x Schaden ohne"
+	next "eigenes Item."
 	done
 
 HexDescription:
-	text "Damage doubles if"
-	next "foe has status."
+	text "2x Schaden, wenn"
+	next "Gegner mit Status."
 	done
 
 AvalancheDescription:
-	text "Damage doubles if"
-	next "user is hit first."
+	text "2x Schaden, wenn"
+	next "zuerst getroffen."
 	done
 
 VenoshockDescription:
-	text "Damage doubles if"
-	next "foe is poisoned."
+	text "2x Schaden, wenn"
+	next "Gegner vergiftet."
 	done
 
 RainDanceDescription:
@@ -795,8 +795,8 @@ HailDescription:
 
 UTurnDescription:
 VoltSwitchDescription:
-	text "Switches out after"
-	next "making its attack."
+	text "Tauscht sich nach"
+	next "dem Angriff aus."
 	done
 
 FirePunchDescription:
@@ -815,23 +815,23 @@ ThunderpunchDescription:
 	done
 
 CounterDescription:
-	text "Returns a physical"
-	next "attack double."
+	text "Erwidert Körper-"
+	next "attacken doppelt."
 	done
 
 MirrorCoatDescription:
-	text "Returns a special"
-	next "attack double."
+	text "Erwidert Spezial-"
+	next "attacken doppelt."
 	done
 
 SpikesDescription:
-	text "Hurts foes when"
-	next "they switch in."
+	text "Trifft Gegner beim"
+	next "Wechsel."
 	done
 
 ToxicSpikesDescription:
-	text "Poisons foes when"
-	next "they switch in."
+	text "Vergiftet Gegner"
+	next "beim Wechsel."
 	done
 
 QuickAttackDescription:
@@ -840,28 +840,28 @@ QuickAttackDescription:
 	done
 
 AquaJetDescription:
-	text "A speedy lunge."
-	next "Always goes first."
+	text "Schneller Stoß,"
+	next "Erstschlagattacke."
 	done
 
 IceShardDescription:
-	text "Hurls icy shards."
-	next "Always goes first."
+	text "Eissplitter, Erst-"
+	next "schlaggarantie."
 	done
 
 MachPunchDescription:
-	text "A fast punch that"
-	next "always goes first."
+	text "Punch mit Erst-"
+	next "schlaggarantie."
 	done
 
 BulletPunchDescription:
-	text "A tough punch that"
-	next "always goes first."
+	text "Harter Hieb, Erst-"
+	next "schlaggarantie."
 	done
 
 ExtremespeedDescription:
-	text "A powerful first-"
-	next "strike attack."
+	text "Starke"
+	next "Erstschlagattacke."
 	done
 
 ScratchDescription:
@@ -880,8 +880,8 @@ VineWhipDescription:
 	done
 
 DragonClawDescription:
-	text "Slashes the foe"
-	next "with sharp claws."
+	text "Zerfetzt Ziel mit"
+	next "scharfen Klauen."
 	done
 
 CutDescription:
@@ -891,8 +891,8 @@ CutDescription:
 
 if DEF(FAITHFUL)
 XScissorDescription:
-	text "Slashes foe with"
-	next "scythes or claws."
+	text "Schlägt mit Klauen"
+	next "oder Sicheln zu."
 	done
 endc
 
@@ -902,8 +902,8 @@ GustDescription:
 	done
 
 WingAttackDescription:
-	text "Strikes the foe"
-	next "with wings."
+	text "Trifft Ziel mit"
+	next "Flügeln."
 	done
 
 TackleDescription:
@@ -927,13 +927,13 @@ PayDayDescription:
 	done
 
 SuckerPunchDescription:
-	text "Attacks before the"
-	next "foe does."
+	text "Greift noch vor"
+	next "dem Gegner an."
 	done
 
 DazzlingleamDescription:
-	text "Dazzles with a"
-	next "powerful flash."
+	text "Blendet mit einem"
+	next "starken Blitz."
 	done
 
 RoarDescription:
@@ -987,7 +987,7 @@ EarthquakeDescription:
 	done
 
 RageDescription:
-	text "Hebt ANGR-Wert bei"
+	text "Hebt Angr-Wert bei"
 	next "Schadenszufuhr."
 	done
 
@@ -997,13 +997,13 @@ TeleportDescription:
 	done
 
 DragonPulseDescription:
-	text "Attacks foe with"
-	next "a shock wave."
+	text "Greift Gegner mit"
+	next "Druckwelle an."
 	done
 
 AquaTailDescription:
-	text "Swings tail like a"
-	next "wave in a storm."
+	text "Schwanzhieb wie"
+	next "eine Sturmwelle."
 	done
 
 MetronomeDescription:
@@ -1012,8 +1012,8 @@ MetronomeDescription:
 	done
 
 SkillSwapDescription:
-	text "Swaps abilities"
-	next "with the foe."
+	text "Tauscht Fähigkeit"
+	next "mit dem Gegner."
 	done
 
 HiJumpKickDescription:
@@ -1080,13 +1080,13 @@ ThiefDescription:
 	done
 
 FacadeDescription:
-	text "Double damage with"
-	next "Psn, Brn, or Prz."
+	text "2x Schaden bei"
+	next "Gif, Brt oder Par."
 	done
 
 HyperVoiceDescription:
-	text "Attack the foe"
-	next "with sound waves."
+	text "Greift Gegner mit"
+	next "Schallwellen an."
 	done
 
 CurseDescription:
@@ -1100,8 +1100,8 @@ ReversalDescription:
 	done
 
 SeedBombDescription:
-	text "Slams a barrage of"
-	next "seeds at the foe."
+	text "Lässt harte Samen"
+	next "auf Gegner hageln."
 	done
 
 ProtectDescription:
@@ -1110,13 +1110,13 @@ ProtectDescription:
 	done
 
 BellyDrumDescription:
-	text "Sacrifices HP to"
-	next "maximize Attack."
+	text "Senkt KP + maxi-"
+	next "miert Angr-Wert."
 	done
 
 ForesightDescription:
-	text "Negates foe's eva-"
-	next "sion and immunity."
+	text "Nimmt Gegner Immu-"
+	next "nität &Fluchtwert."
 	done
 
 DestinyBondDescription:
@@ -1130,8 +1130,8 @@ PerishSongDescription:
 	done
 
 PowerGemDescription:
-	text "Attacks with a ray"
-	next "of gem-like light."
+	text "Angriff mit Strahl"
+	next "aus Juwelenlicht."
 	done
 
 RolloutDescription:
@@ -1140,18 +1140,18 @@ RolloutDescription:
 	done
 
 SwaggerDescription:
-	text "Causes confusion"
-	next "but raises Attack."
+	text "Verwirrt, hebt"
+	next "aber Angr-Wert."
 	done
 
 ShellSmashDescription:
-	text "Lowers defenses,"
-	next "raises offenses."
+	text "Senkt Vert-Werte,"
+	next "hebt Angr-Werte."
 	done
 
 BugBiteDescription:
-	text "Bites the foe and"
-	next "eats a held Berry."
+	text "Beißt Gegner, isst"
+	next "getragene Beere."
 	done
 
 MeanLookDescription:
@@ -1180,8 +1180,8 @@ ReturnDescription:
 	done
 
 PsystrikeDescription:
-	text "A wave that does"
-	next "physical damage."
+	text "Welle mit physi-"
+	next "schem Schaden."
 	done
 
 PainSplitDescription:
@@ -1199,8 +1199,8 @@ MegahornDescription:
 	done
 
 PowerWhipDescription:
-	text "A violent lash"
-	next "attack."
+	text "Heftige Peitschen-"
+	next "Attacke."
 	done
 
 DragonbreathDescription:
@@ -1228,18 +1228,18 @@ RapidSpinDescription:
 	done
 
 HealingLightDescription:
-	text "Restores HP based"
-	next "on weather."
+	text "Füllt KP je nach"
+	next "Wetter auf."
 	done
 
 KnockOffDescription:
-	text "Slaps down the"
-	next "foe's held item."
+	text "Schlägt dem Gegner"
+	next "das Item weg."
 	done
 
 HiddenPowerDescription:
-	text "The type varies"
-	next "with the #mon."
+	text "Typ hängt"
+	next "vom #mon ab."
 	done
 
 FutureSightDescription:
@@ -1248,11 +1248,11 @@ FutureSightDescription:
 	done
 
 GyroBallDescription:
-	text "Does more damage"
-	next "at lower speed."
+	text "Je langsamer, umso"
+	next "mehr Schaden."
 	done
 
 TrickDescription:
-	text "Swaps held items"
-	next "with the foe."
+	text "Tauscht Items mit"
+	next "dem Gegner."
 	done

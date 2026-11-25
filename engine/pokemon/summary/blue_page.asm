@@ -117,7 +117,7 @@ INCLUDE "gfx/stats/blue_hp_bars.pal"
 	db "KP@"
 
 .AbilityTiles:
-	db '<BOLDH>', '1', '2', '<BOLDH>'
+	db 'V', '1', '2', 'V'
 
 SummaryScreen_ColorNatures:
 	ld c, STAT_ATK

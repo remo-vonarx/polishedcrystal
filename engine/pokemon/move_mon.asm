@@ -737,9 +737,9 @@ Special_HyperTrain:
 	db "KP@"
 	db "Init@"
 	db "Angr@"
-	db "Spez.Ang@"
-	db "Ver@"
-	db "Spez.Ver@"
+	db "Sp.Angr@"
+	db "Vert@"
+	db "Sp.Vert@"
 
 .TrainWhichStat:
 	text "Welchen Statuswert"

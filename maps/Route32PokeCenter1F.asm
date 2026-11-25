@@ -173,6 +173,6 @@ Route32Pokecenter1FCooltrainerFText:
 	para "Vielleicht ein"
 	line "Item, das seinen"
 
-	para "ANGR-Wert"
+	para "Angr-Wert"
 	line "verstärkt…"
 	done

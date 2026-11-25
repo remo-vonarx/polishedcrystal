@@ -30,8 +30,8 @@ GoldenrodDeptStore4FCooltrainerMText:
 
 	para "Ich füttere sie"
 	line "mit Protein, um"
-	cont "ihren ANGR zu ver-"
-	cont "stärken."
+	cont "ihren Angriff zu"
+	cont "verstärken."
 	done
 
 GoldenrodDeptStore4FBugCatcherText:

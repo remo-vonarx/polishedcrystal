@@ -167,13 +167,13 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 ### Task 9: Descriptions
 
-- [ ] The move and item descriptions K left; all ability descriptions.
-- [ ] Test: each in the Bag, the summary and the move screens.
-- [ ] Ship.
+- [x] The move and item descriptions K left; all ability descriptions.
+- [x] Test: each in the Bag, the summary and the move screens.
+- [x] Ship.
 
 ### Task 10: Pokédex
 
-- [ ] The entries K left, the categories, the Pokédex screens (search, area page, variable-width labels).
+- [ ] The entries K left, the categories, the Pokédex screens (search, area page, variable-width labels). The hidden ability's letter is V there too (`engine/pokedex/lcd.asm`); the number sign's tile (`№`) becomes Nr in every font, Kristall's own tile in the normal one (decided 2026-11-25; summary, egg page, trainer card, Hall of Fame, trade animation, Pokédex, judge machine, Valencia Island).
 - [ ] The entries not from Crystal: the German of the game each comes from (`utils/dex_sources.py`; **Project decisions**), PokéWiki where PokeAPI has none.
 - [ ] Test: entries of every kind of Pokémon (Gen 2, later, forms), every Pokédex screen.
 - [ ] Ship.

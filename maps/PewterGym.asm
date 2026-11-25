@@ -179,7 +179,7 @@ CamperJerrySeenText:
 
 	para "Gestein-#mon"
 	line "haben hohe"
-	cont "VERT-Werte."
+	cont "Vert-Werte."
 
 	para "Die Kämpfe können"
 	line "sehr lange"
