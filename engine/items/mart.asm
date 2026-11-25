@@ -63,19 +63,21 @@ ExpCandyMart:
 	jmp MartTextbox
 
 .Text_ExpCandyMart_Intro:
-	text "You again? Guess"
-	line "you liked that"
-	cont "candy."
+	text "Du schon wieder?"
+	line "Die Bonbons haben"
+	cont "dir wohl"
+	cont "geschmeckt."
 
-	para "I can hook you up."
-	line "For a price, of"
-	cont "course."
+	para "Ich kann dir"
+	line "welche besorgen."
+	cont "Gegen Bezahlung,"
+	cont "versteht sich."
 	done
 
 .Text_ExpCandyMart_ComeAgain
-	text "Don't tell anyone"
-	line "where you got"
-	cont "these, okay?"
+	text "Verrate niemandem,"
+	line "woher du die hast,"
+	cont "ja?"
 	done
 
 INCLUDE "data/items/exp_candy_shop.asm"
@@ -1265,7 +1267,7 @@ BTMenuDataHeader_Buy:
 	ret
 
 .PointsString:
-	db " BP@"
+	db " GP@"
 
 GetCursorItemPointCost:
 	ld a, [wScrollingMenuCursorPosition]

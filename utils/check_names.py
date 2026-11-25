@@ -111,6 +111,8 @@ TABLES = [
     ('data/items/exp_candy_names.asm', LI, None, None, 12, 'item', 'exp candy'),
     ('data/items/special_names.asm', LI, None, None, 12, 'item', 'pokegear'),
     ('data/items/wing_names.asm', LI, None, None, 12, 'item', 'wings'),
+    # the decoration menu and the text buffers (STRING_BUFFER_LENGTH - 1 = 18); the longest has 17
+    ('data/decorations/names.asm', LI, None, None, 17, None, 'decorations'),
     # Script_givebadge copies the name into wStringBuffer4 (STRING_BUFFER_LENGTH - 1)
     ('data/events/badge_names.asm', LI, None, None, PLACE_BYTES, None, 'badges'),
     # a pocket name is printed on a text line of its own ("… in / <POCKET>.")
@@ -148,7 +150,8 @@ GERMAN_TABLES = {'pokemon', 'types', 'egg groups', 'abilities', 'natures',  # ch
                  'moves',  # chunk 2
                  'items', 'key items', 'apricorns', 'exp candy', 'wings', 'pockets',  # chunk 3
                  'classes', 'trainers', 'nicknames', 'trades', 'tower', 'wonder trade', 'rival', 'ralph',  # chunk 4
-                 'places', 'badges', 'fly', 'summary'}  # chunk 5
+                 'places', 'badges', 'fly', 'summary',  # chunk 5
+                 'pokegear', 'decorations'}  # chunk 6
 
 # official names that are the same in English and German, and placeholders,
 # per table: a name allowed in one table is still reported in another
@@ -179,6 +182,7 @@ SAME_IN_GERMAN = {
     'exp candy': set(),
     'pokegear': {'#dex'},
     'wings': set(),
+    'decorations': {'GameCube', 'Nintendo 64', 'Pikachu', 'Super NES', 'Wii'},
     'badges': set(),
     'pockets': set(),
     'places': {'?', 'Indigo¯Plateau'} | {f'Route {n}' for n in range(1, 50)},

@@ -246,8 +246,8 @@ DayCareLyraForgotText:
 	done
 
 GotLyrasNumberText:
-	text "<PLAYER> got Lyra's"
-	line "phone number."
+	text "<PLAYER> erhält"
+	line "Lyras Nummer."
 	done
 
 DayCareLyraHasInfoText:
@@ -309,8 +309,8 @@ DayCareManText_GiveOddEgg:
 	done
 
 DayCareText_GotOddEgg:
-	text "<PLAYER> received"
-	line "the Odd Egg!"
+	text "<PLAYER> erhält"
+	line "das Kurios-Ei!"
 	done
 
 DayCareText_DescribeOddEgg:

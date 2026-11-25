@@ -11,9 +11,9 @@ NurseDayText:
 	done
 
 NurseEveText:
-	text "Good evening!"
-	line "Welcome to our"
-	cont "#mon Center."
+	text "Guten Abend!"
+	line "Willkommen im"
+	cont "#mon-Center."
 	done
 
 NurseNiteText:
@@ -35,34 +35,34 @@ PokeComNurseMornText:
 	done
 
 PokeComNurseDayText:
-	text "Hello!"
+	text "Hallo!"
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon Kommunika-"
+	cont "tions-Center- oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 PokeComNurseEveText:
-	text "Good evening!"
+	text "Guten Abend!"
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon Kommunika-"
+	cont "tions-Center- oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 PokeComNurseNiteText:
-	text "Good to see you"
-	line "working so late."
+	text "Schön dass du noch"
+	line "unterwegs bist."
 
-	para "This is the #-"
-	line "mon Communication"
-
-	para "Center--or the"
-	line "#Com Center."
+	para "Dies ist das #-"
+	line "mon Kommunika-"
+	cont "tions-Center- oder"
+	cont "kurz #Kom-"
+	cont "Center."
 	done
 
 NurseAskHealText:
@@ -73,33 +73,36 @@ NurseAskHealText:
 	done
 
 NurseTrainerStarText:
-	text "We can heal your"
-	line "#mon to perfect"
-	cont "health."
+	text "Wir heilen deine"
+	line "#mon und"
+	cont "machen sie wieder"
+	cont "fit!"
 
-	para "Shall we…"
+	para "Sollen wir…"
 
-	para "Th-that Trainer"
-	line "Card!"
+	para "D-dieser"
+	line "Trainerpass!"
 
-	para "That wonderful"
-	line "shade! And that"
-	cont "shiny star!"
+	para "Diese wunderbare"
+	line "Farbe! Und dieser"
+	cont "glänzende Stern!"
 
-	para "You're an impres-"
-	line "sive Trainer."
+	para "Du bist ein"
+	line "beeindruckender"
+	cont "Trainer."
 
-	para "Please, <PLAYER>,"
-	line "may I heal your"
-	cont "#mon?"
+	para "Bitte, <PLAYER>,"
+	line "darf ich deine"
+	cont "#mon heilen?"
 	done
 
 NurseTheUsualText:
-	text "Great to see you"
-	line "again, <PLAYER>!"
+	text "Schön, dich"
+	line "wiederzusehen,"
+	cont "<PLAYER>!"
 
-	para "You want the"
-	line "usual, right?"
+	para "Du möchtest das"
+	line "Übliche, oder?"
 	done
 
 NurseTakePokemonText:
@@ -190,8 +193,8 @@ TeamRocketOathText:
 	done
 
 IncenseBurnerText:
-	text "It's an incense"
-	line "burner!"
+	text "Das ist ein"
+	line "Räucherstäbchen!"
 	done
 
 MerchandiseShelfText:
@@ -206,7 +209,8 @@ TownMapText:
 	done
 
 DiplomaText:
-	text "It's the Diploma."
+	text "Das ist das"
+	line "Diplom."
 	done
 
 WindowText:
@@ -220,24 +224,27 @@ TVText:
 	done
 
 WrongSideText:
-	text "Oops, wrong side."
+	text "Ups, falsche"
+	line "Seite."
 	done
 
 RadioOffAirText:
-	text "The radio is just"
-	line "playing static…"
+	text "Das Radio gibt nur"
+	line "Rauschen von sich…"
 	done
 
 RefrigeratorText:
-	text "It's a fridge."
+	text "Das ist ein"
+	line "Kühlschrank."
 	done
 
 SinkText:
-	text "It's a sink."
+	text "Das ist eine"
+	line "Spüle."
 	done
 
 StoveText:
-	text "It's a stove."
+	text "Das ist ein Herd."
 	done
 
 TrashCanText:
@@ -291,11 +298,12 @@ ContestResults_JoinUsNextTimeText:
 	done
 
 ContestResults_ConsolationPrizeText:
-	text "Everyone else gets"
-	line "a "
+	text "Alle anderen er-"
+	line "halten als"
+	cont "Trostpreis:"
+	cont ""
 	text_ram wStringBuffer4
-	text " as a"
-	cont "consolation prize!"
+	text "!"
 	done
 
 ContestResults_DidNotWinText:
@@ -314,33 +322,34 @@ ContestResults_ReturnPartyText:
 	done
 
 ContestResults_PartyFullText:
-	text "Your party's full,"
-	line "so the #mon was"
-
-	cont "sent to Bill's PC."
+	text "Dein Team ist"
+	line "voll, daher wurde"
+	cont "das #mon auf"
+	cont "Bills PC"
+	cont "übertragen."
 	done
 
 GymStatue_CityGymText:
 	text_ram wStringBuffer3
-	line "#mon Gym"
+	line "PKMN-Arena"
 
-	para "Leader: "
+	para "Leitung: "
 	text_ram wStringBuffer4
 	done
 
 GymStatue_WinningTrainersText:
-	text "Winning Trainers:"
+	text "Bisherige Sieger:"
 	line "<RIVAL>"
 	done
 
 GymStatue_TwoWinningTrainersText:
-	text "Winning Trainers:"
+	text "Bisherige Sieger:"
 	line "<RIVAL>"
 	cont "<PLAYER>"
 	done
 
 GymStatue_ThreeWinningTrainersText:
-	text "Winning Trainers:"
+	text "Bisherige Sieger:"
 	line "<RIVAL>"
 	cont "<PLAYER>"
 	cont "Lyra"
@@ -464,10 +473,12 @@ VendingMachineClangText:
 	done
 
 VendingMachineScoreText:
-	text "Score! An extra"
+	text "Volltreffer!"
+
+	para "Zusätzlich liegt"
 	line ""
 	text_ram wStringBuffer3
-	cont "popped out."
+	cont "im Schacht."
 	done
 
 VendingMachineNoMoneyText:
@@ -482,9 +493,10 @@ VendingMachineNoSpaceText:
 	done
 
 HiddenGrottoText:
-	text "Look! You've found"
-	line "a narrow path!"
+	text "Schau! Du hast"
+	line "einen schmalen"
+	cont "Pfad gefunden!"
 
-	para "Will you follow"
-	line "it?"
+	para "Willst du ihm"
+	line "folgen?"
 	done

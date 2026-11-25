@@ -742,43 +742,48 @@ Special_HyperTrain:
 	db "Sp.Def@"
 
 .TrainWhichStat:
-	text "Train which of"
-	line ""
+	text "Welchen Statuswert"
+	line "von "
 	text_ram wStringBuffer1
-	text "'s stats?"
+	cont "trainieren?"
 	done
 
 .TextCantTrainEgg:
-	text "An Egg? I get that"
-	line "you're hyped to"
-	cont "have it, but I"
-	cont "can't train it yet!"
+	text "Ein Ei? Klar bist"
+	line "du ganz aus dem"
+	cont "Häuschen, aber"
+	cont "noch kann ich es"
+	cont "nicht trainieren!"
 	prompt
 
 .TextNotEnoughLevels:
-	text "Oh no… No, no, no!"
-	line ""
+	text "Oh nein… Nein,"
+	line "nein, nein!"
+	cont ""
 	text_ram wStringBuffer1
-	text " hasn't"
-	cont "leveled up enough"
-	cont "to be ready!"
+	text " hat"
+	cont "noch nicht genug"
+	cont "Level, um bereit"
+	cont "zu sein!"
 	prompt
 
 .TextNotMaxEffort:
-	text "Oh no… No, no, no!"
-	line ""
+	text "Oh nein… Nein,"
+	line "nein, nein!"
+	cont ""
 	text_ram wStringBuffer1
-	text " hasn't"
-	cont "maxed their effort"
-	cont "in that stat!"
+	text " hat"
+	cont "sich bei diesem"
+	cont "Wert noch nicht"
+	cont "voll angestrengt!"
 	prompt
 
 .TextAlreadyHypedUp:
-	text "But "
+	text "Aber "
 	text_ram wStringBuffer1
-	text " is"
-	line "already hyped up"
-	cont "in that stat!"
+	line "ist in diesem Wert"
+	cont "schon super-"
+	cont "spezialtrainiert!"
 	prompt
 
 RecalculatePartyMonStats:

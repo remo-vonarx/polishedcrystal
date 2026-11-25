@@ -268,8 +268,9 @@ YellowForestSurfPikachuDoll:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Surf Pikachu Doll"
-	line "was sent home."
+	text "Surfer Pikachu-"
+	line "Puppe wurde nach"
+	cont "Hause geschickt."
 	done
 
 SchoolgirlSarahSeenText:
@@ -502,6 +503,7 @@ YellowForestSuperNerdText:
 	done
 
 YellowForestSurfPikachuDollText:
-	text "<PLAYER> found"
-	line "Surf Pikachu Doll."
+	text "<PLAYER> findet"
+	line "Surfer Pikachu-"
+	cont "Puppe."
 	done

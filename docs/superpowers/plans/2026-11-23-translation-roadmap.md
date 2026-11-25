@@ -145,9 +145,11 @@ From here each task holds only what K left: Polished's changed lines, starting f
 
 ### Task 6: Receiving and shared texts
 
-- [ ] `data/text/common.asm` and `data/text/std_text.asm`: items, key items, TMs, Pokémon, eggs, badges; PC, Pokémon Center, Mart, day care, field moves, item balls, fruit trees.
-- [ ] Test: each kind of receiving text, each service, each field move.
-- [ ] Ship.
+- [x] `data/text/common.asm` and `data/text/std_text.asm`: items, key items, TMs, Pokémon, eggs, badges; PC, Pokémon Center, Mart, day care, field moves, item balls, fruit trees.
+- [x] Test: each kind of receiving text, each service, each field move.
+- [x] Ship.
+
+Decided 2026-11-25 on a review page and in dialogs: several items read "3x Trank" (GLOSSARY.md, **Receiving and shared texts**); menus, battle lines, weekdays and the SNES lines stay with Tasks 8, 7, 11 and 19.
 
 ### Task 7: Battle
 

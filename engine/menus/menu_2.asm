@@ -172,7 +172,7 @@ PlaceBattlePointsTopRight:
 	ret
 
 .BPString:
-	db " BP@"
+	db " GP@"
 
 Special_DisplayCoinCaseBalance:
 	; Place a text box of size 1x7 at 11, 0.

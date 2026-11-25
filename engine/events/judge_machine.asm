@@ -42,46 +42,50 @@ JudgeMachine:
 	jmp PrintText
 
 NewsMachineOffText:
-	text "It's the #mon"
-	line "Judge Machine!"
+	text "Das ist die"
+	line "#mon-Richter-"
+	cont "Maschine!"
 
-	para "It's not in"
-	line "operation yet…"
+	para "Sie ist noch nicht"
+	line "in Betrieb…"
 	done
 
 NewsMachineIntroText:
-	text "It's the #mon"
-	line "Judge Machine!"
+	text "Das ist die"
+	line "#mon-Richter-"
+	cont "Maschine!"
 
-	para "Would you like to"
-	line "judge a #mon's"
-	cont "overall power?"
+	para "Möchtest du die"
+	line "Gesamtstärke eines"
+	cont "#mon bewerten?"
 	done
 
 NewsMachineWhichMonText:
-	text "Please select"
-	line "a #mon."
+	text "Bitte wähle"
+	line "ein #mon."
 	prompt
 
 NewsMachinePrepText:
-	text "Visualizing your"
-	line "#mon's power…"
+	text "Die Stärke deines"
+	line "#mon wird"
+	cont "dargestellt…"
 	prompt
 
 NewsMachineContinueText:
-	text "Would you like"
-	line "to judge another"
-	cont "#mon?"
+	text "Möchtest du noch"
+	line "ein #mon"
+	cont "bewerten?"
 	done
 
 NewsMachineCancelText:
-	text "Goodbye!"
+	text "Auf Wiedersehen!"
 	done
 
 NewsMachineEggText:
-	text "An Egg doesn't"
-	line "have any power"
-	cont "yet to judge!"
+	text "Ein Ei hat noch"
+	line "keine Stärke, die"
+	cont "man bewerten"
+	cont "könnte!"
 	done
 
 JudgeSystem::

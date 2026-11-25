@@ -448,13 +448,14 @@ RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
 	done
 
 GotUnownDollText:
-	text "<PLAYER> received"
-	line "Unown Doll."
+	text "<PLAYER> erhält"
+	line "Icognito-Puppe."
 	done
 
 UnownDollSentText:
-	text "Unown Doll"
-	line "was sent home."
+	text "Icognito-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 RuinsofAlphResearchCenterScientistRewardText:

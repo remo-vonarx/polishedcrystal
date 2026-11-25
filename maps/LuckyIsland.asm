@@ -203,6 +203,6 @@ LuckyIslandLuckyEgg:
 	endtext
 
 .Text:
-	text "<PLAYER> found"
-	line "Lucky Egg!"
+	text "<PLAYER> findet"
+	line "Glücks-Ei!"
 	done

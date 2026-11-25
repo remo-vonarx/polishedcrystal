@@ -47,10 +47,10 @@ BattleFactoryHallwayEnterScene:
 .WonBattle:
 	opentext
 	writethistext
-		text "<PLAYER> earned"
+		text "<PLAYER> erhält"
 		line ""
 		text_ram wStringBuffer1
-		text " BP!"
+		text " GP!"
 		done
 	waitsfx
 	specialsound

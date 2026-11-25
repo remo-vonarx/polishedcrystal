@@ -333,7 +333,7 @@ BTDisplayPurchaseCost:
 	jmp ApplyTilemapInVBlank
 
 .BPString:
-	db " BP@"
+	db " GP@"
 
 DisplayPurchasePriceCommon:
 	push hl

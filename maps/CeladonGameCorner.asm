@@ -328,8 +328,8 @@ CeladonGameCornerFisherFullCoinCaseText:
 	done
 
 CeladonGameCornerReceived18CoinsText:
-	text "<PLAYER> received"
-	line "18 Coins!"
+	text "<PLAYER> erhält"
+	line "18 Münzen!"
 	done
 
 FisherOfferText:

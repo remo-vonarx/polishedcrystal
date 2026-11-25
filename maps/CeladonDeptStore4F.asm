@@ -118,33 +118,36 @@ PosterClerkAlreadyBoughtText:
 	done
 
 BoughtMarillPosterText:
-	text "<PLAYER> bought"
-	line "Marill Poster."
+	text "<PLAYER> kauft"
+	line "Marill-Poster."
 	done
 
 MarillPosterSentText:
-	text "Marill Poster"
-	line "was sent home."
+	text "Marill-Poster"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtClefairyPosterText:
-	text "<PLAYER> bought"
-	line "Clefairy Poster."
+	text "<PLAYER> kauft"
+	line "Piepi-Poster."
 	done
 
 ClefairyPosterSentText:
-	text "Clefairy Poster"
-	line "was sent home."
+	text "Piepi-Poster"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtPikachuPosterText:
-	text "<PLAYER> bought"
-	line "Pikachu Poster."
+	text "<PLAYER> kauft"
+	line "Pikachu-Poster."
 	done
 
 PikachuPosterSentText:
-	text "Pikachu Poster"
-	line "was sent home."
+	text "Pikachu-Poster"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonDeptStore4FSuperNerdText:

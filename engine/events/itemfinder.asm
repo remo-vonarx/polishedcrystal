@@ -53,27 +53,28 @@ ItemFinder:
 	iffalse_jumpopenedtext .UnderfootText
 	jumpthisopenedtext
 
-	text "Yes! Itemfinder"
-	line "is responding!"
+	text "Ja! Der Detektor"
+	line "reagiert!"
 	done
 
 .UnderfootText:
-	text "Oh! Itemfinder is"
-	line "shaking wildly!"
+	text "Oh! Der Detektor"
+	line "wackelt heftig!"
 	done
 
 .Script_FoundNothingNearby:
 	special UpdateTimePals
 	jumpthisopenedtext
 
-	text "…Nope! Itemfinder"
-	line "isn't responding."
+	text "…Nein! Der"
+	line "Detektor reagiert"
+	cont "nicht."
 	done
 
 .Script_FoundNothingAtAll:
 	special UpdateTimePals
 	jumpthisopenedtext
 
-	text "Nope! There's no-"
-	line "thing hidden here."
+	text "Nein! Hier ist"
+	line "nichts versteckt."
 	done

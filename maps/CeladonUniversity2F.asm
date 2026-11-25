@@ -88,8 +88,8 @@ CeladonUniversity2FCooltrainerfScript:
 	done
 
 .Text3:
-	text "<PLAYER> gave away"
-	line "the Fresh Water."
+	text "<PLAYER> gibt das"
+	line "Tafelwasser weg."
 	done
 
 .Text4:

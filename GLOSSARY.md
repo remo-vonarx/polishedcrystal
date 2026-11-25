@@ -215,3 +215,44 @@ _Avoid_: Flegmonruten, Paraheiler
 
 **Semicolon**:
 The font has none: a semicolon in Kristall's text is a comma.
+
+## Receiving and shared texts
+
+**Several items**:
+A number with an x and the name as it is, where there is more than one ("3x Trank", "99x Beleber"); one has no x ("1 Trank"). The verb stays as Kristall has it (kostet, wurde).
+_Avoid_: 3 x Trank, 3 Tränke
+
+**Several wings**:
+Wings from a headbutted tree always have the x, for one too ("1x Heilfeder").
+_Avoid_: Heilfedern
+
+**GP**:
+Battle Points (Gewinnpunkte), always the abbreviation after a number (25 GP).
+_Avoid_: BP
+
+**Tauschecke**:
+The counter that trades items for GP.
+
+**Richter-Maschine**:
+The Judge Machine; what it does is bewerten (to judge the Pokémon's overall strength).
+_Avoid_: Bewertungsmaschine
+
+**Super-Spezialtraining**:
+Hyper Training.
+_Avoid_: Spezialtraining
+
+**Trainerpass**:
+The Trainer Card, where Kristall has TRAINERPASS.
+
+**übertragen**:
+A Pokémon or Egg with no room in the party "wurde auf {Box} übertragen".
+_Avoid_: geschickt, gesendet
+
+**Weiter**:
+The menu entry the clock's question names (Continue), as Kristall's main menu has it.
+
+**Karten-Modul**, **Radio-Modul**, **Zusatzset**:
+The Map Card, the Radio Card and the Expansion Card.
+
+**Decorations**:
+Kristall's decoration names in mixed case: Baumpflanze, Tropenpflanze, Riesenpflanze, Goldtrophäe, Silbertrophäe, Surfer Pikachu-P.; a Pokémon's poster and doll have a hyphen (Marill-Poster, Bisasam-Puppe), a big one is Riesiges Relaxo. Super NES, Nintendo 64, GameCube and Wii stay.

@@ -170,10 +170,10 @@ ManiaText_GotShuckie:
 	done
 
 ManiaText_ShuckieSentToPC:
-	text "The #mon was"
-	line "sent to "
+	text "Das #mon wurde"
+	line "auf "
 	text_ram wStringBuffer1
-	text "."
+	cont "übertragen."
 	done
 
 ManiaText_PartyAndBoxFull:

@@ -271,8 +271,8 @@ LakeOfRageRedGyaradosScript:
 	done
 
 .RedScaleText:
-	text "<PLAYER> found"
-	line "Red Scale."
+	text "<PLAYER> findet"
+	line "Rote Haut."
 	done
 
 WesleyScript:

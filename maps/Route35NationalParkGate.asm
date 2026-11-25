@@ -278,8 +278,8 @@ Route35NationalParkGateOfficer1GiveParkBallsText:
 	done
 
 Route35NationalParkGatePlayerReceivedParkBallsText:
-	text "<PLAYER> gained"
-	line "{d:BUG_CONTEST_BALLS} Park Balls."
+	text "<PLAYER> erhält"
+	line "{d:BUG_CONTEST_BALLS} Parkbälle."
 	done
 
 Route35NationalParkGateOfficer1ExplainsRulesText:
@@ -412,14 +412,12 @@ Route35NationalParkGateOfficer1EggAsFirstMonText:
 	done
 
 Route35NationalParkGateOfficer1WantToFinishText:
-	text "You still have "
+	text "Du hast noch "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	line "minute"
-	text_plural
-	text " left."
+	line "Minute(n)."
 
-	para "Do you want to"
-	line "finish now?"
+	para "Möchtest du jetzt"
+	line "aufhören?"
 	done
 
 Route35NationalParkGateOfficer1WaitAtNorthGateText:

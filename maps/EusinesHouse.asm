@@ -168,13 +168,14 @@ EusinesHouseGrampsScript:
 	end
 
 ReceivedAbraDollText:
-	text "<PLAYER> received"
-	line "Abra Doll."
+	text "<PLAYER> erhält"
+	line "Abra-Puppe."
 	done
 
 AbraDollSentHomeText:
-	text "Abra Doll"
-	line "was sent home."
+	text "Abra-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonEusineText1:

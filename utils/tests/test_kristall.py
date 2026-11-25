@@ -749,6 +749,52 @@ def test_upstream_change_under_inherited_text_fails(git_repo):
     assert check_kristall.check(repo, "base", FAKE_PAIRS)[0]
 
 
+def reviewed(repo, label, english):
+    from check_kristall import english_key
+    put(repo / "utils/kristall_reviewed.tsv", f"# label, key\n{label}\t{english_key(english)}\twhy\n")
+
+
+def test_reviewed_hand_edit_of_inherited_text_passes(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(*HI)}, {"maps/X.asm": asm(("text", "Hallo, du!"), ("done",))})
+    reviewed(repo, "T", HI)
+    assert check_kristall.check(repo, "base", FAKE_PAIRS) == ([], 0)
+
+
+def test_reviewed_german_under_changed_english_passes(git_repo):
+    import check_kristall
+    changed = [("text", "Hi there!"), ("done",)]
+    repo = git_repo({"maps/X.asm": asm(*changed)}, {"maps/X.asm": asm(*HALLO)})
+    reviewed(repo, "T", changed)
+    assert check_kristall.check(repo, "base", FAKE_PAIRS) == ([], 0)
+
+
+def test_english_changed_since_review_fails(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(("text", "Hi there!"), ("done",))}, {"maps/X.asm": asm(*HALLO)})
+    reviewed(repo, "T", HI)
+    failures, _ = check_kristall.check(repo, "base", FAKE_PAIRS)
+    assert len(failures) == 1 and "T" in failures[0] and "English changed since" in failures[0]
+
+
+def test_reviewed_text_that_is_gone_fails(git_repo):
+    import check_kristall
+    repo = git_repo({"maps/X.asm": asm(*HI)}, {"maps/X.asm": asm(*HALLO)})
+    reviewed(repo, "Gone", HI)
+    failures, _ = check_kristall.check(repo, "base", FAKE_PAIRS)
+    assert len(failures) == 1 and "Gone: no such text" in failures[0]
+
+
+def test_reviewing_one_text_leaves_the_others_checked(git_repo):
+    import check_kristall
+    edited = asm(("text", "Hallo, du!"), ("done",))
+    repo = git_repo({"maps/X.asm": asm(*HI), "maps/Y.asm": asm(*HI).replace("T:", "U:")},
+                    {"maps/X.asm": edited, "maps/Y.asm": edited.replace("T:", "U:")})
+    reviewed(repo, "T", HI)
+    failures, _ = check_kristall.check(repo, "base", FAKE_PAIRS)
+    assert len(failures) == 1 and "maps/Y.asm:U" in failures[0]
+
+
 def test_iter_texts_takes_files_too(tmp_path):
     from asm_text import iter_texts
     put(tmp_path / "maps/X.asm", 'T:\n\ttext "A"\n\tdone\n')

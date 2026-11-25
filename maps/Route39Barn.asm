@@ -181,15 +181,15 @@ Text_AskGiveBerry:
 	done
 
 Text_GaveOranBerry:
-	text "<PLAYER> gave an"
-	line "Oran Berry to"
-	cont "Miltank."
+	text "<PLAYER> gibt"
+	line "Miltank eine"
+	cont "Sinelbeere."
 	done
 
 Text_GaveSitrusBerry:
-	text "<PLAYER> gave a"
-	line "Sitrus Berry to"
-	cont "Miltank."
+	text "<PLAYER> gibt"
+	line "Miltank eine"
+	cont "Tsitrubeere."
 	done
 
 Text_LittleHealthier:
@@ -208,9 +208,9 @@ Text_TotallyHealthy:
 	done
 
 Text_NoBerries:
-	text "<PLAYER> has no"
-	line "Oran or Sitrus"
-	cont "Berries…"
+	text "<PLAYER> hat keine"
+	line "Sinel- oder"
+	cont "Tsitrubeeren…"
 	done
 
 Text_RefusedToGiveBerry:

@@ -7,8 +7,8 @@ AskResurrectFossilScript::
 	iftruefwd .ask_old_amber
 	jumpthisopenedtext
 
-	text "Hey! You don't"
-	line "have any fossils."
+	text "Hey! Du hast keine"
+	line "Fossilien."
 	done
 
 .own_helix
@@ -35,7 +35,7 @@ AskResurrectFossilScript::
 	loadmenu HelixDomeMenuDataHeader
 	verticalmenu
 	closewindow
-	ifequalfwd $1, ResurrectHelixFossil
+	ifequal $1, ResurrectHelixFossil
 	ifequal $2, ResurrectDomeFossil
 	sjumpfwd .maybe_later
 
@@ -71,9 +71,10 @@ AskResurrectFossilScript::
 .maybe_later:
 	jumpthisopenedtext
 
-	text "Just talk to me"
-	line "if you change"
-	cont "your mind."
+	text "Sprich mich"
+	line "einfach an, wenn"
+	cont "du deine Meinung"
+	cont "änderst."
 	done
 
 HelixDomeMenuDataHeader:
@@ -149,8 +150,8 @@ FinishResurrect:
 	iffalse_jumpopenedtext NoRoomForFossilPokemonText
 	jumpthisopenedtext
 
-	text "Take good care"
-	line "of it!"
+	text "Pass gut darauf"
+	line "auf!"
 	done
 
 ResurrectAFossilScript:
@@ -175,31 +176,32 @@ ResurrectAFossilScript:
 	end
 
 AskHelixFossilText:
-	text "Do you want to"
-	line "resurrect the"
-	cont "Helix Fossil?"
+	text "Möchtest du das"
+	line "Helixfossil"
+	cont "wiederbeleben?"
 	done
 
 AskDomeFossilText:
-	text "Do you want to"
-	line "resurrect the"
-	cont "Dome Fossil?"
+	text "Möchtest du das"
+	line "Domfossil"
+	cont "wiederbeleben?"
 	done
 
 AskOldAmberText:
-	text "Do you want to"
-	line "resurrect the"
-	cont "Old Amber?"
+	text "Möchtest du den"
+	line "Altbernstein"
+	cont "wiederbeleben?"
 	done
 
 ResurrectingPokemonText:
-	text "OK! I'll resurrect"
-	line "the #mon!"
+	text "O.K.! Ich belebe"
+	line "das #mon"
+	cont "wieder!"
 	done
 
 NoRoomForFossilPokemonText:
-	text "Hey! You can't"
-	line "carry another"
-	cont "#mon, and your"
-	cont "Box is full, too!"
+	text "Hey! Du kannst"
+	line "kein #mon mehr"
+	cont "tragen und deine"
+	cont "Box ist auch voll!"
 	done
