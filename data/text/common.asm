@@ -1068,9 +1068,10 @@ _BuenaOffTheAirText::
 SECTION "Text_EnemyUsed", ROMX
 Text_EnemyUsed::
 	text "<ENEMY>"
-	line "used "
+	line "setzt "
 	text_ram wMonOrItemNameBuffer
-	text "!"
+	text ""
+	cont "ein!"
 	prompt
 
 SECTION "Text_EnemyUsedOn", ROMX
@@ -1859,17 +1860,17 @@ Text_Gained::
 
 SECTION "Text_ABoostedStringBuffer2ExpPoints", ROMX
 Text_ABoostedStringBuffer2ExpPoints::
-	line "a boosted"
+	line "spezielle"
 	cont ""
 	text_decimal wStringBuffer2, 3, 6
-	text " Exp.Points!"
+	text " EP!"
 	prompt
 
 SECTION "Text_StringBuffer2ExpPoints", ROMX
 Text_StringBuffer2ExpPoints::
 	line ""
 	text_decimal wStringBuffer2, 3, 6
-	text " Exp.Points!"
+	text " EP!"
 	prompt
 
 SECTION "Text_GoPkmn", ROMX

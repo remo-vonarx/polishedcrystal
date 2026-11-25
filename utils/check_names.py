@@ -113,6 +113,8 @@ TABLES = [
     ('data/items/wing_names.asm', LI, None, None, 12, 'item', 'wings'),
     # the decoration menu and the text buffers (STRING_BUFFER_LENGTH - 1 = 18); the longest has 17
     ('data/decorations/names.asm', LI, None, None, 17, None, 'decorations'),
+    # GetStatName copies the name into wStringBuffer2; the battle messages print it on a row of its own
+    ('data/battle/stat_names.asm', LI, None, None, PLACE_BYTES, None, 'stat names'),
     # Script_givebadge copies the name into wStringBuffer4 (STRING_BUFFER_LENGTH - 1)
     ('data/events/badge_names.asm', LI, None, None, PLACE_BYTES, None, 'badges'),
     # a pocket name is printed on a text line of its own ("… in / <POCKET>.")
@@ -151,7 +153,8 @@ GERMAN_TABLES = {'pokemon', 'types', 'egg groups', 'abilities', 'natures',  # ch
                  'items', 'key items', 'apricorns', 'exp candy', 'wings', 'pockets',  # chunk 3
                  'classes', 'trainers', 'nicknames', 'trades', 'tower', 'wonder trade', 'rival', 'ralph',  # chunk 4
                  'places', 'badges', 'fly', 'summary',  # chunk 5
-                 'pokegear', 'decorations'}  # chunk 6
+                 'pokegear', 'decorations',  # chunk 6
+                 'stat names'}  # chunk 7
 
 # official names that are the same in English and German, and placeholders,
 # per table: a name allowed in one table is still reported in another
@@ -183,6 +186,7 @@ SAME_IN_GERMAN = {
     'pokegear': {'#dex'},
     'wings': set(),
     'decorations': {'GameCube', 'Nintendo 64', 'Pikachu', 'Super NES', 'Wii'},
+    'stat names': set(),
     'badges': set(),
     'pockets': set(),
     'places': {'?', 'Indigo¯Plateau'} | {f'Route {n}' for n in range(1, 50)},

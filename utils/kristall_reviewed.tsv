@@ -8,3 +8,41 @@ _ItemUsedText	2f69a4fb	Kristall's line for a used item
 _MonSentToPCText	49565e20	sent to a Box: the Box name is in the line
 PokeComNurseDayText	f712509e	Kristall left it in English; own German
 PokeComNurseNiteText	e0ea3093	Kristall left it in English; own German
+WildPokemonAppearedText	34288012	Kristall's line kept under Polished's reworded English
+BattleText_EnemyFled	900aa58f	Kristall's line kept under Polished's reworded English
+HurtByBurnText	ad8641e0	Kristall's line kept under Polished's reworded English
+HurtByCurseText	d8b0855c	Kristall's line kept under Polished's reworded English
+SandstormHitsText	c951ce1b	Kristall's line kept under Polished's reworded English
+BattleText_TargetWasHitByFutureSight	ebea3857	Kristall's line kept under Polished's reworded English
+BattleText_EnemyIsAboutToUseWillPlayerSwitchPkmn	eee9529a	Kristall's line kept under Polished's reworded English
+BattleText_UserHurtBySpikes	9b8e7e09	Kristall's line kept under Polished's reworded English
+DisabledNoMoreText	a61c0455	Kristall's line kept under Polished's reworded English
+ConfusedNoMoreText	3b7abf1d	Kristall's line kept under Polished's reworded English
+AlreadyConfusedText	f7a653db	the word in full, decided in the battle review
+BattleText_UsersHurtByStringBuffer1	56c7efa2	Kristall's line kept under Polished's reworded English
+UnaffectedText	f99c0877	Kristall's line kept under Polished's reworded English
+SuperEffectiveText	25b28e95	Kristall's line kept under Polished's reworded English
+TookDownWithItText	986c20df	Kristall's line kept under Polished's reworded English
+DestinyBondEffectText	84a59ac9	Kristall's line kept under Polished's reworded English
+AlreadyAsleepText	23c124c7	Kristall's line kept under Polished's reworded English
+BadlyPoisonedText	c7c9f941	Kristall's line kept under Polished's reworded English
+AlreadyPoisonedText	3e29df44	Kristall's line kept under Polished's reworded English
+ProtectedByMistText	a6cb058e	Kristall's line kept under Polished's reworded English
+RecoilText	7f47fc37	Kristall's line kept under Polished's reworded English
+TransformedTypeText	bc7f60c1	Kristall's line kept under Polished's reworded English
+SunGotBrightText	420afdfc	Kristall's line kept under Polished's reworded English
+BattleText_UsersStringBuffer1Activated	9655f219	possessive 's, decided for the battle texts
+WrappedByText	93b4d225	possessive 's, decided for the battle texts
+EnduredText	8a5a10d4	possessive 's, decided for the battle texts
+DisabledMoveText	189103b7	possessive 's, decided for the battle texts
+AttackMissedText	5fc1f3a9	possessive 's, decided for the battle texts
+DreamEatenText	1d21c52e	possessive 's, decided for the battle texts
+WasDisabledText	04d9f378	possessive 's, decided for the battle texts
+MistText	b280883a	the name without Kristall's stray s
+ReflectEffectText	ef3a006d	stat name in full with 's, decided for the battle texts
+ParalyzedText	25722ecd	Kristall's line kept under Polished's reworded English
+FullyParalyzedText	4b3e7a04	Kristall's line kept under Polished's reworded English
+AlreadyParalyzedText	48dc3fd5	the word in full, decided in the battle review
+ProtectedByText	af53b2e8	a full sentence, decided in the battle review
+ProtectingItselfText	88b54c8e	Kristall's line kept under Polished's reworded English
+CoveredByVeilText	6ececd8e	Kristall's line kept under Polished's reworded English

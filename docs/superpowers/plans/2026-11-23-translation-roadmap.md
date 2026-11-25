@@ -153,9 +153,11 @@ Decided 2026-11-25 on a review page and in dialogs: several items read "3x Trank
 
 ### Task 7: Battle
 
-- [ ] `data/text/battle.asm`, the battle menus, the ability pop-ups.
-- [ ] Test: a wild and a trainer battle with status, weather, abilities, a catch, a run, an evolution.
-- [ ] Ship.
+- [x] `data/text/battle.asm`, the battle menus, the ability pop-ups.
+- [x] Test: a wild and a trainer battle with status, weather, abilities, a catch, a run, an evolution.
+- [x] Ship.
+
+Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, the stat messages scroll by themselves like Kristall's (`ScrollBattleText`), plain P and AP in the move box, pairs of trainers in the plural (GLOSSARY.md, **Battle**). Battle Tower, Battle Factory and link record texts are done here too. Left for Task 8: the level-up box, `stat_strings.asm`, the party list's status words, Yes/No, Cancel, the forget-move list, "Waiting…!" in link battles.
 
 ### Task 8: Menus and screens
 

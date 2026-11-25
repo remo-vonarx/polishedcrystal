@@ -1003,9 +1003,9 @@ GetTurnAndPlacePrefix:
 	pop af
 	ret
 .Your:
-	db "Your@"
+	db "Dein@"
 .Foe:
-	db "Foe@"
+	db "Gegner@"
 
 HandleHealingItems:
 	call SetFastestTurn

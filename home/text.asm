@@ -388,14 +388,14 @@ _PlaceBattleNickname:
 	jr PlaceCommandCharacter
 
 .EnemyText:
-	db "Foe" ; fallthrough, no " @"
+	db "Gegn." ; fallthrough, no " @"
 SpaceText::
 	db " " ; fallthrough, no "@"
 EmptyString::
 	db "@"
 
 GhostNicknameText:
-	db "Ghost@"
+	db "Geist@"
 
 PlaceEnemysName::
 	push de

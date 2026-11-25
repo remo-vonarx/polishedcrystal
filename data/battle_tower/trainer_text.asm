@@ -676,38 +676,43 @@ _BTWinF15Text:
 	done
 
 BattleTowerText_GreetingTycoon:
-	text "Hi! My name's"
-	line "Palmer."
+	text "Hallo da! Mein"
+	line "Name ist Viktor."
 
-	para "You're <PLAYER>"
-	line "from New Bark"
-	cont "Town, right?"
+	para "Du bist <PLAYER>"
+	line "aus Neuborkia, ja?"
 
-	para "I've heard a lot"
-	line "about you."
+	para "Ich habe schon"
+	line "viel von dir"
+	cont "gehört."
 
-	para "Show me the bond"
-	line "you've built with"
-	cont "your #mon."
+	para "Zeige mir, wie"
+	line "stark das Band"
 
-	para "Show me what you've"
-	line "learned through"
+	para "zwischen dir und"
+	line "deinen #mon"
+	cont "ist."
 
-	para "battles with"
-	line "trainers!"
+	para "Zeige mir die"
+	line "Fähigkeiten, die"
+
+	para "du dir als Trainer"
+	line "angeeignet hast!"
 	done
 
 BattleTowerText_LossTycoon:
-	text "Ah, wonderful!"
-	line "Do come again!"
+	text "Wunderbar! Du"
+	line "darfst gerne"
+	cont "wiederkommen!"
 	done
 
 BattleTowerText_WinTycoon:
-	text "I have no problem"
-	line "losing to a spec-"
+	text "Gegen einen"
+	line "Trainer wie dich"
 
-	para "tacular trainer"
-	line "like you!"
+	para "zu verlieren,"
+	line "macht mich nicht"
+	cont "traurig!"
 	done
 
 BattleFactoryText_GreetingHead:
@@ -720,33 +725,39 @@ BattleFactoryText_GreetingHead:
 	ret
 
 .Text
-	text "Bzweeeeep!"
+	text "Bieeeeeep!"
 
-	para "Sorry, don't mind"
-	line "me. I'm Thorton."
+	para "'tschuldige, lass"
+	line "dich nicht stören."
 
-	para "I'm using my data-"
-	line "analyzing machine"
-	cont "for this match."
+	para "Ich bin Distmar."
 
-	para "I see! It's reading"
+	para "Das ist meine"
+	line "Maschine zur"
+	cont "Datenanalyse für"
+	cont "dieses Spiel."
+
+	para "Hmmm, so um die"
 	line ""
 	text_decimal wRandomValue, 1, 2
-	text " percent."
+	text " Prozent?"
 
-	para "Oh, don't let that"
-	line "concern you!"
+	para "Oh, vergiss das"
+	line "mit der Prozent-"
+	cont "zahl!"
 
-	para "All righty, let's"
-	line "get going!"
+	para "Gut, legen wir"
+	line "also los!"
 	done
 
 BattleFactoryText_LossHead:
-	text "See? Just as"
-	line "analyzed."
+	text "Siehst du? Genau"
+	line "meiner Analyse"
+	cont "entsprechend."
 	done
 
 BattleFactoryText_WinHead:
-	text "Whoa! You sure"
-	line "showed me!"
+	text "Na so was! Du hast"
+	line "es mir ganz schön"
+	cont "gezeigt!"
 	done
