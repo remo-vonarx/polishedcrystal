@@ -382,3 +382,42 @@ The Hall of Fame's headings, Kristall's words.
 
 **24 hours, metric**:
 What a new game starts with, as in Kristall; Upstream starts with 12 hours and imperial units.
+
+## Descriptions
+
+**ANGR-Wert**, **VERT-Wert**, **INIT-Wert**, **SPEZ. ANG**, **SPEZ. VER**:
+The stats in move and item descriptions, Kristall's words and spelling (only the Offens.weste has no room for the space). Ability descriptions name the stat in full (Angriff, Verteidigung, Initiative, Spez.-Angriff) where two lines allow it; Blitzfänger has Spez.-Angr., Bruchrüstung VERT and INIT.
+_Avoid_: Spez.-Angriff in a move's or item's text
+
+**in Notfällen**:
+"In a pinch", for Berries and abilities that work at low HP; the official wording of X and Y.
+_Avoid_: bei Gefahr, bei wenig KP
+
+**(Tragen)**:
+"(Hold)" at the end of an item's text, as in Kristall.
+
+**Hebt**, **Senkt**, **Füllt … auf**, **evtl.**, **enorm**:
+Raises, lowers, restores, may, sharply, as in Kristall's descriptions.
+
+**Sympathie**:
+Friendship in item texts (Friend Ball, Luxury Ball, the EV Berries, Soothe Bell), Kristall's word.
+_Avoid_: Freundschaft, Zuneigung
+
+**Wertzuwachs**, **ANGR-Zuwachs**, …:
+The stat gain (EVs) of the Macho Brace and the Power items.
+
+**Körperattacke**, **Spezialattacke**, **Status-Attacke**:
+Physical, special and status move, after Kristall's "Körperattacken".
+_Avoid_: physische Attacke
+
+**Entwickler**:
+A Pokémon that can still evolve (Eviolite), as in Kristall's Moon Ball.
+
+**Saug-**, **Klammer-**, **Lärm-**, **Serien-**, **Wind-Attacken**, **Barrieren**:
+Draining, trapping, sound-based, multi-hit and wind moves, and the screens, after the official texts.
+
+**eff.**:
+Short for effektiv in the texts of the Expertengurt and Schwä.schutz alone, where the full word doesn't fit.
+
+**Seesprint-Fähre**:
+The Seagallop Ferry (PokéWiki).

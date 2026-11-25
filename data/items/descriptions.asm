@@ -328,8 +328,8 @@ MasterBallDesc:
 	done
 
 SafariBallDesc:
-	text "The Safari Game"
-	next "Ball."
+	text "Ball für die"
+	next "Safari-Zone."
 	done
 
 LevelBallDesc:
@@ -363,73 +363,73 @@ HeavyBallDesc:
 	done
 
 LoveBallDesc:
-	text "A Ball for the"
-	next "opposite gender."
+	text "Fängt anderes Ge-"
+	next "schlecht leichter."
 	done
 
 AbilityPatchDesc:
-	text "Switches to a"
-	next "rare ability."
+	text "Wechselt zu selte-"
+	next "ner Fähigkeit."
 	done
 
 RepeatBallDesc:
-	text "A Ball for #mon"
-	next "caught before."
+	text "Ein Ball für schon"
+	next "gefangene #mon."
 	done
 
 TimerBallDesc:
-	text "A Ball for late"
-	next "in a battle."
+	text "Ein Ball für lange"
+	next "Kämpfe."
 	done
 
 NestBallDesc:
-	text "A Ball for weaker"
-	next "#mon."
+	text "Ein Ball für eher"
+	next "schwache #mon."
 	done
 
 NetBallDesc:
-	text "A Ball for Water"
-	next "or Bug #mon."
+	text "Ball für Wasser-"
+	next "und Käfer-#mon."
 	done
 
 DiveBallDesc:
-	text "A Ball for under-"
-	next "water #mon."
+	text "Ein Ball für #-"
+	next "mon unter Wasser."
 	done
 
 LuxuryBallDesc:
-	text "A cozy Ball to"
-	next "befriend #mon."
+	text "Behaglicher Ball,"
+	next "fördert Sympathie."
 	done
 
 HealBallDesc:
-	text "A remedial Ball to"
-	next "heal #mon."
+	text "Ein Ball, der das"
+	next "#mon heilt."
 	done
 
 QuickBallDesc:
-	text "A Ball for early"
-	next "in a battle."
+	text "Ein Ball für den"
+	next "Kampfbeginn."
 	done
 
 DuskBallDesc:
-	text "A Ball for night-"
-	next "time or caves."
+	text "Ein Ball für Nacht"
+	next "und Höhlen."
 	done
 
 DreamBallDesc:
-	text "A Ball for sleep-"
-	next "ing #mon."
+	text "Ball für schla-"
+	next "fende #mon."
 	done
 
 PremierBallDesc:
-	text "A rare commemor-"
-	next "ative Ball."
+	text "Ein seltener"
+	next "Gedenkball."
 	done
 
 CherishBallDesc:
-	text "A quite rare com-"
-	next "memorative Ball."
+	text "Ein recht seltener"
+	next "Gedenkball."
 	done
 
 PotionDesc:
@@ -443,8 +443,8 @@ SuperPotionDesc:
 	done
 
 HyperPotionDesc:
-	text "Restores #mon"
-	next "HP by 120."
+	text "Füllt KP um"
+	next "120 auf."
 	done
 
 MaxPotionDesc:
@@ -540,13 +540,13 @@ CarbosDesc:
 	done
 
 CalciumDesc:
-	text "Raises Sp.Atk of"
-	next "one #mon."
+	text "Erhöht den"
+	next "SPEZ. ANG-Wert."
 	done
 
 ZincDesc:
-	text "Raises Sp.Def of"
-	next "one #mon."
+	text "Erhöht den"
+	next "SPEZ. VER-Wert."
 	done
 
 RareCandyDesc:
@@ -560,13 +560,13 @@ PPUpDesc:
 	done
 
 PPMaxDesc:
-	text "Maximizes PP of"
-	next "a selected move."
+	text "Maximiert die AP"
+	next "einer Attacke."
 	done
 
 FreshWaterDesc:
-	text "Restores #mon"
-	next "HP by 30."
+	text "Füllt KP um"
+	next "30 auf."
 	done
 
 SodaPopDesc:
@@ -575,8 +575,8 @@ SodaPopDesc:
 	done
 
 LemonadeDesc:
-	text "Restores #mon"
-	next "HP by 70."
+	text "Füllt KP um"
+	next "70 auf."
 	done
 
 MoomooMilkDesc:
@@ -590,13 +590,13 @@ SacredAshDesc:
 	done
 
 EnergyPowderDesc:
-	text "Restores #mon"
-	next "HP by 60. Bitter."
+	text "Füllt KP um"
+	next "60 auf. Bitter."
 	done
 
 EnergyRootDesc:
-	text "Restores #mon"
-	next "HP by 120. Bitter."
+	text "Füllt KP um"
+	next "120 auf. Bitter."
 	done
 
 HealPowderDesc:
@@ -610,43 +610,43 @@ RevivalHerbDesc:
 	done
 
 XAttackDesc:
-	text "Raises Attack."
-	next "(1 battle)"
+	text "Hebt ANGR-Wert"
+	next "für 1 Kampf."
 	done
 
 XDefendDesc:
-	text "Raises Defense."
-	next "(1 battle)"
+	text "Hebt VERT-Wert"
+	next "für 1 Kampf."
 	done
 
 XSpeedDesc:
-	text "Raises Speed."
-	next "(1 battle)"
+	text "Hebt INIT-Wert"
+	next "für 1 Kampf."
 	done
 
 XSpAtkDesc:
-	text "Raises Sp.Atk."
-	next "(1 battle)"
+	text "Hebt SPEZ. ANG"
+	next "für 1 Kampf."
 	done
 
 XSpDefDesc:
-	text "Raises Sp.Def."
-	next "(1 battle)"
+	text "Hebt SPEZ. VER"
+	next "für 1 Kampf."
 	done
 
 DireHitDesc:
-	text "Ups critical hit"
-	next "ratio. (1 battle)"
+	text "Hebt Volltreffer-"
+	next "quote für 1 Kampf."
 	done
 
 GuardSpecDesc:
-	text "Prevents stat"
-	next "drops. (1 battle)"
+	text "Keine Statusände-"
+	next "rung für 1 Kampf."
 	done
 
 XAccuracyDesc:
-	text "Raises accuracy."
-	next "(1 battle)"
+	text "Hebt Genauigkeit"
+	next "für 1 Kampf."
 	done
 
 RepelDesc:
@@ -675,8 +675,8 @@ PokeDollDesc:
 	done
 
 AbilityCapDesc:
-	text "Switches a #-"
-	next "mon's ability."
+	text "Ändert Fähigkeit"
+	next "eines #mon."
 	done
 
 LeafStoneDesc:
@@ -729,8 +729,8 @@ AspearBerryDesc:
 	done
 
 LeppaBerryDesc:
-	text "A self-restore"
-	next "item. (10<BOLDP><BOLDP>, Hold)"
+	text "Auto-Auffüllung um"
+	next "10 AP. (Tragen)"
 	done
 
 OranBerryDesc:
@@ -749,113 +749,113 @@ LumBerryDesc:
 	done
 
 SitrusBerryDesc:
-	text "Self-restore item."
-	next "(1/4 max HP, Hold)"
+	text "Selbstheilung um"
+	next "1/4 KP. (Tragen)"
 	done
 
 FigyBerryDesc:
-	text "Self-restore item."
-	next "(1/3 max HP, Hold)"
+	text "Selbstheilung um"
+	next "1/3 KP. (Tragen)"
 	done
 
 PomegBerryDesc:
-	text "Raises friendship"
-	next "but lowers HP."
+	text "Hebt Sympathie,"
+	next "senkt aber KP."
 	done
 
 KelpsyBerryDesc:
-	text "Raises friendship"
-	next "but lowers Attack."
+	text "Hebt Sympathie,"
+	next "senkt ANGR-Wert."
 	done
 
 QualotBerryDesc:
-	text "Raises friendship,"
-	next "lowers Defense."
+	text "Hebt Sympathie,"
+	next "senkt VERT-Wert."
 	done
 
 HondewBerryDesc:
-	text "Raises friendship"
-	next "but lowers Sp.Atk."
+	text "Hebt Sympathie,"
+	next "senkt SPEZ. ANG."
 	done
 
 GrepaBerryDesc:
-	text "Raises friendship"
-	next "but lowers Sp.Def."
+	text "Hebt Sympathie,"
+	next "senkt SPEZ. VER."
 	done
 
 TamatoBerryDesc:
-	text "Raises friendship"
-	next "but lowers Speed."
+	text "Hebt Sympathie,"
+	next "senkt INIT-Wert."
 	done
 
 LiechiBerryDesc:
-	text "Raises Attack in"
-	next "a pinch."
+	text "Hebt ANGR-Wert"
+	next "in Notfällen."
 	done
 
 GanlonBerryDesc:
-	text "Raises Defense in"
-	next "a pinch."
+	text "Hebt VERT-Wert"
+	next "in Notfällen."
 	done
 
 SalacBerryDesc:
-	text "Raises Speed in"
-	next "a pinch."
+	text "Hebt INIT-Wert"
+	next "in Notfällen."
 	done
 
 PetayaBerryDesc:
-	text "Raises Sp.Atk in"
-	next "a pinch."
+	text "Hebt SPEZ. ANG"
+	next "in Notfällen."
 	done
 
 ApicotBerryDesc:
-	text "Raises Sp.Def in"
-	next "a pinch."
+	text "Hebt SPEZ. VER"
+	next "in Notfällen."
 	done
 
 LansatBerryDesc:
-	text "Ups critical hit"
-	next "ratio in a pinch."
+	text "Mehr Volltreffer"
+	next "in Notfällen."
 	done
 
 StarfBerryDesc:
-	text "Ups a random stat"
-	next "in a pinch."
+	text "Hebt beliebigen"
+	next "Wert in Notfällen."
 	done
 
 EnigmaBerryDesc:
-	text "Restores HP on su-"
-	next "per-effective hit."
+	text "Sehr effektiver"
+	next "Treffer füllt KP."
 	done
 
 CustapBerryDesc:
-	text "Moves first in"
-	next "a pinch."
+	text "Erstschlag in"
+	next "Notfällen."
 	done
 
 JabocaBerryDesc:
-	text "Damages foe on"
-	next "a physical hit."
+	text "Schadet Gegner bei"
+	next "Körperattacke."
 	done
 
 RowapBerryDesc:
-	text "Damages foe on"
-	next "a special hit."
+	text "Schadet Gegner bei"
+	next "Spezialattacke."
 	done
 
 KeeBerryDesc:
-	text "Raises Defense on"
-	next "a physical hit."
+	text "Hebt VERT-Wert bei"
+	next "Körperattacke."
 	done
 
 MarangaBerryDesc:
-	text "Raises Sp.Def on"
-	next "a special hit."
+	text "Hebt SPEZ. VER bei"
+	next "Spezialattacke."
 	done
 
 BerryJuiceDesc:
-	text "A self-restore"
-	next "item. (20HP, Hold)"
+	text "Selbstheilung um"
+	next "20 KP. (Tragen)"
 	done
 
 SilkScarfDesc:
@@ -944,8 +944,8 @@ BlackGlassesDesc:
 	done
 
 FairyFeatherDesc:
-	text "Powers up Fairy-"
-	next "type moves. (Hold)"
+	text "Verstärkt Feen-"
+	next "Attacken. (Tragen)"
 	done
 
 BrightPowderDesc:
@@ -960,8 +960,8 @@ RazorClawDesc:
 	done
 
 QuickClawDesc:
-	text "Boosts chances of"
-	next "moving 1st. (Hold)"
+	text "Erhöht Erstschlag-"
+	next "quote. (Tragen)"
 	done
 
 KingsRockDesc:
@@ -1006,18 +1006,18 @@ BerserkGeneDesc:
 	done
 
 LightBallDesc:
-	text "Boost Pikachu's"
-	next "Attack and Sp.Atk."
+	text "Hebt Pikachus ANGR"
+	next "und SPEZ. ANG."
 	done
 
 LeekDesc:
-	text "An ordinary leek."
-	next "Sell low."
+	text "Gemeiner Lauch."
+	next "Wert gering."
 	done
 
 ThickClubDesc:
-	text "Boost Cubone's and"
-	next "Marowak's Attack."
+	text "Hebt Tragossos und"
+	next "Knoggas ANGR-Wert."
 	done
 
 LuckyPunchDesc:
@@ -1031,238 +1031,238 @@ MetalPowderDesc:
 	done
 
 QuickPowderDesc:
-	text "Raises Speed of"
-	next "Ditto. (Hold)"
+	text "Hebt INIT-Wert von"
+	next "Ditto. (Tragen)"
 	done
 
 ArmorSuitDesc:
-	text "A suit of armor"
-	next "for some #mon."
+	text "Eine Rüstung für"
+	next "manche #mon."
 	done
 
 AirBalloonDesc:
-	text "Avoids Ground att-"
-	next "acks until popped."
+	text "Bis zum Platzen"
+	next "immun gegen Boden."
 	done
 
 AssaultVestDesc:
-	text "Boosts Sp.Def, but"
-	next "bans status moves."
+	text "Hebt SPEZ.VER, nur"
+	next "Schadensattacken."
 	done
 
 BigRootDesc:
-	text "Powers up draining"
-	next "moves. (Hold)"
+	text "Verstärkt Saug-"
+	next "Attacken. (Tragen)"
 	done
 
 BindingBandDesc:
-	text "Powers up trapping"
-	next "moves. (Hold)"
+	text "Verstärkt Klammer-"
+	next "attacken. (Tragen)"
 	done
 
 DestinyKnotDesc:
-	text "Infatuates the foe"
-	next "back. (Hold)"
+	text "Gegner wird auch"
+	next "verliebt. (Tragen)"
 	done
 
 ExpertBeltDesc:
-	text "Ups super effect-"
-	next "ive moves. (Hold)"
+	text "Stärkt sehr eff."
+	next "Attacken. (Tragen)"
 	done
 
 FocusSashDesc:
-	text "Endures one OHKO"
-	next "move at full HP."
+	text "Hält bei vollen KP"
+	next "1 K.O. stand."
 	done
 
 GripClawDesc:
-	text "Extends duration"
-	next "of trapping moves."
+	text "Verlängert"
+	next "Klammerattacken."
 	done
 
 LifeOrbDesc:
-	text "Powers up moves"
-	next "with HP. (Hold)"
+	text "Verstärkt Attacken"
+	next "durch KP. (Tragen)"
 	done
 
 LightClayDesc:
-	text "Extends duration"
-	next "of barrier moves."
+	text "Verlängert"
+	next "Barriere-Attacken."
 	done
 
 MetronomeIDesc:
-	text "Powers up moves"
-	next "used again. (Hold)"
+	text "Stärkt wiederholte"
+	next "Attacken. (Tragen)"
 	done
 
 ProtectPadsDesc:
-	text "Protects from"
-	next "contact effects."
+	text "Schützt vor"
+	next "Kontakteffekten."
 	done
 
 RockyHelmetDesc:
-	text "Damages foe on"
-	next "contact. (Hold)"
+	text "Schadet Gegner bei"
+	next "Kontakt. (Tragen)"
 	done
 
 SafeGogglesDesc:
-	text "Protects from"
-	next "weather damage."
+	text "Schützt vor"
+	next "Wetterschäden."
 	done
 
 ShedShellDesc:
-	text "Allows switching"
-	next "out. (Hold)"
+	text "Ermöglicht Tausch."
+	next "(Tragen)"
 	done
 
 ShellBellDesc:
-	text "Self-restore item."
-	next "(1/8 damage, Hold)"
+	text "Heilt um 1/8 des"
+	next "Schadens. (Tragen)"
 	done
 
 SootheBellDesc:
-	text "Calms and fosters"
-	next "friendship. (Hold)"
+	text "Fördert Ruhe, Sym-"
+	next "pathie. (Tragen)"
 	done
 
 WeakPolicyDesc:
-	text "Super effective"
-	next "hit ups offenses."
+	text "Sehr eff. Treffer"
+	next "hebt ANGR-Werte."
 	done
 
 WideLensDesc:
-	text "Slightly boosts"
-	next "accuracy. (Hold)"
+	text "Hebt Genauigkeit"
+	next "etwas. (Tragen)"
 	done
 
 ZoomLensDesc:
-	text "Boosts accuracy"
-	next "when moving 2nd."
+	text "Hebt Genauigkeit"
+	next "beim Zweitschlag."
 	done
 
 MentalHerbDesc:
-	text "A self-cure for"
-	next "infatuation."
+	text "Selbstheilung bei"
+	next "Anziehung."
 	done
 
 PowerHerbDesc:
-	text "Skips charging"
-	next "of moves. (Hold)"
+	text "Attacken ohne Auf-"
+	next "laden. (Tragen)"
 	done
 
 WhiteHerbDesc:
-	text "A self-cure for"
-	next "lowered stats."
+	text "Selbstheilung bei"
+	next "Statussenkung."
 	done
 
 DampRockDesc:
-	text "Extends duration"
-	next "of rain. (Hold)"
+	text "Verlängert den"
+	next "Regen. (Tragen)"
 	done
 
 HeatRockDesc:
-	text "Extends duration"
-	next "of sun. (Hold)"
+	text "Verlängert Sonnen-"
+	next "schein. (Tragen)"
 	done
 
 SmoothRockDesc:
-	text "Extends duration"
-	next "of sandstorms."
+	text "Verlängert"
+	next "Sandstürme."
 	done
 
 IcyRockDesc:
-	text "Extends duration"
-	next "of hail. (Hold)"
+	text "Verlängert den"
+	next "Hagel. (Tragen)"
 	done
 
 ChoiceBandDesc:
-	text "Boosts Attack, but"
-	next "allows one move."
+	text "Hebt ANGR-Wert,"
+	next "nur 1 Attacke."
 	done
 
 ChoiceScarfDesc:
-	text "Boosts Speed, but"
-	next "allows one move."
+	text "Hebt INIT-Wert,"
+	next "nur 1 Attacke."
 	done
 
 ChoiceSpecsDesc:
-	text "Boosts Sp.Atk, but"
-	next "allows one move."
+	text "Hebt SPEZ. ANG,"
+	next "nur 1 Attacke."
 	done
 
 FlameOrbDesc:
-	text "Causes a burn."
-	next "(Hold)"
+	text "Verursacht Brand."
+	next "(Tragen)"
 	done
 
 ToxicOrbDesc:
-	text "Causes bad poison."
-	next "(Hold)"
+	text "Vergiftet schwer."
+	next "(Tragen)"
 	done
 
 BlackSludgeDesc:
-	text "Restores HP for"
-	next "Poison #mon."
+	text "Füllt KP von"
+	next "Gift-#mon auf."
 	done
 
 MachoBraceDesc:
-	text "Boosts stat gain,"
-	next "but lowers Speed."
+	text "Mehr Wertzuwachs,"
+	next "senkt INIT-Wert."
 	done
 
 PowerWeightDesc:
-	text "Boosts HP gain,"
-	next "but lowers Speed."
+	text "Mehr KP-Zuwachs,"
+	next "senkt INIT-Wert."
 	done
 
 PowerBracerDesc:
-	text "Ups Attack gain,"
-	next "but lowers Speed."
+	text "Mehr ANGR-Zuwachs,"
+	next "senkt INIT-Wert."
 	done
 
 PowerBeltDesc:
-	text "Ups Defense gain,"
-	next "but lowers Speed."
+	text "Mehr VERT-Zuwachs,"
+	next "senkt INIT-Wert."
 	done
 
 PowerLensDesc:
-	text "Ups Sp.Atk gain,"
-	next "but lowers Speed."
+	text "Mehr SPEZ. ANG-Zu-"
+	next "wachs, senkt INIT."
 	done
 
 PowerBandDesc:
-	text "Ups Sp.Def gain,"
-	next "but lowers Speed."
+	text "Mehr SPEZ. VER-Zu-"
+	next "wachs, senkt INIT."
 	done
 
 PowerAnkletDesc:
-	text "Ups Speed gain,"
-	next "but lowers Speed."
+	text "Mehr INIT-Zuwachs,"
+	next "senkt INIT-Wert."
 	done
 
 MulchDesc:
-	text "Plant fertilizer"
-	next "for Berry trees."
+	text "Dünger für"
+	next "Beerenbäume."
 	done
 
 SweetHoneyDesc:
-	text "The aroma attracts"
-	next "wild #mon."
+	text "Der Duft lockt"
+	next "wilde #mon an."
 	done
 
 EvioliteDesc:
-	text "Ups Def and Sp.Def"
-	next "of evolvers."
+	text "Hebt VERT-Werte"
+	next "von Entwicklern."
 	done
 
 MuscleBandDesc:
-	text "Powers up physical"
-	next "moves. (Hold)"
+	text "Verstärkt Körper-"
+	next "attacken. (Tragen)"
 	done
 
 WiseGlassesDesc:
-	text "Powers up special"
-	next "moves. (Hold)"
+	text "Verstärkt Spezial-"
+	next "attacken. (Tragen)"
 	done
 
 DragonScaleDesc:
@@ -1276,33 +1276,33 @@ UpgradeDesc:
 	done
 
 DubiousDiscDesc:
-	text "A transparent disc"
-	next "of unknown origin."
+	text "Transparente Disc,"
+	next "Herkunft unklar."
 	done
 
 ProtectorDesc:
-	text "A protective item."
-	next "Stiff and heavy."
+	text "Schutzgegenstand."
+	next "Steif und schwer."
 	done
 
 ElectirizerDesc:
-	text "A box packed with"
-	next "electric energy."
+	text "Eine Box voller"
+	next "Elektro-Energie."
 	done
 
 MagmarizerDesc:
-	text "A box packed with"
-	next "magma energy."
+	text "Eine Box voller"
+	next "Magma-Energie."
 	done
 
 OvalStoneDesc:
-	text "A stone as round"
-	next "as a #mon Egg."
+	text "Stein, rund wie"
+	next "ein #mon-Ei."
 	done
 
 OddSouvenirDesc:
-	text "An ornament from"
-	next "a far-away place."
+	text "Ein Schmuckstück"
+	next "von weit her."
 	done
 
 NuggetDesc:
@@ -1311,8 +1311,8 @@ NuggetDesc:
 	done
 
 BigNuggetDesc:
-	text "Made of pure gold."
-	next "Sell very high."
+	text "Aus purem Gold."
+	next "Wert sehr hoch."
 	done
 
 TinyMushroomDesc:
@@ -1326,8 +1326,8 @@ BigMushroomDesc:
 	done
 
 BalmMushroomDesc:
-	text "A rare mushroom."
-	next "Sell very high."
+	text "Ein seltener Pilz."
+	next "Wert sehr hoch."
 	done
 
 PearlDesc:
@@ -1341,8 +1341,8 @@ BigPearlDesc:
 	done
 
 PearlStringDesc:
-	text "Big, shiny pearls."
-	next "Sell very high."
+	text "Große Glanzperlen."
+	next "Wert sehr hoch."
 	done
 
 StardustDesc:
@@ -1356,13 +1356,13 @@ StarPieceDesc:
 	done
 
 BrickPieceDesc:
-	text "A chunk of tile."
-	next "Sell low."
+	text "Ein Stück Ziegel."
+	next "Wert gering."
 	done
 
 RareBoneDesc:
-	text "A rare bone."
-	next "Sell high."
+	text "Seltener Knochen."
+	next "Wert hoch."
 	done
 
 SilverLeafDesc:
@@ -1381,19 +1381,19 @@ SlowpokeTailDesc:
 	done
 
 BottleCapDesc:
-	text "A shiny, rare"
-	next "bottle cap."
+	text "Glänzender, selte-"
+	next "ner Kronkorken."
 	done
 
 HelixFossilDesc:
 DomeFossilDesc:
-	text "A fossilized"
-	next "#mon shell."
+	text "Versteinerter"
+	next "#mon-Panzer."
 	done
 
 OldAmberDesc:
-	text "Fossilized resin"
-	next "containing DNA."
+	text "Fossiles Harz, das"
+	next "DNA enthält."
 	done
 
 FlowerMailDesc:
@@ -1447,78 +1447,78 @@ MirageMailDesc:
 	done
 
 EjectButtonDesc:
-	text "Switches out when"
-	next "hit. (Hold)"
+	text "Austausch bei"
+	next "Treffer. (Tragen)"
 	done
 
 LaggingTailDesc:
-	text "Always moves last."
-	next "(Hold)"
+	text "Greift stets zu-"
+	next "letzt an. (Tragen)"
 	done
 
 IronBallDesc:
-	text "Lowers Speed and"
-	next "grounds. (Hold)"
+	text "Senkt INIT, holt"
+	next "zu Boden. (Tragen)"
 	done
 
 RedCardDesc:
-	text "Switches out foe"
-	next "when hit. (Hold)"
+	text "Gegnertausch bei"
+	next "Treffer. (Tragen)"
 	done
 
 ClearAmuletDesc:
-	text "Prevents stat-"
-	next "lowering by foes."
+	text "Keine Statussen-"
+	next "kung durch Gegner."
 	done
 
 MirrorHerbDesc:
-	text "Copies foe's stat-"
-	next "boost once."
+	text "Kopiert 1x Status-"
+	next "plus des Gegners."
 	done
 
 PunchinGloveDesc:
-	text "Powers punch moves"
-	next "with no contact."
+	text "Verstärkt Hiebe,"
+	next "ohne Kontakt."
 	done
 
 CovertCloakDesc:
-	text "Blocks additional"
-	next "attack effects."
+	text "Blockiert Zusatz-"
+	next "effekte."
 	done
 
 EjectPackDesc:
-	text "Switches out when"
-	next "stats fall. (Hold)"
+	text "Tausch bei Status-"
+	next "senkung. (Tragen)"
 	done
 
 RoomServiceDesc:
-	text "Lowers Speed in"
-	next "Trick Room. (Hold)"
+	text "Bizarroraum: senkt"
+	next "INIT. (Tragen)"
 	done
 
 BlundrPolicyDesc:
-	text "Raises Speed when"
-	next "a move misses."
+	text "Hebt INIT-Wert bei"
+	next "Fehlschlag."
 	done
 
 ThroatSprayDesc:
-	text "Raises Sp.Atk on"
-	next "a sound move."
+	text "Hebt SPEZ. ANG bei"
+	next "Lärm-Attacken."
 	done
 
 HeavyBootsDesc:
-	text "Protects from"
-	next "traps. (Hold)"
+	text "Schützt vor"
+	next "Fallen. (Tragen)"
 	done
 
 LoadedDiceDesc:
-	text "Multi-hit moves"
-	next "hit more often."
+	text "Serien-Attacken"
+	next "treffen öfter."
 	done
 
 MintLeafDesc:
-	text "A fragrant sprig"
-	next "of mint."
+	text "Ein duftender"
+	next "Minzzweig."
 	done
 
 BicycleDesc:
@@ -1543,8 +1543,8 @@ SuperRodDesc:
 	done
 
 CoinCaseDesc:
-	text "Holds up to 50K"
-	next "game coins."
+	text "Kann bis zu 50.000"
+	next "Münzen aufnehmen."
 	done
 
 ItemfinderDesc:
@@ -1563,8 +1563,8 @@ SquirtBottleDesc:
 	done
 
 GoGogglesDesc:
-	text "Nifty goggles for"
-	next "sand or hail."
+	text "Tolle Brille für"
+	next "Sand oder Hagel."
 	done
 
 SecretPotionDesc:
@@ -1627,8 +1627,8 @@ GSBallDesc:
 	done
 
 GBCSoundsDesc:
-	text "A music player"
-	next "filled with songs."
+	text "Ein Musik-Player"
+	next "voller Lieder."
 	done
 
 BlueCardDesc:
@@ -1638,73 +1638,73 @@ BlueCardDesc:
 
 OrangeTicketDesc:
 MysticTicketDesc:
-	text "A ticket for the"
-	next "Seagallop Ferry."
+	text "Ein Ticket für die"
+	next "Seesprint-Fähre."
 	done
 
 OldSeaMapDesc:
-	text "A faded sea chart"
-	next "of a small island."
+	text "Vergilbte Seekarte"
+	next "eines Inselchens."
 	done
 
 HarshLureDesc:
-	text "A bottle with a"
-	next "cruel scent."
+	text "Ein Flakon mit"
+	next "grausamem Duft."
 	done
 
 PotentLureDesc:
-	text "A bottle with a"
-	next "strong smell."
+	text "Ein Flakon mit"
+	next "starkem Geruch."
 	done
 
 MalignLureDesc:
-	text "A bottle with a"
-	next "malevolent odor."
+	text "Ein Flakon mit"
+	next "boshaftem Geruch."
 	done
 
 LiftKeyDesc:
-	text "Operates the lift"
-	next "in a building."
+	text "Bedient den Lift"
+	next "im Gebäude."
 	done
 
 ShinyCharmDesc:
-	text "A charm for find-"
-	next "ing shiny #mon."
+	text "Glücksbringer für"
+	next "schillernde PKMN."
 	done
 
 OvalCharmDesc:
-	text "A charm for find-"
-	next "ing Eggs."
+	text "Glücksbringer, um"
+	next "Eier zu finden."
 	done
 
 CatchCharmDesc:
-	text "A charm for catch-"
-	next "ing #mon."
+	text "Glücksbringer, um"
+	next "#mon zu fangen."
 	done
 
 SilphScope2Desc:
-	text "A scope to see in-"
-	next "visible #mon."
+	text "Ein Scope für un-"
+	next "sichtbare #mon."
 	done
 
 ApricornBoxDesc:
-	text "Holds up to 99 of"
-	next "each Apricorn."
+	text "Fasst je Aprikoko"
+	next "bis zu 99 Stück."
 	done
 
 TypeChartDesc:
-	text "Summarizes all"
-	next "type advantages."
+	text "Fasst alle Typvor-"
+	next "teile zusammen."
 	done
 
 WingCaseDesc:
-	text "Holds up to 999 of"
-	next "each Wing."
+	text "Fasst je Feder"
+	next "bis zu 999 Stück."
 	done
 
 CandyJarDesc:
-	text "Holds up to 99 of"
-	next "each Exp.Candy."
+	text "Fasst je EP-Bonbon"
+	next "bis zu 99 Stück."
 	done
 
 ExpCandyXSDesc:
@@ -1712,6 +1712,6 @@ ExpCandySDesc:
 ExpCandyMDesc:
 ExpCandyLDesc:
 ExpCandyXLDesc:
-	text "A candy that"
-	next "gives Exp.Points."
+	text "Ein Bonbon, das"
+	next "EP gibt."
 	done

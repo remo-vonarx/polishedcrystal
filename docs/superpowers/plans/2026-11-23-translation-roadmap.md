@@ -167,9 +167,9 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 ### Task 9: Descriptions
 
-- [ ] The move and item descriptions K left; all ability descriptions.
-- [ ] Test: each in the Bag, the summary and the move screens.
-- [ ] Ship.
+- [x] The move and item descriptions K left; all ability descriptions.
+- [x] Test: each in the Bag, the summary and the move screens.
+- [x] Ship.
 
 ### Task 10: Pokédex
 
