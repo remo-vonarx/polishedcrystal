@@ -281,7 +281,7 @@ InitPokegearTilemap:
 	jmp Pokegear_UpdateClock
 
 .switch
-	db " Switch▶@"
+	db " Weiter▶@"
 
 .Map:
 	call PokegearMap
@@ -1122,7 +1122,7 @@ LoadStation_BuenasPassword:
 	ld a, BUENAS_PASSWORD
 	jr LoadRadioStation
 
-BuenasPasswordName: db "Buena's Password@"
+BuenasPasswordName: db "Buenas Passwort@"
 
 LoadStation_UnownRadio:
 	ld a, UNOWN_RADIO
@@ -1193,13 +1193,13 @@ NoRadioName:
 	ld bc, $412
 	jmp Textbox
 
-OaksPkmnTalkName:     db "Oak's <PK><MN> Talk@"
-PokemonMusicName:     db "#mon Music@"
-LuckyChannelName:     db "Lucky Channel@"
+OaksPkmnTalkName:     db "Eichs <PK><MN>-Talk@"
+PokemonMusicName:     db "#mon-Musik@"
+LuckyChannelName:     db "Glückskanal@"
 UnknownStationName:   db "?????@"
-PlacesAndPeopleName:  db "Places & People@"
-LetsAllSingName:      db "Let's All Sing!@"
-PokeFluteStationName: db "# Flute@"
+PlacesAndPeopleName:  db "Orte & Personen@"
+LetsAllSingName:      db "Lasst uns singen@"
+PokeFluteStationName: db "#mon-Flöte@"
 
 _TownMap:
 	ld hl, wOptions1

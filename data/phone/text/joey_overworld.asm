@@ -44,28 +44,29 @@ JoeyPhoneFullText:
 	done
 
 JoeyTopPercentageText: ; TODO: use this text from HGSS
-	text "Hey, do you remem-"
-	line "ber my super cool"
+	text "Hey, erinnerst du"
+	line "dich an mein"
+	cont "supercooles"
 	cont ""
 	text_ram wStringBuffer4
 	text "?"
 
-	para "My "
+	para "Mein "
 	text_ram wStringBuffer4
-	text " is"
-	line "different from"
-	cont "regular "
-	text_ram wStringBuffer4
-	text "."
-
-	para "It's in the top"
-	line "percentage of"
+	line "ist anders als"
+	cont "normale"
 	cont ""
 	text_ram wStringBuffer4
 	text "."
 
-	para "Do you know what"
-	line "I'm saying?"
+	para "Es gehört zu den"
+	line "besten Prozent"
+	cont "aller "
+	text_ram wStringBuffer4
+	text "."
+
+	para "Verstehst du, was"
+	line "ich meine?"
 	done
 
 JoeyRematchText:

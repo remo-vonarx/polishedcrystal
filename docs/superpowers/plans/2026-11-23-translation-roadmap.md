@@ -180,8 +180,8 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 ### Task 11: Pokégear
 
-- [ ] The phone list and calls K left, the radio shows, the map card, the clock.
-- [ ] Test: calls in and out, every radio station, the map card, the clock.
+- [x] The phone list and calls K left, the radio shows, the map card, the clock.
+- [x] Test: calls in and out, every radio station, the map card, the clock.
 - [ ] Ship.
 
 ### Task 12: Trainer battle lines

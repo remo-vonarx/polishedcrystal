@@ -472,3 +472,29 @@ The number sign's tile in every font, as Kristall (No. in English).
 
 **Categories**:
 The official category without "-Pokémon" and in mixed case, at most 11 letters. Where the official word is longer, a synonym: Magnetzone (Magnetgebiet), Doppelhauer (Doppelstoßzahn), Gefühlskalt (Gefühlskälte), Hexmeister (Hexenmeister). Frischgrün for Verdant (Unreif up to Generation 8), Schmarotzer for Polished's joke Squatter (both Lahmus, Regular), Panzertier for Turtok in both ROMs.
+
+## PokéCom
+
+**Mama:**, **Fahrradladen:**, **Prof. Lind:**, **Bill:**, **Lyra:**, **Buena:**:
+The phone list, Kristall's names in mixed case. Polished's second lines: #maniac, #mon-Prof., PKMN-Trainerin, Disc Jockey. The bike shop Miracle Cycle is the Fahrradladen, as Kristall calls it; no later German game names it.
+_Avoid_: Miracle Cycle, Mutter
+
+**Anruf**, **Löschen**, **Zurück**, **Weiter▶**:
+The call menu and the clock card, Kristall's words.
+
+**Sendersuchlauf**:
+The radio card's drawn label (Tuning), Kristall's word in Polished's small font.
+
+**Eichs PKMN-Talk**, **Pokémon-Musik**, **Glückskanal**, **Orte & Personen**, **Lasst uns singen**, **Pokémon-Flöte**, **Buenas Passwort**:
+The radio stations, Kristall's names. Oak's show calls its channel Pokémon Programm, the DJs are Margit, Ben, Fabian, Bastian and Lilly.
+_Avoid_: Mary, Fern, Reed, Lily
+
+**Datenbank**:
+Bill's word for the Pokémon storage on the phone, where Polished's English says database.
+
+**Wundertausch**:
+Wonder Trade, the official name.
+_Avoid_: Zaubertausch (Surprise Trade)
+
+**in Kontakt kommen**, **trägt**:
+Prof. Lind's evolution tips: an item a Pokémon is exposed to comes "mit dem Item X in Kontakt", a held one it "trägt"; the item's name stays without an article.

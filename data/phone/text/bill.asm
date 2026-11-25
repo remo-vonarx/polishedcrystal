@@ -39,113 +39,118 @@ BillPhoneGenericText:
 	done
 
 BillPhoneNotFullText:
-	text "Thanks for"
-	line "waiting!"
+	text "Danke, dass du"
+	line "gewartet hast!"
 
-	para "<PLAYER>, your"
-	line "database has a lot"
-	cont "of space left."
+	para "<PLAYER>, in deiner"
+	line "Datenbank ist noch"
+	cont "viel Platz."
 
-	para "Get out there and"
-	line "fill it up!"
+	para "Schwing die Hufe"
+	line "und mach sie voll!"
 	done
 
 BillPhoneNearlyFullText:
-	text "Thanks for"
-	line "waiting!"
+	text "Danke, dass du"
+	line "gewartet hast!"
 
-	para "<PLAYER>, your"
-	line "database is almost"
-	cont "overtaxed!"
+	para "<PLAYER>, deine"
+	line "Datenbank ist fast"
+	cont "überlastet!"
 
-	para "Maybe you should"
-	line "save your game?"
+	para "Vielleicht soll-"
+	line "test du speichern?"
 	done
 
 BillPhoneFullText:
-	text "Thanks for"
-	line "waiting!"
+	text "Danke, dass du"
+	line "gewartet hast!"
 
-	para "<PLAYER>, your"
-	line "database is"
-	cont "overtaxed."
+	para "<PLAYER>, deine"
+	line "Datenbank ist"
+	cont "überlastet."
 	prompt
 
 BillPhoneNewlyFullText:
 	text "Hi, <PLAYER>?"
-	line "It's me, Bill!"
+	line "Ich bin's, Bill!"
 
-	para "Thanks for using"
-	line "my Storage System."
+	para "Danke, dass du das"
+	line "Lagerungs-System"
+	cont "benutzt."
 
-	para "That last #mon"
-	line "overtaxed my"
-	cont "systems!"
+	para "Das letzte #mon"
+	line "hat meine Systeme"
+	cont "überlastet!"
 	prompt
 
 BillWholePCFullText:
-	text "Wow, you filled"
-	line "a whole server."
+	text "Wow, du hast einen"
+	line "ganzen Server"
+	cont "gefüllt."
 
-	para "You'll have to"
-	line "release #mon"
-	cont "to make space."
+	para "Du musst #mon"
+	line "freilassen, um"
+	cont "Platz zu schaffen."
 	done
 
 BillFlushBySaving:
-	text "It needs to run"
-	line "garbage collection"
-	cont "before more use."
+	text "Erst muss der"
+	line "Speicher bereinigt"
+	cont "werden."
 
-	para "Save the game to"
-	line "continue using the"
-	cont "PC."
+	para "Speichere das"
+	line "Spiel, um den PC"
+	cont "weiter zu nutzen."
 
-	para "Do you want to"
-	line "save now?"
+	para "Möchtest du jetzt"
+	line "speichern?"
 	done
 
 BillThankYouText:
-	text "Thank you for"
-	line "using the PC"
-	cont "Storage System!"
+	text "Danke, dass du das"
+	line "PC-Lagerungs-"
+	cont "System benutzt!"
 	done
 
 BillCallMeToSwitch:
-	text "OK, I'll leave it"
-	line "alone."
+	text "OK, dann lasse ich"
+	line "es so."
 
-	para "Save the game if"
-	line "you change your"
-	cont "mind."
+	para "Speichere das"
+	line "Spiel, wenn du es"
+	cont "dir anders"
+	cont "überlegst."
 	prompt
 
 BillPhoneSecondBadgeText:
-	text "Hey there,"
-	line "trainers!"
-	cont "It's me, Bill!"
+	text "Hallo, ihr"
+	line "Trainer!"
+	cont "Ich bin's, Bill!"
 
-	para "I'm just calling to"
-	line "warn y'all about"
-	cont "Wonder Trading."
+	para "Ich rufe an, um"
+	line "euch alle vor dem"
+	cont "Wundertausch zu"
+	cont "warnen."
 
-	para "The machine has"
-	line "been unstable"
-	cont "recently, and my"
+	para "Die Maschine ist"
+	line "in letzter Zeit"
+	cont "instabil und meine"
 
-	para "repairs aren't"
-	line "quite complete."
+	para "Reparaturen sind"
+	line "noch nicht ganz"
+	cont "fertig."
 
-	para "So if you're in"
-	line "Goldenrod City,"
+	para "Seid ihr also in"
+	line "Dukatia City,"
 
-	para "be careful with"
-	line "Wonder Trading."
+	para "seid vorsichtig"
+	line "beim Wundertausch."
 
-	para "You might get a"
-	line "weird #mon"
-	cont "in exchange."
+	para "Ihr könntet dafür"
+	line "ein seltsames"
+	cont "#mon bekommen."
 
-	para "That's all."
-	line "Buh-bye!"
+	para "Das war's."
+	line "Tschüssi!"
 	done

@@ -515,7 +515,7 @@ OaksPkmnTalk12:
 	jr PlaceRadioString
 
 .pokemon_channel_string
-	db "#mon Channel@"
+	db "#mon Programm@"
 
 OaksPkmnTalk13:
 	ld hl, wRadioTextDelay
@@ -1385,7 +1385,7 @@ BuenasPasswordCheckTime:
 	ret
 
 BuenasPasswordChannelName:
-	db "Buena's Password@"
+	db "Buenas Passwort@"
 
 BuenaRadioText1:
 	; BUENA: BUENA here!
