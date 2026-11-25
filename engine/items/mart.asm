@@ -1239,7 +1239,7 @@ BlueCardMenuDataHeader_Buy:
 	ret
 
 .PointsString:
-	db " Pts@"
+	db " Pkt@"
 
 BTMenuDataHeader_Buy:
 	db MENU_BACKUP_TILES
@@ -1494,16 +1494,16 @@ Text_Mart_HowMayIHelpYou:
 	text_farend _MartWelcomeText
 MenuDataHeader_BuySell:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 0, 7, 8
+	menu_coords 0, 0, 10, 8
 	dw .menudata2
 	db 1 ; default option
 
 .menudata2
 	db $80 ; strings
 	db 3 ; items
-	db "Buy@"
-	db "Sell@"
-	db "Quit@"
+	db "Kauf@"
+	db "Verkauf@"
+	db "Tschüss!@"
 
 Text_Mart_HereYouGo:
 Text_BTMart_HereYouGo:

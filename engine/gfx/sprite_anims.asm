@@ -718,9 +718,8 @@ AnimSeq_PcQuick:
 
 AnimSeq_PcMode:
 	ld a, [wBillsPC_CursorMode]
-	ld h, a
-	add h
-	add h
+	add a
+	add a
 	ld hl, SPRITEANIMSTRUCT_TILE_ID
 	add hl, bc
 	ld [hl], a

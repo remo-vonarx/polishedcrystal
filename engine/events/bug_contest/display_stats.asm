@@ -25,11 +25,11 @@ DisplayCaughtContestMonStats:
 	ld de, .This
 	rst PlaceString
 
-	hlcoord 5, 4
+	hlcoord 4, 4
 	ld de, .Health
 	rst PlaceString
 
-	hlcoord 5, 10
+	hlcoord 4, 10
 	ld de, .Health
 	rst PlaceString
 
@@ -59,12 +59,12 @@ DisplayCaughtContestMonStats:
 	ld [wTempMonLevel], a
 	call PrintLevel
 
-	hlcoord 11, 4
+	hlcoord 10, 4
 	ld de, wContestMonMaxHP
 	lb bc, 2, 3
 	call PrintNum
 
-	hlcoord 11, 10
+	hlcoord 10, 10
 	ld de, wEnemyMonMaxHP
 	call PrintNum
 
@@ -80,11 +80,11 @@ DisplayCaughtContestMonStats:
 	jmp SetDefaultBGPAndOBP
 
 .Health:
-	db "Health@"
+	db "  Gesu@"
 .Stock:
-	db " Stock <PK><MN> @"
+	db " <PK><MN> lagern @"
 .This:
-	db " This <PK><MN>  @"
+	db " Dieses <PK><MN> @"
 
 SwitchMonText:
 	; Switch #MON?

@@ -171,12 +171,13 @@ BT_SwapRentals:
 	farjp BT_SetRentalOT
 
 .MustSwapBetweenTeams:
-	text "You must trade <PK><MN>"
-	line "between the teams!"
+	text "Du musst <PK><MN>"
+	line "zwischen den Teams"
+	cont "tauschen!"
 	prompt
 
 .TradeWhichPKMN:
-	db "Trade which <PK><MN>?   @"
+	db "Welches tauschen? @"
 
 BT_PartySelect:
 	ld a, PARTYMENUACTION_BATTLE_TOWER
@@ -214,7 +215,7 @@ BT_PartySelect:
 	dec a
 	jr z, .Enter
 	dec a
-	jr z, .Stats
+	jmp z, .Stats
 	jr .loop
 
 .return
@@ -276,8 +277,9 @@ BT_PartySelect:
 	jmp .loop
 
 .too_many_mons_text
-	text "You may only enter"
-	line "with 3 #mon!"
+	text "Du darfst nur mit"
+	line "3 #mon"
+	cont "antreten!"
 	prompt
 
 .Stats:
@@ -296,9 +298,9 @@ BT_PartySelect:
 .MenuData:
 	db $c0 ; flags
 	db 3 ; items
-	db "Enter@"
-	db "Summary@"
-	db "Cancel@"
+	db "Melden@"
+	db "Status@"
+	db "Zurück@"
 
 .BannedMenuHeader:
 	db $00 ; flags
@@ -309,21 +311,22 @@ BT_PartySelect:
 .BannedMenuData:
 	db $c0 ; flags
 	db 2 ; items
-	db "Summary@"
-	db "Cancel@"
+	db "Status@"
+	db "Zurück@"
 
 BTText_EnterBattle:
-	db "Enter battle?@"
+	db "Antreten?@"
 
 BTText_SameSpecies:
-	text "The #mon must"
-	line "be of different"
-	cont "species!"
+	text "Die #mon müssen"
+	line "von verschiedener"
+	cont "Art sein!"
 	prompt
 
 BTText_SameItem:
-	text "The #mon's held"
-	line "items must differ!"
+	text "Die getragenen"
+	line "Items müssen ver-"
+	cont "schieden sein!"
 	prompt
 
 BT_ConfirmPartySelection:
@@ -342,15 +345,15 @@ BT_ConfirmPartySelection:
 .YesNoMenuHeader:
 ; the regular yes/no prompt position is unsuitable, so make our own here
 	db $00 ; flags
-	menu_coords 14, 13, 19, 17
+	menu_coords 13, 13, 19, 17
 	dw .YesNoMenuData
 	db 1 ; default option
 
 .YesNoMenuData:
 	db $c0 ; flags
 	db 2 ; items
-	db "Yes@"
-	db "No@"
+	db "Ja@"
+	db "Nein@"
 
 BT_DisplayMenu:
 	call CopyMenuHeader
@@ -602,7 +605,7 @@ PlacePartyNicknames:
 	ret
 
 .Cancel:
-	db "Cancel@"
+	db "Zurück@"
 
 PlacePartyHPBar:
 	ld a, [wPartyCount]
@@ -863,13 +866,13 @@ PlacePartyMonTMHMCompatibility:
 	ret
 
 .string_able
-	db "Able@"
+	db "OK@"
 
 .string_not_able
-	db "Not able@"
+	db "Nein@"
 
 .string_learned
-	db "Learned@"
+	db "Gelernt@"
 
 PlacePartyMonEvoStoneCompatibility:
 	ld a, [wPartyCount]
@@ -947,9 +950,9 @@ PlacePartyMonEvoStoneCompatibility:
 	ret
 
 .string_able
-	db "Able@"
+	db "OK@"
 .string_not_able
-	db "Not able@"
+	db "Nein@"
 
 PlacePartyMonGender:
 	ld a, [wPartyCount]
@@ -1040,10 +1043,10 @@ PlacePartyMonRemindable:
 	ret
 
 .string_able
-	db "Able@"
+	db "OK@"
 
 .string_not_able
-	db "Not able@"
+	db "Nein@"
 
 PlacePartyMonBattleTower:
 	ld bc, 0
@@ -1082,22 +1085,22 @@ PlacePartyMonBattleTower:
 	jr .loop
 
 .Banned
-	db "Banned@"
+	db "Gesperrt@"
 
 .Able
-	db "Able@"
+	db "OK@"
 
 .First
-	db "First@"
+	db "Erstes@"
 
 .Second
-	db "Second@"
+	db "Zweites@"
 
 .Third
-	db "Third@"
+	db "Drittes@"
 
 .LastFoe
-	db "Last foe@"
+	db "L.Gegner@"
 
 PartyMenuCheckEgg:
 	push hl
@@ -1301,24 +1304,24 @@ PartyMenuStrings:
 	assert_table_length NUM_PARTYMENUACTIONS
 
 ChooseAMonString:
-	db "Choose a #mon.@"
+	db "#mon wählen.@"
 UseOnWhichPKMNString:
-	db "Use on which <PK><MN>?@"
+	db "Welches <PK><MN>?@"
 WhichPKMNString:
-	db "Which <PK><MN>?@"
+	db "Welches #mon?@"
 TeachWhichPKMNString:
-	db "Teach which <PK><MN>?@"
+	db "#mon wählen.@"
 TutorWhichPKMNString:
-	db "Tutor which <PK><MN>?@"
+	db "Wen unterrichten?@"
 Choose3MonString:
-	db "Choose 3 battle <PK><MN>@"
+	db "3 Kampf-<PK><MN> wählen@"
 MoveToWhereString:
-	db "Move to where?@"
+	db "Wohin verschieben?@"
 ToWhichPKMNString:
-	db "To which <PK><MN>?@"
+	db "Welchem <PK><MN>?@"
 
 YouHaveNoPKMNString:
-	db "You have no <PK><MN>!@"
+	db "Du hast kein <PK><MN>!@"
 
 PrintPartyMenuActionText:
 	ld a, [wCurPartyMon]

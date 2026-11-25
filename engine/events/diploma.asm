@@ -19,7 +19,7 @@ PlaceDiplomaPage1OnScreen:
 	hlcoord 2, 5
 	rst PlaceString
 	ld de, wPlayerName
-	hlcoord 9, 5
+	hlcoord 10, 5
 	rst PlaceString
 	ld de, .DiplomaString
 	hlcoord 2, 8
@@ -32,15 +32,15 @@ PlaceDiplomaPage1OnScreen:
 	jmp DelayFrame
 
 .PlayerString:
-	text "Player"
+	text "Trainer"
 	done
 
 .DiplomaString:
-	text "This certifies"
-	next "that you have"
-	next "completed the"
-	next "National #dex."
-	next "Congratulations!"
+	text "Bestätigung über"
+	next "einen kompletten"
+	next "nationalen"
+	next "#dex."
+	next "Gratulation!"
 	done
 
 PlaceDiplomaPage2OnScreen:
@@ -69,7 +69,7 @@ PlaceDiplomaPage2OnScreen:
 	jmp PrintNum
 
 .PlayTime:
-	text "Play Time"
+	text "Spielzeit"
 	done
 
 .PolishedCrystal:

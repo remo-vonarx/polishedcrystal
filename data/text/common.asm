@@ -4253,9 +4253,10 @@ _ItemHappinessRoseButStatFellText::
 	line "ist zutraulicher"
 	cont "geworden."
 
-	para "Basis-"
+	para "Der Basiswert"
+	line ""
 	text_ram wStringBuffer2
-	line "von "
+	cont "von "
 	text_ram wStringBuffer1
 	cont "sinkt!"
 	prompt
@@ -4263,8 +4264,7 @@ _ItemHappinessRoseButStatFellText::
 SECTION "_ItemStatRoseText", ROMX
 _ItemStatRoseText::
 	text_ram wStringBuffer2
-	text " von"
-	line ""
+	line "von "
 	text_ram wStringBuffer1
 	text ""
 	para "nimmt zu."

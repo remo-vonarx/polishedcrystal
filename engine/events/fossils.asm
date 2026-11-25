@@ -86,9 +86,9 @@ HelixDomeMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "Helix Fossil@"
-	db "Dome Fossil@"
-	db "Cancel@"
+	db "Helixfossil@"
+	db "Domfossil@"
+	db "Zurück@"
 
 HelixAmberMenuDataHeader:
 	db MENU_BACKUP_TILES
@@ -99,9 +99,9 @@ HelixAmberMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "Helix Fossil@"
-	db "Old Amber@"
-	db "Cancel@"
+	db "Helixfossil@"
+	db "Altbernstein@"
+	db "Zurück@"
 
 DomeAmberMenuDataHeader:
 	db MENU_BACKUP_TILES
@@ -112,9 +112,9 @@ DomeAmberMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "Dome Fossil@"
-	db "Old Amber@"
-	db "Cancel@"
+	db "Domfossil@"
+	db "Altbernstein@"
+	db "Zurück@"
 
 HelixDomeAmberMenuDataHeader:
 	db MENU_BACKUP_TILES
@@ -125,10 +125,10 @@ HelixDomeAmberMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Helix Fossil@"
-	db "Dome Fossil@"
-	db "Old Amber@"
-	db "Cancel@"
+	db "Helixfossil@"
+	db "Domfossil@"
+	db "Altbernstein@"
+	db "Zurück@"
 
 ResurrectHelixFossil:
 	takeitem HELIX_FOSSIL

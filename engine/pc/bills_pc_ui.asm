@@ -121,7 +121,7 @@ BillsPC_LoadUI:
 	; Cursor mode and Pack sprites
 	ld hl, BillsPC_ObjGFX
 	ld de, vTiles3 tile $24
-	lb bc, BANK(BillsPC_ObjGFX), 27
+	lb bc, BANK(BillsPC_ObjGFX), 30
 	call DecompressRequest2bpp
 
 	xor a
@@ -135,7 +135,7 @@ BillsPC_LoadUI:
 	ld [wBillsPC_CursorAnimFlag], a
 
 	; Cursor mode icon
-	lb de, $98, $10
+	lb de, $98, $0c
 	ld a, SPRITE_ANIM_INDEX_PC_MODE
 	push de
 	call InitSpriteAnimStruct
@@ -739,7 +739,7 @@ BillsPC_HideModeIcon:
 	jr z, .got_mode_area
 	ld hl, wShadowOAMSprite12
 .got_mode_area
-	ld bc, 20
+	ld bc, 24
 	xor a
 	rst ByteFill
 	ret
@@ -1458,13 +1458,13 @@ ManageBoxes:
 	jmp .loop
 
 .ContinueBoxUse:
-	text "Continue Box"
-	line "operations?"
+	text "Möchtest du die"
+	line "Box weiter nutzen?"
 	done
 
 .StorageMonMenu:
 	db MENU_BACKUP_TILES
-	menu_coords 9, 4, 19, 17
+	menu_coords 7, 4, 19, 17
 	dw .StorageMenuData2
 	db 1 ; default option
 
@@ -1477,7 +1477,7 @@ ManageBoxes:
 
 .PartyMonMenu:
 	db MENU_BACKUP_TILES
-	menu_coords 10, 4, 19, 17
+	menu_coords 7, 4, 19, 17
 	dw .PartyMenuData2
 	db 1 ; default option
 
@@ -1490,7 +1490,7 @@ ManageBoxes:
 
 .BoxMenu:
 	db MENU_BACKUP_TILES
-	menu_coords 10, 6, 19, 17
+	menu_coords 7, 6, 19, 17
 	dw .BoxMenuData2
 	db 1 ; default option
 
@@ -1531,27 +1531,27 @@ ManageBoxes:
 	db -1
 
 BillsPC_MenuStrings:
-	db "Cancel@"
+	db "Zurück@"
 	; pokémon management options
-	db "Withdraw@"
-	db "Deposit@"
-	db "Summary@"
-	db "Switch@"
+	db "Mitnehmen@"
+	db "Ablegen@"
+	db "Status@"
+	db "Tausch@"
 	db "Item@"
-	db "Release@"
+	db "Freilassen@"
 	; box options
-	db "Change@"
-	db "Rename@"
-	db "Theme@"
-	db "Release@"
+	db "Wechseln@"
+	db "Name@"
+	db "Design@"
+	db "Freilassen@"
 	; holding a mail
-	db "Take@"
-	db "Read@"
+	db "Nimm@"
+	db "Lies@"
 	; holding an item
-	db "Move@"
-	db "Bag@"
+	db "Bewege@"
+	db "Beutel@"
 	; doesn't hold an item
-	db "Give@"
+	db "Gib@"
 
 BillsPC_MenuJumptable:
 	dw DoNothing
@@ -2538,18 +2538,21 @@ BillsPC_UpdateStorage_CheckMewtwo:
 	jmp PopBCDEHL
 
 BillsPC_CantPutMailIntoPackText:
-	text "The Mail would"
-	line "lose its message."
+	text "Der Brief würde"
+	line "seinen Text"
+	cont "verlieren."
 	prompt
 
 BillsPC_PackFullText:
-	text "The Bag is full…"
+	text "Der Beutel ist"
+	line "voll…"
 	prompt
 
 BillsPC_MovedToPackText:
-	text "Moved "
 	text_ram wStringBuffer1
-	line "to Bag."
+	text ""
+	line "kommt in den"
+	cont "Beutel."
 	prompt
 
 BillsPC_Menu:
@@ -2611,14 +2614,14 @@ BillsPC_Item:
 
 .ItemIsSelected:
 	text_ram wStringBuffer2
-	text " is"
-	line "selected."
+	text " ist"
+	line "ausgewählt."
 	done
 
 .ItCanHoldAnItem:
 	text_ram wTempMonNickname
-	text " can"
-	line "hold an item."
+	text " kann"
+	line "ein Item tragen."
 	done
 
 .MailMenu:
@@ -2682,8 +2685,8 @@ BillsPC_Item:
 	db -1
 
 BillsPC_EggsCantHoldItemsText:
-	text "Eggs can't hold"
-	line "items."
+	text "Eier können keine"
+	line "Items tragen."
 	prompt
 
 BillsPC_CanReleaseMon:
@@ -2722,7 +2725,7 @@ BillsPC_CanReleaseMon:
 .is_egg
 	; Allow release of Bad Eggs.
 	ld a, [wTempMonNickname]
-	cp 'B' ; Assume "Bad Egg" (since the only alternative is "Egg").
+	cp 'S' ; Assume "Schl. Ei" (since the only alternative is "Ei").
 	ld a, RELEASE_EGG
 	ret z
 
@@ -2858,18 +2861,19 @@ BillsPC_ReleaseAll:
 	jmp CloseWindow
 
 .ReallyReleaseBox:
-	text "Really release the"
-	line "entire Box?"
+	text "Wirklich die ganze"
+	line "Box freilassen?"
 	done
 
 .CantRecallReleasedMons:
-	text "You can't recall"
-	line "released #mon."
-	cont "Are you sure?"
+	text "Freigelassene"
+	line "#mon kommen"
+	cont "nicht zurück."
+	cont "Bist du sicher?"
 	done
 
 .NothingThere:
-	text "The Box is empty."
+	text "Die Box ist leer."
 	prompt
 
 ; The only possible reason a Pokémon cannot be released is if it is an Egg *and*
@@ -2878,18 +2882,19 @@ BillsPC_ReleaseAll:
 ; so they're accurate.
 
 .NothingReleased:
-	text "You can't release"
-	line "Eggs."
+	text "Eier kannst du"
+	line "nicht freilassen."
 	prompt
 
 .ReleasedXMon:
-	text "Released "
 	text_decimal wTextDecimalByte, 1, 2
-	line "#mon."
+	text " #mon"
+	line "freigelassen."
 	prompt
 
 .TheRestWasnt:
-	text "The rest are Eggs."
+	text "Die anderen sind"
+	line "Eier."
 	prompt
 
 BillsPC_Release:
@@ -2953,22 +2958,26 @@ BillsPC_Release:
 	jmp CloseWindow
 
 .ReleasedEgg:
-	text "The Egg was sent"
-	line "to Prof.Elm."
+	text "Das Ei wurde an"
+	line "Prof. Lind"
+	cont "geschickt."
 	prompt
 
 .ReallyReleaseMon:
-	text "Really release"
+	text "Möchtest du"
 	line ""
 	text_ram wTempMonNickname
-	text "?"
+	text ""
+	cont "freilassen?"
 	done
 
 .WasReleasedOutside:
 	text_ram wStringBuffer1
-	text " was"
-	line "released outside."
-	cont "Bye, "
+	text " ist"
+	line "nun frei."
+
+	para "Machs gut,"
+	line ""
 	text_ram wStringBuffer1
 	text "!"
 	prompt
@@ -3022,8 +3031,8 @@ BillsPC_Theme:
 	jmp BillsPC_RefreshTheme
 
 .PickAThemeText:
-	text "Please"
-	line "pick a theme."
+	text "Bitte"
+	line "wähle ein Design."
 	done
 
 .ThemeMenuDataHeader:
@@ -3102,8 +3111,8 @@ BillsPC_Change:
 	jr BillsPC_ChangeBox
 
 .PickABoxToChangeToText:
-	text "Pick a"
-	line "Box to change to."
+	text "Wähle"
+	line "eine andere Box."
 	done
 
 .ChangeMenuDataHeader:
@@ -3434,36 +3443,38 @@ BillsPC_SwapStorage:
 	ret
 
 .PartyIsFull:
-	text "The party is full."
+	text "Team ist voll!"
 	prompt
 
 .BoxIsFull:
-	text "The Box is full."
+	text "Die Box ist voll!"
 	prompt
 
 .IsHoldingMail:
-	text "Held Mail must be"
-	line "removed first."
+	text "Entferne zuerst"
+	line "den Brief."
 	prompt
 
 .CantStoreMail:
-	text "Can't place Mail in"
-	line "storage."
+	text "Briefe kann man"
+	line "nicht lagern."
 	prompt
 
 BillsPC_LastPartyMon:
-	text "That's your last"
-	line "healthy #mon!"
+	text "Das ist dein"
+	line "letztes gesundes"
+	cont "#mon!"
 	prompt
 
 BillsPC_MysteriousEgg:
-	text "That's a mysterious"
-	line "#mon Egg!"
+	text "Das ist ein ge-"
+	line "heimnisvolles"
+	cont "#mon-Ei!"
 	prompt
 
 BillsPC_MustSaveToContinue:
-	text "Save the game to"
-	line "do this?"
+	text "Dafür das Spiel"
+	line "sichern?"
 	done
 
 BillsPC_GameSaved:

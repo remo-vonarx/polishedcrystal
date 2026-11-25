@@ -45,7 +45,7 @@ TrainerCard:
 
 	ld hl, CardDividerGFX
 	ld de, vTiles2 tile $23
-	ld bc, (6 + 4) tiles ; CardDividerGFX + CardStatusGFX
+	ld bc, (6 + 5) tiles ; CardDividerGFX + CardStatusGFX
 	ld a, BANK(CardDividerGFX) ; BANK(CardStatusGFX)
 	call FarCopyBytes
 
@@ -229,7 +229,7 @@ TrainerCard_Page3_Joypad:
 
 TrainerCard_LoadHeaderGFX:
 	ld hl, vTiles2 tile $29
-	lb bc, BANK(CardStatusGFX), $4 ; BANK(CardBadgesGFX)
+	lb bc, BANK(CardStatusGFX), $5 ; BANK(CardBadgesGFX)
 	jmp Request2bpp
 
 TrainerCard_PrintBorder:
@@ -281,9 +281,10 @@ TrainerCard_PrintBorder:
 	ld [hli], a
 	inc a ; $2c
 	ld [hli], a
-	ld a, $24
+	inc a ; $2d
 	ld [hli], a
 
+	ld a, $25 - 1
 	ld e, 4
 .loop4
 	inc a ; $25
@@ -344,7 +345,7 @@ TrainerCard_PrintTopHalfOfCard:
 	ds 11, '┌' - 2
 	db     '┌' - 1, "<LNBRK>"
 	db     "<LNBRK>"
-	db     " Money@"
+	db     " Geld@"
 
 TrainerCardSetup_ClearBottomHalf:
 	hlcoord 1, 10
@@ -411,9 +412,9 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 
 .Dex_PlayTime_BP:
 	text "#dex"
-	next "Play Time"
-	next "Battle Pts"
-	next "          Badges"
+	next "Spielzeit"
+	next "GP"
+	next "           Orden"
 	done
 
 TrainerCard_Page1_PrintGameTime:

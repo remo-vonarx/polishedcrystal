@@ -16,97 +16,104 @@ OptionsDescriptions:
 	assert_table_length NUM_OPTIONS
 
 .TextSpeed:
-	text "How fast text is"
-	line "displayed."
+	text "Wie schnell Text"
+	line "erscheint."
 	prompt
 
 .TextAutoscroll:
-	text "Auto-advance text"
-	line "by holding down"
-	cont "some button(s)."
+	text "Text läuft weiter,"
+	line "solange bestimmte"
+	cont "Knöpfe gedrückt"
+	cont "sind."
 	prompt
 
 .Frame:
-	text "The frame around"
-	line "most text boxes."
+	text "Rahmen der meisten"
+	line "Textfelder."
 	prompt
 
 .Typeface:
-	text "The font used for"
-	line "ordinary text."
+	text "Die Schrift für"
+	line "normalen Text."
 	prompt
 
 .Keyboard:
-	text "The keyboard lay-"
-	line "out for entering"
-	cont "names and mail."
+	text "Die Tastatur für"
+	line "Namen und Briefe."
 	prompt
 
 .Sound:
-	text "Audio output:"
-	line "mono (one channel)"
+	text "Tonausgabe: Mono"
+	line "(ein Kanal) oder"
 
-	para "or stereo (two,"
-	line "left and right)."
+	para "Stereo (zwei:"
+	line "links und rechts)."
 	prompt
 
 .BattleEffects:
-	text "Move and status"
-	line "animations."
+	text "Animationen von"
+	line "Attacken und"
+	cont "Statusproblemen."
 	prompt
 
 .BattleStyle:
-	text "After you KO an"
-	line "opponent:"
+	text "Wenn ein Gegner"
+	line "besiegt ist:"
 
-	para "Set: just sends"
-	line "out the next foe."
+	para "Folgend: Der"
+	line "nächste erscheint."
 
-	para "Switch: lets you"
-	line "switch first."
+	para "Wechsel: Du kannst"
+	line "zuerst wechseln."
 
-	para "Predict: tells"
-	line "you the next foe."
+	para "Ansage: Nennt dir"
+	line "den nächsten."
 	prompt
 
 .Nicknames:
-	text "Whether to give"
-	line "nicknames to new"
-	cont "#mon."
+	text "Ob neue #mon"
+	line "Spitznamen"
+	cont "bekommen."
 	prompt
 
 .RunningShoes:
-	text "Hold B to run if"
-	line "Running Shoes are"
+	text "Halte B, um zu"
+	line "rennen, wenn die"
 
-	para "Off, or to walk"
-	line "if they are On."
+	para "Turbotreter aus"
+	line "sind, oder um zu"
+
+	para "gehen, wenn sie an"
+	line "sind."
 	prompt
 
 .TurningSpeed:
-	text "How fast you can"
-	line "change direction"
-	cont "in the overworld."
+	text "Wie schnell du in"
+	line "der Welt die"
+	cont "Richtung änderst."
 	prompt
 
 .ClockFormat:
-	text "The clock display"
-	line "format:"
-	cont "12-hour has AM/PM."
+	text "Die Anzeige der"
+	line "Uhrzeit: 12 Std."
+	cont "hat AM"
+	cont "PM."
 	prompt
 
 .PokedexUnits:
-	text "#dex height"
-	line "and weight units:"
+	text "Einheiten für"
+	line "Größe und Gewicht"
+	cont "im #dex:"
 
-	para "Imperial: feet,"
-	line "inches and pounds."
+	para "Imperial: in Fuß,"
+	line "Zoll und Pfund."
 
-	para "Metric: meters"
-	line "and kilograms."
+	para "Metrisch: in Meter"
+	line "und Kilogramm."
 	prompt
 
 OptionsDoneDescription:
-	text "Save options and"
-	line "exit the menu."
+	text "Einstellungen"
+	line "sichern und Menü"
+	cont "schließen."
 	prompt

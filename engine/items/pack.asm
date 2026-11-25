@@ -234,22 +234,22 @@ MenuDataHeader_SortTMs:
 .MenuData2:
 	db $c0 ; flags
 	db 3 ; items
-	db "By Number@"
-	db "By Name@"
-	db "Quit@"
+	db "Nach Nr.@"
+	db "Nach Name@"
+	db "Zurück@"
 
 MenuDataHeader_SortItems:
 	db MENU_BACKUP_TILES
-	menu_coords 10, 5, 19, 11
+	menu_coords 8, 5, 19, 11
 	dw .MenuData2
 	db 1 ; default option
 
 .MenuData2:
 	db $c0 ; flags
 	db 3 ; items
-	db "By Type@"
-	db "By Name@"
-	db "Quit@"
+	db "Nach Typ@"
+	db "Nach Name@"
+	db "Zurück@"
 
 Jumptable_SortItems:
 	dw SortItemsName
@@ -289,10 +289,10 @@ MenuDataHeader_UseGiveToss:
 .MenuData2:
 	db $c0 ; flags
 	db 4 ; items
-	db "Use@"
-	db "Give@"
-	db "Toss@"
-	db "Quit@"
+	db "OK@"
+	db "Gib@"
+	db "Müll@"
+	db "Zur.@"
 
 Jumptable_UseGiveTossQuit:
 	dw UseItem
@@ -309,8 +309,8 @@ MenuDataHeader_Use:
 .MenuData2:
 	db $c0 ; flags
 	db 2 ; items
-	db "Use@"
-	db "Quit@"
+	db "OK@"
+	db "Zur.@"
 
 MenuDataHeader_Quit:
 	db MENU_BACKUP_TILES
@@ -321,7 +321,7 @@ MenuDataHeader_Quit:
 .MenuData2:
 	db $c0 ; flags
 	db 1 ; items
-	db "Quit@"
+	db "Zur.@"
 
 Jumptable_UseQuit:
 	dw UseItem
@@ -340,9 +340,9 @@ MenuDataHeader_UseSel:
 .MenuData2:
 	db $c0 ; flags
 	db 3 ; items
-	db "Use@"
-	db "Sel@"
-	db "Quit@"
+	db "OK@"
+	db "Wahl@"
+	db "Zur.@"
 
 Jumptable_KeyItem_UseRegisterQuit:
 	dw UseKeyItem
@@ -358,9 +358,9 @@ MenuDataHeader_GiveToss:
 .MenuData2:
 	db $c0 ; flags
 	db 3 ; items
-	db "Give@"
-	db "Toss@"
-	db "Quit@"
+	db "Gib@"
+	db "Müll@"
+	db "Zur.@"
 
 Jumptable_GiveTossQuit:
 	dw GiveItem
@@ -1378,16 +1378,16 @@ Tutorial_BallsPocketMenuDataHeader:
 	assert_table_length 3 ; just ITEM, MEDICINE, and BALL pockets
 
 Text_SortItemsHow:
-	text "How do you want"
-	line "to sort items?"
+	text "Wie möchtest du"
+	line "Items sortieren?"
 	done
 
 Text_NoEmptySlot:
-	text "There are no free"
-	line "register slots."
+	text "Es ist kein Platz"
+	line "zum Eintragen."
 
-	para "Unregister another"
-	line "item first."
+	para "Trage zuerst ein"
+	line "anderes Item aus."
 	prompt
 
 Text_ThrowAwayHowMany:

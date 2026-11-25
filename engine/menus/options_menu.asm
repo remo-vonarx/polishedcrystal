@@ -151,13 +151,13 @@ Options_TextSpeed:
 	assert_table_length TEXT_DELAY_MASK >> TZCOUNT(TEXT_DELAY_MASK) + 1
 
 .Slow:
-	db "Slow   @"
+	db "Langsam@"
 .Medium:
-	db "Medium @"
+	db "Mittel @"
 .Fast:
-	db "Fast   @"
+	db "Schnell@"
 .Instant:
-	db "Instant@"
+	db "Sofort @"
 
 Options_BattleEffects:
 	ld hl, wOptions1
@@ -224,11 +224,11 @@ Options_BattleStyle:
 	jmp OptionsShared_PlaceStringAtValueCoord
 
 .Set:
-	db "Set    @"
+	db "Folgend@"
 .Switch:
-	db "Switch @"
+	db "Wechsel@"
 .Predict:
-	db "Predict@"
+	db "Ansage @"
 
 Options_Nicknames:
 	ld hl, wOptions3
@@ -273,11 +273,11 @@ Options_Nicknames:
 	jmp OptionsShared_PlaceStringAtValueCoord
 
 .Ask:
-	db "Ask   @"
+	db "Fragen@"
 .Always:
-	db "Always@"
+	db "Immer @"
 .Never:
-	db "Never @"
+	db "Nie   @"
 
 Options_RunningShoes:
 	ld hl, wOptions2
@@ -303,9 +303,9 @@ Options_RunningShoes:
 	jmp OptionsShared_PlaceStringAtValueCoord
 
 OffString:
-	db "Off@"
+	db "Aus@"
 OnString:
-	db "On @"
+	db "An @"
 
 Options_Frame:
 	ld hl, wTextboxFrame
@@ -397,9 +397,9 @@ Options_ClockFormat:
 	jmp OptionsShared_PlaceStringAtValueCoord
 
 .Twelve:
-	db "12-hour@"
+	db "12 Std.@"
 .TwentyFour:
-	db "24-hour@"
+	db "24 Std.@"
 
 Options_PokedexUnits:
 	ld hl, wOptions2
@@ -427,7 +427,7 @@ Options_PokedexUnits:
 .Imperial:
 	db "Imperial@"
 .Metric:
-	db "Metric  @"
+	db "Metrisch@"
 
 Options_TextAutoscroll:
 	ldh a, [hJoyPressed]
@@ -471,13 +471,13 @@ endr
 	assert_table_length (AUTOSCROLL_MASK >> TZCOUNT(AUTOSCROLL_MASK)) + 1
 
 .None:
-	db "None  @"
+	db "Ohne    @"
 .Start:
-	db "Start @"
+	db "Start   @"
 .B:
-	db "B     @"
+	db "B       @"
 .AorB:
-	db "A or B@"
+	db "A oder B@"
 
 Options_TurningSpeed:
 	ldh a, [hJoyPressed]
@@ -507,9 +507,9 @@ endr
 	assert_table_length (TURNING_SPEED_MASK >> TZCOUNT(TURNING_SPEED_MASK)) + 1
 
 .Slow:
-	db "Slow@"
+	db "Langsam@"
 .Fast:
-	db "Fast@"
+	db "Schnell@"
 
 Options_Typeface:
 	ld hl, wOptions2
@@ -574,21 +574,21 @@ Options_Typeface:
 	assert_table_length NUM_FONTS
 
 .Normal:
-	db "Normal @"
+	db "Normal  @"
 .Narrow:
-	db "Narrow @"
+	db "Schmal  @"
 .Bold:
-	db "Bold   @"
+	db "Fett    @"
 .Italic:
-	db "Italic @"
+	db "Kursiv  @"
 .Serif:
-	db "Serif  @"
+	db "Serif   @"
 .Chicago:
-	db "Chicago@"
+	db "Chicago @"
 .MICR:
-	db "MICR   @"
+	db "MICR    @"
 .Unown:
-	db "Unown  @"
+	db "Icognito@"
 
 Options_Keyboard:
 	ld hl, wOptions3

@@ -280,7 +280,7 @@ GetMenu2::
 GetYesNoBoxPosition:
 	ld a, [wInPokegear]
 	and a
-	lb bc, SCREEN_WIDTH - 6, 7
+	lb bc, SCREEN_WIDTH - 7, 7
 	ret z
 	dec b
 	ret
@@ -322,7 +322,7 @@ ClearSpritesUnderYesNoBox:
 	jr c, .next
 	; Check if XCoord >= 14 * TILE_WIDTH + 1
 	ld a, [hl]
-	cp 14 * TILE_WIDTH + 1
+	cp 13 * TILE_WIDTH + 1
 	jr nc, .clear_sprite
 ; fallthrough
 .next
@@ -353,7 +353,7 @@ HandleYesNoMenu:
 	pop bc
 	ld a, b
 	ld [wMenuBorderLeftCoord], a
-	add 5
+	add 6
 	ld [wMenuBorderRightCoord], a
 	ld a, c
 	ld [wMenuBorderTopCoord], a
@@ -374,7 +374,7 @@ HandleYesNoMenu:
 
 YesNoMenuDataHeader::
 	db MENU_BACKUP_TILES
-	menu_coords 10, 5, 15, 9
+	menu_coords 10, 5, 16, 9
 	dw .MenuData2
 	db 1 ; default option
 
@@ -382,21 +382,21 @@ YesNoMenuDataHeader::
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2
 YesString::
-	db "Yes@"
+	db "Ja@"
 NoString::
-	db "No @"
+	db "Nein@"
 
 NoYesMenuDataHeader::
 	db MENU_BACKUP_TILES
-	menu_coords 14, 7, 19, 11
+	menu_coords 13, 7, 19, 11
 	dw .MenuData2
 	db 1 ; default option
 
 .MenuData2:
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2
-	db "No@"
-	db "Yes@"
+	db "Nein@"
+	db "Ja@"
 
 OffsetMenuDataHeader::
 	call _OffsetMenuDataHeader

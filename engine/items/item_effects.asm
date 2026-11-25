@@ -739,7 +739,7 @@ _GetStatString:
 	ld c, [hl]
 	ld b, 0
 	add hl, bc
-	ld c, ITEM_NAME_LENGTH
+	ld c, STRING_BUFFER_LENGTH
 	rst CopyBytes
 	ret
 
@@ -1793,37 +1793,39 @@ WingCase_MonSelected:
 	ld a, [wMenuSelection]
 	inc a
 	ret z
-	dec a
-	ld c, a
-	ld b, 0
-	call _GetStatString
 
+	hlcoord 1, 16
+	lb bc, 1, 18
+	call ClearBox
+	decoord 1, 16
 	ld hl, .RaisesStat
-	bccoord 1, 16
-	jmp PlaceWholeStringInBoxAtOnce
+	jr .DisplayNthString
 
 .RaisesStat:
-	text "Raises "
-	text_ram wStringBuffer2
-	text "."
-	done
+; one line of 18 tiles, so three names are short
+	db "Erhöht KP@"
+	db "Erhöht Angriff@"
+	db "Erhöht Vert.@"
+	db "Erhöht Initiative@"
+	db "Erhöht Spez.-Angr.@"
+	db "Erhöht Spez.-Vert.@"
 
 .CancelStr:
-	db "Don't use.         @"
+	db "Nicht einsetzen.  @"
 
 .YouDontHaveAny:
-	db "You don't have any."
+	db "Du hast keine.    "
 	prompt
 
 .UseHowManyText:
-	db "Use how many?     @"
+	db "Wie viele?        @"
 
 OnlyXWillBeAppliedText:
-	db "Only "
+	db "Nur "
 XWillBeAppliedText:
 	text_decimal wItemQuantityChangeBuffer, 1, 3
-	text " will be"
-	line "applied. Proceed?"
+	text " werden"
+	line "benutzt. Weiter?"
 	done
 
 INCLUDE "data/items/wing_names.asm"
@@ -2157,6 +2159,9 @@ CandyJar_MonSelected:
 	ld a, [hl]
 	ld [wStringBuffer2+1], a
 
+	hlcoord 1, 16
+	lb bc, 1, 18
+	call ClearBox
 	ld hl, .GivesExp
 	bccoord 1, 16
 	jmp PlaceWholeStringInBoxAtOnce
@@ -2171,20 +2176,20 @@ CandyJar_MonSelected:
 	assert_table_length NUM_CANDIES
 
 .GivesExp:
-	text "Gives "
+	text "Gibt "
 	text_decimal wStringBuffer2, 2, 5
-	text " Exp."
+	text " EP."
 	done
 
 .CancelStr:
-	db "Don't use.         @"
+	db "Nicht einsetzen.  @"
 
 .YouDontHaveAny:
-	db "You don't have any."
+	db "Du hast keine.    "
 	prompt
 
 .UseHowManyText:
-	db "Use how many?     @"
+	db "Wie viele?        @"
 
 CalcCandies:
 ; input:
@@ -2315,13 +2320,13 @@ ApricornBox:
 	db 0 ; default option
 
 .Text
-	text  " Red   Blu"
+	text  " Rot  Blau"
 	next1 "   ×     ×"
-	next1 " Ylw   Grn"
+	next1 " Gelb Grün"
 	next1 "   ×     ×"
-	next1 " Wht   Blk"
+	next1 " Weiß Schwarz"
 	next1 "   ×     ×"
-	next1 " Pnk"
+	next1 " Rosa"
 	next1 "   ×"
 	done
 

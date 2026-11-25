@@ -1,6 +1,8 @@
 # Texts whose own German was decided on, for check_kristall.py: it leaves them alone as long as
 # Upstream's English is the one that was reviewed. Columns: label, key of the English (english_key),
 # why. Labels and keys only, never text.
+_ItemStatRoseText	62f61194	re-broken, the stat names are in full
+BillsPC_SwapStorage.BoxIsFull	1fb03c91	Kristall's line kept under Polished's reworded English
 WhiteoutText	c23659fc	Kristall fits: one text for both ways of blacking out
 _ItemCantHeldText	ddc67002	Kristall's line kept under Polished's shorter English
 _GainedItemText	e2bdef66	Kristall's line for a received item

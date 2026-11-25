@@ -734,12 +734,12 @@ Special_HyperTrain:
 	dbw BANK(.MenuData), 0
 
 .Strings:
-	db "HP@"
-	db "Speed@"
-	db "Attack@"
-	db "Sp.Atk@"
-	db "Defense@"
-	db "Sp.Def@"
+	db "KP@"
+	db "Init@"
+	db "Angr@"
+	db "Spez.Ang@"
+	db "Ver@"
+	db "Spez.Ver@"
 
 .TrainWhichStat:
 	text "Welchen Statuswert"

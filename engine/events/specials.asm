@@ -94,7 +94,7 @@ SpecialTrendyPhrase:
 	jmp InitName
 
 .DefaultTrendyPhrase:
-	rawchar "Nothing@"
+	rawchar "Nichts@"
 
 SpecialNameRater:
 	farjp NameRater
@@ -323,7 +323,7 @@ CheckIfTrendyPhraseIsLucky:
 	ret
 
 .KeyPhrase:
-	rawchar "Lucky@"
+	rawchar "Glück@"
 
 RespawnOneOffs:
 	eventflagreset EVENT_BEAT_FLANNERY

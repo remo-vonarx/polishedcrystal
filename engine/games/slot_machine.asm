@@ -1475,7 +1475,7 @@ Slots_AskBet:
 	text_farend _SlotsNotEnoughCoinsText
 .MenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 14, 10, 19, 17
+	menu_coords 15, 6, 19, 13
 	dw .MenuData2
 	db 1 ; default option
 
@@ -1501,7 +1501,7 @@ Slots_AskPlayAgain:
 	ld hl, .Text_PlayAgain
 	call PrintText
 	call LoadMenuTextbox
-	lb bc, 14, 12
+	lb bc, 13, 12
 	call PlaceYesNoBox
 	ld a, [wMenuCursorY]
 	dec a

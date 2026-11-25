@@ -33,133 +33,137 @@ Characteristics:
 	assert_table_length NUM_STATS * 5
 
 .Chara_HP0:
-	text  "Loves to"
-	next1 "eat"
+	text  "Liebt es"
+	next1 "zu essen"
 	done
 .Chara_HP1:
-	text  "Takes"
-	next1 "plenty of"
-	next1 "siestas"
+	text  "Nickt oft"
+	next1 "ein"
 	done
 .Chara_HP2:
-	text  "Nods off"
-	next1 "a lot"
+	text  "Schläft"
+	next1 "gern"
 	done
 .Chara_HP3:
-	text  "Scatters"
-	next1 "things"
-	next1 "often"
+	text  "Macht oft"
+	next1 "Unordnung"
 	done
 .Chara_HP4:
-	text  "Likes to"
-	next1 "relax"
+	text  "Mag es,"
+	next1 "sich zu"
+	next1 "entspannen"
 	done
 
 .Chara_Atk0:
-	text  "Proud of"
-	next1 "its power"
+	text  "Ist stolz"
+	next1 "auf seine"
+	next1 "Stärke"
 	done
 .Chara_Atk1:
-	text  "Likes to"
-	next1 "thrash"
-	next1 "about"
+	text  "Prügelt"
+	next1 "sich gern"
 	done
 .Chara_Atk2:
-	text  "A little"
-	next1 "quick"
-	next1 "tempered"
+	text  "Besitzt"
+	next1 "Temperament"
 	done
 .Chara_Atk3:
-	text  "Likes to"
-	next1 "fight"
+	text  "Liebt"
+	next1 "Kämpfe"
 	done
 .Chara_Atk4:
-	text  "Quick"
-	next1 "tempered"
+	text  "Ist"
+	next1 "impulsiv"
 	done
 
 .Chara_Def0:
-	text  "Sturdy"
-	next1 "body"
+	text  "Hat einen"
+	next1 "robusten"
+	next1 "Körper"
 	done
 .Chara_Def1:
-	text  "Capable of"
-	next1 "taking"
-	next1 "hits"
+	text  "Kann"
+	next1 "Treffer gut"
+	next1 "verkraften"
 	done
 .Chara_Def2:
-	text  "Highly"
-	next1 "persistent"
+	text  "Ist äußerst"
+	next1 "zäh"
 	done
 .Chara_Def3:
-	text  "Good"
-	next1 "endurance"
+	text  "Hat eine"
+	next1 "gute"
+	next1 "Ausdauer"
 	done
 .Chara_Def4:
-	text  "Good"
-	next1 "persever-"
-	next1 "ance"
+	text  "Ist"
+	next1 "beharrlich"
 	done
 
 .Chara_SAt0:
-	text  "Highly"
-	next1 "curious"
+	text  "Ist sehr"
+	next1 "neugierig"
 	done
 .Chara_SAt1:
-	text  "Mischiev-"
-	next1 "ous"
+	text  "Ist"
+	next1 "hinter-"
+	next1 "hältig"
 	done
 .Chara_SAt2:
-	text  "Thoroughly"
-	next1 "cunning"
+	text  "Ist äußerst"
+	next1 "gerissen"
 	done
 .Chara_SAt3:
-	text  "Often lost"
-	next1 "in thought"
+	text  "Ist oft in"
+	next1 "Gedanken"
 	done
 .Chara_SAt4:
-	text  "Very"
-	next1 "finicky"
+	text  "Ist sehr"
+	next1 "pedantisch"
 	done
 
 .Chara_SDf0:
-	text  "Strong"
-	next1 "willed"
+	text  "Besitzt"
+	next1 "einen star-"
+	next1 "ken Willen"
 	done
 .Chara_SDf1:
-	text  "Somewhat"
-	next1 "vain"
+	text  "Ist etwas"
+	next1 "eitel"
 	done
 .Chara_SDf2:
-	text  "Strongly"
-	next1 "defiant"
+	text  "Ist sehr"
+	next1 "aufsässig"
 	done
 .Chara_SDf3:
-	text  "Hates to"
-	next1 "lose"
+	text  "Hasst"
+	next1 "Niederlagen"
 	done
 .Chara_SDf4:
-	text  "Somewhat"
-	next1 "stubborn"
+	text  "Ist"
+	next1 "dickköpfig"
 	done
 
 .Chara_Spe0:
-	text  "Likes to"
-	next1 "run"
+	text  "Ist gerne"
+	next1 "schnell"
+	next1 "unterwegs"
 	done
 .Chara_Spe1:
-	text  "Alert to"
-	next1 "sounds"
+	text  "Achtet auf"
+	next1 "Geräusche"
 	done
 .Chara_Spe2:
-	text  "Impetuous"
-	next1 "and silly"
+	text  "Ist unge-"
+	next1 "stüm und"
+	next1 "einfältig"
 	done
 .Chara_Spe3:
-	text  "Somewhat"
-	next1 "of a clown"
+	text  "Ist ein"
+	next1 "bisschen"
+	next1 "albern"
 	done
 .Chara_Spe4:
-	text  "Quick to"
-	next1 "flee"
+	text  "Flüchtet"
+	next1 "schnell"
 	done
