@@ -1807,8 +1807,8 @@ WingCase_MonSelected:
 	db "Erhöht Angriff@"
 	db "Erhöht Vert@"
 	db "Erhöht Initiative@"
-	db "Erhöht Spez.Ang@"
-	db "Erhöht Spez.Ver@"
+	db "Erhöht Sp.Angr@"
+	db "Erhöht Sp.Vert@"
 
 .CancelStr:
 	db "Nicht einsetzen.  @"

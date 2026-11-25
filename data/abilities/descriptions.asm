@@ -225,7 +225,7 @@ WaterAbsorbDescription:
 
 ObliviousDescription:
 	text "Verhindert"
-	next "Verliebtheit."
+	next "Anziehung."
 	done
 
 CloudNineDescription:
@@ -308,7 +308,7 @@ NaturalCureDescription:
 
 LightningRodDescription:
 	text "Elektro-Attacken"
-	next "heben Spez.Ang."
+	next "heben Sp.Angr."
 	done
 
 SereneGraceDescription:

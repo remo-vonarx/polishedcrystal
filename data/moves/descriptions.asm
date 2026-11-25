@@ -437,7 +437,7 @@ AncientpowerDescription:
 
 CloseCombatDescription:
 	text "Senkt eigene Vert"
-	next "und Spez.Ver."
+	next "und Sp.Vert."
 	done
 
 AuroraBeamDescription:
@@ -475,7 +475,7 @@ IcyWindDescription:
 
 MoonblastDescription:
 	text "Angriff, senkt"
-	next "evtl. Spez.Ang."
+	next "evtl. den Sp.Angr."
 	done
 
 AcidDescription:
@@ -487,7 +487,7 @@ EnergyBallDescription:
 FlashCannonDescription:
 FocusBlastDescription:
 	text "Angriff, senkt"
-	next "evtl. Spez.Ver."
+	next "evtl. die Sp.Vert."
 	done
 
 MudSlapDescription:
@@ -592,12 +592,12 @@ AgilityDescription:
 	done
 
 NastyPlotDescription:
-	text "Hebt Spez.Ang des"
+	text "Hebt Sp.Angr des"
 	next "Angreifers enorm."
 	done
 
 AmnesiaDescription:
-	text "Hebt Spez.Ver des"
+	text "Hebt Sp.Vert des"
 	next "Angreifers enorm."
 	done
 
@@ -608,7 +608,7 @@ MinimizeDescription:
 
 GrowthDescription:
 	text "Hebt Angr-Wert und"
-	next "Spez.Ang."
+	next "Sp.Angr."
 	done
 
 BulkUpDescription:
@@ -617,8 +617,8 @@ BulkUpDescription:
 	done
 
 CalmMindDescription:
-	text "Hebt Spez.Ang und"
-	next "Spez.Ver."
+	text "Hebt Sp.Angr und"
+	next "Sp.Vert."
 	done
 
 DragonDanceDescription:
@@ -683,7 +683,7 @@ ReflectDescription:
 	done
 
 LightScreenDescription:
-	text "Hebt Spez.Ver"
+	text "Hebt Sp.Vert"
 	next "durch Lichtwand."
 	done
 
@@ -1116,7 +1116,7 @@ BellyDrumDescription:
 
 ForesightDescription:
 	text "Nimmt Gegner Immu-"
-	next "nität, Fluchtwert."
+	next "nität &Fluchtwert."
 	done
 
 DestinyBondDescription:

@@ -541,12 +541,12 @@ CarbosDesc:
 
 CalciumDesc:
 	text "Erhöht den"
-	next "Spez.Ang-Wert."
+	next "Sp.Angr-Wert."
 	done
 
 ZincDesc:
 	text "Erhöht den"
-	next "Spez.Ver-Wert."
+	next "Sp.Vert-Wert."
 	done
 
 RareCandyDesc:
@@ -625,12 +625,12 @@ XSpeedDesc:
 	done
 
 XSpAtkDesc:
-	text "Hebt Spez.Ang"
+	text "Hebt Sp.Angr"
 	next "für 1 Kampf."
 	done
 
 XSpDefDesc:
-	text "Hebt Spez.Ver"
+	text "Hebt Sp.Vert"
 	next "für 1 Kampf."
 	done
 
@@ -775,12 +775,12 @@ QualotBerryDesc:
 
 HondewBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt Spez.Ang."
+	next "senkt Sp.Angr."
 	done
 
 GrepaBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt Spez.Ver."
+	next "senkt Sp.Vert."
 	done
 
 TamatoBerryDesc:
@@ -804,12 +804,12 @@ SalacBerryDesc:
 	done
 
 PetayaBerryDesc:
-	text "Hebt Spez.Ang"
+	text "Hebt Sp.Angr"
 	next "in Notfällen."
 	done
 
 ApicotBerryDesc:
-	text "Hebt Spez.Ver"
+	text "Hebt Sp.Vert"
 	next "in Notfällen."
 	done
 
@@ -849,7 +849,7 @@ KeeBerryDesc:
 	done
 
 MarangaBerryDesc:
-	text "Hebt Spez.Ver bei"
+	text "Hebt Sp.Vert bei"
 	next "Spezialattacke."
 	done
 
@@ -1007,7 +1007,7 @@ BerserkGeneDesc:
 
 LightBallDesc:
 	text "Hebt Pikachus Angr"
-	next "und Spez.Ang."
+	next "und Sp.Angr."
 	done
 
 LeekDesc:
@@ -1046,7 +1046,7 @@ AirBalloonDesc:
 	done
 
 AssaultVestDesc:
-	text "Hebt Spez.Ver, nur"
+	text "Hebt Sp.Vert, nur"
 	next "Schadensattacken."
 	done
 
@@ -1142,7 +1142,7 @@ ZoomLensDesc:
 
 MentalHerbDesc:
 	text "Selbstheilung bei"
-	next "Verliebtheit."
+	next "Anziehung."
 	done
 
 PowerHerbDesc:
@@ -1186,7 +1186,7 @@ ChoiceScarfDesc:
 	done
 
 ChoiceSpecsDesc:
-	text "Hebt Spez.Ang,"
+	text "Hebt Sp.Angr,"
 	next "erlaubt 1 Attacke."
 	done
 
@@ -1226,12 +1226,12 @@ PowerBeltDesc:
 	done
 
 PowerLensDesc:
-	text "Mehr Spez.Ang-Zu-"
+	text "Mehr Sp.Angr-Zu-"
 	next "wachs, senkt Init."
 	done
 
 PowerBandDesc:
-	text "Mehr Spez.Ver-Zu-"
+	text "Mehr Sp.Vert-Zu-"
 	next "wachs, senkt Init."
 	done
 
@@ -1506,7 +1506,7 @@ BlundrPolicyDesc:
 	done
 
 ThroatSprayDesc:
-	text "Hebt Spez.Ang bei"
+	text "Hebt Sp.Angr bei"
 	next "Lärm-Attacken."
 	done
 

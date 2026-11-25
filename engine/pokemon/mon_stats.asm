@@ -123,9 +123,9 @@ AllStatNames:
 	db   "KP<NEXT>"
 MostStatNames:
 	db   "Angr"
-	next "Ver"
-	next "Spez.Ang"
-	next "Spez.Ver"
+	next "Vert"
+	next "Sp.Angr"
+	next "Sp.Vert"
 	next "Init"
 	next "@"
 

@@ -318,9 +318,9 @@ _Avoid_: Bericht, Wechseln (in menus of a Pokémon)
 **Ja**, **Nein**:
 Yes and No. Every box that holds them is as wide as Kristall's.
 
-**Angr**, **Ver**, **Init**, **Spez.Ang**, **Spez.Ver**:
-The stats in tables (summary, level up, hyper training), Kristall's words. The judge machine's drawn labels have Sp.Ang and Sp.Ver. Item messages name the stat in full, as in battle; the Wing Case's help line alone shortens three of them ("Erhöht Vert", "Erhöht Spez.Ang", "Erhöht Spez.Ver").
-_Avoid_: Vert., Spezial
+**Angr**, **Vert**, **Init**, **Sp.Angr**, **Sp.Vert**:
+The short stat names, one set everywhere: tables (summary, level up, hyper training), the judge machine's drawn labels, move and item descriptions, NPC lines and the Wing Case's help line ("Erhöht Vert", "Erhöht Sp.Angr", "Erhöht Sp.Vert"). In normal case, without a dot after the name and without a space after Sp., as Upstream's Atk, Def and Sp.Atk: Angr-Wert, Vert-Wert, Init-Wert. Kristall has ANGR, VER, INIT, SPEZ.ANG, SPEZ.VER in tables and ANGR, VERT, INIT, SPEZ. ANG, SPEZ. VER in texts. Item messages and ability descriptions name the stat in full (Angriff, Verteidigung, Initiative, Spez.-Angriff), as in battle; only Blitzfänger ("heben Sp.Angr.") and Bruchrüstung ("Vert sinkt, Init steigt.") have no room.
+_Avoid_: Ver, Spez.Ang, Spez.Ver, Vert., ANGR-Wert, Angr.-Wert, Spez.-Angr., SPEZ. ANG
 
 **Fähigk.**, **Fundort**, **Attacke**, **Item**, **EP**:
 The tabs drawn on the summary pages. Fähigkeit doesn't fit its tab.
@@ -386,10 +386,6 @@ What a new game starts with, as in Kristall; Upstream starts with 12 hours and i
 
 ## Descriptions
 
-**Angr**, **Vert**, **Init**, **Spez.Ang**, **Spez.Ver** (in texts):
-The short stat names in move and item descriptions, NPC lines and the Wing Case's help line, in normal case, without a dot after the name and without a space after Spez., as Upstream's Atk, Def and Sp.Atk: Angr-Wert, Vert-Wert, Init-Wert. Ability descriptions name the stat in full (Angriff, Verteidigung, Initiative, Spez.-Angriff) where two lines allow it.
-_Avoid_: ANGR-Wert, Angr.-Wert, Vert., Spez.-Angr., SPEZ. ANG
-
 **in Notfällen**:
 "In a pinch", for Berries and abilities that work at low HP; the official wording of X and Y.
 _Avoid_: bei Gefahr, bei wenig KP
@@ -418,9 +414,8 @@ A Pokémon that can still evolve (Eviolite), as in Kristall's Moon Ball.
 Draining moves (Big Root, Liquid Ooze).
 _Avoid_: Saug-Attacken
 
-**betören**, **verliebt**:
-To infatuate and infatuated in item and ability texts; Kristall's battle lines say verliebt.
-_Avoid_: Anziehung (that's the move)
+**betören**, **Anziehung**:
+To infatuate (Destiny Knot, Cute Charm) and infatuation (Mental Herb, Oblivious) in item and ability texts; Kristall's battle lines say verliebt.
 
 **2x Schaden**, **2- bis 5mal**:
 Double damage, and 2–5 hits or turns.
