@@ -1617,7 +1617,7 @@ Pokedex_Main:
 	jmp Pokedex_ScheduleScreenUpdateWithHBlank
 
 .ResultString:
-	db " Results/  @"
+	db " Treffer/  @"
 
 Pokedex_Bio:
 	ld a, DEXDISP_BIO
@@ -1636,7 +1636,7 @@ Pokedex_Bio:
 	call FarString
 
 	; Print catch rate
-	hlcoord 8, 5
+	hlcoord 10, 5
 	ld de, wBaseCatchRate
 	lb bc, 1, 3
 	call PrintNum
@@ -1660,7 +1660,7 @@ Pokedex_Bio:
 	rlc b
 	rlca
 	add '0'
-	hlcoord 8, 9
+	hlcoord 10, 9
 	ld [hli], a
 	inc hl
 	inc hl
@@ -1670,20 +1670,20 @@ Pokedex_Bio:
 	jr .base_exp
 
 .all_m
-	hlcoord 12, 9
+	hlcoord 14, 9
 	ld [hl], $7d
 .all_f
 	ld de, .100PercentString
 	jr .print
 
 .unknown
-	hlcoord 12, 9, wAttrmap
+	hlcoord 14, 9, wAttrmap
 	ld [hl], 0
 	ld de, Unknown
 .print
-	hlcoord 8, 9
+	hlcoord 10, 9
 	rst PlaceString
-	hlcoord 9, 9, wAttrmap
+	hlcoord 11, 9, wAttrmap
 	ld [hl], 0
 
 	; Print base experience
@@ -1711,7 +1711,7 @@ Pokedex_Bio:
 	ldh a, [hMultiplicand + 2]
 	ld e, a
 .got_exp
-	hlcoord 8, 7
+	hlcoord 10, 7
 	ld bc, 3
 	call PrintNumFromReg
 
@@ -1723,8 +1723,10 @@ Pokedex_Bio:
 	jr z, .print_group_1
 	push bc
 	call .GetEggGroupName
-	hlcoord 6, 12
-	ld a, 's'
+	hlcoord 7, 12
+	ld a, 'n'
+	ld [hli], a
+	ld a, ':'
 	ld [hli], a
 	inc hl
 	ld a, b
@@ -1733,7 +1735,7 @@ Pokedex_Bio:
 .print_group_1
 	ld a, c
 	call .GetEggGroupName
-	hlcoord 8, 11
+	hlcoord 10, 11
 	ld a, b
 	call FarString
 
@@ -1756,7 +1758,7 @@ Pokedex_Bio:
 	ld e, l
 	ld d, h
 .goteggsteps
-	hlcoord 8, 14
+	hlcoord 7, 14
 	rst PlaceString
 
 	; Print growth rate
@@ -1769,7 +1771,7 @@ Pokedex_Bio:
 	add hl, de
 	ld e, l
 	ld d, h
-	hlcoord 8, 16
+	hlcoord 7, 16
 	rst PlaceString
 
 	ld a, $84
@@ -1865,7 +1867,7 @@ _Pokedex_Stats:
 	call GetSpeciesAndFormIndex
 
 	; load base stats + EV yield, starting with HP
-	hlcoord 5, 5
+	hlcoord 6, 5
 	ld de, wBaseHP
 	lb bc, 1, 3
 	call PrintNum
@@ -1874,7 +1876,7 @@ _Pokedex_Stats:
 	rlca
 	call .print_ev_dots
 
-	hlcoord 5, 7
+	hlcoord 6, 7
 	ld de, wBaseAttack
 	lb bc, 1, 3
 	call PrintNum
@@ -1882,7 +1884,7 @@ _Pokedex_Stats:
 	swap a
 	call .print_ev_dots
 
-	hlcoord 5, 9
+	hlcoord 6, 9
 	ld de, wBaseDefense
 	lb bc, 1, 3
 	call PrintNum
@@ -1891,7 +1893,7 @@ _Pokedex_Stats:
 	rrca
 	call .print_ev_dots
 
-	hlcoord 15, 5
+	hlcoord 16, 5
 	ld de, wBaseSpecialAttack
 	lb bc, 1, 3
 	call PrintNum
@@ -1900,7 +1902,7 @@ _Pokedex_Stats:
 	rlca
 	call .print_ev_dots
 
-	hlcoord 15, 7
+	hlcoord 16, 7
 	ld de, wBaseSpecialDefense
 	lb bc, 1, 3
 	call PrintNum
@@ -1908,7 +1910,7 @@ _Pokedex_Stats:
 	swap a
 	call .print_ev_dots
 
-	hlcoord 15, 9
+	hlcoord 16, 9
 	ld de, wBaseSpeed
 	lb bc, 1, 3
 	call PrintNum
@@ -2205,20 +2207,20 @@ _Pokedex_Mode:
 	jr .change_menu
 
 .UnownMode:
-	db "Unown Mode@"
+	db "Icognito Index@"
 
 .MenuDescriptions:
-	db   "<PK><MN> are listed in"
-	next "regional order.@"
+	db   "<PK><MN> regional"
+	next "ordnen.@"
 
-	db   "<PK><MN> are listed in"
-	next "national order.@"
+	db   "<PK><MN> national"
+	next "ordnen.@"
 
-	db   "Display Unown"
-	next "information.@"
+	db   "Icognito-Infos"
+	next "anzeigen.@"
 
-	db   "Return to the <PK><MN>"
-	next "list.@"
+	db   "Zurück zur"
+	next "<PK><MN>-Liste.@"
 
 Pokedex_Search:
 ; Call to fully initialize Search page and reset cursor pos
@@ -2540,7 +2542,7 @@ _Pokedex_Search:
 	dr .byNameString
 
 .byNameString:
-	db "by Name  @"
+	db "nach Namen @"
 
 .BlankDefaultString:
 	; Blanks the default "----" string.

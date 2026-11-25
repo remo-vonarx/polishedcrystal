@@ -434,3 +434,41 @@ Short for effektiv in the texts of the Expertengurt and Schwä.schutz alone, whe
 
 **Seesprint-Fähre**:
 The Seagallop Ferry (PokéWiki).
+
+## Pokédex
+
+**Ges**, **Bes**, **Treffer**:
+Seen and Own on the list, as Kristall; Results of a search (own).
+
+**Modus**, **Johto-Modus**, **National-Modus**, **Icognito Index**:
+The SELECT menu. Icognito Index is Kristall's line; the others are Polished's own words, where Kristall has OPTIONEN and NEUER/ALTER POKéDEX.
+
+**Suche**, **Ordnen:**, **Typ**, **Gruppe**, **Farbe**, **Silhouette**, **Beginnen!**:
+The search page. Suche, Typ and the start's verb are Kristall's, Farbe and Silhouette PokéWiki's.
+_Avoid_: Körper, Form (for Body)
+
+**Gr.**, **Gew**, **S.1**, **Info**, **Bio**, **Werte**, **Geb.**, **Ruf**:
+The entry page and the bar below it. Gr., Gew, S., Geb. and Ruf are Kristall's.
+
+**SEL▸MODUS**, **START▸SUCHE**, **SEL▸LEER**, **SEL▸SCHILL**, **START▸FORM**, **A▸RUF**:
+The drawn badges. SCHILL is short for schillernd (shiny).
+_Avoid_: SHINY, FARBE (for Shiny)
+
+**Fangrate**, **EP**, **Geschl.**, **Ei-Gruppe(n):**, **Brut:**, **Level:**:
+The Bio page: catch rate, base experience, gender, egg groups, hatch and growth. The last three take a colon; Level: has no space before its value.
+
+**Schnellste**, **Schneller**, **Schnell**, **Mittelschnell**, **Mittellangsam**, **Langsam**, **Langsamer**, **Langsamste**:
+Hatch and growth speeds. The two middle ones are PokéWiki's.
+
+**Sp.A**, **Sp.V**:
+The special stats on the Pokédex's Stats page alone, where the label has four letters.
+_Avoid_: SAng, SVer
+
+**Morgen**, **Tag**, **Nacht**, **Surfen**, **Durchbruch**, **Zertrümmer.**, **Wandernd**, **Geb. unbekannt**:
+The Area page: Zertrümmer. is short for Zertrümmerer (Rock Smash, Faithful), Wandernd is Roaming. The rods, Kopfnuss and Käferturnier have their names.
+
+**Nr.**:
+The number sign's tile in every font, as Kristall (No. in English).
+
+**Categories**:
+The official category without "-Pokémon" and in mixed case, at most 11 letters. Where the official word is longer, a synonym: Magnetzone (Magnetgebiet), Doppelhauer (Doppelstoßzahn), Gefühlskalt (Gefühlskälte), Hexmeister (Hexenmeister). Frischgrün for Verdant (Unreif up to Generation 8), Schmarotzer for Polished's joke Squatter (both Lahmus, Regular), Panzertier for Turtok in both ROMs.

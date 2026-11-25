@@ -458,12 +458,12 @@ Pokedex_RefreshOAM:
 	jr nz, .not_stats
 
 	; Ability display
-	lb bc, 76, 100
+	lb bc, 92, 100
 	lb de, 1, 15
-	lb hl, 0, '<BOLDH>'
+	lb hl, 0, 'V'
 
 	ldh a, [hPokedexStatsCurAbil]
-	cp 2 ; 0/1/2 -> 1/2/H
+	cp 2 ; 0/1/2 -> 1/2/V
 	jr z, .got_ability
 	add '1'
 	ld l, a
@@ -471,7 +471,7 @@ Pokedex_RefreshOAM:
 	call Pokedex_WriteOAM
 
 	; (A) button for ability display
-	ld b, 92
+	ld b, 108
 	ld d, 2
 	lb hl, OAM_BANK1 | 1, $3d
 	jr Pokedex_WriteOAM

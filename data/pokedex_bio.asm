@@ -22,15 +22,15 @@ GrowthRateNames:
 	dr Slow
 	assert_table_length NUM_GROWTH_RATES
 
-Fastest:    db "Fastest@"
-Faster:     db "Faster@"
-Fast:       db "Fast@"
-MediumFast: db "Medium-Fast@"
-MediumSlow: db "Medium-Slow@"
-Slow:       db "Slow@"
-Slower:     db "Slower@"
-Slowest:    db "Slowest@"
-Unknown:    db "Unknown@"
+Fastest:    db "Schnellste@"
+Faster:     db "Schneller@"
+Fast:       db "Schnell@"
+MediumFast: db "Mittelschnell@"
+MediumSlow: db "Mittellangsam@"
+Slow:       db "Langsam@"
+Slower:     db "Langsamer@"
+Slowest:    db "Langsamste@"
+Unknown:    db "Unbekannt@"
 
 BodyColorNames:
 ; entries correspond to colors (see constants/pokemon_data_constants.asm)
@@ -47,13 +47,13 @@ BodyColorNames:
 	dr BodyPink
 	assert_table_length NUM_BODY_COLORS
 
-BodyRed:    db "Red@"
-BodyBlue:   db "Blue@"
-BodyYellow: db "Yellow@"
-BodyGreen:  db "Green@"
-BodyBlack:  db "Black@"
-BodyBrown:  db "Brown@"
-BodyPurple: db "Purple@"
-BodyGray:   db "Gray@"
-BodyWhite:  db "White@"
-BodyPink:   db "Pink@"
+BodyRed:    db "Rot@"
+BodyBlue:   db "Blau@"
+BodyYellow: db "Gelb@"
+BodyGreen:  db "Grün@"
+BodyBlack:  db "Schwarz@"
+BodyBrown:  db "Braun@"
+BodyPurple: db "Violett@"
+BodyGray:   db "Grau@"
+BodyWhite:  db "Weiß@"
+BodyPink:   db "Rosa@"
