@@ -526,27 +526,27 @@ HPUpDesc:
 
 ProteinDesc:
 	text "Erhöht den"
-	next "ANGR-Wert."
+	next "Angr-Wert."
 	done
 
 IronDesc:
 	text "Erhöht den"
-	next "VERT-Wert."
+	next "Vert-Wert."
 	done
 
 CarbosDesc:
 	text "Erhöht den"
-	next "INIT-Wert."
+	next "Init-Wert."
 	done
 
 CalciumDesc:
 	text "Erhöht den"
-	next "SPEZ. ANG-Wert."
+	next "Spez.Ang-Wert."
 	done
 
 ZincDesc:
 	text "Erhöht den"
-	next "SPEZ. VER-Wert."
+	next "Spez.Ver-Wert."
 	done
 
 RareCandyDesc:
@@ -610,27 +610,27 @@ RevivalHerbDesc:
 	done
 
 XAttackDesc:
-	text "Hebt ANGR-Wert"
+	text "Hebt Angr-Wert"
 	next "für 1 Kampf."
 	done
 
 XDefendDesc:
-	text "Hebt VERT-Wert"
+	text "Hebt Vert-Wert"
 	next "für 1 Kampf."
 	done
 
 XSpeedDesc:
-	text "Hebt INIT-Wert"
+	text "Hebt Init-Wert"
 	next "für 1 Kampf."
 	done
 
 XSpAtkDesc:
-	text "Hebt SPEZ. ANG"
+	text "Hebt Spez.Ang"
 	next "für 1 Kampf."
 	done
 
 XSpDefDesc:
-	text "Hebt SPEZ. VER"
+	text "Hebt Spez.Ver"
 	next "für 1 Kampf."
 	done
 
@@ -765,51 +765,51 @@ PomegBerryDesc:
 
 KelpsyBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt ANGR-Wert."
+	next "senkt Angr-Wert."
 	done
 
 QualotBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt VERT-Wert."
+	next "senkt Vert-Wert."
 	done
 
 HondewBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt SPEZ. ANG."
+	next "senkt Spez.Ang."
 	done
 
 GrepaBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt SPEZ. VER."
+	next "senkt Spez.Ver."
 	done
 
 TamatoBerryDesc:
 	text "Hebt Sympathie,"
-	next "senkt INIT-Wert."
+	next "senkt Init-Wert."
 	done
 
 LiechiBerryDesc:
-	text "Hebt ANGR-Wert"
+	text "Hebt Angr-Wert"
 	next "in Notfällen."
 	done
 
 GanlonBerryDesc:
-	text "Hebt VERT-Wert"
+	text "Hebt Vert-Wert"
 	next "in Notfällen."
 	done
 
 SalacBerryDesc:
-	text "Hebt INIT-Wert"
+	text "Hebt Init-Wert"
 	next "in Notfällen."
 	done
 
 PetayaBerryDesc:
-	text "Hebt SPEZ. ANG"
+	text "Hebt Spez.Ang"
 	next "in Notfällen."
 	done
 
 ApicotBerryDesc:
-	text "Hebt SPEZ. VER"
+	text "Hebt Spez.Ver"
 	next "in Notfällen."
 	done
 
@@ -844,12 +844,12 @@ RowapBerryDesc:
 	done
 
 KeeBerryDesc:
-	text "Hebt VERT-Wert bei"
+	text "Hebt Vert-Wert bei"
 	next "Körperattacke."
 	done
 
 MarangaBerryDesc:
-	text "Hebt SPEZ. VER bei"
+	text "Hebt Spez.Ver bei"
 	next "Spezialattacke."
 	done
 
@@ -1001,13 +1001,13 @@ SmokeBallDesc:
 	done
 
 BerserkGeneDesc:
-	text "Hebt ANGR-Wert und"
+	text "Hebt Angr-Wert und"
 	next "bewirkt Verwirr."
 	done
 
 LightBallDesc:
-	text "Hebt Pikachus ANGR"
-	next "und SPEZ. ANG."
+	text "Hebt Pikachus Angr"
+	next "und Spez.Ang."
 	done
 
 LeekDesc:
@@ -1017,7 +1017,7 @@ LeekDesc:
 
 ThickClubDesc:
 	text "Hebt Tragossos und"
-	next "Knoggas ANGR-Wert."
+	next "Knoggas Angr-Wert."
 	done
 
 LuckyPunchDesc:
@@ -1026,12 +1026,12 @@ LuckyPunchDesc:
 	done
 
 MetalPowderDesc:
-	text "Hebt VERT-Wert von"
+	text "Hebt Vert-Wert von"
 	next "Ditto. (Tragen)"
 	done
 
 QuickPowderDesc:
-	text "Hebt INIT-Wert von"
+	text "Hebt Init-Wert von"
 	next "Ditto. (Tragen)"
 	done
 
@@ -1041,18 +1041,18 @@ ArmorSuitDesc:
 	done
 
 AirBalloonDesc:
-	text "Bis zum Platzen"
-	next "immun gegen Boden."
+	text "Immun gegen Boden,"
+	next "bis er platzt."
 	done
 
 AssaultVestDesc:
-	text "Hebt SPEZ.VER, nur"
+	text "Hebt Spez.Ver, nur"
 	next "Schadensattacken."
 	done
 
 BigRootDesc:
-	text "Verstärkt Saug-"
-	next "Attacken. (Tragen)"
+	text "Attacken stehlen"
+	next "mehr KP. (Tragen)"
 	done
 
 BindingBandDesc:
@@ -1061,8 +1061,8 @@ BindingBandDesc:
 	done
 
 DestinyKnotDesc:
-	text "Gegner wird auch"
-	next "verliebt. (Tragen)"
+	text "Betört auch den"
+	next "Gegner. (Tragen)"
 	done
 
 ExpertBeltDesc:
@@ -1127,7 +1127,7 @@ SootheBellDesc:
 
 WeakPolicyDesc:
 	text "Sehr eff. Treffer"
-	next "hebt ANGR-Werte."
+	next "hebt Angr-Werte."
 	done
 
 WideLensDesc:
@@ -1142,7 +1142,7 @@ ZoomLensDesc:
 
 MentalHerbDesc:
 	text "Selbstheilung bei"
-	next "Anziehung."
+	next "Verliebtheit."
 	done
 
 PowerHerbDesc:
@@ -1151,12 +1151,12 @@ PowerHerbDesc:
 	done
 
 WhiteHerbDesc:
-	text "Selbstheilung bei"
-	next "Statussenkung."
+	text "Stellt gesenkte"
+	next "Werte wieder her."
 	done
 
 DampRockDesc:
-	text "Verlängert den"
+	text "Verlängert"
 	next "Regen. (Tragen)"
 	done
 
@@ -1171,23 +1171,23 @@ SmoothRockDesc:
 	done
 
 IcyRockDesc:
-	text "Verlängert den"
+	text "Verlängert"
 	next "Hagel. (Tragen)"
 	done
 
 ChoiceBandDesc:
-	text "Hebt ANGR-Wert,"
-	next "nur 1 Attacke."
+	text "Hebt Angr-Wert,"
+	next "erlaubt 1 Attacke."
 	done
 
 ChoiceScarfDesc:
-	text "Hebt INIT-Wert,"
-	next "nur 1 Attacke."
+	text "Hebt Init-Wert,"
+	next "erlaubt 1 Attacke."
 	done
 
 ChoiceSpecsDesc:
-	text "Hebt SPEZ. ANG,"
-	next "nur 1 Attacke."
+	text "Hebt Spez.Ang,"
+	next "erlaubt 1 Attacke."
 	done
 
 FlameOrbDesc:
@@ -1206,38 +1206,38 @@ BlackSludgeDesc:
 	done
 
 MachoBraceDesc:
-	text "Mehr Wertzuwachs,"
-	next "senkt INIT-Wert."
+	text "Mehr Zuwachs aller"
+	next "Werte, senkt Init."
 	done
 
 PowerWeightDesc:
 	text "Mehr KP-Zuwachs,"
-	next "senkt INIT-Wert."
+	next "senkt Init-Wert."
 	done
 
 PowerBracerDesc:
-	text "Mehr ANGR-Zuwachs,"
-	next "senkt INIT-Wert."
+	text "Mehr Angr-Zuwachs,"
+	next "senkt Init-Wert."
 	done
 
 PowerBeltDesc:
-	text "Mehr VERT-Zuwachs,"
-	next "senkt INIT-Wert."
+	text "Mehr Vert-Zuwachs,"
+	next "senkt Init-Wert."
 	done
 
 PowerLensDesc:
-	text "Mehr SPEZ. ANG-Zu-"
-	next "wachs, senkt INIT."
+	text "Mehr Spez.Ang-Zu-"
+	next "wachs, senkt Init."
 	done
 
 PowerBandDesc:
-	text "Mehr SPEZ. VER-Zu-"
-	next "wachs, senkt INIT."
+	text "Mehr Spez.Ver-Zu-"
+	next "wachs, senkt Init."
 	done
 
 PowerAnkletDesc:
-	text "Mehr INIT-Zuwachs,"
-	next "senkt INIT-Wert."
+	text "Mehr Init-Zuwachs,"
+	next "senkt Init-Wert."
 	done
 
 MulchDesc:
@@ -1251,7 +1251,7 @@ SweetHoneyDesc:
 	done
 
 EvioliteDesc:
-	text "Hebt VERT-Werte"
+	text "Hebt Vert-Werte"
 	next "von Entwicklern."
 	done
 
@@ -1301,7 +1301,7 @@ OvalStoneDesc:
 	done
 
 OddSouvenirDesc:
-	text "Ein Schmuckstück"
+	text "Ein Souvenir"
 	next "von weit her."
 	done
 
@@ -1386,9 +1386,13 @@ BottleCapDesc:
 	done
 
 HelixFossilDesc:
+	text "Versteinerte"
+	next "#mon-Muschel."
+	done
+
 DomeFossilDesc:
-	text "Versteinerter"
-	next "#mon-Panzer."
+	text "Versteinerte"
+	next "#mon-Schale."
 	done
 
 OldAmberDesc:
@@ -1457,8 +1461,8 @@ LaggingTailDesc:
 	done
 
 IronBallDesc:
-	text "Senkt INIT, holt"
-	next "zu Boden. (Tragen)"
+	text "Senkt Init, hält"
+	next "am Boden. (Tragen)"
 	done
 
 RedCardDesc:
@@ -1467,18 +1471,18 @@ RedCardDesc:
 	done
 
 ClearAmuletDesc:
-	text "Keine Statussen-"
-	next "kung durch Gegner."
+	text "Kein Gegner senkt"
+	next "Statuswerte."
 	done
 
 MirrorHerbDesc:
-	text "Kopiert 1x Status-"
-	next "plus des Gegners."
+	text "Kopiert 1x erhöhte"
+	next "Werte des Gegners."
 	done
 
 PunchinGloveDesc:
-	text "Verstärkt Hiebe,"
-	next "ohne Kontakt."
+	text "Stärkt Hiebe, ver-"
+	next "hindert Kontakt."
 	done
 
 CovertCloakDesc:
@@ -1487,22 +1491,22 @@ CovertCloakDesc:
 	done
 
 EjectPackDesc:
-	text "Tausch bei Status-"
-	next "senkung. (Tragen)"
+	text "Tausch, wenn Werte"
+	next "sinken. (Tragen)"
 	done
 
 RoomServiceDesc:
 	text "Bizarroraum: senkt"
-	next "INIT. (Tragen)"
+	next "Init. (Tragen)"
 	done
 
 BlundrPolicyDesc:
-	text "Hebt INIT-Wert bei"
+	text "Hebt Init-Wert bei"
 	next "Fehlschlag."
 	done
 
 ThroatSprayDesc:
-	text "Hebt SPEZ. ANG bei"
+	text "Hebt Spez.Ang bei"
 	next "Lärm-Attacken."
 	done
 
@@ -1643,28 +1647,28 @@ MysticTicketDesc:
 	done
 
 OldSeaMapDesc:
-	text "Vergilbte Seekarte"
-	next "eines Inselchens."
+	text "Alte Seekarte ei-"
+	next "ner kleinen Insel."
 	done
 
 HarshLureDesc:
-	text "Ein Flakon mit"
+	text "Ein Parfüm mit"
 	next "grausamem Duft."
 	done
 
 PotentLureDesc:
-	text "Ein Flakon mit"
+	text "Ein Parfüm mit"
 	next "starkem Geruch."
 	done
 
 MalignLureDesc:
-	text "Ein Flakon mit"
+	text "Ein Parfüm mit"
 	next "boshaftem Geruch."
 	done
 
 LiftKeyDesc:
 	text "Bedient den Lift"
-	next "im Gebäude."
+	next "in einem Gebäude."
 	done
 
 ShinyCharmDesc:

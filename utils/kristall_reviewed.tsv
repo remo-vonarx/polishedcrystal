@@ -58,9 +58,9 @@ XAccuracyDesc	99ab60d4	Kristall's line kept under Polished's reworded English
 QuickClawDesc	ebc80786	Kristall's line kept under Polished's reworded English
 LeekDesc	36d88908	Kristall's line kept under Polished's reworded English
 DynamicpunchDescription	eaebc349	Kristall's line kept under Polished's reworded English
-MudSlapDescription	7cfd5c2d	Kristall's line kept under Polished's reworded English
-OctazookaDescription	02a0b519	Kristall's line kept under Polished's reworded English
-NightShadeDescription	ed988d85	Kristall's line kept under Polished's reworded English
+MudSlapDescription	7cfd5c2d	reworded in the descriptions review
+OctazookaDescription	02a0b519	reworded in the descriptions review
+NightShadeDescription	ed988d85	reworded in the descriptions review
 SporeDescription	eaf81978	Kristall's line kept under Polished's reworded English
 DoubleTeamDescription	80a39f73	Kristall's line kept under Polished's reworded English
 GrowlDescription	a5769129	Kristall's line kept under Polished's reworded English
@@ -73,3 +73,7 @@ SpikesDescription	1e811548	Kristall's line kept under Polished's reworded Englis
 MachPunchDescription	0103ca0b	Kristall's line kept under Polished's reworded English
 ExtremespeedDescription	1c67ca6a	Kristall's line kept under Polished's reworded English
 WingAttackDescription	8140c490	Kristall's line kept under Polished's reworded English
+DoubleSlapDescription	18620ca6	names the 2 as well, decided in the descriptions review
+PinMissileDescription	d9bbdde9	names the 2 as well, decided in the descriptions review
+WrapDescription	588dcb11	names the 2 as well, decided in the descriptions review
+GoldenrodDeptStore4FCooltrainerMText	8b0028b3	the stat in full, decided in the descriptions review

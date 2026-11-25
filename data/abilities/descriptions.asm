@@ -173,8 +173,8 @@ StenchDescription:
 	done
 
 DrizzleDescription:
-	text "Erzeugt beim Ein-"
-	next "wechseln Regen."
+	text "Erzeugt Regen"
+	next "beim Einwechseln."
 	done
 
 SpeedBoostDescription:
@@ -225,7 +225,7 @@ WaterAbsorbDescription:
 
 ObliviousDescription:
 	text "Verhindert"
-	next "Anziehung."
+	next "Verliebtheit."
 	done
 
 CloudNineDescription:
@@ -287,12 +287,12 @@ LevitateDescription:
 
 EffectSporeDescription:
 	text "Berührung: evtl."
-	next "PAR, GIF oder SLF."
+	next "Par, Gif oder Slf."
 	done
 
 SynchronizeDescription:
-	text "Gibt GIF, PAR oder"
-	next "BRT an Gegner ab."
+	text "Gibt Gif, Par oder"
+	next "Brt an Gegner ab."
 	done
 
 ClearBodyDescription:
@@ -308,7 +308,7 @@ NaturalCureDescription:
 
 LightningRodDescription:
 	text "Elektro-Attacken"
-	next "heben Spez.-Angr."
+	next "heben Spez.Ang."
 	done
 
 SereneGraceDescription:
@@ -377,8 +377,8 @@ RainDishDescription:
 	done
 
 SandStreamDescription:
-	text "Erzeugt beim Ein-"
-	next "wechseln Sandsturm."
+	text "Erzeugt Sandsturm"
+	next "beim Einwechseln."
 	done
 
 PressureDescription:
@@ -428,7 +428,7 @@ HustleDescription:
 
 CuteCharmDescription:
 	text "Kann bei Berührung"
-	next "anziehend wirken."
+	next "betören."
 	done
 
 StickyHoldDescription:
@@ -452,8 +452,8 @@ MarvelScaleDescription:
 	done
 
 LiquidOozeDescription:
-	text "Schadet Anwendern"
-	next "von Saug-Attacken."
+	text "Schadet Gegnern,"
+	next "die KP stehlen."
 	done
 
 OvergrowDescription:
@@ -482,8 +482,8 @@ RockHeadDescription:
 	done
 
 DroughtDescription:
-	text "Erzeugt beim Ein-"
-	next "wechseln Sonne."
+	text "Erzeugt Sonnenlicht"
+	next "beim Einwechseln."
 	done
 
 ArenaTrapDescription:
@@ -653,8 +653,8 @@ IceBodyDescription:
 	done
 
 SnowWarningDescription:
-	text "Erzeugt beim Ein-"
-	next "wechseln Hagel."
+	text "Erzeugt Hagel"
+	next "beim Einwechseln."
 	done
 
 HoneyGatherDescription:
@@ -702,8 +702,8 @@ UnnerveDescription:
 	done
 
 DefiantDescription:
-	text "Mehr Angriff nach"
-	next "Statussenkung."
+	text "Mehr Angriff, wenn"
+	next "Werte sinken."
 	done
 
 CursedBodyDescription:
@@ -712,8 +712,8 @@ CursedBodyDescription:
 	done
 
 WeakArmorDescription:
-	text "Körpertreffer: VERT"
-	next "sinkt, INIT steigt."
+	text "Körpertreffer: Vert"
+	next "sinkt, Init steigt."
 	done
 
 LightMetalDescription:
@@ -832,8 +832,8 @@ BulletproofDescription:
 	done
 
 CompetitiveDescription:
-	text "Mehr Spez.-Angriff"
-	next "nach Statussenkung."
+	text "Mehr Spez.-Angriff,"
+	next "wenn Werte sinken."
 	done
 
 MegaLauncherDescription:
@@ -888,7 +888,7 @@ TanglingHairDescription:
 
 GorillaTacticsDescription:
 	text "Erhöht den Angriff,"
-	next "nur 1 Attacke."
+	next "erlaubt 1 Attacke."
 	done
 
 NeutralizingGasDescription:

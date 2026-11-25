@@ -309,28 +309,28 @@ DrainKissDescription:
 	done
 
 DoubleSlapDescription:
-	text "Trifft bis zu"
+	text "Trifft 2- bis"
 	next "5mal."
 	done
 
 FuryStrikesDescription:
 	text "Kratzt oder sticht"
-	next "bis zu 5mal."
+	next "2- bis 5mal."
 	done
 
 PinMissileDescription:
-	text "Trifft Gegner bis"
-	next "zu 5mal."
+	text "Trifft Gegner"
+	next "2- bis 5mal."
 	done
 
 IcicleSpearDescription:
 	text "Eiszapfen treffen"
-	next "bis zu 5mal."
+	next "2- bis 5mal."
 	done
 
 RockBlastDescription:
 	text "Felsen treffen"
-	next "bis zu 5mal."
+	next "2- bis 5mal."
 	done
 
 TakeDownDescription:
@@ -417,17 +417,17 @@ DynamicpunchDescription:
 
 MetalClawDescription:
 	text "Hebt evtl. den"
-	next "ANGR-Wert."
+	next "Angr-Wert."
 	done
 
 SteelWingDescription:
-	text "Hebt evtl. den"
-	next "VERT-Wert."
+	text "Angriff, hebt"
+	next "evtl. Vert-Wert."
 	done
 
 FlameChargeDescription:
-	text "Hebt evtl. den"
-	next "INIT-Wert."
+	text "Angriff, hebt"
+	next "Init-Wert."
 	done
 
 AncientpowerDescription:
@@ -436,13 +436,13 @@ AncientpowerDescription:
 	done
 
 CloseCombatDescription:
-	text "Senkt eigene VERT"
-	next "und SPEZ. VER."
+	text "Senkt eigene Vert"
+	next "und Spez.Ver."
 	done
 
 AuroraBeamDescription:
 PlayRoughDescription:
-	text "Senkt evtl. ANGR-"
+	text "Senkt evtl. Angr-"
 	next "Wert des Gegners."
 	done
 
@@ -454,28 +454,28 @@ if !DEF(FAITHFUL)
 endc
 CrunchDescription:
 IronTailDescription:
-	text "Senkt evtl. VERT-"
+	text "Senkt evtl. Vert-"
 	next "Wert des Gegners."
 	done
 
 BubbleBeamDescription:
-	text "Senkt evtl. INIT-"
+	text "Senkt evtl. Init-"
 	next "Wert des Gegners."
 	done
 
 BulldozeDescription:
 	text "Boden-Attacke,"
-	next "senkt INIT-Wert."
+	next "senkt Init-Wert."
 	done
 
 IcyWindDescription:
-	text "Senkt INIT-Wert"
+	text "Senkt Init-Wert"
 	next "des Gegners."
 	done
 
 MoonblastDescription:
-	text "Senkt evtl."
-	next "SPEZ. ANG."
+	text "Angriff, senkt"
+	next "evtl. Spez.Ang."
 	done
 
 AcidDescription:
@@ -486,18 +486,18 @@ EarthPowerDescription:
 EnergyBallDescription:
 FlashCannonDescription:
 FocusBlastDescription:
-	text "Senkt evtl."
-	next "SPEZ. VER."
+	text "Angriff, senkt"
+	next "evtl. Spez.Ver."
 	done
 
 MudSlapDescription:
-	text "Senkt Genauigkeit"
-	next "des Gegners."
+	text "Angriff, senkt"
+	next "Genauigkeit."
 	done
 
 OctazookaDescription:
-	text "Senkt evtl. die"
-	next "Genauigkeit."
+	text "Angriff, senkt"
+	next "evtl. Genauigkeit."
 	done
 
 SonicboomDescription:
@@ -512,8 +512,8 @@ DragonRageDescription:
 
 SeismicTossDescription:
 NightShadeDescription:
-	text "Angreiferlevel"
-	next "gleich Schaden."
+	text "Schaden entspricht"
+	next "dem eigenen Level."
 	done
 
 PoisonpowderDescription:
@@ -557,12 +557,12 @@ ToxicDescription:
 ConfuseRayDescription:
 SupersonicDescription:
 SweetKissDescription:
-	text "Gegner wird evtl."
-	next "verwirrt."
+	text "Attacke, verwirrt"
+	next "evtl. den Gegner."
 	done
 
 DefenseCurlDescription:
-	text "Hebt VERT-Wert des"
+	text "Hebt Vert-Wert des"
 	next "Angreifers."
 	done
 
@@ -577,27 +577,27 @@ FocusEnergyDescription:
 	done
 
 SwordsDanceDescription:
-	text "Hebt ANGR-Wert des"
-	next "Angreifers enorm."
+	text "Tanz, erhöht Angr-"
+	next "Wert enorm."
 	done
 
 BarrierDescription:
-	text "Hebt VERT-Wert des"
+	text "Hebt Vert-Wert des"
 	next "Angreifers enorm."
 	done
 
 AgilityDescription:
-	text "Hebt INIT-Wert des"
+	text "Hebt Init-Wert des"
 	next "Angreifers enorm."
 	done
 
 NastyPlotDescription:
-	text "Hebt SPEZ. ANG des"
+	text "Hebt Spez.Ang des"
 	next "Angreifers enorm."
 	done
 
 AmnesiaDescription:
-	text "Hebt SPEZ. VER des"
+	text "Hebt Spez.Ver des"
 	next "Angreifers enorm."
 	done
 
@@ -607,42 +607,42 @@ MinimizeDescription:
 	done
 
 GrowthDescription:
-	text "Hebt ANGR-Wert und"
-	next "SPEZ. ANG."
+	text "Hebt Angr-Wert und"
+	next "Spez.Ang."
 	done
 
 BulkUpDescription:
-	text "Hebt ANGR- und"
-	next "VERT-Wert."
+	text "Hebt Angr- und"
+	next "Vert-Wert."
 	done
 
 CalmMindDescription:
-	text "Hebt SPEZ. ANG und"
-	next "SPEZ. VER."
+	text "Hebt Spez.Ang und"
+	next "Spez.Ver."
 	done
 
 DragonDanceDescription:
-	text "Hebt ANGR- und"
-	next "INIT-Wert."
+	text "Hebt Angr- und"
+	next "Init-Wert."
 	done
 
 HoneClawsDescription:
-	text "Hebt ANGR-Wert und"
+	text "Hebt Angr-Wert und"
 	next "Genauigkeit."
 	done
 
 GrowlDescription:
-	text "Senkt den ANGR-"
+	text "Senkt den Angr-"
 	next "Wert des Gegners."
 	done
 
 LeerDescription:
-	text "Senkt VERT-Wert"
+	text "Senkt Vert-Wert"
 	next "des Gegners."
 	done
 
 StringShotDescription:
-	text "Senkt INIT-Wert"
+	text "Senkt Init-Wert"
 	next "des Gegners."
 	done
 
@@ -653,17 +653,17 @@ FlashDescription:
 	done
 
 CharmDescription:
-	text "Senkt ANGR-Wert"
+	text "Senkt Angr-Wert"
 	next "des Gegners enorm."
 	done
 
 ScreechDescription:
-	text "Senkt VERT-Wert"
+	text "Senkt Vert-Wert"
 	next "des Gegners enorm."
 	done
 
 ScaryFaceDescription:
-	text "Senkt INIT-Wert"
+	text "Senkt Init-Wert"
 	next "des Gegners enorm."
 	done
 
@@ -678,12 +678,12 @@ SafeguardDescription:
 	done
 
 ReflectDescription:
-	text "Hebt VERT-Wert"
+	text "Hebt Vert-Wert"
 	next "mittels Barriere."
 	done
 
 LightScreenDescription:
-	text "Hebt SPEZ. VER"
+	text "Hebt Spez.Ver"
 	next "durch Lichtwand."
 	done
 
@@ -712,13 +712,13 @@ OutrageDescription:
 FireSpinDescription:
 WhirlpoolDescription:
 WrapDescription:
-	text "Trifft Gegner bis"
-	next "zu 5mal."
+	text "Trifft Gegner"
+	next "2- bis 5mal."
 	done
 
 TrickRoomDescription:
-	text "Langsame #mon"
-	next "5 Runden zuerst."
+	text "Langsame PKMN zu-"
+	next "erst für 5 Runden."
 	done
 
 ExplosionDescription:
@@ -758,23 +758,23 @@ DigDescription:
 	done
 
 AcrobaticsDescription:
-	text "Doppelter Schaden"
-	next "ohne eigenes Item."
+	text "2x Schaden ohne"
+	next "eigenes Item."
 	done
 
 HexDescription:
-	text "Gegner mit Status:"
-	next "doppelter Schaden."
+	text "2x Schaden, wenn"
+	next "Gegner mit Status."
 	done
 
 AvalancheDescription:
-	text "Doppelter Schaden,"
-	next "wenn getroffen."
+	text "2x Schaden, wenn"
+	next "zuerst getroffen."
 	done
 
 VenoshockDescription:
-	text "Gegner vergiftet:"
-	next "doppelter Schaden."
+	text "2x Schaden, wenn"
+	next "Gegner vergiftet."
 	done
 
 RainDanceDescription:
@@ -987,7 +987,7 @@ EarthquakeDescription:
 	done
 
 RageDescription:
-	text "Hebt ANGR-Wert bei"
+	text "Hebt Angr-Wert bei"
 	next "Schadenszufuhr."
 	done
 
@@ -1080,8 +1080,8 @@ ThiefDescription:
 	done
 
 FacadeDescription:
-	text "Doppelter Schaden"
-	next "bei GIF, BRT, PAR."
+	text "2x Schaden bei"
+	next "Gif, Brt oder Par."
 	done
 
 HyperVoiceDescription:
@@ -1100,8 +1100,8 @@ ReversalDescription:
 	done
 
 SeedBombDescription:
-	text "Harter Samenhagel"
-	next "auf den Gegner."
+	text "Lässt harte Samen"
+	next "auf Gegner hageln."
 	done
 
 ProtectDescription:
@@ -1111,12 +1111,12 @@ ProtectDescription:
 
 BellyDrumDescription:
 	text "Senkt KP + maxi-"
-	next "miert ANGR-Wert."
+	next "miert Angr-Wert."
 	done
 
 ForesightDescription:
-	text "Hebt Fluchtwert +"
-	next "Immunität auf."
+	text "Nimmt Gegner Immu-"
+	next "nität, Fluchtwert."
 	done
 
 DestinyBondDescription:
@@ -1141,12 +1141,12 @@ RolloutDescription:
 
 SwaggerDescription:
 	text "Verwirrt, hebt"
-	next "aber ANGR-Wert."
+	next "aber Angr-Wert."
 	done
 
 ShellSmashDescription:
-	text "Senkt VERT-Werte,"
-	next "hebt ANGR-Werte."
+	text "Senkt Vert-Werte,"
+	next "hebt Angr-Werte."
 	done
 
 BugBiteDescription:

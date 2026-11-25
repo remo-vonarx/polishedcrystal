@@ -182,7 +182,7 @@ A text whose English is Crystal's word for word. It has Kristall's German, with 
 _Avoid_: copied text
 
 **Kept capitals**:
-Kristall's capitals stay where Upstream's English shouts or stresses in capitals too (NICHT, HILFE, BIEP, the roaring man on Route 32), and in abbreviations (KP, AP, PC, TM, VM, DJ, TV, EG, ID, IQ, SZ, PKMN, ANGR, VERT, INIT).
+Kristall's capitals stay where Upstream's English shouts or stresses in capitals too (NICHT, HILFE, BIEP, the roaring man on Route 32), and in abbreviations (KP, AP, PC, TM, VM, DJ, TV, EG, ID, IQ, SZ, PKMN). Short stat and status names are in normal case (see Descriptions and Battle).
 
 **PokéCom**:
 The Pokégear, as Kristall calls it (#COM).
@@ -287,8 +287,9 @@ _Avoid_: KMPF, Angriff, Tasche
 **Tausch**, **Status**, **Zurück**:
 The menu of a Pokémon in battle (Switch, Summary, Cancel), Kristall's words.
 
-**GIF**, **PAR**, **SLF**, **BRT**, **GFR**:
-The status labels in battle, as Kristall has them.
+**Gif**, **Par**, **Slf**, **Brt**, **Gfr**:
+The short status names, Kristall's, in normal case in every text and menu, as Upstream writes Psn and Par. Only the drawn labels (battle, party, summary) are in capitals, as Upstream's drawn PSN and PAR.
+_Avoid_: GIF, PAR in a text
 
 **KP**, **EP**, **AP**:
 HP, Exp. Points and PP, on the bars and in the texts ("157 EP!"). The power of a move is P in the move box.
@@ -318,7 +319,7 @@ _Avoid_: Bericht, Wechseln (in menus of a Pokémon)
 Yes and No. Every box that holds them is as wide as Kristall's.
 
 **Angr**, **Ver**, **Init**, **Spez.Ang**, **Spez.Ver**:
-The stats in tables (summary, level up, hyper training), Kristall's words. The judge machine's drawn labels have Sp.Ang and Sp.Ver. Item messages name the stat in full, as in battle; the Wing Case's help line alone shortens three of them ("Erhöht Vert.", "Erhöht Spez.-Angr.", "Erhöht Spez.-Vert.").
+The stats in tables (summary, level up, hyper training), Kristall's words. The judge machine's drawn labels have Sp.Ang and Sp.Ver. Item messages name the stat in full, as in battle; the Wing Case's help line alone shortens three of them ("Erhöht Vert", "Erhöht Spez.Ang", "Erhöht Spez.Ver").
 _Avoid_: Vert., Spezial
 
 **Fähigk.**, **Fundort**, **Attacke**, **Item**, **EP**:
@@ -385,9 +386,9 @@ What a new game starts with, as in Kristall; Upstream starts with 12 hours and i
 
 ## Descriptions
 
-**ANGR-Wert**, **VERT-Wert**, **INIT-Wert**, **SPEZ. ANG**, **SPEZ. VER**:
-The stats in move and item descriptions, Kristall's words and spelling (only the Offens.weste has no room for the space). Ability descriptions name the stat in full (Angriff, Verteidigung, Initiative, Spez.-Angriff) where two lines allow it; Blitzfänger has Spez.-Angr., Bruchrüstung VERT and INIT.
-_Avoid_: Spez.-Angriff in a move's or item's text
+**Angr**, **Vert**, **Init**, **Spez.Ang**, **Spez.Ver** (in texts):
+The short stat names in move and item descriptions, NPC lines and the Wing Case's help line, in normal case, without a dot after the name and without a space after Spez., as Upstream's Atk, Def and Sp.Atk: Angr-Wert, Vert-Wert, Init-Wert. Ability descriptions name the stat in full (Angriff, Verteidigung, Initiative, Spez.-Angriff) where two lines allow it.
+_Avoid_: ANGR-Wert, Angr.-Wert, Vert., Spez.-Angr., SPEZ. ANG
 
 **in Notfällen**:
 "In a pinch", for Berries and abilities that work at low HP; the official wording of X and Y.
@@ -403,7 +404,7 @@ Raises, lowers, restores, may, sharply, as in Kristall's descriptions.
 Friendship in item texts (Friend Ball, Luxury Ball, the EV Berries, Soothe Bell), Kristall's word.
 _Avoid_: Freundschaft, Zuneigung
 
-**Wertzuwachs**, **ANGR-Zuwachs**, …:
+**Zuwachs aller Werte**, **Angr-Zuwachs**, …:
 The stat gain (EVs) of the Macho Brace and the Power items.
 
 **Körperattacke**, **Spezialattacke**, **Status-Attacke**:
@@ -413,8 +414,25 @@ _Avoid_: physische Attacke
 **Entwickler**:
 A Pokémon that can still evolve (Eviolite), as in Kristall's Moon Ball.
 
-**Saug-**, **Klammer-**, **Lärm-**, **Serien-**, **Wind-Attacken**, **Barrieren**:
-Draining, trapping, sound-based, multi-hit and wind moves, and the screens, after the official texts.
+**KP stehlen**:
+Draining moves (Big Root, Liquid Ooze).
+_Avoid_: Saug-Attacken
+
+**betören**, **verliebt**:
+To infatuate and infatuated in item and ability texts; Kristall's battle lines say verliebt.
+_Avoid_: Anziehung (that's the move)
+
+**2x Schaden**, **2- bis 5mal**:
+Double damage, and 2–5 hits or turns.
+
+**Angriff, …**, **Attacke, …**:
+The start of seven texts Kristall has no line for ("An attack that …", "A move that …"): Stahlflügel, Nitroladung, Mondgewalt, the Sp. Def droppers, Lehmschelle, Octazooka, Bitterkuss. Kristall's own lines start with the effect.
+
+**V**:
+The hidden ability's letter (versteckt) beside 1 and 2 on the summary; H in English. In the TM pocket V1 to V7 are the HMs, as in Kristall.
+
+**Klammer-**, **Lärm-**, **Serien-**, **Wind-Attacken**, **Barrieren**:
+Trapping, sound-based, multi-hit and wind moves, and the screens, after the official texts.
 
 **eff.**:
 Short for effektiv in the texts of the Expertengurt and Schwä.schutz alone, where the full word doesn't fit.

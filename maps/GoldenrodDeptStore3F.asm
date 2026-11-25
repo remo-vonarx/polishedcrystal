@@ -25,7 +25,7 @@ GoldenrodDeptStore3FSuperNerdText:
 	para "Ich setze X-Tempo"
 	line "im Kampf ein, um"
 
-	para "den INIT-Wert"
+	para "den Init-Wert"
 	line "meiner #mon"
 
 	para "zu erhöhen."
