@@ -328,10 +328,10 @@ JudgeSystem::
 	jmp .restart
 
 .EVHeading:
-	db "Effort   @"
+	db "Fleiß    @"
 
 .IVHeading:
-	db "Potential@"
+	db "Potenzial@"
 
 .PrintStat:
 ; hl = coords, de = stat

@@ -697,20 +697,20 @@ VerifyGameVersion:
 	jr .infinite_loop
 
 .SaveUpgradeScreen:
-	text  "Your save file does"
-	next1 "not match the game"
-	next1 "version of this ROM."
+	text  "Dein Spielstand"
+	next1 "passt nicht zur"
+	next1 "Version dieses ROMs."
 	next1 ""
-	next1 "If your save is old,"
-	next1 "please consult the"
-	next1 "documentation for"
-	next1 "this game release"
-	next1 "for instructions to"
-	next1 "upgrade your save."
+	next1 "Ist er alt, findest"
+	next1 "du in der Dokumen-"
+	next1 "tation dieser"
+	next1 "Version, wie du"
+	next1 "deinen Spielstand"
+	next1 "aktualisierst."
 	next1 ""
-	next1 "Game version:"
+	next1 "Spielversion:"
 	next1 ""
-	next1 "Save version:"
+	next1 "Spielstand:"
 	done
 
 SaveCurrentVersion:

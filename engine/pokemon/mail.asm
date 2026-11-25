@@ -508,14 +508,14 @@ MailboxPC:
 
 .SubMenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 0, 13, 9
+	menu_coords 0, 0, 16, 9
 	dw .SubMenuData2
 	db 1 ; default option
 
 .SubMenuData2:
 	db %10000000 ; flags
 	db 4 ; items
-	db "Read Mail@"
-	db "Put in Bag@"
-	db "Attach Mail@"
-	db "Cancel@"
+	db "Lies Brief@"
+	db "Verstauen@"
+	db "Brief beifügen@"
+	db "Zurück@"

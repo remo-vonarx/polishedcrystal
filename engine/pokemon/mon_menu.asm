@@ -216,7 +216,7 @@ GiveTakePartyMonItem:
 	ret
 
 .noItemString
-	db "No held item@"
+	db "Kein Item@"
 
 .GiveItem:
 	call GetItemToGive
@@ -511,16 +511,16 @@ _UpdateMewtwoForm:
 
 GiveTakeItemMenuData:
 	db MENU_BACKUP_TILES | MENU_SPRITE_ANIMS
-	menu_coords 13, 10, 19, 17
+	menu_coords 11, 6, 19, 13
 	dw .Items
 	db 1 ; default option
 
 .Items:
 	db %10000000 ; x padding
 	db 3 ; # items
-	db "Give@"
-	db "Take@"
-	db "Swap@"
+	db "Gib@"
+	db "Nimm@"
+	db "Tausch@"
 
 TookAndMadeHoldText:
 	text_farend _PokemonSwapItemText
@@ -539,8 +539,8 @@ SwitchAlreadyHoldingText:
 CantBeHeldText:
 	text_farend _ItemCantHeldText
 CantPlaceMailInStorageText:
-	text "Can't place Mail in"
-	line "storage."
+	text "Briefe kann man"
+	line "nicht lagern."
 	prompt
 
 GetPartyItemLocation:
@@ -625,16 +625,16 @@ MonMailAction:
 
 .MenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 12, 10, 19, 17
+	menu_coords 11, 10, 19, 17
 	dw .MenuData2
 	db 1 ; default option
 
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "Read@"
-	db "Take@"
-	db "Quit@"
+	db "Lies@"
+	db "Nimm@"
+	db "Zurück@"
 
 TakeMail:
 	ld hl, .sendmailtopctext
@@ -1345,8 +1345,8 @@ MoveScreenLoop:
 	db WHIRLPOOL, HM_WHIRLPOOL ; just in case there are wild-less whirlpools
 
 .MustSaveFirst:
-	text "Please save the"
-	line "game first."
+	text "Bitte sichere"
+	line "zuerst das Spiel."
 	prompt
 
 GetForgottenMoves::
@@ -1432,7 +1432,7 @@ GetForgottenMoves::
 	ret
 
 String_MoveSwap:
-	db "Switch with?@"
+	db "Tauschen mit?@"
 
 SetUpMoveScreenBG:
 	call ClearBGPalettes
@@ -1703,7 +1703,7 @@ String_na:
 	db "---@"
 
 String_PowAcc:
-	db "   <BOLDP>/   %@"
+	db "   P/   %@"
 
 Text_CantForgetHM:
 	text_farend _MoveCantForgetHMText

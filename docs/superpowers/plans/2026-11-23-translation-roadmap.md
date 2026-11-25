@@ -161,8 +161,8 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 ### Task 8: Menus and screens
 
-- [ ] Start menu, party, summary, Bag menus, boxes, trainer card, options, naming screen, save, the main menu and the title screen's prompts, move reminder and deleter, intro, Hall of Fame.
-- [ ] Test: every screen and every menu state.
+- [x] Start menu, party, summary, Bag menus, boxes, trainer card, options, naming screen, save, the main menu and the title screen's prompts, move reminder and deleter, intro, Hall of Fame.
+- [x] Test: every screen and every menu state (the link trade menus only by position in the code).
 - [ ] Ship.
 
 ### Task 9: Descriptions
@@ -218,6 +218,7 @@ The people and story scenes K left, in story order. Each task: the region's maps
 
 - [ ] The title logo's subtitle "Polished Crystal" (`gfx/title/logo.png`): German wording proposed and asked (Kristall's logo says "Kristall-Edition"), drawn in the logo's style.
 - [ ] The credits (`data/credits_strings.asm`), what K left: the role lines as in Kristall's credits, the "#mon Crystal Version Staff" heading, and the US version staff block (keep it, or Kristall's German staff block in its place: ask).
+- [ ] The music player (main menu and the GBC Player item): its labels and about 195 song titles (`audio/music_player.asm`, `data/music_player/`). Decided 2026-11-25: here, with the credits.
 - [ ] The "The End" graphic (`gfx/credits/theend.png`) as Kristall's "Ende".
 - [ ] Test: the title screen in both ROMs; the credits through to the end, compared with Kristall's by position.
 - [ ] Ship.

@@ -89,7 +89,7 @@ SummaryScreen_GreenPage:
 INCLUDE "gfx/stats/green_page.pal"
 
 .NoHeldItemString:
-	db "No held item@"
+	db "Kein Item@"
 
 .PrintMoves
 	; Clear move names
@@ -245,7 +245,7 @@ endr
 	db "---@"
 
 .String_PowAcc:
-	db "  <BOLDP>/   %@"
+	db "  P/   %@"
 
 SummaryScreen_MoveInfoLoop:
 	ld a, SUMMARY_TILE_OAM_MOVE_TITLE

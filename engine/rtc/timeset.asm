@@ -235,7 +235,7 @@ Text_WhatTimeIsIt:
 	; What time is it?
 	text_farend _OakTimeWhatTimeIsItText
 String_oclock:
-	db "o'clock@"
+	db "Uhr@"
 
 Text_HowManyMinutes:
 	; How many minutes?
@@ -306,14 +306,14 @@ Special_SetDayOfWeek:
 	call LoadStandardMenuHeader
 	ld hl, .WhatDayIsItText
 	call PrintText
-	hlcoord 9, 3
-	lb bc, 2, 9
+	hlcoord 8, 3
+	lb bc, 2, 10
 	call Textbox
-	hlcoord 14, 3
+	hlcoord 13, 3
 	ld [hl], '▲'
-	hlcoord 14, 6
+	hlcoord 13, 6
 	ld [hl], '▼'
-	hlcoord 10, 5
+	hlcoord 9, 5
 	call .PlaceWeekdayString
 	call ApplyTilemap
 	ld c, 10
@@ -382,10 +382,10 @@ Special_SetDayOfWeek:
 	xor a
 	assert NO_BG_MAP_TRANSFER == 0
 	ldh [hBGMapMode], a
-	hlcoord 10, 4
-	lb bc, 2, 9
+	hlcoord 9, 4
+	lb bc, 2, 10
 	call ClearBox
-	hlcoord 10, 5
+	hlcoord 9, 5
 	call .PlaceWeekdayString
 	call ApplyTilemapInVBlank
 	and a
@@ -416,13 +416,13 @@ Special_SetDayOfWeek:
 	dw .Saturday
 	dw .Sunday
 
-.Sunday:    db " Sunday@"
-.Monday:    db " Monday@"
-.Tuesday:   db " Tuesday@"
-.Wednesday: db "Wednesday@"
-.Thursday:  db "Thursday@"
-.Friday:    db " Friday@"
-.Saturday:  db "Saturday@"
+.Sunday:    db "Sonntag@"
+.Monday:    db "Montag@"
+.Tuesday:   db "Dienstag@"
+.Wednesday: db "Mittwoch@"
+.Thursday:  db "Donnerstag@"
+.Friday:    db "Freitag@"
+.Saturday:  db "Samstag@"
 
 .WhatDayIsItText:
 	; What day is it?
@@ -536,10 +536,10 @@ TimeOfDayStrings:
 	dr EVE_String
 	assert_table_length NUM_DAYTIMES
 
-NITE_String: db "Night@"
-MORN_String: db "Morning@"
-DAY_String:  db "Day@"
-EVE_String:  db "Evening@"
+NITE_String: db "Nacht@"
+MORN_String: db "Vormittag@"
+DAY_String:  db "Tag@"
+EVE_String:  db "Abend@"
 
 PlaceCaughtTimeOfDayString::
 	and CAUGHT_TIME_MASK

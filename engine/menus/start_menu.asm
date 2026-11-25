@@ -173,13 +173,13 @@ StartMenu::
 
 .PokedexString:  db "#dex@"
 .PartyString:    db "#mon@"
-.PackString:     db "Bag@"
+.PackString:     db "Beutel@"
 .StatusString:   db "<PLAYER>@"
-.SaveString:     db "Save@"
-.OptionString:   db "Options@"
-.ExitString:     db "Exit@"
-.PokegearString: db "<PO><KE>gear@"
-.QuitString:     db "Quit@"
+.SaveString:     db "Sichern@"
+.OptionString:   db "Option@"
+.ExitString:     db "Zurück@"
+.PokegearString: db "<PO><KE>Com@"
+.QuitString:     db "Fertig@"
 
 .OpenMenu:
 	ld a, [wMenuSelection]

@@ -307,3 +307,78 @@ Palmer and Thorton; their texts follow HeartGold/SoulSilver's German.
 
 **Last-Pokémon lines**:
 A trainer's line at their last Pokémon follows the German of the game the English comes from (mostly HeartGold/SoulSilver).
+
+## Menus
+
+**Status**, **Tausch**, **Zurück**:
+Summary, Switch and Cancel in every menu of a Pokémon, as Kristall has them. Zurück also closes lists and the START menu (Cancel, Exit, Quit); Abbrechen only in the link trade.
+_Avoid_: Bericht, Wechseln (in menus of a Pokémon)
+
+**Ja**, **Nein**:
+Yes and No. Every box that holds them is as wide as Kristall's.
+
+**Angr**, **Ver**, **Init**, **Spez.Ang**, **Spez.Ver**:
+The stats in tables (summary, level up, hyper training), Kristall's words. The judge machine's drawn labels have Sp.Ang and Sp.Ver. Item messages name the stat in full, as in battle; the Wing Case's help line alone shortens three of them ("Erhöht Vert.", "Erhöht Spez.-Angr.", "Erhöht Spez.-Vert.").
+_Avoid_: Vert., Spezial
+
+**Fähigk.**, **Fundort**, **Attacke**, **Item**, **EP**:
+The tabs drawn on the summary pages. Fähigkeit doesn't fit its tab.
+
+**Bes.**:
+Besitz, in the Mart's box that counts how many you already have.
+_Avoid_: Btl.
+
+**Gib**, **Nimm**, **Lies**, **Bewege**:
+The item menus (Give, Take, Read, Move).
+
+**Lösch**, **Ende**, **klein**, **Groß**:
+The bottom row of the naming screens, as Kristall. The first word names the letters it switches to.
+
+**Text-Tempo**, **Kampfanimation**, **Kampfstil**, **Rahmen**, **Wechsel**, **Folgend**:
+Options, Kristall's words. Own: Auto-Textlauf, Schriftart, Tastatur, Spitznamen, Turbotreter (the official Running Shoes), Dreh-Tempo, Uhrzeit-Format, Pokédex-Maße, Ansage (Predict), Fertig (Done).
+
+**Option**, **Optionen**:
+The START menu's entry and the main menu's entry, as Kristall has them.
+
+**FP**, **Wesen**, **Fähigkeit**, **Phys/Spez-Split**:
+Options of a new game (EVs, Natures, Abilities, the physical/special split).
+_Avoid_: EV, Basispunkte
+
+**Charakter**:
+The heading above a Pokémon's characteristic; the 30 characteristics are the official ones.
+
+**Ablegen**, **Mitnehmen**, **Freilassen**, **Wechseln**, **Name**, **Design**:
+The Boxes (Deposit, Withdraw, Release, Change, Rename, Theme). The mode button says SEL MENÜ, SEL TAUSCH, SEL ITEM.
+_Avoid_: Thema
+
+**Machs gut,**:
+The Boxes' goodbye to a released Pokémon, instead of Kristall's Ade.
+_Avoid_: Ade
+
+**Idylle**, **Klassisch**:
+Box designs Bliss (the Windows XP picture) and Classic. Designs named after types carry the type's name.
+
+**Bills PC**, **Eichs PC**, **<PLAYER>s PC**, **Ausloggen**:
+The PC menu, with Kristall's plain s.
+
+**Erspartes**:
+Money saved with Mom. Kristall's Ersparnisse is one letter too long for Polished's seven digits.
+_Avoid_: Ersparnisse
+
+**Fleiß**, **Potenzial**:
+The judge machine's pages (Effort, Potential).
+
+**Melden**, **Erstes**, **Zweites**, **Drittes**, **L.Gegner**:
+Choosing Pokémon for the Battle Tower and Battle Factory. L.Gegner marks the beaten opponent's Pokémon in the swap list.
+
+**GP**:
+Gewinnpunkte (Battle Points); Pkt for points in the corner boxes.
+
+**Glück**:
+The trendy phrase that opens the Glücksinsel (Lucky). **Nichts** is the trend before the player sets one.
+
+**RH-Einsteiger**, **RH-Meister**:
+The Hall of Fame's headings, Kristall's words.
+
+**24 hours, metric**:
+What a new game starts with, as in Kristall; Upstream starts with 12 hours and imperial units.

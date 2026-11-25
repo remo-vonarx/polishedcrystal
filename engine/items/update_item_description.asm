@@ -37,7 +37,7 @@ UpdateItemDescription:
 	farjp PrintItemDescription
 
 BagString:
-	db "Bag @"
+	db "Bes.@"
 
 UpdateExpCandyDescriptionAndBagQuantity:
 	hlcoord 1, 1
@@ -105,9 +105,9 @@ UpdateTMHMDescription:
 	farjp PrintTMHMDescription
 
 OwnedTMString:
-	db "Owned@"
+	db "Hast du@"
 UnownedTMString:
-	db "Unowned@"
+	db "Fehlt@"
 
 UpdateKeyItemDescription:
 	hlcoord 0, 12

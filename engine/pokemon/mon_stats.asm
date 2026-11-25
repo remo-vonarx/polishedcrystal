@@ -120,13 +120,13 @@ endr
 	ret
 
 AllStatNames:
-	db   "Health<NEXT>"
+	db   "KP<NEXT>"
 MostStatNames:
-	db   "Attack"
-	next "Defense"
-	next "Sp.Atk"
-	next "Sp.Def"
-	next "Speed"
+	db   "Angr"
+	next "Ver"
+	next "Spez.Ang"
+	next "Spez.Ver"
+	next "Init"
 	next "@"
 
 PrintStatDifferences:
@@ -461,11 +461,11 @@ ListMovePP:
 	ld e, a
 	ld d, 0
 .pp_loop
-	ld a, SUMMARY_TILE_PP_START
+	ld a, 'A'
 	ld [hli], a
-	inc a
+	ld a, 'P'
 	ld [hli], a
-	inc a
+	ld a, ' '
 	ld [hld], a
 	dec hl
 	add hl, de
@@ -1003,13 +1003,13 @@ PlaceStatusString:
 StatusStrings:
 	table_width 3
 	rawchar "OK "
-	rawchar "Psn"
+	rawchar "Gif"
 	rawchar "Par"
-	rawchar "Slp"
-	rawchar "Brn"
-	rawchar "Frz"
+	rawchar "Slf"
+	rawchar "Brt"
+	rawchar "Gfr"
 	rawchar "Tox"
-	rawchar "Fnt"
+	rawchar "Bsg"
 	assert_table_length 8
 
 ListMoves:

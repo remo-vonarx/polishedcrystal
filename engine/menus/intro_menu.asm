@@ -56,18 +56,15 @@ NewGamePlus:
 	jr _NewGame_FinishSetup
 
 .text
-	text "New Game+ will"
-	line "keep your previous"
+	text "Neues Spiel+"
+	line "übernimmt Geld und"
+	cont "GP des alten"
+	cont "Spiels sowie alle"
+	cont "#mon im PC!"
 
-	para "game's money,"
-	line "Battle Points, and"
-
-	para "any #mon stored"
-	line "in the PC!"
-
-	para "Are you sure you"
-	line "you want to start"
-	cont "New Game+?"
+	para "Möchtest du"
+	line "wirklich Neues"
+	cont "Spiel+ starten?"
 	done
 
 NewGame:
@@ -464,11 +461,11 @@ DisplaySaveInfoOnContinue:
 	call CheckRTCStatus
 	and %10000000
 	jr z, .clock_ok
-	lb de, 4, 8
+	lb de, 2, 8
 	jr DisplayContinueDataWithRTCError
 
 .clock_ok
-	lb de, 4, 8
+	lb de, 2, 8
 	jr DisplayNormalContinueData
 
 DisplaySaveInfoOnSave:
@@ -506,46 +503,46 @@ Continue_LoadMenuHeader:
 
 .MenuDataHeader_Dex:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 0, 15, 9
+	menu_coords 0, 0, 17, 9
 	dw .MenuData2_Dex
 	db 1 ; default option
 
 .MenuData2_Dex:
 	db $00 ; flags
 	db 4 ; items
-	db "Player@"
-	db "Badges@"
+	db "Spieler@"
+	db "Orden@"
 	db "#dex@"
-	db "Time@"
+	db "Spielzeit@"
 
 .MenuDataHeader_NoDex:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 0, 15, 9
+	menu_coords 0, 0, 17, 9
 	dw .MenuData2_NoDex
 	db 1 ; default option
 
 .MenuData2_NoDex:
 	db $00 ; flags
 	db 4 ; items
-	db "Player <PLAYER>@"
-	db "Badges@"
+	db "Spieler  <PLAYER>@"
+	db "Orden@"
 	db " @"
-	db "Time@"
+	db "Spielzeit@"
 
 Continue_DisplayBadgesDexPlayerName:
 	call MenuBoxCoord2Tile
 	push hl
-	decoord 13, 4, 0
+	decoord 15, 4, 0
 	add hl, de
 	call Continue_DisplayBadgeCount
 	pop hl
 	push hl
-	decoord 12, 6, 0
+	decoord 14, 6, 0
 	add hl, de
 	call Continue_DisplayPokedexNumCaught
 	pop hl
 	push hl
-	decoord 8, 2, 0
+	decoord 10, 2, 0
 	add hl, de
 	ld de, .Player
 	rst PlaceString
@@ -556,12 +553,12 @@ Continue_DisplayBadgesDexPlayerName:
 	db "<PLAYER>@"
 
 Continue_PrintGameTime:
-	decoord 9, 8, 0
+	decoord 11, 8, 0
 	add hl, de
 	jr Continue_DisplayGameTime
 
 Continue_UnknownGameTime:
-	decoord 9, 8, 0
+	decoord 11, 8, 0
 	add hl, de
 	ld de, .three_question_marks
 	rst PlaceString

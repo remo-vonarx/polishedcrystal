@@ -3,9 +3,9 @@
 
 Usage: python3 -I utils/check_text_width.py [file.asm|directory ...]
 
-Dialogue, signs and phone calls print 18 tiles per line, Pokédex entries and
-ability descriptions 19 (FILE_WIDTHS), and the few texts placed on a plain
-screen from column 0 (SCREEN_TEXTS) 20.
+Dialogue, signs and phone calls print 18 tiles per line, Pokédex entries,
+ability descriptions and the egg's summary page 19 (FILE_WIDTHS), and the few
+texts placed on a plain screen from column 0 (SCREEN_TEXTS) 20.
 Checks maps/, data/, engine/ and home/ when no paths are given.
 
 - A line whose width depends on a runtime value (text_ram, <USER>, {d:...})
@@ -27,6 +27,7 @@ MAX_WIDTH = 18
 FILE_WIDTHS = {
     'data/pokemon/dex_entries.asm': 19,  # engine/pokedex/pokedex.asm clears 5 x 19 tiles from column 1
     'data/abilities/descriptions.asm': 19,  # PrintAbilityDescription (engine/pokemon/abilities.asm): hlcoord 1, 15
+    'engine/pokemon/summary/egg_page.asm': 19,  # the summary's lower half, hlcoord 1, 13
 }
 UNKNOWN = -1000  # pushes a line with a runtime-sized part below any limit
 SKIP_FILES = {'credits_strings.asm'}  # the credits have their own layout

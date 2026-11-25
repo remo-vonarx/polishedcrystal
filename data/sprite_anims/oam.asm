@@ -783,10 +783,11 @@ SpriteAnimOAMData:
 	dsprite  1,  0,  1,  0, $1b, $6 | OAM_BANK1
 
 .OAMData_PcMode:
-	db 3
+	db 4
 	dsprite  0,  0,  2,  0, $26, $2 | OAM_BANK1
 	dsprite  0,  0,  3,  0, $27, $2 | OAM_BANK1
 	dsprite  0,  0,  4,  0, $28, $2 | OAM_BANK1
+	dsprite  0,  0,  5,  0, $29, $2 | OAM_BANK1
 
 .OAMData_PcMode2:
 	db 2
@@ -795,10 +796,10 @@ SpriteAnimOAMData:
 
 .OAMData_PcPack:
 	db 4
-	dsprite  0,  0,  0,  0, $2f, $4 | OAM_BANK1
-	dsprite  0,  0,  1,  0, $30, $4 | OAM_BANK1
-	dsprite  1,  0,  0,  0, $31, $4 | OAM_BANK1
-	dsprite  1,  0,  1,  0, $32, $4 | OAM_BANK1
+	dsprite  0,  0,  0,  0, $32, $4 | OAM_BANK1
+	dsprite  0,  0,  1,  0, $33, $4 | OAM_BANK1
+	dsprite  1,  0,  0,  0, $34, $4 | OAM_BANK1
+	dsprite  1,  0,  1,  0, $35, $4 | OAM_BANK1
 
 .OAMData_DexCursor:
 	db 12

@@ -135,7 +135,7 @@ SummaryScreen_PinkPage:
 	hlcoord 1, 15
 	rst PlaceString
 	ld de, .ToStr
-	hlcoord 13, 17
+	hlcoord 12, 17
 	rst PlaceString
 	hlcoord 16, 17
 	call .PrintNextLevel
@@ -257,18 +257,18 @@ INCLUDE "gfx/stats/pink_page.pal"
 	done
 
 .Rental_OT:
-	text  "Rental"
+	text  "Leih-"
 	next1 "  #mon"
 	done
 
 .ExpPointStr:
-	db "Exp.Points@"
+	db "EP-Punkte@"
 
 .LevelUpStr:
 	db "Level Up@"
 
 .ToStr:
-	db "to@"
+	db "auf@"
 
 CopyNickname:
 	ld de, wStringBuffer1

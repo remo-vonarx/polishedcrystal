@@ -346,7 +346,7 @@ ExchangeBytes:
 	ret
 
 String_PleaseWait:
-	text "Please wait!"
+	text "Bitte warten…!"
 	done
 
 ClearLinkData:
@@ -654,7 +654,7 @@ InitTradeSpeciesList:
 INCBIN "gfx/trade/border.tilemap.lzp"
 
 .Cancel:
-	text "Cancel"
+	text "Abbrechen"
 	done
 
 PlaceTradePartnerNamesAndParty:
@@ -1192,7 +1192,7 @@ LinkTrade_TradeSummaryMenu:
 	; If you trade that #MON, you won't be able to battle.
 	text_farend _LinkTradeCantBattleText
 .String_Summary_Trade:
-	text "Summary   Trade"
+	text "Status    Tausch"
 	done
 
 .Text_Abnormal:
@@ -1685,20 +1685,20 @@ LinkTrade:
 	jmp Gen2ToGen2LinkComms
 
 .TradeCancel:
-	text "Trade"
-	next "Cancel"
+	text "Tausch"
+	next "Abbrechen"
 	done
 
 .TradeThisForThat:
 	; Trade @ for @ ?
 	text_farend _LinkAskTradeForText
 .TradeCompleted:
-	text "Trade completed!"
+	text "Tausch vollzogen!"
 	done
 
 String_TooBadTheTradeWasCanceled:
-	text "Too bad! The trade"
-	next "was canceled!"
+	text "Schade! Der Tausch"
+	next "wurde abgebrochen!"
 	done
 
 LinkTextbox::
@@ -1785,7 +1785,7 @@ PlaceWaitingTextAndSyncAndExchangeNybble:
 	jmp ApplyAttrAndTilemapInVBlank
 
 .Waiting:
-	text "Waiting…!"
+	text "Bitte warten…!"
 	done
 
 LoadTradeScreenGFX:
@@ -2757,7 +2757,7 @@ PlaceWaitingText::
 	jmp DelayFrames
 
 .Waiting:
-	db "Waiting…!@"
+	db "Bitte warten…!@"
 
 Serial_SyncAndExchangeNybble::
 	vc_hook Wireless_WaitLinkTransfer

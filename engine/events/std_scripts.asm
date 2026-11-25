@@ -339,19 +339,19 @@ DayToTextScript:
 	getstring .SaturdayText, STRING_BUFFER_3
 	end
 .SundayText:
-	db "Sunday@"
+	db "Sonntag@"
 .MondayText:
-	db "Monday@"
+	db "Montag@"
 .TuesdayText:
-	db "Tuesday@"
+	db "Dienstag@"
 .WednesdayText:
-	db "Wednesday@"
+	db "Mittwoch@"
 .ThursdayText:
-	db "Thursday@"
+	db "Donnerstag@"
 .FridayText:
-	db "Friday@"
+	db "Freitag@"
 .SaturdayText:
-	db "Saturday@"
+	db "Samstag@"
 
 BugContestResultsWarpScript:
 	special ClearBGPalettes
@@ -1594,7 +1594,7 @@ CoinVendor_IntroScript:
 	db 3 ; items
 	db " 50 :  ¥1000@"
 	db "500 : ¥10000@"
-	db "Cancel@"
+	db "Zurück@"
 
 HappinessCheckScript:
 	faceplayer
@@ -1711,10 +1711,10 @@ VendingMachineScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Fresh Water  ¥200@"
-	db "Soda Pop     ¥300@"
-	db "Lemonade     ¥350@"
-	db "Cancel@"
+	db "Tafelwasser  ¥200@"
+	db "Sprudel      ¥300@"
+	db "Limonade     ¥350@"
+	db "Zurück@"
 
 TreeGrottoScript:
 	scall _HiddenGrottoInitScript

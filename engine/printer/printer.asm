@@ -220,7 +220,7 @@ PlacePrinterStatusString:
 	ret
 
 String_PressBToCancel:
-	db "Press B to Cancel@"
+	db "  Abbr. B-Knopf@"
 
 PrinterStatusStringPointers:
 	dw GBPrinterString_Null ; @
@@ -233,30 +233,30 @@ PrinterStatusStringPointers:
 	dw GBPrinterString_PrinterError4 ; error 4
 
 GBPrinterString_Null: db "@"
-GBPrinterString_CheckingLink: next " Checking link…@"
-GBPrinterString_Transmitting: next "  Transmitting…@"
-GBPrinterString_Printing:     next "    Printing…@"
+GBPrinterString_CheckingLink: next "   Prüfe Link…@"
+GBPrinterString_Transmitting: next "   Übertragung@"
+GBPrinterString_Printing:     next "     Drucken@"
 GBPrinterString_PrinterError1:
-	db   " Printer Error 1"
+	db   " Druckerfehler 1"
 	next ""
-	next "The batteries have"
-	next "lost their charge."
+	next "Die Batterien sind"
+	next "leer."
 	db   "@"
 GBPrinterString_PrinterError2:
-	db   " Printer Error 2"
+	db   " Druckerfehler 2"
 	next ""
-	next "The Game Link"
-	next "Cable is not set."
+	next "Das Linkkabel ist"
+	next "nicht verbunden."
 	db   "@"
 GBPrinterString_PrinterError3:
-	db   " Printer Error 3"
+	db   " Druckerfehler 3"
 	next ""
-	next "The paper is"
-	next "jammed or empty."
+	next "Das Papier klemmt"
+	next "oder fehlt."
 	db   "@"
 GBPrinterString_PrinterError4:
-	db   " Printer Error 4"
+	db   " Druckerfehler 4"
 	next ""
-	next "The temperature is"
-	next "too hot or cold."
+	next "Es ist zu heiß"
+	next "oder zu kalt."
 	db   "@"

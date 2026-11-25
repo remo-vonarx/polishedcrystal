@@ -157,7 +157,7 @@ PlaceBlueCardPointsTopRight:
 	ret
 
 .PointsString:
-	db " Pts@"
+	db " Pkt@"
 
 PlaceBattlePointsTopRight:
 	hlcoord 10, 0
@@ -207,9 +207,9 @@ Special_DisplayMoneyAndCoinBalance:
 	jmp PrintNum
 
 MoneyString:
-	db "Money@"
+	db "Geld@"
 CoinString:
-	db "Coin@"
+	db "Münzen@"
 
 StartMenu_DrawBugContestStatusBox:
 	hlcoord 0, 0
@@ -263,10 +263,10 @@ StartMenu_PrintBugContestStatus:
 	ret
 
 .Caught:
-	db "Caught@"
+	db "Besitz:@"
 .Balls:
-	db "Balls:@"
+	db "Bälle:@"
 .None:
-	db "None@"
+	db "Keine@"
 .Level:
 	db "Level@"

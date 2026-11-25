@@ -186,16 +186,16 @@ NamingScreen:
 INCLUDE "data/player/sprite_anims.asm"
 
 .PlayerNameString:
-	db "Your name?@"
+	db "Dein Name?@"
 
 .RivalNameString:
-	db "Rival's name?@"
+	db "Gegner-Name?@"
 
 .TrendyPhraseString:
-	db "What's trendy?@"
+	db "Was ist Trend?@"
 
 .BoxNameString:
-	db "Box name?@"
+	db "Box Name?@"
 
 NamingScreen_InitText:
 	call WaitTop
@@ -396,7 +396,8 @@ NamingScreenJoypadLoop:
 	jr z, .ready
 	ld de, NameInputUpperQwerty
 .ready
-	jmp NamingScreen_ApplyTextInputMode
+	call NamingScreen_ApplyTextInputMode
+	jmp NamingScreen_PlaceShiftDelEnd
 
 NamingScreen_PressedA_GetCursorCommand:
 	ld hl, wNamingScreenCursorObjectPointer
@@ -1056,7 +1057,8 @@ INCBIN "gfx/naming_screen/mail.2bpp.lzp"
 	jr z, .ready
 	ld de, MailEntryQwerty_Lowercase
 .ready
-	jmp .PlaceMailCharset
+	call .PlaceMailCharset
+	jr NamingScreen_PlaceShiftDelEnd
 
 NamingScreen_DrawBorders:
 	; message area
@@ -1074,10 +1076,7 @@ NamingScreen_DrawBorders:
 	hlcoord 0, SCREEN_HEIGHT - 3
 	lb bc, 1, SCREEN_WIDTH - 2
 	call .DrawBox
-	hlcoord 2, SCREEN_HEIGHT - 2
-	ld de, .ShiftDelEnd
-	rst PlaceString
-	ret
+	jr NamingScreen_PlaceShiftDelEnd
 
 .DrawBox:
 	ld de, .Frame
@@ -1094,5 +1093,19 @@ NamingScreen_DrawBorders:
 	db NAMINGSCREEN_BORDER + 6
 	db NAMINGSCREEN_BORDER + 7
 
-.ShiftDelEnd:
-	db "Shift  Del   End@"
+NamingScreen_PlaceShiftDelEnd:
+	ld de, .ShowingUpper
+	ld a, [wNamingScreenLetterCase]
+	and a
+	jr z, .place
+	ld de, .ShowingLower
+.place
+	hlcoord 2, SCREEN_HEIGHT - 2
+	rst PlaceString
+	ret
+
+.ShowingUpper:
+	db "klein  Lösch Ende@"
+
+.ShowingLower:
+	db "Groß   Lösch Ende@"

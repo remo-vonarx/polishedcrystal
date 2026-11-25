@@ -115,7 +115,7 @@ AnimateHallOfFame:
 	ret
 
 .String_NewHallOfFamer:
-	db "New Hall of Famer!@"
+	db "RH-Einsteiger@"
 
 GetHallOfFameParty:
 	ld hl, wOverworldMapBlocks
@@ -381,10 +381,10 @@ _HallOfFamePC:
 	ret
 
 .HOFMaster:
-	db "    HOF Master!@"
+	db "    RH-Meister@"
 
 .TimeFamer:
-	db "    -Time Famer@"
+	db "    .RH-Eintrag@"
 
 LoadHOFTeam:
 	ld a, [wJumptableIndex]
@@ -589,4 +589,4 @@ HOF_AnimatePlayerPic:
 	jmp DelayFrames
 
 .PlayTime:
-	db "Play Time@"
+	db "Spielzeit@"
