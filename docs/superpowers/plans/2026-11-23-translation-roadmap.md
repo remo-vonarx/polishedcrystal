@@ -145,8 +145,8 @@ From here each task holds only what K left: Polished's changed lines, starting f
 
 ### Task 6: Receiving and shared texts
 
-- [ ] `data/text/common.asm` and `data/text/std_text.asm`: items, key items, TMs, Pokémon, eggs, badges; PC, Pokémon Center, Mart, day care, field moves, item balls, fruit trees.
-- [ ] Test: each kind of receiving text, each service, each field move.
+- [x] `data/text/common.asm` and `data/text/std_text.asm`: items, key items, TMs, Pokémon, eggs, badges; PC, Pokémon Center, Mart, day care, field moves, item balls, fruit trees.
+- [x] Test: each kind of receiving text, each service, each field move.
 - [ ] Ship.
 
 ### Task 7: Battle

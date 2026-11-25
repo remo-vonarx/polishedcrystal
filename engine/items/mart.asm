@@ -1267,7 +1267,7 @@ BTMenuDataHeader_Buy:
 	ret
 
 .PointsString:
-	db " BP@"
+	db " GP@"
 
 GetCursorItemPointCost:
 	ld a, [wScrollingMenuCursorPosition]
