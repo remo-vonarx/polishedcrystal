@@ -4635,9 +4635,9 @@ BattleMenuPKMN_Loop:
 .MenuData:
 	db $c0 ; flags
 	db 3 ; items
-	db "Switch@"
-	db "Summary@"
-	db "Cancel@"
+	db "Tausch@"
+	db "Status@"
+	db "Zurück@"
 
 AI_OpponentCanSwitch:
 	call StackCallOpponentTurn
@@ -5599,14 +5599,15 @@ MoveInfoBox:
 	ret
 
 .PowAcc:
-	db "   <BOLDP>/   %@"
+	db "   P/   %@"
 .NA:
 	db "---@"
 
 .PrintPP:
 	hlcoord 2, 11
-	ld a, '<BOLDP>'
+	ld a, 'A'
 	ld [hli], a
+	ld a, 'P'
 	ld [hli], a
 	inc hl
 	push hl
@@ -8246,7 +8247,7 @@ ShowLinkBattleResult:
 	; fallthrough
 
 .store_result
-	hlcoord 6, 8
+	hlcoord 3, 8
 	rst PlaceString
 	ld c, 200
 	call DelayFrames
@@ -8263,11 +8264,11 @@ ShowLinkBattleResult:
 	jmp ClearTileMap
 
 .Win:
-	db "You Win@"
+	db "   Gewonnen   @"
 .Lose:
-	db "You Lose@"
+	db "   Verloren   @"
 .Draw:
-	db "  Draw@"
+	db "Unentschieden @"
 
 DisplayLinkRecord:
 	ld a, BANK(sLinkBattleStats)
@@ -8412,13 +8413,13 @@ ReadAndPrintLinkBattleRecord:
 	next1 "         -    -    -"
 	done
 .Record:
-	text "<PLAYER>'s Record"
+	text "<PLAYER>s Statistik"
 	done
 .Result:
-	text "Result Win Lose Draw"
+	text "Erg. Gew. Verl. Patt"
 	done
 .Total:
-	text "Total  Win Lose Draw"
+	text "Ges. Gew. Verl. Patt"
 	done
 
 BattleEnd_HandleRoamMons:

@@ -256,3 +256,54 @@ The Map Card, the Radio Card and the Expansion Card.
 
 **Decorations**:
 Kristall's decoration names in mixed case: Baumpflanze, Tropenpflanze, Riesenpflanze, Goldtrophäe, Silbertrophäe, Surfer Pikachu-P.; a Pokémon's poster and doll have a hyphen (Marill-Poster, Bisasam-Puppe), a big one is Riesiges Relaxo. Super NES, Nintendo 64, GameCube and Wii stay.
+
+## Battle
+
+**Stat names**:
+In full in battle messages: Angriff, Verteidigung, Initiative, Spez.-Angriff, Spez.-Verteidigung, Genauigkeit, Fluchtwert; Statuswert where the English says "stats" (Curse).
+_Avoid_: ANGR, VER, INIT (Kristall's abbreviations in these messages), Spezial-Verteidigung
+
+**Possessive 's in battle**:
+Every Pokémon's and the player's name in a battle text takes 's ("Endivie's Angriff steigt!", "Arktos's Hagelalarm"). Outside battle, and on the link record, names keep Kristall's plain s (Linds, Bills, "<PLAYER>s Statistik").
+_Avoid_: Endivies
+
+**Stat message**:
+Name and stat, then the box scrolls by itself to the verb, as Kristall's strong stat changes do: steigt, sinkt; stark (two stages); drastisch (three); "steigt durch {Item}" for an item.
+
+**ben.**:
+benutzt, before the move's name, as Kristall shortens it ("Endivie / ben. Solarstrahl!").
+
+**Gegn.**:
+The foe's Pokémon in battle texts (Gegn. Natu), Kristall's abbreviation.
+_Avoid_: Feind
+
+**Dein**, **Gegner**:
+Whose side an effect ends on ("Dein / Bodyguard / schwindet!"), as Kristall has it.
+
+**Kampf**, **Beutel**, **Flucht**:
+The battle menu; Kristall shortens the first to KMPF. The Safari Game has Köder and Stein, the Bug-Catching Contest and the Safari Game count Balls as Ball×.
+_Avoid_: KMPF, Angriff, Tasche
+
+**Tausch**, **Status**, **Zurück**:
+The menu of a Pokémon in battle (Switch, Summary, Cancel), Kristall's words.
+
+**GIF**, **PAR**, **SLF**, **BRT**, **GFR**:
+The status labels in battle, as Kristall has them.
+
+**KP**, **EP**, **AP**:
+HP, Exp. Points and PP, on the bars and in the texts ("157 EP!"). The power of a move is P in the move box.
+
+**Geist**:
+The unidentified Ghost's name in battle, and who speaks ("Geist: / Verschwinde…").
+
+**Pairs of trainers**:
+Twins, Sen.&Jun., couples, duos and Jessie & James take the plural ("möchten kämpfen!", "setzen", "wurden besiegt!").
+
+**Statistik**, **Gew.**, **Verl.**, **Patt**:
+The link battle record, Kristall's words; the result screen says Gewonnen, Verloren, Unentschieden.
+
+**Turm-Tycoon Viktor**, **Fabrikchef Distmar**:
+Palmer and Thorton; their texts follow HeartGold/SoulSilver's German.
+
+**Last-Pokémon lines**:
+A trainer's line at their last Pokémon follows the German of the game the English comes from (mostly HeartGold/SoulSilver).

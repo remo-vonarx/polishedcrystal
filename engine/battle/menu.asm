@@ -37,26 +37,26 @@ _BattleMenuCommon:
 
 BattleMenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 8, 12, 19, 17
+	menu_coords 4, 12, 19, 17
 	dw .MenuData2
 	db 1 ; default option
 
 .MenuData2:
 	db $87 ; flags
 	dn 2, 2 ; rows, columns
-	db 6 ; spacing
+	db 7 ; spacing
 	dba .Strings
 	dbw BANK(.MenuData2), 0
 
 .Strings:
-	db "Fight@"
+	db "Kampf@"
 	db "<PK><MN>@"
-	db "Bag@"
-	db "Run@"
+	db "Beutel@"
+	db "Flucht@"
 
 ContestBattleMenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 5, 12, 19, 17
+	menu_coords 3, 12, 19, 17
 	dw .MenuData2
 	db 1 ; default option
 
@@ -68,20 +68,20 @@ ContestBattleMenuDataHeader:
 	dba ShowParkBallsRemaining
 
 .Strings:
-	db "Fight@"
+	db "Kampf@"
 	db "<PK><MN>@"
 	db "Ball×  @"
-	db "Run@"
+	db "Flucht@"
 
 ShowParkBallsRemaining:
-	hlcoord 12, 16
+	hlcoord 10, 16
 	ld de, wParkBallsRemaining
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	jmp PrintNum
 
 SafariBattleMenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 4, 12, 19, 17
+	menu_coords 3, 12, 19, 17
 	dw .MenuData2
 	db 1 ; default option
 
@@ -94,12 +94,12 @@ SafariBattleMenuDataHeader:
 
 .Strings:
 	db "Ball×  @"
-	db "Bait@"
-	db "Rock@"
-	db "Run@"
+	db "Köder@"
+	db "Stein@"
+	db "Flucht@"
 
 ShowSafariBallsRemaining:
-	hlcoord 11, 14
+	hlcoord 10, 14
 	ld de, wSafariBallsRemaining
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	jmp PrintNum
