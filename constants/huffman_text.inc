@@ -6,7 +6,7 @@
 huffleaf b, 00000000010
 huffmap b, "<DONE>", 1101001100001 ; 18
 huffmap b, "@", 0000011 ; 646
-huffmap b, "<PROMPT>", 10000110101100 ; 6
+huffesc b, "<PROMPT>", 0000000001001010100 ; 4
 huffesc b, "<LNBRK>", 0000000001001010101 ; 4
 huffmap b, "<NEXT>", 100001101001 ; 24
 huffmap b, "<LINE>", 00000101 ; 325
@@ -92,27 +92,27 @@ huffesc b, "é", 0000000001011001000 ; 0
 huffmap b, "Ä", 110100100110 ; 27
 huffmap b, "ä", 110100110001 ; 34
 huffesc b, "<BOLDH>", 0000000001011001011 ; 0
-huffmap b, "Ö", 00000000101110 ; 5
+huffmap b, "Ö", 00000000101101 ; 5
 huffmap b, "ö", 000000001001 ; 18
 huffmap b, "Ü", 100001101101 ; 26
 huffmap b, "ü", 100001100 ; 187
 huffesc b, "<PO>", 0000000001011010000 ; 0
 huffesc b, "<KE>", 0000000001011010001 ; 0
-huffmap b, "<PK>", 10000110101101 ; 6
+huffmap b, "<PK>", 10000110100011 ; 6
 huffesc b, "<MN>", 0000000001011010011 ; 0
 huffesc b, "<ID>", 0000000001011010100 ; 4
 huffesc b, "№", 0000000001011010101 ; 2
 huffesc b, "<LV>", 0000000001011010110 ; 4
 huffesc b, "<BOLDP>", 0000000001011010111 ; 0
-huffesc b, "&", 0000000001011011000 ; 4
+huffmap b, "&", 00000000101100 ; 4
 huffmap b, "♪", 100001101010 ; 24
-huffmap b, "♥", 0000000010110 ; 10
+huffmap b, "♥", 0000000010111 ; 10
 huffmap b, "×", 10000110101111 ; 7
 huffesc b, "/", 0000000001011011100 ; 0
 huffesc b, "%", 0000000001011011101 ; 0
 huffesc b, "+", 0000000001011011110 ; 1
 huffesc b, "<SHARP>", 0000000001011011111 ; 0
-huffmap b, "0", 00000000101111 ; 5
+huffmap b, "0", 10000110100010 ; 5
 huffmap b, "1", 0000000011 ; 78
 huffmap b, "2", 11010010010 ; 58
 huffmap b, "3", 0000000000 ; 71
@@ -127,7 +127,7 @@ huffmap b, "…", 10000111 ; 431
 huffmap b, "#", 00000001 ; 304
 huffmap b, "#mon", 101101 ; 1855
 huffmap b, "<PLAYER>", 0000001 ; 618
-huffmap b, "<RIVAL>", 1000011010001 ; 12
+huffmap b, "<RIVAL>", 1000011010110 ; 12
 huffmap b, "<TRENDY>", 11010011000000 ; 7
 
 ; Context v: 72 leaves, 71 parent nodes, 11 escaped symbols

@@ -28,7 +28,6 @@ LegendaryAppearedText:
 	text ""
 	line "erscheint!"
 	prompt
-	prompt
 
 GhostAppearedText:
 	text "Ein Geist"
@@ -77,7 +76,6 @@ BattleText_LegendaryFled:
 	text_ram wEnemyMonNickname
 	text ""
 	line "ist geflohen!"
-	prompt
 	prompt
 
 BattleText_EnemyFled:
