@@ -9,31 +9,30 @@ MACRO plural
 ENDM
 
 PluralTable:
-	; Note that order matters since "ay" is a subset of "y" for example.
-if !DEF(FAITHFUL)
-	plural "e of Rage", "es of Rage" ; Cakes of Rage
-endc
-	plural "Honey",     "Honey"      ; (Sweet) Honey
-	plural "ay",        "ays"        ; Light Clays, and Throat Sprays
-	plural "y",         "ies"        ; Rare Candies, Berries, etc
-	plural "x",         "xes"        ; PP Maxes
-	plural "lk",        "lk"         ; Moomoo Milk
-	plural "runch",     "runchies"   ; PewterCrunchies
-	plural "h",         "hes"        ; Sacred Ashes, Mulches, etc
-	plural "der",       "der"        ; Powders (EnergyPowder, Heal Powder, etc)
-if DEF(FAITHFUL)
-	plural "c.",        "cs."        ; Guard Specs.
-endc
-	plural "ts",        "ts"         ; Guard Stats, Heavy Boots
-	plural "ef",        "efs"        ; X Sp.Defs
-	plural "f",         "ves"        ; Silk Scarves, Silver Leaves, etc
-	plural "Sand",      "Sand"       ; Soft Sand
-	plural "es",        "es"         ; BlackGlasses, Wise Glasses, Safe Goggles
-	plural "rs",        "rs"         ; Leftovers
-	plural "ds",        "ds"         ; Protect Pads
-	plural "Dice",      "Dice"       ; Loaded Dice
-	plural "ns",        "nses"       ; Lenses (Scope Lenses, Wide Lenses, etc)
-	plural "s",         "s"          ; Carbos
-	plural "",          "s"          ; everything else
+	; Note that order matters since "uhe" is a subset of "e" for example.
+	; ROM0 has no room for every ending: a name without a rule keeps its singular form.
+	plural "r Stein",   " Steine"    ; Ovale Steine
+	plural "ste",       "ste"        ; Überreste
+	plural "uhe",       "uhe"        ; Plat.schuhe
+	plural "rade",      "rades"      ; Upgrades
+	plural "tet",       "ten"        ; kosten (in the Mart texts)
+	plural "e",         "en"         ; Beeren, Perlen; wurden (in the PC texts), Minuten (Route 35 gate)
+	plural "all",       "älle"       ; Pokébälle
+	plural "ank",       "änke"       ; Tränke
+	plural "raut",      "räuter"     ; Vitalkräuter
+	plural "zel",       "zeln"       ; Kraftwurzeln
+	plural "in",        "ine"        ; Feuersteine, Proteine
+	plural "opf",       "öpfe"       ; Fluchtknöpfe
+	plural "f",         "fe"         ; Briefe, X-Angriffe
+	plural "lz",        "lze"        ; Riesenpilze
+	plural "rt",        "rte"        ; Fokusgurte
+	plural "get",       "gets"       ; Nuggets
+	plural "band",      "bänder"     ; Machtbänder
+	plural "ift",       "ifte"       ; Gegengifte
+	plural "ier",       "iere"       ; Elixiere
+	plural "eil",       "eile"       ; Fluchtseile
+	plural "ück",       "ücke"       ; Sternenstücke
+	plural "nbon",      "nbons"      ; Sonderbonbons
+	plural "",          ""           ; everything else keeps its form (Heiler, Äther, Top-Genesung)
 
 	setcharmap default

@@ -232,13 +232,14 @@ GoldenrodDeptStoreRoofFisherDuplicateText:
 	done
 
 GotVoltorbDollText:
-	text "<PLAYER> received"
-	line "Voltorb Doll."
+	text "<PLAYER> erhält"
+	line "Voltobal-Puppe."
 	done
 
 VoltorbDollSentText:
-	text "Voltorb Doll"
-	line "was sent home."
+	text "Voltobal-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodDeptStoreRoofFisherCatchEmAllText:
@@ -314,31 +315,34 @@ PokeDollVendingMachineAlreadyBoughtText:
 	done
 
 BoughtJigglypuffDollText:
-	text "<PLAYER> bought"
-	line "Jigglypuff Doll."
+	text "<PLAYER> kauft"
+	line "Pummeluff-Puppe."
 	done
 
 JigglypuffDollSentText:
-	text "Jigglypuff Doll"
-	line "was sent home."
+	text "Pummeluff-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtDittoDollText:
-	text "<PLAYER> bought"
-	line "Ditto Doll."
+	text "<PLAYER> kauft"
+	line "Ditto-Puppe."
 	done
 
 DittoDollSentText:
-	text "Ditto Doll"
-	line "was sent home."
+	text "Ditto-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtMeowthDollText:
-	text "<PLAYER> bought"
-	line "Meowth Doll."
+	text "<PLAYER> kauft"
+	line "Mauzi-Puppe."
 	done
 
 MeowthDollSentText:
-	text "Meowth Doll"
-	line "was sent home."
+	text "Mauzi-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done

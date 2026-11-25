@@ -11,11 +11,15 @@ kristall_write.py derives it and compared with the tree:
 - anything else fails: a hand edit of an inherited line, or a writer change since it was written.
 A text that is no longer word for word at --base (Upstream changed its English) fails if the tree
 still holds the German derived from its closest pret text: German left under changed English.
+A text whose own German was decided on is listed in utils/kristall_reviewed.tsv with a key of its
+English: it is skipped as long as Upstream's English has that key, and fails when the English has
+changed since (or the text is gone), so that its German is looked at again.
 A text the writer can't derive (a flag: unknown capitals, ";", ...) whose tree text is no longer
 English can't be checked; it's listed, not failed. Prints the failures and the counts; exits 1 on
 a failure.
 """
 import argparse
+import hashlib
 import subprocess
 import sys
 from pathlib import Path
@@ -26,6 +30,20 @@ from asm_text import ROOT, iter_texts  # noqa: E402
 from kristall_index import Entry, classify, load_choices, load_renames, locate  # noqa: E402
 from kristall_lookup import git_tree  # noqa: E402
 from kristall_write import charmap_names, current_texts, german_for, load_case, name_map, ram_labels  # noqa: E402
+
+
+def english_key(commands):
+    """What kristall_reviewed.tsv holds instead of a text's English: 8 hex digits of its hash."""
+    return hashlib.sha256(repr([tuple(c) for c in commands]).encode()).hexdigest()[:8]
+
+
+def load_reviewed(root=ROOT):
+    """The (label, English key) pairs of utils/kristall_reviewed.tsv."""
+    path = Path(root) / "utils" / "kristall_reviewed.tsv"
+    if not path.exists():
+        return []
+    rows = (line.split("\t") for line in path.read_text().splitlines() if line and not line.startswith("#"))
+    return [(row[0], row[1]) for row in rows]
 
 
 def check(root, base, pairs, unchecked=None):
@@ -39,9 +57,15 @@ def check(root, base, pairs, unchecked=None):
     case = load_case(root / "utils" / "kristall_case.tsv")
     charmap = charmap_names(root if (root / "constants/charmap.asm").exists() else ROOT)
     ram = ram_labels(root if (root / "ram").exists() else ROOT)
-    entries = [e for e in entries if e.cls in ("word", "changed")]
+    reviewed, keys = set(load_reviewed(root)), {(t.label, english_key(t.commands)) for t in english}
+    stale = {label for label, _ in reviewed - keys}
+    labels = {t.label for t in english}
+    failures = [f"{label}: " + ("English changed since its German was reviewed" if label in labels else "no such text")
+                + " (utils/kristall_reviewed.tsv)" for label in sorted(stale)]
+    entries = [e for e in entries if e.cls in ("word", "changed") and e.text.label not in stale
+               and (e.text.label, english_key(e.text.commands)) not in reviewed]
     now = current_texts(entries, root)
-    failures, still_english = [], 0
+    still_english = 0
     for e in entries:
         here = now[id(e)]
         where = f"{e.text.path}:{e.text.label}"

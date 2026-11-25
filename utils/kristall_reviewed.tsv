@@ -1,0 +1,10 @@
+# Texts whose own German was decided on, for check_kristall.py: it leaves them alone as long as
+# Upstream's English is the one that was reviewed. Columns: label, key of the English (english_key),
+# why. Labels and keys only, never text.
+WhiteoutText	c23659fc	Kristall fits: one text for both ways of blacking out
+_ItemCantHeldText	ddc67002	Kristall's line kept under Polished's shorter English
+_GainedItemText	e2bdef66	Kristall's line for a received item
+_ItemUsedText	2f69a4fb	Kristall's line for a used item
+_MonSentToPCText	49565e20	sent to a Box: the Box name is in the line
+PokeComNurseDayText	f712509e	Kristall left it in English; own German
+PokeComNurseNiteText	e0ea3093	Kristall left it in English; own German

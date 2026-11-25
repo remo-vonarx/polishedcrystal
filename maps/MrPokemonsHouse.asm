@@ -398,10 +398,10 @@ MrPokemonText_GotShinyDitto:
 	done
 
 MrPokemonText_SentToPC:
-	text "The #mon was"
-	line "sent to "
+	text "Das #mon wurde"
+	line "auf "
 	text_ram wStringBuffer1
-	text "."
+	cont "übertragen."
 	done
 
 MrPokemonText_PartyAndBoxFull:

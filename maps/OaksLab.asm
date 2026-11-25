@@ -572,13 +572,14 @@ NoTradeText:
 	done
 
 EeveeDollText:
-	text "<PLAYER> received"
-	line "Eevee Doll."
+	text "<PLAYER> erhält"
+	line "Evoli-Puppe."
 	done
 
 EeveeDollSentText:
-	text "Eevee Doll"
-	line "was sent home."
+	text "Evoli-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 

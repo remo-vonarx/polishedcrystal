@@ -150,13 +150,14 @@ GameFreakGameDesignerPauseForDiplomaText:
 	done
 
 GameFreakGameDesignerGiveDiplomaText:
-	text "<PLAYER> received"
-	line "Diploma!"
+	text "<PLAYER> erhält"
+	line "Diplom!"
 	done
 
 GameFreakGameDesignerDiplomaSentText:
-	text "Diploma"
-	line "was sent home."
+	text "Diplom"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 

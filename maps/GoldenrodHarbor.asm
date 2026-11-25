@@ -375,33 +375,36 @@ GoldenrodHarborDollVendorText:
 	done
 
 GoldenrodHarborMagikarpDollText:
-	text "<PLAYER> bought"
-	line "Magikarp Doll."
+	text "<PLAYER> kauft"
+	line "Karpador-Puppe."
 	done
 
 GoldenrodHarborMagikarpDollSentText:
-	text "Magikarp Doll"
-	line "was sent home."
+	text "Karpador-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodHarborMarillDollText:
-	text "<PLAYER> bought"
-	line "Marill Doll."
+	text "<PLAYER> kauft"
+	line "Marill-Puppe."
 	done
 
 GoldenrodHarborMarillDollSentText:
-	text "Marill Doll"
-	line "was sent home."
+	text "Marill-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodHarborOctilleryDollText:
-	text "<PLAYER> bought"
-	line "Octillery Doll."
+	text "<PLAYER> kauft"
+	line "Octillery-Puppe."
 	done
 
 GoldenrodHarborOctilleryDollSentText:
-	text "Octillery Doll"
-	line "was sent home."
+	text "Octillery-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodHarborNoMoneyText:
@@ -423,33 +426,36 @@ GoldenrodHarborPlantVendorText:
 	done
 
 GoldenrodHarborMagnaPlantText:
-	text "<PLAYER> bought"
-	line "Magna Plant."
+	text "<PLAYER> kauft"
+	line "Baumpflanze."
 	done
 
 GoldenrodHarborMagnaPlantSentText:
-	text "Magna Plant"
-	line "was sent home."
+	text "Baumpflanze"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodHarborTropicPlantText:
-	text "<PLAYER> bought"
-	line "Tropic Plant."
+	text "<PLAYER> kauft"
+	line "Tropenpflanze."
 	done
 
 GoldenrodHarborTropicPlantSentText:
-	text "Tropic Plant"
-	line "was sent home."
+	text "Tropenpflanze"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodHarborJumboPlantText:
-	text "<PLAYER> bought"
-	line "Jumbo Plant."
+	text "<PLAYER> kauft"
+	line "Riesenpflanze."
 	done
 
 GoldenrodHarborJumboPlantSentText:
-	text "Jumbo Plant"
-	line "was sent home."
+	text "Riesenpflanze"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 GoldenrodHarborLass2Text:

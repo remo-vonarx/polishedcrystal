@@ -397,8 +397,8 @@ CeruleanGymGuyWinText:
 	done
 
 CeruleanGymFoundMachinePartText:
-	text "<PLAYER> found"
-	line "Machine Part!"
+	text "<PLAYER> findet"
+	line "Spule!"
 	done
 
 CeruleanGymSomethingUnderwaterText:

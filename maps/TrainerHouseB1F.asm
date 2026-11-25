@@ -219,8 +219,8 @@ TrainerHouseB1FOpponentBeforeText:
 	done
 
 TrainerHouseB1FEarnedBattlePointText:
-	text "<PLAYER> earned"
-	line "1 BP!"
+	text "<PLAYER> erhält"
+	line "1 GP!"
 	done
 
 GetDailyTrainerHouseOpponent:

@@ -95,7 +95,8 @@ CeladonDeptStore3FSnesScript:
 	jumpthisopenedtext
 
 	text "Super NES"
-	line "was sent home."
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonDeptStore3FN64Script:
@@ -117,7 +118,8 @@ CeladonDeptStore3FN64Script:
 	jumpthisopenedtext
 
 	text "Nintendo 64"
-	line "was sent home."
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonDeptStore3FGameCubeScript:
@@ -139,7 +141,8 @@ CeladonDeptStore3FGameCubeScript:
 	jumpthisopenedtext
 
 	text "GameCube"
-	line "was sent home."
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonDeptStore3FWiiScript:
@@ -161,7 +164,8 @@ CeladonDeptStore3FWiiScript:
 	jumpthisopenedtext
 
 	text "Wii"
-	line "was sent home."
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonDeptStore3FClerk2Text:
@@ -238,25 +242,25 @@ VideoGameClerkSellWiiText:
 	done
 
 BoughtSnesText:
-	text "<PLAYER> bought"
+	text "<PLAYER> kauft"
 	line "Super NES."
 	done
 
 
 BoughtN64Text:
-	text "<PLAYER> bought"
+	text "<PLAYER> kauft"
 	line "Nintendo 64."
 	done
 
 
 BoughtGameCubeText:
-	text "<PLAYER> bought"
+	text "<PLAYER> kauft"
 	line "GameCube."
 	done
 
 
 BoughtWiiText:
-	text "<PLAYER> bought"
+	text "<PLAYER> kauft"
 	line "Wii."
 	done
 

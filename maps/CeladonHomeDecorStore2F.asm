@@ -106,33 +106,36 @@ CeladonHomeDecorStore2FClerkText:
 	done
 
 BoughtPinkBedText:
-	text "<PLAYER> bought"
-	line "Pink Bed."
+	text "<PLAYER> kauft"
+	line "Rosa Bett."
 	done
 
 PinkBedSentText:
-	text "Pink Bed"
-	line "was sent home."
+	text "Rosa Bett"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtPolkaDotBedText:
-	text "<PLAYER> bought"
-	line "PolkaDot Bed."
+	text "<PLAYER> kauft"
+	line "Gepunktetes Bett."
 	done
 
 PolkaDotBedSentText:
-	text "PolkaDot Bed"
-	line "was sent home."
+	text "Gepunktetes Bett"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtPikachuBedText:
-	text "<PLAYER> bought"
-	line "Pikachu Bed."
+	text "<PLAYER> kauft"
+	line "Pikachu Bett."
 	done
 
 PikachuBedSentText:
-	text "Pikachu Bed"
-	line "was sent home."
+	text "Pikachu Bett"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonHomeDecorStore2FNoMoneyText:

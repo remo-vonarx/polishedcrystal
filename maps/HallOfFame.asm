@@ -162,21 +162,23 @@ HallOfFameEnterScene:
 	done
 
 .GoldTrophyText:
-	text "<PLAYER> received"
-	line "Gold Trophy."
+	text "<PLAYER> erhält"
+	line "Goldtrophäe."
 	done
 
 .GoldTrophySentText:
-	text "Gold Trophy"
-	line "was sent home."
+	text "Goldtrophäe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 .SilverTrophyText:
-	text "<PLAYER> received"
-	line "Silver Trophy."
+	text "<PLAYER> erhält"
+	line "Silbertrophäe."
 	done
 
 .SilverTrophySentText:
-	text "Silver Trophy"
-	line "was sent home."
+	text "Silbertrophäe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done

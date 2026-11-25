@@ -141,33 +141,36 @@ CeladonHomeDecorStore1FClerkText:
 	done
 
 BoughtBulbasaurDollText:
-	text "<PLAYER> bought"
-	line "Bulbasaur Doll."
+	text "<PLAYER> kauft"
+	line "Bisasam-Puppe."
 	done
 
 BulbasaurDollSentText:
-	text "Bulbasaur Doll"
-	line "was sent home."
+	text "Bisasam-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtCharmanderDollText:
-	text "<PLAYER> bought"
-	line "Charmander Doll."
+	text "<PLAYER> kauft"
+	line "Glumanda-Puppe."
 	done
 
 CharmanderDollSentText:
-	text "Charmander Doll"
-	line "was sent home."
+	text "Glumanda-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtSquirtleDollText:
-	text "<PLAYER> bought"
-	line "Squirtle Doll."
+	text "<PLAYER> kauft"
+	line "Schiggy-Puppe."
 	done
 
 SquirtleDollSentText:
-	text "Squirtle Doll"
-	line "was sent home."
+	text "Schiggy-Puppe"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonHomeDecorStore1FNoMoneyText:

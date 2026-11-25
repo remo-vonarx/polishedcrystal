@@ -157,43 +157,47 @@ CeladonHomeDecorStore3FClerk2NoText:
 	done
 
 BoughtRedCarpetText:
-	text "<PLAYER> bought"
-	line "Red Carpet."
+	text "<PLAYER> kauft"
+	line "Roter Teppich."
 	done
 
 RedCarpetSentText:
-	text "Red Carpet"
-	line "was sent home."
+	text "Roter Teppich"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtBlueCarpetText:
-	text "<PLAYER> bought"
-	line "Blue Carpet."
+	text "<PLAYER> kauft"
+	line "Blauer Teppich."
 	done
 
 BlueCarpetSentText:
-	text "Blue Carpet"
-	line "was sent home."
+	text "Blauer Teppich"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtYellowCarpetText:
-	text "<PLAYER> bought"
-	line "Yellow Carpet."
+	text "<PLAYER> kauft"
+	line "Gelber Teppich."
 	done
 
 YellowCarpetSentText:
-	text "Yellow Carpet"
-	line "was sent home."
+	text "Gelber Teppich"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BoughtGreenCarpetText:
-	text "<PLAYER> bought"
-	line "Green Carpet."
+	text "<PLAYER> kauft"
+	line "Grüner Teppich."
 	done
 
 GreenCarpetSentText:
-	text "Green Carpet"
-	line "was sent home."
+	text "Grüner Teppich"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 CeladonHomeDecorStore3FNoMoneyText:

@@ -1099,11 +1099,9 @@ FledInFearText:
 	prompt
 
 HitNTimesText:
-	text "Hit "
+	text "Erleidet "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	text " time"
-	text_plural
-	text "!"
+	line "Treffer!"
 	prompt
 
 MistText:

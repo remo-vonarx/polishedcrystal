@@ -56,7 +56,7 @@ TreeItemEncounter:
 	cp '@'
 	jr nz, .find_terminator
 	dec hl
-	ld a, 's'
+	ld a, 'n' ; Heilfeder -> Heilfedern
 	ld [hli], a
 	ld [hl], '@'
 	pop hl

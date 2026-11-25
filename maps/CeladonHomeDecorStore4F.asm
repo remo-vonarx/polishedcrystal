@@ -52,8 +52,9 @@ BigLaprasDollScript:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Big Lapras Doll"
-	line "was sent home."
+	text "Riesiges Lapras"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BigSnorlaxDollScript:
@@ -74,8 +75,9 @@ BigSnorlaxDollScript:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Big Snorlax Doll"
-	line "was sent home."
+	text "Riesiges Relaxo"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BigOnixDollScript:
@@ -96,8 +98,9 @@ BigOnixDollScript:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Big Onix Doll"
-	line "was sent home."
+	text "Riesiges Onix"
+	line "wurde nach Hause"
+	cont "geschickt."
 	done
 
 BigDollClerkText:
@@ -140,20 +143,20 @@ BigDollClerkSellOnixText:
 	done
 
 BoughtBigLaprasDollText:
-	text "<PLAYER> bought"
-	line "Big Lapras Doll."
+	text "<PLAYER> kauft"
+	line "Riesiges Lapras."
 	done
 
 
 BoughtBigSnorlaxDollText:
-	text "<PLAYER> bought"
-	line "Big Snorlax Doll."
+	text "<PLAYER> kauft"
+	line "Riesiges Relaxo."
 	done
 
 
 BoughtBigOnixDollText:
-	text "<PLAYER> bought"
-	line "Big Onix Doll."
+	text "<PLAYER> kauft"
+	line "Riesiges Onix."
 	done
 
 
