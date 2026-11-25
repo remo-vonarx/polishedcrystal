@@ -414,9 +414,7 @@ Route35NationalParkGateOfficer1EggAsFirstMonText:
 Route35NationalParkGateOfficer1WantToFinishText:
 	text "Du hast noch "
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	line "Minute"
-	text_plural
-	text "."
+	line "Minute(n)."
 
 	para "Möchtest du jetzt"
 	line "aufhören?"

@@ -20,14 +20,14 @@ _ObtainedOneFruitText::
 
 SECTION "_ObtainedTwoFruitText", ROMX
 _ObtainedTwoFruitText::
-	text "2 "
+	text "2x "
 	text_ram wStringBuffer3
 	line "erhalten!"
 	done
 
 SECTION "_ObtainedThreeFruitText", ROMX
 _ObtainedThreeFruitText::
-	text "3 "
+	text "3x "
 	text_ram wStringBuffer3
 	line "erhalten!"
 	done
@@ -2408,18 +2408,18 @@ _AskQuantityThrowAwayText::
 	text "Wegwerfen?"
 	line ""
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
 	text "?"
 	done
 
 SECTION "_ThrewAwayText", ROMX
 _ThrewAwayText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
 	line "weggeworfen."
 	prompt
 
@@ -2814,12 +2814,10 @@ _PlayersPCHowManyWithdrawText::
 SECTION "_PlayersPCWithdrewItemsText", ROMX
 _PlayersPCWithdrewItemsText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
-	line "wurde"
-	text_plural
-	cont "mitgenommen."
+	line "wurde mitgenommen."
 	prompt
 
 SECTION "_PlayersPCNoRoomWithdrawText", ROMX
@@ -2851,12 +2849,10 @@ _PlayersPCHowManyDepositText::
 SECTION "_PlayersPCDepositItemsText", ROMX
 _PlayersPCDepositItemsText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
-	line "wurde"
-	text_plural
-	text " abgelegt."
+	line "wurde abgelegt."
 	prompt
 
 SECTION "_PlayersPCNoRoomDepositText", ROMX
@@ -3126,19 +3122,16 @@ _ItemsTossOutHowManyText::
 	text "Wie viele"
 	line ""
 	text_ram wStringBuffer2
-	text_plural
 	cont "wegwerfen?"
 	done
 
 SECTION "_ItemsDiscardedText", ROMX
 _ItemsDiscardedText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer1
-	text_plural
-	line "wurde"
-	text_plural
-	cont "weggeworfen."
+	line "wurde weggeworfen."
 	prompt
 
 SECTION "_ItemsOakWarningText", ROMX
@@ -3518,7 +3511,7 @@ _GainedMultipleItemsText::
 	text "<PLAYER> erhält"
 	line ""
 	text_decimal wItemQuantityChangeBuffer, 1, 2
-	text " "
+	text "x "
 	text_ram wStringBuffer4
 	text "."
 	done
@@ -3546,7 +3539,7 @@ _FoundWingsText::
 	text "<PLAYER> erhält"
 	line ""
 	text_decimal wCurWingQuantity, 1, 2
-	text " "
+	text "x "
 	text_ram wStringBuffer4
 	text "."
 	done
@@ -3590,9 +3583,9 @@ _MartHowManyText::
 SECTION "_MartFinalPriceText", ROMX
 _MartFinalPriceText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
 	text "?"
 
 	para "Das macht dann"
@@ -3622,12 +3615,10 @@ _HerbShopLadyIntroText::
 SECTION "_HerbalLadyFinalPriceText", ROMX
 _HerbalLadyFinalPriceText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
-	line "kostet"
-	text_plural
-	text " ¥"
+	line "kostet ¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 	done
@@ -3726,12 +3717,10 @@ _HowManyText::
 SECTION "_PharmacyFinalPriceText", ROMX
 _PharmacyFinalPriceText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
-	line "kostet"
-	text_plural
-	text " ¥"
+	line "kostet ¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "."
 	done
@@ -3824,9 +3813,9 @@ _MartBoughtText::
 	text " für"
 	line ""
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer2
-	text_plural
 	text "."
 	done
 
@@ -3858,12 +3847,10 @@ BTMartHowMayIHelpYouText::
 SECTION "BTMartCostsThisMuchText", ROMX
 BTMartCostsThisMuchText::
 	text_decimal wItemQuantityChangeBuffer, 1, 2
+	text_plural
 	text " "
 	text_ram wStringBuffer1
-	text_plural
-	line "kostet"
-	text_plural
-	text " "
+	line "kostet "
 	text_decimal hMoneyTemp+1, 2, 4
 	text " GP."
 	done

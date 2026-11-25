@@ -218,12 +218,13 @@ The font has none: a semicolon in Kristall's text is a comma.
 
 ## Receiving and shared texts
 
-**Plurals**:
-Several of an item read as a number and the German plural, as Polished's English does ("3 Tränke", "99 Beleber"), with the verb to match (kostet, kosten; wurde, wurden). The endings are in the plural table, which has no room for every one: 41 names stay singular (3 Magnet, 2 Megablock), and Top-Genesung by decision. Nothing is ever pluralized wrongly.
-_Avoid_: 3 x Trank
+**Several items**:
+A number with an x and the name as it is, where there is more than one ("3x Trank", "99x Beleber"); one has no x ("1 Trank"). The verb stays as Kristall has it (kostet, wurde).
+_Avoid_: 3 x Trank, 3 Tränke
 
-**Heilfedern**:
-Wings from a headbutted tree take an n when there are several.
+**Several wings**:
+Wings from a headbutted tree always have the x, for one too ("1x Heilfeder").
+_Avoid_: Heilfedern
 
 **GP**:
 Battle Points (Gewinnpunkte), always the abbreviation after a number (25 GP).
