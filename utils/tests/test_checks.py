@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 import check_text_mode
-from check_text_width import string_width
+from check_text_width import check_file, string_width
 
 
 def run(script, *args, cwd=None):
@@ -14,6 +14,21 @@ def test_width_counts_g3_letters():
     assert string_width("Straße") == 6 and string_width("Grüße") == 5
     assert string_width("he'd") == 4 and string_width("he's") == 3  # 'd is two tiles since G3
     assert string_width("#mon") == 7 and string_width("<PLAYER>") == 7
+
+
+def test_width_counts_freed_contractions_as_two_tiles():
+    # Task 20 gave the slots of 'l 'm 'r 't 'v to á í ó ¿ ¡; only 's is still one tile
+    assert string_width("auf'm") == 5 and string_width("can't") == 5
+    assert string_width("geht's") == 5
+
+
+def test_width_check_skips_debug_only_text(tmp_path):
+    # `if DEF(DEBUG)` text is in neither ROM and stays English (CLAUDE.md)
+    wide = '\ttext "This line is far too wide"\n\tdone\n'
+    f = tmp_path / "t.asm"
+    f.write_text("DebugText:\nif DEF(DEBUG)\n" + wide + "else\n" + wide + "endc\n", encoding="utf-8")
+    problems = check_file(f)
+    assert len(problems) == 1 and ":6:" in problems[0]  # only the else branch's line
 
 
 def test_width_check_clean_on_tree(root):
