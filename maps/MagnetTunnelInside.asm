@@ -455,14 +455,14 @@ GenericTrainerEngineerNicolas:
 	line "Magnetfeld."
 
 	para "Also sei hier"
-	line "vorsichtig, okay,"
-	cont "Kleiner?"
+	line "bloß vorsichtig,"
+	cont "okay?"
 	done
 
 .SeenText:
 	text "Hey! Pass bei den"
 	line "Geräten auf,"
-	cont "Kleiner!"
+	cont "Kind!"
 	done
 
 .BeatenText:
