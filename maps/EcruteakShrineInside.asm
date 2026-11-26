@@ -162,9 +162,9 @@ EcruteakShrineInsideReiBeatenText:
 	done
 
 EcruteakShrineInsideGrampsText:
-	text "Die Schreinjung-"
-	line "frau hier ist"
-	cont "meine Enkelin."
+	text "Die Schreinmaid"
+	line "hier ist meine"
+	cont "Enkelin."
 	done
 
 EcruteakShrineInsideGrannyText:
