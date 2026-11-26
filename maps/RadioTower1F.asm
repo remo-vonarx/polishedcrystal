@@ -297,8 +297,8 @@ WonFirstPlaceText:
 	para "Du gewinnst den"
 	line "Hauptpreis!"
 
-	para "Du gewinnst einen"
-	line "Meisterball!"
+	para "Du gewinnst"
+	line "einen Meisterball!"
 	done
 
 WonSecondPlaceText:

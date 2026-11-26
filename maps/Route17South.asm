@@ -292,7 +292,7 @@ Route17SouthTrainerTips1Text:
 Route17SouthTrainerTips2Text:
 	text "Tipps für Trainer"
 
-	para "Öffne das START-"
+	para "Öffne das Start-"
 	line "Menü, um an einem"
 	cont "Hang stehen zu"
 	cont "bleiben."

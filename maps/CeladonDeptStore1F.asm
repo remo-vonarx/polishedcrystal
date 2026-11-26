@@ -59,7 +59,7 @@ CeladonDeptStore1FDirectoryText:
 	para "1S: Zubehör für"
 	line "    Trainer"
 
-	para "2S: Technik-Laden"
+	para "2S: Technikladen"
 
 	para "3S: Geschenk-"
 	line "    artikel"

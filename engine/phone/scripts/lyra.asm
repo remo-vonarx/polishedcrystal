@@ -50,7 +50,7 @@ LyraPhoneScript:
 	end
 
 .CeladonUniversity: db "Prismania-Uni@"
-.PokemonLeague:     db "#mon-Liga@"
+.PokemonLeague:     db "#mon Liga@"
 .LavRadioTower:     db "Radioturm<CONT>Lavandia@" ; 18 tiles and "?" are one too many: the name goes on two lines
 
 LyraPhone_GetFirstMonNextMove:

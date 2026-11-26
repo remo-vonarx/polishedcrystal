@@ -293,7 +293,7 @@ CeladonDeptStore3FDirectoryText:
 	text "Mach Deine #mon"
 	line "Stärker!"
 
-	para "2S: Technik-Laden"
+	para "2S: Technikladen"
 	done
 
 CeladonDeptStore3FSnesText:

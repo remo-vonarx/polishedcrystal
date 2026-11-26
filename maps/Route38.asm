@@ -413,7 +413,7 @@ Route38TrainerTipsText:
 Route38AdvancedTipsText:
 	text "Tipps für Profis!"
 
-	para "Drücke START im"
+	para "Drücke Start im"
 	line "PC-Lagerungs-"
 	cont "System,"
 
@@ -425,7 +425,7 @@ Route38AdvancedTipsText:
 	line "Design jeder Box"
 	cont "ändern!"
 
-	para "Drücke SELECT, um"
+	para "Drücke Select, um"
 	line "festzulegen, was"
 
 	para "der A-Knopf mit"

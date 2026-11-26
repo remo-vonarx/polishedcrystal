@@ -347,10 +347,10 @@ Route30AdvancedTipsText:
 	text "Tipps für Profis!"
 
 	para "Drücke im Kampf"
-	line "SELECT, um #mon"
+	line "Select, um #mon"
 	cont "zu wechseln!"
 
-	para "Drücke START, um"
+	para "Drücke Start, um"
 	line "ein Item erneut zu"
 	cont "benutzen!"
 
@@ -361,11 +361,11 @@ Route30AdvancedTipsText:
 	para "Wenn du eine"
 	line "Attacke wählst,"
 
-	para "drücke SELECT, um"
+	para "drücke Select, um"
 	line "sie mit einer an-"
 	cont "deren zu tauschen,"
 
-	para "oder START, um"
+	para "oder Start, um"
 	line "ihre Beschreibung"
 	cont "zu sehen!"
 	done

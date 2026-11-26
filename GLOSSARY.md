@@ -586,13 +586,28 @@ The roof signs of Gyms and Marts, as on Kristall's roofs.
 _Avoid_: GYM, MART
 
 **KAUF**, **LIGA**:
-Polished's own roof signs (DEPT, LEAGUE) on the department stores and the Pokémon League: the first word of Kaufhaus and of Liga in Pokémon-Liga. Own.
+Polished's own roof signs (DEPT, LEAGUE) on the department stores and the Pokémon League: the first word of Kaufhaus, and the Liga of #mon Liga. Own.
 
 **GAMES**:
 The Game Corners' roof sign stays English, as Upstream draws it (decided 2026-11-26).
 _Avoid_: SPIEL
 
 ## Story text
+
+**Start**, **Select**:
+The buttons, named in text as Kristall's lines are re-cased (Drücke Start, um …). In graphics they stay START and SEL.
+
+**#mon Liga**:
+The Pokémon League in text, as Kristall writes it (#MON LIGA): two words, no hyphen.
+_Avoid_: #mon-Liga
+
+**Rocket Rüpel**:
+A Team Rocket grunt in text, two words as Kristall writes them.
+_Avoid_: Rocket-Rüpel
+
+**Technikladen**:
+The Celadon Department Store's Tech Shop floor (Polished's own), one word on the signs and in dialogue.
+_Avoid_: Technik-Laden
 
 **Pilar's Spanish**:
 Sightseer Pilar on the Shamouti coast speaks Spanish, as in Upstream: a tourist from far away. Her lines stay Upstream's, with á í ó ¿ ¡ (decided 2026-11-26).

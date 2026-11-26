@@ -313,7 +313,7 @@ LightningRodDescription:
 
 SereneGraceDescription:
 	text "Erhöht Chance auf"
-	next "Zusatz-Effekte."
+	next "Zusatzeffekte."
 	done
 
 SwiftSwimDescription:
@@ -688,7 +688,7 @@ PickpocketDescription:
 
 SheerForceDescription:
 	text "Mehr Schaden statt"
-	next "Zusatz-Effekten."
+	next "Zusatzeffekten."
 	done
 
 ContraryDescription:

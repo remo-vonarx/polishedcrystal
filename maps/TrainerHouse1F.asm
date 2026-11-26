@@ -80,7 +80,7 @@ TrainerHouse1FCooltrainerMText:
 	para "so viele Trainer"
 	line "auf ihrem Weg zur"
 
-	para "#mon-Liga"
+	para "#mon Liga"
 	line "passieren."
 	done
 
