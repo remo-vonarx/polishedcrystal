@@ -179,8 +179,8 @@ EcruteakPokeCenter1FBillScript:
 .GiftEeveeMail:
 	db   EON_MAIL
 	setcharmap no_ngrams
-	db   "Please keep this"
-	next "Pokémon safe!@@"
+	db   "Pass gut auf das"
+	next "Pokémon auf!@@"
 	setcharmap default
 
 .SetEeveeMailOT:

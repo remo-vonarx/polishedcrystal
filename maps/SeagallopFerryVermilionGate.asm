@@ -140,9 +140,9 @@ OrangeMysticMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "OrangeTicket@"
-	db "MysticTicket@"
-	db "Cancel@"
+	db "Orangeticket@"
+	db "Geheimticket@"
+	db "Zurück@"
 
 MysticOldSeaMapMenuDataHeader:
 	db MENU_BACKUP_TILES
@@ -153,9 +153,9 @@ MysticOldSeaMapMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "MysticTicket@"
-	db "Old Sea Map@"
-	db "Cancel@"
+	db "Geheimticket@"
+	db "Alte Karte@"
+	db "Zurück@"
 
 OrangeOldSeaMapMenuDataHeader:
 	db MENU_BACKUP_TILES
@@ -166,9 +166,9 @@ OrangeOldSeaMapMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "OrangeTicket@"
-	db "Old Sea Map@"
-	db "Cancel@"
+	db "Orangeticket@"
+	db "Alte Karte@"
+	db "Zurück@"
 
 ThreeTicketsMenuDataHeader:
 	db MENU_BACKUP_TILES
@@ -179,10 +179,10 @@ ThreeTicketsMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "OrangeTicket@"
-	db "MysticTicket@"
-	db "Old Sea Map@"
-	db "Cancel@"
+	db "Orangeticket@"
+	db "Geheimticket@"
+	db "Alte Karte@"
+	db "Zurück@"
 
 SeagallopFerryDepartureScript:
 	writetext SeagallopFerryDepartureText

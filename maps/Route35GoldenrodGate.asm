@@ -89,8 +89,8 @@ RandyScript:
 GiftSpearowMail:
 	db   FLOWER_MAIL
 	setcharmap no_ngrams
-	db   "Dark Cave leads"
-	next "to another road@"
+	db   "Dunkelhöhle"
+	next "ist ein Pfad@"
 	setcharmap default
 
 GiftSpearowName:

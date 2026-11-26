@@ -460,7 +460,7 @@ VermilionCityPortSignText:
 	done
 
 VermilionCityPierSignText:
-	db "◀ S.S.Aqua<LINE>▼ Seagallop Ferry<DONE>" ; not compressible
+	db "◀ M.S. Aqua<LINE>▼ Seesprint-Fähre<DONE>" ; not compressible
 
 VermilionCityAdvancedTipsSignText:
 	text "Tipps für Profis!"

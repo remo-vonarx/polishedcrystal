@@ -18,10 +18,10 @@ huffmap b, "<ENEMY>", 1101111011011 ; 18
 huffmap b, " ", 0100100 ; 718
 huffmap b, "A", 110011 ; 2006
 huffmap b, "B", 100001 ; 1647
-huffmap b, "C", 11110100 ; 565
+huffmap b, "C", 11110010 ; 565
 huffmap b, "D", 10101 ; 3598
 huffmap b, "E", 110110 ; 2065
-huffmap b, "F", 1111001 ; 1154
+huffmap b, "F", 1111000 ; 1154
 huffmap b, "G", 010011 ; 1483
 huffmap b, "H", 100100 ; 1708
 huffmap b, "I", 01000 ; 2831
@@ -31,7 +31,7 @@ huffmap b, "L", 1011111 ; 1005
 huffmap b, "M", 101110 ; 1928
 huffmap b, "N", 1001010 ; 874
 huffmap b, "O", 1000101 ; 851
-huffmap b, "P", 1111000 ; 1153
+huffmap b, "P", 1111010 ; 1155
 huffmap b, "Q", 101111010010 ; 29
 huffmap b, "R", 1000100 ; 846
 huffmap b, "S", 01010 ; 3012
@@ -48,15 +48,15 @@ huffmap b, ".", 1111111110 ; 158
 huffmap b, ",", 101111011110 ; 33
 huffmap b, "?", 111111001000 ; 36
 huffmap b, "!", 1011110101 ; 117
-huffmap b, "a", 11000 ; 3967
+huffmap b, "a", 11000 ; 3966
 huffmap b, "b", 01100 ; 3062
 huffmap b, "c", 0100101100 ; 86
 huffmap b, "d", 000 ; 10201
-huffmap b, "e", 0011 ; 5489
+huffmap b, "e", 0011 ; 5491
 huffmap b, "f", 011010 ; 1563
 huffmap b, "g", 10100 ; 3557
 huffmap b, "h", 10011 ; 3481
-huffmap b, "i", 0010 ; 5223
+huffmap b, "i", 0010 ; 5225
 huffmap b, "j", 10010111 ; 444
 huffmap b, "k", 111000 ; 2126
 huffmap b, "l", 1111011 ; 1209
@@ -65,9 +65,9 @@ huffmap b, "n", 01011 ; 3012
 huffmap b, "o", 01101110 ; 385
 huffmap b, "p", 111111000 ; 306
 huffmap b, "q", 10111101001111 ; 8
-huffmap b, "r", 11110101 ; 591
-huffmap b, "s", 0111 ; 6299
-huffmap b, "t", 1101110 ; 1042
+huffmap b, "r", 11110011 ; 589
+huffmap b, "s", 0111 ; 6298
+huffmap b, "t", 1101110 ; 1040
 huffmap b, "u", 110010 ; 1989
 huffmap b, "v", 111110 ; 2446
 huffmap b, "w", 11101 ; 4527
@@ -143,7 +143,7 @@ huffmap v, "<PARA>", 01101000 ; 511
 huffesc v, "<TARGET>", 0110110011001001011010 ; 0
 huffesc v, "<USER>", 0110110011001001011011 ; 0
 huffesc v, "<ENEMY>", 0110110011001001011100 ; 0
-huffmap v, " ", 1100 ; 12757
+huffmap v, " ", 1100 ; 12755
 huffmap v, "A", 01101100111110 ; 12
 huffmap v, "B", 110101001111010 ; 8
 huffmap v, "C", 11010100001111 ; 16
@@ -175,8 +175,8 @@ huffesc v, ")", 0110110011001010011011 ; 0
 huffmap v, ".", 11010111 ; 1012
 huffmap v, ",", 11111111 ; 1108
 huffmap v, "?", 011011110 ; 331
-huffmap v, "!", 11010101 ; 903
-huffmap v, "a", 11111110 ; 1051
+huffmap v, "!", 11010101 ; 902
+huffmap v, "a", 11111110 ; 1049
 huffmap v, "b", 111110 ; 3822
 huffmap v, "c", 1011 ; 12330
 huffmap v, "d", 1111110 ; 2116
@@ -184,7 +184,7 @@ huffmap v, "e", 0100 ; 8349
 huffmap v, "f", 110100 ; 3144
 huffmap v, "g", 01011 ; 4522
 huffmap v, "h", 01010 ; 4458
-huffmap v, "i", 0111 ; 11457
+huffmap v, "i", 0111 ; 11459
 huffmap v, "j", 110101001110 ; 62
 huffmap v, "k", 11010110 ; 977
 huffmap v, "l", 11110 ; 7969
@@ -193,10 +193,10 @@ huffmap v, "n", 00 ; 35449
 huffmap v, "o", 01101101 ; 631
 huffmap v, "p", 10100110 ; 772
 huffmap v, "q", 0110110011110 ; 23
-huffmap v, "r", 100 ; 22608
-huffmap v, "s", 1110 ; 15616
-huffmap v, "t", 11011 ; 7779
-huffmap v, "u", 01100 ; 4718
+huffmap v, "r", 100 ; 22606
+huffmap v, "s", 1110 ; 15618
+huffmap v, "t", 11011 ; 7777
+huffmap v, "u", 01100 ; 4719
 huffmap v, "v", 101001111 ; 418
 huffmap v, "w", 01101110 ; 649
 huffmap v, "x", 1101010010 ; 230
@@ -271,7 +271,7 @@ huffmap o, "<PARA>", 00101 ; 8118
 huffesc o, "<TARGET>", 0000110001010101011010 ; 0
 huffesc o, "<USER>", 0000110001010101011011 ; 0
 huffesc o, "<ENEMY>", 0000110001010101011100 ; 0
-huffmap o, " ", 101 ; 49807
+huffmap o, " ", 101 ; 49809
 huffmap o, "A", 0000110011 ; 224
 huffmap o, "B", 1001101001101 ; 44
 huffmap o, "C", 00001100101 ; 108
@@ -303,27 +303,27 @@ huffmap o, ")", 100110100001 ; 87
 huffmap o, ".", 00000 ; 6934
 huffmap o, ",", 010101 ; 4830
 huffmap o, "?", 0000111 ; 2019
-huffmap o, "!", 010100 ; 4759
-huffmap o, "a", 1000 ; 22546
+huffmap o, "!", 010100 ; 4760
+huffmap o, "a", 1000 ; 22547
 huffmap o, "b", 10011111 ; 1590
 huffmap o, "c", 001111 ; 4552
 huffmap o, "d", 100101 ; 5734
-huffmap o, "e", 111 ; 59458
-huffmap o, "f", 0101101 ; 2486
+huffmap o, "e", 111 ; 59455
+huffmap o, "f", 0101101 ; 2488
 huffmap o, "g", 000010 ; 3440
-huffmap o, "h", 0100 ; 17174
+huffmap o, "h", 0100 ; 17172
 huffmap o, "i", 1100 ; 24532
 huffmap o, "j", 1001111001100 ; 46
 huffmap o, "k", 1101100 ; 3267
 huffmap o, "l", 110111 ; 6705
 huffmap o, "m", 1001110 ; 3029
 huffmap o, "n", 100100 ; 5437
-huffmap o, "o", 01100 ; 10074
+huffmap o, "o", 01100 ; 10068
 huffmap o, "p", 0011101 ; 2391
 huffmap o, "q", 00001101011010 ; 16
 huffmap o, "r", 00011 ; 8056
 huffmap o, "s", 00110 ; 8127
-huffmap o, "t", 0111 ; 21198
+huffmap o, "t", 0111 ; 21200
 huffmap o, "u", 01101 ; 11046
 huffmap o, "v", 01011100000 ; 128
 huffmap o, "w", 01011101 ; 1321

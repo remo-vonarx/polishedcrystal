@@ -209,10 +209,10 @@ GoldenrodHarborPokefanmScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Magikarp    ¥1400@"
+	db "Karpador    ¥1400@"
 	db "Marill      ¥5600@"
 	db "Octillery  ¥11200@"
-	db "Cancel@"
+	db "Zurück@"
 
 GoldenrodHarborYoungsterScript:
 	faceplayer
@@ -292,10 +292,10 @@ GoldenrodHarborYoungsterScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Magna P.    ¥6400@"
-	db "Tropic P.   ¥9600@"
-	db "Jumbo P.   ¥12800@"
-	db "Cancel@"
+	db "Baumpfl.    ¥6400@"
+	db "Tropenpfl.  ¥9600@"
+	db "Riesenpfl. ¥12800@"
+	db "Zurück@"
 
 GoldenrodHarborSailboatScript:
 	readvar VAR_FACING

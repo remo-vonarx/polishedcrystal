@@ -223,19 +223,6 @@ DragonShrineElder1Script:
 
 DragonShrineQuestion1_MenuHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 8, 4, 19, 11
-	dw .MenuData
-	db 1 ; default option
-
-.MenuData:
-	db $81 ; flags
-	db 3 ; items
-	db "Ally@"
-	db "Underling@"
-	db "Friend@"
-
-DragonShrineQuestion2_MenuHeader:
-	db MENU_BACKUP_TILES
 	menu_coords 9, 4, 19, 11
 	dw .MenuData
 	db 1 ; default option
@@ -243,24 +230,11 @@ DragonShrineQuestion2_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
-	db "Strategy@"
-	db "Training@"
-	db "Cheating@"
+	db "Partner@"
+	db "Untertan@"
+	db "Kamerad@"
 
-DragonShrineQuestion3_MenuHeader:
-	db MENU_BACKUP_TILES
-	menu_coords 5, 4, 19, 11
-	dw .MenuData
-	db 1 ; default option
-
-.MenuData:
-	db $81 ; flags
-	db 3 ; items
-	db "Weak person@"
-	db "Tough person@"
-	db "Anybody@"
-
-DragonShrineQuestion4_MenuHeader:
+DragonShrineQuestion2_MenuHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 8, 4, 19, 11
 	dw .MenuData
@@ -269,11 +243,24 @@ DragonShrineQuestion4_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
-	db "Love@"
-	db "Violence@"
-	db "Knowledge@"
+	db "Strategie@"
+	db "Training@"
+	db "Mogeln@"
 
-DragonShrineQuestion5_MenuHeader:
+DragonShrineQuestion3_MenuHeader:
+	db MENU_BACKUP_TILES
+	menu_coords 6, 4, 19, 11
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db $81 ; flags
+	db 3 ; items
+	db "Schwächling@"
+	db "Muskelprotz@"
+	db "Jeder@"
+
+DragonShrineQuestion4_MenuHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 11, 4, 19, 11
 	dw .MenuData
@@ -282,9 +269,22 @@ DragonShrineQuestion5_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
-	db "Strong@"
-	db "Weak@"
-	db "Both@"
+	db "Liebe@"
+	db "Gewalt@"
+	db "Wissen@"
+
+DragonShrineQuestion5_MenuHeader:
+	db MENU_BACKUP_TILES
+	menu_coords 10, 4, 19, 11
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db $81 ; flags
+	db 3 ; items
+	db "Stark@"
+	db "Schwach@"
+	db "Beides@"
 
 DragonShrinePlayerWalkInMovement:
 	slow_step_up

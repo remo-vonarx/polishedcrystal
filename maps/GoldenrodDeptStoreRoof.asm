@@ -198,10 +198,10 @@ PokeDollVendingMachine:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Jigglypuff  ¥2400@"
+	db "Pummeluff   ¥2400@"
 	db "Ditto       ¥2400@"
-	db "Meowth      ¥2400@"
-	db "Cancel@"
+	db "Mauzi       ¥2400@"
+	db "Zurück@"
 
 GoldenrodDeptStoreRoofPokefanFText:
 	text "Puh, bin ich müde."

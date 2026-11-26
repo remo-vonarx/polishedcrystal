@@ -104,7 +104,7 @@ FarmerMScript_SellMilk:
 	db 3 ; items
 	db "× 1    ¥{d:ROUTE39FARMHOUSE_MILK_PRICE}@"
 	db "×12   ¥{d:ROUTE39FARMHOUSE_DOZEN_MILK_PRICE}@"
-	db "Cancel@"
+	db "Zurück@"
 
 .Milking:
 	jumpthisopenedtext

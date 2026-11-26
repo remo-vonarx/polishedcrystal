@@ -115,9 +115,9 @@ EcruteakShrineInsideReiScript:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "Blessing@"
-	db "Battle@"
-	db "Cancel@"
+	db "Segen@"
+	db "Kampf@"
+	db "Zurück@"
 
 EcruteakShrineInsideReiGreetingText:
 	text "Rei: Oh, hallo."

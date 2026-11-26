@@ -130,12 +130,12 @@ AcademyBlackboard:
 	dbw BANK(AcademyBlackboard), 0
 
 .Text:
-	db "Psn@"
+	db "Gif@"
 	db "Par@"
-	db "Slp@"
-	db "Brn@"
-	db "Frz@"
-	db "Quit@"
+	db "Slf@"
+	db "Brt@"
+	db "Gfr@"
+	db "Zur.@"
 
 AcademyNotebook:
 	opentext

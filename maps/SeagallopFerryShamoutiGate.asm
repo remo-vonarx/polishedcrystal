@@ -90,9 +90,9 @@ VermilionValenciaMenuDataHeader:
 .MenuData2:
 	db $80 ; flags
 	db 3 ; items
-	db "Vermilion City@"
-	db "Valencia Island@"
-	db "Cancel@"
+	db "Orania City@"
+	db "Valencia Insel@"
+	db "Zurück@"
 
 SeagallopFerryShamoutiGatePlayerDepartMovementData:
 	step_down

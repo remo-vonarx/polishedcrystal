@@ -691,3 +691,21 @@ _Avoid_: Ge, Y, C, R/S/E, FR/LG, B/W, B2/W2, M02
 
 **Komponist:**, **Arrangeur:**:
 The music player's labels on a song's info page (Composer:, Arranger:).
+
+## Map menus and the Alph walls
+
+**Zurück**:
+Cancel in every shop, prize and ferry menu, as on Kristall's vending machines and prize counters.
+_Avoid_: Abbrechen in a menu
+
+**Flucht**, **Blitz**, **Wasser**, **Fee**:
+The words the Unown spell on the walls of the Ruins of Alph (ESCAPE, LIGHT, WATER, FAIRY): Kristall's for the first three, the Fairy type's German name for the fourth.
+
+**Partner**, **Untertan**, **Kamerad**, **Strategie**, **Training**, **Mogeln**, **Schwächling**, **Muskelprotz**, **Jeder**, **Liebe**, **Gewalt**, **Wissen**, **Stark**, **Schwach**, **Beides**:
+The answers at the Dragon Shrine: Kristall's, with Partner for Polished's Ally (Kristall's Kumpel answers Pal).
+
+**Scharf**, **Sauer**, **Süß**, **Trocken**, **Bitter**:
+The five flavours (Spicy, Sour, Sweet, Dry, Bitter).
+
+**Baumpfl.**, **Tropenpfl.**, **Riesenpfl.**:
+The plants in the Goldenrod Harbor shop's price list, where the full names don't fit next to the price (Magna P., Tropic P., Jumbo P.).

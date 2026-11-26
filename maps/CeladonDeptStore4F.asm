@@ -98,9 +98,9 @@ PosterClerkScript:
 	db $80 ; flags
 	db 4 ; items
 	db "Marill      ¥3200@"
-	db "Clefairy    ¥4800@"
+	db "Piepi       ¥4800@"
 	db "Pikachu     ¥6400@"
-	db "Cancel@"
+	db "Zurück@"
 
 PosterClerkText:
 	text "Willkommen! Wie"

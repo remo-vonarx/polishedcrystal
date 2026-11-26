@@ -206,7 +206,7 @@ GoldenrodGameCornerTMVendorMenuData:
 	db "TM35    {d:GOLDENRODGAMECORNER_TM35_COINS}@"
 	db "TM24    {d:GOLDENRODGAMECORNER_TM24_COINS}@"
 	db "TM13    {d:GOLDENRODGAMECORNER_TM13_COINS}@"
-	db "Cancel@"
+	db "Zurück@"
 
 GoldenrodGameCornerPrizeMonVendorScript:
 	faceplayer
@@ -287,9 +287,9 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	db $80 ; flags
 	db 4 ; items
 	db "Abra        {d:GOLDENRODGAMECORNER_ABRA_COINS}@"
-	db "Cubone      {d:GOLDENRODGAMECORNER_CUBONE_COINS}@"
-	db "Clefairy   {d:GOLDENRODGAMECORNER_CLEFAIRY_COINS}@"
-	db "Cancel@"
+	db "Tragosso    {d:GOLDENRODGAMECORNER_CUBONE_COINS}@"
+	db "Piepi      {d:GOLDENRODGAMECORNER_CLEFAIRY_COINS}@"
+	db "Zurück@"
 
 GoldenrodGameCornerPharmacistScript:
 	showtextfaceplayer GoldenrodGameCornerPharmacistText

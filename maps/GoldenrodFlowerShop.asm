@@ -109,7 +109,7 @@ FlowerShopTeacherScript:
 	db 3 ; items
 	db "× 1    ¥200@"
 	db "×10   ¥2000@"
-	db "Cancel@"
+	db "Zurück@"
 
 FlowerShopFloriaScript:
 	checkflag ENGINE_PLAINBADGE
