@@ -26,7 +26,7 @@ PokemonJournalKurtScript:
 	text "#mon Journal"
 
 	para "Titelthema:"
-	line "Ballmacher Kurt!"
+	line "Ball-Schmied Kurt!"
 
 	para "Kurt lässt nieman-"
 	line "den in seine Nähe,"

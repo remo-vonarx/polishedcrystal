@@ -110,8 +110,9 @@ MovementData_WarpToSinjohRuins:
 
 RuinsofAlphSinjohChamberMystriText:
 	text "Endlich betritt"
-	line "die Hauptfigur den"
-	cont "Trysteriumaltar."
+	line "der Auserwählte"
+	cont "den Trysterium-"
+	cont "altar."
 	done
 
 RuinsofAlphSinjohChamberSurpriseText: ; text > text
