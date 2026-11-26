@@ -53,24 +53,24 @@ Route13GrampsScript:
 GenericTrainerCamperClark:
 	generictrainer CAMPER, CLARK, EVENT_BEAT_CAMPER_CLARK, .SeenText, .BeatenText
 
-	text "It doesn't matter"
-	line "what kind of prep"
-	cont "work you've done."
+	text "Egal, wie gut du"
+	line "dich vorbereitet"
+	cont "hast."
 
-	para "If you lose, you"
-	line "lose."
+	para "Wenn du verlierst,"
+	line "verlierst du."
 	done
 
 .SeenText:
-	text "Collect water!"
-	line "Don't let the fire"
-	cont "go out!"
+	text "Wasser sammeln!"
+	line "Das Feuer nicht"
+	cont "ausgehen lassen!"
 
-	para "Look out for wild"
-	line "#mon!"
+	para "Auf wilde #mon"
+	line "achten!"
 
-	para "Let's go,"
-	line "Campfire!"
+	para "Los geht's,"
+	line "Lagerfeuer!"
 	done
 
 .BeatenText:
@@ -80,21 +80,22 @@ GenericTrainerCamperClark:
 GenericTrainerPicnickerGinger:
 	generictrainer PICNICKER, GINGER, EVENT_BEAT_PICNICKER_GINGER, .SeenText, .BeatenText
 
-	text "You can communi-"
-	line "cate with #mon"
+	text "Statt mit Worten"
+	line "kannst du mit"
+	cont "#mon auch durch"
 
-	para "through whistling"
-	line "instead of words!"
+	para "Pfeifen"
+	line "kommunizieren!"
 	done
 
 .SeenText:
-	text "Why do I always"
-	line "get the urge to"
-	cont "whistle outdoors?"
+	text "Warum muss ich"
+	line "draußen immer"
+	cont "pfeifen?"
 	done
 
 .BeatenText:
-	text "Tweeee!"
+	text "Fiiiiiep!"
 	done
 
 GenericTrainerBird_keeperPerry:
@@ -143,83 +144,86 @@ Bird_keeperBretBeatenText:
 GenericTrainerCamperTanner:
 	generictrainer CAMPER, TANNER, EVENT_BEAT_CAMPER_TANNER, .SeenText, .BeatenText
 
-	text "I figured it would"
-	line "be easy to knock"
-	cont "you out…"
+	text "Ich dachte, dich"
+	line "umzuhauen wäre"
+	cont "ein Leichtes…"
 	done
 
 .SeenText:
-	text "I can fit in a"
-	line "quick battle while"
-	cont "preparing a meal!"
+	text "Ein schneller"
+	line "Kampf geht beim"
+	cont "Kochen immer!"
 	done
 
 .BeatenText:
-	text "Oh, I'm hungry…"
+	text "Oh, ich hab"
+	line "Hunger…"
 	done
 
 GenericTrainerPicnickerPiper:
 	generictrainer PICNICKER, PIPER, EVENT_BEAT_PICNICKER_PIPER, .SeenText, .BeatenText
 
-	text "The way you were"
-	line "walking made me"
-	cont "think I could win."
+	text "So wie du gelau-"
+	line "fen bist, dachte"
+	cont "ich, ich gewinne."
 	done
 
 .SeenText:
-	text "How about we bring"
-	line "out your #mon"
+	text "Wie wäre es, wenn"
+	line "wir deine und"
 
-	para "and mine for a"
-	line "battle?"
+	para "meine #mon zum"
+	line "Kampf rufen?"
 	done
 
 .BeatenText:
-	text "Oh, that's too"
-	line "bad…"
+	text "Oh, wie schade…"
 	done
 
 GenericTrainerCoupleTimandsue1:
 	generictrainer COUPLE, TIMANDSUE1, EVENT_BEAT_COUPLE_TIM_AND_SUE, .SeenText, .BeatenText
 
-	text "Tim: If you've"
-	line "beaten her, you"
-	cont "must be strong!"
+	text "Finn: Wenn du sie"
+	line "besiegt hast,"
+	cont "musst du stark"
+	cont "sein!"
 	done
 
 .SeenText:
-	text "Tim: I'll give you"
-	line "a little hint."
+	text "Finn: Ich gebe dir"
+	line "einen kleinen"
+	cont "Tipp."
 
-	para "My girlfriend's"
-	line "stronger than me!"
+	para "Meine Freundin ist"
+	line "stärker als ich!"
 	done
 
 .BeatenText:
-	text "Tim: You're the"
-	line "strongest!"
+	text "Finn: Du bist am"
+	line "stärksten!"
 	done
 
 GenericTrainerCoupleTimandsue2:
 	generictrainer COUPLE, TIMANDSUE2, EVENT_BEAT_COUPLE_TIM_AND_SUE, .SeenText, .BeatenText
 
-	text "Sue: That strength"
-	line "of yours…"
-	cont "I've got it!"
+	text "Zora: Diese Stärke"
+	line "von dir…"
+	cont "Ich hab's!"
 
-	para "Are you in love?"
+	para "Bist du verliebt?"
 	done
 
 .SeenText:
-	text "Sue: Women who"
-	line "don't take love"
+	text "Zora: Frauen, die"
+	line "die Liebe nicht"
 
-	para "seriously might"
-	line "get hurt."
+	para "ernst nehmen,"
+	line "könnten verletzt"
+	cont "werden."
 	done
 
 .BeatenText:
-	text "Sue: Wa ha…"
+	text "Zora: Wa ha…"
 	done
 
 GenericTrainerPokefanmAlex:

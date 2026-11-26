@@ -671,9 +671,9 @@ KimonoGirlMinaScript:
 	done
 
 .AfterText:
-	text "You are quite the"
-	line "Trainer."
+	text "Du bist wahrlich"
+	line "ein Trainer."
 
-	para "You are worthy of"
-	line "this item!"
+	para "Du bist dieses"
+	line "Items würdig!"
 	done

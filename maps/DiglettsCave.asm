@@ -105,62 +105,69 @@ DiglettsCaveFossilManiacScript:
 GenericTrainerHikerGerard:
 	generictrainer HIKER, GERARD, EVENT_BEAT_HIKER_GERARD, .SeenText, .BeatenText
 
-	text "This place makes"
-	line "me so nervous."
+	text "Dieser Ort macht"
+	line "mich so nervös."
 
-	para "What if a Diglett"
-	line "attacks me out of"
-	cont "nowhere?"
+	para "Was, wenn mich ein"
+	line "Digda aus dem"
+	cont "Nichts angreift?"
 	done
 
 .SeenText:
-	text "Aah! I think that"
-	line "rock just moved!"
+	text "Aah! Ich glaube,"
+	line "der Fels hat sich"
+	cont "eben bewegt!"
 	done
 
 .BeatenText:
-	text "Must have been"
-	line "my imagination."
+	text "Das habe ich mir"
+	line "wohl eingebildet."
 	done
 
 GenericTrainerHikerDent:
 	generictrainer HIKER, DENT, EVENT_BEAT_HIKER_DENT, .SeenText, .BeatenText
 
-	text "I'll fit right in"
-	line "with Pewter Gym's"
-	cont "buff crew. Hohoh!"
+	text "Ich passe bestens"
+	line "zur Muskeltruppe"
+	cont "der Arena von"
+	cont "Marmoria City."
+
+	para "Hohoh!"
 	done
 
 .SeenText:
-	text "I'm headed to"
-	line "Pewter."
+	text "Ich bin auf dem"
+	line "Weg nach Marmoria"
+	cont "City."
 
-	para "Its Rock-type Gym"
-	line "is perfect for a"
-	cont "buff guy like me!"
+	para "Die Gestein-Arena"
+	line "dort ist perfekt"
+	cont "für einen Muskel-"
+	cont "protz wie mich!"
 	done
 
 .BeatenText:
 	text "Hohoh!"
-	line "Someone more buff"
-	cont "than me!"
+	line "Einer mit mehr"
+	cont "Muskeln als ich!"
 	done
 
 GenericTrainerBlackbeltInigo:
 	generictrainer BLACKBELT_T, INIGO, EVENT_BEAT_BLACKBELT_INIGO, .SeenText, .BeatenText
 
-	text "Making noises won't"
-	line "make you a better"
-	cont "fighter, but it"
+	text "Lautes Geschrei"
+	line "macht dich nicht"
+	cont "zum besseren"
 
-	para "can intimidate"
-	line "your foes."
+	para "Kämpfer, aber es"
+	line "schüchtert deine"
+	cont "Gegner ein."
 	done
 
 .SeenText:
-	text "Prepare for"
-	line "battle!"
-	cont "HOO-HAH!"
+	text "Mach dich bereit"
+	line "zum Kampf!"
+	cont "HUU-HAH!"
 	done
 
 .BeatenText:
@@ -170,19 +177,20 @@ GenericTrainerBlackbeltInigo:
 GenericTrainerEngineerSmith:
 	generictrainer ENGINEER, SMITH, EVENT_BEAT_ENGINEER_SMITH, .SeenText, .BeatenText
 
-	text "Those Diglett are"
-	line "just natural"
-	cont "engineers."
+	text "Diese Digda sind"
+	line "einfach geborene"
+	cont "Ingenieure."
 	done
 
 .SeenText:
-	text "How did Diglett"
-	line "create such a long"
-	cont "tunnel?"
+	text "Wie haben Digda"
+	line "nur so einen"
+	cont "langen Tunnel"
+	cont "gegraben?"
 	done
 
 .BeatenText:
-	text "Amazing!"
+	text "Erstaunlich!"
 	done
 
 DiglettsCaveCooltrainerfText:

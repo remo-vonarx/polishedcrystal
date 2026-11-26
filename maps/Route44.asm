@@ -75,11 +75,11 @@ Route44VeteranmScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "You're a very"
-	line "quiet person."
+	text "Du bist ein sehr"
+	line "stiller Mensch."
 
-	para "Has anybody told"
-	line "you that before?"
+	para "Hat dir das schon"
+	line "mal jemand gesagt?"
 	done
 
 .IntroText:
@@ -128,16 +128,17 @@ Route44VeteranmScript:
 	done
 
 .AfterText1:
-	text "You're really"
-	line "strong for someone"
-	cont "so young."
-	cont "Keep it up!"
+	text "Du bist echt stark"
+	line "für jemanden, der"
+	cont "so jung ist."
+	cont "Weiter so!"
 
-	para "Take one of these"
-	line "Rocky Helmets."
+	para "Nimm einen dieser"
+	line "Beulenhelme."
 
-	para "You can use it as"
-	line "well as me."
+	para "Du kannst ihn ge-"
+	line "nauso gut ein-"
+	cont "setzen wie ich."
 	done
 
 TrainerBird_keeperVance1:

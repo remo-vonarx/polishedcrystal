@@ -379,12 +379,12 @@ Route36CooltrainerfChiaraScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "With skill like"
-	line "yours, I'm not the"
+	text "Mit deinem Können"
+	line "bin ich nicht die"
 
-	para "only elite trainer"
-	line "who'll want to test"
-	cont "you."
+	para "einzige Elite-"
+	line "Trainerin, die"
+	cont "dich testen will."
 	done
 
 .IntroText:
@@ -440,15 +440,15 @@ Route36CooltrainerfChiaraScript:
 	done
 
 .AfterText1:
-	text "You observed my"
-	line "technique and"
-	cont "countered it."
+	text "Du hast meine"
+	line "Technik durch-"
+	cont "schaut und"
+	cont "gekontert."
 
-	para "Why not try it"
-	line "yourself?"
+	para "Probier sie doch"
+	line "selbst!"
 
-	para "Here, it's for"
-	line "you!"
+	para "Hier, für dich!"
 	done
 
 GenericTrainerPsychicMark:
@@ -464,8 +464,8 @@ GenericTrainerPsychicMark:
 GenericTrainerSchoolgirlMolly:
 	generictrainer SCHOOLGIRL, MOLLY, EVENT_BEAT_SCHOOLGIRL_MOLLY, SchoolgirlMollySeenText, SchoolgirlMollyBeatenText
 
-	text "I still have a"
-	line "lot to learn."
+	text "Ich muss noch"
+	line "viel lernen."
 	done
 
 ArthurScript:
@@ -655,13 +655,14 @@ PsychicMarkBeatenText:
 	done
 
 SchoolgirlMollySeenText:
-	text "Mr.Earl taught me"
-	line "how to battle with"
-	cont "#mon!"
+	text "Earl hat mir bei-"
+	line "gebracht, wie man"
+	cont "mit #mon"
+	cont "kämpft!"
 	done
 
 SchoolgirlMollyBeatenText:
-	text "My studying…"
+	text "Meine Studien…"
 	done
 
 SchoolboyAlan1SeenText:

@@ -101,21 +101,22 @@ LoreleiGiveIcyRock:
 	jumpthisopenedtext
 
 LoreleiRematchAfterText:
-	text "Your journey isn't"
-	line "over, you know."
+	text "Deine Reise ist"
+	line "noch nicht vorbei."
 
-	para "You can earn more"
-	line "Badges in Kanto,"
+	para "Du kannst in Kanto"
+	line "weitere Orden"
+	cont "verdienen,"
 
-	para "catch new species"
-	line "of #mon,"
+	para "neue #mon-Arten"
+	line "fangen,"
 
-	para "improve yourself"
-	line "and your team."
+	para "dich und dein Team"
+	line "verbessern."
 
-	para "Becoming a"
-	line "#mon master is"
-	cont "a life's work."
+	para "#mon-Meister zu"
+	line "werden, ist eine"
+	cont "Lebensaufgabe."
 	done
 
 LoreleiReintroductionScript:
@@ -179,8 +180,8 @@ LoreleiSeenText:
 	done
 
 LoreleiBeatenText:
-	text "You're better than"
-	line "I thought!"
+	text "Du bist besser,"
+	line "als ich dachte!"
 	done
 
 LoreleiRewardText:
@@ -213,8 +214,8 @@ LoreleiRematchSeenText:
 	done
 
 LoreleiRematchBeatenText:
-	text "As expected of"
-	line "the Champion!"
+	text "Wie vom Champ"
+	line "erwartet!"
 	done
 
 LoreleiOneMoreBadgeText:

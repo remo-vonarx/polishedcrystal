@@ -137,21 +137,21 @@ CeruleanCapeDateInterruptedTrigger3:
 GenericTrainerSwimmermRomeo:
 	generictrainer SWIMMERM, ROMEO, EVENT_BEAT_SWIMMERM_ROMEO, .SeenText, .BeatenText
 
-	text "Being a good"
-	line "Swimmer doesn't"
+	text "Als guter"
+	line "Schwimmer bin ich"
 
-	para "make me a good"
-	line "trainer…"
+	para "noch lange kein"
+	line "guter Trainer…"
 	done
 
 .SeenText:
-	text "Admire my fitness!"
-	line "My victory is"
-	cont "assured!"
+	text "Bewundere meine"
+	line "Fitness! Mein Sieg"
+	cont "ist sicher!"
 	done
 
 .BeatenText:
-	text "Oh! That's it?"
+	text "Ach, das war es?"
 	done
 
 TrainerSwimmermMalcolm:
@@ -161,156 +161,166 @@ TrainerSwimmermMalcolm:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Don't tell me,"
-	line "you visit lots of"
+	text "Sag nichts, du"
+	line "besuchst viele"
 
-	para "#mon Gyms,"
-	line "right?"
+	para "PKMN-Arenen,"
+	line "oder?"
 	done
 
 .SeenText:
-	text "My #mon and I"
-	line "swim together,"
+	text "Meine #mon und"
+	line "ich schwimmen"
 
-	para "but we also"
-	line "battle!"
+	para "zusammen, aber wir"
+	line "kämpfen auch!"
 	done
 
 .BeatenText:
-	text "I wish I were as"
-	line "strong as you."
+	text "Ich wäre gern so"
+	line "stark wie du."
 	done
 
 GenericTrainerSwimmermArmand:
 	generictrainer SWIMMERM, ARMAND, EVENT_BEAT_SWIMMERM_ARMAND, .SeenText, .BeatenText
 
-	text "That gal on the"
-	line "shore… Her music"
-	cont "is good, but she's"
+	text "Das Mädchen am"
+	line "Ufer… Ihre Musik"
+	cont "ist gut, aber sie"
 
-	para "distracting the"
-	line "#mon!"
+	para "lenkt die #mon"
+	line "ab!"
 	done
 
 .SeenText:
-	text "Ugh. Would that"
-	line "Guitarist on the"
+	text "Uff. Könnte die"
+	line "Gitarristin am"
 
-	para "shore keep it"
-	line "down?"
+	para "Ufer mal leiser"
+	line "sein?"
 	done
 
 .BeatenText:
-	text "The guitar put me"
-	line "off my stride!"
+	text "Die Gitarre hat"
+	line "mich aus dem Takt"
+	cont "gebracht!"
 	done
 
 GenericTrainerBeautyBridget:
 	generictrainer BEAUTY, BRIDGET, EVENT_BEAT_BEAUTY_BRIDGET, .SeenText, .BeatenText
 
-	text "I think the view"
-	line "here is beautiful."
-	cont "Don't you agree?"
+	text "Ich finde die"
+	line "Aussicht hier"
+	cont "wunderschön."
+
+	para "Findest du nicht"
+	line "auch?"
 	done
 
 .SeenText:
-	text "Hey! You're block-"
-	line "ing my view!"
+	text "Hey! Du versperrst"
+	line "mir die Aussicht!"
 	done
 
 .BeatenText:
-	text "I was just trying"
-	line "to enjoy the view…"
+	text "Ich wollte doch"
+	line "nur die Aussicht"
+	cont "genießen…"
 	done
 
 GenericTrainerBeautyVeronica:
 	generictrainer BEAUTY, VERONICA, EVENT_BEAT_BEAUTY_VERONICA, .SeenText, .BeatenText
 
-	text "Treat me mean and"
-	line "I'll tell you where"
-	cont "to go!"
+	text "Sei fies zu mir,"
+	line "und ich sag dir,"
+	cont "wohin du dich"
+	cont "scheren kannst!"
 
-	para "Must be why I'm"
-	line "single. …Haha!"
+	para "Darum bin ich wohl"
+	line "Single. …Haha!"
 	done
 
 .SeenText:
-	text "I don't date much,"
-	line "but when I do,"
+	text "Ich habe nicht oft"
+	line "ein Date, aber"
 
-	para "Cerulean Cape is"
-	line "the perfect spot."
+	para "wenn, dann ist das"
+	line "Kap von Azuria der"
+	cont "perfekte Ort."
 	done
 
 .BeatenText:
-	text "Treat 'em mean,"
-	line "keep 'em keen,"
-	cont "right?"
+	text "Wer fies ist, wird"
+	line "begehrt, oder?"
 	done
 
 GenericTrainerGentlemanCamus:
 	generictrainer GENTLEMAN, CAMUS, EVENT_BEAT_GENTLEMAN_CAMUS, .SeenText, .BeatenText
 
-	text "I was once a ta-"
-	line "lented trainer,"
+	text "Ich war einst ein"
+	line "talentierter"
 
-	para "but now I'm just an"
-	line "old has-been."
+	para "Trainer, doch nun"
+	line "gehöre ich zum"
+	cont "alten Eisen."
 
-	para "Enjoy it while"
-	line "you're still young."
+	para "Genieße es, so-"
+	line "lange du noch jung"
+	cont "bist."
 	done
 
 .SeenText:
-	text "Seeing you reminds"
-	line "me of my own wild"
-	cont "youth."
+	text "Bei deinem Anblick"
+	line "denke ich an meine"
+	cont "wilde Jugend."
 	done
 
 .BeatenText:
-	text "What a wild"
-	line "battle!"
+	text "Was für ein wilder"
+	line "Kampf!"
 	done
 
 GenericTrainerGentlemanGeoffrey:
 	generictrainer GENTLEMAN, GEOFFREY, EVENT_BEAT_GENTLEMAN_GEOFFREY, .SeenText, .BeatenText
 
-	text "Sometimes a change"
-	line "is as good as a"
-	cont "rest."
+	text "Manchmal ist"
+	line "Abwechslung so gut"
+	cont "wie Erholung."
 
-	para "I feel so refresh-"
-	line "ed!"
+	para "Ich fühle mich so"
+	line "erfrischt!"
 	done
 
 .SeenText:
-	text "I wanted a change,"
-	line "so I got into"
+	text "Ich wollte etwas"
+	line "Abwechslung, also"
+	cont "kam ich zu den"
 	cont "#mon!"
 	done
 
 .BeatenText:
-	text "Despite my age, I'm"
-	line "still a beginner."
+	text "Ich bin trotz"
+	line "meines Alters noch"
+	cont "ein Anfänger."
 	done
 
 GenericTrainerGuitaristfMorgan:
 	generictrainer GUITARISTF, MORGAN, EVENT_BEAT_GUITARISTF_MORGAN, .SeenText, .BeatenText
 
-	text "The echoing cliffs"
-	line "make the Cape a"
-	cont "perfect sound-"
-	cont "board!"
+	text "Die hallenden"
+	line "Klippen machen das"
+	cont "Kap zum perfekten"
+	cont "Resonanzboden!"
 	done
 
 .SeenText:
-	text "Listen to that"
-	line "reverb!"
+	text "Hör dir diesen"
+	line "Hall an!"
 	done
 
 .BeatenText:
-	text "What a rockin'"
-	line "battle!"
+	text "Was für ein"
+	line "rockiger Kampf!"
 	done
 
 TrainerLadyJessica:
@@ -331,41 +341,45 @@ TrainerLadyJessica:
 	waitendtext
 
 .SeenText:
-	text "Ah! You there!"
-	line "Care to battle"
-	cont "with me?"
+	text "Ah! Du da!"
+	line "Möchtest du gegen"
+	cont "mich kämpfen?"
 	done
 
 .BeatenText:
-	text "Oh no! I got my"
-	line "dress all wet!"
+	text "Oh nein! Mein"
+	line "Kleid ist ganz"
+	cont "nass geworden!"
 	done
 
 .AfterText1:
-	text "I'll have to buy a"
-	line "better #mon…"
+	text "Ich muss mir ein"
+	line "besseres #mon"
+	cont "kaufen…"
 	cont "………………"
-	cont "And a new dress…"
+
+	para "Und ein neues"
+	line "Kleid…"
 	done
 
 .AfterText2:
-	text "Why are you still"
-	line "here?"
+	text "Warum bist du"
+	line "noch hier?"
 
-	para "Stop staring at"
-	line "me!"
+	para "Hör auf, mich"
+	line "anzustarren!"
 	cont "………………"
-	cont "Creep!"
+	cont "Widerling!"
 	done
 
 GenericTrainerFisherLeroy:
 	generictrainer FISHER, LEROY, EVENT_BEAT_FISHER_LEROY, .SeenText, .BeatenText
 
-	text "All I ever catch"
-	line "are Magikarp…"
+	text "Ich fange immer"
+	line "nur Karpador…"
 
-	para "At least they all"
-	line "look unique."
+	para "Immerhin sieht"
+	line "jedes anders aus."
 	done
 
 .SeenText:

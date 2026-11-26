@@ -35,32 +35,34 @@ SafariZoneNorth_MapScriptHeader:
 GenericTrainerBattleGirlPadma:
 	generictrainer BATTLE_GIRL, PADMA, EVENT_BEAT_BATTLE_GIRL_PADMA, BattleGirlPadmaSeenText, BattleGirlPadmaBeatenText
 
-	text "If you throw your"
-	line "emotions into"
+	text "Wenn du deine Ge-"
+	line "fühle ins Training"
 
-	para "training, you'll"
-	line "become strong!"
+	para "steckst, wirst du"
+	line "stark!"
 	done
 
 GenericTrainerYoungsterTyler:
 	generictrainer YOUNGSTER, TYLER, EVENT_BEAT_YOUNGSTER_TYLER, YoungsterTylerSeenText, YoungsterTylerBeatenText
 
-	text "#mon leap out"
-	line "when you least"
-	cont "expect it."
+	text "#mon springen"
+	line "hervor, wenn du es"
+	cont "am wenigsten"
+	cont "erwartest."
 	done
 
 GenericTrainerBeautyRachael:
 	generictrainer BEAUTY, RACHAEL, EVENT_BEAT_BEAUTY_RACHAEL, BeautyRachaelSeenText, BeautyRachaelBeatenText
 
-	text "I was a Black Belt"
-	line "just one year ago."
+	text "Noch vor einem"
+	line "Jahr war ich"
+	cont "Schwarzgurt."
 
-	para "The power of med-"
-	line "ical science is"
+	para "Die Macht der"
+	line "Medizin"
 
-	para "amazing, wouldn't"
-	line "you say?"
+	para "ist erstaunlich,"
+	line "findest du nicht?"
 	done
 
 SafariZoneNorthCooltrainerFScript:
@@ -108,40 +110,42 @@ SafariZoneNorthTutorDoubleEdgeScript:
 	done
 
 BattleGirlPadmaSeenText:
-	text "I spar with my"
-	line "#mon to improve"
-	cont "as a team!"
+	text "Ich mache mit"
+	line "meinen #mon"
+	cont "Übungskämpfe, um"
+	cont "als Team besser"
+	cont "zu werden!"
 	done
 
 BattleGirlPadmaBeatenText:
-	text "We'll have to"
-	line "train harder!"
+	text "Wir müssen härter"
+	line "trainieren!"
 	done
 
 YoungsterTylerSeenText:
-	text "You can find #-"
-	line "mon anywhere!"
+	text "#mon findest du"
+	line "überall!"
 
-	para "In grass, in"
-	line "water, in caves,"
-	cont "or up a tree!"
+	para "Im Gras, im Was-"
+	line "ser, in Höhlen"
+	cont "oder auf Bäumen!"
 	done
 
 YoungsterTylerBeatenText:
-	text "I need to keep"
-	line "looking!"
+	text "Ich muss weiter-"
+	line "suchen!"
 	done
 
 BeautyRachaelSeenText:
-	text "My sundress is"
-	line "perfect for a day"
-	cont "in the Safari"
-	cont "Zone!"
+	text "Mein Sommerkleid"
+	line "ist perfekt für"
+	cont "einen Tag in der"
+	cont "Safari-Zone!"
 	done
 
 BeautyRachaelBeatenText:
-	text "It's not great"
-	line "for battling…"
+	text "Zum Kämpfen ist"
+	line "es nicht so toll…"
 	done
 
 SafariZoneNorthCooltrainerFText:

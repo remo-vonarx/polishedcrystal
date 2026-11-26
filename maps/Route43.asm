@@ -102,15 +102,15 @@ Route43SightseerfScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "I love visiting"
-	line "new places and"
+	text "Ich besuche gern"
+	line "neue Orte und"
 
-	para "challenging every"
-	line "trainer there."
+	para "fordere dort alle"
+	line "Trainer heraus."
 
-	para "I'll keep looking"
-	line "for strong train-"
-	cont "ers like you."
+	para "Ich suche weiter"
+	line "nach starken Trai-"
+	cont "nern wie dir."
 	done
 
 .IntroText:
@@ -167,46 +167,51 @@ Route43SightseerfScript:
 	done
 
 .AfterText1:
-	text "Wow! I've finally"
-	line "found what I was"
-	cont "looking for!"
+	text "Wow! Endlich habe"
+	line "ich gefunden, was"
+	cont "ich suche!"
 
-	para "I'll give you a"
-	line "Flame Orb, but"
+	para "Ich gebe dir einen"
+	line "Heiß-Orb, aber"
 
-	para "please be careful"
-	line "if you give it to"
-	cont "a #mon."
+	para "sei bitte vorsich-"
+	line "tig, wenn du ihn"
+	cont "einem #mon"
+	cont "gibst."
 	done
 
 GenericTrainerBreederJody:
 	generictrainer BREEDER, JODY, EVENT_BEAT_BREEDER_JODY, BreederJodySeenText, BreederJodyBeatenText
 
-	text "A baby #mon"
-	line "can sometimes"
+	text "Ein Baby-#mon"
+	line "kann manchmal"
 
-	para "inherit a move"
-	line "from its father,"
+	para "eine Attacke vom"
+	line "Vater erben,"
 
-	para "even one that it"
-	line "wouldn't normally"
-	cont "learn."
+	para "sogar eine, die es"
+	line "normalerweise"
+	cont "nicht lernt."
 	done
 
 GenericTrainerSrandjrIvyandamy1:
 	generictrainer SR_AND_JR, IVYANDAMY1, EVENT_BEAT_SR_AND_JR_IVY_AND_AMY, SrandjrIvyandamy1SeenText, SrandjrIvyandamy1BeatenText
 
-	text "Ivy: I don't want"
-	line "my junior to think"
-	cont "I can't help her."
+	text "Ivy: Meine Junio-"
+	line "rin soll nicht"
+	cont "denken, dass ich"
+	cont "ihr nicht helfen"
+	cont "kann."
 	done
 
 GenericTrainerSrandjrIvyandamy2:
 	generictrainer SR_AND_JR, IVYANDAMY2, EVENT_BEAT_SR_AND_JR_IVY_AND_AMY, SrandjrIvyandamy2SeenText, SrandjrIvyandamy2BeatenText
 
-	text "Amy: I hope my"
-	line "senior noticed"
-	cont "how hard I tried."
+	text "Amy: Hoffentlich"
+	line "hat meine Senio-"
+	cont "rin gesehen, wie"
+	cont "sehr ich mich"
+	cont "angestrengt habe."
 	done
 
 GenericTrainerCamperSpencer:
@@ -332,13 +337,19 @@ PokemaniacBrent1Script:
 GenericTrainerPokemaniacRon:
 	generictrainer POKEMANIAC, RON, EVENT_BEAT_POKEMANIAC_RON, PokemaniacRonSeenText, PokemaniacRonBeatenText
 
-	text "It's OK for people"
-	line "to like different"
-	cont "types of #mon."
+	text "Es ist ganz"
+	line "natürlich,"
+	cont "unterschiedliche"
 
-	para "#mon isn't just"
-	line "about having the"
-	cont "most powerful one."
+	para "Arten von #mon"
+	line "zu mögen."
+
+	para "Es geht bei"
+	line "#mon nicht nur"
+
+	para "darum, das"
+	line "stärkste von allen"
+	cont "zu haben."
 	done
 
 GenericTrainerFisherMarvin:
@@ -557,9 +568,12 @@ FisherMarvinBeatenText:
 	done
 
 CamperSpencerSeenText:
-	text "I can do so much"
-	line "with my #mon--"
-	cont "it's super fun!"
+	text "Ich kann so viel"
+	line "unternehmen mit"
+	cont "meinen #mon -"
+	cont "das macht"
+	cont "unheimlich viel"
+	cont "Spaß!"
 	done
 
 CamperSpencerBeatenText:
@@ -592,36 +606,41 @@ PicnickerTiffanyWantsPicnicText:
 
 
 BreederJodySeenText:
-	text "I bred my #mon"
-	line "so they know"
-	cont "special moves!"
+	text "Ich habe meine"
+	line "#mon so gezüch-"
+	cont "tet, dass sie be-"
+	cont "sondere Attacken"
+	cont "kennen!"
 	done
 
 BreederJodyBeatenText:
-	text "I lost anyway!"
+	text "Trotzdem"
+	line "verloren!"
 	done
 
 SrandjrIvyandamy1SeenText:
-	text "Ivy: I'll show my"
-	line "junior how it's"
-	cont "done!"
+	text "Ivy: Ich zeige"
+	line "meiner Juniorin,"
+	cont "wie es geht!"
 	done
 
 SrandjrIvyandamy1BeatenText:
-	text "Ivy: You embarass-"
-	line "ed me in front of"
-	cont "my junior…"
+	text "Ivy: Du hast mich"
+	line "vor meiner Junio-"
+	cont "rin blamiert…"
 	done
 
 SrandjrIvyandamy2SeenText:
-	text "Amy: A trainer!"
-	line "Senior, please"
-	cont "help me win!"
+	text "Amy: Ein Trainer!"
+	line "Seniorin, bitte"
+	cont "hilf mir zu"
+	cont "gewinnen!"
 	done
 
 SrandjrIvyandamy2BeatenText:
-	text "Amy: We couldn't"
-	line "do it…"
+	text "Amy: Wir haben"
+	line "es nicht"
+	cont "geschafft…"
 	done
 
 Route43Sign1Text:

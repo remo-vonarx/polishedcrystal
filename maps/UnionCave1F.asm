@@ -83,9 +83,9 @@ GenericTrainerFirebreatherRay:
 GenericTrainerRuin_maniacJones:
 	generictrainer RUIN_MANIAC, JONES, EVENT_BEAT_RUIN_MANIAC_JONES, Ruin_maniacJonesSeenText, Ruin_maniacJonesBeatenText
 
-	text "The Ruins are hid-"
-	line "ing something…"
-	cont "I just know it!"
+	text "Die Ruinen ver-"
+	line "bergen etwas…"
+	cont "Ich weiß es!"
 	done
 
 HikerRussellSeenText:
@@ -166,8 +166,8 @@ FirebreatherRayBeatenText:
 	done
 
 Ruin_maniacJonesSeenText:
-	text "Have you explored"
-	line "the Ruins of Alph?"
+	text "Hast du die Alph-"
+	line "Ruinen erkundet?"
 	done
 
 Ruin_maniacJonesBeatenText:

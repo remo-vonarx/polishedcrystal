@@ -28,63 +28,68 @@ QuietCave1F_MapScriptHeader:
 GenericTrainerHexManiacAshley:
 	generictrainer HEX_MANIAC, ASHLEY, EVENT_BEAT_HEX_MANIAC_ASHLEY, HexManiacAshleySeenText, HexManiacAshleyBeatenText
 
-	text "I see things that"
-	line "others can't see…"
+	text "Ich sehe Dinge,"
+	line "die andere nicht"
+	cont "sehen…"
 	done
 
 GenericTrainerCooltrainermHenri:
 	generictrainer COOLTRAINERM, HENRI, EVENT_BEAT_COOLTRAINERM_HENRI, CooltrainermHenriSeenText, CooltrainermHenriBeatenText
 
-	text "Having a diverse"
-	line "team to support"
+	text "Ein vielseitiges"
+	line "Team, in dem jeder"
 
-	para "each others' weak-"
-	line "nesses is key."
+	para "die Schwächen der"
+	line "anderen auffängt,"
+	cont "ist entscheidend."
 	done
 
 GenericTrainerHikerGrady:
 	generictrainer HIKER, GRADY, EVENT_BEAT_HIKER_GRADY, HikerGradySeenText, HikerGradyBeatenText
 
-	text "You could hear a"
-	line "pin drop in this"
-	cont "place!"
+	text "Hier könnte man"
+	line "eine Stecknadel"
+	cont "fallen hören!"
 	done
 
 GenericTrainerScientistCarl:
 	generictrainer SCIENTIST, CARL, EVENT_BEAT_SCIENTIST_CARL, ScientistCarlSeenText, ScientistCarlBeatenText
 
-	text "It's interesting"
-	line "that such a quiet"
-	cont "environment can"
+	text "Interessant, dass"
+	line "es so eine stille"
+	cont "Umgebung direkt"
 
-	para "exist right near"
-	line "rushing water."
+	para "neben rauschendem"
+	line "Wasser gibt."
 	done
 
 HexManiacAshleySeenText:
-	text "The spirits have"
-	line "shown me your"
-	cont "defeat!"
+	text "Die Geister haben"
+	line "mir deine Nieder-"
+	cont "lage gezeigt!"
 	done
 
 HexManiacAshleyBeatenText:
-	text "No! The spirits"
-	line "can't be wrong!"
+	text "Nein! Die Geister"
+	line "können sich nicht"
+	cont "irren!"
 	done
 
 CooltrainermHenriSeenText:
-	text "Can you handle my"
-	line "balanced team of"
-	cont "#mon?"
+	text "Kommst du mit"
+	line "meinem ausgewo-"
+	cont "genen Team aus"
+	cont "#mon klar?"
 	done
 
 CooltrainermHenriBeatenText: ; text > text
-	text "I guess you can!"
+	text "Offenbar schon!"
 	done
 
 HikerGradySeenText:
-	text "I heard you long"
-	line "before I saw you!"
+	text "Ich hab dich lange"
+	line "gehört, bevor ich"
+	cont "dich sah!"
 	done
 
 HikerGradyBeatenText:
@@ -92,12 +97,13 @@ HikerGradyBeatenText:
 	done
 
 ScientistCarlSeenText:
-	text "I'm studying the"
-	line "acoustics of this"
-	cont "cave system."
+	text "Ich erforsche die"
+	line "Akustik dieses"
+	cont "Höhlensystems."
 	done
 
 ScientistCarlBeatenText:
-	text "My studies don't"
-	line "apply to battles!"
+	text "Meine Studien"
+	line "helfen nicht beim"
+	cont "Kämpfen!"
 	done

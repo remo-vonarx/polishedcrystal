@@ -72,82 +72,90 @@ QuietCaveB1FNurseKeikoScript:
 	done
 
 .AfterText:
-	text "OK then… Time to"
-	line "give your #mon"
-	cont "some energy!"
+	text "Also gut… Zeit,"
+	line "deinen #mon"
+	cont "etwas Energie zu"
+	cont "geben!"
 	done
 
 GenericTrainerBattleGirlKagami:
 	generictrainer BATTLE_GIRL, KAGAMI, EVENT_BEAT_BATTLE_GIRL_KAGAMI, BattleGirlKagamiSeenText, BattleGirlKagamiBeatenText
 
-	text "I come here to"
-	line "train in peace"
-	cont "and solitude."
+	text "Ich komme her, um"
+	line "in Ruhe und Ein-"
+	cont "samkeit zu"
+	cont "trainieren."
 	done
 
 GenericTrainerPokemaniacAidan:
 	generictrainer POKEMANIAC, AIDAN, EVENT_BEAT_POKEMANIAC_AIDAN, PokemaniacAidanSeenText, PokemaniacAidanBeatenText
 
-	text "Sometimes a"
-	line "#mon in a"
+	text "Manchmal kennt ein"
+	line "#mon in einem"
 
-	para "certain area will"
-	line "know a rare move."
+	para "bestimmten Gebiet"
+	line "eine seltene"
+	cont "Attacke."
 	done
 
 GenericTrainerHikerSteve:
 	generictrainer HIKER, STEVE, EVENT_BEAT_HIKER_STEVE, HikerSteveSeenText, HikerSteveBeatenText
 
-	text "Spelunking is also"
-	line "called caving."
+	text "Höhlenforschung"
+	line "heißt auch"
+	cont "Speläologie."
 
-	para "It means exploring"
-	line "caves!"
+	para "Dabei erkundet"
+	line "man Höhlen!"
 	done
 
 GenericTrainerPsychicVirgil:
 	generictrainer PSYCHIC_T, VIRGIL, EVENT_BEAT_PSYCHIC_VIRGIL, PsychicVirgilSeenText, PsychicVirgilBeatenText
 
-	text "The silence helps"
-	line "focus my ESP."
+	text "Die Stille hilft"
+	line "mir, meine über-"
+	cont "sinnlichen Kräfte"
+	cont "zu bündeln."
 	done
 
 BattleGirlKagamiSeenText:
-	text "Don't disturb my"
-	line "training!"
+	text "Stör mich nicht"
+	line "beim Training!"
 	done
 
 BattleGirlKagamiBeatenText:
-	text "Not good enough…"
+	text "Nicht gut genug…"
 	done
 
 PokemaniacAidanSeenText:
-	text "My #mon!"
+	text "Meine #mon!"
 
-	para "Let me show"
-	line "you them!"
+	para "Ich zeig sie"
+	line "dir!"
 	done
 
 PokemaniacAidanBeatenText: ; text > text
-	text "My #mon…"
+	text "Meine #mon…"
 	done
 
 HikerSteveSeenText:
-	text "They call me a"
-	line "Hiker, but now"
-	cont "I'm a spelunker!"
+	text "Man nennt mich"
+	line "Wanderer, aber"
+	cont "jetzt bin ich"
+	cont "Höhlenforscher!"
 	done
 
 HikerSteveBeatenText:
-	text "And now I'm a"
-	line "loser…"
+	text "Und jetzt bin ich"
+	line "ein Verlierer…"
 	done
 
 PsychicVirgilSeenText:
-	text "Shh! Be quiet!"
+	text "Pst! Sei leise!"
 	done
 
 PsychicVirgilBeatenText:
-	text "Why must battling"
-	line "be so loud?"
+	text "Warum müssen"
+	line "Kämpfe so laut"
+	cont "sein?"
 	done

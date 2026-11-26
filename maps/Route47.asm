@@ -212,9 +212,10 @@ Route47Bridge4UnderfootTrigger:
 GenericTrainerHikerDevin:
 	generictrainer HIKER, DEVIN, EVENT_BEAT_HIKER_DEVIN, HikerDevinSeenText, HikerDevinBeatenText
 
-	text "After a battle,"
-	line "you should part"
-	cont "with a laugh!"
+	text "Nach einem Kampf"
+	line "sollte man mit"
+	cont "einem Lachen"
+	cont "auseinandergehen!"
 	done
 
 TrainerCamperGrant:
@@ -230,76 +231,78 @@ TrainerCamperGrant:
 GenericTrainerAceDuoThomandkae1:
 	generictrainer ACE_DUO, THOMANDKAE1, EVENT_BEAT_ACE_DUO_THOM_AND_KAE, AceDuoThomandkae1SeenText, AceDuoThomandkae1BeatenText
 
-	text "Thom: Your power"
-	line "is impossible to"
-	cont "predict!"
+	text "Uwe: Deine Stärke"
+	line "ist unberechenbar!"
 	done
 
 GenericTrainerAceDuoThomandkae2:
 	generictrainer ACE_DUO, THOMANDKAE2, EVENT_BEAT_ACE_DUO_THOM_AND_KAE, AceDuoThomandkae2SeenText, AceDuoThomandkae2BeatenText
 
-	text "Kae: I figured you"
-	line "were an ordinary"
+	text "Nele: Ich dachte,"
+	line "du wärst ein ganz"
 
-	para "lone trainer."
-	line "Boy, was I wrong!"
+	para "normaler Einzel-"
+	line "trainer."
+	cont "Da lag ich falsch!"
 	done
 
 GenericTrainerCoupleDuffandeda1:
 	generictrainer COUPLE, DUFFANDEDA1, EVENT_BEAT_COUPLE_DUFF_AND_EDA, CoupleDuffandeda1SeenText, CoupleDuffandeda1BeatenText
 
-	text "Duff: Thank you"
-	line "for the awe-"
-	cont "inspiring battle!"
+	text "Piz: Danke für"
+	line "den beeindrucken-"
+	cont "den Kampf!"
 	done
 
 GenericTrainerCoupleDuffandeda2:
 	generictrainer COUPLE, DUFFANDEDA2, EVENT_BEAT_COUPLE_DUFF_AND_EDA, CoupleDuffandeda2SeenText, CoupleDuffandeda2BeatenText
 
-	text "Eda: You should"
-	line "find a wonderful"
-	cont "partner, too."
+	text "Mari: Du solltest"
+	line "auch einen wunder-"
+	cont "baren Partner"
+	cont "finden."
 	done
 
 GenericTrainerCowgirlDaniela:
 	generictrainer COWGIRL, DANIELA, EVENT_BEAT_COWGIRL_DANIELA, CowgirlDanielaSeenText, CowgirlDanielaBeatenText
 
-	text "Have you ever"
-	line "tried to ride a"
-	cont "Tauros?"
+	text "Hast du schon mal"
+	line "versucht, auf"
+	cont "einem Tauros zu"
+	cont "reiten?"
 	done
 
 GenericTrainerGruntF6:
 	generictrainer GRUNTF, 6, EVENT_BEAT_ROCKET_GRUNTF_6, GruntF6SeenText, GruntF6BeatenText
 
-	text "If we treated"
-	line "every single"
-	cont "#mon well,"
+	text "Wenn wir jedes"
+	line "einzelne #mon"
+	cont "gut behandeln"
+	cont "würden,"
 
-	para "how would we"
-	line "make money?"
+	para "wie sollten wir"
+	line "da Geld verdienen?"
 	done
 
 GenericTrainerGruntM23:
 	generictrainer GRUNTM, 23, EVENT_BEAT_ROCKET_GRUNTM_23, GruntM23SeenText, GruntM23BeatenText
 
-	text "It doesn't matter."
-	line "You can't beat"
-	cont "all of us!"
+	text "Egal. Du kannst"
+	line "uns nicht alle"
+	cont "besiegen!"
 	done
 
 GenericTrainerGruntM26:
 	generictrainer GRUNTM, 26, EVENT_BEAT_ROCKET_GRUNTM_26, GruntM26SeenText, GruntM26BeatenText
 
-	text "How we treat"
-	line "#mon is none"
-	cont "of your business!"
+	text "Wie wir #mon"
+	line "behandeln, geht"
+	cont "dich nichts an!"
 	done
 
 HikerDevinSeenText:
-	text "Battles are"
-	line "battles, so"
-	cont "let's go!"
+	text "Kampf ist Kampf,"
+	line "also los geht's!"
 	done
 
 HikerDevinBeatenText:
@@ -307,108 +310,121 @@ HikerDevinBeatenText:
 	done
 
 CamperGrantSeenText:
-	text "I'm not good with"
-	line "crowds, so I'm"
-	cont "camping out here"
-	cont "with my #mon!"
+	text "Ich mag keine"
+	line "Menschenmengen,"
+	cont "also campe ich"
+	cont "hier mit meinen"
+	cont "#mon!"
 	done
 
 CamperGrantBeatenText:
-	text "I should head"
-	line "deeper into the"
-	cont "mountain…"
+	text "Ich sollte tiefer"
+	line "in die Berge"
+	cont "gehen…"
 	done
 
 AceDuoThomandkae1SeenText:
-	text "Thom: One plus one"
-	line "is two. But the"
+	text "Uwe: Eins plus"
+	line "eins ist zwei."
 
-	para "two of us together"
-	line "is much stronger!"
+	para "Aber wir zwei zu-"
+	line "sammen sind viel"
+	cont "stärker!"
 	done
 
 AceDuoThomandkae1BeatenText:
-	text "Thom: That wasn't"
-	line "what I expected…"
+	text "Uwe: Das hatte"
+	line "ich nicht erwar-"
+	cont "tet…"
 	done
 
 AceDuoThomandkae2SeenText:
-	text "Kae: The two of us"
-	line "aren't just some"
-	cont "boring pair!"
+	text "Nele: Wir zwei"
+	line "sind nicht bloß"
+	cont "ein langweiliges"
+	cont "Duo!"
 	done
 
 AceDuoThomandkae2BeatenText:
-	text "Kae: You're"
-	line "unusual, too!"
+	text "Nele: Du bist"
+	line "auch ungewöhnlich!"
 	done
 
 CoupleDuffandeda1SeenText:
-	text "Duff: Watching"
-	line "over my girlfriend"
+	text "Piz: Über meine"
+	line "Freundin zu"
 
-	para "makes my heart"
-	line "soar!"
+	para "wachen, lässt mein"
+	line "Herz höher"
+	cont "schlagen!"
 	done
 
 CoupleDuffandeda1BeatenText:
-	text "Duff: I was no"
-	line "match for you…"
+	text "Piz: Ich war"
+	line "kein Gegner für"
+	cont "dich…"
 	done
 
 CoupleDuffandeda2SeenText:
-	text "Eda: My feelings"
-	line "for my boyfriend"
+	text "Mari: Meine Ge-"
+	line "fühle für meinen"
 
-	para "are as wide and"
-	line "deep as the ocean."
+	para "Freund sind so"
+	line "weit und tief wie"
+	cont "das Meer."
 	done
 
 CoupleDuffandeda2BeatenText:
-	text "Eda: You're really"
-	line "something…"
+	text "Mari: Du bist"
+	line "echt was Beson-"
+	cont "deres…"
 	done
 
 CowgirlDanielaSeenText:
-	text "Hiya, cutie!"
+	text "Hallo, Schnucki!"
 	done
 
 CowgirlDanielaBeatenText:
-	text "Well aren't you a"
-	line "feisty one?"
+	text "Na, bist du nicht"
+	line "ein kleiner"
+	cont "Wildfang?"
 	done
 
 GruntF6SeenText:
-	text "Why should we"
-	line "raise #mon like"
-	cont "ordinary trainers?"
+	text "Warum sollten wir"
+	line "#mon wie"
+	cont "normale Trainer"
+	cont "aufziehen?"
 
-	para "We're Team Rocket!"
+	para "Wir sind Team"
+	line "Rocket!"
 	done
 
 GruntF6BeatenText:
-	text "Who are you?!"
+	text "Wer bist du?!"
 	done
 
 GruntM23SeenText:
-	text "Aww, are you here"
-	line "to save the cute"
-	cont "little #mon?"
+	text "Ach, bist du hier,"
+	line "um die süßen"
+	cont "kleinen #mon zu"
+	cont "retten?"
 	done
 
 GruntM23BeatenText:
 	text "Ack!"
-	line "You're tough!"
+	line "Du bist zäh!"
 	done
 
 GruntM26SeenText:
-	text "Stop meddling with"
-	line "our plans!"
+	text "Hör auf, dich in"
+	line "unsere Pläne"
+	cont "einzumischen!"
 	done
 
 GruntM26BeatenText:
-	text "Just leave us"
-	line "alone…"
+	text "Lass uns einfach"
+	line "in Ruhe…"
 	done
 
 Route47RocketGirlText:

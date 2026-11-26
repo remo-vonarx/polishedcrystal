@@ -63,59 +63,64 @@ DimCave4FSetUpStoneTable:
 GenericTrainerScientistJoseph:
 	generictrainer SCIENTIST, JOSEPH, EVENT_BEAT_SCIENTIST_JOSEPH, .SeenText, .BeatenText
 
-	text "Water underground"
-	line "leaves behind"
-	cont "mineral deposits."
+	text "Wasser unter der"
+	line "Erde hinterlässt"
+	cont "Mineralablage-"
+	cont "rungen."
 
-	para "Humans mine for"
-	line "them, and microbes"
-	cont "feed on them."
+	para "Menschen bauen sie"
+	line "ab, und Mikroben"
+	cont "ernähren sich"
+	cont "davon."
 	done
 
 .SeenText:
-	text "I'm studying the"
-	line "ancient microbes"
+	text "Ich erforsche die"
+	line "uralten Mikroben,"
 
-	para "preserved in these"
-	line "rocks."
+	para "die in diesem Ge-"
+	line "stein erhalten"
+	cont "sind."
 	done
 
 .BeatenText:
-	text "It feels good to"
-	line "get out of the lab"
-	cont "and do some field"
-	cont "work."
+	text "Es tut gut, mal"
+	line "aus dem Labor zu"
+	cont "kommen und Feld-"
+	cont "forschung zu"
+	cont "betreiben."
 	done
 
 GenericTrainerScientistNigel:
 	generictrainer SCIENTIST, NIGEL, EVENT_BEAT_SCIENTIST_NIGEL, .SeenText, .BeatenText
 
-	text "The flowing water"
-	line "pushes through a"
-	cont "water wheel to"
+	text "Das fließende"
+	line "Wasser treibt ein"
+	cont "Wasserrad, das"
 
-	para "energize a series"
-	line "of generators,"
+	para "eine Reihe von"
+	line "Generatoren speist"
 
-	para "turning kinetic"
-	line "energy into elec-"
-	cont "trical energy."
+	para "und so Bewegungs-"
+	line "energie in elek-"
+	cont "trische umwandelt."
 
-	para "Fascinating,"
-	line "right?"
+	para "Faszinierend,"
+	line "oder?"
 	done
 
 .SeenText:
-	text "How do we get pow-"
-	line "er out of water?"
+	text "Wie gewinnen wir"
+	line "Strom aus Wasser?"
 
-	para "I'll tell you if"
-	line "you can beat me."
+	para "Ich sag's dir,"
+	line "wenn du mich"
+	cont "besiegst."
 	done
 
 .BeatenText:
-	text "Yikes! OK, I'll"
-	line "tell you."
+	text "Huch! Na gut, ich"
+	line "sag's dir."
 	done
 
 DimCave4FSuper_nerdText:

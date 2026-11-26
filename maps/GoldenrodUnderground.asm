@@ -183,8 +183,9 @@ GenericTrainerPokemaniacDonald:
 GenericTrainerCosplayerClara:
 	generictrainer COSPLAYER, CLARA, EVENT_BEAT_COSPLAYER_CLARA, CosplayerClaraSeenText, CosplayerClaraBeatenText
 
-	text "I made this cos-"
-	line "tume myself!"
+	text "Dieses Kostüm habe"
+	line "ich selbst"
+	cont "gemacht!"
 	done
 
 BitterMerchantScript:
@@ -493,15 +494,16 @@ PiersScript:
 	jumpthisopenedtext
 
 PiersAfterText:
-	text "If you want to be-"
-	line "come the Champion,"
+	text "Wenn du Champ"
+	line "werden willst,"
 
-	para "you better get"
-	line "goin'!"
+	para "solltest du dich"
+	line "beeilen!"
 
-	para "I'll send some sup-"
-	line "port your way with"
-	cont "a yell!"
+	para "Ich schicke dir"
+	line "Unterstützung mit"
+	cont "'nem Anfeuerungs-"
+	cont "ruf!"
 	done
 
 PiersRematchScript:
@@ -541,29 +543,31 @@ PiersRematchScript:
 	jumpthisopenedtext
 
 PiersRematchAfterText:
-	text "I have a little"
-	line "sister."
-	cont "Her name's Marnie."
+	text "Ich habe eine"
+	line "kleine Schwester."
+	cont "Sie heißt Mary."
 
-	para "She's about as"
-	line "cute as they come."
+	para "Sie ist so süß,"
+	line "wie's nur geht."
 
-	para "When she's older,"
-	line "I don't know if"
+	para "Wenn sie älter"
+	line "ist, weiß ich"
 
-	para "she'll want to"
-	line "sing, play music,"
+	para "nicht, ob sie"
+	line "singen, Musik"
+	cont "machen,"
 
-	para "battle with #-"
-	line "mon, or something"
-	cont "totally new."
+	para "mit #mon"
+	line "kämpfen oder etwas"
+	cont "ganz anderes will."
 
-	para "But whatever she"
-	line "chooses, I hope"
+	para "Aber egal, wofür"
+	line "sie sich entschei-"
+	cont "det, ich hoffe,"
 
-	para "she has as much"
-	line "passion as you"
-	cont "do, <PLAYER>!"
+	para "sie hat so viel"
+	line "Leidenschaft wie"
+	cont "du, <PLAYER>!"
 	done
 
 PiersIntroText:
@@ -609,8 +613,9 @@ PiersSeenText:
 	done
 
 PiersBeatenText:
-	text "Me an' my team"
-	line "gave it our best."
+	text "Ich und mein Team"
+	line "haben unser"
+	cont "Bestes gegeben."
 	done
 
 PiersRewardText:
@@ -653,8 +658,8 @@ PiersRematchSeenText:
 	done
 
 PiersRematchBeatenText:
-	text "That's it?!"
-	line "No way!"
+	text "Das war's?!"
+	line "Unmöglich!"
 	done
 
 SupernerdEricSeenText:
@@ -719,11 +724,11 @@ CosplayerClaraSeenText:
 	done
 
 CosplayerClaraBeatenText:
-	text "You thought I was"
-	line "a #mon?"
+	text "Du dachtest, ich"
+	line "wäre ein #mon?"
 
-	para "Nope! It's just"
-	line "quality cosplay."
+	para "Nee! Das ist nur"
+	line "gutes Cosplay."
 	done
 
 GoldenrodUndergroundTheDoorsLockedText:

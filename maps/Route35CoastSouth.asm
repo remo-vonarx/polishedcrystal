@@ -26,28 +26,30 @@ Route35CoastSouth_MapScriptHeader:
 GenericTrainerSwimmermWalter:
 	generictrainer SWIMMERM, WALTER, EVENT_BEAT_SWIMMERM_WALTER, SwimmermWalterSeenText, SwimmermWalterBeatenText
 
-	text "The sun reflects"
-	line "off the water"
+	text "Die Sonne spiegelt"
+	line "sich im Wasser,"
 
-	para "and it burned me"
-	line "anyway!"
+	para "und ich habe mich"
+	line "trotzdem ver-"
+	cont "brannt!"
 	done
 
 GenericTrainerSwimmerfLisa:
 	generictrainer SWIMMERF, LISA, EVENT_BEAT_SWIMMERF_LISA, SwimmerfLisaSeenText, SwimmerfLisaBeatenText
 
-	text "There's enough"
-	line "room in the sea"
+	text "Im Meer ist genug"
+	line "Platz"
 
-	para "for fishing and"
-	line "battling."
+	para "zum Angeln und"
+	line "zum Kämpfen."
 	done
 
 GenericTrainerSwimmerfJill:
 	generictrainer SWIMMERF, JILL, EVENT_BEAT_SWIMMERF_JILL, SwimmerfJillSeenText, SwimmerfJillBeatenText
 
-	text "I'll forget my"
-	line "loss with a swim."
+	text "Meine Niederlage"
+	line "vergesse ich beim"
+	cont "Schwimmen."
 	done
 
 GenericTrainerBird_keeperBryan:
@@ -74,17 +76,17 @@ GenericTrainerBird_keeperBryan:
 GenericTrainerSrandjrBeaandmay1:
 	generictrainer SR_AND_JR, BEAANDMAY1, EVENT_BEAT_SR_AND_JR_BEA_AND_MAY, SrandjrBeaandmay1SeenText, SrandjrBeaandmay1BeatenText
 
-	text "Bea: I'll teach"
-	line "May how to become"
-	cont "stronger."
+	text "Bea: Ich bringe"
+	line "May bei, wie sie"
+	cont "stärker wird."
 	done
 
 GenericTrainerSrandjrBeaandmay2:
 	generictrainer SR_AND_JR, BEAANDMAY2, EVENT_BEAT_SR_AND_JR_BEA_AND_MAY, SrandjrBeaandmay2SeenText, SrandjrBeaandmay2BeatenText
 
-	text "May: I'll ask Bea"
-	line "how to become"
-	cont "stronger."
+	text "May: Ich frage"
+	line "Bea, wie ich"
+	cont "stärker werde."
 	done
 
 GenericTrainerSailorHarvey:
@@ -102,15 +104,17 @@ GenericTrainerSailorHarvey:
 	done
 
 SwimmermWalterSeenText:
-	text "I forgot to wear"
-	line "sunscreen, so I'm"
+	text "Ich habe die"
+	line "Sonnencreme"
+	cont "vergessen,"
 
-	para "hiding by these"
-	line "shady rocks."
+	para "also verstecke ich"
+	line "mich bei diesen"
+	cont "schattigen Felsen."
 	done
 
 SwimmermWalterBeatenText:
-	text "Ouch!"
+	text "Autsch!"
 	done
 
 SwimmerfLisaSeenText:
@@ -120,17 +124,18 @@ SwimmerfLisaSeenText:
 	done
 
 SwimmerfLisaBeatenText:
-	text "I only wanted"
-	line "to battle…"
+	text "Ich wollte doch"
+	line "nur kämpfen…"
 	done
 
 SwimmerfJillSeenText:
-	text "Don't I look good"
-	line "in this bikini?"
+	text "Sehe ich in die-"
+	line "sem Bikini nicht"
+	cont "gut aus?"
 	done
 
 SwimmerfJillBeatenText:
-	text "Hmph!"
+	text "Hmpf!"
 	done
 
 Bird_keeperBryanSeenText:
@@ -145,45 +150,46 @@ Bird_keeperBryanBeatenText:
 	done
 
 SrandjrBeaandmay1SeenText:
-	text "Bea: I like strong"
-	line "#mon better"
+	text "Bea: Ich mag star-"
+	line "ke #mon lieber"
 
-	para "than cute"
-	line "#mon."
+	para "als niedliche."
 
-	para "But together, we"
-	line "have cute and"
-	cont "strong #mon!"
+	para "Aber zusammen"
+	line "haben wir nied-"
+	cont "liche und starke"
+	cont "#mon!"
 	done
 
 SrandjrBeaandmay1BeatenText:
-	text "Bea: Strength and"
-	line "cuteness weren't"
-	cont "enough!"
+	text "Bea: Stärke und"
+	line "Niedlichkeit"
+	cont "haben nicht"
+	cont "gereicht!"
 	done
 
 SrandjrBeaandmay2SeenText:
-	text "May: I like cute"
-	line "#mon better"
+	text "May: Ich mag nied-"
+	line "liche #mon"
 
-	para "than strong"
-	line "#mon."
+	para "lieber als starke."
 
-	para "But together, we"
-	line "have strong and"
-	cont "cute #mon!"
+	para "Aber zusammen"
+	line "haben wir starke"
+	cont "und niedliche"
+	cont "#mon!"
 	done
 
 SrandjrBeaandmay2BeatenText:
-	text "May: Cuteness and"
-	line "strength weren't"
-	cont "enough!"
+	text "May: Niedlichkeit"
+	line "und Stärke haben"
+	cont "nicht gereicht!"
 	done
 
 SailorHarveySeenText:
-	text "Hah! Your #mon"
-	line "sure look like"
-	cont "lightweights!"
+	text "Hah! Deine #mon"
+	line "sehen aus wie"
+	cont "Leichtgewichte!"
 	done
 
 SailorHarveyBeatenText:

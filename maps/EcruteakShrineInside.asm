@@ -157,7 +157,8 @@ EcruteakShrineInsideReiBattleText:
 	done
 
 EcruteakShrineInsideReiBeatenText:
-	text "I admit defeat!"
+	text "Ich gebe mich"
+	line "geschlagen!"
 	done
 
 EcruteakShrineInsideGrampsText:

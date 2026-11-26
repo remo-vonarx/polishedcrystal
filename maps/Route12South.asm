@@ -105,39 +105,39 @@ FisherBarneyBeatenText:
 GenericTrainerFisherKyler:
 	generictrainer FISHER, KYLER, EVENT_BEAT_FISHER_KYLER, .SeenText, .BeatenText
 
-	text "Really? Rather"
-	line "than always catch-"
-	cont "ing new #mon,"
+	text "Wirklich? Statt"
+	line "immer neue #mon"
+	cont "zu fangen,"
 
-	para "it's good to train"
-	line "them?"
+	para "ist es gut, sie zu"
+	line "trainieren?"
 	done
 
 .SeenText:
-	text "#mon battles"
-	line "lure people in!"
+	text "#mon-Kämpfe"
+	line "ködern die Leute!"
 	done
 
 .BeatenText:
-	text "My #mon bucket"
-	line "is empty!"
+	text "Mein #mon-Eimer"
+	line "ist leer!"
 	done
 
 GenericTrainerBird_keeperJustin:
 	generictrainer BIRD_KEEPER, BIRD_KEEPER_JUSTIN, EVENT_BEAT_BIRD_KEEPER_JUSTIN, .SeenText, .BeatenText
 
-	text "Since the wind has"
-	line "changed, I'll lay"
-	cont "low…"
+	text "Da der Wind ge-"
+	line "dreht hat, halte"
+	cont "ich mich bedeckt…"
 	done
 
 .SeenText:
-	text "Huh? The wind has"
-	line "changed direction!"
+	text "Hä? Der Wind hat"
+	line "gedreht!"
 	done
 
 .BeatenText:
-	text "Phew…"
+	text "Puh…"
 	done
 
 GenericTrainerBird_keeperGail:
@@ -159,40 +159,41 @@ GenericTrainerBird_keeperGail:
 GenericTrainerCoupleVicandtara1:
 	generictrainer COUPLE, VICANDTARA1, EVENT_BEAT_COUPLE_VIC_AND_TARA, .SeenText, .BeatenText
 
-	text "Vic: Tara already"
-	line "saw me humiliated…"
+	text "Max: Gina hat"
+	line "meine Blamage"
+	cont "schon gesehen…"
 	done
 
 .SeenText:
-	text "Vic: All right!"
-	line "I'll be able to"
-	cont "show off for Tara!"
+	text "Max: Na also! Ich"
+	line "kann vor Gina"
+	cont "angeben!"
 	done
 
 .BeatenText:
-	text "Vic: Oh no, my"
-	line "plans!"
+	text "Max: Oh nein,"
+	line "meine Pläne!"
 	done
 
 GenericTrainerCoupleVicandtara2:
 	generictrainer COUPLE, VICANDTARA2, EVENT_BEAT_COUPLE_VIC_AND_TARA, .SeenText, .BeatenText
 
-	text "Tara: Even though"
-	line "my boyfriend lost,"
-	cont "he's still wonder-"
-	cont "ful."
+	text "Gina: Auch wenn"
+	line "mein Freund verlo-"
+	cont "ren hat, ist er"
+	cont "wundervoll."
 	done
 
 .SeenText:
-	text "Tara: I love to"
-	line "look at my boy-"
-	cont "friend's face while"
-	cont "he's battling!"
+	text "Gina: Ich sehe so"
+	line "gern das Gesicht"
+	cont "meines Freundes,"
+	cont "wenn er kämpft!"
 	done
 
 .BeatenText:
-	text "Tara: Oh no,"
-	line "oh no…"
+	text "Gina: Oh nein,"
+	line "oh nein…"
 	done
 
 Route12SignText:

@@ -264,31 +264,31 @@ GiovannisCaveGiovanniIMustGoText:
 	done
 
 GiovannisCaveGiovanniBeatenText:
-	text "What in the world"
-	line "are you?"
+	text "Was in aller Welt"
+	line "bist du?"
 	done
 
 GiovannisCaveGiovanniAfterText:
-	text "Giovanni: How is"
-	line "this possible…?"
+	text "Giovanni: Wie ist"
+	line "das möglich…?"
 
-	para "The past three"
-	line "years have been"
-	cont "a waste…?"
+	para "Die letzten drei"
+	line "Jahre waren"
+	cont "umsonst…?"
 
-	para "How can a kid like"
-	line "you manage to"
+	para "Wie kann ein Kind"
+	line "wie du meinen"
 
-	para "destroy my dream"
-	line "once again?"
+	para "Traum schon wieder"
+	line "zerstören?"
 	done
 
 GiovannisCaveBroadcastAfterText:
-	text "“… …Hey! Where has"
-	line "Giovanni gone?"
-	cont "I wonder if he is"
-	cont "listening to our"
-	cont "broadcast… …”"
+	text "“… …Hey! Wo ist"
+	line "Giovanni hin?"
+	cont "Ob er wohl unsere"
+	cont "Sendung hört?"
+	cont "… …”"
 	done
 
 GiovannisCaveLyraFeelsSorryText:

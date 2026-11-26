@@ -45,13 +45,13 @@ OfficerfJamieSeenText:
 	done
 
 OfficerfJamieBeatenText:
-	text "Hmph!"
+	text "Hmpf!"
 	done
 
 OfficerfJamieAfterText:
-	text "Riding around late"
-	line "at night just"
-	cont "looks suspicious."
+	text "Nachts herumzu-"
+	line "fahren, wirkt ein-"
+	cont "fach verdächtig."
 	done
 
 OfficerfJamieDaytimeText:

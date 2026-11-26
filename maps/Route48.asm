@@ -130,49 +130,51 @@ Route48JessieJamesSeenText:
 	done
 
 Route48JessieJamesBeatenText:
-	text "A brat beat us?"
+	text "Ein Gör hat uns"
+	line "besiegt?"
 	done
 
 Route48JessieJamesAfterText:
-	text "Looks like Team"
-	line "Rocket's blasting"
-	cont "off again!"
+	text "Das war mal wieder"
+	line "ein Schuss in den"
+	cont "Ofen!"
 	done
 
 Archer2SeenText:
-	text "So you want to"
-	line "interfere with"
+	text "Du willst dich"
+	line "also wieder in"
 
-	para "Team Rocket's"
-	line "plans again."
+	para "die Pläne von Team"
+	line "Rocket einmischen."
 
-	para "Always sticking"
-	line "your nose where it"
-	cont "doesn't belong."
+	para "Immer steckst du"
+	line "deine Nase in"
+	cont "Dinge, die dich"
+	cont "nichts angehen."
 
-	para "We're selling"
-	line "those #mon,"
+	para "Wir verkaufen"
+	line "diese #mon,"
 
-	para "and there's nothing"
-	line "you can do about"
-	cont "it!"
+	para "und du kannst"
+	line "nichts dagegen"
+	cont "tun!"
 	done
 
 Archer2BeatenText:
-	text "This is so"
-	line "frustrating…"
+	text "Das ist so"
+	line "frustrierend…"
 	done
 
 Archer2AfterText:
-	text "…Have it your"
-	line "way."
+	text "…Wie du willst."
 
-	para "Team Rocket will"
-	line "withdraw for now."
+	para "Team Rocket zieht"
+	line "sich vorerst"
+	cont "zurück."
 
-	para "Our other plan is"
-	line "going smoothly"
-	cont "anyway…"
+	para "Unser anderer Plan"
+	line "läuft ohnehin"
+	cont "reibungslos…"
 	done
 
 Route48NurseText1:

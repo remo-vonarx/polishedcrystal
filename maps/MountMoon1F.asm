@@ -91,62 +91,67 @@ MountMoon1FRivalBattleScene:
 GenericTrainerBugManiacKenta:
 	generictrainer BUG_MANIAC, KENTA, EVENT_BEAT_BUG_MANIAC_KENTA, BugManiacKentaSeenText, BugManiacKentaBeatenText
 
-	text "Team Rocket used"
-	line "to lurk around"
-	cont "here."
+	text "Früher trieb sich"
+	line "hier Team Rocket"
+	cont "herum."
 
-	para "I wonder if the"
-	line "red-haired boy has"
-	cont "any connection to"
-	cont "them?"
+	para "Ob der rothaarige"
+	line "Junge wohl etwas"
+	cont "mit ihnen zu tun"
+	cont "hat?"
 	done
 
 GenericTrainerLassMiriam:
 	generictrainer LASS, MIRIAM, EVENT_BEAT_LASS_MIRIAM, LassMiriamSeenText, LassMiriamBeatenText
 
-	text "Mt.Moon is big,"
-	line "but you'll get"
-	cont "used to it soon."
+	text "Der Mondberg ist"
+	line "groß, aber du ge-"
+	cont "wöhnst dich bald"
+	cont "daran."
 	done
 
 GenericTrainerSuperNerdJovan:
 	generictrainer SUPER_NERD, JOVAN, EVENT_BEAT_SUPER_NERD_JOVAN, SuperNerdJovanSeenText, SuperNerdJovanBeatenText
 
-	text "I have yet to find"
-	line "stronger #mon."
+	text "Ich habe noch"
+	line "keine stärkeren"
+	cont "#mon gefunden."
 
-	para "Where might they"
-	line "be?"
+	para "Wo die wohl sind?"
 	done
 
 GenericTrainerBugManiacRobby:
 	generictrainer BUG_MANIAC, ROBBY, EVENT_BEAT_BUG_MANIAC_ROBBY, BugManiacRobbySeenText, BugManiacRobbyBeatenText
 
-	text "I used to only"
-	line "catch bug #mon"
-	cont "as a hobby,"
+	text "Früher habe ich"
+	line "Käfer-#mon nur"
+	cont "als Hobby"
+	cont "gefangen,"
 
-	para "but now it's my"
-	line "pride and joy."
+	para "aber jetzt sind"
+	line "sie mein ganzer"
+	cont "Stolz."
 	done
 
 GenericTrainerLassIris:
 	generictrainer LASS, IRIS, EVENT_BEAT_LASS_IRIS, LassIrisSeenText, LassIrisBeatenText
 
-	text "I come here every"
-	line "day just to catch"
-	cont "a Clefairy, but"
+	text "Ich komme jeden"
+	line "Tag her, um ein"
+	cont "Piepi zu fangen,"
 
-	para "I haven't seen a"
-	line "single one…"
+	para "aber ich habe noch"
+	line "kein einziges"
+	cont "gesehen…"
 	done
 
 GenericTrainerHikerMarcos:
 	generictrainer HIKER, MARCOS, EVENT_BEAT_HIKER_MARCOS, HikerMarcosSeenText, HikerMarcosBeatenText
 
-	text "A long time ago,"
-	line "I was beaten by a"
-	cont "kid just like you."
+	text "Vor langer Zeit"
+	line "wurde ich von"
+	cont "einem Kind wie dir"
+	cont "besiegt."
 	done
 
 MountMoon1FRivalMovementBefore:
@@ -248,45 +253,49 @@ MountMoonRivalTextLoss:
 	done
 
 BugManiacKentaSeenText:
-	text "I saw a red-haired"
-	line "boy training here."
+	text "Ich habe hier"
+	line "einen rothaarigen"
+	cont "Jungen trainieren"
+	cont "sehen."
 
-	para "Have you battled"
-	line "him?"
+	para "Hast du schon"
+	line "gegen ihn"
+	cont "gekämpft?"
 	done
 
 BugManiacKentaBeatenText:
-	text "You got me!"
+	text "Du hast mich!"
 	done
 
 LassMiriamSeenText:
-	text "When I was young-"
-	line "er, I always used"
+	text "Als ich jünger"
+	line "war, habe ich mich"
 
-	para "to get lost in"
-	line "this place."
+	para "hier immer"
+	line "verlaufen."
 	done
 
 LassMiriamBeatenText:
-	text "Oh! I lost it!"
+	text "Oh, ich habe"
+	line "verloren!"
 	done
 
 SuperNerdJovanSeenText:
-	text "What! Don't sneak"
-	line "up on me!"
+	text "Was! Schleich dich"
+	line "nicht so an!"
 	done
 
 SuperNerdJovanBeatenText:
-	text "My #mon"
-	line "won't do!"
+	text "Meine #mon"
+	line "taugen nichts!"
 	done
 
 BugManiacRobbySeenText:
-	text "You need to go"
-	line "through this cave"
+	text "Du musst durch"
+	line "diese Höhle, um"
 
-	para "to get to Cerulean"
-	line "City."
+	para "nach Azuria City"
+	line "zu kommen."
 	done
 
 BugManiacRobbyBeatenText:
@@ -294,25 +303,27 @@ BugManiacRobbyBeatenText:
 	done
 
 LassIrisSeenText:
-	text "Have you seen a"
-	line "Clefairy?"
+	text "Hast du schon"
+	line "mal ein Piepi"
+	cont "gesehen?"
 
-	para "They're so cute!"
+	para "Die sind so süß!"
 	done
 
 LassIrisBeatenText:
-	text "That was so fast…"
+	text "Das ging so"
+	line "schnell…"
 	done
 
 HikerMarcosSeenText:
-	text "Kids like you"
-	line "shouldn't be"
+	text "Kinder wie du"
+	line "sollten nicht"
 
-	para "wandering around"
-	line "here in the dark."
+	para "hier im Dunkeln"
+	line "herumlaufen."
 	done
 
 HikerMarcosBeatenText:
-	text "Woah!"
-	line "You're strong!"
+	text "Wow!"
+	line "Du bist stark!"
 	done

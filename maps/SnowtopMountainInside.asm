@@ -116,11 +116,11 @@ KimonoGirlAmiScript:
 	done
 
 .AfterText:
-	text "You are a well-"
-	line "balanced Trainer."
+	text "Du bist ein ausge-"
+	line "glichener Trainer."
 
-	para "Please, make use"
-	line "of this item!"
+	para "Bitte nutze"
+	line "dieses Item!"
 	done
 
 SnowtopMountainInsideSkierScript:

@@ -24,14 +24,14 @@ CliffCave_MapScriptHeader:
 GenericTrainerGruntM22:
 	generictrainer GRUNTM, 22, EVENT_BEAT_ROCKET_GRUNTM_22, GruntM22SeenText, GruntM22BeatenText
 
-	text "No wonder you"
-	line "were able to"
-	cont "reach here."
+	text "Kein Wunder, dass"
+	line "du es bis hierher"
+	cont "geschafft hast."
 	done
 
 GruntM22SeenText:
-	text "Hey! You got past"
-	line "the guards!"
+	text "Hey! Du bist an"
+	line "den Wachen vorbei!"
 	done
 
 GruntM22BeatenText:

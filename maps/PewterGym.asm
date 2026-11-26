@@ -67,8 +67,8 @@ GenericTrainerCamperJerry:
 GenericTrainerHikerEdwin:
 	generictrainer HIKER, EDWIN, EVENT_BEAT_HIKER_EDWIN, HikerEdwinSeenText, HikerEdwinBeatenText
 
-	text "Phew… Broken"
-	line "in pieces."
+	text "Puh… In Stücke"
+	line "zerbrochen."
 	done
 
 PewterGymGuyScript:
@@ -194,11 +194,11 @@ CamperJerryBeatenText:
 	done
 
 HikerEdwinSeenText: ; text > text
-	text "R-r-r-R-R--CRASH!"
+	text "R-r-r-R-R--KRACH!"
 	done
 
 HikerEdwinBeatenText: ; text > text
-	text "BOOM!"
+	text "BUMM!"
 	done
 
 

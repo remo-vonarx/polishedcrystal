@@ -120,27 +120,29 @@ CeladonUniversityCafeteriaCoreyScript:
 	done
 
 .AfterText1:
-	text "You're a strong"
-	line "trainer!"
+	text "Du bist ein"
+	line "starker Trainer!"
 
-	para "But I'm just one of"
-	line "the Celadon Four."
+	para "Aber ich bin nur"
+	line "einer der"
+	cont "Prismania-Vier."
 
-	para "You should track"
-	line "down the rest of"
+	para "Spür die anderen"
+	line "auf, um deine"
 
-	para "us to really test"
-	line "your strength!"
+	para "Stärke wirklich zu"
+	line "testen!"
 	done
 
 .AfterText2:
-	text "You beat all of"
-	line "the Celadon Four?"
+	text "Du hast alle"
+	line "Prismania-Vier"
+	cont "besiegt?"
 
-	para "Congratulations!"
+	para "Glückwunsch!"
 
-	para "Take this as a"
-	line "memento!"
+	para "Nimm das als"
+	line "Andenken!"
 	done
 
 CeladonUni_NoRoomText:

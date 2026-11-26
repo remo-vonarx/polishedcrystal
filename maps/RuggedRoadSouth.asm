@@ -90,89 +90,99 @@ TrainerBird_keeperSalim:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Weather conditions"
-	line "can change the"
+	text "Das Wetter kann"
+	line "den ganzen Verlauf"
 
-	para "entire course of"
-	line "a battle."
+	para "eines Kampfes"
+	line "ändern."
 	done
 
 .SeenText:
-	text "My birds flew us"
-	line "here…"
+	text "Meine Vögel haben"
+	line "uns hergeflogen…"
 
-	para "…but in this sand-"
-	line "storm, we're stuck!"
+	para "…aber in diesem"
+	line "Sandsturm sitzen"
+	cont "wir fest!"
 	done
 
 .BeatenText:
-	text "I'll stick to clear"
-	line "skies from now on."
+	text "Ab jetzt bleibe"
+	line "ich bei klarem"
+	cont "Himmel."
 	done
 
 GenericTrainerHikerMaynard:
 	generictrainer HIKER, MAYNARD, EVENT_BEAT_HIKER_MAYNARD, .SeenText, .BeatenText
 
-	text "Every neatly num-"
-	line "bered route got"
+	text "Jede ordentlich"
+	line "nummerierte Route"
 
-	para "its start as un-"
-	line "tamed wilderness."
+	para "begann einmal als"
+	line "ungezähmte"
+	cont "Wildnis."
 	done
 
 .SeenText:
-	text "I'm taking the road"
-	line "less traveled by!"
+	text "Ich nehme den"
+	line "weniger began-"
+	cont "genen Weg!"
 	done
 
 .BeatenText:
-	text "Defeat is a well-"
-	line "trodden path."
+	text "Die Niederlage ist"
+	line "ein ausgetretener"
+	cont "Pfad."
 	done
 
 GenericTrainerFisherCarlos:
 	generictrainer FISHER, CARLOS, EVENT_BEAT_FISHER_CARLOS, .SeenText, .BeatenText
 
-	text "I'm sure my catch"
-	line "will be powerful"
-	cont "once it's trained."
+	text "Bestimmt wird mein"
+	line "Fang stark, wenn"
+	cont "er trainiert ist."
 
-	para "It might even"
-	line "evolve!"
+	para "Vielleicht ent-"
+	line "wickelt er sich"
+	cont "sogar!"
 	done
 
 .SeenText:
-	text "I trekked up here"
-	line "searching for a"
-	cont "new catch…"
+	text "Ich bin hier hoch-"
+	line "gewandert, auf der"
+	cont "Suche nach einem"
+	cont "neuen Fang…"
 
-	para "And it paid off!"
+	para "Und es hat sich"
+	line "gelohnt!"
 	done
 
 .BeatenText:
-	text "My new catch was"
-	line "inexperienced…"
+	text "Mein neuer Fang"
+	line "war unerfahren…"
 	done
 
 GenericTrainerHikerElijah:
 	generictrainer HIKER, ELIJAH, EVENT_BEAT_HIKER_ELIJAH, .SeenText, .BeatenText
 
-	text "I didn't choose to"
-	line "be a Hiker."
+	text "Ich habe es mir"
+	line "nicht ausgesucht,"
+	cont "Wanderer zu sein."
 
-	para "Being a Hiker"
-	line "chose me."
+	para "Das Wandern hat"
+	line "mich ausgesucht."
 	done
 
 .SeenText:
-	text "The mountains are"
-	line "calling, and I"
-	cont "must go!"
+	text "Die Berge rufen,"
+	line "und ich muss"
+	cont "gehen!"
 	done
 
 .BeatenText:
-	text "I won't bail just"
-	line "from this!"
+	text "Davon lass ich"
+	line "mich nicht ab-"
+	cont "bringen!"
 	done
 
 RuggedRoadSouthBlackBeltScript:

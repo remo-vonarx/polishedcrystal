@@ -255,14 +255,14 @@ GenericTrainerPsychicRichard:
 GenericTrainerBattleGirlRonda:
 	generictrainer BATTLE_GIRL, RONDA, EVENT_BEAT_BATTLE_GIRL_RONDA, BattleGirlRondaSeenText, BattleGirlRondaBeatenText
 
-	text "You see some of"
-	line "the world's str-"
+	text "Hier kommen eini-"
+	line "ge der stärksten"
 
-	para "ongest trainers"
-	line "come through here."
+	para "Trainer der Welt"
+	line "vorbei."
 
-	para "And I get to fight"
-	line "them all!"
+	para "Und ich darf gegen"
+	line "alle kämpfen!"
 	done
 
 GenericTrainerFisherScott:
@@ -279,12 +279,12 @@ GenericTrainerFisherScott:
 GenericTrainerDragonTamerErick:
 	generictrainer DRAGON_TAMER, ERICK, EVENT_BEAT_DRAGON_TAMER_ERICK, DragonTamerErickSeenText, DragonTamerErickBeatenText
 
-	text "Victory Road is"
-	line "harsh."
+	text "Die Siegesstraße"
+	line "ist hart."
 
-	para "Every trainer must"
-	line "forge their own"
-	cont "way through it."
+	para "Jeder Trainer muss"
+	line "sich seinen eige-"
+	cont "nen Weg bahnen."
 	done
 
 DragonTamerKazuSeenText:
@@ -312,18 +312,18 @@ CooltrainermGaven1BeatenText:
 	done
 
 CooltrainermGavenAfterText:
-	text "To get to the"
-	line "#mon League,"
+	text "Um zur #mon"
+	line "Liga zu gelangen,"
 
-	para "you have to get"
-	line "through Victory"
-	cont "Road."
+	para "musst du die"
+	line "Siegesstraße"
+	cont "passieren."
 
-	para "But Victory Road"
-	line "is tough."
+	para "Die Siegesstraße"
+	line "ist schwierig."
 
-	para "Practically nobody"
-	line "goes there!"
+	para "Eigentlich geht"
+	line "niemand dorthin!"
 	done
 
 CooltrainerfJoyceSeenText:
@@ -387,12 +387,13 @@ PsychicRichardBeatenText:
 	done
 
 BattleGirlRondaSeenText:
-	text "Stop! I challenge"
-	line "you to a duel!"
+	text "Halt! Ich fordere"
+	line "dich zum Duell!"
 	done
 
 BattleGirlRondaBeatenText:
-	text "Victory is yours!"
+	text "Der Sieg gehört"
+	line "dir!"
 	done
 
 FisherScottSeenText:
@@ -411,12 +412,13 @@ FisherScottBeatenText:
 	done
 
 DragonTamerErickSeenText:
-	text "Here be dragons!"
+	text "Hier hausen"
+	line "Drachen!"
 	done
 
 DragonTamerErickBeatenText:
-	text "My dragons were"
-	line "conquered…"
+	text "Meine Drachen wur-"
+	line "den bezwungen…"
 	done
 
 Route26SignText:

@@ -80,18 +80,19 @@ RichBoyGeraldSeenText:
 	done
 
 RichBoyGeraldBeatenText:
-	text "At least you're"
-	line "not boring."
+	text "Immerhin bist du"
+	line "nicht langweilig."
 	done
 
 RichBoyGeraldAfterText:
-	text "Next time we ought"
-	line "to vacation at"
-	cont "Olivine City."
+	text "Nächstes Mal"
+	line "sollten wir in"
+	cont "Oliviana City"
+	cont "Urlaub machen."
 
-	para "I'd quite like to"
-	line "challenge the"
-	cont "Battle Tower."
+	para "Ich würde gern den"
+	line "Duellturm heraus-"
+	cont "fordern."
 	done
 
 RichBoyGeraldNoBattleText:

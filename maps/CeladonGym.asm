@@ -94,14 +94,14 @@ GenericTrainerBeautyJulia:
 GenericTrainerAroma_ladyDahlia:
 	generictrainer AROMA_LADY, DAHLIA, EVENT_BEAT_AROMA_LADY_DAHLIA, Aroma_ladyDahliaSeenText, Aroma_ladyDahliaBeatenText
 
-	text "Gloom releases a"
-	line "foul fragrance,"
+	text "Duflor verströmt"
+	line "einen üblen Duft,"
 
-	para "but Erika knows"
-	line "how to turn it"
+	para "aber Erika weiß,"
+	line "wie man daraus"
 
-	para "into a sweet"
-	line "perfume."
+	para "ein süßes Parfüm"
+	line "macht."
 	done
 
 GenericTrainerTwinsJoandzoe1:
@@ -159,13 +159,14 @@ ErikaBeforeBattleText:
 
 ErikaBeatenText:
 	text "Erika: Oh!"
-	line "I concede defeat…"
+	line "Ich gebe mich"
+	cont "geschlagen…"
 
-	para "You are remarkably"
-	line "strong…"
+	para "Du bist außerge-"
+	line "wöhnlich stark…"
 
-	para "I shall give you"
-	line "the Rainbow Badge…"
+	para "Ich gebe dir den"
+	line "Farborden…"
 	done
 
 ErikaExplainTMText:
@@ -228,14 +229,14 @@ BeautyJuliaBeatenText:
 	done
 
 Aroma_ladyDahliaSeenText:
-	text "There is an in-"
-	line "triguing scent"
-	cont "around you…"
+	text "Du hast einen"
+	line "faszinierenden"
+	cont "Duft an dir…"
 	done
 
 Aroma_ladyDahliaBeatenText:
-	text "The foul scent"
-	line "of defeat…"
+	text "Der üble Geruch"
+	line "der Niederlage…"
 	done
 
 TwinsJoandzoe1SeenText:

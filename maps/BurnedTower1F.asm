@@ -164,22 +164,22 @@ BurnedTowerRivalBattleScript:
 GenericTrainerHexManiacTamara:
 	generictrainer HEX_MANIAC, TAMARA, EVENT_BEAT_HEX_MANIAC_TAMARA, HexManiacTamaraSeenText, HexManiacTamaraBeatenText
 
-	text "There are powers"
-	line "beyond our under-"
+	text "Es gibt Kräfte auf"
+	line "der Welt, die wir"
 
-	para "standing in the"
-	line "world…"
+	para "nicht verstehen"
+	line "können…"
 	done
 
 GenericTrainerFirebreatherNed:
 	generictrainer FIREBREATHER, NED, EVENT_BEAT_FIREBREATHER_NED, FirebreatherNedSeenText, FirebreatherNedBeatenText
 
-	text "We Firebreathers"
-	line "know the true"
+	text "Wir Feuerspucker"
+	line "kennen die wahre"
 
-	para "power of fire"
-	line "better than"
-	cont "anyone!"
+	para "Kraft des Feuers"
+	line "besser als jeder"
+	cont "andere!"
 	done
 
 BurnedTower1FEusineMovement:
@@ -318,25 +318,26 @@ BurnedTower1FMortyText:
 	done
 
 HexManiacTamaraSeenText:
-	text "A strange power is"
-	line "present here…"
+	text "Hier ist eine"
+	line "seltsame Kraft"
+	cont "am Werk…"
 	done
 
 HexManiacTamaraBeatenText:
-	text "I have lost…"
+	text "Ich habe verloren…"
 	done
 
 FirebreatherNedSeenText:
-	text "My soul is on"
-	line "fire. I'll show"
+	text "Meine Seele steht"
+	line "in Flammen. Ich"
 
-	para "you how hot it"
-	line "burns!"
+	para "zeige dir, wie"
+	line "heiß sie brennt!"
 	done
 
 FirebreatherNedBeatenText:
-	text "Still not hot"
-	line "enough…"
+	text "Immer noch nicht"
+	line "heiß genug…"
 	done
 
 FirebreatherDickBeforeText:
@@ -348,14 +349,14 @@ FirebreatherDickBeforeText:
 	done
 
 FirebreatherDickBeatenText:
-	text "I burned down to"
-	line "white ashes…"
+	text "Ich bin zu weißer"
+	line "Asche verbrannt…"
 	done
 
 FirebreatherDickAfterText:
-	text "I was so into my"
-	line "training that I"
+	text "Ich war so ins"
+	line "Training vertieft,"
 
-	para "fell down this"
-	line "hole."
+	para "dass ich in dieses"
+	line "Loch gefallen bin."
 	done

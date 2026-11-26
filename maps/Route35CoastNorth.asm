@@ -23,24 +23,26 @@ Route35CoastNorth_MapScriptHeader:
 GenericTrainerLassRose:
 	generictrainer LASS, ROSE, EVENT_BEAT_LASS_ROSE, LassRoseSeenText, LassRoseBeatenText
 
-	text "You hurt my poor"
-	line "worldly #mon!"
+	text "Du hast meinen"
+	line "weitgereisten"
+	cont "#mon wehgetan!"
 
-	para "I demand that you"
-	line "heal them at a"
-	cont "#mon Center!"
+	para "Ich verlange, dass"
+	line "du sie in einem"
+	cont "#mon-Center"
+	cont "heilst!"
 	done
 
 LassRoseSeenText:
-	text "I collected these"
-	line "#mon from all"
-	cont "around the world!"
+	text "Diese #mon habe"
+	line "ich aus der ganzen"
+	cont "Welt gesammelt!"
 	done
 
 LassRoseBeatenText:
-	text "Oh no!"
-	line "I went around the"
-	cont "world for these!"
+	text "Oh nein!"
+	line "Dafür bin ich um"
+	cont "die Welt gereist!"
 	done
 
 Route35CoastNorthAdvancedTipsSignText:

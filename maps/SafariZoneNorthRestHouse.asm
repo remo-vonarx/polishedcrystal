@@ -22,42 +22,50 @@ SafariZoneNorthRestHouse_MapScriptHeader:
 GenericTrainerCoupleErikandsara1:
 	generictrainer COUPLE, ERIKANDSARA1, EVENT_BEAT_COUPLE_ERIK_AND_SARA, .SeenText, .BeatenText
 
-	text "Erik: I used to"
-	line "get lost in the"
-	cont "Safari Zone."
+	text "Erik: Früher habe"
+	line "ich mich in der"
+	cont "Safari-Zone"
+	cont "verirrt."
 
-	para "Now it's become"
-	line "our favorite"
-	cont "quiet spot."
+	para "Jetzt ist sie"
+	line "unser liebster"
+	cont "ruhiger Ort."
 	done
 
 .SeenText:
-	text "Erik: You found"
-	line "our secret spot?!"
+	text "Erik: Du hast"
+	line "unser geheimes"
+	cont "Plätzchen gefun-"
+	cont "den?!"
 	done
 
 .BeatenText:
-	text "Erik: Not so"
-	line "secret now…"
+	text "Erik: Jetzt ist"
+	line "es nicht mehr so"
+	cont "geheim…"
 	done
 
 GenericTrainerCoupleErikandsara2:
 	generictrainer COUPLE, ERIKANDSARA2, EVENT_BEAT_COUPLE_ERIK_AND_SARA, .SeenText, .BeatenText
 
-	text "Sara: We had our"
-	line "first date at the"
-	cont "Safari Zone."
+	text "Sara: Wir hatten"
+	line "unser erstes Date"
+	cont "in der Safari-"
+	cont "Zone."
 
-	para "It's been three"
-	line "years now!"
+	para "Das ist jetzt"
+	line "drei Jahre her!"
 	done
 
 .SeenText:
-	text "Sara: You found"
-	line "our secret spot?!"
+	text "Sara: Du hast"
+	line "unser geheimes"
+	cont "Plätzchen gefun-"
+	cont "den?!"
 	done
 
 .BeatenText:
-	text "Sara: Not so"
-	line "secret now…"
+	text "Sara: Jetzt ist"
+	line "es nicht mehr so"
+	cont "geheim…"
 	done

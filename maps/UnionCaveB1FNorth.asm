@@ -24,42 +24,48 @@ UnionCaveB1FNorth_MapScriptHeader:
 GenericTrainerRuin_maniacLeland:
 	generictrainer RUIN_MANIAC, LELAND, EVENT_BEAT_RUIN_MANIAC_LELAND, .SeenText, .BeatenText
 
-	text "Someday I'll dis-"
-	line "cover a new ruin"
-	cont "and become famous."
+	text "Eines Tages ent-"
+	line "decke ich eine"
+	cont "neue Ruine und"
+	cont "werde berühmt."
 	done
 
 .SeenText:
-	text "I'm on the trail of"
-	line "an ancient ruin"
-	cont "site!"
+	text "Ich bin einer"
+	line "uralten Ruinen-"
+	cont "stätte auf der"
+	cont "Spur!"
 	done
 
 .BeatenText:
-	text "I was distracted"
-	line "by clues the"
-	cont "ancients left."
+	text "Die Hinweise aus"
+	line "alter Zeit haben"
+	cont "mich abgelenkt."
 	done
 
 GenericTrainerRuin_maniacPetry:
 	generictrainer RUIN_MANIAC, PETRY, EVENT_BEAT_RUIN_MANIAC_PETRY, .SeenText, .BeatenText
 
-	text "Ancient history"
-	line "is my passion,"
+	text "Alte Geschichte"
+	line "ist meine Leiden-"
+	cont "schaft,"
 
-	para "but to investigate"
-	line "it properly we use"
-	cont "modern technology."
+	para "aber um sie rich-"
+	line "tig zu erforschen,"
+	cont "nutzen wir moderne"
+	cont "Technik."
 	done
 
 .SeenText:
-	text "I'll go anywhere"
-	line "to investigate"
-	cont "old secrets and"
-	cont "legends."
+	text "Ich gehe überall"
+	line "hin, um alte Ge-"
+	cont "heimnisse und Le-"
+	cont "genden zu erfor-"
+	cont "schen."
 	done
 
 .BeatenText:
-	text "What is the secret"
-	line "of your power?"
+	text "Was ist das Ge-"
+	line "heimnis deiner"
+	cont "Kraft?"
 	done

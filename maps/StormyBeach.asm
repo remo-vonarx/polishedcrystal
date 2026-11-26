@@ -31,83 +31,88 @@ StormyBeach_MapScriptHeader:
 GenericTrainerSwimmerfBarbara:
 	generictrainer SWIMMERF, BARBARA, EVENT_BEAT_SWIMMERF_BARBARA, .SeenText, .BeatenText
 
-	text "I'm being dragged"
-	line "by the tides…"
+	text "Die Gezeiten"
+	line "ziehen mich mit…"
 	done
 
 .SeenText:
-	text "I was resting for"
-	line "a while, but I am"
+	text "Ich habe mich eine"
+	line "Weile ausgeruht,"
 
-	para "always ready to"
-	line "fight!"
+	para "aber ich bin"
+	line "immer kampfbereit!"
 	done
 
 .BeatenText:
-	text "It was a good"
-	line "battle, even if"
-	cont "I lost."
+	text "Es war ein guter"
+	line "Kampf, auch wenn"
+	cont "ich verloren habe."
 	done
 
 GenericTrainerBird_keeperJulian:
 	generictrainer BIRD_KEEPER, JULIAN, EVENT_BEAT_BIRD_KEEPER_JULIAN, .SeenText, .BeatenText
 
-	text "It's harder to fly"
-	line "in stormy places"
-	cont "like this."
+	text "An stürmischen"
+	line "Orten wie diesem"
+	cont "ist Fliegen"
+	cont "schwerer."
 	done
 
 .SeenText:
-	text "I'm training my"
-	line "Flying-type #-"
-	cont "mon here."
+	text "Ich trainiere hier"
+	line "meine #mon vom"
+	cont "Typ Flug."
 
-	para "Want to help me?"
+	para "Willst du mir"
+	line "helfen?"
 	done
 
 .BeatenText:
-	text "I lost…"
-	line "What a pity!"
+	text "Verloren…"
+	line "Wie schade!"
 	done
 
 GenericTrainerCamperFelix:
 	generictrainer CAMPER, FELIX, EVENT_BEAT_CAMPER_FELIX, .SeenText, .BeatenText
 
-	text "We're having a"
-	line "barbecue later!"
+	text "Wir grillen"
+	line "nachher!"
 
-	para "All I need is some"
-	line "firewood for my"
-	cont "#mon to light."
+	para "Ich brauche nur"
+	line "Brennholz, das"
+	cont "meine #mon an-"
+	cont "zünden können."
 	done
 
 .SeenText:
-	text "I'm searching for"
-	line "firewood."
-	cont "Wanna help?"
+	text "Ich suche Brenn-"
+	line "holz."
+	cont "Hilfst du mir?"
 	done
 
 .BeatenText:
-	text "I'll take that as"
-	line "a no…"
+	text "Das nehme ich"
+	line "als Nein…"
 	done
 
 GenericTrainerPicnickerLily:
 	generictrainer PICNICKER, LILY, EVENT_BEAT_PICNICKER_LILY, .SeenText, .BeatenText
 
-	text "I came here for a"
-	line "picnic, but forgot"
-	cont "the food!"
-	cont "How embarrassing!"
+	text "Ich bin zum Pick-"
+	line "nick gekommen,"
+	cont "hab aber das Essen"
+	cont "vergessen!"
+	cont "Wie peinlich!"
 	done
 
 .SeenText:
-	text "I'm hungry!"
+	text "Ich hab Hunger!"
 	done
 
 .BeatenText:
-	text "I was battling on"
-	line "an empty stomach!"
+	text "Ich habe mit lee-"
+	line "rem Magen ge-"
+	cont "kämpft!"
 	done
 
 StormyBeachSwimmermText:

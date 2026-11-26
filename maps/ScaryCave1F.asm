@@ -201,47 +201,51 @@ ScaryCave1FPharmacistScript:
 GenericTrainerRuin_maniacSmilte:
 	generictrainer RUIN_MANIAC, SMILTE, EVENT_BEAT_RUIN_MANIAC_SMILTE, .SeenText, .BeatenText
 
-	text "I hear an echo."
-	line "There's a deeper"
-	cont "cave nearby!"
+	text "Ich höre ein Echo."
+	line "Ganz in der Nähe"
+	cont "ist eine tiefere"
+	cont "Höhle!"
 
-	para "I wonder if that"
-	line "is where I'll find"
-	cont "my big discovery…"
+	para "Ob ich dort meine"
+	line "große Entdeckung"
+	cont "mache…"
 	done
 
 .SeenText:
-	text "I'm on the edge of"
-	line "a big discovery!"
+	text "Ich stehe kurz vor"
+	line "einer großen"
+	cont "Entdeckung!"
 
-	para "I can just feel"
-	line "it!"
+	para "Ich spüre es!"
 	done
 
 .BeatenText:
-	text "Are you after my"
-	line "discovery?!"
+	text "Bist du hinter"
+	line "meiner Entdeckung"
+	cont "her?!"
 	done
 
 GenericTrainerSuper_nerdKouta:
 	generictrainer SUPER_NERD, KOUTA, EVENT_BEAT_SUPER_NERD_KOUTA, .SeenText, .BeatenText
 
-	text "I guess even the"
-	line "best-laid plans"
-	cont "can be ruined."
+	text "Selbst die besten"
+	line "Pläne können wohl"
+	cont "scheitern."
 	done
 
 .SeenText:
-	text "You can't beat me!"
-	line "I've got the per-"
-	cont "fect plan!"
+	text "Du kannst mich"
+	line "nicht besiegen!"
+	cont "Ich habe den per-"
+	cont "fekten Plan!"
 	done
 
 .BeatenText:
-	text "My plan failed?!"
+	text "Mein Plan ist ge-"
+	line "scheitert?!"
 
-	para "Back to the draw-"
-	line "ing board…"
+	para "Zurück ans Reiß-"
+	line "brett…"
 	done
 
 TrainerCoupleJoeandjo1:
@@ -251,23 +255,23 @@ TrainerCoupleJoeandjo1:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Joe: We're on a"
-	line "ghost hunt, but"
+	text "Joe: Wir sind auf"
+	line "Geisterjagd, aber"
 
-	para "I'm not scared as"
-	line "long as I have my"
-	cont "Jo beside me!"
+	para "solange meine Jo"
+	line "bei mir ist, habe"
+	cont "ich keine Angst!"
 	done
 
 .SeenText:
-	text "Joe: A ghost!"
-	line "Stay close, my"
-	cont "dear Jo!"
+	text "Joe: Ein Geist!"
+	line "Bleib nah bei mir,"
+	cont "meine liebe Jo!"
 	done
 
 .BeatenText:
-	text "Joe: Oh. It was"
-	line "just a trainer."
+	text "Joe: Oh. Es war"
+	line "nur ein Trainer."
 	done
 
 TrainerCoupleJoeandjo2:
@@ -277,62 +281,64 @@ TrainerCoupleJoeandjo2:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Jo: I'm so lucky"
-	line "to have my wonder-"
-	cont "ful Joe to ward"
+	text "Jo: Ich hab so ein"
+	line "Glück, dass mein"
+	cont "wundervoller Joe"
 
-	para "off any creepy"
-	line "ghosts."
+	para "alle gruseligen"
+	line "Geister fernhält."
 	done
 
 .SeenText:
-	text "Jo: Eek! Hold me"
-	line "tight, Joe!"
+	text "Jo: Iiek! Halt"
+	line "mich fest, Joe!"
 	done
 
 .BeatenText:
-	text "Jo: Aren't you"
-	line "scared?"
+	text "Jo: Hast du keine"
+	line "Angst?"
 	done
 
 GenericTrainerHex_maniacBethany:
 	generictrainer HEX_MANIAC, BETHANY, EVENT_BEAT_HEX_MANIAC_BETHANY, .SeenText, .BeatenText
 
-	text "The aura of fear"
-	line "in this cave is"
-	cont "delightful…"
+	text "Die Aura der Angst"
+	line "in dieser Höhle"
+	cont "ist köstlich…"
 	cont "Fufufufu…"
 	done
 
 .SeenText: ; text > text
-	text "BOO!"
+	text "BUH!"
 	done
 
 .BeatenText:
-	text "Did I scare you?"
+	text "Hab ich dich"
+	line "erschreckt?"
 	done
 
 GenericTrainerScientistPiotr:
 	generictrainer SCIENTIST, PIOTR, EVENT_BEAT_SCIENTIST_PIOTR, .SeenText, .BeatenText
 
-	text "Algae grow here"
-	line "and release a"
+	text "Hier wachsen Al-"
+	line "gen, die einen"
 
-	para "cloudy pigment"
-	line "in the water."
+	para "trüben Farbstoff"
+	line "ans Wasser abge-"
+	cont "ben."
 
-	para "It's nothing to"
-	line "be afraid of!"
-	cont "…Right?"
+	para "Davor muss man"
+	line "keine Angst haben!"
+	cont "…Oder?"
 	done
 
 .SeenText:
-	text "Do you know why"
-	line "the water here is"
-	cont "so dark?"
+	text "Weißt du, warum"
+	line "das Wasser hier so"
+	cont "dunkel ist?"
 	done
 
 .BeatenText:
-	text "Fine, I'll tell"
-	line "you!"
+	text "Na gut, ich sag's"
+	line "dir!"
 	done

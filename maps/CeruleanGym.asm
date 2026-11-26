@@ -107,12 +107,12 @@ GenericTrainerSwimmerfDiana:
 GenericTrainerSwimmerfViola:
 	generictrainer SWIMMERF, VIOLA, EVENT_BEAT_SWIMMERF_VIOLA, SwimmerfViolaSeenText, SwimmerfViolaBeatenText
 
-	text "Swimming is good"
-	line "for both beauty"
-	cont "and health!"
+	text "Schwimmen ist gut"
+	line "für Schönheit und"
+	cont "Gesundheit!"
 
-	para "Just look at"
-	line "Misty, you'll see."
+	para "Sieh dir Misty an,"
+	line "dann siehst du's."
 	done
 
 GenericTrainerSwimmerfBriana:
@@ -145,11 +145,11 @@ GenericTrainerSailorParker:
 GenericTrainerSailorEddie:
 	generictrainer SAILOR, EDDIE, EVENT_BEAT_SAILOR_EDDIE, SailorEddieSeenText, SailorEddieBeatenText
 
-	text "Hey, let's go for"
-	line "a swim!"
+	text "Hey, lass uns"
+	line "schwimmen gehen!"
 
-	para "Sailors have to"
-	line "be able to swim!"
+	para "Matrosen müssen"
+	line "schwimmen können!"
 	done
 
 CeruleanGymGuyScript:
@@ -294,14 +294,15 @@ MistyIntroText:
 	done
 
 MistyWinLossText:
-	text "Misty: You really"
-	line "are good…"
+	text "Misty: Du bist"
+	line "wirklich gut…"
 
-	para "I'll admit that"
-	line "you are skilled…"
+	para "Ich gebe zu, dass"
+	line "du sehr geschickt"
+	cont "bist…"
 
-	para "Here you go. It's"
-	line "the Cascade Badge."
+	para "Hier hast du den"
+	line "Quellorden."
 	done
 
 MistyGiveTMText:
@@ -340,16 +341,18 @@ SwimmerfDianaBeatenText:
 	done
 
 SwimmerfViolaSeenText:
-	text "Swimming isn't"
-	line "just about speed!"
+	text "Beim Schwimmen"
+	line "geht es nicht nur"
+	cont "um Tempo!"
 
-	para "It's also about"
-	line "beauty and grace!"
+	para "Es geht auch um"
+	line "Schönheit und"
+	cont "Anmut!"
 	done
 
 SwimmerfViolaBeatenText:
-	text "I lost"
-	line "beautifully…"
+	text "Ich habe schön"
+	line "verloren…"
 	done
 
 SwimmerfBrianaSeenText:
@@ -366,8 +369,8 @@ SwimmerfBrianaBeatenText:
 	done
 
 SailorParkerSeenText:
-	text "Alright! Come"
-	line "and get me!"
+	text "Also gut! Fang"
+	line "mich doch!"
 	done
 
 SailorParkerBeatenText:
@@ -376,15 +379,15 @@ SailorParkerBeatenText:
 	done
 
 SailorEddieSeenText:
-	text "I've been relaxing"
-	line "poolside, so"
-	cont "I've got enough"
-	cont "strength!"
+	text "Ich habe mich am"
+	line "Becken erholt,"
+	cont "also habe ich"
+	cont "genug Kraft!"
 	done
 
 SailorEddieBeatenText:
-	text "You can't win with"
-	line "strength alone."
+	text "Mit Kraft allein"
+	line "gewinnt man nicht."
 	done
 
 

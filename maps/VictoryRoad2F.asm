@@ -82,17 +82,17 @@ VictoryRoadRivalLeft:
 GenericTrainerVeteranfJoanne:
 	generictrainer VETERANF, JOANNE, EVENT_BEAT_VETERANF_JOANNE, VeteranfJoanneSeenText, VeteranfJoanneBeatenText
 
-	text "You earned the"
-	line "right to be on"
-	cont "Victory Road!"
+	text "Du hast dir das"
+	line "Recht auf die"
+	cont "Siegesstraße"
+	cont "verdient!"
 	done
 
 GenericTrainerVeteranfJonet:
 	generictrainer VETERANF, JONET, EVENT_BEAT_VETERANF_JONET, VeteranfJonetSeenText, VeteranfJonetBeatenText
 
-	text "Did somebody"
-	line "capture Moltres"
-	cont "already?"
+	text "Hat schon jemand"
+	line "Lavados gefangen?"
 	done
 
 VictoryRoadRivalBattleApproachMovement1:
@@ -194,9 +194,10 @@ VictoryRoadRivalVictoryText:
 	done
 
 VeteranfJoanneSeenText:
-	text "Victory Road is"
-	line "the final test"
-	cont "for trainers!"
+	text "Die Siegesstraße"
+	line "ist die letzte"
+	cont "Prüfung für"
+	cont "Trainer!"
 	done
 
 VeteranfJoanneBeatenText:
@@ -204,16 +205,16 @@ VeteranfJoanneBeatenText:
 	done
 
 VeteranfJonetSeenText:
-	text "There's supposed"
-	line "to be a Moltres"
-	cont "roosting here."
+	text "Hier soll ein"
+	line "Lavados nisten."
 
-	para "I'm going to catch"
-	line "it!"
+	para "Ich werde es"
+	line "fangen!"
 	done
 
 VeteranfJonetBeatenText:
-	text "I'd have won if"
-	line "I had a legendary"
-	cont "#mon…"
+	text "Mit einem"
+	line "legendären #mon"
+	cont "hätte ich"
+	cont "gewonnen…"
 	done

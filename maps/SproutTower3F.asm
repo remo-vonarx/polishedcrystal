@@ -270,9 +270,10 @@ SageTroyBeatenText:
 	done
 
 SageNealSeenText:
-	text "The Elder's TM"
-	line "lights even pitch-"
-	cont "black darkness."
+	text "Mit der TM des"
+	line "Weisen kannst du"
+	cont "selbst dunkelste"
+	cont "Orte erhellen."
 	done
 
 SageNealBeatenText:

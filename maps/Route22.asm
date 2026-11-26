@@ -53,22 +53,24 @@ KukuiScript:
 	jumpthistext
 
 .AfterText:
-	text "Amazing! I went"
-	line "right at you, and"
-	cont "you still won!"
+	text "Unglaublich! Ich"
+	line "bin direkt auf"
+	cont "dich los, und du"
+	cont "hast trotzdem"
+	cont "gewonnen!"
 
-	para "No wonder you're"
-	line "the Champion!"
+	para "Kein Wunder, dass"
+	line "du Champ bist!"
 
-	para "I need to train"
-	line "harder before I'm"
+	para "Ich muss härter"
+	line "trainieren, bevor"
 
-	para "ready for the"
-	line "League."
+	para "ich bereit für"
+	line "die Liga bin."
 
-	para "And when I do,"
-	line "I'll battle you"
-	cont "again! Woo!"
+	para "Und dann kämpfe"
+	line "ich wieder gegen"
+	cont "dich! Woo!"
 	done
 
 .IntroText:

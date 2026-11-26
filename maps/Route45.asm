@@ -81,14 +81,14 @@ Route45Dragon_tamerScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "The art of train-"
-	line "ing Dragon-type"
-	cont "#mon is just"
-	cont "amazing."
+	text "Die Kunst, Dra-"
+	line "chen-#mon zu"
+	cont "trainieren, ist"
+	cont "einfach toll."
 
-	para "You should become"
-	line "a Dragon Tamer"
-	cont "too."
+	para "Du solltest auch"
+	line "Drachenprofi"
+	cont "werden."
 	done
 
 .IntroText:
@@ -140,18 +140,18 @@ Route45Dragon_tamerScript:
 	done
 
 .AfterText1:
-	text "Your strength"
-	line "rivals my own!"
+	text "Deine Stärke ist"
+	line "meiner ebenbürtig!"
 
-	para "Take this. You"
-	line "deserve it."
+	para "Nimm das. Du hast"
+	line "es verdient."
 	done
 
 GenericTrainerBattleGirlNozomi:
 	generictrainer BATTLE_GIRL, NOZOMI, EVENT_BEAT_BATTLE_GIRL_NOZOMI, BattleGirlNozomiSeenText, BattleGirlNozomiBeatenText
 
-	text "Thanks for the"
-	line "workout, <PLAYER>!"
+	text "Danke fürs"
+	line "Training, <PLAYER>!"
 	done
 
 TrainerBlackbeltKenji:
@@ -414,12 +414,14 @@ GenericTrainerCamperQuentin:
 	done
 
 BattleGirlNozomiSeenText:
-	text "This is no place"
-	line "for weak #mon!"
+	text "Das ist kein Ort"
+	line "für schwache"
+	cont "#mon!"
 	done
 
 BattleGirlNozomiBeatenText:
-	text "What a fight!"
+	text "Was für ein"
+	line "Kampf!"
 	done
 
 HikerErikSeenText:

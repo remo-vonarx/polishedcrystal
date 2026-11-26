@@ -64,65 +64,67 @@ DimCave3FSetUpStoneTable:
 GenericTrainerEngineerHugo:
 	generictrainer ENGINEER, HUGO, EVENT_BEAT_ENGINEER_HUGO, .SeenText, .BeatenText
 
-	text "The noise of that"
-	line "mine cart gave me"
-	cont "a scare."
+	text "Der Lärm der Lore"
+	line "hat mich"
+	cont "erschreckt."
 
-	para "You always have to"
-	line "stay alert for a"
-	cont "cave-in here."
+	para "Hier muss man"
+	line "immer mit einem"
+	cont "Einsturz rechnen."
 	done
 
 .SeenText:
-	text "Cave-in!"
+	text "Einsturz!"
 	done
 
 .BeatenText:
-	text "Oh, you just"
-	line "pushed a boulder!"
+	text "Oh, du hast nur"
+	line "einen Felsen"
+	cont "geschoben!"
 	done
 
 GenericTrainerBlackbeltTakeo:
 	generictrainer BLACKBELT_T, TAKEO, EVENT_BEAT_BLACKBELT_TAKEO, .SeenText, .BeatenText
 
-	text "All I want is to"
-	line "train in peace."
+	text "Ich will nur in"
+	line "Ruhe trainieren."
 	done
 
 .SeenText:
-	text "I'm training here"
-	line "alone with my"
+	text "Ich trainiere hier"
+	line "allein mit meinen"
 	cont "#mon."
 
-	para "Leave at once!"
+	para "Geh sofort!"
 	done
 
 .BeatenText:
-	text "Clearly I need"
-	line "more training…"
+	text "Offenbar brauche"
+	line "ich mehr Training…"
 	done
 
 GenericTrainerHikerFloyd:
 	generictrainer HIKER, FLOYD, EVENT_BEAT_HIKER_FLOYD, .SeenText, .BeatenText
 
-	text "I am SO lost in"
-	line "here!"
+	text "Ich habe mich hier"
+	line "SO verlaufen!"
 
-	para "I should stick to"
-	line "hiking outdoors."
+	para "Ich sollte lieber"
+	line "draußen wandern."
 	done
 
 .SeenText:
-	text "This cave makes me"
-	line "so ANGRY!"
+	text "Diese Höhle macht"
+	line "mich so WÜTEND!"
 
-	para "I'll battle to let"
-	line "off some steam!"
+	para "Ich kämpfe, um"
+	line "Dampf abzulassen!"
 	done
 
 .BeatenText:
-	text "I got beat down by"
-	line "a kid!"
+	text "Ich wurde von"
+	line "einem Kind ver-"
+	cont "möbelt!"
 	done
 
 DimCave3FPokefanmScript:

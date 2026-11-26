@@ -28,15 +28,17 @@ MountMortar1FOutside_MapScriptHeader:
 GenericTrainerBattleGirlSubaru:
 	generictrainer BATTLE_GIRL, SUBARU, EVENT_BEAT_BATTLE_GIRL_SUBARU, BattleGirlSubaruSeenText, BattleGirlSubaruBeatenText
 
-	text "All this climbing"
-	line "and I'm still not"
-	cont "the toughest…"
+	text "So viel geklettert"
+	line "und ich bin immer"
+	cont "noch nicht die"
+	cont "Stärkste…"
 	done
 
 GenericTrainerBattleGirlDiane:
 	generictrainer BATTLE_GIRL, DIANE, EVENT_BEAT_BATTLE_GIRL_DIANE, BattleGirlDianeSeenText, BattleGirlDianeBeatenText
 
-	text "I bow to you."
+	text "Ich verneige mich"
+	line "vor dir."
 	done
 
 BattleGirlSubaruSeenText:
@@ -44,7 +46,7 @@ BattleGirlSubaruSeenText:
 	done
 
 BattleGirlSubaruBeatenText:
-	text "Ooof!"
+	text "Uff!"
 	done
 
 BattleGirlDianeSeenText:
@@ -52,6 +54,6 @@ BattleGirlDianeSeenText:
 	done
 
 BattleGirlDianeBeatenText:
-	text "This round goes"
-	line "to you."
+	text "Diese Runde geht"
+	line "an dich."
 	done

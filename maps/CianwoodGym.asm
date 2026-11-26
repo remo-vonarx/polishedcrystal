@@ -274,12 +274,12 @@ ChuckIntroText3:
 	done
 
 ChuckLossText:
-	text "Wha? Huh?"
-	line "I lost?"
+	text "Wa…? Huch?"
+	line "Ich habe verloren?"
 
-	para "How about that!"
-	line "You're worthy of"
-	cont "the Storm Badge!"
+	para "Wie wär's damit?"
+	line "Du bist des Faust-"
+	cont "ordens würdig!"
 	done
 
 ChuckExplainBadgeText:

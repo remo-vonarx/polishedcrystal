@@ -96,22 +96,23 @@ ShamoutiShrineRuinsLawrenceScript:
 	done
 
 .AfterText:
-	text "Lawrence: Your"
-	line "#mon aren't"
+	text "Lawrence: Deine"
+	line "#mon sind für"
 
-	para "just a collection"
-	line "to you, are they?"
+	para "dich nicht bloß"
+	line "eine Sammlung,"
+	cont "oder?"
 
-	para "You treat them"
-	line "almost like"
-	cont "friends."
+	para "Du behandelst sie"
+	line "fast wie Freunde."
 
-	para "Could that be how"
-	line "you defeated my"
-	cont "legendary #mon?"
+	para "Hast du so meine"
+	line "legendären #mon"
+	cont "besiegt?"
 
-	para "Well, I think you"
-	line "earned this."
+	para "Nun, ich denke,"
+	line "das hast du dir"
+	cont "verdient."
 	done
 
 .SilverWingText:

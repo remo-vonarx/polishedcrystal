@@ -282,15 +282,15 @@ GenericTrainerDragonTamerDarin:
 GenericTrainerDragonTamerAdam:
 	generictrainer DRAGON_TAMER, ADAM, EVENT_BEAT_DRAGON_TAMER_ADAM, .SeenText, .BeatenText
 
-	text "Not even the power"
-	line "of dragons could"
-	cont "stop you."
+	text "Nicht einmal die"
+	line "Kraft der Drachen"
+	cont "hielt dich auf."
 
-	para "You may be the"
-	line "kind of trainer"
+	para "Vielleicht bist du"
+	line "die Art Trainer,"
 
-	para "our Master is"
-	line "looking for."
+	para "die unser Meister"
+	line "sucht."
 	done
 
 .SeenText:
@@ -299,62 +299,63 @@ GenericTrainerDragonTamerAdam:
 	done
 
 .BeatenText:
-	text "No! I was"
-	line "defeated!"
+	text "Nein! Ich wurde"
+	line "besiegt!"
 	done
 
 GenericTrainerAceDuoDanandcara1:
 	generictrainer ACE_DUO, DANANDCARA1, EVENT_BEAT_ACE_DUO_DAN_AND_CARA, .SeenText, .BeatenText
 
-	text "Dan: Soon I'll"
-	line "get permission"
+	text "Dan: Bald werde"
+	line "ich vom Meister"
 
-	para "from our Master to"
-	line "use dragons."
+	para "eine Erlaubnis für"
+	line "den Einsatz von"
+	cont "Drachen bekommen."
 
-	para "When I do, I'm"
-	line "going to become an"
+	para "Dann werde ich ein"
+	line "bewundernswerter"
 
-	para "admirable dragon"
-	line "trainer and gain"
+	para "Drachen-Trainer"
+	line "und verdiene mir"
 
-	para "our Master's"
-	line "approval."
+	para "die Anerkennung"
+	line "unseres Meisters."
 	done
 
 .SeenText:
-	text "Dan: I may not"
-	line "use dragons, but"
-	cont "I'm still strong!"
+	text "Dan: Ich setze"
+	line "zwar keine Drachen"
+	cont "ein, aber stark"
+	cont "bin ich trotzdem!"
 	done
 
 .BeatenText:
-	text "Dan: You were"
-	line "even stronger!"
+	text "Dan: Du warst noch"
+	line "stärker!"
 	done
 
 GenericTrainerAceDuoDanandcara2:
 	generictrainer ACE_DUO, DANANDCARA2, EVENT_BEAT_ACE_DUO_DAN_AND_CARA, .SeenText, .BeatenText
 
-	text "Cara: Dragons are"
-	line "difficult to"
+	text "Cara: Drachen sind"
+	line "schwer aufzuziehen"
 
-	para "raise, and very"
-	line "powerful."
+	para "und sehr mächtig."
 
-	para "They're not for"
-	line "everyone."
+	para "Sie sind nicht"
+	line "für jeden."
 	done
 
 .SeenText:
-	text "Cara: Do you want"
-	line "to train dragons"
-	cont "too?"
+	text "Cara: Willst du"
+	line "auch Drachen"
+	cont "trainieren?"
 	done
 
 .BeatenText:
-	text "Cara: Oh yikes,"
-	line "I lost!"
+	text "Cara: Mist,"
+	line "verloren!"
 	done
 
 GenericTrainerTwinsLeaandpia1:

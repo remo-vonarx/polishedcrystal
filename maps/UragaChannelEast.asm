@@ -26,61 +26,61 @@ UragaChannelEast_MapScriptHeader:
 GenericTrainerSwimmerfWoda:
 	generictrainer SWIMMERF, WODA, EVENT_BEAT_SWIMMERF_WODA, .SeenText, .BeatenText
 
-	text "The strong curr-"
-	line "ents here make it"
-	cont "a good place to"
-	cont "train."
+	text "Die starken Strö-"
+	line "mungen machen"
+	cont "diesen Ort ideal"
+	cont "zum Trainieren."
 	done
 
 .SeenText:
-	text "Did you come here"
-	line "to train too?"
+	text "Bist du auch zum"
+	line "Trainieren hier?"
 	done
 
 .BeatenText:
-	text "You don't need"
-	line "more training!"
+	text "Du brauchst kein"
+	line "Training mehr!"
 	done
 
 GenericTrainerCooltrainermKieran:
 	generictrainer COOLTRAINERM, KIERAN, EVENT_BEAT_COOLTRAINERM_KIERAN, .SeenText, .BeatenText
 
-	text "I couldn't get my"
-	line "#m-on."
+	text "Ich kam nicht in"
+	line "#mon-Stimmung."
 
-	para "I need to get my"
-	line "head back in the"
-	cont "game."
+	para "Ich muss mich wie-"
+	line "der aufs Spiel"
+	cont "konzentrieren."
 	done
 
 .SeenText:
-	text "It's on like"
-	line "#mon!"
+	text "Jetzt geht's"
+	line "#mon-mäßig ab!"
 	done
 
 .BeatenText:
-	text "Game over."
+	text "Spiel vorbei."
 	done
 
 GenericTrainerBikerTyrone:
 	generictrainer BIKER, TYRONE, EVENT_BEAT_BIKER_TYRONE, .SeenText, .BeatenText
 
-	text "I fell in the"
-	line "water while show-"
-	cont "ing off on Cycling"
-	cont "Road."
+	text "Ich bin beim"
+	line "Angeben auf dem"
+	cont "Radweg ins Wasser"
+	cont "gefallen."
 
-	para "Then the strong"
-	line "currents dragged"
-	cont "me here."
+	para "Dann hat mich die"
+	line "starke Strömung"
+	cont "hierher getrieben."
 	done
 
 .SeenText:
-	text "Cough! Splutter!"
+	text "Hust! Prust!"
 	done
 
 .BeatenText:
-	text "…Gasp!"
+	text "…Keuch!"
 	done
 
 UragaChannelSignText:

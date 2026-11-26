@@ -41,21 +41,22 @@ Route3FlyPoint:
 GenericTrainerYoungsterRegis:
 	generictrainer YOUNGSTER, REGIS, EVENT_BEAT_YOUNGSTER_REGIS, .SeenText, .BeatenText
 
-	text "Looks like I need"
-	line "more training!"
+	text "Ich brauche wohl"
+	line "mehr Training!"
 	done
 
 .SeenText:
-	text "Youngster? Good-"
-	line "ness, how rude!"
+	text "Teenager? Meine"
+	line "Güte, wie unhöf-"
+	cont "lich!"
 
-	para "Call me Shorts"
-	line "Boy!"
+	para "Nenn mich Kurze-"
+	line "Hosen-Junge!"
 	done
 
 .BeatenText:
-	text "That is…"
-	line "Fail Boy…"
+	text "Das ist…"
+	line "Versager-Junge…"
 	done
 
 GenericTrainerYoungsterJimmy:
@@ -143,130 +144,137 @@ GenericTrainerFirebreatherBurt:
 GenericTrainerBlackbeltManford:
 	generictrainer BLACKBELT_T, MANFORD, EVENT_BEAT_BLACKBELT_MANFORD, .SeenText, .BeatenText
 
-	text "You must have"
-	line "trained under a"
-	cont "well-known master!"
+	text "Du hast sicher bei"
+	line "einem bekannten"
+	cont "Meister trainiert!"
 	done
 
 .SeenText:
-	text "Slow down and give"
-	line "me the chance to"
-	cont "defeat you!"
+	text "Mach langsam und"
+	line "gib mir die Chan-"
+	cont "ce, dich zu be-"
+	cont "siegen!"
 	done
 
 .BeatenText:
-	text "I've been beaten"
-	line "at my own game…"
+	text "Ich wurde mit"
+	line "meinen eigenen"
+	cont "Waffen geschlagen…"
 	done
 
 GenericTrainerBlackbeltAnder:
 	generictrainer BLACKBELT_T, ANDER, EVENT_BEAT_BLACKBELT_ANDER, .SeenText, .BeatenText
 
-	text "You came all the"
-	line "way from Johto?"
+	text "Du bist den weiten"
+	line "Weg aus Johto"
+	cont "gekommen?"
 
-	para "You must be very"
-	line "persistent!"
+	para "Du musst sehr"
+	line "hartnäckig sein!"
 	done
 
 .SeenText:
-	text "Wait a moment!"
-	line "Come fight me!"
+	text "Warte mal!"
+	line "Kämpf gegen mich!"
 	done
 
 .BeatenText:
-	text "You did it…"
+	text "Du hast es"
+	line "geschafft…"
 	done
 
 GenericTrainerHikerBruce:
 	generictrainer HIKER, BRUCE, EVENT_BEAT_HIKER_BRUCE, .SeenText, .BeatenText
 
-	text "All right, guess I"
-	line "should carry my"
-	cont "Bag again!"
+	text "Na gut, dann trage"
+	line "ich meinen Beutel"
+	cont "wohl wieder!"
 	done
 
 .SeenText:
-	text "My Bag is digging"
-	line "into my shoulders!"
+	text "Mein Beutel drückt"
+	line "mir auf die"
+	cont "Schultern!"
 
-	para "I'll take a break"
-	line "and have a battle!"
+	para "Ich mache Pause"
+	line "und kämpfe!"
 	done
 
 .BeatenText:
-	text "Feh."
+	text "Pah."
 	done
 
 GenericTrainerHikerDwight:
 	generictrainer HIKER, DWIGHT, EVENT_BEAT_HIKER_DWIGHT, .SeenText, .BeatenText
 
-	text "Greeting someone"
-	line "you don't know…"
+	text "Jemanden zu grü-"
+	line "ßen, den man nicht"
+	cont "kennt…"
 
-	para "That's the best"
-	line "thing about moun-"
-	cont "tains!"
+	para "Das ist das Beste"
+	line "an den Bergen!"
 	done
 
 .SeenText:
-	text "Peace!"
+	text "Frieden!"
 
-	para "When you meet the"
-	line "unknown on a moun-"
-	cont "tain road, all you"
+	para "Wenn man auf einem"
+	line "Bergpfad Fremden"
+	cont "begegnet, will man"
 
-	para "want is peace,"
-	line "right?"
+	para "doch nur Frieden,"
+	line "oder?"
 	done
 
 .BeatenText:
-	text "Peace--even though"
-	line "I lost!"
+	text "Frieden, auch"
+	line "wenn ich verloren"
+	cont "habe!"
 	done
 
 GenericTrainerAceDuoZacandjen1:
 	generictrainer ACE_DUO, ZACANDJEN1, EVENT_BEAT_ACE_DUO_ZAC_AND_JEN, .SeenText, .BeatenText
 
-	text "Zac: Your future"
-	line "looks promising."
+	text "Pom: Deine Zu-"
+	line "kunft sieht viel-"
+	cont "versprechend aus."
 	done
 
 .SeenText:
-	text "Zac: Really, you"
-	line "want to battle us?"
+	text "Pom: Echt, du"
+	line "willst gegen uns"
+	cont "kämpfen?"
 
-	para "You've got a lot"
-	line "of courage for"
-	cont "someone so young."
+	para "Du hast viel Mut"
+	line "für jemanden, der"
+	cont "so jung ist."
 	done
 
 .BeatenText:
-	text "Zac: You weren't"
-	line "bluffing…"
+	text "Pom: Du hast"
+	line "nicht geblufft…"
 	done
 
 GenericTrainerAceDuoZacandjen2:
 	generictrainer ACE_DUO, ZACANDJEN2, EVENT_BEAT_ACE_DUO_ZAC_AND_JEN, .SeenText, .BeatenText
 
-	text "Jen: I'm looking"
-	line "forward to seeing"
+	text "Cora: Ich bin ge-"
+	line "spannt, was für"
 
-	para "what kind of"
-	line "trainer you'll"
-	cont "become."
+	para "ein Trainer aus"
+	line "dir wird."
 	done
 
 .SeenText:
-	text "Jen: Huh? You'd"
-	line "like to go up"
-	cont "against us? Great!"
+	text "Cora: Hä? Du"
+	line "willst gegen uns"
+	cont "antreten? Super!"
 	done
 
 .BeatenText:
-	text "Jen: You're so"
-	line "much stronger than"
-	cont "I thought."
+	text "Cora: Du bist viel"
+	line "stärker, als ich"
+	cont "dachte."
 	done
 
 Route3MeteoriteText:

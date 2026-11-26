@@ -58,143 +58,147 @@ GenericTrainerSightseermBlaise:
 GenericTrainerBeautyIoana:
 	generictrainer BEAUTY, IOANA, EVENT_BEAT_BEAUTY_IOANA, .SeenText, .BeatenText
 
-	text "I have a naturally"
-	line "pale complexion,"
+	text "Ich habe von Natur"
+	line "aus helle Haut,"
 
-	para "so I have to be"
-	line "careful in the"
-	cont "sun."
+	para "also muss ich in"
+	line "der Sonne vorsich-"
+	cont "tig sein."
 	done
 
 .SeenText:
-	text "I come here every"
-	line "year to work on"
-	cont "my tan."
+	text "Ich komme jedes"
+	line "Jahr her, um an"
+	cont "meiner Bräune zu"
+	cont "arbeiten."
 	done
 
 .BeatenText:
-	text "I just got"
-	line "burned!"
+	text "Da hab ich mir die"
+	line "Finger verbrannt!"
 	done
 
 GenericTrainerSightseerfKamila:
 	generictrainer SIGHTSEERF, KAMILA, EVENT_BEAT_SIGHTSEERF_KAMILA, .SeenText, .BeatenText
 
-	text "Alola is an archi-"
-	line "pelago located far"
-	cont "away from here."
+	text "Alola ist ein"
+	line "Archipel weit weg"
+	cont "von hier."
 
-	para "You should visit"
-	line "it someday!"
+	para "Du solltest es"
+	line "mal besuchen!"
 	done
 
 .SeenText:
 	text "Alola!"
 
-	para "That's how we greet"
-	line "each other in my"
-	cont "region."
+	para "So grüßen wir uns"
+	line "in meiner Region."
 	done
 
 .BeatenText:
-	text "Cheehoo! You're"
-	line "pretty good!"
+	text "Cheehoo! Du bist"
+	line "ziemlich gut!"
 	done
 
 GenericTrainerAromaLadyHeather:
 	generictrainer AROMA_LADY, HEATHER, EVENT_BEAT_AROMA_LADY_HEATHER, .SeenText, .BeatenText
 
-	text "I studied flower"
-	line "arranging with"
+	text "Ich habe bei Erika"
+	line "an der Prismania-"
+	cont "Uni Blumenstecken"
+	cont "gelernt."
 
-	para "Erika at Celadon"
-	line "University."
-
-	para "She praised this"
-	line "island for its"
-	cont "local fauna."
+	para "Sie lobte diese"
+	line "Insel für ihre"
+	cont "heimische Fauna."
 	done
 
 .SeenText:
-	text "A deep red flower"
-	line "grows all over"
-	cont "this island."
+	text "Auf der ganzen"
+	line "Insel wächst eine"
+	cont "tiefrote Blume."
 
-	para "Have you noticed?"
+	para "Ist sie dir auf-"
+	line "gefallen?"
 	done
 
 .BeatenText:
-	text "A lovely battle,"
-	line "but what about"
-	cont "the flowers?"
+	text "Ein schöner Kampf,"
+	line "aber was ist mit"
+	cont "den Blumen?"
 	done
 
 GenericTrainerBreederBrenda:
 	generictrainer BREEDER, BRENDA, EVENT_BEAT_BREEDER_BRENDA, .SeenText, .BeatenText
 
-	text "To hatch an Egg,"
-	line "you have to walk"
-	cont "a lot."
+	text "Um ein Ei auszu-"
+	line "brüten, musst du"
+	cont "viel laufen."
 
-	para "Where better than"
-	line "sunny Shamouti?"
+	para "Wo ginge das bes-"
+	line "ser als im sonni-"
+	cont "gen Shamouti?"
 	done
 
 .SeenText:
-	text "The key to good"
-	line "#mon breeding"
+	text "Das A und O guter"
+	line "#mon-Zucht ist"
 
-	para "is a good enviro-"
-	line "nment."
+	para "eine gute"
+	line "Umgebung."
 
-	para "There's no place"
-	line "better than here!"
+	para "Und es gibt keinen"
+	line "besseren Ort als"
+	cont "diesen!"
 	done
 
 .BeatenText:
-	text "Your #mon are"
-	line "well-bred."
+	text "Deine #mon sind"
+	line "aus guter Zucht."
 	done
 
 GenericTrainerSwimmermEzra:
 	generictrainer SWIMMERM, EZRA, EVENT_BEAT_SWIMMERM_EZRA, .SeenText, .BeatenText
 
-	text "I like to go scuba"
-	line "diving here."
+	text "Ich gehe hier gern"
+	line "tauchen."
 
-	para "It's so amazing to"
-	line "breathe while"
-	cont "underwater!"
+	para "Es ist so toll,"
+	line "unter Wasser zu"
+	cont "atmen!"
 	done
 
 .SeenText:
-	text "Have you ever won-"
-	line "dered what it's"
+	text "Hast du dich je"
+	line "gefragt, wie es"
 
-	para "like to breathe"
-	line "underwater?"
+	para "wäre, unter Was-"
+	line "ser zu atmen?"
 	done
 
 .BeatenText:
-	text "Ran out of air!"
+	text "Keine Luft mehr!"
 	done
 
 RockyBeachWilhomenaScript:
 	generictrainer 0, 0, EVENT_TOLD_ABOUT_PIKABLU, .Text1, 0
 
 .Text1
-	text "Oh, no. Oh, no…"
+	text "Oh nein. Oh nein…"
 
-	para "My poor Pikablu"
-	line "is missing."
+	para "Mein armes Pikablu"
+	line "ist verschwunden."
 
-	para "No… It couldn't"
-	line "have gone into"
-	cont "Noisy Forest."
+	para "Nein… Es kann doch"
+	line "nicht in den"
+	cont "Lauschigen Wald"
+	cont "gelaufen sein."
 
-	para "I'll never find"
-	line "it in the trees…"
+	para "Zwischen den Bäu-"
+	line "men finde ich es"
+	cont "nie…"
 
-	para "Oh, what should I"
-	line "do…?"
+	para "Oh, was soll ich"
+	line "nur tun…?"
 	done

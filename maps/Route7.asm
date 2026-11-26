@@ -34,25 +34,27 @@ Route7SetUpPaletteSwap:
 GenericTrainerBreederCarlene:
 	generictrainer BREEDER, CARLENE, EVENT_BEAT_BREEDER_CARLENE, .SeenText, .BeatenText
 
-	text "I make my Smeargle"
-	line "Sketch a move,"
+	text "Ich lasse mein"
+	line "Farbeagle per"
+	cont "Nachahmer eine"
+	cont "Attacke lernen"
 
-	para "then breed it"
-	line "to pass the move"
-	cont "down!"
+	para "und züchte es"
+	line "dann, damit es"
+	cont "sie weitergibt!"
 
-	para "Isn't that smart?"
+	para "Clever, oder?"
 	done
 
 .SeenText:
-	text "My team is bred"
-	line "to handle any"
-	cont "situation!"
+	text "Mein Team ist für"
+	line "jede Situation"
+	cont "gezüchtet!"
 	done
 
 .BeatenText:
-	text "We couldn't"
-	line "handle you!"
+	text "Dir waren wir"
+	line "nicht gewachsen!"
 	done
 
 Route7Snorlax:

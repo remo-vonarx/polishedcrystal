@@ -27,13 +27,16 @@ OlivineLighthouse5F_MapScriptHeader:
 GenericTrainerBird_keeperDenis:
 	generictrainer BIRD_KEEPER, DENIS, EVENT_BEAT_BIRD_KEEPER_DENIS, Bird_keeperDenisSeenText, Bird_keeperDenisBeatenText
 
-	text "My #mon learned"
-	line "how to use Fly in"
-	cont "the Yellow Forest."
+	text "Mein #mon hat"
+	line "das Fliegen im"
+	cont "Goldgelben Wald"
+	cont "gelernt."
 
-	para "Well, since I'm a"
-	line "loser, I'll Fly"
-	cont "across the sea…"
+	para "Da ich ein"
+	line "Verlierer bin,"
+	cont "fliege ich nun"
+	cont "fort, über das"
+	cont "Meer…"
 	done
 
 GenericTrainerSailorErnest:

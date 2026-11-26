@@ -26,39 +26,40 @@ RockTunnelB1F_MapScriptHeader:
 GenericTrainerFirebreatherCyd:
 	generictrainer FIREBREATHER, CYD, EVENT_BEAT_FIREBREATHER_CYD, FirebreatherCydSeenText, FirebreatherCydBeatenText
 
-	text "A #mon that"
-	line "knows Flash is"
+	text "Ein #mon, das"
+	line "Blitz beherrscht,"
 
-	para "helpful in dark"
-	line "caves like this."
+	para "hilft in dunklen"
+	line "Höhlen wie dieser."
 	done
 
 GenericTrainerHexManiacVivian:
 	generictrainer HEX_MANIAC, VIVIAN, EVENT_BEAT_HEX_MANIAC_VIVIAN, HexManiacVivianSeenText, HexManiacVivianBeatenText
 
-	text "This spooky hex"
-	line "maniac persona"
+	text "Diese gruselige"
+	line "Hexen-Rolle ist"
 
-	para "actually takes"
-	line "effort."
+	para "eigentlich ganz"
+	line "schön anstrengend."
 	done
 
 FirebreatherCydSeenText:
-	text "I'm using fire to"
-	line "to see my way out!"
+	text "Ich nutze Feuer,"
+	line "um den Weg hinaus"
+	cont "zu finden!"
 	done
 
 FirebreatherCydBeatenText:
-	text "Help! The fire"
-	line "went out!"
+	text "Hilfe! Das Feuer"
+	line "ist aus!"
 	done
 
 HexManiacVivianSeenText:
-	text "Do you hear the"
-	line "voices calling?"
+	text "Hörst du die"
+	line "Stimmen rufen?"
 	done
 
 HexManiacVivianBeatenText:
-	text "It was only an"
-	line "echo?!"
+	text "Es war nur ein"
+	line "Echo?!"
 	done

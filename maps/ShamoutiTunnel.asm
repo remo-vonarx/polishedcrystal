@@ -92,106 +92,110 @@ OreManiacScript:
 GenericTrainerTamerOswald:
 	generictrainer TAMER, OSWALD, EVENT_BEAT_TAMER_OSWALD, .SeenText, .BeatenText
 
-	text "I'm a Tamer now,"
-	line "but when I first"
+	text "Jetzt bin ich"
+	line "Dompteur, aber als"
 
-	para "started out in"
-	line "the circus I was"
+	para "ich im Zirkus an-"
+	line "fing, war ich in"
 
-	para "in the #mon"
-	line "trapeze act."
+	para "der #mon-"
+	line "Trapeznummer."
 	done
 
 .SeenText:
-	text "I was born a"
-	line "circus man."
+	text "Ich wurde als"
+	line "Zirkusmensch"
+	cont "geboren."
 
-	para "Now I'm also a"
-	line "fierce battler."
+	para "Jetzt bin ich auch"
+	line "ein harter"
+	cont "Kämpfer."
 	done
 
 .BeatenText:
-	text "I couldn't tame"
-	line "your #mon…"
+	text "Ich konnte deine"
+	line "#mon nicht"
+	cont "zähmen…"
 	done
 
 GenericTrainerFirebreatherTala:
 	generictrainer FIREBREATHER, TALA, EVENT_BEAT_FIREBREATHER_TALA, .SeenText, .BeatenText
 
-	text "My fire-breathing"
-	line "act is really"
+	text "Meine Feuerspuck-"
+	line "Nummer ist bei"
 
-	para "popular with the"
-	line "tourists."
+	para "Touristen sehr"
+	line "beliebt."
 
-	para "Some even leave"
-	line "donations!"
+	para "Manche lassen"
+	line "sogar Spenden da!"
 	done
 
 .SeenText:
-	text "Roll up, roll up,"
-	line "for my spectacular"
-	cont "fire-breathing"
-	cont "extravaganza!"
+	text "Hereinspaziert,"
+	line "hereinspaziert,"
+	cont "zu meiner spekta-"
+	cont "kulären Feuer-"
+	cont "spuck-Show!"
 	done
 
 .BeatenText:
-	text "Burned out"
-	line "already!"
+	text "Schon ausge-"
+	line "brannt!"
 	done
 
 GenericTrainerSightseerfNoelle:
 	generictrainer SIGHTSEERF, NOELLE, EVENT_BEAT_SIGHTSEERF_NOELLE, .SeenText, .BeatenText
 
-	text "I'm making a photo"
-	line "album to show my"
-	cont "parents."
+	text "Ich mache ein"
+	line "Fotoalbum für"
+	cont "meine Eltern."
 
-	para "Hey, don't look!"
-	line "It's private!"
+	para "Hey, nicht gucken!"
+	line "Das ist privat!"
 	done
 
 .SeenText:
-	text "Oh my gosh!"
-	line "You have #mon"
+	text "Oh mein Gott!"
+	line "Du hast #mon,"
 
-	para "that I haven't"
-	line "seen before!"
+	para "die ich noch nie"
+	line "gesehen habe!"
 
-	para "Can I take a"
-	line "photo?"
+	para "Darf ich ein Foto"
+	line "machen?"
 	done
 
 .BeatenText:
-	text "Aww… I lost?"
-	line "No problem!"
+	text "Ooch… Verloren?"
+	line "Kein Problem!"
 
 	para "Selfie! ♥"
-	line "Click!"
+	line "Klick!"
 	done
 
 GenericTrainerSightseermChester:
 	generictrainer SIGHTSEERM, CHESTER, EVENT_BEAT_SIGHTSEERM_CHESTER, .SeenText, .BeatenText
 
-	text "So you're from"
-	line "Johto? I haven't"
-	cont "been there!"
+	text "Du kommst also aus"
+	line "Johto? Da war ich"
+	cont "noch nie!"
 
-	para "Maybe I'll see"
-	line "you in the Battle"
-	cont "Tower."
+	para "Vielleicht sehen"
+	line "wir uns im"
+	cont "Duellturm."
 	done
 
 .SeenText:
-	text "I'm traveling"
-	line "around the world."
+	text "Ich reise um die"
+	line "Welt."
 
-	para "Which region"
-	line "should I visit"
-	cont "next?"
+	para "Welche Region soll"
+	line "ich als Nächstes"
+	cont "besuchen?"
 	done
 
 .BeatenText:
-	text "What a great"
-	line "experience!"
+	text "Was für eine tol-"
+	line "le Erfahrung!"
 	done

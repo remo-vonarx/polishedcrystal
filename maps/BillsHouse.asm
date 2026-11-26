@@ -66,14 +66,14 @@ BillsHouseBillScript:
 	jumpthistext
 
 .AfterText:
-	text "That was one rad"
-	line "battle!"
+	text "Das war ein irrer"
+	line "Kampf!"
 
-	para "Any #Maniac"
-	line "would be thrilled"
+	para "Jeder #maniac"
+	line "wäre begeistert"
 
-	para "to see what"
-	line "you've caught."
+	para "zu sehen, was du"
+	line "gefangen hast."
 	done
 
 .IntroText:

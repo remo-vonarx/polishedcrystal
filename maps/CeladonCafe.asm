@@ -226,19 +226,19 @@ MayleneSeenText:
 	done
 
 MayleneBeatenText:
-	text "I'm forced to admit"
-	line "defeat…"
+	text "Ich muss mich ge-"
+	line "schlagen geben…"
 
-	para "You are much too"
-	line "strong."
+	para "Du bist viel zu"
+	line "stark."
 	done
 
 MayleneAfterText:
-	text "Thank you,"
+	text "Danke,"
 	line "<PLAYER>!"
 
-	para "I'm ready to keep"
-	line "on eating!"
+	para "Ich bin bereit,"
+	line "weiterzuessen!"
 	done
 
 CeladonCafeBakerText:

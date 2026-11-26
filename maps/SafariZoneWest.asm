@@ -31,69 +31,72 @@ SafariZoneWest_MapScriptHeader:
 GenericTrainerLassDuplica:
 	generictrainer LASS, DUPLICA, EVENT_BEAT_LASS_DUPLICA, LassDuplicaSeenText, LassDuplicaBeatenText
 
-	text "I'm really good at"
-	line "impressions!"
+	text "Ich bin richtig"
+	line "gut im Imitieren!"
 
-	para "Someday I'll become"
-	line "a Fuchsia Gym"
+	para "Eines Tages werde"
+	line "ich Trainerin in"
 
-	para "Trainer and mimic"
-	line "Janine."
+	para "der Arena von"
+	line "Fuchsania City und"
+	cont "imitiere Janina."
 	done
 
 GenericTrainerCamperAmos:
 	generictrainer CAMPER, AMOS, EVENT_BEAT_CAMPER_AMOS, CamperAmosSeenText, CamperAmosBeatenText
 
-	text "I'll search far"
-	line "and wide for new"
-	cont "#mon."
+	text "Ich suche weit"
+	line "und breit nach"
+	cont "neuen #mon."
 	done
 
 GenericTrainerTamerBrett:
 	generictrainer TAMER, BRETT, EVENT_BEAT_TAMER_BRETT, TamerBrettSeenText, TamerBrettBeatenText
 
-	text "You have to com-"
-	line "mand #mon with"
-	cont "confidence."
+	text "Du musst #mon"
+	line "mit Selbstver-"
+	cont "trauen befehligen."
 
-	para "Earning Badges can"
-	line "help with that."
+	para "Orden zu verdie-"
+	line "nen kann dabei"
+	cont "helfen."
 	done
 
 LassDuplicaSeenText:
-	text "To truly use"
-	line "Ditto, you must"
-	cont "know all #mon!"
+	text "Um Ditto wirklich"
+	line "einzusetzen, musst"
+	cont "du alle #mon"
+	cont "kennen!"
 	done
 
 LassDuplicaBeatenText:
-	text "I've got a lot"
-	line "to learn."
+	text "Ich muss noch viel"
+	line "lernen."
 	done
 
 CamperAmosSeenText:
-	text "Plenty of #mon"
-	line "live in the Safari"
-	cont "Zone."
+	text "In der Safari-"
+	line "Zone leben jede"
+	cont "Menge #mon."
 
-	para "I'm here to catch"
-	line "'em all!"
+	para "Ich will sie mir"
+	line "alle schnappen!"
 	done
 
 CamperAmosBeatenText:
-	text "I lost 'cause I"
-	line "have to train"
-	cont "them!"
+	text "Ich habe verlo-"
+	line "ren, weil ich sie"
+	cont "trainieren muss!"
 	done
 
 TamerBrettSeenText:
-	text "Do you know how to"
-	line "handle aggressive"
-	cont "#mon?"
+	text "Weißt du, wie man"
+	line "mit aggressiven"
+	cont "#mon umgeht?"
 	done
 
 TamerBrettBeatenText:
-	text "Yeah, you do!"
+	text "Ja, das weißt du!"
 	done
 
 SafariZoneWestAreaSignText:

@@ -28,43 +28,44 @@ WarmBeach_MapScriptHeader:
 GenericTrainerSightseermGareth:
 	generictrainer SIGHTSEERM, GARETH, EVENT_BEAT_SIGHTSEERM_GARETH, .SeenText, .BeatenText
 
-	text "Even outside of"
-	line "battle, these"
+	text "Auch außerhalb"
+	line "von Kämpfen sind"
 
-	para "items make memor-"
-	line "able souvenirs."
+	para "diese Items schöne"
+	line "Andenken."
 	done
 
 .SeenText:
-	text "I just picked up"
-	line "some useful items"
+	text "Ich habe gerade"
+	line "ein paar nützliche"
 
-	para "from the outdoor"
-	line "market!"
+	para "Items auf dem"
+	line "Markt gekauft!"
 	done
 
 .BeatenText:
-	text "My items weren't"
-	line "enough…"
+	text "Meine Items haben"
+	line "nicht gereicht…"
 	done
 
 GenericTrainerAromaLadyHolly:
 	generictrainer AROMA_LADY, HOLLY, EVENT_BEAT_AROMA_LADY_HOLLY, .SeenText, .BeatenText
 
-	text "The sense of smell"
-	line "is vital to living"
-	cont "in nature."
+	text "Der Geruchssinn"
+	line "ist lebenswichtig"
+	cont "in der Natur."
 	done
 
 .SeenText:
-	text "I am at one with"
-	line "the aromas of"
-	cont "nature."
+	text "Ich bin eins mit"
+	line "den Düften der"
+	cont "Natur."
 	done
 
 .BeatenText:
-	text "Defeat has its"
-	line "own scent…"
+	text "Die Niederlage hat"
+	line "ihren eigenen"
+	cont "Duft…"
 	done
 
 WarmBeachCooltrainermText:

@@ -175,17 +175,17 @@ GruntM29BeatenText:
 	done
 
 Proton2SeenText:
-	text "What do you want?"
+	text "Was willst du?"
 
-	para "I'm known as the"
-	line "scariest and"
+	para "Man kennt mich als"
+	line "den gruseligsten"
+	cont "und grausamsten"
+	cont "Kerl von Team"
+	cont "Rocket…"
 
-	para "cruelest guy in"
-	line "Team Rocket…"
-
-	para "If you interrupt"
-	line "our work, don't"
-	cont "expect any mercy!"
+	para "Wenn du unsere Ar-"
+	line "beit störst, er-"
+	cont "warte keine Gnade!"
 	done
 
 Proton2BeatenText:

@@ -139,11 +139,12 @@ GenericTrainerJugglerFritz:
 GenericTrainerBakerSharyn:
 	generictrainer BAKER, SHARYN, EVENT_BEAT_BAKER_SHARYN, BakerSharynSeenText, BakerSharynBeatenText
 
-	text "I may not be the"
-	line "best at battles,"
+	text "Im Kämpfen bin ich"
+	line "vielleicht nicht"
 
-	para "but people love"
-	line "my baking."
+	para "die Beste, aber"
+	line "alle lieben mein"
+	cont "Gebäck."
 	done
 
 TrainerSailorGarrett:
@@ -213,12 +214,13 @@ GenericTrainerSchoolboyNate:
 GenericTrainerSchoolboyRicky:
 	generictrainer SCHOOLBOY, RICKY, EVENT_BEAT_SCHOOLBOY_RICKY, SchoolboyRickySeenText, SchoolboyRickyBeatenText
 
-	text "I read in a #-"
-	line "mon Journal that"
+	text "Ich habe in einem"
+	line "#mon-Journal"
+	cont "gelesen, dass es"
 
-	para "there are four of"
-	line "those stone panels"
-	cont "in the ruins."
+	para "vier von den"
+	line "Steinplatten in"
+	cont "den Ruinen gibt."
 	done
 
 FastShipB1FSailorBlocksRightMovement:
@@ -304,14 +306,14 @@ JugglerFritzBeatenText:
 	done
 
 BakerSharynSeenText:
-	text "As I bake bread,"
-	line "I will bake your"
-	cont "#mon, too!"
+	text "So wie Brot backe"
+	line "ich auch deine"
+	cont "#mon!"
 	done
 
 BakerSharynBeatenText:
-	text "At least my bread"
-	line "is a winner."
+	text "Wenigstens ist"
+	line "mein Brot spitze."
 	done
 
 SailorGarrettSeenText:

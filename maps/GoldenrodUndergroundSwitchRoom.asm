@@ -223,25 +223,27 @@ UndergroundRivalBattleScript2:
 GenericTrainerGruntM11:
 	generictrainer GRUNTM, 11, EVENT_BEAT_ROCKET_GRUNTM_11, GruntM11SeenText, GruntM11BeatenText
 
-	text "I'm confused too…"
-	line "The green switch"
+	text "Auch ich bin…"
+	line "verwirrt. Der"
 
-	para "is the one to"
-	line "press last, but…"
+	para "grüne Schalter"
+	line "muss zuletzt"
+	cont "betätigt werden,"
+	cont "aber…"
 	done
 
 GenericTrainerGruntM25:
 	generictrainer GRUNTM, 25, EVENT_BEAT_ROCKET_GRUNTM_25, GruntM25SeenText, GruntM25BeatenText
 
-	text "All right. A hint!"
+	text "Na gut. Ein Tipp!"
 
-	para "You push a color"
-	line "switch, and the"
+	para "Drückst du einen"
+	line "Farbschalter, dann"
 
-	para "shutters around"
-	line "that color will"
-	cont "open or close."
-	done
+	para "öffnen oder"
+	line "schließen sich die"
+	cont "Rolltore rund um"
+	cont "diese Farbe."
 	done
 
 GenericTrainerBurglarDuncan:
@@ -256,14 +258,14 @@ GenericTrainerBurglarDuncan:
 GenericTrainerBurglarOrson:
 	generictrainer BURGLAR, ORSON, EVENT_BEAT_BURGLAR_ORSON, BurglarOrsonSeenText, BurglarOrsonBeatenText
 
-	text "Underground Ware-"
-	line "house?"
+	text "Untergrund"
+	line "Lagerhaus?"
 
-	para "What do you want"
-	line "to go there for?"
+	para "Warum möchtest du"
+	line "dorthin?"
 
-	para "There's nothing"
-	line "down there."
+	para "Da unten wirst"
+	line "du nichts finden."
 	done
 
 GenericTrainerGruntM13:

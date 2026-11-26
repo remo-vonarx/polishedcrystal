@@ -101,42 +101,43 @@ YellowForest_FinishBridge:
 GenericTrainerSchoolgirlSarah:
 	generictrainer SCHOOLGIRL, SARAH, EVENT_BEAT_SCHOOLGIRL_SARAH, SchoolgirlSarahSeenText, SchoolgirlSarahBeatenText
 
-	text "If we were at my"
-	line "school, I'd have"
-	cont "beaten you!"
+	text "Wären wir an"
+	line "meiner Schule,"
+	cont "hätte ich dich"
+	cont "besiegt!"
 	done
 
 GenericTrainerSchoolgirlIsabel:
 	generictrainer SCHOOLGIRL, ISABEL, EVENT_BEAT_SCHOOLGIRL_ISABEL, SchoolgirlIsabelSeenText, SchoolgirlIsabelBeatenText
 
-	text "We're learning"
-	line "about how #mon"
+	text "Wir lernen, wie"
+	line "#mon in der"
 
-	para "thrive together"
-	line "in the wild."
+	para "Wildnis zusammen"
+	line "gedeihen."
 	done
 
 GenericTrainerTeacherKathryn:
 	generictrainer TEACHER_F, KATHRYN, EVENT_BEAT_TEACHER_KATHRYN, TeacherKathrynSeenText, TeacherKathrynBeatenText
 
-	text "Keeping an eye on"
-	line "everyone during a"
+	text "Bei einem Ausflug"
+	line "alle im Auge zu"
 
-	para "field trip is"
-	line "hard work."
+	para "behalten, ist"
+	line "harte Arbeit."
 	done
 
 GenericTrainerBreederSophie:
 	generictrainer BREEDER, SOPHIE, EVENT_BEAT_BREEDER_SOPHIE, BreederSophieSeenText, BreederSophieBeatenText
 
-	text "Sometimes Pikachu"
-	line "use their electric"
+	text "Manchmal beleben"
+	line "Pikachu mit ihren"
 
-	para "shocks to revive"
-	line "fainted ones."
+	para "Stromstößen be-"
+	line "siegte Artgenossen"
+	cont "wieder."
 
-	para "That's just the"
-	line "cutest!"
+	para "Das ist so süß!"
 	done
 
 YellowForestWalkerScript:
@@ -274,48 +275,50 @@ YellowForestSurfPikachuDoll:
 	done
 
 SchoolgirlSarahSeenText:
-	text "Ooh, a trainer!"
-	line "I want to battle!"
+	text "Ooh, ein Trainer!"
+	line "Ich will kämpfen!"
 	done
 
 SchoolgirlSarahBeatenText:
-	text "Sniff…"
-	line "You made me lose!"
+	text "Schnief…"
+	line "Wegen dir habe"
+	cont "ich verloren!"
 	done
 
 SchoolgirlIsabelSeenText:
-	text "Do you have cute"
-	line "#mon like the"
-	cont "ones here?"
+	text "Hast du auch so"
+	line "süße #mon wie"
+	cont "die hier?"
 	done
 
 SchoolgirlIsabelBeatenText:
-	text "You have really"
-	line "strong #mon!"
+	text "Du hast richtig"
+	line "starke #mon!"
 	done
 
 TeacherKathrynSeenText:
-	text "You there!"
-	line "You're a trainer?"
+	text "Du da!"
+	line "Bist du Trainer?"
 
-	para "You had better not"
-	line "make my students"
-	cont "cry!"
+	para "Bring meine"
+	line "Schüler bloß nicht"
+	cont "zum Weinen!"
 	done
 
 TeacherKathrynBeatenText:
-	text "I won't let this"
-	line "make me cry…"
+	text "Deswegen weine"
+	line "ich nicht…"
 	done
 
 BreederSophieSeenText:
-	text "Did you know that"
-	line "Pikachu is an"
-	cont "evolved #mon?"
+	text "Wusstest du, dass"
+	line "Pikachu ein ent-"
+	cont "wickeltes #mon"
+	cont "ist?"
 	done
 
 BreederSophieBeatenText:
-	text "I thought so!"
+	text "Dachte ich mir!"
 	done
 
 YellowForestWalkerSeenText:
@@ -353,23 +356,23 @@ YellowForestWalkerSeenText:
 	done
 
 YellowForestWalkerBeatenText:
-	text "My bird #mon…"
-	line "Taken down!"
+	text "Meine Vogel-"
+	line "#mon… Besiegt!"
 	done
 
 YellowForestWalkerAfterText:
-	text "Walker: Well, I"
-	line "can see why you"
+	text "Luc: Nun, ich ver-"
+	line "stehe, warum du"
 
-	para "won against"
-	line "Falkner."
+	para "gegen Falk gewon-"
+	line "nen hast."
 
-	para "You know your"
-	line "#mon inside"
-	cont "and out!"
+	para "Du kennst deine"
+	line "#mon in- und"
+	cont "auswendig!"
 
-	para "You've earned"
-	line "this HM."
+	para "Diese VM hast du"
+	line "dir verdient."
 	done
 
 YellowForestWalkerFinalText:
@@ -435,19 +438,20 @@ YellowForestYellowGreetingText:
 	done
 
 YellowForestYellowWinLossText:
-	text "Haha! What a"
-	line "battle!"
+	text "Haha! Was für ein"
+	line "Kampf!"
 	done
 
 YellowForestYellowAfterText:
-	text "Yellow: Wow!"
-	line "You really are a"
+	text "Gelb: Wow!"
+	line "Du bist echt ein"
 
-	para "good trainer."
-	line "Here's something"
+	para "guter Trainer."
+	line "Hier ist etwas,"
 
-	para "that your friends"
-	line "will appreciate!"
+	para "das deine Freunde"
+	line "zu schätzen"
+	cont "wissen!"
 	done
 
 YellowForestYellowGoodbyeText:

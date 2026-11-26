@@ -77,12 +77,12 @@ SilverCavePokeCenterGrampsScript:
 	jumpthisopenedtext
 
 .AfterText:
-	text "That Belt's not"
-	line "just for show."
+	text "Der Gurt ist nicht"
+	line "nur Zierde."
 
-	para "It'll power up your"
-	line "#mon if they"
-	cont "hold it."
+	para "Er stärkt deine"
+	line "#mon, wenn sie"
+	cont "ihn tragen."
 	done
 
 .GreetingText:

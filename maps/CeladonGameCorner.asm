@@ -185,18 +185,17 @@ CeladonGameCornerRichBoyTobin:
 	jumpthistextfaceplayer
 
 .SeenText:
-	text "What're you doing"
-	line "snooping around"
-	cont "here?"
+	text "Was schnüffelst"
+	line "du hier herum?"
 
-	para "You better not be"
-	line "messing with Team"
-	cont "Valor!"
+	para "Leg dich bloß"
+	line "nicht mit Team"
+	cont "Wagemut an!"
 	done
 
 .BeatenText:
-	text "I didn't see that"
-	line "coming…"
+	text "Das habe ich nicht"
+	line "kommen sehen…"
 	done
 
 .AfterScript
@@ -218,12 +217,11 @@ CeladonGameCornerRichBoyTobin:
 	end
 
 .AfterText
-	text "Fine! There's"
-	line "nothing here"
-	cont "anyway!"
+	text "Na gut! Hier gibt"
+	line "es eh nichts!"
 
-	para "The poster? Ha!"
-	line "It's just decor!"
+	para "Das Poster? Ha!"
+	line "Das ist nur Deko!"
 	done
 
 .LeaveMovementPlayerUp

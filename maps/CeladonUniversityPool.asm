@@ -103,27 +103,32 @@ CeladonUniversityPoolFergusScript:
 	done
 
 .AfterText1:
-	text "I've spent so much"
-	line "time training my"
-	cont "team, but you beat"
-	cont "us anyway."
+	text "Ich habe so viel"
+	line "Zeit ins Training"
+	cont "meines Teams ge-"
+	cont "steckt, aber du"
+	cont "hast uns trotzdem"
+	cont "besiegt."
 
-	para "With your power,"
-	line "you should take on"
+	para "Mit deiner Stärke"
+	line "solltest du dich"
 
-	para "the rest of the"
-	line "Celadon Four!"
+	para "mit den anderen"
+	line "Prismania-Vier"
+	cont "messen!"
 	done
 
 .AfterText2:
-	text "All of the Celadon"
-	line "Four lost to you?"
+	text "Alle Prismania-"
+	line "Vier haben gegen"
+	cont "dich verloren?"
 
-	para "You really are"
-	line "something!"
+	para "Du bist echt was"
+	line "Besonderes!"
 
-	para "You've earned this"
-	line "reward!"
+	para "Diese Belohnung"
+	line "hast du dir"
+	cont "verdient!"
 	done
 
 .FinalText:

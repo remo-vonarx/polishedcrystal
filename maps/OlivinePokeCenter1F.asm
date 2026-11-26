@@ -60,9 +60,9 @@ BeautyCharlotteScript:
 	jumpthistext
 
 .AfterText:
-	text "How cool is it"
-	line "to have such a"
-	cont "special #mon?"
+	text "Wie cool ist es,"
+	line "so ein besonderes"
+	cont "#mon zu haben?"
 	done
 
 .GreetingText:

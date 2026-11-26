@@ -26,17 +26,17 @@ OlivineLighthouse4F_MapScriptHeader:
 GenericTrainerLassConnie:
 	generictrainer LASS, CONNIE, EVENT_BEAT_LASS_CONNIE, LassConnieSeenText, LassConnieBeatenText
 
-	text "Right. Anybody"
-	line "would be worried"
+	text "O.K. Jeder wäre"
+	line "besorgt, wenn"
+	cont "seine #mon"
+	cont "verletzt sind."
 
-	para "if their own #-"
-	line "mon were hurt."
+	para "Ich werde für das"
+	line "#mon beten,"
 
-	para "I'll pray for the"
-	line "#mon here, so"
-
-	para "Jasmine can come"
-	line "back to the Gym."
+	para "dann kann Jasmin"
+	line "in die PKMN-Arena"
+	cont "zurückkehren."
 	done
 
 TrainerSailorKent:

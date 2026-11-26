@@ -86,9 +86,11 @@ GoldenrodHarborTutorHyperVoiceScript:
 GenericTrainerFisherPaton:
 	generictrainer FISHER, PATON, EVENT_BEAT_FISHER_PATON, FisherPatonSeenText, FisherPatonBeatenText
 
-	text "You're working"
-	line "on a #dex?"
-	cont "That's neat!"
+	text "Du arbeitest an"
+	line "einem #dex? Das"
+
+	para "ist doch schon"
+	line "etwas."
 	done
 
 TrainerSwimmerfKatie:
@@ -98,22 +100,23 @@ TrainerSwimmerfKatie:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Why is the sea"
-	line "blue?"
+	text "Warum ist das Meer"
+	line "blau?"
 
-	para "I heard it ref-"
-	line "lects the sky…"
+	para "Es soll den Him-"
+	line "mel spiegeln…"
 
-	para "But then why is"
-	line "the sky blue?"
+	para "Aber warum ist"
+	line "dann der Himmel"
+	cont "blau?"
 	done
 
 GenericTrainerSwimmermJames:
 	generictrainer SWIMMERM, JAMES, EVENT_BEAT_SWIMMERM_JAMES, SwimmermJamesSeenText, SwimmermJamesBeatenText
 
-	text "Can't a Swimmer"
-	line "use a rowboat"
-	cont "sometimes?"
+	text "Darf ein Schwimmer"
+	line "nicht auch mal ein"
+	cont "Ruderboot nehmen?"
 	done
 
 
@@ -337,35 +340,39 @@ Text_GoldenrodHarborTutorQuestion:
 
 
 FisherPatonSeenText:
-	text "The fish I caught"
-	line "was attached to"
-	cont "another #mon!"
+	text "An dem Fisch, den"
+	line "ich gefangen habe,"
+	cont "hing noch ein"
+	cont "anderes #mon!"
 	done
 
 FisherPatonBeatenText:
-	text "Aren't #mon"
-	line "interesting?"
+	text "Sind #mon nicht"
+	line "interessant?"
 	done
 
 SwimmerfKatieSeenText:
-	text "Swimming in the"
-	line "deep blue sea"
-	cont "feels wonderful!"
+	text "Im tiefblauen Meer"
+	line "zu schwimmen ist"
+	cont "herrlich!"
 	done
 
 SwimmerfKatieBeatenText:
-	text "I lost…"
-	line "Now I feel blue…"
+	text "Verloren… Da bin"
+	line "ich wohl baden"
+	cont "gegangen…"
 	done
 
 SwimmermJamesSeenText:
-	text "I can swim, but"
-	line "I can also row!"
+	text "Ich kann schwim-"
+	line "men, aber auch"
+	cont "rudern!"
 	done
 
 SwimmermJamesBeatenText:
-	text "Maybe I can't"
-	line "battle…"
+	text "Vielleicht kann"
+	line "ich nicht"
+	cont "kämpfen…"
 	done
 
 GoldenrodHarborDollVendorText:

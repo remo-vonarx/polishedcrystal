@@ -417,22 +417,24 @@ CinnabarLabGiovanniAttackText:
 	done
 
 CinnabarLabGiovanniBeatenText:
-	text "Giovanni: What?!"
-	line "Impossible!"
+	text "Giovanni: Was?!"
+	line "Unmöglich!"
 	done
 
 CinnabarLabGiovanniAfterText:
-	text "Giovanni: How was"
-	line "a kid like you"
+	text "Giovanni: Wie"
+	line "konnte ein Kind"
 
-	para "able to beat the"
-	line "perfect #mon?"
+	para "wie du das per-"
+	line "fekte #mon"
+	cont "besiegen?"
 
-	para "It was created to"
-	line "fight for me!"
+	para "Es wurde erschaf-"
+	line "fen, um für mich"
+	cont "zu kämpfen!"
 
-	para "It shouldn't be"
-	line "this useless!"
+	para "Es dürfte nicht so"
+	line "nutzlos sein!"
 	done
 
 CinnabarLabMewtwoText:

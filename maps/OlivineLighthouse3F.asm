@@ -74,13 +74,13 @@ OlivineLighthouse3FBattleGirlEmy:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "One of the Elite"
-	line "Four, Bruno, is a"
-	cont "fighter like me."
+	text "Bruno von den Top"
+	line "Vier ist ein"
+	cont "Kämpfer wie ich."
 
-	para "To become as"
-	line "strong as him--"
-	cont "that's my aim."
+	para "So stark wie er zu"
+	line "werden, das ist"
+	cont "mein Ziel."
 	done
 
 .IntroText:
@@ -128,18 +128,19 @@ OlivineLighthouse3FBattleGirlEmy:
 	done
 
 .AfterText1:
-	text "Your team is"
-	line "formidable!"
+	text "Dein Team ist"
+	line "beeindruckend!"
 
-	para "But you can become"
-	line "even stronger."
+	para "Aber du kannst"
+	line "noch stärker"
+	cont "werden."
 
-	para "These Protect Pads"
-	line "will let you make"
+	para "Mit diesem Schutz-"
+	line "polster kannst du"
 
-	para "contact with your"
-	line "opponent without"
-	cont "being harmed."
+	para "den Gegner berüh-"
+	line "ren, ohne Schaden"
+	cont "zu nehmen."
 	done
 
 TrainerBird_keeperTheo:

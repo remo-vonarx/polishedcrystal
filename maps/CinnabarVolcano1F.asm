@@ -183,48 +183,50 @@ CinnabarVolcano1FBuckScript:
 GenericTrainerScientistOskar:
 	generictrainer SCIENTIST, OSKAR, EVENT_BEAT_SCIENTIST_OSKAR, ScientistOskarSeenText, ScientistOskarBeatenText
 
-	text "It's important to"
-	line "study natural"
-	cont "disasters so we"
+	text "Es ist wichtig,"
+	line "Naturkatastrophen"
+	cont "zu erforschen,"
 
-	para "can prepare for"
-	line "the next one."
+	para "um auf die nächste"
+	line "vorbereitet zu"
+	cont "sein."
 	done
 
 GenericTrainerSuperNerdLuis:
 	generictrainer SUPER_NERD, LUIS, EVENT_BEAT_SUPER_NERD_LUIS, SuperNerdLuisSeenText, SuperNerdLuisBeatenText
 
-	text "It's so thrilling"
-	line "to be inside a"
-	cont "volcano!"
+	text "Es ist so span-"
+	line "nend, in einem"
+	cont "Vulkan zu sein!"
 
-	para "But scary at the"
-	line "same time."
+	para "Aber gleichzeitig"
+	line "auch unheimlich."
 	done
 
 ScientistOskarSeenText:
-	text "I'm studying the"
-	line "volcano to learn"
-	cont "why it erupted."
+	text "Ich erforsche den"
+	line "Vulkan, um heraus-"
+	cont "zufinden, warum er"
+	cont "ausgebrochen ist."
 	done
 
 ScientistOskarBeatenText:
-	text "Better luck next"
-	line "time!"
+	text "Nächstes Mal"
+	line "klappt's besser!"
 	done
 
 SuperNerdLuisSeenText:
-	text "Did you know that"
-	line "magma is only"
+	text "Wusstest du, dass"
+	line "Magma erst Lava"
 
-	para "called lava once"
-	line "it reaches the"
+	para "heißt, wenn es"
+	line "durch einen Schlot"
 
-	para "surface through"
-	line "a volcano vent?"
+	para "an die Oberfläche"
+	line "gelangt?"
 	done
 
 SuperNerdLuisBeatenText:
-	text "You just taught"
-	line "me…"
+	text "Jetzt hast du mir"
+	line "was beigebracht…"
 	done

@@ -110,26 +110,31 @@ WhitneyCriesScript:
 GenericTrainerSrandjrJoandcath1:
 	generictrainer SR_AND_JR, JOANDCATH1, EVENT_BEAT_SR_AND_JR_JO_AND_CATH, SrandjrJoandcath1SeenText, SrandjrJoandcath1BeatenText
 
-	text "Jo: I'm helping my"
-	line "junior Cath to"
+	text "Jo: Ich helfe"
+	line "meiner Juniorin"
 
-	para "earn a Badge"
-	line "from Whitney."
+	para "Cath, einen Orden"
+	line "von Bianka zu"
+	cont "bekommen."
 
-	para "She's improving"
-	line "gradually."
+	para "Sie wird langsam"
+	line "besser."
 	done
 
 GenericTrainerSrandjrJoandcath2:
 	generictrainer SR_AND_JR, JOANDCATH2, EVENT_BEAT_SR_AND_JR_JO_AND_CATH, SrandjrJoandcath2SeenText, SrandjrJoandcath2BeatenText
 
-	text "Cath: I keep on"
-	line "losing to Whitney."
-	cont "It's depressing."
+	text "Cath: Ich ver-"
+	line "liere ständig"
+	cont "gegen Bianka. Wie"
+	cont "deprimierend."
 
-	para "I'm OK! If I lose,"
-	line "I'll just try"
-	cont "harder next time!"
+	para "Macht nichts!"
+	line "Verliere ich, dann"
+
+	para "streng ich mich"
+	line "nächstes Mal mehr"
+	cont "an!"
 	done
 
 GenericTrainerBeautyVictoria:
@@ -274,33 +279,35 @@ LassCathyBeatenText:
 	done
 
 SrandjrJoandcath1SeenText:
-	text "Jo: If you want to"
-	line "face Whitney,"
+	text "Jo: Wenn du gegen"
+	line "Bianka antreten"
 
-	para "you'll have to go"
-	line "through me!"
+	para "willst, musst du"
+	line "an mir vorbei!"
 
-	para "Cath, did that"
-	line "sound cool?"
+	para "Cath, klang das"
+	line "cool?"
 	done
 
 SrandjrJoandcath1BeatenText:
-	text "Jo: Losing isn't"
-	line "cool at all!"
+	text "Jo: Verlieren ist"
+	line "überhaupt nicht"
+	cont "cool!"
 	done
 
 SrandjrJoandcath2SeenText:
-	text "Cath: I'm trying"
-	line "to beat Whitney,"
-	cont "but my senior and"
+	text "Cath: Ich will"
+	line "Bianka besiegen,"
+	cont "aber zuerst"
 
-	para "I can beat you"
-	line "first!"
+	para "besiegen meine"
+	line "Seniorin und ich"
+	cont "dich!"
 	done
 
 SrandjrJoandcath2BeatenText:
-	text "Cath: Oh, no,"
-	line "no, no!"
+	text "Cath: Oh, nein,"
+	line "nein, nein!"
 	done
 
 JoWhitneyCriesText:
@@ -317,11 +324,14 @@ JoWhitneyCriesText:
 	done
 
 BeautyVictoriaSeenText:
-	text "Oh, you are a cute"
-	line "little trainer! ♥"
+	text "Oh, du musst wohl"
+	line "noch etwas"
 
-	para "I like you, but I"
-	line "won't hold back!"
+	para "wachsen! ♥ Ich mag"
+	line "dich, aber ich"
+
+	para "werde mich nicht"
+	line "zurückhalten!"
 	done
 
 BeautyVictoriaBeatenText:
