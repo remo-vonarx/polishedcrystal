@@ -687,7 +687,7 @@ Route43TrainerTipsText:
 	done
 
 Route43AdvancedTipsText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Trägt ein #mon"
 	line "einen Ewigstein,"

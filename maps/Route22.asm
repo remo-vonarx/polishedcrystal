@@ -159,7 +159,7 @@ VictoryRoadEntranceSignText:
 	done
 
 Route22AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Startest du ein"
 	line "Neues Spiel+,"

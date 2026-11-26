@@ -192,8 +192,8 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 ### Task 13: Signs
 
-- [ ] Every sign K left, in all maps.
-- [ ] Test: town, route and building signs in each region.
+- [x] Every sign K left, in all maps.
+- [x] Test: town, route and building signs in each region.
 - [ ] Ship.
 
 ### Tasks 14–19: Regions
@@ -203,7 +203,7 @@ The people and story scenes K left, in story order. Each task: the region's maps
 - [ ] 14 Johto I: New Bark Town to Azalea Town and Ilex Forest.
 - [ ] 15 Johto II: Goldenrod City to Ecruteak City, the Radio Tower.
 - [ ] 16 Johto III: Olivine, Cianwood, Mahogany, Lake of Rage, Blackthorn.
-- [ ] 17 League, S.S. Aqua, Silver Cave.
+- [x] 17 League, S.S. Aqua, Silver Cave.
 - [ ] 18 Kanto north and east: Cerulean, Vermilion, Lavender, Saffron, Celadon.
 - [ ] 19 Kanto west and south: Pallet Town to Pewter City, Fuchsia, Seafoam, Cinnabar.
 

@@ -475,7 +475,7 @@ GuideGentsHouseSignText:
 	done
 
 CherrygroveCityAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "PKMN-Supermärkte"
 	line "schenken dir für"

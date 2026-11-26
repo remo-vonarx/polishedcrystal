@@ -524,7 +524,7 @@ RuinsOfAlphResearchCenterPrinterText_DoesntWork:
 
 RuinsOfAlphResearchCenterProfSilktreePhotoText:
 	text "Ein Foto von Prof."
-	line "Silktree, dem"
+	line "Seidenbaum, dem"
 
 	para "Gründer des For-"
 	line "schungszentrums."

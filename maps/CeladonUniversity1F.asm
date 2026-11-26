@@ -153,11 +153,11 @@ CeladonUniversity1FClassroom2SignText:
 	done
 
 CeladonUniversity1FClassroom3SignText:
-	text "E1 Wissenschaft"
+	text "O1 Wissenschaft"
 	done
 
 CeladonUniversity1FClassroom4SignText:
-	text "E2 Kampflehre"
+	text "O2 Kampflehre"
 	done
 
 CeladonUniversity1FStudentLoungeSignText:

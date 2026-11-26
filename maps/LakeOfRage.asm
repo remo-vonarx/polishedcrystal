@@ -84,7 +84,7 @@ LakeOfRageSignText:
 	done
 
 LakeOfRageAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Die Attacke Kraft-"
 	line "reserve kann jeden"

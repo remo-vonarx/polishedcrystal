@@ -450,7 +450,7 @@ Route47QuietCaveSignText:
 	done
 
 Route47AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Manche #mon aus"
 	line "bestimmten Gebie-"

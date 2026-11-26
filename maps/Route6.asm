@@ -185,7 +185,7 @@ OfficerfJennyScript:
 	done
 
 Route6AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Manche Items"
 	line "scheinen ihrem"

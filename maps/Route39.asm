@@ -452,7 +452,7 @@ Route39SignText:
 	done
 
 Route39AdvancedTips1Text:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Sandstürme stärken"
 	line "die Sp.Vert von"
@@ -464,7 +464,7 @@ Route39AdvancedTips1Text:
 	done
 
 Route39AdvancedTips2Text:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Mit der Fähigkeit"
 	line "Facettenauge oder"

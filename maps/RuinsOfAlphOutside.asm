@@ -299,7 +299,7 @@ RuinsOfAlphResearchCenterSignText:
 	done
 
 RuinsOfAlphAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Der #dex ist"
 	line "ein mächtiges"

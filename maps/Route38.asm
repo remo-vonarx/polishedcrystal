@@ -411,7 +411,7 @@ Route38TrainerTipsText:
 	done
 
 Route38AdvancedTipsText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Drücke START im"
 	line "PC-Boxen-System,"

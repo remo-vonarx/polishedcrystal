@@ -428,8 +428,8 @@ CeladonUniversityHyperTestRoomBookshelf1Text:
 	done
 
 CeladonUniversityHyperTestRoomBookshelf2Text:
-	text "Eine Ausgabe der"
-	line "Nintendo Power!"
+	text "Eine Ausgabe von"
+	line "Club Nintendo!"
 
 	para "Das Titelbild"
 	line "zeigt ein großes"

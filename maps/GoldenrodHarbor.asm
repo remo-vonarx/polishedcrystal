@@ -480,7 +480,7 @@ GoldenrodHarborSignText:
 	done
 
 GoldenrodHarborAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Manchmal hast du"
 	line "Glück mit einem"

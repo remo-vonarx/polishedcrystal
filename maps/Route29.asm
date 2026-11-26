@@ -331,7 +331,7 @@ Route29Sign2Text:
 	done
 
 Route29AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Drücke Unten+B im"
 	line "Titelbildschirm,"

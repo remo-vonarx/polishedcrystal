@@ -169,7 +169,7 @@ Route9SignText:
 	done
 
 Route9AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Trägt ein #mon"
 	line "einen Toxik-Orb,"

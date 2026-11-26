@@ -230,7 +230,7 @@ EcruteakGymSign:
 	done
 
 EcruteakCityAdvancedTips:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Manche #mon,"
 	line "denen du begeg-"

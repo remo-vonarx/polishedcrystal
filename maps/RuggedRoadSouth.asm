@@ -266,7 +266,7 @@ RuggedRoadSouthCamperText:
 	done
 
 RuggedRoadSouthAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Besiegt dein"
 	line "#mon den Gegner"

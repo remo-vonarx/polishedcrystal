@@ -880,7 +880,7 @@ Route34TrainerTipsText:
 	done
 
 Route34AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Manche #mon"
 	line "haben das ange-"

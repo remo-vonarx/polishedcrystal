@@ -46,7 +46,7 @@ LassRoseBeatenText:
 	done
 
 Route35CoastNorthAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Du kannst sogar"
 	line "vom Rücken eines"

@@ -518,7 +518,7 @@ DarkCaveSignText:
 	done
 
 Route31AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Drücke im Beutel"
 	line "START, um eine"

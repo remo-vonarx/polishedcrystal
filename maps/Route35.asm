@@ -415,7 +415,7 @@ Route35SignText:
 	done
 
 Route35AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Du kannst bis zu"
 	line "vier Basis-Items"

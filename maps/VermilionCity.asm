@@ -455,7 +455,7 @@ VermilionCityPierSignText:
 	db "◀ S.S.Aqua<LINE>▼ Seagallop Ferry<DONE>" ; not compressible
 
 VermilionCityAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Dein Trainerpass"
 	line "hat Platz für"

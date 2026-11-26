@@ -368,7 +368,7 @@ CianwoodMoveManiacSignText:
 	done
 
 CianwoodAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Du kannst einen"
 	line "Ball auf ein"

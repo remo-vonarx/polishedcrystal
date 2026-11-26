@@ -131,7 +131,7 @@ CeladonUniversityClassroom3Bookshelf1Text:
 CeladonUniversityClassroom3Bookshelf2Text:
 	text "Eine Abhandlung"
 	line "von Prof."
-	cont "Silktree."
+	cont "Seidenbaum."
 
 	para "“Untersuchungs-"
 	line "bericht zu den"

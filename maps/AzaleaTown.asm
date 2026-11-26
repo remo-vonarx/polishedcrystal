@@ -294,7 +294,7 @@ AzaleaTownIlexForestSignText:
 	done
 
 AzaleaTownAdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Beim Kampfstil"
 	line "“Wechsel” weißt"

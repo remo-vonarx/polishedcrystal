@@ -1040,7 +1040,7 @@ Route32UnionCaveSignText:
 	done
 
 Route32AdvancedTips1Text:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Items findest du"
 	line "auch beim Angeln"
@@ -1049,7 +1049,7 @@ Route32AdvancedTips1Text:
 	done
 
 Route32AdvancedTips2Text:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Verlierst du einen"
 	line "Kampf gegen einen"

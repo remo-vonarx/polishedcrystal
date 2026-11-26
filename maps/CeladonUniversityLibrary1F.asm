@@ -281,6 +281,6 @@ CeladonUniversityLibrary1FBookshelf11Text:
 CeladonUniversityLibrary1FBookshelf12Text:
 	text "“Das geheime Le-"
 	line "ben des Lachens”"
-	cont "von Kalle Auer."
-	cont "Wortwitzig!"
+	cont "von Rainer Witz."
+	cont "Witzig!"
 	done

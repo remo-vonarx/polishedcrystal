@@ -97,16 +97,16 @@ Route7UndergroundPathSignText:
 	line "Flugblatt?"
 
 	para "“Ruppige Trainer"
-	line "tragen auf dem"
+	line "tragen in der"
 
-	para "Tunnelpfad Kämpfe"
-	line "aus."
+	para "Unterführung"
+	line "Kämpfe aus."
 
 	para "Da sich die"
 	line "Beschwerden der"
 	cont "Anwohner häuften,"
-	cont "wurde der"
-	cont "Tunnelpfad auf"
+	cont "wurde die"
+	cont "Unterführung auf"
 	cont "unbestimmte Zeit"
 	cont "geschlossen.”"
 

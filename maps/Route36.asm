@@ -763,7 +763,7 @@ Route36TrainerTips2Text:
 	done
 
 Route36AdvancedTips1Text:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	assert NUM_FRAMES == 20
 	para "Du kannst in den"
@@ -776,7 +776,7 @@ Route36AdvancedTips1Text:
 	done
 
 Route36AdvancedTips2Text:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Verwöhnst du deine"
 	line "#mon mit Haar-"

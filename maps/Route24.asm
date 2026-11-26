@@ -211,7 +211,7 @@ Route24RocketDisappearsText:
 	done
 
 Route24AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Die Fähigkeit"
 	line "Rohe Gewalt hebt"

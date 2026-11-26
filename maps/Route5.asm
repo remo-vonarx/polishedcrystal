@@ -19,14 +19,14 @@ Route5_MapScriptHeader:
 	def_object_events
 
 Route5UndergroundPathSignText:
-	text "Tunnelpfad"
+	text "Unterführung"
 
 	para "Azuria City -"
 	line "Orania City"
 	done
 
 Route5AdvancedTipsSignText:
-	text "Profi-Tipps!"
+	text "Tipps für Profis!"
 
 	para "Das Berserk-Gen"
 	line "ist ein starkes"
