@@ -118,18 +118,19 @@ MystriStageBeatCynthiaScript:
 	pause 40
 	jumpthistextfaceplayer
 
-	text "Cynthia: Could it"
-	line "be… an Egg?"
+	text "Cynthia: Könnte"
+	line "das… ein Ei sein?"
 
-	para "Did we just"
-	line "witness the very"
+	para "Haben wir gerade"
+	line "genau den Moment"
 
-	para "moment an Egg was"
-	line "brought to this"
-	cont "world?"
+	para "miterlebt, in dem"
+	line "ein Ei auf diese"
+	cont "Welt kam?"
 
-	para "A moment no one"
-	line "has ever seen?"
+	para "Einen Moment, den"
+	line "noch nie jemand"
+	cont "gesehen hat?"
 	done
 
 MystriStageEggScript:
@@ -151,120 +152,128 @@ MystriStageEggScript:
 	waitendtext
 
 MystriStageCynthiaIntroText:
-	text "My name is"
-	line "Cynthia. I am a"
-	cont "#mon trainer."
+	text "Mein Name ist"
+	line "Cynthia. Ich bin"
+	cont "#mon-Trainerin."
 
-	para "And you are?"
+	para "Und wer bist du?"
 
-	para "…I see. The power"
-	line "of the Unown"
-	cont "brought you here."
+	para "…Verstehe. Die"
+	line "Kraft der Icognito"
+	cont "hat dich herge-"
+	cont "bracht."
 	done
 
 MystriStageCynthiaSpeechText:
-	text "Cynthia: These are"
-	line "the Sinjoh Ruins."
+	text "Cynthia: Dies sind"
+	line "die Sinjoh-Ruinen."
 
-	para "A long time ago…"
-	line "people came from"
+	para "Vor langer Zeit…"
+	line "kamen Menschen aus"
 
-	para "Sinnoh, my home"
-	line "region, to live"
-	cont "here."
+	para "Sinnoh, meiner"
+	line "Heimatregion, um"
+	cont "hier zu leben."
 
-	para "They must have"
-	line "longed for home,"
+	para "Sie müssen Heimweh"
+	line "gehabt haben"
 
-	para "and built this"
-	line "temple to honor"
-	cont "their traditions."
+	para "und erbauten die-"
+	line "sen Tempel, um"
+	cont "ihre Traditionen"
+	cont "zu ehren."
 
-	para "We are standing on"
-	line "the Mystri Stage."
+	para "Wir stehen auf dem"
+	line "Trysteriumaltar."
 
-	para "People once cele-"
-	line "brated here with"
-	cont "music and dance."
+	para "Hier feierten"
+	line "Menschen einst mit"
+	cont "Musik und Tanz."
 
-	para "Cynthia: I study"
-	line "myths about"
+	para "Cynthia: Ich"
+	line "erforsche Mythen"
 
-	para "ancient sites like"
-	line "the Sinjoh Ruins."
+	para "über alte Stätten"
+	line "wie die Sinjoh-"
+	cont "Ruinen."
 
-	para "One claims that"
-	line "this stage is"
+	para "Einer besagt, dass"
+	line "dieser Altar"
 
-	para "imbued with the"
-	line "power of creation."
+	para "von der Kraft der"
+	line "Schöpfung erfüllt"
+	cont "ist."
 
-	para "It speaks of when"
-	line "“the lead enters"
+	para "Er erzählt davon,"
+	line "wenn “der Anführer"
 
-	para "the Mystri Stage"
-	line "at last…”"
+	para "den Trysterium-"
+	line "altar endlich"
+	cont "betritt…”"
 	done
 
 MystriStageCynthiaLeadText2:
-	text "Cynthia: What?"
-	line "You read that"
+	text "Cynthia: Was? Du"
+	line "hast diesen Satz"
 
-	para "phrase in the"
-	line "Ruins of Alph?"
+	para "in den Alph-Ruinen"
+	line "gelesen?"
 
-	para "That is very"
-	line "intriguing."
+	para "Das ist sehr"
+	line "faszinierend."
 
-	para "Could “the lead”"
-	line "be a #mon?"
-	cont "Or a person?"
+	para "Könnte “der Anfüh-"
+	line "rer” ein #mon"
+	cont "sein? Oder ein"
+	cont "Mensch?"
 	done
 
 MystriStageCynthiaIdeaText:
-	text "Cynthia: …I have"
-	line "an idea. Call it"
+	text "Cynthia: …Ich habe"
+	line "eine Idee. Nenn es"
 
-	para "a trainer's"
-	line "intuition."
+	para "die Intuition"
+	line "einer Trainerin."
 
-	para "When you and I"
-	line "battle on this"
+	para "Wenn du und ich"
+	line "auf diesem Altar"
 
-	para "stage, something"
-	line "will happen."
+	para "kämpfen, wird"
+	line "etwas geschehen."
 	done
 
 MystriStageCynthiaNotNowText:
-	text "Cynthia: But I"
-	line "don't think we"
+	text "Cynthia: Aber ich"
+	line "glaube nicht, dass"
 
-	para "should battle now."
-	line "You aren't ready."
+	para "wir jetzt kämpfen"
+	line "sollten. Du bist"
+	cont "noch nicht bereit."
 
-	para "Come back when"
-	line "you've beaten the"
-	cont "Elite Four."
+	para "Komm wieder, wenn"
+	line "du die Top Vier"
+	cont "besiegt hast."
 	done
 
 MystriStageCynthiaChallengeText:
-	text "Cynthia: Are you"
-	line "prepared to be my"
-	cont "opponent?"
+	text "Cynthia: Bist du"
+	line "bereit, mein"
+	cont "Gegner zu sein?"
 	done
 
 MystriStageCynthiaNoText:
-	text "Cynthia: Come back"
-	line "when you're ready."
+	text "Cynthia: Komm"
+	line "wieder, wenn du"
+	cont "bereit bist."
 	done
 
 MystriStageCynthiaYesText:
-	text "Cynthia: Before"
-	line "I send out my"
-	cont "#mon,"
+	text "Cynthia: Bevor ich"
+	line "meine #mon"
+	cont "rufe, fängt mein"
 
-	para "my heart always"
-	line "begins to race…"
+	para "Herz immer an zu"
+	line "rasen…"
 	done
 
 MystriStageCynthiaWinText:
@@ -276,18 +285,19 @@ MystriStageCynthiaWinText:
 	done
 
 MystriStageCynthiaItemText:
-	text "Cynthia: That was"
-	line "beyond my expec-"
-	cont "tation!"
+	text "Cynthia: Das hat"
+	line "meine Erwartungen"
+	cont "übertroffen!"
 
-	para "What an excep-"
-	line "tional battle!"
+	para "Was für ein"
+	line "außergewöhnlicher"
+	cont "Kampf!"
 
-	para "Please take this"
-	line "item. I believe"
+	para "Bitte nimm dieses"
+	line "Item. Ich glaube,"
 
-	para "you will know how"
-	line "to use it well."
+	para "du weißt es gut"
+	line "einzusetzen."
 	done
 
 MystriStageCynthiaAfterText:
@@ -299,20 +309,20 @@ MystriStageCynthiaAfterText:
 
 
 MystriStageCynthiaFinalText:
-	text "Cynthia: An Egg"
-	line "is the cradle of"
-	cont "every being."
+	text "Cynthia: Ein Ei"
+	line "ist die Wiege"
+	cont "allen Lebens."
 
-	para "The planet itself"
-	line "is an Egg in a"
-	cont "sense…"
+	para "Der Planet selbst"
+	line "ist in gewisser"
+	cont "Weise ein Ei…"
 
-	para "Life that comes"
-	line "from an Egg will"
-	cont "come to an end in"
+	para "Leben, das aus"
+	line "einem Ei kommt,"
+	cont "wird irgendwann"
 
-	para "due course… to"
-	line "begin anew…"
+	para "enden… um neu zu"
+	line "beginnen…"
 	done
 
 MystriStageEggText:
@@ -322,9 +332,9 @@ MystriStageEggText:
 	done
 
 MystriStageNoRoomText:
-	text "You don't have"
-	line "room for this,"
-	cont "even in your Box!"
+	text "Du hast keinen"
+	line "Platz dafür, nicht"
+	cont "mal in der Box!"
 	done
 
 MystriStageMovementData_CynthiaStepsUp:

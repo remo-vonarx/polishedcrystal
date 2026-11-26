@@ -154,12 +154,12 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 
 	charmap "'",        $c0
 	charmap "ß",        $c1 ; was 'd (German has no contractions; English 'd prints as two tiles)
-	charmap "'l",       $c2
-	charmap "'m",       $c3
-	charmap "'r",       $c4
+	charmap "á",        $c2 ; was 'l
+	charmap "í",        $c3 ; was 'm
+	charmap "ó",        $c4 ; was 'r
 	charmap "'s",       $c5
-	charmap "'t",       $c6
-	charmap "'v",       $c7
+	charmap "¿",        $c6 ; was 't
+	charmap "¡",        $c7 ; was 'v
 
 	charmap "é",        $c8
 	charmap "Ä",        $c9 ; was É

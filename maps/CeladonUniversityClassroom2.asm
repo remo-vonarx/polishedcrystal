@@ -25,54 +25,58 @@ CeladonUniversityClassroom2_MapScriptHeader:
 	object_event  3,  9, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CeladonUniversityClassroom2CooltrainermScript, -1
 
 CeladonUniversityClassroom2BlancheText:
-	text "I am Blanche."
-	line "I teach History"
-	cont "here."
+	text "Ich bin Blanche."
+	line "Ich unterrichte"
+	cont "hier Geschichte."
 
-	para "We must learn from"
-	line "history, or we"
+	para "Wir müssen aus der"
+	line "Geschichte lernen,"
 
-	para "will be doomed to"
-	line "repeat it."
+	para "sonst sind wir"
+	line "dazu verdammt,"
+	cont "sie zu wieder-"
+	cont "holen."
 	done
 
 CeladonUniversityClassroom2TeacherText:
-	text "I'm afraid Blanche"
-	line "isn't available."
+	text "Blanche ist leider"
+	line "nicht da."
 
-	para "They only teach"
-	line "during the day."
+	para "Der Unterricht"
+	line "findet nur tags-"
+	cont "über statt."
 	done
 
 CeladonUniversityClassroom2YoungsterText:
-	text "Flipping through"
-	line "my notes at the"
-	cont "speed of--YOW!"
-	cont "Paper cut…"
+	text "Ich blättere meine"
+	line "Notizen in Höchst-"
+	cont "tempo durch--AUA!"
+	cont "Papierschnitt…"
 	done
 
 CeladonUniversityClassroom2ChildText:
-	text "We just had a"
-	line "lecture on Prof."
+	text "Wir hatten gerade"
+	line "eine Vorlesung"
 
-	para "Westwood's contri-"
-	line "butions to the"
-	cont "#dex."
+	para "über Prof. West-"
+	line "woods Beiträge"
+	cont "zum #dex."
 
-	para "I heard that"
-	line "towards the end"
+	para "Angeblich war er"
+	line "gegen Ende faul"
 
-	para "he got lazy and"
-	line "just made some of"
-	cont "it up!"
+	para "und hat sich einen"
+	line "Teil einfach aus-"
+	cont "gedacht!"
 	done
 
 CeladonUniversityClassroom2LadyText:
-	text "You're from Johto?"
-	line "That region has"
+	text "Du kommst aus"
+	line "Johto? Die Region"
 
-	para "such fascinating"
-	line "history!"
+	para "hat so eine fas-"
+	line "zinierende"
+	cont "Geschichte!"
 	done
 
 CeladonUniversityClassroom2CooltrainermScript:
@@ -87,16 +91,18 @@ CeladonUniversityClassroom2CooltrainermScript:
 	done
 
 .Text2:
-	text "Ahem."
+	text "Ähem."
 
-	para "Sorry about that--"
-	line "you startled me."
+	para "Entschuldige--du"
+	line "hast mich er-"
+	cont "schreckt."
 
-	para "I stayed up late"
-	line "to finish an"
+	para "Ich war lange auf,"
+	line "um eine Hausarbeit"
 
-	para "assignment, so now"
-	line "I'm exhausted."
+	para "fertigzustellen,"
+	line "jetzt bin ich"
+	cont "völlig erschöpft."
 	done
 
 CeladonUniversityClassroom2BlackboardText:

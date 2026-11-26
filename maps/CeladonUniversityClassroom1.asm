@@ -73,134 +73,141 @@ CeladonUniversityClassroom1ImakuniScript:
 	jumpthisopenedtext
 
 .Text6:
-	text "In both battle and"
-	line "dance, soul and"
-	cont "rhythm are the"
-	cont "secret."
+	text "Im Kampf wie beim"
+	line "Tanz sind Seele"
+	cont "und Rhythmus das"
+	cont "Geheimnis."
 
-	para "Hey, that sounds"
-	line "pretty cool!"
+	para "Hey, das klingt"
+	line "ziemlich cool!"
 
-	para "Maybe I'll become"
-	line "a poet!"
+	para "Vielleicht werde"
+	line "ich Dichter!"
 	done
 
 .Text1:
-	text "Huh? W…Who are"
-	line "you?"
+	text "Hä? W…Wer bist"
+	line "du denn?"
 
-	para "Who? Me? You don't"
-	line "know who I am?"
+	para "Wer? Ich? Du weißt"
+	line "nicht, wer ich"
+	cont "bin?"
 
-	para "I am the super"
-	line "musical star,"
+	para "Ich bin der super-"
+	line "musikalische Star"
 	cont "Imakuni!"
 
-	para "I'll sing the"
-	line "#Rap--you"
-	cont "dance!"
+	para "Ich singe den"
+	line "#rap--und du"
+	cont "tanzt!"
 
 	para "♪ La di da di da,"
 	line "La di da di da… ♪"
 
-	para "Hey! Move those"
-	line "feet!"
+	para "Hey! Beweg die"
+	line "Füße!"
 
-	para "What? #mon?"
+	para "Was? #mon?"
 
-	para "You want to"
-	line "battle me?"
+	para "Du willst gegen"
+	line "mich kämpfen?"
 	done
 
 .Text2:
-	text "Come on, don't be"
-	line "cruel!"
+	text "Ach komm, sei doch"
+	line "nicht so gemein!"
 
-	para "You're going to"
-	line "make me cry!"
+	para "Gleich muss ich"
+	line "weinen!"
 	done
 
 .Text3:
-	text "OK, but if I win,"
-	line "you dance!"
+	text "OK, aber wenn ich"
+	line "gewinne, tanzt du!"
 	done
 
 .Text4:
-	text "Even if I lost, is"
-	line "it really so bad?"
+	text "Auch wenn ich ver-"
+	line "loren habe, ist"
+	cont "das so schlimm?"
 	done
 
 .Text5:
-	text "Hey! You're pretty"
-	line "good!"
+	text "Hey! Du bist ganz"
+	line "schön gut!"
 
-	para "I'll give you this"
-	line "Berry, so don't"
+	para "Ich gebe dir diese"
+	line "Beere, also sag"
 
-	para "tell anyone I"
-	line "lost, OK?"
+	para "keinem, dass ich"
+	line "verloren habe, OK?"
 	done
 
 CeladonUniversityClassroom1AndyText:
-	text "Hello there!"
-	line "I'm Prof.Andy,"
+	text "Hallo! Ich bin"
+	line "Prof. Andy und"
 
-	para "and I teach what"
-	line "I love--art!"
+	para "lehre, was ich"
+	line "liebe--Kunst!"
 
-	para "Remember, draw"
-	line "what you see,"
+	para "Denk dran: Zeich-"
+	line "ne, was du siehst,"
 
-	para "not what you think"
-	line "you see."
+	para "nicht, was du"
+	line "zu sehen glaubst."
 
-	para "Get past your pre-"
-	line "conceptions about"
-	cont "how things look."
+	para "Löse dich von"
+	line "Vorurteilen darü-"
+	cont "ber, wie Dinge"
+	cont "aussehen."
 	done
 
 CeladonUniversityClassroom1Dragon_tamerText:
-	text "I've been holding"
-	line "this pose for a"
-	cont "while now."
+	text "Ich halte diese"
+	line "Pose schon eine"
+	cont "ganze Weile."
 	done
 
 CeladonUniversityClassroom1LadyText:
-	text "You meet some"
-	line "unique people in"
-	cont "art class, but"
+	text "Im Kunstkurs lernt"
+	line "man ein paar"
+	cont "einzigartige Leute"
+	cont "kennen, aber"
 
-	para "that guy in the"
-	line "black costume is"
-	cont "really suspicious!"
+	para "der Typ im"
+	line "schwarzen Kostüm"
+	cont "ist echt"
+	cont "verdächtig!"
 	done
 
 CeladonUniversityClassroom1Artist1Text:
-	text "It's tough getting"
-	line "the folds of this"
-	cont "cape just right."
+	text "Es ist schwer, die"
+	line "Falten dieses"
+	cont "Umhangs richtig"
+	cont "hinzubekommen."
 	done
 
 CeladonUniversityClassroom1Artist2Text:
-	text "Aah-choo!"
+	text "Hatschi!"
 
-	para "Ugh. We just had a"
-	line "flower-arranging"
-	cont "seminar, but now"
+	para "Uff. Wir hatten"
+	line "gerade ein Blumen-"
+	cont "steck-Seminar,"
 
-	para "I can't stop"
-	line "sneezing."
+	para "aber jetzt muss"
+	line "ich ständig"
+	cont "niesen."
 
-	para "I must be aller-"
-	line "gic…"
+	para "Ich bin wohl"
+	line "allergisch…"
 	done
 
 CeladonUniversityClassroom1Artist3Text:
-	text "I work a lot dur-"
-	line "ing the day, so I"
+	text "Tagsüber arbeite"
+	line "ich viel, also"
 
-	para "take classes in"
-	line "the evenings."
+	para "besuche ich die"
+	line "Kurse abends."
 	done
 
 CeladonUniversityClassroom1BlackboardText:

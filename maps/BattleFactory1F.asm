@@ -159,7 +159,7 @@ BattleFactory1FReceptionistScript:
 		done
 	promptbutton
 	checkevent EVENT_BATTLE_FACTORY_INTRO
-	iftrue .BattleFactoryMenu
+	iftruefwd .BattleFactoryMenu
 
 	; only ask once, so set the flag regardless
 	setevent EVENT_BATTLE_FACTORY_INTRO

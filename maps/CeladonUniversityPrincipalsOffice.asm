@@ -30,32 +30,33 @@ CeladonUniversityPrincipalsOfficeMatsumotoScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "I work hard to"
-	line "keep this place"
-	cont "running smoothly,"
+	text "Ich arbeite hart,"
+	line "damit hier alles"
+	cont "reibungslos läuft,"
 
-	para "so I unwind with"
-	line "candy every now"
-	cont "and then."
+	para "also entspanne ich"
+	line "mich ab und zu mit"
+	cont "Bonbons."
 	done
 
 .Text1:
-	text "Hello there,"
-	line "young trainer!"
+	text "Hallo,"
+	line "junger Trainer!"
 
-	para "I am Professor"
+	para "Ich bin Professor"
 	line "Matsumoto."
 
-	para "I'm the principal"
-	line "of Celadon Uni-"
-	cont "versity."
+	para "Ich bin der Rektor"
+	line "der Prismania-Uni."
 
-	para "But you can call"
-	line "me your pal!"
+	para "Aber du kannst"
+	line "mich deinen Kumpel"
+	cont "nennen!"
 
-	para "Here, have some"
-	line "candy from my"
-	cont "desk stash."
+	para "Hier, nimm ein"
+	line "paar Bonbons aus"
+	cont "meinem Vorrat im"
+	cont "Schreibtisch."
 	done
 
 CeladonUniversityPrincipalsOfficeSignpost1Text:
@@ -75,11 +76,10 @@ CeladonUniversityPrincipalsOfficeSignpost2Text:
 CeladonUniversityPrincipalsOfficeComputer:
 	jumpthistext
 
-	text "There's a draft"
-	line "email asking"
-
-	para "alumni for"
-	line "donations."
+	text "Der Entwurf einer"
+	line "E-Mail, die Ehema-"
+	cont "lige um Spenden"
+	cont "bittet."
 	done
 
 CeladonUniversityPrincipalsOfficeBookshelfText:

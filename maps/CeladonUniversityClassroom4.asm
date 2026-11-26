@@ -69,50 +69,56 @@ CeladonUniversityClassroom4RaymondScript:
 	jumpopenedtext .FinalText
 
 .IntroText1:
-	text "Hey! I'm Raymond!"
-	line "Just call me Ray."
+	text "Hey! Ich bin"
+	line "Raymond! Nenn mich"
+	cont "einfach Ray."
 
-	para "I'm one of top four"
-	line "trainers at Cela-"
-	cont "don University."
+	para "Ich gehöre zu den"
+	line "vier besten Trai-"
+	cont "nern der Prisma-"
+	cont "nia-Uni."
 
-	para "We're known as the"
-	line "Celadon Four!"
+	para "Man nennt uns die"
+	line "Prismania-Vier!"
 
-	para "Want to see our"
-	line "skill yourself?"
+	para "Willst du unser"
+	line "Können selbst"
+	cont "sehen?"
 
-	para "Let's have a match!"
-	line "Unless you're"
-	cont "afraid to lose."
+	para "Lass uns kämpfen!"
+	line "Außer du hast"
+	cont "Angst vorm"
+	cont "Verlieren."
 	done
 
 .IntroText2:
-	text "Hey! I'm Raymond!"
-	line "Just call me Ray."
+	text "Hey! Ich bin"
+	line "Raymond! Nenn mich"
+	cont "einfach Ray."
 
-	para "I'm one of the"
-	line "Celadon Four!"
+	para "Ich gehöre zu den"
+	line "Prismania-Vier!"
 
-	para "You're looking to"
-	line "fight us all?"
+	para "Du willst gegen"
+	line "uns alle kämpfen?"
 
-	para "Let's have a match!"
-	line "Unless you're"
-	cont "afraid to lose."
+	para "Lass uns kämpfen!"
+	line "Außer du hast"
+	cont "Angst vorm"
+	cont "Verlieren."
 	done
 
 .NoBattleText:
-	text "I knew you were"
-	line "scared."
+	text "Ich wusste, dass"
+	line "du Angst hast."
 	done
 
 .SeenText:
-	text "Let's do this!"
+	text "Los geht's!"
 	done
 
 .BeatenText:
-	text "Ohhhh nooooo!"
+	text "Ohhhh neiiiin!"
 	done
 
 .AfterText1:
@@ -142,61 +148,64 @@ CeladonUniversityClassroom4RaymondScript:
 	done
 
 .FinalText:
-	text "If you've conquered"
-	line "the Celadon Four,"
+	text "Wer die Prismania-"
+	line "Vier besiegt hat,"
 
-	para "you can bear any"
-	line "burden."
+	para "kann jede Last"
+	line "tragen."
 	done
 
 CeladonUniversityClassroom4CandelaText:
-	text "Hi! I'm Candela."
-	line "I teach #mon"
-	cont "Battling!"
+	text "Hi! Ich bin"
+	line "Candela. Ich un-"
+	cont "terrichte #mon-"
+	cont "Kampf!"
 
-	para "I'm researching"
-	line "ways to enhance"
+	para "Ich erforsche, wie"
+	line "man die natürliche"
 
-	para "#mon's natural"
-	line "power in the pur-"
-	cont "suit of strength."
+	para "Kraft von #mon"
+	line "für mehr Stärke"
+	cont "steigern kann."
 	done
 
 CeladonUniversityClassroom4TeacherText:
-	text "Candela? She only"
-	line "teaches during the"
-	cont "day."
+	text "Candela? Sie"
+	line "unterrichtet nur"
+	cont "tagsüber."
 	done
 
 CeladonUniversityClassroom4Bug_catcherText:
-	text "My lecturer said"
-	line "my #mon could"
+	text "Meine Dozentin"
+	line "meinte, mein"
+	cont "#mon könne mit"
+	cont "den Besten mit-"
+	cont "halten."
 
-	para "really battle with"
-	line "the best of them."
-
-	para "Its potential was"
-	line "the best she'd"
-	cont "ever seen!"
+	para "Sein Potenzial sei"
+	line "das beste, das sie"
+	cont "je gesehen habe!"
 	done
 
 CeladonUniversityClassroom4FisherText:
-	text "The prof said my"
-	line "#mon was a"
-	cont "wonder!"
+	text "Der Prof sagte,"
+	line "mein #mon sei"
+	cont "ein Wunder!"
 
-	para "It's a breath-"
-	line "taking #mon."
+	para "Es ist ein"
+	line "atemberaubendes"
+	cont "#mon."
 	done
 
 CeladonUniversityClassroom4LadyText:
-	text "The professor said"
-	line "my #mon simply"
-	cont "amazed her."
+	text "Die Professorin"
+	line "sagte, sie sei von"
+	cont "meinem #mon"
+	cont "begeistert."
 
-	para "I guess it really"
-	line "can accomplish"
-	cont "anything!"
+	para "Es kann wohl"
+	line "wirklich alles"
+	cont "schaffen!"
 	done
 
 CeladonUniversityClassroom4Rich_boyScript:
@@ -213,34 +222,39 @@ CeladonUniversityClassroom4Rich_boyScript:
 	waitendtext
 
 .Text1:
-	text "We're learning"
-	line "about #mon"
-	cont "abilities."
+	text "Wir lernen gerade"
+	line "etwas über die"
+	cont "Fähigkeiten von"
+	cont "#mon."
 
-	para "Some species can"
-	line "have more than one"
-	cont "ability."
+	para "Manche Arten"
+	line "können mehr als"
+	cont "eine Fähigkeit"
+	cont "haben."
 
-	para "Use this to switch"
-	line "between them!"
+	para "Damit kannst du"
+	line "zwischen ihnen"
+	cont "wechseln!"
 	done
 
 .Text2:
-	text "There are some"
-	line "rare “hidden"
-	cont "abilities” that"
+	text "Es gibt seltene"
+	line "“versteckte"
+	cont "Fähigkeiten”, die"
 
-	para "an Ability Cap"
-	line "can't change."
+	para "eine Fähigkeits-"
+	line "kapsel nicht"
+	cont "ändern kann."
 
-	para "But! If a #-"
-	line "mon holding an"
+	para "Aber! Wenn ein"
+	line "#mon, das eine"
 
-	para "Ability Cap has"
-	line "an Egg, its baby"
+	para "Fähigkeitskapsel"
+	line "trägt, ein Ei hat,"
 
-	para "might have a"
-	line "hidden ability!"
+	para "kann das Baby"
+	line "eine versteckte"
+	cont "Fähigkeit haben!"
 	done
 
 CeladonUniversityClassroom4BlackboardText:
@@ -270,18 +284,19 @@ CeladonUniversityClassroom4Bookshelf1:
 	endtext
 
 .Text1:
-	text "This bookcase is"
-	line "a mess!"
+	text "Dieses Bücherregal"
+	line "ist ein Chaos!"
 
-	para "<PLAYER> straight-"
-	line "ened up the books."
+	para "<PLAYER> hat die"
+	line "Bücher aufgeräumt."
 
 	para "…Oh?"
 	done
 
 .Text2:
-	text "This bookcase is"
-	line "all neat and tidy."
+	text "Dieses Bücherregal"
+	line "ist ordentlich"
+	cont "aufgeräumt."
 	done
 
 CeladonUniversityClassroom4Bookshelf2Text:

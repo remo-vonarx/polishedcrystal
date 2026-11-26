@@ -21,43 +21,47 @@ CeladonUniversityWillowsOffice_MapScriptHeader:
 	object_event  4,  3, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonUniversityWillowsOfficeScientistText, -1
 
 CeladonUniversityWillowsOfficeWillowText:
-	text "Hello there!"
-	line "I am Prof.Willow."
+	text "Hallo! Ich bin"
+	line "Prof. Willow."
 
-	para "I supervise"
-	line "Candela, Blanche,"
-	cont "and Spark in their"
+	para "Ich betreue"
+	line "Candela, Blanche"
+	cont "und Spark bei"
 
-	para "teaching and re-"
-	line "search."
+	para "ihrer Lehre und"
+	line "Forschung."
 
-	para "You may run into"
-	line "them in classes."
+	para "Vielleicht triffst"
+	line "du sie in den"
+	cont "Kursen."
 
-	para "I also study #-"
-	line "mon habitats and"
-	cont "distribution."
+	para "Ich erforsche auch"
+	line "Lebensräume und"
+	cont "Verbreitung von"
+	cont "#mon."
 
-	para "I'm very busy, but"
-	line "my excellent"
+	para "Ich bin sehr be-"
+	line "schäftigt, aber"
 
-	para "assistants help"
-	line "get work done."
+	para "meine hervorragen-"
+	line "den Assistenten"
+	cont "helfen mir dabei."
 	done
 
 CeladonUniversityWillowsOfficeScientistText:
-	text "I get to work as"
-	line "Prof.Willow's"
-	cont "aide!"
+	text "Ich darf als"
+	line "Assistent von"
+	cont "Prof. Willow"
+	cont "arbeiten!"
 
-	para "I'm cataloguing"
-	line "my observations"
-	cont "of Route 7."
+	para "Ich katalogisiere"
+	line "meine Beobachtun-"
+	cont "gen von Route 7."
 
-	para "Today I saw 42"
-	line "Raticate and"
-	cont "37 Pidgeotto…"
-	cont "and one Vulpix!"
+	para "Heute sah ich 42"
+	line "Rattikarl und"
+	cont "37 Tauboga…"
+	cont "und ein Vulpix!"
 	done
 
 CeladonUniversityWillowsOfficeBlackboardText:
@@ -90,7 +94,7 @@ CeladonUniversityWillowsOfficeBookshelf2Text:
 CeladonUniversityWillowsOfficeComputer:
 	jumpthistext
 
-	text "“#mon Transfer"
-	line "System” is on the"
-	cont "screen."
+	text "Auf dem Bildschirm"
+	line "steht “#mon-"
+	cont "Transfer-System”."
 	done

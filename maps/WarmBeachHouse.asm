@@ -37,65 +37,65 @@ WarmBeachHouseBookScript:
 	iffalse_endtext
 	jumpthisopenedtext
 
-	text "From the trio of"
-	line "islands, ancient"
-	cont "spheres shall you"
-	cont "take."
+	text "Aus dem Trio der"
+	line "Inseln nimm die"
+	cont "alten Kugeln mit,"
 
-	para "For between life"
-	line "and death, all the"
-	cont "difference you'll"
-	cont "make."
+	para "denn über Leben"
+	line "und Tod entschei-"
+	cont "det dein Schritt."
 
-	para "Climb to the"
-	line "shrine to right"
-	cont "what is wrong,"
+	para "Steig zum Schrein,"
+	line "das Unrecht zu be-"
+	cont "zwingen,"
 
-	para "and the world"
-	line "shall be healed"
-	cont "by the guardian's"
-	cont "song…"
+	para "dann heilt die"
+	line "Welt durch des"
+	cont "Wächters Singen…"
 	done
 
 .Text0:
-	text "The Shamouti"
-	line "Prophecy"
+	text "Die Prophezeiung"
+	line "von Shamouti"
 
-	para "Want to read it?"
+	para "Willst du sie"
+	line "lesen?"
 	done
 
 .Text1:
-	text "Disturb not the"
-	line "harmony of fire,"
-	cont "ice, or lightning,"
+	text "Störe nicht die"
+	line "Harmonie von"
+	cont "Feuer, Eis und"
+	cont "Blitz,"
 
-	para "lest these titans"
-	line "wreak destruction"
-	cont "upon the world in"
-	cont "which they clash."
+	para "sonst werden diese"
+	line "Titanen die Welt"
+	cont "verwüsten, auf der"
+	cont "sie kämpfen."
 
-	para "Though the water's"
-	line "great guardian sh-"
-	cont "all arise to quell"
-	cont "the fighting,"
+	para "Obwohl sich der"
+	line "große Wächter des"
+	cont "Wassers erheben"
+	cont "wird, um den Kampf"
+	cont "zu beenden,"
 
-	para "alone its song"
-	line "will fail, and"
-	cont "thus the earth"
-	cont "shall turn to ash."
+	para "wird sein Lied"
+	line "allein scheitern,"
+	cont "und so wird die"
+	cont "Erde zu Asche."
 
-	para "Keep reading?"
+	para "Weiterlesen?"
 	done
 
 .Text2:
-	text "O Chosen One,"
-	line "into thine hands"
-	cont "bring together"
-	cont "all three."
+	text "O Auserwählter,"
+	line "bringe in deinen"
+	cont "Händen alle drei"
+	cont "zusammen."
 
-	para "Their treasures"
-	line "combined tame the"
-	cont "beast of the sea."
+	para "Ihre vereinten"
+	line "Schätze zähmen die"
+	cont "Bestie des Meeres."
 
-	para "Keep reading?"
+	para "Weiterlesen?"
 	done

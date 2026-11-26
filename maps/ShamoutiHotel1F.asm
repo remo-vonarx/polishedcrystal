@@ -27,15 +27,16 @@ ShamoutiHotel1FRestaurantTrigger:
 	endcallback
 
 ShamoutiHotel1FReceptionistText:
-	text "Welcome to the"
-	line "Shamouti Hotel."
+	text "Willkommen im"
+	line "Hotel Shamouti."
 
-	para "I'm afraid our"
-	line "rooms are all"
-	cont "booked, but please"
+	para "Leider sind all"
+	line "unsere Zimmer aus-"
+	cont "gebucht, aber"
 
-	para "visit our deluxe"
-	line "Oasis Restaurant."
+	para "besuche doch unser"
+	line "Luxusrestaurant"
+	cont "Oase!"
 	done
 
 ShamoutiHotel1FArtistScript:
@@ -59,74 +60,78 @@ ShamoutiHotel1FArtistScript:
 	jumpopenedtext .Text5
 
 .Text1:
-	text "No matter where"
-	line "you go, <TRENDY>"
+	text "Egal, wo man hin-"
+	line "geht, <TRENDY>"
 
-	para "is the coolest"
-	line "thing around!"
-	cont "Isn't that so?"
+	para "ist das Coolste"
+	line "überhaupt!"
+	cont "Stimmt doch, oder?"
 	done
 
 .Text2:
-	text "What?! <TRENDY>"
-	line "isn't the coolest"
-	cont "thing around?"
+	text "Was?! <TRENDY>"
+	line "ist nicht das"
+	cont "Coolste überhaupt?"
 
-	para "Well, what is the"
-	line "coolest thing"
-	cont "these days?"
+	para "Was ist denn dann"
+	line "zurzeit das"
+	cont "Coolste?"
 	done
 
 .Text3:
-	text "Oh, yeah! I've got"
-	line "it now!"
+	text "Oh ja! Jetzt hab"
+	line "ich's kapiert!"
 
-	para "<TRENDY> is"
-	line "totally the best"
-	cont "thing ever!"
+	para "<TRENDY> ist"
+	line "echt das Beste,"
+	cont "was es gibt!"
 	done
 
 .Text4:
-	text "<TRENDY> is the"
-	line "hip and happening"
-	cont "thing right now!"
+	text "<TRENDY> ist"
+	line "gerade total hip"
+	cont "und angesagt!"
 	done
 
 .Text5:
-	text "You know it!"
-	line "I just can't get"
-	cont "enough of"
+	text "Na klar! Ich kann"
+	line "einfach nicht"
+	cont "genug kriegen von"
 	cont "<TRENDY>!"
 	done
 
 ShamoutiHotel1FCooltrainermText:
-	text "So <TRENDY> is"
-	line "the hot new thing?"
+	text "<TRENDY> ist also"
+	line "der neue Hit?"
 
-	cont "That's so cool!"
+	cont "Wie cool!"
 	done
 
 ShamoutiHotel1FLadyText:
-	text "Have you ever"
-	line "found a Bottle Cap"
-	cont "while fishing?"
+	text "Hast du beim An-"
+	line "geln schon mal"
+	cont "einen Kronkorken"
+	cont "gefunden?"
 
-	para "In Alola, where I'm"
-	line "from, there's a man"
+	para "In Alola, wo ich"
+	line "herkomme, gibt es"
 
-	para "who will “Hyper"
-	line "Train” your #-"
-	cont "mon--bringing out"
+	para "einen Mann, der"
+	line "für nur einen"
+	cont "Kronkorken mit"
 
-	para "its full poten-"
-	line "tial--just for a"
-	cont "Bottle Cap."
+	para "deinen #mon ein"
+	line "“Super-Spezial-"
+	cont "training” macht--"
+
+	para "und so ihr volles"
+	line "Potenzial weckt!"
 	done
 
 ShamoutiHotel1FYoungsterText:
-	text "I heard that"
-	line "<TRENDY> is “in”"
-	cont "right now!"
+	text "Ich habe gehört,"
+	line "<TRENDY> ist"
+	cont "gerade “in”!"
 	done
 
 ShamoutiHotelRestaurantSignText:

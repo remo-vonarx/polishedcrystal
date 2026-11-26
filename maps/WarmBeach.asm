@@ -69,35 +69,36 @@ GenericTrainerAromaLadyHolly:
 	done
 
 WarmBeachCooltrainermText:
-	text "There's a #mon"
-	line "here that talks!"
+	text "Hier gibt es ein"
+	line "#mon, das"
+	cont "sprechen kann!"
 
-	para "I would never be-"
-	line "lieve it if I"
+	para "Ich hätte es nie"
+	line "geglaubt, wenn ich"
 
-	para "hadn't seen it for"
-	line "myself!"
+	para "es nicht selbst"
+	line "gesehen hätte!"
 	done
 
 WarmBeachCooltrainerfText:
-	text "I've been selected"
-	line "as the festival"
-	cont "maiden this year,"
+	text "Ich wurde dieses"
+	line "Jahr zur Festmaid"
+	cont "erwählt,"
 
-	para "so I have to play"
-	line "the melody of the"
-	cont "Chosen One."
+	para "also muss ich die"
+	line "Melodie des Auser-"
+	cont "wählten spielen."
 
-	para "I'm pretty nervous,"
-	line "so I came here to"
-	cont "practice."
+	para "Ich bin ganz schön"
+	line "nervös, deshalb"
+	cont "übe ich hier."
 	done
 
 WarmBeachSlowkingScript:
 	jumpthistext
 
-	text "I could use"
-	line "pants…"
+	text "Eine Hose wäre"
+	line "nicht schlecht…"
 	done
 
 WarmBeachLassScript:
@@ -119,60 +120,60 @@ WarmBeachLassScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
-	text "One Shell Bell,"
-	line "just for you!"
+	text "Ein Seegesang,"
+	line "nur für dich!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "enough money…"
+	text "Du hast nicht"
+	line "genügend Geld…"
 	done
 
 .Text1:
-	text "I collect shells"
-	line "off the beach and"
+	text "Ich sammle am"
+	line "Strand Muscheln"
 
-	para "turn them into"
-	line "Shell Bells."
+	para "und mache daraus"
+	line "Seegesänge."
 
-	para "People say their"
-	line "chime is healing."
+	para "Man sagt, ihr"
+	line "Klang heilt."
 
-	para "They're ¥4000"
-	line "each. Want one?"
+	para "Sie kosten je"
+	line "¥4000. Willst du"
+	cont "einen?"
 	done
 
 .Text3:
-	text "I only made one"
-	line "Shell Bell today…"
+	text "Heute habe ich nur"
+	line "einen Seegesang"
+	cont "gemacht…"
 	done
 
 .Text4:
-	text "That's OK!"
+	text "Schon gut!"
 	done
 
 .Text6:
-	text "You don't have"
-	line "enough room…"
+	text "Du hast nicht"
+	line "genug Platz…"
 	done
 
 WarmBeachLadyText:
-	text "Those islands"
-	line "across the water"
+	text "Die Inseln dort"
+	line "drüben nennt man"
 
-	para "are known as the"
-	line "temples of Fire,"
+	para "die Tempel von"
+	line "Feuer, Eis und"
+	cont "Blitz."
 
-	para "Ice, and Light-"
-	line "ning."
+	para "Das steht in"
+	line "dieser Broschüre,"
 
-	para "That's what this"
-	line "brochure says,"
-
-	para "but what are they"
-	line "for?"
+	para "aber wozu sind"
+	line "sie da?"
 	done
 
 WarmBeachShackSignText:

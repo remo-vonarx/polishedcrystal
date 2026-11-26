@@ -99,73 +99,75 @@ ProfIvyScript:
 	jumpthisopenedtext
 
 .NoBerryText:
-	text "Ivy: I under-"
-	line "stand…"
+	text "Ivy: Ich"
+	line "verstehe…"
 
-	para "You don't have"
-	line "three Liechi"
-	cont "Berries to spare."
+	para "Du hast keine drei"
+	line "Lydzibeeren übrig."
 	done
 
 .RequestText:
-	text "Ivy: Hello again,"
-	line "<PLAYER>!"
+	text "Ivy: Hallo noch"
+	line "mal, <PLAYER>!"
 
-	para "Can I ask you to"
-	line "do me a favor?"
+	para "Darf ich dich um"
+	line "einen Gefallen"
+	cont "bitten?"
 
-	para "This Nidorino"
-	line "is sick, and my"
+	para "Dieses Nidorino"
+	line "ist krank, und"
 
-	para "Lum Berries aren't"
-	line "helping it."
+	para "meine Prunusbeeren"
+	line "helfen ihm nicht."
 
-	para "Can you please"
-	line "find three Liechi"
-	cont "Berries for it?"
+	para "Kannst du drei"
+	line "Lydzibeeren für"
+	cont "es finden?"
 	done
 
 .OkayText:
-	text "Ivy: Perfect!"
-	line "Thanks, <PLAYER>!"
+	text "Ivy: Perfekt!"
+	line "Danke, <PLAYER>!"
 
-	para "Let's see if this"
-	line "helps Nidorino…"
+	para "Mal sehen, ob das"
+	line "Nidorino hilft…"
 	done
 
 .ThanksText:
-	text "Ivy: Thank you,"
+	text "Ivy: Danke,"
 	line "<PLAYER>!"
 
-	para "Nidorino looks"
-	line "much healthier!"
+	para "Nidorino sieht"
+	line "viel gesünder aus!"
 
-	para "Please take this"
-	line "for your trouble."
+	para "Bitte nimm das für"
+	line "deine Mühe."
 	done
 
 .ChallengeText:
-	text "Ivy: I could use a"
-	line "break from work."
+	text "Ivy: Ich könnte"
+	line "eine Pause von der"
+	cont "Arbeit gebrauchen."
 
-	para "How about a quick"
-	line "battle?"
+	para "Wie wär's mit"
+	line "einem kurzen"
+	cont "Kampf?"
 	done
 
 .NoText:
-	text "Ah well, I'll just"
-	line "keep on with my"
-	cont "research."
+	text "Na gut, dann"
+	line "forsche ich eben"
+	cont "weiter."
 	done
 
 .SeenText:
-	text "Professor versus"
-	line "Champion--let's go!"
+	text "Professorin gegen"
+	line "Champ--los geht's!"
 	done
 
 .BeatenText:
-	text "No surprises"
-	line "here!"
+	text "Das war ja zu"
+	line "erwarten!"
 	done
 
 .AfterText:
@@ -179,21 +181,22 @@ IvysLabHopeScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "Hope: Prof.Ivy"
-	line "takes care of the"
+	text "Hope: Prof. Ivy"
+	line "kümmert sich um"
 
-	para "#mon on this"
-	line "island."
+	para "die #mon auf"
+	line "dieser Insel."
 
-	para "Right now she's"
-	line "tending to a sick"
+	para "Gerade pflegt sie"
+	line "ein krankes"
 	cont "Nidorino."
 	done
 
 .Text2:
-	text "Hope: Thanks for"
-	line "helping out with"
-	cont "that Nidorino!"
+	text "Hope: Danke, dass"
+	line "du bei dem Nido-"
+	cont "rino geholfen"
+	cont "hast!"
 	done
 
 IvysLabNidorinoScript:
@@ -258,13 +261,15 @@ PokemonJournalProfIvyScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "#mon Prof.Ivy!"
+	para "Titelthema:"
+	line "#mon-Prof. Ivy!"
 
-	para "Philena Ivy worked"
-	line "with Brock of Pew-"
-	cont "ter City to study"
+	para "Felina Ivy hat"
+	line "mit Rocko aus Mar-"
+	cont "moria City den"
 
-	para "a shiny Onix's"
-	line "crystalline body."
+	para "kristallinen Kör-"
+	line "per eines schil-"
+	cont "lernden Onix"
+	cont "erforscht."
 	done

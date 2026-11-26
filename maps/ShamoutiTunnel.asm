@@ -45,48 +45,50 @@ OreManiacScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
-	text "The deal is done!"
-	line "I've scored an ore"
-	cont "I can adore!"
+	text "Der Deal steht!"
+	line "Ein Erz für mein"
+	cont "Herz!"
 	done
 
 .GreetingText:
-	text "Ore, ore, ore…"
-	line "Ores that I adore!"
+	text "Erz, Erz, Erz…"
+	line "Erz ist mein Herz!"
 
-	para "I'll pay you well"
-	line "for rare ores."
+	para "Ich zahle gut für"
+	line "seltene Erze."
 
-	para "Don't you have an"
-	line "adorable ore that"
-	cont "shakes my core?"
+	para "Hast du kein Erz,"
+	line "das mein Herz zum"
+	cont "Beben bringt?"
 	done
 
 .OfferText:
-	text "That ore, it's"
-	line "shaking me!"
+	text "Dieses Erz bringt"
+	line "mich zum Beben!"
 
-	para "Will you sell it"
-	line "for ¥"
+	para "Verkaufst du es"
+	line "für ¥"
 	text_decimal hMoneyTemp, 3, 7
 	text "?"
 	done
 
 .WrongItemText:
-	text "Huh? What on earth"
-	line "is this?"
+	text "Hä? Was um alles"
+	line "in der Welt ist"
+	cont "das?"
 
-	para "You can't shake my"
-	line "core with an ore"
-	cont "so poor!"
+	para "So ein Erz rührt"
+	line "nicht mein Herz--"
+	cont "welch ein Scherz!"
 	done
 
 .NoItemText:
-	text "Hmmm. My core won't"
-	line "change."
+	text "Hmmm. Mein Herz"
+	line "bleibt ungerührt."
 
-	para "I hope you sell"
-	line "one to me someday."
+	para "Hoffentlich ver-"
+	line "kaufst du mir"
+	cont "irgendwann eins."
 	done
 
 GenericTrainerTamerOswald:

@@ -170,17 +170,18 @@ GenericTrainerBird_keeperTrent:
 	done
 
 NoisyForestTeacherText:
-	text "I come here for my"
-	line "morning stroll."
+	text "Ich mache hier"
+	line "meinen Morgen-"
+	cont "spaziergang."
 
-	para "I even have a ped-"
-	line "ometer that counts"
-	cont "my steps!"
+	para "Ich habe sogar"
+	line "einen Schrittzäh-"
+	cont "ler dabei!"
 	done
 
 NoisyForestChildText:
-	text "Gah! This place"
-	line "is deafening!"
+	text "Argh! Hier ist es"
+	line "ohrenbetäubend!"
 	done
 
 NoisyForestPikabluScript:
@@ -213,35 +214,36 @@ NoisyForestPikabluScript:
 	done
 
 .OwnerText1:
-	text "You found my"
-	line "Pikablu!"
-	cont "Thank you!"
+	text "Du hast mein"
+	line "Pikablu gefunden!"
+	cont "Danke!"
 	done
 
 .OwnerText2:
-	text "Let me give you a"
-	line "little something."
+	text "Ich gebe dir eine"
+	line "Kleinigkeit."
 	done
 
 .OwnerText3:
-	text "A souvenir of your"
-	line "time on Shamouti"
-	cont "Island!"
+	text "Ein Andenken an"
+	line "deine Zeit auf"
+	cont "Shamouti!"
 
-	para "Doesn't it look"
-	line "strange?"
+	para "Sieht es nicht"
+	line "seltsam aus?"
 
-	para "Bye, and thanks"
-	line "again!"
+	para "Tschüss, und noch-"
+	line "mals danke!"
 	done
 
 .OwnerText4:
-	text "Oh, you can't carry"
-	line "it right now."
+	text "Oh, du kannst es"
+	line "gerade nicht"
+	cont "tragen."
 
-	para "Come find me by"
-	line "the #mon Center"
-	cont "if you want it."
+	para "Such mich am"
+	line "#mon-Center,"
+	cont "wenn du es willst."
 	done
 
 .WalkToYou:

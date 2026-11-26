@@ -609,3 +609,19 @@ _Avoid_: Detektor (the Itemfinder)
 
 **Rocket-Spielhalle**:
 The Rocket Game Corner in Celadon, in the Safari Zone warden's granddaughter's story.
+
+**Prof. Westwood**:
+The Celadon University professor (Westwood V.) keeps his English name, as picked in the Johto I review.
+
+**Felina Ivy**:
+Professor Ivy's full name (Philena Ivy), from PokéWiki.
+
+**Hypertest**:
+Celadon University's final exam (Hyper Test), one word like Hyperball.
+_Avoid_: Hyper-Test
+
+**Rektor**:
+The head of Celadon University (principal).
+
+**Schlaffsamen**:
+Slip Seed in the University cafeteria's salad, its official German name from Mystery Dungeon.

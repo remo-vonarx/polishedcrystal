@@ -62,44 +62,47 @@ CeladonUniversityPoolFergusScript:
 	jumpopenedtext .FinalText
 
 .IntroText1:
-	text "The name's Fergus!"
-	line "I'm one of top four"
+	text "Ich heiße Fergus!"
+	line "Ich gehöre zu den"
 
-	para "trainers at Cela-"
-	line "don University."
+	para "vier besten Trai-"
+	line "nern der Prisma-"
+	cont "nia-Uni."
 
-	para "They call us the"
-	line "Celadon Four!"
+	para "Man nennt uns die"
+	line "Prismania-Vier!"
 
-	para "I'll prove to you"
-	line "that I earned my"
-	cont "rep with a battle!"
+	para "Ich beweise dir in"
+	line "einem Kampf, dass"
+	cont "ich meinen Ruf"
+	cont "verdient habe!"
 	done
 
 .IntroText2:
-	text "The name's Fergus!"
-	line "I'm one of the"
-	cont "Celadon Four!"
+	text "Ich heiße Fergus!"
+	line "Ich gehöre zu den"
+	cont "Prismania-Vier!"
 
-	para "You're taking on"
-	line "all four of us?"
+	para "Du nimmst es mit"
+	line "uns allen vier"
+	cont "auf?"
 
-	para "Well then, let's"
-	line "battle!"
+	para "Na dann, lass uns"
+	line "kämpfen!"
 	done
 
 .NoBattleText:
-	text "Then don't get in"
-	line "my way."
+	text "Dann steh mir"
+	line "nicht im Weg."
 	done
 
 .SeenText:
-	text "We'll show you!"
-	line "Let's go!"
+	text "Dir zeigen wir's!"
+	line "Los geht's!"
 	done
 
 .BeatenText:
-	text "No way!"
+	text "Unmöglich!"
 	done
 
 .AfterText1:
@@ -132,36 +135,39 @@ CeladonUniversityPoolFergusScript:
 	done
 
 .FinalText:
-	text "The Celadon Four"
-	line "are a big deal"
-	cont "here, but you're"
+	text "Die Prismania-Vier"
+	line "sind hier eine"
+	cont "große Nummer, aber"
 
-	para "making waves in"
-	line "the real world."
+	para "du schlägst in der"
+	line "echten Welt hohe"
+	cont "Wellen."
 
-	para "Keep it up!"
+	para "Mach weiter so!"
 	done
 
 CeladonUniversityPoolLassText:
-	text "Ouch!"
+	text "Autsch!"
 
-	para "I'm working out a"
-	line "cramp in my leg."
+	para "Ich will einen"
+	line "Krampf im Bein"
+	cont "loswerden."
 	done
 
 CeladonUniversityPoolSwimmer_girlText:
-	text "I applied for a"
-	line "special program to"
+	text "Ich habe mich für"
+	line "ein Studienpro-"
+	cont "gramm auf den"
 
-	para "study in the Sea-"
-	line "foam Islands!"
+	para "Seeschauminseln"
+	line "beworben!"
 
-	para "I need to be pre-"
-	line "pared for intense"
-	cont "swimming."
+	para "Ich muss mich auf"
+	line "intensives Schwim-"
+	cont "men vorbereiten."
 	done
 
 CeladonUniversityPoolTeacherText:
-	text "OK, five more"
-	line "laps!"
+	text "OK, noch fünf"
+	line "Bahnen!"
 	done

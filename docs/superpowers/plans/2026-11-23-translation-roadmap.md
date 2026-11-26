@@ -209,9 +209,9 @@ The people and story scenes K left, in story order. Each task: the region's maps
 
 ### Task 20: Polished's own areas
 
-- [ ] Celadon University, the Orange Islands (Shamouti Island and its beaches, Valencia Island), Sinjoh Ruins, Mystri Stage, Faraway Island, Navel Rock: all own translation, in Kristall's style.
-- [ ] Pilar's Spanish accents (decided 2026-11-23): once no English contraction is left in either ROM, move `á í ó ¿ ¡` (and `É`, if still wanted) into the freed slots `'l 'm 'r 's 't 'v` (`$C2`–`$C7`), redraw them in every font and `vwf.png`, and restore Sightseer Pilar's lines in `maps/ShamoutiCoast.asm` ("¡Hola!", "acá", "montón", "duraría", "más", "¿Qué").
-- [ ] Test: a pass through each area's scenes.
+- [x] Celadon University, the Orange Islands (Shamouti Island and its beaches, Valencia Island), Sinjoh Ruins, Mystri Stage, Faraway Island, Navel Rock: all own translation, in Kristall's style.
+- [x] Pilar's Spanish accents (decided 2026-11-23): once no English contraction is left in either ROM, move `á í ó ¿ ¡` (and `É`, if still wanted) into the freed slots `'l 'm 'r 's 't 'v` (`$C2`–`$C7`), redraw them in every font and `vwf.png`, and restore Sightseer Pilar's lines in `maps/ShamoutiCoast.asm` ("¡Hola!", "acá", "montón", "duraría", "más", "¿Qué").
+- [x] Test: a pass through each area's scenes.
 - [ ] Ship.
 
 ### Task 21: Title screen and credits
