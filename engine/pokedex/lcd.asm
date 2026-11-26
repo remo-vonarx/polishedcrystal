@@ -496,7 +496,7 @@ Pokedex_RefreshOAM:
 	lb hl, OAM_BANK1, $40
 	ld a, 3
 .search_loop
-	ld b, 136 ; two tiles right of Upstream's 120: the silhouette sits right of the longer "Silhouette:"
+	ld b, 132 ; Upstream: 120. Right of the silhouette after the longer "Silhouette:", 4 pixels from it and from the border
 	ld d, 3
 	push af
 	call Pokedex_WriteOAM
@@ -1171,7 +1171,7 @@ PVB_UpdateDexMap::
 
 DexDisplayOAMData:
 ; botmenu cursor x, indicator y, indicator x, indicator offset, indicator length
-	db   0, 145, 100, $0b, 6 ; DEXDISP_SEARCH
+	db   0, 145, 112, $0b, 6 ; DEXDISP_SEARCH (Upstream x 100: 12 right, as the Slowpoke, so their right edges still line up)
 	db  32,  93,  31, $05, 6 ; DEXDISP_DESC
 	db  62,  52, 132, $12, 4 ; DEXDISP_BIO
 	db  87,   0,   0,   0, 0 ; DEXDISP_STATS
