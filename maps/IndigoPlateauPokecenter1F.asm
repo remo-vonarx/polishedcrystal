@@ -271,13 +271,14 @@ PlateauLyraText1:
 
 	para "Ich darf dich her-"
 	line "ausfordern, nicht"
-	cont "nur als meinen"
-	cont "Freund, sondern"
+	cont "nur, weil wir"
+	cont "Freunde sind,"
+	cont "sondern"
 	done
 
 PlateauLyraText2:
-	text "als Champ der"
-	line "#mon Liga!"
+	text "weil du Champ der"
+	line "#mon Liga bist!"
 	done
 
 PlateauLyraWinText:
