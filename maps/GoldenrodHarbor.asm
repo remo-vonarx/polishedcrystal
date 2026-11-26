@@ -307,7 +307,7 @@ GoldenrodHarborSailboatScript:
 	jumpthistext
 
 	text "Ein Segelboot"
-	line "namens Golking."
+	line "namens Seekönig."
 	done
 
 GoldenrodHarborFisherText:
