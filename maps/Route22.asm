@@ -74,12 +74,12 @@ KukuiScript:
 	done
 
 .IntroText:
-	text "Hallo! Ich bin"
+	text "Hey! Ich bin"
 	line "Kukui."
 
 	para "Du heißt also"
-	line "<PLAYER>? Roger,"
-	cont "alter Kumpel!"
+	line "<PLAYER>? Alles"
+	cont "klar, Kumpel!"
 
 	para "Ich komme aus der"
 	line "fernen Alola-"
@@ -93,13 +93,13 @@ KukuiScript:
 	line "Kanto gekommen, um"
 	cont "hier gegen die Top"
 	cont "Vier zu kämpfen,"
-	cont "yeah!"
+	cont "jawohl!"
 
 	para "Hm? Du bist der"
 	line "neue Champ?"
 
 	para "Wow, kein Wunder,"
-	line "dass du so cool"
+	line "dass du so stylish"
 	cont "aussiehst!"
 
 	para "Mein Team und ich"
@@ -112,13 +112,13 @@ KukuiScript:
 	done
 
 .RematchText:
-	text "Hallo,"
+	text "Hey,"
 	line "<PLAYER>!"
 
 	para "Ich habe seit"
 	line "unserem letzten"
 	cont "Kampf hart"
-	cont "trainiert, yeah!"
+	cont "trainiert, jawohl!"
 
 	para "Du siehst aus, als"
 	line "wärst du auch"
@@ -146,7 +146,7 @@ KukuiScript:
 	text "Du konzentrierst"
 	line "dich ganz auf"
 	cont "deine eigene"
-	cont "Reise, yeah?"
+	cont "Reise, stimmt's?"
 
 	para "Das respektiere"
 	line "ich!"

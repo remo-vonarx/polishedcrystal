@@ -63,7 +63,7 @@ Route19BeachHouseVictorScript:
 
 .GreetingText:
 	text "Hallo, Freund!"
-	line "Ich heiße Victor."
+	line "Ich heiße Viktor."
 
 	para "Ich liebe das Sur-"
 	line "fen, und Puka"
@@ -90,8 +90,8 @@ Route19BeachHouseVictorScript:
 
 .SeenText:
 	text "Das Meer vereint"
-	line "alle im Surfer-"
-	cont "reich! Los geht's!"
+	line "alle Surfer!"
+	cont "Los geht's!"
 	done
 
 .BeatenText:

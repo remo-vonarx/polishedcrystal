@@ -201,8 +201,8 @@ CeladonUniversityLoungeSuper_nerd2Text:
 	line "Skripte für ein"
 	cont "Spiel."
 
-	para "Nicht gesagt asm"
-	line "benutzen!"
+	para "Kein Assembler"
+	line "benutzen, hieß es!"
 	done
 
 CeladonUniversityLoungeBookshelf1Text:
