@@ -231,3 +231,14 @@ Found 2026-11-26 by a scan for strings still identical to Upstream: menus and ma
 - [x] The wall words (`data/events/unown_walls.asm`): Kristall's FLUCHT, BLITZ, WASSER, and FEE for Polished's FAIRY. Decided 2026-11-26: FEE's box narrows to its three letters.
 - [x] Test: every changed menu opened in the Regular ROM; the Ho-Oh chamber wall, compared with Kristall's.
 - [x] Ship.
+
+### Review: whole-game fixes
+
+Found 2026-11-26 by three review agents (German everywhere, boxes and lengths at their maximum, graphics with letters), answered on a review page the same day.
+
+- [x] Texts: same-speaker lines unified, Kristall's words where ours drifted (Lagerungs-System, Felsen, Link-Kolosseum, sagenumwobene Vögel), Magikarp's doubled "cm", the gift names Habsi, Harald and Modri.
+- [x] Boxes: Kristall's coordinates for the link boxes and the party submenu, the Pokédex search shape, Lyra's "Radioturm Lav.", "Vormittag getauscht", the naming screen's Lösch, Yes over No.
+- [x] Graphics: ARN and MRKT as Kristall, KAUF, SPIEL and LIGA (own), LINK-TAUSCH, Inseln, UNBEKANNT, A▶FLIEGEN above the region name, START ▶ ZURÜCK, the VWF font's á í ó ¿ ¡.
+- [x] `check_text_width.py` counts the freed contractions as two tiles and skips debug-only text.
+- [x] Test: every changed screen in the Regular ROM, the party submenu in Faithful too; every changed text through the room PC.
+- [ ] Ship.
