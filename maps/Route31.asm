@@ -164,8 +164,9 @@ TrainerCooltrainermFinch:
 	cont "Kampfes."
 	cont "Ein Luftballon!"
 
-	para "Nimm ihn, mein"
-	line "starker Freund!"
+	para "Nimm ihn, als"
+	line "Zeichen unserer"
+	cont "Freundschaft!"
 	done
 
 TrainerBug_catcherWade1:
