@@ -483,7 +483,7 @@ _Avoid_: Miracle Cycle, Mutter
 The call menu and the clock card, Kristall's words.
 
 **Sendersuchlauf**:
-The radio card's drawn label (Tuning), Kristall's word in Polished's small font.
+The radio card's drawn label (Tuning), Kristall's word, drawn in narrow small capitals as Kristall has it.
 
 **Eichs PKMN-Talk**, **Pokémon-Musik**, **Glückskanal**, **Orte & Personen**, **Lasst uns singen**, **Pokémon-Flöte**, **Buenas Passwort**:
 The radio stations, Kristall's names. Oak's show calls its channel Pokémon Programm, the DJs are Margit, Ben, Fabian, Bastian and Lilly.
@@ -491,6 +491,10 @@ _Avoid_: Mary, Fern, Reed, Lily
 
 **Datenbank**:
 Bill's word for the Pokémon storage on the phone, where Polished's English says database.
+
+**Endivchen**, **Zunder**, **Karni**:
+Lyra's nicknames for her starter (Chicory, Cinder, Toto), as in her party, in Elm's Lab and on the phone.
+_Avoid_: Chicory, Cinder, Toto
 
 **Wundertausch**:
 Wonder Trade, the official name.
