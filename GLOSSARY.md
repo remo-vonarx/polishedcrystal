@@ -620,6 +620,14 @@ Professor Ivy's full name (Philena Ivy), from PokéWiki.
 Celadon University's final exam (Hyper Test), one word like Hyperball.
 _Avoid_: Hyper-Test
 
+**Hope**, **Faith**, **Charity**:
+Prof. Ivy's assistants keep their English names: no German game or dub names them.
+_Avoid_: Hoffnung, Glaube, Liebe
+
+**#mon-Pflegerin**:
+A Pokémon nurse as a profession (a student at Celadon University wants to become one).
+_Avoid_: #mon-Krankenschwester
+
 **Rektor**:
 The head of Celadon University (principal).
 

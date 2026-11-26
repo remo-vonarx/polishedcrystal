@@ -132,9 +132,8 @@ CeladonUniversity1FReceptionistText:
 
 CeladonUniversity1FCooltrainerfText:
 	text "Ich studiere, um"
-	line "#mon-Kranken-"
-	cont "schwester zu"
-	cont "werden."
+	line "#mon-Pflegerin"
+	cont "zu werden."
 
 	para "Bei so vielen"
 	line "Arten da draußen"
