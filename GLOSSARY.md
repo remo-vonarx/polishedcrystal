@@ -620,6 +620,9 @@ Professor Ivy's full name (Philena Ivy), from PokéWiki.
 Celadon University's final exam (Hyper Test), one word like Hyperball.
 _Avoid_: Hyper-Test
 
+**Das war mal wieder ein Schuss in den Ofen!**:
+Jessie and James's defeat line (Looks like Team Rocket's blasting off again!), the German anime's catchphrase.
+
 **Hope**, **Faith**, **Charity**:
 Prof. Ivy's assistants keep their English names: no German game or dub names them.
 _Avoid_: Hoffnung, Glaube, Liebe
