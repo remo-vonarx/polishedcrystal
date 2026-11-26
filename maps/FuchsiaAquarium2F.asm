@@ -44,13 +44,13 @@ FuchsiaAquarium1FRemoraidSign:
 .RemoraidText:
 	text "Name: Remoraid"
 
-	para "Using its dorsal"
-	line "fin as a suction"
-	cont "pad, it clings to"
+	para "Mit seiner Rücken-"
+	line "flosse saugt es"
+	cont "sich unter einem"
 
-	para "a Mantine's under-"
-	line "side to scavenge"
-	cont "for leftovers."
+	para "Mantax fest, um"
+	line "nach Resten zu"
+	cont "suchen."
 	done
 
 FuchsiaAquarium1FMantineSign:
@@ -65,14 +65,14 @@ FuchsiaAquarium1FMantineSign:
 	end
 
 .MantineText:
-	text "Name: Mantine"
+	text "Name: Mantax"
 
-	para "It may fly out of"
-	line "the water and over"
+	para "Wenn es genug"
+	line "Tempo aufbaut,"
 
-	para "the waves if it"
-	line "builds up enough"
-	cont "speed."
+	para "kann es aus dem"
+	line "Wasser über die"
+	cont "Wellen fliegen."
 	done
 
 FuchsiaAquarium1FSquirtleOrSeelSign:
@@ -100,28 +100,29 @@ FuchsiaAquarium1FSquirtleOrSeelSign:
 	end
 
 .SquirtleText:
-	text "Name: Squirtle"
+	text "Name: Schiggy"
 
-	para "Its shell pattern"
-	line "resembles an old"
-	cont "coin, so one"
+	para "Sein Panzermuster"
+	line "ähnelt einer alten"
+	cont "Münze, daher hat"
 
-	para "region recently"
-	line "made commemorative"
+	para "eine Region kürz-"
+	line "lich ¥100-Gedenk-"
 
-	para "¥100 coins featur-"
-	line "ing Squirtle."
+	para "münzen mit Schiggy"
+	line "herausgebracht."
 	done
 
 .SeelText:
-	text "Name: Seel"
+	text "Name: Jurob"
 
-	para "This #mon does"
-	line "not drink water--"
+	para "Dieses #mon"
+	line "trinkt kein"
+	cont "Wasser--"
 
-	para "it gets all its"
-	line "hydration from the"
-	cont "prey it eats."
+	para "es bezieht seine"
+	line "ganze Flüssigkeit"
+	cont "aus seiner Beute."
 	done
 
 FuchsiaAquarium1FShellderOrKrabbySign:
@@ -149,37 +150,38 @@ FuchsiaAquarium1FShellderOrKrabbySign:
 	end
 
 .ShellderText:
-	text "Name: Shellder"
+	text "Name: Muschas"
 
-	para "It changes shape"
-	line "drastically when"
+	para "Es verändert seine"
+	line "Form drastisch,"
 
-	para "it bites a Slow-"
-	line "poke to coevolve,"
+	para "wenn es sich in"
+	line "ein Flegmon ver-"
+	cont "beißt, um sich mit"
+	cont "ihm zu entwickeln,"
 
-	para "but this is not"
-	line "considered a"
-	cont "unique evolution."
+	para "doch das gilt"
+	line "nicht als eigene"
+	cont "Entwicklung."
 	done
 
 .KrabbyText:
 	text "Name: Krabby"
 
-	para "Fishers used to"
-	line "release Krabby"
+	para "Angler ließen ge-"
+	line "fangene Krabby"
+	cont "frei, deren Panzer"
 
-	para "they caught with"
-	line "shells resembling"
-	cont "an angry samurai."
+	para "einem zornigen"
+	line "Samurai glichen."
 
-	para "This may have re-"
-	line "sulted in more"
+	para "Deshalb gibt es"
+	line "heute vielleicht"
 
-	para "surviving Krabby"
-	line "today with shell"
-
-	para "patterns that look"
-	line "like human faces."
+	para "mehr Krabby mit"
+	line "Panzermustern, die"
+	cont "menschlichen"
+	cont "Gesichtern ähneln."
 	done
 
 FuchsiaAquarium1FStaryuSign:
@@ -194,16 +196,17 @@ FuchsiaAquarium1FStaryuSign:
 	end
 
 .StaryuText:
-	text "Name: Staryu"
+	text "Name: Sterndu"
 
-	para "A popular science"
-	line "fiction show for"
+	para "In einer beliebten"
+	line "Science-Fiction-"
 
-	para "children features"
-	line "superheroes using"
+	para "Serie für Kinder"
+	line "nutzen Superhelden"
 
-	para "powers based on"
-	line "Staryu's gem."
+	para "Kräfte, die auf"
+	line "Sterndus Juwel"
+	cont "beruhen."
 	done
 
 FuchsiaAquarium2FPosterText:
@@ -227,48 +230,52 @@ FuchsiaAquarium2FPokefanMScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "One time I hit a"
-	line "Chansey with a"
-	cont "rock, and it fled"
+	text "Einmal habe ich"
+	line "ein Chaneira mit"
+	cont "einem Stein ge-"
+	cont "troffen, und es"
 
-	para "as fast as if it"
-	line "had been holding"
-	cont "an Eject Button."
+	para "floh so schnell,"
+	line "als hätte es einen"
+	cont "Fluchtknopf ge-"
+	cont "tragen."
 
-	para "Ah, the good old"
-	line "days…"
+	para "Ach, die guten"
+	line "alten Zeiten…"
 	done
 
 .Text1:
-	text "All these Pokemon"
-	line "behind glass, but"
+	text "All die #mon"
+	line "hinter Glas, aber"
 
-	para "I can't throw any-"
-	line "thing at them!"
+	para "ich kann nichts"
+	line "nach ihnen werfen!"
 
-	para "I miss tossing"
-	line "bait and rocks in"
-	cont "the Safari Game…"
+	para "Ich vermisse es,"
+	line "im Safari-Spiel"
+	cont "Köder und Steine"
+	cont "zu werfen…"
 
-	para "Right up until"
-	line "they'd call time"
+	para "Bis sie über die"
+	line "Lautsprecher die"
 
-	para "on the PA system"
-	line "and eject me."
+	para "Zeit ausriefen und"
+	line "mich rauswarfen."
 
-	para "Shucks, you may as"
-	line "well have this."
+	para "Ach, das kannst du"
+	line "genauso gut haben."
 	done
 
 FuchsiaAquarium2FPokefanFText:
-	text "The Warden's sudden"
-	line "departure was a"
+	text "Dass der Wärter so"
+	line "plötzlich wegging,"
 
-	para "blessing in dis-"
-	line "guise."
+	para "war ein Glück im"
+	line "Unglück."
 
-	para "Now we have this"
-	line "lovely aquarium!"
+	para "Jetzt haben wir"
+	line "dieses schöne"
+	cont "Aquarium!"
 	done
 
 FuchsiaAquarium2FLassScript:
@@ -280,20 +287,21 @@ FuchsiaAquarium2FLassScript:
 	end
 
 .Text1:
-	text "Remoraid clings to"
-	line "Mantine and shares"
-	cont "in its prosperity…"
+	text "Remoraid hängt an"
+	line "Mantax und teilt"
+	cont "dessen Wohlstand…"
 
-	para "That's romantic,"
-	line "right?"
+	para "Wie romantisch,"
+	line "oder?"
 	done
 
 .Text2:
-	text "I memorized lots"
-	line "of #dex facts"
+	text "Ich habe mir viele"
+	line "#dex-Fakten"
 
-	para "to interest my"
-	line "date!"
+	para "gemerkt, um mein"
+	line "Date zu begeis-"
+	cont "tern!"
 	done
 
 FuchsiaAquarium2FBattleGirlScript:
@@ -303,15 +311,15 @@ FuchsiaAquarium2FBattleGirlScript:
 	end
 
 .Text:
-	text "This girl has been"
-	line "nerding out about"
+	text "Dieses Mädchen"
+	line "fachsimpelt schon"
 
-	para "water #mon for"
-	line "the past hour…"
+	para "seit einer Stunde"
+	line "über Wasser-"
+	cont "#mon…"
 
-	para "You think for Val-"
-	line "entine's Day she'd"
-
-	para "like fish instead"
-	line "of chocolate?"
+	para "Ob sie zum Valen-"
+	line "tinstag lieber"
+	cont "Fisch als Schoko-"
+	cont "lade möchte?"
 	done

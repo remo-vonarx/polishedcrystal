@@ -70,6 +70,6 @@ CinnabarVolcanoB1FBouldersFall:
 	earthquake 80
 	jumpthistext
 
-	text "The boulder fell"
-	line "through!"
+	text "Der Felsen fiel"
+	line "hindurch!"
 	done

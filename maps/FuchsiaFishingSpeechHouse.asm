@@ -16,17 +16,17 @@ FuchsiaFishingSpeechHouse_MapScriptHeader:
 	object_event  2,  3, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, FuchsiaCityFishingGuruText, -1
 
 FuchsiaCityFishingGuruText:
-	text "I'm the Fishing"
-	line "Guru's older"
-	cont "brother."
+	text "Ich bin der ältere"
+	line "Bruder des Profi-"
+	cont "Anglers."
 
-	para "I simply looove"
-	line "fishing!"
+	para "Ich liiiebe das"
+	line "Angeln!"
 
-	para "If you like to"
-	line "fish too, you're"
+	para "Wenn du auch gern"
+	line "angelst, kannst du"
 
-	para "welcome to try"
-	line "the pond in my"
-	cont "back yard!"
+	para "es gern im Teich"
+	line "in meinem Garten"
+	cont "versuchen!"
 	done

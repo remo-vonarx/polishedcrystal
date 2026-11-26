@@ -32,17 +32,17 @@ PokemonJournalKarenScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Elite Four Karen!"
+	para "Titelthema:"
+	line "Top Vier Melanie!"
 
-	para "Karen supposedly"
-	line "began training"
+	para "Melanie soll damit"
+	line "begonnen haben,"
 
-	para "Dark-type #mon"
-	line "to help overcome"
+	para "Unlicht-#mon zu"
+	line "trainieren, damit"
 
-	para "their sinister"
-	line "reputation."
+	para "sie ihren finste-"
+	line "ren Ruf loswerden."
 	done
 
 TrainerHouse1FReceptionistText:
@@ -66,22 +66,22 @@ TrainerHouse1FReceptionistText:
 	done
 
 TrainerHouse1FCooltrainerMText:
-	text "Viridian is the"
-	line "town closest to"
-	cont "Indigo Plateau."
+	text "Vertania City ist"
+	line "dem Indigo Plateau"
+	cont "am nächsten."
 
-	para "It's known as the"
-	line "gateway to Indigo"
+	para "Man nennt es auch"
+	line "das Tor zum Indigo"
 	cont "Plateau!"
 
-	para "They built this"
-	line "place because so"
+	para "Man hat diesen Ort"
+	line "erbaut, weil ihn"
 
-	para "many trainers pass"
-	line "through on their"
+	para "so viele Trainer"
+	line "auf ihrem Weg zur"
 
-	para "way up to the"
-	line "#mon League."
+	para "#mon-Liga"
+	line "passieren."
 	done
 
 TrainerHouse1FCooltrainerFText:

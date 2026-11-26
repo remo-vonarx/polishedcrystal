@@ -72,13 +72,14 @@ FuchsiaCitySetUpPaletteSwap:
 	db -1 ; end
 
 FuchsiaCityYoungsterText:
-	text "Why did the"
-	line "Warden leave all"
-	cont "of a sudden?"
+	text "Warum ist der"
+	line "Wärter so plötz-"
+	cont "lich gegangen?"
 
-	para "I heard he was"
-	line "running from the"
-	cont "police!"
+	para "Ich habe gehört,"
+	line "er sei auf der"
+	cont "Flucht vor der"
+	cont "Polizei!"
 	done
 
 FuchsiaCityPokefanMText:
@@ -92,31 +93,32 @@ FuchsiaCityPokefanMText:
 	done
 
 FuchsiaCityTeacherText:
-	text "The Safari Game is"
-	line "canceled…"
+	text "Das Safari-Spiel"
+	line "wurde eingestellt…"
 
-	para "At least the"
-	line "Safari Zone is"
-	cont "still open."
+	para "Immerhin ist die"
+	line "Safari-Zone noch"
+	cont "geöffnet."
 
-	para "You'll need a"
-	line "strong #mon"
-
-	para "to explore it,"
-	line "though."
+	para "Um sie zu erkun-"
+	line "den, brauchst du"
+	cont "aber ein starkes"
+	cont "#mon."
 	done
 
 FuchsiaCityPokefanFText:
-	text "When the Safari"
-	line "Zone Warden left,"
+	text "Nachdem der Wärter"
+	line "der Safari-Zone"
+	cont "gegangen war,"
 
-	para "the community kept"
-	line "maintaining the"
-	cont "zoo exhibits."
+	para "hat sich die Stadt"
+	line "weiter um die Zoo-"
+	cont "gehege gekümmert."
 
-	para "We even converted"
-	line "his old office"
-	cont "into an aquarium!"
+	para "Wir haben sogar"
+	line "sein altes Büro in"
+	cont "ein Aquarium ver-"
+	cont "wandelt!"
 	done
 
 FuchsiaCitySignText:
@@ -189,9 +191,10 @@ FuchsiaCityZooDratiniSign:
 .DratiniText:
 	text "Name: Dratini"
 
-	para "It lurks under-"
-	line "water as its life"
-	cont "energy builds up."
+	para "Es lauert unter"
+	line "Wasser, während"
+	cont "sich seine Lebens-"
+	cont "energie aufbaut."
 	done
 
 FuchsiaCityZooKangaskhanSign:
@@ -206,13 +209,13 @@ FuchsiaCityZooKangaskhanSign:
 	end
 
 .KangaskhanText:
-	text "Name: Kangaskhan"
+	text "Name: Kangama"
 
-	para "The child in its"
-	line "pouch leaves home"
+	para "Das Junge in sei-"
+	line "nem Beutel zieht"
 
-	para "after roughly"
-	line "three years."
+	para "nach etwa drei"
+	line "Jahren aus."
 	done
 
 FuchsiaCityZooTaurosSign:
@@ -266,11 +269,11 @@ FuchsiaCityZooTaurosSign:
 .TaurosText:
 	text "Name: Tauros"
 
-	para "This wild bull has"
-	line "been domesticated"
+	para "Aus diesem wilden"
+	line "Stier wurden viele"
 
-	para "into a variety of"
-	line "different breeds."
+	para "verschiedene"
+	line "Rassen gezüchtet."
 	done
 
 FuchsiaCityZooChanseySign:
@@ -285,15 +288,15 @@ FuchsiaCityZooChanseySign:
 	end
 
 .ChanseyText:
-	text "Name: Chansey"
+	text "Name: Chaneira"
 
-	para "It walks carefully"
-	line "to prevent its"
-	cont "egg from breaking."
+	para "Es läuft vorsich-"
+	line "tig, damit sein Ei"
+	cont "nicht zerbricht."
 
-	para "However, it is"
-	line "extremely fast at"
-	cont "running away."
+	para "Wenn es flieht,"
+	line "ist es aber"
+	cont "extrem schnell."
 	done
 
 FuchsiaCityZooSlowpokeSign:
@@ -308,13 +311,13 @@ FuchsiaCityZooSlowpokeSign:
 	end
 
 .SlowpokeText:
-	text "Name: Slowpoke"
+	text "Name: Flegmon"
 
-	para "It is content to"
-	line "loll about without"
+	para "Es faulenzt gern"
+	line "herum, ohne sich"
 
-	para "worrying about"
-	line "the time."
+	para "um die Zeit zu"
+	line "kümmern."
 	done
 
 FuchsiaCityZooLaprasSign:
@@ -331,12 +334,12 @@ FuchsiaCityZooLaprasSign:
 .LaprasText:
 	text "Name: Lapras"
 
-	para "This “king of the"
-	line "seas” is able to"
+	para "Dieser “König der"
+	line "Meere” versteht"
 
-	para "understand human"
-	line "speech and is very"
-	cont "intelligent."
+	para "die menschliche"
+	line "Sprache und ist"
+	cont "sehr intelligent."
 	done
 
 FuchsiaCityCarefulSwimmingSignText:

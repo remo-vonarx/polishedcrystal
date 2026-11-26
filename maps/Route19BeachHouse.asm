@@ -46,54 +46,57 @@ Route19BeachHouseVictorScript:
 .NoPikachu:
 	jumpthisopenedtext
 
-	text "You can do it,"
-	line "too!"
+	text "Du schaffst das"
+	line "auch!"
 
-	para "Go out there and"
-	line "find a Surfing"
-	cont "Pikachu!"
+	para "Zieh los und finde"
+	line "ein Pikachu, das"
+	cont "Surfer kann!"
 
-	para "Show me that you"
-	line "love Surfing too!"
+	para "Zeig mir, dass du"
+	line "das Surfen auch"
+	cont "liebst!"
 	done
 
 .NoBattle:
 	jumpopenedtext .NoBattleText
 
 .GreetingText:
-	text "Hey there, friend!"
-	line "The name's Victor."
+	text "Hallo, Freund!"
+	line "Ich heiße Victor."
 
-	para "I love to Surf,"
-	line "and so does Puka."
-	cont "That's my Pikachu!"
+	para "Ich liebe das Sur-"
+	line "fen, und Puka"
+	cont "auch. Das ist mein"
+	cont "Pikachu!"
 	done
 
 .ChallengeText:
-	text "Whoa!"
+	text "Wow!"
 
-	para "Your Pikachu knows"
-	line "how to Surf! So,"
-	cont "I'm not alone…"
+	para "Dein Pikachu kann"
+	line "Surfer! Dann bin"
+	cont "ich nicht allein…"
 
-	para "Great! You earned"
-	line "the right to a"
+	para "Super! Damit hast"
+	line "du dir einen Surf-"
 
-	para "Surfing battle"
-	line "with me and Puka!"
+	para "Kampf mit mir und"
+	line "Puka verdient!"
 
-	para "Give it a go?"
+	para "Willst du es"
+	line "versuchen?"
 	done
 
 .SeenText:
-	text "The sea unites"
-	line "all in surfdom!"
-	cont "Let's go!"
+	text "Das Meer vereint"
+	line "alle im Surfer-"
+	cont "reich! Los geht's!"
 	done
 
 .BeatenText:
-	text "I knew you could"
-	line "do it!"
+	text "Ich wusste, dass"
+	line "du es schaffst!"
 	done
 
 .AfterText:
@@ -118,8 +121,9 @@ Route19BeachHouseVictorScript:
 
 
 .NoBattleText:
-	text "Shucks. Come Surf"
-	line "anytime, friend!"
+	text "Schade. Komm"
+	line "jederzeit zum"
+	cont "Surfen, Freund!"
 	done
 
 Route19BeachHouseSurfingPikachuScript:

@@ -108,22 +108,27 @@ SeafoamGymBlaineScript:
 	setevent EVENT_GOT_TM61_WILL_O_WISP
 	jumpthisopenedtext
 
-	text "It's called Will-"
-	line "O-Wisp!"
+	text "Das ist Irrlicht!"
 
-	para "It weakens your"
-	line "foe by inflicting"
-	cont "a burn."
+	para "Es schwächt den"
+	line "Gegner, indem es"
+	cont "ihn verbrennt."
 
-	para "I did lose this"
-	line "time, but I'm going"
-	cont "to win next time."
+	para "Diesmal habe ich"
+	line "verloren, aber"
 
-	para "When I rebuild my"
-	line "Cinnabar Gym,"
+	para "beim nächsten Mal"
+	line "werde ich"
+	cont "gewinnen."
 
-	para "we'll have to have"
-	line "a rematch."
+	para "Wenn ich meine"
+	line "PKMN-Arena auf der"
+	cont "Zinnoberinsel"
+	cont "wieder aufbaue,"
+
+	para "musst du erneut"
+	line "gegen mich"
+	cont "antreten."
 	done
 
 SeafoamGymGuyScript:
@@ -132,24 +137,28 @@ SeafoamGymGuyScript:
 	setevent EVENT_TALKED_TO_SEAFOAM_GYM_GUY_ONCE
 	jumpthistextfaceplayer
 
-	text "Yo!"
+	text "Jawohl!"
 
-	para "…Huh? It's over"
-	line "already?"
+	para "…Huh? Es ist"
+	line "schon vorüber?"
 
-	para "Sorry, sorry!"
+	para "Sorry, Kumpel!"
 
-	para "Cinnabar Gym was"
-	line "gone, so I didn't"
+	para "Die PKMN-Arena auf"
+	line "der Zinnoberinsel"
 
-	para "know where to find"
-	line "you."
+	para "existiert nicht"
+	line "mehr und ich"
+	cont "wusste nicht, wo"
+	cont "du steckst."
 
-	para "But, hey, you're"
-	line "plenty strong even"
+	para "Aber egal! Du"
+	line "bist auch ohne"
 
-	para "without my advice."
-	line "I knew you'd win!"
+	para "meinen Ratschlag"
+	line "zurechtgekommen."
+	cont "Ich wusste, du"
+	cont "würdest gewinnen."
 	done
 
 ScientistLowellSeenText:

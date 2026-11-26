@@ -36,26 +36,27 @@ PalletTownTeacherText:
 	done
 
 PalletTownFisherText:
-	text "Technology is"
-	line "incredible!"
+	text "Die Technik ist"
+	line "unglaublich!"
 
-	para "You can now make"
-	line "games just by"
-
-	para "writing code in-"
-	line "stead of editing"
-	cont "binary data."
+	para "Du kannst jetzt"
+	line "Spiele machen,"
+	cont "indem du Code"
+	cont "schreibst, statt"
+	cont "Binärdaten zu"
+	cont "bearbeiten."
 	done
 
 PalletTownYoungsterText:
-	text "Smell ya later!"
+	text "Man riecht sich!"
 
-	para "…People started"
-	line "saying that around"
-	cont "here, but it's"
+	para "…Das sagen die"
+	line "Leute hier jetzt,"
+	cont "aber wenn man"
 
-	para "kinda weird if you"
-	line "think about it."
+	para "darüber nachdenkt,"
+	line "ist es irgendwie"
+	cont "komisch."
 	done
 
 PalletTownSignText:

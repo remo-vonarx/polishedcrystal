@@ -559,6 +559,10 @@ _Avoid_: Arenaführer
 Sandra's test at the Dragon Shrine (Polished: Dragon-master challenge), in Kristall's word for Siegfried.
 _Avoid_: Drachen-Trainer-Herausforderung
 
+**Titelthema**:
+The heading of each #mon Journal text (Special Feature:), followed by the title and name: Titelthema: Arenaleiter Rocko!
+_Avoid_: Sonderbericht, Spezialthema
+
 **Weide**:
 Norbert's middle name in the #mon Journal (Willow, from his Japanese name Yanagi): "Norberts zweiter Vorname ist Weide."
 
@@ -576,3 +580,32 @@ The Lucky Number Show attendant in the Radio Tower (Felicity), the German form o
 **Schreinmaid**:
 The shrine maiden in Ecruteak's shrine, as her trainer class.
 _Avoid_: Schreinjungfrau, Schreinmädchen
+
+**Avenaro**, **Orisa**:
+Buck and Mira from Platinum (PokéWiki), with Platinum's German quotes where Polished's English matches them.
+
+**Kahlberg**:
+Stark Mountain, where Buck is from.
+_Avoid_: Kraterberg (that is Mt. Coronet)
+
+**Troy Trumm**, **Mr. Trumm**, **Devon Corporation**:
+Steven Stone, his father Joseph and Devon Corp in the #mon Journal (PokéWiki).
+
+**Sarah**, **Heinrich Eich**, **Samuel Eich**:
+Daisy, Samson and Samuel Oak in the #mon Journal (PokéWiki).
+
+**Man riecht sich!**:
+Blue's goodbye (Smell ya later!), his official German catchphrase.
+
+**Seilbahn**, **Bergfahrt**, **Talfahrt**:
+The cable car between Route 3 and Mt. Moon Square, and its trips up and down (own words; no German game has it).
+
+**Raumfähre**:
+The space shuttle in the Pewter Museum.
+
+**Metallsuchgerät**:
+The engineer's metal detector on the Uraga Channel, kept apart from the Itemfinder.
+_Avoid_: Detektor (the Itemfinder)
+
+**Rocket-Spielhalle**:
+The Rocket Game Corner in Celadon, in the Safari Zone warden's granddaughter's story.

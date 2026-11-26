@@ -387,33 +387,34 @@ CinnabarLabLockedDoorText:
 	done
 
 CinnabarLabContinueTestingText:
-	text "Continue the"
-	line "tests. Your"
+	text "Setzen Sie die"
+	line "Tests fort. Ihre"
 
-	para "creation has per-"
-	line "formed very well"
-	cont "so far, Dr.Fu--"
+	para "Schöpfung hat sich"
+	line "bisher sehr gut"
+	cont "bewährt, Dr. Fu--"
 	done
 
 CinnabarLabGiovanniWhoAreYouText:
-	text "Who are you?!"
-	line "You aren't part"
-	cont "of Team Rocket."
+	text "Wer bist du?! Du"
+	line "gehörst nicht zu"
+	cont "Team Rocket."
 
-	para "Are you a spy for"
-	line "the police?"
+	para "Spionierst du für"
+	line "die Polizei?"
 
-	para "…Fine. You want to"
-	line "know about Team"
-	cont "Rocket's business?"
-	cont "I'll show you."
+	para "…Na schön. Du"
+	line "willst wissen, was"
+	cont "Team Rocket hier"
+	cont "treibt?"
+	cont "Ich zeige es dir."
 
-	para "The world's most"
-	line "powerful #mon…"
+	para "Das stärkste"
+	line "#mon der Welt…"
 	done
 
 CinnabarLabGiovanniAttackText:
-	text "Giovanni: Attack!"
+	text "Giovanni: Angriff!"
 	done
 
 CinnabarLabGiovanniBeatenText:
@@ -442,8 +443,8 @@ CinnabarLabMewtwoText:
 	done
 
 CinnabarLabGiovanniStopText:
-	text "Giovanni: Stop"
-	line "this now!"
+	text "Giovanni: Schluss"
+	line "damit, sofort!"
 	done
 
 CinnabarLabCelebiText:

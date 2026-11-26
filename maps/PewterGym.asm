@@ -46,9 +46,9 @@ PewterGymBrockScript:
 	setevent EVENT_GOT_TM48_ROCK_SLIDE
 	jumpthisopenedtext
 
-	text "It can sometimes"
-	line "cause your foe to"
-	cont "flinch."
+	text "Damit schreckt"
+	line "der Gegner manch-"
+	cont "mal zurück."
 	done
 
 GenericTrainerCamperJerry:
@@ -146,16 +146,19 @@ BrockWinLossText:
 	done
 
 BrockBoulderBadgeText:
-	text "Brock: <PLAYER>,"
-	line "thanks. I enjoyed"
+	text "Rocko: Danke,"
+	line "<PLAYER>. Es war"
 
-	para "battling you, even"
-	line "though I am a bit"
-	cont "upset."
+	para "eine Freude, gegen"
+	line "dich zu kämpfen."
 
-	para "I'll give you the"
-	line "TM for Rock Slide,"
-	cont "too."
+	para "Auch wenn ich ein"
+	line "bisschen beleidigt"
+	cont "bin."
+
+	para "Ich gebe dir auch"
+	line "die TM für"
+	cont "Steinhagel."
 	done
 
 BrockFightDoneText:

@@ -193,9 +193,10 @@ EeveeDollScript:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Prof.Oak: Set it"
-	line "somewhere you can"
-	cont "appreciate it!"
+	text "Prof. Eich: Stell"
+	line "sie irgendwo hin,"
+	cont "wo du sie"
+	cont "bewundern kannst!"
 	done
 
 OakWelcomeKantoText:
@@ -216,29 +217,32 @@ OakWelcomeKantoText:
 	done
 
 OakLabGiveStarterText:
-	text "Oak: Oh, so Prof."
-	line "Ivy says hello?"
+	text "Eich: Oh, Prof."
+	line "Ivy lässt grüßen?"
 
-	para "Thanks for convey-"
-	line "ing her message,"
+	para "Danke, dass du mir"
+	line "ihre Nachricht"
+	cont "überbringst,"
 	cont "<PLAYER>."
 
-	para "She's a good friend"
-	line "of mine."
+	para "Sie ist eine gute"
+	line "Freundin von mir."
 
-	para "If she gave you a"
-	line "#mon, let me do"
-	cont "the same!"
+	para "Wenn sie dir ein"
+	line "#mon gab, tue"
+	cont "ich das auch!"
 
-	para "You don't see this"
-	line "#mon very often"
-	cont "in Kanto or Johto."
+	para "Dieses #mon"
+	line "sieht man in Kanto"
+	cont "und Johto nur"
+	cont "selten."
 	done
 
 OakLabPartyAndBoxFullText:
-	text "Hm, you don't have"
-	line "room for it, and"
-	line "your Box is full."
+	text "Hm, du hast keinen"
+	line "Platz dafür, und"
+	cont "deine Box ist"
+	cont "voll."
 	done
 
 OakLabDexCheckText:
@@ -249,130 +253,137 @@ OakLabDexCheckText:
 	done
 
 OakLabCatchMoreText:
-	text "I want to thank"
-	line "you for being of"
+	text "Ich möchte dir"
+	line "dafür danken, dass"
 
-	para "such help with"
-	line "filling out the"
-	cont "#dex."
+	para "du mir so sehr"
+	line "beim Vervollstän-"
+	cont "digen des #dex"
+	cont "geholfen hast."
 
-	para "Take this as a"
-	line "reward for your"
-	cont "hard work!"
+	para "Nimm das als"
+	line "Belohnung für"
+	cont "deine Mühe!"
 	done
 
 OakLabCatchCharmText:
-	text "Holding a Catch"
-	line "Charm will improve"
+	text "Mit dem Superfang-"
+	line "pin steigt deine"
 
-	para "your chances of a"
-	line "critical capture."
+	para "Chance auf einen"
+	line "kritischen Fang."
 
-	para "That's when your"
-	line "# Ball is"
+	para "Dann wird dein"
+	line "#ball genau"
 
-	para "thrown just right"
-	line "and is more likely"
-	cont "to succeed!"
+	para "richtig geworfen"
+	line "und fängt eher!"
 	done
 
 OakLabSeenAllText:
-	text "You've been meeting"
-	line "new #mon at a"
+	text "Du hast in kurzer"
+	line "Zeit viele neue"
+	cont "#mon gesehen,"
+	cont "oder?"
 
-	para "good clip, haven't"
-	line "you?"
-
-	para "Take this as a"
-	line "reward for your"
-	cont "hard work!"
+	para "Nimm das als"
+	line "Belohnung für"
+	cont "deine Mühe!"
 	done
 
 OakLabOvalCharmText:
-	text "Holding an Oval"
-	line "Charm will improve"
+	text "Mit dem Ovalpin"
+	line "steigt deine"
 
-	para "your chances of"
-	line "finding an Egg at"
-	cont "the Day-Care."
+	para "Chance, in der"
+	line "Pension ein Ei zu"
+	cont "finden."
 	done
 
 OakLabCaughtAllText:
-	text "I was completely"
-	line "justified in"
+	text "Es war völlig"
+	line "richtig, dir den"
 
-	para "giving you that"
-	line "#dex."
+	para "#dex zu"
+	line "geben."
 
-	para "It is a testament"
-	line "to your effort…"
+	para "Er zeugt von"
+	line "deinem Einsatz…"
 
-	para "And to the support"
-	line "of the many who"
-	cont "helped you…"
+	para "Und von der Hilfe"
+	line "der vielen, die"
+	cont "dich unterstützt"
+	cont "haben…"
 
-	para "And to the bonds"
-	line "you have built"
-	cont "with your #mon!"
+	para "Und von dem Band,"
+	line "das du mit deinen"
+	cont "#mon geknüpft"
+	cont "hast!"
 
-	para "Take this as a"
-	line "reward for your"
-	cont "hard work!"
+	para "Nimm das als"
+	line "Belohnung für"
+	cont "deine Mühe!"
 	done
 
 OakLabShinyCharmText:
-	text "Holding a Shiny"
-	line "Charm will improve"
+	text "Mit dem Schiller-"
+	line "pin steigt deine"
 
-	para "your chances of"
-	line "finding a shiny"
-	cont "#mon!"
+	para "Chance, ein schil-"
+	line "lerndes #mon zu"
+	cont "finden!"
 	done
 
 
 OakMightBeReadyText:
-	text "Oak: Incredible,"
+	text "Eich: Unglaublich,"
 	line "<PLAYER>!"
 
-	para "You won against"
-	line "the Elite Four"
-	cont "a second time!"
+	para "Du hast die Top"
+	line "Vier zum zweiten"
+	cont "Mal besiegt!"
 
-	para "You just might be"
-	line "ready to ascend"
-	cont "Mt.Silver."
+	para "Vielleicht bist du"
+	line "jetzt bereit, den"
+	cont "Silberberg zu"
+	cont "besteigen."
 	done
 
 OakChallengeText:
-	text "Oak: Mt.Silver is"
-	line "a tall mountain"
+	text "Eich: Der Silber-"
+	line "berg ist ein hoher"
 
-	para "that is home to"
-	line "many wild #mon."
+	para "Berg und Heimat"
+	line "vieler wilder"
+	cont "#mon."
 
-	para "It's too dangerous"
-	line "for your average"
+	para "Er ist zu"
+	line "gefährlich für"
 
-	para "trainer, so it's"
-	line "off limits."
+	para "einen Durch-"
+	line "schnittstrainer."
 
-	para "I'll need to see"
-	line "your skills for"
-	cont "myself."
+	para "Deshalb ist er"
+	line "gesperrt."
 
-	para "Are you ready for"
-	line "a battle?"
+	para "Ich muss mir dein"
+	line "Können selbst"
+	cont "ansehen."
+
+	para "Bist du bereit für"
+	line "einen Kampf?"
 	done
 
 OakRefusedText:
-	text "Oak: Come back"
-	line "when you're ready."
+	text "Eich: Komm zurück,"
+	line "sobald du bereit"
+	cont "bist."
 	done
 
 OakSeenText:
-	text "Oak: Put every-"
-	line "thing you have"
-	cont "into this battle!"
+	text "Eich: Gib in"
+	line "diesem Kampf"
+	cont "alles!"
 	done
 
 OakWinText:
@@ -382,37 +393,40 @@ OakWinText:
 	done
 
 OakOpenMtSilverText:
-	text "Oak: Spectacular,"
+	text "Eich: Fantastisch,"
 	line "<PLAYER>!"
 
-	para "I'll make arrange-"
-	line "ments so that you"
+	para "Ich werde es so"
+	line "einrichten, dass"
 
-	para "can go to Mt."
-	line "Silver."
+	para "du zum Silberberg"
+	line "gehen kannst."
 
-	para "It's unusual, but"
-	line "we can make an"
+	para "Es ist unüblich,"
+	line "aber für dich,"
 
-	para "exception in your"
-	line "case, <PLAYER>."
+	para "<PLAYER>, können"
+	line "wir eine Ausnahme"
+	cont "machen."
 
-	para "Go up to Indigo"
-	line "Plateau. You can"
+	para "Steige auf das"
+	line "Indigo Plateau."
 
-	para "reach Mt.Silver"
-	line "from there."
+	para "Von dort kannst"
+	line "du den Silberberg"
+	cont "erreichen."
 
 	para "…"
 
-	para "I let Red train on"
-	line "Mt.Silver after"
+	para "Ich habe Rot nach"
+	line "seiner ersten Nie-"
 
-	para "his first defeat"
-	line "as Champion."
+	para "derlage als Champ"
+	line "auf dem Silberberg"
+	cont "trainieren lassen."
 
-	para "But he hasn't"
-	line "come back…"
+	para "Aber er ist nicht"
+	line "zurückgekommen…"
 	done
 
 OakNoKantoBadgesText:
@@ -434,43 +448,47 @@ OakNoKantoBadgesText:
 	done
 
 OakNoEliteFourRematchText:
-	text "Oak: Wow! That's"
-	line "excellent!"
+	text "Eich: Wow! Das ist"
+	line "hervorragend!"
 
-	para "You collected the"
-	line "Badges of Gyms in"
-	cont "Kanto. Well done!"
+	para "Du hast die Orden"
+	line "der Arenaleiter in"
+	cont "Kanto erkämpft."
+	cont "Gut gemacht!"
 
-	para "Now you can cha-"
-	line "llenge the Elite"
+	para "Jetzt kannst du"
+	line "die Top Vier"
+	cont "herausfordern,"
+	cont "die dann ihre"
+	cont "besten #mon"
+	cont "einsetzen."
 
-	para "Four with their"
-	line "best #mon."
-
-	para "Keep trying hard,"
-	line "<PLAYER>!"
+	para "Streng dich weiter"
+	line "so an, <PLAYER>!"
 	done
 
 OakYesKantoBadgesText:
-	text "Oak: Ah, you're"
-	line "collecting Kanto"
-	cont "Gym Badges."
+	text "Eich: Ah, du"
+	line "sammelst Orden der"
+	cont "Arenaleiter von"
+	cont "Kanto."
 
-	para "I imagine that"
-	line "it's hard, but the"
+	para "Ich kann mir"
+	line "vorstellen, dass"
 
-	para "experience is sure"
-	line "to help you."
+	para "es schwer für dich"
+	line "ist, aber du"
+	cont "sammelst wertvolle"
+	cont "Erfahrungen."
 
-	para "After you earn all"
-	line "eight, you can"
-	cont "challenge the"
+	para "Wenn du alle acht"
+	line "hast, kannst du"
+	cont "die Top Vier in"
+	cont "Bestform heraus-"
+	cont "fordern."
 
-	para "Elite Four at"
-	line "their best."
-
-	para "Keep trying hard,"
-	line "<PLAYER>!"
+	para "Streng dich weiter"
+	line "so an, <PLAYER>!"
 	done
 
 OaksAssistant1Text:
@@ -547,29 +565,29 @@ OaksLabPCText:
 	done
 
 ProfOakEeveeDollTradeText:
-	text "Oak: Oh, are you"
-	line "admiring my"
-	cont "Eevee Doll?"
+	text "Eich: Oh, gefällt"
+	line "dir meine Evoli-"
+	cont "Puppe?"
 
-	para "I'll trade it"
-	line "to you for an"
-	cont "Everstone."
+	para "Ich tausche sie"
+	line "gegen einen Ewig-"
+	cont "stein."
 	done
 
 NoEverstoneText:
-	text "But you don't have"
-	line "one of those…"
+	text "Aber du hast ja"
+	line "keinen dabei…"
 	done
 
 WantToTradeText:
-	text "Do you want to"
-	line "trade?"
+	text "Möchtest du"
+	line "tauschen?"
 	done
 
 NoTradeText:
-	text "It will still be"
-	line "here if you change"
-	cont "your mind."
+	text "Sie bleibt hier,"
+	line "falls du es dir"
+	cont "anders überlegst."
 	done
 
 EeveeDollText:
@@ -585,6 +603,6 @@ EeveeDollSentText:
 
 
 OaksLabPokedexText:
-	text "It's Prof.Oak's"
-	line "#dex."
+	text "Das ist Prof."
+	line "Eichs #dex."
 	done

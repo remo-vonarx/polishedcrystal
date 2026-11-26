@@ -19,11 +19,12 @@ SafariZoneWestRestHouse1_MapScriptHeader:
 	object_event  4,  2, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, SafariZoneWestRestHouse1TamerText, -1
 
 SafariZoneWestRestHouse1TamerText:
-	text "Nobody's maintain-"
-	line "ing these rest"
-	cont "houses any more,"
+	text "Niemand kümmert"
+	line "sich mehr um diese"
+	cont "Rasthäuser,"
 
-	para "so I'm catching up"
-	line "on the old #mon"
-	cont "Journal issues."
+	para "also lese ich alte"
+	line "Ausgaben vom"
+	cont "#mon Journal"
+	cont "nach."
 	done

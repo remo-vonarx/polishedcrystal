@@ -51,30 +51,32 @@ ScientistBraydonBeatenText:
 	done
 
 PokemonMansionDiaryText:
-	text "Diary: July 5"
+	text "Tagebuch: 5. Juli"
 
-	para "A new #mon was"
-	line "discovered deep in"
-	cont "the jungle."
+	para "Wir haben tief im"
+	line "Dschungel ein"
+	cont "völlig neues"
+	cont "#mon gefunden."
 
-	para "Diary: July 10"
+	para "Tagebuch: 10. Juli"
 
-	para "We christened the"
-	line "newly discovered"
-	cont "#mon, Mew."
+	para "Wir nennen das neu"
+	line "entdeckte #mon"
+	cont "Mew."
 
-	para "Diary: Feb. 6"
+	para "Tagebuch: 6. Feb."
 
-	para "Mew gave birth."
-	line "We named the"
-	cont "newborn Mewtwo."
+	para "Mew hat ein Junges"
+	line "geboren! Wir haben"
+	cont "es Mewtu genannt."
 
-	para "Diary: Sept. 1"
+	para "Tagebuch: 1. Sept."
 
-	para "Mewtwo is far"
-	line "too powerful."
+	para "Mewtu ist viel zu"
+	line "stark."
 
-	para "We have failed to"
-	line "curb its vicious"
-	cont "tendencies…"
+	para "Wir konnten seine"
+	line "unkontrollierten"
+	cont "Wutausbrüche nicht"
+	cont "eindämmen…"
 	done

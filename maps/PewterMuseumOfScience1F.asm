@@ -53,23 +53,25 @@ Museum1FReceptionistScript:
 	ifequalfwd LEFT, .Sneak
 	jumpthistextfaceplayer
 
-	text "Welcome!"
+	text "Willkommen!"
 
-	para "Thanks to a gene-"
-	line "rous donation"
-	cont "by Silph Co.,"
+	para "Dank einer groß-"
+	line "zügigen Spende der"
+	cont "Silph Co."
 
-	para "admission is free"
-	line "of charge!"
+	para "ist der Eintritt"
+	line "kostenlos!"
 
-	para "Please go ahead."
+	para "Bitte geh hinein."
 	done
 
 .Sneak:
 	jumpthistextfaceplayer
 
-	text "You can't sneak"
-	line "in the back way!"
+	text "Du kannst dich"
+	line "nicht durch die"
+	cont "Hintertür rein-"
+	cont "schleichen!"
 	done
 
 KabutopsFossilSignpostScript:
@@ -79,11 +81,12 @@ KabutopsFossilSignpostScript:
 	closepokepic
 	jumpthistext
 
-	text "Kabutops Fossil"
-	line "(Dome)"
+	text "Kabutops-Fossil"
+	line "(Dom)"
 
-	para "A primitive and"
-	line "rare #mon."
+	para "Ein urzeitliches"
+	line "und seltenes"
+	cont "#mon."
 	done
 
 OmastarFossilSignpostScript:
@@ -93,11 +96,12 @@ OmastarFossilSignpostScript:
 	closepokepic
 	jumpthistext
 
-	text "Omastar Fossil"
+	text "Amoroso-Fossil"
 	line "(Helix)"
 
-	para "A primitive and"
-	line "rare #mon."
+	para "Ein urzeitliches"
+	line "und seltenes"
+	cont "#mon."
 	done
 
 AerodactylFossilSignpostScript:
@@ -107,55 +111,58 @@ AerodactylFossilSignpostScript:
 	closepokepic
 	jumpthistext
 
-	text "Aerodactyl Fossil"
+	text "Aerodactyl-Fossil"
 
-	para "A primitive and"
-	line "rare #mon."
+	para "Ein urzeitliches"
+	line "und seltenes"
+	cont "#mon."
 	done
 
 Museum1FScientistText:
-	text "We are proud of"
-	line "three fossils of"
+	text "Wir sind stolz auf"
+	line "drei Fossilien"
 
-	para "rare, prehistoric"
-	line "#mon."
+	para "seltener, prähis-"
+	line "torischer #mon."
 
-	para "I helped assemble"
-	line "them!"
+	para "Ich habe beim Zu-"
+	line "sammensetzen"
+	cont "geholfen!"
 	done
 
 Museum1FFossilScientistText:
-	text "Did you know that"
-	line "you can extract"
+	text "Wusstest du, dass"
+	line "man #mon aus"
 
-	para "#mon from"
-	line "fossils?"
+	para "Fossilien wieder-"
+	line "beleben kann?"
 
-	para "If you ever need"
-	line "to, let me take"
-	cont "care of it!"
+	para "Falls du das mal"
+	line "brauchst, überlass"
+	cont "es ruhig mir!"
 	done
 
 Museum1FGrampsText:
-	text "That is one"
-	line "magnificent"
-	cont "fossil!"
+	text "Das ist ein"
+	line "prächtiges"
+	cont "Fossil!"
 	done
 
 Museum1FYoungsterText:
-	text "There are two"
-	line "places that I"
-	cont "love!"
+	text "Es gibt zwei Orte,"
+	line "die ich liebe!"
 
-	para "One is the Ruins"
-	line "of Alph in Johto."
+	para "Der eine sind die"
+	line "Alph-Ruinen in"
+	cont "Johto."
 
-	para "The other is the"
-	line "Pewter Museum!"
+	para "Der andere ist das"
+	line "Museum von"
+	cont "Marmoria!"
 
-	para "I get a sense of"
-	line "history from both"
-	cont "of them."
+	para "Bei beiden spüre"
+	line "ich den Hauch der"
+	cont "Geschichte."
 	done
 
 Museum1FBookshelfSignpostText:

@@ -23,26 +23,27 @@ ViridianSchoolHouse_MapScriptHeader:
 	object_event  3,  6, SPRITE_GAMEBOY_KID, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianSchoolHouseGameBoyKidScript, -1
 
 ViridianSchoolHouseTeacherText:
-	text "I know this is a"
-	line "lot of material,"
+	text "Ich weiß, das ist"
+	line "viel Stoff, aber"
 
-	para "but please pay"
-	line "attention!"
+	para "bitte passt auf!"
 	done
 
 ViridianSchoolHouseNotesText:
-	text "The page is cover-"
-	line "ed in doodles."
-	para "A maze, flowers,"
-	line "the letter S…"
+	text "Die Seite ist"
+	line "vollgekritzelt."
+	para "Ein Labyrinth,"
+	line "Blumen, der Buch-"
+	cont "stabe S…"
 	done
 
 ViridianSchoolHouseLass1Text:
-	text "Wait! I thought"
-	line "that, like, all"
+	text "Warte! Ich dachte,"
+	line "irgendwie alle"
 
-	para "Fire-type moves"
-	line "were special?"
+	para "Feuer-Attacken"
+	line "wären Spezial-"
+	cont "attacken?"
 	done
 
 ViridianSchoolHouseYoungsterScript:
@@ -57,20 +58,20 @@ ViridianSchoolHouseYoungsterScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "“What doesn't KO"
-	line "a #mon makes"
-	cont "it stronger.”"
+	text "“Was ein #mon"
+	line "nicht umhaut,"
+	cont "macht es stärker.”"
 
-	para "That's the effect"
-	line "of a Weak Policy."
+	para "So wirkt der"
+	line "Schwächenschutz."
 	done
 
 .Text1:
-	text "The teacher gave"
-	line "me extra copies of"
+	text "Die Lehrerin hat"
+	line "mir mehr Exemplare"
 
-	para "these. Here,"
-	line "take one."
+	para "davon gegeben."
+	line "Hier, nimm eins."
 	done
 
 ViridianSchoolHouseGameBoyKidScript:
@@ -79,19 +80,21 @@ ViridianSchoolHouseGameBoyKidScript:
 	end
 
 ViridianSchoolHouseGameBoyKidText:
-	text "I'm taking notes"
-	line "on my phone!"
+	text "Ich mache Notizen"
+	line "auf meinem Handy!"
 
-	para "I'm not goofing"
-	line "off! Really!"
+	para "Ich albere nicht"
+	line "herum! Ehrlich!"
 	done
 
 ViridianSchoolHouseLass2Text:
-	text "I'm in the pro-"
-	line "tagonist's seat!"
+	text "Ich sitze auf dem"
+	line "Platz der Haupt-"
+	cont "figur!"
 
-	para "So why is my life"
-	line "so boring?"
+	para "Warum ist mein"
+	line "Leben dann so"
+	cont "langweilig?"
 	done
 
 ViridianSchoolHouseBlackboardText:
@@ -116,16 +119,18 @@ PokemonJournalKiyoScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Karate King Kiyo!"
+	para "Titelthema:"
+	line "Karate-Meister"
+	cont "Leif!"
 
-	para "Kiyo is said to"
-	line "have studied under"
+	para "Leif soll bei"
+	line "Hartwig aus"
 
-	para "Chuck of Cianwood"
-	line "City. He is"
+	para "Anemonia City in"
+	line "die Lehre gegangen"
+	cont "sein."
 
-	para "rumored to still"
-	line "be training some-"
-	cont "where in Johto."
+	para "Gerüchten zufolge"
+	line "trainiert er noch"
+	cont "irgendwo in Johto."
 	done

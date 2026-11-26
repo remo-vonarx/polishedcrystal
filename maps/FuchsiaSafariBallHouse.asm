@@ -26,8 +26,8 @@ FuchsiaSafariBallHouseOfficerScript:
 	ifequalfwd $2, .Buy10
 	jumpthisopenedtext ; cancel
 
-	text "What will I do"
-	line "with them all?"
+	text "Was mache ich nur"
+	line "mit all denen?"
 	done
 
 .Buy1:
@@ -60,30 +60,31 @@ FuchsiaSafariBallHouseOfficerScript:
 	done
 
 .IntroText:
-	text "I used to manage"
-	line "the Safari Game."
+	text "Früher habe ich"
+	line "das Safari-Spiel"
+	cont "geleitet."
 
-	para "Now that it's"
-	line "closed I need to"
+	para "Jetzt, wo es zu"
+	line "ist, muss ich mein"
 
-	para "make money an-"
-	line "other way."
+	para "Geld anders ver-"
+	line "dienen."
 
-	para "Want to buy some"
-	line "leftover Safari"
-	cont "Balls?"
+	para "Willst du ein paar"
+	line "übrige Safaribälle"
+	cont "kaufen?"
 
-	para "They're a collec-"
-	line "tor's item!"
+	para "Die sind ein Samm-"
+	line "lerstück!"
 	done
 
 .GoodbyeText:
-	text "Thanks, pal!"
+	text "Danke, Kumpel!"
 	done
 
 .BagFullText:
-	text "You can't carry"
-	line "them!"
+	text "Du kannst sie"
+	line "nicht tragen!"
 	done
 
 .MenuDataHeader:

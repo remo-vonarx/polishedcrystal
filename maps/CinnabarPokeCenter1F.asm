@@ -24,15 +24,15 @@ PokemonJournalBlaineScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Blaine!"
+	para "Titelthema:"
+	line "Arenaleiter Pyro!"
 
-	para "Blaine is said to"
-	line "only remove his"
+	para "Pyro soll seine"
+	line "Sonnenbrille nur"
 
-	para "shades when he is"
-	line "thinking up new"
-	cont "riddles."
+	para "abnehmen, wenn er"
+	line "sich neue Rätsel"
+	cont "ausdenkt."
 	done
 
 CinnabarPokeCenter1FCooltrainerfText:

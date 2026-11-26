@@ -17,9 +17,9 @@ ViridianForestPewterGate_MapScriptHeader:
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, ViridianForestPewterGateOfficerText, -1
 
 ViridianForestPewterGateOfficerText:
-	text "Are you headed"
-	line "to Pewter City?"
+	text "Willst du nach"
+	line "Marmoria City?"
 
-	para "Be sure to check"
-	line "out the Museum!"
+	para "Sieh dir unbedingt"
+	line "das Museum an!"
 	done

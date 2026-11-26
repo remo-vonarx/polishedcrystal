@@ -26,19 +26,19 @@ PokemonJournalBrockScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Brock!"
+	para "Titelthema:"
+	line "Arenaleiter Rocko!"
 
-	para "Brock rarely"
-	line "laughs, but is"
+	para "Rocko lacht nur"
+	line "selten, aber wenn"
 
-	para "said to be unable"
-	line "to stop if he"
-	cont "starts."
+	para "er einmal anfängt,"
+	line "soll er nicht mehr"
+	cont "aufhören können."
 	done
 
 PewterJigglypuffText:
-	text "Jigglypuff:"
+	text "Pummeluff:"
 	line "♪ Puu pupuu. ♪"
 	done
 

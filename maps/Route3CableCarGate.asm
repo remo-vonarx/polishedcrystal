@@ -79,16 +79,17 @@ Route3CableCarGateReceptionistScript:
 	end
 
 .ReadyToGoUpText:
-	text "The cable car is"
-	line "ready to go up."
+	text "Die Seilbahn ist"
+	line "bereit für die"
+	cont "Bergfahrt."
 
-	para "Would you like"
-	line "to be on it?"
+	para "Möchtest du mit-"
+	line "fahren?"
 	done
 
 .AnotherTimeText:
-	text "Please ride with"
-	line "us another time."
+	text "Bitte fahr ein"
+	line "andermal mit uns."
 	done
 
 .StepThisWayText:
@@ -123,60 +124,65 @@ Route3CableCarGateNurseScript:
 	special RestartMapMusic
 	jumpthistext
 
-	text "Your #mon"
-	line "are fully healed."
+	text "Deine #mon sind"
+	line "wieder topfit!"
 	done
 
 .IntroText:
-	text "Hello!"
-	line "Welcome to our"
-	cont "#mon Ce--"
+	text "Hallo! Willkommen"
+	line "im #mon-Cen--"
 
-	para "Oops! Sorry,"
-	line "force of habit."
+	para "Hoppla! Tut mir"
+	line "leid, die Macht"
+	cont "der Gewohnheit."
 
-	para "This used to be"
-	line "the #mon Center"
-	cont "where I worked."
+	para "Hier war früher"
+	line "das #mon-"
+	cont "Center, in dem"
+	cont "ich gearbeitet"
+	cont "habe."
 
-	para "It's a cable car"
-	line "station now,"
-	cont "but even so,"
+	para "Jetzt ist es eine"
+	line "Seilbahnstation,"
+	cont "aber trotzdem…"
 	prompt
 
 .HealText:
-	text "I can heal your"
-	line "#mon to perfect"
-	cont "health."
+	text "Ich kann deine"
+	line "#mon wieder"
+	cont "vollständig"
+	cont "heilen."
 	done
 
 Route3CableCarGatePokefanMText:
-	text "A few years ago"
-	line "I sold a weird-"
+	text "Vor ein paar Jah-"
+	line "ren habe ich die-"
 
-	para "colored Magikarp"
-	line "to this boy…"
+	para "sem Jungen ein"
+	line "seltsam gefärbtes"
+	cont "Karpador verkauft…"
 
-	para "I thought there"
-	line "was something"
-	cont "wrong with it."
+	para "Ich dachte, mit"
+	line "ihm stimmt etwas"
+	cont "nicht."
 
-	para "Turns out it was"
-	line "a rare shiny"
-	cont "#mon!"
+	para "Dabei war es ein"
+	line "seltenes schil-"
+	cont "lerndes #mon!"
 
-	para "I could have made"
-	line "a lot more money!"
+	para "Ich hätte viel"
+	line "mehr dafür ver-"
+	cont "langen können!"
 	done
 
 Route3CableCarGateYoungsterText:
-	text "Many trainers are"
-	line "on the mountain."
+	text "Auf dem Berg sind"
+	line "viele Trainer."
 
-	para "Many wild #mon"
-	line "too."
+	para "Auch viele wilde"
+	line "#mon."
 
-	para "You never know who"
-	line "or what you'll en-"
-	cont "counter."
+	para "Man weiß nie, wem"
+	line "oder was man be-"
+	cont "gegnet."
 	done

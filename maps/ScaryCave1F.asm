@@ -69,68 +69,69 @@ ScaryCave1FMiraScript:
 	end
 
 .ChallengeText:
-	text "I'm Mira…"
-	line "I was catching"
+	text "Ich bin Orisa…"
+	line "Ich habe #mon"
 
-	para "#mon, but this"
-	line "cave is too scary…"
+	para "gefangen, aber"
+	line "diese Höhle ist zu"
+	cont "unheimlich…"
 
-	para "I want to get"
-	line "tougher so I won't"
-	cont "be such a scaredy-"
-	cont "cat."
+	para "Ich will stärker"
+	line "werden, damit ich"
+	cont "nicht mehr so ein"
+	cont "Hasenfuß bin."
 
-	para "Please! Please"
-	line "battle with me!"
+	para "Bitte! Bitte"
+	line "kämpf mit mir!"
 	done
 
 .YesText:
-	text "Yes! Mira will"
-	line "show you her #-"
-	cont "mon!"
+	text "Ja! Orisa zeigt"
+	line "dir ihre #mon!"
 	done
 
 .NoText:
-	text "Mira is sad…"
+	text "Orisa ist traurig…"
 	done
 
 .BeatenText:
-	text "Mira wants to get"
-	line "a lot, lot strong-"
-	cont "er, like <PLAYER>!"
+	text "Orisa möchte"
+	line "viel, viel stärker"
+	cont "werden, so wie"
+	cont "<PLAYER>!"
 	done
 
 .ItemText:
-	text "<PLAYER>, did you"
-	line "get to be so good"
+	text "<PLAYER>, bist du"
+	line "so stark geworden,"
 
-	para "because you're al-"
-	line "ways with your"
-	cont "#mon?"
+	para "weil du immer mit"
+	line "deinen #mon"
+	cont "zusammen bist?"
 
-	para "Yes! That has to"
-	line "be it!"
+	para "Ja! Das muss es"
+	line "sein!"
 
-	para "Mira is beginning"
-	line "to understand!"
+	para "Orisa beginnt zu"
+	line "verstehen!"
 
-	para "Thank you,"
+	para "Danke,"
 	line "<PLAYER>!"
 
-	para "Mira wants you to"
-	line "have this!"
+	para "Orisa möchte dir"
+	line "das hier geben!"
 	done
 
 .GoodbyeText:
-	text "Mira will try like"
-	line "you, <PLAYER>!"
+	text "Orisa strengt sich"
+	line "an wie du,"
+	cont "<PLAYER>!"
 
-	para "I'll get stronger"
-	line "at the Battle"
-	cont "Tower!"
+	para "Ich werde im"
+	line "Duellturm stärker!"
 
 	para "<PLAYER>,"
-	line "bye-bye!"
+	line "mach's gut!"
 	done
 
 ScaryCave1FPharmacistScript:
@@ -154,48 +155,50 @@ ScaryCave1FPharmacistScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "It's your funeral."
+	text "Dein Pech."
 	done
 
 .IntroText:
-	text "Ghosts are masters"
-	line "of the cheap shot."
+	text "Geister sind"
+	line "Meister fieser"
+	cont "Tricks."
 
-	para "The way to deal"
-	line "with them is to"
-	cont "hit them first!"
+	para "Gegen sie hilft"
+	line "nur eins: Triff"
+	cont "sie zuerst!"
 
-	para "Give 'em a good"
-	line "surprise Sucker"
-	cont "Punch!"
+	para "Verpass ihnen"
+	line "einen überraschen-"
+	cont "den Tiefschlag!"
 	done
 
 .QuestionText:
-	text "I'll teach you to"
-	line "Sucker Punch, but"
+	text "Ich bringe dir"
+	line "Tiefschlag bei,"
 
-	para "I want a Silver"
-	line "Leaf."
+	para "aber ich will ein"
+	line "Silberblatt."
 	done
 
 .NoSilverLeaf
 	waitbutton
 	jumpthisopenedtext
 
-	text "No Silver Leaf?"
-	line "Forget it then."
+	text "Kein Silberblatt?"
+	line "Dann vergiss es."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now you can use"
-	line "Sucker Punch!"
+	text "Jetzt kannst du"
+	line "Tiefschlag nutzen!"
 
-	para "If a foe is about"
-	line "to hit you, you"
-	cont "hit them first!"
+	para "Will dich ein"
+	line "Gegner treffen,"
+	cont "triffst du ihn"
+	cont "zuerst!"
 	done
 
 GenericTrainerRuin_maniacSmilte:

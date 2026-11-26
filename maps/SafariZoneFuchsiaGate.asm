@@ -17,18 +17,19 @@ SafariZoneFuchsiaGate_MapScriptHeader:
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, SafariZoneFuchsiaGateOfficerText, -1
 
 SafariZoneFuchsiaGateOfficerText:
-	text "Hi there!"
+	text "Hallo!"
 
-	para "The Warden is"
-	line "gone, so we're not"
+	para "Der Wärter ist"
+	line "fort, deshalb gibt"
 
-	para "running the Safari"
-	line "Game right now."
+	para "es das Safari-"
+	line "Spiel zurzeit"
+	cont "nicht."
 
-	para "You'll have to"
-	line "bring your own"
+	para "Wenn du #mon"
+	line "fangen willst,"
 
-	para "Balls if you want"
-	line "to catch any"
-	cont "#mon."
+	para "musst du deine"
+	line "eigenen Bälle"
+	cont "mitbringen."
 	done

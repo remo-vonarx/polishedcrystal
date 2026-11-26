@@ -78,16 +78,17 @@ MountMoonSquareCableCarGateReceptionistScript:
 	end
 
 .ReadyToGoDownText:
-	text "The cable car is"
-	line "ready to go down."
+	text "Die Seilbahn ist"
+	line "bereit für die"
+	cont "Talfahrt."
 
-	para "Would you like"
-	line "to be on it?"
+	para "Möchtest du mit-"
+	line "fahren?"
 	done
 
 .AnotherTimeText:
-	text "Please ride with"
-	line "us another time."
+	text "Bitte fahr ein"
+	line "andermal mit uns."
 	done
 
 .StepThisWayText:
@@ -114,43 +115,45 @@ MountMoonSquareCableCarGateHikerScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "If your #mon's"
-	line "stats get dropped,"
+	text "Wenn die Werte"
+	line "deines #mon"
+	cont "gesenkt werden,"
 
-	para "that Eject Pack"
-	line "will zip them back"
-	cont "out of the battle."
+	para "holt die Flucht-"
+	line "tasche es blitz-"
+	cont "schnell aus dem"
+	cont "Kampf zurück."
 	done
 
 .Text1:
-	text "The first time I"
-	line "climbed Mt.Moon,"
+	text "Als ich das erste"
+	line "Mal den Mondberg"
+	cont "bestieg,"
 
-	para "there was nothing"
-	line "at the top but"
-	cont "pure mountain air."
+	para "gab es oben nichts"
+	line "außer reiner"
+	cont "Bergluft."
 
-	para "Now the cable car"
-	line "zips me back down."
+	para "Jetzt bringt mich"
+	line "die Seilbahn im Nu"
+	cont "wieder runter."
 
-	para "I won't be needing"
-	line "this Eject Pack"
-	cont "after all."
+	para "Diese Fluchttasche"
+	line "brauche ich also"
+	cont "doch nicht mehr."
 	done
 
 MountMoonSquareCableCarGateLadyText:
-	text "Thanks to the"
-	line "cable car, people"
+	text "Dank der Seilbahn"
+	line "können Leute wie"
 
-	para "like me can appre-"
-	line "ciate this lovely"
+	para "ich diesen schönen"
+	line "Platz genießen,"
 
-	para "square who could"
-	line "never have hiked"
+	para "die es nie allein"
+	line "auf den Mondberg"
+	cont "geschafft hätten."
 
-	para "up Mt.Moon on our"
-	line "own."
-
-	para "Isn't technology"
-	line "useful?"
+	para "Ist Technik nicht"
+	line "nützlich?"
 	done

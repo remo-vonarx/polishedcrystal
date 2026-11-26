@@ -52,46 +52,50 @@ ViridianGymBlueScript:
 	setevent EVENT_GOT_TM71_STONE_EDGE
 	jumpthisopenedtext
 
-	text "It contains Stone"
-	line "Edge. It's not only"
+	text "Sie enthält Stein-"
+	line "kante. Die ist"
 
-	para "for Rock-type"
-	line "#mon, got it?"
+	para "nicht nur für"
+	line "Gestein-#mon,"
+	cont "kapiert?"
 
 	para "…"
 
-	para "All right, I was"
-	line "wrong. You're the"
+	para "Na gut, ich habe"
+	line "mich geirrt. Du"
 
-	para "real deal. You are"
-	line "a good trainer."
+	para "bist echt gut. Du"
+	line "bist ein guter"
+	cont "Trainer."
 
-	para "With eight Badges"
-	line "from Kanto, you"
+	para "Mit acht Orden aus"
+	line "Kanto kannst du"
 
-	para "can challenge the"
-	line "Elite Four again."
+	para "die Top Vier"
+	line "erneut heraus-"
+	cont "fordern."
 
-	para "They won't go easy"
-	line "on a trainer who"
-	cont "beat two regions."
+	para "Sie werden einen"
+	line "Trainer, der zwei"
+	cont "Regionen besiegt"
+	cont "hat, nicht"
+	cont "schonen."
 
-	para "You can practice"
-	line "with me at the"
+	para "Montags kannst du"
+	line "mit mir im Karate"
 
-	para "Fighting Dojo in"
-	line "Saffron City on"
-	cont "Mondays."
+	para "Dojo in Saffronia"
+	line "City trainieren."
 
-	para "All of the Gym"
-	line "Leaders show up"
-	cont "there to train."
+	para "Alle Arenaleiter"
+	line "kommen dorthin,"
+	cont "um zu trainieren."
 
-	para "I'm going to beat"
-	line "you someday."
+	para "Eines Tages werde"
+	line "ich dich besiegen."
 
-	para "Don't you forget"
-	line "it!"
+	para "Vergiss das"
+	line "nicht!"
 	done
 
 ViridianGymGuyScript:

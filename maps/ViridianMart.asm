@@ -17,16 +17,16 @@ ViridianMart_MapScriptHeader:
 	object_event  1,  6, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, ViridianMartCooltrainerMText, -1
 
 ViridianMartLassText:
-	text "The Gym Leader"
-	line "here is totally"
+	text "Der Arenaleiter"
+	line "hier ist total"
 	cont "cool."
 
-	para "He's the only one"
-	line "without a type"
-	cont "specialty."
+	para "Als Einziger hat"
+	line "er sich auf keinen"
+	cont "Typ spezialisiert."
 
-	para "He likes to keep"
-	line "people guessing."
+	para "Er lässt die Leute"
+	line "gern im Unklaren."
 	done
 
 ViridianMartCooltrainerMText:

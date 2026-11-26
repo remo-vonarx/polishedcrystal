@@ -68,9 +68,10 @@ PewterCityYoungsterScript:
 	iffalse_endtext
 	jumpthisopenedtext
 
-	text "You beat the Gym?"
-	line "Then you're tough"
-	cont "as rock too!"
+	text "Du hast die Arena"
+	line "geschafft? Dann"
+	cont "bist du ja auch"
+	cont "felsenhart!"
 	done
 
 PewterCityPokefanMScript:
@@ -94,67 +95,68 @@ PewterCityPokefanMScript:
 	endtext
 
 .Text1:
-	text "The Pewter City"
-	line "specialty--"
-	cont "PewterCrunch!"
+	text "Die Spezialität"
+	line "von Marmoria City:"
+	cont "Marmoria-Kräcker!"
 
-	para "I'll sell you a"
-	line "package for ¥300!"
+	para "Ich verkaufe dir"
+	line "eine Packung für"
+	cont "¥300!"
 	done
 
 .Text2:
-	text "Thanks!"
-	line "They're very hard,"
-	cont "so be careful!"
+	text "Danke! Sie sind"
+	line "sehr hart, also"
+	cont "pass auf!"
 	done
 
 .Text3:
-	text "Are they too"
-	line "crunchy for you?"
+	text "Sind sie dir zu"
+	line "knusprig?"
 	done
 
 .Text4:
-	text "You don't have"
-	line "room for them!"
+	text "Du hast keinen"
+	line "Platz für sie!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "cash for them!"
+	text "Du hast nicht"
+	line "genug Geld dafür!"
 	done
 
 PewterCityCooltrainerFText:
-	text "#mon can only"
-	line "be two types at"
-	cont "once, but if it"
-	cont "were possible for"
+	text "#mon können nur"
+	line "zwei Typen auf"
+	cont "einmal haben, aber"
+	cont "wenn ein #mon"
 
-	para "a #mon to be"
-	line "every type, it"
-	cont "would only have"
-	cont "one weakness."
+	para "alle Typen haben"
+	line "könnte, hätte es"
+	cont "nur eine einzige"
+	cont "Schwäche."
 
-	para "What weakness,"
-	line "you ask?"
+	para "Welche Schwäche,"
+	line "fragst du?"
 
-	para "Rock-type attacks,"
-	line "of course!"
+	para "Gestein-Attacken"
+	line "natürlich!"
 	done
 
 PewterCityCooltrainermText:
-	text "This gal thinks"
-	line "Rock-type #mon"
-	cont "are all that,"
+	text "Sie hält Gestein-"
+	line "#mon für das"
+	cont "Größte,"
 
-	para "but it's tied for"
-	line "the most weakness-"
-	cont "es of any type."
+	para "dabei hat kein"
+	line "anderer Typ mehr"
+	cont "Schwächen."
 
-	para "I don't have the"
-	line "heart to tell her,"
-	cont "though."
+	para "Ich bringe es aber"
+	line "nicht übers Herz,"
+	cont "es ihr zu sagen."
 	done
 
 PewterCityBugCatcherText:
@@ -204,24 +206,25 @@ PewterCityGrampsText_GotSilverWing:
 	done
 
 PewterCityYoungsterText1:
-	text "The Pewter Gym is"
-	line "as rough and tough"
-	cont "as rock itself."
+	text "Die Arena von Mar-"
+	line "moria City ist so"
+	cont "rau und hart wie"
+	cont "Fels."
 
-	para "Be careful in"
-	line "there."
+	para "Sei vorsichtig da"
+	line "drin."
 	done
 
 PewterCityLadyText:
-	text "Pewter City stays"
-	line "cool since it"
+	text "Marmoria City"
+	line "bleibt kühl, weil"
 
-	para "lies at the base"
-	line "of Mt.Moon."
+	para "es am Fuße des"
+	line "Mondbergs liegt."
 	done
 
 PewterCityMeowthText:
-	text "Meowth: Miao!"
+	text "Mauzi: Miau!"
 	done
 
 PewterCitySignText:

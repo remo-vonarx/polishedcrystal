@@ -17,9 +17,9 @@ ViridianForestViridianGate_MapScriptHeader:
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, ViridianForestViridianGateOfficerText, -1
 
 ViridianForestViridianGateOfficerText:
-	text "Be careful,"
-	line "Viridian Forest"
+	text "Sei vorsichtig,"
+	line "der Vertania-Wald"
 
-	para "is a natural"
-	line "maze!"
+	para "ist ein natür-"
+	line "liches Labyrinth!"
 	done

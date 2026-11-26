@@ -22,21 +22,22 @@ PokemonJournalProfOakScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "#mon Prof.Oak!"
+	para "Titelthema:"
+	line "#mon-Professor"
+	cont "Eich!"
 
-	para "Samuel Oak's grand-"
-	line "children, Blue and"
+	para "Samuel Eichs"
+	line "Enkelkinder Blau"
 
-	para "Daisy, live near"
-	line "his lab in Pallet"
-	cont "Town."
+	para "und Sarah wohnen"
+	line "nahe seinem Labor"
+	cont "in Alabastia."
 
-	para "His cousin Samson"
-	line "is rumored to live"
+	para "Sein Cousin"
+	line "Heinrich soll in"
 
-	para "in the far-off"
-	line "Alola region."
+	para "der fernen Alola-"
+	line "Region leben."
 	done
 
 RedsHouse2FPCText:

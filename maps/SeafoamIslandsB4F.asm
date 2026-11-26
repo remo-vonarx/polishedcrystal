@@ -127,52 +127,58 @@ ArticunoText:
 	done
 
 SeafoamIslandsB4FLawrenceSpeechText:
-	text "Lawrence: Hello"
-	line "again, <PLAYER>."
+	text "Lawrence: Wir"
+	line "sehen uns wieder,"
+	cont "<PLAYER>."
 
-	para "So you are collec-"
-	line "ting legends too."
-	cont "Did I inspire you?"
+	para "Du sammelst also"
+	line "auch Legenden."
+	cont "Habe ich dich"
+	cont "inspiriert?"
 
-	para "…What?! You caught"
-	line "all three birds?"
-	cont "Impossible."
+	para "…Was?! Du hast"
+	line "alle drei Vögel"
+	cont "gefangen?"
+	cont "Unmöglich."
 
-	para "Even I, with my"
-	line "knowledge and"
+	para "Nicht einmal ich"
+	line "habe mit meinem"
 
-	para "resources, have"
-	line "not found Moltres…"
+	para "Wissen und meinen"
+	line "Mitteln Lavados"
+	cont "gefunden…"
 
-	para "Why have you"
-	line "succeeded where I"
-	cont "failed?"
+	para "Warum hast du"
+	line "Erfolg, wo ich"
+	cont "versagt habe?"
 
-	para "Can you appreciate"
-	line "the majesty of the"
-	cont "winged mirages?"
+	para "Kannst du die"
+	line "Pracht der"
+	cont "geflügelten"
+	cont "Trugbilder"
+	cont "würdigen?"
 
-	para "Have you even"
-	line "heard of the"
+	para "Hast du überhaupt"
+	line "schon mal vom"
+	cont "Wächter des Meeres"
+	cont "gehört?"
 
-	para "guardian of the"
-	line "sea before?"
+	para "Das ist"
+	line "inakzeptabel."
 
-	para "This is unaccept-"
-	line "able."
+	para "Triff mich bei den"
+	line "Schreinruinen auf"
+	cont "Shamouti."
 
-	para "Meet me at the"
-	line "ruined shrine on"
-	cont "Shamouti Island."
-
-	para "I'll show you that"
-	line "I deserve to own"
-	cont "those #mon."
+	para "Ich werde dir"
+	line "beweisen, dass mir"
+	cont "diese #mon"
+	cont "zustehen."
 	done
 
 SeafoamIslandsB4FLawrenceEscapeRopeText:
-	text "Lawrence used an"
-	line "Escape Rope!"
+	text "Lawrence setzt"
+	line "Fluchtseil ein."
 	done
 
 SeafoamIslandsB4FMovementData_LawrenceSurfApproach1:

@@ -18,18 +18,19 @@ Route1ViridianGate_MapScriptHeader:
 	object_event  6,  4, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route1ViridianGateRockerText, -1
 
 Route1ViridianGateOfficerText:
-	text "To the south is"
-	line "Pallet Town."
+	text "Im Süden liegt"
+	line "Alabastia."
 
-	para "That's where"
-	line "Prof.Oak lives."
+	para "Dort wohnt"
+	line "Prof. Eich."
 	done
 
 Route1ViridianGateRockerText:
-	text "If you really"
-	line "think about it,"
+	text "Wenn man es sich"
+	line "genau überlegt,"
 
-	para "aren't we ALL on"
-	line "the road to Vir-"
-	cont "idian City?"
+	para "sind wir nicht"
+	line "ALLE auf dem Weg"
+	cont "nach Vertania"
+	cont "City?"
 	done

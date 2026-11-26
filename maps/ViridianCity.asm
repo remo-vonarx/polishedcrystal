@@ -97,17 +97,17 @@ ViridianCityTutorDreamEaterScript:
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have any"
-	line "Silver Leaves…"
+	text "Du hast keine"
+	line "Silberblätter…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Dream Eater…"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Traumfresser…"
 
 	para "…Zzzzz…"
 	done
@@ -160,40 +160,44 @@ ViridianCityGrampsNearGymBlueReturnedText:
 	done
 
 ViridianCityDreamEaterFisherText:
-	text "Yawn!"
+	text "Gähn!"
 
-	para "I must have dozed"
-	line "off in the sun."
+	para "Ich bin wohl in"
+	line "der Sonne"
+	cont "eingeschlafen."
 
-	para "…I had this dream"
-	line "about a Drowzee"
+	para "…Ich hatte diesen"
+	line "Traum von einem"
 
-	para "eating my dream."
-	line "And…"
+	para "Traumato, das"
+	line "meinen Traum"
 
-	para "I learned how to"
-	line "eat dreams…"
+	para "fressen wollte."
+	line "Und…"
 
-	para "Ooh, this is too"
-	line "spooky!"
-	cont "But now…"
+	para "Ich habe gelernt,"
+	line "Träume zu fressen…"
+
+	para "Oh, das ist zu"
+	line "unheimlich!"
+	cont "Aber jetzt…"
 	done
 
 Text_ViridianCityTutorDreamEater:
-	text "I can teach your"
-	line "#mon to eat"
-	cont "dreams."
+	text "Ich kann deinem"
+	line "#mon beibringen"
+	cont "Träume zu fressen."
 
-	para "I just want a"
-	line "Silver Leaf in"
-	cont "exchange."
+	para "Ich will dafür nur"
+	line "ein Silberblatt."
 	done
 
 
 Text_ViridianCityTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Dream Eater?"
+	text "Soll ich deinem"
+	line "#mon"
+	cont "Traumfresser"
+	cont "beibringen?"
 	done
 
 Text_ViridianCityTutorRefused: ; text > text
@@ -210,17 +214,19 @@ ViridianCityYoungsterText:
 	done
 
 ViridianCityYoungster2Text:
-	text "The leader of Team"
-	line "Rocket was the Gym"
+	text "Der Boss von Team"
+	line "Rocket war eine"
 
-	para "Leader here for a"
-	line "time, but one day"
+	para "Zeit lang hier"
+	line "Arenaleiter, aber"
 
-	para "three years ago"
-	line "he vanished."
+	para "vor drei Jahren"
+	line "verschwand er"
+	cont "eines Tages."
 
-	para "He wasn't usually"
-	line "at the Gym anyway…"
+	para "Er war sowieso"
+	line "selten in der"
+	cont "Arena…"
 	done
 
 ViridianCitySignText:
