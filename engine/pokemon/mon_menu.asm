@@ -1703,7 +1703,7 @@ String_na:
 	db "---@"
 
 String_PowAcc:
-	db "   P/   %@"
+	db "   S/   %@"
 
 Text_CantForgetHM:
 	text_farend _MoveCantForgetHMText
