@@ -292,7 +292,11 @@ The short status names, Kristall's, in normal case in every text and menu, as Up
 _Avoid_: GIF, PAR in a text
 
 **KP**, **EP**, **AP**:
-HP, Exp. Points and PP, on the bars and in the texts ("157 EP!"). The power of a move is P in the move box.
+HP, Exp. Points and PP, on the bars and in the texts ("157 EP!").
+
+**S**:
+A move's power (Stärke, PokéWiki) beside its accuracy in % ("90S/ 90%"), in the normal font, in the battle move box, the summary and the move screen.
+_Avoid_: P
 
 **Geist**:
 The unidentified Ghost's name in battle, and who speaks ("Geist: / Verschwinde…").
