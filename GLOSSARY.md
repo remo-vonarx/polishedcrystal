@@ -154,6 +154,10 @@ The Celadon Four, the four strong trainers of the Prismania-Uni (own translation
 **Quoted songs and foreign speech**:
 Lyrics that trainers quote (Ramones, Pink Floyd, Rush, The Trashmen) stay in English, Blaise speaks French as in Upstream, and battle cries and sounds stay as written (Urrgggh!, Pyopyo…).
 
+**Trainer**, **Kleiner**, **Freund** (the player):
+Polished's own text calls the player in the literal masculine, as Kristall does ("Du bist ein starker Trainer!"), whichever picture the player chose. Confirmed line by line; a few lines are reworded where the rewording reads better ("Nimm ihn, als Zeichen unserer Freundschaft!").
+_Avoid_: Trainer*in, Trainer/in
+
 ## Places
 
 **Place names**:
@@ -546,6 +550,17 @@ _Avoid_: Nintendo Power
 **Unterhaltungskanal**:
 The Variety Channel the Goldenrod band plays on. No German game has a station of that name; built from Kristall's "Unterhaltungssendungen" in the Radio Tower.
 _Avoid_: Varieté-Kanal
+
+**Arenaberater**:
+The Gym guide who stands at a Gym's door (Polished: Gym guide). Neither Kristall nor later German games name him.
+_Avoid_: Arenaführer
+
+**Drachenmeister-Herausforderung**:
+Sandra's test at the Dragon Shrine (Polished: Dragon-master challenge), in Kristall's word for Siegfried.
+_Avoid_: Drachen-Trainer-Herausforderung
+
+**Weide**:
+Norbert's middle name in the #mon Journal (Willow, from his Japanese name Yanagi): "Norberts zweiter Vorname ist Weide."
 
 **Schätzchen**:
 What the Honey House woman in Goldenrod calls the player ("honey"). The honey pun has no German pet name.
