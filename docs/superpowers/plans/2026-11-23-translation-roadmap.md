@@ -216,9 +216,9 @@ The people and story scenes K left, in story order. Each task: the region's maps
 
 ### Task 21: Title screen and credits
 
-- [ ] The title logo's subtitle "Polished Crystal" (`gfx/title/logo.png`): German wording proposed and asked (Kristall's logo says "Kristall-Edition"), drawn in the logo's style.
-- [ ] The credits (`data/credits_strings.asm`), what K left: the role lines as in Kristall's credits, the "#mon Crystal Version Staff" heading, and the US version staff block (keep it, or Kristall's German staff block in its place: ask).
-- [ ] The music player (main menu and the GBC Player item): its labels and about 195 song titles (`audio/music_player.asm`, `data/music_player/`). Decided 2026-11-25: here, with the credits.
-- [ ] The "The End" graphic (`gfx/credits/theend.png`) as Kristall's "Ende".
-- [ ] Test: the title screen in both ROMs; the credits through to the end, compared with Kristall's by position.
+- [x] The title logo's subtitle "Polished Crystal" (`gfx/title/logo.png`): German wording proposed and asked (Kristall's logo says "Kristall-Edition"), drawn in the logo's style. Decided 2026-11-26: the logo keeps "Polished Crystal".
+- [x] The credits (`data/credits_strings.asm`), what K left: the role lines as in Kristall's credits, the "#mon Crystal Version Staff" heading, and the US version staff block (keep it, or Kristall's German staff block in its place: ask).
+- [x] The music player (main menu and the GBC Player item): its labels and about 195 song titles (`audio/music_player.asm`, `data/music_player/`). Decided 2026-11-25: here, with the credits.
+- [x] The "The End" graphic (`gfx/credits/theend.png`) as Kristall's "Ende".
+- [x] Test: the title screen in both ROMs; the credits through to the end, compared with Kristall's by position.
 - [ ] Ship.

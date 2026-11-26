@@ -660,3 +660,34 @@ _Avoid_: Victor
 **Kampfraum**, **Kampfhalle**:
 The Battle Tower's Battle Room (Kristall's Kampfraum) and the Battle Factory's Battle Floor (Kampfhalle, a factory hall).
 _Avoid_: Kampfraum for the Battle Floor
+
+## Credits and music player
+
+**Polished Crystal**:
+The hack's name, kept in English everywhere: the title logo, the options screen, the diploma, the crash screen.
+_Avoid_: Polished Kristall, Polierter Kristall
+
+**Ende**:
+The credits' end picture (The End), in Kristall's letters.
+
+**Deutsches Team**, **Europa-Koordination**, **Deutscher Text**, **Text Check**:
+Kristall's German staff block in the credits, in place of Crystal's US Version Staff (US Coordination, Text Translation, PAAD Testing).
+_Avoid_: Team der US-Version, US-Koordination
+
+**Deutsche Übersetzung**:
+The credit for this translation, right after Kristall's Deutscher Text.
+
+**Entdeckt!**:
+The music player's eye-contact songs (Spotted!), followed by Kristall's trainer class: Entdeckt! Teenager.
+_Avoid_: Erspäht!
+
+**Vs.**:
+The music player's battle songs keep Vs. with a German noun, the region in front: Vs.Johto-Arenaleiter, Vs.Wild Johto.
+_Avoid_: Kampf:
+
+**Glb**, **Kr**, **R/S/Sm**, **FR/BG**, **S/W**, **S2/W2**, **Film 2**:
+The music player's game initials for Gelb, Kristall, Rubin/Saphir/Smaragd, Feuerrot/Blattgrün, Schwarz/Weiß, Schwarz 2/Weiß 2 and the second film.
+_Avoid_: Ge, Y, C, R/S/E, FR/LG, B/W, B2/W2, M02
+
+**Komponist:**, **Arrangeur:**:
+The music player's labels on a song's info page (Composer:, Arranger:).

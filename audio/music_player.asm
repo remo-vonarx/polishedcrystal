@@ -1452,7 +1452,7 @@ GetSongArtist:
 	ret
 
 .Composer:
-	db "Composer:@"
+	db "Komponist:@"
 
 GetSongArtist2:
 	ld a, [de]
@@ -1470,7 +1470,7 @@ GetSongArtist2:
 	ret
 
 .Arranger:
-	db "Arranger:@"
+	db "Arrangeur:@"
 
 SongSelector:
 	hlcoord 0, 0
