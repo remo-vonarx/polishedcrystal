@@ -26,17 +26,17 @@ PokemonJournalRedScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "<PK><MN> Trainer Red!"
+	para "Titelthema:"
+	line "<PK><MN>-Trainer Rot!"
 
-	para "Red is said to"
-	line "have defeated his"
+	para "Rot soll seinen"
+	line "Rivalen Blau im"
 
-	para "rival Blue for the"
-	line "title of #mon"
-
-	para "League Champion in"
-	line "record time."
+	para "Kampf um den Titel"
+	line "des Champs der"
+	cont "#mon Liga in"
+	cont "Rekordzeit"
+	cont "besiegt haben."
 	done
 
 CherrygrovePokeCenter1FTeacherScript:
@@ -81,16 +81,17 @@ CherrygrovePokeCenter1FGentlemanText:
 	done
 
 CherrygrovePokeCenter1FLadyText:
-	text "#mon Journal"
-	line "has such fascin-"
-	cont "ating stories!"
+	text "Im #mon Journal"
+	line "stehen so faszi-"
+	cont "nierende"
+	cont "Geschichten!"
 
-	para "I come to #mon"
-	line "Centers for the"
+	para "Ich gehe für die"
+	line "neuesten Ausgaben"
+	cont "in #mon-Center,"
 
-	para "latest issues, but"
-	line "they're not the"
-
-	para "only place with"
-	line "a subscription."
+	para "aber die sind"
+	line "nicht die einzi-"
+	cont "gen mit einem"
+	cont "Abo."
 	done

@@ -33,21 +33,23 @@ VioletNicknameSpeechHouseTeacherText:
 	done
 
 VioletNicknameSpeechHouseLassText:
-	text "I call my Eevee"
-	line "Strawberry!"
+	text "Ich nenne mein"
+	line "Evoli Erdbeere!"
 	done
 
 VioletNicknameSpeechHouseGrampsText:
-	text "The Zephyr Badge"
-	line "is named after an"
+	text "Der Flügelorden"
+	line "soll die Flügel"
 
-	para "ancient god of the"
-	line "west wind."
+	para "eines antiken"
+	line "Gottes des West-"
+	cont "winds darstellen."
 
-	para "Very fitting for a"
-	line "Flying-type Gym."
+	para "Sehr passend für"
+	line "eine Arena für"
+	cont "Flug-#mon."
 	done
 
 VioletNicknameSpeechHouseBirdText:
-	text "Strawberry: Vui!"
+	text "Erdbeere: Vui!"
 	done

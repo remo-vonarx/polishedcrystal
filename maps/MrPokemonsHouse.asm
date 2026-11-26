@@ -246,24 +246,28 @@ MrPokemonsHouse_MrPokemonHealText:
 	done
 
 MrPokemonText_OddSouvenir:
-	text "Oh! That souvenir!"
+	text "Oh! Dieses Souve-"
+	line "nir!"
 
-	para "I got one of those"
-	line "on my trip to the"
-	cont "Orange Islands."
+	para "So eins habe ich"
+	line "auf meiner Reise"
+	cont "zum Orange-Archi-"
+	cont "pel bekommen."
 
-	para "I saw some oddly-"
-	line "formed #mon"
-	cont "there too!"
+	para "Dort habe ich auch"
+	line "ein paar seltsam"
+	cont "geformte #mon"
+	cont "gesehen!"
 
-	para "Hmm… I wonder…"
+	para "Hmm… Ob wohl…"
 
-	para "Is there a conn-"
-	line "ection between"
+	para "Gibt es eine Ver-"
+	line "bindung zwischen"
 
-	para "that souvenir and"
-	line "those unusual"
-	cont "forms of #mon?"
+	para "diesem Souvenir"
+	line "und diesen unge-"
+	cont "wöhnlichen Formen"
+	cont "von #mon?"
 	done
 
 MrPokemonText_ImDependingOnYou:
@@ -373,23 +377,26 @@ endc
 	done
 
 MrPokemonText_GimmeTheScale:
-	text "Hm? That Scale!"
-	line "What's that?"
-	cont "A red Gyarados?"
+	text "Hm? Diese Haut!"
+	line "Was ist das?"
+	cont "Ein rotes"
+	cont "Garados?"
 
-	para "It must have kept"
-	line "its coloration as"
-	cont "a Magikarp!"
+	para "Es muss seine"
+	line "Farbe schon als"
+	cont "Karpador gehabt"
+	cont "haben!"
 
-	para "That could be"
-	line "one of a kind!"
-	cont "I, I want it…"
+	para "Das ist vielleicht"
+	line "einzigartig!"
+	cont "Ich muss es haben…"
 
-	para "<PLAYER>, would you"
-	line "care to trade it?"
+	para "<PLAYER>, möchtest"
+	line "du es tauschen?"
 
-	para "I can offer you"
-	line "a rare #mon."
+	para "Ich kann dir ein"
+	line "seltenes #mon"
+	cont "anbieten."
 	done
 
 MrPokemonText_GotShinyDitto:
@@ -405,9 +412,10 @@ MrPokemonText_SentToPC:
 	done
 
 MrPokemonText_PartyAndBoxFull:
-	text "You don't have any"
-	line "room for this,"
-	cont "even in your Box!"
+	text "Du hast dafür"
+	line "keinen Platz,"
+	cont "nicht einmal in"
+	cont "deiner Box!"
 	done
 
 MrPokemonText_Disappointed:
@@ -441,12 +449,14 @@ MrPokemonsHouse_StrangeCoinsText:
 	done
 
 MrPokemonsHouse_CabinetText:
-	text "A collection of"
-	line "rare curiosities"
-	cont "from all over!"
+	text "Eine Sammlung"
+	line "seltener Kurio-"
+	cont "sitäten aus aller"
+	cont "Welt!"
 	done
 
 MrPokemonsHouse_RedScaleCabinetText:
-	text "One of them is the"
-	line "shiny Red Scale!"
+	text "Darunter ist auch"
+	line "die schillernde"
+	cont "Rote Haut!"
 	done

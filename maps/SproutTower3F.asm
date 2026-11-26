@@ -81,23 +81,24 @@ ElderLiScript:
 	setevent EVENT_BEAT_ELDER_LI
 	jumpthisopenedtext
 
-	text "Flash illuminates"
-	line "even the darkest"
-	cont "of all places."
+	text "Mit Blitz kannst"
+	line "du die dunkelsten"
+	cont "Orte erhellen."
 
-	para "You need not teach"
-	line "it to your #mon"
+	para "Du musst Blitz"
+	line "deinen #mon nur"
 
-	para "unless you wish"
-	line "to use Flash in"
-	cont "battle."
+	para "beibringen, wenn"
+	line "du es im Kampf"
+	cont "einsetzen willst."
 
-	para "Simply press A in"
-	line "the darkness, and"
+	para "Drücke einfach A"
+	line "in der Dunkelheit."
 
-	para "if any of your"
-	line "#mon can use"
-	cont "Flash, they will."
+	para "Kann eines deiner"
+	line "#mon Blitz ein-"
+	cont "setzen, tut es"
+	cont "das auch."
 	done
 
 GenericTrainerSageJin:
@@ -142,24 +143,24 @@ SproutTower3FRivalLeavesElderMovement:
 	step_end
 
 SproutTowerElderLecturesRivalText:
-	text "Elder: You are in-"
-	line "deed skilled as a"
-	cont "trainer."
+	text "Weisester: Du bist"
+	line "wirklich ein"
+	cont "begabter Trainer."
 
-	para "As promised, here"
-	line "is your TM."
+	para "Wie abgemacht, be-"
+	line "kommst du die TM."
 
-	para "But let me say"
-	line "this: You should"
+	para "Eines gebe ich dir"
+	line "noch mit:"
 
-	para "treat your"
-	line "#mon better."
+	para "Behandle deine"
+	line "#mon besser."
 
-	para "The way you battle"
-	line "is far too harsh."
+	para "Dein Kampfstil"
+	line "ist zu aggressiv."
 
-	para "#mon are not"
-	line "tools of war…"
+	para "#mon sind keine"
+	line "Kampfspielzeuge…"
 	done
 
 SproutTowerRivalOnlyCareAboutStrongText:
@@ -230,14 +231,14 @@ SageLiBeatenText:
 	done
 
 SageLiTakeThisFlashText:
-	text "You and your #-"
-	line "mon should have"
+	text "Du und dein #-"
+	line "mon dürftet keine"
 
-	para "no problem using"
-	line "this move."
+	para "Probleme mit die-"
+	line "ser Attacke haben."
 
-	para "Take this Flash"
-	line "TM."
+	para "Nimm diese TM."
+	line "Sie enthält Blitz."
 	done
 
 SageLiAfterBattleText:

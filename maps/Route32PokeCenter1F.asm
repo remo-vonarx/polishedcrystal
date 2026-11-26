@@ -25,17 +25,15 @@ PokemonJournalKurtScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Craftsman Kurt!"
+	para "Titelthema:"
+	line "Ball-Schmied Kurt!"
 
-	para "Kurt does not let"
-	line "anyone near while"
+	para "Kurt lässt nieman-"
+	line "den in seine Nähe,"
 
-	para "he is making #"
-	line "Balls except his"
-
-	para "granddaughter"
-	line "Maizie."
+	para "wenn er #bälle"
+	line "macht, außer sei-"
+	cont "ne Enkelin Maisy."
 	done
 
 Route32Pokecenter1FFishingGuruScript:
@@ -120,15 +118,16 @@ Route32PokeCenter1FPokefanMScript:
 	setevent EVENT_GOT_LURE_BALL_FROM_FRENCHMAN
 	jumpthisopenedtext
 
-	text "This Ball easily"
-	line "catches #mon"
-	cont "hooked on a Rod!"
+	text "Dieser Ball fängt"
+	line "#mon an der"
+	cont "Angel ganz leicht!"
 
-	para "Kurt of Azalea"
-	line "Town made it from"
-	cont "an Apricorn."
+	para "Kurt aus Azalea"
+	line "City hat ihn aus"
+	cont "einer Aprikoko"
+	cont "gemacht."
 
-	para "Apricorns,"
+	para "Aprikokos,"
 	line "hourrah!"
 	done
 
@@ -136,33 +135,33 @@ Route32PokeCenter1FPokefanMScript:
 	endtext
 
 .Text1:
-	text "Bonjour. How are"
-	line "you? Do you know"
-	cont "about Apricorns?"
+	text "Bonjour. Wie geht"
+	line "es dir? Kennst du"
+	cont "Aprikokos?"
 	done
 
 .Text2:
-	text "Non? What a waste!"
-	line "I will show you"
+	text "Non? Wie schade!"
+	line "Ich zeige dir,"
 
-	para "how great Apri-"
-	line "corns are!"
+	para "wie toll Apri-"
+	line "kokos sind!"
 	done
 
 .Text3:
-	text "Youpi! Way to go!"
-	line "I feel so great,"
+	text "Youpi! Klasse!"
+	line "Ich fühle mich so"
 
-	para "I want to give you"
-	line "this!"
+	para "toll, dass ich dir"
+	line "das geben will!"
 	done
 
 .Text5:
-	text "Kurt is the hero"
-	line "of every Apricorn"
-	cont "collector."
+	text "Kurt ist der Held"
+	line "aller Aprikoko-"
+	cont "Sammler."
 
-	para "Apricorns,"
+	para "Aprikokos,"
 	line "hourrah!"
 	done
 

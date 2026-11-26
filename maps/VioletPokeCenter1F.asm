@@ -30,15 +30,15 @@ PokemonJournalFalknerScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Falkner!"
+	para "Titelthema:"
+	line "Arenaleiter Falk!"
 
-	para "People say that"
-	line "Falkner reveres"
-	cont "his father, who"
+	para "Man sagt, Falk"
+	line "verehrt seinen"
+	cont "Vater, der vor ihm"
 
-	para "led the Violet Gym"
-	line "before him."
+	para "die Arena von"
+	line "Viola City führte."
 	done
 
 VioletPokeCenter1FElmsAideScript:
@@ -78,16 +78,17 @@ VioletPokeCenter1FElmsAideScript:
 	end
 
 .PartyAndBoxFull:
-	text "Oh, no. You can't"
-	line "carry any more"
-	cont "#mon with you."
+	text "Oh, du hast keinen"
+	line "Platz mehr für ein"
+	cont "weiteres #mon."
 
-	para "You have no space"
-	line "in your Box, too."
+	para "Auch in deiner Box"
+	line "ist kein Platz."
 
-	para "I'll wait here"
-	line "while you make"
-	cont "room for the Egg."
+	para "Ich warte hier,"
+	line "bis du Platz für"
+	cont "das Ei geschaffen"
+	cont "hast."
 	done
 
 .RefusedEgg:
@@ -100,22 +101,24 @@ VioletPokeCenter1FElmsAideScript:
 	done
 
 .IntroText:
-	text "<PLAYER>, long"
-	line "time, no see."
+	text "<PLAYER>, lange"
+	line "nicht gesehen."
 
-	para "I was browsing the"
-	line "#mon Journal"
-	cont "while I waited."
+	para "Beim Warten habe"
+	line "ich im #mon"
+	cont "Journal gestöbert."
 
-	para "Its gossip is a"
-	line "good pastime…"
+	para "Der Klatsch darin"
+	line "ist ein guter"
+	cont "Zeitvertreib…"
 
-	para "Anyway, Prof.Elm"
-	line "has another favor"
-	cont "to ask you."
+	para "Jedenfalls hat"
+	line "Prof. Lind noch"
+	cont "eine Bitte an"
+	cont "dich."
 
-	para "Would you take the"
-	line "#mon Egg?"
+	para "Nimm bitte das"
+	line "#mon-Ei!"
 	done
 
 .QuestionText:
@@ -197,17 +200,16 @@ VioletPokeCenter1FGentlemanText:
 	done
 
 VioletPokeCenter1FSageText:
-	text "Some Bellsprout"
-	line "are found with"
-	cont "Gold Leaves."
+	text "Manche Knofensa"
+	line "tragen Gold-"
+	cont "blätter."
 
-	para "And some Oddish"
-	line "are found with"
-	cont "Silver Leaves."
+	para "Und manche Myrapla"
+	line "tragen Silber-"
+	cont "blätter."
 
-	para "These are valued"
-	line "by a certain type"
-	cont "of person."
+	para "Gewisse Leute"
+	line "schätzen sie sehr."
 	done
 
 VioletPokeCenter1FYoungsterText:

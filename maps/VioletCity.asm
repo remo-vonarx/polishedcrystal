@@ -181,22 +181,23 @@ Text_FollowEarl:
 	done
 
 Text_HereTeacherIAm:
-	text "Here, teacher I"
-	line "am. Good it is"
-	cont "you study here!"
+	text "Isch bin eine"
+	line "Lehrer. Es ist gut"
+	cont "für disch, bei mir"
+	cont "zu lernen!"
 
-	para "Take this and"
-	line "learn you will!"
+	para "Nimm das, und du"
+	line "wirscht lernen!"
 	done
 
 Text_EarlsTypeChart:
-	text "In battle, type"
-	line "advantages you"
-	cont "must know!"
+	text "Im Kampf musst du"
+	line "die Typvorteile"
+	cont "kennen!"
 
-	para "At any time, con-"
-	line "sult this chart"
-	cont "you may!"
+	para "Diese Tabelle"
+	line "kannst du jeder-"
+	cont "zeit lesen!"
 	done
 
 VioletCityLassText:
@@ -226,13 +227,13 @@ VioletCityCooltrainerM1Text:
 	done
 
 VioletCityCooltrainerFText:
-	text "Bellsprout is a"
-	line "popular #mon"
-	cont "in this town."
+	text "Knofensa ist in"
+	line "dieser Stadt ein"
+	cont "beliebtes #mon."
 
-	para "It doesn't do well"
-	line "against our Gym"
-	cont "Leader, though…"
+	para "Gegen unseren"
+	line "Arenaleiter kommt"
+	cont "es aber nicht an…"
 	done
 
 VioletCityGrampsText:
@@ -263,24 +264,28 @@ VioletCityYoungsterText:
 	done
 
 VioletCityFisherText:
-	text "How does such a"
-	line "wobbly building"
+	text "Wie übersteht so"
+	line "ein wackeliges"
 
-	para "survive an earth-"
-	line "quake? I must be"
-	cont "missing something."
+	para "Gebäude ein Erd-"
+	line "beben? Da muss mir"
+	cont "etwas entgehen."
 	done
 
 VioletCityCooltrainerM2Text:
-	text "We care about the"
-	line "traditional build-"
-	cont "ings around here."
+	text "Uns liegen die"
+	line "traditionellen"
+	cont "Gebäude hier am"
+	cont "Herzen."
 
-	para "Even the # Mart"
-	line "and #mon Center"
+	para "Sogar der PKMN-"
+	line "Supermarkt und"
+	cont "das #mon-Center"
 
-	para "are painted som-"
-	line "berly to blend in."
+	para "sind in gedeckten"
+	line "Farben gestrichen,"
+	cont "damit sie sich"
+	cont "einfügen."
 	done
 
 VioletCitySignText:

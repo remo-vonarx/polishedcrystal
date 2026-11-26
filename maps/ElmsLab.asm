@@ -473,12 +473,13 @@ ElmAskBattleScript:
 	special HealParty
 	jumpthistextfaceplayer
 
-	text "Elm: I'm proud"
-	line "of you, <PLAYER>."
+	text "Lind: Ich bin"
+	line "stolz auf dich,"
+	cont "<PLAYER>."
 
-	para "I was right to"
-	line "trust you with"
-	cont "a #mon!"
+	para "Es war richtig,"
+	line "dir ein #mon"
+	cont "anzuvertrauen!"
 	done
 
 ElmGiveTicketScript:
@@ -729,8 +730,8 @@ ElmsLabLyraScript:
 	iffalse_jumptextfaceplayer ElmsLabLyraWhichPokemonText
 	jumpthistextfaceplayer
 
-	text "Your #mon"
-	line "looks cute too!"
+	text "Dein #mon ist"
+	line "auch süß!"
 	done
 
 ElmsLabWindow:
@@ -930,37 +931,39 @@ AfterChikoritaMovement:
 	step_end
 
 ElmText_Intro:
-	text "Elm: <PLAYER>!"
-	line "There you are!"
+	text "Lind: <PLAYER>!"
+	line "Da bist du ja!"
 
 if !DEF(DEBUG)
-	para "Hello to you too,"
-	line "Lyra."
+	para "Hallo auch an"
+	line "dich, Lyra."
 
-	para "I needed to ask"
-	line "you both a favor."
+	para "Ich muss euch"
+	line "beide um etwas"
+	cont "bitten."
 
-	para "You see…"
+	para "Versteht ihr…"
 
-	para "I'm writing a"
-	line "paper that I want"
+	para "Ich schreibe an"
+	line "etwas, das ich bei"
 
-	para "to present at a"
-	line "conference."
+	para "einer Konferenz"
+	line "vorlegen möchte."
 
-	para "But there are some"
-	line "things I don't"
+	para "Aber da sind noch"
+	line "einige Dinge, die"
 
-	para "quite understand"
-	line "yet."
+	para "ich nicht ganz"
+	line "verstehe."
 
-	para "So!"
+	para "Darum!"
 
-	para "I'd like you both"
-	line "to raise #mon"
+	para "Ich möchte, dass"
+	line "ihr beide #mon"
 
-	para "that I recently"
-	line "caught."
+	para "trainiert, die"
+	line "ich vor kurzem"
+	cont "gefangen habe."
 endc
 	done
 
@@ -991,13 +994,13 @@ ElmText_ResearchAmbitions:
 	done
 
 ElmText_GotAnEmail:
-	text "Oh, hey! I got an"
-	line "e-mail!"
+	text "Oh, heh! Ich habe"
+	line "eine E-Mail!"
 
 	para "………………"
 	line "Hm… Uh-huh…"
 
-	para "OK…"
+	para "Okay…"
 	done
 
 ElmText_MissionFromMrPokemon:
@@ -1193,38 +1196,49 @@ ElmAfterTheftText4:
 	done
 
 ElmAfterTheftText5:
-	text "Elm: What?!"
+	text "Lind: Wie?!?"
 
 if !DEF(DEBUG)
-	para "Prof.Oak gave you"
-	line "a #dex?"
+	para "Prof. Eich hat dir"
+	line "einen #dex"
+	cont "gegeben?"
 
-	para "<PLAYER>, is that"
-	line "true? Th-that's"
-	cont "incredible!"
+	para "<PLAYER>, ist das"
+	line "wahr? D-Das ist ja"
+	cont "unglaublich!"
 
-	para "He is superb at"
-	line "seeing the poten-"
-	cont "tial of people as"
-	cont "trainers."
+	para "Kein anderer ist"
+	line "wie er in der"
 
-	para "Wow, <PLAYER>. You"
-	line "may have what it"
+	para "Lage, das wahre"
+	line "Potenzial eines"
 
-	para "takes to become"
-	line "the Champion."
+	para "Trainers zu er-"
+	line "kennen."
 
-	para "You seem to be"
-	line "getting on great"
-	cont "with #mon too."
+	para "Wow, <PLAYER>. Es"
+	line "ist vielleicht"
 
-	para "You should take"
-	line "the #mon Gym"
-	cont "challenge."
+	para "deine Bestimmung,"
+	line "der Champ zu"
+	cont "werden."
 
-	para "The closest Gym"
-	line "would be the one"
-	cont "in Violet City."
+	para "Es sieht auch so"
+	line "aus, als könntest"
+
+	para "du hervorragend"
+	line "mit #mon um-"
+	cont "gehen."
+
+	para "Du solltest die"
+	line "Herausforderung"
+
+	para "der PKMN-Arenen"
+	line "annehmen."
+
+	para "Die nächste PKMN-"
+	line "Arena befindet"
+	cont "sich in Viola."
 endc
 	done
 
@@ -1242,17 +1256,18 @@ ElmAfterTheftText6:
 	done
 
 ElmAfterTheftText7:
-	text "And give me a call"
-	line "sometimes too."
+	text "Und ruf mich auch"
+	line "mal an."
 
-	para "If you want to"
-	line "know how your"
+	para "Wenn du wissen"
+	line "willst, wie sich"
 
-	para "#mon might"
-	line "evolve, then"
+	para "deine #mon ent-"
+	line "wickeln könnten,"
 
-	para "my research will"
-	line "be invaluable!"
+	para "ist meine For-"
+	line "schung von un-"
+	cont "schätzbarem Wert!"
 	done
 
 ElmStudyingEggText:
@@ -1295,8 +1310,8 @@ ShowElmTogepiText1:
 	done
 
 ShowElmTogepiText2:
-	text "What?"
-	line "That #mon?!"
+	text "Was?"
+	line "Dieses #mon!?!"
 	done
 
 ShowElmTogepiText3:
@@ -1329,21 +1344,22 @@ ElmGiveOddSouvenirText1:
 	done
 
 ElmGiveOddSouvenirText2:
-	text "That's an oddity"
-	line "I was given by"
-	cont "Mr. #mon."
+	text "Das ist ein Kurio-"
+	line "sum. Ich habe es"
+	cont "von Mr. #mon."
 
-	para "He told me it's a"
-	line "souvenir from his"
+	para "Er sagte, es sei"
+	line "ein Souvenir von"
 
-	para "trip to a tropical"
-	line "island."
+	para "seiner Reise auf"
+	line "eine tropische"
+	cont "Insel."
 
-	para "Supposedly there"
-	line "are a few species"
+	para "Angeblich gibt es"
+	line "ein paar #mon-"
 
-	para "of #mon that"
-	line "like to hold it."
+	para "Arten, die es"
+	line "gern tragen."
 	done
 
 ElmText_CallYou:
@@ -1372,37 +1388,44 @@ AideText_AfterTheft:
 
 AideText_ThiefReturnedMon:
 	text "<PLAYER>!"
-	line "Guess what!"
+	line "Stell dir vor!"
 
-	para "The boy who took"
-	line "the Professor's"
-	cont "#mon…"
+	para "Der Junge, der das"
+	line "#mon des Pro-"
+	cont "fessors genommen"
+	cont "hat…"
 
-	para "…came back to"
-	line "return it!"
+	para "…ist zurückgekom-"
+	line "men, um es zurück-"
+	cont "zugeben!"
 
-	para "But Prof.Elm said"
-	line "to him…"
+	para "Aber Prof. Lind"
+	line "sagte zu ihm…"
 
-	para "“It seems that"
-	line "the #mon likes"
-	cont "you very much."
+	para "“Es sieht so aus,"
+	line "als ob das #mon"
+	cont "dich sehr mag."
 
-	para "#mon do their"
-	line "best with someone"
-	cont "they love."
+	para "#mon geben ihr"
+	line "Bestes bei jeman-"
+	cont "dem, den sie"
+	cont "lieben."
 
-	para "I think it should"
-	line "stay with you.”"
+	para "Ich finde, es"
+	line "sollte bei dir"
+	cont "bleiben.”"
 
-	para "…Isn't it moving?"
-	line "It made me cry!"
+	para "…Ist das nicht"
+	line "rührend? Da musste"
+	cont "ich weinen!"
 
-	para "I saw the boy's"
-	line "face as he left."
+	para "Ich habe das Ge-"
+	line "sicht des Jungen"
+	cont "gesehen, als er"
+	cont "ging."
 
-	para "He looked so"
-	line "happy!"
+	para "Er sah so glück-"
+	line "lich aus!"
 	done
 
 ElmGiveMasterBallText1:
@@ -1442,134 +1465,149 @@ ElmGiveMasterBallText2:
 	done
 
 ElmGiveTicketText1:
-	text "Elm: <PLAYER>!"
-	line "There you are!"
+	text "Lind: <PLAYER>!"
+	line "Da bist du ja!"
 
-	para "I called because I"
-	line "have something for"
-	cont "you."
+	para "Ich habe dich ge-"
+	line "rufen, weil ich"
+	cont "dir etwas geben"
+	cont "möchte."
 
-	para "See? It's an"
-	line "S.S.Ticket."
+	para "Siehst du? Es ist"
+	line "ein Bootsticket."
 
-	para "Now you can catch"
-	line "#mon in Kanto."
+	para "Jetzt kannst du"
+	line "auch in Kanto"
+	cont "#mon fangen."
 
-	para "You can also take"
-	line "on new Gyms."
+	para "Du kannst dich"
+	line "auch neuen Arenen"
+	cont "stellen."
 
-	para "If you earn eight"
-	line "more Badges,"
+	para "Wenn du acht wei-"
+	line "tere Orden ver-"
+	cont "dienst,"
 
-	para "the Elite Four"
-	line "will battle you"
+	para "werden die Top"
+	line "Vier mit voller"
 
-	para "with all their"
-	line "strength."
+	para "Kraft gegen dich"
+	line "kämpfen."
 	done
 
 ElmGiveTicketText2:
-	text "The ship departs"
-	line "from Olivine City."
+	text "Das Schiff legt in"
+	line "Oliviana City ab."
 
-	para "But you knew that"
-	line "already, <PLAYER>."
+	para "Aber das weißt du"
+	line "ja schon, <PLAYER>."
 
-	para "After all, you've"
-	line "traveled all over"
-	cont "with your #mon."
+	para "Schließlich bist"
+	line "du mit deinen"
 
-	para "Oh, that reminds"
-	line "me!"
+	para "#mon schon"
+	line "viel herumge-"
+	cont "kommen."
 
-	para "Battle Tower has"
-	line "just opened up"
-	cont "near Olivine."
+	para "Oh, da fällt mir"
+	line "ein!"
 
-	para "A champ like you"
-	line "should do well"
-	cont "competing there!"
+	para "Der Duellturm"
+	line "hat gerade bei"
+	cont "Oliviana eröffnet."
+
+	para "Ein Champ wie du"
+	line "sollte sich dort"
+	cont "gut schlagen!"
 	done
 
 LyraAnnouncesGymChallengeText:
-	text "Lyra: There you"
-	line "are, <PLAYER>!"
+	text "Lyra: Da bist du"
+	line "ja, <PLAYER>!"
 
-	para "I saw your battle"
-	line "with the Champion"
-	cont "on TV."
+	para "Ich habe deinen"
+	line "Kampf gegen den"
+	cont "Champ im Fernse-"
+	cont "hen gesehen."
 
-	para "You were incred-"
-	line "ible!"
+	para "Du warst unglaub-"
+	line "lich!"
 
-	para "It really inspired"
-	line "me, <PLAYER>."
+	para "Das hat mich echt"
+	line "inspiriert,"
+	cont "<PLAYER>."
 
-	para "Even if I can't"
-	line "reach that level…"
-	cont "I want to try."
+	para "Auch wenn ich nie"
+	line "so gut werde…"
+	cont "Ich will es ver-"
+	cont "suchen."
 
-	para "I want to see what"
-	line "I'm capable of."
+	para "Ich will sehen,"
+	line "wozu ich fähig"
+	cont "bin."
 
-	para "Prof.Elm, I'm"
-	line "sorry I can't keep"
-	cont "helping out here."
+	para "Prof. Lind, tut"
+	line "mir leid, dass ich"
+	cont "hier nicht mehr"
+	cont "helfen kann."
 
-	para "I'm going to"
-	line "challenge all the"
+	para "Ich werde alle"
+	line "Arenen in Johto"
 
-	para "Gyms in Johto and"
-	line "make it to the"
-	cont "#mon League!"
+	para "herausfordern und"
+	line "es bis zur #mon"
+	cont "Liga schaffen!"
 
-	para "Wish me luck!"
-	line "See you later!"
+	para "Wünsch mir Glück!"
+	line "Bis später!"
 	done
 
 ElmAfterTicketText:
-	text "Elm: Well then,"
-	line "<PLAYER>, you both"
+	text "Lind: Tja,"
+	line "<PLAYER>, jetzt"
 
-	para "have your own"
-	line "journeys now."
+	para "habt ihr beide"
+	line "eure eigene Reise."
 
-	para "I wonder if she'll"
-	line "reach the League"
-	cont "first?"
+	para "Ob sie wohl als"
+	line "Erste die Liga"
+	cont "erreicht?"
 
-	para "Give my regards to"
-	line "Prof.Oak in Kanto!"
+	para "Überbringe Prof."
+	line "Eich in Kanto"
+	cont "meine Grüße!"
 	done
 
 ElmBeforeBattleText:
-	text "Elm: <PLAYER>!"
-	line "How is your #-"
-	cont "journey so far?"
+	text "Lind: <PLAYER>!"
+	line "Wie läuft deine"
+	cont "#mon-Reise?"
 	done
 
 ElmByTheWayText:
-	text "While you're here,"
-	line "<PLAYER>…"
+	text "Wo du schon mal"
+	line "hier bist,"
+	cont "<PLAYER>…"
 	done
 
 ElmAskBattleText:
-	text "I could use some"
-	line "practice battling"
+	text "Ich könnte etwas"
+	line "Kampfübung gegen"
 
-	para "a talented trainer"
-	line "like yourself."
+	para "einen talentierten"
+	line "Trainer wie dich"
+	cont "gebrauchen."
 
-	para "How about it,"
+	para "Was meinst du,"
 	line "<PLAYER>?"
 	done
 
 ElmSeenText:
-	text "Show me how much"
-	line "you've grown since"
+	text "Zeig mir, wie sehr"
+	line "du gewachsen bist,"
 
-	para "you left New Bark"
-	line "Town!"
+	para "seit du Neuborkia"
+	line "verlassen hast!"
 	done
 
 ElmWinText:
@@ -1582,11 +1620,11 @@ ElmLoseText:
 	done
 
 ElmRefusedBattleText:
-	text "If your #mon"
-	line "need healing,"
+	text "Wenn deine #mon"
+	line "Heilung brauchen,"
 
-	para "just use the"
-	line "machine here."
+	para "benutz einfach die"
+	line "Maschine hier."
 	done
 
 
@@ -1635,28 +1673,31 @@ AideText_TheftTestimony:
 	done
 
 ElmsLabOfficerText1:
-	text "I heard a #mon"
-	line "was stolen here."
+	text "Ich hörte, dass"
+	line "hier ein #mon"
+	cont "gestohlen wurde."
 
-	para "Rule number one!"
-	line "“The criminal will"
+	para "Regel Nummer eins!"
+	line "“Der Täter kehrt"
 
-	para "always return to"
-	line "the scene of the"
-	cont "crime…”"
+	para "immer an den Ort"
+	line "des Verbrechens"
+	cont "zurück…”"
 
-	para "Oh my… So you're"
-	line "the thief?"
+	para "Oh je… Dann bist"
+	line "du der Dieb?"
 	done
 
 ElmsLabOfficerText2:
-	text "What?"
+	text "Wie?"
 
-	para "You battled a"
-	line "trainer like that?"
+	para "Du hast gegen ei-"
+	line "nen solchen"
+	cont "Trainer gekämpft?"
 
-	para "Did you happen to"
-	line "get his name?"
+	para "Hat er dir auch"
+	line "seinen Namen ge-"
+	cont "nannt?"
 	done
 
 ElmsLabOfficerText3:
@@ -1670,48 +1711,48 @@ ElmsLabOfficerText3:
 	done
 
 ElmsLabLyraWhichPokemonText:
-	text "Which #mon are"
-	line "you going to pick,"
+	text "Welches #mon"
+	line "nimmst du,"
 	cont "<PLAYER>?"
 	done
 
 LyraChoosesStarterText:
-	text "Lyra: Then I'll"
-	line "pick this one!"
+	text "Lyra: Dann nehme"
+	line "ich dieses hier!"
 	done
 
 LyraReceivedStarterText:
-	text "Lyra received"
+	text "Lyra erhält"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
 	done
 
 LyraNicknamedChikoritaText:
-	text "Lyra: It's so"
-	line "cute! I'll nick-"
-	cont "name it Chicory!"
+	text "Lyra: Es ist so"
+	line "süß! Ich nenne es"
+	cont "Endivchen!"
 	done
 
 LyraNicknamedCyndaquilText:
-	text "Lyra: It's so"
-	line "cute! I'll nick-"
-	cont "name it Cinder!"
+	text "Lyra: Es ist so"
+	line "süß! Ich nenne es"
+	cont "Zunder!"
 	done
 
 LyraNicknamedTotodileText:
-	text "Lyra: It's so"
-	line "cute! I'll nick-"
-	cont "name it Toto!"
+	text "Lyra: Es ist so"
+	line "süß! Ich nenne es"
+	cont "Karni!"
 	done
 
 
 ElmsLabLyraChallengeText:
 	text "Lyra: <PLAYER>!"
-	line "Let's get to know"
+	line "Lernen wir unsere"
 
-	para "our #mon with"
-	line "a battle!"
+	para "#mon in einem"
+	line "Kampf kennen!"
 	done
 
 ElmsLabLyraWinText:
@@ -1725,47 +1766,51 @@ ElmsLabLyraLossText:
 
 ElmsLabLyraText_YouWon:
 ElmsLabLyraText_YouLost:
-	text "That was an"
-	line "exciting battle!"
+	text "Das war ein span-"
+	line "nender Kampf!"
 	done
 
 ElmsLabLyraThankYouText:
-	text "Thank you for the"
+	text "Danke für das"
 	line "#mon, Prof."
-	cont "Elm."
+	cont "Lind."
 	done
 
 ElmsLabLyraSeeYouText:
-	text "<PLAYER>, I'll"
-	line "see you later!"
+	text "<PLAYER>, wir"
+	line "sehen uns später!"
 
-	para "Have fun on your"
-	line "errand!"
+	para "Viel Spaß bei"
+	line "deinem Auftrag!"
 	done
 
 ElmsLabLyraTheftInnocentText:
-	text "Lyra: Hold on!"
-	line "<PLAYER> has noth-"
-	cont "ing to do with it!"
+	text "Lyra: Moment!"
+	line "<PLAYER> hat damit"
+	cont "nichts zu tun!"
 
-	para "I saw a red-haired"
-	line "boy spying on the"
-	cont "building!"
+	para "Ich habe einen"
+	line "rothaarigen Jungen"
+	cont "gesehen, der das"
+	cont "Gebäude ausspio-"
+	cont "niert hat!"
 	done
 
 ElmsLabLyraTheftGoodbyeText:
 	text "Lyra: <PLAYER>,"
-	line "I'm glad he under-"
+	line "ich bin froh, dass"
 
-	para "stood that you're"
-	line "innocent."
+	para "er verstanden hat,"
+	line "dass du unschuldig"
+	cont "bist."
 
-	para "I hope he makes"
-	line "the thief return"
-	cont "that #mon…"
+	para "Hoffentlich bringt"
+	line "er den Dieb dazu,"
+	cont "das #mon"
+	cont "zurückzugeben…"
 
-	para "Well then, see"
-	line "you later!"
+	para "Also dann, bis"
+	line "später!"
 	done
 
 ElmsLabWindowText1:

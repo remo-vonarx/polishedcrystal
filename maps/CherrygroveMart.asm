@@ -46,16 +46,21 @@ CherrygroveMartCooltrainerMText_PokeBallsInStock:
 	done
 
 CherrygroveMartYoungsterText:
-	text "When I was walking"
-	line "in the grass, a"
+	text "Als ich durch das"
+	line "Gras spazierte,"
 
-	para "bug #mon poi-"
-	line "soned my #mon!"
+	para "hat ein Käfer-"
+	line "#mon mein"
 
-	para "I just kept going,"
-	line "and my #mon"
-	cont "barely recovered."
+	para "#mon ver-"
+	line "giftet!"
 
-	para "You should keep an"
-	line "Antidote with you."
+	para "Ich ging einfach"
+	line "weiter, und mein"
+	cont "#mon hat es nur"
+	cont "knapp überstanden."
+
+	para "Du solltest stän-"
+	line "dig ein Gegengift"
+	cont "mit dir führen."
 	done

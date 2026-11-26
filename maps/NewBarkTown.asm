@@ -160,9 +160,9 @@ NewBarkTownTeacherScript:
 	iftrue_jumptextfaceplayer Text_YourMonIsAdorable
 	jumpthistextfaceplayer
 
-	text "There's always"
-	line "such a refreshing"
-	cont "breeze here."
+	text "Hier weht immer"
+	line "so eine erfri-"
+	cont "schende Brise."
 	done
 
 NewBarkTownRivalScript:
@@ -323,61 +323,70 @@ NewBarkTownRivalText2:
 	done
 
 Text_LyraIntro:
-	text "Lyra: Oh, hello,"
+	text "Lyra: Oh, hallo,"
 	line "<PLAYER>!"
 
-	para "I came by your"
-	line "house earlier,"
+	para "Ich war vorhin bei"
+	line "dir zu Hause,"
 
-	para "but you were"
-	line "still sleeping."
+	para "aber du hast noch"
+	line "geschlafen."
 
-	para "You know how I"
-	line "assist Prof.Elm"
-	cont "sometimes?"
+	para "Du weißt doch,"
+	line "dass ich Prof."
+	cont "Lind manchmal"
+	cont "helfe?"
 
-	para "He's starting new"
-	line "#mon research"
+	para "Er beginnt gerade"
+	line "mit neuen #mon-"
+	cont "Forschungen"
 
-	para "and would like us"
-	line "both to help."
+	para "und möchte, dass"
+	line "wir beide helfen."
 
-	para "Let's go and see"
-	line "what he wants!"
+	para "Lass uns hingehen"
+	line "und sehen, was er"
+	cont "will!"
 	done
 
 Text_LyraGoodbye1:
 	text "Lyra: <PLAYER>!"
 
-	para "I heard that you"
-	line "have all the Gym"
-	cont "Badges in Johto."
+	para "Ich habe gehört,"
+	line "dass du alle"
+	cont "Orden in Johto"
+	cont "hast."
 
-	para "…You're really"
-	line "something,"
+	para "…Du bist echt"
+	line "unglaublich,"
 	cont "<PLAYER>."
 
-	para "To think that we"
-	line "both started our"
+	para "Wenn ich daran"
+	line "denke, dass wir"
 
-	para "journeys in this"
-	line "town…"
+	para "beide hier in"
+	line "Neuborkia unsere"
+	cont "Reise begonnen"
+	cont "haben…"
 
-	para "I do what I can"
-	line "to help the Prof-"
-	cont "essor, but I could"
+	para "Ich helfe dem"
+	line "Professor, so gut"
+	cont "ich kann, aber"
 
-	para "never take on the"
-	line "League Champion."
+	para "ich könnte nie"
+	line "gegen den Champ"
+	cont "der Liga antreten."
 
-	para "…Before you go…"
+	para "…Bevor du gehst…"
 
-	para "How about one"
-	line "more battle?"
+	para "Wie wäre es mit"
+	line "einem letzten"
+	cont "Kampf?"
 
-	para "I want to see the"
-	line "kind of trainer"
-	cont "you've become!"
+	para "Ich will sehen,"
+	line "was für ein Trai-"
+	cont "ner aus dir ge-"
+	cont "worden ist!"
 	done
 
 Text_LyraGoodbyeWin:
@@ -393,24 +402,24 @@ Text_LyraGoodbyeLoss:
 	done
 
 Text_LyraGoodbye2:
-	text "…Thanks, <PLAYER>."
+	text "…Danke, <PLAYER>."
 
-	para "I can tell how"
-	line "much work and"
+	para "Ich sehe, wie viel"
+	line "Arbeit und Liebe"
 
-	para "love you put into"
-	line "raising your"
-	cont "#mon."
+	para "du in die Aufzucht"
+	line "deiner #mon"
+	cont "steckst."
 
-	para "…So, this is"
-	line "goodbye."
+	para "…Das ist also der"
+	line "Abschied."
 
-	para "I know you can win"
-	line "at the #mon"
-	cont "League!"
+	para "Ich weiß, dass du"
+	line "die #mon Liga"
+	cont "gewinnen kannst!"
 
-	para "You're going to be"
-	line "a great Champion!"
+	para "Du wirst ein"
+	line "großartiger Champ!"
 	done
 
 NewBarkTownSignText:

@@ -112,12 +112,12 @@ Route29CooltrainerMScript:
 	iftrue_jumptextfaceplayer Text_WaitingForMorning
 	jumpthistextfaceplayer
 
-	text "I'm waiting for"
-	line "#mon that"
+	text "Ich warte auf"
+	line "#mon, die"
 
-	para "appear only in"
-	line "the evening or"
-	cont "at night."
+	para "nur am Abend oder"
+	line "in der Nacht"
+	cont "auftauchen."
 	done
 
 TuscanyScript:
@@ -139,15 +139,19 @@ TuscanyScript:
 	setevent EVENT_GOT_SILK_SCARF_FROM_TUSCANY
 	jumpthisopenedtext
 
-	text "Tuscany: Wouldn't"
-	line "you agree that it"
-	cont "is most elegant?"
+	text "Dietlinde: Findest"
+	line "du nicht auch,"
+	cont "dass es überaus"
+	cont "elegant ist?"
 
-	para "It strengthens"
-	line "Normal-type moves."
+	para "Attacken der"
+	line "Elementklasse"
+	cont "Normal, werden"
+	cont "dadurch stärker."
 
-	para "I am certain it"
-	line "will be of use."
+	para "Ich bin sicher,"
+	line "du kannst es"
+	cont "gebrauchen."
 	done
 
 TuscanyNotTuesdayScript:
@@ -197,38 +201,40 @@ LyraMovementData3:
 CatchingTutorialIntroText:
 	text "Lyra: <PLAYER>!"
 
-	para "You can catch wild"
-	line "#mon with #"
+	para "Mit #bällen"
+	line "kannst du wilde"
+	cont "#mon fangen."
 
-	para "Balls. Follow me"
-	line "and I'll show you!"
+	para "Komm mit, ich"
+	line "zeig's dir!"
 	done
 
 CatchingTutorialDebriefText:
-	text "Lyra: See? Just"
-	line "like that!"
+	text "Lyra: Siehst du?"
+	line "So geht das!"
 
-	para "If you weaken them"
-	line "first, #mon are"
-	cont "easier to catch."
+	para "Wenn du sie zuerst"
+	line "schwächst, kannst"
+	cont "du sie leichter"
+	cont "fangen."
 
-	para "I'll give you"
-	line "these. Good luck!"
+	para "Die schenke ich"
+	line "dir. Viel Glück!"
 	done
 
 CatchingTutorialRefusedText:
-	text "Aww… I wanted to"
-	line "show off my cap-"
-	cont "turing skills a"
-	cont "little…"
+	text "Ach… Ich wollte"
+	line "doch ein bisschen"
+	cont "mit meinen Fang-"
+	cont "künsten angeben…"
 
-	para "Anyway, I'll give"
-	line "you these."
-	cont "Good luck!"
+	para "Na ja, die schenke"
+	line "ich dir trotzdem."
+	cont "Viel Glück!"
 	done
 
 CatchingTutorialGoodbyeText:
-	text "Lyra: See you!"
+	text "Lyra: Bis dann!"
 	done
 
 Route29YoungsterText:
@@ -292,11 +298,11 @@ MeetTuscanyText:
 	done
 
 TuscanyGivesGiftText:
-	text "By way of intro-"
-	line "duction, please"
+	text "Da wir uns zum"
+	line "ersten Mal sehen,"
 
-	para "accept this gift,"
-	line "a Silk Scarf."
+	para "schenke ich dir"
+	line "einen Seidenschal."
 	done
 
 

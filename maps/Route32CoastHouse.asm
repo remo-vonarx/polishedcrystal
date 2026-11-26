@@ -37,44 +37,45 @@ GourmetManiacScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
-	text "Merci! Thank you!"
+	text "Merci! Danke!"
 
-	para "With this, I can"
-	line "create something"
-	cont "superb."
+	para "Damit kann ich"
+	line "etwas Hervorragen-"
+	cont "des kreieren."
 	done
 
 .GreetingText:
-	text "Hi there! I am"
-	line "a gourmet Baker!"
+	text "Hallo! Ich bin"
+	line "eine Gourmet-"
+	cont "Bäckerin!"
 
-	para "I cook wonderful"
-	line "dishes with only"
-	cont "the finest of"
-	cont "ingredients!"
+	para "Ich koche herr-"
+	line "liche Gerichte nur"
+	cont "aus den feinsten"
+	cont "Zutaten!"
 
-	para "Do you have any"
-	line "ingredients to"
-	cont "sell me?"
+	para "Hast du Zutaten,"
+	line "die du mir ver-"
+	cont "kaufen kannst?"
 	done
 
 .OfferText:
-	text "Oh, it smells so"
-	line "good!"
+	text "Oh, das riecht"
+	line "so gut!"
 
-	para "Would you accept"
+	para "Nimmst du dafür"
 	line "¥"
 	text_decimal hMoneyTemp, 3, 7
-	text " for it?"
+	text "?"
 	done
 
 .WrongItemText:
-	text "Hmmm… This is not"
-	line "quite what I'm"
-	cont "looking for."
+	text "Hmmm… Das ist"
+	line "nicht ganz, was"
+	cont "ich suche."
 	done
 
 .NoItemText:
-	text "Aww… Well,"
-	line "that's OK."
+	text "Ach… Na ja,"
+	line "schon gut."
 	done

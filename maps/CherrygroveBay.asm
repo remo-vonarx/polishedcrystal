@@ -116,29 +116,31 @@ CherrygroveBayGalarianBirdsScript:
 	endtext
 
 .GreatTreeText
-	text "It's the Great"
-	line "Tree of Cherry-"
-	cont "grove!"
+	text "Das ist der"
+	line "Große Baum von"
+	cont "Rosalia!"
 	done
 
 .LikeToUseItemText
-	text "Would you like to"
-	line "use a Lure on"
-	cont "the Great Tree?"
+	text "Möchtest du am"
+	line "Großen Baum ein"
+	cont "Parfüm benutzen?"
 	done
 
 .WhichLureText
-	text "Which Lure would"
-	line "you like to use?"
+	text "Welches Parfüm"
+	line "möchtest du"
+	cont "benutzen?"
 	done
 
 .YouSprayedTheLureText
-	text "You sprayed the"
-	line "Lure on the tree."
+	text "Du sprühst das"
+	line "Parfüm auf den"
+	cont "Baum."
 	done
 
 .NothingHappensText
-	text "Nothing happened…"
+	text "Nichts geschieht…"
 	done
 
 CherrygroveBayHikerScript:
@@ -164,23 +166,23 @@ CherrygroveBayTutorEarthPowerScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Oh well."
+	text "Schade."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have any"
-	line "Silver Leaves…"
+	text "Du hast keine"
+	line "Silberblätter…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Earth Power."
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Erdkräfte."
 	done
 
 GenericTrainerSwimmermThomas:
@@ -287,46 +289,49 @@ GenericTrainerHikerTony:
 	done
 
 CherrygroveBayFisherText:
-	text "I can watch"
-	line "Cherrygrove City"
+	text "Beim Angeln kann"
+	line "ich Rosalia City"
 
-	para "from afar while"
-	line "I fish."
+	para "aus der Ferne"
+	line "beobachten."
 
-	para "Oh! And I also saw"
-	line "some really big"
+	para "Oh! Neulich habe"
+	line "ich auch ein paar"
 
-	para "birds the other"
-	line "day."
+	para "richtig große"
+	line "Vögel gesehen."
 
-	para "I think they were"
-	line "headed to that big"
-	cont "ol' tree nearby?"
+	para "Ich glaube, sie"
+	line "flogen zu dem"
+	cont "alten Riesenbaum"
+	cont "hier in der Nähe?"
 	done
 
 CherrygroveBayHikerText:
-	text "I don't believe in"
-	line "legendary #mon"
-	cont "creation myths."
+	text "Ich glaube nicht"
+	line "an die Schöpfungs-"
+	cont "mythen über le-"
+	cont "gendäre #mon."
 
-	para "Johto was formed"
-	line "over millions of"
+	para "Johto wurde über"
+	line "Millionen von"
 
-	para "years by the power"
-	line "of the earth!"
+	para "Jahren von den"
+	line "Kräften der Erde"
+	cont "geformt!"
 	done
 
 Text_CherrygroveBayTutorEarthPower:
-	text "I can teach your"
-	line "#mon how to"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "use Earth Power"
-	line "for a Silver Leaf."
+	para "deinem #mon"
+	line "Erdkräfte bei."
 	done
 
 
 Text_CherrygroveBayTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Earth Power?"
+	text "Soll ich deinem"
+	line "#mon Erdkräfte"
+	cont "beibringen?"
 	done
