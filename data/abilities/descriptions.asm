@@ -256,8 +256,8 @@ FlashFireDescription:
 	done
 
 ShieldDustDescription:
-	text "Blockt Zusatzeffek-"
-	next "te von Attacken."
+	text "Blockt Attacken-"
+	next "Zusatzeffekte."
 	done
 
 OwnTempoDescription:

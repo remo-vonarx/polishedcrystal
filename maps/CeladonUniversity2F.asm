@@ -103,9 +103,8 @@ CeladonUniversity2FCooltrainerfScript:
 	done
 
 CeladonUniversity2FCooltrainermText:
-	text "In der Cafeteria"
-	line "ist es ziemlich"
-	cont "voll,"
+	text "In der Mensa ist"
+	line "es ziemlich voll,"
 
 	para "darum esse ich"
 	line "lieber im Flur."
@@ -181,7 +180,7 @@ CeladonUniversity2FWillowsOfficeSignText:
 	done
 
 CeladonUniversity2FNursesOfficeSignText:
-	text "Krankenstation"
+	text "Krankenzimmer"
 	done
 
 CeladonUniversity2FWestwoodsOfficeSignText:

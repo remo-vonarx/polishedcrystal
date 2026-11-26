@@ -4756,13 +4756,13 @@ SchoolgirlGroup:
 	end_trainer
 
 	def_trainer SARAH, "Sarah"
-	tr_mon LEVEL_FROM_BADGES + 2, "Charmer", CHARMANDER
+	tr_mon LEVEL_FROM_BADGES + 2, "Charmeur", CHARMANDER
 	tr_mon LEVEL_FROM_BADGES + 0, SENTRET
 	tr_mon LEVEL_FROM_BADGES + 1, MARILL
 	end_trainer
 
 	def_trainer ISABEL, "Isabel"
-	tr_mon LEVEL_FROM_BADGES + 2, "Turtle", SQUIRTLE
+	tr_mon LEVEL_FROM_BADGES + 2, "Schildi", SQUIRTLE
 	tr_mon LEVEL_FROM_BADGES + 0, PIDGEY
 	tr_mon LEVEL_FROM_BADGES + 1, PIKACHU
 	end_trainer
@@ -6640,7 +6640,7 @@ SightseerMGroup:
 	end_trainer
 
 	def_trainer BLAISE, "Blaise"
-	tr_mon 50, "Bulbasaur", BULBASAUR, MALE
+	tr_mon 50, "Bulbizarre", BULBASAUR, MALE
 	end_trainer
 
 	def_trainer GARETH, "Gareth"

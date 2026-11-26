@@ -4056,8 +4056,7 @@ _CardFlipPlayWithThreeCoinsText::
 
 SECTION "_CardFlipNotEnoughCoinsText", ROMX
 _CardFlipNotEnoughCoinsText::
-	text "Nicht genügend"
-	cont "Münzen…"
+	text "Zu wenig Münzen…"
 	prompt
 
 SECTION "_CardFlipChooseACardText", ROMX
