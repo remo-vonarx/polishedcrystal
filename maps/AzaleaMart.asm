@@ -45,35 +45,38 @@ AzaleaMartBugCatcherText:
 	done
 
 AzaleaMartLadyText:
-	text "I can buy many"
-	line "items at home in"
-	cont "Goldenrod City,"
+	text "Bei mir zu Hause"
+	line "in Dukatia City"
+	cont "kann ich viele"
+	cont "Items kaufen,"
 
-	para "but for boosting"
-	line "Fire-type moves,"
+	para "aber um Feuer-"
+	line "Attacken zu ver-"
+	cont "stärken, geht"
 
-	para "nothing beats"
-	line "Azalea's Charcoal!"
+	para "nichts über die"
+	line "Holzkohle aus"
+	cont "Azalea City!"
 	done
 
 AzaleaMartRockerText:
-	text "The prototype"
-	line "versions of"
+	text "Die Prototypen"
+	line "von Kurts Bällen"
 
-	para "Kurt's balls had"
-	line "some problems."
+	para "hatten so ihre"
+	line "Probleme."
 
-	para "Love Balls used"
-	line "to catch same-"
-	cont "gender #mon,"
+	para "Sympabälle fingen"
+	line "#mon desselben"
+	cont "Geschlechts,"
 
-	para "and Fast Balls"
-	line "only worked for"
+	para "und Turbobälle"
+	line "wirkten nur bei"
 
-	para "three different"
-	line "#mon species."
+	para "drei verschiede-"
+	line "nen #mon-Arten."
 
-	para "Thank goodness"
-	line "those problems"
-	cont "were fixed!"
+	para "Zum Glück wurden"
+	line "diese Probleme"
+	cont "behoben!"
 	done

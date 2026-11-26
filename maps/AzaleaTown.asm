@@ -144,14 +144,14 @@ AzaleaTownRivalBattleTrigger2:
 	done
 
 .WinText:
-	text "…Humph! Useless"
+	text "…Hmpf! Nutzlose"
 	line "#mon!"
 
-	para "Listen, you. You"
-	line "only won because"
+	para "He, du! Du hast"
+	line "nur gewonnen, weil"
 
-	para "my #mon were"
-	line "weak."
+	para "meine #mon"
+	line "schwach sind."
 	done
 
 .LossText:
@@ -344,39 +344,46 @@ AzaleaTownTeacherScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "He has changed,"
-	line "but he'll always be"
+	text "Er hat sich ver-"
+	line "ändert, aber für"
 
-	para "my little Wooster"
-	line "to me."
+	para "mich bleibt er"
+	line "immer mein kleiner"
+	cont "Wooster."
 	done
 
 .Text1:
-	text "It hasn't rained"
-	line "since the Slow-"
-	cont "poke vanished."
+	text "Seit die Flegmon"
+	line "verschwunden sind,"
+	cont "hat es nicht mehr"
+	cont "geregnet."
 
-	para "My poor Wooster"
-	line "can't thrive in"
-	cont "this weather…"
+	para "Mein armer"
+	line "Wooster kann bei"
+	cont "diesem Wetter"
+	cont "nicht gedeihen…"
 	done
 
 .Text3:
-	text "In a sudden down-"
-	line "pour, my Wooster"
-	cont "evolved!"
+	text "Bei einem plötz-"
+	line "lichen Regenguss"
+	cont "hat sich mein"
+	cont "Wooster"
+	cont "entwickelt!"
 
-	para "Oh? You brought"
-	line "the Slowpoke back?"
+	para "Oh? Du hast die"
+	line "Flegmon zurück-"
+	cont "gebracht?"
 
-	para "They brought the"
-	line "rain with them!"
+	para "Sie haben den"
+	line "Regen mitgebracht!"
 
-	para "Thank you so"
-	line "much!"
+	para "Vielen, vielen"
+	line "Dank!"
 
-	para "Please take this,"
-	line "you deserve it!"
+	para "Bitte nimm das,"
+	line "du hast es dir"
+	cont "verdient!"
 	done
 
 AzaleaTownWoosterText:

@@ -288,12 +288,13 @@ Bug_catcherDonBeatenText:
 	done
 
 Route30YoungsterText:
-	text "These train tracks"
-	line "lead all the way"
-	cont "to Goldenrod City!"
+	text "Diese Gleise"
+	line "führen bis nach"
+	cont "Dukatia City!"
 
-	para "I'm having fun"
-	line "balancing on them."
+	para "Es macht Spaß,"
+	line "darauf zu"
+	cont "balancieren."
 	done
 
 Route30CooltrainerFText:

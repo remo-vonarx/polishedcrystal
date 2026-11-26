@@ -303,18 +303,22 @@ Route31MailRecipientScript:
 	iftruefwd .TryGiveKenya
 	jumpthisopenedtext
 
-	text "…Hnuurg… Huh?"
+	text "…Uargh… Hä?"
 
-	para "I walked too far"
-	line "today looking for"
-	cont "#mon."
+	para "Heute bin ich auf"
+	line "der Suche nach"
+	cont "#mon zu viel"
+	cont "gelaufen."
 
-	para "My feet hurt and"
-	line "I'm sleepy…"
+	para "Meine Füße schmer-"
+	line "zen und ich bin"
+	cont "müde…"
 
-	para "If I were a wild"
-	line "#mon, I'd be"
-	cont "easy to catch…"
+	para "Wenn ich ein wil-"
+	line "des #mon wäre,"
+	cont "würde ich mich"
+	cont "leicht fangen"
+	cont "lassen…"
 
 	para "…Zzzz…"
 	done
@@ -347,24 +351,23 @@ Route31MailRecipientScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "OK then…"
+	text "Na gut…"
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf,"
-	cont "though…"
+	text "Du hast aber kein"
+	line "Silberblatt…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "There! Now your"
-	line "#mon knows"
-	cont "Sleep Talk!"
+	text "So! Jetzt kann"
+	line "dein #mon"
+	cont "Schlafrede!"
 	done
 
 .WrongMail:
@@ -449,40 +452,41 @@ Text_Route31HandOverMailMon:
 	done
 
 Text_Route31ReadingMail:
-	text "Let's see…"
+	text "Mal sehen…"
 
-	para "…Dark Cave leads"
-	line "to another road…"
+	para "…die Dunkelhöhle"
+	line "führt zu einem"
+	cont "anderen Weg…"
 
-	para "That's good to"
-	line "know."
+	para "Gut zu wissen."
 
-	para "Thanks for bring-"
-	line "ing this to me."
+	para "Danke, dass du mir"
+	line "den Brief"
+	cont "brachtest."
 
-	para "My friend's a good"
-	line "guy, and you're"
-	cont "swell too!"
+	para "Mein Freund ist"
+	line "ein netter Mensch,"
+	cont "genau wie du!"
 
-	para "I'd like to do"
-	line "something good in"
-	cont "return!"
+	para "Ich möchte mich"
+	line "bei dir dafür"
+	cont "revanchieren!"
 	done
 
 Text_Route31TutorSleepTalk:
-	text "For just one"
-	line "Silver Leaf,"
+	text "Für nur ein"
+	line "Silberblatt"
 
-	para "I can teach your"
-	line "#mon to talk"
-	cont "in their sleep!"
+	para "bringe ich deinem"
+	line "#mon bei, im"
+	cont "Schlaf zu reden!"
 	done
 
 
 Text_Route31TutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Sleep Talk?"
+	text "Soll ich deinem"
+	line "#mon Schlafrede"
+	cont "beibringen?"
 	done
 
 

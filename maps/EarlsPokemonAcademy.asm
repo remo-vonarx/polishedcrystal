@@ -159,15 +159,13 @@ PokemonJournalWalkerScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Ex-Leader Walker!"
+	para "Titelthema:"
+	line "Ex-Leiter Luc!"
 
-	para "Falkner's father"
-	line "Walker is rumored"
-
-	para "to be wandering"
-	line "around Johto as"
-	cont "a vagabond."
+	para "Gerüchten zufolge"
+	line "zieht Falks Vater"
+	cont "Luc als Vagabund"
+	cont "durch Johto."
 	done
 
 AcademyEarlSpinMovement:
@@ -419,23 +417,26 @@ AcademyNotebookText2:
 	done
 
 AcademyNotebookText3:
-	text "People who catch"
-	line "and use #mon"
+	text "Leute, die #-"
+	line "mon fangen und in"
 
-	para "in battle are"
-	line "#mon trainers."
+	para "Kämpfen einsetzen,"
+	line "nennt man #-"
+	cont "mon-Trainer."
 
-	para "They are expected"
-	line "to visit #mon"
+	para "Man erwartet von"
+	line "ihnen, dass sie"
 
-	para "Gyms and defeat"
-	line "other trainers."
+	para "Arenen besuchen"
+	line "und gegen andere"
+	cont "Trainer antreten."
 
-	para "The next page"
-	line "is… Blank!"
+	para "Die nächste Seite"
+	line "ist… leer!"
 
-	para "Boy: E-he-he…"
+	para "Junge: E-he-he…"
 
-	para "I haven't written"
-	line "any more…"
+	para "Mehr habe ich"
+	line "nicht aufgeschrie-"
+	cont "ben…"
 	done

@@ -65,41 +65,39 @@ AzaleaGymBugsyScript:
 	setevent EVENT_BEAT_BUG_CATCHER_AL
 	setevent EVENT_BEAT_BUG_CATCHER_JOSH
 	writethistext
-		text "Do you know the"
-		line "benefits of the"
-		cont "Hive Badge?"
+		text "Kennst du die Vor-"
+		line "züge des Insekt-"
+		cont "ordens?"
 
-		para "If you have it,"
-		line "#mon up to <LV>30"
+		para "Durch ihn gehor-"
+		line "chen dir #mon"
+		cont "bis zu Level 30,"
+		cont "auch getauschte."
 
-		para "will obey you,"
-		line "even traded ones."
+		para "Deine #mon"
+		line "können Zerschnei-"
+		cont "der nun auch"
+		cont "außerhalb des"
+		cont "Kampfes anwenden."
 
-		para "#mon that know"
-		line "Cut will be able"
-
-		para "to use it outside"
-		line "of battle too."
-
-		para "Here, I also want"
-		line "you to have this."
+		para "Bitte nimm auch"
+		line "dies!"
 		done
 	promptbutton
 	verbosegivetmhm TM_U_TURN
 	setevent EVENT_GOT_TM69_U_TURN
 	jumpthisopenedtext
 
-	text "TM69 contains"
-	line "U-turn."
+	text "TM69 enthält"
+	line "Kehrtwende."
 
-	para "It lets your #-"
-	line "mon attack, then"
+	para "Damit greift"
+	line "dein #mon an"
+	cont "und wird sofort"
+	cont "ausgewechselt."
 
-	para "switch out right"
-	line "away."
-
-	para "Isn't that great?"
-	line "I discovered it!"
+	para "Toll, oder? Das"
+	line "habe ich entdeckt!"
 	done
 
 .SeenText:
@@ -151,25 +149,27 @@ AzaleaGymGuyScript:
 	iftrue_jumptextfaceplayer .WinText
 	jumpthistextfaceplayer
 
-	text "Yo, challenger!"
+	text "Yo, Herausfor-"
+	line "derer!"
 
-	para "Bugsy's young, but"
-	line "his knowledge of"
+	para "Kai ist zwar jung,"
+	line "aber sein Wissen"
 
-	para "bug #mon is for"
-	line "real."
+	para "über Käfer-#-"
+	line "mon ist unüber-"
+	cont "trefflich."
 
-	para "It's going to be"
-	line "tough without my"
-	cont "advice."
+	para "Ohne meine Tipps"
+	line "wird der Kampf für"
+	cont "dich sehr hart."
 
-	para "Let's see… Bug"
-	line "#mon don't like"
-	cont "fire."
+	para "Mal sehen… Käfer-"
+	line "#mon mögen kein"
+	cont "Feuer."
 
-	para "Flying-type moves"
-	line "are super effec-"
-	cont "tive too."
+	para "Auch Flug-Attacken"
+	line "sind sehr effek-"
+	cont "tiv."
 	done
 
 .WinText:

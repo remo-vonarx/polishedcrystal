@@ -181,24 +181,26 @@ if DEF(DEBUG)
 	done
 else
 	text "Oh, <PLAYER>!"
-	line "You're awake."
+	line "Du bist wach."
 
-	para "Your friend Lyra"
-	line "was just here."
+	para "Deine Freundin"
+	line "Lyra war gerade"
+	cont "hier."
 
-	para "She said that our"
-	line "neighbor, Prof."
+	para "Sie sagte, unser"
+	line "Nachbar, Prof."
 
-	para "Elm, was looking"
-	line "for you."
+	para "Lind, hat nach dir"
+	line "gesucht."
 
-	para "Oh! I almost for-"
-	line "got! Your #mon"
+	para "Oh! Fast hätte ich"
+	line "es vergessen! Dein"
 
-	para "Gear is back from"
-	line "the repair shop."
+	para "#mon-Com ist"
+	line "von der Reparatur"
+	cont "zurück."
 
-	para "Here you go!"
+	para "Da hast du ihn!"
 	done
 endc
 
@@ -225,35 +227,38 @@ MomDSTText:
 	done
 
 MomRunningShoesText:
-	text "Come home to"
-	line "adjust your clock"
+	text "Geh nach Hause, um"
+	line "deine Uhr auf SZ"
+	cont "oder WZ einzu-"
+	cont "stellen."
 
-	para "for Daylight"
-	line "Saving Time."
-
-	para "By the way, do"
-	line "you know how to"
-
-	para "use your new"
-	line "Running Shoes?"
+	para "Übrigens, weißt du"
+	line "über den Umgang"
+	cont "mit deinen neuen"
+	cont "Turbotretern"
+	cont "Bescheid?"
 	done
 
 MomInstructionsText:
-	text "I'll read the"
-	line "instructions."
+	text "Ich lese dir die"
+	line "Anleitung vor."
 
-	para "Just hold down the"
-	line "B Button to run,"
-	cont "indoors or out."
+	para "Halte einfach den"
+	line "B-Knopf gedrückt,"
+	cont "um zu rennen,"
+	cont "drinnen wie"
+	cont "draußen."
 
-	para "Or use the Option"
-	line "to always run, and"
-	cont "hold B to walk."
+	para "Oder stell unter"
+	line "Option ein, dass"
+	cont "du immer rennst,"
+	cont "und halte B zum"
+	cont "Gehen."
 	done
 
 MomOutroText:
-	text "Gee, aren't they"
-	line "convenient?"
+	text "Na, sind die nicht"
+	line "praktisch?"
 	done
 
 MomErrandText:

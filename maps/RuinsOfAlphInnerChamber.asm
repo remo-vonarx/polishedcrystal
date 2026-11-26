@@ -89,14 +89,14 @@ RuinsOfAlphInnerChamberTeacherText:
 	done
 
 RuinsOfAlphInnerChamberGrampsText:
-	text "The ruins have not"
-	line "been robbed or"
-	cont "tampered with."
+	text "Die Ruinen wurden"
+	line "weder ausgeraubt"
+	cont "noch beschädigt."
 
-	para "Something here"
-	line "must make people"
-	cont "want to preserve"
-	cont "it."
+	para "Irgendetwas hier"
+	line "muss die Menschen"
+	cont "dazu bringen, sie"
+	cont "zu bewahren."
 	done
 
 RuinsOfAlphInnerChamberScientistText:

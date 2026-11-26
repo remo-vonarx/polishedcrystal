@@ -138,61 +138,66 @@ Route32CooltrainerMTrigger:
 	done
 
 .IntroText:
-	text "You have some good"
-	line "#mon there."
+	text "Du besitzt einige"
+	line "gute #mon."
 
-	para "It must be from"
-	line "the training you"
+	para "Sie sind bestimmt"
+	line "wegen der vielen"
 
-	para "gave them around"
-	line "Violet City."
+	para "Kämpfe, die du mit"
+	line "ihnen bei Viola"
+	cont "City absolviert"
+	cont "hast, so gut."
 
-	para "You should have no"
-	line "trouble beating"
+	para "Du solltest alle"
+	line "Trainer auf dieser"
+	cont "Route mühelos"
+	cont "besiegen können."
 
-	para "all the trainers"
-	line "on this route."
-
-	para "If you can do"
-	line "that, I'll face you"
-	cont "myself."
+	para "Schaffst du das,"
+	line "trete ich selbst"
+	cont "gegen dich an."
 	done
 
 .QuestionText:
-	text "It looks like you"
-	line "beat everyone else"
-	cont "here."
+	text "Sieht so aus, als"
+	line "hättest du alle"
+	cont "anderen hier"
+	cont "besiegt."
 
-	para "Your training at"
-	line "the Gym must have"
+	para "Das Training in"
+	line "der PKMN-Arena"
 
-	para "been especially"
-	line "helpful."
+	para "muss von großem"
+	line "Nutzen gewesen"
+	cont "sein."
 
-	para "I, too, have a"
-	line "Zephyr Badge."
+	para "Auch ich habe den"
+	line "Flügelorden."
 
-	para "Will you battle"
-	line "with me?"
+	para "Kämpfst du gegen"
+	line "mich?"
 	done
 
 .RefusedText:
-	text "So you would ra-"
-	line "ther journey on…"
+	text "Du ziehst es also"
+	line "vor, weiterzu-"
+	cont "reisen…"
 	done
 
 .SeenText:
-	text "My training in"
-	line "Sprout Tower over-"
-	cont "came even Falkner."
+	text "Dank meines Trai-"
+	line "nings im Knofensa-"
+	cont "Turm habe ich so-"
+	cont "gar Falk besiegt."
 
-	para "Let's see how you"
-	line "compare!"
+	para "Mal sehen, wie du"
+	line "dich schlägst!"
 	done
 
 .BeatenText:
-	text "My team was up-"
-	line "rooted!"
+	text "Mein Team wurde"
+	line "entwurzelt!"
 	done
 
 .AfterText1:
@@ -308,53 +313,58 @@ Route32LyraIntroducesHiddenGrottoesMainScript:
 
 .GreetingText:
 	text "<PLAYER>!"
-	line "Hi there!"
+	line "Hallo!"
 
-	para "Prof.Elm said his"
-	line "aide was deliver-"
-	cont "ing an Egg to you."
+	para "Prof. Lind sagte,"
+	line "sein Assistent"
+	cont "bringt dir ein Ei."
 	done
 
 .NoEggText:
-	text "Be sure to carry"
-	line "it with you."
+	text "Trag es unbedingt"
+	line "bei dir."
 
-	para "I'm so curious"
-	line "what #mon it"
-	cont "could be!"
+	para "Ich bin so ge-"
+	line "spannt, was für"
+	cont "ein #mon es"
+	cont "sein könnte!"
 	done
 
 .HaveEggText:
-	text "Oh good! You're"
-	line "carrying it just"
-	cont "like he wanted."
+	text "Oh, gut! Du trägst"
+	line "es bei dir, genau"
+	cont "wie er wollte."
 
-	para "I'm so curious"
-	line "what #mon it"
-	cont "could be!"
+	para "Ich bin so ge-"
+	line "spannt, was für"
+	cont "ein #mon es"
+	cont "sein könnte!"
 	done
 
 .HatchedEggText:
-	text "…What? You already"
-	line "hatched it?"
+	text "…Was? Es ist schon"
+	line "geschlüpft?"
 
-	para "Oh my gosh! So it"
-	line "was a Togepi!"
-	cont "They're so rare!"
+	para "Meine Güte! Es war"
+	line "also ein Togepi!"
+	cont "Die sind so"
+	cont "selten!"
 
-	para "You should show"
-	line "it to Prof.Elm"
+	para "Du solltest es"
+	line "Prof. Lind zeigen,"
 
-	para "while you're not"
-	line "too far from home!"
+	para "solange du nicht"
+	line "zu weit von zu"
+	cont "Hause weg bist!"
 	done
 
 .QuestionText:
-	text "<PLAYER>, did you"
-	line "hear that?"
+	text "<PLAYER>, hast du"
+	line "das gehört?"
 
-	para "It came from some-"
-	line "where nearby…"
+	para "Es kam von irgend-"
+	line "wo hier in der"
+	cont "Nähe…"
 	done
 
 .LookAroundMovement:
@@ -390,34 +400,39 @@ Route32LyraIntroducesHiddenGrottoesOutroScript:
 	end
 
 .GrottoText:
-	text "Here it is!"
-	line "There's a gap in"
-	cont "the trees!"
+	text "Da ist es!"
+	line "Zwischen den Bäu-"
+	cont "men ist eine"
+	cont "Lücke!"
 
-	para "I've heard of these"
-	line "places before."
+	para "Von solchen Orten"
+	line "habe ich schon"
+	cont "gehört."
 
-	para "It's a Hidden"
-	line "Grotto!"
+	para "Das ist eine"
+	line "Versteckte"
+	cont "Lichtung!"
 
-	para "Hidden Grottoes"
-	line "are found among"
-	cont "trees and cliff-"
-	cont "sides."
+	para "Versteckte Lich-"
+	line "tungen findet man"
+	cont "zwischen Bäumen"
+	cont "und an Klippen."
 
-	para "Some amazing #-"
-	line "mon might be"
-	cont "hiding in there!"
+	para "Dort könnten tolle"
+	line "#mon versteckt"
+	cont "sein!"
 
-	para "I wish I had time"
-	line "to look around,"
+	para "Ich hätte gern"
+	line "Zeit, mich umzu-"
+	cont "sehen,"
 
-	para "but I have things"
-	line "to do."
+	para "aber ich habe noch"
+	line "zu tun."
 
-	para "<PLAYER>, keep an"
-	line "eye out for more"
-	cont "Hidden Grottoes!"
+	para "<PLAYER>, halte"
+	line "Ausschau nach"
+	cont "weiteren Versteck-"
+	cont "ten Lichtungen!"
 	done
 
 .LeaveMovement1:
@@ -832,16 +847,17 @@ Route32CooltrainerMText_VioletGym:
 	done
 
 Text_MillionDollarSlowpokeTail:
-	text "How would you like"
-	line "to have this"
+	text "Wie möchtest du"
+	line "die schmackhafte,"
 
-	para "tasty, nutritious"
-	line "SlowpokeTail?"
+	para "gehaltvolle"
+	line "Flegmon-Rute"
+	cont "zubereitet haben?"
 
-	para "For you right now,"
-	line "just ¥10,000,000!"
+	para "Für dich jetzt nur"
+	line "¥10,000,000!"
 
-	para "You'll want this!"
+	para "Möchtest du sie?"
 	done
 
 

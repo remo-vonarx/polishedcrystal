@@ -40,11 +40,10 @@ PlayersNeighborsDaughterText:
 	done
 
 PlayersNeighborsHusbandText:
-	text "This town is the"
-	line "farthest south-"
+	text "Dieser Ort ist"
+	line "der südöstlichste"
 
-	para "east one in all"
-	line "of Johto."
+	para "in ganz Johto."
 	done
 
 PlayersNeighborText:

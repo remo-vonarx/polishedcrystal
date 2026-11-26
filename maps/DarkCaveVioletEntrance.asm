@@ -121,74 +121,78 @@ DarkCaveVioletEntranceMovementData_FalknerLeave:
 	step_end
 
 DarkCaveVioletEntranceFalknerAttackText:
-	text "Falkner: Use Wing"
-	line "Attack, Pidgeotto!"
+	text "Falk: Tauboga,"
+	line "Flügelschlag!"
 	done
 
 DarkCaveVioletEntranceFalknerReturnText:
-	text "Good job,"
-	line "Pidgeotto."
+	text "Gut gemacht,"
+	line "Tauboga."
 	done
 
 DarkCaveVioletEntranceFalknerIntroText:
-	text "Oh! You must be"
-	line "a trainer."
+	text "Oh! Du musst ein"
+	line "Trainer sein."
 	prompt
 
 DarkCaveVioletEntranceFalknerDarkIntroText:
-	text "You must be brave"
-	line "to come here in"
-	cont "pitch darkness."
+	text "Du musst mutig"
+	line "sein, wenn du in"
+	cont "dieser Finsternis"
+	cont "herkommst."
 	prompt
 
 DarkCaveVioletEntranceFalknerExplanationText:
-	text "I'm Falkner, the"
-	line "Violet #mon"
-	cont "Gym Leader."
+	text "Ich bin Falk, der"
+	line "Arenaleiter von"
+	cont "Viola City."
 
-	para "I don't explore"
-	line "caves for fun,"
+	para "Ich erforsche"
+	line "Höhlen nicht zum"
+	cont "Spaß,"
 
-	para "but that Ursaring"
-	line "was attacking"
+	para "aber das Ursaring"
+	line "griff Trainer an,"
 
-	para "trainers too weak"
-	line "to defend them-"
-	cont "selves."
+	para "die zu schwach"
+	line "waren, um sich zu"
+	cont "verteidigen."
 
-	para "As a Gym Leader,"
-	line "it's my job to"
+	para "Als Arenaleiter"
+	line "ist es meine Auf-"
+	cont "gabe, mich um so"
+	cont "etwas zu kümmern."
 
-	para "handle this sort"
-	line "of situation."
+	para "Du willst also"
+	line "einen Orden ver-"
+	cont "dienen?"
 
-	para "So you're here to"
-	line "earn a Badge?"
-
-	para "Then meet me at"
-	line "the Violet Gym."
+	para "Dann komm in die"
+	line "Arena von Viola"
+	cont "City."
 	done
 
 DarkCaveVioletEntranceFalknerDarknessText:
-	text "Falkner: Is"
-	line "someone there?"
+	text "Falk: Ist da"
+	line "jemand?"
 
-	para "Don't come any"
-	line "closer!"
+	para "Komm nicht näher!"
 
-	para "It's too dark, you"
-	line "could get hurt."
+	para "Es ist zu dunkel,"
+	line "du könntest dich"
+	cont "verletzen."
 	done
 
 DarkCaveVioletEntranceFalknerProgressAnywayText:
-	text "Falkner: Is"
-	line "someone there?"
+	text "Falk: Ist da"
+	line "jemand?"
 
-	para "It's reckless to"
-	line "explore Dark Cave"
-	cont "without any light!"
+	para "Es ist leicht-"
+	line "sinnig, die Dun-"
+	cont "kelhöhle ohne"
+	cont "Licht zu erkunden!"
 
-	para "I'm in the middle"
-	line "of a battle, so"
-	cont "stay back!"
+	para "Ich bin mitten in"
+	line "einem Kampf, also"
+	cont "bleib zurück!"
 	done

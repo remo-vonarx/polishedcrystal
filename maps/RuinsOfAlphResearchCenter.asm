@@ -83,15 +83,15 @@ RuinsOfAlphResearchCenterScientist3Script:
 .Conclusion:
 	jumpthisopenedtext
 
-	text "We're going to"
-	line "gradually study"
+	text "Wir werden die"
+	line "geöffnete Kammer"
 
-	para "the chamber that"
-	line "opened up."
+	para "nach und nach"
+	line "erforschen."
 
-	para "We have to take"
-	line "care not to"
-	cont "disturb the site."
+	para "Wir müssen darauf"
+	line "achten, die Stätte"
+	cont "nicht zu stören."
 	done
 
 .PrinterAvailable:
@@ -298,17 +298,17 @@ RuinsOfAlphResearchCenterScientist4Script:
 	iffalse_jumptextfaceplayer .TooBusyText
 	jumpthistextfaceplayer
 
-	text "You're investigat-"
-	line "ing the Unown too?"
+	text "Untersuchst du"
+	line "auch die Icognito?"
 
-	para "Maybe with your"
-	line "help, I'll have"
+	para "Vielleicht habe"
+	line "ich mit deiner"
 
-	para "time to finish my"
-	line "research on the"
+	para "Hilfe Zeit, meine"
+	line "Forschung über die"
 
-	para "#mon fossils"
-	line "around here."
+	para "#mon-Fossilien"
+	line "hier abschließen."
 	done
 
 .CanResurrectFossils
@@ -332,43 +332,47 @@ RuinsOfAlphResearchCenterScientist4Script:
 	end
 
 .TooBusyText:
-	text "We sometimes find"
-	line "fossils in the"
+	text "Manchmal finden"
+	line "wir Fossilien im"
 
-	para "rocks that we"
-	line "excavate here."
+	para "Gestein, das wir"
+	line "hier ausgraben."
 
-	para "I'm eager to study"
-	line "them… but so far,"
+	para "Ich würde sie gern"
+	line "erforschen… aber"
 
-	para "understanding the"
-	line "ruins has kept me"
-	cont "too busy."
+	para "bisher hat mich"
+	line "das Entschlüsseln"
+	cont "der Ruinen zu sehr"
+	cont "beschäftigt."
 	done
 
 .IntroText:
-	text "You're the kid who"
-	line "figured out the"
-	cont "Unown's secrets!"
+	text "Du bist doch das"
+	line "Kind, das hinter"
+	cont "die Geheimnisse"
+	cont "der Icognito kam!"
 
-	para "Thanks to you,"
-	line "I've had time to"
+	para "Dank dir hatte ich"
+	line "Zeit für meine"
 
-	para "study my passion"
-	line "of fossils."
+	para "Leidenschaft, die"
+	line "Fossilien."
 
-	para "I found a way to"
-	line "extract living"
-	cont "#mon from them!"
+	para "Ich habe einen Weg"
+	line "gefunden, aus"
+	cont "ihnen lebende"
+	cont "#mon zu holen!"
 	done
 
 .QuestionText:
-	text "If you find a"
-	line "fossil in some"
-	cont "rock, bring it"
+	text "Findest du in"
+	line "einem Felsen ein"
+	cont "Fossil, bring es"
 
-	para "here and I'll re-"
-	line "vive it for you."
+	para "her, dann belebe"
+	line "ich es für dich"
+	cont "wieder."
 	done
 
 MapRuinsofAlphResearchCenterSignpost1Script:
@@ -395,20 +399,20 @@ RuinsOfAlphResearchCenterApproachesComputerMovement:
 	step_end
 
 RuinsOfAlphResearchCenterModifiedDexText:
-	text "Done!"
+	text "Geschafft!"
 
-	para "I modified your"
-	line "#dex."
+	para "Ich habe deinen"
+	line "#dex erweitert."
 
-	para "I added an"
-	line "optional #dex"
+	para "Ich habe dir einen"
+	line "optionalen #dex"
 
-	para "to store Unown"
-	line "data."
+	para "extra für Icognito"
+	line "eingebaut. Er"
 
-	para "It records them"
-	line "in alphabetical"
-	cont "order."
+	para "speichert sie in"
+	line "alphabetischer"
+	cont "Reihenfolge."
 	done
 
 RuinsOfAlphResearchCenterDexUpgradedText:
@@ -417,34 +421,37 @@ RuinsOfAlphResearchCenterDexUpgradedText:
 	done
 
 RuinsOfAlphResearchCenterScientist3Text:
-	text "The Unown you"
-	line "catch will all be"
-	cont "recorded."
+	text "Alle Icognito, die"
+	line "du fängst, werden"
+	cont "aufgezeichnet."
 
-	para "Check to see how"
-	line "many kinds exist."
+	para "Sieh nach, wie"
+	line "viele Arten es"
+	cont "gibt."
 
-	para "You're doing a"
-	line "favor for us, so"
+	para "Du tust uns einen"
+	line "Gefallen, also"
 
-	para "I'll give you some-"
-	line "thing nice if you"
-	cont "find all of them."
+	para "bekommst du etwas"
+	line "Schönes, wenn du"
+	cont "alle findest."
 	done
 
 RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
-	text "You caught all the"
-	line "Unown variations?"
+	text "Du hast alle"
+	line "Icognito-Varianten"
+	cont "gefangen?"
 
-	para "That's a great"
-	line "achievement!"
+	para "Das ist eine"
+	line "großartige"
+	cont "Leistung!"
 
-	para "You've been very"
-	line "helpful to our"
-	cont "research."
+	para "Du warst unserer"
+	line "Forschung eine"
+	cont "große Hilfe."
 
-	para "Let me give you"
-	line "this."
+	para "Ich möchte dir das"
+	line "hier geben."
 	done
 
 GotUnownDollText:
@@ -459,16 +466,17 @@ UnownDollSentText:
 	done
 
 RuinsofAlphResearchCenterScientistRewardText:
-	text "I designed that"
-	line "doll myself!"
+	text "Diese Puppe habe"
+	line "ich selbst"
+	cont "entworfen!"
 	done
 
 RuinsofAlphResearchCenterScientistInterruptedText:
-	text "You can--"
+	text "Du kannst--"
 	done
 
 RuinsofAlphResearchCenterScientistShockedText:
-	text "What was THAT?!"
+	text "Was war DAS?!"
 	done
 
 RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
@@ -505,12 +513,13 @@ RuinsOfAlphResearchCenterScientist2Text_RadioWaves:
 	done
 
 RuinsOfAlphResearchCenterComputerText_GotAllUnown:
-	text "Mystery #mon"
-	line "Name: Unown"
+	text "Geheimnisvolles"
+	line "#mon"
+	cont "Name: Icognito"
 
-	para "A total of "
+	para "Insgesamt "
 	text_decimal hScriptVar, 1, 2
-	line "kinds found."
+	line "Arten gefunden."
 	done
 
 RuinsOfAlphResearchCenterPrinterText_DoesntWork:

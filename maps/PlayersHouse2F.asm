@@ -364,16 +364,17 @@ PokemonJournalProfElmScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "#mon Prof.Elm!"
+	para "Titelthema:"
+	line "Prof. Lind!"
 
-	para "Prof.Elm was the"
-	line "top student of"
-	cont "Prof.Oak."
+	para "Prof. Lind war"
+	line "der beste Schüler"
+	cont "von Prof. Eich."
 
-	para "They're said to"
-	line "often argue about"
-	cont "research."
+	para "Die beiden sollen"
+	line "oft über ihre"
+	cont "Forschung"
+	cont "streiten."
 	done
 
 PlayersHousePC:

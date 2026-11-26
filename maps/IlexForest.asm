@@ -419,21 +419,21 @@ IlexForestTutorHeadbuttScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Alright then."
+	text "Na gut."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Oh, but you don't"
-	line "have any Silver"
-	cont "Leaves."
+	text "Oh, aber du hast"
+	line "keine Silber-"
+	cont "blätter."
 
-	para "Sometimes you can"
-	line "find them on wild"
+	para "Manchmal findet"
+	line "man sie bei wil-"
 
-	para "Oddish, or lying"
-	line "on the ground."
+	para "den Myrapla oder"
+	line "auf dem Boden."
 	done
 
 .TeachMove
@@ -912,28 +912,33 @@ Text_CharcoalMasterIntro:
 	done
 
 Text_CharcoalMasterOutro:
-	text "That's the Cut HM."
-	line "Any #mon you"
+	text "Diese VM enthält"
+	line "Zerschneider."
 
-	para "have that's compat-"
-	line "ible with it can"
+	para "Jedes deiner #-"
+	line "mon, das sie er-"
 
-	para "use Cut to clear"
-	line "small trees."
+	para "lernen kann, kann"
+	line "mit Zerschneider"
+	cont "kleine Sträucher"
+	cont "zerschneiden."
 
-	para "You don't have to"
-	line "teach it to them"
+	para "Du musst sie ihm"
+	line "nur beibringen,"
 
-	para "unless you want"
-	line "them to use Cut"
-	cont "in a battle."
+	para "wenn es Zer-"
+	line "schneider im Kampf"
+	cont "einsetzen soll."
 
-	para "Of course, you"
-	line "have to have the"
+	para "Natürlich benö-"
+	line "tigst du noch den"
 
-	para "Gym Badge from"
-	line "Azalea to use it"
-	cont "outside of battle."
+	para "Orden aus der"
+	line "PKMN-Arena von"
+	cont "Azalea City, um"
+	cont "sie außerhalb von"
+	cont "Kämpfen einzu-"
+	cont "setzen."
 	done
 
 Text_CharcoalMasterTalkAfter:
@@ -948,54 +953,59 @@ Text_CharcoalMasterTalkAfter:
 	done
 
 Text_HeadbuttIntro:
-	text "What am I doing?"
+	text "Was ich mache?"
 
-	para "I'm shaking trees"
-	line "using Headbutt."
+	para "Ich setze"
+	line "Kopfnuss ein, um"
 
-	para "Sometimes I flush"
-	line "out a #mon,"
+	para "Bäume zu"
+	line "schütteln."
 
-	para "sometimes just"
-	line "their feathers."
+	para "Manchmal scheuche"
+	line "ich ein #mon"
+	cont "auf,"
 
-	para "But even those"
-	line "are useful!"
+	para "manchmal fallen"
+	line "nur Federn."
 
-	para "They seem to make"
-	line "my own #mon"
-	cont "a little stronger."
+	para "Aber auch die sind"
+	line "nützlich!"
 
-	para "It's fun. Here,"
-	line "you try it too!"
+	para "Sie scheinen meine"
+	line "eigenen #mon"
+	cont "etwas stärker zu"
+	cont "machen."
 
-	para "You'll just need a"
-	line "Case to hold any"
-	cont "delicate Wings…"
+	para "Das macht Spaß."
+	line "Probier es doch"
+	cont "auch einmal!"
+
+	para "Du brauchst nur"
+	line "eine Box für die"
+	cont "zarten Federn…"
 	done
 
 Text_HeadbuttIntro2:
-	text "Oh, and if none"
-	line "of your #mon"
-	cont "know Headbutt?"
+	text "Oh, und wenn kei-"
+	line "nes deiner #mon"
+	cont "Kopfnuss kann?"
 
-	para "No problem!"
+	para "Kein Problem!"
 	done
 
 Text_IlexForestTutorHeadbutt:
-	text "I can teach your"
-	line "#mon to use"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "Headbutt in ex-"
-	line "change for a"
-	cont "Silver Leaf."
+	para "deinem #mon"
+	line "Kopfnuss bei."
 	done
 
 
 Text_IlexForestTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Headbutt?"
+	text "Soll ich deinem"
+	line "#mon Kopfnuss"
+	cont "beibringen?"
 	done
 
 
@@ -1081,99 +1091,109 @@ Text_InsertGSBall:
 	done
 
 Text_KurtCaughtCelebi:
-	text "Whew, wasn't that"
-	line "something!"
+	text "Wow, das war doch"
+	line "schon etwas!"
 
-	para "<PLAYER>, that was"
-	line "fantastic. Thanks!"
+	para "<PLAYER>, das war"
+	line "klasse. Danke!"
 
-	para "The legends about"
-	line "that Shrine were"
-	cont "real after all."
+	para "Die Legenden um"
+	line "diesen Schrein"
+	cont "waren doch wahr."
 
-	para "Maybe the legend"
-	line "that people who"
-	cont "tamper with it"
+	para "Vielleicht stimmt"
+	line "auch die Legende,"
+	cont "dass Leute, die"
 
-	para "disappear is"
-	line "true, too…"
+	para "sich an ihm ver-"
+	line "greifen, ver-"
+	cont "schwinden…"
 
-	para "I feel inspired by"
-	line "what I just saw."
+	para "Ich fühle mich"
+	line "dadurch beflügelt."
 
-	para "It motivates me to"
-	line "make better Balls!"
+	para "Es spornt mich an,"
+	line "bessere Bälle zu"
+	cont "fertigen!"
 
-	para "I'm going!"
+	para "Ich gehe!"
 	done
 
 Text_CelebiDancedBeautifully:
-	text "Celebi danced"
-	line "beautifully!"
+	text "Celebi hat wun-"
+	line "derschön getanzt!"
 	done
 
 Text_IlexForestLyraHello:
 	text "Lyra: Hi, <PLAYER>."
-	line "Have you heard of"
+	line "Kennst du die"
 
-	para "the legend of the"
-	line "shrine?"
+	para "Legende des"
+	line "Schreins?"
 
-	para "They say that"
-	line "people disappear"
+	para "Man sagt, Leute,"
+	line "die sich an ihm"
 
-	para "when they tamper"
-	line "with it."
+	para "vergreifen, ver-"
+	line "schwinden."
 	done
 
 Text_IlexForestLyraWhatWasThat:
 	text "Lyra: …"
-	line "What was that?"
+	line "Was war das?"
 	done
 
 Text_IlexForestLyraWorried:
 	text "Lyra: …<PLAYER>?"
-	line "You're really back?"
+	line "Bist du wirklich"
+	cont "zurück?"
 
-	para "I missed you so"
-	line "much! Celebi sent"
+	para "Ich habe dich so"
+	line "vermisst! Celebi"
 
-	para "me here and you"
-	line "were missing…"
+	para "hat mich herge-"
+	line "schickt, und du"
+	cont "warst weg…"
 
-	para "I thought you'd be"
-	line "stuck in the past"
-	cont "forever!"
+	para "Ich dachte, du"
+	line "würdest für immer"
+	cont "in der Vergangen-"
+	cont "heit festsitzen!"
 
 	para "…"
 
-	para "At least now we're"
-	line "both safely back"
-	cont "to our time."
+	para "Wenigstens sind"
+	line "wir jetzt beide"
+	cont "sicher zurück in"
+	cont "unserer Zeit."
 	done
 
 Text_IlexForestLyraArmorSuit:
-	text "Lyra: What strange"
-	line "adventure did you"
-	cont "have by yourself?"
+	text "Lyra: Was für ein"
+	line "seltsames Aben-"
+	cont "teuer hast du"
+	cont "allein erlebt?"
 
-	para "You dropped this…"
-	line "thing when Celebi"
-	cont "brought you back…"
+	para "Du hast dieses…"
+	line "Ding fallen las-"
+	cont "sen, als Celebi"
+	cont "dich zurückbrach-"
+	cont "te…"
 	done
 
 Text_IlexForestLyraGoodbye:
-	text "Lyra: This sure"
-	line "was a bizarre day."
+	text "Lyra: Das war"
+	line "echt ein bizarrer"
+	cont "Tag."
 
-	para "I'm exhausted, I"
-	line "had better get"
-	cont "going."
+	para "Ich bin erschöpft,"
+	line "ich gehe lieber."
 
-	para "You should rest"
-	line "too, <PLAYER>."
+	para "Du solltest dich"
+	line "auch ausruhen,"
+	cont "<PLAYER>."
 
-	para "See you!"
+	para "Bis dann!"
 	done
 
 BugCatcherWayneSeenText:
@@ -1191,22 +1211,23 @@ BugCatcherWayneBeatenText:
 	done
 
 IlexForestHoneyBoyText:
-	text "I'm slathering"
+	text "Ich verteile"
 if DEF(FAITHFUL)
-	line "Honey on the"
-	cont "ground."
+	line "Honig auf dem"
+	cont "Boden."
 else
-	line "Sweet Honey"
-	cont "on the ground."
+	line "Honig auf dem"
+	cont "Boden."
 endc
 
-	para "My sister's #-"
-	line "mon collects it."
+	para "Das #mon meiner"
+	line "Schwester sammelt"
+	cont "ihn."
 
-	para "It helps attract"
-	line "#mon at the"
+	para "Er lockt #mon"
+	line "auf demselben"
 
-	para "same level as my"
-	line "own, so they're"
-	cont "a fair fight."
+	para "Level wie meine"
+	line "an, damit es ein"
+	cont "fairer Kampf ist."
 	done

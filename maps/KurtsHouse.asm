@@ -385,19 +385,20 @@ PokemonJournalProfWestwoodScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Prof.Westwood!"
+	para "Titelthema:"
+	line "Prof. Westwood!"
 
-	para "Prof.Westwood V"
-	line "teaches at Celadon"
-	cont "University."
+	para "Prof. Westwood V."
+	line "lehrt an der"
+	cont "Prismania-Uni."
 
-	para "His ancestor's re-"
-	line "search in 1925 led"
+	para "Die Forschung"
+	line "seines Vorfahren"
 
-	para "to the development"
-	line "of modern #"
-	cont "Balls."
+	para "aus dem Jahr 1925"
+	line "führte zur Ent-"
+	cont "wicklung moderner"
+	cont "#bälle."
 	done
 
 KurtsHouseKurtGoAroundPlayerThenExitHouseMovement:
@@ -486,23 +487,27 @@ KurtsHouseKurtMakingBallsMustWaitText:
 KurtsHouseKurtHonoredToMakeBallsText:
 	text "Kurt: Hi, <PLAYER>!"
 
-	para "You handled your-"
-	line "self like a real"
-	cont "hero at the well."
+	para "Du hast dich am"
+	line "Brunnen wie"
+	cont "ein wahrer Held"
+	cont "benommen."
 
-	para "I like your style!"
+	para "Ich mag deinen"
+	line "Stil!"
 
-	para "I would be honored"
-	line "to make Balls for"
+	para "Es wäre mir eine"
+	line "Ehre, für einen"
 
-	para "a trainer like"
-	line "you."
+	para "Trainer wie dich"
+	line "Bälle anzuferti-"
+	cont "gen."
 
-	para "But first, you'll"
-	line "need Apricorns."
+	para "Aber zuerst"
+	line "brauchst du"
+	cont "Aprikokos."
 
-	para "Here, take this"
-	line "Apricorn Box!"
+	para "Hier, nimm diese"
+	line "Aprikokobox!"
 	done
 
 KurtsHouseKurtBallsFromApricornsText:
@@ -528,16 +533,18 @@ KurtsHouseKurtAskYouHaveAnApricornText:
 	done
 
 KurtsHouseKurtGetStartedText:
-	text "Kurt: I'll get"
-	line "started right now!"
+	text "Kurt: Ich fange"
+	line "sofort an!"
 	done
 
 KurtsHouseKurtItWillTakeADayText:
-	text "Kurt: It'll take a"
-	line "while to make you"
+	text "Kurt: Ich werde"
+	line "eine Weile brau-"
+	cont "chen, um einen"
+	cont "Ball zu machen."
 
-	para "a Ball. Come back"
-	line "for it later."
+	para "Komm später wie-"
+	line "der!"
 	done
 
 KurtsHouseKurtThatsALetdownText:

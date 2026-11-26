@@ -109,9 +109,9 @@ MovementData_WarpToSinjohRuins:
 	step_end
 
 RuinsofAlphSinjohChamberMystriText:
-	text "The lead enters"
-	line "the Mystri Stage"
-	cont "at last."
+	text "Endlich betritt"
+	line "die Hauptfigur den"
+	cont "Trysteriumaltar."
 	done
 
 RuinsofAlphSinjohChamberSurpriseText: ; text > text

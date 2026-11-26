@@ -28,34 +28,33 @@ LyrasDadScript:
 	iftruefwd .LyraTraining
 	jumpthisopenedtext
 
-	text "Hi, <PLAYER>!"
-	line "Lyra isn't here."
+	text "Hallo, <PLAYER>!"
+	line "Lyra ist nicht da."
 
-	para "She's been busy"
-	line "helping the prof-"
-	cont "essor."
+	para "Sie hilft gerade"
+	line "fleißig dem"
+	cont "Professor."
 	done
 
 .LyraInside
 	jumpthisopenedtext
 
-	text "Hi, <PLAYER>!"
-	line "Lyra is upstairs."
+	text "Hallo, <PLAYER>!"
+	line "Lyra ist oben."
 
-	para "She's playing"
-	line "with her #mon"
-	cont "as usual."
+	para "Sie spielt wie"
+	line "immer mit ihren"
+	cont "#mon."
 	done
 
 .LyraTraining
 	jumpthisopenedtext
 
-	text "Hi, <PLAYER>!"
-	line "Lyra isn't here."
+	text "Hallo, <PLAYER>!"
+	line "Lyra ist nicht da."
 
-	para "She's collecting"
-	line "Badges all over"
-	cont "Johto!"
+	para "Sie sammelt in"
+	line "ganz Johto Orden!"
 	done
 
 
@@ -64,11 +63,12 @@ LyrasDadScript:
 LyrasFridgeScript:
 	jumpthistext
 
-	text "Let's see what's"
-	line "in the fridge…"
+	text "Mal sehen, was da"
+	line "im Kühlschrank zu"
+	cont "finden ist…"
 
-	para "Fresh Water and"
-	line "rice balls!"
+	para "Tafelwasser und"
+	line "Reisbällchen!"
 	done
 
 LyrasSinkText:
@@ -84,13 +84,14 @@ LyrasStoveText:
 LyrasTVScript:
 	jumpthistext
 
-	text "There's a movie on"
-	line "TV: A girl with"
+	text "Es läuft ein Film"
+	line "im TV: Ein Mädchen"
 
-	para "her hair in pig-"
-	line "tails is walking"
-	cont "up a brick road."
+	para "mit Zöpfen geht"
+	line "eine Ziegelstein-"
+	cont "straße entlang…"
 
-	para "I'd better get"
-	line "going too!"
+	para "Ich sollte mich"
+	line "auch in Bewegung"
+	cont "setzen!"
 	done

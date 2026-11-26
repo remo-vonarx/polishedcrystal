@@ -42,12 +42,12 @@ SproutTower1FGrannyScript:
 	done
 
 .MetricText:
-	text "A Bellsprout over"
-	line "30 meters tall…"
+	text "Ein über 30 m"
+	line "grosses Knofensa…"
 
-	para "People say that it"
-	line "became the center"
-	cont "pillar here."
+	para "Man sagt, es wurde"
+	line "die Trägersäule"
+	cont "des Turmes."
 	done
 
 GenericTrainerSageChow:
@@ -75,9 +75,10 @@ SageChowBeatenText:
 	done
 
 SproutTower1FSage1Text:
-	text "Only if you reach"
-	line "the top will you"
-	cont "obtain a TM."
+	text "Nur wenn du es bis"
+	line "ganz nach oben"
+	cont "schaffst, erhältst"
+	cont "du eine TM."
 	done
 
 SproutTower1FSage2Text:
@@ -136,49 +137,51 @@ KimonoGirlMakoScript:
 	jumpthisopenedtext
 
 .OutroText:
-	text "We Kimono Girls"
-	line "dance, but we also"
-	cont "battle."
+	text "Wir Kimono-Girls"
+	line "tanzen, aber wir"
+	cont "kämpfen auch."
 	done
 
 .IntroText:
-	text "Hello, trainer."
+	text "Hallo, Trainer."
 
-	para "I am a Kimono"
-	line "Girl."
+	para "Ich bin ein"
+	line "Kimono-Girl."
 
-	para "I journeyed here"
-	line "from Ecruteak"
+	para "Ich bin aus Teak"
+	line "City hierher ge-"
+	cont "reist, durch Wald"
+	cont "und Höhle,"
 
-	para "City, through for-"
-	line "est and cavern,"
+	para "um in diesem Turm"
+	line "zu trainieren."
 
-	para "to train in this"
-	line "tower."
+	para "Hast du meine fünf"
+	line "tanzenden Cousinen"
+	cont "in Teak City"
+	cont "getroffen?"
 
-	para "Have you met my"
-	line "five dancing cou-"
-	cont "sins in Ecruteak?"
-
-	para "Come back and"
-	line "tell me if you do!"
+	para "Triffst du sie,"
+	line "komm zurück und"
+	cont "erzähl es mir!"
 	done
 
 .SeenText:
-	text "Me oh my…"
-	line "You defeated my"
+	text "Meine Güte…"
+	line "Du hast meine fünf"
 
-	para "five dancing"
-	line "cousins?"
+	para "tanzenden Cousi-"
+	line "nen besiegt?"
 
-	para "Then allow me to"
-	line "challenge you and"
-	cont "your #mon!"
+	para "Dann erlaube mir,"
+	line "dich und deine"
+	cont "#mon herauszu-"
+	cont "fordern!"
 	done
 
 .BeatenText:
-	text "Oh, you are"
-	line "truly strong…"
+	text "Oh, du bist"
+	line "wirklich stark…"
 	done
 
 .AfterText:

@@ -26,17 +26,17 @@ PokemonJournalBugsyScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Bugsy!"
+	para "Titelthema:"
+	line "Arenaleiter Kai!"
 
-	para "Bugsy is reported"
-	line "to have won the"
+	para "Kai soll das"
+	line "Käferturnier so"
 
-	para "Bug-Catching Con-"
-	line "test so often that"
+	para "oft gewonnen"
+	line "haben, dass er"
 
-	para "he no longer par-"
-	line "ticipates."
+	para "nicht mehr daran"
+	line "teilnimmt."
 	done
 
 AzaleaPokeCenter1FCooltrainermScript:
@@ -44,28 +44,30 @@ AzaleaPokeCenter1FCooltrainermScript:
 	iftrue_jumptextfaceplayer .NiteText
 	jumpthistextfaceplayer
 
-	text "For a guy who"
-	line "makes # Balls,"
+	text "Kurt stellt zwar"
+	line "#bälle her,"
 
-	para "Kurt isn't much of"
-	line "a trainer."
+	para "aber als Trainer"
+	line "taugt er nicht"
+	cont "viel."
 
-	para "He does have a"
-	line "#mon, but he"
+	para "Er hat zwar ein"
+	line "#mon, aber er"
 
-	para "doesn't use it"
-	line "much."
+	para "setzt es kaum"
+	line "ein."
 	done
 
 .NiteText:
-	text "Kurt and Prof.Oak"
-	line "are old friends."
+	text "Kurt und Prof."
+	line "Eich sind alte"
+	cont "Freunde."
 
-	para "They're also close"
-	line "with Agatha, a"
+	para "Sie stehen auch"
+	line "Agathe nahe, einem"
 
-	para "former member of"
-	line "the Elite Four."
+	para "früheren Mitglied"
+	line "der Top Vier."
 	done
 
 AzaleaPokeCenter1FGentlemanText:

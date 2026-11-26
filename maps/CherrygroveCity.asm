@@ -267,17 +267,18 @@ CherrygroveCity_RivalComesBack:
 	step_end
 
 GuideGentIntroText:
-	text "You're a rookie"
-	line "trainer, aren't"
-	cont "you? I can tell!"
+	text "Du bist doch ein"
+	line "Anfänger, oder?"
+	cont "Das sehe ich!"
 
-	para "That's OK! Every-"
-	line "one is a rookie"
-	cont "at some point!"
+	para "Das ist O.K.! Es"
+	line "ist noch kein"
+	cont "Meister vom Himmel"
+	cont "gefallen!"
 
-	para "I can teach you"
-	line "a few things."
-	cont "Follow me!"
+	para "Ich bringe dir ein"
+	line "paar Tricks bei."
+	cont "Folge mir!"
 	done
 
 GuideGentPokeCenterText:
@@ -295,15 +296,19 @@ GuideGentPokeCenterText:
 	done
 
 GuideGentMartText:
-	text "This is a #mon"
-	line "Mart, or just"
-	cont "# Mart."
+	text "Das ist ein PKMN-"
+	line "Supermarkt, oder"
+	cont "kurz Supermarkt."
 
-	para "They sell Balls"
-	line "for catching wild"
+	para "Hier werden Bälle"
+	line "verkauft, mit de-"
+	cont "nen du wilde"
+	cont "#mon fangen"
+	cont "kannst."
 
-	para "#mon and other"
-	line "useful items."
+	para "Außerdem findest"
+	line "du hier viele"
+	cont "nützliche Items."
 	done
 
 GuideGentRoute30Text:
@@ -318,20 +323,27 @@ GuideGentRoute30Text:
 	done
 
 GuideGentAdvancedTipsText:
-	text "Advanced Tips"
-	line "signs have this"
-	cont "unusual look."
+	text "Die Schilder mit"
+	line "“Tipps für Profis”"
+	cont "sehen so unge-"
+	cont "wöhnlich aus."
 
-	para "They're full of"
-	line "helpful advice."
+	para "Sie stecken voller"
+	line "nützlicher Rat-"
+	cont "schläge."
 	done
 
 GuideGentSeaText:
-	text "This is the sea,"
-	line "as you can see."
+	text "Wie du sehen"
+	line "kannst, befinden"
 
-	para "Route 32 is just"
-	line "across the bay."
+	para "wir uns hier am"
+	line "Meer."
+
+	para "Route 32 liegt"
+	line "gleich auf der an-"
+	cont "deren Seite der"
+	cont "Bucht."
 	done
 
 GuideGentGiftText:
@@ -402,24 +414,25 @@ RivalCherrygroveLossText:
 CherrygroveRivalTextAfter1:
 	text "…… …… ……"
 
-	para "You want to know"
-	line "who I am?"
+	para "Du willst wissen,"
+	line "wer ich bin?"
 
-	para "I'm going to be"
-	line "the world's great-"
-	cont "est #mon"
-	cont "trainer."
+	para "Ich werde der"
+	line "weltbeste #mon-"
+	cont "Trainer sein!"
 	done
 
 CherrygroveRivalTextAfter2:
-	text "I dropped my"
-	line "Trainer Card…"
+	text "Mir ist mein"
+	line "Trainerpass run-"
+	cont "tergefallen…"
 
-	para "Hey! Give it"
-	line "back!"
+	para "Hey! Gib ihn"
+	line "zurück!"
 
-	para "Oh no… You saw"
-	line "my name…"
+	para "Oh nein… Du hast"
+	line "meinen Namen"
+	cont "gesehen…"
 	done
 
 CherrygroveTeacherText_HaveMapCard:

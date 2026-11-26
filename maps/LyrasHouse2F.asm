@@ -21,15 +21,14 @@ LyrasHouse2F_MapScriptHeader:
 LyrasHouseLyraText:
 	text "Lyra: Hi, <PLAYER>!"
 
-	para "Hmm… My #mon"
-	line "may be putting"
-
-	para "on some weight"
-	line "lately…"
+	para "Hmm… Mein #mon"
+	line "hat in letzter"
+	cont "Zeit wohl etwas"
+	cont "zugenommen…"
 	done
 
 LyrasHousePidgeotText:
-	text "Pidgeot: Pijiii!"
+	text "Tauboss: Pijiii!"
 	done
 
 LyrasHousePCText:
@@ -39,7 +38,7 @@ LyrasHousePCText:
 	done
 
 LyrasHouseN64Text:
-	text "It's a limited-"
-	line "edition Pikachu"
+	text "Das ist ein limi-"
+	line "tiertes Pikachu-"
 	cont "N64!"
 	done

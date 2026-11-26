@@ -318,9 +318,8 @@ MapRuinsofAlphOutsideSealedCaveSign:
 	dw EVENT_DOOR_OPENED_IN_RUINS_OF_ALPH
 	jumpthistext
 
-	text "There's a door-"
-	line "shaped groove in"
-	cont "the rock."
+	text "Im Fels ist eine"
+	line "türförmige Rille."
 	done
 
 RuinsOfAlphOutsideFisherText1:
@@ -350,32 +349,33 @@ RuinsOfAlphOutsideYoungster2Text:
 	done
 
 RuinsofAlphScientistClimax1Text:
-	text "That sounded like"
-	line "it came from over"
-	cont "here…"
+	text "Das klang, als"
+	line "käme es von hier"
+	cont "drüben…"
 	done
 
 RuinsofAlphScientistClimax2Text:
-	text "Incredible!"
+	text "Unglaublich!"
 
-	para "Another chamber"
-	line "was hidden here"
-	cont "all this time!"
+	para "Hier war die ganze"
+	line "Zeit eine weitere"
+	cont "Kammer versteckt!"
 
-	para "We could spend"
-	line "years studying it!"
+	para "Wir könnten sie"
+	line "jahrelang"
+	cont "erforschen!"
 
-	para "…Although, that"
-	line "was quite a loud"
-	cont "earthquake."
+	para "…Allerdings war"
+	line "das ein ziemlich"
+	cont "lautes Erdbeben."
 
-	para "Could another"
-	line "chamber have"
+	para "Könnte sich eine"
+	line "weitere Kammer"
 
-	para "opened up far"
-	line "away from here?"
+	para "weit weg von hier"
+	line "geöffnet haben?"
 
-	para "I must go tell"
-	line "my colleagues"
-	cont "about this!"
+	para "Das muss ich mei-"
+	line "nen Kollegen"
+	cont "erzählen!"
 	done

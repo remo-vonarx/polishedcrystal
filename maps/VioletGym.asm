@@ -67,22 +67,24 @@ VioletGymFalknerScript:
 	setevent EVENT_GOT_TM31_ROOST
 	jumpthisopenedtext
 
-	text "By using a TM, a"
-	line "#mon will"
+	text "Benutzt ein #-"
+	line "mon eine TM, er-"
+	cont "lernt es sofort"
+	cont "eine neue Attacke."
 
-	para "instantly learn a"
-	line "new move."
+	para "Eine TM kann so"
+	line "oft eingesetzt"
+	cont "werden, wie du"
+	cont "willst."
 
-	para "A TM can be used"
-	line "as many times as"
-	cont "you want."
+	para "TM51 enthält"
+	line "Ruheort."
 
-	para "TM51 contains"
-	line "Roost."
-
-	para "It lands on the"
-	line "ground to restore"
-	cont "half the max HP."
+	para "Es landet damit"
+	line "auf dem Boden und"
+	cont "stellt die Hälfte"
+	cont "seiner maximalen"
+	cont "KP wieder her."
 	done
 
 GenericTrainerBird_keeperRod:
@@ -186,15 +188,18 @@ FalknerWinLossText:
 	done
 
 FalknerZephyrBadgeText:
-	text "The Zephyr Badge"
-	line "enables you to"
+	text "Durch den Flügel-"
+	line "orden gehorchen"
 
-	para "command #mon,"
-	line "even traded ones,"
-	cont "up to <LV>20."
+	para "dir alle #mon"
+	line "bis <LV>20. Dies"
 
-	para "Here--take this"
-	line "too."
+	para "gilt auch für Ge-"
+	line "tauschte."
+
+	para "Hier - ich habe"
+	line "noch etwas für"
+	cont "dich."
 	done
 
 
@@ -255,15 +260,18 @@ VioletGymGuyWinText:
 	done
 
 VioletGymGuyFalknerAwayText:
-	text "Hey! You can't"
-	line "challenge Falkner"
-	cont "right now."
+	text "Hey! Du kannst"
+	line "Falk gerade nicht"
+	cont "herausfordern."
 
-	para "He's in Dark Cave"
-	line "taming an Ursa-"
+	para "Er ist in der"
+	line "Dunkelhöhle und"
 
-	para "ring that attacked"
-	line "a young trainer."
+	para "zähmt ein Ursa-"
+	line "ring, das einen"
+	cont "jungen Trainer"
+	cont "angegriffen hat."
 
-	para "Come back later."
+	para "Komm später"
+	line "wieder."
 	done

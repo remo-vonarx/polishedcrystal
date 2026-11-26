@@ -26,23 +26,25 @@ Route30BerryHousePokefanMScript:
 .GotMulch:
 	jumpthisopenedtext
 
-	text "I buy top-quality"
-	line "Mulch in Goldenrod"
-	cont "City."
+	text "Ich kaufe Mulch"
+	line "bester Qualität"
+	cont "in Dukatia City."
 	done
 
 Route30BerrySpeechHouseMonEatBerriesText:
-	text "You know, #mon"
-	line "eat Berries."
+	text "Du weißt, dass"
+	line "#mon Beeren"
+	cont "fressen."
 
-	para "They take time to"
-	line "grow back when"
-	cont "they're picked,"
+	para "Wenn man sie"
+	line "pflückt, dauert"
+	cont "es, bis sie nach-"
+	cont "wachsen,"
 
-	para "but using Mulch"
-	line "on the soil really"
-	cont "speeds that up!"
+	para "aber Mulch im"
+	line "Boden beschleu-"
+	cont "nigt das enorm!"
 
-	para "Here. I'll share"
-	line "some with you!"
+	para "Hier, ich teile"
+	line "mit dir!"
 	done
