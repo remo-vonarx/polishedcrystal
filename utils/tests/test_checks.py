@@ -169,6 +169,19 @@ def test_inver_check_reports_a_missing_party_prefix(root, tmp_path):
     assert check_names.inver_problems(tmp_path)
 
 
+SHUCKIE_FILES = ["maps/ManiasHouse.asm", "engine/events/shuckle.asm"]
+
+
+def test_shuckie_ot_that_mania_does_not_check_for_is_reported(root, tmp_path):
+    import re
+    import check_names
+    copy_files(root, tmp_path, SHUCKIE_FILES)
+    assert not check_names.gift_ot_problems(tmp_path)
+    returning = tmp_path / SHUCKIE_FILES[1]
+    name = re.search(r'^SpecialShuckleOTAndExtra:\n\trawchar "([^"@]*)', returning.read_text(encoding="utf-8"), re.M).group(1)
+    edit(returning, f'rawchar "{name}', 'rawchar "Kirk')
+    assert check_names.gift_ot_problems(tmp_path)
+
 def test_soft_hyphen_breaks_a_place_with_a_hyphen_on_the_pokegear():
     import check_names
     # 15 bytes with the mark; 14 tiles on one line, where it prints nothing; "Einheits-" over "tunnel"

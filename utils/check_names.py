@@ -34,6 +34,8 @@ Default run: checks the tables.
 - Psychic Inver's name (data/trainers/psychic_inver.asm) is the name his
   party picker counts (INVER_PREFIX), and wInverGroup holds that prefix
   (inver_problems).
+- The gift Shuckle's OT (maps/ManiasHouse.asm) is the name Mania checks for
+  when he takes it back (engine/events/shuckle.asm, gift_ot_problems).
 - Badge names fit the 18 bytes of wStringBuffer4 (Script_givebadge copies
   them there); the line they're printed on (_ReceivedTheBadgeText) depends on
   its German wording and is the badges' chunk's to check.
@@ -624,9 +626,34 @@ def inver_problems(root):
     return problems
 
 
+SHUCKIE_GIFT = 'maps/ManiasHouse.asm'
+SHUCKIE_RETURN = 'engine/events/shuckle.asm'
+
+
+def gift_ot_problems(root):
+    """The gift Shuckle's OT against Mania's return check: ReturnShuckie compares the
+    party Pokémon's OT byte for byte with SpecialShuckleOTAndExtra up to its "@", so
+    that name must be the ShuckieOTName givepoke gives."""
+    def read(rel):
+        return (root / rel).read_text(encoding='utf-8')
+    given = re.search(r'^ShuckieOTName:\n\trawchar "([^"@]*)@', read(SHUCKIE_GIFT), re.M)
+    checked = re.search(r'^SpecialShuckleOTAndExtra:\n\trawchar "([^"@]*)@', read(SHUCKIE_RETURN), re.M)
+    if not (given and checked):
+        return [f'{SHUCKIE_RETURN}: ShuckieOTName or SpecialShuckleOTAndExtra not found']
+    if given.group(1) != checked.group(1):
+        return [f'{SHUCKIE_RETURN}: Mania takes back a Shuckle with OT "{checked.group(1)}", '
+                f'but {SHUCKIE_GIFT} gives it OT "{given.group(1)}"']
+    return []
+
+
+def other_problems(root):
+    """Checks outside the name tables: Psychic Inver's name and the gift Shuckle's OT."""
+    return inver_problems(root) + gift_ot_problems(root)
+
+
 def check(base=None):
     """The tables' problems, against Upstream's English at `base` (default: the merge-base)."""
-    return check_tables(find_base(base))[0] + inver_problems(ROOT)
+    return check_tables(find_base(base))[0] + other_problems(ROOT)
 
 
 def check_text(paths, names):
@@ -664,6 +691,7 @@ def main():
     args = parser.parse_args()
     try:
         problems, names = check_tables(find_base(args.base))
+        problems += other_problems(ROOT)
         if args.text is not None:
             name_problems = (': still English: ', ': too long ', ': too many bytes ', ': Pokégear line too long ',
                              ': more than two Pokégear lines', ': class and name too long ')
