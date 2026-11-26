@@ -103,12 +103,12 @@ DragonsDenB1FClairTrigger:
 	done
 
 .DescribeDragonPulseText:
-	text "That contains"
-	line "Dragon Pulse."
+	text "Sie enthält"
+	line "Drachenpuls."
 
-	para "If you don't want"
-	line "it, you don't have"
-	cont "to take it."
+	para "Wenn du sie nicht"
+	line "möchtest, musst du"
+	cont "sie nicht nehmen."
 	done
 
 .WalksToYouMovement:
@@ -197,28 +197,31 @@ DragonsDenB1FRivalScript:
 
 .GiveEggText:
 	text "…"
-	line "Listen."
+	line "Hör zu."
 
-	para "The #mon I…"
-	line "took from the Lab…"
+	para "Das #mon, das"
+	line "ich… aus dem Labor"
+	cont "genommen habe…"
 
-	para "It had an Egg."
-	line "I don't need it."
-	cont "Here. Take it."
+	para "Es hatte ein Ei."
+	line "Ich brauche es"
+	cont "nicht. Hier."
+	cont "Nimm es."
 	done
 
 .DescribeEggText:
-	text "Humph. Are you"
-	line "through here?"
+	text "Pah. Bist du hier"
+	line "fertig?"
 
-	para "Then stay out of"
-	line "my way."
+	para "Dann geh mir aus"
+	line "dem Weg."
 	done
 
 .PartyAndBoxFullText:
-	text "Humph. You don't"
-	line "have any room…"
-	cont "Even in your Box…"
+	text "Pah. Du hast"
+	line "keinen Platz…"
+	cont "Nicht mal in"
+	cont "deiner Box…"
 	done
 
 .Training1Text:

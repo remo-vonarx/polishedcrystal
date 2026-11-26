@@ -64,9 +64,9 @@ GaveGoodRodText:
 	done
 
 DontWantGoodRodText:
-	text "Whaaat? You don't"
-	line "like to fish?!"
-	cont "Incomprehensible!"
+	text "Waaas? Du willst"
+	line "nicht fischen!?"
+	cont "Unfassbar!"
 	done
 
 HaveGoodRodText:

@@ -156,27 +156,30 @@ OlivineLighthouseJasmineLeavesRightMovement:
 	step_end
 
 JasmineCianwoodPharmacyText:
-	text "Jasmine: …This"
-	line "#mon always"
+	text "Jasmin: …Dieses"
+	line "#mon hat"
 
-	para "kept the sea lit"
-	line "at night."
+	para "das Meer immer"
+	line "erleuchtet."
 
-	para "…But it suddenly"
-	line "got sick… It's"
-	cont "gasping for air…"
+	para "…Aber plötzlich"
+	line "wurde es krank… Es"
+	cont "schnappt nach"
+	cont "Luft…"
 
-	para "…I understand"
-	line "that there is a"
+	para "…Ich weiß, dass"
+	line "es eine gut"
 
-	para "wonderful Pharmacy"
-	line "in Cianwood…"
+	para "sortierte Apotheke"
+	line "in Anemonia City"
+	cont "gibt…"
 
-	para "But that's across"
-	line "the sea…"
+	para "Aber dafür musst"
+	line "du über das Meer…"
 
-	para "And I can't leave"
-	line "Amphy unattended…"
+	para "Und ich kann Amphi"
+	line "nicht unbeaufsich-"
+	cont "tigt zurücklassen…"
 	done
 
 

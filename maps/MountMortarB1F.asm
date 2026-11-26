@@ -45,25 +45,24 @@ MountMortarB1FTutorDefenseCurlScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "I'll be right here"
-	line "waiting."
+	text "Ich warte hier"
+	line "auf dich."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Shucks, you don't"
-	line "have a Silver"
-	cont "Leaf."
+	text "Schade, du hast"
+	line "kein Silberblatt."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "There! Now your"
-	line "#mon can use"
-	cont "Defense Curl!"
+	text "So! Jetzt kann"
+	line "dein #mon"
+	cont "Einigler!"
 	done
 
 MountMortarB1FKiyoScript:
@@ -105,34 +104,35 @@ MountMortarB1FKiyoGotTyrogueText:
 	done
 
 MountMortarB1FHikerText:
-	text "My #mon used"
+	text "Mein #mon hat"
 if DEF(FAITHFUL)
-	line "Rock Smash on a"
+	line "Zertrümmerer gegen"
 else
-	line "Brick Break on a"
+	line "Durchbruch gegen"
 endc
 
-	para "boulder, but it"
-	line "was undamaged."
+	para "einen Felsen ein-"
+	line "gesetzt, aber er"
+	cont "blieb unversehrt."
 
-	para "It turned out to"
-	line "be a Geodude that"
-	cont "used Defense Curl!"
+	para "Es war ein Klein-"
+	line "stein, der"
+	cont "Einigler nutzte!"
 	done
 
 Text_MountMortarB1FTutorDefenseCurl:
-	text "I can teach your"
-	line "#mon to use"
+	text "Ich kann deinen"
+	line "#mon Einigler"
 
-	para "Defense Curl for"
-	line "one Silver Leaf."
+	para "beibringen, für"
+	line "ein Silberblatt."
 	done
 
 
 Text_MountMortarB1FTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Defense Curl?"
+	text "Soll ich deinem"
+	line "#mon Einigler"
+	cont "beibringen?"
 	done
 
 
@@ -178,7 +178,7 @@ MountMortarB1FTyrogueRewardText:
 	done
 
 MountMortarB1FKiyoFullPartyAndBoxText:
-	text "You have no room"
-	line "in your party"
-	line "or Box!"
+	text "Du hast keinen"
+	line "Platz in deinem"
+	cont "Team oder der Box!"
 	done

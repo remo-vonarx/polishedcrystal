@@ -118,51 +118,50 @@ BattleTowerOutsideAnabelScript:
 	end
 
 .ChallengeText:
-	text "Greetings… My name"
-	line "is Anabel."
+	text "Sei gegrüßt… Mein"
+	line "Name ist Anabel."
 
-	para "…You are <PLAYER>?"
-	line "I have heard sev-"
-	cont "eral rumors about"
-	cont "you…"
+	para "…Du bist <PLAYER>?"
+	line "Ich habe einiges"
+	cont "über dich gehört…"
 
-	para "Let me see your"
-	line "talent in its"
-	cont "entirety…"
+	para "Zeig mir dein"
+	line "Talent in seiner"
+	cont "Gänze…"
 	done
 
 .YesText:
-	text "Let's begin,"
-	line "shall we?"
+	text "Wollen wir"
+	line "beginnen?"
 	done
 
 .NoText:
-	text "It's very dis-"
-	line "appointing…"
+	text "Das ist sehr"
+	line "enttäuschend…"
 	done
 
 .BeatenText:
-	text "OK, I understand…"
+	text "Gut, ich verstehe…"
 	done
 
 .ItemText:
-	text "Fufufu, nicely"
-	line "done…"
+	text "Fufufu, gut"
+	line "gemacht…"
 
-	para "Take this, please…"
+	para "Nimm das bitte…"
 	done
 
 .GoodbyeText:
-	text "I urge you to keep"
-	line "battling and keep"
-	cont "on winning."
+	text "Ich bitte dich,"
+	line "weiterzukämpfen"
+	cont "und zu gewinnen."
 
-	para "I will be waiting"
-	line "for you in this"
-	cont "Battle Tower."
+	para "Ich werde in"
+	line "diesem Duellturm"
+	cont "auf dich warten."
 
-	para "Until the next"
-	line "time we meet…"
+	para "Bis zu unserem"
+	line "nächsten Treffen…"
 	done
 
 BattleTowerOutsideYoungsterScript:
@@ -170,11 +169,11 @@ BattleTowerOutsideYoungsterScript:
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
-	text "Wow, the Battle"
-	line "Tower is huge! My"
+	text "Wow, der Duellturm"
+	line "ist riesig! Mein"
 
-	para "neck is tired from"
-	line "looking up at it."
+	para "Nacken tut vom"
+	line "Hochschauen weh."
 	done
 
 .OpenText:
@@ -225,6 +224,7 @@ BattleTowerOutsideSailorText:
 	done
 
 BattleTowerOutsideDoorsClosedText:
-	text "The Battle Tower's"
-	line "doors are closed…"
+	text "Die Türen des"
+	line "Duellturms sind"
+	cont "geschlossen…"
 	done

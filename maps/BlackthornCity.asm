@@ -194,16 +194,17 @@ BlackthornDragonTamer1Script:
 	done
 
 .ClairIsBeatenText:
-	text "You defeated"
-	line "Clair?"
+	text "Du hast Sandra"
+	line "besiegt?"
 
-	para "That's amazing!"
+	para "Wie erstaunlich!"
 
-	para "I've never heard"
-	line "of her losing to"
+	para "Soweit ich weiß,"
+	line "hat sie bis jetzt"
 
-	para "anyone other than"
-	line "her cousin Lance."
+	para "nur gegen ihren"
+	line "Cousin Siegfried"
+	cont "verloren."
 	done
 
 BlackthornBlackbeltScript:
@@ -270,34 +271,35 @@ BlackthornCooltrainerF1Text:
 	done
 
 BlackthornCooltrainerF2Text:
-	text "The Fairy type was"
-	line "discovered only"
-	cont "recently."
+	text "Der Typ Fee wurde"
+	line "erst vor Kurzem"
+	cont "entdeckt."
 
-	para "It totally shuts"
-	line "down Dragon types."
+	para "Gegen ihn sind"
+	line "Drachen-#mon"
+	cont "völlig machtlos."
 	done
 
 BlackthornDragonTamer2Text:
-	text "When our Gym Lead-"
-	line "er was a young"
+	text "Als unsere Arena-"
+	line "leiterin ein"
 
-	para "girl, she used to"
-	line "train in the"
+	para "kleines Mädchen"
+	line "war, trainierte"
 
-	para "Dragon's Den non-"
-	line "stop."
+	para "sie unentwegt in"
+	line "der Drachenhöhle."
 	done
 
 BlackthornDragonTamer3Text:
-	text "Blackthorn City is"
-	line "the home of many"
+	text "Ebenholz City ist"
+	line "die Heimat vieler"
 
-	para "famous dragon"
-	line "tamers, including"
-	cont "Lance."
+	para "berühmter Drachen-"
+	line "profis, so auch"
+	cont "Siegfried."
 
-	para "He's our Gym Lead-"
-	line "er's cousin, you"
-	cont "know!"
+	para "Er ist der Cousin"
+	line "unserer Arena-"
+	cont "leiterin!"
 	done

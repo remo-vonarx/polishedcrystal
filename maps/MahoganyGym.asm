@@ -61,16 +61,17 @@ MahoganyGymPryceScript:
 	setevent EVENT_GOT_TM67_AVALANCHE
 	jumpthisopenedtext
 
-	text "That TM contains"
-	line "Avalanche."
+	text "Diese TM enthält"
+	line "Lawine."
 
-	para "It deals more"
-	line "damage if the user"
-	cont "was hurt first."
+	para "Sie richtet mehr"
+	line "Schaden an, wenn"
+	cont "der Anwender zuvor"
+	cont "verletzt wurde."
 
-	para "It demonstrates"
-	line "the harshness of"
-	cont "winter."
+	para "Sie stellt die"
+	line "Härte des Winters"
+	cont "dar."
 	done
 
 GenericTrainerSkierRoxanne:
@@ -217,14 +218,17 @@ PryceText_Impressed:
 	done
 
 PryceText_GlacierBadgeSpeech:
-	text "That Badge will"
-	line "let your #mon"
+	text "Durch diesen Orden"
+	line "können deine"
 
-	para "use Whirlpool to"
-	line "cross whirlpools."
+	para "#mon Whirlpool"
+	line "einsetzen, um"
+	cont "echte Strudel zu"
+	cont "überwinden."
 
-	para "And this… This is"
-	line "a gift from me!"
+	para "Und dies… dies ist"
+	line "ein Geschenk von"
+	cont "mir!"
 	done
 
 PryceText_CherishYourPokemon:

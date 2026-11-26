@@ -26,19 +26,22 @@ PokemonJournalChuckScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Chuck!"
+	para "Titelthema:"
+	line "Arenaleiter"
+	cont "Hartwig!"
 
-	para "Chuck is said to"
-	line "really like sweet"
-	cont "desserts."
+	para "Hartwig soll"
+	line "süße Desserts"
+	cont "sehr mögen."
 
-	para "However, he has"
-	line "also been seen"
+	para "Er wurde aber auch"
+	line "schon gesehen, wie"
 
-	para "training under a"
-	line "heavy waterfall"
-	cont "to work them off."
+	para "er unter einem"
+	line "mächtigen Wasser-"
+	cont "fall trainiert, um"
+	cont "sie wieder abzu-"
+	cont "trainieren."
 	done
 
 CianwoodGymGuyScript:
@@ -104,16 +107,17 @@ CianwoodGymGuyScript:
 	done
 
 .StrengthText1:
-	text "You can't move the"
-	line "boulders aside?"
+	text "Du kannst die"
+	line "Felsen nicht weg-"
+	cont "schieben?"
 
-	para "Here, use this"
-	line "and teach your"
-	cont "#mon Strength!"
+	para "Hier, nimm das und"
+	line "lehre dein #mon"
+	cont "Stärke!"
 	done
 
 .StrengthText2:
-	text "Good luck!"
+	text "Viel Glück!"
 	done
 
 .WinText:
@@ -148,10 +152,11 @@ CianwoodPokeCenter1FSuperNerdText:
 	done
 
 CianwoodPokeCenter1FRichBoyText:
-	text "There's no #"
-	line "Mart in this town,"
+	text "In dieser Stadt"
+	line "gibt es keinen"
+	cont "PKMN-Supermarkt,"
 
-	para "so we have to im-"
-	line "port products from"
-	cont "across the sea."
+	para "also müssen wir"
+	line "Waren von über dem"
+	cont "Meer importieren."
 	done

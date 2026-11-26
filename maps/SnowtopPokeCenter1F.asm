@@ -30,18 +30,19 @@ PokemonJournalProfWillowScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Prof.Willow!"
+	para "Titelthema:"
+	line "Prof. Willow!"
 
-	para "It's been said that"
-	line "Prof.Willow's dream"
+	para "Man sagt, Prof."
+	line "Willows Traum sei"
 
-	para "is to explore un-"
-	line "charted lands and"
+	para "es, unerforschte"
+	line "Länder zu erkunden"
 
-	para "document undis-"
-	line "covered #mon"
+	para "und unentdeckte"
+	line "#mon-Arten in"
 
-	para "species in their"
-	line "natural habitat."
+	para "ihrem natürlichen"
+	line "Lebensraum zu"
+	cont "dokumentieren."
 	done

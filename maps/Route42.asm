@@ -338,26 +338,23 @@ Route42SuicuneMovement:
 Route42LyraGreetingText:
 	text "Lyra: Hi, <PLAYER>!"
 
-	para "What a coinci-"
-	line "dence. I was just"
+	para "So ein Zufall. Ich"
+	line "habe gerade die"
 
-	para "studying the eff-"
-	line "ects of the recent"
+	para "Folgen der Lawine"
+	line "auf wilde #mon"
+	cont "untersucht."
 
-	para "avalanche on wild"
-	line "#mon."
+	para "Du willst also"
+	line "nach Mahagonia"
+	cont "City zum nächsten"
+	cont "Orden?"
 
-	para "So you're heading"
-	line "to Mahogany Town"
+	para "Dann habe ich ein"
+	line "Geschenk für dich!"
 
-	para "for another Gym"
-	line "Badge?"
-
-	para "Then I have a"
-	line "present for you!"
-
-	para "But you'll have to"
-	line "beat me first!"
+	para "Aber zuerst musst"
+	line "du mich besiegen!"
 	done
 
 Route42LyraWinText:
@@ -372,33 +369,35 @@ Route42LyraLossText:
 	done
 
 Route42LyraPresentText:
-	text "Lyra: Wow, you're"
-	line "getting really"
-	cont "strong, <PLAYER>!"
+	text "Lyra: Wow, du"
+	line "wirst richtig"
+	cont "stark, <PLAYER>!"
 
-	para "I'm sure you can"
-	line "beat the Mahogany"
-	cont "Gym Leader."
+	para "Du besiegst den"
+	line "Arenaleiter von"
+	cont "Mahagonia City"
+	cont "bestimmt."
 
-	para "And then you can"
-	line "use this!"
+	para "Und dann kannst du"
+	line "das hier nutzen!"
 	done
 
 Route42LyraWhirlpoolText:
-	text "Lyra: That's"
+	text "Lyra: Das ist"
 	line "Whirlpool."
 
-	para "Teach it to a"
-	line "#mon to get"
-	cont "across wild water."
+	para "Bring sie einem"
+	line "#mon bei, um"
+	cont "wildes Wasser zu"
+	cont "überqueren."
 
-	para "I should get"
-	line "going. It was"
+	para "Ich sollte los."
+	line "Schön, dich"
 
-	para "nice seeing you,"
-	line "<PLAYER>!"
+	para "getroffen zu"
+	line "haben, <PLAYER>!"
 
-	para "Bye now!"
+	para "Tschüss!"
 	done
 
 FisherTully1SeenText:
@@ -453,15 +452,15 @@ PokemaniacShaneBeatenText:
 	done
 
 Route42OfficerText:
-	text "Sorry, you can't"
-	line "come this way."
+	text "Tut mir leid, hier"
+	line "geht's nicht"
+	cont "weiter."
 
-	para "There's been an"
-	line "avalanche on"
-	cont "Mt.Mortar."
+	para "Am Kesselberg gab"
+	line "es eine Lawine."
 
-	para "We're still clear-"
-	line "ing the rubble."
+	para "Wir räumen noch"
+	line "die Trümmer weg."
 	done
 
 Route42Sign1Text:

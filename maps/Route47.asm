@@ -427,18 +427,16 @@ GruntM26BeatenText:
 	done
 
 Route47RocketGirlText:
-	text "What are you head-"
-	line "ing this way for,"
-	cont "you brat?"
+	text "Was willst du denn"
+	line "hier, du Göre?"
 	done
 
 Route47SealedCaveSign:
 	dw EVENT_DOOR_OPENED_IN_RUINS_OF_ALPH
 	jumpthistext
 
-	text "There's a door-"
-	line "shaped groove in"
-	cont "the rock."
+	text "Im Fels ist eine"
+	line "türförmige Rille."
 	done
 
 Route47QuietCaveSignText:

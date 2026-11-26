@@ -40,47 +40,51 @@ Route39RuggedRoadGateSwimmerScript:
 	setevent EVENT_GOT_RARE_CANDY_FROM_RUGGED_ROAD_GATE
 	jumpthisopenedtext
 
-	text "Keep the goggles."
-	line "Thanks again!"
+	text "Behalt die Brille."
+	line "Nochmals danke!"
 	done
 
 .LovelyDay:
-	text "Lovely day today,"
-	line "isn't it?"
+	text "Schöner Tag heute,"
+	line "nicht wahr?"
 
-	para "I heard that the"
-	line "mountaintop view"
-	cont "is great!"
+	para "Die Aussicht vom"
+	line "Gipfel soll toll"
+	cont "sein!"
 	done
 
 .BadDay:
-	text "Argh! A boat guard"
-	line "chased me off the"
+	text "Argh! Ein Wach-"
+	line "mann hat mich vom"
 
-	para "harbor when I swam"
-	line "near the boat."
+	para "Hafen verjagt, als"
+	line "ich in die Nähe"
+	cont "des Schiffs kam."
 
-	para "And I lost my Go-"
-	line "Goggles too…"
+	para "Und meine Wüsten-"
+	line "brille hab ich"
+	cont "auch verloren…"
 
-	para "Man, this is not"
-	line "my day!"
+	para "Mann, heute ist"
+	line "nicht mein Tag!"
 	prompt
 
 .FoundGoggles:
-	text "Oh, you found"
-	line "them!"
+	text "Oh, du hast sie"
+	line "gefunden!"
 
-	para "I already bought"
-	line "new ones, though…"
+	para "Ich habe mir aber"
+	line "schon eine neue"
+	cont "gekauft…"
 
-	para "Here, take this as"
-	line "thanks!"
+	para "Hier, nimm das als"
+	line "Dankeschön!"
 	prompt
 
 .NoRoom:
-	text "Uh-oh, your Bag"
-	line "looks rather full…"
+	text "Oje, dein Beutel"
+	line "scheint ziemlich"
+	cont "voll zu sein…"
 	done
 
 
@@ -125,24 +129,25 @@ Route39RuggedRoadGateCannotPassMovement:
 	step_end
 
 Route39RuggedRoadGateOfficerCannotPassText:
-	text "Whoa, where are"
-	line "you going?"
+	text "Halt, wohin willst"
+	line "du?"
 
-	para "The Rugged Road to"
-	line "Snowtop Mountain"
-	cont "is really harsh!"
+	para "Der Holprige Pfad"
+	line "zum Schneegipfel"
+	cont "ist sehr rau!"
 
-	para "I can't let you"
-	line "risk it without"
-	cont "any Go-Goggles."
+	para "Ohne Wüstenbrille"
+	line "kann ich dich das"
+	cont "nicht riskieren"
+	cont "lassen."
 	done
 
 Route39RuggedRoadGateOfficerText:
-	text "The trek to Snow-"
-	line "top Mountain can"
-	cont "be dangerous!"
+	text "Der Weg zum"
+	line "Schneegipfel kann"
+	cont "gefährlich sein!"
 
-	para "That's why a #-"
-	line "mon Center was"
-	cont "built there."
+	para "Deshalb hat man"
+	line "dort ein #mon-"
+	cont "Center gebaut."
 	done

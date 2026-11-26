@@ -70,19 +70,20 @@ Script_BattleRoomLoop:
 	sjumpfwd .ShownText
 .WarnAboutTycoon
 	writethistext
-		text "Congratulations"
-		line "on your winning"
-		cont "streak, trainer!"
+		text "Glückwunsch zu"
+		line "deiner Sieges-"
+		cont "serie, Trainer!"
 
-		para "The Tower Tycoon"
-		line "has sent word that"
+		para "Der Turm-Tycoon"
+		line "lässt ausrichten,"
 
-		para "he is impressed"
-		line "with your skill."
+		para "dass er von deinem"
+		line "Können beein-"
+		cont "druckt ist."
 
-		para "Are you ready to"
-		line "battle the Tower"
-		cont "Tycoon?"
+		para "Bist du bereit für"
+		line "den Kampf gegen"
+		cont "den Turm-Tycoon?"
 		done
 .ShownText
 	yesorno
@@ -109,11 +110,13 @@ Script_BattleRoomLoop:
 	special SoftReset
 .DontSaveAndEndTheSession:
 	writethistext
-		text "Cancel your Battle"
-		line "Room challenge?"
+		text "Die Kampfraum-"
+		line "Herausforderung"
+		cont "abbrechen?"
 
-		para "Beware, it counts"
-		line "as a loss."
+		para "Vorsicht, das"
+		line "zählt als"
+		cont "Niederlage."
 		done
 	yesorno
 	iffalse .AskNextBattle

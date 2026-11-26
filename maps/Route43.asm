@@ -114,56 +114,58 @@ Route43SightseerfScript:
 	done
 
 .IntroText:
-	text "I'm seeking out"
-	line "strong trainers"
+	text "Ich suche starke"
+	line "Trainer in Johto,"
 
-	para "in Johto, but I"
-	line "haven't found any."
+	para "aber ich habe noch"
+	line "keine gefunden."
 
-	para "Hmmm… You seem"
-	line "promising."
+	para "Hmmm… Du wirkst"
+	line "vielversprechend."
 
-	para "I can see it in"
-	line "your eyes."
+	para "Ich sehe es in"
+	line "deinen Augen."
 
-	para "Let's battle--but"
-	line "first, I want to"
+	para "Lass uns kämpfen--"
+	line "aber zuerst will"
 
-	para "see you conquer"
-	line "this route by"
+	para "ich sehen, wie du"
+	line "diese Route be-"
 
-	para "beating everyone"
-	line "else."
+	para "zwingst und alle"
+	line "anderen besiegst."
 	done
 
 .QuestionText:
-	text "Excellent! Time to"
-	line "test my new stra-"
-	cont "tegy…"
+	text "Ausgezeichnet!"
+	line "Zeit, meine neue"
+	cont "Strategie zu"
+	cont "testen…"
 
-	para "Ready for a"
-	line "battle?"
+	para "Bereit für einen"
+	line "Kampf?"
 	done
 
 .RefusedText:
-	text "Aw… I was so"
-	line "anxious!"
+	text "Och… Ich war so"
+	line "ungeduldig!"
 
-	para "Don't make me"
-	line "wait!"
+	para "Lass mich nicht"
+	line "warten!"
 	done
 
 .SeenText:
-	text "Let's see how"
-	line "strong Johto's"
-	cont "trainers can be."
+	text "Mal sehen, wie"
+	line "stark die Trainer"
+	cont "aus Johto sind."
 
-	para "Face my Flame Orb"
-	line "strategy!"
+	para "Stell dich meiner"
+	line "Heiß-Orb-"
+	cont "Strategie!"
 	done
 
 .BeatenText:
-	text "Awesome! ♥"
+	text "Klasse! ♥"
 	done
 
 .AfterText1:

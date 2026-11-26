@@ -110,37 +110,43 @@ BlackthornGymClairScript:
 	done
 
 .GoToDragonsDenText:
-	text "I won't admit"
-	line "this."
+	text "Ich gestehe das"
+	line "nicht ein."
 
-	para "I may have lost,"
-	line "but you're still"
+	para "Ich mag verloren"
+	line "haben, aber du"
 
-	para "not ready for the"
-	line "#mon League."
+	para "bist noch nicht"
+	line "reif für die"
+	cont "#mon Liga."
 
-	para "I know. You should"
-	line "take the Dragon-"
-	cont "master challenge."
+	para "Ich weiß. Stelle"
+	line "dich der Drachen-"
+	cont "meister-Heraus-"
+	cont "forderung."
 
-	para "Behind this Gym is"
-	line "a place called"
-	cont "Dragon's Den."
+	para "Hinter der PKMN-"
+	line "Arena liegt die"
+	cont "Drachenhöhle."
 
-	para "There is a small"
-	line "shrine at its"
-	cont "center."
-	cont "Go there."
+	para "In deren Mitte ist"
+	line "ein Schrein. Gehe"
+	cont "dorthin."
 
-	para "If you can prove"
-	line "that you've lost"
+	para "Falls du beweisen"
+	line "kannst, dass du"
 
-	para "your lazy ideals,"
-	line "I will recognize"
+	para "deine faulen"
+	line "Ideale aufgegeben"
 
-	para "you as a trainer"
-	line "worthy of a Gym"
-	cont "Badge!"
+	para "hast, werde ich"
+	line "dich als einen"
+
+	para "Trainer ansehen,"
+	line "der würdig ist,"
+
+	para "einen Orden"
+	line "zu erhalten!"
 	done
 
 .TooMuchToExpectText:
@@ -151,34 +157,34 @@ BlackthornGymClairScript:
 	done
 
 ClairPokemonLeagueDirectionsText:
-	text "What's the matter?"
+	text "Was ist los?"
 
-	para "Aren't you headed"
-	line "to the #mon"
-	cont "League?"
+	para "Gehst du nicht zur"
+	line "#mon Liga?"
 
-	para "Do you know how to"
-	line "get there?"
+	para "Kennst du den"
+	line "Weg nicht?"
 
-	para "From here, go to"
-	line "New Bark Town."
-	cont "Then Surf east."
+	para "Gehe von hier nach"
+	line "Neuborkia."
 
-	para "The route there is"
-	line "very tough."
+	para "Surfe dann nach"
+	line "Osten. Der Weg"
 
-	para "Don't you dare"
-	line "lose at the #-"
-	cont "mon League!"
+	para "wird dann sehr be-"
+	line "schwerlich."
 
-	para "If you do, I'll"
-	line "feel even worse"
+	para "Wage es nicht, in"
+	line "der #mon"
+	cont "Liga zu verlieren!"
 
-	para "about having lost"
-	line "to you!"
+	para "Das würde meine"
+	line "Niederlage gegen"
 
-	para "Give it everything"
-	line "you've got."
+	para "dich noch ver-"
+	line "schlimmern!"
+
+	para "Gib dein Bestes!"
 	done
 
 BlackthornGymGuyScript:

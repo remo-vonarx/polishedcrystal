@@ -739,11 +739,13 @@ RocketBaseLanceElectrodeDoneText:
 	done
 
 RocketBaseLanceWhirlpoolText:
-	text "That's Thief."
-	line "I trust you won't"
+	text "Das ist Raub."
+	line "Ich vertraue dar-"
+	cont "auf, dass du sie"
 
-	para "abuse it the way"
-	line "Team Rocket does."
+	para "nicht wie Team"
+	line "Rocket miss-"
+	cont "brauchst."
 	done
 
 RocketBaseLanceMonMasterText:

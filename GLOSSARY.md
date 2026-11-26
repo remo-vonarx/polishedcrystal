@@ -559,6 +559,17 @@ _Avoid_: Nintendo Power
 The Variety Channel the Goldenrod band plays on. No German game has a station of that name; built from Kristall's "Unterhaltungssendungen" in the Radio Tower.
 _Avoid_: Varieté-Kanal
 
+**Arenaberater**:
+The Gym guide who stands at a Gym's door (Polished: Gym guide). Neither Kristall nor later German games name him.
+_Avoid_: Arenaführer
+
+**Drachenmeister-Herausforderung**:
+Sandra's test at the Dragon Shrine (Polished: Dragon-master challenge), in Kristall's word for Siegfried.
+_Avoid_: Drachen-Trainer-Herausforderung
+
+**Weide**:
+Norbert's middle name in the #mon Journal (Willow, from his Japanese name Yanagi): "Norberts zweiter Vorname ist Weide."
+
 **Schätzchen**:
 What the Honey House woman in Goldenrod calls the player ("honey"). The honey pun has no German pet name.
 _Avoid_: Zuckerschnute, Honigschnäuzchen

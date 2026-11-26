@@ -203,46 +203,51 @@ RuggedRoadSouthBlackBeltScript:
 	jumpthisopenedtext
 
 .GotPunchinGloveText
-	text "With that Glove,"
-	line "your #mon will"
-	cont "punch even harder!"
+	text "Mit dem Boxhand-"
+	line "schuh schlagen"
+	cont "deine #mon noch"
+	cont "härter zu!"
 	done
 
 .IntroText:
 	text "Hi-YAH!"
 
-	para "With my powerful"
-	line "punches, I can"
-	cont "smash these rocks!"
+	para "Mit meinen starken"
+	line "Schlägen zertrüm-"
+	cont "mere ich Felsen!"
 
-	para "Huh? Your #mon"
-	line "can too?"
+	para "Hm? Deine #mon"
+	line "können das auch?"
 
-	para "Prove it! Bring me"
-	line "a Brick Piece from"
-	cont "a broken rock!"
+	para "Beweis es! Bring"
+	line "mir einen Ziegel-"
+	cont "stein von einem"
+	cont "zerschlagenen"
+	cont "Felsen!"
 	done
 
 .RefusedText:
-	text "Hah! I knew it!"
+	text "Hah! Wusste ich's"
+	line "doch!"
 	done
 
 .NoBrickPieceText:
-	text "Hah! You don't"
-	line "have any!"
+	text "Hah! Du hast ja"
+	line "gar keinen!"
 	done
 
 .GaveBrickPieceText:
-	text "Huh! That's a real"
-	line "Brick Piece!"
+	text "Huch! Das ist ein"
+	line "echter Ziegel-"
+	cont "stein!"
 
-	para "Your Pokemon must"
-	line "be seriously"
-	cont "tough. Like me!"
+	para "Deine #mon sind"
+	line "echt zäh. So wie"
+	cont "ich!"
 
-	para "Here--this padded"
-	line "Glove will help"
-	cont "them out!"
+	para "Hier, dieser"
+	line "gepolsterte Hand-"
+	cont "schuh hilft ihnen!"
 	done
 
 .NoRoomForPunchinGlove:
@@ -250,19 +255,19 @@ RuggedRoadSouthBlackBeltScript:
 	giveitem_unsafe BRICK_PIECE
 	jumpthisopenedtext
 
-	text "Humph! You don't"
-	line "have room for it!"
+	text "Pah! Dafür hast"
+	line "du keinen Platz!"
 	done
 
 RuggedRoadSouthCamperText:
-	text "Why did I think"
-	line "this would be a"
+	text "Wieso dachte ich,"
+	line "dass das hier ein"
 
-	para "fun new place to"
-	line "camp out?"
+	para "toller neuer Zelt-"
+	line "platz wäre?"
 
-	para "I can barely see"
-	line "the path!"
+	para "Ich sehe den Weg"
+	line "ja kaum!"
 	done
 
 RuggedRoadSouthAdvancedTipsSignText:

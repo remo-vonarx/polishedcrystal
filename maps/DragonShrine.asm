@@ -421,18 +421,20 @@ DragonShrinePassedTestText:
 	done
 
 DragonShrineMustIInformLanceText:
-	text "Clair!"
+	text "Sandra!"
 
-	para "This child is"
-	line "impeccable, in"
-	cont "skill and spirit!"
+	para "Dieses Kind ist"
+	line "tadellos, in Geist"
+	cont "und Talent!"
 
-	para "Admit defeat and"
-	line "confer the Rising"
-	cont "Badge!"
+	para "Gestehe deine"
+	line "Niederlage und"
+	cont "übergib den"
+	cont "Drachenorden!"
 
-	para "…Or must I inform"
-	line "Lance of this?"
+	para "…Oder soll ich das"
+	line "Siegfried"
+	cont "erzählen?"
 	done
 
 DragonShrineElderScoldsClairText:
@@ -468,8 +470,9 @@ DragonShrineTakeThisDratiniText:
 	done
 
 DragonShrinePartyAndBoxFullText:
-	text "Hm? Your party and"
-	line "Box are both full."
+	text "Hm? Dein Team und"
+	line "deine Box sind"
+	cont "beide voll."
 	done
 
 DragonShrineSymbolicDragonText:
@@ -566,28 +569,29 @@ DragonShrineIUnderstandText:
 	done
 
 DragonShrineHereRisingBadgeText:
-	text "Here, this is the"
-	line "Rising Badge…"
+	text "Hier das ist der"
+	line "Drachenorden…"
 
-	para "Hurry up! Take it!"
+	para "Jetzt nimm schon!"
 	done
 
 DragonShrineRisingBadgeExplanationText:
-	text "The Rising Badge"
-	line "will enable your"
+	text "Mit dem Drachen-"
+	line "orden können deine"
 
-	para "#mon to use the"
-	line "move for climbing"
-	cont "waterfalls."
+	para "#mon die Fähig-"
+	line "keit einsetzen,"
+	cont "mit der man Was-"
+	cont "serfälle erklimmt."
 
-	para "Also, all #mon"
-	line "will recognize you"
+	para "Ferner werden"
+	line "dich alle #mon"
 
-	para "as a trainer and"
-	line "obey your every"
+	para "als Trainer"
+	line "anerkennen und dir"
 
-	para "command without"
-	line "question."
+	para "bedingungslos"
+	line "gehorchen."
 	done
 
 DragonShrineSpeechlessText:
@@ -626,48 +630,51 @@ KimonoGirlMinaScript:
 	jumpthisopenedtext
 
 .OutroText:
-	text "Coming here from"
-	line "Ecruteak City"
+	text "Der Weg von Teak"
+	line "City hierher hat"
 
-	para "was worth the"
-	line "trouble."
+	para "sich gelohnt."
 
-	para "Dragon's Den is an"
-	line "ideal place for me"
-	cont "to train."
+	para "Die Drachenhöhle"
+	line "ist ideal für"
+	cont "mein Training."
 	done
 
 .BagFullText:
-	text "…That is, once you"
-	line "have freed up some"
-	cont "space in your Bag."
+	text "…Sobald du in"
+	line "deinem Beutel"
+	cont "Platz geschaffen"
+	cont "hast."
 	done
 
 .IntroText:
-	text "I am a Kimono"
-	line "Girl."
+	text "Ich bin ein"
+	line "Kimono-Girl."
 
-	para "Haven't you met my"
-	line "five dancing cou-"
-	cont "sins in Ecruteak?"
+	para "Hast du meine"
+	line "fünf tanzenden"
+	cont "Cousinen in Teak"
+	cont "City nicht"
+	cont "getroffen?"
 
-	para "Let me know if"
-	line "you do."
+	para "Sag mir Bescheid,"
+	line "wenn du sie"
+	cont "triffst."
 	done
 
 .SeenText:
-	text "She who knows the"
-	line "most speaks the"
-	cont "least!"
+	text "Wer am meisten"
+	line "weiß, spricht am"
+	cont "wenigsten!"
 
-	para "Allow me to cha-"
-	line "llenge you and"
-	cont "your #mon!"
+	para "Erlaube mir, dich"
+	line "und deine #mon"
+	cont "herauszufordern!"
 	done
 
 .BeatenText:
-	text "Oh, you are"
-	line "wonderful…"
+	text "Oh, du bist"
+	line "wundervoll…"
 	done
 
 .AfterText:

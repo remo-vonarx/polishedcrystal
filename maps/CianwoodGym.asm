@@ -121,9 +121,9 @@ CianwoodGymSetUpStoneTable:
 	refreshmap
 	jumpthistext
 
-	text "The boulders"
-	line "blocked the"
-	cont "waterfall!"
+	text "Die Felsen haben"
+	line "den Wasserfall"
+	cont "blockiert!"
 	done
 
 CianwoodGymChuckScript:
@@ -230,26 +230,30 @@ CianwoodGymMovement_ChuckChucksBoulder:
 	step_end
 
 ChuckIntroText1:
-	text "WARRGH!"
+	text "WAAARGH!"
 
-	para "The water pound-"
-	line "ing right onto my"
-	cont "head…"
+	para "Das Wasser, das"
+	line "direkt auf meinen"
+	cont "Kopf prasselt…"
 
-	para "Why did you stop"
-	line "the waterfall?"
+	para "Warum hast du den"
+	line "Wasserfall"
+	cont "gestoppt?"
 
-	para "You just spoiled"
-	line "my training!"
+	para "Du hast mein"
+	line "Training ruiniert!"
 
-	para "Let me tell you,"
-	line "I'm tough!"
+	para "Lass dir gesagt"
+	line "sein, dass ich ein"
+	cont "harter Brocken"
+	cont "bin."
 
-	para "My #mon will"
-	line "crush stones and"
-	cont "shatter bones!"
+	para "Meine #mon"
+	line "zermalmen Steine"
+	cont "und brechen"
+	cont "Knochen!"
 
-	para "Watch this!"
+	para "Pass auf!"
 	done
 
 ChuckIntroText2:
@@ -283,15 +287,16 @@ ChuckLossText:
 	done
 
 ChuckExplainBadgeText:
-	text "The Storm Badge"
-	line "lets your #mon"
+	text "Mit dem Faustorden"
+	line "können deine"
 
-	para "Fly to any city"
-	line "or town you've"
-	cont "already been to."
+	para "#mon jede Stadt"
+	line "mit Fliegen errei-"
+	cont "chen, in der du"
+	cont "schon warst."
 
-	para "Here, take this"
-	line "too!"
+	para "Hier, nimm auch"
+	line "dies!"
 	done
 
 ChuckAfterText:
@@ -355,26 +360,30 @@ BlackbeltLungBeatenText:
 	done
 
 CianwoodGymBlackBeltText:
-	text "The Gym guide is"
-	line "too scared of us"
-	cont "to stay here."
+	text "Der Arenaberater"
+	line "hat zu viel Angst"
+	cont "vor uns, um hier"
+	cont "zu bleiben."
 
-	para "What a wimp!"
+	para "Was für ein"
+	line "Weichei!"
 	done
 
 CianwoodGymChuckTrainingText:
-	text "He's so into his"
-	line "training that he"
-	cont "doesn't notice you."
+	text "Er ist so in sein"
+	line "Training vertieft,"
+	cont "dass er dich nicht"
+	cont "bemerkt."
 	done
 
 CianwoodGymBoulderText:
-	text "The boulder is"
-	line "blocking the"
-	cont "waterfall."
+	text "Der Felsen ver-"
+	line "sperrt den"
+	cont "Wasserfall."
 	done
 
 CianwoodGymChucksBoulderText:
-	text "The boulder is"
-	line "too heavy to move."
+	text "Der Felsen ist"
+	line "zu schwer, um ihn"
+	cont "zu bewegen."
 	done

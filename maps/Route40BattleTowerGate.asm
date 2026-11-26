@@ -19,15 +19,16 @@ Route40BattleTowerGate_MapScriptHeader:
 	object_event  7,  5, SPRITE_SCHOOLGIRL, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route40BattleTowerGateTwinScript, -1
 
 Route40BattleTowerGateOfficer:
-	text "Are you going to"
-	line "the Battle Tower?"
+	text "Gehst du zum"
+	line "Duellturm?"
 
-	para "If you win a whole"
-	line "lot, you can earn"
+	para "Wenn du oft ge-"
+	line "winnst, erhältst"
 
-	para "Battle Points and"
-	line "trade them in for"
-	cont "special items."
+	para "du Gewinnpunkte"
+	line "und kannst sie"
+	cont "gegen spezielle"
+	cont "Items tauschen."
 	done
 
 Route40BattleTowerGateRockerScript:
@@ -35,23 +36,24 @@ Route40BattleTowerGateRockerScript:
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
-	text "Did you come to"
-	line "see the Battle"
-	cont "Tower too?"
+	text "Bist du auch wegen"
+	line "des Duellturms"
+	cont "hier?"
 
-	para "But I guess you"
-	line "can't go in yet."
+	para "Aber du kannst"
+	line "wohl noch nicht"
+	cont "rein."
 	done
 
 .OpenText:
-	text "Battle Tower has"
-	line "opened."
+	text "Der Duellturm hat"
+	line "geöffnet."
 
-	para "I want to go, but"
-	line "I haven't thought"
+	para "Ich will hin, aber"
+	line "mir fehlt noch ein"
 
-	para "up a cool line for"
-	line "when I win."
+	para "cooler Spruch für"
+	line "meine Siege."
 	done
 
 Route40BattleTowerGateTwinScript:

@@ -150,28 +150,30 @@ OlivineGymStatue:
 	jumpstd gymstatue3
 
 Jasmine_SteelTypeIntro:
-	text "…Thank you for"
-	line "your help at the"
-	cont "Lighthouse…"
+	text "…Danke für deine"
+	line "Hilfe beim Leucht-"
+	cont "turm…"
 
-	para "But this is dif-"
-	line "ferent. Please"
+	para "Erlaube mir, mich"
+	line "vorstellen zu dür-"
+	cont "fen!"
 
-	para "allow me to intro-"
-	line "duce myself."
+	para "Ich bin Jasmin,"
+	line "eine Arenaleite-"
+	cont "rin. Ich setze"
+	cont "Stahl-#mon ein."
 
-	para "I am Jasmine, a"
-	line "Gym Leader. I use"
-	cont "the Steel-type."
+	para "…Hast du von die-"
+	line "sem Typ schon ge-"
+	cont "hört?"
 
-	para "…Do you know about"
-	line "the Steel-type?"
+	para "Diese #mon sind"
+	line "sehr hart, kalt,"
+	cont "scharf und richtig"
+	cont "stark."
 
-	para "They are very"
-	line "hard, cold, sharp,"
-	cont "and really strong."
-
-	para "…Um… May I begin?"
+	para "…Ähm… Darf ich be-"
+	line "ginnen?"
 	done
 
 Jasmine_BetterTrainer:
@@ -193,17 +195,16 @@ Jasmine_BetterTrainer:
 	done
 
 Jasmine_BadgeSpeech:
-	text "With that Badge,"
-	line "all #mon up"
+	text "Durch diesen Orden"
+	line "gehorchen dir alle"
 
-	para "to <LV>70, even"
-	line "traded ones, will"
+	para "#mon bis <LV>70,"
+	line "auch getauschte,"
 
-	para "obey you without"
-	line "question."
+	para "bedingungslos."
 
-	para "…Um… Please take"
-	line "this too…"
+	para "…Ähm… Bitte nimm"
+	line "auch das…"
 	done
 
 Jasmine_GoodLuck:

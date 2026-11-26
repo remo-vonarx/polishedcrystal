@@ -62,9 +62,10 @@ LoreleiAfterScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "If you do beat"
-	line "them, meet me here"
-	cont "for a rematch."
+	text "Wenn du sie be-"
+	line "siegst, triff mich"
+	cont "hier zu einem"
+	cont "Rückkampf."
 	done
 
 LoreleiRematchScript:
@@ -133,50 +134,52 @@ Text_IcePathB3FIceRock:
 	done
 
 LoreleiIntroText:
-	text "Lorelei: Hello"
-	line "there, trainer."
-	cont "I am Lorelei."
+	text "Lorelei: Hallo,"
+	line "Trainer."
+	cont "Ich bin Lorelei."
 
-	para "See that icy rock"
-	line "over there?"
+	para "Siehst du den"
+	line "Eisfelsen dort?"
 
-	para "It emits an energy"
-	line "I've never seen in"
-	cont "Kanto."
+	para "Er strahlt eine"
+	line "Energie aus, die"
+	cont "ich in Kanto nie"
+	cont "gesehen habe."
 
-	para "As an expert on"
-	line "Ice-type #mon,"
-	cont "I had to investi-"
-	cont "gate it."
+	para "Als Expertin für"
+	line "Eis-#mon musste"
+	cont "ich ihn untersu-"
+	cont "chen."
 
-	para "And what are you"
-	line "doing here?"
+	para "Und was machst du"
+	line "hier?"
 	done
 
 LoreleiAfterIntroText:
-	text "Lorelei: You're"
-	line "taking the #mon"
+	text "Lorelei: Du willst"
+	line "dich der #mon"
 
-	para "League challenge."
-	line "I see."
-	cont "How ironic."
+	para "Liga stellen."
+	line "Verstehe."
+	cont "Wie ironisch."
 
-	para "Why don't I test"
-	line "your skill?"
+	para "Soll ich dein"
+	line "Können testen?"
 	done
 
 LoreleiNoBattleText:
-	text "If you can't face"
-	line "me, you'll never"
+	text "Wenn du dich mir"
+	line "nicht stellst,"
 
-	para "be able to beat"
-	line "the Champion."
+	para "wirst du nie den"
+	line "Champ besiegen."
 	done
 
 LoreleiSeenText:
-	text "Hahaha! Get ready"
-	line "to be frozen"
-	cont "solid!"
+	text "Hahaha! Mach dich"
+	line "darauf gefasst,"
+	cont "zu Eis zu"
+	cont "erstarren!"
 	done
 
 LoreleiBeatenText:
@@ -185,32 +188,36 @@ LoreleiBeatenText:
 	done
 
 LoreleiRewardText:
-	text "You know how to"
-	line "handle Ice-type"
-	cont "#mon."
+	text "Du weißt mit"
+	line "Eis-#mon umzu-"
+	cont "gehen."
 
-	para "Then you can use"
-	line "this item."
+	para "Dann kannst du"
+	line "dieses Item"
+	cont "gebrauchen."
 	done
 
 LoreleiRematchIntroAgainText:
-	text "Lorelei: Hello"
-	line "again, <PLAYER>."
+	text "Lorelei: Hallo"
+	line "noch mal, <PLAYER>."
 	done
 
 LoreleiRematchSeenText:
-	text "So you battled"
-	line "the Elite Four?"
+	text "Du hast also gegen"
+	line "die Top Vier"
+	cont "gekämpft?"
 
-	para "I hope you took"
-	line "Karen down a peg."
+	para "Ich hoffe, du hast"
+	line "Melanie einen"
+	cont "Dämpfer verpasst."
 
-	para "…………You're the"
-	line "new Champion."
-	cont "I'm impressed."
+	para "…………Du bist"
+	line "jetzt Champ."
+	cont "Beeindruckend."
 
-	para "Then I won't have"
-	line "to hold back!"
+	para "Dann muss ich mich"
+	line "nicht zurück-"
+	cont "halten!"
 	done
 
 LoreleiRematchBeatenText:
@@ -219,18 +226,19 @@ LoreleiRematchBeatenText:
 	done
 
 LoreleiOneMoreBadgeText:
-	text "Go on ahead. You"
-	line "can challenge the"
+	text "Geh nur weiter."
+	line "Mit einem weiteren"
 
-	para "#mon League"
-	line "with one more"
-	cont "Badge."
+	para "Orden kannst du"
+	line "die #mon Liga"
+	cont "herausfordern."
 	done
 
 LoreleiAllBadgesText:
-	text "Go on ahead. You"
-	line "have enough Badges"
+	text "Geh nur weiter. Du"
+	line "hast genug Orden,"
 
-	para "to challenge the"
-	line "#mon League."
+	para "um die #mon"
+	line "Liga herauszu-"
+	cont "fordern."
 	done

@@ -43,12 +43,12 @@ HiddenPowerGuy:
 	ifequalfwd $1, .Egg
 	jumpthisopenedtext
 
-	text "I can sense it…"
+	text "Ich spüre es…"
 
-	para "Your "
+	para "Bei "
 	text_ram wStringBuffer3
-	line "has a Hidden Power"
-	cont "of "
+	line "ist Kraftreserve"
+	cont "vom Typ "
 	text_ram wStringBuffer1
 	text "!"
 	done
@@ -56,9 +56,9 @@ HiddenPowerGuy:
 .Egg:
 	jumpthisopenedtext
 
-	text "An Egg has not yet"
-	line "developed a Hidden"
-	cont "Power…"
+	text "Ein Ei hat noch"
+	line "keine Kraftreserve"
+	cont "entwickelt…"
 	done
 
 .Text1:
@@ -80,23 +80,26 @@ HiddenPowerGuy:
 	done
 
 .Text2:
-	text "Do you see it? It"
-	line "is Hidden Power!"
+	text "Siehst du? Das"
+	line "ist Kraftreserve!"
 
-	para "It draws out the"
-	line "power of #mon"
-	cont "for attacking."
+	para "Sie bringt die"
+	line "wahre Kraft der"
+	cont "#mon zum"
+	cont "Vorschein."
 
-	para "Remember this: its"
-	line "type depends on"
-	cont "the #mon"
-	cont "using it."
+	para "Vergiss nicht: Der"
+	line "Typ der Attacke"
+	cont "hängt vom"
+	cont "jeweiligen #mon"
+	cont "ab."
 	done
 
 .Text3:
-	text "Shall I divine"
-	line "the Hidden Power"
-	cont "of your #mon?"
+	text "Soll ich die"
+	line "Kraftreserve"
+	cont "deiner #mon"
+	cont "ergründen?"
 	done
 
 .Text4:
@@ -104,11 +107,12 @@ HiddenPowerGuy:
 	done
 
 .Text5:
-	text "Which #mon's"
-	line "Hidden Power"
-	cont "should I find?"
+	text "Welches #mon"
+	line "soll ich auf seine"
+	cont "Kraftreserve"
+	cont "prüfen?"
 	done
 
 .Text7:
-	text "…Very well…"
+	text "…Nun gut…"
 	done

@@ -25,22 +25,23 @@ PokemonJournalPryceScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Pryce!"
+	para "Titelthema:"
+	line "Arenaleiter"
+	cont "Norbert!"
 
-	para "Pryce's middle name"
-	line "is Willow."
+	para "Norberts zweiter"
+	line "Vorname ist Weide."
 
-	para "His fighting style"
-	line "is said to be as"
+	para "Sein Kampfstil"
+	line "soll so biegsam"
 
-	para "flexible as a"
-	line "willow tree in"
-	cont "winter, which has"
+	para "sein wie eine"
+	line "Weide im Winter."
 
-	para "earned him the"
-	line "nickname “the"
-	cont "winter trainer”."
+	para "Das brachte ihm"
+	line "den Spitznamen"
+	cont "“der Winter-"
+	cont "trainer” ein."
 	done
 
 MahoganyPokeCenter1FPokefanmText:

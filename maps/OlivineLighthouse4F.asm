@@ -74,12 +74,14 @@ SailorKentBeatenText:
 	done
 
 SailorKentFinalText:
-	text "The #mon here"
-	line "is well again."
+	text "Dem #mon hier"
+	line "geht es wieder"
+	cont "gut."
 
-	para "Cianwood Pharmacy"
-	line "lived up to its"
-	cont "reputation!"
+	para "Die Apotheke von"
+	line "Anemonia City ist"
+	cont "ihrem Ruf gerecht"
+	cont "geworden!"
 	done
 
 LassConnieSeenText:

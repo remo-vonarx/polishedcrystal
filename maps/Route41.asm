@@ -81,54 +81,56 @@ Route41MarlonScript:
 	end
 
 .IntroText:
-	text "Marlon: Uihaa!"
+	text "Benson: Uihaa!"
 
-	para "Sup, so you're"
+	para "Na, du bist also"
 	line "<PLAYER>!"
 
-	para "The name's Marlon,"
-	line "man of the sea!"
+	para "Ich bin Benson,"
+	line "Mann des Meeres!"
 
-	para "Me 'n' my #mon"
-	line "swam here from"
-	cont "the Unova region!"
+	para "Meine #mon und"
+	line "ich sind aus der"
+	cont "Einall-Region"
+	cont "hergeschwommen!"
 	done
 
 .ChallengeText:
-	text "You look strong!"
-	line "Shoots!"
+	text "Du siehst stark"
+	line "aus! Hammer!"
 
-	para "We should totally"
-	line "have a battle!"
+	para "Wir sollten voll"
+	line "mal kämpfen!"
 	done
 
 .RematchText:
-	text "Ohoho! 'Sup,"
+	text "Ohoho! Na,"
 	line "<PLAYER>!"
 
-	para "So I'm facing"
-	line "you again!"
+	para "Ich trete also"
+	line "wieder gegen dich"
+	cont "an!"
 
-	para "You're gonna get"
-	line "swept away,"
-	cont "fo' sho'!"
+	para "Du wirst wegge-"
+	line "spült, ganz"
+	cont "sicher!"
 	done
 
 .RefusedText:
-	text "Aw, man!"
+	text "Och, Mann!"
 	done
 
 .SeenText:
-	text "Right on,"
-	line "let's roll!"
+	text "Super, los geht's!"
 	done
 
 .BeatenText:
-	text "You totally rocked"
-	line "that!"
+	text "Das hast du voll"
+	line "gerockt!"
 
-	para "You got this Trai-"
-	line "ner thing down!"
+	para "Du hast das mit"
+	line "dem Trainersein"
+	cont "echt drauf!"
 	done
 
 .AfterText:

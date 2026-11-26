@@ -114,8 +114,8 @@ LakeOfRageFishingDudeSign:
 	endtext
 
 .Text:
-	text "Fishing Dude's"
-	line "House"
+	text "Haus des"
+	line "Anglers"
 	done
 
 LakeOfRageLanceScript:
@@ -232,16 +232,16 @@ LakeOfRageLanceScript:
 	done
 
 LakeOfRageEngineerText:
-	text "I'm an urban"
-	line "planner."
+	text "Ich bin Stadt-"
+	line "planer."
 
-	para "I've got big ideas"
-	line "for this place,"
-	cont "just you wait!"
+	para "Ich habe große"
+	line "Pläne für diesen"
+	cont "Ort, warte nur ab!"
 
-	para "It's the perfect"
-	line "spot for my next"
-	cont "project."
+	para "Er ist perfekt für"
+	line "mein nächstes"
+	cont "Projekt."
 	done
 
 LakeOfRageRedGyaradosScript:

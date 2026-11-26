@@ -30,20 +30,21 @@ OlivineLighthouse1FSailorScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "The trainers here"
-	line "are all keen to"
-	cont "battle."
+	text "Die Trainer hier"
+	line "brennen alle auf"
+	cont "einen Kampf."
 
-	para "Be prepared!"
+	para "Sei vorbereitet!"
 	done
 
 .Text1:
-	text "People are train-"
-	line "ing hard at this"
-	cont "Lighthouse."
+	text "Die Leute kommen"
+	line "zum Leuchtturm,"
+	cont "um hart zu"
+	cont "trainieren."
 
-	para "You should take"
-	line "this."
+	para "Du solltest das"
+	line "hier nehmen."
 	done
 
 OlivineLighthouse1FPokefanFText:

@@ -38,20 +38,21 @@ ProfOaksAide3Script:
 .Explain
 	jumpthisopenedtext
 
-	text "That Macho Brace"
-	line "helps a #mon"
+	text "Die Machoschiene"
+	line "lässt ein #mon"
 
-	para "grow more from"
-	line "battling, but"
-	cont "slows it down."
+	para "durch Kämpfe"
+	line "stärker wachsen,"
+	cont "macht es aber"
+	cont "langsamer."
 	done
 
 .NoRoom
 	jumpthisopenedtext
 
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for this."
+	text "Oh! Wie ich sehe,"
+	line "hast du keinen"
+	cont "Platz dafür."
 	done
 
 GenericTrainerGruntM12:
@@ -66,55 +67,59 @@ GenericTrainerGruntM12:
 	done
 
 CliffEdgeGateReceptionistText:
-	text "Yellow Forest is"
-	line "this way!"
+	text "Hier geht es zum"
+	line "Goldgelben Wald!"
 
-	para "It's a popular"
-	line "tourist sight!"
+	para "Er ist ein belieb-"
+	line "tes Ausflugsziel!"
 	done
 
 ProfOaksAide3HiText:
-	text "Hello there! I'm"
-	line "Prof.Oak's aide."
+	text "Hallo! Ich bin"
+	line "Prof. Eichs"
+	cont "Assistent."
 
-	para "If you caught 45"
-	line "kinds of #mon,"
+	para "Wenn du 45 Arten"
+	line "von #mon"
+	cont "gefangen hast,"
+	cont "soll ich dir ein"
+	cont "Item geben."
 
-	para "I'm supposed to"
-	line "give you an item."
+	para "Also, <PLAYER>,"
+	line "hast du schon"
 
-	para "So, <PLAYER>,"
-	line "have you caught"
-
-	para "at least 45 kinds"
-	line "of #mon?"
+	para "mindestens 45"
+	line "Arten von #mon"
+	cont "gefangen?"
 	done
 
 ProfOaksAide3UhOhText:
-	text "Let's see…"
-	line "Uh-oh! You've only"
+	text "Mal sehen… Oje!"
+	line "Du hast bisher"
 
-	para "caught "
+	para "erst "
 	text_decimal wTempDexOwn, 2, 3
-	text " kinds"
-	line "of #mon."
+	text " Arten"
+	line "von #mon"
+	cont "gefangen."
 
-	para "Come back and see"
-	line "me when you catch"
-	cont "45 kinds."
+	para "Komm wieder, wenn"
+	line "du 45 Arten"
+	cont "gefangen hast."
 	done
 
 ProfOaksAide3HereYouGoText:
-	text "Let's see…"
-	line "Great job! You've"
+	text "Mal sehen… Toll"
+	line "gemacht! Du hast"
 
-	para "caught "
+	para "schon "
 	text_decimal wTempDexOwn, 2, 3
-	text " kinds"
-	line "of #mon."
+	text " Arten"
+	line "von #mon"
+	cont "gefangen."
 
-	para "Congratulations!"
-	line "Here you go!"
+	para "Glückwunsch!"
+	line "Hier, bitte!"
 	done
 
 
