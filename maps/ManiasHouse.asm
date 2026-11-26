@@ -125,7 +125,7 @@ ShuckieName:
 	rawchar "Modri@"
 
 ShuckieOTName:
-	rawchar "Kirk@"
+	rawchar "Gabriel@"
 
 ManiaText_AskLookAfterShuckie:
 	text "Ich… ich bin"

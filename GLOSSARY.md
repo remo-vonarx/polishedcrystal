@@ -139,7 +139,7 @@ The gift Spearow in the Route 35 gate and its OT, Kristall's names (Crystal's Ke
 _Avoid_: Kenya, Randy
 
 **Modri**:
-The Shuckle you look after in Cianwood City, Kristall's nickname (Crystal's Shuckie). Its OT stays Polished's Kirk: Kristall's Gabriele has 8 letters, and an OT holds 7 here.
+The Shuckle you look after in Cianwood City, Kristall's nickname (Crystal's Shuckie). Its OT is Gabriel (Polished: Kirk): Kristall's Gabriele has 8 letters, and an OT holds 7 here (decided 2026-11-26).
 _Avoid_: Shuckie
 
 **Nicknames**:
@@ -324,7 +324,7 @@ The short status names, Kristall's, in normal case in every text and menu, as Up
 _Avoid_: GIF, PAR in a text
 
 **KP**, **EP**, **AP**:
-HP, Exp. Points and PP, on the bars and in the texts ("157 EP!").
+HP, Exp. Points and PP, on the bars and in the texts ("157 EP!"). AP is in the plain font, where Upstream draws a bold PP and Kristall a bold AP (decided 2026-11-25, confirmed 2026-11-26).
 
 **S**:
 A move's power (Stärke, PokéWiki) beside its accuracy in % ("90S/ 90%"), in the normal font, in the battle move box, the summary and the move screen.
@@ -590,6 +590,9 @@ The Game Corners' roof sign stays English, as Upstream draws it (decided 2026-11
 _Avoid_: SPIEL
 
 ## Story text
+
+**Pilar's Spanish**:
+Sightseer Pilar on the Shamouti coast speaks Spanish, as in Upstream: a tourist from far away. Her lines stay Upstream's, with á í ó ¿ ¡ (decided 2026-11-26).
 
 **Unterhaltungskanal**:
 The Variety Channel the Goldenrod band plays on. No German game has a station of that name; built from Kristall's "Unterhaltungssendungen" in the Radio Tower.

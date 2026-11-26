@@ -496,7 +496,7 @@ Pokedex_RefreshOAM:
 	lb hl, OAM_BANK1, $40
 	ld a, 3
 .search_loop
-	ld b, 120
+	ld b, 136 ; two tiles right of Upstream's 120: the silhouette sits right of the longer "Silhouette:"
 	ld d, 3
 	push af
 	call Pokedex_WriteOAM
