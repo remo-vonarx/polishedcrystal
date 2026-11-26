@@ -234,26 +234,25 @@ MapFightingDojoSignpost2Script:
 	iftruefwd .saturday_agatha
 	jumpthisopenedtext
 
-	text "Saturday: Whitney,"
-	line "Chuck, ???"
+	text "Samstag: Bianka,"
+	line "Hartwig, ???"
 	done
 .saturday_agatha
 	jumpthisopenedtext
 
-	text "Saturday: Whitney,"
-	line "Chuck, Agatha"
+	text "Samstag: Bianka,"
+	line "Hartwig, Agathe"
 	done
 
 BlackBeltText_ExplainsRematches:
-	text "Gym Leaders from"
-	line "Kanto and Johto"
+	text "Arenaleiter aus"
+	line "Kanto und Johto"
 
-	para "come to this"
-	line "Fighting Dojo"
-	cont "to train."
+	para "trainieren in"
+	line "diesem Karate"
+	cont "Dojo."
 
-	para "You should join"
-	line "them!"
+	para "Mach doch mit!"
 	done
 
 FightingDojoSign1Text:
@@ -371,354 +370,376 @@ FightingDojoRematch3Script:
 	rematch_script Agatha, AGATHA, 3
 
 BrockText_Greeting:
-	text "I like Rock-type"
-	line "#mon best."
+	text "Am liebsten mag"
+	line "ich #mon vom"
+	cont "Typ Gestein."
 
-	para "They're solid and"
-	line "rough, yet brittle"
-	cont "at the same time."
+	para "Sie sind fest und"
+	line "rau, aber zugleich"
+	cont "spröde."
 
-	para "You'll see how"
-	line "much stronger my"
+	para "Du wirst sehen,"
+	line "wie viel stärker"
 
-	para "rock #mon have"
-	line "become!"
+	para "meine Gesteins-"
+	line "#mon geworden"
+	cont "sind!"
 	done
 
 MistyText_Greeting:
-	text "I've heard a lot"
-	line "of good things"
+	text "Seit unserem"
+	line "letzten Kampf"
 
-	para "about you since"
-	line "our last battle."
+	para "habe ich viel"
+	line "Gutes über dich"
+	cont "gehört."
 
-	para "Let me test how"
-	line "good you are!"
+	para "Lass mich testen,"
+	line "wie gut du bist!"
 	done
 
 SurgeText_Greeting:
-	text "I can feel great"
-	line "electric power"
+	text "Ich spüre gewal-"
+	line "tige elektrische"
 
-	para "around the Magnet"
-	line "Train station!"
+	para "Kraft am Magnet-"
+	line "zug-Bahnhof!"
 
-	para "I'm psyched for"
-	line "an electrifying"
-	cont "battle!"
+	para "Ich freue mich auf"
+	line "einen elektrisie-"
+	cont "renden Kampf!"
 	done
 
 ErikaText_Greeting:
-	text "Good to see you"
-	line "again!"
+	text "Schön, dich wie-"
+	line "derzusehen!"
 
-	para "How are you?"
+	para "Wie geht es dir?"
 
-	para "This place doesn't"
-	line "really suit me,"
-	cont "but…"
+	para "Dieser Ort passt"
+	line "nicht so recht zu"
+	cont "mir, aber…"
 
-	para "let's ignore that"
-	line "and battle!"
+	para "vergessen wir das"
+	line "und kämpfen!"
 	done
 
 JanineText_Greeting:
-	text "I can't use my"
-	line "ninja technique,"
+	text "Meine Ninja-Tech-"
+	line "nik kann ich hier"
+	cont "nicht einsetzen,"
 
-	para "but I won't let"
-	line "you win!"
+	para "aber gewinnen"
+	line "lasse ich dich"
+	cont "nicht!"
 	done
 
 SabrinaText_Greeting:
-	text "I knew you'd come"
-	line "battle me again."
+	text "Ich wusste, dass"
+	line "du wieder gegen"
+	cont "mich kämpfst."
 
-	para "I had a feeling."
+	para "Ich hatte so ein"
+	line "Gefühl."
 	done
 
 BlaineText_Greeting:
-	text "My Gym is still"
-	line "gone, so let's"
+	text "Meine Arena ist"
+	line "noch immer weg,"
 
-	para "hold our rematch"
-	line "right here!"
+	para "also tragen wir"
+	line "den Rückkampf"
+	cont "hier aus!"
 	done
 
 BlueText_Greeting:
-	text "Good! You're"
-	line "here too."
+	text "Gut! Du bist auch"
+	line "hier."
 
-	para "Thanks for coming"
-	line "to lose to me!"
+	para "Danke, dass du zum"
+	line "Verlieren gekommen"
+	cont "bist!"
 	done
 
 FalknerText_Greeting:
-	text "I'm in top form"
-	line "today."
+	text "Ich bin heute in"
+	line "Topform."
 
-	para "It's a pleasure to"
-	line "be able to battle"
-	cont "you again!"
+	para "Es ist mir eine"
+	line "Freude, wieder"
+	cont "gegen dich zu"
+	cont "kämpfen!"
 	done
 
 BugsyText_Greeting:
-	text "Good to see you"
-	line "again! Behold my"
-	cont "bug research!"
+	text "Schön, dich wie-"
+	line "derzusehen! Sieh"
+	cont "dir meine Käfer-"
+	cont "Forschung an!"
 	done
 
 WhitneyText_Greeting:
 	text "Hi, <PLAYER>!"
-	line "Since we're both"
+	line "Wo wir schon"
 
-	para "here, let's have"
-	line "a battle!"
+	para "beide hier sind,"
+	line "lass uns kämpfen!"
 
-	para "Are you ready?"
+	para "Bist du bereit?"
 	done
 
 MortyText_Greeting:
-	text "The legendary"
-	line "#mon did not"
-	cont "choose me…"
+	text "Die legendären"
+	line "#mon haben mich"
+	cont "nicht erwählt…"
 
-	para "But that does not"
-	line "mean I have lost"
+	para "Aber das heißt"
+	line "nicht, dass ich"
 
-	para "out on my future."
-	line "Let's battle!"
+	para "keine Zukunft"
+	line "habe. Kämpfen wir!"
 	done
 
 ChuckText_Greeting:
-	text "There you are!"
+	text "Da bist du ja!"
 
-	para "Taste my 24-hour"
-	line "training!"
+	para "Spüre die Kraft"
+	line "meines 24-Stunden-"
+	cont "Trainings!"
 	done
 
 JasmineText_Greeting:
-	text "Hello, <PLAYER>…"
-	line "How are you?"
-	cont "I'm doing well…"
+	text "Hallo, <PLAYER>…"
+	line "Wie geht es dir?"
+	cont "Mir geht es gut…"
 
-	para "Anyway, are you"
-	line "prepared to"
-	cont "battle me again?"
+	para "Wie dem auch sei,"
+	line "bist du bereit für"
+	cont "einen Rückkampf?"
 	done
 
 PryceText_Greeting:
-	text "No need for words."
-	line "A #mon battle"
+	text "Keine Worte nötig."
+	line "Ein #mon-Kampf"
 
-	para "is the way for us"
-	line "to communicate."
+	para "ist unsere Art,"
+	line "uns zu verstän-"
+	cont "digen."
 	done
 
 ClairText_Greeting:
-	text "…So you are here."
+	text "…Du bist also da."
 
-	para "Now let's battle!"
+	para "Jetzt lass uns"
+	line "kämpfen!"
 	done
 
 PalmerText_Greeting:
-	text "So, you've come"
-	line "this far!"
+	text "Du bist also so"
+	line "weit gekommen!"
 
-	para "As the Tower"
-	line "Tycoon, I'll have"
+	para "Als Turm-Tycoon"
+	line "muss ich dir"
 
-	para "to give you my"
-	line "best effort."
+	para "mein Bestes"
+	line "geben."
 
-	para "That's how the best"
-	line "trainers show"
+	para "So zeigen die"
+	line "besten Trainer"
 
-	para "respect to each"
-	line "other."
+	para "einander Respekt."
 
-	para "By battling all-"
-	line "out as dedicated"
+	para "Indem sie mit"
+	line "vollem Einsatz"
 
-	para "students of"
-	line "#mon!"
+	para "als treue Schüler"
+	line "der #mon"
+	cont "kämpfen!"
 	done
 
 LoreleiText_Greeting:
-	text "Hello again,"
+	text "Hallo noch mal,"
 	line "<PLAYER>."
 
-	para "We're on my home"
-	line "ground now."
+	para "Jetzt sind wir auf"
+	line "meinem Terrain."
 
-	para "I won't lose!"
+	para "Ich verliere"
+	line "nicht!"
 	done
 
 AgathaText_Greeting:
-	text "Hello, child."
+	text "Hallo, Kind."
 
-	para "You're still"
-	line "filling a #dex"
+	para "Füllst du immer"
+	line "noch einen #dex"
 
-	para "for that old duff"
-	line "Oak?"
+	para "für diesen alten"
+	line "Trottel Eich?"
 
-	para "#mon are for"
-	line "battling!"
+	para "#mon sind zum"
+	line "Kämpfen da!"
 
-	para "Show me your"
-	line "real talent"
-	cont "as a trainer!"
+	para "Zeig mir dein"
+	line "wahres Talent"
+	cont "als Trainer!"
 	done
 
 WalkerText_Greeting:
-	text "Hey there,"
+	text "Hallo,"
 	line "<PLAYER>!"
 
-	para "Seems like I just"
-	line "missed my son"
+	para "Ich habe meinen"
+	line "Sohn Falk hier"
 
-	para "Falkner here"
-	line "earlier…"
+	para "wohl gerade"
+	line "verpasst…"
 
-	para "How about if we"
-	line "battle instead?"
+	para "Wie wär's, wenn"
+	line "wir stattdessen"
+	cont "kämpfen?"
 	done
 
 YellowText_Greeting:
 	text "Hi, <PLAYER>!"
 
-	para "Let me see…"
+	para "Mal sehen…"
 
-	para "Yes! You still"
-	line "take good care of"
-	cont "your #mon!"
+	para "Ja! Du kümmerst"
+	line "dich immer noch"
+	cont "gut um deine"
+	cont "#mon!"
 
-	para "You've gotten"
-	line "stronger, but so"
-	cont "have I!"
+	para "Du bist stärker"
+	line "geworden, aber"
+	cont "ich auch!"
 	done
 
 BrockText_WinLoss:
-	text "I've lost again…"
+	text "Ich habe wieder"
+	line "verloren…"
 
-	para "You aren't adven-"
-	line "turing around"
-	cont "for nothing!"
+	para "Du bist nicht um-"
+	line "sonst auf Reisen!"
 	done
 
 MistyText_WinLoss:
-	text "Wow! You're"
-	line "getting stronger"
-	cont "by the battle!"
+	text "Wow! Du wirst mit"
+	line "jedem Kampf"
+	cont "stärker!"
 	done
 
 SurgeText_WinLoss:
-	text "You're very"
-	line "strong!"
+	text "Du bist sehr"
+	line "stark!"
 
-	para "But I'll repay my"
-	line "debt someday!"
+	para "Aber eines Tages"
+	line "revanchiere ich"
+	cont "mich!"
 	done
 
 ErikaText_WinLoss:
-	text "You have grown"
-	line "even stronger…"
+	text "Du bist noch"
+	line "stärker geworden…"
 	done
 
 JanineText_WinLoss:
-	text "I lost today, but"
-	line "I'll win next time!"
+	text "Heute habe ich"
+	line "verloren, aber"
+	cont "nächstes Mal"
+	cont "gewinne ich!"
 	done
 
 SabrinaText_WinLoss:
-	text "I know… we will"
-	line "meet again some-"
-	cont "time."
+	text "Ich weiß… wir"
+	line "sehen uns irgend-"
+	cont "wann wieder."
 	done
 
 BlaineText_WinLoss:
-	text "Waaah! I've burned"
-	line "out again!"
+	text "Waaah! Ich bin"
+	line "schon wieder aus-"
+	cont "gebrannt!"
 	done
 
 BlueText_WinLoss:
-	text "Just as I"
-	line "expected!"
+	text "Genau wie ich"
+	line "dachte!"
 
-	para "No wonder you've"
-	line "become the"
-	cont "Champion…"
+	para "Kein Wunder, dass"
+	line "du Champ geworden"
+	cont "bist…"
 	done
 
 FalknerText_WinLoss:
-	text "Mmm… It's still a"
-	line "long way to become"
-	cont "the best trainer…"
+	text "Mmm… Der Weg zum"
+	line "besten Trainer ist"
+	cont "noch weit…"
 	done
 
 BugsyText_WinLoss:
-	text "You must have"
-	line "studied a lot"
-	cont "about #mon!"
+	text "Du musst viel"
+	line "über #mon"
+	cont "gelernt haben!"
 	done
 
 WhitneyText_WinLoss:
-	text "You really are"
-	line "strong!"
+	text "Du bist echt"
+	line "stark!"
 
-	para "But I won't lose"
-	line "next time!"
+	para "Aber beim nächsten"
+	line "Mal verliere ich"
+	cont "nicht!"
 	done
 
 MortyText_WinLoss:
-	text "I've lost again…"
-	line "You have something"
+	text "Ich habe wieder"
+	line "verloren… Du hast"
 
-	para "more than just"
-	line "strength."
+	para "mehr als nur"
+	line "Stärke."
 	done
 
 ChuckText_WinLoss:
 	text "Wahaha!"
-	line "A battle with you"
-	cont "is never boring!"
+	line "Mit dir wird ein"
+	cont "Kampf nie öde!"
 	done
 
 JasmineText_WinLoss:
-	text "True to your"
-	line "reputation…"
+	text "Du wirst deinem"
+	line "Ruf gerecht…"
 	done
 
 PryceText_WinLoss:
-	text "Mmm… Impressive!"
+	text "Hmm… Beachtlich!"
 	done
 
 ClairText_WinLoss:
-	text "Way to go."
+	text "Gut gemacht."
 	line "…"
 
-	para "Now give it"
-	line "your all!"
+	para "Jetzt gib alles!"
 	done
 
 PalmerText_WinLoss:
-	text "Bravo! I feel"
-	line "inspired in my"
-	cont "heart!"
+	text "Bravo! Das hat"
+	line "mein Herz"
+	cont "beflügelt!"
 	done
 
 LoreleiText_WinLoss:
-	text "How dare you!"
+	text "Wie kannst du es"
+	line "wagen!"
 	done
 
 AgathaText_WinLoss:
-	text "Woo-hoo!"
+	text "Juhuu!"
 	done
 
 WalkerText_WinLoss:
-	text "I was no match"
-	line "for you!"
+	text "Ich bin kein"
+	line "Gegner für dich!"
 	done
 
 YellowText_WinLoss:
@@ -746,61 +767,63 @@ LoreleiText_Done:
 AgathaText_Done:
 WalkerText_Done:
 YellowText_Done:
-	text "I'm done battling"
-	line "for today."
+	text "Für heute habe ich"
+	line "genug gekämpft."
 	done
 
 FightingDojoScheduleQuestionText:
-	text "It's a training"
-	line "schedule! Read it?"
+	text "Ein Trainingsplan!"
+	line "Lesen?"
 	done
 
 FightingDojoScheduleSundayText:
-	text "Sunday: Jasmine,"
+	text "Sonntag: Jasmin,"
 	line "Erika, Sabrina"
 	done
 
 FightingDojoScheduleMondayText:
-	text "Monday: Falkner,"
-	line "Janine, ???"
+	text "Montag: Falk,"
+	line "Janina, ???"
 	done
 
 FightingDojoScheduleMondayWalkerText:
-	text "Monday: Falkner,"
-	line "Janine, Walker"
+	text "Montag: Falk,"
+	line "Janina, Luc"
 	done
 
 FightingDojoScheduleTuesdayText:
-	text "Tuesday: Pryce,"
-	line "Blaine, ???"
+	text "Dienstag: Norbert,"
+	line "Pyro, ???"
 	done
 
 FightingDojoScheduleTuesdayLoreleiText:
-	text "Tuesday: Pryce,"
-	line "Blaine, Lorelei"
+	text "Dienstag: Norbert,"
+	line "Pyro, Lorelei"
 	done
 
 FightingDojoScheduleWednesdayText:
-	text "Wednesday: Brock,"
-	line "Misty, Blue"
+	text "Mittwoch: Rocko,"
+	line "Misty, Blau"
 	done
 
 FightingDojoScheduleThursdayText:
-	text "Thursday: Bugsy,"
-	line "???, Morty"
+	text "Donnerstag: Kai,"
+	line "???, Jens"
 	done
 
 FightingDojoScheduleThursdayPalmerText:
-	text "Thursday: Bugsy,"
-	line "Palmer, Morty"
+	text "Donnerstag: Kai,"
+	line "Viktor, Jens"
 	done
 
 FightingDojoScheduleFridayText:
-	text "Friday: Lt.Surge,"
-	line "???, Clair"
+	text "Freitag:"
+	line "Major Bob, ???,"
+	cont "Sandra"
 	done
 
 FightingDojoScheduleFridayYellowText:
-	text "Friday: Lt.Surge,"
-	line "Yellow, Clair"
+	text "Freitag:"
+	line "Major Bob, Gelb,"
+	cont "Sandra"
 	done

@@ -44,9 +44,9 @@ AgathaScript:
 AgathaAfterScript:
 	jumpthisopenedtext
 
-	text "I expect great"
-	line "things from you,"
-	cont "if you will them."
+	text "Ich erwarte Großes"
+	line "von dir, wenn du"
+	cont "es nur willst."
 	done
 
 MrFujiScript:
@@ -95,18 +95,18 @@ MrFujiText:
 	done
 
 MrFujiGiveSilphScopeText:
-	text "Here, I have"
-	line "a gift for you."
+	text "Hier, ich habe ein"
+	line "Geschenk für dich."
 
-	para "Please, take it."
+	para "Bitte nimm es."
 	done
 
 MrFujiUseThisText:
-	text "You may use that"
-	line "to help ease the"
+	text "Damit kannst du"
+	line "die Seelen"
 
-	para "souls of any"
-	line "restless #mon."
+	para "ruheloser #mon"
+	line "besänftigen."
 	done
 
 SoulHouseTeacherText:
@@ -137,54 +137,58 @@ SoulHouseGrannyText:
 	done
 
 AgathaSeenText:
-	text "Agatha: Hello,"
-	line "child."
+	text "Agathe: Hallo,"
+	line "Kind."
 
-	para "My name is"
-	line "Agatha."
+	para "Mein Name ist"
+	line "Agathe."
 
-	para "I fought for years"
-	line "as a member of"
-	cont "the Elite Four."
-
-	para "…………"
-
-	para "Have you come to"
-	line "mourn a #mon?"
-
-	para "It might not be"
-	line "here any longer."
-
-	para "Mr.Fuji kept many"
-	line "of the graves"
-	cont "elsewhere after"
-
-	para "the radio company"
-	line "took over."
+	para "Jahrelang kämpfte"
+	line "ich als Mitglied"
+	cont "der Top Vier."
 
 	para "…………"
 
-	para "He could have"
-	line "fought to preserve"
-	cont "the tower! But he"
+	para "Bist du gekommen,"
+	line "um ein #mon zu"
+	cont "betrauern?"
 
-	para "wouldn't get"
-	line "involved. Too"
+	para "Es ist vielleicht"
+	line "nicht mehr hier."
 
-	para "scared of abusing"
-	line "his influence."
+	para "Mr. Fuji brachte"
+	line "viele der Gräber"
+	cont "woanders unter,"
 
-	para "That old fool…"
+	para "als die Radiofirma"
+	line "übernahm."
 
-	para "Power is meant to"
-	line "be used!"
+	para "…………"
 
-	para "You clearly"
-	line "understand me."
+	para "Er hätte für den"
+	line "Erhalt des Turms"
+	cont "kämpfen können!"
 
-	para "I'll show you"
-	line "what a powerful"
-	cont "trainer can do!"
+	para "Aber er wollte"
+	line "sich nicht"
+	cont "einmischen."
+
+	para "Zu groß war seine"
+	line "Angst, seinen Ein-"
+	cont "fluss zu miss-"
+	cont "brauchen."
+
+	para "Dieser alte Narr…"
+
+	para "Macht ist dazu da,"
+	line "genutzt zu werden!"
+
+	para "Du verstehst mich"
+	line "offensichtlich."
+
+	para "Ich zeige dir, was"
+	line "eine starke"
+	cont "Trainerin kann!"
 	done
 
 AgathaBeatenText:
@@ -192,15 +196,16 @@ AgathaBeatenText:
 	done
 
 AgathaRewardText:
-	text "You're quite"
-	line "something, child."
+	text "Du bist schon"
+	line "etwas Besonderes,"
+	cont "Kind."
 
-	para "A strong trainer"
-	line "with a deep"
+	para "Ein starker"
+	line "Trainer mit einer"
 
-	para "connection to"
-	line "your #mon."
+	para "tiefen Bindung zu"
+	line "deinen #mon."
 
-	para "Here, take this"
+	para "Hier, nimm diese"
 	line "TM!"
 	done

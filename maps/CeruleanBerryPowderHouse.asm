@@ -27,19 +27,21 @@ CeruleanBerryPowderHouseGrampsScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "Concocting med-"
-	line "icines was a"
-	cont "rewarding job,"
+	text "Arzneien zu mi-"
+	line "schen war eine"
+	cont "lohnende Arbeit,"
 
-	para "but I deserve a"
-	line "break."
+	para "aber ich habe mir"
+	line "eine Pause"
+	cont "verdient."
 	done
 
 .Text1:
-	text "Berry Powder?"
-	line "Sorry, kid, I'm"
-	cont "retired now."
+	text "Beerenpulver?"
+	line "Tut mir leid,"
+	cont "Kleiner, ich bin"
+	cont "im Ruhestand."
 
-	para "I do have this"
-	line "left over…"
+	para "Das hier ist mir"
+	line "noch übrig…"
 	done

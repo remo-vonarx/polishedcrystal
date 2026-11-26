@@ -45,8 +45,8 @@ DimCave5FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
-	text "The boulder fell"
-	line "through."
+	text "Der Felsbrocken"
+	line "fiel hinunter."
 	done
 
 DimCave5FRileyScript:
@@ -83,79 +83,85 @@ DimCave5FRileyScript:
 	end
 
 .ChallengeText:
-	text "…You are?"
+	text "…Und du bist?"
 
-	para "OK, you're"
+	para "Okay, du bist"
 	line "<PLAYER>."
 
-	para "I'm Riley. I'm a"
-	line "trainer, yes."
+	para "Ich bin Urs. Ich"
+	line "bin Trainer, ja."
 
-	para "I own a mine like"
-	line "this one, so it's"
-	cont "a good training"
-	cont "spot for me."
+	para "Ich besitze eine"
+	line "Mine wie diese,"
+	cont "daher ist das ein"
+	cont "guter Trainings-"
+	cont "ort für mich."
 
-	para "If you'd like, we"
-	line "could have a"
-	cont "battle."
+	para "Wenn du magst,"
+	line "könnten wir"
+	cont "kämpfen."
 	done
 
 .YesText:
-	text "We're pulling out"
-	line "all the stops to"
+	text "Wir ziehen alle"
+	line "Register, um"
 
-	para "put your #mon"
-	line "down."
+	para "deine #mon zu"
+	line "besiegen."
 	done
 
 .NoText:
-	text "Oh, all right."
-	line "Then we'll continue"
-	cont "training here."
+	text "Oh, na gut. Dann"
+	line "trainieren wir"
+	cont "hier weiter."
 	done
 
 .BeatenText:
-	text "At times we bat-"
-	line "tle, and sometimes"
-	cont "we team up."
+	text "Mal kämpfen wir"
+	line "gegeneinander, mal"
+	cont "tun wir uns"
+	cont "zusammen."
 
-	para "It's great how"
-	line "trainers can"
-	cont "interact."
+	para "Toll, wie Trainer"
+	line "miteinander umge-"
+	cont "hen können."
 	done
 
 .ItemText:
-	text "Know your enemy."
+	text "Kenne deinen"
+	line "Feind."
 
-	para "If you know your"
-	line "opponent's #mon"
-	cont "and moves, your"
+	para "Kennst du die"
+	line "#mon und"
+	cont "Attacken deines"
+	cont "Gegners,"
 
-	para "chances of winning"
-	line "are much improved."
+	para "steigen deine"
+	line "Siegchancen"
+	cont "deutlich."
 
-	para "But strengthening"
-	line "your own team is"
-	cont "also important."
+	para "Aber das eigene"
+	line "Team zu stärken,"
+	cont "ist auch wichtig."
 
-	para "This will help you"
-	line "to do so."
+	para "Das hier hilft"
+	line "dir dabei."
 	done
 
 .GoodbyeText:
-	text "Battling with you"
-	line "was very enjoy-"
-	cont "able."
+	text "Der Kampf mit dir"
+	line "hat mir viel Spaß"
+	cont "gemacht."
 
-	para "I intend to test"
-	line "my skills in the"
-	cont "Battle Tower now."
+	para "Ich will mein Kön-"
+	line "nen nun im Duell-"
+	cont "turm testen."
 
-	para "Let's meet again!"
+	para "Bis zum nächsten"
+	line "Mal!"
 
-	para "Take care on the"
-	line "way out."
+	para "Pass auf dem Weg"
+	line "nach draußen auf."
 	done
 
 GenericTrainerSuper_nerdFoote:

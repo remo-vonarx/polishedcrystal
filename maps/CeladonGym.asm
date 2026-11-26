@@ -52,17 +52,21 @@ CeladonGymErikaScript:
 	setevent EVENT_GOT_TM19_GIGA_DRAIN
 	jumpthisopenedtext
 
-	text "It is Giga Drain."
+	text "Es ist Gigasauger."
 
-	para "It is a wonderful"
-	line "move that drains"
+	para "Das ist eine"
+	line "schöne Attacke."
 
-	para "half the damage it"
-	line "inflicts to heal"
-	cont "your #mon."
+	para "Die Hälfte des zu-"
+	line "gefügten Schadens"
+	cont "wird zur Heilung"
 
-	para "Please use it if"
-	line "it pleases you…"
+	para "deines #mon"
+	line "verwendet."
+
+	para "Verwende sie,"
+	line "wann immer du"
+	cont "möchtest…"
 	done
 
 GenericTrainerLassMichelle:
@@ -170,12 +174,14 @@ ErikaBeatenText:
 	done
 
 ErikaExplainTMText:
-	text "Erika: That was a"
-	line "delightful match."
+	text "Erika: Das war ein"
+	line "herrlicher Kampf."
 
-	para "I felt inspired."
-	line "Please, I wish you"
-	cont "to have this TM."
+	para "Das spornt zu"
+	line "neuen Taten an."
+
+	para "Nimm bitte diese"
+	line "TM an."
 	done
 
 

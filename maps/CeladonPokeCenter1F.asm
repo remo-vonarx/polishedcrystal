@@ -26,29 +26,31 @@ PokemonJournalErikaScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Erika!"
+	para "Titelthema:"
+	line "Arenaleiterin"
+	cont "Erika!"
 
-	para "Rumor has it that"
-	line "if you peek into"
-	cont "Celadon Gym, you"
+	para "Gerüchten zufolge"
+	line "kann man Erika"
+	cont "oft schlummern"
 
-	para "can often see"
-	line "Erika snoozing."
+	para "sehen, wenn man"
+	line "in die Arena von"
+	cont "Prismania City"
+	cont "späht."
 	done
 
 CeladonPokeCenter1FPharmacistText:
-	text "Team Rocket's"
-	line "hideout is in the"
+	text "Das Versteck von"
+	line "Team Rocket befin-"
+	cont "det sich im Keller"
+	cont "der Spielhalle."
 
-	para "basement of the"
-	line "Game Corner."
+	para "Oh, warte. Das war"
+	line "vor drei Jahren."
 
-	para "Oh, wait. That was"
-	line "three years ago."
-
-	para "I wonder what it's"
-	line "used for now?"
+	para "Wofür es jetzt"
+	line "wohl genutzt wird?"
 	done
 
 CeladonPokeCenter1FCooltrainerfText:
@@ -64,9 +66,10 @@ CeladonPokeCenter1FCooltrainerfText:
 	done
 
 CeladonPokeCenter1FLassText:
-	text "Erika isn't just"
-	line "a Gym Leader."
+	text "Erika ist nicht"
+	line "nur Arenaleiterin."
 
-	para "She also lectures"
-	line "at the university."
+	para "Sie hält auch Vor-"
+	line "lesungen an der"
+	cont "Uni."
 	done

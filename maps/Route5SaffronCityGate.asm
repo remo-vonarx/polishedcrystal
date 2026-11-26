@@ -38,22 +38,24 @@ Route5SaffronCityGateBlackBeltScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "Eat lots of Pro-"
-	line "tein and see your"
-	cont "strength grow!"
+	text "Iss viel Protein"
+	line "und sieh zu, wie"
+	cont "deine Kraft"
+	cont "wächst!"
 	done
 
 .Text1:
-	text "Get a load of"
-	line "these muscles!"
+	text "Sieh dir diese"
+	line "Muskeln an!"
 
-	para "Impressive, I"
-	line "know!"
+	para "Beeindruckend,"
+	line "ich weiß!"
 
-	para "You're pretty puny,"
-	line "so if you wanna"
-	cont "get big like me"
+	para "Du bist ziemlich"
+	line "schmächtig. Willst"
+	cont "du so groß werden"
+	cont "wie ich,"
 
-	para "you'll need some"
-	line "of this."
+	para "brauchst du etwas"
+	line "hiervon."
 	done

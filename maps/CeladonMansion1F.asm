@@ -26,8 +26,8 @@ CeladonMansion1F_MapScriptHeader:
 CeladonMansionManagersSuiteSign:
 	jumpthistext
 
-	text "Celadon Condo"
-	line "Manager's Suite"
+	text "Prismania-Villa"
+	line "Suite des Managers"
 	done
 
 CeladonMansionManagerScript:
@@ -76,98 +76,102 @@ CeladonMansionManagerScript:
 	waitbutton
 	jumpthisopenedtext
 
-	text "There's nothing"
-	line "like hot mint tea."
+	text "Es geht nichts"
+	line "über heißen"
+	cont "Minztee."
 
-	para "It can change a"
-	line "#mon's very"
-	cont "nature!"
+	para "Er kann sogar das"
+	line "Wesen eines"
+	cont "#mon ändern!"
 	done
 
 .Egg:
 	jumpthisopenedtext
 
-	text "Do you expect me"
-	line "to make that into"
-	cont "a tea egg?"
+	text "Soll ich daraus"
+	line "etwa ein Tee-Ei"
+	cont "machen?"
 	done
 
 .NoMintLeafText:
-	text "Oh, hello,"
-	line "dearie."
+	text "Oh, hallo,"
+	line "Schätzchen."
 
-	para "I'm having tea with"
-	line "my dear #mon."
+	para "Ich trinke gerade"
+	line "Tee mit meinen"
+	cont "lieben #mon."
 
-	para "If you had a"
-	line "Mint Leaf,"
+	para "Hättest du ein"
+	line "Minzblatt,"
 
-	para "I'd invite you"
-	line "to join me."
+	para "würde ich dich"
+	line "dazu einladen."
 
-	para "#mon love mint"
-	line "in their tea."
+	para "#mon lieben"
+	line "Minze im Tee."
 
-	para "It has a lasting"
-	line "effect on their"
-	cont "very nature!"
+	para "Sie wirkt dauer-"
+	line "haft auf ihr"
+	cont "Wesen!"
 	done
 
 .QuestionText:
-	text "Oh, hello,"
-	line "dearie."
+	text "Oh, hallo,"
+	line "Schätzchen."
 
-	para "I see you have a"
-	line "Mint Leaf."
+	para "Wie ich sehe, hast"
+	line "du ein Minzblatt."
 
-	para "Would you like"
-	line "me to steep it"
+	para "Soll ich es für"
+	line "dein #mon"
 
-	para "in some tea for"
-	line "your #mon?"
+	para "in Tee ziehen"
+	line "lassen?"
 	done
 
 .RefusedText:
-	text "Don't go filling up"
-	line "on Lemonade and"
-	cont "Soda Pop, now!"
+	text "Aber füll dich"
+	line "jetzt nicht mit"
+	cont "Limonade und"
+	cont "Sprudel ab!"
 	done
 
 .AcceptedText:
-	text "Which one of your"
-	line "#mon wants tea?"
+	text "Welches deiner"
+	line "#mon will Tee?"
 	done
 
 .LikedFlavorText:
-	text "Now, what flavor"
-	line "does "
+	text "Welche Geschmacks-"
+	line "richtung mag"
+	cont ""
 	text_ram wStringBuffer1
-	cont "like?"
+	text "?"
 	done
 
 .DislikedFlavorText:
-	text "And what flavor"
-	line "does it dislike?"
+	text "Und welche mag"
+	line "es nicht?"
 	done
 
 .NeutralTeaText:
-	text "That's an unusual"
-	line "preference, but"
-	cont "I can brew it!"
+	text "Eine ungewöhnliche"
+	line "Vorliebe, aber das"
+	cont "kann ich brühen!"
 
-	para "One cup for you,"
-	line "and one cup for"
+	para "Eine Tasse für"
+	line "dich und eine für"
 	cont ""
 	text_ram wStringBuffer1
 	text "!"
 	done
 
 .TeaIsReadyText:
-	text "Okay! Here's"
-	line "your tea."
+	text "Okay! Hier ist"
+	line "dein Tee."
 
-	para "One cup for you,"
-	line "and one cup for"
+	para "Eine Tasse für"
+	line "dich und eine für"
 	cont ""
 	text_ram wStringBuffer1
 	text "!"
@@ -175,8 +179,9 @@ CeladonMansionManagerScript:
 
 .MonLooksDifferentText:
 	text_ram wStringBuffer1
-	text " looks"
-	line "different somehow!"
+	text " sieht"
+	line "irgendwie anders"
+	cont "aus!"
 	done
 
 .MenuDataHeader:

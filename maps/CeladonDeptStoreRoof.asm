@@ -23,11 +23,11 @@ CeladonDeptStoreRoofGameboyKid1Script:
 	end
 
 .Text:
-	text "I traded my"
-	line "#mon while"
+	text "Ich habe mein"
+	line "#mon getauscht,"
 
-	para "it was holding"
-	line "an Upgrade."
+	para "während es ein"
+	line "Upgrade trug."
 	done
 
 CeladonDeptStoreRoofGameboyKid2Script:
@@ -36,18 +36,20 @@ CeladonDeptStoreRoofGameboyKid2Script:
 	end
 
 .Text:
-	text "Yay! I'm finally"
-	line "getting a Porygon!"
+	text "Ja! Endlich"
+	line "bekomme ich ein"
+	cont "Porygon!"
 
-	para "I'm no good at the"
-	line "slots, so I could"
+	para "Ich bin nicht sehr"
+	line "gut an den Spiel-"
+	cont "automaten. Deswe-"
+	cont "gen hatte ich nie"
+	cont "genügend Münzen…"
 
-	para "never get enough"
-	line "coins…"
-
-	para "I'll raise it with"
-	line "an Upgrade to make"
-	cont "it evolve!"
+	para "Ich ziehe es mit"
+	line "einem Upgrade auf,"
+	cont "damit es sich"
+	cont "entwickelt!"
 	done
 
 CeladonDeptStoreRoofSuperNerdText:
@@ -60,15 +62,15 @@ CeladonDeptStoreRoofSuperNerdText:
 	done
 
 CeladonDeptStoreRoofYoungsterText:
-	text "I can play games"
-	line "on the third"
-	cont "floor, then come"
+	text "Im dritten Stock"
+	line "kann ich spielen,"
+	cont "und wenn ich"
 
-	para "here when I get"
-	line "thirsty!"
+	para "Durst kriege,"
+	line "komme ich hierher!"
 
-	para "This store is"
-	line "great!"
+	para "Dieses Kaufhaus"
+	line "ist toll!"
 	done
 
 CeladonDeptStoreRoofDirectoryText:

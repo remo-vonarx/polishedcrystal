@@ -158,22 +158,22 @@ OfficerfJennyScript:
 	endtext
 
 .DaytimeText:
-	text "Us Officers are"
-	line "here to keep the"
-	cont "peace."
+	text "Wir Wächter sorgen"
+	line "hier für Ruhe und"
+	cont "Ordnung."
 	done
 
 .SeenText:
-	text "You don't look"
-	line "familiar."
+	text "Dich kenne ich"
+	line "nicht."
 
-	para "Squirtle Squad,"
-	line "attack!"
+	para "Schiggy-Bande,"
+	line "Angriff!"
 	done
 
 .BeatenText:
-	text "Squirtle Squad,"
-	line "retreat…"
+	text "Schiggy-Bande,"
+	line "Rückzug…"
 	done
 
 .AfterText:

@@ -45,38 +45,43 @@ CeladonHotel1FRichBoyGeraldScript:
 	end
 
 CeladonHotel1FGrampsText:
-	text "#mon? No, this"
-	line "is a hotel for"
-	cont "people."
+	text "#mon? Nein, das"
+	line "ist ein Hotel für"
+	cont "Menschen."
 
-	para "We're full up."
+	para "Wir sind aus-"
+	line "gebucht."
 	done
 
 CeladonHotel1FLadyText:
-	text "This is my first"
-	line "trip to Kanto."
+	text "Ich bin zum ersten"
+	line "Mal in Kanto."
 
-	para "There's so much to"
-	line "see in Celadon!"
+	para "In Prismania gibt"
+	line "es so viel zu"
+	cont "sehen!"
 	done
 
 CeladonHotel1FCooltrainerFText:
-	text "Ahh, I really"
-	line "needed this"
-	cont "vacation!"
+	text "Ahh, diesen Urlaub"
+	line "hatte ich wirklich"
+	cont "nötig!"
 	done
 
 RichBoyGeraldGreetingText:
-	text "My sister's enjoy-"
-	line "ing our vacation,"
+	text "Meine Schwester"
+	line "genießt den Ur-"
+	cont "laub, aber mir"
 
-	para "but I'm bored."
-	line "Care for a battle?"
+	para "ist langweilig."
+	line "Lust auf einen"
+	cont "Kampf?"
 	done
 
 RichBoyGeraldSeenText:
-	text "Then prepare to"
-	line "lose!"
+	text "Dann mach dich auf"
+	line "eine Niederlage"
+	cont "gefasst!"
 	done
 
 RichBoyGeraldBeatenText:
@@ -96,7 +101,7 @@ RichBoyGeraldAfterText:
 	done
 
 RichBoyGeraldNoBattleText:
-	text "Hmph! Fine."
+	text "Hmpf! Na gut."
 	done
 
 CeladonHotel1FSignpost1Text:

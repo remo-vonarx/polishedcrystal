@@ -25,20 +25,21 @@ PokemonJournalLtSurgeScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Lt.Surge!"
+	para "Titelthema:"
+	line "Arenaleiter"
+	cont "Major Bob!"
 
-	para "Lt.Surge is rumor-"
-	line "ed to have been a"
+	para "Gerüchten zufolge"
+	line "war Major Bob in"
 
-	para "pilot while home"
-	line "in America."
+	para "seiner Heimat"
+	line "Amerika Pilot."
 
-	para "He used the elec-"
-	line "tricity generated"
+	para "Er trieb sein"
+	line "Flugzeug mit Strom"
 
-	para "by #mon to pow-"
-	line "er his plane."
+	para "an, den seine"
+	line "#mon erzeugten."
 	done
 
 VermilionPokeCenter1FSightseerMScript:

@@ -38,23 +38,23 @@ MrPsychicsHouseTutorZenHeadbuttScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "…I was wrong?"
+	text "…Ich lag falsch?"
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf…"
+	text "Du hast kein"
+	line "Silberblatt…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Your #mon now"
-	line "knows how to use"
-	cont "Zen Headbutt."
+	text "Dein #mon"
+	line "beherrscht jetzt"
+	cont "Zen-Kopfstoß."
 	done
 
 MrPsychicText:
@@ -64,23 +64,24 @@ MrPsychicText:
 
 	para "…"
 
-	para "…I got it!"
+	para "…Ich hab's!"
 
-	para "You want to learn"
-	line "Zen Headbutt!"
+	para "Du willst Zen-"
+	line "Kopfstoß lernen!"
 	done
 
 Text_MrPsychicsHouseTutorZenHeadbutt:
-	text "I will teach your"
-	line "#mon to use Zen"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "Headbutt for a"
-	line "Silver Leaf."
+	para "deinem #mon"
+	line "Zen-Kopfstoß bei."
 	done
 
 
 Text_MrPsychicsHouseTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Zen Headbutt?"
+	text "Soll ich deinem"
+	line "#mon"
+	cont "Zen-Kopfstoß"
+	cont "beibringen?"
 	done

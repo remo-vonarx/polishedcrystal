@@ -584,3 +584,7 @@ The Lucky Number Show attendant in the Radio Tower (Felicity), the German form o
 **Schreinmaid**:
 The shrine maiden in Ecruteak's shrine, as her trainer class.
 _Avoid_: Schreinjungfrau, Schreinmädchen
+
+**Kampfraum**, **Kampfhalle**:
+The Battle Tower's Battle Room (Kristall's Kampfraum) and the Battle Factory's Battle Floor (Kampfhalle, a factory hall).
+_Avoid_: Kampfraum for the Battle Floor

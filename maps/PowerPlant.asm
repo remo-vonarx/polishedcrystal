@@ -191,14 +191,15 @@ PowerPlantTutorZapCannonScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Have it your way."
+	text "Wie du willst."
 	done
 
 .TeachMove
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows Zap Cannon!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Blitzkanone!"
 
 	para "Wahahah!"
 	done
@@ -310,51 +311,56 @@ PowerPlantManagerIWontForgiveCulpritText:
 	done
 
 PowerPlantManagerThatsThePartText:
-	text "Manager: Ah! Yeah!"
+	text "Direktor: Ah!"
+	line "Oh ja!"
 
-	para "That's the missing"
-	line "part from my be-"
-	cont "loved generator!"
+	para "Das ist das"
+	line "fehlende Teil"
+	cont "meines geliebten"
+	cont "Generators!"
 
-	para "You found it?"
-	line "Wahah! Thanks!"
+	para "Du hast es gefun-"
+	line "den? Wahah! Danke!"
 
-	para "Let's get my"
-	line "generator up and"
-	cont "running!"
+	para "Bringen wir mei-"
+	line "nen Generator"
+	cont "wieder in Gang!"
 	done
 
 PowerPlantManagerYouDeserveARewardText:
-	text "You deserve a"
-	line "reward!"
+	text "Dafür hast du dir"
+	line "eine Belohnung"
+	cont "verdient!"
 	done
 
 Text_PowerPlantTutorZapCannon:
-	text "Manager: I can"
-	line "teach your"
+	text "Direktor: Ich kann"
+	line "deinem #mon"
 
-	para "#mon to use"
-	line "my Zap Cannon!"
+	para "meine Blitzkanone"
+	line "beibringen!"
 
-	para "It's not what any-"
-	line "one would consider"
+	para "Sie ist nicht"
+	line "sehr präzise,"
 
-	para "accurate, but it"
-	line "packs a wallop!"
+	para "aber du kannst"
+	line "jemanden damit"
+	cont "ordentlich"
+	cont "schmoren!"
 
-	para "Should I teach"
-	line "your #mon"
-	cont "Zap Cannon?"
+	para "Soll ich deinem"
+	line "#mon Blitz-"
+	cont "kanone beibringen?"
 	done
 
 PowerPlantForestText:
-	text "Magneton behaves"
-	line "strangely in Rock"
-	cont "Tunnel."
+	text "Magneton verhält"
+	line "sich im Felstunnel"
+	cont "seltsam."
 
-	para "Could the Power"
-	line "Plant's turbines"
+	para "Ob die Turbinen"
+	line "des Kraftwerks"
 
-	para "have something to"
-	line "do with it?"
+	para "etwas damit zu"
+	line "tun haben?"
 	done

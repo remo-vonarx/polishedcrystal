@@ -24,22 +24,22 @@ CeladonHomeDecorStore1F_MapScriptHeader:
 CeladonHomeDecorStore1FBulbasaurDollScript:
 	jumpthistext
 
-	text "It's a cute"
-	line "Bulbasaur doll!"
+	text "Eine süße"
+	line "Bisasam-Puppe!"
 	done
 
 CeladonHomeDecorStore1FCharmanderDollScript:
 	jumpthistext
 
-	text "It's a tough"
-	line "Charmander doll!"
+	text "Eine starke"
+	line "Glumanda-Puppe!"
 	done
 
 CeladonHomeDecorStore1FSquirtleDollScript:
 	jumpthistext
 
-	text "It's a cool"
-	line "Squirtle doll!"
+	text "Eine coole"
+	line "Schiggy-Puppe!"
 	done
 
 CeladonHomeDecorStore1FClerkScript:
@@ -126,18 +126,21 @@ CeladonHomeDecorStore1FClerkScript:
 	db "Cancel@"
 
 CeladonHomeDecorStore1FReceptionistText:
-	text "Hello! Welcome to"
-	line "Celadon Dept."
-	cont "Store Home Decor!"
+	text "Hallo! Willkommen"
+	line "im Einrichtungs-"
+	cont "haus des Einkaufs-"
+	cont "zentrums von"
+	cont "Prismania City!"
 
-	para "The directory is"
-	line "on the wall."
+	para "Die Übersicht"
+	line "ist an der Wand."
 	done
 
 CeladonHomeDecorStore1FClerkText:
-	text "Welcome! Would you"
-	line "like a doll as a"
-	cont "Celadon souvenir?"
+	text "Willkommen! Wie"
+	line "wär's mit einer"
+	cont "Puppe als Andenken"
+	cont "an Prismania?"
 	done
 
 BoughtBulbasaurDollText:
@@ -174,21 +177,21 @@ SquirtleDollSentText:
 	done
 
 CeladonHomeDecorStore1FNoMoneyText:
-	text "You can't afford"
-	line "that!"
+	text "Das kannst du dir"
+	line "nicht leisten!"
 	done
 
 CeladonHomeDecorStore1FAlreadyBoughtText:
-	text "You already have"
-	line "that!"
+	text "Das hast du"
+	line "schon!"
 	done
 
 CeladonHomeDecorStore1FCooltrainerfText:
-	text "This new wing"
-	line "feels more upscale"
+	text "Dieser neue Flügel"
+	line "wirkt nobler als"
 
-	para "than the main"
-	line "Dept.Store."
+	para "das eigentliche"
+	line "Kaufhaus."
 	done
 
 CeladonHomeDecorStore1FDirectoryText:

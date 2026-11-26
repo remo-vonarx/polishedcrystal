@@ -35,19 +35,19 @@ SaffronHitmontopKidHouseChildScript:
 	end
 
 .Text1:
-	text "Top! Top!"
-	line "Hit-mon-TOP!"
+	text "Kapo! Kapo!"
+	line "Ka-po-ERA!"
 	done
 
 .Text2:
-	text "Top… Top? TOP!"
-	line "HITMONTOP! ♥"
+	text "Kapo… Kapo? KAPO!"
+	line "KAPOERA! ♥"
 	done
 
 .Text3:
-	text "That's a"
-	line "Hitmontop!"
-	cont "Oh boy! So cool!"
+	text "Das ist ein"
+	line "Kapoera!"
+	cont "Oh Mann! So cool!"
 	done
 
 .SpinMovement:
@@ -81,32 +81,34 @@ SaffronHitmontopKidHouseTeacherScript:
 	jumpthisopenedtext
 
 .Text3:
-	text "My son finally got"
-	line "to meet his favor-"
-	cont "ite #mon."
+	text "Mein Sohn hat end-"
+	line "lich sein Lieb-"
+	cont "lings-#mon"
+	cont "getroffen."
 	done
 
 .Text1:
-	text "My son likes to"
-	line "pretend he's a"
-	cont "#mon."
+	text "Mein Sohn tut gern"
+	line "so, als wäre er"
+	cont "ein #mon."
 
-	para "It gets a little"
-	line "embarrassing some-"
-	cont "times."
+	para "Das ist manchmal"
+	line "etwas peinlich."
 
-	para "Maybe if he saw a"
-	line "real Hitmontop he"
-	cont "would calm down…"
+	para "Vielleicht würde"
+	line "er sich beruhigen,"
+	cont "wenn er ein echtes"
+	cont "Kapoera sähe…"
 	done
 
 .Text2:
-	text "Oh my! You made my"
-	line "son so happy!"
+	text "Oh! Du hast meinen"
+	line "Sohn so glücklich"
+	cont "gemacht!"
 
-	para "It's not much of a"
-	line "thank-you, but I'd"
+	para "Es ist kein großes"
+	line "Dankeschön, aber"
 
-	para "like you to have"
-	line "this."
+	para "ich möchte dir"
+	line "das hier geben."
 	done

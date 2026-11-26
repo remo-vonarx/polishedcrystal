@@ -25,16 +25,16 @@ PokemonJournalSabrinaScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Sabrina!"
+	para "Titelthema:"
+	line "Arenaleiterin"
+	cont "Sabrina!"
 
-	para "People say that"
-	line "Sabrina can com-"
-	cont "municate with her"
+	para "Es heißt, Sabrina"
+	line "könne sich im"
+	cont "Kampf ohne Worte"
 
-	para "#mon during"
-	line "battle without"
-	cont "speaking."
+	para "mit ihren #mon"
+	line "verständigen."
 	done
 
 SaffronPokeCenter1FFisherScript:

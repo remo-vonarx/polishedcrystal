@@ -30,8 +30,9 @@ CeladonHomeDecorStore4F_MapScriptHeader:
 BigDollClerkNoMoneyScript:
 	jumpthisopenedtext
 
-	text "Clerk: You can't"
-	line "afford it!"
+	text "Verkäufer: Das"
+	line "kannst du dir"
+	cont "nicht leisten!"
 	done
 
 BigLaprasDollScript:
@@ -104,41 +105,45 @@ BigOnixDollScript:
 	done
 
 BigDollClerkText:
-	text "Aren't our jumbo"
-	line "dolls impressive?"
+	text "Sind unsere Rie-"
+	line "senpuppen nicht"
+	cont "beeindruckend?"
 
-	para "They're so big,"
-	line "we can barely fit"
-	cont "them in the room."
+	para "Sie sind so groß,"
+	line "dass sie kaum in"
+	cont "den Raum passen."
 	done
 
 BigDollClerkNoSaleText:
-	text "Clerk: Well, if"
-	line "you say so."
+	text "Verkäufer: Wie du"
+	line "meinst."
 	done
 
 
 BigDollClerkSellLaprasText:
-	text "Clerk: You like"
-	line "the Lapras doll?"
+	text "Verkäufer: Dir"
+	line "gefällt die"
+	cont "Lapras-Puppe?"
 
-	para "It'll cost you"
+	para "Sie kostet"
 	line "¥300,000."
 	done
 
 BigDollClerkSellSnorlaxText:
-	text "Clerk: You like"
-	line "the Snorlax doll?"
+	text "Verkäufer: Dir"
+	line "gefällt die"
+	cont "Relaxo-Puppe?"
 
-	para "It'll cost you"
+	para "Sie kostet"
 	line "¥200,000."
 	done
 
 BigDollClerkSellOnixText:
-	text "Clerk: You like"
-	line "the Onix doll?"
+	text "Verkäufer: Dir"
+	line "gefällt die"
+	cont "Onix-Puppe?"
 
-	para "It'll cost you"
+	para "Sie kostet"
 	line "¥250,000."
 	done
 
@@ -161,18 +166,18 @@ BoughtBigOnixDollText:
 
 
 BigLaprasDollText:
-	text "It's a jumbo-size"
-	line "Lapras Doll!"
+	text "Eine riesige"
+	line "Lapras-Puppe!"
 	done
 
 BigSnorlaxDollText:
-	text "It's a jumbo-size"
-	line "Snorlax Doll!"
+	text "Eine riesige"
+	line "Relaxo-Puppe!"
 	done
 
 BigOnixDollText:
-	text "It's a jumbo-size"
-	line "Onix Doll!"
+	text "Eine riesige"
+	line "Onix-Puppe!"
 	done
 
 CeladonHomeDecorStore4FDirectoryText:

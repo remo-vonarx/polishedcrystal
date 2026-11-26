@@ -331,24 +331,25 @@ CeladonGameCornerReceived18CoinsText:
 	done
 
 FisherOfferText:
-	text "Hm? What, kid? You"
-	line "still want to"
-	cont "play?"
+	text "Hm? Was, Zwerg?"
+	line "Du willst immer"
+	cont "noch spielen?"
 
-	para "I know! I'll let"
-	line "you play for 50"
-	cont "coins."
+	para "Ich weiß was! Für"
+	line "50 Münzen lasse"
+	cont "ich dich spielen."
 
-	para "How about it?"
+	para "Wie wär's?"
 	done
 
 FisherNotEnoughText:
-	text "Hey, your Coin"
-	line "Case is almost"
-	cont "empty, kid."
+	text "Hey, dein Münzkorb"
+	line "ist fast leer,"
+	cont "Wicht."
 
-	para "Your luck must"
-	line "be running dry."
+	para "Deine Glücks-"
+	line "strähne ist wohl"
+	cont "vorbei."
 	done
 
 CeladonGymGuyText:
@@ -392,17 +393,17 @@ CeladonGameCornerPosterScript:
 	end
 
 .AlreadyPushedText
-	text "The switch has"
-	line "already been"
-	cont "pushed."
+	text "Der Schalter wurde"
+	line "schon gedrückt."
 	done
 
 .PushSwitchText
-	text "Hey!"
+	text "He!"
 
-	para "A switch behind"
-	line "the poster?!"
-	cont "Let's push it!"
+	para "Hinter diesem"
+	line "Poster ist ein"
+	cont "Schalter?!"
+	cont "Drücken wir ihn!"
 	done
 
 CeladonGameCornerLighterText:

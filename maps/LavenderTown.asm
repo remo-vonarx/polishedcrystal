@@ -140,14 +140,14 @@ LavenderTownSharedExpositionScript:
 	applymovement LAVENDERTOWN_YOUNGSTER1, .BumpMovement
 	jumpthistext
 
-	text "Aah! G-g-ghost!"
+	text "Aah! G-G-Geist!"
 
-	para "The Radio Tower"
-	line "is teeming with"
-	cont "monsters!"
+	para "Im Radioturm"
+	line "wimmelt es von"
+	cont "Monstern!"
 
-	para "Run for the"
-	line "hills!"
+	para "Rette sich, wer"
+	line "kann!"
 	done
 
 .BumpMovement:
@@ -248,29 +248,30 @@ LavenderTownYoungsterText:
 	done
 
 LavenderTownSuperNerdText:
-	text "Go back inside the"
-	line "Radio Tower?"
+	text "Zurück in den"
+	line "Radioturm?"
 
-	para "You must be"
-	line "crazy!"
+	para "Du bist ja"
+	line "verrückt!"
 	done
 
 LavenderTownCooltrainerFText:
-	text "The Tower's"
-	line "haunted, I just"
-	cont "know it!"
+	text "Im Turm spukt es,"
+	line "ich weiß es"
+	cont "einfach!"
 
-	para "I'm so freaked"
-	line "out!"
+	para "Ich hab solche"
+	line "Angst!"
 	done
 
 LavenderTownRockerText:
-	text "I thought a job at"
-	line "the Radio Tower"
+	text "Ich dachte, ein"
+	line "Job im Radioturm"
 
-	para "would be my big"
-	line "break, but I'm not"
+	para "wäre mein großer"
+	line "Durchbruch, aber"
 
-	para "going back there"
-	line "until it's safe."
+	para "ich gehe erst zu-"
+	line "rück, wenn es"
+	cont "sicher ist."
 	done

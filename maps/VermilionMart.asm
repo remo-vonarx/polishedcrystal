@@ -27,10 +27,11 @@ VermilionMartSuperNerdText:
 	done
 
 VermilionMartBeautyText:
-	text "I'm thinking about"
-	line "going shopping in"
-	cont "Saffron."
+	text "Ich habe vor, in"
+	line "Saffronia City"
+	cont "einkaufen zu"
+	cont "gehen."
 
-	para "They sell Luxury"
-	line "Balls there."
+	para "Dort gibt es"
+	line "Luxusbälle."
 	done

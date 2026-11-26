@@ -219,12 +219,13 @@ SupernerdPatBeatenText:
 	done
 
 Route25MewYoungsterText:
-	text "One time I saw a"
-	line "Mew around here!"
+	text "Einmal habe ich"
+	line "hier ein Mew"
+	cont "gesehen!"
 
-	para "You don't believe"
-	line "me? Slowpoke saw"
-	cont "it too!"
+	para "Du glaubst mir"
+	line "nicht? Flegmon hat"
+	cont "es auch gesehen!"
 	done
 
 Route25SlowpokeText1:
@@ -280,18 +281,20 @@ CooltrainermKevinAfterBattleText:
 	done
 
 NuggetBridgeNotClearedText:
-	text "Hey there!"
+	text "Hallo!"
 
-	para "Six trainers and"
-	line "I are hosting a"
+	para "Sechs Trainer und"
+	line "ich veranstalten"
 
-	para "battle challenge"
-	line "on this route."
+	para "auf dieser Route"
+	line "eine Kampf-Heraus-"
+	cont "forderung."
 
-	para "You can't skip"
-	line "ahead of them!"
+	para "Du kannst sie"
+	line "nicht auslassen!"
 
-	para "There's a shortcut"
-	line "just below us back"
-	cont "to Route 24."
+	para "Direkt unter uns"
+	line "gibt es eine Ab-"
+	cont "kürzung zurück zur"
+	cont "Route 24."
 	done

@@ -16,21 +16,24 @@ CeladonDevelopmentSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonDevelopmentSpeechHouseBeautyText, -1
 
 CeladonDevelopmentSpeechHouseCooltrainermText:
-	text "Celadon has become"
-	line "quite the tourist"
-	cont "spot."
+	text "Prismania City ist"
+	line "zu einem echten"
+	cont "Touristenziel"
+	cont "geworden."
 
-	para "The hotel's always"
-	line "fully booked!"
+	para "Das Hotel ist"
+	line "immer ausgebucht!"
 	done
 
 CeladonDevelopmentSpeechHouseBeautyText:
-	text "This city used to"
-	line "be a haven for"
-	cont "Team Rocket."
+	text "Diese Stadt war"
+	line "früher ein Unter-"
+	cont "schlupf von Team"
+	cont "Rocket."
 
-	para "I was scared to"
-	line "leave the house"
-	cont "while they were"
-	cont "lurking about!"
+	para "Ich hatte Angst,"
+	line "das Haus zu ver-"
+	cont "lassen, solange"
+	cont "sie hier herum-"
+	cont "lungerten!"
 	done

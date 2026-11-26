@@ -100,8 +100,9 @@ Route4TutorIronHeadScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "But it's better"
-	line "than Aqua Tail!"
+	text "Aber sie ist"
+	line "besser als"
+	cont "Nassschweif!"
 	done
 
 .NoSilverLeaf
@@ -111,9 +112,9 @@ Route4TutorIronHeadScript:
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Iron Head!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Eisenschädel!"
 	done
 
 Route4SuperNerd2Script:
@@ -139,8 +140,9 @@ Route4TutorAquaTailScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "But it's better"
-	line "than Iron Head!"
+	text "Aber sie ist"
+	line "besser als"
+	cont "Eisenschädel!"
 	done
 
 .NoSilverLeaf
@@ -150,9 +152,9 @@ Route4TutorAquaTailScript:
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Aqua Tail!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Nassschweif!"
 	done
 
 YoungsterOliverSeenText:
@@ -212,56 +214,62 @@ PicnickerSharonBeatenText: ; text > text
 	done
 
 Route4SuperNerd1Text:
-	text "#mon with tough"
-	line "heads are best!"
+	text "#mon mit harten"
+	line "Köpfen sind die"
+	cont "besten!"
 
-	para "Arcanine, Golem,"
-	line "Snorlax!"
+	para "Arkani, Geowaz,"
+	line "Relaxo!"
 
-	para "Don't you agree?"
+	para "Findest du nicht?"
 	done
 
 Route4SuperNerd2Text:
-	text "#mon with long"
-	line "tails are best!"
+	text "#mon mit langen"
+	line "Schweifen sind die"
+	cont "besten!"
 
-	para "Slowbro, Golduck,"
-	line "Feraligatr!"
+	para "Lahmus, Entoron,"
+	line "Impergator!"
 
-	para "Don't you agree?"
+	para "Findest du nicht?"
 	done
 
 Text_Route4TutorIronHead:
-	text "If you give me a"
-	line "Silver Leaf, I'll"
+	text "Wenn du mir ein"
+	line "Silberblatt gibst,"
 
-	para "teach your #mon"
-	line "to use Iron Head!"
+	para "bringe ich deinem"
+	line "#mon Eisen-"
+	cont "schädel bei!"
 	done
 
 Text_Route4TutorAquaTail:
-	text "If you give me a"
-	line "Silver Leaf, I'll"
+	text "Wenn du mir ein"
+	line "Silberblatt gibst,"
 
-	para "teach your #mon"
-	line "to use Aqua Tail!"
+	para "bringe ich deinem"
+	line "#mon"
+	cont "Nassschweif bei!"
 	done
 
 Text_Route4TutorsNoSilverLeaf:
-	text "But you don't have"
-	line "a Silver Leaf."
+	text "Aber du hast kein"
+	line "Silberblatt."
 	done
 
 Text_Route4Tutor1Question:
-	text "Should I teach"
-	line "your #mon"
-	cont "Iron Head?"
+	text "Soll ich deinem"
+	line "#mon"
+	cont "Eisenschädel"
+	cont "beibringen?"
 	done
 
 Text_Route4Tutor2Question:
-	text "Should I teach"
-	line "your #mon"
-	cont "Aqua Tail?"
+	text "Soll ich deinem"
+	line "#mon"
+	cont "Nassschweif"
+	cont "beibringen?"
 	done
 
 MtMoonSignText:

@@ -100,74 +100,77 @@ CeladonCityTutorSwaggerScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Then goodbye!"
+	text "Dann leb wohl!"
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "…You have no"
-	line "Silver Leaf?"
-	cont "What a pity."
+	text "…Du hast kein"
+	line "Silberblatt?"
+	cont "Wie schade."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Behold! Your #-"
-	line "mon has learned"
-	cont "to Swagger!"
+	text "Siehe da! Dein"
+	line "#mon hat Ange-"
+	cont "berei erlernt!"
 	done
 
 CeladonCityRichBoyText:
-	text "Is my suit not"
-	line "bedazzling?"
+	text "Ist mein Anzug"
+	line "nicht umwerfend?"
 
-	para "It turns heads"
-	line "when I swagger"
-	cont "down the street!"
+	para "Alle drehen sich"
+	line "um, wenn ich die"
+	cont "Straße entlang-"
+	cont "stolziere!"
 
-	para "The people love"
-	line "me!"
+	para "Die Leute lieben"
+	line "mich!"
 
-	para "I'm in a generous"
-	line "mood today."
+	para "Heute bin ich in"
+	line "großzügiger"
+	cont "Stimmung."
 	done
 
 Text_CeladonCityTutorSwagger:
-	text "I shall teach"
-	line "your #mon to"
+	text "Für nur ein"
+	line "Silberblatt lehre"
 
-	para "Swagger like me"
-	line "for merely a"
-	cont "Silver Leaf."
+	para "ich dein #mon"
+	line "Angeberei, damit"
+	cont "es so angibt wie"
+	cont "ich!"
 	done
 
 
 Text_CeladonCityTutorQuestion:
-	text "You wish me to"
-	line "teach your #-"
-	cont "mon Swagger?"
+	text "Soll ich deinem"
+	line "#mon Angeberei"
+	cont "beibringen?"
 	done
 
 
 
 CeladonCityFisherText:
-	text "This Poliwrath is"
-	line "my partner."
+	text "Dieses Quappo ist"
+	line "mein Partner."
 
-	para "It used to be"
-	line "Quiet, but the"
+	para "Sein Wesen war"
+	line "früher Ruhig, aber"
 
-	para "manager lady in"
-	line "the condo here"
+	para "die Verwalterin"
+	line "der Villa hier hat"
 
-	para "brewed us some"
-	line "tea with a Mint"
+	para "uns Tee mit einem"
+	line "Minzblatt gebraut,"
 
-	para "Leaf that made it"
-	line "act more Jolly!"
+	para "und jetzt ist es"
+	line "eher Froh!"
 	done
 
 CeladonCityPoliwrathText:
@@ -214,42 +217,44 @@ CeladonCityGramps2Text:
 	done
 
 CeladonCityPicnickerText:
-	text "It's our responsi-"
-	line "bility as Gym"
+	text "Als Trainer der"
+	line "Arena haben wir"
 
-	para "trainers to tend"
-	line "to these flowers."
+	para "die Aufgabe, diese"
+	line "Blumen zu pflegen."
 
-	para "The University"
-	line "here also counts"
+	para "Die Uni hier rech-"
+	line "net uns das sogar"
 
-	para "it as practical"
-	line "gardening credit."
+	para "als praktische"
+	line "Gartenarbeit an."
 	done
 
 CeladonCityYoungster1Text:
-	text "Want to know a"
-	line "secret?"
+	text "Soll ich dir ein"
+	line "Geheimnis"
+	cont "erzählen?"
 
-	para "Celadon Condo"
-	line "has a hidden back"
-	cont "door."
+	para "Prismania-Villa"
+	line "hat eine geheime"
+	cont "Hintertür."
 	done
 
 CeladonCityYoungster2Text:
-	text "The restaurant"
-	line "there is having an"
-	cont "eating contest."
+	text "Im Restaurant wird"
+	line "ein Wettessen ab-"
+	cont "gehalten."
 
-	para "There's one con-"
-	line "testant from the"
+	para "Dieses Jahr ist"
+	line "eine Teilnehmerin"
 
-	para "Sinnoh region this"
-	line "year."
+	para "aus der Sinnoh-"
+	line "Region dabei."
 
-	para "Just watching her"
-	line "go at it makes me"
-	cont "feel bloated…"
+	para "Ihr beim Essen"
+	line "nur zuzusehen,"
+	cont "bringt mich schon"
+	cont "zum Platzen…"
 	done
 
 CeladonCityTeacher2Text:
@@ -290,11 +295,11 @@ CeladonCityLassText_PCC:
 	done
 
 CeladonCityLassText:
-	text "#mon are offer-"
-	line "ed as prizes at"
-	cont "the Game Corner."
+	text "In der Spielhalle"
+	line "gibt es #mon"
+	cont "als Preise."
 
-	para "The poor things…"
+	para "Die armen Dinger…"
 	done
 
 CeladonCitySignText:

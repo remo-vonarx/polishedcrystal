@@ -110,3 +110,19 @@ PharmacistGiveSecretpotionText	0b5a2d5b	Kristall's German; Polished only changes
 DontWantGoodRodText	3d97a659	Kristall's German; Polished only changes the punctuation
 JasmineCianwoodPharmacyText	25895a8a	Kristall's German; Polished only re-breaks the lines
 FisherWiltonHugePoliwagText_Metric	b20e4363	Kristall's German; Polished only adds the unit setting
+BattleFactory1FReceptionistScript.BattleFactoryMenu	3348328e	Kristall's German; Polished says Battle Floor for the Factory (asked on the Task 18 page)
+BattleFactory1FReceptionistScript.BattleFactoryMenu	6668abf4	Kristall's German; Polished says Battle Floor for the Factory (asked on the Task 18 page)
+BattleFactory1FReceptionistScript.Challenge	2f476927	Kristall's German; Polished says Battle Floor for the Factory (asked on the Task 18 page)
+Script_ReturnToRentalChallenge	58e129e6	Kristall's German; Polished says Battle Floor for the Factory (asked on the Task 18 page)
+CeladonPrizeRoom_ConfirmTMPurchaseText	10c3c768	Kristall's German; the meaning is unchanged
+GameFreakGameDesignerScript.CompletedPokedex	8bfadaf2	Kristall's German; the meaning is unchanged
+GameFreakGraphicArtistPrintDiplomaText	ec41610e	Kristall's German; Polished only fixes the case and breaks
+CeruleanCityFisherRocketTipText	8b2d6c43	Kristall's German, which already names the Cape
+CeruleanMart_CooltrainerMText	724f867b	Kristall's German, which already names the Cape
+CeruleanMart_CooltrainerFText	616816b7	Kristall's German, which already names the Cape
+CeruleanPokeCenter1FGymGuyScript.MetricText	81a2d40b	Kristall's German; the meaning is unchanged
+WalkerText_WinLoss	510430d0	Kristall's Battle Tower line, the same words
+LavenderPokeCenter1FYoungsterScript.NoMachinePartText	6ea2056e	Kristall's German; the meaning is unchanged
+SabrinaIntroText	13923ffe	Kristall's German; Polished only re-breaks the lines
+SaffronMagnetTrainStationGymGuideScript	7dc6cd77	Kristall's German; Polished only re-breaks the lines
+SeagallopFerryVermilionCityRefusedText	ef73a71c	Kristall's Mart line, the same words

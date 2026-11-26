@@ -122,38 +122,40 @@ CeladonHomeDecorStore3FClerk2Script:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Thank you!"
-	line "Have a nice day!"
+	text "Danke schön!"
+	line "Einen schönen Tag!"
 	done
 
 .NotEnoughMoney:
 	jumpopenedtext CeladonHomeDecorStore3FNoMoneyText
 
 CeladonHomeDecorStore3FClerk1Text:
-	text "Welcome! Would"
-	line "you like a carpet?"
+	text "Willkommen! Wie"
+	line "wär's mit einem"
+	cont "Teppich?"
 	done
 
 CeladonHomeDecorStore3FClerk2Text:
-	text "Doesn't a carpet"
-	line "really tie your"
-	cont "room together?"
+	text "Rundet ein Teppich"
+	line "dein Zimmer nicht"
+	cont "erst richtig ab?"
 	done
 
 CeladonHomeDecorStore3FClerk2SaleText:
-	text "Our imported"
-	line "Royal Blue Carpet"
+	text "Unseren impor-"
+	line "tierten königs-"
+	cont "blauen Teppich"
 
-	para "is on sale right"
-	line "now for ¥35,000."
+	para "gibt es gerade im"
+	line "Angebot: ¥35,000."
 
-	para "Would you like to"
-	line "buy one?"
+	para "Möchtest du einen"
+	line "kaufen?"
 	done
 
 
 CeladonHomeDecorStore3FClerk2NoText:
-	text "Have a nice day!"
+	text "Einen schönen Tag!"
 	done
 
 BoughtRedCarpetText:
@@ -201,24 +203,24 @@ GreenCarpetSentText:
 	done
 
 CeladonHomeDecorStore3FNoMoneyText:
-	text "You can't afford"
-	line "that!"
+	text "Das kannst du dir"
+	line "nicht leisten!"
 	done
 
 CeladonHomeDecorStore3FAlreadyBoughtText:
-	text "You already have"
-	line "that!"
+	text "Das hast du"
+	line "schon!"
 	done
 
 CeladonHomeDecorStore3FYoungsterText:
-	text "This carpet feels"
-	line "so plush!"
+	text "Dieser Teppich ist"
+	line "so flauschig!"
 	done
 
 CeladonHomeDecorStore3FBeautyText:
-	text "Some of these"
-	line "carpets are im-"
-	cont "ported from Kalos!"
+	text "Einige Teppiche"
+	line "sind aus Kalos"
+	cont "importiert!"
 	done
 
 CeladonHomeDecorStore3FDirectoryText:

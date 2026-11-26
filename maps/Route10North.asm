@@ -255,94 +255,97 @@ Route10NorthElectrode:
 	end
 
 Route10NorthLawrenceGreetingText:
-	text "Lawrence: We meet"
-	line "again, <PLAYER>."
+	text "Lawrence: Wir"
+	line "sehen uns wieder,"
+	cont "<PLAYER>."
 
-	para "I came here in"
-	line "search of the"
+	para "Ich kam auf der"
+	line "Suche nach dem"
 
-	para "legendary bird of"
-	line "fire, but found"
-	cont "the wrong one."
+	para "legendären Feuer-"
+	line "vogel her, fand"
+	cont "aber den falschen."
 
-	para "Can you see up"
-	line "there?"
+	para "Siehst du da"
+	line "oben?"
 	done
 
 Route10NorthLawrenceZapdosText:
-	text "Lawrence: That's"
-	line "a Zapdos."
+	text "Lawrence: Das ist"
+	line "ein Zapdos."
 
-	para "It must have been"
-	line "attracted by the"
-	cont "generator."
+	para "Der Generator muss"
+	line "es angelockt"
+	cont "haben."
 
-	para "…So that was your"
-	line "doing?"
+	para "…Das warst also"
+	line "du?"
 
-	para "In that case, I'll"
-	line "leave this legen-"
+	para "In dem Fall"
+	line "überlasse ich dir"
 
-	para "dary #mon for"
-	line "you to catch."
+	para "dieses legendäre"
+	line "#mon. Fang es"
+	cont "ruhig selbst."
 
-	para "You see, I have"
-	line "no interest in"
-	cont "duplicates."
+	para "Für Duplikate"
+	line "interessiere ich"
+	cont "mich nämlich"
+	cont "nicht."
 	done
 
 Route10NorthLawrenceFlyText:
 	text "Lawrence: Zapdos,"
-	line "Fly!"
+	line "Fliegen!"
 	done
 
 Route10NorthLawrenceSpeechText:
-	text "Lawrence: Hello"
-	line "again, <PLAYER>."
+	text "Lawrence: Hallo"
+	line "noch mal, <PLAYER>."
 
-	para "So you wanted that"
-	line "Zapdos after all."
+	para "Du wolltest dieses"
+	line "Zapdos also doch."
 
-	para "I was starting"
-	line "to think you"
+	para "Ich dachte schon,"
+	line "die Legenden"
 
-	para "didn't care about"
-	line "the legends."
+	para "wären dir"
+	line "gleichgültig."
 
-	para "…What?! You caught"
-	line "all three birds?"
-	cont "Impossible."
+	para "…Was?! Du hast"
+	line "alle drei Vögel"
+	cont "gefangen?"
+	cont "Unmöglich."
 
-	para "Even I, with my"
-	line "knowledge and"
+	para "Nicht einmal ich"
+	line "habe trotz meines"
+	cont "Wissens und meiner"
+	cont "Mittel Lavados"
+	cont "gefunden…"
 
-	para "resources, have"
-	line "not found Moltres…"
+	para "Wieso hast du"
+	line "Erfolg, wo ich"
+	cont "versagt habe?"
 
-	para "Why have you"
-	line "succeeded where I"
-	cont "failed?"
+	para "Weißt du die"
+	line "Pracht der geflü-"
+	cont "gelten Trugbilder"
+	cont "zu schätzen?"
 
-	para "Can you appreciate"
-	line "the majesty of the"
-	cont "winged mirages?"
+	para "Hast du je vom"
+	line "Wächter des Meeres"
+	cont "gehört?"
 
-	para "Have you even"
-	line "heard of the"
+	para "Das ist inakzep-"
+	line "tabel."
 
-	para "guardian of the"
-	line "sea before?"
+	para "Triff mich in den"
+	line "Schreinruinen auf"
+	cont "Shamouti."
 
-	para "This is unaccept-"
-	line "able."
-
-	para "Meet me at the"
-	line "ruined shrine on"
-	cont "Shamouti Island."
-
-	para "I'll show you that"
-	line "I deserve to own"
-	cont "those #mon."
+	para "Ich zeige dir,"
+	line "dass mir diese"
+	cont "#mon zustehen."
 	done
 
 RockTunnelSignText:

@@ -25,15 +25,18 @@ PokemonJournalAgathaScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Ex-Elite Agatha!"
+	para "Titelthema:"
+	line "Agathe, früher"
+	cont "Top Vier!"
 
-	para "In their youth,"
-	line "Agatha and Prof."
-	cont "Oak were rivals"
+	para "In ihrer Jugend"
+	line "waren Agathe und"
+	cont "Prof. Eich"
+	cont "Rivalen,"
 
-	para "who vied for supr-"
-	line "emacy as trainers."
+	para "die um die Vor-"
+	line "herrschaft als"
+	cont "Trainer kämpften."
 	done
 
 Route10PokeCenter1FGymGuyScript:

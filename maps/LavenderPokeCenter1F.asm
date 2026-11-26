@@ -25,17 +25,17 @@ PokemonJournalMrFujiScript:
 
 	text "#mon Journal"
 
-	para "Editor: The shy"
-	line "Mr.Fuji turned"
+	para "Redaktion: Der"
+	line "scheue Mr. Fuji"
 
-	para "down our interview"
-	line "requests."
+	para "lehnte unsere"
+	line "Interviews ab."
 
-	para "He is a kindly man"
-	line "who is adored and"
+	para "Er ist ein gütiger"
+	line "Mann, den man in"
 
-	para "respected in Lav-"
-	line "ender Town."
+	para "Lavandia liebt und"
+	line "respektiert."
 	done
 
 LavenderPokeCenter1FYoungsterScript:
@@ -45,37 +45,43 @@ LavenderPokeCenter1FYoungsterScript:
 	iffalse_jumptextfaceplayer .NoExorcismText
 	jumpthistextfaceplayer
 
-	text "The Director of"
-	line "the Radio Station"
-	cont "sure was happy."
+	text "Der Intendant der"
+	line "Radiostation war"
+	cont "hoch erfreut."
 
-	para "He said they're"
-	line "finally back on"
-	cont "the air!"
+	para "Er sagte, sie"
+	line "seien endlich"
+	cont "wieder auf"
+	cont "Sendung!"
 	done
 
 .NoMachinePartText:
-	text "If the Power Plant"
-	line "isn't running, the"
+	text "Wenn das Kraftwerk"
+	line "nicht funktio-"
+	cont "niert, läuft der"
 
-	para "Magnet Train won't"
-	line "run either…"
+	para "Magnetzug auch"
+	line "nicht…"
 
-	para "It also means the"
-	line "Radio Tower can't"
-	cont "broadcast…"
+	para "Das bedeutet, dass"
+	line "auch die Radio-"
+	cont "station nicht"
+
+	para "auf Sendung"
+	line "gehen kann…"
 	done
 
 .NoExorcismText:
-	text "The Power Plant is"
-	line "running smoothly"
-	cont "again, but the"
+	text "Das Kraftwerk"
+	line "läuft wieder ein-"
+	cont "wandfrei, aber die"
 
-	para "Radio Tower still"
-	line "isn't broadcasting."
+	para "Radiostation sen-"
+	line "det immer noch"
+	cont "nicht."
 
-	para "What's going on"
-	line "over there?"
+	para "Was ist da drüben"
+	line "nur los?"
 	done
 
 LavenderPokeCenter1FGentlemanText:
@@ -88,11 +94,15 @@ LavenderPokeCenter1FGentlemanText:
 	done
 
 LavenderPokeCenter1FTeacherText:
-	text "There's a radio"
-	line "program that plays"
-	cont "# Flute music."
+	text "Es gibt eine"
+	line "Musiksendung im"
+	cont "Radio, die Melo-"
+	cont "dien auf der #-"
+	cont "flöte sendet."
 
-	para "Oh? Ah, your radio"
-	line "needs an Expn.Card"
-	cont "to tune into it."
+	para "Ach ja? Ah, dein"
+	line "Radio braucht ein"
+	cont "Zusatzset, damit"
+	cont "du das empfangen"
+	cont "kannst."
 	done

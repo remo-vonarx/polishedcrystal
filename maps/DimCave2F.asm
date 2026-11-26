@@ -88,6 +88,6 @@ GenericTrainerHikerDerrick:
 	done
 
 DimCaveFallenBoulderText:
-	text "It's stuck on the"
-	line "button."
+	text "Er steckt auf dem"
+	line "Schalter fest."
 	done

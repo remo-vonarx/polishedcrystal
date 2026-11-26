@@ -57,8 +57,8 @@ DimCave3FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
-	text "The boulder fell"
-	line "through."
+	text "Der Felsbrocken"
+	line "fiel hinunter."
 	done
 
 GenericTrainerEngineerHugo:
@@ -135,20 +135,21 @@ DimCave3FPokefanmScript:
 	iftrue_jumpopenedtext .YesText
 	jumpthisopenedtext
 
-	text "What?! Do you"
-	line "have a map?"
+	text "Was?! Hast du"
+	line "eine Karte?"
 	done
 
 .QuestionText:
-	text "Are you lost?"
+	text "Hast du dich"
+	line "verlaufen?"
 	done
 
 .YesText:
-	text "Me too!"
+	text "Ich auch!"
 
-	para "The Power Plant"
-	line "messes with my"
+	para "Das Kraftwerk"
+	line "stört meinen"
 
-	para "compass, and I"
-	line "don't have a map."
+	para "Kompass, und ich"
+	line "habe keine Karte."
 	done

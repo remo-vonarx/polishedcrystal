@@ -88,11 +88,11 @@ VermilionGymSurgeScript:
 	setevent EVENT_GOT_TM57_WILD_CHARGE
 	jumpthisopenedtext
 
-	text "That TM contains"
-	line "Wild Charge. Use"
+	text "Diese TM enthält"
+	line "Stromstoß. Damit"
 
-	para "it to go like"
-	line "lightning!"
+	para "bist du schnell"
+	line "wie der Blitz!"
 	done
 
 GenericTrainerGentlemanGregory:
@@ -143,22 +143,24 @@ VermilionGymGuyScript:
 	iftrue_jumptextfaceplayer VermilionGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Yo! Champ in"
-	line "making!"
+	text "He! Du Champ"
+	line "in spe!"
 
-	para "Lt.Surge is very"
-	line "cautious. He has"
+	para "Major Bob ist sehr"
+	line "vorsichtig. Er"
 
-	para "traps set all over"
-	line "the Gym."
+	para "hat überall in der"
+	line "PKMN-Arena Fallen"
+	cont "aufgestellt."
 
-	para "But you're good at"
-	line "Gym puzzles by"
-	cont "now, aren't you?"
+	para "Aber mit Arena-"
+	line "Rätseln kennst du"
+	cont "dich inzwischen"
+	cont "aus, oder?"
 
-	para "You'll have no"
-	line "problem getting to"
-	cont "Lt.Surge."
+	para "Du wirst Major Bob"
+	line "problemlos"
+	cont "erreichen."
 	done
 
 VermilionGymTrashCanScript:
@@ -252,19 +254,20 @@ LtSurgeWinLossText:
 	done
 
 LtSurgeThunderBadgeText:
-	text "Surge: Consider it"
-	line "proof that you"
-	cont "defeated me."
+	text "Major Bob: Er ist"
+	line "der Beweis, dass"
+	cont "du mich besiegt"
+	cont "hast."
 
-	para "Looks good on your"
-	line "Trainer Card,"
-	cont "doesn't it?"
+	para "Sieht gut aus auf"
+	line "deinem Trainer-"
+	cont "pass, was?"
 
-	para "You wear it"
-	line "proudly, hear?"
+	para "Trag ihn mit"
+	line "Stolz, hörst du?"
 
-	para "And here's a great"
-	line "TM for you!"
+	para "Und hier ist eine"
+	line "tolle TM für dich!"
 	done
 
 
@@ -344,29 +347,31 @@ VermilionGymGuyWinText:
 	done
 
 VermilionGymFoundSwitchText:
-	text "A secret switch"
-	line "beneath the trash?"
+	text "Ein Geheimschal-"
+	line "ter unter dem"
+	cont "Müll?"
 
-	para "Better press it."
+	para "Am besten drückst"
+	line "du ihn."
 	done
 
 VermilionGymFoundFirstSwitchText:
-	text "The first electric"
-	line "fence unlocked!"
+	text "Der erste Strom-"
+	line "zaun ist offen!"
 	done
 
 VermilionGymFoundSecondSwitchText:
-	text "The second"
-	line "electric fence"
+	text "Der zweite"
+	line "Stromzaun ist"
 
-	para "unlocked! The"
-	line "path is clear!"
+	para "offen! Der Weg"
+	line "ist frei!"
 	done
 
 VermilionGymResetSwitchesText:
-	text "Oh no, the elec-"
-	line "tric fence locked"
-	cont "again!"
+	text "Oh nein, der"
+	line "Stromzaun ist"
+	cont "wieder zu!"
 	done
 
 VermilionGymTrashCanText:
@@ -375,8 +380,8 @@ VermilionGymTrashCanText:
 	done
 
 VermilionGymElectricFenceText:
-	text "An electric fence!"
-	line "Don't touch it!"
+	text "Ein Stromzaun!"
+	line "Nicht berühren!"
 	done
 
 SampleVermilionGymTrashCans:

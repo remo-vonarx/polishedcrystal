@@ -100,9 +100,8 @@ CeladonHomeDecorStore2FClerkScript:
 	db "Cancel@"
 
 CeladonHomeDecorStore2FClerkText:
-	text "Welcome! Are you"
-	line "in the market for"
-	cont "a new bed?"
+	text "Willkommen! Suchst"
+	line "du ein neues Bett?"
 	done
 
 BoughtPinkBedText:
@@ -139,22 +138,22 @@ PikachuBedSentText:
 	done
 
 CeladonHomeDecorStore2FNoMoneyText:
-	text "You can't afford"
-	line "that!"
+	text "Das kannst du dir"
+	line "nicht leisten!"
 	done
 
 CeladonHomeDecorStore2FAlreadyBoughtText:
-	text "You already have"
-	line "that!"
+	text "Das hast du"
+	line "schon!"
 	done
 
 CeladonHomeDecorStore2FPokefanfText:
-	text "Brand-name items"
-	line "cost more than"
-	cont "generic ones."
+	text "Markenartikel"
+	line "kosten mehr als"
+	cont "No-Name-Ware."
 
-	para "But the Pikachu"
-	line "Bed is so cute…"
+	para "Aber das Pikachu"
+	line "Bett ist so süß…"
 	done
 
 CeladonHomeDecorStore2FDirectoryText:

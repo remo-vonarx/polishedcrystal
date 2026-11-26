@@ -99,22 +99,26 @@ LavRadioTower1FSuperNerd2Script:
 	iftrue_jumptextfaceplayer LavRadioTower1FSuperNerd2Text_GotExpnCard
 	jumpthistextfaceplayer
 
-	text "Hey there!"
+	text "Hi!"
 
-	para "I am the super"
-	line "Music Director!"
+	para "Ich bin der"
+	line "tolle Musik-"
+	cont "redakteur!"
 
-	para "Huh? Your #gear"
-	line "can't tune into my"
+	para "Was? Dein #Com"
+	line "kann meine Musik-"
+	cont "sendungen nicht"
 
-	para "music programs."
-	line "How unfortunate!"
+	para "empfangen? Wie"
+	line "traurig!"
 
-	para "If you get a Expn."
-	line "Card upgrade, you"
+	para "Wenn du dir ein"
+	line "Zusatzset be-"
+	cont "sorgst, empfängst"
 
-	para "can tune in. You'd"
-	line "better get one!"
+	para "du meine Send-"
+	line "ungen. Hol es dir"
+	cont "bald!"
 	done
 
 LavRadioTower1FReceptionistText:
@@ -190,10 +194,10 @@ LavRadioTower1FPokeFluteSignText:
 
 ; TODO: use this text
 LavRadioTower1FReferenceLibraryText:
-	text "Wow! A full rack"
-	line "of #mon CDs and"
-	cont "videos."
+	text "Wow! Ein Regal"
+	line "voller #mon-CDs"
+	cont "und Videos."
 
-	para "This must be the"
-	line "reference library."
+	para "Das muss das"
+	line "Archiv sein."
 	done

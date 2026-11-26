@@ -234,15 +234,17 @@ VermilionMachokeOwnerScript:
 	iftrue_jumptextfaceplayer VermilionMachokeOwnerText
 	jumpthistextfaceplayer
 
-	text "My #mon"
-	line "prepared the land"
+	text "Mein #mon hat"
+	line "das Gelände für"
 
-	para "to construct that"
-	line "huge building!"
+	para "dieses riesige"
+	line "Gebäude vorberei-"
+	cont "tet!"
 
-	para "It's quite a shame"
-	line "that the public"
-	cont "can't enter yet…"
+	para "Wirklich schade,"
+	line "dass es noch nicht"
+	cont "für alle offen"
+	cont "ist…"
 	done
 
 VermilionCitySuperNerd2Script:
@@ -250,16 +252,16 @@ VermilionCitySuperNerd2Script:
 	iftrue_jumptextfaceplayer VermilionCitySuperNerd2Text
 	jumpthistextfaceplayer
 
-	text "The Battle Factory"
-	line "is brand-new!"
+	text "Die Kampffabrik"
+	line "ist brandneu!"
 
-	para "But it draws a"
-	line "huge amount of"
-	cont "power…"
+	para "Aber sie braucht"
+	line "enorm viel"
+	cont "Strom…"
 
-	para "With the Power"
-	line "Plant offline,"
-	cont "it's useless!"
+	para "Solange das Kraft-"
+	line "werk nicht läuft,"
+	cont "ist sie nutzlos!"
 	done
 
 VermilionCityBadgeGuyBattleEdgeText:
@@ -277,54 +279,57 @@ VermilionCityBadgeGuyBattleEdgeText:
 	done
 
 LawrenceOverheardText:
-	text "…So the legendary"
-	line "#mon was not"
-	cont "on that island…"
+	text "…Das legendäre"
+	line "#mon war also"
+	cont "nicht auf dieser"
+	cont "Insel…"
 
-	para "I must continue my"
-	line "search elsewhere…"
+	para "Ich muss anderswo"
+	line "weitersuchen…"
 	done
 
 LawrenceIntroText:
-	text "Lawrence: Please"
-	line "excuse me for"
-	cont "bumping into you."
+	text "Lawrence: Ent-"
+	line "schuldige bitte,"
+	cont "dass ich dich an-"
+	cont "gerempelt habe."
 
-	para "I'm in a hurry to"
-	line "complete my"
-	cont "collection."
+	para "Ich habe es eilig,"
+	line "meine Sammlung zu"
+	cont "vervollständigen."
 
-	para "My name is"
+	para "Mein Name ist"
 	line "Lawrence III."
 
-	para "And you're the"
-	line "League Champion?"
+	para "Und du bist Champ"
+	line "der Liga?"
 
-	para "…Well, appearances"
-	line "can be deceiving."
+	para "…Nun, der Schein"
+	line "kann trügen."
 
-	para "Legendary #mon"
-	line "have always been"
-	cont "my passion."
+	para "Legendäre #mon"
+	line "sind schon immer"
+	cont "meine Passion."
 
-	para "I took the Seagal-"
-	line "lop Ferry here to"
+	para "Ich nahm die See-"
+	line "sprint-Fähre nach"
 
-	para "Shamouti Island,"
-	line "but did not find"
-	cont "the one I sought."
+	para "Shamouti, fand"
+	line "aber nicht jenes,"
+	cont "das ich suchte."
 
-	para "Oh, you've encoun-"
-	line "tered #mon out"
-	cont "of Johto's legends?"
+	para "Oh, du bist"
+	line "#mon aus Johtos"
+	cont "Legenden begegnet?"
 
-	para "Then our paths may"
-	line "cross again as"
-	cont "fellow collectors."
+	para "Dann kreuzen sich"
+	line "unsere Wege viel-"
+	cont "leicht wieder, als"
+	cont "Gleichgesinnte."
 
-	para "But I really must"
-	line "be on my way."
-	cont "Farewell!"
+	para "Aber ich muss"
+	line "wirklich weiter."
+	cont "Lebe wohl!"
 	done
 
 VermilionCityTeacherText:
@@ -339,21 +344,24 @@ VermilionCityTeacherText:
 	done
 
 VermilionMachokeOwnerText:
-	text "My #mon"
-	line "prepared the land"
+	text "Mein #mon hat"
+	line "das Gelände für"
 
-	para "to construct that"
-	line "huge building!"
+	para "dieses riesige"
+	line "Gebäude vorberei-"
+	cont "tet!"
 
-	para "It was a Machop"
-	line "three years ago,"
+	para "Vor drei Jahren"
+	line "war es ein"
+	cont "Machollo,"
 
-	para "but the effort"
-	line "made it evolve!"
+	para "aber durch die"
+	line "Mühe hat es sich"
+	cont "entwickelt!"
 	done
 
 VermilionMachokeText:
-	text "Machoke: Guooh"
+	text "Maschock: Guooh"
 	line "gogogoh!"
 	done
 
@@ -367,29 +375,29 @@ VermilionCitySuperNerdText:
 	done
 
 VermilionCitySuperNerd2Text:
-	text "The Battle Factory"
-	line "is brand-new, but"
+	text "Die Kampffabrik"
+	line "ist brandneu, aber"
 
-	para "trainers are al-"
-	line "ready arriving"
+	para "schon kommen Trai-"
+	line "ner aus fernen"
 
-	para "from distant"
-	line "regions to take"
-	cont "its challenge!"
+	para "Regionen, um sich"
+	line "der Herausforde-"
+	cont "rung zu stellen!"
 	done
 
 VermilionCityOfficerFText:
-	text "Sorry, the Battle"
-	line "Factory is closed"
+	text "Tut mir leid, die"
+	line "Kampffabrik ist"
 
-	para "until the Power"
-	line "Plant is up and"
-	cont "running again."
+	para "geschlossen, bis"
+	line "das Kraftwerk"
+	cont "wieder läuft."
 	done
 
 VermilionCitySailorText:
-	text "Nothing beats"
-	line "good sea air!"
+	text "Nichts geht über"
+	line "gute Seeluft!"
 	done
 
 VermilionCityRadioNearSnorlaxText:

@@ -68,19 +68,20 @@ BattleFactoryHallwayEnterScene:
 	sjumpfwd .ShownText
 .WarnAboutHead:
 	writethistext
-		text "Congratulations"
-		line "on your winning"
-		cont "streak, trainer!"
+		text "Glückwunsch zu"
+		line "deiner Sieges-"
+		cont "serie, Trainer!"
 
-		para "The Factory Head"
-		line "has sent word that"
+		para "Der Fabrikchef"
+		line "lässt ausrichten,"
 
-		para "he is demanding"
-		line "a match with you."
+		para "dass er einen"
+		line "Kampf mit dir"
+		cont "verlangt."
 
-		para "Are you ready to"
-		line "battle the"
-		cont "Factory Head?"
+		para "Bist du bereit,"
+		line "gegen den Fabrik-"
+		cont "chef zu kämpfen?"
 		done
 .ShownText
 	yesorno
@@ -106,11 +107,12 @@ BattleFactoryHallwayEnterScene:
 	special SoftReset
 .DontSaveAndEndTheSession:
 	writethistext
-		text "Cancel your Battle"
-		line "Floor challenge?"
+		text "Die Herausforde-"
+		line "rung in der Kampf-"
+		cont "halle abbrechen?"
 
-		para "Beware, it counts"
-		line "as a loss."
+		para "Achtung, das zählt"
+		line "als Niederlage."
 		done
 	yesorno
 	iffalse .AskNextBattle
@@ -131,17 +133,18 @@ BattleFactoryHallwayEnterScene:
 	opentext
 .NextRentalBattle_AfterOpenText:
 	writethistext
-		text "I've researched the"
-		line "next opponent."
+		text "Ich habe mich über"
+		line "den nächsten Geg-"
+		cont "ner informiert."
 		prompt
 
 	special Special_BattleTower_NextRentalBattle
 	iftruefwd .Continue
 
 	writethistext
-		text "Cancel your run?"
-		line "This counts as a"
-		cont "streak loss."
+		text "Serie abbrechen?"
+		line "Das zählt als"
+		cont "Niederlage."
 		done
 	yesorno
 	iffalse .NextRentalBattle_AfterOpenText

@@ -37,36 +37,37 @@ SilphCoOfficerScript:
 	iftruefwd .OfficerScriptAfterPowerRestored
 	jumpthisopenedtext
 
-	text "Only employees are"
-	line "permitted to go"
-	cont "upstairs."
+	text "Nur das Personal"
+	line "hat Zutritt zu den"
+	cont "oberen Geschossen."
 
-	para "The main power"
-	line "isn't working,"
+	para "Der Hauptstrom"
+	line "ist ausgefallen,"
 
-	para "and the CEO wants"
-	line "high security in"
+	para "und der Präsident"
+	line "will für Notfälle"
 
-	para "case of an"
-	line "emergency."
+	para "strenge Sicher-"
+	line "heitsmaßnahmen."
 
-	para "We learned our"
-	line "lesson about that"
-	cont "three years ago."
+	para "Daraus haben wir"
+	line "vor drei Jahren"
+	cont "gelernt."
 	done
 
 .OfficerScriptAfterPowerRestored
 	jumpthisopenedtext
 
-	text "You're responsible"
-	line "for restoring the"
-	cont "power supply?"
+	text "Du hast die Strom-"
+	line "versorgung wieder-"
+	cont "hergestellt?"
 
-	para "Thank you! Now"
-	line "R&D can continue."
+	para "Danke! Jetzt kann"
+	line "die Forschung"
+	cont "weitergehen."
 
-	para "Feel free to take"
-	line "a tour upstairs."
+	para "Sieh dich oben"
+	line "ruhig um."
 	done
 
 SilphCoReceptionistText:
@@ -78,24 +79,25 @@ SilphCoReceptionistText:
 
 
 SilphCo1FGentlemanText:
-	text "I have an appoint-"
-	line "ment with the"
+	text "Ich habe einen"
+	line "Termin mit dem"
 
-	para "chief engineer"
-	line "here at Silph Co."
+	para "Chefingenieur hier"
+	line "bei der Silph Co."
 	done
 
 SilphCo1FCooltrainerfText:
-	text "I'm trying to"
-	line "pluck up the"
-	cont "courage to ask"
+	text "Ich versuche, all"
+	line "meinen Mut zusam-"
+	cont "menzunehmen, um"
 
-	para "the receptionist"
-	line "out on a date."
+	para "die Empfangsdame"
+	line "um ein Date zu"
+	cont "bitten."
 
-	para "Just as soon as"
-	line "she's done on the"
-	cont "phone…"
+	para "Sobald sie mit dem"
+	line "Telefonat fertig"
+	cont "ist…"
 	done
 
 SilphCoElevatorText:

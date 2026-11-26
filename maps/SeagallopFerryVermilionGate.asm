@@ -51,8 +51,9 @@ SeagallopFerryVermilionGateSailorScript:
 	iftruefwd .use_old_sea_map
 	jumpthisopenedtext
 
-	text "I'm sorry, you don't"
-	line "have a ticket."
+	text "Es tut mir Leid,"
+	line "aber du hast"
+	cont "kein Ticket."
 	done
 
 .have_orangeticket
@@ -225,63 +226,65 @@ SeagallopFerryVermilionGateSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryWelcomeText:
-	text "Welcome aboard the"
-	line "Seagallop Ferry!"
+	text "Willkommen an Bord"
+	line "der Seesprint-"
+	cont "Fähre!"
 	done
 
 SeagallopFerryGiveOrangeTicketText:
-	text "The man who just"
-	line "left said he didn't"
+	text "Der Mann, der ge-"
+	line "rade ging, sagte,"
 
-	para "need this ticket."
-	line "You can have it."
+	para "er brauche dieses"
+	line "Ticket nicht. Du"
+	cont "kannst es haben."
 	done
 
 
 SeagallopFerryOrangeTicketQuestionText:
-	text "That OrangeTicket"
-	line "is for a ride to"
-	cont "Shamouti Island."
+	text "Mit dem Orange-"
+	line "ticket kannst du"
+	cont "nach Shamouti."
 
-	para "We'll be happy to"
-	line "take you there"
-	cont "any time."
+	para "Wir bringen dich"
+	line "jederzeit gern"
+	cont "hin."
 	done
 
 SeagallopFerryMysticTicketQuestionText:
-	text "Oh! That's a"
-	line "MysticTicket!"
-	cont "Now that is rare."
+	text "Oh! Das ist ein"
+	line "Geheimticket!"
+	cont "Das ist selten."
 
-	para "We'll be happy to"
-	line "take you to Navel"
-	cont "Rock any time."
+	para "Wir bringen dich"
+	line "jederzeit gern zum"
+	cont "Nabelfels."
 	done
 
 SeagallopFerryOldSeaMapQuestionText:
-	text "Oh! That Old Sea"
-	line "Map you have…"
+	text "Oh! Diese Alte"
+	line "Karte da…"
 
-	para "It looks like a"
-	line "faraway island."
+	para "Sie zeigt wohl"
+	line "eine ferne Insel."
 
-	para "We'll be happy to"
-	line "take you there"
-	cont "any time."
+	para "Wir bringen dich"
+	line "jederzeit gern"
+	cont "hin."
 	done
 
 SeagallopFerryWhichTicketText:
-	text "Do you have a"
-	line "ticket?"
+	text "Hast du ein"
+	line "Ticket?"
 	done
 
 SeagallopFerryDepartureText:
-	text "All right!"
+	text "Alles klar!"
 
-	para "All aboard the"
-	line "Seagallop Ferry!"
+	para "Alle an Bord der"
+	line "Seesprint-Fähre!"
 	done
 
 SeagallopFerryVermilionCityRefusedText:
-	text "Come again!"
+	text "Komm wieder!"
 	done
