@@ -258,6 +258,13 @@ _Avoid_: BP
 **Tauschecke**:
 The counter that trades items for GP.
 
+**LINK-TAUSCH**:
+The trade screen's border (CABLE TRADE), Kristall's.
+
+**PC-Lagerungs-System**, **#mon-Lagerungs-System**:
+Bill's storage system, Kristall's word in every place.
+_Avoid_: PC-Boxsystem, PC-Boxen-System
+
 **Richter-Maschine**:
 The Judge Machine; what it does is bewerten (to judge the Pokémon's overall strength).
 _Avoid_: Bewertungsmaschine
@@ -476,6 +483,10 @@ The SELECT menu. Icognito Index is Kristall's line; the others are Polished's ow
 The search page. Suche, Typ and the start's verb are Kristall's, Farbe and Silhouette PokéWiki's.
 _Avoid_: Körper, Form (for Body)
 
+**UNBEKANNT**:
+The label under the question mark of an unseen slot or an uncaught Unown form (UNDISCOVERED), the German name of the matching egg group. Own.
+_Avoid_: UNENTDECKT
+
 **Gr.**, **Gew**, **S.1**, **Info**, **Bio**, **Werte**, **Geb.**, **Ruf**:
 The entry page and the bar below it. Gr., Gew, S., Geb. and Ruf are Kristall's.
 
@@ -513,6 +524,12 @@ The call menu and the clock card, Kristall's words.
 
 **Sendersuchlauf**:
 The radio card's drawn label (Tuning), Kristall's word, drawn in narrow small capitals as Kristall has it.
+
+**A▶FLIEGEN**:
+The Pokégear map's Fly label (A▶FLY), with the move's German name.
+
+**Inseln**:
+The Orange Islands label on the Pokégear map, as on the Pokédex area page (Islands).
 
 **Eichs PKMN-Talk**, **Pokémon-Musik**, **Glückskanal**, **Orte & Personen**, **Lasst uns singen**, **Pokémon-Flöte**, **Buenas Passwort**:
 The radio stations, Kristall's names. Oak's show calls its channel Pokémon Programm, the DJs are Margit, Ben, Fabian, Bastian and Lilly.
@@ -560,6 +577,13 @@ _Avoid_: E1, E2
 **Club Nintendo**:
 The magazine in the Hyper Test room, Germany's counterpart of Nintendo Power.
 _Avoid_: Nintendo Power
+
+**ARN**, **MRKT**:
+The roof signs of Gyms and Marts, as on Kristall's roofs.
+_Avoid_: GYM, MART
+
+**KAUF**, **SPIEL**, **LIGA**:
+Polished's own roof signs (DEPT, GAMES, LEAGUE) on the department stores, the Game Corners and the Pokémon League: the first word of Kaufhaus, Spielhalle and Pokémon-Liga. Own.
 
 ## Story text
 
@@ -699,6 +723,9 @@ _Avoid_: Ge, Y, C, R/S/E, FR/LG, B/W, B2/W2, M02
 
 **Komponist:**, **Arrangeur:**:
 The music player's labels on a song's info page (Composer:, Arranger:).
+
+**Ch1**, **Ch2**, **Wave**, **Noise**, **Set**:
+The music player's channel labels stay as Upstream draws them: they name the Game Boy's sound channels, not words.
 
 ## Map menus and the Alph walls
 
