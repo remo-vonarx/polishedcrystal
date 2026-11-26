@@ -86,26 +86,29 @@ SunnyScript:
 	setevent EVENT_GOT_MAGNET_FROM_SUNNY
 	jumpthisopenedtext
 
-	text "Sunny: That thing…"
+	text "Sonnfried: Dieses"
+	line "Ding…"
 
-	para "Um…"
+	para "Äh…"
 
-	para "…What was it now…"
+	para "…Was war das"
+	line "nochmal…"
 
 	para "…"
 
-	para "Oh! I remember"
-	line "now!"
+	para "Ah! Jetzt erinnere"
+	line "ich mich!"
 
-	para "A #mon that"
-	line "knows Electric"
+	para "Ein #mon, das"
+	line "Elektro-Attacken"
 
-	para "moves should hold"
-	line "it."
+	para "verwendet, sollte"
+	line "dies erhalten."
 
-	para "My sis Monica said"
-	line "it powers up"
-	cont "Electric moves!"
+	para "Meine Schwester"
+	line "Monja behauptet,"
+	cont "es verstärkt"
+	cont "Elektro-Attacken!"
 	done
 
 SunnySundayScript:

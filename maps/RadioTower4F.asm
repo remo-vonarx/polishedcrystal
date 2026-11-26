@@ -51,11 +51,12 @@ RadioTower4FDJMaryScript:
 	setevent EVENT_GOT_FAIRYFEATHER_FROM_MARY
 	jumpthisopenedtext
 
-	text "Mary: It's just"
-	line "right for #mon"
+	text "Margit: Für #-"
+	line "mon mit Attacken"
+	cont "vom Typ Fee ist"
 
-	para "that know Fairy-"
-	line "type moves."
+	para "das genau das"
+	line "Richtige."
 	done
 
 GenericTrainerGruntM10:

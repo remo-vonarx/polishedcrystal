@@ -193,24 +193,25 @@ RadioTower3FCooltrainerFYoureMyHeroText:
 	done
 
 RadioTower3FCooltrainerFItsAGBCSoundsText:
-	text "That's GBC Sounds."
+	text "Das ist der GBC-"
+	line "Player."
 
-	para "It's chock full of"
-	line "songs you can"
+	para "Er ist voller"
+	line "Lieder, die du"
 
-	para "listen to any-"
-	line "where, even"
-	cont "during battles."
+	para "überall hören"
+	line "kannst, sogar"
+	cont "im Kampf."
 
-	para "It has special"
-	line "features to adjust"
-	cont "pitch or tempo,"
+	para "Er hat Spezial-"
+	line "funktionen für"
+	cont "Tonhöhe und Tempo,"
 
-	para "but the controls"
-	line "are a bit fiddly."
+	para "aber die Bedienung"
+	line "ist fummelig."
 
-	para "Just play around"
-	line "with it!"
+	para "Probier einfach"
+	line "herum!"
 	done
 
 RadioTower3FCooltrainerFYouWereMarvelousText:

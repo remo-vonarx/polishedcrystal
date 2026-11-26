@@ -291,18 +291,17 @@ RadioTower2FSuperNerdText:
 	done
 
 RadioTower2FRockerText:
-	text "I have a radio"
-	line "interview to pro-"
+	text "Ich gebe im Radio"
+	line "ein Interview, um"
+	cont "für meinen neuen"
+	cont "Song zu werben."
 
-	para "mote my latest"
-	line "song."
+	para "Ich bin schon vor"
+	line "großem Publikum"
+	cont "aufgetreten,"
 
-	para "I've performed in"
-	line "front of big"
-	cont "crowds before,"
-
-	para "but boy am I"
-	line "nervous."
+	para "aber Mann, bin ich"
+	line "nervös."
 	done
 
 RadioTower2FTeacherText_Rockets:
@@ -536,15 +535,15 @@ RadioTower2FBuenaCardIsFullText:
 	done
 
 RadioTower2FBuenaTuneInAfterSixText:
-	text "Buena: Tune in to"
-	line "Password every"
+	text "Buena: Hört die"
+	line "Passwortsendung"
 
 	assert EVE_HOUR == 12 + 5
-	para "night from five"
-	line "to midnight!"
+	para "täglich von fünf"
+	line "bis Mitternacht!"
 
-	para "Tune in, then drop"
-	line "in for a visit!"
+	para "Hört zu und"
+	line "besucht mich dann!"
 	done
 
 RadioTower2FBuenaNoBlueCardText:
@@ -558,24 +557,25 @@ RadioTower2FBuenaNoBlueCardText:
 	done
 
 RadioTower2FBuenaOfferPhoneNumberText:
-	text "Buena: Oh! Your"
-	line "Blue Card reached"
+	text "Buena: Oh! Du hast"
+	line "{d:BLUE_CARD_POINT_CAP} Punkte auf dei-"
+	cont "ner Blauen Karte!"
+	cont "Das ist toll!"
 
-	para "{d:BLUE_CARD_POINT_CAP} points today!"
-	line "That's so wild!"
+	para "Hmm… Es gibt zwar"
+	line "keinen Preis für"
+	cont "das Erreichen von"
+	cont "{d:BLUE_CARD_POINT_CAP} Punkten, aber…"
 
-	para "Hmm… There isn't a"
-	line "prize for hitting"
-	cont "{d:BLUE_CARD_POINT_CAP} points, but…"
+	para "Du hast mich so"
+	line "oft besucht,"
 
-	para "You came by so"
-	line "often, <PLAYER>."
+	para "<PLAYER>. Ich"
+	line "mache dir ein spe-"
+	cont "zielles Angebot!"
 
-	para "I'll make you a"
-	line "special deal!"
-
-	para "How would you like"
-	line "my phone number?"
+	para "Möchtest du meine"
+	line "Telefonnummer?"
 	done
 
 RadioTower2FBuenaOfferNumberAgainText:

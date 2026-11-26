@@ -72,76 +72,80 @@ MurkySwampCherylScript:
 	end
 
 .ChallengeText:
-	text "Hello, my name's"
-	line "Cheryl."
-	cont "And you are…?"
+	text "Hallo, ich heiße"
+	line "Raissa."
+	cont "Und du bist…?"
 
-	para "OK, so your name"
-	line "is <PLAYER>."
+	para "Okay, du heißt"
+	line "also <PLAYER>."
 
-	para "I'm sincerely glad"
-	line "to meet you."
+	para "Ich freue mich"
+	line "aufrichtig, dich"
+	cont "kennenzulernen."
 
-	para "I'm afraid of the"
-	line "ghosts in this"
-	cont "swamp, so how"
+	para "Ich fürchte mich"
+	line "vor den Geistern"
+	cont "in diesem Sumpf."
 
-	para "about a battle to"
-	line "ward them off?"
+	para "Wie wär's mit"
+	line "einem Kampf, um"
+	cont "sie zu vertreiben?"
 	done
 
 .YesText:
-	text "I should warn you,"
-	line "my #mon can be"
-	cont "quite rambunc-"
-	cont "tious."
+	text "Ich warne dich,"
+	line "meine #mon"
+	cont "können ziemlich"
+	cont "wild sein."
 	done
 
 .NoText:
-	text "Oh, but my #mon"
-	line "were itching for"
-	cont "a battle…"
+	text "Oh, aber meine"
+	line "#mon brannten"
+	cont "auf einen Kampf…"
 	done
 
 .BeatenText:
-	text "Striking the right"
-	line "balance of offense"
-	cont "and defense…"
+	text "Das richtige"
+	line "Gleichgewicht aus"
+	cont "Angriff und"
+	cont "Verteidigung…"
 
-	para "It's not easy"
-	line "to do."
+	para "Das ist nicht"
+	line "leicht."
 	done
 
 .ItemText:
-	text "Thank you,"
+	text "Danke,"
 	line "<PLAYER>!"
 
-	para "Now I can confi-"
-	line "dently get through"
-	cont "this swamp."
+	para "Jetzt komme ich"
+	line "zuversichtlich"
+	cont "durch den Sumpf."
 
-	para "It reminds me of a"
-	line "forest far away…"
+	para "Er erinnert mich"
+	line "an einen fernen"
+	cont "Wald…"
 
-	para "Oh, this is my"
-	line "token of appreci-"
-	cont "ation."
+	para "Oh, das ist ein"
+	line "kleines Danke-"
+	cont "schön von mir."
 
-	para "Please accept it!"
+	para "Bitte nimm es an!"
 	done
 
 .GoodbyeText:
-	text "I'm heading to the"
-	line "Battle Tower near"
-	cont "Olivine City."
+	text "Ich gehe zum"
+	line "Duellturm bei"
+	cont "Oliviana City."
 
-	para "Have you heard of"
-	line "it?"
+	para "Hast du schon"
+	line "davon gehört?"
 
-	para "Perhaps we'll meet"
-	line "again there!"
+	para "Vielleicht sehen"
+	line "wir uns dort!"
 
-	para "Bye for now!"
+	para "Bis bald!"
 	done
 
 MurkySwampNurseBeatriceScript:
@@ -166,20 +170,21 @@ MurkySwampNurseBeatriceScript:
 	special RestartMapMusic
 	jumpthistext
 
-	text "All better now!"
+	text "Alles wieder gut!"
 	done
 
 .SeenText:
-	text "I'm a Nurse!"
+	text "Ich bin Pflegerin!"
 
-	line "Defeat me and I'll"
-	cont "heal your #mon!"
+	line "Besiege mich und"
+	cont "ich heile deine"
+	cont "#mon!"
 	done
 
 .BeatenText:
-	text "But first I need"
-	line "to heal my own"
-	cont "#mon…"
+	text "Aber zuerst muss"
+	line "ich meine eigenen"
+	cont "#mon heilen…"
 	done
 
 .AfterText:
@@ -339,15 +344,15 @@ GenericTrainerPokemaniacEnzo:
 	done
 
 MurkySwampPokemaniacText:
-	text "This close to the"
-	line "coast, the land"
+	text "So nah an der"
+	line "Küste ist der"
 
-	para "becomes soaked"
-	line "with water."
+	para "Boden mit Wasser"
+	line "vollgesogen."
 
-	para "But the rare #-"
-	line "mon here make it"
+	para "Aber wegen der"
+	line "seltenen #mon"
 
-	para "worth exploring"
-	line "anyway!"
+	para "lohnt sich das"
+	line "Erkunden trotzdem!"
 	done

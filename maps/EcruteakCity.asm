@@ -119,30 +119,31 @@ EcruteakCityGramps2Text:
 	done
 
 EcruteakCityLass1Text:
-	text "I'm going to get"
-	line "my #mon blessed"
+	text "Ich lasse meine"
+	line "#mon im Schrein"
 
-	para "at the shrine."
-	line "Care to join me?"
+	para "segnen. Kommst"
+	line "du mit?"
 	done
 
 EcruteakCityHexManiacText:
-	text "Spirits of #mon"
-	line "haunt this place…"
+	text "Die Geister von"
+	line "#mon gehen hier"
+	cont "um…"
 	done
 
 EcruteakCitySightseerMText:
-	text "Ecruteak has such"
-	line "an incredible"
-	cont "history."
+	text "Teak City hat so"
+	line "eine unglaubliche"
+	cont "Geschichte."
 
-	para "Smeargle and I"
-	line "traveled here to"
-	cont "draw it."
+	para "Farbeagle und ich"
+	line "sind hergereist,"
+	cont "um sie zu malen."
 	done
 
 EcruteakCitySmeargleText:
-	text "Smeargle: Smeer!"
+	text "Farbeagle: Smeer!"
 	done
 
 

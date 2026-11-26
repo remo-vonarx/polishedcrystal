@@ -28,31 +28,34 @@ EcruteakCherishBallHouseGrampsScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "I will always"
-	line "cherish the time"
+	text "Die Zeit mit"
+	line "#mon werde ich"
 
-	para "I spent with"
-	line "#mon."
+	para "immer in Ehren"
+	line "halten."
 	done
 
 .Text1:
-	text "I've lived a long"
-	line "life, and I have"
+	text "Ich habe ein lan-"
+	line "ges Leben gelebt"
 
-	para "memories that I"
-	line "will cherish for-"
-	cont "ever."
+	para "und Erinnerungen,"
+	line "die ich für immer"
+	cont "in Ehren halte."
 
-	para "Take this and make"
-	line "a new memory to"
-	cont "cherish."
+	para "Nimm das und"
+	line "schaffe eine neue"
+	cont "Erinnerung, die"
+	cont "dir teuer ist."
 	done
 
 EcruteakCherishBallHouseGrannyText:
-	text "Fashions change"
-	line "over the years,"
+	text "Die Mode ändert"
+	line "sich mit den"
+	cont "Jahren,"
 
-	para "but Ecruteak re-"
-	line "mains as trad-"
-	cont "itional as ever."
+	para "aber Teak City"
+	line "bleibt so tradi-"
+	cont "tionell wie eh"
+	cont "und je."
 	done

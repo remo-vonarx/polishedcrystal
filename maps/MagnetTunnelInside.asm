@@ -259,110 +259,115 @@ MagnetTunnelAlarmSounds:
 	end
 
 MagnetTunnelInsideMachineText1:
-	text "The machine is"
-	line "powered off."
+	text "Die Maschine ist"
+	line "ausgeschaltet."
 
-	para "Turn it on?"
+	para "Einschalten?"
 	done
 
 MagnetTunnelInsideMachineText2:
-	text "Ping! The machine"
-	line "powered on."
+	text "Ping! Die Maschine"
+	line "ist jetzt an."
 	done
 
 MagnetTunnelInsideMachineText3:
-	text "The machine is"
-	line "running smoothly."
+	text "Die Maschine läuft"
+	line "einwandfrei."
 	done
 
 MagnetTunnelInsideMachineText4:
-	text "Huh?! Something's"
-	line "wrong!"
+	text "Was?! Hier stimmt"
+	line "etwas nicht!"
 	done
 
 MagnetTunnelInsideMachineText5:
-	text "This machine isn't"
-	line "running properly!"
+	text "Diese Maschine"
+	line "läuft nicht rich-"
+	cont "tig!"
 
-	para "Multiple WARNING"
-	line "messages rapidly"
+	para "Mehrere WARNUNGEN"
+	line "blinken in rascher"
 
-	para "flash across the"
-	line "small screen and"
+	para "Folge auf dem"
+	line "kleinen Bildschirm"
 
-	para "a burning smell"
-	line "fills the air."
+	para "und ein brenzliger"
+	line "Geruch liegt in"
+	cont "der Luft."
 
-	para "Hit the emergency"
-	line "shutdown button?"
+	para "Den Not-Aus-Knopf"
+	line "drücken?"
 	done
 
 MagnetTunnelInsideMachineText6:
-	text "Ding! The machine"
-	line "powered off."
+	text "Ding! Die Maschine"
+	line "ist jetzt aus."
 	done
 
 MagnetTunnelInsideMachineText7:
-	text "The machine is"
-	line "surrounded by the"
+	text "Um die Maschine"
+	line "hängt ein schwa-"
 
-	para "faint stench of"
-	line "melted plastic…"
+	para "cher Gestank von"
+	line "geschmolzenem"
+	cont "Plastik…"
 
-	para "It appears to be"
-	line "totally fried."
+	para "Sie scheint total"
+	line "hinüber zu sein."
 	done
 
 MagnetTunnelInsideLodestoneText:
-	text "The lodestone is"
-	line "smooth and warm."
+	text "Der Magnetit ist"
+	line "glatt und warm."
 
-	para "It has a faint"
-	line "aura of static."
+	para "Er ist leicht"
+	line "statisch geladen."
 	done
 
 MagnetTunnelInsideEngineerText1:
-	text "The lodestone here"
-	line "gives off a strong"
-	cont "magnetic field."
+	text "Der Magnetit hier"
+	line "erzeugt ein star-"
+	cont "kes Magnetfeld."
 
-	para "We had to bring in"
-	line "specialized equip-"
+	para "Wir brauchten Spe-"
+	line "zialausrüstung, um"
 
-	para "ment to complete"
-	line "this tunnel by the"
-	cont "foreman's deadline."
+	para "den Tunnel bis zur"
+	line "Frist des Vor-"
+	cont "arbeiters fertig-"
+	cont "zustellen."
 
-	para "Our team was under"
-	line "heavy pressure to"
-	cont "deliver on time."
+	para "Unser Team stand"
+	line "unter großem"
+	cont "Zeitdruck."
 	done
 
 MagnetTunnelInsideEngineerText2:
-	text "Since the day we"
-	line "began construction"
+	text "Seit Baubeginn"
+	line "dieses Tunnels hat"
 
-	para "on this tunnel,"
-	line "the number of wild"
-
-	para "Electric-type"
-	line "#mon here has"
-	cont "more than doubled."
+	para "sich die Zahl der"
+	line "wilden Elektro-"
+	cont "#mon hier mehr"
+	cont "als verdoppelt."
 	done
 
 MagnetTunnelInsideScientistText:
-	text "Every day, more"
-	line "Magnemite arrive"
-	cont "and cause issues."
+	text "Jeden Tag kommen"
+	line "mehr Magnetilo und"
+	cont "machen Probleme."
 
-	para "The foreman thinks"
-	line "they must be drawn"
+	para "Der Vorarbeiter"
+	line "glaubt, sie werden"
 
-	para "to the lodestone's"
-	line "unique magnetic"
-	cont "properties."
+	para "von den besonderen"
+	line "magnetischen"
+	cont "Eigenschaften des"
+	cont "Magnetits ange-"
+	cont "zogen."
 
-	para "I wonder why?"
+	para "Ich frage mich,"
+	line "warum?"
 	done
 
 GenericTrainerEngineerGraden:

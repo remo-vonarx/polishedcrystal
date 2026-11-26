@@ -436,29 +436,30 @@ GoldenrodUndergroundCandyManScript:
 	pokemart MARTTYPE_EXP_CANDY, 0
 
 .GiveCandyJarText1:
-	text "Psst! Over here…"
-	line "You look like you"
-	cont "could use a boost."
+	text "Psst! Hierher…"
+	line "Du siehst aus, als"
+	cont "bräuchtest du"
+	cont "einen Schub."
 
-	para "Don't ask too many"
-	line "questions."
+	para "Stell nicht zu"
+	line "viele Fragen."
 
-	para "Here, take this."
+	para "Hier, nimm das."
 	done
 
 .GiveCandyJarText2:
-	text "It's a Candy Jar."
+	text "Das ist ein Bon-"
+	line "bonglas."
 
-	para "You'll need it to"
-	line "store my, uh,"
-	cont "special candy."
+	para "Darin bewahrst du"
+	line "meine, äh, beson-"
+	cont "deren Bonbons auf."
 
-	para "First one's on me!"
-	line "Try it out."
+	para "Das erste geht auf"
+	line "mich! Probier's."
 
-	para "…For your"
-	line "#mon,"
-	cont "of course."
+	para "…Für deine"
+	line "#mon natürlich."
 	done
 
 PiersScript:
@@ -571,45 +572,49 @@ PiersRematchAfterText:
 	done
 
 PiersIntroText:
-	text "Piers: The only"
-	line "thing a humble"
-	cont "singer can do"
-	cont "is sing a humble"
-	cont "song… ♪"
+	text "Nezz: Ein beschei-"
+	line "dener Sänger kann"
+	cont "nur ein beschei-"
+	cont "denes Lied singen…"
+	cont "♪"
 
-	para "My name's Piers."
-	line "I'm not from Johto,"
+	para "Ich bin Nezz."
+	line "Ich bin nicht aus"
+	cont "Johto,"
 
-	para "but I came here"
-	line "to sing on the"
+	para "aber ich bin her-"
+	line "gekommen, um im"
+	cont "Radio zu singen"
 
-	para "radio and make"
-	line "everyone smile"
-	cont "in my hometown."
+	para "und alle in meiner"
+	line "Heimatstadt zum"
+	cont "Lachen zu bringen."
 	done
 
 PiersAfterIntroText:
-	text "Some of my best"
-	line "riffs have come"
+	text "Einige meiner"
+	line "besten Riffs kamen"
 
-	para "from winning a"
-	line "good battle."
+	para "nach einem guten"
+	line "gewonnenen Kampf."
 
-	para "How 'bout we have"
-	line "one here and now?"
+	para "Wie wär's mit"
+	line "einem Kampf, hier"
+	cont "und jetzt?"
 	done
 
 PiersNoBattleText:
-	text "Sigh… I feel like"
-	line "my soul's weeping."
+	text "Seufz… Es ist, als"
+	line "weine meine Seele."
 	done
 
 PiersSeenText:
-	text "I make dark music"
-	line "and use Dark-type"
-	cont "#mon!"
+	text "Ich mache düstere"
+	line "Musik und nutze"
+	cont "#mon vom Typ"
+	cont "Unlicht!"
 
-	para "It's time to rock!"
+	para "Zeit zu rocken!"
 	done
 
 PiersBeatenText:
@@ -619,42 +624,43 @@ PiersBeatenText:
 	done
 
 PiersRewardText:
-	text "I'm glad we were"
-	line "able to battle."
+	text "Ich bin froh, dass"
+	line "wir kämpfen"
+	cont "konnten."
 
-	para "Seems like my"
-	line "#mon feel the"
-	cont "same way."
+	para "Meinen #mon"
+	line "geht es wohl"
+	cont "genauso."
 
-	para "Here's something"
-	line "to help rock out"
+	para "Hier ist etwas,"
+	line "damit du nächstes"
 
-	para "even harder next"
-	line "time!"
+	para "Mal noch härter"
+	line "abrocken kannst!"
 	done
 
 PiersRematchIntroAgainText:
-	text "Piers: Hey there,"
+	text "Nezz: Hallo,"
 	line "<PLAYER>."
 	done
 
 PiersRematchSeenText:
-	text "Hah! So you're the"
-	line "new Champion."
+	text "Hah! Du bist also"
+	line "jetzt Champ."
 
-	para "You're a big deal"
-	line "now!"
+	para "Jetzt bist du ein"
+	line "großes Tier!"
 
-	para "And I'm still just"
-	line "singing my humble"
-	cont "songs…"
+	para "Und ich singe noch"
+	line "immer meine be-"
+	cont "scheidenen Lieder…"
 
-	para "So you want an"
-	line "encore?"
+	para "Du willst also"
+	line "eine Zugabe?"
 
-	para "I'll make an ex-"
-	line "ception for you,"
-	cont "just this once!"
+	para "Für dich mache ich"
+	line "eine Ausnahme,"
+	cont "nur dieses Mal!"
 	done
 
 PiersRematchBeatenText:
@@ -844,5 +850,5 @@ GoldenrodUndergroundNoEntryText: ; text > text
 	done
 
 PiersMicrophoneText:
-	text "It's a microphone."
+	text "Ein Mikrofon."
 	done

@@ -30,25 +30,26 @@ PokemonJournalMortyScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Morty!"
+	para "Titelthema:"
+	line "Arenaleiter Jens!"
 
-	para "Morty claims to"
-	line "have once seen"
-	cont "Entei. He says:"
+	para "Jens behauptet,"
+	line "einmal Entei ge-"
+	cont "sehen zu haben."
+	cont "Er sagt:"
 
-	para "“It was amazing."
-	line "Entei looked me"
-	cont "in the eyes."
+	para "“Es war erstaun-"
+	line "lich. Entei sah"
+	cont "mir in die Augen."
 
-	para "I'll never forget"
-	line "its eyes. It was"
+	para "Ich werde diese"
+	line "Augen nie verges-"
 
-	para "like it could see"
-	line "right through me,"
+	para "sen. Es war, als"
+	line "könnte es mir"
 
-	para "down into the dep-"
-	line "ths of my heart…”"
+	para "bis tief in mein"
+	line "Herz schauen…”"
 	done
 
 EcruteakPokeCenter1FBillScript:
@@ -96,35 +97,37 @@ EcruteakPokeCenter1FBillScript:
 	done
 
 .IntroText:
-	text "Hi, I'm Bill. And"
-	line "who are you?"
+	text "Hi, ich bin Bill."
+	line "Und wer bist du?"
 
-	para "Hmm, <PLAYER>, huh?"
-	line "You've come at the"
-	cont "right time."
+	para "Hmm, <PLAYER>?"
+	line "Du bist gerade zum"
+	cont "richtigen Zeit-"
+	cont "punkt gekommen."
 
-	para "The Time Capsules"
-	line "are totally fried,"
+	para "Die Zeitkapseln"
+	line "sind total hinüber"
 
-	para "and I could use"
-	line "your help."
+	para "und ich könnte"
+	line "deine Hilfe"
+	cont "gebrauchen."
 	done
 
 .QuestionText:
-	text "Bill: This Eevee"
-	line "came over just"
+	text "Bill: Dieses Evoli"
+	line "kam hierher, kurz"
 
-	para "before the Time"
-	line "Capsule shut down."
+	para "bevor die Zeit-"
+	line "kapsel ausfiel."
 
-	para "Someone has to"
-	line "take care of it,"
+	para "Jemand sollte sich"
+	line "darum kümmern,"
 
-	para "but I don't like"
-	line "being outside."
+	para "aber ich gehe"
+	line "nicht gerne raus."
 
-	para "Can I count on you"
-	line "to play with it,"
+	para "Wirst du für mich"
+	line "mit ihm spielen,"
 	cont "<PLAYER>?"
 	done
 
@@ -143,20 +146,22 @@ EcruteakPokeCenter1FBillScript:
 	done
 
 .GoodbyeText:
-	text "Bill: Prof.Elm"
-	line "claims Eevee may"
+	text "Bill: Prof. Lind"
+	line "glaubt, dass sich"
 
-	para "evolve in new and"
-	line "unknown ways."
+	para "Evoli auf neue,"
+	line "unbekannte Weisen"
+	cont "entwickeln kann."
 
-	para "I have to hurry on"
-	line "back to Goldenrod"
-	cont "and see my folks,"
+	para "Ich muss zurück"
+	line "nach Dukatia City"
+	cont "zu meinen Eltern,"
 
-	para "and then it's back"
-	line "to Kanto for me."
+	para "und dann geht's"
+	line "für mich zurück"
+	cont "nach Kanto."
 
-	para "Buh-bye!"
+	para "Tschüssi!"
 	done
 
 .NoText:
@@ -239,14 +244,14 @@ EcruteakPokeCenter1FLassScript:
 	iffalse_jumpopenedtext .HereText
 	jumpthisopenedtext
 
-	text "I once heard that"
-	line "Bill's mother used"
+	text "Ich habe gehört,"
+	line "dass Bills Mutter"
 
-	para "to be a Kimono"
-	line "Girl. Maybe that's"
+	para "einst ein Kimono-"
+	line "Girl war. Viel-"
 
-	para "why he visits"
-	line "here so often."
+	para "leicht ist er des-"
+	line "halb so oft hier."
 	done
 
 .No:
@@ -254,19 +259,19 @@ EcruteakPokeCenter1FLassScript:
 	iffalse_jumpopenedtext .HereText
 	jumpthisopenedtext
 
-	text "Oh… Never mind"
-	line "then."
+	text "Oh… Dann vergiss"
+	line "es."
 	done
 
 .QuestionText:
-	text "Do you know who"
-	line "Bill is?"
+	text "Weißt du, wer"
+	line "Bill ist?"
 	done
 
 .HereText:
-	text "Then go talk to"
-	line "him! He's right"
-	cont "by the counter!"
+	text "Dann sprich mit"
+	line "ihm! Er steht"
+	cont "gleich am Tresen!"
 	done
 
 EcruteakPokeCenter1FCooltrainerFText:

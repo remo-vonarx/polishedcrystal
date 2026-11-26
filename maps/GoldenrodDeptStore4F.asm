@@ -35,32 +35,35 @@ GoldenrodDeptStore4FCooltrainerMText:
 	done
 
 GoldenrodDeptStore4FBugCatcherText:
-	text "There are four"
-	line "#mon that"
+	text "Es gibt vier"
+	line "#mon, die sich"
 
-	para "evolve if exposed"
-	line "to a Linking Cord:"
+	para "entwickeln, wenn"
+	line "sie mit einem"
+	cont "Link-Kabel in"
+	cont "Kontakt kommen:"
 
-	para "Machoke, Graveler,"
-	line "Kadabra, and"
-	cont "Haunter!"
+	para "Maschock, Georok,"
+	line "Kadabra und"
+	cont "Alpollo!"
 	done
 
 GoldenrodDeptStore4FGameboyKidText:
-	text "Some #mon"
-	line "evolve only"
+	text "Manche #mon"
+	line "entwickeln sich"
 
-	para "when they hold"
-	line "a certain item."
+	para "nur, wenn sie ein"
+	line "bestimmtes Item"
+	cont "tragen."
 
-	para "I know of four:"
-	line "Poliwhirl, Onix,"
+	para "Ich kenne vier:"
+	line "Quaputzi, Onix,"
 
-	para "Slowpoke and, um,"
-	line "Scyther."
+	para "Flegmon und, äh,"
+	line "Sichlor."
 
-	para "I heard there are"
-	line "others too."
+	para "Ich hörte, es gibt"
+	line "noch weitere."
 	done
 
 GoldenrodDeptStore4FDirectoryText:

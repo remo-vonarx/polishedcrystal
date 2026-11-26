@@ -70,36 +70,36 @@ SetupFairyBookScript:
 	endcallback
 
 ValeriesHouseValerieText:
-	text "Valerie: My"
-	line "fashion designs"
+	text "Valerie: Meine"
+	line "Modedesigns sollen"
 
-	para "are said to be"
-	line "rather mystifying."
-	cont "Do you agree with"
-	cont "that?"
+	para "recht rätselhaft"
+	line "sein. Findest du"
+	cont "das auch?"
 
-	para "I've always wanted"
-	line "to be a #mon,"
-	cont "you see."
+	para "Weißt du, ich"
+	line "wollte schon immer"
+	cont "ein #mon sein."
 
-	para "That desire is my"
-	line "inspiration and"
+	para "Dieser Wunsch ist"
+	line "meine Inspiration"
 
-	para "what I try to"
-	line "achieve by"
-	cont "designing."
+	para "und das, was ich"
+	line "mit meinen Designs"
+	cont "erreichen will."
 
-	para "And yet… the only"
-	line "time I feel truly"
+	para "Und doch… nur wenn"
+	line "wir in einen ver-"
 
-	para "one with #mon"
-	line "is when we are"
+	para "zweifelten Kampf"
+	line "verstrickt sind,"
 
-	para "embroiled in"
-	line "desperate battle."
+	para "fühle ich mich"
+	line "wirklich eins mit"
+	cont "den #mon."
 
-	para "I wonder why that"
-	line "is…"
+	para "Ich frage mich,"
+	line "warum das so ist…"
 	done
 
 ValeriesHouseFairyBookScript:
@@ -117,60 +117,62 @@ ValeriesHouseFairyBookScript:
 .Sunday
 	jumpthisopenedtext
 
-	text "A man is being"
-	line "led by a turtle"
-	cont "under the sea…"
+	text "Eine Schildkröte"
+	line "führt einen Mann"
+	cont "unters Meer…"
 	done
 
 .Monday
 	jumpthisopenedtext
 
-	text "A peasant's house"
-	line "has become a fine"
-	cont "palace overnight…"
+	text "Eine Bauernhütte"
+	line "wurde über Nacht"
+	cont "zum Prunkpalast…"
 	done
 
 .Tuesday
 	jumpthisopenedtext
 
-	text "A girl with very"
-	line "long hair is lock-"
-	cont "ed in a tower…"
+	text "Ein Mädchen mit"
+	line "sehr langem Haar"
+	cont "ist in einem Turm"
+	cont "eingesperrt…"
 	done
 
 .Wednesday
 	jumpthisopenedtext
 
-	text "A beautiful girl"
-	line "is talking to a"
-	cont "horse's head…"
+	text "Ein schönes Mäd-"
+	line "chen spricht mit"
+	cont "einem Pferdekopf…"
 	done
 
 .Thursday
 	jumpthisopenedtext
 
-	text "A talking fish"
-	line "claims that it can"
-	cont "grant wishes…"
+	text "Ein sprechender"
+	line "Fisch behauptet,"
+	cont "er könne Wünsche"
+	cont "erfüllen…"
 	done
 
 .Friday
 	jumpthisopenedtext
 
-	text "A golden apple"
-	line "tree stands atop"
-	cont "a glass mountain…"
+	text "Ein goldener Ap-"
+	line "felbaum steht auf"
+	cont "einem Glasberg…"
 	done
 
 .Saturday
 	jumpthisopenedtext
 
-	text "A dog digs in the"
-	line "garden and finds"
-	cont "golden treasure…"
+	text "Ein Hund gräbt im"
+	line "Garten und findet"
+	cont "einen Goldschatz…"
 	done
 
 ValeriesHouseFairyBookText:
-	text "It's a book of"
-	line "fairy tales."
+	text "Ein Buch voller"
+	line "Märchen."
 	done

@@ -197,27 +197,28 @@ FakeDirectorTextBefore1:
 	done
 
 FakeDirectorTextBefore2:
-	text "Is that what you"
-	line "were expecting?"
+	text "Ist es das, was du"
+	line "erwartet hast?"
 
-	para "Wrong!"
-	line "I'm an imposter!"
+	para "Falsch! Ich bin"
+	line "ein Betrüger!"
 	done
 
 FakeDirectorTextBefore3:
-	text "I pretended to be"
-	line "the real thing to"
+	text "Ich gebe vor, der"
+	line "Echte zu sein, um"
 
-	para "prepare for our"
-	line "takeover."
+	para "unsere Übernahme"
+	line "vorzubereiten."
 
-	para "Do you want to"
-	line "know where we hid"
-	cont "the real Director?"
+	para "Möchtest du wis-"
+	line "sen, wo wir den"
+	cont "echten Intendanten"
+	cont "versteckt haben?"
 
-	para "Sure, I'll tell"
-	line "you. But only if"
-	cont "you can beat me!"
+	para "Ich werde es dir"
+	line "verraten, wenn"
+	cont "du mich besiegst!"
 	done
 
 FakeDirectorWinText:
@@ -226,18 +227,19 @@ FakeDirectorWinText:
 	done
 
 FakeDirectorTextAfter:
-	text "We stashed the"
-	line "real Director in"
+	text "Wir haben den"
+	line "echten Intendanten"
 
-	para "the Underground"
-	line "Warehouse."
+	para "in das Untergrund-"
+	line "Lagerhaus"
+	cont "verschleppt."
 
-	para "It's at the far"
-	line "end of the Under-"
-	cont "ground."
+	para "Es ist am Ende"
+	line "des Untergrunds."
 
-	para "But I doubt you'll"
-	line "get that far."
+	para "Ich bezweifle"
+	line "aber, dass du"
+	cont "so weit kommst."
 	done
 
 Ariana1SeenText:

@@ -87,23 +87,23 @@ EcruteakShrineInsideReiScript:
 .ReiDone
 	jumpthisopenedtext
 
-	text "Rei: Please come"
-	line "again tomorrow."
+	text "Rei: Bitte komm"
+	line "morgen wieder."
 	done
 
 .ReiCancel
 	jumpthisopenedtext
 
-	text "Rei: Please come"
-	line "back if you change"
-	cont "your mind."
+	text "Rei: Komm wieder,"
+	line "wenn du es dir"
+	cont "anders überlegst."
 	done
 
 .EggBlessing
 	jumpthisopenedtext
 
-	text "Rei: I can't"
-	line "bless an Egg."
+	text "Rei: Ein Ei kann"
+	line "ich nicht segnen."
 	done
 
 .ReiMenuDataHeader:
@@ -120,28 +120,28 @@ EcruteakShrineInsideReiScript:
 	db "Cancel@"
 
 EcruteakShrineInsideReiGreetingText:
-	text "Rei: Oh, hello."
-	line "Welcome to our"
-	cont "shrine."
+	text "Rei: Oh, hallo."
+	line "Willkommen in"
+	cont "unserem Schrein."
 
-	para "Did you come to"
-	line "have me bless one"
-	cont "of your #mon?"
+	para "Soll ich eines"
+	line "deiner #mon"
+	cont "segnen?"
 
-	para "Or would you like"
-	line "to battle?"
+	para "Oder möchtest du"
+	line "kämpfen?"
 	done
 
 EcruteakShrineInsideReiBlessText:
-	text "Rei: OK, which"
-	line "#mon should I"
-	cont "bless?"
+	text "Rei: Gut, welches"
+	line "#mon soll ich"
+	cont "segnen?"
 	done
 
 EcruteakShrineInsideReiBlessingText:
-	text "Rei: May you be"
-	line "at ease, and find"
-	cont "peace."
+	text "Rei: Mögest du"
+	line "Ruhe und Frieden"
+	cont "finden."
 	done
 
 EcruteakShrineInsideHappinessText:
@@ -151,9 +151,9 @@ EcruteakShrineInsideHappinessText:
 	done
 
 EcruteakShrineInsideReiBattleText:
-	text "Rei: Very well."
-	line "Evil spirits,"
-	cont "begone!"
+	text "Rei: Nun gut."
+	line "Böse Geister,"
+	cont "hinfort!"
 	done
 
 EcruteakShrineInsideReiBeatenText:
@@ -162,37 +162,41 @@ EcruteakShrineInsideReiBeatenText:
 	done
 
 EcruteakShrineInsideGrampsText:
-	text "The shrine maiden"
-	line "here is my grand-"
-	cont "daughter."
+	text "Die Schreinjung-"
+	line "frau hier ist"
+	cont "meine Enkelin."
 	done
 
 EcruteakShrineInsideGrannyText:
-	text "I'm glad they didn't"
-	line "approve a stop in"
-	cont "Ecruteak for the"
-	cont "Magnet Train."
+	text "Zum Glück wurde"
+	line "kein Halt des"
+	cont "Magnetzugs in"
+	cont "Teak City erlaubt."
 
-	para "It would ruin our"
-	line "traditional land-"
-	cont "scape."
+	para "Er würde unser"
+	line "traditionelles"
+	cont "Stadtbild zer-"
+	cont "stören."
 	done
 
 EcruteakShrineInsideSageText:
-	text "Most of us here at"
-	line "the shrine train"
+	text "Die meisten von"
+	line "uns im Schrein"
 
-	para "Hoothoot and"
-	line "Sentret to battle"
-	cont "ghosts."
+	para "trainieren Hoot-"
+	line "hoot und Wiesor,"
+	cont "um gegen Geister"
+	cont "zu kämpfen."
 
-	para "Rei is unique."
-	line "She uses Fire and"
-	cont "Psychic types."
+	para "Rei ist anders."
+	line "Sie setzt Feuer-"
+	cont "und Psycho-#mon"
+	cont "ein."
 	done
 
 EcruteakShrineInsideFurretText:
-	text "Furret: Dook-dook!"
+	text "Wiesenior:"
+	line "Dook-dook!"
 	done
 
 EcruteakShrineInsideAltarText:

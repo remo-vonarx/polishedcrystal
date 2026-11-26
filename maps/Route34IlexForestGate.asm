@@ -67,13 +67,15 @@ Route34IlexForestGateTeacherScript:
 	jumpthisopenedtext
 
 Route34IlexForestGateTeacher_GotSweetScent:
-	text "It's False Swipe."
+	text "Sie enthält"
+	line "Trugschlag."
 
-	para "It won't knock"
-	line "out wild #mon,"
+	para "Wilde #mon wer-"
+	line "den davon nicht"
+	cont "besiegt,"
 
-	para "so they'll be"
-	line "easier to catch."
+	para "also kannst du sie"
+	line "leichter fangen."
 	done
 
 Route34IlexForestGateTeacherBlocksPlayerMovement:
@@ -87,14 +89,15 @@ Route34IlexForestGateTeacherReturnsMovement:
 	step_end
 
 Route34IlexForestGateTeacherText:
-	text "Oh, hello. You're"
-	line "making a #dex?"
+	text "Oh, hallo. Du"
+	line "erstellst einen"
+	cont "#dex?"
 
-	para "It must be hard to"
-	line "catch all those"
-	cont "#mon."
+	para "Es muss schwierig"
+	line "sein, all diese"
+	cont "#mon zu fangen."
 
-	para "Here, take this"
+	para "Hier, nimm diese"
 	line "TM."
 	done
 
@@ -107,7 +110,7 @@ Route34IlexForestGateTeacher_ForestIsRestless:
 	done
 
 Route34IlexForestGateHeracrossText:
-	text "Heracross: Cross!"
+	text "Skaraborn: Born!"
 	done
 
 Route34IlexForestGateLassText:

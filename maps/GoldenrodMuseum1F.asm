@@ -36,9 +36,8 @@ GoldenrodMuseum1FLodestoneSignpostScript:
 	closepokepic
 	jumpthistext
 
-	text "Lodestone from the"
-	line "construction of"
-	cont "Magnet Tunnel."
+	text "Magnetit vom Bau"
+	line "des Magnettunnels."
 	done
 
 GoldenrodMuseum1FRocketScoutScript:
@@ -53,32 +52,32 @@ GoldenrodMuseum1FRocketScoutScript:
 	end
 
 GoldenrodMuseumReceptionistText:
-	text "Welcome to the"
-	line "Goldenrod City"
-	cont "Museum."
+	text "Willkommen im"
+	line "Museum von"
+	cont "Dukatia City."
 
-	para "In celebration of"
-	line "our grand opening,"
+	para "Zur Feier unserer"
+	line "großen Eröffnung"
 
-	para "admission is free"
-	line "of charge."
+	para "ist der Eintritt"
+	line "frei."
 
-	para "Please, feel free"
-	line "to look around,"
+	para "Sieh dich ruhig"
+	line "um. Wir hoffen,"
 
-	para "and we hope you"
-	line "enjoy your visit."
+	para "dir gefällt dein"
+	line "Besuch."
 	done
 
 GoldenrodMuseumOfficerText:
-	text "I'm keeping my eye"
-	line "on you kid!"
+	text "Ich behalte dich"
+	line "im Auge, Kleiner!"
 
-	para "Hahaha! I'm just"
-	line "messing with ya!"
+	para "Hahaha! War nur"
+	line "ein Scherz!"
 
-	para "I'm keeping an eye"
-	line "on everyone…"
+	para "Ich behalte alle"
+	line "im Auge…"
 	done
 
 
@@ -92,14 +91,15 @@ GoldenrodMuseum1FDrillText:
 	done
 
 GoldenrodMuseum1FHikerText:
-	text "I heard they had"
-	line "to use equipment"
+	text "Ich hörte, man"
+	line "musste Maschinen"
 
-	para "like this drill"
-	line "to excavate the"
+	para "wie diesen Bohrer"
+	line "benutzen, um den"
 
-	para "tunnel for the"
-	line "Magnet Train."
+	para "Tunnel für den"
+	line "Magnetzug zu"
+	cont "graben."
 	done
 
 GoldenrodMuseum1FRadioDishText:
@@ -115,25 +115,26 @@ GoldenrodMuseum1FHarborText:
 	done
 
 GoldenrodMuseum1FBigPearlText:
-	text "It's a huge pearl"
-	line "fished up from"
-	cont "Goldenrod Harbor."
+	text "Eine riesige Perle"
+	line "aus dem Dukatia-"
+	cont "Hafen geangelt."
 	done
 
 GoldenrodMuseum1FRocketScoutText1:
-	text "Hmm… This would"
-	line "fetch quite a"
-	cont "heavy price."
+	text "Hmm… Das würde"
+	line "einen hübschen"
+	cont "Preis einbringen."
 
-	para "Now… how do I get"
-	line "it out of here"
+	para "Nun… wie kriege"
+	line "ich es hier raus,"
 
-	para "without getting"
-	line "caught?"
+	para "ohne erwischt zu"
+	line "werden?"
 	done
 
 GoldenrodMuseum1FRocketScoutText2:
-	text "Don't you know it's"
-	line "rude to stare?"
-	cont "Beat it kid!"
+	text "Weißt du nicht,"
+	line "dass Glotzen un-"
+	cont "höflich ist?"
+	cont "Hau ab, Kleiner!"
 	done

@@ -197,7 +197,7 @@ MoveTutor:
 	jumpthisopenedtext
 
 	text "Wahahah!"
-	line "Good day, kid!"
+	line "Guten Tag, Kind!"
 	done
 
 .NotEnoughMoney:
@@ -229,11 +229,12 @@ GoldenrodCityCooltrainerF2Script:
 	iffalse_jumptextfaceplayer GoldenrodCityCooltrainerFOlivineText
 	jumpthistextfaceplayer
 
-	text "I came here on the"
-	line "Magnet Train."
+	text "Ich bin mit dem"
+	line "Magnetzug herge-"
+	cont "kommen."
 
-	para "Time to do some"
-	line "shopping!"
+	para "Zeit, einkaufen"
+	line "zu gehen!"
 	done
 
 GoldenrodCityYoungster2Script:
@@ -243,11 +244,12 @@ GoldenrodCityYoungster2Script:
 	iftrue_jumpopenedtext GoldenrodCityYoungster2Text
 	jumpthisopenedtext
 
-	text "Have you been to"
-	line "the Museum?"
+	text "Warst du schon im"
+	line "Museum?"
 
-	para "It's full of cool"
-	line "exhibits!"
+	para "Da gibt's tolle"
+	line "Ausstellungs-"
+	cont "stücke!"
 	done
 
 GoldenrodCityRocketScoutScript:
@@ -277,17 +279,16 @@ GoldenrodCityPanUpMovementData:
 	step_end
 
 GoldenrodCityPokefanMText:
-	text "They built the new"
-	line "Radio Tower to"
+	text "Der neue Radioturm"
+	line "wurde erbaut, um"
 
-	para "replace the old,"
-	line "creaky one."
+	para "den alten, klapp-"
+	line "rigen zu ersetzen."
 
-	para "Now it transmits"
-	line "every #gear"
-
-	para "broadcast in"
-	line "Johto."
+	para "Jetzt sendet er"
+	line "jedes Programm"
+	cont "für den #Com in"
+	cont "Johto."
 	done
 
 GoldenrodCityYoungster1Text:
@@ -311,28 +312,31 @@ GoldenrodCityCooltrainerF1Text_ClearedRadioTower:
 	done
 
 GoldenrodCityCooltrainerF2Text:
-	text "The Radio Tower in"
-	line "Goldenrod City is"
-	cont "a landmark."
+	text "Der Radioturm in"
+	line "Dukatia City ist"
+	cont "ein Wahrzeichen."
 
-	para "They're running a"
-	line "promotional cam-"
-	cont "paign right now."
+	para "Zurzeit läuft ge-"
+	line "rade eine Werbe-"
+	cont "kampagne."
 
-	para "They'll modify"
-	line "your #gear,"
+	para "Sie können deinen"
+	line "#Com modifi-"
+	cont "zieren, so dass er"
+	cont "auch als Radio"
 
-	para "so it can also"
-	line "serve as a radio."
+	para "verwendet werden"
+	line "kann."
 	done
 
 GoldenrodCityCooltrainerFOlivineText:
-	text "I came here on"
-	line "the S.S.Aqua."
+	text "Ich bin mit der"
+	line "M.S. Aqua herge-"
+	cont "kommen."
 
-	para "It's slower than"
-	line "the Magnet Train,"
-	cont "but more scenic."
+	para "Sie ist langsamer"
+	line "als der Magnetzug,"
+	cont "aber malerischer."
 	done
 
 
@@ -349,16 +353,17 @@ GoldenrodCityYoungster2Text:
 	done
 
 GoldenrodCityLassText:
-	text "The man at that"
-	line "house rates your"
-	cont "#mon names."
+	text "Der Mann in diesem"
+	line "Haus bewertet dei-"
+	cont "ne #mon-Namen."
 
-	para "He can help rename"
-	line "your #mon too."
+	para "Er kann deine"
+	line "#mon auch"
+	cont "umbenennen."
 
-	para "He liked all of"
-	line "my nicknames, even"
-	cont "the silly ones!"
+	para "Er mochte alle"
+	line "meine Spitznamen,"
+	cont "auch die albernen!"
 	done
 
 GoldenrodCityGrampsText:
@@ -423,14 +428,15 @@ GoldenrodCityRocket6Text:
 	done
 
 GoldenrodCityGymLassText:
-	text "Whitney isn't here"
-	line "right now."
+	text "Bianka ist gerade"
+	line "nicht da."
 
-	para "She bolted out of"
-	line "here and shouted,"
+	para "Sie ist raus-"
+	line "gestürmt und rief:"
 
-	para "“I have got to get"
-	line "a Radio Card!”"
+	para "“Ich muss unbe-"
+	line "dingt ein Radio-"
+	cont "Modul haben!”"
 	done
 
 GoldenrodCityStationSignText:
@@ -526,8 +532,8 @@ GoldenrodCityMoveTutorAskTeachAMoveText:
 	done
 
 GoldenrodCityMoveTutorAsk4000CoinsOkayText:
-	text "It will cost you"
-	line "200 coins. OK?"
+	text "Das kostet dich"
+	line "200 Münzen. Okay?"
 	done
 
 GoldenrodCityMoveTutorAwwButTheyreAmazingText:

@@ -39,23 +39,24 @@ ProfOaksAide1Script:
 .Explain
 	jumpthisopenedtext
 
-	text "That Exp.Share"
-	line "helps a #mon"
+	text "Der EP-Teiler"
+	line "lässt ein #mon"
 
-	para "gain experience"
-	line "without even"
-	cont "battling."
+	para "Erfahrung sammeln,"
+	line "ohne dass es"
+	cont "kämpft."
 
-	para "Use it to com-"
-	line "plete the #dex!"
+	para "Nutze ihn, um den"
+	line "#dex zu ver-"
+	cont "vollständigen!"
 	done
 
 .NoRoom
 	jumpthisopenedtext
 
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for this."
+	text "Oh! Du hast"
+	line "keinen Platz mehr"
+	cont "dafür."
 	done
 
 IlexForestAzaleaGateOfficerText:
@@ -76,45 +77,48 @@ IlexForestAzaleaGateGrannyText:
 	done
 
 ProfOaksAide1HiText:
-	text "Hello there! I'm"
-	line "Prof.Oak's aide."
+	text "Hallo! Ich bin ein"
+	line "Assistent von"
+	cont "Prof. Eich."
 
-	para "If you caught 15"
-	line "kinds of #mon,"
+	para "Wenn du 15 Arten"
+	line "#mon gefangen"
+	cont "hast,"
 
-	para "I'm supposed to"
-	line "give you an item."
+	para "soll ich dir ein"
+	line "Item geben."
 
-	para "So, <PLAYER>,"
-	line "have you caught"
+	para "Also, <PLAYER>,"
+	line "hast du schon"
 
-	para "at least 15 kinds"
-	line "of #mon?"
+	para "mindestens 15"
+	line "Arten #mon"
+	cont "gefangen?"
 	done
 
 ProfOaksAide1UhOhText:
-	text "Let's see…"
-	line "Uh-oh! You've only"
+	text "Mal sehen…"
+	line "Oh je! Du hast nur"
 
-	para "caught "
+	para ""
 	text_decimal wTempDexOwn, 2, 3
-	text " kinds"
-	line "of #mon."
+	text " Arten #mon"
+	line "gefangen."
 
-	para "Come back and see"
-	line "me when you catch"
-	cont "15 kinds."
+	para "Komm wieder, wenn"
+	line "du 15 Arten"
+	cont "gefangen hast."
 	done
 
 ProfOaksAide1HereYouGoText:
-	text "Let's see…"
-	line "Great job! You've"
+	text "Mal sehen…"
+	line "Toll! Du hast"
 
-	para "caught "
+	para ""
 	text_decimal wTempDexOwn, 2, 3
-	text " kinds"
-	line "of #mon."
+	text " Arten #mon"
+	line "gefangen."
 
-	para "Congratulations!"
-	line "Here you go!"
+	para "Glückwunsch!"
+	line "Bitte schön!"
 	done

@@ -86,16 +86,16 @@ FlowerShopTeacherScript:
 	itemnotify
 	jumpthisopenedtext
 
-	text "Thank you!"
-	line "Please come again!"
+	text "Danke schön!"
+	line "Komm bald wieder!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "Well… Excuse me,"
-	line "but you're short"
-	cont "of money."
+	text "Nun… Entschul-"
+	line "dige, aber du hast"
+	cont "nicht genug Geld."
 	done
 
 .MenuDataHeader:
@@ -120,8 +120,9 @@ FlowerShopFloriaScript:
 	iftrue_jumptextfaceplayer DescribeMulchText
 	jumpthistextfaceplayer
 
-	text "So that jiggly"
-	line "tree really was a"
+	text "Dieser wackelige"
+	line "Baum war also"
+	cont "tatsächlich ein"
 	cont "#mon!"
 	done
 
@@ -140,17 +141,17 @@ GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 	done
 
 GoldenrodFlowerShopTeacherStopMySisterText:
-	text "My little sister"
-	line "got all excited"
+	text "Meine kleine"
+	line "Schwester war auf-"
+	cont "geregt und wollte"
+	cont "sich den wackeli-"
+	cont "gen Baum ansehen…"
 
-	para "and went to see"
-	line "the wiggly tree…"
+	para "Ich bin besorgt…"
+	line "Kannst du bitte"
 
-	para "I'm worried… Can"
-	line "you please stop"
-
-	para "her from getting"
-	line "hurt by it?"
+	para "verhindern, dass"
+	line "er ihr wehtut?"
 	done
 
 GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
@@ -165,28 +166,29 @@ GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
 	done
 
 GoldenrodFlowerShopTeacherBetterThanWhitneyText:
-	text "Oh, you're better"
-	line "than Whitney."
+	text "Oh, du bist besser"
+	line "als Bianka."
 
-	para "Do you know about"
-	line "that wiggly tree?"
+	para "Kennst du den"
+	line "wackeligen Baum?"
 
-	para "If you wet it with"
-	line "a water bottle, it"
-	cont "attacks."
+	para "Wenn du ihn mit"
+	line "einer Schiggykanne"
+	cont "nass machst,"
+	cont "greift er an."
 
-	para "But since you"
-	line "have some Badges,"
-	cont "you should be OK."
+	para "Aber da du schon"
+	line "Orden hast,"
+	cont "sollte das gehen."
 	done
 
 GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
-	text "Oh, you're better"
-	line "than Whitney…"
+	text "Oh, du bist besser"
+	line "als Bianka…"
 
-	para "You'll be OK,"
-	line "then. Here's my"
-	cont "water bottle!"
+	para "Dann bist du in"
+	line "Ordnung. Hier, die"
+	cont "Schiggykanne!"
 	done
 
 GoldenrodFlowerShopTeacherDontDoAnythingDangerousText:
@@ -212,50 +214,54 @@ GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
 	done
 
 GoldenrodFlowerShopFloriaYouBeatWhitneyText:
-	text "Wow, you beat"
-	line "Whitney? Cool!"
+	text "Wow, du hast gegen"
+	line "Bianka gewonnen?"
+	cont "Cool!"
 
-	para "Maybe you can take"
-	line "care of the jiggly"
-	cont "tree."
+	para "Vielleicht kannst"
+	line "du dich um den"
+	cont "wackeligen Baum"
+	cont "kümmern."
 
-	para "You'll just need a"
-	line "water bottle like"
-	cont "my sis has."
+	para "Du brauchst nur"
+	line "eine Schiggykanne"
+	cont "wie meine Schwes-"
+	cont "ter."
 	done
 
 WoukdYouLikeMulchText:
-	text "Care to buy some"
-	line "Mulch?"
+	text "Möchtest du etwas"
+	line "Mulch kaufen?"
 
-	para "It makes Berries"
-	line "grow faster!"
+	para "Damit wachsen"
+	line "Beeren schneller!"
 	done
 
 
 
 
 NoRoomForMulchText:
-	text "Oh no, your Bag"
-	line "is full!"
+	text "Oh nein, dein"
+	line "Beutel ist voll!"
 	done
 
 DescribeMulchText:
-	text "Our Mulch is a"
-	line "mix of high-qual-"
+	text "Unser Mulch ist"
+	line "eine Mischung aus"
 
-	para "ity soil and #-"
-	line "mon's… er… you"
+	para "bester Erde und"
+	line "#mon-… äh… du"
+	cont "weißt schon."
 
-	para "know. It's full"
-	line "of nutrients!"
+	para "Voller Nähr-"
+	line "stoffe!"
 	done
 
 FlowerShopGentlemanText:
-	text "I've been working"
-	line "late a lot recent-"
-	cont "ly, so I'm buying"
+	text "Ich arbeite in"
+	line "letzter Zeit oft"
+	cont "lange, deshalb"
 
-	para "some flowers for"
-	line "my wife."
+	para "kaufe ich Blumen"
+	line "für meine Frau."
 	done

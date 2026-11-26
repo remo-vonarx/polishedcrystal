@@ -388,55 +388,58 @@ Route36CooltrainerfChiaraScript:
 	done
 
 .IntroText:
-	text "I saw how you woke"
-	line "up that Sudowoodo."
+	text "Ich habe gesehen,"
+	line "wie du das"
+	cont "Mogelbaum geweckt"
+	cont "hast."
 
-	para "You did great!"
+	para "Das war toll!"
 
-	para "And you have a"
-	line "Plain Badge."
-	cont "So do I!"
+	para "Und du hast einen"
+	line "Basisorden."
+	cont "Ich auch!"
 
-	para "How about this?"
-	line "Take out all the"
+	para "Wie wär's damit?"
+	line "Besiege alle"
 
-	para "trainers on Routes"
-	line "36 and 37."
+	para "Trainer auf den"
+	line "Routen 36 und 37."
 
-	para "Then I'll fight"
-	line "you myself!"
+	para "Dann kämpfe ich"
+	line "selbst gegen dich!"
 	done
 
 .QuestionText:
-	text "So you beat every-"
-	line "one else in the"
-	cont "area."
+	text "Du hast also alle"
+	line "anderen in der Ge-"
+	cont "gend besiegt."
 
-	para "Then it's time for"
-	line "our showdown!"
+	para "Dann ist es Zeit"
+	line "für unser Duell!"
 
-	para "I use a Binding"
-	line "Band to press my"
-	cont "advantage."
+	para "Ich nutze ein"
+	line "Klammerband, um"
+	cont "meinen Vorteil"
+	cont "auszubauen."
 
-	para "Think you're ready"
-	line "for me?"
+	para "Glaubst du, du"
+	line "bist bereit?"
 	done
 
 .RefusedText:
-	text "Well, I'm ready"
-	line "when you are!"
+	text "Ich bin bereit,"
+	line "wenn du es bist!"
 	done
 
 .SeenText:
-	text "You won't last"
-	line "long against my"
-	cont "technique!"
+	text "Gegen meine Tech-"
+	line "nik hältst du"
+	cont "nicht lange durch!"
 	done
 
 .BeatenText:
-	text "I'm the one who"
-	line "didn't last?!"
+	text "Ich bin es, die"
+	line "nicht durchhielt?!"
 	done
 
 .AfterText1:
@@ -577,46 +580,52 @@ SudowoodoAttackedText:
 
 
 FloriaTextAfterSquirtBottle:
-	text "I'm the Flower"
-	line "Shop's Floria!"
+	text "Ich bin Flora"
+	line "vom Blumenladen!"
 
-	para "When I told my sis"
-	line "about the jiggly"
+	para "Als ich meiner"
+	line "Schwester von dem"
 
-	para "tree, she said"
-	line "it's dangerous."
+	para "wackeligen Baum"
+	line "erzählte, sagte"
 
-	para "Oh, she lent you"
-	line "her water bottle?"
+	para "sie, er sei"
+	line "gefährlich."
 
-	para "You must be a good"
-	line "trainer then!"
+	para "Oh, sie hat dir"
+	line "ihre Gießkanne"
+	cont "geliehen?"
 
-	para "I'll leave the"
-	line "weird tree to you."
+	para "Dann musst du ein"
+	line "guter Trainer"
+	cont "sein!"
 
-	para "Ta-ta!"
+	para "Den seltsamen Baum"
+	line "überlasse ich dir."
+
+	para "Tschüssi!"
 	done
 
 FloriaTextAfterSudowoodo:
-	text "I just knew that"
-	line "wiggly tree was a"
-	cont "#mon!"
+	text "Ich wusste doch,"
+	line "dass dieser wacke-"
+	cont "lige Baum ein"
+	cont "#mon ist!"
 
-	para "I was going to"
-	line "shock it out of"
+	para "Ich wollte es aus"
+	line "seiner Verkleidung"
 
-	para "its disguise, but"
-	line "you beat me to it!"
+	para "schrecken, aber du"
+	line "warst schneller!"
 
-	para "Oh well, I'll head"
-	line "back to the Flower"
-	cont "Shop."
+	para "Na ja, dann gehe"
+	line "ich zurück zum"
+	cont "Blumenladen."
 
-	para "I'm Floria, by the"
-	line "way."
+	para "Ich bin übrigens"
+	line "Flora."
 
-	para "Ta-ta!"
+	para "Tschüssi!"
 	done
 
 

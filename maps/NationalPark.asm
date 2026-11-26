@@ -306,11 +306,12 @@ GenericTrainerLassKrise:
 	done
 
 NationalParkLassText:
-	text "Look! Check out my"
-	line "bag!"
+	text "Sieh dir meine"
+	line "Tasche an!"
 
-	para "I pinned my Badges"
-	line "onto it."
+	para "Ich habe meine"
+	line "Orden daran"
+	cont "gesteckt."
 	done
 
 NationalParkPokefanFText:
@@ -374,12 +375,12 @@ SchoolboyJohnnyBeatenText:
 	done
 
 NationalParkTeacher2Text:
-	text "Those kids should"
-	line "battle inside the"
-	cont "grass."
+	text "Die Kinder sollten"
+	line "im Gras kämpfen."
 
-	para "They're disturbing"
-	line "my quiet walk…"
+	para "Sie stören meinen"
+	line "ruhigen Spazier-"
+	cont "gang…"
 	done
 
 NationalParkPersianText:
@@ -387,14 +388,14 @@ NationalParkPersianText:
 	done
 
 NationalParkGameboyKidText:
-	text "I'm studying my"
-	line "#dex."
+	text "Ich studiere"
+	line "meinen #dex."
 
-	para "I want to collect"
-	line "a living #-"
-
-	para "dex with one of"
-	line "each #mon."
+	para "Ich will einen"
+	line "lebenden #dex"
+	cont "sammeln, mit je"
+	cont "einem #mon pro"
+	cont "Art."
 	done
 
 SchoolboyJack1SeenText:
@@ -414,16 +415,17 @@ SchoolboyJack1BeatenText:
 	done
 
 SchoolboyJackTradeMonText:
-	text "There is a lot"
-	line "to learn."
+	text "Man kann noch"
+	line "viel lernen."
 
-	para "For example…"
+	para "Zum Beispiel…"
 
-	para "There are {d:NUM_TMS} kinds"
-	line "of TMs."
+	para "Es gibt {d:NUM_TMS}"
+	line "verschiedene TMs."
 
-	para "Traded #mon"
-	line "level up faster."
+	para "Getauschte #mon"
+	line "erhalten mehr"
+	cont "Erfahrungspunkte."
 	done
 
 PokefanfBeverly1SeenText:
@@ -486,9 +488,9 @@ BugManiacLouBeatenText:
 	done
 
 OfficermKeithSeenText:
-	text "Halt! What are"
-	line "you doing out"
-	cont "this late?"
+	text "Halt! Was machst"
+	line "du so spät noch"
+	cont "hier draußen?"
 	done
 
 OfficermKeithWinText:
@@ -506,14 +508,14 @@ OfficermKeithAfterText:
 	done
 
 OfficermKeithDaytimeText:
-	text "Enjoying the"
-	line "park, are you?"
+	text "Genießt du den"
+	line "Park?"
 
-	para "Always take a"
-	line "#mon with you"
+	para "Nimm immer ein"
+	line "#mon mit, wenn"
 
-	para "if you go in the"
-	line "tall grass!"
+	para "du ins hohe Gras"
+	line "gehst!"
 	done
 
 NationalParkRelaxationSquareText:

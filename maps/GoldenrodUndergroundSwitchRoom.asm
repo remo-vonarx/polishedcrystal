@@ -492,21 +492,21 @@ GruntF3BeatenText:
 	done
 
 SwitchRoomText_RedSwitch:
-	text "Press the red"
-	line "switch?"
+	text "Den roten Schalter"
+	line "drücken?"
 	done
 
 SwitchRoomText_GreenSwitch:
-	text "Press the green"
-	line "switch?"
+	text "Den grünen"
+	line "Schalter drücken?"
 	done
 
 SwitchRoomText_BlueSwitch:
-	text "Press the blue"
-	line "switch?"
+	text "Den blauen"
+	line "Schalter drücken?"
 	done
 
 SwitchRoomText_EmergencySwitch:
-	text "Press the emer-"
-	line "gency switch?"
+	text "Den Notschalter"
+	line "drücken?"
 	done

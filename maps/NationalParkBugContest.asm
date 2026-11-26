@@ -42,9 +42,10 @@ BugCatchingContestant1AScript:
 BugCatchingContestant2AScript:
 	jumpthistextfaceplayer
 
-	text "Lou: My Parasect"
-	line "puts #mon to"
-	cont "sleep with Spore."
+	text "Lou: Mein Parasek"
+	line "versetzt #mon"
+	cont "mittels Pilzspore"
+	cont "in den Schlaf."
 	done
 
 BugCatchingContestant3AScript:
@@ -113,11 +114,12 @@ BugCatchingContestant8AScript:
 BugCatchingContestant9AScript:
 	jumpthistextfaceplayer
 
-	text "Johnny: If you've"
-	line "got the time to"
+	text "Niklas: Wenn du"
+	line "Zeit für Gespräche"
 
-	para "chat, go find some"
-	line "Bug #mon."
+	para "hast, solltest du"
+	line "lieber Käfer-"
+	cont "#mon suchen."
 	done
 
 BugCatchingContestant10AScript:

@@ -339,14 +339,16 @@ BillsSister:
 	done
 
 BillsGrandpaIntroText:
-	text "Hm? You know Bill?"
-	line "He's my grandson."
+	text "Hm? Kennst du"
+	line "Bill? Er ist mein"
+	cont "Enkel."
 
-	para "He's in Kanto. He"
-	line "does something"
+	para "Er ist in Kanto."
+	line "Er kümmert sich"
 
-	para "with PCs, so I'm"
-	line "house-sitting."
+	para "um PCs und ich"
+	line "passe auf das"
+	cont "Haus auf."
 	done
 
 BillsGrandpaAskToSeeMonText:
@@ -405,65 +407,67 @@ BillsGrandpaShownAllThePokemonText:
 	done
 
 BillsGrandpaSnubbullText:
-	text "My grandson Bill"
-	line "told me about a"
+	text "Mein Enkel Bill"
+	line "erzählte mir von"
 
-	para "short, pink canine"
-	line "#mon with blue"
-	cont "polka dots."
+	para "einem kleinen,"
+	line "rosa Hunde-#mon"
+	cont "mit blauen Tupfen."
 	done
 
 BillsGrandpaTogepiText:
-	text "Do you know of a"
-	line "#mon that has a"
+	text "Kennst du ein"
+	line "#mon mit einer"
 
-	para "shell covered in"
-	line "red and blue"
-	cont "triangles?"
+	para "Schale voller"
+	line "roter und blauer"
+	cont "Dreiecke?"
 
-	para "It's supposed to"
-	line "be a symbol of"
-	cont "good luck."
+	para "Es soll ein"
+	line "Glückssymbol"
+	cont "sein."
 	done
 
 BillsGrandpaMurkrowText:
-	text "Do you know of a"
-	line "bird #mon that"
+	text "Kennst du ein"
+	line "Vogel-#mon mit"
 
-	para "has a crooked"
-	line "yellow beak and"
-	cont "black feathers?"
+	para "krummem gelbem"
+	line "Schnabel und"
+	cont "schwarzen Federn?"
 
-	para "I heard that it"
-	line "appears at night."
+	para "Ich hörte, es"
+	line "taucht nachts auf."
 
-	para "I would quite"
-	line "like to see it."
+	para "Ich würde es"
+	line "gerne sehen."
 	done
 
 BillsGrandpaOddishText:
-	text "Ah, my grandson"
-	line "mentioned a round,"
+	text "Ah, mein Enkel"
+	line "erwähnte ein"
 
-	para "blue #mon that"
-	line "has leaves growing"
-	cont "on its head."
+	para "rundes, blaues"
+	line "#mon, auf"
+	cont "dessen Kopf Blät-"
+	cont "ter wachsen."
 	done
 
 BillsGrandpaJigglypuffText:
-	text "Bill told me about"
-	line "a pink #mon"
+	text "Bill erzählte mir"
+	line "von einem rosa"
 
-	para "with a hypnotic"
-	line "singing voice."
+	para "#mon mit hypno-"
+	line "tischem Gesang."
 	done
 
 BillsGrandpaBellsproutText:
-	text "My grandson Bill"
-	line "mentioned a green"
+	text "Mein Enkel Bill"
+	line "erwähnte ein grü-"
 
-	para "#mon that walks"
-	line "on its roots."
+	para "nes #mon, das"
+	line "auf seinen Wurzeln"
+	cont "läuft."
 	done
 
 BillsGrandpaStaryuText:
@@ -515,20 +519,21 @@ BillsGrandpaPichuText:
 
 
 BillsMomText_AfterEcruteak:
-	text "My husband was"
-	line "once known as a"
+	text "Mein Mann galt"
+	line "einst als"
 
-	para "#Maniac."
-	line "Bill must have"
+	para "#maniac."
+	line "Bill muss nach"
 
-	para "taken after his"
-	line "father."
+	para "seinem Vater"
+	line "kommen."
 
-	para "But now my husband"
-	line "won't work. He"
+	para "Aber jetzt will"
+	line "mein Mann nicht"
 
-	para "just goofs off"
-	line "all day long."
+	para "mehr arbeiten. Er"
+	line "faulenzt den gan-"
+	cont "zen Tag."
 	done
 
 BillsSisterUsefulNumberText:

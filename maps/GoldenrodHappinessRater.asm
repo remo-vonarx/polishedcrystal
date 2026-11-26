@@ -52,20 +52,20 @@ GoldenrodHappinessRaterTeacherScript:
 .Egg:
 	jumpthisopenedtext
 
-	text "That's an Egg."
-	line "It hasn't formed"
-	cont "any feelings yet."
+	text "Das ist ein Ei."
+	line "Es hat noch keine"
+	cont "Gefühle."
 	done
 
 .AdoresYou:
 	jumpthisopenedtext
 
-	text "It adores you!"
-	line "It can't possibly"
-	cont "love you any more."
+	text "Es vergöttert"
+	line "dich! Mehr kann es"
+	cont "dich nicht lieben."
 
-	para "I even feel happy"
-	line "seeing it! ♥"
+	para "Schon der Anblick"
+	line "macht mich froh! ♥"
 	done
 
 .LovesYouALot:
@@ -80,12 +80,12 @@ GoldenrodHappinessRaterTeacherScript:
 .Affectionate:
 	jumpthisopenedtext
 
-	text "It's quite affect-"
-	line "ionate with you!"
+	text "Es ist dir sehr"
+	line "zugetan!"
 
-	para "It seems to want"
-	line "to be babied a"
-	cont "little."
+	para "Es möchte wohl"
+	line "ein bisschen"
+	cont "verwöhnt werden."
 	done
 
 .ReallyTrustsYou:
@@ -109,9 +109,9 @@ GoldenrodHappinessRaterTeacherScript:
 .QuiteCute:
 	jumpthisopenedtext
 
-	text "It's warming up"
-	line "to you."
-	cont "It's quite cute."
+	text "Es fasst langsam"
+	line "Vertrauen zu dir."
+	cont "Es ist sehr süß."
 	done
 
 .NotUsedToYou:
@@ -125,27 +125,28 @@ GoldenrodHappinessRaterTeacherScript:
 	done
 
 .RefusedText:
-	text "Come back if you"
-	line "change your mind."
+	text "Komm wieder, wenn"
+	line "du es dir anders"
+	cont "überlegst."
 	done
 
 GoldenrodHappinessRaterAskCheckText:
-	text "If you treat your"
-	line "#mon nicely,"
+	text "Behandelst du"
+	line "deine #mon gut,"
 
-	para "they will love you"
-	line "in return."
+	para "werden sie dich"
+	line "regelrecht lieben."
 
-	para "Want me to check"
-	line "your #mon's"
-	cont "happiness?"
+	para "Soll ich prüfen,"
+	line "wie glücklich dein"
+	cont "#mon ist?"
 	done
 
 GoldenrodHappinessRaterTeacherText:
-	text "Oh? Let me see"
-	line "your "
+	text "Oh? Lass mich mal"
+	line ""
 	text_ram wStringBuffer3
-	text "…"
+	text " sehen…"
 	done
 
 GoldenrodHappinessRaterPokefanMText:
