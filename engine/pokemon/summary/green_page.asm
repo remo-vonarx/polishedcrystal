@@ -245,7 +245,7 @@ endr
 	db "---@"
 
 .String_PowAcc:
-	db "  P/   %@"
+	db "  S/   %@"
 
 SummaryScreen_MoveInfoLoop:
 	ld a, SUMMARY_TILE_OAM_MOVE_TITLE
