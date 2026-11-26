@@ -229,5 +229,5 @@ Found 2026-11-26 by a scan for strings still identical to Upstream: menus and ma
 
 - [x] The menus in 26 map files (shops, prize counters, ferries, the Dragon Shrine, Earl's blackboard, the Goldenrod tutor), the Spearow and Eevee mails, and the Vermilion pier sign: Kristall's words where its same screen has them.
 - [x] The wall words (`data/events/unown_walls.asm`): Kristall's FLUCHT, BLITZ, WASSER, and FEE for Polished's FAIRY. Decided 2026-11-26: FEE's box narrows to its three letters.
-- [ ] Test: every changed menu opened in the Regular ROM; the Ho-Oh chamber wall, compared with Kristall's.
+- [x] Test: every changed menu opened in the Regular ROM; the Ho-Oh chamber wall, compared with Kristall's.
 - [ ] Ship.
