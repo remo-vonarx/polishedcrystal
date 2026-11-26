@@ -47,8 +47,8 @@ EcruteakShrineOutsideSageText:
 	done
 
 EcruteakShrineOutsideStatueText:
-	text "A #mon statue…"
+	text "Eine PKMN-Statue…"
 
-	para "It looks very"
-	line "serene."
+	para "Sie sieht sehr"
+	line "gelassen aus."
 	done

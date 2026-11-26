@@ -303,17 +303,17 @@ Route13TrainerTips1Text:
 	done
 
 Route13TrainerTips2Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Some #mon need"
-	line "items to evolve."
+	para "Einige #mon"
+	line "brauchen Items,"
+	cont "um sich zu"
+	cont "entwickeln."
 
-	para "If you're lucky,"
-	line "a wild #mon can"
-
-	para "be found holding"
-	line "its own evolution"
-	cont "item!"
+	para "Mit etwas Glück"
+	line "trägt ein wildes"
+	cont "#mon schon sein"
+	cont "Entwicklungs-Item!"
 	done
 
 Route13SignText:

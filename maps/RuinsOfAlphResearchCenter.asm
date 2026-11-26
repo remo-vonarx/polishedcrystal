@@ -514,28 +514,30 @@ RuinsOfAlphResearchCenterComputerText_GotAllUnown:
 	done
 
 RuinsOfAlphResearchCenterPrinterText_DoesntWork:
-	text "It's a printer."
-	line "The display says"
+	text "Ein Drucker."
+	line "Das Display zeigt"
 	cont "“PC LOAD LETTER”."
 
-	para "…What does that"
-	line "mean?"
+	para "…Was soll das"
+	line "heißen?"
 	done
 
 RuinsOfAlphResearchCenterProfSilktreePhotoText:
-	text "It's a photo of"
-	line "the Research"
+	text "Ein Foto von Prof."
+	line "Silktree, dem"
 
-	para "Center's founder,"
-	line "Prof.Silktree."
+	para "Gründer des For-"
+	line "schungszentrums."
 	done
 
 RuinsOfAlphResearchCenterFossilComputerText:
-	text "“Resurrecting"
-	line "the Past”…"
+	text "“Wiederbelebung"
+	line "der Vergangen-"
+	cont "heit”…"
 
-	para "It's a paper on"
-	line "#mon fossils."
+	para "Eine Abhandlung"
+	line "über #mon-"
+	cont "Fossilien."
 	done
 
 RuinsOfAlphResearchCenterAcademicBooksText:

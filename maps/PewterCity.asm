@@ -240,8 +240,8 @@ PewterGymSignText:
 	done
 
 PewterMuseumOfScienceSignText:
-	text "Pewter Museum of"
-	line "Science"
+	text "Marmorias Museum"
+	line "der Wissenschaft"
 	done
 
 PewterCityMtMoonGiftShopSignText:
@@ -254,11 +254,12 @@ PewterCityMtMoonGiftShopSignText:
 	done
 
 PewterCityTrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "A #mon holding"
-	line "an Ability Cap"
-	cont "is more likely to"
-	cont "have a baby with"
-	cont "a rare ability."
+	para "Trägt ein #mon"
+	line "eine Fähigkeits-"
+	cont "kapsel, hat sein"
+	cont "Nachwuchs eher"
+	cont "eine seltene"
+	cont "Fähigkeit."
 	done

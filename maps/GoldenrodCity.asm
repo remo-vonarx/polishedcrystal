@@ -469,10 +469,10 @@ GoldenrodCitySignText:
 	done
 
 GoldenrodCityBikeShopSignText:
-	text "The World is a"
-	line "Cycle Path!"
+	text "Die Welt ist ein"
+	line "Radweg!"
 
-	para "Miracle Cycle"
+	para "Fahrradladen"
 	done
 
 GoldenrodCityGameCornerSignText:
@@ -491,13 +491,13 @@ GoldenrodCityNameRaterSignText:
 	done
 
 GoldenrodCityUndergroundSignText:
-	text "Underground"
-	line "Entrance"
+	text "Untergrund-"
+	line "Eingang"
 	done
 
 PokeComCenterSignText:
-	text "Connect the World!"
-	line "#Com Center"
+	text "Verbinde die Welt!"
+	line "#Kom-Center"
 	done
 
 GoldenrodCityFlowerShopSignText:
@@ -506,11 +506,11 @@ GoldenrodCityFlowerShopSignText:
 	done
 
 GoldenrodMuseumSignText:
-	text "Goldenrod Museum"
-	line "Grand Opening!"
+	text "Dukatia-Museum"
+	line "Große Eröffnung!"
 
-	para "Explore the"
-	line "history of Johto!"
+	para "Entdecke die"
+	line "Geschichte Johtos!"
 	done
 
 GoldenrodCityMoveTutorAskTeachAMoveText:

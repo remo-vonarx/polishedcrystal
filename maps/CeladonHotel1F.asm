@@ -100,19 +100,21 @@ RichBoyGeraldNoBattleText:
 	done
 
 CeladonHotel1FSignpost1Text:
-	text "Celadon Hotel"
+	text "Prismania-Hotel"
 
-	para "Enjoy your stay!"
+	para "Einen schönen"
+	line "Aufenthalt!"
 	done
 
 CeladonHotel1FSignpost2Text:
-	text "Hotel Pool"
+	text "Hotelpool"
 
-	para "Please wear a swim"
-	line "cap in the water."
+	para "Bitte im Wasser"
+	line "eine Badekappe"
+	cont "tragen."
 	done
 
 CeladonHotel1FSignpost3Text:
-	text "Suites"
-	line "Upstairs"
+	text "Suiten"
+	line "im Obergeschoss"
 	done

@@ -203,30 +203,31 @@ FuchsiaAquarium1FChinchouSign:
 	done
 
 FuchsiaAquarium1FLaprasStatueSignText:
-	text "Lapras were once"
-	line "near extinction"
-	cont "due to poaching."
+	text "Lapras waren einst"
+	line "wegen Wilderei"
+	cont "fast ausgestorben."
 
-	para "Thanks to captive"
-	line "breeding efforts"
-	cont "run by Silph Co."
+	para "Dank der Zucht in"
+	line "Gefangenschaft"
+	cont "durch Silph Co."
 
-	para "and new protective"
-	line "regulations, there"
+	para "und neuer Schutz-"
+	line "bestimmungen gibt"
 
-	para "is now an over-"
-	line "abundance of them."
+	para "es heute sogar"
+	line "zu viele davon."
 	done
 
 FuchsiaAquarium1FPoster1Text:
-	text "Please do not tap"
-	line "on the glass."
+	text "Bitte nicht gegen"
+	line "die Scheibe"
+	cont "klopfen."
 	done
 
 FuchsiaAquarium1FPoster2Text:
-	text "Please do not"
-	line "throw anything"
-	cont "inside the tanks."
+	text "Bitte nichts in"
+	line "die Becken"
+	cont "werfen."
 	done
 
 FuchsiaAquarium1FReceptionistText:

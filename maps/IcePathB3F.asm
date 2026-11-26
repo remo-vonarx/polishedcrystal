@@ -125,11 +125,11 @@ LoreleiReintroductionScript:
 	sjump LoreleiAfterRematchIntroScript
 
 Text_IcePathB3FIceRock:
-	text "The boulder is"
-	line "coated with ice."
+	text "Der Fels ist mit"
+	line "Eis überzogen."
 
-	para "It is bone-chill-"
-	line "ing to touch."
+	para "Er fühlt sich"
+	line "eiskalt an."
 	done
 
 LoreleiIntroText:

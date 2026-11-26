@@ -140,14 +140,17 @@ CinnabarIslandBlueReadyText:
 
 
 CinnabarIslandGymSignText:
-	text "There's a notice"
-	line "here…"
+	text "Hier ist eine"
+	line "Nachricht…"
 
-	para "“Cinnabar Gym has"
-	line "relocated to Sea-"
-	cont "foam Islands.”"
+	para "“Die PKMN-Arena"
+	line "der Zinnoberinsel"
 
-	para "-- Blaine"
+	para "wurde auf die"
+	line "Seeschauminseln"
+	cont "verlegt.”"
+
+	para "-- Pyro"
 	done
 
 CinnabarIslandSignText:
@@ -159,13 +162,13 @@ CinnabarIslandSignText:
 	done
 
 CinnabarIslandVolcanoWarningSignText:
-	text "CAUTION"
+	text "VORSICHT"
 
-	para "Cinnabar Volcano"
-	line "is dormant, but"
-	cont "still active!"
+	para "Der Zinnober-Vul-"
+	line "kan ruht, ist aber"
+	cont "noch aktiv!"
 
-	para "Do not enter the"
-	line "volcano without"
-	cont "a means of escape!"
+	para "Betritt den Vulkan"
+	line "nicht ohne einen"
+	cont "Fluchtweg!"
 	done

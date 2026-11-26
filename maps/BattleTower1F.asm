@@ -139,12 +139,12 @@ BattleTower1FRulesScript:
 		done
 
 BattleTower1FStreakText:
-	text "Streak: "
+	text "Serie:"
 	text_decimal wBattleTowerCurStreak, 2, 5
-	text " wins"
-	line "Record: "
+	text " Siege"
+	line "Rekord:"
 	text_decimal wBattleTowerTopStreak, 2, 5
-	text " wins"
+	text " Siege"
 	done
 
 BattleTower1FReceptionistScript:

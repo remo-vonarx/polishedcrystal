@@ -29,13 +29,13 @@ CeladonHotel2FTeacherText:
 	done
 
 CeladonHotel2FRoom1Text:
-	text "Room 1"
+	text "Zimmer 1"
 	done
 
 CeladonHotel2FRoom2Text:
-	text "Room 2"
+	text "Zimmer 2"
 	done
 
 CeladonHotel2FRoom3Text:
-	text "Room 3"
+	text "Zimmer 3"
 	done

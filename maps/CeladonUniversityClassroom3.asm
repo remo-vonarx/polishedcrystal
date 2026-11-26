@@ -98,40 +98,42 @@ CeladonUniversityClassroom3Super_nerdText:
 	done
 
 CeladonUniversityClassroom3BlackboardText:
-	text "'Phylogenetics'"
-	line "is on the board."
+	text "An der Tafel steht"
+	line "“Phylogenetik”."
 
-	para "“…#mon can be"
-	line "divided into 14"
-	cont "“Egg groups”,"
-	cont "plus Ditto."
+	para "“…#mon lassen"
+	line "sich in 14"
+	cont "“Ei-Gruppen”"
+	cont "einteilen, dazu"
+	cont "Ditto."
 
-	para "Baby #mon can-"
-	line "not breed."
+	para "Baby-#mon"
+	line "können sich nicht"
+	cont "fortpflanzen."
 
-	para "Legendary #mon"
-	line "have not been"
-	cont "studied.”"
+	para "Legendäre #mon"
+	line "wurden noch nicht"
+	cont "erforscht.”"
 	done
 
 CeladonUniversityClassroom3Bookshelf1Text:
-	text "It's a book of"
-	line "prototype designs"
+	text "Ein Buch mit"
+	line "Prototyp-Entwürfen"
 
-	para "for technological"
-	line "devices."
+	para "für technische"
+	line "Geräte."
 
-	para "Hey! An early"
-	line "#gear diagram"
-	cont "is in here!"
+	para "Hey! Eine frühe"
+	line "#Com-Skizze ist"
+	cont "hier drin!"
 	done
 
 CeladonUniversityClassroom3Bookshelf2Text:
-	text "It's a paper writ-"
-	line "ten by Prof."
+	text "Eine Abhandlung"
+	line "von Prof."
 	cont "Silktree."
 
-	para "“Ruins of Alph"
-	line "Investigation"
-	cont "Report”…"
+	para "“Untersuchungs-"
+	line "bericht zu den"
+	cont "Alph-Ruinen”…"
 	done

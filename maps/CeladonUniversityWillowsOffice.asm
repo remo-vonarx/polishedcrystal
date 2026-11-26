@@ -61,31 +61,30 @@ CeladonUniversityWillowsOfficeScientistText:
 	done
 
 CeladonUniversityWillowsOfficeBlackboardText:
-	text "Someone wrote “DO"
-	line "NOT ERASE” with"
+	text "Jemand schrieb"
+	line "“NICHT LÖSCHEN”"
 
-	para "an arrow toward"
-	line "an illegible"
-	cont "scrawl…"
+	para "mit einem Pfeil"
+	line "auf ein unleser-"
+	cont "liches Gekritzel…"
 	done
 
 CeladonUniversityWillowsOfficeBookshelf1Text:
-	text "It's a book about"
-	line "ecological niches"
+	text "Ein Buch über öko-"
+	line "logische Nischen"
 
-	para "and how #mon"
-	line "fit within their"
-	cont "environments."
+	para "und wie #mon in"
+	line "ihre Umgebung"
+	cont "passen."
 	done
 
 CeladonUniversityWillowsOfficeBookshelf2Text:
-	text "It's a promotional"
-	line "flyer for the"
-	cont "Safari Zone."
+	text "Ein Werbeflyer für"
+	line "die Safari-Zone."
 
-	para "Lots of exotic-"
-	line "looking #mon"
-	cont "adorn it."
+	para "Viele exotisch"
+	line "aussehende #mon"
+	cont "zieren ihn."
 	done
 
 CeladonUniversityWillowsOfficeComputer:

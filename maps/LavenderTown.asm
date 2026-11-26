@@ -204,10 +204,11 @@ VolunteerPokemonHouseSignText:
 	done
 
 SoulHouseSignText:
-	text "House of Souls"
+	text "Ruhestätte"
 
-	para "May the Souls of"
-	line "#mon Rest Easy"
+	para "Mögen die Seelen"
+	line "der #mon hier"
+	cont "in Frieden Ruhen"
 	done
 
 LavenderTownPokefanMText:

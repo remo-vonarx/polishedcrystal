@@ -56,17 +56,17 @@ ValenciaIslandYoungsterScript:
 	done
 
 ValenciaIslandSignText:
-	text "Valencia Island"
+	text "Valencia Insel"
 
-	para "Bitter Oranges"
-	line "and Sweet Breezes"
+	para "Bittere Orangen"
+	line "und süße Brisen"
 	done
 
 ValenciaIslandGoneFishingSignText:
-	text "Gone Fishing"
+	text "Bin angeln"
 
-	para "(On vacation"
-	line "in Alola!)"
+	para "(Im Urlaub in"
+	line "Alola!)"
 	done
 
 ValenciaIslandLockedDoorText:
@@ -74,10 +74,10 @@ ValenciaIslandLockedDoorText:
 	done
 
 IvysLabSignText:
-	text "Ivy Research"
-	line "№.2 Bayview"
+	text "Forschung Ivy"
+	line "Bayview №.2"
 	done
 
 IvysHouseSignText:
-	text "Ivy's House"
+	text "Ivys Haus"
 	done

@@ -192,11 +192,11 @@ CeladonHomeDecorStore1FCooltrainerfText:
 	done
 
 CeladonHomeDecorStore1FDirectoryText:
-	text "1F: Lobby"
+	text "EG: Eingangshalle"
 
-	para "2F: Beds"
+	para "1S: Betten"
 
-	para "3F: Carpets"
+	para "2S: Teppiche"
 
-	para "4F: Jumbo Dolls"
+	para "3S: Riesenpuppen"
 	done

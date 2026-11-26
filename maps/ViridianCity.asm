@@ -240,29 +240,30 @@ ViridianGymSignText:
 	done
 
 ViridianCityTrainerTips1Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Catch #mon"
-	line "and expand your"
-	cont "collection!"
+	para "Fange #mon und"
+	line "erweitere deine"
+	cont "Sammlung!"
 
-	para "The more you have,"
-	line "the easier it is"
-	cont "to fight!"
+	para "Je mehr du hast,"
+	line "desto leichter"
+	cont "kämpfst du!"
 	done
 
 ViridianCityTrainerTips2Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "The world is a"
-	line "big place!"
+	para "Die Welt ist"
+	line "riesig!"
 
-	para "Don't just run or"
-	line "Fly everywhere--"
-	cont "look around you!"
+	para "Renn nicht nur"
+	line "herum und nutze"
+	cont "nicht nur Fliegen,"
+	cont "sieh dich um!"
 
-	para "You'll find new and"
-	line "exciting things!"
+	para "Du wirst Neues und"
+	line "Spannendes finden!"
 	done
 
 TrainerHouseSignText:

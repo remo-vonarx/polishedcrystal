@@ -123,212 +123,209 @@ CeladonUniversityLibrary2FYoungsterText:
 	done
 
 CeladonUniversityLibrary2FBookshelf1Text:
-	text "It's a book con-"
-	line "taining #mon"
+	text "Ein Buch über"
+	line "#mon eines"
 
-	para "of an ancient"
-	line "alphabet."
+	para "alten Alphabets."
 
-	para "With one of each"
-	line "kind, they can"
-	cont "grant wishes."
+	para "Hat man je eins"
+	line "von jeder Art,"
+	cont "sollen sie Wün-"
+	cont "sche erfüllen."
 	done
 
 CeladonUniversityLibrary2FBookshelf2Text:
-	text "This book is"
-	line "falling apart."
+	text "Dieses Buch fällt"
+	line "auseinander."
 
-	para "The title is no"
-	line "longer readable,"
+	para "Der Titel ist"
+	line "nicht mehr lesbar,"
 
-	para "but there's a pic-"
-	line "ture of a #mon"
+	para "aber man sieht ein"
+	line "#mon in einer"
 
-	para "wearing heavy"
-	line "armor."
+	para "schweren Rüstung."
 	done
 
 CeladonUniversityLibrary2FBookshelf3Text:
-	text "It's a book with a"
-	line "giant padlock on"
-	cont "the cover."
+	text "Ein Buch mit einem"
+	line "riesigen Vorhänge-"
+	cont "schloss darauf."
 
-	para "Better leave it"
-	line "alone."
+	para "Lass es lieber"
+	line "liegen."
 	done
 
 CeladonUniversityLibrary2FBookshelf4Text:
-	text "This book's written"
-	line "in a foreign"
-	cont "language!"
+	text "Dieses Buch ist in"
+	line "einer fremden"
+	cont "Sprache!"
 
-	para "Better put it"
-	line "back…"
+	para "Stell es lieber"
+	line "zurück…"
 	done
 
 CeladonUniversityLibrary2FBookshelf5Text:
-	text "Behind these"
-	line "books…"
+	text "Hinter diesen"
+	line "Büchern…"
 
-	para "Nope. There's"
-	line "nothing here."
+	para "Nein. Hier scheint"
+	line "nichts zu sein."
 	done
 
 CeladonUniversityLibrary2FBookshelf6Text:
-	text "It's a book about"
-	line "#mon that have"
+	text "Ein Buch über"
+	line "#mon mit"
 
-	para "regional diff-"
-	line "erences."
+	para "regionalen Unter-"
+	line "schieden."
 
-	para "There's a picture"
-	line "of a Raichu that"
-	cont "looks a little"
-	cont "strange…"
+	para "Darin ist ein"
+	line "Raichu, das etwas"
+	cont "seltsam aussieht…"
 	done
 
 CeladonUniversityLibrary2FBookshelf7Text:
-	text "It's a book about"
-	line "#mon Contests."
+	text "Ein Buch über"
+	line "Wettbewerbe für"
+	cont "#mon."
 
-	para "An impressive-"
-	line "looking building"
+	para "Ein eindrucks-"
+	line "volles Gebäude"
 
-	para "is pictured on"
-	line "the cover."
+	para "ist auf dem"
+	line "Umschlag zu sehen."
 	done
 
 CeladonUniversityLibrary2FBookshelf8Text:
-	text "A boy is shown"
-	line "riding a #mon"
+	text "Auf dem Umschlag"
+	line "reitet ein Junge"
 
-	para "on the cover"
-	line "of this book."
+	para "auf einem #mon."
 
-	para "“How to Train Your"
-	line "Dragonite” is"
-	cont "written in bold."
+	para "“Dragoran zähmen"
+	line "leicht gemacht”"
+	cont "steht in dicken"
+	cont "Buchstaben darauf."
 	done
 
 CeladonUniversityLibrary2FBookshelf9Text:
-	text "It's a book de-"
-	line "picting a world"
+	text "Ein Buch über eine"
+	line "Welt, in der nur"
 
-	para "inhabited entirely"
-	line "by #mon!"
+	para "#mon leben!"
 
-	para "“Pikachu's Adven-"
-	line "tures in #Park”"
+	para "“Pikachus Aben-"
+	line "teuer im #Park”"
 
-	para "is written on the"
-	line "cover."
+	para "steht auf dem"
+	line "Umschlag."
 	done
 
 CeladonUniversityLibrary2FBookshelf10Text:
-	text "It's a book about"
-	line "an island of giant"
-	cont "#mon robots."
+	text "Ein Buch über eine"
+	line "Insel riesiger"
+	cont "#mon-Roboter."
 
-	para "“#mon Robotics”"
-	line "by Anne Droid…"
+	para "“#mon-Robotik”"
+	line "von Anne Droid…"
 	done
 
 CeladonUniversityLibrary2FBookshelf11Text:
-	text "“Forgive and"
-	line "Forget” by Saul"
-	cont "Goode."
+	text "“Vergeben und"
+	line "Vergessen” von"
+	cont "Saul Goode."
 
-	para "There's a picture"
-	line "of a man with a"
-	cont "big grin."
+	para "Darauf ist ein"
+	line "Mann mit breitem"
+	cont "Grinsen zu sehen."
 	done
 
 CeladonUniversityLibrary2FBookshelf12Text:
-	text "“Weightlessness”"
-	line "by Andy Gravity."
-	cont "Sounds flighty!"
+	text "“Schwerelosigkeit”"
+	line "von Andy Gravity."
+	cont "Klingt abgehoben!"
 	done
 
 CeladonUniversityLibrary2FBookshelf13Text:
-	text "It's a book"
-	line "explaining the"
+	text "Ein Buch, das die"
+	line "Biologie der"
 
-	para "biology of"
-	line "#mon."
+	para "#mon erklärt."
 
-	para "It's enormous!"
+	para "Es ist riesig!"
 	done
 
 CeladonUniversityLibrary2FBookshelf14Text:
-	text "This book is"
-	line "covered in"
-	cont "cobwebs."
+	text "Dieses Buch ist"
+	line "voller Spinn-"
+	cont "weben."
 
-	para "Guess it hasn't"
-	line "been read in a"
-	cont "while."
+	para "Es wurde wohl"
+	line "lange nicht mehr"
+	cont "gelesen."
 	done
 
 CeladonUniversityLibrary2FBookshelf15Text:
-	text "It's a book de-"
-	line "picting a fearsome"
+	text "Ein Buch über ein"
+	line "furchterregendes"
 	cont "#mon."
 
-	para "“Absofusion and"
-	line "the Tao Trio” is"
+	para "“Absofusion und"
+	line "das Tao-Trio”"
 
-	para "written in big"
-	line "letters."
+	para "steht in großen"
+	line "Buchstaben darauf."
 	done
 
 CeladonUniversityLibrary2FBookshelf16Text:
-	text "“Ancient #-"
-	line "mopolis: A History"
+	text "“Antikes #mopo-"
+	line "lis: Eine Ge-"
 
-	para "of Extinct"
-	line "#mon”"
+	para "schichte ausge-"
+	line "storbener #mon”"
 
-	para "Sounds"
-	line "interesting!"
+	para "Klingt"
+	line "interessant!"
 	done
 
 CeladonUniversityLibrary2FBookshelf17Text:
-	text "It's a book titled"
-	line "“Typecasting: The"
+	text "Ein Buch mit dem"
+	line "Titel “Falscher"
 
-	para "Mystery of"
-	line "Sudowoodo”."
+	para "Typ: Das Rätsel"
+	line "um Mogelbaum”."
 	done
 
 CeladonUniversityLibrary2FBookshelf18Text:
-	text "It's a book about"
-	line "an ancient tree"
+	text "Ein Buch über"
+	line "einen uralten"
 
-	para "guarded by three"
-	line "titans."
+	para "Baum, den drei"
+	line "Titanen bewachen."
 
-	para "It looks almost"
-	line "magical."
+	para "Es wirkt beinahe"
+	line "magisch."
 	done
 
 CeladonUniversityLibrary2FBookshelf19Text:
-	text "It's a copy of the"
-	line "original route for"
-	cont "the Magnet Train!"
+	text "Das ist eine Kopie"
+	line "der ursprünglichen"
+	cont "Magnetzug-Route!"
 
-	para "It shows a planned"
-	line "stop-off station"
-	cont "in Ecruteak City."
+	para "Sie zeigt einen"
+	line "geplanten Halt"
+	cont "in Teak City."
 	done
 
 CeladonUniversityLibrary2FBookshelf20Text:
-	text "Red books,"
-	line "blue books,"
-	cont "yellow books,"
-	cont "green books…"
+	text "Rote Bücher,"
+	line "blaue Bücher,"
+	cont "gelbe Bücher,"
+	cont "grüne Bücher…"
 
-	para "Books of every"
-	line "color!"
+	para "Bücher in allen"
+	line "Farben!"
 	done
 
 CeladonUniversityLibrary2FComputer1:

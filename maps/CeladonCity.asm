@@ -315,10 +315,10 @@ CeladonGymSignText:
 	done
 
 CeladonUniversitySignText:
-	text "Celadon University"
+	text "Prismania-Uni"
 
-	para "“Growth Through"
-	line "Studying”"
+	para "“Wachstum durch"
+	line "Lernen”"
 	done
 
 CeladonCityDeptStoreSignText:
@@ -330,70 +330,75 @@ CeladonCityDeptStoreSignText:
 	done
 
 CeladonCityHomeDecorStoreSignText:
-	text "Celadon Dept.Store"
-	line "Home Decor Wing"
+	text "Einkaufszentrum"
+	line "Anbau: Wohndeko"
 	done
 
 CeladonCityMansionSignText:
-	text "Celadon"
-	line "Condominiums"
+	text "Prismania-Villa"
 	done
 
 CeladonCityGameCornerSignText:
-	text "The Playground for"
-	line "Everybody!"
+	text "Der Spielplatz"
+	line "Für Jedermann!"
 
-	para "Celadon City"
-	line "Game Corner"
+	para "Spielhalle von"
+	line "Prismania City"
 	done
 
 CeladonCityPrizeExchangeSignText:
-	text "Coins exchanged"
-	line "for prizes!"
-	cont "Prize Exchange"
+	text "Münzen gegen"
+	line "Preise tauschen!"
+	cont "Preistausch"
 	done
 
 CeladonCityCafeSignText:
-	text "Celadon Diner"
+	text "Restaurant"
+	line "Prismania"
 
-	para "Eatathon Contest"
-	line "all day today!"
+	para "Heute den ganzen"
+	line "Tag Wettessen!"
 	done
 
 CeladonCityHotelSignText:
-	text "Celadon Hotel"
+	text "Prismania-Hotel"
 
-	para "Relax in our"
-	line "swimming pool!"
+	para "Entspann dich in"
+	line "unserem Pool!"
 	done
 
 CeladonCityTrainerTips1Text:
-	text "Trainer Tips"
-
+	text "Tipps für Trainer"
 if DEF(FAITHFUL)
-	para "Guard Spec."
+
+	para "Der Megablock"
 else
-	para "Guard Stats"
+
+	para "Der Megablock"
 endc
-	line "protects #mon"
+	line "schützt #mon"
 
-	para "against stat"
-	line "reductions."
+	para "davor, dass ihre"
+	line "Werte gesenkt"
+	cont "werden."
 
-	para "Get your items at"
-	line "Celadon Dept."
-	cont "Store!"
+	para "Hol dir deine"
+	line "Items im Einkaufs-"
+	cont "zentrum von"
+	cont "Prismania City!"
 	done
 
 CeladonCityTrainerTips2Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Eevee is a #mon"
-	line "full of potential."
+	para "Evoli ist ein"
+	line "#mon voller"
+	cont "Potenzial."
 
-	para "Try exposing it to"
-	line "many different"
-	cont "locations, times"
-	cont "of day, and"
-	cont "Evolution stones."
+	para "Bring es an viele"
+	line "Orte, zu ver-"
+	cont "schiedenen Tages-"
+	cont "zeiten und mit"
+	cont "Entwicklungs-"
+	cont "steinen zusammen!"
 	done

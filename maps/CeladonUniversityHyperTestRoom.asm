@@ -420,20 +420,20 @@ CeladonUniversityHyperTestRoomMagikarpSign:
 	done
 
 CeladonUniversityHyperTestRoomBookshelf1Text:
-	text "This book has a"
-	line "bookmark in it."
+	text "Dieses Buch hat"
+	line "ein Lesezeichen."
 
-	para "Someone's not done"
-	line "with it yet!"
+	para "Jemand liest es"
+	line "wohl noch!"
 	done
 
 CeladonUniversityHyperTestRoomBookshelf2Text:
-	text "It's a copy of"
+	text "Eine Ausgabe der"
 	line "Nintendo Power!"
 
-	para "A Pikachu picture"
-	line "fills the front"
-	cont "cover."
+	para "Das Titelbild"
+	line "zeigt ein großes"
+	cont "Pikachu."
 	done
 
 CeladonUniversityHyperTestRoomComputer:

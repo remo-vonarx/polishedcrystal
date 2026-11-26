@@ -518,9 +518,10 @@ DarkCaveSignText:
 	done
 
 Route31AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "Press Start in"
-	line "the Bag to sort"
-	cont "an item pocket!"
+	para "Drücke im Beutel"
+	line "START, um eine"
+	cont "Tasche zu sortie-"
+	cont "ren!"
 	done

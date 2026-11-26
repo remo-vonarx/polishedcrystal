@@ -687,29 +687,29 @@ Route43TrainerTipsText:
 	done
 
 Route43AdvancedTipsText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "A #mon can pass"
-	line "down its nature"
-	cont "via inheritance"
+	para "Trägt ein #mon"
+	line "einen Ewigstein,"
+	cont "kann es sein"
+	cont "Wesen vererben!"
 
-	para "if it is holding"
-	line "an Everstone!"
+	para "Ein Fatumknoten"
+	line "kann sein ganzes"
+	cont "Potenzial weiter-"
+	cont "geben!"
 
-	para "A Destiny Knot can"
-	line "pass down all of"
-	cont "its potential!"
+	para "Die sechs Macht-"
+	line "Items vererben"
 
-	para "The six Power"
-	line "items can pass"
+	para "das Potenzial"
+	line "ihres Wertes!"
 
-	para "down potential in"
-	line "their one stat!"
+	para "Und eine Fähig-"
+	line "keitskapsel erhöht"
 
-	para "And an Ability"
-	line "Cap can increase"
-
-	para "the chances of"
-	line "offspring with a"
-	cont "hidden Ability!"
+	para "die Chance auf"
+	line "Nachwuchs mit"
+	cont "versteckter"
+	cont "Fähigkeit!"
 	done

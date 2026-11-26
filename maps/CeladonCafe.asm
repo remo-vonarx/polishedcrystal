@@ -261,7 +261,7 @@ EatathonContestPosterText:
 	done
 
 EatathonContestTrashCanText:
-	text "The trash is full"
-	line "of eatathon left-"
-	cont "overs…"
+	text "Der Müll ist voll"
+	line "mit Resten vom"
+	cont "Wettessen…"
 	done

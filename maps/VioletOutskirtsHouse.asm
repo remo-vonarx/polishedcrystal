@@ -150,14 +150,14 @@ VioletOutskirtsHouseNotSafeHereText:
 	done
 
 VioletOutskirtsHouseRadioText:
-	text "It doesn't seem"
-	line "to work."
+	text "Das scheint nicht"
+	line "zu funktionieren."
 	done
 
 VioletOutskirtsHouseDustText:
-	text "It's covered in a"
-	line "thick layer of"
-	cont "dust."
+	text "Es ist mit einer"
+	line "dicken Staub-"
+	cont "schicht bedeckt."
 	done
 
 VioletOutskirtsHouseNotAloneText:

@@ -41,8 +41,8 @@ PokemonJournalBillScript:
 	done
 
 BillsHousePCText:
-	text "There's a spinning"
-	line "3D model of a"
+	text "Ein rotierendes"
+	line "3D-Modell eines"
 	cont "Porygon."
 	done
 

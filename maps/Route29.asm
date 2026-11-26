@@ -319,8 +319,8 @@ TuscanyTuesdayText:
 Route29Sign1Text:
 	text "Route 29"
 
-	para "New Bark Town -"
-	line "Cherrygrove City"
+	para "Neuborkia -"
+	line "Rosalia City"
 	done
 
 Route29Sign2Text:
@@ -331,15 +331,16 @@ Route29Sign2Text:
 	done
 
 Route29AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "Press Down+B at"
-	line "the title screen"
+	para "Drücke Unten+B im"
+	line "Titelbildschirm,"
 
-	para "to reset the"
-	line "clock!"
+	para "um die Uhr zu-"
+	line "rückzusetzen!"
 
-	para "Press Left+B to"
-	line "reset the initial"
-	cont "game options!"
+	para "Drücke Links+B, um"
+	line "die anfänglichen"
+	cont "Spieloptionen zu-"
+	cont "rückzusetzen!"
 	done

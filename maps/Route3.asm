@@ -278,14 +278,15 @@ GenericTrainerAceDuoZacandjen2:
 	done
 
 Route3MeteoriteText:
-	text "Never seen a stone"
-	line "like this before!"
+	text "So einen Stein ha-"
+	line "be ich noch nie"
+	cont "gesehen!"
 
-	para "Could it be…"
-	line "a meteorite from"
-	cont "space?"
+	para "Ist das etwa…"
+	line "ein Meteorit aus"
+	cont "dem All?"
 	done
 
 Route3MtMoonSquareSignText:
-	text "Mt.Moon Tunnel"
+	text "Mondberg-Tunnel"
 	done

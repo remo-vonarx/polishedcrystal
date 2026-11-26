@@ -133,14 +133,14 @@ ShamoutiIslandFisherText:
 	done
 
 ShamoutiIslandSignText:
-	text "Shamouti Island"
+	text "Shamouti"
 	done
 
 ShamoutiHotelSignText:
-	text "Shamouti Hotel"
+	text "Hotel Shamouti"
 	done
 
 ShamoutiTouristCenterSignText:
-	text "Shamouti Tourist"
-	line "Center"
+	text "Touristenzentrum"
+	line "Shamouti"
 	done

@@ -185,19 +185,19 @@ OfficerfJennyScript:
 	done
 
 Route6AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "Some items may"
-	line "seem harmful to"
-	cont "the holder, like"
+	para "Manche Items"
+	line "scheinen ihrem"
+	cont "Träger zu schaden,"
 
-	para "an Iron Ball or"
-	line "a Choice Scarf."
+	para "wie Eisenkugel"
+	line "oder Wahlschal."
 
-	para "But with the move"
-	line "Trick, the holder"
+	para "Doch mit Trick-"
+	line "betrug kann der"
 
-	para "can swap their"
-	line "item with the"
-	cont "opponent!"
+	para "Träger sein Item"
+	line "mit dem Gegner"
+	cont "tauschen!"
 	done

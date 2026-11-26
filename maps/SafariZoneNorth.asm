@@ -180,38 +180,40 @@ Text_SafariZoneNorthTutorQuestion:
 
 
 SafariZoneNorthAreaSignText:
-	text "Safari Zone"
-	line "North Area"
+	text "Safari-Zone"
+	line "Nordbereich"
 	done
 
 SafariZoneNorthRestHouseSignText:
-	text "Rest House"
+	text "Rasthaus"
 	done
 
 SafariZoneNorthTrainerTips1SignText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Moves of the same"
-	line "type can be"
-	cont "physical, special,"
-	cont "or status-based."
+	para "Attacken desselben"
+	line "Typs können Kör-"
+	cont "per-, Spezial-"
+	cont "oder Status-At-"
+	cont "tacken sein."
 	done
 
 SafariZoneNorthTrainerTips2SignText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "#mon hide in"
-	line "tall grass!"
+	para "#mon verstecken"
+	line "sich im hohen"
+	cont "Gras!"
 
-	para "Zigzag through"
-	line "grassy areas to"
-	cont "flush them out."
+	para "Lauf im Zickzack"
+	line "durchs Gras, um"
+	cont "sie aufzustöbern."
 	done
 
 SafariZoneNorthTrainerTips3SignText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "The rest of the"
-	line "sign has been"
-	cont "torn away…"
+	para "Der Rest des"
+	line "Schildes wurde"
+	cont "abgerissen…"
 	done

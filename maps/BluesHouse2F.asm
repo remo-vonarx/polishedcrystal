@@ -17,18 +17,20 @@ BluesHouse2F_MapScriptHeader:
 	def_object_events
 
 BluesHouse2FPCText:
-	text "There's a program"
-	line "simulating a bat-"
-	cont "tle between a"
+	text "Ein Programm si-"
+	line "muliert einen"
+	cont "Kampf zwischen"
 
-	para "Blastoise and a"
-	line "Dragonite."
+	para "Turtok und"
+	line "Dragoran."
 	done
 
 BluesHouse2FSNESText:
-	text "<PLAYER> played the"
-	line "SNES."
+	text "<PLAYER> spielt"
+	line "Super NES."
 
-	para "Better get going--"
-	line "no time to lose!"
+	para "Mach besser"
+	line "weiter - du hast"
+	cont "keine Zeit zu"
+	cont "verlieren!"
 	done

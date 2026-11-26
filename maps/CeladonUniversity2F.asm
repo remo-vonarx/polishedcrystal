@@ -160,30 +160,29 @@ CeladonUniversity2FYoungster2Text:
 	done
 
 CeladonUniversity2FCafeteriaSignText:
-	text "Cafeteria"
+	text "Mensa"
 	done
 
 CeladonUniversity2FHyperTestSignText:
-	text "Hyper Test Room"
+	text "Hypertest-Raum"
 	done
 
 CeladonUniversity2FPoolSignText:
-	text "Swimming Pool"
+	text "Schwimmbad"
 	done
 
 CeladonUniversity2FWillowsOfficeSignText:
-	text "Prof.Willow's"
-	line "Office"
+	text "Prof. Willows"
+	line "Büro"
 	done
 
 CeladonUniversity2FNursesOfficeSignText:
-	text "Nurse's"
-	line "Office"
+	text "Krankenstation"
 	done
 
 CeladonUniversity2FWestwoodsOfficeSignText:
-	text "Prof.Westwood's"
-	line "Office"
+	text "Prof. Westwoods"
+	line "Büro"
 	done
 
 CeladonUniversity2FMagikarpSign:

@@ -279,10 +279,10 @@ RuinsOfAlphOutsideMysteryChamberSignText:
 	done
 
 RuinsOfAlphOutsideMysteriousHallSignText:
-	text "Mysterious Hall"
+	text "Mysteriöse Halle"
 
-	para "Please watch"
-	line "your step."
+	para "Pass auf, wo du"
+	line "hintrittst!"
 	done
 
 RuinsOfAlphSignText:
@@ -299,17 +299,19 @@ RuinsOfAlphResearchCenterSignText:
 	done
 
 RuinsOfAlphAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "The #dex is a"
-	line "powerful tool!"
+	para "Der #dex ist"
+	line "ein mächtiges"
+	cont "Werkzeug!"
 
-	para "Its Area map shows"
-	line "a yellow icon if a"
+	para "Seine Gebietskarte"
+	line "zeigt ein gelbes"
 
-	para "#mon can be"
-	line "found right where"
-	cont "you are!"
+	para "Symbol, wenn ein"
+	line "#mon genau da"
+	cont "vorkommt, wo du"
+	cont "gerade bist!"
 	done
 
 MapRuinsofAlphOutsideSealedCaveSign:

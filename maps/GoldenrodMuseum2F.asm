@@ -131,9 +131,10 @@ EmptyPuzzleText:
 	done
 
 TowerRelicText:
-	text "An ancient mural"
-	line "depicting a mys-"
-	cont "terious #mon."
+	text "Ein uraltes"
+	line "Wandgemälde mit"
+	cont "einem mysteriösen"
+	cont "#mon."
 	done
 
 GoldenrodMuseum2FSightseerMText:

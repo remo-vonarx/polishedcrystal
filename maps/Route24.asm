@@ -211,20 +211,21 @@ Route24RocketDisappearsText:
 	done
 
 Route24AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "The Sheer Force"
-	line "Ability negates"
+	para "Die Fähigkeit"
+	line "Rohe Gewalt hebt"
 
-	para "side effects of"
-	line "moves, but it"
+	para "Nebeneffekte von"
+	line "Attacken auf, aber"
 
-	para "also negates some"
-	line "other effects!"
+	para "auch einige"
+	line "andere Effekte!"
 
-	para "In particular,"
-	line "the damage done"
+	para "Insbesondere wird"
+	line "der Schaden durch"
 
-	para "by a held Life Orb"
-	line "is ignored!"
+	para "einen getragenen"
+	line "Leben-Orb"
+	cont "ignoriert!"
 	done

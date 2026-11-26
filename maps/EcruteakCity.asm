@@ -230,22 +230,24 @@ EcruteakGymSign:
 	done
 
 EcruteakCityAdvancedTips:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "Some #mon you"
-	line "encounter may"
+	para "Manche #mon,"
+	line "denen du begeg-"
 
-	para "have a rare"
-	line "ability, also"
+	para "nest, haben eine"
+	line "seltene Fähigkeit,"
 
-	para "known as a"
-	line "hidden Ability!"
+	para "auch versteckte"
+	line "Fähigkeit genannt!"
 
-	para "A hatched #mon"
-	line "also has a low"
+	para "Auch ein ge-"
+	line "schlüpftes #mon"
 
-	para "chance to have"
-	line "a hidden Ability."
+	para "hat eine kleine"
+	line "Chance auf eine"
+	cont "versteckte"
+	cont "Fähigkeit."
 	done
 
 EcruteakDanceTheaterSign:
@@ -265,17 +267,17 @@ BurnedTowerSign:
 	done
 
 EcruteakShrineSign:
-	text "Ecruteak Shrine"
+	text "Teak-Schrein"
 
-	para "“Life is a lamp-"
-	line "flame before a"
-	cont "wind.”"
+	para "“Das Leben ist wie"
+	line "eine Flamme im"
+	cont "Wind.”"
 	done
 
 EcruteakBarrierStationSign:
-	text "Barrier Station"
-	line "to Bell Tower"
+	text "Sperrposten zum"
+	line "Glockenturm"
 
-	para "No Trespassing by"
-	line "the Unworthy"
+	para "Zutritt für Un-"
+	line "würdige verboten"
 	done

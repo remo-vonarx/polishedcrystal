@@ -283,12 +283,12 @@ SaffronCitySignText:
 	done
 
 SaffronGymSignText:
-	text "Saffron City"
-	line "#mon Gym"
-	cont "Leader: Sabrina"
+	text "PKMN-Arena von"
+	line "Saffronia City"
+	cont "Leitung: Sabrina"
 
-	para "The Mistress of"
-	line "Psychic #mon!"
+	para "Die Meisterin der"
+	line "Psycho-#mon!"
 	done
 
 FightingDojoSignText:
@@ -313,35 +313,36 @@ SaffronCityMagnetTrainStationSignText:
 	done
 
 PokemonTrainerFanClubSignText:
-	text "#mon Trainer"
-	line "Fan Club"
+	text "#mon Trainer-"
+	line "Fanclub"
 
-	para "Many trainers have"
-	line "scribbled their"
-	cont "names here…"
+	para "Viele Trainer"
+	line "haben hier ihre"
+	cont "Namen hinge-"
+	cont "kritzelt…"
 	done
 
 SaffronTrainerTips1Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "New SilphScope2"
-	line "identifies even"
+	para "Das neue"
+	line "SilphScope2 ent-"
+	cont "larvt selbst die"
 
-	para "the most well-"
-	line "disguised #mon!"
+	para "am besten getarn-"
+	line "ten #mon!"
 	done
 
 SaffronTrainerTips2Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Use Quick Balls"
-	line "early during a"
-	cont "battle. Later,"
-	cont "use Timer Balls."
+	para "Setze Flottbälle"
+	line "früh im Kampf ein,"
+	cont "später Timerbälle."
 
-	para "They cost more"
-	line "than # Balls,"
+	para "Sie kosten mehr"
+	line "als #bälle,"
 
-	para "but they're more"
-	line "convenient."
+	para "sind aber"
+	line "praktischer."
 	done

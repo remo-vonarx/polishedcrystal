@@ -53,18 +53,18 @@ CeladonDeptStore1FTeacherText:
 	done
 
 CeladonDeptStore1FDirectoryText:
-	text "1F: Service"
-	line "    Counter"
+	text "EG: Kunden-"
+	line "    Information"
 
-	para "2F: Trainer's"
-	line "    Market"
+	para "1S: Zubehör für"
+	line "    Trainer"
 
-	para "3F: Tech Shop"
+	para "2S: Technik-Laden"
 
-	para "4F: Wiseman Gifts"
+	para "3S: Geschenk-"
+	line "    artikel"
 
-	para "5F: Drug Store"
+	para "4S: Drogerie"
 
-	para "6F: Rooftop"
-	line "    Square"
+	para "5S: Dachterrasse"
 	done

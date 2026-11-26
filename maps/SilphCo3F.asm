@@ -115,14 +115,15 @@ SilphCo3FGentlemanText:
 	done
 
 SilphCo3FDeptSignText:
-	text "Silph Co. 3F"
-	line "# Ball Tech"
+	text "Silph Co. 2S"
+	line "#ball-Technik"
 	done
 
 SilphCo3FPhotoText:
-	text "It's a photo of"
-	line "Silph's Chief."
+	text "Ein Foto vom"
+	line "Silph-Präsidenten."
 
-	para "He looks upset"
-	line "about something."
+	para "Er scheint sich"
+	line "über etwas zu"
+	cont "ärgern."
 	done

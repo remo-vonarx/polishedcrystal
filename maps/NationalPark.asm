@@ -533,12 +533,13 @@ NationalParkBattleNoticeText:
 	done
 
 NationalParkTrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "#mon become"
-	line "happier from"
+	para "#mon werden"
+	line "glücklicher durch"
 
-	para "haircuts, bless-"
-	line "ings, photographs,"
-	cont "and other treats."
+	para "Haarschnitte,"
+	line "Segnungen, Fotos"
+	cont "und andere"
+	cont "Freuden."
 	done

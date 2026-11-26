@@ -253,10 +253,10 @@ CeruleanGymSignText:
 	done
 
 CeruleanBikeShopSignText:
-	text "Trendsetter of"
-	line "the Bicycle Boom"
+	text "Trendsetter des"
+	line "Fahrrad-Booms"
 
-	para "Miracle Cycle"
+	para "Fahrradladen"
 	done
 
 CeruleanPoliceSignText:
@@ -281,19 +281,19 @@ CeruleanCapeSignText:
 	done
 
 CeruleanBubblerText:
-	text "The water"
-	line "tastes good!"
+	text "Das Wasser"
+	line "schmeckt gut!"
 	done
 
 CeruleanTrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Even without an"
-	line "Itemfinder, you"
+	para "Auch ohne Detektor"
+	line "findest du"
 
-	para "can find useful"
-	line "items in trees,"
+	para "nützliche Items in"
+	line "Bäumen, unter"
 
-	para "beneath rocks,"
-	line "or under water."
+	para "Felsen oder unter"
+	line "Wasser."
 	done

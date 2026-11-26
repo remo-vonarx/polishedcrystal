@@ -46,11 +46,11 @@ LassRoseBeatenText:
 	done
 
 Route35CoastNorthAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "You can cast a"
-	line "fishing line even"
+	para "Du kannst sogar"
+	line "vom Rücken eines"
 
-	para "from a Surfing"
-	line "#mon's back!"
+	para "surfenden #mon"
+	line "aus angeln!"
 	done

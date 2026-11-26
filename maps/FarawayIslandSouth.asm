@@ -211,21 +211,24 @@ FarawayIslandSouthLawrenceText2:
 	done
 
 FarawayIslandSouthSignText:
-	text "The writing is"
-	line "fading as if it"
+	text "Die Schrift ist"
+	line "verblasst, als"
 
-	para "was written a long"
-	line "time ago…"
+	para "wäre sie vor lan-"
+	line "ger Zeit geschrie-"
+	cont "ben worden…"
 
-	para "“…ber, 6th day"
+	para "“…ber, 6. Tag"
 
-	para "If any human…sets"
-	line "foot here…"
-	cont "again…et it be a"
-	cont "kindhearted pers…"
+	para "Sollte je ein"
+	line "Mensch…hier wie-"
+	cont "der…Fuß setzen…"
+	cont "…ge es ein gütiger"
+	cont "Mens…"
 
-	para "…ith that hope,"
-	line "I depar…"
+	para "…it dieser Hoff-"
+	line "nung breche ich"
+	cont "au…"
 
 	para "…ji”"
 	done

@@ -452,38 +452,36 @@ Route39SignText:
 	done
 
 Route39AdvancedTips1Text:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "Sandstorms boost"
-	line "Special Defense of"
-	cont "Rock-type #mon!"
+	para "Sandstürme stärken"
+	line "die Sp.Vert von"
+	cont "Gestein-#mon!"
 
-	para "And, Hail boosts"
-	line "the Defense of"
-	cont "Ice-type #mon!"
+	para "Und Hagel stärkt"
+	line "die Vert von"
+	cont "Eis-#mon!"
 	done
 
 Route39AdvancedTips2Text:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "A #mon with"
-	line "the Compound Eyes"
-	cont "ability, or one"
+	para "Mit der Fähigkeit"
+	line "Facettenauge oder"
+	cont "einem getragenen"
+	cont "Münzamulett"
 
-	para "holding an Amulet"
-	line "Coin, is more li-"
-	cont "kely to encounter"
-
-	para "a wild #mon"
-	line "holding an item!"
+	para "triffst du eher"
+	line "auf wilde #mon,"
+	cont "die Items tragen!"
 	done
 
 RuggedRoadAheadSignText:
-	text "Rugged Road"
-	line "ahead"
+	text "Holpriger Pfad"
+	line "voraus"
 
-	para "North to"
-	line "Snowtop Mountain"
+	para "Nördlich zum"
+	line "Schneegipfel"
 	done
 
 MoomooFarmSignText:

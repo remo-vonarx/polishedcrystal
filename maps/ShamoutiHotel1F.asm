@@ -130,5 +130,5 @@ ShamoutiHotel1FYoungsterText:
 	done
 
 ShamoutiHotelRestaurantSignText:
-	text "Oasis Restaurant"
+	text "Restaurant Oase"
 	done

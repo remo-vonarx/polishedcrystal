@@ -99,5 +99,5 @@ SilphCo1FCooltrainerfText:
 	done
 
 SilphCoElevatorText:
-	text "Out Of Order"
+	text "Außer Betrieb"
 	done

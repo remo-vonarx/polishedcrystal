@@ -196,13 +196,14 @@ EcruteakShrineInsideFurretText:
 	done
 
 EcruteakShrineInsideAltarText:
-	text "It's an altar with"
-	line "a sacred mirror"
-	cont "and flowers."
+	text "Ein Altar mit"
+	line "einem heiligen"
+	cont "Spiegel und"
+	cont "Blumen."
 	done
 
 EcruteakShrineInsideSignText:
-	text "Please show honor"
-	line "and respect while"
-	cont "visiting."
+	text "Bitte erweise bei"
+	line "deinem Besuch"
+	cont "Ehre und Respekt."
 	done

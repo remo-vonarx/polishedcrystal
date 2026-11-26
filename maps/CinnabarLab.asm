@@ -362,24 +362,24 @@ CinnabarLabCelebiFloatsMovementData:
 	step_end
 
 CinnabarLabRoom1SignText:
-	text "Cloning Room"
+	text "Klonlabor"
 	done
 
 CinnabarLabRoom2SignText:
-	text "Cybernetics Room"
+	text "Kybernetik-Raum"
 	done
 
 CinnabarLabRoom3SignText:
-	text "Storage Room"
+	text "Lagerraum"
 	done
 
 CinnabarLabRoom4SignText:
-	text "Project Amber"
-	line "Testing Room"
+	text "Projekt Bernstein"
+	line "Testraum"
 
-	para "ABSOLUTELY NO"
-	line "ENTRY WITHOUT"
-	cont "LEVEL 5 CLEARANCE"
+	para "ABSOLUT KEIN"
+	line "ZUTRITT OHNE"
+	cont "FREIGABESTUFE 5"
 	done
 
 CinnabarLabLockedDoorText:

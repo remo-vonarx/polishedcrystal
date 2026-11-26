@@ -169,19 +169,20 @@ Route9SignText:
 	done
 
 Route9AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "A #mon holding"
-	line "a Toxic Orb will"
-	cont "be poisoned, and"
+	para "Trägt ein #mon"
+	line "einen Toxik-Orb,"
+	cont "wird es vergiftet,"
 
-	para "one holding a"
-	line "Flame Orb will"
-	cont "be burned."
+	para "trägt es einen"
+	line "Heiß-Orb, wird es"
+	cont "verbrannt."
 
-	para "But the Ability"
-	line "Guts makes this"
+	para "Doch die Fähigkeit"
+	line "Adrenalin macht"
 
-	para "an advantage by"
-	line "boosting Attack!"
+	para "daraus einen Vor-"
+	line "teil, indem sie"
+	cont "Angr erhöht!"
 	done

@@ -266,39 +266,42 @@ RoughneckMarkeyBeatenText:
 	done
 
 Route17SouthNotice1Text:
-	text "It's a notice."
+	text "Ein Hinweis."
 
-	para "Watch out for"
-	line "discarded items!"
+	para "Achte auf wegge-"
+	line "worfene Items!"
 	done
 
 Route17SouthTrainerTips1Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "All #mon are"
-	line "unique."
+	para "Alle #mon sind"
+	line "einzigartig."
 
-	para "Two #mon of the"
-	line "same species and"
-	cont "level may still"
+	para "Auch zwei #mon"
+	line "derselben Art"
+	cont "und desselben"
+	cont "Levels können"
 
-	para "look, act, and"
-	line "grow differently."
+	para "anders aussehen,"
+	line "sich anders ver-"
+	cont "halten und anders"
+	cont "wachsen."
 	done
 
 Route17SouthTrainerTips2Text:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Open the Start"
-	line "menu to stay in"
-	cont "place while on a"
-	cont "slope."
+	para "Öffne das START-"
+	line "Menü, um an einem"
+	cont "Hang stehen zu"
+	cont "bleiben."
 	done
 
 Route17SouthNotice2Text:
-	text "It's a notice."
+	text "Ein Hinweis."
 
-	para "Don't throw the"
-	line "game, throw #"
-	cont "Balls instead!"
+	para "Wirf nicht das"
+	line "Handtuch, wirf"
+	cont "lieber #bälle!"
 	done

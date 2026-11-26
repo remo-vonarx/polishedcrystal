@@ -310,8 +310,8 @@ Route30CooltrainerFText:
 Route30SignText:
 	text "Route 30"
 
-	para "Cherrygrove City -"
-	line "Violet City"
+	para "Rosalia City -"
+	line "Viola City"
 	done
 
 MrPokemonsHouseDirectionsSignText:
@@ -326,8 +326,8 @@ MrPokemonsHouseSignText:
 	done
 
 BerryMastersHouseSignText:
-	text "Berry Master's"
-	line "House"
+	text "Haus des"
+	line "Beerenmeisters"
 	done
 
 Route30TrainerTipsText:
@@ -343,28 +343,30 @@ Route30TrainerTipsText:
 	done
 
 Route30AdvancedTipsText:
-	text "Advanced Tips!"
+	text "Profi-Tipps!"
 
-	para "During a battle,"
-	line "press Select to"
-	cont "switch #mon!"
+	para "Drücke im Kampf"
+	line "SELECT, um #mon"
+	cont "zu wechseln!"
 
-	para "Press Start to"
-	line "reuse an item!"
+	para "Drücke START, um"
+	line "ein Item erneut zu"
+	cont "benutzen!"
 
-	para "Or press B to"
-	line "run away or"
-	cont "forfeit!"
+	para "Oder drücke B, um"
+	line "zu fliehen oder"
+	cont "aufzugeben!"
 
-	para "When you're choos-"
-	line "ing a move to use,"
+	para "Wenn du eine"
+	line "Attacke wählst,"
 
-	para "press Select to"
-	line "swap it with an-"
-	cont "other one, or"
+	para "drücke SELECT, um"
+	line "sie mit einer an-"
+	cont "deren zu tauschen,"
 
-	para "press Start to see"
-	line "its description!"
+	para "oder START, um"
+	line "ihre Beschreibung"
+	cont "zu sehen!"
 	done
 
 YoungsterJoeyText_GiveHPUpAfterBattle:

@@ -84,13 +84,13 @@ GenericTrainerBikerTyrone:
 	done
 
 UragaChannelSignText:
-	text "Uraga Channel"
+	text "Uraga-Kanal"
 	done
 
 ScaryCaveEastSignText:
-	text "There's graffiti"
-	line "on this sign…"
+	text "Auf diesem Schild"
+	line "ist ein Graffiti…"
 
-	para "“This cave is"
-	line "scary!”"
+	para "“Diese Höhle ist"
+	line "gruselig!”"
 	done

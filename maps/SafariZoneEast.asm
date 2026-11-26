@@ -45,18 +45,18 @@ CowgirlAprilBeatenText:
 	done
 
 SafariZoneEastAreaSignText:
-	text "Safari Zone"
-	line "East Area"
+	text "Safari-Zone"
+	line "Ostbereich"
 	done
 
 SafariZoneEastRestHouseSignText:
-	text "Rest House"
+	text "Rasthaus"
 	done
 
 SafariZoneEastTrainerTipsSignText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Search for rare"
-	line "#mon at night"
-	cont "or in the morning!"
+	para "Suche nachts oder"
+	line "morgens nach"
+	cont "seltenen #mon!"
 	done
