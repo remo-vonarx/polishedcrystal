@@ -103,6 +103,21 @@
 	const US_COORDINATION
 	const TEXT_TRANSLATION
 	const PAAD_TESTING
+	const TEXT_CHECK
+	const KAI_ZEH
+	const HIROYUKI_UESUGI
+	const TANJA_BAAR
+	const KAI_NEUMANN
+	const DANIEL_SCHAEFERS
+	const MARTINA_DEIMEL
+	const MAURICE_TISDALE
+	const PATRICK_THIERET
+	const JENS_PEPPEL
+	const GERMAN_TESTING_TEAM
+	const EMI_BESSHO
+	const TAKASHI_INAMOTO
+	const GERMAN_TRANSLATION
+	const REMO_VON_ARX
 DEF NUM_CREDITS_STRINGS EQU const_value
 
 ; CreditsScript indexes (see data/credits_script.asm)

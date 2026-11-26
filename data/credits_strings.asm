@@ -104,6 +104,21 @@ CreditsStringsPointers:
 	dw .UsCoordination
 	dw .TextTranslation
 	dw .PaadTesting
+	dw .TextCheck
+	dw .KaiZeh
+	dw .HiroyukiUesugi
+	dw .TanjaBaar
+	dw .KaiNeumann
+	dw .DanielSchaefers
+	dw .MartinaDeimel
+	dw .MauriceTisdale
+	dw .PatrickThieret
+	dw .JensPeppel
+	dw .GermanTestingTeam
+	dw .EmiBessho
+	dw .TakashiInamoto
+	dw .GermanTranslation
+	dw .RemoVonArx
 	assert_table_length NUM_CREDITS_STRINGS
 
 .SatoshiTajiri:       text "   Satoshi Tajiri@"
@@ -181,37 +196,53 @@ CreditsStringsPointers:
 .KazuyoshiOsawa:      text "  Kazuyoshi Osawa@"
 .KimikoNakamichi:     text "  Kimiko Nakamichi@"
 .Staff:               text "      #mon"
-                      next "  Crystal Version"
+                      next "  Kristall Edition"
                       next "       Staff@"
-.Director:            text "      Director@"
-.CoDirector:          text "    Co-Director@"
-.Programmers:         text "    Programmers@"
-.GraphicsDirector:    text " Graphics Director@"
-.MonsterDesign:       text "   Monster Design@"
-.GraphicsDesign:      text "  Graphics Design@"
-.Music:               text "       Music@"
-.SoundEffects:        text "   Sound Effects@"
-.GameDesign:          text "    Game Design@"
-.GameScenario:        text "   Game Scenario@"
-.ToolProgramming:     text "  Tool Programming@"
-.ParametricDesign:    text " Parametric Design@"
-.ScriptDesign:        text "   Script Design@"
-.MapDataDesign:       text "  Map Data Design@"
-.MapDesign:           text "     Map Design@"
-.ProductTesting:      text "  Product Testing@"
-.SpecialThanks:       text "   Special Thanks@"
-.Producers:           text "     Producers@"
-.ExecutiveProducer:   text " Executive Producer@"
-.PokemonAnimation:    text " #mon Animation@"
-.PokedexText:         text "    #dex Text@"
-.MobilePrjLeader:     text " Mobile Prj. Leader@"
-.MobileSystemAd:      text " Mobile System Ad.@"
-.MobileStadiumDir:    text "Mobile Stadium Dir.@"
-.Coordination:        text "    Coordination@"
-.UsVersionStaff:      text "  US Version Staff@"
-.UsCoordination:      text "  US Coordination@"
-.TextTranslation:     text "  Text Translation@"
-.PaadTesting:         text "    PAAD Testing@"
+.Director:            text "      Leitung@"
+.CoDirector:          text "     Assistenz@"
+.Programmers:         text "   Programmierer@"
+.GraphicsDirector:    text "       Grafik@"
+.MonsterDesign:       text "   Monster-Design@"
+.GraphicsDesign:      text "   Grafik-Design@"
+.Music:               text "       Musik@"
+.SoundEffects:        text "   Sound-Effekte@"
+.GameDesign:          text "    Spiel-Design@"
+.GameScenario:        text "   Spiel-Szenario@"
+.ToolProgramming:     text "Tool-Programmierung@"
+.ParametricDesign:    text "  Parametr. Design@"
+.ScriptDesign:        text "       Script@"
+.MapDataDesign:       text "   Karten-Inhalt@"
+.MapDesign:           text "   Karten-Design@"
+.ProductTesting:      text "  Product-Testing@"
+.SpecialThanks:       text "  Besonderer Dank@"
+.Producers:           text "    Produzenten@"
+.ExecutiveProducer:   text "    Ausführender"
+                      next "     Produzent@"
+.PokemonAnimation:    text " #mon-Animation@"
+.PokedexText:         text "    #dex-Text@"
+.MobilePrjLeader:     text "Mobil-Projektleiter@"
+.MobileSystemAd:      text "Mobil-Systemberater@"
+.MobileStadiumDir:    text "Leiter Mobil-Stadium@"
+.Coordination:        text "    Koordination@"
+.UsVersionStaff:      text "   Deutsches Team@"
+.UsCoordination:      text "Europa-Koordination@"
+.TextTranslation:     text "   Deutscher Text@"
+.PaadTesting:         text "    PAAD-Testing@"
+.TextCheck:           text "     Text Check@"
+.KaiZeh:              text "      Kai Zeh@"
+.HiroyukiUesugi:      text "  Hiroyuki Uesugi@"
+.TanjaBaar:           text "     Tanja Baar@"
+.KaiNeumann:          text "    Kai Neumann@"
+.DanielSchaefers:     text "  Daniel Schäfers@"
+.MartinaDeimel:       text "   Martina Deimel@"
+.MauriceTisdale:      text "  Maurice Tisdale@"
+.PatrickThieret:      text "  Patrick Thieret@"
+.JensPeppel:          text "    Jens Peppel@"
+.GermanTestingTeam:   text "German Testing Team@"
+.EmiBessho:           text "     Emi Bessho@"
+.TakashiInamoto:      text "  Takashi Inamoto@"
+.GermanTranslation:   text "Deutsche Übersetzung@"
+.RemoVonArx:          text "    Remo von Arx@"
 
 .Copyright:
 INCLUDE "data/copyright.asm"
