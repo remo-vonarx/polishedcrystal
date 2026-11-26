@@ -140,6 +140,9 @@ _Avoid_: Kenya, Randy
 
 **Modri**:
 The Shuckle you look after in Cianwood City, Kristall's nickname (Crystal's Shuckie). Its OT is Gabriel (Polished: Kirk): Kristall's Gabriele has 8 letters, and an OT holds 7 here (decided 2026-11-26).
+
+**Kurios**:
+The Odd Egg's OT, Kristall's (Crystal: ODD; Polished: Egg). The egg's summary hides it, and hatching replaces it with the player's name (decided 2026-11-26).
 _Avoid_: Shuckie
 
 **Nicknames**:
