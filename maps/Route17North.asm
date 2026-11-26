@@ -40,8 +40,8 @@ OfficerfJamieScript:
 	endtext
 
 OfficerfJamieSeenText:
-	text "Hey you! Are you"
-	line "causing trouble?"
+	text "Hey, du! Machst du"
+	line "etwa Ärger?"
 	done
 
 OfficerfJamieBeatenText:
@@ -55,14 +55,14 @@ OfficerfJamieAfterText:
 	done
 
 OfficerfJamieDaytimeText:
-	text "Bikers and"
-	line "Roughnecks like"
+	text "Rowdys und Rauf-"
+	line "bolde machen auf"
 
-	para "to make trouble"
-	line "on this road."
+	para "dieser Straße gern"
+	line "Ärger."
 
-	para "Don't you get"
-	line "involved, got it?"
+	para "Halt du dich da"
+	line "raus, verstanden?"
 	done
 
 CyclingRoadSignText:

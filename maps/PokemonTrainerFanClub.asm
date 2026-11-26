@@ -21,15 +21,16 @@ PokemonJournalBrunoScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Elite Four Bruno!"
+	para "Titelthema:"
+	line "Top Vier Bruno!"
 
-	para "Bruno apparently"
-	line "joined the Elite"
+	para "Bruno ist wohl"
+	line "aus brennendem"
 
-	para "Four out of his"
-	line "burning ambition"
+	para "Ehrgeiz den Top"
+	line "Vier beigetreten,"
 
-	para "to battle the"
-	line "best trainers."
+	para "um gegen die"
+	line "besten Trainer"
+	cont "zu kämpfen."
 	done

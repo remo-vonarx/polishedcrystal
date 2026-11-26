@@ -44,15 +44,15 @@ Route7SaffronGuardSeriousText:
 	done
 
 Route7SaffronGateSilphEmployeeText:
-	text "The Elite Four's"
-	line "Bruno used to hone"
+	text "Bruno von den Top"
+	line "Vier feilte früher"
 
-	para "his skills in"
-	line "Saffron."
+	para "in Saffronia City"
+	line "an seinem Können."
 
-	para "He trained with a"
-	line "guy named Brawly"
+	para "In seinen Anfängen"
+	line "trainierte er mit"
 
-	para "back in the early"
-	line "days."
+	para "einem Typen namens"
+	line "Kamillo."
 	done

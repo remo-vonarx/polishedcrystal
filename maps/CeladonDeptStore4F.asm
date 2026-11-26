@@ -103,8 +103,9 @@ PosterClerkScript:
 	db "Cancel@"
 
 PosterClerkText:
-	text "Welcome! Would you"
-	line "like a poster?"
+	text "Willkommen! Wie"
+	line "wär's mit einem"
+	cont "Poster?"
 	done
 
 PosterClerkNoMoneyText:
@@ -113,8 +114,8 @@ PosterClerkNoMoneyText:
 	done
 
 PosterClerkAlreadyBoughtText:
-	text "You bought that"
-	line "already."
+	text "Das hast du schon"
+	line "gekauft."
 	done
 
 BoughtMarillPosterText:
@@ -151,17 +152,19 @@ PikachuPosterSentText:
 	done
 
 CeladonDeptStore4FSuperNerdText:
-	text "I'm here to buy"
-	line "Lovely Mail for"
-	cont "my girlfriend."
+	text "Ich möchte hier"
+	line "einen Herzbrief"
+	cont "für meine Freun-"
+	cont "din kaufen."
 	done
 
 CeladonDeptStore4FYoungsterText:
-	text "This is the only"
-	line "place where you"
+	text "Das ist der"
+	line "einzige Ort, an"
 
-	para "can buy posters."
-	line "I collect them!"
+	para "dem man Poster"
+	line "kaufen kann."
+	cont "Ich sammle sie!"
 	done
 
 CeladonDeptStore4FDirectoryText:

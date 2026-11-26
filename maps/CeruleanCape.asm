@@ -473,6 +473,7 @@ BillsHouseSignText:
 	done
 
 CeruleanCapeSailboatText:
-	text "It's a sailboat"
-	line "named FriendShip."
+	text "Ein Segelboot"
+	line "namens Freund-"
+	cont "schiff."
 	done

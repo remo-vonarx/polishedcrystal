@@ -16,31 +16,36 @@ VermilionHouseFishingSpeechHouse_MapScriptHeader:
 	object_event  2,  4, SPRITE_FISHING_GURU, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, FishingGuruText, -1
 
 FishingGuruText:
-	text "I am the Fishing"
-	line "Guru, the middle"
+	text "Ich bin der"
+	line "Profi-Angler, der"
+	cont "Mittlere der drei"
+	cont "Anglerbrüder."
 
-	para "child of the three"
-	line "Fishing Bros."
+	para "Hast du meinen"
+	line "Freund, den"
+	cont "Angler, am See des"
+	cont "Zorns getroffen?"
 
-	para "Have you met my"
-	line "friend the"
+	para "Er träumt davon,"
+	line "das größte"
 
-	para "Fishing Dude at"
-	line "Lake of Rage?"
+	para "Karpador der Welt"
+	line "zu sehen."
 
-	para "He dreams about"
-	line "seeing the world's"
-	cont "greatest Magikarp."
+	para "Falls es dir"
+	line "nichts ausmacht,"
 
-	para "If you don't mind,"
-	line "could you show him"
+	para "könntest du ihm"
+	line "jedes Karpador"
 
-	para "any Magikarp you"
-	line "catch?"
+	para "zeigen, das du"
+	line "fängst?"
 
-	para "Who knows, you may"
-	line "catch the Magikarp"
-	cont "of his dreams."
+	para "Wer weiß, viel-"
+	line "leicht fängst du"
+
+	para "das Karpador"
+	line "seiner Träume."
 	done
 
 FishingGurusHousePhotoText:

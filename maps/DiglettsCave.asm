@@ -50,56 +50,59 @@ DiglettsCaveFossilManiacScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
-	text "Hey, thanks!"
+	text "Hey, danke!"
 
-	para "I bet I can sell"
-	line "this for way more"
-	cont "than I just gave"
-	cont "you. Ha!"
+	para "Das verkaufe ich"
+	line "sicher für viel"
+	cont "mehr, als ich dir"
+	cont "gegeben habe. Ha!"
 
-	para "That's business"
-	line "for ya!"
+	para "So läuft das"
+	line "Geschäft!"
 	done
 
 .GreetingText:
-	text "Hey, check it out."
-	line "I've got a sweet"
-	cont "deal for ya!"
+	text "Hey, schau mal."
+	line "Ich hab ein super"
+	cont "Angebot für dich!"
 
-	para "You know how #-"
-	line "mon fossils turn"
-	cont "up in rocks?"
+	para "Du weißt doch,"
+	line "dass in Felsen"
+	cont "#mon-Fossilien"
+	cont "auftauchen?"
 
-	para "If you find one,"
-	line "bring it to me."
+	para "Findest du eins,"
+	line "bring es mir."
 
-	para "I'll make it worth"
-	line "your while."
+	para "Es soll dein"
+	line "Schaden nicht"
+	cont "sein."
 	done
 
 .OfferText:
-	text "Hey, nice! Let me"
-	line "check that out."
+	text "Hey, toll! Lass"
+	line "mal sehen."
 
-	para "I'll give you"
+	para "Ich gebe dir"
 	line "¥"
 	text_decimal hMoneyTemp, 3, 7
-	text " for it."
-	cont "Whaddaya say?"
+	text " dafür."
+	cont "Was sagst du?"
 	done
 
 .WrongItemText:
-	text "Nope, this is no"
-	line "good. Not worth"
-	cont "my while."
+	text "Nee, das taugt"
+	line "nichts. Das lohnt"
+	cont "sich nicht."
 	done
 
 .NoItemText:
-	text "…Nope, nothing"
-	line "cool in your Bag."
+	text "…Nee, nichts"
+	line "Cooles in deinem"
+	cont "Beutel."
 
-	para "Oh well. Maybe"
-	line "next time!"
+	para "Na ja. Vielleicht"
+	line "nächstes Mal!"
 	done
 
 GenericTrainerHikerGerard:
@@ -194,21 +197,24 @@ GenericTrainerEngineerSmith:
 	done
 
 DiglettsCaveCooltrainerfText:
-	text "Look at all these"
-	line "cute Diglett!"
+	text "Schau dir all die"
+	line "süßen Digda an!"
 
-	para "I swear I saw one"
-	line "with a blue nose!"
+	para "Ich schwöre, ich"
+	line "sah eins mit"
+	cont "blauer Nase!"
 	done
 
 DiglettsCavePokefanMText:
-	text "A bunch of Diglett"
-	line "popped out of the"
+	text "Einige Digda sind"
+	line "plötzlich vor mir"
 
-	para "ground! That was"
-	line "shocking."
+	para "aufgetaucht! Ich"
+	line "habe mich er-"
+	cont "schreckt."
 
-	para "I heard Diglett"
-	line "on Cinnabar Island"
-	cont "look different."
+	para "Ich hörte, Digda"
+	line "auf der Zinnober-"
+	cont "insel sehen anders"
+	cont "aus."
 	done

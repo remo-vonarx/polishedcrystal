@@ -89,11 +89,11 @@ CeruleanGymMistyScript:
 	setevent EVENT_GOT_TM63_WATER_PULSE
 	jumpthisopenedtext
 
-	text "It contains the"
-	line "move Water Pulse."
+	text "Darin ist die"
+	line "Attacke Aquawelle."
 
-	para "It can sometimes"
-	line "confuse your foe."
+	para "Sie verwirrt den"
+	line "Gegner manchmal."
 	done
 
 GenericTrainerSwimmerfDiana:
@@ -306,11 +306,11 @@ MistyWinLossText:
 	done
 
 MistyGiveTMText:
-	text "Misty: Here's"
-	line "another memento"
+	text "Misty: Hier ist"
+	line "noch ein Andenken"
 
-	para "from this battle."
-	line "Take it!"
+	para "an diesen Kampf."
+	line "Nimm es!"
 	done
 
 
@@ -405,12 +405,12 @@ CeruleanGymFoundMachinePartText:
 	done
 
 CeruleanGymSomethingUnderwaterText:
-	text "There's something"
-	line "under the water…"
+	text "Da ist etwas"
+	line "unter Wasser…"
 
-	para "Maybe that Rocket"
-	line "Grunt will talk?"
+	para "Vielleicht redet"
+	line "der Rocket-Rüpel?"
 
-	para "Where did he run"
-	line "off to?"
+	para "Wo ist er nur"
+	line "hingerannt?"
 	done

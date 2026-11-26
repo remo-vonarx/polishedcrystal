@@ -196,43 +196,46 @@ CeruleanCityFisherText:
 	done
 
 CeruleanCityFisherRocketTipText:
-	text "I saw this shady"
-	line "guy go off toward"
-	cont "Cerulean Cape."
+	text "Ich habe so einen"
+	line "zwielichtigen Typ"
+	cont "zum Kap bei Azuria"
+	cont "City gehen sehen."
 	done
 
 CeruleanCityYoungsterText1:
-	text "There's a cave"
-	line "here with scary-"
-	cont "powerful #mon"
-	cont "in it."
+	text "Hier gibt es eine"
+	line "Höhle, in der"
+	cont "mächtige und"
+	cont "grässliche #mon"
+	cont "hausen."
 	done
 
 
 CeruleanCityYoungsterText:
-	text "My Itemfinder"
-	line "stopped respond-"
-	cont "ing…"
+	text "Mein Detektor"
+	line "reagiert nicht"
+	cont "mehr…"
 
-	para "Someone must have"
-	line "beat me to it."
+	para "Da ist mir wohl"
+	line "jemand zuvorge-"
+	cont "kommen."
 	done
 
 CeruleanCaveGuardText:
-	text "This is…"
+	text "Das ist…"
 
-	para "The notorious"
-	line "Cerulean Cave!"
+	para "die berüchtigte"
+	line "Azuria-Höhle!"
 
-	para "Horribly powerful"
-	line "#mon live here."
+	para "Hier leben"
+	line "furchtbar starke"
+	cont "#mon."
 
-	para "Only those who"
-	line "have defeated all"
+	para "Nur wer alle acht"
+	line "Arenaleiter von"
 
-	para "eight Kanto Gym"
-	line "Leaders are allow-"
-	cont "ed inside."
+	para "Kanto besiegt hat,"
+	line "darf hinein."
 	done
 
 CeruleanCitySignText:

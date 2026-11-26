@@ -19,12 +19,14 @@ MrFujisHouse_MapScriptHeader:
 	pokemon_event  1,  3, PIDGEY, SPRITEMOVEDATA_POKEMON, -1, PAL_MON_BROWN, MrFujisPidgeyText, -1
 
 MrFujisHouseSuperNerdText:
-	text "Mr.Fuji does live"
-	line "here, but he's not"
-	cont "home now."
+	text "Hier wohnt Mr."
+	line "Fuji, aber er ist"
 
-	para "He might be at the"
-	line "House of Souls."
+	para "jetzt nicht"
+	line "zu Hause."
+
+	para "Vielleicht ist er"
+	line "in der Ruhestätte."
 	done
 
 MrFujisHouseLassText:

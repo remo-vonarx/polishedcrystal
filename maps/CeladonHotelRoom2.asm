@@ -43,64 +43,70 @@ MrHyperScript:
 	jumpthisopenedtext
 
 .TextComeBackAnytime:
-	text "Come back anytime!"
-	line "Mr. Hyper will"
-	cont "always be hyped up"
-	cont "to see you!"
+	text "Komm jederzeit"
+	line "wieder!"
+	cont "Mr. Super-Spezial"
+	cont "freut sich immer"
+	cont "super auf dich!"
 	done
 
 .TextIntro:
-	text "I'm Mr. Hyper!"
-	line "Want to know why?"
+	text "Ich bin"
+	line "Mr. Super-Spezial!"
+	cont "Weißt du, warum?"
 
-	para "Because I can help"
-	line "#mon perform"
-	cont "Hyper Training!"
+	para "Weil ich #mon"
+	line "beim Super-Spe-"
+	cont "zialtraining"
+	cont "helfen kann!"
 
-	para "It lets a #mon"
-	line "that has maxed out"
-	cont "its effort become"
-	cont "even stronger!"
+	para "Damit wird ein"
+	line "#mon, das schon"
+	cont "voll trainiert"
+	cont "ist, noch stärker!"
 
-	para "This training will"
-	line "help them increase"
-	cont "their stats."
+	para "Dieses Training"
+	line "steigert seine"
+	cont "Statuswerte."
 
-	para "If you want me to"
-	line "train up your"
-	cont "#mon, bring me"
-	cont "some Bottle Caps."
+	para "Wenn ich deine"
+	line "#mon trainieren"
+	cont "soll, bring mir"
+	cont "ein paar Kron-"
+	cont "korken."
 	done
 
 .TextAskTrain:
-	text "What do you say?"
-	line "Want to try my"
-	cont "Hyper Training?"
+	text "Was meinst du?"
+	line "Willst du mein"
+	cont "Super-Spezial-"
+	cont "training testen?"
 	done
 
 .TextNoBottleCaps:
-	text "You don't have any"
-	line "Bottle Caps?"
+	text "Du hast keine"
+	line "Kronkorken?"
 
-	para "I know Fishermen"
-	line "snag them some-"
-	cont "times…"
+	para "Angler ziehen"
+	line "manchmal welche"
+	cont "aus dem Wasser…"
 	done
 
 .TextTrainWho:
-	text "Hyper Train which"
-	line "#mon?"
+	text "Welches #mon"
+	line "trainieren?"
 	done
 
 .TextGotStronger:
-	text "All done! My Hyper"
-	line "training improved"
+	text "Fertig! Das Trai-"
+	line "ning verbesserte"
+	cont "die Werte von"
 	cont ""
 	text_ram wStringBuffer1
-	text "'s stats!"
+	text "!"
 	done
 
 .TextTrainSomeMore:
-	text "Hyper Train more"
-	line "#mon?"
+	text "Noch ein #mon"
+	line "trainieren?"
 	done

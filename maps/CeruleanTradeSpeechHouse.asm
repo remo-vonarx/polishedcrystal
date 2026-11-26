@@ -31,9 +31,9 @@ CeruleanTradeSpeechHouseGrampsText:
 	done
 
 CeruleanTradeSpeechHouseRhydonText:
-	text "Poliwrath: Ribbit!"
+	text "Quappo: Quak!"
 	done
 
 CeruleanTradeSpeechHouseZubatText:
-	text "Ivysaur: Sauur!"
+	text "Bisaknosp: Knosp!"
 	done

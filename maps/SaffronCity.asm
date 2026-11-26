@@ -142,18 +142,22 @@ SaffronCityPokefanMText_ReturnedMachinePart:
 	done
 
 SaffronCityCooltrainerMText:
-	text "I went to the Gym,"
-	line "raring for battles"
-	cont "against trainers…"
+	text "Ich ging zur PKMN-"
+	line "Arena, weil ich"
+	cont "unbedingt kämpfen"
+	cont "wollte…"
 
-	para "It turns out, I"
-	line "stumbled into the"
+	para "Wie sich heraus-"
+	line "stellte, bin ich"
 
-	para "Fighting Dojo"
-	line "next door."
+	para "ausgerechnet im"
+	line "Karate Dojo"
 
-	para "Boy, I was pretty"
-	line "embarrassed."
+	para "nebenan"
+	line "gelandet."
+
+	para "War mir das"
+	line "peinlich!"
 	done
 
 SaffronCityCooltrainerFText:
@@ -217,62 +221,65 @@ SaffronCityLass2Text:
 	done
 
 SaffronCityBlackBelt1Text:
-	text "Every morning when"
-	line "I wake up I run"
+	text "Jeden Morgen nach"
+	line "dem Aufstehen"
 
-	para "two laps around"
-	line "the city."
+	para "laufe ich zwei"
+	line "Runden um die"
+	cont "Stadt."
 
-	para "It's a great way"
-	line "to start the day!"
+	para "So fängt der Tag"
+	line "super an!"
 	done
 
 SaffronCityBlackBelt2Text:
-	text "If I was an item,"
-	line "I'd be X Attack."
+	text "Wäre ich ein Item,"
+	line "dann X-Angriff."
 
-	para "I'm just brimming"
-	line "with power, and"
+	para "Ich strotze nur so"
+	line "vor Kraft, und"
 
-	para "the X makes it"
-	line "sound cool."
+	para "das X klingt"
+	line "einfach cool."
 	done
 
 SaffronCitySuperNerdText:
-	text "There was a time"
-	line "when Psychic-type"
+	text "Es gab eine Zeit,"
+	line "da galten #mon"
 
-	para "#mon were be-"
-	line "lieved to be the"
+	para "vom Typ Psycho als"
+	line "die stärksten und"
 
-	para "strongest, and Bug"
-	line "types the weakest."
+	para "Käfer-#mon als"
+	line "die schwächsten."
 
-	para "The irony is, Bug"
-	line "is super effective"
-	cont "against Psychic!"
+	para "Dabei ist Käfer"
+	line "ausgerechnet sehr"
+	cont "effektiv gegen"
+	cont "Psycho!"
 	done
 
 SaffronCityScientistText:
-	text "The original Silph"
-	line "Scope had some"
-	cont "bugs, so we've been"
+	text "Das erste Silph"
+	line "Scope hatte ein"
+	cont "paar Macken. Daher"
 
-	para "working tirelessly"
-	line "on its successor--"
-	cont "the SilphScope2!"
+	para "arbeiten wir uner-"
+	line "müdlich an seinem"
+	cont "Nachfolger, dem"
+	cont "SilphScope2!"
 	done
 
 SaffronCitySilphEmployeeText:
-	text "Silph is named"
-	line "after a mythical"
-	cont "spirit of the air."
+	text "Silph ist nach"
+	line "einem mythischen"
+	cont "Luftgeist benannt."
 
-	para "What that has to"
-	line "do with the com-"
+	para "Was das mit dem"
+	line "Geschäft der Firma"
 
-	para "pany's business,"
-	line "I have no idea."
+	para "zu tun hat, weiß"
+	line "ich nicht."
 	done
 
 SaffronCitySignText:

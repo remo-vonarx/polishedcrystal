@@ -36,82 +36,96 @@ SilphCo3FSilphEmployeeScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "That's a very"
-	line "rare type of"
-	cont "# Ball."
+	text "Das ist eine sehr"
+	line "seltene Art von"
+	cont "#ball."
 
-	para "Don't waste it!"
+	para "Verschwende ihn"
+	line "nicht!"
 	done
 
 .Text1:
-	text "I'm from a family"
-	line "of # Ball"
-	cont "creators."
+	text "Ich stamme aus"
+	line "einer Familie,"
+	cont "die #bälle"
+	cont "herstellt."
 
-	para "My father Kurt is"
-	line "teaching my daugh-"
-	cont "ter how to make"
+	para "Mein Vater Kurt"
+	line "bringt meiner"
+	cont "Tochter bei, wie"
 
-	para "Apricorn Balls"
-	line "while I'm busy"
-	cont "working here."
+	para "man Bälle aus"
+	line "Aprikokos macht,"
+	cont "während ich hier"
+	cont "arbeite."
 
-	para "You helped them"
-	line "out in Azalea"
-	cont "Town? Great!"
+	para "Du hast ihnen in"
+	line "Azalea City ge-"
+	cont "holfen? Toll!"
 
-	para "I'm glad my Maizie"
-	line "is doing well."
+	para "Schön, dass es"
+	line "meiner Maisy gut"
+	cont "geht."
 
-	para "Take this as a"
-	line "thank-you!"
+	para "Nimm das als"
+	line "Dankeschön!"
 	done
 
 SilphCo3FScientist1Text:
-	text "Silph just entered"
-	line "a partnership with"
-	cont "Devon Corp."
+	text "Silph ist gerade"
+	line "eine Partnerschaft"
+	cont "mit der Devon"
+	cont "Corporation einge-"
+	cont "gangen."
 
-	para "We licensed some"
-	line "of each others'"
-	cont "products."
+	para "Wir haben uns ge-"
+	line "genseitig Lizenzen"
+	cont "für einige Produk-"
+	cont "te erteilt."
 	done
 
 SilphCo3FScientist2Text:
-	text "# Balls work on"
-	line "the same principle"
+	text "#bälle funktio-"
+	line "nieren nach"
 
-	para "as the PC Storage"
-	line "System."
+	para "demselben Prinzip"
+	line "wie das Lagerungs-"
+	cont "System im PC."
 
-	para "#mon are con-"
-	line "verted into"
-	cont "digital data and"
+	para "#mon werden in"
+	line "digitale Daten"
+	cont "umgewandelt und"
 
-	para "reformed in a"
-	line "new location."
+	para "an einem neuen Ort"
+	line "wieder zusammen-"
+	cont "gesetzt."
 	done
 
 SilphCo3FOfficerText:
-	text "I can't let you on"
-	line "the upper floors,"
+	text "Ich kann dich"
+	line "nicht in die obe-"
+	cont "ren Geschosse"
+	cont "lassen,"
 
-	para "even if you are"
-	line "trustworthy."
+	para "auch wenn du"
+	line "vertrauenswürdig"
+	cont "bist."
 
-	para "Sorry, but those"
-	line "are the rules."
+	para "Tut mir leid, so"
+	line "sind die Regeln."
 	done
 
 SilphCo3FGentlemanText:
-	text "I'm visiting from"
-	line "Devon Corporation."
+	text "Ich bin zu Besuch"
+	line "von der Devon"
+	cont "Corporation."
 
-	para "We are working to-"
-	line "gether to advance"
+	para "Wir arbeiten zu-"
+	line "sammen, um die"
 
-	para "# Ball techno-"
-	line "logy even further!"
+	para "#ball-Technolo-"
+	line "gie noch weiter"
+	cont "voranzubringen!"
 	done
 
 SilphCo3FDeptSignText:

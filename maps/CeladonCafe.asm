@@ -177,52 +177,53 @@ TeacherText_MoreChef:
 	done
 
 MayleneText1:
-	text "Maylene: Munch"
-	line "munch munch…"
+	text "Hilda: Mampf"
+	line "mampf mampf…"
 	done
 
 MayleneText2:
-	text "The eatathon"
-	line "contest!"
+	text "Das Wettessen!"
 
-	para "I never dreamed of"
-	line "such a wonderful"
-	cont "thing."
+	para "So etwas Wunder-"
+	line "bares hätte ich"
+	cont "mir nie erträumt."
 
-	para "After a strict"
-	line "diet during train-"
-	cont "ing, I can eat"
-	cont "like a Snorlax."
+	para "Nach einer stren-"
+	line "gen Diät im Trai-"
+	cont "ning kann ich"
+	cont "essen wie ein"
+	cont "Relaxo."
 
-	para "The winner eats"
-	line "for free, too."
+	para "Und der Sieger"
+	line "isst umsonst."
 
-	para "That's just a"
-	line "dream come true!"
+	para "Ein wahr geworde-"
+	line "ner Traum!"
 	done
 
 MayleneText3:
-	text "I'm starting to"
-	line "feel full…"
+	text "Langsam werde ich"
+	line "satt…"
 
-	para "Um, as a break,"
-	line "do you want to"
-	cont "battle with me?"
+	para "Äh, willst du zur"
+	line "Pause gegen mich"
+	cont "kämpfen?"
 	done
 
 MayleneRefusedText:
-	text "Sigh… OK."
+	text "Seufz… Na gut."
 	done
 
 MayleneSeenText:
 	text "OK! Rei!"
 
-	para "Oh, that's my bow"
-	line "before a match."
+	para "Oh, so verbeuge"
+	line "ich mich vor"
+	cont "einem Kampf."
 
-	para "I'm throwing every-"
-	line "thing I have at"
-	cont "you!"
+	para "Ich werfe dir"
+	line "alles entgegen,"
+	cont "was ich habe!"
 	done
 
 MayleneBeatenText:
@@ -242,11 +243,11 @@ MayleneAfterText:
 	done
 
 CeladonCafeBakerText:
-	text "I'm working here"
-	line "'cause I get to"
+	text "Ich arbeite hier,"
+	line "weil ich essen"
 
-	para "eat any time I"
-	line "want. Simple."
+	para "kann, wann ich"
+	line "will. Ganz simpel."
 	done
 
 EatathonContestPosterText:

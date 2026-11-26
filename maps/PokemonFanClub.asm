@@ -83,16 +83,16 @@ PokemonJournalGreenScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "<PK><MN> Trainer Leaf!"
+	para "Titelthema:"
+	line "<PK><MN>-Trainerin Grün!"
 
-	para "In addition to"
-	line "being a powerful"
-	cont "trainer, Leaf is"
+	para "Grün ist nicht nur"
+	line "eine starke Trai-"
+	cont "nerin, sie soll"
 
-	para "said to be fascin-"
-	line "ated by legendary"
-	cont "#mon."
+	para "auch von legen-"
+	line "dären #mon"
+	cont "fasziniert sein."
 	done
 
 ClefairyDollScript:
@@ -245,15 +245,16 @@ PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
 	done
 
 PokemonFanClubTeacherText:
-	text "Look at my darling"
-	line "Oddish!"
+	text "Schau dir mein"
+	line "süßes Myrapla an!"
 
-	para "The leaves on its"
-	line "head are so cute!"
+	para "Die Blätter auf"
+	line "seinem Kopf sind"
+	cont "so goldig!"
 	done
 
 FanClubOddishText:
-	text "Oddish: Diish!"
+	text "Myrapla: Plaaa!"
 	done
 
 PokemonFanClubListenSignText:

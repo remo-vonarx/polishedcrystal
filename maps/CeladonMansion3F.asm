@@ -52,12 +52,12 @@ GameFreakGameDesignerScript:
 	setevent EVENT_ENABLE_DIPLOMA_PRINTING
 	jumpthisopenedtext
 
-	text "The Graphic Artist"
-	line "will print out a"
-	cont "Diploma for you."
+	text "Der Grafiker wird"
+	line "dir ein Diplom"
+	cont "ausdrucken."
 
-	para "You should go show"
-	line "that off!"
+	para "Gib ruhig damit"
+	line "an."
 	done
 
 GameFreakGraphicArtistScript:
@@ -141,12 +141,12 @@ GameFreakGameDesignerCompletedPokedexText:
 	done
 
 GameFreakGameDesignerPauseForDiplomaText:
-	text "To recognize your"
-	line "achievement…"
-	cont "here you go!"
+	text "Als Anerkennung"
+	line "für deine Leistung"
+	cont "… bitte schön!"
 
-	para "A crisp new"
-	line "Diploma!"
+	para "Ein nagelneues"
+	line "Diplom!"
 	done
 
 GameFreakGameDesignerGiveDiplomaText:
@@ -162,12 +162,12 @@ GameFreakGameDesignerDiplomaSentText:
 
 
 GameFreakDesignerGaveDiplomaText:
-	text "Congratulations"
-	line "for completing"
-	cont "your #dex!"
+	text "Gratuliere! Dein"
+	line "#dex ist"
+	cont "komplett!"
 
-	para "You should show"
-	line "off that Diploma!"
+	para "Gib ruhig mit dem"
+	line "Diplom an!"
 	done
 
 GameFreakGraphicArtistText:
@@ -180,14 +180,16 @@ GameFreakGraphicArtistText:
 	done
 
 GameFreakGraphicArtistPrintDiplomaText:
-	text "I'm the Graphic"
-	line "Arist."
+	text "Ich bin der"
+	line "Grafiker."
 
-	para "Oh, you completed"
-	line "your #dex?"
+	para "Oh, du hast deinen"
+	line "#dex fertig"
+	cont "gestellt?"
 
-	para "Want me to print"
-	line "out your Diploma?"
+	para "Möchtest du, dass"
+	line "ich dir ein Diplom"
+	cont "ausdrucke?"
 	done
 
 GameFreakGraphicArtistRefusedText:
@@ -198,37 +200,40 @@ GameFreakGraphicArtistRefusedText:
 	done
 
 GameFreakProgrammerText:
-	text "Who, me? I'm the"
-	line "Programmer."
+	text "Wer, ich? Ich bin"
+	line "der Programmierer."
 
-	para "Use the Wonder"
-	line "Trade Hub!"
+	para "Probier mal den"
+	line "Wundertausch!"
 	done
 
 GameFreakCharacterDesignerText:
-	text "Isn't Lyra"
-	line "adorable?"
+	text "Ist Lyra nicht"
+	line "anbetungswürdig?"
 
-	para "Jasmine's pretty"
-	line "too."
+	para "Jasmin ist auch"
+	line "sehr hübsch."
 
-	para "Oh, I love them!"
+	para "Oh, ich bete"
+	line "sie an!"
 	done
 
 
 
 CeladonMansion3FGameProgramText:
-	text "It's the game"
-	line "program. Messing"
+	text "Das ist das Spiel-"
+	line "programm. Die"
 
-	para "with it could put"
-	line "a bug in the game!"
+	para "falsche Handhabe"
+	line "könnte Fehler im"
+	cont "Spiel verursachen!"
 
-	para "Want to mess with"
-	line "it anyway?"
+	para "Trotzdem daran"
+	line "herumspielen?"
 	done
 
 CeladonMansion3FAreYouSureText:
-	text "Are you sure?"
-	line "It could crash!"
+	text "Bist du sicher?"
+	line "Es könnte ab-"
+	cont "stürzen!"
 	done

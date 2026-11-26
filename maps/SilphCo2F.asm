@@ -39,14 +39,15 @@ SilphCo2FEmployee1Script:
 	endtext
 
 .Text1:
-	text "You traveled here"
-	line "from Johto?"
+	text "Du kommst aus"
+	line "Johto?"
 
-	para "Since you came"
-	line "such a long way,"
+	para "Da du einen so"
+	line "weiten Weg hast,"
 
-	para "have this neat"
-	line "little souvenir."
+	para "gebe ich dir"
+	line "dieses hübsche"
+	cont "Souvenir."
 	done
 
 .Text2:
@@ -59,34 +60,37 @@ SilphCo2FEmployee1Script:
 	done
 
 SilphCo2FSilphEmployee2Text:
-	text "We used to use"
-	line "teleporters to get"
+	text "Früher kamen wir"
+	line "mit Teleportern"
 
-	para "around, but they"
-	line "were disabled."
+	para "herum, aber sie"
+	line "wurden abgeschal-"
+	cont "tet."
 
-	para "Good thing I'm on"
-	line "the second floor!"
+	para "Zum Glück arbeite"
+	line "ich im ersten"
+	cont "Stock!"
 	done
 
 SilphCo2FScientist1Text:
-	text "We're always work-"
-	line "ing on new TMs."
+	text "Wir arbeiten stän-"
+	line "dig an neuen TMs."
 
-	para "Some have been"
-	line "discontinued, but"
+	para "Manche wurden"
+	line "eingestellt, aber"
 
-	para "others are so pop-"
-	line "ular that they"
+	para "andere sind so be-"
+	line "liebt, dass sie"
 
-	para "haven't changed in"
-	line "over 30 years!"
+	para "sich seit über 30"
+	line "Jahren nicht ver-"
+	cont "ändert haben!"
 	done
 
 SilphCo2FScientist2Text:
-	text "I'm coding! Don't"
-	line "break my concen-"
-	cont "tration!"
+	text "Ich programmiere!"
+	line "Stör nicht meine"
+	cont "Konzentration!"
 	done
 
 SilphCo2FDeptSignText:

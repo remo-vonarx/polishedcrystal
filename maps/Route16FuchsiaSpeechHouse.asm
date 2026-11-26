@@ -35,20 +35,22 @@ Route16FuchsiaSpeechHouseLadyScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "The celebrity who"
-	line "lived here…"
+	text "Die Berühmtheit,"
+	line "die hier wohnte…"
 
-	para "I wonder where"
-	line "she went?"
+	para "Wo sie wohl hin-"
+	line "gezogen ist?"
 	done
 
 .Text1:
-	text "The celebrity who"
-	line "used to live here"
+	text "Die Berühmtheit,"
+	line "die früher hier"
 
-	para "moved away three"
-	line "years ago."
+	para "wohnte, ist vor"
+	line "drei Jahren weg-"
+	cont "gezogen."
 
-	para "But she left this"
-	line "item behind."
+	para "Aber sie hat"
+	line "dieses Item"
+	cont "zurückgelassen."
 	done

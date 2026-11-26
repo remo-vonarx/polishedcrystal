@@ -44,8 +44,8 @@ BattleFactory1FContinueChallenge:
 	; We saved in-between rounds. Resume Battle Factory challenge.
 	opentext
 	writethistext
-		text "We've been waiting"
-		line "for you."
+		text "Wir haben schon"
+		line "auf dich gewartet."
 		prompt
 
 	sdefer Script_ReturnToRentalChallenge
@@ -108,32 +108,33 @@ Script_CommitBattleFactoryResult:
 BattleFactory1FRulesScript:
 	opentext
 	writethistext
-		text "Battle Factory"
-		line "rules are written"
-		cont "here."
+		text "Hier stehen die"
+		line "Regeln der Kampf-"
+		cont "fabrik."
 
-		para "Read the rules?"
+		para "Lesen?"
 		done
 	yesorno
 	iffalse_endtext
 	jumpthisopenedtext
-		text "You are given six"
-		line "rental #mon."
+		text "Du erhältst sechs"
+		line "Leih-#mon."
 
-		para "Three #mon may"
-		line "enter battles."
+		para "Drei #mon"
+		line "dürfen kämpfen."
 
-		para "All three must be"
-		line "different."
+		para "Alle drei müssen"
+		line "verschieden sein."
 
-		para "The items they"
-		line "hold must also be"
-		cont "different."
+		para "Auch die Items,"
+		line "die sie tragen,"
+		cont "müssen verschie-"
+		cont "den sein."
 
-		para "After winning a"
-		line "battle, you may"
-		cont "trade a #mon"
-		cont "with the opponent."
+		para "Nach einem Sieg"
+		line "darfst du ein"
+		cont "#mon mit dem"
+		cont "Gegner tauschen."
 		done
 
 BattleFactory1FStreakText:
@@ -150,62 +151,70 @@ BattleFactory1FStreakText:
 BattleFactory1FReceptionistScript:
 	opentext
 	writethistext
-		text "Battle Factory"
-		line "welcomes you!"
+		text "Willkommen in der"
+		line "Kampffabrik!"
 
-		para "I can show you to"
-		line "the Battle Floor."
+		para "Ich führe dich in"
+		line "einen Kampfraum."
 		done
 	promptbutton
 	checkevent EVENT_BATTLE_FACTORY_INTRO
-	iftruefwd .BattleFactoryMenu
+	iftrue .BattleFactoryMenu
 
 	; only ask once, so set the flag regardless
 	setevent EVENT_BATTLE_FACTORY_INTRO
 	writethistext
-		text "Would you like to"
-		line "hear about this"
-		cont "facility?"
+		text "Soll ich dich über"
+		line "diese Einrichtung"
+		cont "aufklären?"
 		done
 	yesorno
 	iffalsefwd .BattleFactoryMenu
 
 .Explanation:
 	writethistext
-		text "Battle Factory is"
-		line "a facility where"
-		cont "you battle using"
-		cont "rental #mon."
+		text "Die Kampffabrik"
+		line "ist eine Kampf-"
+		cont "stätte für Kämpfe"
+		cont "mit Leih-#mon."
 
-		para "Countless #mon"
-		line "trainers gather"
+		para "Unzählige #mon-"
+		line "Trainer von Nah"
 
-		para "from all over to"
-		line "hold battles on"
-		cont "the Battle Floor."
+		para "und Fern kommen"
+		line "hier zusammen und"
 
-		para "Each challenge"
-		line "has 7 trainers."
+		para "duellieren sich im"
+		line "Kampfraum."
 
-		para "Beat them all to"
-		line "get Battle Points."
+		para "Jede Herausfor-"
+		line "derung umfasst"
+		cont "sieben Trainer."
 
-		para "To interrupt a"
-		line "session, you must"
+		para "Besiegst du alle,"
+		line "bekommst du"
+		cont "Gewinnpunkte."
 
-		para "save. If not, you"
-		line "won't be able to"
+		para "Um eine"
+		line "Herausforderung zu"
 
-		para "resume your Floor"
-		line "challenge."
+		para "unterbrechen,"
+		line "musst du sichern."
+
+		para "Falls du nicht"
+		line "sicherst, kannst"
+
+		para "du die Heraus-"
+		line "forderung nicht"
+		cont "fortsetzen."
 		prompt
 	; fallthrough
 .BattleFactoryMenu:
 	; Setscene here in case the player aborted a quicksave prompted by challenge
 	setscene SCENE_BATTLEFACTORY1F_NOOP
 	writethistext
-		text "Want to head onto"
-		line "the Battle Floor?"
+		text "Möchtest du in"
+		line "einen Kampfraum?"
 		done
 	loadmenu MenuDataHeader_BattleInfoCancel
 	verticalmenu
@@ -220,11 +229,12 @@ BattleFactory1FReceptionistScript:
 
 .Challenge:
 	writethistext
-		text "Before entering"
-		line "the Battle Floor,"
+		text "Ehe du einen"
+		line "Kampfraum"
 
-		para "your progress will"
-		line "be saved."
+		para "betrittst, wird"
+		line "der Spielstand"
+		cont "gesichert."
 		done
 	yesorno
 	iffalse .BattleFactoryMenu
@@ -252,8 +262,8 @@ Script_ReturnToRentalChallenge:
 
 	; Everything ready to go for challenge start
 	writethistext
-		text "Right this way to"
-		line "the Battle Floor."
+		text "Hier entlang in"
+		line "den Kampfraum."
 		done
 	waitbutton
 	closetext
@@ -281,14 +291,15 @@ PokemonJournalThortonScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Factory Head"
-	cont "Thorton!"
+	para "Titelthema:"
+	line "Fabrikchef"
+	cont "Distmar!"
 
-	para "Thorton is said to"
-	line "only believe in"
+	para "Distmar soll nur"
+	line "an das glauben,"
 
-	para "what he can prove"
-	line "numerically with"
-	cont "his inventions."
+	para "was er mit seinen"
+	line "Erfindungen in"
+	cont "Zahlen beweisen"
+	cont "kann."
 	done

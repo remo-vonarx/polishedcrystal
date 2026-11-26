@@ -20,12 +20,14 @@ CeladonHotel2F_MapScriptHeader:
 	object_event 11,  2, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonHotel2FTeacherText, -1
 
 CeladonHotel2FTeacherText:
-	text "I'm on a surprise"
-	line "visit to see my"
-	cont "son at university!"
+	text "Ich überrasche"
+	line "meinen Sohn mit"
+	cont "einem Besuch an"
+	cont "der Uni!"
 
-	para "Hopefully he isn't"
-	line "too embarrassed…"
+	para "Hoffentlich ist es"
+	line "ihm nicht zu"
+	cont "peinlich…"
 	done
 
 CeladonHotel2FRoom1Text:

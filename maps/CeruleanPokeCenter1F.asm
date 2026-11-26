@@ -24,14 +24,15 @@ PokemonJournalMistyScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Misty!"
+	para "Titelthema:"
+	line "Arenaleiterin"
+	cont "Misty!"
 
-	para "Misty is said to"
-	line "worship Lorelei,"
+	para "Misty soll"
+	line "Lorelei verehren,"
 
-	para "a former member of"
-	line "the Elite Four."
+	para "einst Mitglied"
+	line "der Top Vier."
 	done
 
 CeruleanPokeCenter1FGymGuyScript:
@@ -54,17 +55,18 @@ CeruleanPokeCenter1FGymGuyScript:
 	done
 
 .MetricText:
-	text "The Magnet Train"
-	line "travels at over"
+	text "Mit einer Ge-"
+	line "schwindigkeit von"
 
-	para "550 kph. It goes"
-	line "between Kanto and"
+	para "über 550km/h reist"
+	line "der Magnetzug in"
 
-	para "Johto in almost no"
-	line "time at all."
+	para "null Komma nichts"
+	line "zwischen Kanto und"
+	cont "Johto hin und her."
 
-	para "It really makes"
-	line "Johto accessible."
+	para "Dadurch ist Johto"
+	line "ganz nah."
 	done
 
 CeruleanPokeCenter1FSuperNerdText:

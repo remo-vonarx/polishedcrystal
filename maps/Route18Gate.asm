@@ -67,9 +67,8 @@ Route17Route18GateCannotPassMovement:
 	step_end
 
 Route17Route18GateOfficerText:
-	text "Cycling Road"
-	line "starts going"
-	cont "uphill here."
+	text "Ab hier geht der"
+	line "Radweg bergauf."
 	done
 
 Route17Route18GateCannotPassText:

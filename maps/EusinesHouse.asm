@@ -88,12 +88,12 @@ CeladonEusine:
 .OwnSuicune
 	jumpthistext
 
-	text "If you catch even"
-	line "one, I hope that"
-	cont "you'll inform me."
+	text "Wenn du auch nur"
+	line "eins fängst, sag"
+	cont "mir Bescheid."
 
-	para "I'm counting on"
-	line "you, <PLAYER>!"
+	para "Ich zähle auf"
+	line "dich, <PLAYER>!"
 	done
 
 .Gone:
@@ -119,35 +119,37 @@ EusinesHouseGrampsScript:
 	ifequalfwd EUSINE_TRAVELING, .AfterFarewell
 	jumpthistextfaceplayer
 
-	text "My grandson Eusine"
-	line "is on another"
-	cont "adventure."
+	text "Mein Enkel Eusin"
+	line "ist wieder auf"
+	cont "Abenteuerreise."
 
-	para "He left to visit"
-	line "Bell Tower in"
-	cont "Ecruteak City."
+	para "Er wollte den"
+	line "Glockenturm in"
+	cont "Teak City"
+	cont "besuchen."
 	done
 
 .Home:
 	jumpthistextfaceplayer
 
-	text "My grandson came"
-	line "home!"
-	cont "I'm overjoyed!"
+	text "Mein Enkel ist"
+	line "heimgekommen!"
+	cont "Ich freue mich so!"
 	done
 
 .Searching:
 	jumpthistextfaceplayer
 
-	text "My grandson Eusine"
-	line "is in Johto,"
+	text "Mein Enkel Eusin"
+	line "ist in Johto"
 
-	para "searching far and"
-	line "wide for Suicune."
+	para "und sucht überall"
+	line "nach Suicune."
 
-	para "I taught him all"
-	line "about the legend-"
-	cont "ary #mon!"
+	para "Ich habe ihm alles"
+	line "über die legendä-"
+	cont "ren #mon"
+	cont "beigebracht!"
 	done
 
 .AfterFarewell:
@@ -210,55 +212,53 @@ EusineLeavesCeladonText:
 	done
 
 EusineNoBeastsText:
-	text "Oh, by the way,"
+	text "Ach, übrigens,"
 	line "<PLAYER>."
 
-	para "Have you caught"
-	line "the legendary"
-	cont "beast #mon?"
+	para "Hast du die"
+	line "legendären #mon"
+	cont "gefangen?"
 
 	para "………………"
 
 	para "OK…"
 
-	para "Let me give you"
-	line "my research notes."
+	para "Ich gebe dir meine"
+	line "Forschungsnotizen."
 	done
 
 EusineShowsRaikouText:
-	text "This is Raikou:"
+	text "Das ist Raikou:"
 	done
 
 EusineShowsEnteiText:
-	text "This is Entei:"
+	text "Das ist Entei:"
 	done
 
 EusineShowsSuicuneText:
-	text "This, of course,"
-	line "is Suicune:"
+	text "Und das ist"
+	line "natürlich Suicune:"
 	done
 
 EusinesHouseGrampsThankYouGiftText:
-	text "My grandson Eusine"
-	line "called."
+	text "Mein Enkel Eusin"
+	line "hat angerufen."
 
-	para "He's doing well."
-	line "I'm happy for him!"
+	para "Es geht ihm gut."
+	line "Ich freue mich so!"
 
-	para "Thank you for"
-	line "checking on me,"
+	para "Danke, dass du"
+	line "nach mir siehst,"
 	cont "<PLAYER>!"
 
-	para "Please take this"
-	line "to show my"
-	cont "appreciation."
+	para "Bitte nimm dies"
+	line "als Dankeschön."
 	done
 
 EusinesHouseGrampsEusineTravelingWorldText:
-	text "Eusine is out"
-	line "traveling the"
-	cont "world."
+	text "Eusin bereist"
+	line "gerade die Welt."
 
-	para "I'm so proud of"
-	line "him!"
+	para "Ich bin so stolz"
+	line "auf ihn!"
 	done

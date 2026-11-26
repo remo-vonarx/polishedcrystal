@@ -56,8 +56,8 @@ DimCave4FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
-	text "The boulder fell"
-	line "through."
+	text "Der Felsbrocken"
+	line "fiel hinunter."
 	done
 
 GenericTrainerScientistJoseph:
@@ -124,15 +124,16 @@ GenericTrainerScientistNigel:
 	done
 
 DimCave4FSuper_nerdText:
-	text "I'm walking along"
-	line "the tracks, just"
+	text "Ich laufe die"
+	line "Gleise entlang,"
 
-	para "like in that"
-	line "movie!"
+	para "genau wie in"
+	line "diesem Film!"
 
-	para "…Except I'm in a"
-	line "cave… all alone…"
+	para "…Nur bin ich in"
+	line "einer Höhle… ganz"
+	cont "allein…"
 
-	para "…This isn't fun"
-	line "anymore."
+	para "…Das macht keinen"
+	line "Spaß mehr."
 	done

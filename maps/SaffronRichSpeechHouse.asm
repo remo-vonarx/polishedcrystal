@@ -15,13 +15,14 @@ SaffronRichSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, SaffronRichSpeechHouseRichBoyText, -1
 
 SaffronRichSpeechHouseRichBoyText:
-	text "Houses are expen-"
-	line "sive in Saffron."
+	text "Häuser sind in"
+	line "Saffronia City"
+	cont "teuer."
 
-	para "If you want to"
-	line "live here, you've"
+	para "Wer hier wohnen"
+	line "will, braucht viel"
 
-	para "got to have a lot"
-	line "of money, or find"
-	cont "a roommate."
+	para "Geld oder muss"
+	line "sich eine Wohnung"
+	cont "teilen."
 	done

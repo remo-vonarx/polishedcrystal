@@ -118,73 +118,75 @@ RocketHideoutB4FMeetLeadersScript:
 
 
 .CandelaIntro1Text:
-	text "Candela: I'm tell-"
-	line "ing you, raw power"
-	cont "wins every time!"
+	text "Candela: Ich sag's"
+	line "euch, rohe Kraft"
+	cont "siegt jedes Mal!"
 
-	para "Training should be"
-	line "tough, like a"
-	cont "battle!"
+	para "Training muss hart"
+	line "sein, wie ein"
+	cont "Kampf!"
 	done
 
 .BlancheIntro1Text:
-	text "Blanche: Strength"
-	line "is pointless with-"
-	cont "out strategy."
+	text "Blanche: Stärke"
+	line "ist ohne Strate-"
+	cont "gie sinnlos."
 
-	para "Smart planning"
-	line "wins, every time."
+	para "Kluge Planung"
+	line "siegt, jedes Mal."
 	done
 
 .SparkIntro1Text:
-	text "Spark: Both of you"
-	line "are missing the"
-	cont "point!"
+	text "Spark: Ihr beide"
+	line "liegt falsch!"
 
-	para "Instinct is key--"
-	line "trust your gut!"
+	para "Auf den Instinkt"
+	line "kommt's an! Hört"
+	cont "auf euren Bauch!"
 	done
 
 .CandelaIntro2Text:
-	text "Candela: Instinct?"
-	line "That's just guess-"
-	cont "work!"
+	text "Candela: Instinkt?"
+	line "Das ist doch nur"
+	cont "Raterei!"
 
-	para "Real trainers rely"
-	line "on strength!"
+	para "Echte Trainer"
+	line "setzen auf Kraft!"
 	done
 
 .BlancheIntro2Text:
 	text "Blanche: Candela,"
-	line "Spark, this isn't"
-	cont "the time!"
+	line "Spark, dafür ist"
+	cont "jetzt keine Zeit!"
 
-	para "What about the"
-	line "the Great Tree"
-	cont "project?"
+	para "Was ist mit dem"
+	line "Projekt am Großen"
+	cont "Baum?"
 	done
 
 .SparkIntro2Text:
-	text "Spark: Right! The"
-	line "big cherry tree--"
+	text "Spark: Genau! Der"
+	line "große Kirschbaum…"
 	done
 
 .SparkIntro3Text:
-	text "Wait, who's that?"
+	text "Moment, wer ist"
+	line "das denn?"
 	done
 
 .CandelaIntro3Text:
-	text "Candela: Looks"
-	line "like this one has"
-	cont "power!"
+	text "Candela: Sieht"
+	line "aus, als hättest"
+	cont "du Kraft!"
 
-	para "Since you made it"
-	line "this far, let's"
-	cont "battle!"
+	para "Wo du schon so"
+	line "weit gekommen"
+	cont "bist: Kämpfen wir!"
 
-	para "If you win, we'll"
-	line "let you in on our"
-	cont "big project!"
+	para "Gewinnst du, wei-"
+	line "hen wir dich in"
+	cont "unser großes"
+	cont "Projekt ein!"
 	done
 
 RocketHideoutB4FMeetLeadersScene:
@@ -225,23 +227,23 @@ RocketHideoutB4FSparkScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
-	text "Spark: Hey! Ready"
-	line "to trust your gut?"
-	cont "In a battle?"
+	text "Spark: Hey! Hörst"
+	line "du auf deinen"
+	cont "Bauch? Im Kampf?"
 	done
 
 .SeenText:
-	text "Sweet! Let's see"
-	line "how far your inst-"
-	cont "inct takes you!"
+	text "Super! Mal sehen,"
+	line "wie weit dich dein"
+	cont "Instinkt bringt!"
 	done
 
 .BeatenText:
-	text "Whoa, you totally"
-	line "nailed it!"
+	text "Wow, das hast du"
+	line "voll drauf!"
 
-	para "Guess your gut"
-	line "was right!"
+	para "Dein Bauchgefühl"
+	line "lag wohl richtig!"
 	done
 
 .AfterText1:
@@ -262,12 +264,12 @@ RocketHideoutB4FSparkScript:
 	done
 
 .RefusedText:
-	text "Aw, bummer!"
-	line "Don't let fear"
-	cont "hold you back!"
+	text "Och, schade!"
+	line "Lass dich nicht"
+	cont "von Angst bremsen!"
 
-	para "Come back when"
-	line "you're feeling it."
+	para "Komm wieder, wenn"
+	line "du es spürst."
 	done
 
 RocketHideoutB4FCandelaScript:
@@ -302,23 +304,24 @@ RocketHideoutB4FCandelaScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
-	text "Candela: Ready to"
-	line "test out your"
-	cont "strength?"
+	text "Candela: Bereit,"
+	line "deine Stärke zu"
+	cont "testen?"
 	done
 
 .SeenText:
-	text "That's the spirit!"
-	line "Show me your"
-	cont "power!"
+	text "So ist's recht!"
+	line "Zeig mir deine"
+	cont "Kraft!"
 	done
 
 .BeatenText:
-	text "Alright, you've"
-	line "proven your"
-	cont "strength today."
+	text "Na gut, du hast"
+	line "heute deine Stärke"
+	cont "bewiesen."
 
-	para "I'll admit defeat."
+	para "Ich gebe mich"
+	line "geschlagen."
 	done
 
 .AfterText1:
@@ -339,11 +342,13 @@ RocketHideoutB4FCandelaScript:
 	done
 
 .RefusedText:
-	text "No? Guess your"
-	line "not ready yet."
+	text "Nein? Du bist wohl"
+	line "noch nicht so"
+	cont "weit."
 
-	para "Come back when you"
-	line "have more fire!"
+	para "Komm wieder, wenn"
+	line "du mehr Feuer"
+	cont "hast!"
 	done
 
 RocketHideoutB4FBlancheScript:
@@ -378,24 +383,24 @@ RocketHideoutB4FBlancheScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
-	text "Blanche: Do you"
-	line "value strategy?"
+	text "Blanche: Ist dir"
+	line "Strategie wichtig?"
 
-	para "Shall we test"
-	line "your tactics?"
+	para "Sollen wir deine"
+	line "Taktik testen?"
 	done
 
 .SeenText:
-	text "Very well, let's"
-	line "see your"
-	cont "technique!"
+	text "Nun gut, zeig mir"
+	line "deine Technik!"
 	done
 
 .BeatenText:
-	text "A well-executed"
-	line "plan, indeed."
+	text "Ein gut umgesetz-"
+	line "ter Plan, fürwahr."
 
-	para "You've bested me."
+	para "Du hast mich"
+	line "besiegt."
 	done
 
 .AfterText1:
@@ -417,12 +422,12 @@ RocketHideoutB4FBlancheScript:
 	done
 
 .RefusedText:
-	text "Hmm, not"
-	line "feeling confident?"
+	text "Hmm, fehlt dir das"
+	line "Selbstvertrauen?"
 
-	para "Return when you're"
-	line "ready to think"
-	cont "ahead."
+	para "Komm wieder, wenn"
+	line "du bereit bist,"
+	cont "vorauszudenken."
 	done
 
 RocketHideoutB4FYoungsterArdenScript:
@@ -445,17 +450,17 @@ RocketHideoutB4FYoungsterArdenScript:
 	end
 
 .GreetingText
-	text "Team Valor is…"
+	text "Team Wagemut ist…"
 
-	para "Wait--no!"
+	para "Moment… nein!"
 
-	para "I mean, I think"
-	line "I'm lost!"
+	para "Ich meine, ich hab"
+	line "mich verlaufen!"
 	done
 
 .BeatenText:
-	text "Which way was"
-	line "the elevator?"
+	text "Wo war noch mal"
+	line "der Aufzug?"
 	done
 
 .AfterText:
@@ -578,58 +583,58 @@ RocketHideoutB4FDefeatedAllLeadersScript:
 	end
 
 .FinalText:
-	text "Candela: You're"
-	line "stronger than I"
-	cont "expected."
+	text "Candela: Du bist"
+	line "stärker als"
+	cont "erwartet."
 
-	para "The sprays we've"
-	line "given you are more"
-	cont "than they seem."
+	para "Die Parfüms, die"
+	line "wir dir gaben,"
+	cont "sind mehr, als sie"
+	cont "scheinen."
 
-	para "Blanche: Each"
-	line "lure contains the"
+	para "Blanche: Jedes"
+	line "Parfüm enthält"
 
-	para "essence of a"
-	line "legendary bird"
+	para "die Essenz eines"
+	line "legendären Vogel-"
 	cont "#mon."
 
-	para "They were created"
-	line "to call out to"
+	para "Sie sollen andere"
+	line "ihrer Art herbei-"
+	cont "rufen."
 
-	para "others of their"
-	line "kind."
+	para "Spark: Aber sie"
+	line "nützen nur am"
+	cont "richtigen Ort."
 
-	para "Spark: But they're"
-	line "only useful in the"
-	cont "right place."
+	para "Darum ist der"
+	line "Große Baum"
+	cont "wichtig."
 
-	para "That's why the"
-	line "Great Tree is"
-	cont "important."
+	para "Candela: Der Baum"
+	line "ist uralt,"
 
-	para "Candela: The tree"
-	line "is ancient,"
+	para "ein heiliger"
+	line "Nistplatz."
 
-	para "a sacred site for"
-	line "roosting."
+	para "Er ist mit der"
+	line "Energie der Region"
+	cont "verbunden."
 
-	para "It's connected to"
-	line "the energy of the"
-	cont "region."
+	para "Blanche: Vögel von"
+	line "großer Kraft"
 
-	para "Blanche: Birds of"
-	line "great power have"
+	para "versammeln sich"
+	line "dort seit Genera-"
+	cont "tionen."
 
-	para "gathered there for"
-	line "generations."
+	para "Der Baum verstärkt"
+	line "den Ruf der"
+	cont "Parfüms."
 
-	para "The tree amplifies"
-	line "the call of the"
-	cont "lures."
+	para "Spark: Benutzt du"
+	line "sie also dort,"
 
-	para "Spark: So if you"
-	line "use them there,"
-
-	para "who knows what"
-	line "might appear!"
+	para "wer weiß, was dann"
+	line "erscheint!"
 	done

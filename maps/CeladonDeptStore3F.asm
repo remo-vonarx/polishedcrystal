@@ -51,29 +51,31 @@ CeladonDeptStore3FTutorCounterScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Never mind."
+	text "Schon gut."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf…"
+	text "Du hast kein"
+	line "Silberblatt…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows Counter."
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Konter."
 	done
 
 VideoGameClerkNoMoneyScript:
 	jumpthisopenedtext
 
-	text "Clerk: You can't"
-	line "afford it!"
+	text "Verkäufer: Das"
+	line "kannst du dir"
+	cont "nicht leisten!"
 	done
 
 CeladonDeptStore3FSnesScript:
@@ -169,76 +171,79 @@ CeladonDeptStore3FWiiScript:
 	done
 
 CeladonDeptStore3FClerk2Text:
-	text "There's a neat move"
-	line "called Counter."
+	text "Es gibt eine tolle"
+	line "Attacke namens"
+	cont "Konter."
 
-	para "Not the kind of"
-	line "counter I'm leaning"
-	cont "on, mind you!"
+	para "Hat aber nichts"
+	line "mit der Theke zu"
+	cont "tun, an der ich"
+	cont "lehne!"
 	done
 
 Text_CeladonDeptStore3FTutorCounter:
-	text "I'll teach your"
-	line "#mon how to use"
+	text "Gibst du mir ein"
+	line "Silberblatt, lehre"
 
-	para "Counter if you pay"
-	line "me a Silver Leaf."
+	para "ich dein #mon"
+	line "Konter."
 	done
 
 
 Text_CeladonDeptStore3FTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Counter?"
+	text "Soll ich deinem"
+	line "#mon Konter"
+	cont "beibringen?"
 	done
 
 
 
 VideoGameClerkText:
-	text "We sell brand-new"
-	line "and vintage game"
-	cont "systems!"
+	text "Wir verkaufen"
+	line "brandneue und"
+	cont "klassische Spiel-"
+	cont "konsolen!"
 
-	para "Try them out for"
-	line "yourself!"
+	para "Probier sie doch"
+	line "selbst aus!"
 	done
 
 VideoGameClerkNoSaleText:
-	text "Clerk: Well, if"
-	line "you say so."
+	text "Verkäufer: Wie du"
+	line "meinst."
 	done
 
 
 VideoGameClerkSellSnesText:
-	text "Clerk: That SNES"
-	line "can be yours for"
+	text "Verkäufer: Dieses"
+	line "SNES gibt's für"
 
-	para "just ¥20,000!"
-	line "Want one?"
+	para "nur ¥20,000!"
+	line "Möchtest du eins?"
 	done
 
 VideoGameClerkSellN64Text:
-	text "Clerk: That N64"
-	line "can be yours for"
+	text "Verkäufer: Dieses"
+	line "N64 gibt's für"
 
-	para "just ¥25,000!"
-	line "Want one?"
+	para "nur ¥25,000!"
+	line "Möchtest du eins?"
 	done
 
 VideoGameClerkSellGameCubeText:
-	text "Clerk: That Game-"
-	line "Cube can be yours"
+	text "Verkäufer: Diesen"
+	line "GameCube gibt's"
 
-	para "for just ¥30,000!"
-	line "Want one?"
+	para "für nur ¥30,000!"
+	line "Möchtest du einen?"
 	done
 
 VideoGameClerkSellWiiText:
-	text "Clerk: That Wii"
-	line "can be yours for"
+	text "Verkäufer: Die"
+	line "Wii gibt's für"
 
-	para "just ¥40,000!"
-	line "Want one?"
+	para "nur ¥40,000!"
+	line "Möchtest du eine?"
 	done
 
 BoughtSnesText:
@@ -266,20 +271,22 @@ BoughtWiiText:
 
 
 CeladonDeptStore3FYoungsterText:
-	text "I can't decide"
-	line "which #mon I"
+	text "Ich kann mich"
+	line "nicht entscheiden,"
 
-	para "should use this"
-	line "TM on…"
+	para "welches #mon"
+	line "diese TM erhalten"
+	cont "soll…"
 
-	para "Good thing it"
-	line "doesn't run out."
+	para "Zum Glück kann man"
+	line "sie immer wieder"
+	cont "benutzen."
 	done
 
 CeladonDeptStore3FSuperNerdText:
-	text "The Tech Shop"
-	line "sells some cool"
-	cont "game systems."
+	text "Im Technikladen"
+	line "gibt es coole"
+	cont "Spielkonsolen."
 	done
 
 CeladonDeptStore3FDirectoryText:
@@ -290,31 +297,31 @@ CeladonDeptStore3FDirectoryText:
 	done
 
 CeladonDeptStore3FSnesText:
-	text "It's a Super NES!"
+	text "Ein Super NES!"
 
-	para "I have one of"
-	line "those at home!"
+	para "So eins habe ich"
+	line "auch zu Hause!"
 	done
 
 CeladonDeptStore3FN64Text:
-	text "It's an N64!"
+	text "Ein N64!"
 
-	para "I have one of"
-	line "those at home!"
+	para "So eins habe ich"
+	line "auch zu Hause!"
 	done
 
 CeladonDeptStore3FGameCubeText:
-	text "It's a GameCube!"
+	text "Ein GameCube!"
 
-	para "I have one of"
-	line "those at home!"
+	para "So einen habe ich"
+	line "auch zu Hause!"
 	done
 
 CeladonDeptStore3FWiiText:
-	text "It's a Wii!"
+	text "Eine Wii!"
 
-	para "I have one of"
-	line "those at home!"
+	para "So eine habe ich"
+	line "auch zu Hause!"
 	done
 
 CeladonDeptStore3FRPGText:

@@ -86,14 +86,17 @@ SaffronGymSabrinaScript:
 	setevent EVENT_GOT_TM29_PSYCHIC
 	jumpthisopenedtext
 
-	text "TM29 is Psychic."
+	text "TM29 ist Psycho-"
+	line "kinese."
 
-	para "It may lower the"
-	line "target's Sp.Def."
+	para "Sie kann die"
+	line "Sp.Vert des"
+	cont "Gegners senken."
 
-	para "You will become a"
-	line "celebrated and"
-	cont "beloved Champion!"
+	para "Du wirst ein"
+	line "gefeierter und"
+	cont "beliebter Champ"
+	cont "werden!"
 	done
 
 GenericTrainerMediumDoris:
@@ -194,29 +197,34 @@ SaffronGymStatue:
 	jumpstd gymstatue2
 
 SabrinaIntroText:
-	text "Sabrina: I knew"
-	line "you were coming…"
+	text "Sabrina: Ich"
+	line "wusste, dass du"
+	cont "kommen würdest…"
 
-	para "Three years ago I"
-	line "had a vision of"
-	cont "your arrival."
+	para "Vor drei Jahren"
+	line "sah ich dich in"
+	cont "einer Vision."
 
-	para "You're after my"
-	line "Badge."
+	para "Du willst meinen"
+	line "Orden haben."
 
-	para "I don't enjoy bat-"
-	line "tling, but it's my"
+	para "Ich habe keine"
+	line "Freude am Kämpfen,"
 
-	para "duty as a Leader"
-	line "to confer Badges"
+	para "aber als Leiterin"
+	line "ist es meine"
 
-	para "on anyone who has"
-	line "proven themselves"
-	cont "worthy."
+	para "Pflicht, all denen"
+	line "einen Orden zu"
 
-	para "Since you wish it,"
-	line "I will show you my"
-	cont "psychic powers!"
+	para "geben, die sich"
+	line "als würdig"
+	cont "erwiesen haben."
+
+	para "Da du es wünschst,"
+	line "werde ich dir"
+	cont "meine psychischen"
+	cont "Kräfte zeigen!"
 	done
 
 SabrinaWinLossText:
@@ -245,17 +253,19 @@ endc
 	done
 
 SabrinaMarshBadgeText:
-	text "Sabrina: I failed"
-	line "to accurately pre-"
+	text "Sabrina: Ich"
+	line "konnte deine"
 
-	para "dict your power."
-	line "That means your"
+	para "Stärke nicht genau"
+	line "voraussehen. Also"
 
-	para "power is beyond my"
-	line "psychic ability."
+	para "reicht deine Kraft"
+	line "über meine psy-"
+	cont "chischen Fähig-"
+	cont "keiten hinaus."
 
-	para "You deserve this"
-	line "TM, too!"
+	para "Du verdienst auch"
+	line "diese TM!"
 	done
 
 SabrinaFightDoneText:

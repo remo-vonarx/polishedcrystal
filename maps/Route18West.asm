@@ -52,7 +52,7 @@ BikerCharlesBeatenText:
 	done
 
 Route18WestBikeWarningText:
-	text "You have to be on"
-	line "a Bicycle to go"
-	cont "on Cycling Road!"
+	text "Du darfst nur mit"
+	line "einem Fahrrad auf"
+	cont "den Radweg!"
 	done

@@ -40,7 +40,7 @@ RocketHideoutElevatorButton:
 	db -1 ; end
 
 .AppearsToNeedKeyText
-	text "It appears to"
-	line "need a key to"
-	cont "operate."
+	text "Ohne Schlüssel"
+	line "lässt er sich wohl"
+	cont "nicht bedienen."
 	done

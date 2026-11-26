@@ -16,19 +16,23 @@ VermilionPollutionSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionPollutionSpeechHouseCooltrainerMText, -1
 
 VermilionPollutionSpeechHouseBreederText:
-	text "Vermilion is a"
-	line "wonderful place,"
+	text "Orania City ist"
+	line "ein wundervoller"
+	cont "Ort,"
 
-	para "but in a port like"
-	line "this we have to be"
-	cont "wary of pollution!"
+	para "aber in einem"
+	line "Hafen wie diesem"
+	cont "müssen wir uns vor"
+	cont "Verschmutzung"
+	cont "hüten!"
 	done
 
 VermilionPollutionSpeechHouseCooltrainerMText:
-	text "Thanks to all the"
-	line "cruise ships that"
-	cont "come and go,"
+	text "Dank all der"
+	line "Kreuzfahrtschiffe,"
+	cont "die kommen und"
+	cont "gehen,"
 
-	para "we get visitors"
-	line "from all over!"
+	para "haben wir Besucher"
+	line "von überall her!"
 	done

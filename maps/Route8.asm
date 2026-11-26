@@ -124,24 +124,25 @@ GenericTrainerLassMeadow:
 	done
 
 Route8BikerDwayneProtestText:
-	text "We're the Kanto"
-	line "#mon Federation"
-	cont "trainer group."
+	text "Wir sind die"
+	line "#mon-Trainer-"
+	cont "gilde aus Kanto."
 
-	para "We're holding a"
-	line "protest!"
+	para "Wir halten eine"
+	line "Protestaktion ab!"
 	done
 
 Route8BikerZekeProtestText:
-	text "We're the Kanto"
-	line "#mon Federa-"
-	cont "tion!"
+	text "Wir sind die"
+	line "#mon-Trainer-"
+	cont "gilde aus Kanto!"
 
-	para "The cops can't"
-	line "stop us from"
+	para "Die Polizei kann"
+	line "uns nicht davon"
 
-	para "using the Under-"
-	line "ground Path!"
+	para "abhalten, die"
+	line "Unterführung zu"
+	cont "benutzen!"
 	done
 
 BikerDwayneSeenText:

@@ -23,21 +23,22 @@ PokemonJournalBillScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "#Maniac Bill!"
+	para "Titelthema:"
+	line "#maniac Bill!"
 
-	para "Bill invented the"
-	line "#mon Storage"
-	cont "System to hold his"
+	para "Bill erfand das"
+	line "#mon-Lagerungs-"
+	cont "System, um seine"
 
-	para "own vast #mon"
-	line "collection."
+	para "eigene riesige"
+	line "#mon-Sammlung"
+	cont "aufzubewahren."
 
-	para "Apparently, the"
-	line "first one he"
+	para "Das erste #mon,"
+	line "das er fing, soll"
 
-	para "caught was an"
-	line "Abra."
+	para "ein Abra gewesen"
+	line "sein."
 	done
 
 BillsHousePCText:
@@ -77,49 +78,52 @@ BillsHouseBillScript:
 	done
 
 .IntroText:
-	text "Bill: Eevee is"
-	line "such a fascinating"
-	cont "#mon."
+	text "Bill: Evoli ist"
+	line "so ein faszinie-"
+	cont "rendes #mon."
 
-	para "Some say that the"
-	line "three legendary"
+	para "Manche sagen, die"
+	line "drei legendären"
 
-	para "beasts of Johto"
-	line "were once three"
+	para "#mon Johtos"
+	line "seien einst drei"
+	cont "#mon gewesen,"
 
-	para "#mon that"
-	line "evolve from Eevee."
+	para "die sich aus"
+	line "Evoli entwickeln."
 
-	para "But that might be"
-	line "only a rumor."
+	para "Aber vielleicht"
+	line "ist das nur ein"
+	cont "Gerücht."
 
-	para "Still, I'd sure"
-	line "love to see them…"
+	para "Trotzdem würde ich"
+	line "sie zu gern sehen…"
 	done
 
 .SeenText:
-	text "You caught all"
-	line "three of the"
-	cont "legendary beasts?"
+	text "Du hast alle drei"
+	line "legendären #mon"
+	cont "gefangen?"
 
-	para "That's so cool,"
+	para "Das ist so cool,"
 	line "<PLAYER>!"
 
-	para "Do you think they"
-	line "were once related"
-	cont "to Eevee?"
+	para "Glaubst du, sie"
+	line "waren einst mit"
+	cont "Evoli verwandt?"
 
-	para "Oh man, now I have"
-	line "to show you my"
-	cont "team!"
+	para "Mann, jetzt muss"
+	line "ich dir mein Team"
+	cont "zeigen!"
 
-	para "You can compare"
-	line "the three legends"
+	para "Vergleich die drei"
+	line "Legenden, gegen"
 
-	para "you battled to"
-	line "my own #mon!"
+	para "die du gekämpft"
+	line "hast, mit meinen"
+	cont "#mon!"
 	done
 
 .BeatenText:
-	text "Yeehah!"
+	text "Juchhu!"
 	done

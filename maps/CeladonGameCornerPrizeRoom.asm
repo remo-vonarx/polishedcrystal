@@ -244,7 +244,7 @@ CeladonPrizeRoom_ConfirmPurchaseText:
 	done
 
 CeladonPrizeRoom_ConfirmTMPurchaseText:
-	text "OK, so you wanted"
+	text "Du willst also"
 	line ""
 	text_ram wStringBuffer3
 	text "?"
@@ -255,17 +255,18 @@ CeladonPrizeRoom_HereYouGoText:
 	done
 
 CeladonPrizeRoom_AlreadyHaveTMText:
-	text "You already have"
-	line "that TM."
+	text "Du hast diese TM"
+	line "schon."
 	done
 
 
 CeladonPrizeRoom_NotEnoughRoomText:
-	text "Wait, no, you have"
-	line "no room for it."
+	text "Moment, nein, du"
+	line "hast dafür keinen"
+	cont "Platz."
 
-	para "I'll return your"
-	line "coins back to you."
+	para "Ich gebe dir deine"
+	line "Münzen zurück."
 	done
 
 CeladonPrizeRoom_ComeAgainText:

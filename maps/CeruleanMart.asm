@@ -17,24 +17,26 @@ CeruleanMart_MapScriptHeader:
 	object_event  7,  2, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 2, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeruleanMart_CooltrainerFText, -1
 
 CeruleanMart_CooltrainerMText:
-	text "You'll run into"
-	line "many trainers on"
+	text "Du wirst auf dem"
+	line "Weg zum Kap bei"
 
-	para "the way to Ceru-"
-	line "lean Cape."
+	para "Azuria City viele"
+	line "Trainer treffen."
 
-	para "They want to see"
-	line "how they stack"
+	para "Sie wollen heraus-"
+	line "finden, welche"
 
-	para "up against other"
-	line "trainers."
+	para "Chance sie gegen"
+	line "andere Trainer"
+	cont "haben."
 	done
 
 CeruleanMart_CooltrainerFText:
-	text "Misty is about the"
-	line "only person in"
+	text "Misty ist wahr-"
+	line "scheinlich die"
 
-	para "town who can beat"
-	line "the trainers at"
-	cont "Cerulean Cape."
+	para "Einzige, die die"
+	line "Trainer am Kap bei"
+	cont "Azuria City"
+	cont "besiegen kann."
 	done
