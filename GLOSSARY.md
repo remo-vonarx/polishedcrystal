@@ -609,3 +609,6 @@ _Avoid_: Detektor (the Itemfinder)
 
 **Rocket-Spielhalle**:
 The Rocket Game Corner in Celadon, in the Safari Zone warden's granddaughter's story.
+**Kampfraum**, **Kampfhalle**:
+The Battle Tower's Battle Room (Kristall's Kampfraum) and the Battle Factory's Battle Floor (Kampfhalle, a factory hall).
+_Avoid_: Kampfraum for the Battle Floor

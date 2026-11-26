@@ -108,8 +108,8 @@ BattleFactoryHallwayEnterScene:
 .DontSaveAndEndTheSession:
 	writethistext
 		text "Die Herausforde-"
-		line "rung im Kampfraum"
-		cont "abbrechen?"
+		line "rung in der Kampf-"
+		cont "halle abbrechen?"
 
 		para "Achtung, das zählt"
 		line "als Niederlage."
