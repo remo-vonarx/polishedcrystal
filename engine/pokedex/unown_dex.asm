@@ -49,15 +49,15 @@ _Pokedex_Unown:
 	pop af
 	call Pokedex_GetPrintableUnownChar
 
-	hlcoord 16, 3
+	hlcoord 18, 3
 	ld [hl], a
 	jr .current_done
 
 .not_caught
-	; Remove "UNOWN"
+	; Remove "ICOGNITO"
 	hlcoord 10, 3
 	ld a, ' '
-	ld bc, 5
+	ld bc, 8
 	rst ByteFill
 
 .current_done
