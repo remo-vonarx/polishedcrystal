@@ -5599,7 +5599,7 @@ MoveInfoBox:
 	ret
 
 .PowAcc:
-	db "   P/   %@"
+	db "   S/   %@"
 .NA:
 	db "---@"
 
