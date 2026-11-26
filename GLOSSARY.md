@@ -543,6 +543,10 @@ _Avoid_: Nintendo Power
 
 ## Story text
 
+**Unterhaltungskanal**:
+The Variety Channel the Goldenrod band plays on. No German game has a station of that name; built from Kristall's "Unterhaltungssendungen" in the Radio Tower.
+_Avoid_: Varieté-Kanal
+
 **Schätzchen**:
 What the Honey House woman in Goldenrod calls the player ("honey"). The honey pun has no German pet name.
 _Avoid_: Zuckerschnute, Honigschnäuzchen
