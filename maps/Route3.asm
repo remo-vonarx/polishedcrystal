@@ -98,8 +98,7 @@ GenericTrainerYoungsterWarren:
 	done
 
 .BeatenText:
-	text "Ich wusste, ich"
-	line "würde verlieren…"
+	text "Ich wusste es…"
 	done
 
 GenericTrainerFirebreatherOtis:
