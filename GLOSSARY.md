@@ -609,6 +609,18 @@ _Avoid_: Detektor (the Itemfinder)
 
 **Rocket-Spielhalle**:
 The Rocket Game Corner in Celadon, in the Safari Zone warden's granddaughter's story.
+**Kukui**:
+Speaks as in the German Sun and Moon: Hey, Wow, Alles klar, jawohl, stimmt's?, stylish.
+_Avoid_: yeah, Roger
+
+**sagenumwobene Vögel**:
+Lawrence III's name for the legendary birds (winged mirages); sagenumwoben is the Pokédex's word for Arktos.
+_Avoid_: geflügelte Trugbilder
+
+**Viktor**, **Puka**:
+The surfer on Route 19 and his Pikachu, as the German dub of "Die große Welle" names them (PokéWiki).
+_Avoid_: Victor
+
 **Kampfraum**, **Kampfhalle**:
 The Battle Tower's Battle Room (Kristall's Kampfraum) and the Battle Factory's Battle Floor (Kampfhalle, a factory hall).
 _Avoid_: Kampfraum for the Battle Floor
