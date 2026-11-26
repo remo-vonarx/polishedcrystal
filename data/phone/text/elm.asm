@@ -102,36 +102,40 @@ ElmPhoneDiscovery2Text:
 	prompt
 
 ElmPhonePokerusText:
-	text "Hello, <PLAYER>?"
+	text "Hallo, <PLAYER>?"
 
-	para "I discovered an"
-	line "odd thing."
+	para "Ich habe etwas"
+	line "Seltsames"
+	cont "entdeckt."
 
-	para "Apparently there's"
-	line "something called"
+	para "Scheinbar gibt es"
+	line "einen sogenannten"
 
-	para "#rus that in-"
-	line "fects #mon."
+	para "#rus, der"
+	line "#mon infiziert."
 
-	para "Yes, it's like a"
-	line "virus, so it's"
-	cont "called #rus."
+	para "Es ist eine Art"
+	line "Virus und wird"
 
-	para "It multiplies fast"
-	line "and infects other"
+	para "daher #rus"
+	line "genannt."
 
-	para "#mon too. When"
-	line "infected, they"
+	para "Es vermehrt sich"
+	line "rapide und infi-"
 
-	para "seem to put more"
-	line "effort into their"
+	para "ziert andere #-"
+	line "mon. Infizierte"
 
-	para "training. Luckily,"
-	line "it isn't harmful."
+	para "#mon strengen"
+	line "sich offenbar"
 
-	para "It goes away"
-	line "with time, so"
-	cont "don't worry!"
+	para "beim Training mehr"
+	line "an. Zum Glück ist"
+	cont "es harmlos."
+
+	para "Es verschwindet"
+	line "nach einiger Zeit,"
+	cont "also keine Sorge!"
 	done
 
 ElmPhoneDisasterText:
@@ -205,364 +209,390 @@ ElmPhoneGiftText:
 	done
 
 ElmPhoneEvolutionQuestionText:
-	text "By the way,"
-	line "<PLAYER>, want to"
+	text "Übrigens, <PLAYER>,"
+	line "willst du wissen,"
 
-	para "know how your"
-	line "#mon evolves?"
+	para "wie dein #mon"
+	line "sich entwickelt?"
 	done
 
 ElmPhoneEvoText_None:
-	text "Well, "
+	text "Nun, "
 	text_ram wStringBuffer3
-	line "doesn't evolve!"
+	line "entwickelt sich"
+	cont "nicht!"
 	prompt
 
 ElmPhoneEvoText_Level:
 	text_ram wStringBuffer3
-	line "evolves when it"
-	cont "reaches level "
+	line "entwickelt sich,"
+	cont "wenn es Level "
 	text_decimal wStringBuffer4, 1, 3
-	text "."
+	cont "erreicht."
 	prompt
 
 ElmPhoneEvoText_Item:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to a"
-	line ""
+	para "wenn es mit dem"
+	line "Item "
 	text_ram wStringBuffer4
-	text "."
+	cont "in Kontakt kommt."
 	prompt
 
 ElmPhoneEvoText_TradeNoItem:
 	text_ram wStringBuffer3
-	line "evolves by trade,"
+	line "entwickelt sich"
+	cont "durch Tausch oder,"
 
-	para "or when exposed to"
-	line "a "
+	para "wenn es mit dem"
+	line "Item "
 	text_ram wStringBuffer4
-	text "."
+	cont "in Kontakt kommt."
 	prompt
 
 ElmPhoneEvoText_TradeWithItem:
 	text_ram wStringBuffer3
-	line "evolves by trade,"
+	line "entwickelt sich"
+	cont "durch Tausch oder,"
 
-	para "or when gaining a"
-	line "level with"
-	cont ""
+	para "wenn sein Level"
+	line "steigt und es das"
+	cont "Item "
 	text_ram wStringBuffer4
-	text " held."
+	cont "trägt."
 	prompt
 
 ElmPhoneEvoText_Holding:
 	text_ram wStringBuffer3
-	line "evolves when it"
-	cont "gains a level"
+	line "entwickelt sich,"
+	cont "wenn sein Level"
 
-	para "while holding a"
-	line ""
+	para "steigt und es das"
+	line "Item "
 	text_ram wStringBuffer4
-	text "."
+	cont "trägt."
 	prompt
 
 ElmPhoneEvoText_Holding_MornDay:
 	text_ram wStringBuffer3
-	line "evolves when it"
-	cont "gains a level"
+	line "entwickelt sich,"
+	cont "wenn sein Level"
 
-	para "while holding a"
-	line ""
+	para "steigt und es das"
+	line "Item "
 	text_ram wStringBuffer4
-	text ", but"
+	cont "trägt, aber nur"
 
-	para "only during the"
-	line "morning or day."
+	para "am Morgen oder"
+	line "am Tag."
 	prompt
 
 ElmPhoneEvoText_Holding_EveNite:
 	text_ram wStringBuffer3
-	line "evolves when it"
-	cont "gains a level"
+	line "entwickelt sich,"
+	cont "wenn sein Level"
 
-	para "while holding a"
-	line ""
+	para "steigt und es das"
+	line "Item "
 	text_ram wStringBuffer4
-	text ", but"
+	cont "trägt, aber nur"
 
-	para "only during the"
-	line "evening or night."
+	para "am Abend oder"
+	line "in der Nacht."
 	prompt
 
 ElmPhoneEvoText_Happiness:
 	text_ram wStringBuffer3
-	line "evolves when it's"
-	cont "really happy!"
+	line "entwickelt sich,"
+	cont "wenn es richtig"
+	cont "glücklich ist!"
 	prompt
 
 ElmPhoneEvoText_Happiness_MornDay:
 	text_ram wStringBuffer3
-	line "evolves when it's"
-	cont "really happy, but"
+	line "entwickelt sich,"
+	cont "wenn es richtig"
+	cont "glücklich ist,"
 
-	para "only during the"
-	line "morning or day."
+	para "aber nur am Morgen"
+	line "oder am Tag."
 	prompt
 
 ElmPhoneEvoText_Happiness_EveNite:
 	text_ram wStringBuffer3
-	line "evolves when it's"
-	cont "really happy, but"
+	line "entwickelt sich,"
+	cont "wenn es richtig"
+	cont "glücklich ist,"
 
-	para "only during the"
-	line "evening or night."
+	para "aber nur am Abend"
+	line "oder in der Nacht."
 	prompt
 
 ElmPhoneEvoText_Stat:
 	text_ram wStringBuffer3
-	line "evolves at level"
-	cont ""
+	line "entwickelt sich"
+	cont "bei Level "
 	text_decimal wStringBuffer4, 1, 3
-	text ", but what it"
+	text ","
 
-	para "evolves into de-"
-	line "pends on its"
+	para "aber wozu es sich"
+	line "entwickelt, hängt"
 
-	para "Attack and"
-	line "Defense stats."
+	para "von seinen Werten"
+	line "für Angriff und"
+	cont "Verteidigung ab."
 	prompt
 
 ElmPhoneEvoText_Location:
 	text_ram wStringBuffer3
-	line "evolves when it"
+	line "entwickelt sich,"
 
-	para "gains a level at"
-	line ""
+	para "wenn sein Level an"
+	line "diesem Ort steigt:"
+	cont ""
 	text_ram wStringBuffer4
 	text "."
 	prompt
 
 ElmPhoneEvoText_Move:
 	text_ram wStringBuffer3
-	line "evolves when it"
+	line "entwickelt sich,"
 
-	para "gains a level"
-	line "while it knows"
+	para "wenn sein Level"
+	line "steigt und es die"
 
-	para "how to use"
+	para "Attacke"
 	line ""
 	text_ram wStringBuffer4
-	text "."
+	cont "beherrscht."
 	prompt
 
 ElmPhoneEvoText_Crit:
 	text_ram wStringBuffer3
-	line "evolves after it"
+	line "entwickelt sich,"
 
-	para "lands three crit-"
-	line "ical hits in one"
-	cont "battle."
+	para "wenn ihm in einem"
+	line "Kampf drei Voll-"
+	cont "treffer gelingen."
 	prompt
 
 ElmPhoneEvoText_Party:
 	text_ram wStringBuffer3
-	line "evolves when it"
-	cont "gains a level"
+	line "entwickelt sich,"
+	cont "wenn sein Level"
 
-	para "while you have a"
+	para "steigt und du auch"
 	line ""
 	text_ram wStringBuffer4
-	text " in"
-	cont "your party too."
+	cont "im Team hast."
 	prompt
 
 ElmPhoneEvoText_Egg:
-	text "Eggs don't evolve,"
-	line "they hatch!"
+	text "Eier entwickeln"
+	line "sich nicht, sie"
+	cont "schlüpfen!"
 	prompt
 
 ElmPhoneEvoText_Pikachu:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to a"
-	line "ThunderStone or"
-	cont "an Odd Souvenir."
+	para "wenn es mit einem"
+	line "Donnerstein oder"
+	cont "einem Kuriosum in"
+	cont "Kontakt kommt."
 	prompt
 
 ElmPhoneEvoText_Gloom:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to a"
-	line "Leaf Stone or"
-	cont "a Sun Stone."
+	para "wenn es mit einem"
+	line "Blattstein oder"
+	cont "einem Sonnenstein"
+	cont "in Kontakt kommt."
 	prompt
 
 ElmPhoneEvoText_Poliwhirl:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to a"
-	line "Water Stone, or"
+	para "wenn es mit einem"
+	line "Wasserstein in"
+	cont "Kontakt kommt,"
 
-	para "when holding a"
-	line "King's Rock, if"
+	para "oder wenn es einen"
+	line "King-Stein trägt"
 
-	para "traded, or upon"
-	line "leveling up."
+	para "und getauscht wird"
+	line "oder sein Level"
+	cont "steigt."
 	prompt
 
 ElmPhoneEvoText_SlowpokePlain:
 ElmPhoneEvoText_SlowpokeGalarian:
 	text_ram wStringBuffer3
-	line "evolves at level"
-	cont "37, or when it"
+	line "entwickelt sich"
+	cont "bei Level 37 oder,"
 
-	para "holds King's Rock"
-	line "when traded or"
-	cont "gaining a level."
+	para "wenn es einen"
+	line "King-Stein trägt"
+
+	para "und getauscht wird"
+	line "oder sein Level"
+	cont "steigt."
 	prompt
 
 ElmPhoneEvoText_Magneton:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to a"
-	line "ThunderStone, or"
+	para "wenn es mit einem"
+	line "Donnerstein in"
+	cont "Kontakt kommt"
 
-	para "when it gains a"
-	line "level in a mag-"
-	cont "netic field."
+	para "oder sein Level"
+	line "in einem Magnet-"
+	cont "feld steigt."
 
-	para "I've heard Magnet"
-	line "Tunnel and Dim"
-	cont "Cave have that."
+	para "Im Magnettunnel"
+	line "und in der Fin-"
+	cont "steren Höhle soll"
+	cont "es das geben."
 	prompt
 
 ElmPhoneEvoText_Exeggcute:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to a"
-	line "Leaf Stone or"
-	cont "an Odd Souvenir."
+	para "wenn es mit einem"
+	line "Blattstein oder"
+	cont "einem Kuriosum in"
+	cont "Kontakt kommt."
 	prompt
 
 ElmPhoneEvoText_Koffing:
 	text_ram wStringBuffer3
-	line "evolves at level"
-	cont "35, or when it"
+	line "entwickelt sich"
+	cont "bei Level 35 oder,"
 
-	para "holds Charcoal"
-	line "when traded or"
-	cont "gaining a level."
+	para "wenn es Holzkohle"
+	line "trägt und ge-"
+	cont "tauscht wird oder"
+	cont "sein Level steigt."
 	prompt
 
 ElmPhoneEvoText_Cubone:
 	text_ram wStringBuffer3
-	line "evolves at level"
-	cont "28, or when it's"
+	line "entwickelt sich"
+	cont "bei Level 28 oder,"
 
-	para "exposed to an"
-	line "Odd Souvenir."
+	para "wenn es mit einem"
+	line "Kuriosum in"
+	cont "Kontakt kommt."
 	prompt
 
 ElmPhoneEvoText_Scyther:
 	text_ram wStringBuffer3
-	line "evolves when it"
-	cont "gains a level"
+	line "entwickelt sich,"
+	cont "wenn sein Level"
 
-	para "while holding a"
-	line "Metal Coat or a"
-	cont "Hard Stone."
+	para "steigt und es"
+	line "einen Metallmantel"
+	cont "oder einen Granit-"
+	cont "stein trägt."
 
-	para "The Metal Coat"
-	line "can also be held"
-	cont "while trading."
+	para "Den Metallmantel"
+	line "kann es auch beim"
+	cont "Tausch tragen."
 	prompt
 
 ElmPhoneEvoText_Eevee:
 	text_ram wStringBuffer3
-	line "evolves in so"
-	cont "many ways!"
+	line "kann sich auf so"
+	cont "viele Arten"
+	cont "entwickeln!"
 
-	para "It can be exposed"
-	line "to any of eight"
-	cont "different Stones,"
+	para "Es kann mit einem"
+	line "von acht verschie-"
+	cont "denen Steinen in"
+	cont "Kontakt kommen"
 
-	para "or gain a level"
-	line "near a Moss Rock"
-	cont "or an Ice Rock."
+	para "oder sein Level"
+	line "nahe einem Moos-"
+	cont "oder Eisfelsen"
+	cont "steigern."
 
-	para "I've heard Ilex"
-	line "Forest and Ice"
-	cont "Path have those."
+	para "Im Steineichenwald"
+	line "und im Eispfad"
+	cont "soll es die geben."
 
-	para "But also, Eevee"
-	line "will evolve just"
-
-	para "from the sun or"
-	line "moon if it's very"
-	cont "happy!"
+	para "Und ist Evoli sehr"
+	line "glücklich, ent-"
+	cont "wickelt es sich"
+	cont "allein durch Sonne"
+	cont "oder Mond!"
 	prompt
 
 ElmPhoneEvoText_MimeJr:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to an"
-	line "Ice Stone, or"
+	para "wenn es mit einem"
+	line "Eisstein in"
+	cont "Kontakt kommt"
 
-	para "when it gains a"
-	line "level near an"
-	cont "Ice Rock."
+	para "oder sein Level"
+	line "nahe einem"
+	cont "Eisfelsen steigt."
 
-	para "I've heard there's"
-	line "one in Ice Path."
+	para "Im Eispfad soll es"
+	line "einen geben."
 	prompt
 
 ElmPhoneEvoText_Stantler:
 	text_ram wStringBuffer3
-	line "evolves when it's"
+	line "entwickelt sich,"
 
-	para "exposed to harsh"
-	line "hail or sand."
+	para "wenn es heftigem"
+	line "Hagel oder Sand"
+	cont "ausgesetzt ist."
 
-	para "I've heard Rugged"
-	line "Road and Snowtop"
+	para "Auf dem Holprigen"
+	line "Pfad und dem"
 
-	para "Mountain have"
-	line "weather like that."
+	para "Schneegipfel soll"
+	line "es solches Wetter"
+	cont "geben."
 	prompt
 
 ElmPhoneEvoText_AncientSinnoh:
-	text "But based on its"
-	line "ancestry, it"
+	text "Nach seiner Ab-"
+	line "stammung könnte es"
 
-	para "may also evolve"
-	line "when reminded"
+	para "sich aber auch"
+	line "entwickeln, wenn"
 
-	para "of ancient Sinnoh…"
-	line "somehow…"
+	para "es an das alte"
+	line "Sinnoh erinnert"
+	cont "wird… irgendwie…"
 	prompt
 
 ElmPhoneEvoText_DunsparceSegments:
-	text "Some of them end"
-	line "up being longer"
-	cont "than others."
+	text "Manche werden"
+	line "länger als andere."
 
-	para "It's just in their"
-	line "genes."
+	para "Das liegt einfach"
+	line "in ihren Genen."
 	prompt
 
 ElmPhoneEvolutionRefusedText:
-	text "Sorry to bug you"
-	line "then."
+	text "Dann entschuldige"
+	line "die Störung."
 	prompt
 
 ElmPhoneEndText:
-	text "Take care!"
+	text "Pass auf dich auf!"
 	done

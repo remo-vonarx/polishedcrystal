@@ -1,18 +1,18 @@
 TiffanyAskNumber1Text:
-	text "Hey! You like"
-	line "Clefairy too?"
+	text "Hi! Du magst Piepi"
+	line "auch?"
 
-	para "They're so very"
-	line "cute, aren't they?"
+	para "Sie sind so"
+	line "niedlich, oder?"
 
-	para "I think we can be"
-	line "good friends!"
+	para "Ich denke wir wer-"
+	line "den gute Freunde!"
 
-	para "I want to know"
-	line "your phone number!"
+	para "Gib mir doch deine"
+	line "Telefonnummer!"
 
-	para "Let's talk about"
-	line "Clefairy!"
+	para "Wir können über"
+	line "Piepi reden!"
 	done
 
 TiffanyAskNumber2Text:
@@ -24,8 +24,8 @@ TiffanyAskNumber2Text:
 	done
 
 TiffanyNumberAcceptedText:
-	text "Isn't my Clefairy"
-	line "super adorable?"
+	text "Ist mein Piepi"
+	line "nicht wunderbar?"
 	done
 
 TiffanyNumberDeclinedText:
@@ -49,12 +49,13 @@ TiffanyRematchText:
 	done
 
 TiffanyGiftText:
-	text "You took a long"
-	line "time. See this?"
+	text "Du hast lange"
+	line "gebraucht. Sieh!"
 
-	para "Isn't it cute?"
-	line "It's my Clefairy's"
-	cont "FairyFeather."
+	para "Ist das nicht"
+	line "toll? Das ist die"
+	cont "Feendaune meines"
+	cont "Piepi."
 	done
 
 TiffanyPackFullText:

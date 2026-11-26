@@ -45,8 +45,8 @@ LyraPhoneScript:
 	farwritetext LyraPhoneEndText
 	end
 
-.CeladonUniversity: db "Celadon U@"
-.PokemonLeague:     db "#mon League@"
+.CeladonUniversity: db "Prismania-Uni@"
+.PokemonLeague:     db "#mon-Liga@"
 
 LyraPhone_GetFirstMonNextMove:
 	; [wStringBuffer3] = species name
@@ -259,6 +259,6 @@ LyraPhoneScript2:
 	specialphonecall SPECIALCALL_NONE
 	end
 
-.Chicory: db "Chicory@"
-.Cinder:  db "Cinder@"
-.Toto:    db "Toto@"
+.Chicory: db "Endivchen@"
+.Cinder:  db "Zunder@"
+.Toto:    db "Karni@"

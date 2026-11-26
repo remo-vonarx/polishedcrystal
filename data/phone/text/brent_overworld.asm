@@ -1,24 +1,25 @@
 BrentAskNumber1Text:
-	text "By the way, you're"
-	line "a #Maniac"
+	text "Übrigens, du bist"
+	line "ein #maniac…"
 
-	para "I can tell."
-	line "Yes, you are."
+	para "Ich spüre das."
+	line "Ja, du bist einer."
 
-	para "But your knowledge"
-	line "is shallow still!"
+	para "Aber dein Wissen"
+	line "ist noch klein!"
 
-	para "Do you know Bill?"
-	line "He's an incredible"
+	para "Kennst du Bill? Er"
+	line "ist ein wahrer"
 
-	para "#Maniac."
-	line "I revere him."
+	para "#maniac. Ich"
+	line "verehre ihn."
 
-	para "I'll teach you all"
-	line "I know about Bill,"
+	para "Ich gebe dir mein"
+	line "Wissen über Bill"
 
-	para "so leave me your"
-	line "phone number."
+	para "weiter, wenn du"
+	line "mir deine Nummer"
+	cont "gibst."
 	done
 
 BrentAskNumber2Text:

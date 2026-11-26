@@ -114,17 +114,16 @@ JackGustTriviaText:
 	done
 
 JackKnockOffTriviaText:
-	text "Did you know…?"
+	text "Hast du gewusst…?"
 
-	para "If your opponent"
-	line "is holding an item"
+	para "Trägt dein Gegner"
+	line "ein Item, das dein"
 
-	para "that your Knock"
-	line "Off can remove,"
+	para "Abschlag entfernen"
+	line "kann,"
 
-	para "your Knock Off"
-	line "becomes more"
-	cont "powerful."
+	para "wird dein Abschlag"
+	line "stärker."
 	done
 
 JackEarthquakeTriviaText:

@@ -11,22 +11,22 @@ NonTrainerCallerNames:
 	assert_table_length NUM_NONTRAINER_PHONECONTACTS + 1
 
 .mom:
-	text  "Mom:"
+	text  "Mama:"
 	done
 .bill:
 	text  "Bill:"
 	next1 "   #maniac"
 	done
 .elm:
-	text  "Prof.Elm:"
-	next1 "   #mon Prof."
+	text  "Prof. Lind:"
+	next1 "   #mon-Prof."
 	done
 .bikeshop:
-	text  "Miracle Cycle:"
+	text  "Fahrradladen:"
 	done
 .lyra:
 	text  "Lyra:"
-	next1 "   <PK><MN> Trainer"
+	next1 "   <PK><MN>-Trainerin"
 	done
 .buena:
 	text  "Buena:"

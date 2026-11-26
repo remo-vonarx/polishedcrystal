@@ -478,7 +478,7 @@ _ForYourMonWillTradeText::
 
 SECTION "_OPT_IntroText1", ROMX
 _OPT_IntroText1::
-	line "Mary: Prof.Oak's"
+	line "Margit: Prof.Eichs"
 	done
 
 SECTION "_OPT_IntroText2", ROMX
@@ -689,22 +689,22 @@ _BenIntroText1::
 
 SECTION "_BenIntroText2", ROMX
 _BenIntroText2::
-	line "Channel! ♪"
+	line "Programm! ♪"
 	done
 
 SECTION "_BenIntroText3", ROMX
 _BenIntroText3::
-	line "It's me, DJ Ben! ♪"
+	line "Ich bin DJ Ben! ♪"
 	done
 
 SECTION "_FernIntroText1", ROMX
 _FernIntroText1::
-	line "Fern: #music! ♪"
+	line "Fabian: #musik♪"
 	done
 
 SECTION "_FernIntroText2", ROMX
 _FernIntroText2::
-	line "With DJ Fern! ♪"
+	line "Mit DJ Fabian! ♪"
 	done
 
 SECTION "_BenFernText1", ROMX
@@ -716,7 +716,7 @@ _BenFernText1::
 
 SECTION "_BenFernText2A", ROMX
 _BenFernText2A::
-	line "so let's jam to"
+	line "Mach mit beim"
 	done
 
 SECTION "_BenFernText2B", ROMX
@@ -768,7 +768,7 @@ _LC_Text6::
 
 SECTION "_LC_Text7", ROMX
 _LC_Text7::
-	line "Today's Lucky"
+	line "Die Glückszahl ist"
 	done
 
 SECTION "_LC_Text8", ROMX
