@@ -84,7 +84,7 @@ Its internals get a short design of their own before coding. Fixed here:
 - [x] `utils/dex_sources.py` (asked for 2026-11-23): the game each Pokédex entry not from Crystal comes from, through PokeAPI, and that game's German.
 - [x] Update the profile's **Check scripts** row.
 - Result (2026-11-23): 6,017 pret texts paired with Kristall's (map 3,464, engine 671, section 653, phone 536, dex 251, move descriptions 251, item descriptions 191; a text counts under the walk that reached it first). Left unpaired: 75 texts of mobile features Polished removed, 20 unused, 46 engine texts reached only through code Kristall moved (taken from the dump in their chunks), and the radio's `_OPT_IntroText1` with its stub, which Kristall splits in two (`KRISTALL_SPLITS`). Polished's 9,362 texts: 4,633 word for word, 33 ambiguous, 959 changed, 3,737 new. The writer's dry run: 2,059 texts ready; flags: 2,509 capitals for `kristall_case.tsv` (K), 33 ambiguous, 7 partly Faithful, 4 with ";" (no glyph), 2 with a Kristall variable Polished lacks, 1 where Polished added a pause, 1 with code inside. Pokédex entries: 247 Crystal's, 1 Crystal's edited, 20 from PokeAPI's German (6 edited), 29 from PokéWiki (18 edited), 39 regional forms, 1 without a source (Dudunsparce).
-- [ ] Ship (no in-game pass: the tool writes nothing yet).
+- [x] Ship (no in-game pass: the tool writes nothing yet).
 
 ## Names
 
@@ -97,7 +97,7 @@ Its internals get a short design of their own before coding. Fixed here:
 - [x] All ability names, all natures.
 - [x] Test: every name in the Pokédex list, summary, party and a battle; types, abilities and natures on the summary and in the Pokédex.
 - Decided 2026-11-23: Drache (not Kristall's Drachen); the four abilities renamed with Gen 9 keep their older names (Tempomacher, Fußangel, Aufheber, Hagelalarm); Regular's water egg groups Amphibie, Fisch, Wirbellos; the first attempt's type graphics (GLOSSARY.md).
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 2: Moves, TMs and HMs
 
@@ -105,7 +105,7 @@ Its internals get a short design of their own before coding. Fixed here:
 - [x] TM and HM item names, the TM pocket's A–Z order (`data/moves/tmhm_order.asm`).
 - [x] Test: moves on the summary and in the battle menu, the whole TM pocket.
 - Decided 2026-11-23: Konfusstrahl, Staffette, Giftblick, Schnabel, Wandler, Gesichte; Wertewechsel for Skill Swap; own translations Frischsnack, Furienhieb, Heillicht; HM as VM, as in Kristall (GLOSSARY.md).
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 3: Items
 
@@ -113,14 +113,14 @@ Its internals get a short design of their own before coding. Fixed here:
 - [x] Pocket names; the Bag's A–Z order (`constants/item_constants.asm`, `data/items/name_order.asm`). The TM pocket's tab reads TM/HM: check Kristall's pocket name, since its HMs are VMs.
 - [x] Test: every pocket (the debug radio fills the Bag), a Mart, both ROMs.
 - Decided 2026-11-24: the item, abbreviation, own-name and pocket choices in GLOSSARY.md (Items); the Bag's tab strip and the labels under the Bag redrawn in German without a code change.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 4: Trainers
 
 - [x] All trainer classes and trainer names; Battle Tower classes and names; Wonder Trade names; in-game trade nicknames and partners; default player and rival names.
 - [x] Test: a battle intro of each class, the phone list, a Battle Tower opponent, a Wonder Trade.
 - Decided 2026-11-24 on a review page: classes, names, nicknames, trades and Wonder Trade names in GLOSSARY.md (Trainers); Psychic Inver is Estefan, with his party picker counting the longer name.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 5: Places and badges
 
@@ -163,7 +163,7 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 - [x] Start menu, party, summary, Bag menus, boxes, trainer card, options, naming screen, save, the main menu and the title screen's prompts, move reminder and deleter, intro, Hall of Fame.
 - [x] Test: every screen and every menu state (the link trade menus only by position in the code).
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 9: Descriptions
 
@@ -176,25 +176,25 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 - [x] The entries K left, the categories, the Pokédex screens (search, area page, variable-width labels). The hidden ability's letter is V there too (`engine/pokedex/lcd.asm`); the number sign's tile (`№`) becomes Nr in every font, Kristall's own tile in the normal one (decided 2026-11-25; summary, egg page, trainer card, Hall of Fame, trade animation, Pokédex, judge machine, Valencia Island).
 - [x] The entries not from Crystal: the German of the game each comes from (`utils/dex_sources.py`; **Project decisions**), PokéWiki where PokeAPI has none.
 - [x] Test: entries of every kind of Pokémon (Gen 2, later, forms), every Pokédex screen.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 11: Pokégear
 
 - [x] The phone list and calls K left, the radio shows, the map card, the clock.
 - [x] Test: calls in and out, every radio station, the map card, the clock.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 12: Trainer battle lines
 
 - [x] Every trainer's seen, beaten and after-battle lines K left, in all maps.
 - [x] Test: one trainer of each class, every Gym Leader and the Elite Four.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 13: Signs
 
 - [x] Every sign K left, in all maps.
 - [x] Test: town, route and building signs in each region.
-- [ ] Ship.
+- [x] Ship.
 
 ### Tasks 14–19: Regions
 
@@ -212,7 +212,7 @@ The people and story scenes K left, in story order. Each task: the region's maps
 - [x] Celadon University, the Orange Islands (Shamouti Island and its beaches, Valencia Island), Sinjoh Ruins, Mystri Stage, Faraway Island, Navel Rock: all own translation, in Kristall's style.
 - [x] Pilar's Spanish accents (decided 2026-11-23): once no English contraction is left in either ROM, move `á í ó ¿ ¡` (and `É`, if still wanted) into the freed slots `'l 'm 'r 's 't 'v` (`$C2`–`$C7`), redraw them in every font and `vwf.png`, and restore Sightseer Pilar's lines in `maps/ShamoutiCoast.asm` ("¡Hola!", "acá", "montón", "duraría", "más", "¿Qué").
 - [x] Test: a pass through each area's scenes.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 21: Title screen and credits
 
@@ -221,7 +221,7 @@ The people and story scenes K left, in story order. Each task: the region's maps
 - [x] The music player (main menu and the GBC Player item): its labels and about 195 song titles (`audio/music_player.asm`, `data/music_player/`). Decided 2026-11-25: here, with the credits.
 - [x] The "The End" graphic (`gfx/credits/theend.png`) as Kristall's "Ende".
 - [x] Test: the title screen in both ROMs; the credits through to the end, compared with Kristall's by position.
-- [ ] Ship.
+- [x] Ship.
 
 ### Task 22: Map menus and the Alph walls
 
@@ -230,4 +230,4 @@ Found 2026-11-26 by a scan for strings still identical to Upstream: menus and ma
 - [x] The menus in 26 map files (shops, prize counters, ferries, the Dragon Shrine, Earl's blackboard, the Goldenrod tutor), the Spearow and Eevee mails, and the Vermilion pier sign: Kristall's words where its same screen has them.
 - [x] The wall words (`data/events/unown_walls.asm`): Kristall's FLUCHT, BLITZ, WASSER, and FEE for Polished's FAIRY. Decided 2026-11-26: FEE's box narrows to its three letters.
 - [x] Test: every changed menu opened in the Regular ROM; the Ho-Oh chamber wall, compared with Kristall's.
-- [ ] Ship.
+- [x] Ship.
