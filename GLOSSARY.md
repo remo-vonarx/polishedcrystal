@@ -23,7 +23,7 @@ _Avoid_: free translation, adaptation
 ## Letters
 
 **Umlauts**:
-Ä ä Ö ö Ü ü. Every font of the Translation draws them, and the naming keyboards offer them.
+Ä ä Ö ö Ü ü. Every font of the Translation draws them, and the naming keyboards offer them. In the Icognito font they are the Icognito A, O and U with two dots in the top corners (decided 2026-11-26).
 
 **ß**:
 Written as Kristall writes it (mostly the new spelling: Straße, but dass; a few older forms such as erfaßt), and in Own translation as the new spelling has it. The naming keyboards have no ß key, as in Kristall.
@@ -582,8 +582,12 @@ _Avoid_: Nintendo Power
 The roof signs of Gyms and Marts, as on Kristall's roofs.
 _Avoid_: GYM, MART
 
-**KAUF**, **SPIEL**, **LIGA**:
-Polished's own roof signs (DEPT, GAMES, LEAGUE) on the department stores, the Game Corners and the Pokémon League: the first word of Kaufhaus, Spielhalle and Pokémon-Liga. Own.
+**KAUF**, **LIGA**:
+Polished's own roof signs (DEPT, LEAGUE) on the department stores and the Pokémon League: the first word of Kaufhaus and of Liga in Pokémon-Liga. Own.
+
+**GAMES**:
+The Game Corners' roof sign stays English, as Upstream draws it (decided 2026-11-26).
+_Avoid_: SPIEL
 
 ## Story text
 
