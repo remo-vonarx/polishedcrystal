@@ -25,9 +25,12 @@ PewterSnoozeSpeechHouseGrampsText:
 	done
 
 PewterSnoozeSpeechHouseGrannyText:
-	text "Brock is the old-"
-	line "est of ten kids."
+	text "Rocko ist das äl-"
+	line "teste von zehn"
+	cont "Kindern."
 
-	para "I don't know how"
-	line "his parents coped!"
+	para "Wie seine Eltern"
+	line "das geschafft"
+	cont "haben, weiß ich"
+	cont "nicht!"
 	done

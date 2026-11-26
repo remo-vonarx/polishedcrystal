@@ -28,15 +28,16 @@ PokemonJournalJanineScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Janine!"
+	para "Titelthema:"
+	line "Arenaleiterin"
+	cont "Janina!"
 
-	para "Janine was said to"
-	line "be a fan of the"
+	para "Janina soll als"
+	line "Kind ein Fan des"
 
-	para "#mon zoo in"
-	line "Fuchsia City"
-	cont "as a child."
+	para "#mon-Zoos in"
+	line "Fuchsania City"
+	cont "gewesen sein."
 	done
 
 JanineImpersonatorScript:

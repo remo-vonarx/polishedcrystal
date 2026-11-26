@@ -59,56 +59,58 @@ SafariZoneWestRestHouse2FlanneryScript:
 	jumpopenedtext .RefusedText
 
 .IntroText:
-	text "Hi there!"
+	text "Hallo!"
 
-	para "Good to see some-"
-	line "one else exploring"
-	cont "this place!"
+	para "Schön, dass noch"
+	line "jemand diesen Ort"
+	cont "erkundet!"
 
-	para "I am Flannery."
+	para "Ich bin Flavia."
 
-	para "I'm from the Hoenn"
-	line "region, so I like"
+	para "Ich komme aus der"
+	line "Hoenn-Region, also"
 
-	para "humidity and hot"
-	line "springs."
+	para "mag ich Schwüle"
+	line "und heiße Quellen."
 
-	para "The Safari Zone"
-	line "feels like home!"
+	para "In der Safari-Zone"
+	line "fühle ich mich wie"
+	cont "zu Hause!"
 
-	para "Let's exchange"
-	line "superhot moves in"
-	cont "a battle!"
+	para "Lass uns im Kampf"
+	line "glühend heiße"
+	cont "Attacken tauschen!"
 	done
 
 .RematchText:
-	text "Hi there,"
+	text "Hallo,"
 	line "<PLAYER>!"
 
-	para "Good to see you"
-	line "again!"
+	para "Schön, dich wie-"
+	line "derzusehen!"
 
-	para "Losing a match"
-	line "isn't going to"
-	cont "deflate me."
+	para "Eine Niederlage"
+	line "entmutigt mich"
+	cont "nicht."
 
-	para "Let's exchange"
-	line "superhot moves in"
-	cont "another battle!"
+	para "Lass uns in einem"
+	line "weiteren Kampf"
+	cont "glühend heiße"
+	cont "Attacken tauschen!"
 	done
 
 .SeenText:
-	text "I'm going to demo-"
-	line "nstrate the hot"
+	text "Ich zeige dir die"
+	line "heißen Attacken,"
 
-	para "moves I honed"
-	line "close to a vol-"
-	cont "cano!"
+	para "die ich nahe einem"
+	line "Vulkan verfeinert"
+	cont "habe!"
 	done
 
 .BeatenText:
-	text "Whew! On the verge"
-	line "of eruption!"
+	text "Puh! Kurz vor dem"
+	line "Ausbruch!"
 	done
 
 .AfterText:
@@ -128,7 +130,8 @@ SafariZoneWestRestHouse2FlanneryScript:
 	done
 
 .RefusedText:
-	text "OK then… Uh…"
-	line "Don't be shy about"
-	cont "it if you return!"
+	text "Na gut… Äh…"
+	line "Sei nicht schüch-"
+	cont "tern, wenn du"
+	cont "wiederkommst!"
 	done

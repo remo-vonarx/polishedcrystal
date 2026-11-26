@@ -46,14 +46,16 @@ Bug_maniacEdBeatenText:
 	done
 
 Route2NorthCooltrainermText:
-	text "Diglett's Cave is"
-	line "just a dead end."
+	text "Digdas Höhle ist"
+	line "nur eine"
+	cont "Sackgasse."
 
-	para "The Vermilion City"
-	line "exit is blocked"
+	para "Der Ausgang nach"
+	line "Orania City wird"
 
-	para "by a sleeping"
-	line "Snorlax."
+	para "von einem schla-"
+	line "fenden Relaxo"
+	cont "versperrt."
 	done
 
 Route2DiglettsCaveSignText:

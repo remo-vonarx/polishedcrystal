@@ -37,14 +37,14 @@ Route2NuggetSpeechHouseFisherScript:
 	done
 
 .Text1:
-	text "Hi! Wow, I'm glad"
-	line "to see you."
+	text "Hi! Ich bin froh"
+	line "dich zu sehen."
 
-	para "You're the first"
-	line "visitor I've had"
-	cont "in a long time."
+	para "Mich hat schon"
+	line "lange Zeit niemand"
+	cont "mehr besucht."
 
-	para "I'm super happy!"
-	line "Let me give you a"
-	cont "little present."
+	para "Ich bin über-"
+	line "glücklich! Das"
+	cont "hier ist für dich."
 	done

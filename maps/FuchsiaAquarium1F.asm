@@ -72,24 +72,25 @@ FuchsiaAquarium1FGoldeenOrQwilfishSign:
 	end
 
 .GoldeenText:
-	text "Name: Goldeen"
+	text "Name: Goldini"
 
-	para "Known as the"
-	line "“Water Queen” for"
-	cont "its tail fin,"
+	para "Seine Schwanz-"
+	line "flosse wallt wie"
+	cont "ein Ballkleid,"
 
-	para "which billows like"
-	line "a ballroom dress."
+	para "daher nennt man es"
+	line "“Wasserkönigin”."
 	done
 
 .QwilfishText:
-	text "Name: Qwilfish"
+	text "Name: Baldorfish"
 
-	para "It eats toxic min-"
-	line "erals to build up"
+	para "Es frisst giftige"
+	line "Mineralien, um in"
 
-	para "poison within its"
-	line "body for defense."
+	para "seinem Körper Gift"
+	line "zur Verteidigung"
+	cont "anzusammeln."
 	done
 
 FuchsiaAquarium1FMagikarpSign:
@@ -104,14 +105,16 @@ FuchsiaAquarium1FMagikarpSign:
 	end
 
 .MagikarpText:
-	text "Name: Magikarp"
+	text "Name: Karpador"
 
-	para "Legend has it that"
-	line "a Magikarp which"
-	cont "climbs a waterfall"
+	para "Der Legende nach"
+	line "entwickelt sich"
+	cont "ein Karpador, das"
 
-	para "will evolve into a"
-	line "powerful Gyarados."
+	para "einen Wasserfall"
+	line "hinaufsteigt, zu"
+	cont "einem mächtigen"
+	cont "Garados."
 	done
 
 FuchsiaAquarium1FCorsolaSign:
@@ -126,16 +129,18 @@ FuchsiaAquarium1FCorsolaSign:
 	end
 
 .CorsolaText:
-	text "Name: Corsola"
+	text "Name: Corasonn"
 
-	para "It continuously"
-	line "sheds and grows."
+	para "Es wirft ständig"
+	line "Teile ab und"
+	cont "wächst nach."
 
-	para "The tip of its"
-	line "head is prized as"
+	para "Die Spitze seines"
+	line "Kopfes ist wegen"
 
-	para "a treasure for its"
-	line "beauty."
+	para "ihrer Schönheit"
+	line "als Schatz"
+	cont "begehrt."
 	done
 
 FuchsiaAquarium1FTentacoolOrHorseaSign:
@@ -163,22 +168,24 @@ FuchsiaAquarium1FTentacoolOrHorseaSign:
 	end
 
 .TentacoolText:
-	text "Name: Tentacool"
+	text "Name: Tentacha"
 
-	para "Its body is almost"
-	line "entirely water."
+	para "Sein Körper be-"
+	line "steht fast nur"
+	cont "aus Wasser."
 
-	para "It shoots strange"
-	line "beams from its"
-	cont "crystal-like eyes."
+	para "Aus seinen kris-"
+	line "tallartigen Augen"
+	cont "schießt es selt-"
+	cont "same Strahlen."
 	done
 
 .HorseaText:
-	text "Name: Horsea"
+	text "Name: Seeper"
 
-	para "It makes its nest"
-	line "in the shade of"
-	cont "Corsola clusters."
+	para "Es baut sein Nest"
+	line "im Schatten von"
+	cont "Corasonn-Kolonien."
 	done
 
 FuchsiaAquarium1FChinchouSign:
@@ -193,13 +200,14 @@ FuchsiaAquarium1FChinchouSign:
 	end
 
 .ChinchouText:
-	text "Name: Chinchou"
+	text "Name: Lampi"
 
-	para "It flashes lights"
-	line "on its antennae to"
+	para "Es lässt seine"
+	line "Fühler aufblitzen,"
 
-	para "communicate with"
-	line "other Chinchou."
+	para "um sich mit ande-"
+	line "ren Lampi zu ver-"
+	cont "ständigen."
 	done
 
 FuchsiaAquarium1FLaprasStatueSignText:
@@ -231,68 +239,74 @@ FuchsiaAquarium1FPoster2Text:
 	done
 
 FuchsiaAquarium1FReceptionistText:
-	text "Welcome to"
-	line "Fuchsia Aquarium!"
+	text "Willkommen im"
+	line "Aquarium von"
+	cont "Fuchsania City!"
 
-	para "Our exhibits have"
-	line "been generously"
+	para "Unsere Ausstel-"
+	line "lung wurde durch"
 
-	para "funded by Silph"
-	line "Co. donations."
+	para "großzügige Spenden"
+	line "der Silph Co."
+	cont "finanziert."
 	done
 
 FuchsiaAquarium1FOfficerText:
-	text "I went from wrang-"
-	line "ling #mon for"
-	cont "the Safari Game,"
+	text "Früher habe ich"
+	line "#mon für das"
+	cont "Safari-Spiel"
+	cont "eingefangen,"
 
-	para "to cleaning their"
-	line "tanks in here."
+	para "jetzt putze ich"
+	line "hier ihre Becken."
 
-	para "At least this job"
-	line "has A/C!"
+	para "Immerhin hat"
+	line "dieser Job eine"
+	cont "Klimaanlage!"
 	done
 
 FuchsiaAquarium1FCuteGirlText:
-	text "There used to be"
-	line "an Octillery here,"
+	text "Hier gab es mal"
+	line "ein Octillery,"
 
-	para "but it kept get-"
-	line "thing out of its"
+	para "aber es ist immer"
+	line "wieder aus seinem"
 
-	para "tank to tour the"
-	line "aquarium itself."
+	para "Becken geklettert,"
+	line "um sich das"
+	cont "Aquarium selbst"
+	cont "anzusehen."
 	done
 
 FuchsiaAquarium1FSchoolboyText:
-	text "Scientists think"
-	line "that all life"
+	text "Forscher glauben,"
+	line "dass alles Leben"
 
-	para "began as microbes"
-	line "under the ocean."
+	para "als Mikroben im"
+	line "Meer begann."
 
-	para "It took billions"
-	line "of years to turn"
+	para "Es dauerte Milli-"
+	line "arden Jahre, bis"
 
-	para "into all these"
-	line "different species."
+	para "daraus all diese"
+	line "Arten wurden."
 	done
 
 FuchsiaAquarium1FFisherText:
-	text "I can see #mon"
-	line "here that I've"
+	text "Hier sehe ich"
+	line "#mon, die ich"
 
-	para "never been able"
-	line "to catch just by"
-	cont "fishing."
+	para "beim Angeln noch"
+	line "nie fangen"
+	cont "konnte."
 	done
 
 FuchsiaAquarium1FAromaLadyText:
-	text "Don't the #mon"
-	line "just look like"
-	cont "living jewels?"
+	text "Sehen die #mon"
+	line "nicht aus wie"
+	cont "lebende Juwelen?"
 
-	para "They even give"
-	line "off their own"
-	cont "sparkling light!"
+	para "Sie strahlen sogar"
+	line "ihr eigenes fun-"
+	cont "kelndes Licht aus!"
 	done

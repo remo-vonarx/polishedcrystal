@@ -212,193 +212,198 @@ Route22Past_CelebiFloatsMovementData:
 	step_end
 
 Route22PastLyraWhereAreWeText:
-	text "Lyra: Where are"
-	line "we…?"
+	text "Lyra: Wo sind"
+	line "wir…?"
 	done
 
 Route22PastLyraIlexForestDisappearedText:
-	text "Lyra: Ilex Forest"
-	line "has disappeared!"
+	text "Lyra: Der Stein-"
+	line "eichenwald ist"
+	cont "verschwunden!"
 
-	para "…That's not it."
-	line "We've been trans-"
-	cont "ported somewhere"
-	cont "else…?"
+	para "…Nein, das ist es"
+	line "nicht. Wurden wir"
+	cont "an einen anderen"
+	cont "Ort versetzt…?"
 	done
 
 Route22PastLyraPokeGearText:
-	text "Lyra: <PLAYER>, my"
-	line "#gear radio"
+	text "Lyra: <PLAYER>,"
+	line "das Radio meines"
 
-	para "said the date is"
-	line "from three years"
-	cont "ago!"
+	para "#com nennt ein"
+	line "Datum von vor drei"
+	cont "Jahren!"
 	done
 
 Route22PastLyraExplainsTimeTravelText:
-	text "Is that… am I"
-	line "looking at…"
+	text "Ist das… sehe ich"
+	line "da etwa…"
 	cont "Celebi?"
 
-	para "That explains it!"
-	line "Celebi must have"
-	cont "used its power to"
+	para "Das erklärt es!"
+	line "Celebi hat uns"
+	cont "bestimmt mit sei-"
 
-	para "take us back in"
-	line "time!"
+	para "ner Kraft in der"
+	line "Zeit zurück-"
+	cont "geschickt!"
 	done
 
 Route22PastLyraHearsSomeoneText:
-	text "<PLAYER>, I hear"
-	line "someone else."
+	text "<PLAYER>, ich höre"
+	line "noch jemanden."
 
-	para "Let's find out"
-	line "who it is!"
+	para "Lass uns heraus-"
+	line "finden, wer das"
+	cont "ist!"
 	done
 
 Route22PastRivalQuestionsGiovanniText:
-	text "<RIVAL>: You told"
-	line "me… you were the"
+	text "<RIVAL>: Du hast"
+	line "mir gesagt… du"
 
-	para "number one in the"
-	line "world!"
+	para "wärst die Nummer"
+	line "eins auf der Welt!"
 
-	para "Are you gonna"
-	line "quit?"
+	para "Und jetzt lässt du"
+	line "alles fallen?"
 
-	para "What are you"
-	line "going to do now?"
+	para "Was hast du denn"
+	line "jetzt vor?"
 	done
 
 Route22PastGiovanniRivalArgumentText:
 	text "…… …… ……"
 
-	para "One must acknow-"
-	line "ledge one's defeat"
+	para "Man muss seine"
+	line "Niederlage akzep-"
 
-	para "before he can move"
-	line "on…"
+	para "tieren, ehe man"
+	line "nach vorne blicken"
+	cont "kann…"
 
-	para "I will go solo…"
-	line "for now…"
+	para "Ich ziehe mich"
+	line "eine Weile in die"
+	cont "Einsamkeit zurück…"
 
-	para "So that one day I"
-	line "will form a"
+	para "…um eines Tages"
+	line "ein noch stärkeres"
 
-	para "stronger organ-"
-	line "ization!"
+	para "Team zu gründen!"
 
-	para "<RIVAL>: What"
-	line "aspect of you was"
-	cont "number one?"
+	para "<RIVAL>: Was an"
+	line "dir war denn die"
+	cont "Nummer eins?"
 
-	para "Gathering so many"
-	line "only to be"
+	para "Du hattest so"
+	line "viele Leute um"
 
-	para "defeated by a"
-	line "mere child!"
+	para "dich, und dann"
+	line "besiegt dich ein"
+	cont "einzelnes Kind!"
 
 	para "…… …… ……"
 
-	para "Putting together"
-	line "the potential of"
+	para "Durch die verein-"
+	line "ten Kräfte von"
 
-	para "many is how you"
-	line "produce a huge"
-	cont "power…"
+	para "vielen entsteht"
+	line "eine gewaltige"
+	cont "Macht…"
 
-	para "That's what an"
-	line "organization is!"
+	para "So funktioniert"
+	line "ein Team!"
 
-	para "I failed… to make"
-	line "the best use of"
+	para "Ich konnte das Po-"
+	line "tenzial meiner"
 
-	para "my subordinates'"
-	line "potential…"
+	para "Untergebenen nicht"
+	line "voll nutzen…"
 
-	para "But you shall wit-"
-	line "ness one day the"
+	para "Aber eines Tages"
+	line "wirst du Zeuge,"
 
-	para "revival of me and"
-	line "my Team Rocket!"
+	para "wie ich und mein"
+	line "Team Rocket ein"
+	cont "Comeback feiern!"
 	done
 
 Route22PastRivalProtestsText:
-	text "<RIVAL>: I don't"
-	line "understand you!"
+	text "<RIVAL>: Ich"
+	line "verstehe dich"
+	cont "nicht!"
 
-	para "You don't make"
-	line "any sense!"
+	para "Was du sagst,"
+	line "ergibt keinen"
+	cont "Sinn!"
 	done
 
 Route22PastGiovanniGoodbyeText:
 	text "…… …… ……"
 
-	para "One day, you will"
-	line "understand."
+	para "Irgendwann wirst"
+	line "du das verstehen."
 	done
 
 Route22PastRivalRantText:
-	text "<RIVAL>: I don't"
-	line "want to understand"
-	cont "you!"
+	text "<RIVAL>: Ich will"
+	line "dich auch gar"
+	cont "nicht verstehen!"
 
-	para "I will never"
-	line "become someone"
-	cont "like you."
+	para "Ich werde niemals"
+	line "so wie du!"
 
-	para "A coward when"
-	line "you're alone and"
+	para "Allein bist du ein"
+	line "Feigling, und vor"
 
-	para "acting like a"
-	line "tyrant when you're"
+	para "anderen Feiglingen"
+	line "spielst du dich"
+	cont "als Tyrann auf!"
 
-	para "in front of other"
-	line "cowards!"
+	para "Ich werde stark!"
 
-	para "I will become"
-	line "strong!"
+	para "Ich werde ein"
+	line "stärkerer Mann,"
+	cont "ganz allein!"
 
-	para "I will become a"
-	line "stronger man all"
-	cont "by myself!"
-
-	para "All by myself!"
+	para "Ganz allein!"
 	done
 
 Route22PastRivalInsultText:
-	text "<RIVAL>: …What are"
-	line "you staring at?"
+	text "<RIVAL>: …Was"
+	line "starrst du so?"
 	done
 
 Route22PastLyraConclusionText:
-	text "Lyra: Who does he"
-	line "think he is?"
+	text "Lyra: Was bildet"
+	line "der sich ein?"
 
-	para "That was"
-	line "unnecessary!"
+	para "Das war echt"
+	line "unnötig!"
 
-	para "But they were"
-	line "talking about the"
+	para "Aber sie sprachen"
+	line "über das Comeback"
 
-	para "revival of Team"
+	para "von Team"
 	line "Rocket…"
 
-	para "Team Rocket was"
-	line "removed from Kanto"
+	para "Ein Kind hat Team"
+	line "Rocket vor drei"
 
-	para "by a child three"
-	line "years ago."
+	para "Jahren aus Kanto"
+	line "vertrieben."
 
-	para "So this really"
-	line "is the past!"
+	para "Dann ist das hier"
+	line "wirklich die"
+	cont "Vergangenheit!"
 	done
 
 Route22PastLyraOhNoText:
-	text "Lyra: Oh no!"
-	line "It's happening"
-	cont "again…!"
+	text "Lyra: Oh nein!"
+	line "Es passiert schon"
+	cont "wieder…!"
 
-	para "It's Celebi's"
-	line "Time Travel!"
+	para "Das ist Celebis"
+	line "Zeitreise!"
 	done

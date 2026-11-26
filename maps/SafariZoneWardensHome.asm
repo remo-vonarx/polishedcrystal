@@ -35,67 +35,77 @@ WardensGranddaughter:
 .AlreadyMet:
 	jumpthisopenedtext
 
-	text "Many people were"
-	line "disappointed that"
+	text "Viele Leute waren"
+	line "traurig, dass das"
 
-	para "the Safari Game"
-	line "closed down,"
+	para "Safari-Spiel ein-"
+	line "gestellt wurde,"
 
-	para "but I don't really"
-	line "miss it."
+	para "aber mir fehlt es"
+	line "nicht wirklich."
 
-	para "I just miss my"
-	line "grandpa…"
+	para "Mir fehlt nur mein"
+	line "Großvater…"
 	done
 
 WardensGranddaughterText1:
-	text "My grandpa is the"
-	line "Warden for the"
-	cont "Safari Zone."
+	text "Mein Großvater ist"
+	line "der Wärter in der"
+	cont "Safari-Zone."
 
-	para "At least he was…"
+	para "Zumindest war er"
+	line "das…"
 
-	para "If I tell you"
-	line "the story, do you"
+	para "Wenn ich dir die"
+	line "Geschichte er-"
+	cont "zähle, versprichst"
 
-	para "promise not to"
-	line "gossip about it?"
+	para "du dann, nicht"
+	line "darüber zu"
+	cont "tratschen?"
 	done
 
 WardensGranddaughterText2:
-	text "…I see…"
+	text "…Verstehe…"
 	done
 
 WardensGranddaughterText3:
-	text "Three years ago,"
-	line "it turned out he"
+	text "Vor drei Jahren"
+	line "kam heraus, dass"
 
-	para "had allowed Team"
-	line "Rocket to poach"
+	para "er Team Rocket"
+	line "erlaubt hatte,"
 
-	para "#mon from the"
-	line "Safari Zone to be"
+	para "in der Safari-Zone"
+	line "zu wildern."
 
-	para "sold at the Rocket"
-	line "Game Corner."
+	para "Die #mon wurden"
+	line "dann in der"
+	cont "Rocket-Spielhalle"
+	cont "verkauft."
 
-	para "He took off over-"
-	line "seas to avoid"
-	cont "being arrested."
+	para "Er hat sich ins"
+	line "Ausland abgesetzt,"
+	cont "um nicht verhaftet"
+	cont "zu werden."
 
-	para "…It's not fair."
+	para "…Das ist nicht"
+	line "fair."
 
-	para "I hear Silph's"
-	line "chief was just as"
+	para "Der Chef von Silph"
+	line "soll genauso mit"
 
-	para "involved with Team"
-	line "Rocket, but he"
+	para "Team Rocket unter"
+	line "einer Decke ge-"
+	cont "steckt haben, aber"
 
-	para "paid for charity"
-	line "work doing #mon"
+	para "er hat für gemein-"
+	line "nützige Projekte"
+	cont "zum Schutz von"
+	cont "#mon bezahlt"
 
-	para "conservation, and"
-	line "still has his job."
+	para "und hat seinen"
+	line "Job immer noch."
 	done
 
 WardenPhotoText:

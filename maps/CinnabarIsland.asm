@@ -43,15 +43,18 @@ CinnabarIslandBlue:
 	ifgreater 14, .Ready
 	jumpthisopenedtext
 
-	text "If you want to"
-	line "battle me, show me"
+	text "Wenn du gegen mich"
+	line "kämpfen willst,"
 
-	para "how many Kanto"
-	line "Badges you've got."
+	para "zeig mir, wie"
+	line "viele Orden aus"
+	cont "Kanto du hast."
 
-	para "Less than seven…"
-	line "You're not ready"
-	cont "to battle me."
+	para "Weniger als"
+	line "sieben… Du bist"
+	cont "noch nicht bereit,"
+	cont "gegen mich zu"
+	cont "kämpfen."
 	done
 
 .Ready
@@ -65,77 +68,87 @@ CinnabarIslandBlue:
 	end
 
 CinnabarIslandBlueText:
-	text "Who are you?"
+	text "Wer bist du?"
 
 if !DEF(DEBUG)
-	para "Well, it's plain"
-	line "to see that you're"
-	cont "a trainer…"
+	para "Na, du bist"
+	line "augenscheinlich"
+	cont "ein Trainer…"
 
-	para "My name's Blue."
+	para "Ich heiße Blau."
 
-	para "I was once the"
-	line "Champion, although"
+	para "Ich war einmal ein"
+	line "Champ, wenn auch"
 
-	para "it was for only a"
-	line "short time…"
+	para "nur für kurze"
+	line "Zeit…"
 
-	para "That meddling Red"
-	line "did me in…"
+	para "Dieser nervige Rot"
+	line "hat mich ganz"
 
-	para "Anyway, what do"
-	line "you want? You want"
+	para "schön fertig-"
+	line "gemacht…"
 
-	para "to challenge me or"
-	line "something?"
+	para "Wie dem auch sei,"
+	line "was willst du?"
 
-	para "…I hate to say"
-	line "it, but I'm not in"
+	para "Willst du gegen"
+	line "mich kämpfen?"
 
-	para "the mood for a"
-	line "battle now."
+	para "…Ich sage es nur"
+	line "ungern, aber ich"
 
-	para "Take a good look"
-	line "around you…"
+	para "habe gar keine"
+	line "Lust zu kämpfen."
 
-	para "A volcano erupts,"
-	line "and just like"
+	para "Sieh dich gut"
+	line "um…"
 
-	para "that, a whole town"
-	line "disappears."
+	para "Ein Vulkan bricht"
+	line "aus und vernichtet"
 
-	para "We can go on win-"
-	line "ning and losing in"
+	para "auf einen Schlag"
+	line "eine ganze Stadt."
 
-	para "#mon. But if"
-	line "nature so much as"
+	para "Wir werden weiter-"
+	line "hin mit unseren"
 
-	para "twitches, we can"
-	line "lose in a second."
+	para "#mon siegen"
+	line "oder verlieren."
+
+	para "Aber wenn sich die"
+	line "Natur erhebt, ist"
+	cont "alles im Nu dahin."
 
 	para "…"
 
-	para "That's the way it"
-	line "is…"
+	para "So ist das"
+	line "eben…"
 
-	para "But, anyway, I'm"
-	line "still a trainer."
+	para "Trotz allem bin"
+	line "ich immer noch ein"
+	cont "Trainer."
 endc
 	done
 
 CinnabarIslandBlueBattleText:
-	text "If I see a strong"
-	line "opponent, it makes"
-	cont "me want to battle."
+	text "Wenn ich einen"
+	line "starken Gegner"
+	cont "treffe, möchte ich"
+	cont "gegen ihn kämpfen."
 	done
 
 CinnabarIslandBlueReadyText:
-	text "If you want to"
-	line "battle me, come to"
-	cont "the Viridian Gym."
+	text "Wenn du gegen mich"
+	line "kämpfen möchtest,"
 
-	para "I'll take you on"
-	line "then."
+	para "dann besuche die"
+	line "PKMN-Arena in"
+	cont "Vertania City."
+
+	para "Dort werde ich"
+	line "mich deiner"
+	cont "annehmen."
 	done
 
 

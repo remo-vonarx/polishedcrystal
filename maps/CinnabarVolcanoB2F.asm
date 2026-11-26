@@ -112,54 +112,56 @@ MoltresText:
 	done
 
 CinnabarVolcanoB2FLawrenceSpeechText:
-	text "Lawrence: Hello"
-	line "again, <PLAYER>."
+	text "Lawrence: Wir"
+	line "sehen uns wieder,"
+	cont "<PLAYER>."
 
-	para "So you are search-"
-	line "ing for Moltres"
-	cont "here too."
-	cont "Did I inspire you?"
+	para "Du suchst hier"
+	line "also auch nach"
+	cont "Lavados. Habe ich"
+	cont "dich inspiriert?"
 
-	para "…What?! You caught"
-	line "it already?"
-	cont "Impossible."
+	para "…Was?! Du hast es"
+	line "schon gefangen?"
+	cont "Unmöglich."
 
-	para "I spent years"
-	line "hunting through"
+	para "Ich habe jahrelang"
+	line "die Siegesstraße"
 
-	para "Victory Road, and"
-	line "the islands south"
-	cont "of Kanto…"
+	para "und die Inseln"
+	line "südlich von Kanto"
+	cont "durchsucht…"
 
-	para "Why have you"
-	line "succeeded where I"
-	cont "failed?"
+	para "Warum hast du"
+	line "Erfolg, wo ich"
+	cont "versagt habe?"
 
-	para "Can you appreciate"
-	line "the majesty of the"
-	cont "winged mirages?"
+	para "Kannst du die"
+	line "Pracht der sagen-"
+	cont "umwobenen Vögel"
+	cont "würdigen?"
 
-	para "Have you even"
-	line "heard of the"
+	para "Hast du überhaupt"
+	line "schon mal vom"
+	cont "Wächter des Meeres"
+	cont "gehört?"
 
-	para "guardian of the"
-	line "sea before?"
+	para "Das ist"
+	line "inakzeptabel."
 
-	para "This is unaccept-"
-	line "able."
+	para "Triff mich bei den"
+	line "Schreinruinen auf"
+	cont "Shamouti."
 
-	para "Meet me at the"
-	line "ruined shrine on"
-	cont "Shamouti Island."
-
-	para "I'll show you that"
-	line "I deserve to own"
-	cont "those #mon."
+	para "Ich werde dir"
+	line "beweisen, dass mir"
+	cont "diese #mon"
+	cont "zustehen."
 	done
 
 CinnabarVolcanoB2FLawrenceEscapeRopeText:
-	text "Lawrence used an"
-	line "Escape Rope!"
+	text "Lawrence setzt"
+	line "Fluchtseil ein."
 	done
 
 CinnabarVolcanoB2FMovementData_LawrenceApproachUp:

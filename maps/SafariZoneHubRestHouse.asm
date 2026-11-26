@@ -43,18 +43,16 @@ PokemonJournalKogaScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Elite Four Koga!"
+	para "Titelthema:"
+	line "Top Vier Koga!"
 
-	para "Koga is said to"
-	line "have a thorough"
+	para "Koga soll sich"
+	line "bestens mit Medi-"
+	cont "zin auskennen."
 
-	para "knowledge of"
-	line "medicine."
+	para "Er braut sogar"
+	line "Arzneien, um seine"
 
-	para "He even concocts"
-	line "medicine to nurse"
-
-	para "his #mon to"
-	line "health."
+	para "#mon gesund zu"
+	line "pflegen."
 	done

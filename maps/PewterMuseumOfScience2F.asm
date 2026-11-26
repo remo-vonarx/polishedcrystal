@@ -52,23 +52,23 @@ Museum2FTutorSeismicTossScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "If you say so."
+	text "Wie du meinst."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf!"
+	text "Du hast kein"
+	line "Silberblatt!"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Seismic Toss!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Geowurf!"
 	done
 
 Museum2FMoonStoneSignpostScript:
@@ -78,100 +78,104 @@ Museum2FMoonStoneSignpostScript:
 	closepokepic
 	jumpthistext
 
-	text "Meteorite that"
-	line "fell on Mt.Moon."
-	cont "(Moon Stone)"
+	text "Meteorit, der auf"
+	line "den Mondberg fiel."
+	cont "(Mondstein)"
 	done
 
 Museum2FScientistText:
-	text "Meteorites struck"
-	line "Mt.Moon near"
-	cont "Pewter City."
+	text "Auf dem Mondberg"
+	line "bei Marmoria City"
+	cont "schlugen Meteori-"
+	cont "ten ein."
 
-	para "We have one"
-	line "on display."
+	para "Einen davon"
+	line "stellen wir aus."
 
-	para "It seems to emit"
-	line "strange energy…"
+	para "Er scheint eine"
+	line "seltsame Energie"
+	cont "auszustrahlen…"
 	done
 
 
 Museum2FLassText:
-	text "#mon revived"
-	line "from fossils are"
+	text "Aus Fossilien wie-"
+	line "derbelebte #mon"
 
-	para "all part Rock-"
-	line "type."
+	para "sind alle zum Teil"
+	line "vom Typ Gestein."
 
-	para "Were they always"
-	line "that way, or is it"
+	para "Waren sie schon"
+	line "immer so, oder"
 
-	para "a result of the"
-	line "fossilization"
-	cont "process?"
+	para "liegt das am Ver-"
+	line "steinerungs-"
+	cont "prozess?"
 	done
 
 Museum2FPokefanMImperialText:
-	text "This space shuttle"
-	line "used to fly 160"
+	text "Diese Raumfähre"
+	line "flog einst 160"
 
-	para "miles above the"
-	line "earth, defying"
-	cont "gravity!"
+	para "Meilen über der"
+	line "Erde und trotzte"
+	cont "der Schwerkraft!"
 
-	para "You know what else"
-	line "can defy gravity?"
+	para "Weißt du, was der"
+	line "Schwerkraft noch"
+	cont "trotzen kann?"
 
-	para "Seismic Toss,"
-	line "of course!"
+	para "Geowurf,"
+	line "natürlich!"
 	done
 
 Museum2FChildText:
-	text "Stuff and rocks"
-	line "and rocks and"
+	text "Zeug und Steine"
+	line "und Steine und"
 
-	para "stuff. Can we go"
-	line "already?"
+	para "Zeug. Können wir"
+	line "jetzt gehen?"
 	done
 
 Museum2FTeacherText:
-	text "Sigh… My son isn't"
-	line "enjoying the mu-"
+	text "Seufz… Meinem Sohn"
+	line "gefällt das Museum"
 
-	para "seum as much as I"
-	line "hoped he would."
+	para "nicht so gut, wie"
+	line "ich gehofft hatte."
 
-	para "Kids, huh?"
+	para "Kinder, was?"
 	done
 
 Museum2FPokefanMMetricText:
-	text "This space shuttle"
-	line "used to fly 250"
+	text "Diese Raumfähre"
+	line "flog einst 250"
 
-	para "kilometers above"
-	line "the earth, defy-"
-	cont "ing gravity!"
+	para "Kilometer über der"
+	line "Erde und trotzte"
+	cont "der Schwerkraft!"
 
-	para "You know what else"
-	line "can defy gravity?"
+	para "Weißt du, was der"
+	line "Schwerkraft noch"
+	cont "trotzen kann?"
 
-	para "Seismic Toss,"
-	line "of course!"
+	para "Geowurf,"
+	line "natürlich!"
 	done
 
 Text_Museum2FTutorSeismicToss:
-	text "I can teach your"
-	line "#mon to use"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "Seismic Toss for"
-	line "one Silver Leaf."
+	para "deinem #mon"
+	line "Geowurf bei."
 	done
 
 
 Text_Museum2FTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Seismic Toss?"
+	text "Soll ich deinem"
+	line "#mon Geowurf"
+	cont "beibringen?"
 	done
 
 
@@ -187,19 +191,20 @@ PokemonJournalStevenScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Rock Hound Steven!"
+	para "Titelthema:"
+	line "Steinsammler Troy!"
 
-	para "Steven Stone is"
-	line "said to assist"
-	cont "Devon Corp, which"
+	para "Troy Trumm soll"
+	line "der Devon Corpo-"
+	cont "ration helfen,"
 
-	para "is run by his fa-"
-	line "ther Joseph Stone,"
+	para "die sein Vater"
+	line "Mr. Trumm leitet,"
 
-	para "by hunting down"
-	line "rare minerals and"
-	cont "even fossils."
+	para "indem er seltene"
+	line "Mineralien und"
+	cont "sogar Fossilien"
+	cont "aufspürt."
 	done
 
 PokemonJournalCynthiaScript: ; TODO: move to Goldenrod Museum
@@ -208,14 +213,15 @@ PokemonJournalCynthiaScript: ; TODO: move to Goldenrod Museum
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Researcher"
+	para "Titelthema:"
+	line "Forscherin"
 	cont "Cynthia!"
 
-	para "Cynthia is said to"
-	line "have learned many"
+	para "Cynthia soll von"
+	line "ihrer Großmutter"
 
-	para "legends and myths"
-	line "from her grand-"
-	cont "mother in Sinnoh."
+	para "in Sinnoh viele"
+	line "Legenden und"
+	cont "Mythen gelernt"
+	cont "haben."
 	done

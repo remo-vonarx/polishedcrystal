@@ -35,19 +35,22 @@ Route13GrampsScript:
 	iftruefwd .lucky
 	jumpthistextfaceplayer
 
-	text "I can't see Lucky"
-	line "Island today…"
+	text "Heute kann ich die"
+	line "Glücksinsel nicht"
+	cont "sehen…"
 
-	para "But I know it's"
-	line "appeared before!"
+	para "Aber ich weiß,"
+	line "dass sie schon mal"
+	cont "aufgetaucht ist!"
 	done
 
 .lucky
 	jumpthistextfaceplayer
 
-	text "I can see Lucky"
-	line "Island today!"
-	cont "What a spectacle!"
+	text "Heute kann ich die"
+	line "Glücksinsel sehen!"
+	cont "Was für ein"
+	cont "Schauspiel!"
 	done
 
 GenericTrainerCamperClark:

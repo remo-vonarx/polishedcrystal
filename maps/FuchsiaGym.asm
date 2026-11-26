@@ -63,12 +63,12 @@ FuchsiaGymJanineScript:
 	setevent EVENT_GOT_TM66_POISON_JAB
 	jumpthisopenedtext
 
-	text "It's Poison Jab,"
-	line "a powerful Poison-"
+	text "Das ist Gifthieb,"
+	line "eine starke Gift-"
 
-	para "type move that"
-	line "may poison its"
-	cont "victim."
+	para "Attacke, die das"
+	line "Opfer vergiften"
+	cont "kann."
 	done
 
 LassAmandaScript:
@@ -248,9 +248,10 @@ endc
 	done
 
 JanineText_ToxicSpeech:
-	text "Janine: You're so"
-	line "tough! I have a"
-	cont "special gift!"
+	text "Janina: Du bist so"
+	line "stark! Ich habe"
+	cont "ein besonderes"
+	cont "Geschenk!"
 	done
 
 JanineText_ApplyMyself:

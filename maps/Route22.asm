@@ -74,81 +74,92 @@ KukuiScript:
 	done
 
 .IntroText:
-	text "Hey there!"
-	line "The name's Kukui."
+	text "Hey! Ich bin"
+	line "Kukui."
 
-	para "So, you go by"
-	line "<PLAYER>? 10-4,"
-	cont "good buddy!"
+	para "Du heißt also"
+	line "<PLAYER>? Alles"
+	cont "klar, Kumpel!"
 
-	para "I'm from the far-"
-	line "off region of"
-	cont "Alola!"
+	para "Ich komme aus der"
+	line "fernen Alola-"
+	cont "Region!"
 
-	para "But we don't have a"
-	line "#mon League, so"
+	para "Bei uns gibt es"
+	line "aber keine"
+	cont "#mon-Liga."
 
-	para "I came to Kanto to"
-	line "battle the Elite"
-	cont "Four here, yeah!"
+	para "Darum bin ich nach"
+	line "Kanto gekommen, um"
+	cont "hier gegen die Top"
+	cont "Vier zu kämpfen,"
+	cont "jawohl!"
 
-	para "Huh? You're the"
-	line "new Champion?"
+	para "Hm? Du bist der"
+	line "neue Champ?"
 
-	para "Woo, no wonder you"
-	line "look so stylin'!"
+	para "Wow, kein Wunder,"
+	line "dass du so stylish"
+	cont "aussiehst!"
 
-	para "My team and I feel"
-	line "ready. How about"
+	para "Mein Team und ich"
+	line "sind bereit. Wie"
+	cont "wär's, wenn wir"
 
-	para "we skip the League"
-	line "and challenge you"
-	cont "right now?"
+	para "die Liga auslassen"
+	line "und gleich gegen"
+	cont "dich antreten?"
 	done
 
 .RematchText:
-	text "Hey there,"
+	text "Hey,"
 	line "<PLAYER>!"
 
-	para "I've been training"
-	line "hard since our"
-	cont "last battle, yeah!"
+	para "Ich habe seit"
+	line "unserem letzten"
+	cont "Kampf hart"
+	cont "trainiert, jawohl!"
 
-	para "You look like you"
-	line "got stronger too!"
+	para "Du siehst aus, als"
+	line "wärst du auch"
+	cont "stärker geworden!"
 
-	para "Say, how about a"
-	line "rematch?"
+	para "Wie wär's mit"
+	line "einer Revanche?"
 	done
 
 .SeenText:
-	text "Let's have a battle"
-	line "worthy of this"
-	cont "moment!"
+	text "Lass uns einen"
+	line "Kampf austragen,"
+	cont "der dieses Moments"
+	cont "würdig ist!"
 	done
 
 .BeatenText:
-	text "I couldn't win"
-	line "even though I"
-	cont "went all out…"
+	text "Ich konnte nicht"
+	line "gewinnen, obwohl"
+	cont "ich alles gegeben"
+	cont "habe…"
 	done
 
 .RefusedText:
-	text "Totally focused on"
-	line "your own quest,"
-	cont "yeah?"
+	text "Du konzentrierst"
+	line "dich ganz auf"
+	cont "deine eigene"
+	cont "Reise, stimmt's?"
 
-	para "I respect that!"
+	para "Das respektiere"
+	line "ich!"
 	done
 
 Route22CooltrainerfText:
-	text "The name “Kanto”"
-	line "means “east of the"
-	cont "barrier.”"
+	text "Der Name “Kanto”"
+	line "bedeutet “östlich"
+	cont "der Schranke”."
 
-	para "I suppose the"
-	line "barrier must be"
-	cont "Mt.Silver."
+	para "Ich nehme an, die"
+	line "Schranke ist der"
+	cont "Silberberg."
 	done
 
 VictoryRoadEntranceSignText:

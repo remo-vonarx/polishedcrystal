@@ -210,31 +210,32 @@ MountMoonRivalTextWin:
 MountMoonRivalTextAfter:
 	text "…… …… ……"
 
-	para "…You won, fair"
-	line "and square."
+	para "…Du hast mich"
+	line "fair besiegt."
 
-	para "I admit it. But"
-	line "this isn't the"
-	cont "end."
+	para "Das muss ich dir"
+	line "lassen. Wir werden"
+	cont "uns wiedersehen."
 
-	para "After some more"
-	line "training in"
-	cont "Dragon's Den…"
+	para "Nach etwas mehr"
+	line "Training in der"
+	cont "Drachenhöhle…"
 
-	para "I'm going to be"
-	line "the greatest #-"
-	cont "mon trainer ever."
+	para "Ich werde der"
+	line "beste #mon-"
+	cont "Trainer aller"
+	cont "Zeiten sein."
 
-	para "Because these guys"
-	line "are behind me."
+	para "Und sie werden"
+	line "mir dabei helfen."
 
-	para "…Listen, <PLAYER>."
+	para "…Hör mal, <PLAYER>."
 
-	para "One of these days"
-	line "I'm going to prove"
+	para "Eines Tages werde"
+	line "ich es dir bewei-"
 
-	para "how good I am by"
-	line "beating you."
+	para "sen. Dann besiege"
+	line "ich dich."
 	done
 
 MountMoonRivalTextLoss:

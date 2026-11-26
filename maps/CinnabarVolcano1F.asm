@@ -77,8 +77,8 @@ CinnabarVolcano1FBouldersFall:
 	earthquake 80
 	jumpthistext
 
-	text "The boulder fell"
-	line "through!"
+	text "Der Felsen fiel"
+	line "hindurch!"
 	done
 
 CinnabarVolcano1FBuckScript:
@@ -115,69 +115,73 @@ CinnabarVolcano1FBuckScript:
 	end
 
 .ChallengeText:
-	text "Howdy! I'm Buck."
-	line "And you're…"
-	cont "<PLAYER>?"
+	text "Hallo! Ich bin"
+	line "Avenaro. Und du"
+	cont "bist… <PLAYER>?"
 
-	para "Don't tell me"
-	line "you're hunting for"
-	cont "treasure too?"
+	para "Sag bloß, du"
+	line "suchst auch einen"
+	cont "Schatz?"
 
-	para "Stark Mountain"
-	line "back home has"
+	para "Bei mir zu Hause"
+	line "liegt tief im"
 
-	para "treasure deep in-"
-	line "side, so I'm sure"
-	cont "this volcano does"
-	cont "too!"
+	para "Kahlberg ein"
+	line "Schatz verborgen,"
+	cont "also hat dieser"
+	cont "Vulkan sicher auch"
+	cont "einen!"
 
-	para "That's why I'm here."
+	para "Deshalb bin ich"
+	line "hier."
 
-	para "So, <PLAYER>, what"
-	line "do you say we bat-"
-	cont "tle for it?"
+	para "Also, <PLAYER>,"
+	line "wie wär's, wenn"
+	cont "wir darum kämpfen?"
 	done
 
 .YesText:
-	text "OK! I'm telling you"
-	line "right now. I'm ser-"
-	cont "iously tough."
+	text "OK! Ich sage es"
+	line "dir gleich: Ich"
+	cont "bin wirklich"
+	cont "stark!"
 	done
 
 .NoText:
-	text "I'll keep asking"
-	line "until you say"
-	cont "“Yes!”"
+	text "Ich werde dich so"
+	line "oft fragen, bis"
+	cont "du “Ja!” sagst."
 	done
 
 .BeatenText:
-	text "Heeheehee!"
-	line "So hot, you!"
+	text "Hehehehe!"
+	line "So heiß bist du!"
 	done
 
 .ItemText:
-	text "Fweh! Too much!"
+	text "Puh! Das war zu"
+	line "viel des Guten!"
 
-	para "This volcano's"
-	line "treasure isn't for"
-	cont "me…"
+	para "Der Schatz dieses"
+	line "Vulkans ist nichts"
+	cont "für mich…"
 
-	para "But, hey, <PLAYER>!"
-	line "You're an amazing"
-	cont "trainer!"
+	para "Aber hey, <PLAYER>!"
+	line "Du bist ein"
+	cont "toller Trainer!"
 
-	para "You should like"
-	line "this!"
+	para "Das hier sollte"
+	line "dir gefallen!"
 	done
 
 .GoodbyeText:
-	text "I guess I'll better"
-	line "my team at the"
-	cont "Battle Tower."
+	text "Ich werde wohl im"
+	line "Duellturm mein"
+	cont "Team trainieren."
 
-	para "Be seeing you,"
+	para "Man sieht sich,"
 	line "<PLAYER>!"
-	cont "Bye-bye!"
+	cont "Tschüss!"
 	done
 
 GenericTrainerScientistOskar:

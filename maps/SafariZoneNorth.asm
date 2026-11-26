@@ -88,25 +88,25 @@ SafariZoneNorthTutorDoubleEdgeScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Oh well."
+	text "Na gut."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have any"
-	line "Silver Leaves…"
+	text "Du hast keine"
+	line "Silberblätter…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "There!"
-	line "Now your #mon"
+	text "So!"
+	line "Jetzt beherrscht"
 
-	para "knows how to use"
-	cont "Double-Edge!"
+	para "dein #mon"
+	line "Risikotackle!"
 	done
 
 BattleGirlPadmaSeenText:
@@ -149,32 +149,33 @@ BeautyRachaelBeatenText:
 	done
 
 SafariZoneNorthCooltrainerFText:
-	text "I caught a"
-	line "Chansey!"
+	text "Ich habe ein"
+	line "Chaneira gefangen!"
 
-	para "I'm so lucky!"
-	line "I'm going to teach"
+	para "Ich hab so ein"
+	line "Glück! Ich bringe"
 
-	para "it to do a really"
-	line "powerful tackle."
+	para "ihm ein richtig"
+	line "starkes Tackle"
+	cont "bei."
 
-	para "Let me share my"
-	line "luck with you!"
+	para "Ich teile mein"
+	line "Glück mit dir!"
 	done
 
 Text_SafariZoneNorthTutorDoubleEdge:
-	text "I'll teach your"
-	line "#mon how to"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "use Double-Edge"
-	line "for a Silver Leaf."
+	para "deinem #mon"
+	line "Risikotackle bei."
 	done
 
 
 Text_SafariZoneNorthTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Double-Edge?"
+	text "Soll ich deinem"
+	line "#mon Risiko-"
+	cont "tackle beibringen?"
 	done
 
 

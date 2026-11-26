@@ -16,22 +16,23 @@ FuchsiaBillSpeechHouse_MapScriptHeader:
 	object_event  6,  4, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BillsBrothersHouseYoungsterText, -1
 
 BillsBrotherText:
-	text "My grandpa is at"
-	line "my brother Bill's"
-	cont "in Goldenrod City."
+	text "Mein Großvater"
+	line "besucht meinen"
+	cont "Bruder Bill in"
+	cont "Dukatia City."
 	done
 
 BillsBrothersHouseYoungsterText:
-	text "I saw these weird,"
-	line "slow #mon on"
-	cont "Cycling Road."
+	text "Ich habe seltsame,"
+	line "langsame #mon"
+	cont "auf dem Radweg"
+	cont "gesehen."
 
-	para "They look like"
-	line "living lava."
+	para "Sie sehen aus wie"
+	line "lebende Lava."
 
-	para "They must have"
-	line "come from the"
-
-	para "volcano eruption"
-	line "on Cinnabar."
+	para "Sie müssen vom"
+	line "Vulkanausbruch auf"
+	cont "der Zinnoberinsel"
+	cont "kommen."
 	done

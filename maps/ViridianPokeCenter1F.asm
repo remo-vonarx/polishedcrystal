@@ -25,15 +25,15 @@ PokemonJournalBlueScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Blue!"
+	para "Titelthema:"
+	line "Arenaleiter Blau!"
 
-	para "Blue supposedly"
-	line "visits his cher-"
-	cont "ished #mon"
+	para "Blau soll jedes"
+	line "Jahr in der Ruhe-"
+	cont "stätte seine"
 
-	para "every year in the"
-	line "House of Souls."
+	para "geliebten #mon"
+	line "besuchen."
 	done
 
 ViridianPokeCenter1FCooltrainermScript:
@@ -50,12 +50,13 @@ ViridianPokeCenter1FCooltrainermScript:
 	done
 
 .BlueText:
-	text "There are strong"
-	line "Gym Trainers at"
-	cont "the Viridian Gym."
+	text "In der Arena von"
+	line "Vertania City gibt"
+	cont "es starke Trainer."
 
-	para "Someday I'm going"
-	line "to join them!"
+	para "Eines Tages werde"
+	line "ich einer von"
+	cont "ihnen!"
 	done
 
 ViridianPokeCenter1FCooltrainerfText:
