@@ -25,20 +25,22 @@ Route49_MapScriptHeader:
 	cuttree_event 20, 15, EVENT_ROUTE_49_CUT_TREE_2
 
 Route49LadyText:
-	text "Look at the grass"
-	line "and trees here!"
+	text "Sieh dir das Gras"
+	line "und die Bäume hier"
+	cont "an!"
 
-	para "Valencia is full"
-	line "of unique flora."
+	para "Valencia ist"
+	line "voller einzigarti-"
+	cont "ger Pflanzen."
 	done
 
 Route49YoungsterText:
-	text "This landscape"
-	line "makes me feel like"
+	text "In dieser Land-"
+	line "schaft fühle ich"
 
-	para "an adventurer in"
-	line "the middle of the"
-	cont "jungle!"
+	para "mich wie ein Aben-"
+	line "teurer mitten im"
+	cont "Dschungel!"
 	done
 
 GenericTrainerSightseermHari:

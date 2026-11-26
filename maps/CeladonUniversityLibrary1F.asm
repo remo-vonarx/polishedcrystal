@@ -37,31 +37,35 @@ CeladonUniversityLibrary1F_MapScriptHeader:
 	object_event 10,  7, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptext, CeladonUniversityLibrary1FBookText, -1
 
 CeladonUniversityLibrary1FLadyText:
-	text "This library is on"
-	line "university"
-	cont "grounds, but it's"
+	text "Diese Bibliothek"
+	line "liegt auf dem"
+	cont "Uni-Gelände, aber"
 
-	para "open for anyone"
-	line "to use."
+	para "jeder darf sie"
+	line "benutzen."
 
-	para "Isn't that great?"
+	para "Ist das nicht"
+	line "toll?"
 	done
 
 CeladonUniversityLibrary1FGentlemanText:
-	text "Shh! Can't you see"
-	line "I'm reading here?"
+	text "Pst! Siehst du"
+	line "nicht, dass ich"
+	cont "hier lese?"
 	done
 
 CeladonUniversityLibrary1FCooltrainerfText:
-	text "Prof.Oak used to"
-	line "teach here, so the"
+	text "Prof. Eich hat"
+	line "früher hier unter-"
+	cont "richtet, daher hat"
 
-	para "library has copies"
-	line "of all his journal"
-	cont "articles."
+	para "die Bibliothek"
+	line "Kopien all seiner"
+	cont "Fachartikel."
 
-	para "I've read each one"
-	line "cover to cover!"
+	para "Ich habe jeden von"
+	line "vorne bis hinten"
+	cont "gelesen!"
 	done
 
 CeladonUniversityLibrary1FGameboyKidScript:
@@ -70,18 +74,20 @@ CeladonUniversityLibrary1FGameboyKidScript:
 	end
 
 .Text:
-	text "My #dex has a"
-	line "game upgrade."
+	text "Mein #dex hat"
+	line "ein Spiele-"
+	cont "Upgrade."
 
-	para "I'm playing Tetris!"
+	para "Ich spiele Tetris!"
 	done
 
 CeladonUniversityLibrary1FPokefan_fText:
-	text "We have a mutual"
-	line "lending agreement"
+	text "Wir haben ein Aus-"
+	line "leihabkommen mit"
 
-	para "with Canalave"
-	line "Library in Sinnoh."
+	para "der Bibliothek von"
+	line "Fleetburg in"
+	cont "Sinnoh."
 	done
 
 CeladonUniversityLibrary1FCooltrainermScript:
@@ -96,43 +102,46 @@ CeladonUniversityLibrary1FCooltrainermScript:
 	jumpopenedtext .Text2
 
 .Text1:
-	text "I have a big test"
-	line "coming up, so I'm"
+	text "Bei mir steht eine"
+	line "große Prüfung an,"
 
-	para "planning to be"
-	line "here a while."
+	para "also bleibe ich"
+	line "eine Weile hier."
 
-	para "I just need to"
-	line "hang in there."
+	para "Ich muss nur"
+	line "durchhalten."
 
-	para "This is what helps"
-	line "me out."
+	para "Und das hier"
+	line "hilft mir dabei."
 	done
 
 .Text2:
-	text "If you want your"
-	line "#mon to hang in"
-	cont "there, give them"
-	cont "that Focus Band."
+	text "Wenn deine #mon"
+	line "durchhalten"
+	cont "sollen, gib ihnen"
+	cont "das Fokusband."
 	done
 
 CeladonUniversityLibrary1FTeacherText:
-	text "I'm the head"
-	line "librarian."
+	text "Ich bin die Lei-"
+	line "terin der Biblio-"
+	cont "thek."
 
-	para "If you need any-"
-	line "thing, just shout."
+	para "Wenn du etwas"
+	line "brauchst, ruf"
+	cont "einfach."
 
-	para "Quietly, though."
-	line "This IS a library."
+	para "Aber leise, bitte."
+	line "Das IST eine"
+	cont "Bibliothek."
 	done
 
 CeladonUniversityLibrary1FBookText:
-	text "It's a book about"
-	line "flower arranging."
+	text "Ein Buch übers"
+	line "Blumenstecken."
 
-	para "A Sunflora is on"
-	line "the cover."
+	para "Auf dem Umschlag"
+	line "ist ein Sonnflora."
 	done
 
 CeladonUniversityLibrary1FSignpost1Text:

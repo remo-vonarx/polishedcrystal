@@ -119,30 +119,32 @@ SeagallopFerryShamoutiGateSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryShamoutiWhichIslandText:
-	text "Welcome back!"
-	line "Where to now?"
+	text "Willkommen zurück!"
+	line "Wohin jetzt?"
 	done
 
 SeagallopFerryShamoutiToVermilionQuestionText:
-	text "Ready to head back"
-	line "to Vermilion City?"
+	text "Bereit für die"
+	line "Rückfahrt nach"
+	cont "Orania City?"
 	done
 
 SeagallopFerryShamoutiDepartureText:
-	text "All right!"
+	text "Alles klar!"
 
-	para "All aboard the"
-	line "Seagallop Ferry!"
+	para "Alle an Bord der"
+	line "Seesprint-Fähre!"
 	done
 
 SeagallopFerryShamoutiIslandRefusedText:
-	text "I'll be waiting"
-	line "right here."
+	text "Ich warte genau"
+	line "hier."
 	done
 
 SeagallopFerryShamoutiGateTwinText:
-	text "I'm here to greet"
-	line "the tourists."
+	text "Ich begrüße hier"
+	line "die Touristen."
 
-	para "Have a nice stay!"
+	para "Einen schönen"
+	line "Aufenthalt!"
 	done

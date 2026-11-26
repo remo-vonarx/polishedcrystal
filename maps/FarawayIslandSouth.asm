@@ -141,57 +141,62 @@ FarawayIslandSouthSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryFarawayToVermilionQuestionText:
-	text "Ready to head back"
-	line "to Vermilion City?"
+	text "Bereit für die"
+	line "Rückfahrt nach"
+	cont "Orania City?"
 	done
 
 SeagallopFerryFarawayToVermilionText:
-	text "All right!"
+	text "Alles klar!"
 
-	para "All aboard the"
-	line "Seagallop Ferry!"
+	para "Alle an Bord der"
+	line "Seesprint-Fähre!"
 	done
 
 SeagallopFerryFarawayIslandRefusedText:
-	text "I'll be waiting"
-	line "right here."
+	text "Ich warte genau"
+	line "hier."
 	done
 
 FarawayIslandSouthLawrenceText1:
-	text "Lawrence: Well,"
-	line "this certainly is"
+	text "Lawrence: Nun,"
+	line "das ist wahrlich"
 
-	para "a pleasure, though"
-	line "an unexpected one."
+	para "eine Freude, wenn"
+	line "auch eine unerwar-"
+	cont "tete."
 
-	para "I came here to"
-	line "remember how my"
-	cont "collection began…"
+	para "Ich kam her, um"
+	line "mich zu erinnern,"
+	cont "wie meine Sammlung"
+	cont "begann…"
 
-	para "with a Mew carving"
-	line "found on this very"
-	cont "island."
+	para "mit einer Mew-"
+	line "Schnitzerei, die"
+	cont "auf genau dieser"
+	cont "Insel gefunden"
+	cont "wurde."
 
-	para "…I have been"
-	line "thinking about our"
-	cont "last battle."
+	para "…Ich habe über"
+	line "unseren letzten"
+	cont "Kampf nachgedacht."
 
-	para "I want to under-"
-	line "stand the bond"
+	para "Ich will das Band"
+	line "verstehen, das du"
 
-	para "you have with your"
-	line "collection."
+	para "mit deiner Samm-"
+	line "lung hast."
 
-	para "Will you battle"
-	line "me again?"
+	para "Kämpfst du noch"
+	line "einmal gegen mich?"
 	done
 
 FarawayIslandSouthLawrenceYesText:
-	text "Excellent!"
+	text "Ausgezeichnet!"
 	done
 
 FarawayIslandSouthLawrenceNoText:
-	text "…Very well."
+	text "…Nun gut."
 	done
 
 FarawayIslandSouthLawrenceBeatenText:
@@ -200,14 +205,16 @@ FarawayIslandSouthLawrenceBeatenText:
 	done
 
 FarawayIslandSouthLawrenceText2:
-	text "Lawrence: …I see."
-	line "I still have far"
-	cont "to go before I"
+	text "Lawrence: …Ich"
+	line "verstehe. Ich habe"
+	cont "noch einen weiten"
 
-	para "can build an even"
-	line "better collection."
+	para "Weg vor mir, bevor"
+	line "ich eine noch bes-"
+	cont "sere Sammlung"
+	cont "aufbauen kann."
 
-	para "Farewell."
+	para "Leb wohl."
 	done
 
 FarawayIslandSouthSignText:

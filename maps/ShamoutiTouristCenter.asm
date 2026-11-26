@@ -58,85 +58,90 @@ LarryScript:
 .Done
 	jumpthisopenedtext
 
-	text "Now, I'd better"
-	line "get back to work."
+	text "So, ich sollte"
+	line "wieder an die"
+	cont "Arbeit."
 
-	para "If you'll excuse"
-	line "me."
+	para "Wenn du mich ent-"
+	line "schuldigst."
 	done
 
 .RewardText:
-	text "For me, the best"
-	line "part of traveling"
+	text "Für mich ist das"
+	line "Beste am Reisen,"
 
-	para "is trying out the"
-	line "local dishes."
+	para "die regionalen"
+	line "Gerichte zu"
+	cont "probieren."
 
-	para "The restaurant"
-	line "nearby makes a"
+	para "Das Restaurant"
+	line "hier in der Nähe"
 
-	para "decadent dessert"
+	para "macht ein dekaden-"
+	line "tes Dessert"
 if DEF(FAITHFUL)
-	line "with Honey."
+	cont "mit Honig."
 else
-	line "with Sweet Honey."
+	cont "mit Honig."
 endc
 
-	para "Let me share some"
-	line "with you."
+	para "Ich gebe dir"
+	line "etwas davon ab."
 	done
 
 .IntroText:
-	text "Hello."
-	line "I'm Larry."
+	text "Hallo."
+	line "Ich bin Aoki."
 
-	para "My boss sent me"
-	line "out here on"
+	para "Mein Chef hat mich"
+	line "geschäftlich her-"
+	cont "geschickt, aber"
 
-	para "business, but I"
-	line "may as well enjoy"
+	para "ich kann es mir"
+	line "dabei ja auch gut"
+	cont "gehen lassen."
 
-	para "myself while I'm"
-	line "at it."
+	para "Ich habe gerade im"
+	line "Restaurant Oase im"
+	cont "Hotel gegessen."
 
-	para "I just ate at the"
-	line "Oasis Restaurant"
-	cont "in the hotel."
+	para "Das hat mir Appe-"
+	line "tit auf einen noch"
+	cont "stärkeren Kampf"
+	cont "gemacht."
 
-	para "It whet my appe-"
-	line "tite for an even"
-	cont "stronger battle."
-
-	para "Care to join me?"
+	para "Machst du mit?"
 	done
 
 .RematchText:
-	text "Hello again,"
+	text "Hallo noch mal,"
 	line "<PLAYER>."
 
-	para "You already faced"
-	line "me, so I doubt"
+	para "Du bist schon"
+	line "gegen mich ange-"
+	cont "treten, also be-"
 
-	para "this will leave"
-	line "much of an impres-"
-	cont "sion on you."
+	para "zweifle ich, dass"
+	line "dich das hier sehr"
+	cont "beeindrucken wird."
 
-	para "In any case, shall"
-	line "we get started?"
+	para "Wie auch immer,"
+	line "sollen wir"
+	cont "anfangen?"
 	done
 
 .SeenText:
-	text "I, Larry, will be"
-	line "at your service."
+	text "Ich, Aoki, stehe"
+	line "dir zu Diensten."
 	done
 
 .BeatenText:
-	text "Well, I've had"
-	line "my fill…"
+	text "Nun, ich bin"
+	line "satt…"
 	done
 
 .RefusedText:
-	text "Maybe another time"
-	line "when our schedules"
-	cont "align."
+	text "Vielleicht ein"
+	line "andermal, wenn es"
+	cont "terminlich passt."
 	done

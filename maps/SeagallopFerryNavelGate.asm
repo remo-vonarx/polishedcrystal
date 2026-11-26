@@ -88,18 +88,19 @@ SeagallopFerryNavelGateSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryNavelToVermilionQuestionText:
-	text "Ready to head back"
-	line "to Vermilion City?"
+	text "Bereit für die"
+	line "Rückfahrt nach"
+	cont "Orania City?"
 	done
 
 SeagallopFerryNavelToVermilionText:
-	text "All right!"
+	text "Alles klar!"
 
-	para "All aboard the"
-	line "Seagallop Ferry!"
+	para "Alle an Bord der"
+	line "Seesprint-Fähre!"
 	done
 
 SeagallopFerryNavelRockRefusedText:
-	text "I'll be waiting"
-	line "right here."
+	text "Ich warte genau"
+	line "hier."
 	done

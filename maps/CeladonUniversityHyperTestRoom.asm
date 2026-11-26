@@ -143,189 +143,196 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	playsound SFX_WRONG
 	jumpthisopenedtext
 
-	text "I'm sorry, that's"
-	line "incorrect!"
+	text "Tut mir leid, das"
+	line "ist falsch!"
 
-	para "You may try and"
-	line "retake the Hyper"
-	cont "Test tomorrow."
+	para "Du kannst den"
+	line "Hypertest morgen"
+	cont "noch mal machen."
 	done
 
 .GreetingText:
-	text "Prof.Westwood?"
-	line "That would be me."
+	text "Prof. Westwood?"
+	line "Das bin ich."
 	done
 
 .IntroText:
-	text "A researcher"
-	line "extraordinaire!"
+	text "Ein Forscher der"
+	line "Extraklasse!"
 
-	para "My findings are"
-	line "second to none."
+	para "Meine Erkenntnisse"
+	line "sind unerreicht."
 
-	para "No doubt I'll win"
-	line "a commendation"
-	cont "before long…"
+	para "Zweifellos bekomme"
+	line "ich bald eine"
+	cont "Auszeichnung…"
 	done
 
 .QuestionText:
-	text "Ahem. What was"
-	line "that?"
+	text "Ähem. Wie bitte?"
 
-	para "You came to take"
-	line "the Celadon Univ-"
-	cont "ersity Hyper Test?"
+	para "Du willst den"
+	line "Hypertest der"
+	cont "Prismania-Uni"
+	cont "ablegen?"
 	done
 
 .BeginText:
-	text "Excellent!"
+	text "Hervorragend!"
 
-	para "The Hyper Test is"
-	line "a series of six"
-	cont "questions, testing"
+	para "Der Hypertest be-"
+	line "steht aus sechs"
+	cont "Fragen, die all"
 
-	para "all of your senses"
-	line "under pressure!"
+	para "deine Sinne unter"
+	line "Druck prüfen!"
 
-	para "If you pass, you'll"
-	line "receive a prize"
+	para "Wenn du bestehst,"
+	line "erhältst du einen"
 
-	para "worthy of our"
-	line "university!"
+	para "Preis, der unserer"
+	line "Uni würdig ist!"
 	done
 
 .CorrectText:
-	text "Correct!"
+	text "Richtig!"
 	done
 
 .Question1IntroText:
-	text "Question 1:"
-	line "Look closely!"
+	text "Frage 1:"
+	line "Sieh genau hin!"
 	done
 
 .Question1QuestionText:
-	text "What #mon's sil-"
-	line "houette is this?"
+	text "Welchem #mon"
+	line "gehört diese"
+	cont "Silhouette?"
 	done
 
 .Question2IntroText:
-	text "Question 2:"
-	line "Listen carefully!"
+	text "Frage 2:"
+	line "Hör genau hin!"
 	done
 
 .Question2QuestionText:
-	text "What #mon's cry"
-	line "is this?"
+	text "Welchem #mon"
+	line "gehört dieser Ruf?"
 	done
 
 .Question3IntroText:
-	text "Question 3:"
+	text "Frage 3:"
 	done
 
 .Question3QuestionText:
-	text "Which medicine"
-	line "tastes bitter?"
+	text "Welche Medizin"
+	line "schmeckt bitter?"
 	done
 
 .Question4IntroText:
-	text "Question 4:"
+	text "Frage 4:"
 	done
 
 .Question4QuestionText:
-	text "Which #mon"
-	line "has Dry Skin?"
+	text "Welches #mon"
+	line "hat Trockenheit?"
 	done
 
 .Question5IntroText:
-	text "Question 5:"
+	text "Frage 5:"
 	done
 
 .Question5QuestionText:
-	text "Which Berry"
-	line "smells blue?"
+	text "Welche Beere"
+	line "riecht blau?"
 	done
 
 .Question6IntroText:
-	text "Question 6:"
-	line "Think wisely!"
+	text "Frage 6:"
+	line "Denk gut nach!"
 	done
 
 .Question6QuestionText:
-	text "Who is the most"
-	line "accomplished"
-	cont "professor?"
+	text "Wer ist der"
+	line "erfolgreichste"
+	cont "Professor?"
 	done
 
 .CongratulationsText:
-	text "Congratulations!"
+	text "Herzlichen"
+	line "Glückwunsch!"
 
-	para "You passed the"
-	line "Hyper Test with"
-	cont "flying colors!"
+	para "Du hast den Hyper-"
+	line "test mit Bravour"
+	cont "bestanden!"
 
-	para "Here's your prize--"
-	line "a uniquely bred"
+	para "Hier ist dein"
+	line "Preis--ein ganz"
 
-	para "Magikarp that"
-	line "knows Dragon Rage!"
+	para "besonders gezüch-"
+	line "tetes Karpador,"
+	cont "das Drachenwut"
+	cont "beherrscht!"
 	done
 
 .TestOverText:
-	text "Our students have"
-	line "the tenacity of a"
+	text "Unsere Studenten"
+	line "sind so zäh wie"
 
-	para "Magikarp strugg-"
-	line "ling to evolve."
-	cont "And so do you!"
+	para "ein Karpador, das"
+	line "sich abmüht, sich"
+	cont "zu entwickeln."
+	cont "Und du auch!"
 	done
 
 .PartyAndBoxFullText:
-	text "Oh no! Your party"
-	line "and Box are full…"
+	text "Oh nein! Dein Team"
+	line "und deine Box sind"
+	cont "voll…"
 	done
 
 .RefusedText:
-	text "Well, if you're"
-	line "certain."
+	text "Nun, wenn du dir"
+	line "sicher bist."
 	done
 
 .AlreadyTookText:
-	text "But you already"
-	line "attempted the test"
-	cont "today!"
+	text "Aber du hast den"
+	line "Test heute schon"
+	cont "versucht!"
 
-	para "You may retake"
-	line "it tomorrow."
+	para "Du kannst ihn"
+	line "morgen wieder-"
+	cont "holen."
 	done
 
 
 .Question1MenuData:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 1, 11, 11
+	menu_coords 0, 1, 12, 11
 	dw .Question1MenuData2
 	db 1 ; default option
 
 .Question1MenuData2:
 	db $81 ; flags
 	db 4 ; items
-	db "Umbreon@"
-	db "Glaceon@"
-	db "Persian@"
+	db "Nachtara@"
+	db "Glaziola@"
+	db "Snobilikat@"
 	db "Girafarig@"
 
 .Question2MenuData:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 1, 10, 11
+	menu_coords 0, 1, 12, 11
 	dw .Question2MenuData2
 	db 1 ; default option
 
 .Question2MenuData2:
 	db $81 ; flags
 	db 4 ; items
-	db "Blissey@"
-	db "Qwilfish@"
-	db "Slowking@"
-	db "Venomoth@"
+	db "Heiteira@"
+	db "Baldorfish@"
+	db "Laschoking@"
+	db "Omot@"
 
 .Question3MenuData:
 	db MENU_BACKUP_TILES
@@ -336,10 +343,10 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 .Question3MenuData2:
 	db $81 ; flags
 	db 4 ; items
-	db "Elixir@"
-	db "Calcium@"
-	db "Antidote@"
-	db "Heal Powder@"
+	db "Elixier@"
+	db "Kalzium@"
+	db "Gegengift@"
+	db "Heilpuder@"
 
 .Question4MenuData:
 	db MENU_BACKUP_TILES
@@ -350,10 +357,10 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 .Question4MenuData2:
 	db $81 ; flags
 	db 4 ; items
-	db "Parasect@"
+	db "Parasek@"
 	db "Magmar@"
-	db "Sandslash@"
-	db "Victreebel@"
+	db "Sandamer@"
+	db "Sarzenia@"
 
 .Question5MenuData:
 	db MENU_BACKUP_TILES
@@ -364,10 +371,10 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 .Question5MenuData2:
 	db $81 ; flags
 	db 4 ; items
-	db "Cheri Berry@"
-	db "Lum Berry@"
-	db "Oran Berry@"
-	db "Pecha Berry@"
+	db "Amrenabeere@"
+	db "Prunusbeere@"
+	db "Sinelbeere@"
+	db "Pirsifbeere@"
 
 .Question6MenuData:
 	db MENU_BACKUP_TILES
@@ -378,33 +385,33 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 .Question6MenuData2:
 	db $81 ; flags
 	db 4 ; items
-	db "Prof.Oak@"
-	db "Prof.Elm@"
+	db "Prof.Eich@"
+	db "Prof.Lind@"
 	db "Prof.Willow@"
 	db "Prof.Westwood@"
 
 CeladonUniversityHyperTestRoomScientistText:
-	text "The Hyper Test is"
-	line "a rite of passage"
+	text "Der Hypertest ist"
+	line "ein Übergangsritus"
 
-	para "for all Celadon"
-	line "University grad-"
-	cont "uates."
+	para "für alle Absolven-"
+	line "ten der Prisma-"
+	cont "nia-Uni."
 
-	para "It tests all of"
-	line "their faculties to"
-	cont "the utmost!"
+	para "Er prüft all ihre"
+	line "Fähigkeiten bis"
+	cont "zum Äußersten!"
 	done
 
 CeladonUniversityHyperTestRoomTwin1Text:
-	text "I'll pass the Hyper"
-	line "Test before you!"
+	text "Ich bestehe den"
+	line "Hypertest vor dir!"
 	done
 
 CeladonUniversityHyperTestRoomTwin2Text:
-	text "No, I'll pass the"
-	line "Hyper Test before"
-	cont "you!"
+	text "Nein, ich bestehe"
+	line "den Hypertest vor"
+	cont "dir!"
 	done
 
 CeladonUniversityHyperTestRoomMagikarpSign:
@@ -415,8 +422,8 @@ CeladonUniversityHyperTestRoomMagikarpSign:
 	closepokepic
 	jumpthistext
 
-	text "A Magikarp is"
-	line "swimming around."
+	text "Ein Karpador"
+	line "schwimmt herum."
 	done
 
 CeladonUniversityHyperTestRoomBookshelf1Text:
@@ -439,9 +446,10 @@ CeladonUniversityHyperTestRoomBookshelf2Text:
 CeladonUniversityHyperTestRoomComputer:
 	jumpthistext
 
-	text "There's a file on"
-	line "the desktop named"
-	cont "questions.txt."
+	text "Auf dem Desktop"
+	line "liegt eine Datei"
+	cont "namens fragen.txt."
 
-	para "Better not cheat!"
+	para "Besser nicht"
+	line "schummeln!"
 	done

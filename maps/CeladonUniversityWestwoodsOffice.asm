@@ -31,53 +31,54 @@ CeladonUniversityWestwoodsOfficeChildScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "I'll just buy some"
-	line "ramen in the cafe-"
-	cont "teria."
+	text "Dann kaufe ich mir"
+	line "eben Ramen in der"
+	cont "Cafeteria."
 	done
 
 .Text1:
-	text "I was told there"
-	line "would be free"
-	cont "pizza here!"
+	text "Mir wurde gesagt,"
+	line "hier gäbe es"
+	cont "Gratis-Pizza!"
 
-	para "Where is it?"
+	para "Wo ist sie?"
 
-	para "I'm so ANGRY!"
+	para "Ich bin so SAUER!"
 
-	para "…Maybe I should"
-	line "quit snacking on"
+	para "…Vielleicht sollte"
+	line "ich weniger"
 if DEF(FAITHFUL)
-	cont "RageCandyBars."
+	cont "Wutkekse naschen."
 else
-	cont "Cakes of Rage."
+	cont "Wutkekse naschen."
 endc
 
-	para "You can have this"
-	line "one."
+	para "Du kannst den"
+	line "hier haben."
 	done
 
 CeladonUniversityWestwoodsOfficeBookText:
-	text "Dear Diary,"
+	text "Liebes Tagebuch,"
 
-	para "My work compiling"
-	line "entries for the"
+	para "meine Arbeit an"
+	line "den Einträgen für"
 
-	para "#dex continues"
-	line "to be well-recei-"
-	cont "ved."
+	para "den #dex wird"
+	line "weiterhin gut"
+	cont "aufgenommen."
 
-	para "Proof that one"
-	line "does not always"
+	para "Ein Beweis, dass"
+	line "man nicht immer"
 
-	para "need to leave the"
-	line "office to succeed!"
+	para "das Büro verlassen"
+	line "muss, um Erfolg"
+	cont "zu haben!"
 
-	para "Using reports sub-"
-	line "mitted by others"
+	para "Mit den Berichten"
+	line "anderer Leute"
 
-	para "gets the job done"
-	line "just fine."
+	para "geht die Arbeit"
+	line "bestens voran."
 	done
 
 CeladonUniversityWestwoodsOfficeSignpost1Text:

@@ -66,45 +66,51 @@ CeladonUniversityLoungeNeeshaScript:
 	jumpopenedtext .FinalText
 
 .IntroText1:
-	text "Hi! I'm Neesha!"
-	line "I'm one of top four"
+	text "Hi! Ich bin"
+	line "Neesha! Ich gehöre"
 
-	para "trainers in Cela-"
-	line "don University."
+	para "zu den vier besten"
+	line "Trainern der"
+	cont "Prismania-Uni."
 
-	para "We're known as the"
-	line "Celadon Four!"
+	para "Man nennt uns die"
+	line "Prismania-Vier!"
 
-	para "Want me to show"
-	line "you why we're so"
-	cont "famous?"
+	para "Soll ich dir zei-"
+	line "gen, warum wir so"
+	cont "berühmt sind?"
 
-	para "Then let's battle!"
+	para "Dann lass uns"
+	line "kämpfen!"
 	done
 
 .IntroText2:
-	text "Hi! I'm Neesha!"
-	line "I'm one of the"
-	cont "Celadon Four!"
+	text "Hi! Ich bin"
+	line "Neesha! Ich gehöre"
+	cont "zu den Prismania-"
+	cont "Vier!"
 
-	para "It looks like"
-	line "you've heard of us."
+	para "Du hast wohl schon"
+	line "von uns gehört."
 
-	para "Then let's battle!"
+	para "Dann lass uns"
+	line "kämpfen!"
 	done
 
 .NoBattleText:
-	text "Not interested in"
-	line "a challenge?"
+	text "Keine Lust auf"
+	line "eine Heraus-"
+	cont "forderung?"
 	done
 
 .SeenText:
-	text "We'll blow you"
-	line "away!"
+	text "Wir pusten dich"
+	line "einfach weg!"
 	done
 
 .BeatenText:
-	text "A painful loss…"
+	text "Eine schmerzliche"
+	line "Niederlage…"
 	done
 
 .AfterText1:
@@ -135,63 +141,68 @@ CeladonUniversityLoungeNeeshaScript:
 	done
 
 .FinalText:
-	text "It's not often that"
-	line "someone gives us"
+	text "Es kommt nicht oft"
+	line "vor, dass jemand"
 
-	para "Celadon Four a"
-	line "real challenge."
+	para "uns Prismania-Vier"
+	line "wirklich fordert."
 
-	para "I won't forget"
-	line "you, trainer!"
+	para "Ich werde dich"
+	line "nicht vergessen,"
+	cont "Trainer!"
 	done
 
 CeladonUniversityLoungeLassText:
-	text "Next month we're"
-	line "going on a trip"
-	cont "to Mt.Moon."
+	text "Nächsten Monat"
+	line "machen wir einen"
+	cont "Ausflug zum Mond-"
+	cont "berg."
 
-	para "Maybe I'll see a"
-	line "Clefairy!"
+	para "Vielleicht sehe"
+	line "ich ein Piepi!"
 	done
 
 CeladonUniversityLoungeRichBoyText:
-	text "Have you ever"
-	line "wondered why"
+	text "Hast du dich je"
+	line "gefragt, warum"
 
-	para "Ultra Balls have"
-	line "a yellow letter"
-	cont "H on the top?"
+	para "Hyperbälle oben"
+	line "ein gelbes H"
+	cont "haben?"
 
-	para "It's because they"
-	line "were first called"
-	cont "Hyper Balls!"
+	para "Weil sie auch auf"
+	line "Japanisch Hyper-"
+	cont "ball heißen!"
 	done
 
 CeladonUniversityLoungeCooltrainerfText:
-	text "#mon with"
-	line "reduced physical"
+	text "#mon mit ge-"
+	line "schwächter Kraft"
 
-	para "strength instinct-"
-	line "ively attempt to"
-	cont "enter a # Ball."
+	para "versuchen instink-"
+	line "tiv, in einen"
+	cont "#ball zu"
+	cont "schlüpfen."
 	done
 
 CeladonUniversityLoungeSuper_nerd1Text:
-	text "What do you get if"
-	line "you cross a joke"
+	text "Was bekommt man,"
+	line "wenn man einen"
 
-	para "with a rhetorical"
-	line "question?"
+	para "Witz mit einer"
+	line "rhetorischen Frage"
+	cont "kreuzt?"
 
 	para "………………………………"
 	done
 
 CeladonUniversityLoungeSuper_nerd2Text:
-	text "I'm writing scripts"
-	line "for a game."
+	text "Ich schreibe"
+	line "Skripte für ein"
+	cont "Spiel."
 
-	para "Do not said use"
-	line "asm!"
+	para "Kein Assembler"
+	line "benutzen, hieß es!"
 	done
 
 CeladonUniversityLoungeBookshelf1Text:
@@ -215,24 +226,25 @@ CeladonUniversityLoungeBookshelf2:
 	jumpopenedtext .Text2
 
 .Text1:
-	text "This book has a"
-	line "secret compartment"
+	text "Dieses Buch hat"
+	line "ein Geheimfach, wo"
 
-	para "where the pages"
-	line "should be!"
+	para "eigentlich die"
+	line "Seiten sein"
+	cont "sollten!"
 	done
 
 .Text2:
-	text "Too bad--it's"
-	line "empty."
+	text "Schade--es ist"
+	line "leer."
 	done
 
 CeladonUniversityLoungeComputer:
 	jumpthistext
 
-	text "There's a player"
-	line "character running"
+	text "Eine Spielfigur"
+	line "rennt durch ein"
 
-	para "around a 2D"
-	line "Celadon City."
+	para "2D-Prismania"
+	line "City."
 	done

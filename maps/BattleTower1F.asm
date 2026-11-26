@@ -157,7 +157,7 @@ BattleTower1FReceptionistScript:
 		done
 	promptbutton
 	checkevent EVENT_BATTLE_TOWER_INTRO
-	iftrue .BattleTowerMenu
+	iftruefwd .BattleTowerMenu
 
 	; only ask once, so set the flag regardless
 	setevent EVENT_BATTLE_TOWER_INTRO

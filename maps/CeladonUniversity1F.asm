@@ -43,101 +43,103 @@ CeladonUniversity1F_MapScriptHeader:
 	object_event 23, 13, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonUniversity1FCooltrainerfText, -1
 
 CeladonUniversity1FSuperNerdText:
-	text "Some academics be-"
-	line "lieve there are"
+	text "Manche Akademiker"
+	line "glauben, es gibt"
 
-	para "other universes"
-	line "parallel to this"
-	cont "one."
+	para "Paralleluniversen"
+	line "zu diesem hier."
 
-	para "Does that mean"
-	line "there's a universe"
+	para "Heißt das, es gibt"
+	line "ein Universum ganz"
 
-	para "without any"
-	line "#mon?"
+	para "ohne #mon?"
 
-	para "That would be"
-	line "tragic!"
+	para "Das wäre ja"
+	line "tragisch!"
 	done
 
 CeladonUniversity1FLassText:
-	text "This place offers"
-	line "courses of study"
+	text "Hier kann man"
+	line "alles studieren,"
 
-	para "in everything from"
-	line "flower arranging"
-
-	para "to #mon"
-	line "psychology!"
+	para "vom Blumenstecken"
+	line "bis zur #mon-"
+	cont "Psychologie!"
 	done
 
 CeladonUniversity1FCooltrainermText:
-	text "Everyone at this"
-	line "university is a"
-	cont "#mon trainer."
+	text "Jeder an dieser"
+	line "Uni ist ein"
+	cont "#mon-Trainer."
 
-	para "To get offered a"
-	line "place here, you"
+	para "Um hier einen"
+	line "Studienplatz zu"
 
-	para "have to pass a"
-	line "series of #mon"
-	cont "battling tests."
+	para "bekommen, muss man"
+	line "eine Reihe von"
+	cont "#mon-Kampftests"
+	cont "bestehen."
 	done
 
 CeladonUniversity1FYoungsterText:
-	text "Magikarp is the"
-	line "university's mascot"
-	cont "#mon."
+	text "Karpador ist das"
+	line "Maskottchen der"
+	cont "Uni."
 
-	para "It's a symbol that"
-	line "anybody can aspire"
-	cont "to greatness!"
+	para "Es ist ein Symbol"
+	line "dafür, dass jeder"
+	cont "nach Größe streben"
+	cont "kann!"
 	done
 
 CeladonUniversity1FChildText:
-	text "Ugh! I can't find"
-	line "my next class…"
+	text "Uff! Ich finde"
+	line "meinen nächsten"
+	cont "Kurs nicht…"
 
-	para "I'm gonna be late!"
+	para "Ich komme zu spät!"
 	done
 
 CeladonUniversity1FPokefanmText:
-	text "I'm the janitor!"
+	text "Ich bin der"
+	line "Hausmeister!"
 
-	para "Be careful, the"
-	line "floor is wet!"
+	para "Vorsicht, der"
+	line "Boden ist nass!"
 	done
 
 CeladonUniversity1FReceptionistText:
-	text "Welcome to Celadon"
-	line "University!"
+	text "Willkommen an der"
+	line "Prismania-Uni!"
 
-	para "Classrooms and the"
-	line "principal's office"
-	cont "are down the hall."
+	para "Die Kursräume und"
+	line "das Büro des"
+	cont "Rektors liegen"
+	cont "den Flur entlang."
 
-	para "The library is to"
-	line "your right, the"
+	para "Die Bibliothek ist"
+	line "rechts von dir,"
 
-	para "student lounge to"
-	line "your left."
+	para "die Studenten-"
+	line "lounge links."
 
-	para "The cafeteria,"
-	line "pool, and nurse's"
+	para "Die Cafeteria, das"
+	line "Schwimmbad und das"
 
-	para "office are up-"
-	line "stairs."
+	para "Krankenzimmer sind"
+	line "oben."
 	done
 
 CeladonUniversity1FCooltrainerfText:
-	text "I'm studying to be"
-	line "a #mon nurse."
+	text "Ich studiere, um"
+	line "#mon-Pflegerin"
+	cont "zu werden."
 
-	para "With so many spe-"
-	line "cies out there,"
+	para "Bei so vielen"
+	line "Arten da draußen"
 
-	para "it's a steep"
-	line "learning curve!"
+	para "ist die Lernkurve"
+	line "ganz schön steil!"
 	done
 
 CeladonUniversity1FPrincipalsOfficeSignText:

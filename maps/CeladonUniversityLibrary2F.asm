@@ -48,25 +48,27 @@ CeladonUniversityLibrary2F_MapScriptHeader:
 	itemball_event  0,  1, TIMER_BALL, 1, EVENT_CELADON_UNIVERSITY_LIBRARY_2F_TIMER_BALL
 
 CeladonUniversityLibrary2FCosplayerText:
-	text "It's great being"
-	line "in the city!"
+	text "Es ist toll, in"
+	line "der Stadt zu sein!"
 
-	para "I can wear my cos-"
-	line "tume in public and"
+	para "Ich kann mein Kos-"
+	line "tüm in der Öffent-"
+	cont "lichkeit tragen,"
 
-	para "people don't bat"
-	line "an eye!"
+	para "und keiner zuckt"
+	line "mit der Wimper!"
 	done
 
 CeladonUniversityLibrary2FLassText:
-	text "Never judge a book"
-	line "by its cover."
+	text "Beurteile ein Buch"
+	line "nie nach seinem"
+	cont "Umschlag."
 
-	para "Sometimes even the"
-	line "dullest exterior"
+	para "Manchmal verbirgt"
+	line "die langweiligste"
 
-	para "can hide the best"
-	line "stories."
+	para "Hülle die besten"
+	line "Geschichten."
 	done
 
 CeladonUniversityLibrary2FArtistScript:
@@ -76,50 +78,53 @@ CeladonUniversityLibrary2FArtistScript:
 	end
 
 .Text1:
-	text "“Jasmine gazed"
-	line "into Erika's deep"
-	cont "brown eyes…”"
+	text "“Jasmin blickte"
+	line "in Erikas tiefe,"
+	cont "braune Augen…”"
 	done
 
 .Text2:
-	text "Huh? Go away!"
+	text "Hä? Geh weg!"
 
-	para "It's rude to read"
-	line "over someone's"
-	cont "shoulder!"
+	para "Es ist unhöflich,"
+	line "anderen über die"
+	cont "Schulter zu lesen!"
 	done
 
 CeladonUniversityLibrary2FSuper_nerdText:
-	text "The “net send”"
-	line "command will show"
+	text "Mit dem Befehl"
+	line "“net send” kann"
 
-	para "a message on"
-	line "everyone else's"
-	cont "computer screen!"
+	para "man eine Nachricht"
+	line "auf allen anderen"
+	cont "Bildschirmen"
+	cont "anzeigen!"
 
-	para "Hmm, what to send…"
+	para "Hmm, was schicke"
+	line "ich bloß…"
 
-	para "“Free pizza in"
-	line "Prof.Westwood's"
-	cont "office!”"
+	para "“Gratis-Pizza im"
+	line "Büro von Prof."
+	cont "Westwood!”"
 
 	para "Hehehe."
 	done
 
 CeladonUniversityLibrary2FCooltrainerfText:
-	text "This is my book."
-	line "And I'm going to"
-	cont "READ IT!"
+	text "Das ist mein Buch."
+	line "Und ich werde ES"
+	cont "LESEN!"
 	done
 
 CeladonUniversityLibrary2FYoungsterText:
-	text "I'm reading about a"
-	line "legendary #mon"
+	text "Ich lese über ein"
+	line "legendäres #mon"
 
-	para "with the power to"
-	line "distort space."
+	para "mit der Kraft, den"
+	line "Raum zu verzerren."
 
-	para "It's pretty scary…"
+	para "Ganz schön"
+	line "gruselig…"
 	done
 
 CeladonUniversityLibrary2FBookshelf1Text:
@@ -331,33 +336,35 @@ CeladonUniversityLibrary2FBookshelf20Text:
 CeladonUniversityLibrary2FComputer1:
 	jumpthistext
 
-	text "There's a login"
-	line "screen with a"
+	text "Ein Anmelde-"
+	line "bildschirm mit"
 
-	para "background image"
-	line "of a Magikarp."
+	para "einem Karpador als"
+	line "Hintergrundbild."
 	done
 
 CeladonUniversityLibrary2FComputer2:
 	jumpthistext
 
-	text "Someone forgot to"
-	line "log out!"
+	text "Da hat jemand ver-"
+	line "gessen, sich abzu-"
+	cont "melden!"
 	done
 
 CeladonUniversityLibrary2FComputer3:
 	jumpthistext
 
-	text "There's a story"
-	line "full of grammar"
-	cont "and spelling"
-	cont "errors."
+	text "Eine Geschichte"
+	line "voller Grammatik-"
+	cont "und Rechtschreib-"
+	cont "fehler."
 	done
 
 CeladonUniversityLibrary2FComputer4:
 	jumpthistext
 
-	text "There's a web page"
-	line "about how to be a"
-	cont "“l33t h4x0r”."
+	text "Eine Webseite"
+	line "darüber, wie man"
+	cont "ein “l33t h4x0r”"
+	cont "wird."
 	done

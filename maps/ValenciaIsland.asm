@@ -27,16 +27,17 @@ ValenciaIslandFlyPoint:
 	endcallback
 
 ValenciaIslandCooltrainermText:
-	text "A couple of strong"
-	line "trainers live in"
-	cont "that house."
+	text "In dem Haus da"
+	line "wohnen ein paar"
+	cont "starke Trainer."
 
-	para "They're a mother"
-	line "and her daughter…"
-	cont "Or maybe her son?"
+	para "Eine Mutter und"
+	line "ihre Tochter…"
+	cont "Oder ihr Sohn?"
 
-	para "Anyway, they're on"
-	line "vacation now."
+	para "Jedenfalls sind"
+	line "sie gerade im"
+	cont "Urlaub."
 	done
 
 ValenciaIslandYoungsterScript:
@@ -44,15 +45,15 @@ ValenciaIslandYoungsterScript:
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
-	text "Prof.Ivy is"
-	line "smokin' hot,"
-	cont "don't you think?"
+	text "Prof. Ivy ist"
+	line "echt heiß, findest"
+	cont "du nicht?"
 	done
 
 .Text2:
-	text "You may be cute,"
-	line "but Prof.Ivy is"
-	cont "smokin' hot!"
+	text "Du bist ja süß,"
+	line "aber Prof. Ivy ist"
+	cont "echt heiß!"
 	done
 
 ValenciaIslandSignText:

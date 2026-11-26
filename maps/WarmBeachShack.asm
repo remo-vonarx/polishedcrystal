@@ -44,30 +44,33 @@ WarmBeachShackTutorBodySlamScript:
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Come again!"
+	text "Komm wieder!"
 	line "Boioing!"
 	done
 
 WarmBeachShackBodySlamFisherText:
-	text "Ready?"
+	text "Bereit?"
 	line "Boing!"
 
-	para "We're having a"
-	line "sumo match to see"
+	para "Wir machen einen"
+	line "Sumo-Kampf, um zu"
 
-	para "who wimps out"
-	line "first."
+	para "sehen, wer zuerst"
+	line "schlappmacht."
 
-	para "I use Body Slam,"
-	line "and he Endures it!"
+	para "Ich setze Bodyslam"
+	line "ein, und er hält"
+	cont "mit Ausdauer"
+	cont "dagegen!"
 	done
 
 Text_WarmBeachShackBodySlamTutorBodySlamQuestion:
-	text "How about I teach"
-	line "Body Slam to a"
+	text "Soll ich einem"
+	line "deiner #mon"
 
-	para "#mon of yours"
-	line "for a Silver Leaf?"
+	para "Bodyslam bei-"
+	line "bringen, für ein"
+	cont "Silberblatt?"
 	done
 
 
@@ -100,38 +103,41 @@ WarmBeachShackTutorEndureScript:
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Come again!"
+	text "Komm wieder!"
 	line "Nnnh!"
 	done
 
 WarmBeachShackEndureFisherText:
-	text "Ready?"
+	text "Bereit?"
 	line "Nnnh!"
 
-	para "We're having a"
-	line "sumo match to see"
+	para "Wir machen einen"
+	line "Sumo-Kampf, um zu"
 
-	para "who gives up"
-	line "first."
+	para "sehen, wer zuerst"
+	line "aufgibt."
 
-	para "He uses Body Slam,"
-	line "and I Endure it!"
+	para "Er setzt Bodyslam"
+	line "ein, und ich halte"
+	cont "mit Ausdauer"
+	cont "dagegen!"
 	done
 
 Text_WarmBeachShackEndureTutorEndureQuestion:
-	text "How about I teach"
-	line "Endure to one of"
+	text "Soll ich einem"
+	line "deiner #mon"
 
-	para "your #mon for"
-	line "a Silver Leaf?"
+	para "Ausdauer beibrin-"
+	line "gen, für ein"
+	cont "Silberblatt?"
 	done
 
 
 Text_WarmBeachShackTutorsNoSilverLeaf:
-	text "Huh? You don't"
-	line "have any!"
+	text "Hä? Du hast ja"
+	line "gar keins!"
 	done
 
 Text_WarmBeachShackTutorsRefused:
-	text "Alright then."
+	text "Na gut."
 	done

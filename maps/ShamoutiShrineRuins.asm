@@ -70,29 +70,30 @@ ShamoutiShrineRuinsLawrenceScript:
 	end
 
 .SeenText:
-	text "Lawrence: I sought"
-	line "across many"
+	text "Lawrence: Ich habe"
+	line "in vielen Regionen"
 
-	para "regions to catch"
-	line "Articuno, Zapdos,"
-	cont "and Moltres."
+	para "versucht, Arktos,"
+	line "Zapdos und Lavados"
+	cont "zu fangen."
 
-	para "Without the"
-	line "complete set, I"
+	para "Ohne das komplette"
+	line "Set kann ich den"
 
-	para "cannot awaken the"
-	line "guardian of the"
-	cont "sea…"
+	para "Wächter des Meeres"
+	line "nicht erwecken…"
 
-	para "You're going to"
-	line "help me complete"
-	cont "my collection!"
+	para "Du wirst mir"
+	line "helfen, meine"
+	cont "Sammlung zu"
+	cont "vervollständigen!"
 	done
 
 .BeatenText:
-	text "Unbelievable."
-	line "You beat my legen-"
-	cont "dary collection…"
+	text "Unglaublich."
+	line "Du hast meine le-"
+	cont "gendäre Sammlung"
+	cont "besiegt…"
 	done
 
 .AfterText:
@@ -116,75 +117,77 @@ ShamoutiShrineRuinsLawrenceScript:
 	done
 
 .SilverWingText:
-	text "That Silver Wing"
-	line "feather comes from"
+	text "Dieser Silber-"
+	line "flügel stammt vom"
 
-	para "the guardian of"
-	line "the sea."
+	para "Wächter des"
+	line "Meeres."
 
-	para "The scent should"
-	line "attract it, but"
+	para "Sein Duft sollte"
+	line "ihn anlocken, aber"
 
-	para "only if you've"
-	line "mastered the three"
+	para "nur, wenn du die"
+	line "drei geflügelten"
 
-	para "winged mirages--"
-	line "the birds of fire,"
+	para "Trugbilder gemeis-"
+	line "tert hast--die"
+	cont "Vögel von Feuer,"
 
-	para "ice, and light-"
-	line "ning."
+	para "Eis und Blitz."
 
-	para "Or so the legends"
-	line "say."
+	para "So sagen es"
+	line "zumindest die"
+	cont "Legenden."
 	done
 
 .GoodbyeText:
-	text "My dream was to"
-	line "own that #mon,"
+	text "Mein Traum war es,"
+	line "dieses #mon zu"
+	cont "besitzen,"
 
-	para "but you've proven"
-	line "yourself worthy."
-	cont "Take it."
+	para "aber du hast dich"
+	line "als würdig erwie-"
+	cont "sen. Nimm es."
 
-	para "I'll begin my"
-	line "collection anew."
+	para "Ich beginne meine"
+	line "Sammlung von"
+	cont "Neuem."
 
-	para "Farewell."
+	para "Leb wohl."
 	done
 
 ShamoutiShrineRuinsGrampsText:
-	text "This shrine was"
-	line "magnificent when"
-	cont "I was a child."
+	text "Dieser Schrein war"
+	line "prächtig, als ich"
+	cont "ein Kind war."
 
-	para "But alas, it was"
-	line "wrecked by a storm"
-	cont "many years ago."
+	para "Doch leider wurde"
+	line "er vor vielen Jah-"
+	cont "ren von einem"
+	cont "Sturm zerstört."
 
-	para "The storm threat-"
-	line "ened the entire"
-	cont "island, but we"
+	para "Der Sturm bedrohte"
+	line "die ganze Insel,"
+	cont "aber wir wurden"
 
-	para "were protected by"
-	line "the Guardian of"
-	cont "the Seas."
+	para "vom Wächter der"
+	line "Meere beschützt."
 
-	para "Every year, I give"
-	line "thanks in honor"
-
-	para "of the great"
-	line "#mon who kept"
-	cont "us safe."
+	para "Jedes Jahr danke"
+	line "ich zu Ehren des"
+	cont "großen #mon,"
+	cont "das uns schützte."
 	done
 
 ShamoutiShrineRuinsLadyText:
-	text "I simply had to"
-	line "stop at Shamouti"
+	text "Ich musste auf"
+	line "meiner Weltreise"
 
-	para "Island on my"
-	line "world tour."
+	para "einfach auf Sha-"
+	line "mouti haltmachen."
 
-	para "Apparently there's"
-	line "a talking #mon"
-	cont "here somewhere."
+	para "Angeblich gibt es"
+	line "hier irgendwo ein"
+	cont "#mon, das"
+	cont "sprechen kann."
 	done

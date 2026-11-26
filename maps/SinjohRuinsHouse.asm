@@ -70,41 +70,42 @@ SinjohRuinsHouseCynthiaAfterText:
 	done
 
 SinjohRuinsHousePokefanmText:
-	text "A long time ago,"
-	line "people used to"
+	text "Vor langer Zeit"
+	line "hatten die Men-"
 
-	para "have closer bonds"
-	line "with #mon."
+	para "schen eine engere"
+	line "Bindung zu den"
+	cont "#mon."
 
-	para "Myths and legends"
-	line "formed about"
-	cont "powerful #mon,"
+	para "Mythen und Legen-"
+	line "den entstanden"
+	cont "über mächtige"
+	cont "#mon,"
 
-	para "and those legends"
-	line "were carried to"
-	cont "different regions."
+	para "und diese Legenden"
+	line "wurden in andere"
+	cont "Regionen getragen."
 
-	para "The ruins here"
-	line "have been influ-"
-	cont "enced by the"
+	para "Die Ruinen hier"
+	line "wurden von den"
 
-	para "ancient peoples of"
-	line "Alph in Johto and"
+	para "alten Völkern von"
+	line "Alph in Johto und"
 
-	para "Spear Pillar in"
-	line "Sinnoh."
+	para "der Speersäule in"
+	line "Sinnoh geprägt."
 	done
 
 SinjohRuinsHouseGrampsText:
-	text "You seem so out"
-	line "of place, not even"
+	text "Du wirkst so fehl"
+	line "am Platz und weißt"
 
-	para "knowing why you"
-	line "are here."
+	para "nicht mal, warum"
+	line "du hier bist."
 
-	para "Do you want my"
-	line "Abra to Teleport"
-	cont "you back home?"
+	para "Soll dich mein"
+	line "Abra nach Hause"
+	cont "teleportieren?"
 	done
 
 SinjohRuinsHouseGrampsYesText:
@@ -123,37 +124,42 @@ SinjohRuinsHouseAbraText:
 	done
 
 SinjohRuinsHouseCynthiaChallengeText:
-	text "Cynthia: Hello,"
+	text "Cynthia: Hallo,"
 	line "<PLAYER>."
 
-	para "Have you been"
-	line "keeping well?"
+	para "Ist es dir gut"
+	line "ergangen?"
 
-	para "You won a rematch"
-	line "against the Elite"
-	cont "Four! Well done!"
+	para "Du hast die Revan-"
+	line "che gegen die Top"
+	cont "Vier gewonnen!"
+	cont "Gut gemacht!"
 
-	para "I'm curious about"
-	line "what you learned"
-	cont "since we last met."
+	para "Ich bin neugierig,"
+	line "was du seit"
+	cont "unserem letzten"
+	cont "Treffen gelernt"
+	cont "hast."
 
-	para "Shall we battle"
-	line "again, <PLAYER>?"
+	para "Wollen wir noch"
+	line "mal kämpfen,"
+	cont "<PLAYER>?"
 	done
 
 SinjohRuinsHouseCynthiaNoText:
-	text "Cynthia: Come back"
-	line "any time if you"
-	cont "change your mind."
+	text "Cynthia: Komm"
+	line "jederzeit wieder,"
+	cont "wenn du es dir"
+	cont "anders überlegst."
 	done
 
 SinjohRuinsHouseCynthiaYesText:
-	text "Cynthia: Before"
-	line "I send out my"
-	cont "#mon,"
+	text "Cynthia: Bevor ich"
+	line "meine #mon"
+	cont "rufe, fängt mein"
 
-	para "my heart always"
-	line "begins to race…"
+	para "Herz immer an zu"
+	line "rasen…"
 	done
 
 SinjohRuinsHouseCynthiaWinText:

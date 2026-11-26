@@ -45,10 +45,12 @@ ShamoutiIslandAlolanExeggutorScript:
 	showemote EMOTE_SLEEP, SHAMOUTIISLAND_ALOLAN_EXEGGUTOR_HEAD, 15
 	jumpthistext
 
-	text "The weird tree is…"
-	line "fast asleep?"
+	text "Der seltsame Baum"
+	line "ist… eingeschla-"
+	cont "fen?"
 
-	para "Is it a #mon?"
+	para "Ist das etwa"
+	line "ein #mon?"
 	done
 
 .Awake:
@@ -68,14 +70,14 @@ ShamoutiIslandAlolanExeggutorScript:
 	end
 
 .PokeFluteText:
-	text "The #gear was"
-	line "placed near the"
-	cont "weird tree…"
+	text "Der #Com wurde"
+	line "neben den selt-"
+	cont "samen Baum gelegt…"
 	done
 
 .WokeUpText:
-	text "The #mon"
-	line "woke up!"
+	text "Das #mon ist"
+	line "aufgewacht!"
 	done
 
 ShamoutiIslandGrampsScript:
@@ -98,19 +100,20 @@ ShamoutiIslandWilhomenaScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "A shiny Pikachu"
-	line "would be a real"
-	cont "Pikablu."
+	text "Ein schillerndes"
+	line "Pikachu wäre ein"
+	cont "echtes Pikablu."
 
-	para "I've never found"
-	line "one, but I'm happy"
-	cont "with my Marill."
+	para "Ich habe noch nie"
+	line "eins gefunden, bin"
+	cont "aber mit meinem"
+	cont "Marill glücklich."
 	done
 
 .Text1:
-	text "Hello again! Let"
-	line "me give you that"
-	cont "souvenir."
+	text "Hallo noch mal!"
+	line "Hier ist das"
+	cont "Andenken für dich."
 	done
 
 ShamoutiIslandPikabluText:
@@ -118,18 +121,19 @@ ShamoutiIslandPikabluText:
 	done
 
 ShamoutiIslandFisherText:
-	text "Today we're dancing"
-	line "for no reason. ♪"
+	text "Heute tanzen wir"
+	line "ohne Grund. ♪"
 
-	para "Someday we'll"
-	line "disappear for no"
-	cont "reason."
+	para "Eines Tages ver-"
+	line "schwinden wir ohne"
+	cont "Grund."
 
-	para "…You thought we'd"
-	line "block the road?"
+	para "…Du dachtest, wir"
+	line "blockieren die"
+	cont "Straße?"
 
-	para "That would be"
-	line "rude!"
+	para "Das wäre doch"
+	line "unhöflich!"
 	done
 
 ShamoutiIslandSignText:

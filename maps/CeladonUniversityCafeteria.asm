@@ -65,58 +65,63 @@ CeladonUniversityCafeteriaCoreyScript:
 	jumpthisopenedtext
 
 .FinalText:
-	text "You'd be a star"
-	line "student if you"
-	cont "enrolled here."
+	text "Du wärst hier ein"
+	line "Spitzenstudent,"
+	cont "wenn du dich ein-"
+	cont "schreiben würdest."
 
-	para "But you have other"
-	line "goals, don't you?"
+	para "Aber du hast"
+	line "andere Ziele,"
+	cont "oder?"
 	done
 
 .IntroText1:
-	text "I'm Corey! I'm one"
-	line "of top four train-"
-	cont "ers at Celadon"
-	cont "University."
+	text "Ich bin Corey! Ich"
+	line "gehöre zu den vier"
+	cont "besten Trainern"
+	cont "der Prismania-Uni."
 
-	para "We're known as the"
-	line "Celadon Four!"
+	para "Man nennt uns die"
+	line "Prismania-Vier!"
 
-	para "Let me show you"
-	line "how we earned that"
+	para "Lass mich dir in"
+	line "einem kurzen"
 
-	para "title with a quick"
-	line "battle!"
+	para "Kampf zeigen, wie"
+	line "wir uns den Titel"
+	cont "verdient haben!"
 	done
 
 .IntroText2:
-	text "I'm Corey! I'm one"
-	line "of the Celadon"
-	cont "Four!"
+	text "Ich bin Corey! Ich"
+	line "gehöre zu den"
+	cont "Prismania-Vier!"
 
-	para "You're challenging"
-	line "all four of us?"
+	para "Du forderst uns"
+	line "alle vier heraus?"
 
-	para "Sure, I'm finished"
-	line "eating here."
+	para "Klar, ich bin hier"
+	line "eh fertig mit"
+	cont "Essen."
 
-	para "Are you ready to"
-	line "battle?"
+	para "Bist du bereit"
+	line "für den Kampf?"
 	done
 
 .NoBattleText:
-	text "Yeah, we can be"
-	line "intimidating."
+	text "Ja, wir können"
+	line "einschüchternd"
+	cont "sein."
 	done
 
 .SeenText:
-	text "Winning this will"
-	line "be a breeze!"
+	text "Das wird ein"
+	line "Kinderspiel!"
 	done
 
 .BeatenText:
-	text "I underestimated"
-	line "you…"
+	text "Ich habe dich"
+	line "unterschätzt…"
 	done
 
 .AfterText1:
@@ -146,45 +151,48 @@ CeladonUniversityCafeteriaCoreyScript:
 	done
 
 CeladonUni_NoRoomText:
-	text "You can't carry it."
+	text "Du kannst es nicht"
+	line "tragen."
 	done
 
 CeladonUniversityCafeteriaCooltrainerfText:
-	text "This place makes"
-	line "the best Cinnabar-"
-	cont "style hamburger"
+	text "Hier gibt's die"
+	line "besten Hacksteaks"
+	cont "nach Zinnober-Art"
+	cont "in ganz Kanto!"
 
-	para "steaks this side"
-	line "of Kanto!"
-
-	para "It's just like"
-	line "being home."
+	para "Fast wie zu"
+	line "Hause."
 	done
 
 CeladonUniversityCafeteriaBeautyText:
-	text "The cook finally"
-	line "made another batch"
-	cont "of Old Gateau!"
+	text "Der Koch hat end-"
+	line "lich wieder eine"
+	cont "Ladung Spezia-"
+	cont "litäten gemacht!"
 
-	para "I might go back"
-	line "for seconds."
+	para "Vielleicht hole"
+	line "ich mir noch"
+	cont "Nachschlag."
 	done
 
 CeladonUniversityCafeteriaYoungster1Text:
-	text "I asked the cafe-"
-	line "teria to stock"
-	cont "Casteliacones."
+	text "Ich habe die Cafe-"
+	line "teria gebeten,"
+	cont "Stratos-Eis anzu-"
+	cont "bieten."
 
-	para "They remind me of"
-	line "home, and they're"
-	cont "yummy too!"
+	para "Es erinnert mich"
+	line "an zu Hause, und"
+	cont "es ist lecker!"
 	done
 
 CeladonUniversityCafeteriaLadyText:
-	text "I'm on a diet."
-	line "Today it's a"
-	para "nutritious Slip"
-	line "Seed salad for me."
+	text "Ich mache Diät."
+	line "Heute gibt's für"
+	para "mich einen gesun-"
+	line "den Schlaffsamen-"
+	cont "Salat."
 	done
 
 CeladonUniversityCafeteriaYoungster2Script:
@@ -199,18 +207,20 @@ CeladonUniversityCafeteriaYoungster2Script:
 	jumpopenedtext .Text2
 
 .Text1:
-	text "The vending ma-"
-	line "chine gave me an"
-	cont "extra drink!"
+	text "Der Getränkeauto-"
+	line "mat hat mir ein"
+	cont "Extra-Getränk"
+	cont "gegeben!"
 
-	para "Let me share it"
-	line "with you."
+	para "Ich teile es mit"
+	line "dir."
 	done
 
 .Text2:
-	text "I love a cold"
-	line "Lemonade after a"
-	cont "tough battle."
+	text "Nach einem harten"
+	line "Kampf liebe ich"
+	cont "eine kalte"
+	cont "Limonade."
 	done
 
 CeladonUniversityCafeteriaBakerScript:
@@ -233,43 +243,49 @@ CeladonUniversityCafeteriaBakerScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "Here you go, hon!"
-	line "Enjoy it!"
+	text "Bitte schön,"
+	line "Schätzchen!"
+	cont "Lass es dir"
+	cont "schmecken!"
 	done
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "enough money…"
+	text "Du hast nicht"
+	line "genügend Geld…"
 	done
 
 .Text1:
-	text "What's that, hon?"
+	text "Was ist,"
+	line "Schätzchen?"
 
-	para "Sorry, we're done"
-	line "serving dinner."
+	para "Tut mir leid, das"
+	line "Abendessen ist"
+	cont "schon vorbei."
 
-	para "There are some"
-	line "Leftovers, but"
+	para "Es gibt noch ein"
+	line "paar Überreste,"
 
-	para "it'll cost ¥4000."
-	line "Want some?"
+	para "aber die kosten"
+	line "¥4000. Willst du?"
 	done
 
 .Text3:
-	text "There aren't any"
-	line "more Leftovers"
-	cont "today."
+	text "Heute gibt es"
+	line "keine Überreste"
+	cont "mehr."
 	done
 
 .Text4:
-	text "Have a nice day!"
+	text "Einen schönen Tag"
+	line "noch!"
 	done
 
 .Text6:
-	text "You can't carry"
-	line "it, hon."
+	text "Du kannst das"
+	line "nicht tragen,"
+	cont "Schätzchen."
 	done
 
 CeladonUniversityCafeteriaSignText:

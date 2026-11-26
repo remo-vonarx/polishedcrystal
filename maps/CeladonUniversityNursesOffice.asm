@@ -26,19 +26,20 @@ CeladonUniversityNursesOfficeNurseScript:
 	special RestartMapMusic
 	jumpthistext
 
-	text "Stay safe, dear!"
+	text "Pass gut auf dich"
+	line "auf, Liebes!"
 	done
 
 CeladonUniversityNursesOfficeNurseText:
-	text "Come in, dear."
-	line "Are you feeling"
-	cont "well?"
+	text "Komm herein,"
+	line "Liebes. Geht es"
+	cont "dir gut?"
 
-	para "Or are your #-"
-	line "mon tuckered out?"
+	para "Oder sind deine"
+	line "#mon erschöpft?"
 
-	para "Please rest here"
-	line "for a while!"
+	para "Ruh dich hier"
+	line "ein wenig aus!"
 	done
 
 CeladonUniversityNursesOfficeSignText:

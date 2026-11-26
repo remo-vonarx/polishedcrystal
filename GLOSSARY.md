@@ -617,6 +617,34 @@ _Avoid_: Detektor (the Itemfinder)
 
 **Rocket-Spielhalle**:
 The Rocket Game Corner in Celadon, in the Safari Zone warden's granddaughter's story.
+
+**Prof. Westwood**:
+The Celadon University professor (Westwood V.) keeps his English name, as picked in the Johto I review.
+
+**Felina Ivy**:
+Professor Ivy's full name (Philena Ivy), from PokéWiki.
+
+**Hypertest**:
+Celadon University's final exam (Hyper Test), one word like Hyperball.
+_Avoid_: Hyper-Test
+
+**Das war mal wieder ein Schuss in den Ofen!**:
+Jessie and James's defeat line (Looks like Team Rocket's blasting off again!), the German anime's catchphrase.
+
+**Hope**, **Faith**, **Charity**:
+Prof. Ivy's assistants keep their English names: no German game or dub names them.
+_Avoid_: Hoffnung, Glaube, Liebe
+
+**#mon-Pflegerin**:
+A Pokémon nurse as a profession (a student at Celadon University wants to become one).
+_Avoid_: #mon-Krankenschwester
+
+**Rektor**:
+The head of Celadon University (principal).
+
+**Schlaffsamen**:
+Slip Seed in the University cafeteria's salad, its official German name from Mystery Dungeon.
+
 **Kukui**:
 Speaks as in the German Sun and Moon: Hey, Wow, Alles klar, jawohl, stimmt's?, stylish.
 _Avoid_: yeah, Roger

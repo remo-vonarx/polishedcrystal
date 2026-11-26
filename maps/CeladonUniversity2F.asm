@@ -54,12 +54,12 @@ CeladonUniversity2FCooltrainerfScript:
 	jumpthisopenedtext
 
 .Text5:
-	text "Antidotes cure"
-	line "poison in #-"
-	cont "mon, but a person"
+	text "Gegengift heilt"
+	line "Vergiftungen bei"
+	cont "#mon, aber ein"
 
-	para "would get sick"
-	line "by drinking one."
+	para "Mensch würde davon"
+	line "krank werden."
 	done
 
 .NoRoomForAntidote:
@@ -67,24 +67,24 @@ CeladonUniversity2FCooltrainerfScript:
 	giveitem_unsafe FRESH_WATER
 	jumpthisopenedtext
 
-	text "Oh… Keep your"
-	line "Fresh Water then…"
+	text "Oh… Dann behalte"
+	line "dein Tafelwasser…"
 	done
 
 .Text1:
-	text "Wow, I'm thirsty!"
+	text "Ich hab so Durst!"
 
-	para "But I don't have"
-	line "change for the"
-	cont "vending machines…"
+	para "Aber ich habe kein"
+	line "Kleingeld für die"
+	cont "Getränkeautomaten…"
 
-	para "Do you have any"
-	line "Fresh Water?"
+	para "Hast du vielleicht"
+	line "Tafelwasser?"
 	done
 
 .Text2:
-	text "Give away a"
-	line "Fresh Water?"
+	text "Ein Tafelwasser"
+	line "hergeben?"
 	done
 
 .Text3:
@@ -93,70 +93,74 @@ CeladonUniversity2FCooltrainerfScript:
 	done
 
 .Text4:
-	text "Thank you so much!"
-	line "Here, take this!"
+	text "Vielen Dank!"
+	line "Hier, nimm das!"
 	done
 
 .Text6:
-	text "Oh… But I'm so"
-	line "thirsty…"
+	text "Oh… Aber ich hab"
+	line "so Durst…"
 	done
 
 CeladonUniversity2FCooltrainermText:
-	text "The cafeteria gets"
-	line "pretty crowded,"
+	text "In der Cafeteria"
+	line "ist es ziemlich"
+	cont "voll,"
 
-	para "so I prefer to eat"
-	line "in the hall."
+	para "darum esse ich"
+	line "lieber im Flur."
 	done
 
 CeladonUniversity2FYoungster1Text:
-	text "I failed the"
-	line "Hyper Test again…"
+	text "Ich bin wieder"
+	line "durch den Hyper-"
+	cont "test gefallen…"
 
-	para "But I won't"
-	line "give up!"
+	para "Aber ich gebe"
+	line "nicht auf!"
 	done
 
 CeladonUniversity2FCowgirlText:
-	text "My class is going"
-	line "on a field trip to"
-	cont "the Safari Zone!"
+	text "Meine Klasse macht"
+	line "einen Ausflug in"
+	cont "die Safari-Zone!"
 	done
 
 CeladonUniversity2FBug_catcherText:
-	text "Prof.Willow sends"
-	line "his assistants to"
+	text "Prof. Willow"
+	line "schickt seine"
+	cont "Assistenten durch"
 
-	para "wander all over"
-	line "the city and study"
+	para "die ganze Stadt,"
+	line "um die #mon zu"
 
-	para "the #mon that"
-	line "live here."
+	para "erforschen, die"
+	line "hier leben."
 	done
 
 CeladonUniversity2FLassText:
-	text "In addition to"
-	line "being the Celadon"
-	cont "Gym Leader,"
+	text "Erika ist nicht"
+	line "nur Arenaleiterin"
+	cont "von Prismania,"
 
-	para "Erika was top of"
-	line "her class here at"
-	cont "the university."
+	para "sie war hier an"
+	line "der Uni auch die"
+	cont "Jahrgangsbeste."
 
-	para "I wish I was as"
-	line "cool as her."
+	para "Ich wünschte, ich"
+	line "wäre so cool wie"
+	cont "sie."
 	done
 
 CeladonUniversity2FYoungster2Text:
-	text "Prof.Westwood is a"
-	line "little eccentric."
+	text "Prof. Westwood ist"
+	line "etwas exzentrisch."
 
-	para "Sometimes he apol-"
-	line "ogizes to his"
+	para "Manchmal ent-"
+	line "schuldigt er sich"
 
-	para "ancestors' por-"
-	line "traits."
+	para "bei den Porträts"
+	line "seiner Vorfahren."
 	done
 
 CeladonUniversity2FCafeteriaSignText:
@@ -193,8 +197,8 @@ CeladonUniversity2FMagikarpSign:
 	closepokepic
 	jumpthistext
 
-	text "A Magikarp is"
-	line "swimming around."
+	text "Ein Karpador"
+	line "schwimmt herum."
 	done
 
 CeladonUniversity2FCuboneSign:
@@ -204,7 +208,8 @@ CeladonUniversity2FCuboneSign:
 	closepokepic
 	jumpthistext
 
-	text "It's the Thick Club"
-	line "and skull helmet"
-	cont "of a Cubone."
+	text "Das sind der"
+	line "Kampfknochen und"
+	cont "der Schädelhelm"
+	cont "eines Tragosso."
 	done

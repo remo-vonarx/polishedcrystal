@@ -24,77 +24,81 @@ CeladonUniversityClassroom3_MapScriptHeader:
 	object_event  4,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonUniversityClassroom3Super_nerdText, -1
 
 CeladonUniversityClassroom3SparkText:
-	text "Hey! I'm Spark."
-	line "I teach Science--"
+	text "Hey! Ich bin"
+	line "Spark und unter-"
+	cont "richte Natur-"
+	cont "wissenschaften--"
 
-	para "right now, it's"
-	line "#biology."
+	para "gerade ist"
+	line "#biologie dran."
 
-	para "We're studying how"
-	line "#mon reproduce."
+	para "Wir erforschen,"
+	line "wie sich #mon"
+	cont "fortpflanzen."
 
-	para "Prof.Elm has pion-"
-	line "eered the field."
+	para "Prof. Lind ist"
+	line "ein Pionier auf"
+	cont "diesem Gebiet."
 
-	para "Oh, you know him!"
-	line "Is it true that he"
-	cont "actually lives in"
-	cont "his lab?"
+	para "Oh, du kennst ihn!"
+	line "Stimmt es, dass er"
+	cont "wirklich in seinem"
+	cont "Labor wohnt?"
 	done
 
 CeladonUniversityClassroom3TeacherText:
-	text "Are you looking"
-	line "for Spark?"
+	text "Suchst du Spark?"
 
-	para "He will be back"
-	line "tomorrow morning."
+	para "Er ist morgen"
+	line "früh wieder da."
 	done
 
 CeladonUniversityClassroom3ChildText:
-	text "#mon inside"
-	line "# Balls are"
+	text "#mon werden in"
+	line "#bällen in"
 
-	para "converted to light"
-	line "energy, then"
+	para "Lichtenergie umge-"
+	line "wandelt und beim"
 
-	para "changed back to"
-	line "matter when they're"
-	cont "sent out."
+	para "Hinausschicken"
+	line "wieder zu Materie."
 
-	para "Don't worry, it"
-	line "doesn't hurt them"
-	cont "one bit!"
+	para "Keine Sorge, es"
+	line "tut ihnen kein"
+	cont "bisschen weh!"
 	done
 
 CeladonUniversityClassroom3LassText:
-	text "My instructor said"
-	line "that Magneton is a"
+	text "Mein Dozent sagte,"
+	line "Magneton sei eine"
 
-	para "union of three"
-	line "Magnemite, but"
+	para "Vereinigung von"
+	line "drei Magnetilo,"
 
-	para "Magneton is 10"
-	line "times heavier than"
-	cont "Magnemite."
+	para "aber Magneton ist"
+	line "zehnmal schwerer"
+	cont "als Magnetilo."
 
-	para "How does that"
-	line "work?!"
+	para "Wie soll das denn"
+	line "gehen?!"
 	done
 
 CeladonUniversityClassroom3Super_nerdText:
-	text "Have you heard of"
-	line "the Electric-type"
-	cont "#mon Mareep?"
+	text "Kennst du das"
+	line "Elektro-#mon"
+	cont "Voltilamm?"
 
-	para "Its name derives"
-	line "from the unit of"
+	para "Sein Name kommt"
+	line "von der Einheit"
 
-	para "electric current,"
-	line "the “ampere.”"
+	para "der elektrischen"
+	line "Spannung, dem"
+	cont "“Volt”."
 
-	para "Rearrange the"
-	line "letters, and"
-	cont "you'll see!"
+	para "Schau dir die"
+	line "ersten Buchstaben"
+	cont "an, dann siehst"
+	cont "du's!"
 	done
 
 CeladonUniversityClassroom3BlackboardText:
