@@ -216,6 +216,6 @@ GenericTrainerTeacherClarice:
 Route14SignText:
 	text "Route 14"
 
-	para "Fuchsia City -"
-	line "Lavender Town"
+	para "Fuchsania City -"
+	line "Lavandia"
 	done

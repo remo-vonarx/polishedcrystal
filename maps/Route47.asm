@@ -444,23 +444,24 @@ Route47SealedCaveSign:
 Route47QuietCaveSignText:
 	text "Route 47"
 
-	para "West to"
-	line "Quiet Cave"
+	para "Westlich zur"
+	line "Stillen Höhle"
 	done
 
 Route47AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Some #mon found"
-	line "in certain areas"
+	para "Manche #mon aus"
+	line "bestimmten Gebie-"
 
-	para "may know a move"
-	line "unique to that"
-	cont "area!"
+	para "ten kennen eine"
+	line "Attacke, die es"
+	cont "nur dort gibt!"
 
-	para "But these moves"
-	line "can't be remembered"
+	para "Doch diese Atta-"
+	line "cken lassen sich"
 
-	para "or inherited via"
-	line "breeding!"
+	para "nicht wieder er-"
+	line "lernen oder ver-"
+	cont "erben!"
 	done

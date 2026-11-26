@@ -430,5 +430,5 @@ ElmsLabSignText:
 	done
 
 LyrasHouseSignText:
-	text "Lyra's House"
+	text "Lyras Haus"
 	done

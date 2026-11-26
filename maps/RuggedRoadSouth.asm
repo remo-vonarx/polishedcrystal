@@ -266,21 +266,20 @@ RuggedRoadSouthCamperText:
 	done
 
 RuggedRoadSouthAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "If your #mon"
-	line "KOs its opponent,"
+	para "Besiegt dein"
+	line "#mon den Gegner"
 
-	para "and it's holding a"
-	line "Power item that"
-	cont "ups effort gain,"
+	para "und trägt es ein"
+	line "Macht-Item, das"
+	cont "den Fleiß-Zuwachs"
+	cont "erhöht,"
 
-	para "every #mon that"
-	line "participated in"
+	para "profitiert jedes"
+	line "#mon davon, das"
 
-	para "the battle or"
-	line "that's holding an"
-
-	para "Exp.Share will"
-	line "gain from it!"
+	para "am Kampf teilnahm"
+	line "oder einen EP-"
+	cont "Teiler trägt!"
 	done

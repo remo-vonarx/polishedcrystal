@@ -1006,11 +1006,11 @@ Text_IlexForestLass:
 	done
 
 Text_IlexForestMossRock:
-	text "The rock is cover-"
-	line "ed in moss."
+	text "Der Fels ist mit"
+	line "Moos bewachsen."
 
-	para "It feels pleasant-"
-	line "ly cool."
+	para "Er fühlt sich an-"
+	line "genehm kühl an."
 	done
 
 IlexForestSignpost:
@@ -1027,23 +1027,23 @@ IlexForestSignpost:
 	done
 
 IlexForestTrainerTips:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "As long as you"
-	line "have an HM in"
-	cont "your Bag,"
+	para "Hast du eine VM"
+	line "im Beutel"
 
-	para "and a #mon in"
-	line "your party that's"
+	para "und ein #mon im"
+	line "Team, das sie"
+	cont "lernen könnte,"
 
-	para "compatible with"
-	line "it, you can use"
+	para "kannst du die"
+	line "Attacke außerhalb"
+	cont "von Kämpfen"
+	cont "einsetzen."
 
-	para "the move outside"
-	line "of battle."
-
-	para "You don't even"
-	line "have to teach it!"
+	para "Du musst sie ihm"
+	line "nicht mal bei-"
+	cont "bringen!"
 	done
 
 Text_IlexForestShrine:

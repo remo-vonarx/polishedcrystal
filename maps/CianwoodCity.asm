@@ -355,28 +355,29 @@ CianwoodPhotoStudioSignText:
 	done
 
 CianwoodCliffEdgeGateSignText:
-	text "Cliff Edge Gate"
+	text "Felsklippentor"
 
-	para "Yellow Forest is"
-	line "just ahead!"
+	para "Der Goldgelbe"
+	line "Wald ist gleich"
+	cont "voraus!"
 	done
 
 CianwoodMoveManiacSignText:
-	text "The Move Maniac"
-	line "Ahead"
+	text "Hier entlang zum"
+	line "Attackenmaniac"
 	done
 
 CianwoodAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "You can use a"
-	line "# Ball on a"
+	para "Du kannst einen"
+	line "Ball auf ein"
 
-	para "#mon you've"
-	line "caught to change"
-	cont "its Ball!"
+	para "gefangenes #mon"
+	line "werfen, um seinen"
+	cont "Ball zu wechseln!"
 
-	para "But you won't get"
-	line "back the original"
-	cont "# Ball!"
+	para "Aber den alten"
+	line "#ball bekommst"
+	cont "du nicht zurück!"
 	done

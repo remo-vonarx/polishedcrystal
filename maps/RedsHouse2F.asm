@@ -48,9 +48,11 @@ RedsHouse2FPCText:
 	done
 
 RedsHouse2FSNESText:
-	text "<PLAYER> played the"
-	line "SNES."
+	text "<PLAYER> spielt"
+	line "Super NES."
 
-	para "Better get going--"
-	line "no time to lose!"
+	para "Mach besser"
+	line "weiter - du hast"
+	cont "keine Zeit zu"
+	cont "verlieren!"
 	done

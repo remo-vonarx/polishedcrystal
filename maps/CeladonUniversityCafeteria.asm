@@ -273,7 +273,6 @@ CeladonUniversityCafeteriaBakerScript:
 	done
 
 CeladonUniversityCafeteriaSignText:
-	text "Please clean up"
-	line "when you are"
-	cont "finished eating."
+	text "Bitte räume nach"
+	line "dem Essen auf."
 	done

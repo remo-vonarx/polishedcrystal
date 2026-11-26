@@ -222,7 +222,7 @@ CeladonHomeDecorStore3FBeautyText:
 	done
 
 CeladonHomeDecorStore3FDirectoryText:
-	text "Colorful Elegance"
+	text "Farbige Eleganz"
 
-	para "3F: Carpets"
+	para "2S: Teppiche"
 	done

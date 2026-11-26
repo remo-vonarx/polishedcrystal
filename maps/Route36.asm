@@ -763,29 +763,29 @@ Route36TrainerTips2Text:
 	done
 
 Route36AdvancedTips1Text:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
 	assert NUM_FRAMES == 20
-	para "You can pick from"
-	line "twenty different"
-	cont "textbox frames and"
+	para "Du kannst in den"
+	line "Optionen aus"
+	cont "zwanzig Rahmen und"
 
 	assert NUM_FONTS == 8
-	para "eight different"
-	line "text typefaces in"
-	cont "the Options!"
+	para "acht Schriftarten"
+	line "wählen!"
 	done
 
 Route36AdvancedTips2Text:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Treating your"
-	line "#mon with hair-"
-	cont "cuts, blessings or"
+	para "Verwöhnst du deine"
+	line "#mon mit Haar-"
+	cont "schnitten, Seg-"
+	cont "nungen oder"
 
-	para "massages can make"
-	line "them help you out"
+	para "Massagen, helfen"
+	line "sie dir aus Zu-"
 
-	para "in battles due to"
-	line "their affection!"
+	para "neigung im"
+	line "Kampf!"
 	done

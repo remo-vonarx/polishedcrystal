@@ -54,8 +54,8 @@ CeladonDeptStore5FTeacherText:
 	done
 
 CeladonDeptStore5FDirectoryText:
-	text "Bring Out"
-	line "#mon Potential"
+	text "Entfessle das"
+	line "#mon-Potenzial"
 
-	para "5F: Drug Store"
+	para "4S: Drogerie"
 	done

@@ -93,22 +93,25 @@ Route7Snorlax:
 	done
 
 Route7UndergroundPathSignText:
-	text "What's this flyer?"
+	text "Was steht auf dem"
+	line "Flugblatt?"
 
-	para "“Uncouth trainers"
-	line "have been holding"
+	para "“Ruppige Trainer"
+	line "tragen in der"
 
-	para "battles in the"
-	line "Underground Path."
+	para "Unterführung"
+	line "Kämpfe aus."
 
-	para "Because of rising"
-	line "complaints by lo-"
-	cont "cal residents, the"
-	cont "Underground Path"
-	cont "has been sealed"
-	cont "indefinitely.”"
+	para "Da sich die"
+	line "Beschwerden der"
+	cont "Anwohner häuften,"
+	cont "wurde die"
+	cont "Unterführung auf"
+	cont "unbestimmte Zeit"
+	cont "geschlossen.”"
 
-	para "-- Celadon Police"
+	para "-- Ordnungsamt von"
+	line "Prismania City"
 	done
 
 Route7LockedDoorText:

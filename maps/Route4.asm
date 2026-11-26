@@ -265,5 +265,5 @@ Text_Route4Tutor2Question:
 	done
 
 MtMoonSignText:
-	text "Mt.Moon Tunnel"
+	text "Mondberg-Tunnel"
 	done

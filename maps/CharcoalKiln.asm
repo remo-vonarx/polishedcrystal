@@ -122,5 +122,5 @@ CharcoalKilnFarfetchdScript:
 	done
 
 CharcoalKilnBucketText:
-	text "It's a bucket."
+	text "Ein Eimer."
 	done

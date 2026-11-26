@@ -100,33 +100,34 @@ TamerBrettBeatenText:
 	done
 
 SafariZoneWestAreaSignText:
-	text "Safari Zone"
-	line "West Area"
+	text "Safari-Zone"
+	line "Westbereich"
 	done
 
 SafariZoneWestRestHouseSignText:
-	text "Rest House"
+	text "Rasthaus"
 	done
 
 SafariZoneWestTrainerTips1SignText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Fire-type #mon"
-	line "cannot be burnt,"
+	para "#mon vom Typ"
+	line "Feuer können nicht"
+	cont "verbrannt werden,"
 
-	para "Electric types"
-	line "can't be paralyzed,"
+	para "vom Typ Elektro"
+	line "nicht paralysiert"
 
-	para "and Ice types can't"
-	line "be frozen solid."
+	para "und vom Typ Eis"
+	line "nicht eingefroren."
 	done
 
 SafariZoneWestTrainerTips2SignText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "In a sandstorm,"
-	line "Rock-type #mon"
-
-	para "get a boost to"
-	line "their Sp.Def."
+	para "Im Sandsturm"
+	line "erhalten Gestein-"
+	cont "#mon einen"
+	cont "Bonus auf ihre"
+	cont "Sp.Vert."
 	done

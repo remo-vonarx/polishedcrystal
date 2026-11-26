@@ -244,19 +244,19 @@ CeladonUniversityClassroom4Rich_boyScript:
 	done
 
 CeladonUniversityClassroom4BlackboardText:
-	text "Be aware of these"
-	line "factors in battle:"
-	cont "- Type chart"
-	cont "- Move effects"
-	cont "- Move categories"
-	cont "- Conditions"
-	cont "- Held items"
-	cont "- Base stats"
-	cont "- Effort values"
-	cont "- Natures"
-	cont "- Abilities"
-	cont "- Weather"
-	cont "- Others?"
+	text "Achte im Kampf"
+	line "auf diese Punkte:"
+	cont "- Typentabelle"
+	cont "- Attacken-Effekte"
+	cont "- Kategorien"
+	cont "- Statusprobleme"
+	cont "- Getragene Items"
+	cont "- Basiswerte"
+	cont "- Fleißpunkte"
+	cont "- Wesen"
+	cont "- Fähigkeiten"
+	cont "- Wetter"
+	cont "- Sonstiges?"
 	done
 
 CeladonUniversityClassroom4Bookshelf1:
@@ -285,9 +285,9 @@ CeladonUniversityClassroom4Bookshelf1:
 	done
 
 CeladonUniversityClassroom4Bookshelf2Text:
-	text "It's a #mon"
-	line "coloring book."
+	text "Ein Malbuch mit"
+	line "#mon-Motiven."
 
-	para "What's this doing"
-	line "here?"
+	para "Was macht das"
+	line "denn hier?"
 	done

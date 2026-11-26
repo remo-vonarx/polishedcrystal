@@ -116,10 +116,10 @@ SafariZonePhotoText:
 	done
 
 WardensHouseCuriosText:
-	text "It's a curio"
-	line "cabinet full of"
+	text "Ein Kuriositäten-"
+	line "schrank voller"
 
-	para "fossils and old"
-	line "#mon merchan-"
-	cont "dise."
+	para "Fossilien und"
+	line "alter #mon-Fan-"
+	cont "artikel."
 	done

@@ -81,19 +81,20 @@ CeladonUniversityWestwoodsOfficeBookText:
 	done
 
 CeladonUniversityWestwoodsOfficeSignpost1Text:
-	text "It's a portrait of"
+	text "Ein Porträt von"
 	line "Westwood I."
 	done
 
 CeladonUniversityWestwoodsOfficeSignpost2Text:
-	text "It's a portrait of"
+	text "Ein Porträt von"
 	line "Westwood III."
 	done
 
 CeladonUniversityWestwoodsOfficeBookshelfText:
-	text "The Complete Works"
-	line "of Prof.Westwood."
+	text "Die gesammelten"
+	line "Werke von Prof."
+	cont "Westwood."
 
-	para "…Might give that"
-	line "one a miss."
+	para "…Die lasse ich"
+	line "lieber aus."
 	done

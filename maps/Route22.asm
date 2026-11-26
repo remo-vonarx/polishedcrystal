@@ -154,20 +154,20 @@ Route22CooltrainerfText:
 VictoryRoadEntranceSignText:
 	text "Route 22"
 
-	para "#mon League"
-	line "Reception Gate"
+	para "#mon Liga"
+	line "Empfangstor"
 	done
 
 Route22AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Starting a New"
-	line "Game+ will keep"
+	para "Startest du ein"
+	line "Neues Spiel+,"
 
-	para "your previous"
-	line "game's money,"
-	cont "Battle Points, and"
+	para "behältst du Geld"
+	line "und GP aus dem"
+	cont "alten Spiel und"
 
-	para "any #mon stored"
-	line "in the PC!"
+	para "alle #mon, die"
+	line "im PC lagern!"
 	done

@@ -223,10 +223,11 @@ IvysLabNidorinoText:
 	done
 
 IvysLabWindowText:
-	text "The window's open."
+	text "Das Fenster ist"
+	line "offen."
 
-	para "An ocean breeze"
-	line "is blowing in."
+	para "Eine Meeresbrise"
+	line "weht herein."
 	done
 
 IvysLabHealingMachine:

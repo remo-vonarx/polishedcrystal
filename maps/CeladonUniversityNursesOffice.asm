@@ -42,11 +42,11 @@ CeladonUniversityNursesOfficeNurseText:
 	done
 
 CeladonUniversityNursesOfficeSignText:
-	text "A healthy #mon"
-	line "is a happy #-"
-	cont "mon!"
+	text "Ein gesundes"
+	line "#mon ist ein"
+	cont "frohes #mon!"
 
-	para "Don't let your"
-	line "friends faint"
-	cont "during battle!"
+	para "Lass deine Freunde"
+	line "im Kampf nicht"
+	cont "besiegt werden!"
 	done

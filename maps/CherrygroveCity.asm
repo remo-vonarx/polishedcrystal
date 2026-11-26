@@ -475,12 +475,12 @@ GuideGentsHouseSignText:
 	done
 
 CherrygroveCityAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "# Marts will"
-	line "give you a free"
+	para "PKMN-Supermärkte"
+	line "schenken dir für"
 
-	para "Premier Ball with"
-	line "every purchase of"
-	cont "ten # Balls!"
+	para "je zehn gekaufte"
+	line "#bälle einen"
+	cont "Premierball!"
 	done

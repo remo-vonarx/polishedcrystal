@@ -26,15 +26,16 @@ BeautifulBeach_MapScriptHeader:
 	fruittree_event -2, 13, FRUITTREE_SHAMOUTI_ISLAND, FIGY_BERRY, PAL_NPC_BROWN
 
 BeautifulBeachWelcomeSignText:
-	text "Welcome to"
-	line "Shamouti Island!"
+	text "Willkommen auf"
+	line "Shamouti!"
 
-	para "The main island"
-	line "is just west."
+	para "Die Hauptinsel"
+	line "liegt gleich im"
+	cont "Westen."
 	done
 
 BeautifulBeachVillaSignText:
-	text "Island Villa"
+	text "Insel-Villa"
 	done
 
 GenericTrainerAromaLadyBryony:

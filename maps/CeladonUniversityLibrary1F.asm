@@ -136,149 +136,151 @@ CeladonUniversityLibrary1FBookText:
 	done
 
 CeladonUniversityLibrary1FSignpost1Text:
-	text "Please do not"
-	line "disturb students"
+	text "Bitte störe die"
+	line "Studenten in der"
 
-	para "reading in the"
-	line "library."
+	para "Bibliothek nicht"
+	line "beim Lesen."
 	done
 
 CeladonUniversityLibrary1FSignpost2Text:
-	text "Please do not"
-	line "bring food or"
+	text "Bitte keine"
+	line "Speisen oder"
 
-	para "beverages into"
-	line "the library."
+	para "Getränke in die"
+	line "Bibliothek"
+	cont "mitbringen."
 	done
 
 CeladonUniversityLibrary1FBookshelf1Text:
-	text "Huh? Someone left"
-	line "an old photograph"
-	cont "in this book."
+	text "Hm? Jemand hat ein"
+	line "altes Foto in"
+	cont "diesem Buch ver-"
+	cont "gessen."
 
-	para "Erika and a man"
-	line "with a gentle"
+	para "Erika und ein"
+	line "Mann mit sanftem"
 
-	para "smile are posing"
-	line "happily alongside"
-	cont "an Oddish."
+	para "Lächeln posieren"
+	line "fröhlich neben"
+	cont "einem Myrapla."
 	done
 
 CeladonUniversityLibrary1FBookshelf2Text:
-	text "It's a photo album"
-	line "containing many"
+	text "Ein Fotoalbum mit"
+	line "vielen Bildern"
 
-	para "pictures of"
-	line "#mon."
+	para "von #mon."
 
-	para "“Todd Snap's Scrap-"
-	line "folio” is written"
-	cont "on the cover."
+	para "“Todd Snaps"
+	line "Schnappschuss-"
+	cont "Mappe” steht auf"
+	cont "dem Umschlag."
 	done
 
 CeladonUniversityLibrary1FBookshelf3Text:
-	text "It's a book about"
-	line "a man who taught"
+	text "Ein Buch über"
+	line "einen Mann, der"
 
-	para "his #mon to"
-	line "play a musical"
-	cont "instrument."
+	para "seinem #mon"
+	line "beibrachte, ein"
+	cont "Instrument zu"
+	cont "spielen."
 
-	para "They seem the best"
-	line "of friends."
+	para "Sie scheinen beste"
+	line "Freunde zu sein."
 	done
 
 CeladonUniversityLibrary1FBookshelf4Text:
-	text "It's a book about"
-	line "#mon palin-"
-	cont "dromes."
+	text "Ein Buch über"
+	line "Palindrom-#mon."
 
-	para "There's an Eevee"
-	line "and a Girafarig"
-	cont "on the cover."
+	para "Auf dem Umschlag"
+	line "ist ein"
+	cont "Girafarig."
 	done
 
 CeladonUniversityLibrary1FBookshelf5Text:
-	text "This book is about"
-	line "Toy #mon that"
+	text "Ein Buch über"
+	line "Spielzeug-#mon,"
 
-	para "come to life after"
-	line "being wound up by"
-	cont "a Wonder Key."
+	para "die lebendig wer-"
+	line "den, wenn man sie"
+	cont "mit einem Wunder-"
+	cont "schlüssel auf-"
+	cont "zieht."
 
-	para "They look kinda"
-	line "cute."
+	para "Sie sehen irgend-"
+	line "wie süß aus."
 	done
 
 CeladonUniversityLibrary1FBookshelf6Text:
-	text "It's a book about"
-	line "a #mon puppet"
-	cont "that can't tell"
-	cont "lies."
+	text "Ein Buch über eine"
+	line "#mon-Puppe, die"
+	cont "nicht lügen kann."
 
-	para "“Pinpokéo” is"
-	line "written on the"
-	cont "cover."
+	para "“Pinpokéo” steht"
+	line "auf dem Umschlag."
 	done
 
 CeladonUniversityLibrary1FBookshelf7Text:
-	text "It's a bo…"
-	line "wait…"
+	text "Ein Bu…"
+	line "Moment…"
 
-	para "This is a video"
-	line "game!"
+	para "Das ist ja ein"
+	line "Videospiel!"
 
-	para "A #mon pinball"
-	line "machine is shown"
+	para "Ein #mon-Flip-"
+	line "perautomat ist"
 
-	para "proudly on the"
-	line "box art."
+	para "stolz auf der"
+	line "Verpackung abge-"
+	cont "bildet."
 	done
 
 CeladonUniversityLibrary1FBookshelf8Text:
-	text "It's a book writ-"
-	line "ten by a fishing"
-	cont "guru providing"
+	text "Ein Buch von einem"
+	line "Angel-Guru mit"
+	cont "Tipps für"
 
-	para "advice to new"
-	line "anglers."
+	para "neue Angler."
 
-	para "“Odds and Rods” is"
-	line "written on the"
-	cont "cover."
+	para "“Haken und Ösen”"
+	line "steht auf dem"
+	cont "Umschlag."
 	done
 
 CeladonUniversityLibrary1FBookshelf9Text:
-	text "It's a manual"
-	line "explaining the"
+	text "Ein Handbuch zum"
+	line "#mon-Sammel-"
 
-	para "#mon Trading"
-	line "Card game."
+	para "kartenspiel."
 	done
 
 CeladonUniversityLibrary1FBookshelf10Text:
-	text "It's a cookbook"
-	line "full of #mon-"
-	cont "themed recipes!"
+	text "Ein Kochbuch mit"
+	line "Rezepten rund um"
+	cont "#mon!"
 
-	para "Jigglypuff Jello,"
-	line "Charmander Chut-"
-	cont "ney, Munchlax"
-	cont "Snacks…"
+	para "Pummeluff-Pudding,"
+	line "Glumanda-Gulasch,"
+	cont "Mampfaxo-Muffins…"
 	done
 
 CeladonUniversityLibrary1FBookshelf11Text:
-	text "It's a guide to"
-	line "Poffin blending."
+	text "Ein Ratgeber, wie"
+	line "man Knurspe"
+	cont "herstellt."
 
-	para "A famous #mon"
-	line "breeder is on the"
-	cont "cover."
+	para "Ein berühmter"
+	line "#mon-Züchter"
+	cont "ist auf dem"
+	cont "Umschlag."
 	done
 
 CeladonUniversityLibrary1FBookshelf12Text:
-	text "“The Secret Life"
-	line "of Laughter” by"
-	cont "Joe King."
-	cont "Puntastic!"
+	text "“Das geheime Le-"
+	line "ben des Lachens”"
+	cont "von Al Bern."
+	cont "Wortwitzig!"
 	done

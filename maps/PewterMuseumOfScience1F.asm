@@ -159,14 +159,15 @@ Museum1FYoungsterText:
 	done
 
 Museum1FBookshelfSignpostText:
-	text "Thick and well-"
-	line "read books!"
+	text "Dicke, viel gele-"
+	line "sene Bücher!"
 
-	para "Archaeology Man-"
-	line "ual, Lost #mon,"
-	cont "#mon Ancestors,"
+	para "Handbuch der Ar-"
+	line "chäologie, Verlo-"
+	cont "rene #mon,"
+	cont "#mon-Ahnen,"
 
-	para "Caring at the"
-	line "Loamy Layer of"
-	cont "Kanto…"
+	para "Pflege an der"
+	line "Lehmschicht"
+	cont "Kantos…"
 	done

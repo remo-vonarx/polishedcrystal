@@ -476,23 +476,23 @@ GoldenrodHarborLass2Text:
 	done
 
 GoldenrodHarborSignText:
-	text "Goldenrod Harbor"
+	text "Dukatia-Hafen"
 	done
 
 GoldenrodHarborAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Sometimes you'll"
-	line "get lucky with a"
+	para "Manchmal hast du"
+	line "Glück mit einem"
 
-	para "vending machine"
-	line "and get two drinks"
+	para "Getränkeautomaten"
+	line "und bekommst zwei"
 
-	para "for the price of"
-	line "one!"
+	para "Getränke zum Preis"
+	line "von einem!"
 	done
 
 GoldenrodHarborCrateSignText:
-	text "A crate full of"
-	line "rare items!"
+	text "Eine Kiste voller"
+	line "seltener Items!"
 	done

@@ -65,6 +65,6 @@ Route5CleanseTagHouseTeacherText:
 	done
 
 Route5CleanseTagSpeechHouseRadioText:
-	text "The radio is only"
-	line "playing static."
+	text "Das Radio rauscht"
+	line "nur."
 	done

@@ -59,17 +59,17 @@ CeladonUniversityPrincipalsOfficeMatsumotoScript:
 	done
 
 CeladonUniversityPrincipalsOfficeSignpost1Text:
-	text "It's Prof.Matsu-"
-	line "moto's degree in"
-	cont "Education."
+	text "Prof. Matsumotos"
+	line "Abschluss in"
+	cont "Pädagogik."
 	done
 
 CeladonUniversityPrincipalsOfficeSignpost2Text:
-	text "It's a picture of"
-	line "Prof.Matsumoto in"
+	text "Ein Bild von Prof."
+	line "Matsumoto vor"
 
-	para "front of a grad-"
-	line "uating class."
+	para "einem Abschluss-"
+	line "jahrgang."
 	done
 
 CeladonUniversityPrincipalsOfficeComputer:
@@ -83,9 +83,9 @@ CeladonUniversityPrincipalsOfficeComputer:
 	done
 
 CeladonUniversityPrincipalsOfficeBookshelfText:
-	text "It's a complete set"
-	line "of books of the"
+	text "Eine komplette"
+	line "Ausgabe der"
 
-	para "Encyclopedia"
+	para "Encyclopaedia"
 	line "#monica."
 	done

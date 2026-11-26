@@ -83,11 +83,12 @@ GoldenrodMuseumOfficerText:
 
 
 GoldenrodMuseum1FDrillText:
-	text "It's a large drill"
-	line "used to tunnel"
+	text "Ein großer Bohrer,"
+	line "mit dem man sich"
 
-	para "through super"
-	line "dense rock."
+	para "durch extrem"
+	line "hartes Gestein"
+	cont "gräbt."
 	done
 
 GoldenrodMuseum1FHikerText:
@@ -102,16 +103,15 @@ GoldenrodMuseum1FHikerText:
 	done
 
 GoldenrodMuseum1FRadioDishText:
-	text "A metallic dish"
-	line "used for trans-"
+	text "Eine Metallschüs-"
+	line "sel zum Senden"
 
-	para "mitting radio"
-	line "waves."
+	para "von Radiowellen."
 	done
 
 GoldenrodMuseum1FHarborText:
-	text "An aquarium filled"
-	line "with Magikarp!"
+	text "Ein Aquarium"
+	line "voller Karpador!"
 	done
 
 GoldenrodMuseum1FBigPearlText:

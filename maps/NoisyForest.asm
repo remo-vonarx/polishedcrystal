@@ -267,5 +267,5 @@ NoisyForestPikabluScript:
 	step_end
 
 NoisyForestSignpostText:
-	text "Noisy Forest"
+	text "Lauschiger Wald"
 	done

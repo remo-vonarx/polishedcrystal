@@ -223,5 +223,5 @@ Text_RefusedToGiveBerry:
 	done
 
 Route39BarnBucketText:
-	text "It's a bucket."
+	text "Ein Eimer."
 	done

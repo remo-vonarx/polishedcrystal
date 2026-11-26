@@ -195,9 +195,9 @@ CeladonUniversityLoungeSuper_nerd2Text:
 	done
 
 CeladonUniversityLoungeBookshelf1Text:
-	text "It's stuffed full"
-	line "of copies of"
-	cont "#mon manga!"
+	text "Hier stehen jede"
+	line "Menge #mon-"
+	cont "Mangas!"
 	done
 
 CeladonUniversityLoungeBookshelf2:

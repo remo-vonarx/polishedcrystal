@@ -287,15 +287,17 @@ GenericTrainerBird_keeperErnie:
 	done
 
 CinnabarGymSignText:
-	text "Seafoam Islands"
+	text "Seeschauminseln"
 
-	para "…What does this"
-	line "notice say?"
+	para "…Was steht auf"
+	line "diesem Schild?"
 
-	para "Cinnabar Gym"
-	line "Leader: Blaine"
+	para "PKMN-Arena der"
+	line "Zinnoberinsel"
+
+	para "Leitung: Pyro"
 	done
 
 SeafoamIslandsSignText:
-	text "Seafoam Islands"
+	text "Seeschauminseln"
 	done

@@ -161,9 +161,9 @@ BikerDwayneBeatenText:
 Route8BikerHarrisProtestText:
 BikerHarrisSeenText:
 	text "Das Ordnungsamt"
-	line "hat unseren"
+	line "hat unsere"
 
-	para "Tunnelpfad zu-"
+	para "Unterführung zu-"
 	line "schütten lassen."
 	cont "Das ängstigt mich!"
 	done

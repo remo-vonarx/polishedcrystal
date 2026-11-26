@@ -84,18 +84,21 @@ LakeOfRageSignText:
 	done
 
 LakeOfRageAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "The Hidden Power"
-	line "move can take on"
+	para "Die Attacke Kraft-"
+	line "reserve kann jeden"
 if DEF(FAITHFUL)
-	cont "any type, except"
-else
-	cont "any type, even"
-endc
+	cont "Typ haben, außer"
 
-	para "the newly disco-"
-	line "vered Fairy type!"
+	para "dem neu entdeckten"
+	line "Typ Fee!"
+else
+	cont "Typ haben, sogar"
+
+	para "den neu entdeckten"
+	line "Typ Fee!"
+endc
 	done
 
 LakeOfRageFishingDudeSign:

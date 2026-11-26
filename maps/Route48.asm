@@ -207,6 +207,6 @@ Route48NurseText2:
 Route48YellowForestSignText:
 	text "Route 48"
 
-	para "North to"
-	line "Yellow Forest"
+	para "Nördlich zum"
+	line "Goldgelben Wald"
 	done

@@ -90,10 +90,10 @@ SilphCo2FScientist2Text:
 	done
 
 SilphCo2FDeptSignText:
-	text "Silph Co. 2F"
-	line "Software Dev."
+	text "Silph Co. 1S"
+	line "Softwareabteilung"
 	done
 
 SilphCo2FPrinterText:
-	text "It's a printer."
+	text "Ein Drucker."
 	done

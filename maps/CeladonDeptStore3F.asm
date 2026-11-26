@@ -283,10 +283,10 @@ CeladonDeptStore3FSuperNerdText:
 	done
 
 CeladonDeptStore3FDirectoryText:
-	text "Make Your #mon"
-	line "Stronger!"
+	text "Mach Deine #mon"
+	line "Stärker!"
 
-	para "3F: Tech Shop"
+	para "2S: Technik-Laden"
 	done
 
 CeladonDeptStore3FSnesText:
@@ -318,21 +318,23 @@ CeladonDeptStore3FWiiText:
 	done
 
 CeladonDeptStore3FRPGText:
-	text "An RPG! There's"
-	line "no time for that!"
+	text "Ein Rollenspiel!"
+	line "Dafür ist keine"
+	cont "Zeit!"
 	done
 
 CeladonDeptStore3FSportsGameText:
-	text "A sports game!"
-	line "Dad'll like that!"
+	text "Ein Sportspiel!"
+	line "Das gefällt Papa!"
 	done
 
 CeladonDeptStore3FPuzzleGameText:
-	text "A puzzle game!"
-	line "Looks addictive!"
+	text "Ein Puzzlespiel!"
+	line "Das macht bestimmt"
+	cont "süchtig!"
 	done
 
 CeladonDeptStore3FFightingGameText:
-	text "A fighting game!"
-	line "Looks tough!"
+	text "Ein Kampfspiel!"
+	line "Sieht schwer aus!"
 	done

@@ -29,9 +29,9 @@ UragaChannelWestEngineerText:
 	done
 
 ScaryCaveWestSignText:
-	text "Uraga Channel"
-	line "Ahead"
+	text "Uraga-Kanal"
+	line "voraus"
 
-	para "Enter west from"
-	line "Route 18 only!"
+	para "Zugang von Westen"
+	line "nur über Route 18!"
 	done

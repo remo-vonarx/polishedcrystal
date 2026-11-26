@@ -67,13 +67,13 @@ BurglarLouisBeatenText:
 	done
 
 PokemonMansion1FMewtwoStatueText:
-	text "A #mon statue…"
+	text "Eine PKMN-Statue…"
 
-	para "It looks very"
-	line "threatening."
+	para "Sie sieht sehr"
+	line "bedrohlich aus."
 	done
 
 PokemonMansion1FFlowerPotText:
-	text "It's filled with"
-	line "soil and ashes…"
+	text "Sie ist mit Erde"
+	line "und Asche gefüllt…"
 	done

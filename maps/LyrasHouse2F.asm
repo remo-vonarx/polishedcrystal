@@ -33,9 +33,9 @@ LyrasHousePidgeotText:
 	done
 
 LyrasHousePCText:
-	text "You shouldn't mess"
-	line "with someone"
-	cont "else's PC!"
+	text "Du solltest nicht"
+	line "an fremden PCs"
+	cont "herumspielen!"
 	done
 
 LyrasHouseN64Text:

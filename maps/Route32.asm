@@ -1040,21 +1040,22 @@ Route32UnionCaveSignText:
 	done
 
 Route32AdvancedTips1Text:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Items may be found"
-	line "by fishing or by"
-	cont "smashing rocks!"
+	para "Items findest du"
+	line "auch beim Angeln"
+	cont "oder wenn du Fel-"
+	cont "sen zertrümmerst!"
 	done
 
 Route32AdvancedTips2Text:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "If you lose a bat-"
-	line "tle with another"
-	cont "trainer, you pay"
+	para "Verlierst du einen"
+	line "Kampf gegen einen"
+	cont "anderen Trainer,"
 
-	para "them money based"
-	line "on how many Badges"
-	cont "you own!"
+	para "zahlst du Geld, je"
+	line "nachdem, wie viele"
+	cont "Orden du hast!"
 	done

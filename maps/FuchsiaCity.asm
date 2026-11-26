@@ -137,18 +137,19 @@ FuchsiaGymSignText:
 	done
 
 FuchsiaZooSignText:
-	text "Fuchsia Zoo"
+	text "Zoo von Fuchsania"
 
-	para "Featuring the"
-	line "#mon of the"
-	cont "Safari Zone"
+	para "Mit den #mon"
+	line "der Safari-Zone"
 	done
 
 FuchsiaAquariumSignText:
-	text "Fuchsia Aquarium"
+	text "Aquarium von"
+	line "Fuchsania City"
 
-	para "See the wonders"
-	line "of water #mon!"
+	para "Bestaune die Wun-"
+	line "der der Wasser-"
+	cont "#mon!"
 	done
 
 WardensHomeSignText:
@@ -157,12 +158,11 @@ WardensHomeSignText:
 	done
 
 SafariZoneClosedSignText:
-	text "The Warden is"
-	line "unavailable."
+	text "Der Wärter ist"
+	line "nicht da. Deshalb"
 
-	para "Therefore, the"
-	line "Safari Game is"
-	cont "canceled."
+	para "fällt das Safari-"
+	line "Spiel aus."
 	done
 
 NoLitteringSignText:

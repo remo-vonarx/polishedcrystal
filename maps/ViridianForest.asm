@@ -148,53 +148,57 @@ BugManiacAbnerBeatenText:
 	done
 
 ViridianForestSignText1:
-	text "Leaving"
-	line "Viridian Forest"
-	cont "Pewter City Ahead"
+	text "Ende des"
+	line "Vertania-Walds"
+	cont "Marmoria City"
+	cont "voraus"
 	done
 
 ViridianForestSignText2:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Hold on to that"
-	line "Big Mushroom!"
+	para "Behalte den"
+	line "Riesenpilz!"
 
-	para "Some maniacs will"
-	line "pay lots of money"
-	cont "for useless items!"
+	para "Manche Maniacs"
+	line "zahlen viel Geld"
+	cont "für nutzlose"
+	cont "Items!"
 	done
 
 ViridianForestSignText3:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Grass-type #mon"
-	line "are unaffected by"
+	para "#mon vom Typ"
+	line "Pflanze sind immun"
 
-	para "powder and spore"
-	line "moves!"
+	para "gegen Pulver- und"
+	line "Sporen-Attacken!"
 	done
 
 ViridianForestSignText4:
-	text "For poison, use"
-	line "Antidote! Get it"
-	cont "at #mon Marts!"
+	text "Bei Vergiftung"
+	line "hilft Gegengift!"
+	cont "Gibt's im"
+	cont "PKMN-Supermarkt!"
 	done
 
 ViridianForestSignText5:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Poison-type #-"
-	line "mon can't be poi-"
-	cont "soned themselves!"
+	para "#mon vom Typ"
+	line "Gift können"
+	cont "selbst nicht ver-"
+	cont "giftet werden!"
 	done
 
 ViridianForestSignText6:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "Weaken #mon"
-	line "before attempting"
-	cont "capture!"
+	para "Schwäche #mon,"
+	line "bevor du sie"
+	cont "fängst!"
 
-	para "When healthy,"
-	line "they may escape!"
+	para "Gesunde #mon"
+	line "können entkommen!"
 	done

@@ -311,13 +311,14 @@ Route32CoastLassText:
 	done
 
 Route32CoastTrainerTipsText:
-	text "Trainer Tips"
+	text "Tipps für Trainer"
 
-	para "A #mon with the"
-	line "Pickup ability"
+	para "#mon mit der"
+	line "Fähigkeit Mitnahme"
 
-	para "might hold an item"
-	line "after a battle!"
+	para "tragen nach einem"
+	line "Kampf evtl. ein"
+	cont "Item!"
 	done
 
 Route32CoastUnionCaveSignText:

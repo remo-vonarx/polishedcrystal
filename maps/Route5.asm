@@ -19,26 +19,26 @@ Route5_MapScriptHeader:
 	def_object_events
 
 Route5UndergroundPathSignText:
-	text "Tunnelpfad"
+	text "Unterführung"
 
 	para "Azuria City -"
 	line "Orania City"
 	done
 
 Route5AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Berserk Gene is"
-	line "a powerful held"
+	para "Das Berserk-Gen"
+	line "ist ein starkes"
 
-	para "item, but it"
-	line "causes confusion."
+	para "Item zum Tragen,"
+	line "verwirrt aber."
 
-	para "But a #mon"
-	line "with the Own Tempo"
+	para "Doch ein #mon"
+	line "mit der Fähigkeit"
 
-	para "Ability won't"
-	line "get confused!"
+	para "Tempomacher wird"
+	line "nicht verwirrt!"
 	done
 
 HouseForSaleSignText:

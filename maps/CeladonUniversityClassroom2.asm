@@ -100,50 +100,49 @@ CeladonUniversityClassroom2CooltrainermScript:
 	done
 
 CeladonUniversityClassroom2BlackboardText:
-	text "There's a timeline"
-	line "of recent history."
+	text "An der Tafel steht"
+	line "eine Zeitleiste."
 
-	para "400 years ago:"
-	line "Toxic move invent-"
-	cont "ed."
+	para "Vor 400 Jahren:"
+	line "Attacke Toxin"
+	cont "erfunden."
 
-	para "71 years ago:"
-	line "modern # Ball"
-	cont "developed."
+	para "Vor 71 Jahren:"
+	line "Moderner #ball"
+	cont "entwickelt."
 
-	para "27 years ago:"
-	line "first Moon land-"
-	cont "ing."
+	para "Vor 27 Jahren:"
+	line "Erste Mondlandung."
 
-	para "Three years ago:"
-	line "first virtual"
-	cont "#mon created."
+	para "Vor drei Jahren:"
+	line "Erstes virtuelles"
+	cont "#mon erstellt."
 
-	para "“Hypothesis: tech-"
-	line "nology grows expo-"
-	cont "nentially.”"
+	para "“Hypothese: Die"
+	line "Technik wächst"
+	cont "exponentiell.”"
 	done
 
 CeladonUniversityClassroom2Bookshelf1Text:
-	text "It's a book about"
+	text "Ein Buch darüber,"
 if DEF(FAITHFUL)
-	line "how the Brass"
-	cont "Tower in Ecruteak"
+	line "wie der Bronze-"
+	cont "turm in Teak City"
 
-	para "City burned down"
-	line "150 years ago."
+	para "vor 150 Jahren"
+	line "abbrannte."
 else
-	line "how the Gong Tower"
-	cont "in Ecruteak City"
+	line "wie der Bronze-"
+	cont "turm in Teak City"
 
-	para "burned down 150"
-	line "years ago."
+	para "vor 150 Jahren"
+	line "abbrannte."
 endc
 	done
 
 CeladonUniversityClassroom2Bookshelf2Text:
-	text "It's a book of"
-	line "slang terms from"
-	cont "the 1980s."
-	cont "Heavy!"
+	text "Ein Buch über"
+	line "Jugendsprache der"
+	cont "80er-Jahre."
+	cont "Echt stark!"
 	done

@@ -346,7 +346,7 @@ Route10NorthLawrenceSpeechText:
 	done
 
 RockTunnelSignText:
-	text "Rock Tunnel"
+	text "Felstunnel"
 	done
 
 PowerPlantSignText:

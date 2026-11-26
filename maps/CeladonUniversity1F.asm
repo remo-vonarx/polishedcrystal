@@ -141,44 +141,44 @@ CeladonUniversity1FCooltrainerfText:
 	done
 
 CeladonUniversity1FPrincipalsOfficeSignText:
-	text "Principal's Office"
+	text "Rektorat"
 	done
 
 CeladonUniversity1FClassroom1SignText:
-	text "W2 Art"
+	text "W2 Kunst"
 	done
 
 CeladonUniversity1FClassroom2SignText:
-	text "W1 History"
+	text "W1 Geschichte"
 	done
 
 CeladonUniversity1FClassroom3SignText:
-	text "E1 Science"
+	text "O1 Wissenschaft"
 	done
 
 CeladonUniversity1FClassroom4SignText:
-	text "E2 Battling"
+	text "O2 Kampflehre"
 	done
 
 CeladonUniversity1FStudentLoungeSignText:
-	text "Student Lounge"
+	text "Aufenthaltsraum"
 	done
 
 CeladonUniversity1FLibrarySignText:
-	text "Library"
+	text "Bibliothek"
 	done
 
 CeladonUniversity1FTrophyCaseSignText:
-	text "The case is full"
-	line "of trophies and"
-	cont "medals."
+	text "Die Vitrine ist"
+	line "voller Trophäen"
+	cont "und Medaillen."
 	done
 
 CeladonUniversity1FBookshelfText:
-	text "There are tons of"
-	line "yearbooks here."
+	text "Hier stehen jede"
+	line "Menge Jahrbücher."
 
-	para "Students have"
-	line "scribbled all over"
-	cont "them."
+	para "Studenten haben"
+	line "sie überall voll-"
+	cont "gekritzelt."
 	done

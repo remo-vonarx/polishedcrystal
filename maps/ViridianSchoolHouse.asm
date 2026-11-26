@@ -95,17 +95,19 @@ ViridianSchoolHouseLass2Text:
 	done
 
 ViridianSchoolHouseBlackboardText:
-	text "Physical moves use"
-	line "the Attack and"
-	cont "Defense stats."
+	text "Körperattacken"
+	line "nutzen die Werte"
+	cont "Angr und Vert."
 
-	para "Special moves use"
-	line "the Sp.Atk and"
-	cont "Sp.Def stats."
+	para "Spezialattacken"
+	line "nutzen die Werte"
+	cont "Sp.Angr und"
+	cont "Sp.Vert."
 
-	para "Status moves do"
-	line "not cause damage"
-	cont "directly."
+	para "Status-Attacken"
+	line "richten keinen"
+	cont "direkten Schaden"
+	cont "an."
 	done
 
 PokemonJournalKiyoScript:

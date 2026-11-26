@@ -72,13 +72,13 @@ LyrasFridgeScript:
 	done
 
 LyrasSinkText:
-	text "The sink is spot-"
-	line "less."
+	text "Die Spüle ist"
+	line "blitzblank."
 	done
 
 LyrasStoveText:
-	text "Curry is simmering"
-	line "on the stove."
+	text "Auf dem Herd"
+	line "köchelt Curry."
 	done
 
 LyrasTVScript:

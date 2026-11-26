@@ -176,13 +176,12 @@ WarmBeachLadyText:
 	done
 
 WarmBeachShackSignText:
-	text "Beach Shack"
+	text "Strandhütte"
 	done
 
 WarmBeachShrineText:
-	text "It's a shrine"
-	line "dedicated to the"
+	text "Ein Schrein, der"
+	line "dem Hüter der"
 
-	para "Guardian of the"
-	line "Seas."
+	para "Meere geweiht ist."
 	done

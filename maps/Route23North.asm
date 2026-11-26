@@ -41,7 +41,7 @@ Route23North_MapScriptHeader:
 	const ROUTE23NORTH_OFFICER8
 
 VictoryRoadSignText:
-	text "Victory Road"
+	text "Siegesstraße"
 	done
 
 Route23NorthHealOfficerScript:

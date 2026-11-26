@@ -294,17 +294,17 @@ AzaleaTownIlexForestSignText:
 	done
 
 AzaleaTownAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "The Switch battle"
-	line "style lets you"
+	para "Beim Kampfstil"
+	line "“Wechsel” weißt"
+	cont "du, welches #-"
+	cont "mon der Gegner"
+	cont "als Nächstes"
+	cont "schickt,"
 
-	para "know which #-"
-	line "mon an opponent is"
-	cont "about to send out,"
-
-	para "but the Predict"
-	line "style does not!"
+	para "beim Stil “Ansage”"
+	line "aber nicht!"
 	done
 
 AzaleaTownGrampsScript:

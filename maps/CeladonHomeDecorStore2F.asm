@@ -158,7 +158,7 @@ CeladonHomeDecorStore2FPokefanfText:
 	done
 
 CeladonHomeDecorStore2FDirectoryText:
-	text "Soft and Fluffy!"
+	text "Kuschelig weich!"
 
-	para "2F: Beds"
+	para "1S: Betten"
 	done

@@ -176,8 +176,8 @@ BigOnixDollText:
 	done
 
 CeladonHomeDecorStore4FDirectoryText:
-	text "A Stuffed"
-	line "Companion!"
+	text "Ein flauschiger"
+	line "Begleiter!"
 
-	para "4F: Jumbo Dolls"
+	para "3S: Riesenpuppen"
 	done

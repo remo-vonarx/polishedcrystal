@@ -162,7 +162,7 @@ _Avoid_: Trainer*in, Trainer/in
 
 **Place names**:
 Kristall's names for Crystal's places, in mixed case (NEUBORKIA → Neuborkia, SEE DES ZORNS → See des Zorns), with the ß back where Kristall's capitals write SS (Siegesstraße). Where Upstream uses today's English name, today's German one: Glockenturm (Bell Tower), Unterführung (Underground Path). Where Upstream keeps Crystal's, Kristall's: Digdas Höhle, Indigo Plateau, Ruhestätte (House of Souls, Kristall's sign). Chosen otherwise: Pokémon-Villa (today's name; Kristall and FireRed: Pokémon-Haus), M.S. Aqua (Fast Ship, named after the ship as in HeartGold/SoulSilver), Radioturm Lavandia (Kristall: Radioturm Lav.).
-_Avoid_: Zinnturm, Untergrund, Pokémon-Haus, Schnellboot as the place, Digda-Höhle, Indigo-Plateau
+_Avoid_: Zinnturm, Untergrund, Tunnelpfad, Pokémon-Haus, Schnellboot as the place, Digda-Höhle, Indigo-Plateau
 
 **Bronzeturm**:
 The Burned Tower's old name in both ROMs, as Kristall has it (Faithful: Brass Tower, Regular: Gong Tower).
@@ -523,3 +523,32 @@ _Avoid_: Zaubertausch (Surprise Trade)
 
 **in Kontakt kommen**, **trägt**:
 Prof. Lind's evolution tips: an item a Pokémon is exposed to comes "mit dem Item X in Kontakt", a held one it "trägt"; the item's name stays without an article.
+
+## Signs
+
+**Tipps für Profis!**:
+The heading of Polished's "Advanced Tips!" signs, built like Kristall's "Tipps für Trainer" (Trainer Tips).
+_Avoid_: Profi-Tipps, Expertentipps
+
+**Prof. Seidenbaum**:
+Prof. Silktree, the founder of the Ruins of Alph research center. No official German name; the literal one.
+_Avoid_: Silktree
+
+**Prismania-Villa**:
+The Celadon Condominiums, by Kristall's name for the building.
+_Avoid_: Prismania-Wohnungen
+
+**Mondberg-Tunnel**:
+Polished's signs at the Mt. Moon entrances (Mt.Moon Tunnel). Own name.
+
+**Projekt Bernstein**:
+Project Amber, the Mewtwo project in the Cinnabar Lab. Own name.
+_Avoid_: Projekt Amber
+
+**W1**, **W2**, **O1**, **O2**:
+Celadon University's room codes, west and Ost.
+_Avoid_: E1, E2
+
+**Club Nintendo**:
+The magazine in the Hyper Test room, Germany's counterpart of Nintendo Power.
+_Avoid_: Nintendo Power

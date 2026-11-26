@@ -144,5 +144,5 @@ GenericTrainerGuitaristmGeddy:
 
 Route49SignText:
 	text "Route 49"
-	line "Valencia Island"
+	line "Valencia Insel"
 	done

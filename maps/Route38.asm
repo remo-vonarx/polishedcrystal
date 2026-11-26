@@ -411,21 +411,22 @@ Route38TrainerTipsText:
 	done
 
 Route38AdvancedTipsText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Press Start in the"
-	line "PC Storage System"
+	para "Drücke START im"
+	line "PC-Boxen-System,"
 
-	para "to quickly focus"
-	line "on the Box name!"
+	para "um schnell den"
+	line "Boxnamen anzu-"
+	cont "wählen!"
 
-	para "You can change the"
-	line "name and theme of"
-	cont "each Box!"
+	para "Du kannst Name und"
+	line "Design jeder Box"
+	cont "ändern!"
 
-	para "Press Select to"
-	line "change what the"
+	para "Drücke SELECT, um"
+	line "festzulegen, was"
 
-	para "A button does"
-	line "for #mon!"
+	para "der A-Knopf mit"
+	line "#mon macht!"
 	done

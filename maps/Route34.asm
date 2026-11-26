@@ -880,20 +880,22 @@ Route34TrainerTipsText:
 	done
 
 Route34AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Some #mon have"
-	line "inherent potential"
+	para "Manche #mon"
+	line "haben das ange-"
+	cont "borene Potenzial,"
 
-	para "to be stronger"
-	line "than others!"
+	para "stärker als ande-"
+	line "re zu werden!"
 
-	para "But all #mon"
-	line "can put in effort"
-	cont "during battle, or"
+	para "Aber alle #mon"
+	line "können sich im"
+	cont "Kampf anstrengen"
 
-	para "take vitamins,"
-	line "to gain strength!"
+	para "oder Vitamine"
+	line "nehmen, um stärker"
+	cont "zu werden!"
 	done
 
 DayCareSignText:

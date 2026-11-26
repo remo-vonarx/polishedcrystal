@@ -204,27 +204,28 @@ CeladonUniversityClassroom1Artist3Text:
 	done
 
 CeladonUniversityClassroom1BlackboardText:
-	text "There's a descrip-"
-	line "tion of two-point"
+	text "An der Tafel wird"
+	line "die Zwei- und"
 
-	para "and three-point"
-	line "perspective."
+	para "Dreipunktperspek-"
+	line "tive erklärt."
 	done
 
 CeladonUniversityClassroom1Bookshelf1Text:
-	text "It's a book about"
-	line "Smeargle, a"
-	cont "#mon artist."
+	text "Ein Buch über"
+	line "Farbeagle, ein"
+	cont "#mon-Künstler."
 
-	para "It's full of beau-"
-	line "tiful drawings."
+	para "Es ist voller"
+	line "schöner Zeich-"
+	cont "nungen."
 	done
 
 CeladonUniversityClassroom1Bookshelf2Text:
-	text "It's a brochure"
-	line "showcasing fine"
-	cont "art from a place"
+	text "Eine Broschüre"
+	line "zeigt schöne"
+	cont "Kunstwerke aus"
 
-	para "called Lilycove"
-	line "Museum."
+	para "dem Museum von"
+	line "Seegrasulb City."
 	done

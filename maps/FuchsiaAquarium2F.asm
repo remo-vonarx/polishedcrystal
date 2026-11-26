@@ -207,11 +207,12 @@ FuchsiaAquarium1FStaryuSign:
 	done
 
 FuchsiaAquarium2FPosterText:
-	text "We rotate exhibits"
-	line "on weekends to"
+	text "Am Wochenende"
+	line "wechseln wir die"
 
-	para "keep the #mon"
-	line "from being bored."
+	para "Ausstellung, damit"
+	line "sich die #mon"
+	cont "nicht langweilen."
 	done
 
 FuchsiaAquarium2FPokefanMScript:

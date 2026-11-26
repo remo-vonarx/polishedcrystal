@@ -455,16 +455,16 @@ VermilionCityPierSignText:
 	db "◀ S.S.Aqua<LINE>▼ Seagallop Ferry<DONE>" ; not compressible
 
 VermilionCityAdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "Your Trainer Card"
-	line "has room to show"
-	cont "sixteen Badges!"
+	para "Dein Trainerpass"
+	line "hat Platz für"
+	cont "sechzehn Orden!"
 	done
 
 VermilionCityBattleFactorySignText:
-	text "Battle Factory"
+	text "Kampffabrik"
 
-	para "Win it All with"
-	line "Rental #mon!"
+	para "Gewinne alles mit"
+	line "Leih-#mon!"
 	done

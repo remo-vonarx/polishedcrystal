@@ -415,12 +415,12 @@ Route35SignText:
 	done
 
 Route35AdvancedTipsSignText:
-	text "Advanced Tips!"
+	text "Tipps für Profis!"
 
-	para "You can register"
-	line "up to four Key"
+	para "Du kannst bis zu"
+	line "vier Basis-Items"
 
-	para "Items for quick"
-	line "use via the"
-	cont "Select button!"
+	para "für den schnellen"
+	line "Einsatz auf"
+	cont "SELECT legen!"
 	done

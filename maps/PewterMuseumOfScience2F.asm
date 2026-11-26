@@ -178,7 +178,7 @@ Text_Museum2FTutorQuestion:
 
 
 Museum2FSpaceShuttleSignpostText:
-	text "Space Shuttle"
+	text "Raumfähre"
 	done
 
 PokemonJournalStevenScript:
