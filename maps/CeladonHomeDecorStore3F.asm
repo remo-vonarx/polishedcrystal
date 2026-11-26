@@ -96,10 +96,10 @@ CeladonHomeDecorStore3FClerk1Script:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Red       ¥45000@"
-	db "Yellow    ¥45000@"
-	db "Green     ¥45000@"
-	db "Cancel@"
+	db "Rot       ¥45000@"
+	db "Gelb      ¥45000@"
+	db "Grün      ¥45000@"
+	db "Zurück@"
 
 CeladonHomeDecorStore3FClerk2Script:
 	checkevent EVENT_DECO_CARPET_2

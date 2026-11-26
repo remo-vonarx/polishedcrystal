@@ -119,7 +119,7 @@ CeladonPrizeRoom_TMMenuDataHeader:
 	db "TM32    {d:CELADONGAMECORNERPRIZEROOM_TM32_COINS}@"
 	db "TM06    {d:CELADONGAMECORNERPRIZEROOM_TM06_COINS}@"
 	db "TM68    {d:CELADONGAMECORNERPRIZEROOM_TM68_COINS}@"
-	db "Cancel@"
+	db "Zurück@"
 
 CeladonGameCornerPokemonVendor:
 	faceplayer
@@ -199,10 +199,10 @@ CeladonGameCornerPokemonVendor:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Mr.Mime    {d:CELADONGAMECORNERPRIZEROOM_MR__MIME_COINS}@"
-	db "Eevee      {d:CELADONGAMECORNERPRIZEROOM_EEVEE_COINS}@"
+	db "Pantimos   {d:CELADONGAMECORNERPRIZEROOM_MR__MIME_COINS}@"
+	db "Evoli      {d:CELADONGAMECORNERPRIZEROOM_EEVEE_COINS}@"
 	db "Porygon    {d:CELADONGAMECORNERPRIZEROOM_PORYGON_COINS}@"
-	db "Cancel@"
+	db "Zurück@"
 
 CeladonGameCornerPrizeRoomGentlemanText:
 	text "Ich wollte ein"

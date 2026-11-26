@@ -94,10 +94,10 @@ CeladonHomeDecorStore2FClerkScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Pink      ¥62000@"
-	db "PolkaDot  ¥94000@"
+	db "Rosa      ¥62000@"
+	db "Gepunktet ¥94000@"
 	db "Pikachu  ¥126000@"
-	db "Cancel@"
+	db "Zurück@"
 
 CeladonHomeDecorStore2FClerkText:
 	text "Willkommen! Suchst"

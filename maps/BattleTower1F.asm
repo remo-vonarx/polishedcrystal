@@ -298,9 +298,9 @@ MenuDataHeader_BattleInfoCancel:
 MenuData2_BattleInfoCancel:
 	db $a0 ; flags
 	db 3
-	db "Battle@"
+	db "Kampf@"
 	db "Info@"
-	db "Cancel@"
+	db "Zurück@"
 
 BattleTowerPharmacistScript:
 	faceplayer

@@ -194,10 +194,10 @@ CeladonMansionManagerScript:
 	db $80 ; flags
 	db 5 ; items
 	; this order is meaningful to calculate the new nature
-	db "Spicy@" ; atk
-	db "Sour@" ; def
-	db "Sweet@" ; spe
-	db "Dry@" ; sat
+	db "Scharf@" ; atk
+	db "Sauer@" ; def
+	db "Süß@" ; spe
+	db "Trocken@" ; sat
 	db "Bitter@" ; sdf
 
 CeladonMansion1FMeowthText:

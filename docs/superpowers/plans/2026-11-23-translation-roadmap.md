@@ -222,3 +222,12 @@ The people and story scenes K left, in story order. Each task: the region's maps
 - [x] The "The End" graphic (`gfx/credits/theend.png`) as Kristall's "Ende".
 - [x] Test: the title screen in both ROMs; the credits through to the end, compared with Kristall's by position.
 - [ ] Ship.
+
+### Task 22: Map menus and the Alph walls
+
+Found 2026-11-26 by a scan for strings still identical to Upstream: menus and mails written as plain strings in map scripts, which `check_english_left.py` doesn't read, and the Unown words on the Ruins of Alph walls, which are tile numbers.
+
+- [x] The menus in 26 map files (shops, prize counters, ferries, the Dragon Shrine, Earl's blackboard, the Goldenrod tutor), the Spearow and Eevee mails, and the Vermilion pier sign: Kristall's words where its same screen has them.
+- [x] The wall words (`data/events/unown_walls.asm`): Kristall's FLUCHT, BLITZ, WASSER, and FEE for Polished's FAIRY. Decided 2026-11-26: FEE's box narrows to its three letters.
+- [ ] Test: every changed menu opened in the Regular ROM; the Ho-Oh chamber wall, compared with Kristall's.
+- [ ] Ship.

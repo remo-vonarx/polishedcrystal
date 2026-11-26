@@ -219,7 +219,7 @@ ShamoutiPokeCenter1FIvyScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Bulbasaur@"
-	db "Charmander@"
-	db "Squirtle@"
-	db "Cancel@"
+	db "Bisasam@"
+	db "Glumanda@"
+	db "Schiggy@"
+	db "Zurück@"
