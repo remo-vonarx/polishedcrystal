@@ -135,25 +135,28 @@ KogaScript:
 	done
 
 .SeenRematchText:
-	text "Your arrival is"
-	line "indeed impressive,"
-	cont "as is your look of"
-	cont "resolve."
+	text "Dein Auftritt ist"
+	line "wahrlich beein-"
+	cont "druckend, ebenso"
+	cont "dein entschlosse-"
+	cont "ner Blick."
 
 	para "Fwahahahaha!"
 
-	para "My skill will be"
-	line "hard to overcome!"
+	para "Meine Kunst ist"
+	line "schwer zu bezwin-"
+	cont "gen!"
 
-	para "Let me show you"
-	line "what I mean!"
+	para "Ich zeige dir, was"
+	line "ich meine!"
 	done
 
 .AfterRematchText:
-	text "Never have I met"
-	line "the likes of you."
+	text "Nie zuvor bin ich"
+	line "jemandem wie dir"
+	cont "begegnet."
 
-	para "I must devote"
-	line "myself to my"
-	cont "training."
+	para "Ich muss mich ganz"
+	line "meinem Training"
+	cont "widmen."
 	done

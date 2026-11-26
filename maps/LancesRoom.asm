@@ -230,34 +230,38 @@ LanceScript:
 	done
 
 .SeenRematchText:
-	text "Lance: There's no"
-	line "need for words"
-	cont "now."
+	text "Siegfried: Worte"
+	line "sind jetzt fehl"
+	cont "am Platze."
 
-	para "We will battle to"
-	line "determine who is"
+	para "Ein Kampf wird"
+	line "zeigen, wer"
 
-	para "the stronger of"
-	line "the two of us."
+	para "der Stärkere von"
+	line "uns beiden ist."
 
-	para "I, Lance the drag-"
-	line "on master, accept"
-	cont "your challenge!"
+	para "Ich, Siegfried"
+	line "der Drachenmeis-"
+	cont "ter, nehme deine"
+
+	para "Herausforderung"
+	line "an!"
 	done
 
 .AfterRematchText:
-	text "Just as I"
-	line "expected."
+	text "Genau wie ich es"
+	line "erwartet habe."
 
-	para "You and your"
-	line "#mon make"
-	cont "quite a team."
+	para "Du und deine"
+	line "#mon seid ein"
+	cont "tolles Team."
 
-	para "As a trainer, you"
-	line "will continue to"
+	para "Als Trainer wirst"
+	line "du zusammen mit"
 
-	para "grow strong with"
-	line "your #mon."
+	para "deinen #mon"
+	line "weiter stärker"
+	cont "werden."
 	done
 
 .MaryText1:
@@ -305,32 +309,36 @@ LanceScript:
 	done
 
 .OakRematchSpeechText:
-	text "Prof.Oak: Ah,"
+	text "Prof. Eich: Ah,"
 	line "<PLAYER>!"
 
-	para "Your rematch with"
-	line "the League was"
-	cont "just fantastic!"
+	para "Deine Revanche in"
+	line "der Liga war"
+	cont "einfach fantas-"
+	cont "tisch!"
 
-	para "It's clear to me"
-	line "that you deeply"
+	para "Ich sehe, dass du"
+	line "#mon zutiefst"
 
-	para "understand, trust,"
-	line "and love #mon."
+	para "verstehst, ihnen"
+	line "vertraust und sie"
+	cont "liebst."
 
-	para "Your team's out-"
-	line "standing skills"
-	cont "demonstrate that."
+	para "Die herausragenden"
+	line "Fähigkeiten deines"
+	cont "Teams beweisen"
+	cont "das."
 
-	para "I think you just"
-	line "might be capable"
+	para "Ich glaube, du"
+	line "bist vielleicht"
 
-	para "of handling a"
-	line "certain dangerous"
-	cont "challenge."
+	para "einer gewissen"
+	line "gefährlichen Her-"
+	cont "ausforderung ge-"
+	cont "wachsen."
 
-	para "Come see me in my"
-	line "lab after this!"
+	para "Besuch mich danach"
+	line "in meinem Labor!"
 	done
 
 .MaryText2:

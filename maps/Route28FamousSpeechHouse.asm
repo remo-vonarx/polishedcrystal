@@ -51,5 +51,5 @@ CelebrityText2:
 	done
 
 CelebritysSkarmoryText:
-	text "Skarmory: Scree!"
+	text "Panzaeron: Krieh!"
 	done

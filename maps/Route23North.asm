@@ -55,23 +55,23 @@ Route23NorthHealOfficerScript:
 	special RestartMapMusic
 	jumpthistext
 
-	text "The #mon League"
-	line "awaits you!"
+	text "Die #mon Liga"
+	line "erwartet dich!"
 
-	para "Just don't give up,"
-	line "OK?"
+	para "Gib bloß nicht"
+	line "auf, OK?"
 	done
 
 .IntroText:
-	text "You need to be"
-	line "ready to face"
+	text "Du musst bereit"
+	line "sein, dich auf der"
 
-	para "anything on"
-	line "Victory Road."
+	para "Siegesstraße"
+	line "allem zu stellen."
 
-	para "Let me give you a"
-	line "bit of encourage-"
-	cont "ment!"
+	para "Lass mich dir ein"
+	line "bisschen Mut"
+	cont "machen!"
 	done
 
 Route23NorthMineralBadgeOfficerScript:
@@ -90,7 +90,7 @@ Route23NorthMineralBadgeTriggerScript:
 	sjumpfwd Route23OfficerHaveBadgeScript
 
 .MineralBadgeText:
-	db "Mineral Badge@"
+	db "Stahlorden@"
 
 Route23NorthGlacierBadgeOfficerScript:
 Route23NorthGlacierBadgeTriggerScript:
@@ -108,7 +108,7 @@ Route23NorthGlacierBadgeTriggerScript:
 	sjumpfwd Route23OfficerHaveBadgeScript
 
 .GlacierBadgeText:
-	db "Glacier Badge@"
+	db "Eisorden@"
 
 Route23NorthRisingBadgeOfficerScript:
 Route23NorthRisingBadgeTriggerScript:
@@ -126,7 +126,7 @@ Route23NorthRisingBadgeTriggerScript:
 	sjumpfwd Route23OfficerHaveBadgeScript
 
 .RisingBadgeText:
-	db "Rising Badge@"
+	db "Drachenorden@"
 
 Route23OfficerNoBadgeScript:
 	writetext .NoBadgeText
@@ -136,14 +136,14 @@ Route23OfficerNoBadgeScript:
 	end
 
 .NoBadgeText:
-	text "You don't have the"
-	line ""
+	text "Du hast noch nicht"
+	line "den "
 	text_ram wStringBuffer3
-	text " yet!"
+	text "!"
 
-	para "You have to have"
-	line "it to get to the"
-	cont "#mon League!"
+	para "Ohne ihn kommst"
+	line "du nicht zur"
+	cont "#mon Liga!"
 	done
 
 Route23OfficerHaveBadgeScript:
@@ -152,21 +152,21 @@ Route23OfficerHaveBadgeScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "OK then! Please,"
-	line "go right ahead!"
+	text "Na dann! Bitte,"
+	line "geh nur weiter!"
 	done
 
 .SeeBadgeText:
-	text "Oh! That is the"
+	text "Oh! Das ist der"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
 	done
 
 Route23OfficerNeedBadgeText:
-	text "You can pass here"
-	line "only if you have"
-	cont "the "
+	text "Du darfst hier nur"
+	line "passieren mit"
+	cont "dem "
 	text_ram wStringBuffer3
 	text "."
 	done

@@ -17,19 +17,19 @@ Route18Gate2F_MapScriptHeader:
 Route18Gate2FBinoculars1:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "Pallet Town is in"
-	line "the west!"
+	para "Im Westen liegt"
+	line "Alabastia!"
 	done
 
 Route18Gate2FBinoculars2:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "There are people"
-	line "swimming!"
+	para "Da schwimmen"
+	line "Leute!"
 	done

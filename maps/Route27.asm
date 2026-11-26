@@ -118,50 +118,54 @@ Route27VeteranfScript:
 	done
 
 .IntroText:
-	text "Hm! If you're here,"
-	line "then you must be"
+	text "Hm! Wenn du hier"
+	line "bist, bist du"
 
-	para "heading for the"
-	line "#mon League."
+	para "sicher auf dem"
+	line "Weg zur #mon"
+	cont "Liga."
 
-	para "Want to train"
-	line "with me?"
+	para "Willst du mit mir"
+	line "trainieren?"
 
-	para "Then beat everyone"
-	line "else on Routes 26"
-	cont "and 27."
+	para "Dann besiege alle"
+	line "anderen auf den"
+	cont "Routen 26 und 27."
 
-	para "I'll wait for you"
-	line "here."
+	para "Ich warte hier"
+	line "auf dich."
 	done
 
 .QuestionText:
-	text "Hm. You beat the"
-	line "rest faster than"
-	cont "I expected."
+	text "Hm. Du hast die"
+	line "anderen schneller"
+	cont "besiegt, als ich"
+	cont "dachte."
 
-	para "Let's train."
+	para "Lass uns"
+	line "trainieren."
 	done
 
 .RefusedText:
-	text "It's OK."
-	line "I can wait."
+	text "Schon gut."
+	line "Ich kann warten."
 	done
 
 .SeenText:
-	text "My #mon are"
-	line "all wearing"
-	cont "Choice Specs."
+	text "Alle meine #mon"
+	line "tragen eine"
+	cont "Wahlbrille."
 
-	para "They may look"
-	line "weird, but they"
-	cont "are powerful."
+	para "Das sieht viel-"
+	line "leicht komisch"
+	cont "aus, aber sie"
+	cont "sind stark."
 	done
 
 .BeatenText:
-	text "You're ready for"
-	line "the #mon"
-	cont "League, I'm sure!"
+	text "Du bist sicher"
+	line "bereit für die"
+	cont "#mon Liga!"
 	done
 
 .AfterText1:

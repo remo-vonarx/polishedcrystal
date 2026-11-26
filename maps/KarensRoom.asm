@@ -137,25 +137,27 @@ KarenScript:
 	done
 
 .SeenRematchText:
-	text "You fought through"
-	line "the ranks to reach"
-	cont "me. I'm impressed."
+	text "Du hast dich durch"
+	line "die Reihen bis zu"
+	cont "mir gekämpft. Ich"
+	cont "bin beeindruckt."
 
-	para "You've assembled a"
-	line "charming team."
+	para "Du hast ein"
+	line "reizendes Team"
+	cont "zusammengestellt."
 
-	para "Our battle should"
-	line "be a good one."
+	para "Unser Kampf dürfte"
+	line "gut werden."
 
-	para "Let's begin!"
+	para "Auf geht's!"
 	done
 
 .AfterRematchText:
-	text "I will not stray"
-	line "from my chosen"
-	cont "path."
+	text "Ich werde nicht"
+	line "von meinem Weg"
+	cont "abweichen."
 
-	para "Lance is looking"
-	line "forward to meeting"
-	cont "you again."
+	para "Siegfried freut"
+	line "sich darauf, dich"
+	cont "wiederzusehen."
 	done

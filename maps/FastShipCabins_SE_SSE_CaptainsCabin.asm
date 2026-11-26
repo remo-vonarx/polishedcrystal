@@ -114,9 +114,10 @@ SSAquaMachoBraceAndDocking:
 	endtext
 
 .NoRoomForMachoBrace:
-	text "But you can't carry"
-	line "it! I'll keep it"
-	cont "for another trip."
+	text "Aber du kannst sie"
+	line "nicht tragen! Ich"
+	cont "hebe sie für eine"
+	cont "andere Fahrt auf."
 	done
 
 SSAquaFoundGranddaughter:
@@ -282,11 +283,13 @@ SSAquaGranddaughterHasToFindGrandpaText:
 	done
 
 SSAquaGranddaughterWasPlayingText:
-	text "Grandpa, here I"
-	line "am! I was playing"
+	text "Hallo Opa, hier"
+	line "bin ich! Ich habe"
 
-	para "with the Captain"
-	line "and this big kid!"
+	para "mit dem Kapitän"
+	line "und dem großen"
+	cont "Kind hier"
+	cont "gespielt!"
 	done
 
 SSAquaGranddaughterHadFunText:

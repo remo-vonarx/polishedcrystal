@@ -195,25 +195,24 @@ PlateauRivalBattleTrigger2:
 	end
 
 PlateauRivalText1:
-	text "Hold it."
+	text "Moment noch!"
 
-	para "You're going to"
-	line "take the #mon"
+	para "Akzeptierst du die"
+	line "Herausforderung"
 
-	para "League challenge"
-	line "now?"
+	para "der #mon Liga?"
+	line "Das wird nicht"
+	cont "passieren."
 
-	para "That's not going"
-	line "to happen."
-
-	para "My super well-"
-	line "trained #mon"
-
-	para "are going to pound"
-	line "you."
+	para "Meine perfekt"
+	line "trainierten #-"
+	cont "mon werden dich"
+	cont "zermalmen."
 
 	para "<PLAYER>!"
-	line "I challenge you!"
+
+	para "Ich fordere dich"
+	line "heraus!"
 	done
 
 PlateauRivalWinText:
@@ -250,32 +249,35 @@ PlateauRivalLoseText:
 PlateauLyraText1:
 	text "<PLAYER>!"
 
-	para "I've been travel-"
-	line "ing around Johto,"
+	para "Ich bin durch"
+	line "Johto gereist,"
 
-	para "earning Badges and"
-	line "gaining strength."
+	para "habe Orden ge-"
+	line "sammelt und bin"
+	cont "stärker geworden."
 
-	para "You know what"
-	line "that's like,"
+	para "Du weißt ja, wie"
+	line "das ist,"
 	cont "<PLAYER>."
 
-	para "And now…"
+	para "Und jetzt…"
 
-	para "Here I am, at the"
-	line "Indigo Plateau."
+	para "Jetzt bin ich hier"
+	line "auf dem Indigo"
+	cont "Plateau."
 
-	para "Do you know what"
-	line "this means?"
+	para "Weißt du, was das"
+	line "bedeutet?"
 
-	para "I get to challenge"
-	line "you, not only as"
-	cont "my friend, but"
+	para "Ich darf dich her-"
+	line "ausfordern, nicht"
+	cont "nur als meinen"
+	cont "Freund, sondern"
 	done
 
 PlateauLyraText2:
-	text "as the #mon"
-	line "League Champion!"
+	text "als Champ der"
+	line "#mon Liga!"
 	done
 
 PlateauLyraWinText:
@@ -290,26 +292,30 @@ PlateauLyraLoseText:
 	done
 
 PlateauLyraText3:
-	text "I'm not angry that"
-	line "I lost."
+	text "Ich bin nicht"
+	line "sauer, dass ich"
+	cont "verloren habe."
 
-	para "I got to explore"
-	line "Johto, meet new"
-	cont "people, raise my"
+	para "Ich konnte Johto"
+	line "erkunden, neue"
+	cont "Leute treffen und"
 
-	para "#mon to be"
-	line "stronger than I"
+	para "meine #mon"
+	line "stärker machen,"
+	cont "als ich es je"
 
-	para "thought they could"
-	line "ever be…"
+	para "für möglich"
+	line "gehalten hätte…"
 
-	para "And I got to"
-	line "battle you at my"
-	cont "very best."
+	para "Und ich konnte"
+	line "mit all meinem"
+	cont "Können gegen dich"
+	cont "kämpfen."
 
-	para "You beat me--now"
-	line "go beat the #-"
-	cont "mon League!"
+	para "Du hast mich be-"
+	line "siegt--jetzt be-"
+	cont "sieg die #mon"
+	cont "Liga!"
 	done
 
 PlateauRivalApproachesMovement:
@@ -334,19 +340,20 @@ PokemonJournalGiovanniScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
+	para "Titelthema:"
 	line "Boss Giovanni!"
 
-	para "When police sear-"
-	line "ched the abandoned"
-	cont "Viridian Gym, they"
+	para "Als die Polizei"
+	line "die verlassene"
+	cont "Arena von Vertania"
+	cont "City durchsuchte,"
 
-	para "discovered that"
-	line "its Leader,"
-	cont "Giovanni, had"
+	para "stellte sie fest,"
+	line "dass ihr Leiter"
+	cont "Giovanni auch"
 
-	para "also been the"
-	line "Team Rocket Boss."
+	para "der Boss von Team"
+	line "Rocket war."
 	done
 
 IndigoPlateauYellowScript:
@@ -400,74 +407,78 @@ IndigoPlateauYellowScript:
 	end
 
 .PartyAndBoxFullText:
-	text "Yellow: Oh…"
-	line "You can't carry"
+	text "Gelb: Oh…"
+	line "Du kannst auch"
 
-	para "another #mon"
-	line "either…"
+	para "kein weiteres"
+	line "#mon mitnehmen…"
 
-	para "And your Box is"
-	line "full, too…"
+	para "Und deine Box ist"
+	line "auch voll…"
 	done
 
 .GreetingText:
-	text "Yellow: Hi,"
+	text "Gelb: Hallo,"
 	line "<PLAYER>!"
 
-	para "I was watching the"
-	line "Elite Four fight."
+	para "Ich habe den Top"
+	line "Vier beim Kämpfen"
+	cont "zugesehen."
 
-	para "They're so intense…"
-	line "And they have such"
+	para "Sie sind so in-"
+	line "tensiv… Und sie"
 
-	para "strong bonds with"
-	line "their #mon…"
+	para "haben so eine"
+	line "starke Bindung zu"
+	cont "ihren #mon…"
 
-	para "One day I'm going"
-	line "to reach their"
-	cont "level."
+	para "Eines Tages werde"
+	line "ich ihr Level"
+	cont "erreichen."
 	done
 
 .QuestionText:
-	text "Yellow: <PLAYER>,"
-	line "can you do me a"
-	cont "favor?"
+	text "Gelb: <PLAYER>,"
+	line "kannst du mir"
+	cont "einen Gefallen"
+	cont "tun?"
 
-	para "I have a #mon"
-	line "that I can't raise"
-	cont "myself, and I don't"
+	para "Ich habe ein"
+	line "#mon, das ich"
+	cont "nicht aufziehen"
+	cont "kann, und ich will"
 
-	para "want to leave it"
-	line "in PC storage."
+	para "es nicht im PC"
+	line "lassen."
 
-	para "Will you take it,"
-	line "please?"
+	para "Nimmst du es,"
+	line "bitte?"
 	done
 
 .GiveStarterText:
-	text "Yellow: Thanks,"
-	line "<PLAYER>! Here"
-	cont "you go!"
+	text "Gelb: Danke,"
+	line "<PLAYER>! Hier,"
+	cont "bitte!"
 	done
 
 .RefusedText:
-	text "Yellow: Oh…"
-	line "But what about the"
-	cont "#mon?"
+	text "Gelb: Oh…"
+	line "Aber was wird dann"
+	cont "aus dem #mon?"
 	done
 
 .GoodbyeText:
-	text "Yellow: You take"
-	line "good care of that"
+	text "Gelb: Kümmere dich"
+	line "gut um"
 
 	para ""
 	text_ram wStringBuffer3
 	text ","
 	line "<PLAYER>!"
 
-	para "I hope we'll meet"
-	line "again."
-	cont "Bye-bye!"
+	para "Ich hoffe, wir"
+	line "sehen uns wieder."
+	cont "Tschüss!"
 	done
 
 .DownMovement:

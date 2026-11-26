@@ -60,63 +60,68 @@ Route27RestHouseGranny:
 	waitbutton
 	jumpthisopenedtext
 
-	text "You've not found"
-	line "any Silver Leaves…"
+	text "Du hast ja noch"
+	line "kein einziges"
+	cont "Silberblatt"
+	cont "gefunden…"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Skill Swap is a"
-	line "move that swaps"
+	text "Wertewechsel ist"
+	line "eine Attacke, die"
 
-	para "your ability with"
-	line "that of your"
-	cont "opponent."
+	para "deine Fähigkeit"
+	line "mit der deines"
+	cont "Gegners tauscht."
 
-	para "It's for advanced"
-	line "trainers only."
+	para "Sie ist nur für"
+	line "erfahrene Trainer."
 
-	para "Use it if you"
-	line "dare. Good luck!"
+	para "Setz sie ein, wenn"
+	line "du dich traust."
+	cont "Viel Glück!"
 	done
 
 .IntroText:
-	text "Where are you off"
-	line "to with #mon?"
+	text "Wohin möchtest du"
+	line "mit den #mon?"
 
-	para "The #mon"
-	line "League?"
+	para "Zur #mon Liga?"
 
-	para "Are your #mon"
-	line "loyal enough for"
-	cont "you to win?"
+	para "Sind deine #mon"
+	line "loyal genug, um"
+	cont "zu gewinnen?"
 
-	para "Let me see…"
+	para "Ich werde das"
+	line "überprüfen…"
 	done
 
 .HeardIntroText:
-	text "Let me see your"
-	line "#mon…"
+	text "Lass mich deine"
+	line "#mon ansehen…"
 	done
 
 .QuestionText:
-	text "Ah! Your #mon"
-	line "trusts you very"
-	cont "much."
+	text "Ah! Dein #mon"
+	line "vertraut dir"
+	cont "blind."
 
-	para "It's nice to see a"
-	line "good trainer."
+	para "Es ist schön, ei-"
+	line "nen guten Trainer"
+	cont "zu treffen."
 
-	para "I can teach it my"
-	line "secret technique,"
+	para "Ich kann ihm meine"
+	line "Geheimtechnik"
 
-	para "Skill Swap, if"
-	line "you'd like."
+	para "Wertewechsel bei-"
+	line "bringen, wenn du"
+	cont "möchtest."
 	done
 
 .RefusedText:
-	text "Good luck on your"
-	line "journey."
+	text "Viel Glück auf"
+	line "deiner Reise."
 	done

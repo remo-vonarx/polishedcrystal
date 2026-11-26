@@ -38,78 +38,85 @@ Route1617Gate2FTutorTrickRoomScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "What a pity."
+	text "Wie schade."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "But I'll need a"
-	line "Silver Leaf first,"
+	text "Aber zuerst brau-"
+	line "che ich ein"
+	cont "Silberblatt."
 
-	para "so come back when"
-	line "you get one."
+	para "Komm wieder, wenn"
+	line "du eins hast."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "My technique is"
-	line "pretty clever,"
-	cont "don't you think?"
+	text "Meine Technik ist"
+	line "ziemlich raffi-"
+	cont "niert, oder?"
 	done
 
 Route1617Gate2FBinoculars1:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "It's Celadon Dept."
-	line "Store!"
+	para "Das ist das"
+	line "Kaufhaus von"
+	cont "Prismania City!"
 	done
 
 Route1617Gate2FBinoculars2:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "There's a long"
-	line "path over water!"
+	para "Da führt ein lan-"
+	line "ger Weg über das"
+	cont "Wasser!"
 	done
 
 Route1617Gate2FPsychicText:
-	text "There's a Psychic"
-	line "not far from here"
+	text "Nicht weit von"
+	line "hier lebt ein"
+	cont "Seher,"
 
-	para "who has the power"
-	line "to change his"
+	para "der im #mon-"
+	line "Kampf seine"
 
-	para "surroundings in a"
-	line "#mon battle."
+	para "Umgebung verändern"
+	line "kann."
 
-	para "He's an inspiration"
-	line "of mine, so I've"
+	para "Er ist mein Vor-"
+	line "bild, darum habe"
 
-	para "worked on my own"
-	line "technique."
+	para "ich an meiner"
+	line "eigenen Technik"
+	cont "gearbeitet."
 	done
 
 Text_Route1617Gate2FTutorTrickRoom:
-	text "I can teach your"
-	line "#mon the move"
-	cont "Trick Room."
+	text "Ich kann deinen"
+	line "#mon die"
+	cont "Attacke Bizarro-"
+	cont "raum beibringen."
 
-	para "This will let"
-	line "slower #mon"
+	para "Damit greifen"
+	line "langsamere #mon"
 
-	para "outspeed faster"
-	line "ones for a time."
+	para "eine Zeit lang vor"
+	line "schnelleren an."
 	done
 
 Text_Route1617Gate2FTutorQuestion:
-	text "Is a Silver Leaf"
-	line "a fair price?"
+	text "Ist ein Silber-"
+	line "blatt ein fairer"
+	cont "Preis?"
 	done

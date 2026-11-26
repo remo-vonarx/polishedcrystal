@@ -24,14 +24,16 @@ PokemonJournalLanceScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Champion Lance!"
+	para "Titelthema:"
+	line "Champ Siegfried!"
 
-	para "Lance has been"
-	line "spotted buying"
+	para "Siegfried wurde"
+	line "gesehen, wie er"
 
-	para "his capes at Cel-"
-	line "adon Dept.Store."
+	para "seine Umhänge im"
+	line "Kaufhaus von"
+	cont "Prismania City"
+	cont "kaufte."
 	done
 
 SilverCavePokeCenterGrampsScript:
@@ -46,27 +48,30 @@ SilverCavePokeCenterGrampsScript:
 	ifequalfwd NUM_POKEMON_JOURNALS, .ReadThemAll
 	jumpthisopenedtext
 
-	text "Oh, you've read "
+	text "Oh, du hast "
 	text_decimal hScriptVar, 1, 2
-	line "of them?"
+	line "davon gelesen?"
 
-	para "Not bad, but I've"
-	line "read all {d:NUM_POKEMON_JOURNALS}!"
+	para "Nicht schlecht,"
+	line "aber ich habe alle"
+	cont "{d:NUM_POKEMON_JOURNALS} gelesen!"
 	done
 
 .ReadNone:
 	jumpthisopenedtext
 
-	text "You haven't read"
-	line "any? What a shame."
+	text "Du hast keine"
+	line "gelesen? Wie"
+	cont "schade."
 
-	para "#mon Centers"
-	line "have most of them"
-	cont "on their shelves,"
+	para "Die meisten liegen"
+	line "in den Regalen der"
+	cont "#mon-Center,"
 
-	para "but real fans like"
-	line "me track down the"
-	cont "rare issues."
+	para "aber echte Fans"
+	line "wie ich spüren die"
+	cont "seltenen Ausgaben"
+	cont "auf."
 	done
 
 .ReadThemAll:
@@ -86,27 +91,30 @@ SilverCavePokeCenterGrampsScript:
 	done
 
 .GreetingText:
-	text "In my youth I was"
-	line "a talented trainer"
-	cont "myself."
+	text "In meiner Jugend"
+	line "war ich selbst ein"
+	cont "talentierter"
+	cont "Trainer."
 
-	para "Now I just read"
-	line "about others in"
-	cont "#mon Journal."
+	para "Heute lese ich nur"
+	line "noch im #mon"
+	cont "Journal über"
+	cont "andere."
 
-	para "Are you a Journal"
-	line "reader too?"
+	para "Liest du das"
+	line "Journal auch?"
 	done
 
 .ReadAllText:
-	text "You've read them"
-	line "all? Then you're"
+	text "Du hast alle"
+	line "gelesen? Dann bist"
 
-	para "a Journal expert"
-	line "like me!"
+	para "du ein Journal-"
+	line "Experte wie ich!"
 
-	para "Take this to show"
-	line "you're a fan!"
+	para "Nimm das, damit"
+	line "jeder sieht, dass"
+	cont "du ein Fan bist!"
 	done
 
 SilverCavePokeCenter1FGrannyText:

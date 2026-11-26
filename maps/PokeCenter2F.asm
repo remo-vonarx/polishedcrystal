@@ -169,12 +169,13 @@ LinkReceptionistScript_DoTradeOrBattle:
 
 LinkReceptionistScript_HasMail:
 	writethistext
-		text "I am sorry, but"
-		line "we are unable to"
+		text "Es tut uns leid,"
+		line "aber wir können"
 
-		para "trade #mon"
-		line "carrying mail"
-		cont "at this time."
+		para "#mon, die einen"
+		line "Brief tragen,"
+		cont "derzeit nicht"
+		cont "tauschen."
 		done
 	waitbutton
 	endtext
@@ -330,54 +331,56 @@ Text_CantLinkToThePast:
 	prompt
 
 Text_OldVersionDetected:
-	text "You are connected"
-	line "to an old"
+	text "Du bist mit einer"
+	line "alten Version von"
 
-	para "version of"
-	line "Polished Crystal."
+	para "Polished Crystal"
+	line "verbunden."
 	prompt
 
 Text_WrongGameID:
-	text "Your game is not"
-	line "compatible with"
-	cont "the other game."
+	text "Dein Spiel ist"
+	line "nicht mit dem"
+	cont "anderen Spiel"
+	cont "kompatibel."
 	prompt
 
 Text_WrongVersion:
-	text "Your game versions"
-	line "do not match."
+	text "Die Spielversionen"
+	line "stimmen nicht"
+	cont "überein."
 
-	para "In order to play"
-	line "Link Colosseum,"
+	para "Um im Kolosseum"
+	line "zu spielen,"
 
-	para "your game versions"
-	line "must match."
+	para "müssen die Ver-"
+	line "sionen überein-"
+	cont "stimmen."
 	prompt
 
 Text_WrongMinVersion:
-	text "Your game does not"
-	line "meet the minimum"
-	cont "version"
+	text "Dein Spiel erfüllt"
+	line "nicht die Mindest-"
+	cont "version,"
 
-	para "requirement for"
-	line "the other game."
+	para "die das andere"
+	line "Spiel verlangt."
 	prompt
 
 Text_OtherPlayerWrongMinVersion:
-	text "The other game"
-	line "system does not"
+	text "Das andere System"
+	line "erfüllt nicht die"
 
-	para "meet the"
-	line "minimum version"
-	cont "requirement."
+	para "geforderte"
+	line "Mindestversion."
 	prompt
 
 Text_WrongOptions:
-	text "Your game options"
-	line "are not compatible"
+	text "Deine Optionen"
+	line "passen nicht zu"
 
-	para "with the other"
-	line "player."
+	para "denen des anderen"
+	line "Spielers."
 	prompt
 
 Text_IncompatibleRooms:
@@ -387,7 +390,7 @@ Text_IncompatibleRooms:
 	prompt
 
 Text_TimeCapsuleClosed:
-	text "I'm sorry--the"
-	line "Time Capsule is"
-	cont "inoperative."
+	text "Leider ist die"
+	line "Zeitkapsel außer"
+	cont "Betrieb."
 	done
