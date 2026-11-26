@@ -259,6 +259,6 @@ LyraPhoneScript2:
 	specialphonecall SPECIALCALL_NONE
 	end
 
-.Chicory: db "Chicory@"
-.Cinder:  db "Cinder@"
-.Toto:    db "Toto@"
+.Chicory: db "Endivchen@"
+.Cinder:  db "Zunder@"
+.Toto:    db "Karni@"

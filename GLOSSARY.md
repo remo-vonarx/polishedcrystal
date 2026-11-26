@@ -309,7 +309,11 @@ The short status names, Kristall's, in normal case in every text and menu, as Up
 _Avoid_: GIF, PAR in a text
 
 **KP**, **EP**, **AP**:
-HP, Exp. Points and PP, on the bars and in the texts ("157 EP!"). The power of a move is P in the move box.
+HP, Exp. Points and PP, on the bars and in the texts ("157 EP!").
+
+**S**:
+A move's power (Stärke, PokéWiki) beside its accuracy in % ("90S/ 90%"), in the normal font, in the battle move box, the summary and the move screen.
+_Avoid_: P
 
 **Geist**:
 The unidentified Ghost's name in battle, and who speaks ("Geist: / Verschwinde…").
@@ -500,7 +504,7 @@ _Avoid_: Miracle Cycle, Mutter
 The call menu and the clock card, Kristall's words.
 
 **Sendersuchlauf**:
-The radio card's drawn label (Tuning), Kristall's word in Polished's small font.
+The radio card's drawn label (Tuning), Kristall's word, drawn in narrow small capitals as Kristall has it.
 
 **Eichs PKMN-Talk**, **Pokémon-Musik**, **Glückskanal**, **Orte & Personen**, **Lasst uns singen**, **Pokémon-Flöte**, **Buenas Passwort**:
 The radio stations, Kristall's names. Oak's show calls its channel Pokémon Programm, the DJs are Margit, Ben, Fabian, Bastian and Lilly.
@@ -508,6 +512,10 @@ _Avoid_: Mary, Fern, Reed, Lily
 
 **Datenbank**:
 Bill's word for the Pokémon storage on the phone, where Polished's English says database.
+
+**Endivchen**, **Zunder**, **Karni**:
+Lyra's nicknames for her starter (Chicory, Cinder, Toto), as in her party, in Elm's Lab and on the phone.
+_Avoid_: Chicory, Cinder, Toto
 
 **Wundertausch**:
 Wonder Trade, the official name.
