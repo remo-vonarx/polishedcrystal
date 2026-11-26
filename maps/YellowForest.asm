@@ -297,8 +297,8 @@ SchoolgirlIsabelBeatenText:
 	done
 
 TeacherKathrynSeenText:
-	text "Du da!"
-	line "Bist du Trainer?"
+	text "Du da! Trainierst"
+	line "du etwa #mon?"
 
 	para "Bring meine"
 	line "Schüler bloß nicht"

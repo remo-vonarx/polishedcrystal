@@ -241,9 +241,8 @@ GenericTrainerAceDuoThomandkae2:
 	text "Nele: Ich dachte,"
 	line "du wärst ein ganz"
 
-	para "normaler Einzel-"
-	line "trainer."
-	cont "Da lag ich falsch!"
+	para "normaler Trainer."
+	line "Da lag ich falsch!"
 	done
 
 GenericTrainerCoupleDuffandeda1:

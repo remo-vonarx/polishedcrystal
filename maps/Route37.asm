@@ -210,9 +210,9 @@ SunnySundayText:
 
 
 BeautyCallieSeenText:
-	text "Oh, du bist ja ein"
-	line "süßer kleiner"
-	cont "Trainer!"
+	text "Oh, wie süß!"
+	line "So ein kleines"
+	cont "Trainertalent!"
 
 	para "Willst du nicht"
 	line "gegen mich"
