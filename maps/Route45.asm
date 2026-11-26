@@ -92,51 +92,55 @@ Route45Dragon_tamerScript:
 	done
 
 .IntroText:
-	text "I'm training my"
-	line "dragons here."
+	text "Ich trainiere hier"
+	line "meine Drachen."
 
-	para "Huh? A battle?"
-	line "I want a good one,"
+	para "Hm? Ein Kampf? Ich"
+	line "will einen guten,"
 
-	para "so prove to me"
-	line "that you're strong."
+	para "also beweise mir,"
+	line "dass du stark"
+	cont "bist."
 
-	para "Win against every"
-	line "trainer on this"
+	para "Besiege jeden"
+	line "Trainer auf dieser"
 
-	para "route and I'll"
-	line "battle you."
+	para "Route, dann kämpfe"
+	line "ich gegen dich."
 	done
 
 .QuestionText:
-	text "Oh, you're ready."
-	line "It's time for a"
-	cont "duel: your #mon"
-	cont "versus my dragons."
+	text "Oh, du bist"
+	line "bereit. Zeit für"
+	cont "ein Duell:"
+	cont "deine #mon"
+	cont "gegen meine"
+	cont "Drachen."
 
-	para "Should we start"
-	line "now?"
+	para "Sollen wir jetzt"
+	line "anfangen?"
 	done
 
 .RefusedText:
-	text "No problem."
-	line "I'll keep on"
-	cont "training."
+	text "Kein Problem."
+	line "Dann trainiere"
+	cont "ich weiter."
 	done
 
 .SeenText:
-	text "Let's see if you"
-	line "can handle my"
+	text "Mal sehen, ob du"
+	line "der unbeugsamen"
 
-	para "dragons' unyield-"
-	line "ing focus."
-	cont "Go, Dragonite!"
+	para "Konzentration"
+	line "meiner Drachen ge-"
+	cont "wachsen bist."
+	cont "Los, Dragoran!"
 	done
 
 .BeatenText:
-	text "How powerful!"
-	line "My #mon were"
-	cont "no match for you."
+	text "Wie stark! Meine"
+	line "#mon waren dir"
+	cont "nicht gewachsen."
 	done
 
 .AfterText1:

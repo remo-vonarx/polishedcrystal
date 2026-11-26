@@ -50,7 +50,8 @@ CianwoodPhotoStudioFishingGuruScript:
 	waitbutton
 	jumpthisopenedtext
 
-	text "Come again, OK?"
+	text "Komm doch wieder,"
+	line "ja?"
 	done
 
 .NoPicture:
@@ -69,23 +70,24 @@ CianwoodPhotoStudioFishingGuruScript:
 	done
 
 PhotoStudioGreetingText:
-	text "I am Cameron"
-	line "the Photographer."
+	text "Ich bin Kamera-"
+	line "kauz Wikbert."
 
-	para "You have magnifi-"
-	line "cent #mon with"
-	cont "you."
+	para "Deine #mon sind"
+	line "großartig!"
 
-	para "How about a photo"
-	line "for a souvenir?"
+	para "Wie wär's mit ei-"
+	line "nem Foto als Sou-"
+	cont "venir?"
 	done
 
 PhotoStudioWhichMonText:
-	text "OK! Big smile now!"
+	text "Okay! Jetzt schön"
+	line "lächeln!"
 
-	para "Which #mon"
-	line "should I photo-"
-	cont "graph?"
+	para "Welches #mon"
+	line "soll ich"
+	cont "fotografieren?"
 	done
 
 PhotoStudioHoldStillText:
@@ -94,20 +96,20 @@ PhotoStudioHoldStillText:
 	done
 
 PhotoStudioPrestoText:
-	text "Presto! All done."
+	text "Tadaa! Fertig."
 
-	para "Your "
+	para "Schau, "
 	text_ram wStringBuffer3
-	line "looks happier!"
+	line "wirkt glücklicher!"
 	done
 
 PhotoStudioAlreadyDoneText:
-	text "I've already taken"
-	line "a photo for you"
-	cont "today."
+	text "Ich habe heute"
+	line "schon ein Foto für"
+	cont "dich gemacht."
 
-	para "Come back again"
-	line "tomorrow."
+	para "Komm morgen"
+	line "wieder."
 	done
 
 PhotoStudioRefusedText:

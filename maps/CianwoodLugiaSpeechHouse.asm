@@ -31,24 +31,26 @@ CianwoodHouseBlackBeltScript:
 	jumpopenedtext CianwoodHouseBlackBeltText2
 
 CianwoodHouseBlackBeltText1:
-	text "I went to the Gym"
-	line "wearing this vest,"
-	cont "but was laughed"
+	text "Ich bin mit dieser"
+	line "Weste in die Arena"
+	cont "gegangen, aber"
 
-	para "out of the build-"
-	line "ing! I can't wear"
-	cont "it there again,"
+	para "alle haben mich"
+	line "ausgelacht, bis"
+	cont "ich gegangen bin!"
 
-	para "so you might as"
-	line "well have it."
+	para "Dort kann ich sie"
+	line "nie mehr tragen,"
+	cont "also nimm du sie."
 	done
 
 CianwoodHouseBlackBeltText2:
-	text "Right. I'm gonna"
-	line "train hard and"
+	text "Genau. Ich werde"
+	line "hart trainieren"
 
-	para "earn my spot in"
-	line "the Gym!"
+	para "und mir meinen"
+	line "Platz in der Arena"
+	cont "verdienen!"
 	done
 
 CianwoodLugiaSpeechHouseTeacherText:

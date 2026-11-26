@@ -123,26 +123,29 @@ MahoganyMart1FTutorAgilityScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "So be it. Come"
-	line "back if you change"
-	cont "your mind."
+	text "Wie du willst."
+	line "Komm wieder, wenn"
+	cont "du es dir anders"
+	cont "überlegst."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Get me a Silver"
-	line "Leaf if you want"
-	cont "me to teach it."
+	text "Bring mir ein"
+	line "Silberblatt, wenn"
+	cont "ich sie dir bei-"
+	cont "bringen soll."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Your foes will"
-	line "never know what"
-	cont "hit them."
+	text "Deine Gegner"
+	line "werden nicht"
+	cont "wissen, wie ihnen"
+	cont "geschieht."
 	done
 
 MahoganyMart1FDragoniteTackleMovement:
@@ -237,30 +240,31 @@ MahoganyMart1FLanceSplitUpText:
 	done
 
 MahoganyMart1FVeteranFText:
-	text "Our basement used"
-	line "to be a ninja"
-	cont "hideout."
+	text "Unser Keller war"
+	line "früher ein Ninja-"
+	cont "Versteck."
 
-	para "Some of their arts"
-	line "have survived to"
-	cont "this very day."
+	para "Einige ihrer"
+	line "Künste haben bis"
+	cont "heute überdauert."
 
-	para "One such art would"
-	line "greatly increase"
-	cont "their footspeed."
+	para "Eine davon erhöhte"
+	line "ihr Lauftempo"
+	cont "enorm."
 	done
 
 Text_MahoganyMart1FTutorAgility:
-	text "If you'd like, I"
-	line "can teach your"
+	text "Wenn du willst,"
+	line "kann ich deinen"
 
-	para "#mon the move"
-	line "Agility."
+	para "#mon Agilität"
+	line "beibringen."
 	done
 
 Text_MahoganyMart1FTutorQuestion:
-	text "I just need a"
-	line "Silver Leaf first."
+	text "Ich brauche nur"
+	line "erst ein Silber-"
+	cont "blatt."
 	done
 
 PokemonJournalWillScript:
@@ -269,19 +273,21 @@ PokemonJournalWillScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Elite Four Will!"
+	para "Titelthema:"
+	line "Willi von den"
+	cont "Top Vier!"
 
-	para "Will does not talk"
-	line "about his past"
+	para "Willi spricht"
+	line "nicht über seine"
 
-	para "before joining the"
-	line "Elite Four."
+	para "Zeit vor den"
+	line "Top Vier."
 
-	para "Some say he worked"
-	line "for Team Rocket."
+	para "Manche sagen, er"
+	line "habe für Team"
+	cont "Rocket gearbeitet."
 
 	para "#mon Journal"
-	line "refuses to specu-"
-	cont "late."
+	line "will nicht"
+	cont "spekulieren."
 	done

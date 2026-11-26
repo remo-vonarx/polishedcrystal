@@ -239,37 +239,37 @@ OlivineCityRivalGymText:
 OlivineCityRivalLighthouseText:
 	text "…"
 
-	para "You again?"
+	para "Du schon wieder?"
 
-	para "There's no need to"
-	line "panic. I don't"
+	para "Kein Grund zur Pa-"
+	line "nik. Mit Verlie-"
+	cont "rern wie dir gebe"
+	cont "ich mich nicht ab."
 
-	para "bother with wimps"
-	line "like you."
+	para "Apropos Verlierer:"
+	line "die Arenaleiterin"
 
-	para "Speaking of weak-"
-	line "lings, the city's"
+	para "dieser Stadt küm-"
+	line "mert sich um ein"
 
-	para "Gym Leader is"
-	line "taking care of a"
+	para "krankes #mon im"
+	line "Leuchtturm."
 
-	para "sick #mon in"
-	line "the Lighthouse."
+	para "Hmpf! Bu-Huu!"
+	line "Wozu soll das nur"
+	cont "gut sein?"
 
-	para "Humph! Boo-hoo!"
-	line "Just let sick"
-	cont "#mon go!"
+	para "Ein #mon, das"
+	line "nicht kämpfen"
+	cont "kann, ist wertlos!"
 
-	para "A #mon that"
-	line "can't battle is"
-	cont "worthless!"
+	para "Warum trainierst"
+	line "du nicht drinnen?"
 
-	para "Why don't you go"
-	line "train inside?"
-
-	para "Who knows. It may"
-	line "make you a bit"
-	cont "less weak!"
+	para "Wer weiß, viel-"
+	line "leicht wirst du"
+	cont "dadurch ein wenig"
+	cont "stärker!"
 	done
 
 OlivineCityStandingYoungsterPokedexText:
@@ -299,115 +299,121 @@ OlivineCitySailor1Text:
 	done
 
 OlivineCitySailor2Text:
-	text "The sea is sweet!"
+	text "Die See ist schön!"
 
-	para "Sunsets on the sea"
-	line "are marvelous!"
+	para "Sonnenuntergänge"
+	line "über dem Meer sind"
+	cont "wundervoll!"
 
-	para "Sing with me!"
-	line "♪ Yo-ho! Blow the"
-	cont "man down!… ♪"
+	para "Sing mit mir!"
+	line "♪ Yo-ho! Seebären"
+	cont "sind so cool!… ♪"
 	done
 
 OlivineCityFisherText:
-	text "You remind me of"
-	line "a kid who used to"
-	cont "live here."
+	text "Du erinnerst mich"
+	line "an ein Kind, das"
+	cont "früher hier lebte."
 
-	para "The family moved"
-	line "away when their"
+	para "Die Familie zog"
+	line "weg, als der Vater"
 
-	para "father became a"
-	line "Gym Leader in"
-	cont "another region."
+	para "in einer anderen"
+	line "Region Arenaleiter"
+	cont "wurde."
 	done
 
 OlivineCitySailor3Text:
-	text "To see the Light-"
-	line "house illuminate"
+	text "Wie der Leuchtturm"
+	line "nachts das Meer"
 
-	para "the sea at night--"
-	line "it's beautiful!"
+	para "erhellt… Das ist"
+	line "wunderschön!"
 	done
 
 OlivineCityPokefanFText:
-	text "Have you been to"
-	line "Olivine Café?"
+	text "Warst du schon im"
+	line "Oliviana City-"
+	cont "Cafe?"
 
-	para "The food is"
-	line "delicious."
+	para "Das Essen ist"
+	line "köstlich."
 	done
 
 OlivineCityPokefanMText:
-	text "Most trainers who"
-	line "visit Olivine head"
+	text "Die meisten Trai-"
+	line "ner, die Oliviana"
 
-	para "straight for the"
-	line "Battle Tower."
+	para "City besuchen,"
+	line "wollen direkt zum"
+	cont "Duellturm."
 
-	para "Only the best can"
-	line "compete there."
+	para "Nur die Besten"
+	line "können dort"
+	cont "mithalten."
 	done
 
 OlivineCitySailor4Text:
-	text "♪ A home like"
-	line "O-li-vine,"
+	text "♪ Ein Heim wie"
+	line "O-li-vi-a-na,"
 
-	para "I'm so hap-py I"
-	line "can call you mine,"
+	para "Wie froh ich bin,"
+	line "du bist mir nah,"
 
-	para "Next to the deep"
-	line "blue brine,"
+	para "Am tiefblauen"
+	line "Meer, so klar,"
 
-	para "Ci-ty oh so"
-	line "di-vine,"
+	para "Stadt, oh so"
+	line "wunderbar,"
 
-	para "Shine bright my"
-	line "O-li-vine!… ♪"
+	para "Strahl hell, mein"
+	line "O-li-vi-a-na!… ♪"
 	done
 
 OlivineCitySailor5Text:
-	text "Us sailors love"
-	line "a sing-song."
-	cont "Join in!"
+	text "Wir Seeleute lie-"
+	line "ben ein Liedchen."
+	cont "Sing mit!"
 
-	para "♪ From off the"
-	line "plank,"
+	para "♪ Von der Planke"
+	line "weit,"
 
-	para "'twas then he"
-	line "thank,"
+	para "dankte er zur"
+	line "Zeit,"
 
-	para "oh fiddle-dee"
-	line "fiddle-dee dee… ♪"
+	para "oh fiddel-di"
+	line "fiddel-di-di… ♪"
 	done
 
 OlivineCityLass1Text:
-	text "The sailors here"
-	line "may seem like a"
+	text "Die Seeleute hier"
+	line "wirken vielleicht"
 
-	para "handful, but"
-	line "they're harmless."
+	para "anstrengend, aber"
+	line "sie sind harmlos."
 	done
 
 OlivineCityYoungster2Text:
-	text "Sailors and camp-"
-	line "ers have something"
-	cont "in common:"
+	text "Seeleute und Cam-"
+	line "per haben etwas"
+	cont "gemeinsam:"
 
-	para "we both like to"
-	line "sing!"
+	para "Wir singen beide"
+	line "gern!"
 
-	para "But sailors' songs"
-	line "are really…"
-	cont "different."
+	para "Aber die Lieder"
+	line "der Seeleute sind"
+	cont "wirklich… anders."
 	done
 
 OlivineCityLass2Text:
-	text "Jasmine, our Gym"
-	line "Leader, is a shy"
+	text "Jasmin, unsere"
+	line "Arenaleiterin, ist"
 
-	para "girl. She's no"
-	line "pushover, mind!"
+	para "ein schüchternes"
+	line "Mädchen. Aber sie"
+	cont "ist nicht zu"
+	cont "unterschätzen!"
 	done
 
 OlivineCitySignText:

@@ -155,22 +155,25 @@ CianwoodCityEusineDepartMovement:
 
 
 ChucksWifeChubbyText:
-	text "That's Cianwood's"
-	line "Gym Badge!"
+	text "Das ist der Orden"
+	line "unserer Arena!"
 
-	para "My husband lost to"
-	line "you, so he needs"
-	cont "to train harder."
+	para "Mein Mann hat ge-"
+	line "gen dich verloren."
+	cont "Also muss er här-"
+	cont "ter trainieren."
 
-	para "That's good, since"
-	line "he was getting a"
-	cont "little chubby."
+	para "Das ist auch gut"
+	line "so. Er hat in"
+	cont "letzter Zeit etwas"
+	cont "Speck angesetzt."
 
-	para "The waterfalls on"
-	line "Route 47 north of"
+	para "Die Wasserfälle"
+	line "auf Route 47 nörd-"
 
-	para "here are a good"
-	line "training spot."
+	para "lich von hier sind"
+	line "ein guter Trai-"
+	cont "ningsort."
 	done
 
 CianwoodCityYoungsterText:
@@ -213,28 +216,29 @@ CianwoodCityLassText:
 	done
 
 CianwoodCityRocketText:
-	text "This way is off-"
-	line "limits!"
+	text "Hier ist der"
+	line "Zutritt verboten!"
 
-	para "Why? Mind your"
-	line "own business!"
+	para "Warum? Kümmere"
+	line "dich um deinen"
+	cont "eigenen Kram!"
 	done
 
 CianwoodCitySailorText:
-	text "That cave is the"
-	line "only way to reach"
-	cont "Route 47."
+	text "Nur durch diese"
+	line "Höhle kommt man"
+	cont "zur Route 47."
 	done
 
 CianwoodCityFisherText:
-	text "Cianwood Pharmacy"
-	line "has been in busi-"
-	cont "ness for over"
-	cont "500 years."
+	text "Die Apotheke von"
+	line "Anemonia City gibt"
+	cont "es schon seit über"
+	cont "500 Jahren."
 
-	para "That's got to be"
-	line "some kind of"
-	cont "record, right?"
+	para "Das ist doch"
+	line "bestimmt eine Art"
+	cont "Rekord, oder?"
 	done
 
 EusineSuicuneText:

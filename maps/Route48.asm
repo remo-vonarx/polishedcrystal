@@ -111,22 +111,24 @@ Archer2Script:
 	end
 
 Route48JessieJamesSeenText:
-	text "Stop right there,"
-	line "twerp!"
+	text "Stehen geblieben,"
+	line "Knirps!"
 
-	para "You know what"
-	line "#mon lives in"
-	cont "that forest?"
+	para "Weißt du, welches"
+	line "#mon in diesem"
+	cont "Wald lebt?"
 	cont "Pikachu!"
 
-	para "The boss will be"
-	line "pleased if we"
+	para "Der Boss wird sich"
+	line "freuen, wenn wir"
 
-	para "capture a power-"
-	line "ful one!"
+	para "ein starkes"
+	line "fangen!"
 
-	para "Surrender now, or"
-	line "prepare to fight!"
+	para "Gib auf, oder"
+	line "mach dich auf"
+	cont "einen Kampf"
+	cont "gefasst!"
 	done
 
 Route48JessieJamesBeatenText:
@@ -178,30 +180,34 @@ Archer2AfterText:
 	done
 
 Route48NurseText1:
-	text "I saw your battle"
-	line "from the window!"
+	text "Ich habe deinen"
+	line "Kampf vom Fenster"
+	cont "aus gesehen!"
 
-	para "You drove away"
-	line "Team Rocket and"
-	cont "saved the Pikachu!"
+	para "Du hast Team"
+	line "Rocket vertrieben"
+	cont "und die Pikachu"
+	cont "gerettet!"
 
-	para "Thank you so much!"
+	para "Vielen Dank!"
 
-	para "Your #mon de-"
-	line "serve a rest after"
-	cont "all that."
+	para "Deine #mon"
+	line "haben sich danach"
+	cont "eine Pause"
+	cont "verdient."
 	done
 
 Route48NurseText2:
-	text "I like to relax"
-	line "here by the forest"
-	cont "and watch the"
-	cont "#mon play."
+	text "Ich entspanne mich"
+	line "gern hier am Wald"
+	cont "und schaue den"
+	cont "spielenden #mon"
+	cont "zu."
 
-	para "I'll heal your"
-	line "#mon any time!"
+	para "Ich heile deine"
+	line "#mon jederzeit!"
 
-	para "Thanks again!"
+	para "Nochmals danke!"
 	done
 
 Route48YellowForestSignText:

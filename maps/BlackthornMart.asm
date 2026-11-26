@@ -45,10 +45,11 @@ BlackthornMartBlackbeltText:
 	done
 
 BlackthornMartSuperNerdText:
-	text "The towns in Johto"
-	line "are all named"
-	cont "after plants."
+	text "Die Städte in"
+	line "Johto sind alle"
+	cont "nach Pflanzen"
+	cont "benannt."
 
-	para "Did you ever"
-	line "notice?"
+	para "Ist dir das schon"
+	line "mal aufgefallen?"
 	done

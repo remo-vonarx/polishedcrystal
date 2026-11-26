@@ -186,15 +186,17 @@ GentlemanAlfredBeatenText:
 	done
 
 GentlemanAlfredFinalText:
-	text "Up top is a #-"
-	line "mon that keeps the"
-	cont "Lighthouse lit."
+	text "Ganz oben ist ein"
+	line "#mon, das den"
+	cont "Leuchtturm"
+	cont "erleuchtet."
 
-	para "You helped cure"
-	line "its sickness?"
+	para "Du hast geholfen,"
+	line "es zu heilen?"
 
-	para "You've done us a"
-	line "real service!"
+	para "Damit hast du uns"
+	line "einen großen"
+	cont "Dienst erwiesen!"
 	done
 
 SailorHueyGiveProteinText:

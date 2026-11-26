@@ -78,77 +78,81 @@ EmbeddedTowerSteven2Script:
 	jumpopenedtext EmbeddedTowerSteven2AfterText
 
 EmbeddedTowerSteven1IntroText:
-	text "Hello! I'm Steven."
-	line "Rare stones are"
-	cont "my passion."
+	text "Hallo! Ich bin"
+	line "Troy. Seltene"
+	cont "Steine sind meine"
+	cont "Leidenschaft."
 
-	para "I'm from the Hoenn"
-	line "region. It's a"
+	para "Ich komme aus der"
+	line "Hoenn-Region. Es"
 
-	para "beautiful place,"
-	line "with the clearest"
+	para "ist ein wunder-"
+	line "schöner Ort mit"
 
-	para "ocean you can"
-	line "imagine."
+	para "dem klarsten Meer,"
+	line "das du dir vor-"
+	cont "stellen kannst."
 
-	para "You should visit"
-	line "sometime."
+	para "Du solltest mal"
+	line "hinfahren."
 	done
 
 EmbeddedTowerSteven1TowerText:
-	text "Steven: I'm here in"
-	line "search of stones"
-	cont "for my collection."
+	text "Troy: Ich suche"
+	line "hier nach Steinen"
+	cont "für meine"
+	cont "Sammlung."
 
-	para "This is the"
-	line "Embedded Tower."
+	para "Das ist der"
+	line "Felsenherzturm."
 
-	para "It was built by"
-	line "people from Hoenn"
+	para "Er wurde von"
+	line "Menschen aus Hoenn"
 
-	para "to bind together"
-	line "the sea, the land,"
-	cont "and the sky."
+	para "erbaut, um Meer,"
+	line "Land und Himmel"
+	cont "zu verbinden."
 	done
 
 EmbeddedTowerSteven1NotNowText:
-	text "Steven: Your"
-	line "#mon are look-"
-	cont "ing pretty good."
+	text "Troy: Deine"
+	line "#mon sehen"
+	cont "richtig gut aus."
 
-	para "If you can beat"
-	line "the Elite Four,"
+	para "Wenn du die Top"
+	line "Vier besiegst,"
 
-	para "come back here to"
-	line "battle with me."
+	para "komm wieder her,"
+	line "um gegen mich zu"
+	cont "kämpfen."
 	done
 
 EmbeddedTowerSteven1ChallengeText:
-	text "Steven: Your"
-	line "#mon are look-"
-	cont "ing pretty good."
+	text "Troy: Deine"
+	line "#mon sehen"
+	cont "richtig gut aus."
 
-	para "Since we're both"
-	line "here, why don't we"
-	cont "have a battle?"
+	para "Wo wir schon beide"
+	line "hier sind, wollen"
+	cont "wir kämpfen?"
 	done
 
 EmbeddedTowerSteven1NoText:
 EmbeddedTowerSteven2NoText:
-	text "Steven: Hmm."
-	line "If you change"
+	text "Troy: Hm."
+	line "Falls du es dir"
 
-	para "your mind, I'll"
-	line "be right here."
+	para "anders überlegst,"
+	line "ich bin hier."
 	done
 
 EmbeddedTowerSteven1YesText:
 EmbeddedTowerSteven2YesText:
-	text "Steven: I want"
-	line "you to hit me"
+	text "Troy: Ich will,"
+	line "dass du alles"
 
-	para "with it all!"
-	line "Now, bring it!"
+	para "gibst, was du"
+	line "hast! Na los!"
 	done
 
 EmbeddedTowerSteven1WinText:
@@ -159,33 +163,34 @@ EmbeddedTowerSteven2WinText:
 	done
 
 EmbeddedTowerSteven1ItemText:
-	text "Steven: Congratu-"
-	line "lations!"
+	text "Troy: Herzlichen"
+	line "Glückwunsch!"
 
-	para "The feelings you"
-	line "have for your"
-	cont "#mon…"
+	para "Die Gefühle, die"
+	line "du für deine"
+	cont "#mon hegst…"
 
-	para "And the #mon"
-	line "that responded to"
+	para "Und die #mon,"
+	line "die diese Gefühle"
 
-	para "those feelings"
-	line "with all their"
-	cont "might…"
+	para "mit all ihrer"
+	line "Kraft erwidert"
+	cont "haben…"
 
-	para "They came toge-"
-	line "ther as one and"
+	para "Sie sind zu einer"
+	line "Einheit verschmol-"
 
-	para "created an even"
-	line "greater power."
+	para "zen und haben eine"
+	line "noch größere Kraft"
+	cont "erschaffen."
 
-	para "And thus, you"
-	line "were able to"
-	cont "grasp victory!"
+	para "Und so konntest"
+	line "du den Sieg"
+	cont "erringen!"
 
-	para "I'm sure you can"
-	line "benefit from this"
-	cont "item."
+	para "Dieses Item kann"
+	line "dir sicher von"
+	cont "Nutzen sein."
 	done
 
 EmbeddedTowerSteven1AfterText:
@@ -195,22 +200,24 @@ EmbeddedTowerSteven1AfterText:
 	done
 
 EmbeddedTowerSteven2ChallengeText:
-	text "Steven: We meet"
-	line "again, <PLAYER>!"
+	text "Troy: Wir sehen"
+	line "uns wieder,"
+	cont "<PLAYER>!"
 
-	para "I've found some"
-	line "excellent stones"
-	cont "for my collection."
+	para "Ich habe ein paar"
+	line "tolle Steine für"
+	cont "meine Sammlung"
+	cont "gefunden."
 
-	para "So what have you"
-	line "been doing?"
+	para "Und was hast du"
+	line "so gemacht?"
 
-	para "You battled the"
-	line "Elite Four and won"
-	cont "again? Great job!"
+	para "Du hast die Top"
+	line "Vier wieder"
+	cont "besiegt? Toll!"
 
-	para "Why don't we have"
-	line "another battle?"
+	para "Wollen wir noch"
+	line "mal kämpfen?"
 	done
 
 EmbeddedTowerSteven2AfterText:

@@ -150,10 +150,10 @@ MooMoo:
 	end
 
 Text_MoomooIsSick:
-	text "Moomoo is sick…"
+	text "Miltank ist krank…"
 
-	para "She needs lots of"
-	line "healthy Berries."
+	para "Es braucht viele"
+	line "gesunde Beeren."
 	done
 
 Text_WereFeedingMoomoo:
@@ -175,9 +175,9 @@ MoomooHappyMooText:
 	done
 
 Text_AskGiveBerry:
-	text "Give an Oran or"
-	line "Sitrus Berry to"
-	cont "Miltank?"
+	text "Gibst du Miltank"
+	line "eine Sinelbeere"
+	cont "oder Tsitrubeere?"
 	done
 
 Text_GaveOranBerry:

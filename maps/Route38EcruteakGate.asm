@@ -38,25 +38,27 @@ ProfOaksAide2Script:
 .Explain
 	jumpthisopenedtext
 
-	text "That Linking Cord"
-	line "gives certain"
+	text "Das Link-Kabel"
+	line "gibt bestimmten"
 
-	para "#mon a sense"
-	line "of connection"
+	para "#mon ein Gefühl"
+	line "der Verbundenheit,"
 
-	para "that may help"
-	line "them evolve."
+	para "das ihnen bei der"
+	line "Entwicklung helfen"
+	cont "kann."
 
-	para "Use it to com-"
-	line "plete the #dex!"
+	para "Nutze es, um den"
+	line "#dex zu"
+	cont "vervollständigen!"
 	done
 
 .NoRoom
 	jumpthisopenedtext
 
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for this."
+	text "Oh! Wie ich sehe,"
+	line "hast du keinen"
+	cont "Platz dafür."
 	done
 
 Route38EcruteakGateOfficerText:
@@ -77,45 +79,49 @@ Route38EcruteakGateOfficerText:
 	done
 
 ProfOaksAide2HiText:
-	text "Hello there! I'm"
-	line "Prof.Oak's aide."
+	text "Hallo! Ich bin"
+	line "Prof. Eichs"
+	cont "Assistent."
 
-	para "If you caught 30"
-	line "kinds of #mon,"
+	para "Wenn du 30 Arten"
+	line "von #mon"
+	cont "gefangen hast,"
+	cont "soll ich dir ein"
+	cont "Item geben."
 
-	para "I'm supposed to"
-	line "give you an item."
+	para "Also, <PLAYER>,"
+	line "hast du schon"
 
-	para "So, <PLAYER>,"
-	line "have you caught"
-
-	para "at least 30 kinds"
-	line "of #mon?"
+	para "mindestens 30"
+	line "Arten von #mon"
+	cont "gefangen?"
 	done
 
 ProfOaksAide2UhOhText:
-	text "Let's see…"
-	line "Uh-oh! You've only"
+	text "Mal sehen… Oje!"
+	line "Du hast bisher"
 
-	para "caught "
+	para "erst "
 	text_decimal wTempDexOwn, 2, 3
-	text " kinds"
-	line "of #mon."
+	text " Arten"
+	line "von #mon"
+	cont "gefangen."
 
-	para "Come back and see"
-	line "me when you catch"
-	cont "30 kinds."
+	para "Komm wieder, wenn"
+	line "du 30 Arten"
+	cont "gefangen hast."
 	done
 
 ProfOaksAide2HereYouGoText:
-	text "Let's see…"
-	line "Great job! You've"
+	text "Mal sehen… Toll"
+	line "gemacht! Du hast"
 
-	para "caught "
+	para "schon "
 	text_decimal wTempDexOwn, 2, 3
-	text " kinds"
-	line "of #mon."
+	text " Arten"
+	line "von #mon"
+	cont "gefangen."
 
-	para "Congratulations!"
-	line "Here you go!"
+	para "Glückwunsch!"
+	line "Hier, bitte!"
 	done

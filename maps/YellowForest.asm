@@ -239,24 +239,25 @@ YellowForestTutorSeedBombScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Talk to me if you"
-	line "change your mind!"
+	text "Sprich mich an,"
+	line "wenn du deine"
+	cont "Meinung änderst!"
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Aw, you don't have"
-	line "a Silver Leaf."
+	text "Och, du hast kein"
+	line "Silberblatt."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Seed Bomb!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Samenbomben!"
 	done
 
 YellowForestSurfPikachuDoll:
@@ -322,37 +323,41 @@ BreederSophieBeatenText:
 	done
 
 YellowForestWalkerSeenText:
-	text "Hello there!"
-	line "The name's Walker."
+	text "Hallo! Ich heiße"
+	line "Luc."
 
-	para "I was once the Gym"
-	line "Leader of Violet"
+	para "Ich war einst der"
+	line "Arenaleiter von"
 
-	para "City, but I left"
-	line "that to my son."
+	para "Viola City, aber"
+	line "das habe ich mei-"
+	cont "nem Sohn über-"
+	cont "lassen."
 
-	para "Now I wander"
-	line "through Johto and"
+	para "Jetzt wandere ich"
+	line "durch Johto und"
 
-	para "take in the"
-	line "sights."
+	para "genieße die"
+	line "Sehenswürdig-"
+	cont "keiten."
 
-	para "Walker: You're"
-	line "collecting Gym"
-	cont "Badges, huh?"
+	para "Luc: Du sammelst"
+	line "Orden, was?"
 
-	para "Then my son lost"
-	line "to you!"
+	para "Dann hat mein Sohn"
+	line "gegen dich"
+	cont "verloren!"
 
-	para "Now I want to"
-	line "test your skill"
-	cont "for myself."
+	para "Jetzt will ich"
+	line "dein Können"
+	cont "selbst testen."
 
-	para "I don't have a"
-	line "Badge, but you'll"
+	para "Ich habe keinen"
+	line "Orden, aber du"
 
-	para "get something"
-	line "nice if you win!"
+	para "bekommst etwas"
+	line "Schönes, wenn du"
+	cont "gewinnst!"
 	done
 
 YellowForestWalkerBeatenText:
@@ -376,65 +381,65 @@ YellowForestWalkerAfterText:
 	done
 
 YellowForestWalkerFinalText:
-	text "Walker: Bird"
-	line "#mon soar"
+	text "Luc: Vogel-#mon"
+	line "fliegen durch die"
 
-	para "through the sky"
-	line "because that's"
+	para "Lüfte, weil sie"
+	line "das von ganzem"
+	cont "Herzen wollen."
 
-	para "what they want to"
-	line "do with all their"
-	cont "heart."
+	para "Wenn du dir etwas"
+	line "so sehr wünschst,"
 
-	para "If you want some-"
-	line "thing that badly,"
+	para "weiß ich, dass du"
+	line "es erreichen"
+	cont "kannst."
 
-	para "I know you can"
-	line "reach it."
+	para "Was ich will, ist"
+	line "weiterzuwandern."
 
-	para "What I want is"
-	line "to keep wandering."
-
-	para "Goodbye!"
+	para "Leb wohl!"
 	done
 
 YellowForestWalkerFlyText:
-	text "Skarmory,"
-	line "let's Fly!"
+	text "Panzaeron, los,"
+	line "Fliegen!"
 	done
 
 YellowForestYellowGreetingText:
-	text "Yellow: Hi!"
-	line "I'm Yellow!"
+	text "Gelb: Hi! Ich bin"
+	line "Gelb!"
 
-	para "This forest full"
-	line "of Pikachu…"
+	para "Dieser Wald voller"
+	line "Pikachu…"
 
-	para "It reminds me of"
-	line "home in Kanto."
+	para "Er erinnert mich"
+	line "an mein Zuhause in"
+	cont "Kanto."
 
-	para "Where I caught my"
-	line "first #mon."
+	para "Wo ich mein erstes"
+	line "#mon gefangen"
+	cont "habe."
 
-	para "The trainer who"
-	line "helped me catch it"
-	cont "told me something."
+	para "Der Trainer, der"
+	line "mir dabei half,"
+	cont "sagte mir etwas."
 
-	para "That if you care"
-	line "for #mon with"
+	para "Wenn du dich von"
+	line "ganzem Herzen um"
 
-	para "all your heart,"
-	line "they'll always be"
-	cont "your friends!"
+	para "#mon kümmerst,"
+	line "bleiben sie immer"
+	cont "deine Freunde!"
 
-	para "I can sense that"
-	line "you care about"
+	para "Ich spüre, dass"
+	line "dir deine #mon"
 
-	para "your #mon."
-	line "So let me see"
+	para "am Herzen liegen."
+	line "Also lass mich"
 
-	para "what your friends"
-	line "can do!"
+	para "sehen, was deine"
+	line "Freunde können!"
 	done
 
 YellowForestYellowWinLossText:
@@ -455,55 +460,59 @@ YellowForestYellowAfterText:
 	done
 
 YellowForestYellowGoodbyeText:
-	text "Yellow: Give that"
-	line "Light Ball to a"
+	text "Gelb: Gib diesen"
+	line "Kugelblitz einem"
 
-	para "Pikachu to raise"
-	line "its power."
+	para "Pikachu, um seine"
+	line "Kraft zu steigern."
 	done
 
 YellowForestCooltrainerMText:
-	text "Seeds are surpris-"
-	line "ingly powerful."
+	text "Samen sind überra-"
+	line "schend mächtig."
 
-	para "Over many years,"
-	line "a small seed can"
+	para "Über viele Jahre"
+	line "kann ein kleiner"
 
-	para "grow into a huge"
-	line "tree."
+	para "Samen zu einem"
+	line "riesigen Baum"
+	cont "wachsen."
 
-	para "And a big seed can"
-	line "just fall down and"
-	cont "hit you!"
+	para "Und ein großer"
+	line "Samen kann einfach"
+	cont "herunterfallen und"
+	cont "dich treffen!"
 	done
 
 Text_YellowForestTutorSeedBomb:
-	text "I can teach your"
-	line "#mon how to"
+	text "Ich bringe deinen"
+	line "#mon für ein"
 
-	para "use Seed Bomb"
-	line "for a Silver Leaf."
+	para "Silberblatt"
+	line "Samenbomben bei."
 	done
 
 
 Text_YellowForestTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Seed Bomb?"
+	text "Soll ich deinem"
+	line "#mon"
+	cont "Samenbomben"
+	cont "beibringen?"
 	done
 
 
 
 YellowForestSuperNerdText:
-	text "There's a protein"
-	line "in your body"
-	cont "called pikachurin."
+	text "In deinem Körper"
+	line "gibt es ein"
+	cont "Protein namens"
+	cont "Pikachurin."
 
-	para "What inspired that"
-	line "name?"
+	para "Was hat diesen"
+	line "Namen inspiriert?"
 
-	para "Pikachu, of"
-	line "course!"
+	para "Pikachu"
+	line "natürlich!"
 	done
 
 YellowForestSurfPikachuDollText:

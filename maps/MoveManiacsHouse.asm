@@ -41,50 +41,52 @@ MoveReminderScript:
 	jumpopenedtext MoveReminderCancelText
 
 MoveReminderIntroText::
-	text "Me? I'm the"
-	line "Move Maniac."
+	text "Ich? Ich bin der"
+	line "Attackenmaniac."
 
-	para "I'll make your"
-	line "#mon remember"
-
-	para "a move if you'll"
-	line "trade me a"
-	cont "Gold Leaf!"
+	para "Für ein Goldblatt"
+	line "bringe ich deinen"
+	cont "#mon eine alte"
+	cont "Attacke wieder"
+	cont "bei!"
 	done
 
 MoveReminderPromptText::
-	text "Do you want me to"
-	line "teach one of your"
-	cont "#mon a move?"
+	text "Soll ich einem"
+	line "deiner #mon"
+	cont "eine Attacke bei-"
+	cont "bringen?"
 	done
 
 MoveReminderWhichMonText::
-	text "Yay! Which #mon"
-	line "needs tutoring?"
+	text "Juhu! Welches"
+	line "#mon braucht"
+	cont "Nachhilfe?"
 	done
 
 MoveReminderNoGoldLeafText::
-	text "Huh? You don't"
-	line "have any Gold"
-	cont "Leaves."
+	text "Hä? Du hast gar"
+	line "keine Goldblätter."
 
-	para "Sometimes you can"
-	line "find them on wild"
-	cont "Bellsprout."
+	para "Manchmal tragen"
+	line "wilde Knofensa"
+	cont "welche bei sich."
 	done
 
 MoveReminderNoMovesText::
-	text "Sorry… There isn't"
-	line "any move I can"
+	text "Tut mir leid…"
+	line "Es gibt keine"
 
-	para "make that #mon"
-	line "remember."
+	para "Attacke, die ich"
+	line "dem #mon wieder"
+	cont "beibringen kann."
 	prompt
 
 MoveReminderCancelText::
-	text "If your #mon"
-	line "needs to learn a"
+	text "Falls ein #mon"
+	line "eine Attacke ler-"
 
-	para "move, come back"
-	line "with a Gold Leaf!"
+	para "nen soll, komm mit"
+	line "einem Goldblatt"
+	cont "wieder!"
 	done

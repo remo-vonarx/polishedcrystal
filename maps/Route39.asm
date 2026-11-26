@@ -179,59 +179,63 @@ Route39CowgirlAnnieScript:
 	done
 
 .IntroText:
-	text "Hey! Don't scare"
-	line "the Miltank!"
+	text "Hey! Erschreck die"
+	line "Miltank nicht!"
 
-	para "…Oh, you want to"
-	line "battle?"
+	para "…Oh, du willst"
+	line "kämpfen?"
 
-	para "I'm doing farm"
-	line "work right now…"
+	para "Ich mach gerade"
+	line "Arbeit auf'm Hof…"
 
-	para "Tell ya what--"
-	line "beat everyone else"
+	para "Weißte was: Besieg"
+	line "alle anderen von"
 
-	para "from Ecruteak to"
-	line "Olivine and I'll"
-	cont "fight ya."
+	para "Teak City bis"
+	line "Oliviana City,"
+	cont "dann kämpf ich"
+	cont "gegen dich."
 
-	para "Some o' them"
-	line "might only want"
+	para "Manche von denen"
+	line "kämpfen vielleicht"
 
-	para "to battle ya when"
-	line "it's dark out."
+	para "nur, wenn's"
+	line "draußen dunkel"
+	cont "ist."
 	done
 
 .QuestionText:
-	text "I'm done with my"
-	line "chores, and you're"
+	text "Ich bin mit meiner"
+	line "Arbeit fertig, und"
 
-	para "done clearing"
-	line "these routes."
+	para "du hast die Routen"
+	line "hier freigekämpft."
 
-	para "Now then, my team"
-	line "beat Morty, and I"
+	para "Also, mein Team"
+	line "hat Jens besiegt,"
 
-	para "reckon we can beat"
-	line "you."
+	para "und ich schätze,"
+	line "dich schaffen wir"
+	cont "auch."
 
-	para "What do you say?"
+	para "Was meinste?"
 	done
 
 .RefusedText:
-	text "Shucks. Back to"
-	line "tending the Mil-"
-	cont "tank, then."
+	text "Schade. Dann"
+	line "zurück zu den"
+	cont "Miltank."
 	done
 
 .SeenText:
-	text "I'll show ya what"
-	line "a Cowgirl can do!"
+	text "Ich zeig dir, was"
+	line "ein Cowgirl drauf"
+	cont "hat!"
 	done
 
 .BeatenText:
-	text "I spilled some"
-	line "milk…"
+	text "Ich hab Milch"
+	line "verschüttet…"
 	done
 
 .AfterText1:
@@ -406,42 +410,42 @@ PokefanfJaimeBeatenText:
 
 
 Route39BeautyText:
-	text "Which is taller:"
-	line "the Bell Tower in"
-	cont "Ecruteak City,"
+	text "Was ist höher: der"
+	line "Glockenturm in"
+	cont "Teak City"
 
-	para "or the Lighthouse"
-	line "in Olivine City?"
+	para "oder der Leucht-"
+	line "turm in Oliviana"
+	cont "City?"
 
-	para "The Bell Tower,"
-	line "no doubt!"
+	para "Der Glockenturm,"
+	line "ganz klar!"
 	done
 
 Route39HikerText:
-	text "North of Olivine"
-	line "is the frontier"
-	cont "of Johto!"
+	text "Nördlich von Oli-"
+	line "viana City liegt"
+	cont "Johtos Grenzland!"
 
-	para "An intense hike"
-	line "through rugged"
+	para "Eine harte Wande-"
+	line "rung durch raues"
 
-	para "terrain, then"
-	line "scaling an icy"
-	cont "mountain…"
+	para "Gelände, dann der"
+	line "Aufstieg auf einen"
+	cont "eisigen Berg…"
 
-	para "I've heard that"
-	line "some #mon have"
+	para "Es heißt, manche"
+	line "#mon haben sich"
 
-	para "adapted to sur-"
-	line "vive the harsh"
-	cont "climate."
+	para "an das raue Klima"
+	line "angepasst."
 
-	para "…But without a"
-	line "pair of Go-Goggles"
-	cont "for safety,"
+	para "…Aber ohne eine"
+	line "Wüstenbrille zum"
+	cont "Schutz"
 
-	para "I can't even start"
-	line "on the hike…"
+	para "kann ich nicht mal"
+	line "losgehen…"
 	done
 
 Route39SignText:

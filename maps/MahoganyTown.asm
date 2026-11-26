@@ -90,8 +90,8 @@ MahoganyTownSouvenirShopSign:
 	iftrue_jumptext MahoganyTownSouvenirShopSignText1
 	jumpthistext
 
-	text "Grandma's"
-	line "Souvenir Shop"
+	text "Omas"
+	line "Souvenirladen"
 	done
 
 MahoganyTownRageCandyBarMerchantBlocksYouMovement:
@@ -131,15 +131,15 @@ RageCandyBarMerchantNoRoomText:
 
 RageCandyBarMerchantSoldOutText:
 if DEF(FAITHFUL)
-	text "RageCandyBars are"
+	text "Die Wutkekse sind"
 else
-	text "Cakes of Rage are"
+	text "Die Wutkekse sind"
 endc
-	line "sold out."
+	line "ausverkauft."
 
-	para "I'm packing up."
-	line "Don't bother me,"
-	cont "kiddo."
+	para "Ich verschwinde."
+	line "Stör mich nicht,"
+	cont "Kind."
 	done
 
 
@@ -188,14 +188,14 @@ MahoganyTownSignText:
 	done
 
 MahoganyTownSouvenirShopSignText1:
-	text "Just a Souvenir"
-	line "Shop"
+	text "Nur ein Souvenir-"
+	line "laden"
 
-	para "Nothing Suspicious"
-	line "About It"
+	para "Nichts Verdächti-"
+	line "ges daran"
 
-	para "No Need to Be"
-	line "Alarmed"
+	para "Kein Grund zur"
+	line "Beunruhigung"
 	done
 
 MahoganyGymSignText:

@@ -83,48 +83,51 @@ Route44VeteranmScript:
 	done
 
 .IntroText:
-	text "My #mon are"
-	line "wearing Rocky"
-	cont "Helmets."
+	text "Meine #mon"
+	line "tragen Beulen-"
+	cont "helme."
 
-	para "Want to challenge"
-	line "them?"
+	para "Willst du sie"
+	line "herausfordern?"
 
-	para "OK, then you've"
-	line "got to beat every"
+	para "Okay, dann musst"
+	line "du zuerst jeden"
 
-	para "trainer on this"
-	line "route first."
+	para "Trainer auf dieser"
+	line "Route besiegen."
 	done
 
 .QuestionText:
-	text "I saw your"
-	line "battles."
+	text "Ich habe deine"
+	line "Kämpfe gesehen."
 
-	para "Your #mon are"
-	line "really tough."
+	para "Deine #mon sind"
+	line "richtig zäh."
 
-	para "Are you ready?"
+	para "Bist du bereit?"
 	done
 
 .RefusedText:
-	text "You beat Team"
-	line "Rocket and you're"
-	cont "scared of me?"
+	text "Du hast Team"
+	line "Rocket besiegt und"
+	cont "hast Angst vor"
+	cont "mir?"
 
-	para "Do I look that"
-	line "scary?"
+	para "Sehe ich so"
+	line "furchterregend"
+	cont "aus?"
 	done
 
 .SeenText:
-	text "I'll show you the"
-	line "power of my Rocky"
-	cont "Helmets!"
+	text "Ich zeige dir die"
+	line "Kraft meiner"
+	cont "Beulenhelme!"
 	done
 
 .BeatenText:
-	text "Bah. These Helmets"
-	line "weren't enough."
+	text "Pah. Die Helme"
+	line "haben nicht"
+	cont "gereicht."
 	done
 
 .AfterText1:
@@ -455,13 +458,13 @@ FisherWiltonHugePoliwagText_Imperial:
 	done
 
 FisherWiltonHugePoliwagText_Metric:
-	text "That Poliwag that"
-	line "got away…"
-	cont "It was huge."
+	text "Dieses Quapsel,"
+	line "das geflohen ist…"
+	cont "Das war riesig."
 
-	para "I swear it must've"
-	line "been five meters"
-	cont "long!"
+	para "Ich könnte"
+	line "schwören, dass es"
+	cont "5 Meter lang war!"
 	done
 
 FisherEdgarSeenText:

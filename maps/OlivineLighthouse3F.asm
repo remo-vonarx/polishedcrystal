@@ -84,47 +84,52 @@ OlivineLighthouse3FBattleGirlEmy:
 	done
 
 .IntroText:
-	text "As a Battle Girl,"
-	line "I train intensely"
-	cont "every day."
+	text "Als Kämpferin"
+	line "trainiere ich"
+	cont "jeden Tag hart."
 
-	para "There's something"
-	line "intense about you."
+	para "Du hast etwas"
+	line "Intensives an dir."
 
-	para "Can you beat all"
-	line "the trainers in"
-	cont "this Lighthouse?"
+	para "Kannst du alle"
+	line "Trainer in diesem"
+	cont "Leuchtturm"
+	cont "besiegen?"
 
-	para "If you can, then"
-	line "I will battle you."
+	para "Wenn ja, kämpfe"
+	line "ich gegen dich."
 	done
 
 .QuestionText:
-	text "So you've bested"
-	line "this entire tower?"
+	text "Du hast also den"
+	line "ganzen Turm be-"
+	cont "zwungen?"
 
-	para "Then you have one"
-	line "opponent left--"
-	cont "Chuck's own stu-"
-	cont "dent--me!"
+	para "Dann bleibt dir"
+	line "noch ein Gegner:"
+	cont "Hartwigs eigene"
+	cont "Schülerin--ich!"
 
-	para "Ready to spar?"
+	para "Bereit für einen"
+	line "Übungskampf?"
 	done
 
 .RefusedText:
-	text "Back to training"
-	line "on my own…"
+	text "Dann trainiere"
+	line "ich eben allein…"
 	done
 
 .SeenText:
-	text "From behind my"
-	line "Protect Pads, I"
-	cont "attack! Ki-yaah!"
+	text "Hinter meinen"
+	line "Schutzpolstern"
+	cont "greife ich an!"
+	cont "Ki-yaah!"
 	done
 
 .BeatenText:
-	text "You broke through"
-	line "my defense!"
+	text "Du hast meine"
+	line "Deckung durch-"
+	cont "brochen!"
 	done
 
 .AfterText1:
@@ -206,13 +211,18 @@ Bird_keeperTheoBeatenText:
 	done
 
 Bird_keeperTheoFinalText:
-	text "How the heck do"
-	line "you go up?"
+	text "Wie, zum Geier,"
+	line "bist du hier"
+	cont "hochgekommen?"
 
-	para "I heard the sick"
-	line "#mon is better"
-	cont "now, but I can't"
-	cont "get up there…"
+	para "Ich habe gehört,"
+	line "dass es dem"
+	cont "kranken #mon"
+	cont "besser geht, aber"
+
+	para "ich schaffe es"
+	line "nicht bis nach"
+	cont "oben…"
 	done
 
 SailorTerrellSeenText:

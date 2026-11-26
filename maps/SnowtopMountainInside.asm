@@ -79,40 +79,44 @@ KimonoGirlAmiScript:
 	jumpthisopenedtext
 
 .OutroText:
-	text "My cousins and I"
-	line "dance in Ecruteak"
-	cont "City, but we are"
+	text "Meine Cousinen und"
+	line "ich tanzen in Teak"
+	cont "City, aber wir"
 
-	para "known to travel"
-	line "as well."
+	para "sind auch für"
+	line "unsere Reisen"
+	cont "bekannt."
 	done
 
 .IntroText:
-	text "I am a Kimono"
-	line "Girl."
+	text "Ich bin ein"
+	line "Kimono-Girl."
 
-	para "Haven't you met my"
-	line "five dancing cou-"
-	cont "sins in Ecruteak?"
+	para "Hast du meine fünf"
+	line "tanzenden Cousinen"
+	cont "in Teak City noch"
+	cont "nicht getroffen?"
 
-	para "Let me know if"
-	line "you do."
+	para "Sag mir Bescheid,"
+	line "wenn du sie"
+	cont "triffst."
 	done
 
 .SeenText:
-	text "If I were to dance"
-	line "here, my sandals"
+	text "Würde ich hier"
+	line "tanzen, würden"
 
-	para "would slip, or"
-	line "stick to the ice."
+	para "meine Sandalen"
+	line "ausrutschen oder"
+	cont "am Eis kleben."
 
-	para "Therefore let us"
-	line "battle instead!"
+	para "Lass uns daher"
+	line "lieber kämpfen!"
 	done
 
 .BeatenText:
-	text "Oh, you are"
-	line "fearsome…"
+	text "Oh, du bist"
+	line "furchteinflößend…"
 	done
 
 .AfterText:
@@ -149,47 +153,47 @@ SnowtopMountainInsideTutorIcyWindScript:
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Oh, but you don't"
-	line "have a Silver"
-	cont "Leaf."
+	text "Oh, aber du hast"
+	line "kein Silberblatt."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "OK! Now your"
-	line "#mon knows"
-	cont "Icy Wind!"
+	text "Okay! Jetzt kann"
+	line "dein #mon"
+	cont "Eissturm!"
 	done
 
 SnowtopMountainInsideSkierText:
-	text "The wind and hail"
-	line "in this canyon"
+	text "Wind und Hagel in"
+	line "dieser Schlucht"
 
-	para "can hurt if you're"
-	line "not equipped for"
-	cont "icy weather."
+	para "können wehtun,"
+	line "wenn man nicht für"
+	cont "eisiges Wetter"
+	cont "ausgerüstet ist."
 
-	para "It could be a"
-	line "good technique"
-	cont "for a #mon!"
+	para "Das könnte eine"
+	line "gute Technik für"
+	cont "ein #mon sein!"
 	done
 
 Text_SnowtopMountainInsideTutorIcyWind:
-	text "I'll teach a #-"
-	line "mon of yours to"
+	text "Ich bringe einem"
+	line "deiner #mon"
 
-	para "use Icy Wind if"
-	line "you trade me a"
-	cont "Silver Leaf."
+	para "Eissturm bei, wenn"
+	line "du mir dafür ein"
+	cont "Silberblatt gibst."
 	done
 
 
 Text_SnowtopMountainInsideTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Icy Wind?"
+	text "Soll ich deinem"
+	line "#mon Eissturm"
+	cont "beibringen?"
 	done
 
 Text_SnowtopMountainInsideTutorRefused: ; text > text

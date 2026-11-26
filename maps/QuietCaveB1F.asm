@@ -53,22 +53,25 @@ QuietCaveB1FNurseKeikoScript:
 	special RestartMapMusic
 	jumpthistext
 
-	text "See how energetic"
-	line "your #mon are!"
+	text "Sieh nur, wie"
+	line "munter deine"
+	cont "#mon sind!"
 	done
 
 .SeenText:
-	text "You need a Nurse's"
-	line "help?"
+	text "Du brauchst die"
+	line "Hilfe einer"
+	cont "Pflegerin?"
 
-	para "Sure, if you can"
-	line "win against me,"
-	cont "I'll heal you!"
+	para "Klar, wenn du"
+	line "gegen mich ge-"
+	cont "winnst, heile ich"
+	cont "dich!"
 	done
 
 .BeatenText:
-	text "Do you really"
-	line "need healing?"
+	text "Brauchst du"
+	line "wirklich Heilung?"
 	done
 
 .AfterText:

@@ -142,18 +142,18 @@ PokefanF_AcrobaticsFarmer:
 .GotAcrobatics:
 	jumpthisopenedtext
 
-	text "That there's"
-	line "Acrobatics."
+	text "Das hier ist"
+	line "Akrobatik."
 
-	para "It's a move that"
-	line "hurts more if'n"
+	para "Die Attacke tut"
+	line "mehr weh, wenn"
 
-	para "your #mon ain't"
-	line "holdin' an item."
+	para "dein #mon kein"
+	line "Item trägt."
 
-	para "You best think how"
-	line "you ought to use"
-	cont "it, hon."
+	para "Überlege dir gut,"
+	line "wie du sie"
+	cont "anwendest."
 	done
 
 FarmerMText_SickCow:

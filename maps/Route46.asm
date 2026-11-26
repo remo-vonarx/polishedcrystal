@@ -48,24 +48,23 @@ Route46TutorRoute46Script:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Suit yourself."
+	text "Wie du willst."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Ah well, you don't"
-	line "have a Silver"
-	cont "Leaf."
+	text "Na ja, du hast"
+	line "kein Silberblatt."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "All done! Your"
-	line "#mon learned"
-	cont "to use Rollout!"
+	text "Fertig! Dein"
+	line "#mon kann jetzt"
+	cont "Walzer!"
 	done
 
 GenericTrainerCamperTed:
@@ -203,32 +202,33 @@ GenericTrainerHikerBailey:
 	done
 
 Route46HikerText:
-	text "A Donphan charged"
-	line "at me and I roll-"
+	text "Ein Donphan hat"
+	line "mich angegriffen,"
 
-	para "ed all the way"
-	line "down here!"
+	para "und ich bin den"
+	line "ganzen Weg hier"
+	cont "runtergerollt!"
 
-	para "Still, it taught"
-	line "me a lesson…"
+	para "Immerhin hab ich"
+	line "daraus gelernt…"
 
-	para "Be careful around"
-	line "angry #mon!"
+	para "Vorsicht bei"
+	line "wütenden #mon!"
 	done
 
 Text_Route46TutorRollout:
-	text "I'll teach your"
-	line "#mon how to"
+	text "Ich bringe deinen"
+	line "#mon Walzer"
 
-	para "use Rollout for"
-	line "a Silver Leaf."
+	para "bei, für ein"
+	line "Silberblatt."
 	done
 
 
 Text_Route46TutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Rollout?"
+	text "Soll ich deinem"
+	line "#mon Walzer"
+	cont "beibringen?"
 	done
 
 
@@ -303,11 +303,13 @@ Route46SignText:
 	done
 
 Route46LassText:
-	text "A dead end…?"
+	text "Eine Sackgasse…?"
 
-	para "Did I take the"
-	line "wrong path?"
+	para "Habe ich den fal-"
+	line "schen Weg"
+	cont "genommen?"
 
-	para "I didn't know this"
-	line "was only one way."
+	para "Ich wusste nicht,"
+	line "dass das eine Ein-"
+	cont "bahnstraße ist."
 	done

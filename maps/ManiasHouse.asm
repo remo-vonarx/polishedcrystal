@@ -102,11 +102,10 @@ ManiaScript:
 .nothingleft
 	jumpthisopenedtext
 
-	text "If I take my #-"
-	line "mon back, what are"
-
-	para "you going to use"
-	line "in battle?"
+	text "Wenn ich mein"
+	line "#mon wieder-"
+	cont "nehme, womit"
+	cont "kämpfst du dann?"
 	done
 
 .default_postevent
@@ -177,8 +176,9 @@ ManiaText_ShuckieSentToPC:
 	done
 
 ManiaText_PartyAndBoxFull:
-	text "Your #mon party"
-	line "and Box are full."
+	text "Dein Team und"
+	line "deine Box sind"
+	cont "voll."
 	done
 
 

@@ -29,15 +29,17 @@ PokemonJournalJasmineScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Leader Jasmine!"
+	para "Titelthema:"
+	line "Arenaleiterin"
+	cont "Jasmin!"
 
-	para "Rumor has it that"
-	line "Jasmine and Erika,"
+	para "Gerüchten zufolge"
+	line "plaudern Jasmin"
+	cont "und Erika, die"
 
-	para "the Celadon Gym"
-	line "Leader, chat about"
-	cont "fashion together."
+	para "Arenaleiterin von"
+	line "Prismania City,"
+	cont "gern über Mode."
 	done
 
 BeautyCharlotteScript:
@@ -66,50 +68,52 @@ BeautyCharlotteScript:
 	done
 
 .GreetingText:
-	text "Oh, are you a"
-	line "trainer?"
+	text "Oh, bist du ein"
+	line "Trainer?"
 
-	para "You came at just"
-	line "the right time!"
+	para "Du kommst genau"
+	line "zur rechten Zeit!"
 
-	para "My unique and"
-	line "beautiful #mon"
-	cont "is all healed."
+	para "Mein einzigartiges"
+	line "und wunderschönes"
+	cont "#mon ist wieder"
+	cont "gesund."
 
-	para "Do you want to"
-	line "battle and be"
-
-	para "amazed by my"
-	line "#mon?"
+	para "Willst du kämpfen"
+	line "und über mein"
+	cont "#mon staunen?"
 	done
 
 .NoBattleText:
-	text "Oh, really? Talk"
-	line "to me if you want"
+	text "Oh, wirklich? Sag"
+	line "Bescheid, wenn du"
 
-	para "to battle some"
-	line "time!"
+	para "mal kämpfen"
+	line "willst!"
 	done
 
 .SeenText:
-	text "All right!"
-	line "Here I come!"
+	text "Also gut!"
+	line "Los geht's!"
 	done
 
 .BeatenText:
-	text "Amazing battle!"
+	text "Was für ein toller"
+	line "Kampf!"
 	done
 
 OlivinePokeCenter1FFisherText:
-	text "There's this guy in"
-	line "Cianwood City who"
-	cont "looks weak, but he"
+	text "In Anemonia City"
+	line "gibt es einen Typ,"
+	cont "der schwach aus-"
+	cont "sieht, aber"
 
-	para "taught my #-"
-	line "mon Strength."
+	para "er hat meinem"
+	line "#mon Stärke"
 
-	para "Now it can move"
-	line "big boulders."
+	para "beigebracht. Jetzt"
+	line "kann es Felsen be-"
+	cont "wegen."
 	done
 
 OlivinePokeCenter1FTeacherText:

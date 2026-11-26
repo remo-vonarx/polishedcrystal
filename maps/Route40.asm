@@ -91,15 +91,15 @@ Route40BeachGuyScript:
 	iftrue_jumptextfaceplayer Route40BeachGuyText2
 	jumpthistextfaceplayer
 
-	text "The Battle Tower"
-	line "is almost ready!"
+	text "Der Duellturm ist"
+	line "fast fertig!"
 
-	para "Trainers are head-"
-	line "ing to Olivine"
+	para "Trainer aus aller"
+	line "Welt kommen nach"
 
-	para "from all over the"
-	line "world to test"
-	cont "their strength."
+	para "Oliviana City, um"
+	line "ihre Stärke zu"
+	cont "testen."
 	done
 
 Route40FisherScript:
@@ -123,56 +123,61 @@ Route40FisherScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "I'll find something"
-	line "else to do…"
+	text "Dann such ich mir"
+	line "was anderes…"
 	done
 
 .IntroText:
-	text "I was fishing when"
-	line "some #mon leap-"
-	cont "ed up and knocked"
+	text "Ich habe geangelt,"
+	line "als #mon hoch-"
+	cont "sprangen und meine"
 
-	para "my Rod into the"
-	line "water!"
+	para "Angel ins Wasser"
+	line "stießen!"
 
-	para "How will I catch"
-	line "anything now?"
+	para "Wie soll ich jetzt"
+	line "was fangen?"
 
-	para "…Well then, if I"
-	line "can't fish, I'll"
-	cont "just teach."
+	para "…Na gut, wenn ich"
+	line "nicht angeln kann,"
+	cont "unterrichte ich"
+	cont "eben."
 	done
 
 .QuestionText:
-	text "You give me a"
-	line "Silver Leaf and"
+	text "Gib mir ein"
+	line "Silberblatt, und"
 
-	para "I'll teach your"
-	line "#mon Knock Off."
+	para "ich bringe deinem"
+	line "#mon Abschlag"
+	cont "bei."
 
-	para "How about that?"
+	para "Wie wär's?"
 	done
 
 .NoSilverLeaf
 	waitbutton
 	jumpthisopenedtext
 
-	text "No Leaf, no move."
-	line "My time isn't free."
+	text "Kein Blatt, keine"
+	line "Attacke. Meine"
+	cont "Zeit ist nicht"
+	cont "umsonst."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Knock Off knocks"
-	line "a held item away"
+	text "Abschlag schlägt"
+	line "ein getragenes"
 
-	para "so it can't be used"
-	line "in battle."
+	para "Item weg, sodass"
+	line "es im Kampf nicht"
+	cont "nutzbar ist."
 
-	para "It's so frustra-"
-	line "ting!"
+	para "Das ist so frus-"
+	line "trierend!"
 	done
 
 MonicaScript:
@@ -274,11 +279,13 @@ SwimmerfPaulaBeatenText:
 	done
 
 Route40BeachGirlText:
-	text "I just ate at the"
-	line "Olivine Café, so"
+	text "Ich habe gerade im"
+	line "Oliviana City-"
+	cont "Cafe gegessen,"
 
-	para "I'm taking a break"
-	line "before swimming."
+	para "also mache ich vor"
+	line "dem Schwimmen eine"
+	cont "Pause."
 	done
 
 

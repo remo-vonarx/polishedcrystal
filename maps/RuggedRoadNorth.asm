@@ -101,28 +101,30 @@ RuggedRoadNorthHikerScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "When you reach the"
-	line "top, don't forget"
+	text "Wenn du oben bist,"
+	line "vergiss nicht,"
 
-	para "to thank your"
-	line "lucky stone!"
+	para "deinem Glücks-"
+	line "stein zu danken!"
 	done
 
 .Text1:
-	text "It's not just your"
-	line "skills that get"
+	text "Nicht nur dein"
+	line "Können bringt dich"
 
-	para "you to the top of"
-	line "a tough mountain."
+	para "auf den Gipfel"
+	line "eines harten"
+	cont "Berges."
 
-	para "Luck must be on"
-	line "your side to reach"
-	cont "the top!"
+	para "Auch das Glück"
+	line "muss auf deiner"
+	cont "Seite sein!"
 
-	para "This Oval Stone I"
-	line "found feels lucky."
+	para "Dieser Ovale Stein"
+	line "fühlt sich nach"
+	cont "Glück an."
 
-	para "Here, take it!"
+	para "Hier, nimm ihn!"
 	done
 
 RuggedRoadNorthFirebreatherScript:
@@ -130,29 +132,31 @@ RuggedRoadNorthFirebreatherScript:
 	iftrue_jumptextfaceplayer .FireText
 	jumpthistextfaceplayer
 
-	text "Huff… puff…"
+	text "Keuch… schnauf…"
 
-	para "Gathering wood for"
-	line "a fire tonight is"
-	cont "hard work,"
+	para "Holz für ein Feuer"
+	line "heute Nacht zu"
+	cont "sammeln, ist"
+	cont "harte Arbeit,"
 
-	para "but without it,"
-	line "I'd turn into a"
-	cont "NeverMeltIce."
+	para "aber ohne Feuer"
+	line "würde ich zu"
+	cont "Ewigem Eis."
 	done
 
 .FireText:
-	text "Huff… puff…"
+	text "Keuch… schnauf…"
 
-	para "Keeping this fire"
-	line "lit is hard work,"
+	para "Das Feuer am Bren-"
+	line "nen zu halten, ist"
+	cont "harte Arbeit,"
 
-	para "but without it,"
-	line "I'd turn into a"
-	cont "NeverMeltIce."
+	para "aber ohne Feuer"
+	line "würde ich zu"
+	cont "Ewigem Eis."
 	done
 
 RuggedRoadNorthCampfireText:
-	text "The campfire"
-	line "burns steadily."
+	text "Das Lagerfeuer"
+	line "brennt stetig."
 	done

@@ -49,8 +49,8 @@ BattleTower1FContinueChallenge:
 	; We saved in-between rounds. Resume Battle Tower challenge.
 	opentext
 	writethistext
-		text "We've been waiting"
-		line "for you."
+		text "Wir haben schon"
+		line "auf dich gewartet."
 		prompt
 
 	sdefer Script_ReturnToBattleTowerChallenge
@@ -122,20 +122,20 @@ BattleTower1FRulesScript:
 	yesorno
 	iffalse_endtext
 	jumpthisopenedtext
-		text "Three #mon may"
-		line "enter battles."
+		text "Drei #mon"
+		line "dürfen am Kampf"
 
-		para "All three must be"
-		line "different."
+		para "teilnehmen. Sie"
+		line "müssen unter-"
+		cont "schiedlich sein."
 
-		para "The items they"
-		line "hold must also be"
-		cont "different."
+		para "Ihre Items müssen"
+		line "auch verschieden"
 
-		para "Eggs or certain"
-		line "Legendary #mon"
-		cont "aren't eligible"
-		cont "to battle."
+		para "sein. Eier und"
+		line "bestimmte legen-"
+		cont "däre #mon sind"
+		cont "nicht zugelassen."
 		done
 
 BattleTower1FStreakText:
@@ -157,7 +157,7 @@ BattleTower1FReceptionistScript:
 		done
 	promptbutton
 	checkevent EVENT_BATTLE_TOWER_INTRO
-	iftruefwd .BattleTowerMenu
+	iftrue .BattleTowerMenu
 
 	; only ask once, so set the flag regardless
 	setevent EVENT_BATTLE_TOWER_INTRO
@@ -171,37 +171,43 @@ BattleTower1FReceptionistScript:
 
 .Explanation:
 	writethistext
-		text "Battle Tower is a"
-		line "facility made for"
-		cont "#mon battles."
+		text "Der Duellturm ist"
+		line "eine Kampfstätte"
+		cont "für #mon."
 
-		para "Countless #mon"
-		line "trainers gather"
+		para "Unzählige #mon-"
+		line "Trainer von Nah"
 
-		para "from all over to"
-		line "hold battles in"
+		para "und Fern kommen"
+		line "hier zusammen und"
 
-		para "specially designed"
-		line "Battle Rooms."
+		para "duellieren sich in"
+		line "speziellen"
 
-		para "There are many"
-		line "Battle Rooms in"
-		cont "the Battle Tower."
+		para "Kampfräumen."
+		line "Im Duellturm gibt"
 
-		para "Each Room holds"
-		line "seven trainers."
+		para "es viele"
+		line "Kampfräume."
 
-		para "Beat them all to"
-		line "get Battle Points."
+		para "In jedem Raum sind"
+		line "sieben Trainer."
 
-		para "To interrupt a"
-		line "session, you must"
+		para "Besiegst du alle,"
+		line "bekommst du"
+		cont "Gewinnpunkte."
 
-		para "save. If not, you"
-		line "won't be able to"
+		para "Um eine"
+		line "Herausforderung zu"
 
-		para "resume your Room"
-		line "challenge."
+		para "unterbrechen,"
+		line "musst du sichern."
+
+		para "Falls du nicht"
+		line "sicherst, kannst"
+
+		para "du den Kampf nicht"
+		line "fortsetzen."
 		prompt
 	; fallthrough
 .BattleTowerMenu:
@@ -224,8 +230,8 @@ BattleTower1FReceptionistScript:
 
 .Challenge:
 	writethistext
-		text "Choose #mon"
-		line "to enter."
+		text "Wähle die #mon"
+		line "zur Teilnahme."
 		prompt
 	special Special_BattleTower_SelectParticipants
 	iffalse .BattleTowerMenu
@@ -302,34 +308,36 @@ BattleTowerPharmacistScript:
 	checkevent EVENT_LISTENED_TO_TRICK_INTRO
 	iftruefwd BattleTowerTutorTrickScript
 	writethistext
-		text "The trainers here"
-		line "strategically use"
-		cont "held items."
+		text "Die Trainer hier"
+		line "setzen getragene"
+		cont "Items gezielt ein."
 
-		para "But I've got a"
-		line "trick up my"
-		cont "sleeve--I'll swap"
+		para "Aber ich habe noch"
+		line "einen Trick auf"
+		cont "Lager: Ich tausche"
 
-		para "their items for"
-		line "mine with Trick!"
+		para "ihre Items mit"
+		line "Trickbetrug gegen"
+		cont "meine aus!"
 		done
 	waitbutton
 	setevent EVENT_LISTENED_TO_TRICK_INTRO
 BattleTowerTutorTrickScript:
 	writethistext
-		text "I'll teach your"
-		line "#mon how to"
+		text "Ich bringe deinen"
+		line "#mon"
 
-		para "use Trick…"
-		line "for a Silver Leaf."
+		para "Trickbetrug bei…"
+		line "für ein Silber-"
+		cont "blatt."
 		done
 	waitbutton
 	checkitem SILVER_LEAF
 	iffalsefwd .NoSilverLeaf
 	writethistext
-		text "Should I teach"
-		line "your #mon"
-		cont "Trick?"
+		text "Soll ich deinem"
+		line "#mon Trick-"
+		cont "betrug beibringen?"
 		done
 	yesorno
 	iffalsefwd .TutorRefused
@@ -339,22 +347,25 @@ BattleTowerTutorTrickScript:
 	ifequalfwd $0, .TeachMove
 .TutorRefused
 	jumpthisopenedtext
-		text "Talk to me if you"
-		line "change your mind."
+		text "Sprich mich an,"
+		line "wenn du es dir"
+		cont "anders überlegst."
 		done
 
 .NoSilverLeaf
 	jumpthisopenedtext
-		text "Tch. You don't have"
-		line "a Silver Leaf…"
+		text "Tse. Du hast kein"
+		line "Silberblatt…"
 		done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
-		text "Now your #mon"
-		line "can use Trick too!"
-		cont "Isn't it devious?"
+		text "Jetzt beherrscht"
+		line "dein #mon auch"
+		cont "Trickbetrug!"
+		cont "Ist das nicht"
+		cont "hinterhältig?"
 		done
 
 Text_BattleTowerCooltrainerF:
@@ -397,14 +408,14 @@ PokemonJournalPalmerScript:
 
 	text "#mon Journal"
 
-	para "Special Feature:"
-	line "Tower Tycoon"
-	cont "Palmer!"
+	para "Titelthema:"
+	line "Turm-Tycoon"
+	cont "Viktor!"
 
-	para "Palmer is reported"
-	line "to have a son in"
+	para "Viktor soll in der"
+	line "Sinnoh-Region"
 
-	para "the Sinnoh region"
-	line "who wants to be a"
-	cont "trainer like him."
+	para "einen Sohn haben,"
+	line "der wie er Trainer"
+	cont "werden will."
 	done
