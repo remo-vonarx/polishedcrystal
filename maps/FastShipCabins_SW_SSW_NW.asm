@@ -45,8 +45,8 @@ GenericTrainerBug_catcherKen:
 GenericTrainerRichBoyWinston:
 	generictrainer RICH_BOY, WINSTON, EVENT_BEAT_RICH_BOY_WINSTON, RichBoyWinstonSeenText, RichBoyWinstonBeatenText
 
-	text "This boat is so"
-	line "drab."
+	text "Dieses Schiff ist"
+	line "so trist."
 	done
 
 GenericTrainerBeautyCassie:
@@ -153,17 +153,19 @@ Bug_catcherKenBeatenText:
 	done
 
 RichBoyWinstonSeenText:
-	text "There's no way you"
-	line "could afford a"
-	cont "ticket."
+	text "Du kannst dir nie"
+	line "im Leben ein"
+	cont "Ticket leisten."
 
-	para "It looks like we've"
-	line "got a stowaway!"
+	para "Sieht aus, als"
+	line "hätten wir einen"
+	cont "blinden Passagier!"
 	done
 
 RichBoyWinstonBeatenText:
-	text "Wow! Who'd you buy"
-	line "your #mon from?"
+	text "Wow! Bei wem hast"
+	line "du deine #mon"
+	cont "gekauft?"
 	done
 
 BeautyCassieSeenText:

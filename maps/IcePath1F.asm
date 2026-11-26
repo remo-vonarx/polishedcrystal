@@ -23,38 +23,43 @@ IcePath1F_MapScriptHeader:
 GenericTrainerSkierMaria:
 	generictrainer SKIER, MARIA, EVENT_BEAT_SKIER_MARIA, SkierMariaSeenText, SkierMariaBeatenText
 
-	text "It took me a while"
-	line "to get comfortable"
-	cont "on skis."
+	text "Es hat eine Weile"
+	line "gedauert, bis ich"
+	cont "mich auf Skiern"
+	cont "wohlgefühlt habe."
 	done
 
 GenericTrainerBoarderStefan:
 	generictrainer BOARDER, STEFAN, EVENT_BEAT_BOARDER_STEFAN, BoarderStefanSeenText, BoarderStefanBeatenText
 
-	text "I'll keep warm by"
-	line "snowboarding!"
+	text "Beim Snowboarden"
+	line "halte ich mich"
+	cont "warm!"
 	done
 
 SkierMariaSeenText:
-	text "Were you admiring"
-	line "my ski technique?"
+	text "Hast du gerade"
+	line "meine Skitechnik"
+	cont "bewundert?"
 	done
 
 SkierMariaBeatenText:
-	text "Your battling"
-	line "technique is"
-	cont "admirable!"
+	text "Deine Kampf-"
+	line "technik ist"
+	cont "bewundernswert!"
 	done
 
 BoarderStefanSeenText:
-	text "Brrr… It's so"
-	line "cold!"
+	text "Brrr… Ist das"
+	line "kalt!"
 
-	para "Let's warm up with"
-	line "a #mon battle!"
+	para "Wärmen wir uns"
+	line "mit einem #mon-"
+	cont "Kampf auf!"
 	done
 
 BoarderStefanBeatenText:
-	text "This cold is the"
-	line "shame of defeat…"
+	text "Diese Kälte ist"
+	line "die Schmach der"
+	cont "Niederlage…"
 	done

@@ -26,11 +26,13 @@ Route38_MapScriptHeader:
 GenericTrainerBird_keeperToby:
 	generictrainer BIRD_KEEPER, TOBY, EVENT_BEAT_BIRD_KEEPER_TOBY, Bird_keeperTobySeenText, Bird_keeperTobyBeatenText
 
-	text "I plan to train in"
-	line "the Yellow Forest"
+	text "Ich habe vor, im"
+	line "Goldgelben Wald"
 
-	para "to teach my #-"
-	line "mon how to Fly."
+	para "zu trainieren und"
+	line "meinen #mon"
+	cont "das Fliegen"
+	cont "beizubringen."
 	done
 
 TrainerSailorHarry:
@@ -266,13 +268,15 @@ GenericTrainerBeautyValencia:
 GenericTrainerBeautyOlivia:
 	generictrainer BEAUTY, OLIVIA, EVENT_BEAT_BEAUTY_OLIVIA, BeautyOliviaSeenText, BeautyOliviaBeatenText
 
-	text "Moomoo Milk is"
-	line "good for beauty"
-	cont "and health."
+	text "Kuhmuh-Milch ist"
+	line "gut für Schönheit"
 
-	para "I like to buy a"
-	line "dozen bottles at"
-	cont "a time!"
+	para "und Gesundheit."
+
+	para "Ich kaufe gern"
+	line "ein Dutzend"
+	cont "Flaschen auf"
+	cont "einmal!"
 	done
 
 Bird_keeperTobySeenText:

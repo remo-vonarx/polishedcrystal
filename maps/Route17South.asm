@@ -98,39 +98,42 @@ BikerGlennBeatenText:
 GenericTrainerBikerDale:
 	generictrainer BIKER, DALE, EVENT_BEAT_BIKER_DALE, BikerDaleSeenText, BikerDaleBeatenText
 
-	text "You're so cool!"
-	line "You don't do any-"
-	cont "thing halfway!"
+	text "Du bist so cool!"
+	line "Du machst nichts"
+	cont "halbherzig!"
 	done
 
 BikerDaleSeenText:
-	text "You're gonna lose!"
-	line "I've got a hunch!"
+	text "Du wirst verlie-"
+	line "ren! Ich hab da so"
+	cont "ein Gefühl!"
 	done
 
 BikerDaleBeatenText:
-	text "Maybe my hunch was"
-	line "a little off…"
+	text "Vielleicht lag ich"
+	line "mit meinem Gefühl"
+	cont "etwas daneben…"
 	done
 
 GenericTrainerBikerJacob:
 	generictrainer BIKER, JACOB, EVENT_BEAT_BIKER_JACOB, BikerJacobSeenText, BikerJacobBeatenText
 
-	text "Chopper? Oh, I"
-	line "was talking about"
-	cont "my Bicycle!"
+	text "Chopper? Oh, ich"
+	line "meinte mein"
+	cont "Fahrrad!"
 	done
 
 BikerJacobSeenText:
-	text "Modding my"
-	line "chopper costs a"
+	text "Meinen Chopper zu"
+	line "tunen kostet"
 
-	para "bunch of money!"
-	line "I need a job!"
+	para "einen Haufen Geld!"
+	line "Ich brauch 'nen"
+	cont "Job!"
 	done
 
 BikerJacobBeatenText:
-	text "Argh. I failed!"
+	text "Argh. Daneben!"
 	done
 
 GenericTrainerBikerAiden:
@@ -139,42 +142,44 @@ GenericTrainerBikerAiden:
 	text "Gaon gaooon!"
 	line "Buwaribaribari…!"
 
-	para "There, my engine"
-	line "imitation has"
-	cont "evolved!"
+	para "So, meine Motoren-"
+	line "Imitation hat sich"
+	cont "entwickelt!"
 	done
 
 BikerAidenSeenText:
-	text "Vroom vroom!"
+	text "Brumm brumm!"
 	line "Baribaribaribari!"
 
-	para "What do you think"
-	line "of my engine"
-	cont "imitation?"
+	para "Wie findest du"
+	line "meine Motoren-"
+	cont "Imitation?"
 	done
 
 BikerAidenBeatenText:
 	text "Hnnff… hnnff…"
-	line "I'm out of breath…"
+	line "Ich bin außer"
+	cont "Atem…"
 	done
 
 GenericTrainerBikerDan:
 	generictrainer BIKER, DAN, EVENT_BEAT_BIKER_DAN, BikerDanSeenText, BikerDanBeatenText
 
-	text "I love this melan-"
-	line "choly melody."
+	text "Ich liebe diese"
+	line "melancholische"
+	cont "Melodie."
 
-	para "It really suits me"
-	line "well…"
+	para "Sie passt einfach"
+	line "zu mir…"
 	done
 
 BikerDanSeenText:
 	text "Parara parapara"
 	line "para-parara!"
 
-	para "My horn's got a"
-	line "great sound to it,"
-	cont "don't you think?"
+	para "Meine Hupe hat"
+	line "einen tollen"
+	cont "Klang, oder?"
 	done
 
 BikerDanBeatenText:
@@ -184,76 +189,80 @@ BikerDanBeatenText:
 GenericTrainerBikerTeddy:
 	generictrainer BIKER, TEDDY, EVENT_BEAT_BIKER_TEDDY, BikerTeddySeenText, BikerTeddyBeatenText
 
-	text "I love the way you"
-	line "do battle, too!"
-
-	cont "Consider me a fan!"
+	text "Ich mag auch, wie"
+	line "du kämpfst! Ich"
+	cont "bin jetzt dein"
+	cont "Fan!"
 	done
 
 BikerTeddySeenText:
-	text "Hey, that's a cool"
-	line "Bike you're riding!"
+	text "Hey, du fährst ja"
+	line "ein cooles Rad!"
 	done
 
 BikerTeddyBeatenText:
-	text "Great job."
+	text "Gut gemacht."
 	done
 
 GenericTrainerRoughneckBrian:
 	generictrainer ROUGHNECK, BRIAN, EVENT_BEAT_ROUGHNECK_BRIAN, RoughneckBrianSeenText, RoughneckBrianBeatenText
 
-	text "See you later!"
-	line "Come back anytime!"
+	text "Bis später!"
+	line "Komm jederzeit"
+	cont "wieder!"
 	done
 
 RoughneckBrianSeenText:
-	text "Hey, who told you"
-	line "you could ride"
-	cont "on this road?"
+	text "Hey, wer hat dir"
+	line "erlaubt, auf"
+	cont "dieser Straße zu"
+	cont "fahren?"
 	done
 
 RoughneckBrianBeatenText:
-	text "Crash!"
+	text "Krach!"
 	done
 
 GenericTrainerRoughneckTheron:
 	generictrainer ROUGHNECK, THERON, EVENT_BEAT_ROUGHNECK_THERON, RoughneckTheronSeenText, RoughneckTheronBeatenText
 
-	text "You wanna join"
-	line "my team?"
+	text "Willst du in mein"
+	line "Team?"
 
-	para "Won't you give it"
-	line "a try?"
+	para "Versuch es doch"
+	line "mal!"
 	done
 
 RoughneckTheronSeenText:
-	text "I'll toughen you"
-	line "up. Now, you come"
-	cont "along with me."
+	text "Ich mach dich"
+	line "härter. Komm"
+	cont "jetzt mit mir mit."
 	done
 
 RoughneckTheronBeatenText:
-	text "I lost. I lost!"
+	text "Ich hab verloren."
+	line "Verloren!"
 	done
 
 GenericTrainerRoughneckMarkey:
 	generictrainer ROUGHNECK, MARKEY, EVENT_BEAT_ROUGHNECK_MARKEY, RoughneckMarkeySeenText, RoughneckMarkeyBeatenText
 
-	text "All right!"
+	text "Na also!"
 
-	para "That fighting"
-	line "yell was great!"
+	para "Der Kampfschrei"
+	line "war super!"
 	done
 
 RoughneckMarkeySeenText:
 	text "Hey hey hey!"
-	line "You're in my way!"
+	line "Du stehst mir im"
+	cont "Weg!"
 
-	para "IN MY WAY!"
+	para "IM WEG!"
 	done
 
 RoughneckMarkeyBeatenText:
-	text "All right, thanks!"
+	text "Na gut, danke!"
 	done
 
 Route17SouthNotice1Text:

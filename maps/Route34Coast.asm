@@ -22,23 +22,24 @@ Route34Coast_MapScriptHeader:
 GenericTrainerSwimmermFrank:
 	generictrainer SWIMMERM, FRANK, EVENT_BEAT_SWIMMERM_FRANK, .SeenText, .BeatenText
 
-	text "Sea, sand, sun,"
-	line "and #mon!"
+	text "Meer, Sand, Sonne"
+	line "und #mon!"
 
-	para "What more could a"
-	line "guy need?"
+	para "Was braucht ein"
+	line "Kerl mehr?"
 	done
 
 .SeenText:
-	text "I'm vacationing"
-	line "with my wife, but"
-	cont "OK--I'll battle"
-	cont "you."
+	text "Ich mache mit"
+	line "meiner Frau Ur-"
+	cont "laub, aber okay,"
+	cont "ich kämpfe gegen"
+	cont "dich."
 	done
 
 .BeatenText:
-	text "I don't care,"
-	line "I'm on vacation!"
+	text "Ist mir egal, ich"
+	line "bin im Urlaub!"
 	done
 
 TrainerSwimmermNadar:
@@ -48,112 +49,121 @@ TrainerSwimmermNadar:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Practice swimming,"
-	line "or train with my"
-	cont "#mon?"
+	text "Schwimmen üben"
+	line "oder mit meinen"
+	cont "#mon"
+	cont "trainieren?"
 
-	para "What a dilemma."
+	para "Was für ein"
+	line "Dilemma."
 	done
 
 .SeenText:
-	text "Swimming is my"
-	line "speciality!"
+	text "Schwimmen ist"
+	line "meine Spezialität!"
 
-	para "#mon battles"
-	line "are too!"
+	para "#mon-Kämpfe"
+	line "auch!"
 	done
 
 .BeatenText:
-	text "I lost at my own"
-	line "speciality?"
+	text "Ich habe in"
+	line "meiner Spezialität"
+	cont "verloren?"
 	done
 
 GenericTrainerSwimmermConrad:
 	generictrainer SWIMMERM, CONRAD, EVENT_BEAT_SWIMMERM_CONRAD, .SeenText, .BeatenText
 
-	text "UV rays are refle-"
-	line "cted by the waves."
+	text "UV-Strahlen werden"
+	line "von den Wellen re-"
+	cont "flektiert."
 
-	para "Always remember"
-	line "sun lotion."
+	para "Denk immer an"
+	line "Sonnencreme."
 	done
 
 .SeenText:
-	text "Lotion on, goggles"
-	line "down… I'm all"
+	text "Sonnencreme drauf,"
+	line "Brille runter… Ich"
 
-	para "fired up to hit"
-	line "the waves!"
+	para "bin Feuer und"
+	line "Flamme für die"
+	cont "Wellen!"
 	done
 
 .BeatenText:
-	text "Oof! The waves"
-	line "hit me this time."
+	text "Uff! Diesmal haben"
+	line "mich die Wellen"
+	cont "erwischt."
 	done
 
 GenericTrainerSwimmerfCaroline:
 	generictrainer SWIMMERF, CAROLINE, EVENT_BEAT_SWIMMERF_CAROLINE, .SeenText, .BeatenText
 
-	text "We're staying in"
-	line "Goldenrod, but"
+	text "Wir wohnen in"
+	line "Dukatia City,"
 
-	para "this Route makes"
-	line "for a lovely"
-	cont "excursion!"
+	para "aber diese Route"
+	line "ist ein schöner"
+	cont "Ausflug!"
 	done
 
 .SeenText:
-	text "My husband and I"
-	line "are here on a"
-	cont "vacation."
+	text "Mein Mann und ich"
+	line "machen hier"
+	cont "Urlaub."
 	done
 
 .BeatenText:
-	text "Oh! What a shame."
+	text "Oh! Wie schade."
 	done
 
 GenericTrainerSwimmerfNatalia:
 	generictrainer SWIMMERF, NATALIA, EVENT_BEAT_SWIMMERF_NATALIA, .SeenText, .BeatenText
 
-	text "I think I bought"
-	line "the wrong bikini."
+	text "Ich glaube, ich"
+	line "habe den falschen"
+	cont "Bikini gekauft."
 
-	para "This really isn't"
-	line "my color."
+	para "Das ist wirklich"
+	line "nicht meine Farbe."
 	done
 
 .SeenText:
-	text "I bought a new"
-	line "bikini."
+	text "Ich habe mir einen"
+	line "neuen Bikini"
+	cont "gekauft."
 
-	para "It's the latest"
-	line "fashion."
+	para "Das ist die neues-"
+	line "te Mode."
 	done
 
 .BeatenText:
-	text "Bah!"
+	text "Pah!"
 	done
 
 GenericTrainerFisherFrancis:
 	generictrainer FISHER, FRANCIS, EVENT_BEAT_FISHER_FRANCIS, .SeenText, .BeatenText
 
-	text "It doesn't matter"
-	line "if I win or lose."
+	text "Ob ich gewinne"
+	line "oder verliere, ist"
+	cont "egal."
 
-	para "I just want to"
-	line "have fun and keep"
-	cont "fishing."
+	para "Ich will nur Spaß"
+	line "haben und weiter"
+	cont "angeln."
 	done
 
 .SeenText:
-	text "I like fishing for"
-	line "#mon in exotic"
-	cont "places."
+	text "Ich angle gern"
+	line "#mon an exoti-"
+	cont "schen Orten."
 	done
 
 .BeatenText:
-	text "Oh! What a great"
-	line "hit!"
+	text "Oh! Was für ein"
+	line "Biss!"
 	done
 
 GenericTrainerBird_keeperTony:

@@ -112,9 +112,9 @@ Route27VeteranfScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "Good luck! Say"
-	line "hello to Lance"
-	cont "for me."
+	text "Viel Glück! Grüß"
+	line "Siegfried von"
+	cont "mir."
 	done
 
 .IntroText:
@@ -165,15 +165,17 @@ Route27VeteranfScript:
 	done
 
 .AfterText1:
-	text "Choice Specs will"
-	line "boost a #mon's"
-	cont "Special Attack,"
+	text "Die Wahlbrille"
+	line "erhöht den Spez.-"
+	cont "Angriff eines"
+	cont "#mon,"
 
-	para "but it can only"
-	line "use one move."
+	para "aber es kann nur"
+	line "eine Attacke"
+	cont "einsetzen."
 
-	para "Take a pair"
-	line "yourself."
+	para "Nimm dir auch"
+	line "eine."
 	done
 
 GenericTrainerPsychicGilbert:
@@ -308,21 +310,20 @@ GenericTrainerCooltrainermBlake:
 GenericTrainerAceDuoJakeandbri1:
 	generictrainer ACE_DUO, JAKEANDBRI1, EVENT_BEAT_ACE_DUO_JAKE_AND_BRI, AceDuoJakeandbri1SeenText, AceDuoJakeandbri1BeatenText
 
-	text "Jake: A good"
-	line "trainer can recog-"
-
-	para "nize other good"
-	line "trainers."
+	text "Jake: Ein guter"
+	line "Trainer erkennt"
+	cont "andere gute"
+	cont "Trainer."
 	done
 
 GenericTrainerAceDuoJakeandbri2:
 	generictrainer ACE_DUO, JAKEANDBRI2, EVENT_BEAT_ACE_DUO_JAKE_AND_BRI, AceDuoJakeandbri2SeenText, AceDuoJakeandbri2BeatenText
 
-	text "Bri: Good trainers"
-	line "also know how to"
+	text "Bri: Gute Trainer"
+	line "wissen auch, wie"
 
-	para "fight alongside"
-	line "each other."
+	para "man Seite an"
+	line "Seite kämpft."
 	done
 
 TrainerCooltrainerfReena:
@@ -462,24 +463,25 @@ CooltrainermBlakeBeatenText: ; text > text
 	done
 
 AceDuoJakeandbri1SeenText:
-	text "Jake: Hm? You're"
-	line "good, aren't you?"
+	text "Jake: Hm? Du"
+	line "bist gut, nicht"
+	cont "wahr?"
 	done
 
 AceDuoJakeandbri1BeatenText:
-	text "Jake: Just as I"
-	line "thought!"
+	text "Jake: Wie ich"
+	line "dachte!"
 	done
 
 AceDuoJakeandbri2SeenText:
-	text "Bri: The two of"
-	line "us together are"
-	cont "unstoppable!"
+	text "Bri: Zu zweit sind"
+	line "wir unaufhaltsam!"
 	done
 
 AceDuoJakeandbri2BeatenText:
-	text "Bri: Our teamwork"
-	line "wasn't enough…"
+	text "Bri: Unser Team-"
+	line "work hat nicht"
+	cont "gereicht…"
 	done
 
 CooltrainerfReena1SeenText:

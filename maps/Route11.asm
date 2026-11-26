@@ -75,18 +75,19 @@ YoungsterJasonBeatenText:
 GenericTrainerYoungsterAlfie:
 	generictrainer YOUNGSTER, ALFIE, EVENT_BEAT_YOUNGSTER_ALFIE, .SeenText, .BeatenText
 
-	text "Everything's more"
-	line "fun when it's a"
-	cont "competition."
+	text "Alles macht mehr"
+	line "Spaß, wenn es ein"
+	cont "Wettkampf ist."
 	done
 
 .SeenText:
-	text "Three, two, one,"
-	line "GO!"
+	text "Drei, zwei, eins,"
+	line "LOS!"
 	done
 
 .BeatenText:
-	text "Game, set, match."
+	text "Spiel, Satz und"
+	line "Sieg."
 	done
 
 GenericTrainerPsychicHerman:
@@ -131,62 +132,68 @@ PsychicFidelBeatenText:
 GenericTrainerPsychicUri:
 	generictrainer PSYCHIC_T, URI, EVENT_BEAT_PSYCHIC_URI, .SeenText, .BeatenText
 
-	text "Prof.Oak won't"
-	line "give me a #dex."
-	cont "I wonder why?"
+	text "Warum gibt mir"
+	line "Prof. Eich wohl"
+	cont "keinen #dex?"
 	done
 
 .SeenText:
-	text "It happened one"
-	line "morning--a boy"
-	cont "with ESP awoke in"
+	text "Als ein Junge mit"
+	line "übersinnlichen"
 
-	para "bed transformed"
-	line "into Kadabra!"
+	para "Kräften eines Mor-"
+	line "gens erwachte,"
+
+	para "fand er sich in"
+	line "seinem Bett zu"
+	cont "einem Kadabra"
+	cont "verwandelt!"
 	done
 
 .BeatenText:
-	text "Urban legend?"
-	line "What's that?"
+	text "Urbane Legende?"
+	line "Was ist das?"
 	done
 
 GenericTrainerEngineerBernie:
 	generictrainer ENGINEER, BERNIE, EVENT_BEAT_ENGINEER_BERNIE, .SeenText, .BeatenText
 
-	text "Spread the word"
-	line "to save energy!"
+	text "Sag allen, sie"
+	line "sollen Energie"
+	cont "sparen!"
 	done
 
 .SeenText:
-	text "Careful!"
-	line "I'm laying down"
-	cont "some cables!"
+	text "Vorsicht!"
+	line "Ich verlege hier"
+	cont "Kabel!"
 	done
 
 .BeatenText:
-	text "That was"
-	line "electric!"
+	text "Das war"
+	line "elektrisierend!"
 	done
 
 GenericTrainerEngineerCamden:
 	generictrainer ENGINEER, CAMDEN, EVENT_BEAT_ENGINEER_CAMDEN, .SeenText, .BeatenText
 
-	text "Building a bridge"
-	line "and building a"
-	cont "team of #mon"
+	text "Eine Brücke bauen"
+	line "und ein Team aus"
+	cont "#mon aufbauen:"
 
-	para "both require know-"
-	line "ledge and skill."
+	para "Beides erfordert"
+	line "Wissen und Können."
 	done
 
 .SeenText:
-	text "I learned engin-"
-	line "eering at Celadon"
-	cont "University!"
+	text "Ich habe an der"
+	line "Prismania-Uni"
+	cont "Ingenieurwesen"
+	cont "studiert!"
 	done
 
 .BeatenText:
-	text "Shut down!"
+	text "Abgeschaltet!"
 	done
 
 GenericTrainerGuitaristmRoger:

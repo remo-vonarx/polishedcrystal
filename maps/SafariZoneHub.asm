@@ -28,27 +28,28 @@ SafariZoneHub_MapScriptHeader:
 GenericTrainerBug_maniacKai:
 	generictrainer BUG_MANIAC, KAI, EVENT_BEAT_BUG_MANIAC_KAI, Bug_maniacKaiSeenText, Bug_maniacKaiBeatenText
 
-	text "Venonat is so"
-	line "similar to"
-	cont "Butterfree!"
+	text "Bluzuk ähnelt"
+	line "Smettbo so sehr!"
 
-	para "Their weight,"
-	line "their eyes,"
-	cont "their abilities…"
+	para "Ihr Gewicht, ihre"
+	line "Augen, ihre Fähig-"
+	cont "keiten…"
 
-	para "Evolution is"
-	line "weird sometimes."
+	para "Die Entwicklung"
+	line "ist manchmal"
+	cont "seltsam."
 	done
 
 Bug_maniacKaiSeenText:
-	text "My Venonat evolved"
-	line "into a Venomoth?!"
+	text "Mein Bluzuk hat"
+	line "sich zu Omot ent-"
+	cont "wickelt?!"
 	done
 
 Bug_maniacKaiBeatenText:
-	text "I thought it would"
-	line "for sure evolve"
-	cont "into Butterfree!"
+	text "Ich dachte, es"
+	line "entwickelt sich"
+	cont "sicher zu Smettbo!"
 	done
 
 SafariZoneHubAreaSignText:

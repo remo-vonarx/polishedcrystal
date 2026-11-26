@@ -91,34 +91,37 @@ GenericTrainerSchoolgirlFaith:
 GenericTrainerPokefanfBoone:
 	generictrainer POKEFANF, BOONE, EVENT_BEAT_POKEFANF_BOONE, PokefanfBooneSeenText, PokefanfBooneBeatenText
 
-	text "When you battle,"
-	line "you get to see"
-	cont "#mon you've"
-	cont "never seen before."
+	text "Beim Kämpfen"
+	line "siehst du #mon,"
+	cont "die du noch nie"
+	cont "gesehen hast."
 
-	para "It's so great!"
+	para "Das ist so toll!"
 	done
 
 GenericTrainerPokefanfEleanor:
 	generictrainer POKEFANF, ELEANOR, EVENT_BEAT_POKEFANF_ELEANOR, PokefanfEleanorSeenText, PokefanfEleanorBeatenText
 
-	text "My #mon aren't"
-	line "weak! Your #mon"
-	cont "are too strong!"
+	text "Meine #mon sind"
+	line "nicht schwach!"
+	cont "Deine #mon sind"
+	cont "zu stark!"
 	done
 
 GenericTrainerTwinsKayandtia1:
 	generictrainer TWINS, KAYANDTIA1, EVENT_BEAT_TWINS_KAY_AND_TIA, TwinsKayandtia1SeenText, TwinsKayandtia1BeatenText
 
-	text "Absolute truth--"
-	line "I'm Kay! Maybe…"
+	text "Absolut wahr:"
+	line "Ich bin Mo! Viel-"
+	cont "leicht…"
 	done
 
 GenericTrainerTwinsKayandtia2:
 	generictrainer TWINS, KAYANDTIA2, EVENT_BEAT_TWINS_KAY_AND_TIA, TwinsKayandtia2SeenText, TwinsKayandtia2BeatenText
 
-	text "Maybe truth--I'm"
-	line "Tia! Absolutely!"
+	text "Vielleicht wahr:"
+	line "Ich bin Flo!"
+	cont "Absolut!"
 	done
 
 TeacherColetteSeenText:
@@ -197,52 +200,55 @@ SchoolboyBillyBeatenText:
 	done
 
 PokefanfBooneSeenText:
-	text "Hey, your"
+	text "Hey, deine"
 	line "#mon…"
 
-	para "Show me. Show me."
-	line "Show me!"
+	para "Zeig sie mir. Zeig"
+	line "sie mir. Zeig sie"
+	cont "mir!"
 	done
 
 PokefanfBooneBeatenText:
-	text "Yay! That was"
-	line "great!"
+	text "Juhu! Das war"
+	line "toll!"
 	done
 
 PokefanfEleanorSeenText:
-	text "All right,"
-	line "#mon, time for"
-	cont "a battle!"
+	text "Also gut, #mon,"
+	line "Zeit für einen"
+	cont "Kampf!"
 	done
 
 PokefanfEleanorBeatenText:
-	text "Oh, well…"
+	text "Na ja…"
 	done
 
 TwinsKayandtia1SeenText:
-	text "We're the twins"
-	line "Kay and Tia!"
+	text "Wir sind die"
+	line "Zwillinge Mo und"
+	cont "Flo!"
 
-	para "Do you know which"
-	line "one I am?"
+	para "Weißt du, wer von"
+	line "uns ich bin?"
 	done
 
 TwinsKayandtia1BeatenText:
-	text "Tia and Kay both"
-	line "lost…"
+	text "Flo und Mo haben"
+	line "beide verloren…"
 	done
 
 TwinsKayandtia2SeenText:
-	text "We're the twins"
-	line "Kay and Tia!"
+	text "Wir sind die"
+	line "Zwillinge Mo und"
+	cont "Flo!"
 
-	para "Do you know which"
-	line "one I am?"
+	para "Weißt du, wer von"
+	line "uns ich bin?"
 	done
 
 TwinsKayandtia2BeatenText:
-	text "Tia and Kay both"
-	line "lost…"
+	text "Flo und Mo haben"
+	line "beide verloren…"
 	done
 
 Route15SignText:

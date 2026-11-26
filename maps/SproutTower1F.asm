@@ -182,9 +182,9 @@ KimonoGirlMakoScript:
 	done
 
 .AfterText:
-	text "Excellent fighting"
-	line "spirit!"
+	text "Hervorragender"
+	line "Kampfgeist!"
 
-	para "You will know what"
-	line "to do with this!"
+	para "Du weißt, was du"
+	line "damit tun musst!"
 	done

@@ -32,21 +32,22 @@ PokemonMansionB1F_MapScriptHeader:
 GenericTrainerScientistBraydon:
 	generictrainer SCIENTIST, BRAYDON, EVENT_BEAT_SCIENTIST_BRAYDON, ScientistBraydonSeenText, ScientistBraydonBeatenText
 
-	text "This place was"
-	line "once the site of"
+	text "Hier wurde einst"
+	line "ernsthafte"
 
-	para "serious #mon"
-	line "research."
+	para "#mon-Forschung"
+	line "betrieben."
 	done
 
 ScientistBraydonSeenText:
-	text "I miss the old"
-	line "Cinnabar Lab…"
+	text "Ich vermisse das"
+	line "alte Labor der"
+	cont "Zinnoberinsel…"
 	done
 
 ScientistBraydonBeatenText:
-	text "Whew!"
-	line "Overwhelming!"
+	text "Puh!"
+	line "Überwältigend!"
 	done
 
 PokemonMansionDiaryText:

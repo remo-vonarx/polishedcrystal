@@ -35,112 +35,116 @@ ViridianForest_MapScriptHeader:
 GenericTrainerBug_maniacDane:
 	generictrainer BUG_MANIAC, DANE, EVENT_BEAT_BUG_MANIAC_DANE, BugManiacDaneSeenText, BugManiacDaneBeatenText
 
-	text "Pretty impressive!"
+	text "Ziemlich beein-"
+	line "druckend!"
 
-	para "I'm sure you can"
-	line "go anywhere with"
-	cont "that skill!"
+	para "Mit diesem Können"
+	line "kommst du sicher"
+	cont "überall hin!"
 	done
 
 GenericTrainerBug_maniacDion:
 	generictrainer BUG_MANIAC, DION, EVENT_BEAT_BUG_MANIAC_DION, BugManiacDionSeenText, BugManiacDionBeatenText
 
-	text "Bug-type #mon"
-	line "make all kinds of"
-	cont "sounds."
+	text "Käfer-#mon"
+	line "machen alle mög-"
+	cont "lichen Geräusche."
 
-	para "For bug #mon"
-	line "fans, knowing how"
-	cont "to distinguish"
-	cont "them is key!"
+	para "Für Fans von Kä-"
+	line "fer-#mon ist es"
+	cont "wichtig, sie un-"
+	cont "terscheiden zu"
+	cont "können!"
 	done
 
 GenericTrainerBug_maniacStacey:
 	generictrainer BUG_MANIAC, STACEY, EVENT_BEAT_BUG_MANIAC_STACEY, BugManiacStaceySeenText, BugManiacStaceyBeatenText
 
-	text "Has anyone ever"
-	line "told you that from"
-	cont "behind you look"
-	cont "like a Venonat?"
+	text "Hat dir schon mal"
+	line "jemand gesagt,"
+	cont "dass du von hinten"
+	cont "wie ein Bluzuk"
+	cont "aussiehst?"
 	done
 
 GenericTrainerBug_maniacEllis:
 	generictrainer BUG_MANIAC, ELLIS, EVENT_BEAT_BUG_MANIAC_ELLIS, BugManiacEllisSeenText, BugManiacEllisBeatenText
 
-	text "If this is it,"
-	line "then I don't mind"
-	cont "losing!"
+	text "Wenn das so ist,"
+	line "macht mir das"
+	cont "Verlieren nichts"
+	cont "aus!"
 	done
 
 GenericTrainerBug_maniacAbner:
 	generictrainer BUG_MANIAC, ABNER, EVENT_BEAT_BUG_MANIAC_ABNER, BugManiacAbnerSeenText, BugManiacAbnerBeatenText
 
-	text "Doesn't matter what"
-	line "kind of #mon--"
+	text "Egal, was für"
+	line "#mon es sind:"
 
-	para "as long as you"
-	line "like them, they"
-	cont "all look cute."
+	para "Solange du sie"
+	line "magst, sehen alle"
+	cont "süß aus."
 	done
 
 BugManiacDaneSeenText:
-	text "Welcome to"
-	line "Viridian Forest."
-	cont "Enjoy my Bug-type"
-	cont "#mon."
+	text "Willkommen im"
+	line "Vertania-Wald."
+	cont "Genieß meine"
+	cont "Käfer-#mon."
 	done
 
 BugManiacDaneBeatenText:
-	text "That's wonderful…"
+	text "Wunderbar…"
 	done
 
 BugManiacDionSeenText:
-	text "Shh! Be quiet! The"
-	line "bug #mon will"
-	cont "run away!"
+	text "Pst! Sei leise!"
+	line "Die Käfer-#mon"
+	cont "laufen weg!"
 	done
 
 BugManiacDionBeatenText:
-	text "Phew…"
+	text "Puh…"
 	done
 
 BugManiacStaceySeenText:
-	text "Wow, that's a HUGE"
-	line "#mon!"
+	text "Wow, das ist ein"
+	line "RIESIGES #mon!"
 
 	para "…"
-	line "…What kind of"
-	cont "trainer?!"
+	line "…Was für ein"
+	cont "Trainer?!"
 	done
 
 BugManiacStaceyBeatenText:
-	text "I couldn't catch"
-	line "it!"
+	text "Ich konnte es"
+	line "nicht fangen!"
 	done
 
 BugManiacEllisSeenText:
-	text "There's nothing"
-	line "more efficient and"
-	cont "beautiful than a"
-	cont "Bug-type #mon."
+	text "Nichts ist effi-"
+	line "zienter und schö-"
+	cont "ner als ein"
+	cont "Käfer-#mon."
 	done
 
 BugManiacEllisBeatenText:
-	text "I lost"
-	line "beautifully!"
+	text "Ich habe mit Stil"
+	line "verloren!"
 	done
 
 BugManiacAbnerSeenText:
-	text "Many people prefer"
-	line "solid bug #mon"
-	cont "over squishy bug"
-	cont "#mon."
+	text "Viele Leute mögen"
+	line "harte Käfer-"
+	cont "#mon lieber als"
+	cont "weiche."
 	done
 
 BugManiacAbnerBeatenText:
-	text "Thanks for your"
-	line "hard work, my"
-	cont "lovely #mon…"
+	text "Danke für eure"
+	line "harte Arbeit, mei-"
+	cont "ne lieben #mon…"
 	done
 
 ViridianForestSignText1:

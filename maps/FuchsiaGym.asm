@@ -234,16 +234,17 @@ JanineText_DisappointYou:
 	done
 
 JanineText_ToughOne:
-	text "Janine: You're a"
-	line "tough one. You"
-	cont "definitely won…"
+	text "Janina: Du bist"
+	line "recht stark. Ein"
+	cont "klarer Sieg für"
+	cont "dich…"
 
+	para "Nimm jetzt den"
 if DEF(FAITHFUL)
-	para "Here's the Soul"
+	line "Seelenorden."
 else
-	para "Here's the Marsh"
+	line "Sumpforden."
 endc
-	line "Badge. Take it."
 	done
 
 JanineText_ToxicSpeech:

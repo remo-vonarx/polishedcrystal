@@ -21,19 +21,20 @@ SafariZoneHubRestHouse_MapScriptHeader:
 GenericTrainerBurglarPierce:
 	generictrainer BURGLAR, PIERCE, EVENT_BEAT_BURGLAR_PIERCE, .SeenText, .BeatenText
 
-	text "There's nothing"
-	line "worth stealing"
-	cont "here anyway."
+	text "Hier gibt es eh"
+	line "nichts, was sich"
+	cont "zu stehlen lohnt."
 	done
 
 .SeenText:
 	text "Hey!"
-	line "Get outta here!"
-	cont "This is my turf!"
+	line "Verschwinde!"
+	cont "Das ist mein"
+	cont "Revier!"
 	done
 
 .BeatenText:
-	text "I'm sorry!"
+	text "Tut mir leid!"
 	done
 
 PokemonJournalKogaScript:

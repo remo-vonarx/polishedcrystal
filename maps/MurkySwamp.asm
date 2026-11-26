@@ -183,11 +183,11 @@ MurkySwampNurseBeatriceScript:
 	done
 
 .AfterText:
-	text "Making #mon"
-	line "feel better--"
+	text "Damit es #mon"
+	line "besser geht…"
 
-	para "that's why I"
-	line "came here!"
+	para "darum bin ich"
+	line "hergekommen!"
 	done
 
 MurkySwampBloodmoonUrsaluna:
@@ -220,36 +220,40 @@ BloodmoonUrsalunaText:
 GenericTrainerBug_catcherOscar:
 	generictrainer BUG_CATCHER, OSCAR, EVENT_BEAT_BUG_CATCHER_OSCAR, .SeenText, .BeatenText
 
-	text "I came here to"
-	line "find bugs!"
+	text "Ich kam her, um"
+	line "Käfer zu finden!"
 
-	para "Nobody warned me"
-	line "about ghosts!"
+	para "Niemand hat mich"
+	line "vor Geistern"
+	cont "gewarnt!"
 	done
 
 .SeenText:
-	text "G-g-g-ghost!"
+	text "G-g-g-Geist!"
 	done
 
 .BeatenText:
-	text "Get me outta here!"
+	text "Ich muss hier"
+	line "weg!"
 	done
 
 GenericTrainerHex_maniacMatilda:
 	generictrainer HEX_MANIAC, MATILDA, EVENT_BEAT_HEX_MANIAC_MATILDA, .SeenText, .BeatenText
 
-	text "So off into the"
-	line "trees I stroll,"
+	text "So geh ich in den"
+	line "Wald hinein,"
 
-	para "to lose my mind"
-	line "and find my soul."
+	para "verlier den Ver-"
+	line "stand und find"
+	cont "mein Sein."
 	done
 
 .SeenText:
-	text "Within the dark-"
-	line "ness, vast and"
-	cont "deep, I offer you"
-	cont "eternal sleep."
+	text "In Finsternis, so"
+	line "tief und weit,"
+	cont "schenk ich dir"
+	cont "Schlaf für alle"
+	cont "Zeit."
 	done
 
 .BeatenText:
@@ -259,70 +263,79 @@ GenericTrainerHex_maniacMatilda:
 GenericTrainerFirebreatherOleg:
 	generictrainer FIREBREATHER, OLEG, EVENT_BEAT_FIREBREATHER_OLEG, .SeenText, .BeatenText
 
-	text "It's cold and dark"
-	line "without a fire…"
+	text "Ohne Feuer ist es"
+	line "kalt und dunkel…"
 	done
 
 .SeenText:
-	text "I want to light a"
-	line "fire… but would it"
+	text "Ich will ein Feuer"
+	line "machen… Aber würde"
 
-	para "ignite the swamp"
-	line "gas and blow up?"
+	para "das Sumpfgas sich"
+	line "entzünden und"
+	cont "explodieren?"
 
-	para "It's too risky!"
+	para "Das ist zu"
+	line "riskant!"
 	done
 
 .BeatenText:
-	text "I risked and lost!"
+	text "Ich habe es"
+	line "riskiert und"
+	cont "verloren!"
 	done
 
 GenericTrainerLassAbigail:
 	generictrainer LASS, ABIGAIL, EVENT_BEAT_LASS_ABIGAIL, .SeenText, .BeatenText
 
-	text "The rumor is that"
-	line "a strange red orb"
-	cont "can be seen,"
+	text "Man munkelt, dass"
+	line "man eine seltsame"
+	cont "rote Kugel sieht,"
 
-	para "glowing like a"
-	line "blood moon."
+	para "die wie ein Blut-"
+	line "mond leuchtet."
 
-	para "That sounds scary."
+	para "Das klingt"
+	line "unheimlich."
 	done
 
 .SeenText:
-	text "People are scared"
-	line "to go deep into"
-	cont "the swamp."
+	text "Die Leute haben"
+	line "Angst, tief in den"
+	cont "Sumpf zu gehen."
 	done
 
 .BeatenText:
-	text "Eek!"
+	text "Iiek!"
 	done
 
 GenericTrainerPokemaniacEnzo:
 	generictrainer POKEMANIAC, ENZO, EVENT_BEAT_POKEMANIAC_ENZO, .SeenText, .BeatenText
 
-	text "I don't think"
-	line "Gastly can make"
+	text "Ich glaube nicht,"
+	line "dass Nebulak so"
 
-	para "a red light like"
-	line "what I saw."
+	para "ein rotes Licht"
+	line "machen kann, wie"
+	cont "ich es sah."
 
-	para "What could it be?"
+	para "Was könnte das"
+	line "sein?"
 	done
 
 .SeenText
-	text "I saw a weird red"
-	line "light in the trees"
+	text "Ich sah ein selt-"
+	line "sames rotes Licht"
 
-	para "while looking for"
-	line "rare #mon!"
+	para "zwischen den Bäu-"
+	line "men, als ich nach"
+	cont "seltenen #mon"
+	cont "suchte!"
 	done
 
 .BeatenText
-	text "You have nothing"
-	line "to be afraid of."
+	text "Du musst keine"
+	line "Angst haben."
 	done
 
 MurkySwampPokemaniacText:

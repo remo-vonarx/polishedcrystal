@@ -173,9 +173,9 @@ Route39CowgirlAnnieScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "We make cheese"
-	line "and yogurt out"
-	cont "of Miltank milk."
+	text "Aus Miltank-Milch"
+	line "machen wir Käse"
+	cont "und Joghurt."
 	done
 
 .IntroText:
@@ -235,14 +235,13 @@ Route39CowgirlAnnieScript:
 	done
 
 .AfterText1:
-	text "Whew! That was an"
-	line "intense break!"
+	text "Puh! Das war eine"
+	line "heftige Pause!"
 
-	para "Thanks for the"
-	line "fun, partner."
+	para "Danke für den"
+	line "Spaß, Partner."
 
-	para "Take this with"
-	line "ya!"
+	para "Nimm das mit!"
 	done
 
 GenericTrainerSailorEugene:

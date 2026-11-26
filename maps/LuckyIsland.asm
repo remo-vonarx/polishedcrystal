@@ -48,9 +48,9 @@ Script_ChangeLuckyIslandMap:
 GenericTrainerFisherHall:
 	generictrainer FISHER, HALL, EVENT_BEAT_FISHER_HALL, .SeenText, .BeatenText
 
-	text "You just don't"
-	line "appreciate my"
-	cont "sense of humor."
+	text "Du weißt meinen"
+	line "Humor einfach"
+	cont "nicht zu schätzen."
 	done
 
 .SeenText:
@@ -58,129 +58,135 @@ GenericTrainerFisherHall:
 	done
 
 .BeatenText:
-	text "Swim swim hungry,"
-	line "swim swim hungry!"
+	text "Schwimm, schwimm,"
+	line "Hunger! Schwimm,"
+	cont "schwimm, Hunger!"
 	done
 
 GenericTrainerBakerMargaret:
 	generictrainer BAKER, MARGARET, EVENT_BEAT_BAKER_MARGARET, .SeenText, .BeatenText
 
-	text "I'm eggs-hausted."
+	text "Ich bin völlig"
+	line "eierschöpft."
 	done
 
 .SeenText:
-	text "If an egg tumbles"
-	line "downhill, does"
+	text "Wenn ein Ei den"
+	line "Berg hinunter-"
 
-	para "that make it an"
-	line "eggroll?"
+	para "purzelt, ist es"
+	line "dann ein Rührei?"
 	done
 
 .BeatenText:
-	text "Guess I'm the"
-	line "eggroll now."
+	text "Jetzt bin ich wohl"
+	line "das Rührei."
 	done
 
 GenericTrainerBakerOlga:
 	generictrainer BAKER, OLGA, EVENT_BEAT_BAKER_OLGA, .SeenText, .BeatenText
 
-	text "The first step to"
-	line "healthy living is"
+	text "Der erste Schritt"
+	line "zu einem gesunden"
 
-	para "to eat a good"
-	line "breakfast."
+	para "Leben ist ein"
+	line "gutes Frühstück."
 	done
 
 .SeenText:
-	text "Hey, you!"
-	line "Do you eat a good"
-	cont "breakfast every"
-	cont "day?"
+	text "Hey, du!"
+	line "Frühstückst du"
+	cont "jeden Tag gut?"
 	done
 
 .BeatenText:
-	text "Wow! Looks like"
-	line "you do."
+	text "Wow! Sieht ganz"
+	line "danach aus."
 	done
 
 GenericTrainerArtistReina:
 	generictrainer ARTIST, REINA, EVENT_BEAT_ARTIST_REINA, .SeenText, .BeatenText
 
-	text "I'll add a happy"
-	line "little tree to"
-	cont "cover that up."
+	text "Ich male einen"
+	line "glücklichen"
+	cont "kleinen Baum"
+	cont "darüber."
 	done
 
 .SeenText:
-	text "This sunny meadow"
-	line "will make a lovely"
-	cont "painting!"
+	text "Diese sonnige"
+	line "Wiese gibt ein"
+	cont "schönes Gemälde!"
 	done
 
 .BeatenText:
-	text "My brush slipped!"
+	text "Mein Pinsel ist"
+	line "abgerutscht!"
 	done
 
 GenericTrainerArtistAlina:
 	generictrainer ARTIST, ALINA, EVENT_BEAT_ARTIST_ALINA, .SeenText, .BeatenText
 
-	text "I wonder what"
-	line "caused this island"
-	cont "to appear?"
+	text "Warum diese Insel"
+	line "wohl auftaucht?"
 	done
 
 .SeenText:
-	text "This island hardly"
-	line "ever appears."
+	text "Diese Insel taucht"
+	line "kaum je auf."
 
-	para "I was so lucky to"
-	line "find it!"
+	para "Ich hatte so ein"
+	line "Glück, sie zu"
+	cont "finden!"
 	done
 
 .BeatenText:
-	text "My luck ran out…"
+	text "Mein Glück ist"
+	line "aufgebraucht…"
 	done
 
 GenericTrainerSightseersLiandsu1:
 	generictrainer SIGHTSEERS, LIANDSU1, EVENT_BEAT_SIGHTSEERS_LI_AND_SU, .SeenText, .BeatenText
 
-	text "Li: Su and I keep"
-	line "arguing about"
-	cont "this."
+	text "Li: Su und ich"
+	line "streiten ständig"
+	cont "darüber."
 	done
 
 .SeenText:
-	text "Li: What came"
-	line "first?"
+	text "Li: Was war"
+	line "zuerst da?"
 
-	para "The #mon or"
-	line "the Egg?"
+	para "Das #mon oder"
+	line "das Ei?"
 	done
 
 .BeatenText:
-	text "Li: I say it's the"
+	text "Li: Ich sage, das"
 	line "#mon!"
 	done
 
 GenericTrainerSightseersLiandsu2:
 	generictrainer SIGHTSEERS, LIANDSU2, EVENT_BEAT_SIGHTSEERS_LI_AND_SU, .SeenText, .BeatenText
 
-	text "Su: Are there any"
-	line "#mon that don't"
-	cont "come from Eggs?"
+	text "Su: Gibt es"
+	line "#mon, die nicht"
+	cont "aus Eiern"
+	cont "schlüpfen?"
 	done
 
 .SeenText:
-	text "Su: What came"
-	line "first?"
+	text "Su: Was war"
+	line "zuerst da?"
 
-	para "The #mon or"
-	line "the Egg?"
+	para "Das #mon oder"
+	line "das Ei?"
 	done
 
 .BeatenText:
-	text "Su: I think the"
-	line "Egg came first!"
+	text "Su: Ich glaube,"
+	line "das Ei war zuerst"
+	cont "da!"
 	done
 
 LuckyIslandLuckyEgg:

@@ -107,13 +107,15 @@ GenericTrainerSwimmermHarold:
 GenericTrainerCosplayerBrooke:
 	generictrainer COSPLAYER, BROOKE, EVENT_BEAT_COSPLAYER_BROOKE, CosplayerBrookeSeenText, CosplayerBrookeBeatenText
 
-	text "I made this outfit"
-	line "for a fancy dress"
-	cont "party, but I love"
+	text "Ich habe dieses"
+	line "Outfit für eine"
+	cont "Kostümparty"
+	cont "gemacht,"
 
-	para "it so much that I"
-	line "wear it elsewhere"
-	cont "too."
+	para "aber ich liebe es"
+	line "so sehr, dass ich"
+	cont "es auch sonst"
+	cont "trage."
 	done
 
 Route19Fisher1Script:
@@ -187,14 +189,14 @@ SwimmermHaroldBeatenText: ; text > text
 	done
 
 CosplayerBrookeSeenText:
-	text "Dressing up is"
-	line "such fun!"
+	text "Verkleiden macht"
+	line "so viel Spaß!"
 	done
 
 CosplayerBrookeBeatenText:
-	text "You'd better not"
-	line "have damaged my"
-	cont "costume!"
+	text "Hoffentlich hast"
+	line "du mein Kostüm"
+	cont "nicht beschädigt!"
 	done
 
 Route19Fisher1Text:

@@ -26,20 +26,20 @@ Route4_MapScriptHeader:
 GenericTrainerYoungsterOliver:
 	generictrainer YOUNGSTER, OLIVER, EVENT_BEAT_YOUNGSTER_OLIVER, YoungsterOliverSeenText, YoungsterOliverBeatenText
 
-	text "People say that"
-	line "I ask too many"
-	cont "questions, but"
+	text "Die Leute sagen,"
+	line "ich stelle zu"
+	cont "viele Fragen, aber"
 
-	para "that's what kids"
-	line "do, right?"
+	para "das machen Kinder"
+	line "doch, oder?"
 	done
 
 GenericTrainerLassJennifer:
 	generictrainer LASS, JENNIFER, EVENT_BEAT_LASS_JENNIFER, LassJenniferSeenText, LassJenniferBeatenText
 
-	text "#mon are so"
-	line "much fun."
-	cont "Don't you agree?"
+	text "#mon machen so"
+	line "viel Spaß."
+	cont "Findest du nicht?"
 	done
 
 GenericTrainerBird_keeperHank:
@@ -156,26 +156,26 @@ Route4TutorAquaTailScript:
 	done
 
 YoungsterOliverSeenText:
-	text "Hi! What's your"
-	line "name? Where are"
-	cont "you going?"
+	text "Hi! Wie heißt du?"
+	line "Wohin gehst du?"
 	done
 
 YoungsterOliverBeatenText:
-	text "I was just"
-	line "asking…"
+	text "Ich hab doch nur"
+	line "gefragt…"
 	done
 
 LassJenniferSeenText:
-	text "I battle every"
-	line "chance I get,"
+	text "Ich kämpfe bei"
+	line "jeder Gelegenheit,"
 
-	para "just to spend time"
-	line "with my #mon."
+	para "nur um Zeit mit"
+	line "meinen #mon zu"
+	cont "verbringen."
 	done
 
 LassJenniferBeatenText:
-	text "Wheeee!"
+	text "Huiii!"
 	done
 
 Bird_keeperHankSeenText:

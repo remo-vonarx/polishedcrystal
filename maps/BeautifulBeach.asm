@@ -40,89 +40,92 @@ BeautifulBeachVillaSignText:
 GenericTrainerAromaLadyBryony:
 	generictrainer AROMA_LADY, BRYONY, EVENT_BEAT_AROMA_LADY_BRYONY, .SeenText, .BeatenText
 
-	text "I am always in-"
-	line "vigorated by the"
-	cont "scents here."
+	text "Die Düfte hier"
+	line "beleben mich"
+	cont "immer wieder."
 	done
 
 .SeenText:
-	text "Tropical flowers,"
-	line "a sea breeze…"
+	text "Tropische Blumen,"
+	line "eine Meeresbrise…"
 
-	para "Shamouti Island"
-	line "is full of del-"
-	cont "icious scents!"
+	para "Shamouti ist"
+	line "voller köstlicher"
+	cont "Düfte!"
 	done
 
 .BeatenText:
-	text "Did the island's"
-	line "scent inspire you"
-	cont "to win?"
+	text "Hat dich der Duft"
+	line "der Insel zum Sieg"
+	cont "beflügelt?"
 	done
 
 GenericTrainerSightseermJaska:
 	generictrainer SIGHTSEERM, JASKA, EVENT_BEAT_SIGHTSEERM_JASKA, .SeenText, .BeatenText
 
-	text "I know it's silly,"
-	line "but I feel safer"
+	text "Ich weiß, es ist"
+	line "albern, aber mit"
 
-	para "traveling with a"
-	line "good-luck charm."
+	para "einem Glücks-"
+	line "bringer fühle ich"
+	cont "mich auf Reisen"
+	cont "sicherer."
 	done
 
 .SeenText:
-	text "My lucky socks"
-	line "keep me safe dur-"
-	cont "ing my travels."
+	text "Meine Glücks-"
+	line "socken beschützen"
+	cont "mich auf Reisen."
 	done
 
 .BeatenText:
-	text "They don't help"
-	line "me win battles…"
+	text "Kämpfe gewinnen"
+	line "helfen sie mir"
+	cont "aber nicht…"
 	done
 
 GenericTrainerTamerVince:
 	generictrainer TAMER, VINCE, EVENT_BEAT_TAMER_VINCE, .SeenText, .BeatenText
 
-	text "My #mon are"
-	line "expertly tamed,"
+	text "Meine #mon sind"
+	line "bestens gezähmt,"
 
-	para "but I remain as"
-	line "wild as ever!"
+	para "aber ich bin so"
+	line "wild wie eh und"
+	cont "je!"
 	done
 
 .SeenText:
-	text "My roaring spirit"
-	line "shall never be"
-	cont "tamed!"
+	text "Mein brüllender"
+	line "Geist lässt sich"
+	cont "niemals zähmen!"
 	done
 
 .BeatenText:
-	text "Nyuh?! ROAR!"
+	text "Nyuh?! GROAAAR!"
 	done
 
 GenericTrainerSightseerfRosie:
 	generictrainer SIGHTSEERF, ROSIE, EVENT_BEAT_SIGHTSEERF_ROSIE, .SeenText, .BeatenText
 
-	text "Shamouti Island"
-	line "has so much"
-	cont "history!"
+	text "Shamouti hat so"
+	line "viel Geschichte!"
 
-	para "I can't wait to"
-	line "photograph it."
+	para "Ich kann es kaum"
+	line "erwarten, sie zu"
+	cont "fotografieren."
 	done
 
 .SeenText:
-	text "The shrine, the"
-	line "three temples,"
-	cont "the old ruins…"
-	cont "Where to first?"
+	text "Der Schrein, die"
+	line "drei Tempel, die"
+	cont "alten Ruinen…"
+	cont "Wohin zuerst?"
 	done
 
 .BeatenText:
-	text "I guess the #-"
-	line "mon Center is"
-	cont "first."
+	text "Zuerst wohl ins"
+	line "#mon-Center."
 	done
 
 TrainerSwimmerfRachel:
@@ -132,45 +135,48 @@ TrainerSwimmerfRachel:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "I could spend all"
-	line "day in this water."
+	text "Ich könnte den"
+	line "ganzen Tag in"
+	cont "diesem Wasser"
+	cont "verbringen."
 	done
 
 .SeenText:
-	text "White sand and"
-	line "blue water…"
+	text "Weißer Sand und"
+	line "blaues Wasser…"
 
-	para "Beautiful Beach"
-	line "lives up to its"
-	cont "nickname!"
+	para "Die Malerische"
+	line "Küste macht ihrem"
+	cont "Namen alle Ehre!"
 	done
 
 .BeatenText:
-	text "You fight"
-	line "beautifully!"
+	text "Du kämpfst"
+	line "wunderschön!"
 	done
 
 GenericTrainerArtistMarlene:
 	generictrainer ARTIST, MARLENE, EVENT_BEAT_ARTIST_MARLENE, .SeenText, .BeatenText
 
-	text "The three primary"
-	line "colors of paint"
+	text "Die drei Grund-"
+	line "farben beim Malen"
 
-	para "are red, blue,"
-	line "and yellow."
+	para "sind Rot, Blau"
+	line "und Gelb."
 
-	para "But for light"
-	line "they're red, blue,"
-	cont "and green."
+	para "Beim Licht sind es"
+	line "aber Rot, Blau"
+	cont "und Grün."
 	done
 
 .SeenText:
-	text "My Smeargle trio"
-	line "can paint any"
-	cont "scene!"
+	text "Mein Farbeagle-"
+	line "Trio kann jede"
+	cont "Szene malen!"
 	done
 
 .BeatenText:
-	text "They couldn't win"
-	line "a battle…"
+	text "Einen Kampf"
+	line "gewinnen konnten"
+	cont "sie nicht…"
 	done

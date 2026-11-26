@@ -28,53 +28,55 @@ SeafoamIslandsB2F_MapScriptHeader:
 GenericTrainerSkierCady:
 	generictrainer SKIER, CADY, EVENT_BEAT_SKIER_CADY, SkierCadySeenText, SkierCadyBeatenText
 
-	text "That was a hot"
-	line "battle!"
+	text "Das war ein"
+	line "heißer Kampf!"
 	done
 
 GenericTrainerBoarderShaun:
 	generictrainer BOARDER, SHAUN, EVENT_BEAT_BOARDER_SHAUN, BoarderShaunSeenText, BoarderShaunBeatenText
 
-	text "All right, please"
-	line "pass through!"
+	text "Na gut, geh bitte"
+	line "durch!"
 	done
 
 GenericTrainerBoarderBryce:
 	generictrainer BOARDER, BRYCE, EVENT_BEAT_BOARDER_BRYCE, BoarderBryceSeenText, BoarderBryceBeatenText
 
-	text "Trainers are"
-	line "everywhere."
+	text "Trainer gibt es"
+	line "überall."
 	done
 
 SkierCadySeenText:
-	text "To beat the cold,"
-	line "try warm clothes"
-	cont "and a hot drink!"
+	text "Gegen die Kälte"
+	line "helfen warme"
+	cont "Kleidung und ein"
+	cont "heißes Getränk!"
 	done
 
 SkierCadyBeatenText:
-	text "Argh, all the way"
-	line "out here!"
+	text "Argh, und das so"
+	line "weit hier draußen!"
 	done
 
 BoarderShaunSeenText:
-	text "Hey, hey, you're"
-	line "in my way! Right!"
+	text "Hey, hey, du"
+	line "stehst mir im Weg!"
+	cont "Genau!"
 	done
 
 BoarderShaunBeatenText:
-	text "I got kicked"
-	line "around…"
+	text "Ich wurde herum-"
+	line "geschubst…"
 	done
 
 BoarderBryceSeenText:
-	text "What did you"
-	line "come all the way"
-	cont "out here for,"
-	cont "I wonder."
+	text "Warum bist du wohl"
+	line "den weiten Weg"
+	cont "hier rausgekommen?"
 	done
 
 BoarderBryceBeatenText:
-	text "I lost all the"
-	line "way out here…"
+	text "Den weiten Weg"
+	line "gekommen, nur um"
+	cont "zu verlieren…"
 	done

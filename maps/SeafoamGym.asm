@@ -26,25 +26,25 @@ SeafoamGym_MapScriptHeader:
 GenericTrainerScientistLowell:
 	generictrainer SCIENTIST, LOWELL, EVENT_BEAT_SCIENTIST_LOWELL, ScientistLowellSeenText, ScientistLowellBeatenText
 
-	text "We may be in a"
-	line "cave, but we"
-	cont "always do the"
-	cont "laundry."
+	text "Wir sind zwar in"
+	line "einer Höhle, aber"
+	cont "wir waschen immer"
+	cont "Wäsche."
 	done
 
 GenericTrainerScientistDennett:
 	generictrainer SCIENTIST, DENNETT, EVENT_BEAT_SCIENTIST_DENNETT, ScientistDennettSeenText, ScientistDennettBeatenText
 
-	text "Together with"
-	line "Blaine, we will"
-	cont "rebuild our Gym!"
+	text "Zusammen mit Pyro"
+	line "bauen wir unsere"
+	cont "Arena wieder auf!"
 	done
 
 GenericTrainerSupernerdCary:
 	generictrainer SUPER_NERD, CARY, EVENT_BEAT_SUPER_NERD_CARY, SupernerdCarySeenText, SupernerdCaryBeatenText
 
-	text "Bitterness leads"
-	line "to improvement."
+	text "Bitterkeit führt"
+	line "zu Verbesserung."
 	done
 
 TrainerScientistLinden:
@@ -54,23 +54,24 @@ TrainerScientistLinden:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "Not all scientists"
-	line "help the bad guys."
+	text "Nicht alle For-"
+	line "scher helfen den"
+	cont "Bösen."
 	done
 
 GenericTrainerSupernerdWaldo:
 	generictrainer SUPER_NERD, WALDO, EVENT_BEAT_SUPER_NERD_WALDO, SupernerdWaldoSeenText, SupernerdWaldoBeatenText
 
-	text "Who in the world"
-	line "are you?"
+	text "Wer in aller Welt"
+	line "bist du?"
 	done
 
 GenericTrainerSupernerdMerle:
 	generictrainer SUPER_NERD, MERLE, EVENT_BEAT_SUPER_NERD_MERLE, SupernerdMerleSeenText, SupernerdMerleBeatenText
 
-	text "I failed to"
-	line "sense how strong"
-	cont "you are."
+	text "Ich habe nicht"
+	line "gespürt, wie stark"
+	cont "du bist."
 	done
 
 SeafoamGymBlaineScript:
@@ -152,73 +153,80 @@ SeafoamGymGuyScript:
 	done
 
 ScientistLowellSeenText:
-	text "This lab coat"
-	line "makes me feel"
-	cont "smarter for some"
-	cont "reason."
+	text "In diesem Labor-"
+	line "kittel fühle ich"
+	cont "mich irgendwie"
+	cont "klüger."
 	done
 
 ScientistLowellBeatenText:
-	text "A white lab coat"
-	line "is a researcher's"
-	cont "life."
+	text "Ein weißer Labor-"
+	line "kittel ist das"
+	cont "Leben eines"
+	cont "Forschers."
 	done
 
 ScientistDennettSeenText:
-	text "Blaine may have"
-	line "lost his Gym, but"
-	cont "he never gives up!"
+	text "Pyro hat zwar"
+	line "seine Arena ver-"
+	cont "loren, aber er"
+	cont "gibt niemals auf!"
 	done
 
 ScientistDennettBeatenText:
-	text "Blaine's persever-"
-	line "ance motivates me!"
+	text "Pyros Ausdauer"
+	line "motiviert mich!"
 	done
 
 SupernerdCarySeenText:
-	text "Wow, a Gym in a"
-	line "cave like this?"
+	text "Wow, eine Arena"
+	line "in so einer Höhle?"
 
-	para "I'd love to"
-	line "explore it."
+	para "Die würde ich gern"
+	line "erkunden."
 	done
 
 SupernerdCaryBeatenText:
-	text "A bitter"
-	line "defeat…"
+	text "Eine bittere"
+	line "Niederlage…"
 	done
 
 ScientistLindenSeenText:
-	text "We lost the Gym on"
-	line "Cinnabar Island,"
-	cont "but we came here."
+	text "Wir haben die"
+	line "Arena auf der"
+	cont "Zinnoberinsel"
+	cont "verloren, aber wir"
+	cont "kamen hierher."
 	done
 
 ScientistLindenBeatenText:
-	text "We accept defeat"
-	line "gracefully…"
+	text "Wir nehmen die"
+	line "Niederlage mit"
+	cont "Würde hin…"
 	done
 
 SupernerdWaldoSeenText:
-	text "I am collecting"
-	line "battle records."
+	text "Ich sammle"
+	line "Kampfdaten."
 
-	para "Can you help me?"
+	para "Kannst du mir"
+	line "helfen?"
 	done
 
 SupernerdWaldoBeatenText:
-	text "I didn't expect"
-	line "you to be so good!"
+	text "Ich hätte nicht"
+	line "gedacht, dass du"
+	cont "so gut bist!"
 	done
 
 SupernerdMerleSeenText:
 	text "Ooh!"
-	line "You look easily"
-	cont "defeated!"
+	line "Du siehst leicht"
+	cont "zu besiegen aus!"
 	done
 
 SupernerdMerleBeatenText:
-	text "Pardon me!"
+	text "Verzeihung!"
 	done
 
 BlaineIntroText:
@@ -254,16 +262,17 @@ BlaineIntroText:
 	done
 
 BlaineWinLossText:
-	text "Blaine: Awesome."
-	line "I've burned out…"
+	text "Pyro: Gut gemacht."
+	line "Ich bin"
+	cont "ausgebrannt…"
 
-	para "You've earned the"
-	line "Volcano Badge!"
+	para "Hier nimm den"
+	line "Vulkanorden!"
 	done
 
 BlaineAfterBattleText:
-	text "Here, I'll give you"
-	line "this, too."
+	text "Hier, das gebe ich"
+	line "dir auch noch."
 	done
 
 BlaineFightDoneText:

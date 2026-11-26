@@ -97,21 +97,23 @@ Route19BeachHouseVictorScript:
 	done
 
 .AfterText:
-	text "I hear some Pika-"
-	line "chu in Johto"
+	text "Ich habe gehört,"
+	line "dass einige Pika-"
+	cont "chu in Johto"
 
-	para "taught themselves"
-	line "to Surf."
+	para "sich das Surfen"
+	line "selbst beigebracht"
+	cont "haben."
 
-	para "Maybe that's where"
-	line "mine came from."
+	para "Vielleicht kommt"
+	line "meins von dort."
 
-	para "I found Puka wash-"
-	line "ed ashore years"
-	cont "ago, and we've been"
+	para "Ich fand Puka vor"
+	line "Jahren angespült"
+	cont "am Strand, und"
 
-	para "partners ever"
-	line "since then."
+	para "seitdem sind wir"
+	line "Partner."
 	done
 
 

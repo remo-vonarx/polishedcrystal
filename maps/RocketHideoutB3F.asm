@@ -21,43 +21,47 @@ RocketHideoutB3F_MapScriptHeader:
 RocketHideoutB3FCosplayerLyric:
 	generictrainer COSPLAYER, LYRIC, EVENT_BEAT_COSPLAYER_LYRIC, .SeenText, .BeatenText
 
-	text "Leader Spark's"
-	line "energy is high!"
+	text "Teamleiter Spark"
+	line "steckt voller"
+	cont "Energie!"
 
-	para "Hope you're ready"
-	line "for a jolt!"
+	para "Hoffentlich bist"
+	line "du bereit für"
+	cont "einen Stromstoß!"
 	done
 
 .SeenText:
-	text "Instinct doesn't"
-	line "need calculations."
+	text "Intuition braucht"
+	line "keine Berechnung."
 
-	para "We just strike"
-	line "fast and hard."
+	para "Wir schlagen nur"
+	line "schnell und hart"
+	cont "zu."
 	done
 
 .BeatenText:
-	text "Can't keep up!"
+	text "Ich komm nicht"
+	line "mit!"
 	done
 
 RocketHideoutB3FCoolDudeDaric:
 	generictrainer COOLTRAINERM, DARIC, EVENT_BEAT_COOL_DUDE_DARIC, .SeenText, .BeatenText
 
-	text "Leader Blanche ex-"
-	line "pects no less than"
-	cont "maximum effort!"
+	text "Teamleiter"
+	line "Blanche erwartet"
+	cont "nichts weniger als"
+	cont "vollen Einsatz!"
 	done
 
 .SeenText:
-	text "Emotion clouds"
-	line "judgement."
+	text "Gefühle trüben"
+	line "das Urteil."
 
-	para "Let's see if your"
-	line "focus is good."
-
+	para "Mal sehen, ob du"
+	line "konzentriert bist."
 	done
 
 .BeatenText:
-	text "My judgement was"
-	line "flawed…"
+	text "Mein Urteil war"
+	line "fehlerhaft…"
 	done

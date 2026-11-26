@@ -134,65 +134,73 @@ HikerLeonardBeatenText:
 GenericTrainerFirebreatherJay:
 	generictrainer FIREBREATHER, JAY, EVENT_BEAT_FIREBREATHER_JAY, .SeenText, .BeatenText
 
-	text "One time my hat"
-	line "caught on fire."
+	text "Einmal hat mein"
+	line "Hut Feuer"
+	cont "gefangen."
 
-	para "It looked kind of"
-	line "like a Magmar… but"
-	cont "it hurt!"
+	para "Er sah ein biss-"
+	line "chen aus wie ein"
+	cont "Magmar… aber es"
+	cont "tat weh!"
 	done
 
 .SeenText:
-	text "I learned how to"
-	line "breathe fire by"
+	text "Feuerspucken habe"
+	line "ich gelernt, indem"
 
-	para "watching my #-"
-	line "mon!"
+	para "ich meinen #mon"
+	line "zugesehen habe!"
 	done
 
 .BeatenText:
-	text "Our fire couldn't"
-	line "beat you…"
+	text "Unser Feuer hat"
+	line "dich nicht"
+	cont "besiegt…"
 	done
 
 GenericTrainerSuper_nerdRory:
 	generictrainer SUPER_NERD, RORY, EVENT_BEAT_SUPER_NERD_RORY, .SeenText, .BeatenText
 
-	text "A jiffy is the"
-	line "scientific name"
+	text "Ein Nu ist die"
+	line "wissenschaftliche"
 
-	para "for 1/100th of a"
-	line "second."
+	para "Bezeichnung für"
+	line "eine hundertstel"
+	cont "Sekunde."
 	done
 
 .SeenText:
-	text "This'll be over"
-	line "in a jiffy."
+	text "Das ist im Nu"
+	line "vorbei."
 	done
 
 .BeatenText:
-	text "Maybe I was a bit"
-	line "off…"
+	text "Vielleicht lag"
+	line "ich etwas"
+	cont "daneben…"
 	done
 
 GenericTrainerRuin_maniacGlyn:
 	generictrainer RUIN_MANIAC, GLYN, EVENT_BEAT_RUIN_MANIAC_GLYN, .SeenText, .BeatenText
 
-	text "Rocks hide all"
-	line "sorts of interest-"
-	cont "ing items."
+	text "In Felsen ver-"
+	line "stecken sich alle"
+	cont "möglichen inte-"
+	cont "ressanten Items."
 	done
 
 .SeenText:
-	text "My #mon were"
-	line "born from fossils"
+	text "Meine #mon"
+	line "wurden aus Fos-"
 
-	para "I found in this"
-	line "very cave!"
+	para "silien geboren,"
+	line "die ich in genau"
+	cont "dieser Höhle"
+	cont "gefunden habe!"
 	done
 
 .BeatenText:
-	text "And they lost in"
-	line "this very cave,"
-	cont "too!"
+	text "Und sie haben in"
+	line "genau dieser Höhle"
+	cont "auch verloren!"
 	done

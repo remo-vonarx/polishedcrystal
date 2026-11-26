@@ -108,28 +108,30 @@ CeladonUniversityLoungeNeeshaScript:
 	done
 
 .AfterText1:
-	text "You're a worthy"
-	line "opponent!"
+	text "Du bist ein wür-"
+	line "diger Gegner!"
 
-	para "But you haven't"
-	line "seen everything"
+	para "Aber du hast noch"
+	line "nicht alles"
 
-	para "the Celadon Four"
-	line "can do."
+	para "gesehen, was die"
+	line "Prismania-Vier"
+	cont "können."
 
-	para "Why don't you find"
-	line "the rest of us and"
-	cont "challenge them?"
+	para "Such die anderen"
+	line "doch und fordere"
+	cont "sie heraus!"
 	done
 
 .AfterText2:
-	text "So you beat all of"
-	line "the Celadon Four…"
+	text "Du hast also alle"
+	line "Prismania-Vier"
+	cont "besiegt…"
 
-	para "That's so cool!"
+	para "Wie cool!"
 
-	para "Take this as a"
-	line "prize!"
+	para "Nimm das als"
+	line "Preis!"
 	done
 
 .FinalText:

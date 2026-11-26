@@ -116,27 +116,29 @@ CeladonUniversityClassroom4RaymondScript:
 	done
 
 .AfterText1:
-	text "How could this be?"
-	line "I'm one of the"
-	cont "Celadon Four!"
+	text "Wie kann das sein?"
+	line "Ich bin einer der"
+	cont "Prismania-Vier!"
 
-	para "I may have lost,"
-	line "but my three pals"
-	cont "will avenge me."
+	para "Ich habe zwar ver-"
+	line "loren, aber meine"
+	cont "drei Kumpel rächen"
+	cont "mich."
 
-	para "Go find them"
-	line "yourself!"
+	para "Such sie doch"
+	line "selbst!"
 	done
 
 .AfterText2:
-	text "You've beaten all"
-	line "of the Celadon"
-	cont "Four?"
+	text "Du hast alle"
+	line "Prismania-Vier"
+	cont "besiegt?"
 
-	para "No way!"
+	para "Unmöglich!"
 
-	para "…Fine. I guess"
-	line "you've earned this."
+	para "…Na gut. Das hast"
+	line "du dir wohl"
+	cont "verdient."
 	done
 
 .FinalText:

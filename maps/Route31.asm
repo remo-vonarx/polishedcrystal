@@ -79,83 +79,94 @@ TrainerCooltrainermFinch:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "You saw the effect"
-	line "of an Air Balloon"
-	cont "in our battle."
+	text "Du hast die Wir-"
+	line "kung eines Luft-"
+	cont "ballons in unserem"
+	cont "Kampf gesehen."
 
-	para "You may find other"
-	line "trainers like me"
-	cont "wandering Johto."
+	para "Vielleicht triffst"
+	line "du noch andere"
+	cont "Trainer wie mich,"
+	cont "die durch Johto"
+	cont "ziehen."
 
-	para "Searching for"
-	line "strength."
+	para "Auf der Suche"
+	line "nach Stärke."
 
-	para "You would do well"
-	line "to challenge them!"
+	para "Du tätest gut"
+	line "daran, sie heraus-"
+	cont "zufordern!"
 	done
 
 .IntroText:
-	text "I am a trainer who"
-	line "uses Air Balloons"
-	cont "in battle."
+	text "Ich bin ein Trai-"
+	line "ner, der im Kampf"
+	cont "Luftballons"
+	cont "einsetzt."
 
-	para "I want to be"
-	line "swayed by your"
-	cont "strength…"
+	para "Ich will mich von"
+	line "deiner Stärke"
+	cont "mitreißen lassen…"
 
-	para "If you can defeat"
-	line "every trainer on"
-	cont "Route 30 and 31,"
-	cont "then come face me."
+	para "Wenn du jeden"
+	line "Trainer auf Route"
+	cont "30 und 31 be-"
+	cont "siegst, dann tritt"
+	cont "gegen mich an."
 	done
 
 .QuestionText:
-	text "So you've defeated"
-	line "all of the train-"
-	cont "ers here!"
+	text "Du hast also alle"
+	line "Trainer hier"
+	cont "besiegt!"
 
-	para "Then you're fit to"
-	line "challenge me!"
+	para "Dann bist du wür-"
+	line "dig, mich heraus-"
+	cont "zufordern!"
 
-	para "Shall we battle?"
+	para "Wollen wir"
+	line "kämpfen?"
 	done
 
 .RefusedText:
-	text "You don't want to"
-	line "test your strength"
-	cont "with mine?"
+	text "Du willst deine"
+	line "Stärke nicht mit"
+	cont "meiner messen?"
 
-	para "I'll give you my"
-	line "signature item if"
-	cont "you win…"
+	para "Ich gebe dir mein"
+	line "Markenzeichen,"
+	cont "wenn du gewinnst…"
 	done
 
 .SeenText:
-	text "Well met! I will"
-	line "stand before you"
+	text "Sei gegrüßt! Ich"
+	line "trete dir als"
 
-	para "as an Air Balloon"
-	line "user!"
+	para "Luftballon-Nutzer"
+	line "entgegen!"
 	done
 
 .BeatenText:
-	text "You've brought me"
-	line "to the ground…"
+	text "Du hast mich auf"
+	line "den Boden der Tat-"
+	cont "sachen geholt…"
 	done
 
 .AfterText1:
-	text "A fine battle!"
-	line "You are a rising"
+	text "Ein feiner Kampf!"
+	line "Du bist ein auf-"
 
-	para "star among train-"
-	line "ers!"
+	para "strebender Stern"
+	line "unter Trainern!"
 
-	para "Here is proof of"
-	line "our battle."
-	cont "An Air Balloon!"
+	para "Hier ist der"
+	line "Beweis unseres"
+	cont "Kampfes."
+	cont "Ein Luftballon!"
 
-	para "Take it, my"
-	line "strong friend!"
+	para "Nimm ihn, als"
+	line "Zeichen unserer"
+	cont "Freundschaft!"
 	done
 
 TrainerBug_catcherWade1:

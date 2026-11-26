@@ -108,12 +108,13 @@ GenericTrainerGentlemanGregory:
 GenericTrainerGuitaristmVincent:
 	generictrainer GUITARISTM, VINCENT, EVENT_BEAT_GUITARISTM_VINCENT, GuitaristmVincentSeenText, GuitaristmVincentBeatenText
 
-	text "Lt.Surge is pro-"
-	line "tected by electric"
+	text "Major Bob wird von"
+	line "Elektrozäunen"
 
-	para "fences so you"
-	line "won't underestimate"
-	cont "his strength!"
+	para "geschützt, damit"
+	line "du seine Stärke"
+	cont "nicht unter-"
+	cont "schätzt!"
 	done
 
 GenericTrainerJugglerHorton:
@@ -130,11 +131,11 @@ GenericTrainerJugglerHorton:
 GenericTrainerGuitaristfJanet:
 	generictrainer GUITARISTF, JANET, EVENT_BEAT_GUITARISTF_JANET, GuitaristfJanetSeenText, GuitaristfJanetBeatenText
 
-	text "Lt.Surge hid both"
-	line "switches for the"
+	text "Major Bob hat"
+	line "beide Schalter für"
 
-	para "electric fences"
-	line "in the trash."
+	para "die Elektrozäune"
+	line "im Müll versteckt."
 	done
 
 VermilionGymGuyScript:
@@ -242,11 +243,12 @@ LtSurgeIntroText:
 	done
 
 LtSurgeWinLossText:
-	text "Surge: Arrrgh!"
-	line "You are strong!"
+	text "Major Bob: Arrrgh!"
+	line "Du bist stark!"
 
-	para "OK, kid. You get"
-	line "the Thunder Badge!"
+	para "O.K., Wicht. Du"
+	line "erhältst den"
+	cont "Donnerorden!"
 	done
 
 LtSurgeThunderBadgeText:
@@ -320,13 +322,14 @@ JugglerHortonBeatenText:
 	done
 
 GuitaristfJanetSeenText:
-	text "I'm a lightweight,"
-	line "but I'm good with"
-	cont "electricity!"
+	text "Ich bin ein"
+	line "Leichtgewicht,"
+	cont "aber mit Strom"
+	cont "kenn ich mich aus!"
 	done
 
 GuitaristfJanetBeatenText:
-	text "Fried!"
+	text "Gegrillt!"
 	done
 
 

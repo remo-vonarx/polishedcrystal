@@ -114,11 +114,11 @@ PsychicInverYesText:
 	done
 
 PsychicInverBeatenText:
-	text "That battle may"
-	line "have tired me out"
+	text "Der Kampf hat mich"
+	line "vielleicht noch"
 
-	para "even more than my"
-	line "#mon…"
+	para "mehr ermüdet als"
+	line "meine #mon…"
 	done
 
 InverseBattle0PointRewardText:

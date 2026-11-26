@@ -78,30 +78,33 @@ IcePathB1FSetUpStoneTable:
 GenericTrainerBoarderMax:
 	generictrainer BOARDER, MAX, EVENT_BEAT_BOARDER_MAX, BoarderMaxSeenText, BoarderMaxBeatenText
 
-	text "I'm not giving up!"
+	text "Ich gebe nicht"
+	line "auf!"
 	done
 
 GenericTrainerSkierBecky:
 	generictrainer SKIER, BECKY, EVENT_BEAT_SKIER_BECKY, SkierBeckySeenText, SkierBeckyBeatenText
 
-	text "Don't forget to"
-	line "wear a scarf!"
+	text "Vergiss nicht,"
+	line "einen Schal zu"
+	cont "tragen!"
 	done
 
 BoarderMaxSeenText:
-	text "Blackthorn can't be"
-	line "much farther…"
+	text "Ebenholz City kann"
+	line "nicht mehr weit"
+	cont "sein…"
 	done
 
 BoarderMaxBeatenText:
-	text "Wiped out!"
+	text "Voll hingelegt!"
 	done
 
 SkierBeckySeenText:
-	text "I can see my"
-	line "breath freezing!"
+	text "Ich sehe meinen"
+	line "Atem gefrieren!"
 	done
 
 SkierBeckyBeatenText:
-	text "Achoo!"
+	text "Hatschi!"
 	done

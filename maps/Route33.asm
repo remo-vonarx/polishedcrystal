@@ -180,8 +180,8 @@ SchoolgirlImogenSeenText:
 	done
 
 SchoolgirlImogenBeatenText:
-	text "So there are bet-"
-	line "ter trainers…"
+	text "Es gibt also"
+	line "bessere Trainer…"
 	done
 
 Route33SignText:

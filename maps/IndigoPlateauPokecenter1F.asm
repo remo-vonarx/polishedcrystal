@@ -279,12 +279,14 @@ PlateauLyraText2:
 	done
 
 PlateauLyraWinText:
-	text "So you're still"
-	line "stronger than me…"
+	text "Du bist also immer"
+	line "noch stärker als"
+	cont "ich…"
 	done
 
 PlateauLyraLoseText:
-	text "…I won?"
+	text "…Ich habe"
+	line "gewonnen?"
 	done
 
 PlateauLyraText3:

@@ -153,9 +153,9 @@ EmbeddedTowerSteven2YesText:
 
 EmbeddedTowerSteven1WinText:
 EmbeddedTowerSteven2WinText:
-	text "You are a truly"
-	line "noble #mon"
-	cont "trainer!"
+	text "Du bist ein wahr-"
+	line "haft edler"
+	cont "#mon-Trainer!"
 	done
 
 EmbeddedTowerSteven1ItemText:
@@ -189,8 +189,9 @@ EmbeddedTowerSteven1ItemText:
 	done
 
 EmbeddedTowerSteven1AfterText:
-	text "Steven: May our"
-	line "paths cross again."
+	text "Troy: Mögen sich"
+	line "unsere Wege wieder"
+	cont "kreuzen."
 	done
 
 EmbeddedTowerSteven2ChallengeText:
@@ -213,16 +214,18 @@ EmbeddedTowerSteven2ChallengeText:
 	done
 
 EmbeddedTowerSteven2AfterText:
-	text "Steven: In the"
-	line "end, you are still"
-	cont "the strongest."
+	text "Troy: Am Ende bist"
+	line "du immer noch am"
+	cont "stärksten."
 
-	para "But I don't regret"
-	line "our battle."
+	para "Aber ich bereue"
+	line "unseren Kampf"
+	cont "nicht."
 
-	para "Because each time"
-	line "that I battle you,"
+	para "Denn jedes Mal,"
+	line "wenn ich gegen"
+	cont "dich kämpfe,"
 
-	para "I learn more about"
-	line "#mon!"
+	para "lerne ich mehr"
+	line "über #mon!"
 	done

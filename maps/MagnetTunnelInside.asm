@@ -368,90 +368,98 @@ MagnetTunnelInsideScientistText:
 GenericTrainerEngineerGraden:
 	generictrainer ENGINEER, GRADEN, EVENT_BEAT_ENGINEER_GRADEN, .SeenText, .BeatenText
 
-	text "I'm the foreman"
-	line "on this jobsite."
+	text "Ich bin der Vor-"
+	line "arbeiter auf"
+	cont "dieser Baustelle."
 
-	para "We dug out this"
-	line "tunnel to make a"
+	para "Wir haben diesen"
+	line "Tunnel gegraben,"
 
-	para "path for the new"
-	line "Magnet Train"
-	cont "railway, but…"
+	para "um Platz für die"
+	line "neue Strecke des"
+	cont "Magnetzugs zu"
+	cont "schaffen, aber…"
 
-	para "Little did I know,"
-	line "all of the lode-"
+	para "Ich ahnte ja"
+	line "nicht, dass all"
 
-	para "stone would cause"
-	line "so much headache!"
+	para "das Magnetit uns"
+	line "so viel Kopfzer-"
+	cont "brechen bereiten"
+	cont "würde!"
 	done
 
 .SeenText:
-	text "Admiring all of"
-	line "our handiwork?"
+	text "Bewunderst du"
+	line "unsere Arbeit?"
 
-	para "Haha!"
-	line "Admire this!"
+	para "Haha! Dann"
+	line "bewundere das!"
 	done
 
 .BeatenText:
-	text "Haha! You've got"
-	line "guts. I like that!"
+	text "Haha! Du hast"
+	line "Mumm. Das gefällt"
+	cont "mir!"
 	done
 
 GenericTrainerEngineerGustav:
 	generictrainer ENGINEER, GUSTAV, EVENT_BEAT_ENGINEER_GUSTAV, .SeenText, .BeatenText
 
-	text "I've tried to fix"
-	line "it, but its been"
-	cont "no use…"
+	text "Ich habe versucht,"
+	line "sie zu reparieren,"
+	cont "aber vergeblich…"
 
-	para "I can't seem to"
-	line "figure out what's"
-	cont "going on!"
+	para "Ich komme einfach"
+	line "nicht dahinter,"
+	cont "was los ist!"
 
-	para "I'm worried if I"
-	line "turn it on again,"
+	para "Ich fürchte, wenn"
+	line "ich sie wieder"
 
-	para "the machine will"
-	line "short-circuit and"
-	cont "be kaput…"
+	para "einschalte, gibt"
+	line "es einen Kurz-"
+	cont "schluss und sie"
+	cont "ist kaputt…"
 	done
 
 .SeenText:
-	text "Stand back!"
+	text "Zurück!"
 
-	para "This machine has"
-	line "been on the fritz!"
+	para "Diese Maschine"
+	line "spinnt schon die"
+	cont "ganze Zeit!"
 	done
 
 .BeatenText:
-	text "Blown out! Just"
-	line "like a fuse…"
+	text "Durchgebrannt! Wie"
+	line "eine Sicherung…"
 	done
 
 GenericTrainerEngineerNicolas:
 	generictrainer ENGINEER, NICOLAS, EVENT_BEAT_ENGINEER_NICOLAS, .SeenText, .BeatenText
 
-	text "These things can"
-	line "generate some"
-	cont "serious voltage!"
+	text "Diese Dinger"
+	line "erzeugen ganz"
+	cont "schön Spannung!"
 
-	para "When powered on,"
-	line "they create an"
+	para "Eingeschaltet"
+	line "erzeugen sie ein"
 
-	para "extremely strong"
-	line "magnetic field."
+	para "extrem starkes"
+	line "Magnetfeld."
 
-	para "So be careful in"
-	line "here, alright kid?"
+	para "Also sei hier"
+	line "bloß vorsichtig,"
+	cont "okay?"
 	done
 
 .SeenText:
-	text "Hey! Be careful"
-	line "around the equip-"
-	cont "ment kid!"
+	text "Hey! Pass bei den"
+	line "Geräten auf,"
+	cont "Kind!"
 	done
 
 .BeatenText:
-	text "Shutdown!"
+	text "Abgeschaltet!"
 	done

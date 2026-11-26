@@ -1573,12 +1573,12 @@ ElmSeenText:
 	done
 
 ElmWinText:
-	text "Astounding!"
+	text "Erstaunlich!"
 	done
 
 ElmLoseText:
-	text "Were you going"
-	line "easy on me?"
+	text "Hast du mich"
+	line "geschont?"
 	done
 
 ElmRefusedBattleText:
@@ -1715,12 +1715,12 @@ ElmsLabLyraChallengeText:
 	done
 
 ElmsLabLyraWinText:
-	text "Good job,"
+	text "Gut gemacht,"
 	line "<PLAYER>!"
 	done
 
 ElmsLabLyraLossText:
-	text "Yay! I won!"
+	text "Juhu! Gewonnen!"
 	done
 
 ElmsLabLyraText_YouWon:

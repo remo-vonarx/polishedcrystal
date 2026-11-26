@@ -26,27 +26,28 @@ ShamoutiCoast_MapScriptHeader:
 GenericTrainerArtistRin:
 	generictrainer ARTIST, RIN, EVENT_BEAT_ARTIST_RIN, .SeenText, .BeatenText
 
-	text "There's a strange"
-	line "sense of power"
-	cont "from the islands."
+	text "Von den Inseln"
+	line "geht eine seltsame"
+	cont "Kraft aus."
 
-	para "I want to capture"
-	line "that in my paint-"
-	cont "ing."
+	para "Die will ich in"
+	line "meinem Bild"
+	cont "einfangen."
 	done
 
 .SeenText:
-	text "I'm painting the"
-	line "three islands!"
+	text "Ich male die drei"
+	line "Inseln!"
 
-	para "Please don't block"
-	line "my view!"
+	para "Bitte versperr"
+	line "mir nicht die"
+	cont "Sicht!"
 	done
 
 .BeatenText:
-	text "I can't paint and"
-	line "battle at the same"
-	cont "time."
+	text "Ich kann nicht"
+	line "gleichzeitig malen"
+	cont "und kämpfen."
 	done
 
 TrainerSwimmerfMarina:
@@ -56,49 +57,52 @@ TrainerSwimmerfMarina:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "If I were stran-"
-	line "ded on a desert"
-	cont "island, I'd take…"
+	text "Wenn ich auf einer"
+	line "einsamen Insel"
+	cont "stranden würde,"
+	cont "würde ich…"
 
-	para "my #mon, of"
-	line "course!"
+	para "natürlich meine"
+	line "#mon mitnehmen!"
 	done
 
 .SeenText:
-	text "If you were stran-"
-	line "ded on a desert"
-	cont "island, what three"
+	text "Wenn du auf einer"
+	line "einsamen Insel"
+	cont "stranden würdest,"
 
-	para "things would you"
-	line "bring?"
+	para "welche drei Dinge"
+	line "würdest du"
+	cont "mitnehmen?"
 	done
 
 .BeatenText:
-	text "Washed away with-"
-	line "out a paddle!"
+	text "Abgetrieben und"
+	line "aufgeschmissen!"
 	done
 
 GenericTrainerFisherDallas:
 	generictrainer FISHER, DALLAS, EVENT_BEAT_FISHER_DALLAS, .SeenText, .BeatenText
 
-	text "No matter where I"
-	line "fish, I just keep"
+	text "Egal, wo ich"
+	line "angle, ich ziehe"
 
-	para "reeling in Bottle"
-	line "Caps."
+	para "immer nur Kron-"
+	line "korken raus."
 
-	para "It's driving me"
-	line "nuts!"
+	para "Das macht mich"
+	line "wahnsinnig!"
 	done
 
 .SeenText:
-	text "Gah! Not another"
-	line "one!"
+	text "Gah! Nicht noch"
+	line "einer!"
 	done
 
 .BeatenText:
-	text "Huh? Oh, not you--"
-	line "you're fine."
+	text "Hä? Oh, nicht du,"
+	line "mit dir ist alles"
+	cont "gut."
 	done
 
 GenericTrainerSightseerfPilar:
@@ -165,22 +169,26 @@ TrainerSwimmermAshe:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "I couldn't swim at"
-	line "all a while ago."
+	text "Vor einer Weile"
+	line "konnte ich gar"
+	cont "nicht schwimmen."
 
-	para "Now I do it so"
-	line "much it's hard to"
+	para "Jetzt mache ich es"
+	line "so oft, dass ich"
 
-	para "remember what I"
-	line "did before. Haha!"
+	para "kaum noch weiß,"
+	line "was ich vorher"
+	cont "gemacht habe."
+	cont "Haha!"
 	done
 
 .SeenText:
-	text "Swimming? Me?"
-	line "Yeah, I dig it."
+	text "Schwimmen? Ich?"
+	line "Ja, steh ich"
+	cont "drauf."
 	done
 
 .BeatenText:
-	text "I have that sink-"
-	line "ing feeling…"
+	text "Ich glaub, ich"
+	line "geh unter…"
 	done

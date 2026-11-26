@@ -45,11 +45,12 @@ OlivineCafeStrengthSailorScript:
 	jumpthisopenedtext
 
 BakerChelsieAfterText:
-	text "I always add vita-"
-	line "mins to my bread."
+	text "Ich gebe immer"
+	line "Vitamine in mein"
+	cont "Brot."
 
-	para "They make my #-"
-	line "mon stronger."
+	para "Sie machen meine"
+	line "#mon stärker."
 	done
 
 OlivineCafeLyraScript:
@@ -118,9 +119,9 @@ BakerChelsieSeenText:
 	done
 
 BakerChelsieBeatenText:
-	text "You are strong."
-	line "Are you eating my"
-	cont "special bread?"
+	text "Du bist stark."
+	line "Isst du etwa mein"
+	cont "Spezialbrot?"
 	done
 
 BakerChelsieNoBattleText:

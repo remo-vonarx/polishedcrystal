@@ -196,16 +196,16 @@ Route32CooltrainerMTrigger:
 	done
 
 .AfterText1:
-	text "Your training was"
-	line "superior to mine."
+	text "Dein Training war"
+	line "meinem überlegen."
 
-	para "As a souvenir of"
-	line "our battle, take"
-	cont "this."
+	para "Nimm dies als An-"
+	line "denken an unseren"
+	cont "Kampf."
 
-	para "It increases the"
-	line "power of Grass-"
-	cont "type moves."
+	para "Damit werden"
+	line "Pflanzen-Attacken"
+	cont "verstärkt."
 	done
 
 Route32CooltrainerMStopsYou:

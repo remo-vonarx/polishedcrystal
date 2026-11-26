@@ -75,11 +75,11 @@ SwimmerfLoriBeatenText: ; text > text
 GenericTrainerSwimmerfMayu:
 	generictrainer SWIMMERF, MAYU, EVENT_BEAT_SWIMMERF_MAYU, .SeenText, .BeatenText
 
-	text "I was trying to"
-	line "see how long I"
+	text "Ich wollte sehen,"
+	line "wie lange ich die"
 
-	para "could hold my"
-	line "breath!"
+	para "Luft anhalten"
+	line "kann!"
 	done
 
 .SeenText:
@@ -97,18 +97,19 @@ GenericTrainerSwimmerfMayu:
 GenericTrainerSwimmerfLeona:
 	generictrainer SWIMMERF, LEONA, EVENT_BEAT_SWIMMERF_LEONA, .SeenText, .BeatenText
 
-	text "Your #mon--are"
-	line "you following the"
+	text "Deine #mon…"
+	line "Folgst du dem"
 
-	para "latest trend in"
-	line "teams?"
+	para "neuesten Trend"
+	line "bei Teams?"
 	done
 
 .SeenText:
-	text "Look! It's my very"
-	line "best swimsuit and"
+	text "Sieh mal! Mein"
+	line "allerbester Bade-"
+	cont "anzug und"
 
-	para "my very best"
+	para "meine allerbesten"
 	line "#mon!"
 	done
 
@@ -140,38 +141,43 @@ SwimmermCameronBeatenText:
 GenericTrainerSwimmermLuis:
 	generictrainer SWIMMERM, SWIMMERM_LUIS, EVENT_BEAT_SWIMMERM_LUIS, .SeenText, .BeatenText
 
-	text "All right! Next"
-	line "time I'll wear"
-	cont "party swim trunks!"
+	text "Na gut! Nächstes"
+	line "Mal trage ich"
+	cont "meine Party-"
+	cont "Badehose!"
 	done
 
 .SeenText:
-	text "I've worn my best"
-	line "swim trunks today!"
+	text "Ich trage heute"
+	line "meine beste"
+	cont "Badehose!"
 	done
 
 .BeatenText:
-	text "Even with my best"
-	line "pants, I just"
-	cont "didn't win."
+	text "Selbst mit meiner"
+	line "besten Hose habe"
+	cont "ich nicht"
+	cont "gewonnen."
 	done
 
 GenericTrainerSwimmermElmo:
 	generictrainer SWIMMERM, ELMO, EVENT_BEAT_SWIMMERM_ELMO, .SeenText, .BeatenText
 
-	text "Maybe I should go"
-	line "back to fishing…"
+	text "Vielleicht sollte"
+	line "ich wieder angeln"
+	cont "gehen…"
 	done
 
 .SeenText:
-	text "I used to be a"
-	line "Fisherman."
+	text "Früher war ich"
+	line "Angler."
 
-	para "I've grown to love"
-	line "swimming so much,"
+	para "Inzwischen liebe"
+	line "ich das Schwimmen"
 
-	para "I'm always in my"
-	line "swim trunks!"
+	para "so sehr, dass ich"
+	line "immer Badehose"
+	cont "trage!"
 	done
 
 .BeatenText: ; text > text
@@ -181,19 +187,19 @@ GenericTrainerSwimmermElmo:
 GenericTrainerPicnickerCheyenne:
 	generictrainer PICNICKER, CHEYENNE, EVENT_BEAT_PICNICKER_CHEYENNE, .SeenText, .BeatenText
 
-	text "If I'm with #-"
-	line "mon, I don't mind"
-	cont "losing so much!"
+	text "Mit #mon macht"
+	line "mir Verlieren"
+	cont "nicht so viel aus!"
 	done
 
 .SeenText:
-	text "When I was a kid,"
-	line "I only played in-"
-	cont "side the house."
+	text "Als Kind habe ich"
+	line "nur im Haus"
+	cont "gespielt."
 
-	para "Now I love playing"
-	line "outside with #-"
-	cont "mon!"
+	para "Jetzt spiele ich"
+	line "gern draußen mit"
+	cont "#mon!"
 	done
 
 .BeatenText:
@@ -203,36 +209,38 @@ GenericTrainerPicnickerCheyenne:
 GenericTrainerPicnickerAdrian:
 	generictrainer PICNICKER, ADRIAN, EVENT_BEAT_PICNICKER_ADRIAN, .SeenText, .BeatenText
 
-	text "Even though I"
-	line "lost, I had fun!"
+	text "Ich habe zwar"
+	line "verloren, aber es"
+	cont "hat Spaß gemacht!"
 	done
 
 .SeenText:
-	text "Are you in a"
-	line "hurry?"
+	text "Hast du es eilig?"
 
-	para "How about a quick"
-	line "battle break?"
+	para "Wie wäre es mit"
+	line "einer kleinen"
+	cont "Kampfpause?"
 	done
 
 .BeatenText:
-	text "Aaahh… that's it."
+	text "Aaahh… das war's."
 	done
 
 GenericTrainerCamperPedro:
 	generictrainer CAMPER, PEDRO, EVENT_BEAT_CAMPER_PEDRO, .SeenText, .BeatenText
 
-	text "If you forget your"
-	line "blanket, you can"
+	text "Wenn du deine"
+	line "Decke vergisst,"
 
-	para "snuggle up to a"
-	line "warm #mon!"
+	para "kannst du dich an"
+	line "ein warmes #mon"
+	cont "kuscheln!"
 	done
 
 .SeenText:
-	text "Have you ever gone"
-	line "camping with #-"
-	cont "mon?"
+	text "Warst du schon mal"
+	line "mit #mon"
+	cont "zelten?"
 	done
 
 .BeatenText:
@@ -242,39 +250,40 @@ GenericTrainerCamperPedro:
 GenericTrainerBird_keeperBert:
 	generictrainer BIRD_KEEPER, BERT, EVENT_BEAT_BIRD_KEEPER_BERT, .SeenText, .BeatenText
 
-	text "That was an in-"
-	line "credible battle!"
+	text "Das war ein un-"
+	line "glaublicher Kampf!"
 
-	para "I've got goose"
-	line "bumps!"
+	para "Ich habe Gänse-"
+	line "haut!"
 	done
 
 .SeenText:
-	text "Found it! A"
-	line "trainer that I can"
-	cont "enjoy fighting!"
+	text "Gefunden! Einen"
+	line "Trainer, gegen den"
+	cont "ich gern kämpfe!"
 	done
 
 .BeatenText:
-	text "I lost with all my"
-	line "strength!"
+	text "Ich habe mit all"
+	line "meiner Kraft"
+	cont "verloren!"
 	done
 
 GenericTrainerBird_keeperErnie:
 	generictrainer BIRD_KEEPER, ERNIE, EVENT_BEAT_BIRD_KEEPER_ERNIE, .SeenText, .BeatenText
 
-	text "You're something"
-	line "special!"
+	text "Du bist etwas"
+	line "Besonderes!"
 	done
 
 .SeenText:
-	text "Hey, hey. Will you"
-	line "battle me?"
+	text "Hey, hey. Kämpfst"
+	line "du gegen mich?"
 	done
 
 .BeatenText:
-	text "That was pretty"
-	line "incredible."
+	text "Das war ziemlich"
+	line "unglaublich."
 	done
 
 CinnabarGymSignText:

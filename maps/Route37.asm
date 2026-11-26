@@ -39,19 +39,20 @@ SunnyCallback:
 GenericTrainerTwinsToriandtil1:
 	generictrainer TWINS, ANNANDANNE1, EVENT_BEAT_TWINS_ANN_AND_ANNE, TwinsToriandtil1SeenText, TwinsToriandtil1BeatenText
 
-	text "Til: I can tell"
-	line "what my sister and"
+	text "Nora: Ich kenne"
+	line "die Gedanken"
 
-	para "my #mon are"
-	line "thinking."
+	para "meiner Schwester"
+	line "und die meiner"
+	cont "#mon."
 	done
 
 GenericTrainerTwinsToriandtil2:
 	generictrainer TWINS, ANNANDANNE2, EVENT_BEAT_TWINS_ANN_AND_ANNE, TwinsToriandtil2SeenText, TwinsToriandtil2BeatenText
 
-	text "Tori: We share the"
-	line "same feelings as"
-	cont "our #mon."
+	text "Jo: Wir fühlen"
+	line "dasselbe wie"
+	cont "unsere #mon."
 	done
 
 GenericTrainerPsychicGreg:
@@ -125,8 +126,9 @@ SunnyNotSundayScript:
 GenericTrainerBeautyCallie:
 	generictrainer BEAUTY, CALLIE, EVENT_BEAT_BEAUTY_CALLIE, BeautyCallieSeenText, BeautyCallieBeatenText
 
-	text "Wow, you're cute"
-	line "and skilled too!"
+	text "Wow, du bist süß"
+	line "und auch noch"
+	cont "geschickt!"
 	done
 
 TrainerBeautyCassandra:
@@ -136,29 +138,29 @@ TrainerBeautyCassandra:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "People like you"
-	line "are skilled even"
+	text "Leute wie du sind"
+	line "geschickt, obwohl"
 
-	para "though they're"
-	line "young…"
+	para "sie noch jung"
+	line "sind…"
 	done
 
 TwinsToriandtil1SeenText:
-	text "Til: Tori and I"
-	line "are in this to-"
-	cont "gether!"
+	text "Nora: Jo und ich"
+	line "arbeiten immer"
+	cont "zusammen!"
 	done
 
 TwinsToriandtil1BeatenText:
 TwinsToriandtil2BeatenText:
-	text "Til & Tori: Nnn… A"
-	line "little too strong."
+	text "Nora & Jo: Nn… ein"
+	line "wenig zu stark."
 	done
 
 TwinsToriandtil2SeenText:
-	text "Tori: Til and I"
-	line "are in this to-"
-	cont "gether!"
+	text "Jo: Nora und ich"
+	line "arbeiten immer"
+	cont "zusammen!"
 	done
 
 PsychicGregSeenText:
@@ -208,27 +210,30 @@ SunnySundayText:
 
 
 BeautyCallieSeenText:
-	text "Oh, you're a cute"
-	line "little trainer!"
+	text "Oh, wie süß!"
+	line "So ein kleines"
+	cont "Trainertalent!"
 
-	para "Why don't you"
-	line "battle me?"
+	para "Willst du nicht"
+	line "gegen mich"
+	cont "kämpfen?"
 	done
 
 BeautyCallieBeatenText:
-	text "You're good…"
+	text "Du bist gut…"
 	done
 
 BeautyCassandraSeenText:
-	text "Hey hey there,"
-	line "you young trainer!"
+	text "Hey hey, du jun-"
+	line "ger Trainer!"
 
-	para "Won't you battle"
-	line "with me?"
+	para "Kämpfst du nicht"
+	line "gegen mich?"
 	done
 
 BeautyCassandraBeatenText:
-	text "Wow, you're strong…"
+	text "Wow, du bist"
+	line "stark…"
 	done
 
 Route37SignText:

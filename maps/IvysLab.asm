@@ -169,9 +169,9 @@ ProfIvyScript:
 	done
 
 .AfterText:
-	text "Ivy: That was an"
-	line "exhilarating"
-	cont "battle!"
+	text "Ivy: Das war ein"
+	line "berauschender"
+	cont "Kampf!"
 	done
 
 IvysLabHopeScript:

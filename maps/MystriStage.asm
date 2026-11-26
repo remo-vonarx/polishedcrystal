@@ -268,11 +268,11 @@ MystriStageCynthiaYesText:
 	done
 
 MystriStageCynthiaWinText:
-	text "I can't remember"
-	line "the last time I"
+	text "Ich weiß nicht"
+	line "mehr, wann ich"
 
-	para "was outclassed"
-	line "like this!"
+	para "zuletzt so über-"
+	line "troffen wurde!"
 	done
 
 MystriStageCynthiaItemText:
@@ -291,9 +291,10 @@ MystriStageCynthiaItemText:
 	done
 
 MystriStageCynthiaAfterText:
-	text "Cynthia: But did"
-	line "our battle affect"
-	cont "the Mystri Stage?"
+	text "Cynthia: Aber hat"
+	line "unser Kampf dem"
+	cont "Trysteriumaltar"
+	cont "geschadet?"
 	done
 
 

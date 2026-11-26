@@ -57,15 +57,16 @@ SinjohRuinsHouseCynthiaScript:
 	jumpthistext
 
 SinjohRuinsHouseCynthiaAfterText:
-	text "Cynthia: What an"
-	line "incredible battle!"
+	text "Cynthia: Was für"
+	line "ein unglaublicher"
+	cont "Kampf!"
 
-	para "You're a great"
-	line "trainer, and it"
+	para "Du bist ein toller"
+	line "Trainer, und es"
 
-	para "would make me"
-	line "happy to see you"
-	cont "again sometime."
+	para "würde mich freuen,"
+	line "dich mal wieder-"
+	cont "zusehen."
 	done
 
 SinjohRuinsHousePokefanmText:
@@ -156,9 +157,9 @@ SinjohRuinsHouseCynthiaYesText:
 	done
 
 SinjohRuinsHouseCynthiaWinText:
-	text "I can't remember"
-	line "the last time I"
+	text "Ich weiß nicht"
+	line "mehr, wann ich"
 
-	para "was outclassed"
-	line "like this!"
+	para "zuletzt so über-"
+	line "troffen wurde!"
 	done

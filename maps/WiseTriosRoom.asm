@@ -98,61 +98,58 @@ TrainerElderMasa:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "In the past, there"
-	line "were two nine-tier"
-	cont "towers here."
+	text "Es gab früher zwei"
+	line "8-stöckige"
+	cont "Türme hier."
 
-if DEF(FAITHFUL)
-	para "The Brass Tower,"
-else
-	para "The Gong Tower,"
-endc
-	line "which was said to"
+	para "Den Bronzeturm,"
+	line "der die #mon"
 
-	para "waken #mon, and"
-	line "the Bell Tower,"
+	para "erwecken sollte,"
+	line "und den Glocken-"
+	cont "turm,"
 
-	para "where #mon were"
-	line "said to rest."
+	para "in dem die #mon"
+	line "ruhen sollten."
 
-	para "The view from the"
-	line "tops of the towers"
+	para "Die Aussicht von"
+	line "den beiden Spitzen"
 
-	para "must have been"
-	line "magnificent."
+	para "der Türme muss"
+	line "atemberaubend"
+	cont "gewesen sein."
 
-	para "At the time, an"
-	line "immense, silver-"
+	para "Zu dieser Zeit"
+	line "soll sich ein"
 
-	para "colored #mon"
-	line "was said to make"
+	para "gigantisches, sil-"
+	line "bernes #mon auf"
 
-	para "its roost atop the"
-if DEF(FAITHFUL)
-	line "Brass Tower."
-else
-	line "Gong Tower."
-endc
+	para "der Spitze des"
+	line "Bronzeturms"
 
-	para "However…"
+	para "niedergelassen"
+	line "haben."
 
-	para "About 150 years"
-	line "ago, a lightning"
+	para "Jedoch…"
 
-	para "bolt struck one of"
-	line "the towers."
+	para "Vor 150 Jahren"
+	line "schlug ein Blitz"
 
-	para "It was engulfed in"
-	line "flames that raged"
-	cont "for three days."
+	para "in einen der"
+	line "beiden Türme ein."
 
-	para "A sudden downpour"
-	line "finally put out"
-	cont "the blaze."
+	para "Die Flammen"
+	line "wüteten für ganze"
+	cont "drei Tage."
 
-	para "And that is how"
-	line "the Burned Tower"
-	cont "came to be."
+	para "Ein plötzlicher"
+	line "Platzregen löschte"
+	cont "das Feuer."
+
+	para "Und so ist die"
+	line "Turmruine"
+	cont "entstanden."
 	done
 
 TrainerElderKoji:

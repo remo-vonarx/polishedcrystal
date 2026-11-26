@@ -76,28 +76,28 @@ OlivineGymLassConnie:
 	jumpthistextfaceplayer
 
 .SeenText:
-	text "Giggle… I know"
-	line "how capable you"
+	text "Kicher… Ich weiß"
+	line "vom Leuchtturm,"
 
-	para "are from the"
-	line "Lighthouse."
+	para "wie fähig du"
+	line "bist."
 
-	para "It's time you"
-	line "showed that to"
-	cont "Jasmine!"
+	para "Jetzt zeig das"
+	line "auch Jasmin!"
 
-	para "Good luck!"
+	para "Viel Glück!"
 	done
 
 .AfterText:
-	text "You are amazing…"
-	line "You should aim"
+	text "Du bist toll…"
+	line "Mit so viel"
 
-	para "even higher, with"
-	line "such potential."
+	para "Potenzial solltest"
+	line "du noch höher"
+	cont "hinaus."
 
-	para "Have you been to"
-	line "Mahogany Town?"
+	para "Warst du schon in"
+	line "Mahagonia City?"
 	done
 
 OlivineGymGentlemanPreston:
@@ -110,25 +110,27 @@ OlivineGymGentlemanPreston:
 	jumpthistextfaceplayer
 
 .SeenText:
-	text "I knew you'd"
-	line "come here."
+	text "Ich wusste, dass"
+	line "du kommst."
 
-	para "Thank you for"
-	line "helping the"
-	cont "Gym Leader,"
+	para "Danke, dass du der"
+	line "Arenaleiterin"
+	cont "geholfen hast,"
 
-	para "but battle is a"
-	line "separate matter."
+	para "aber ein Kampf ist"
+	line "eine andere"
+	cont "Sache."
 
-	para "Go for it!"
+	para "Los geht's!"
 	done
 
 .AfterText:
-	text "Impressive!"
-	line "You should earn"
+	text "Beeindruckend!"
+	line "Mit so viel"
 
-	para "more Badges with"
-	line "that much skill."
+	para "Können solltest du"
+	line "noch mehr Orden"
+	cont "bekommen."
 	done
 
 OlivineGymStatue:

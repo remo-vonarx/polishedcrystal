@@ -112,19 +112,19 @@ SafariZoneWestRestHouse2FlanneryScript:
 	done
 
 .AfterText:
-	text "I lost the match,"
-	line "but I'm completely"
-	cont "satisfied."
+	text "Ich habe den Kampf"
+	line "verloren, bin aber"
+	cont "völlig zufrieden."
 
-	para "It's not often I"
-	line "get to enjoy a"
+	para "Nicht oft genieße"
+	line "ich einen"
 
-	para "battle this"
-	line "heated."
+	para "so hitzigen"
+	line "Kampf."
 
-	para "Let's have another"
-	line "one like this"
-	cont "sometime!"
+	para "Lass uns irgend-"
+	line "wann wieder so"
+	cont "einen austragen!"
 	done
 
 .RefusedText:

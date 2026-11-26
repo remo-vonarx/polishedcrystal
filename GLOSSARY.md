@@ -141,6 +141,23 @@ Trainers' Pokémon nicknames are German where the English is a word play (Hitzko
 The player is Chris, Krista, Crys or Krys by picture, the rival Silber, the Magikarp record holder Angelo (Kristall's names).
 _Avoid_: Kris, Silver, Ralph
 
+**Speaker names**:
+A line that opens with its speaker's name uses the German trainer name (Uwe: for Thom, Eva & Ute: for Amy & Mimi, with spaces around the & as Kristall writes it in dialogue) or the character's official German name (Blau:, Gelb:, Troy:, Major Bob:, Pyro:, Janina:), also where Upstream shortens Lt. Surge to Surge.
+
+**Team Wagemut**, **Team Weisheit**, **Team Intuition**:
+Pokémon GO's teams Valor, Mystic and Instinct, led by Candela, Blanche and Spark, the Teamleiter (PokéWiki, Candela).
+_Avoid_: Team Valor, Team Mystic, Team Instinct, Teamleitung
+
+**Prismania-Vier**:
+The Celadon Four, the four strong trainers of the Prismania-Uni (own translation).
+
+**Quoted songs and foreign speech**:
+Lyrics that trainers quote (Ramones, Pink Floyd, Rush, The Trashmen) stay in English, Blaise speaks French as in Upstream, and battle cries and sounds stay as written (Urrgggh!, Pyopyo…).
+
+**Trainer**, **Kleiner**, **Freund** (the player):
+Polished's own text calls the player in the literal masculine, as Kristall does ("Du bist ein starker Trainer!"), whichever picture the player chose. Confirmed line by line; a few lines are reworded where the rewording reads better ("Nimm ihn, als Zeichen unserer Freundschaft!").
+_Avoid_: Trainer*in, Trainer/in
+
 ## Places
 
 **Place names**:

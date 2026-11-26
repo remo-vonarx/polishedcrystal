@@ -195,8 +195,8 @@ FarawayIslandSouthLawrenceNoText:
 	done
 
 FarawayIslandSouthLawrenceBeatenText:
-	text "You beat me once"
-	line "again…"
+	text "Du hast mich schon"
+	line "wieder besiegt…"
 	done
 
 FarawayIslandSouthLawrenceText2:

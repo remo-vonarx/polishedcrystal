@@ -26,22 +26,22 @@ SafariZoneEast_MapScriptHeader:
 GenericTrainerCowgirlApril:
 	generictrainer COWGIRL, APRIL, EVENT_BEAT_COWGIRL_APRIL, CowgirlAprilSeenText, CowgirlAprilBeatenText
 
-	text "Sometimes you'll"
-	line "see 10 of the same"
+	text "Manchmal siehst"
+	line "du 10 gleiche"
 
-	para "#mon, all in a"
-	line "row!"
+	para "#mon in einer"
+	line "Reihe!"
 	done
 
 CowgirlAprilSeenText:
 	text "Yeehaw!"
-	line "I just caught a"
-	cont "whole herd of"
-	cont "#mon!"
+	line "Ich habe gerade"
+	cont "eine ganze Herde"
+	cont "#mon gefangen!"
 	done
 
 CowgirlAprilBeatenText:
-	text "Well, shoot!"
+	text "Na, verflixt!"
 	done
 
 SafariZoneEastAreaSignText:

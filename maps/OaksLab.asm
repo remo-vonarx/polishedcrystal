@@ -376,8 +376,9 @@ OakSeenText:
 	done
 
 OakWinText:
-	text "I was right in my"
-	line "assessment of you!"
+	text "Ich habe dich"
+	line "richtig einge-"
+	cont "schätzt!"
 	done
 
 OakOpenMtSilverText:

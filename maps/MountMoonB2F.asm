@@ -32,116 +32,124 @@ MountMoonB2F_MapScriptHeader:
 GenericTrainerYoungsterJosh:
 	generictrainer YOUNGSTER, YOUNGSTER_JOSH, EVENT_BEAT_YOUNGSTER_JOSH, YoungsterJoshSeenText, YoungsterJoshBeatenText
 
-	text "With that team of"
-	line "#mon, you must"
+	text "Mit diesen #mon"
+	line "hast du sicher"
 
-	para "have explored a"
-	line "lot of places."
+	para "schon viele Orte"
+	line "erkundet."
 
-	para "Getting lost is"
-	line "your everyday"
-	cont "fare, huh?"
+	para "Sich zu verirren"
+	line "ist für dich"
+	cont "Alltag, was?"
 	done
 
 GenericTrainerBird_keeperMick:
 	generictrainer BIRD_KEEPER, MICK, EVENT_BEAT_BIRD_KEEPER_MICK, Bird_keeperMickSeenText, Bird_keeperMickBeatenText
 
-	text "Birds of a feather"
-	line "flock together."
+	text "Gleich und Gleich"
+	line "gesellt sich gern."
 
-	para "I should go hang"
-	line "out with other"
+	para "Ich sollte mich"
+	line "mit anderen"
 
-	para "Bird Keepers some-"
-	line "where sensible."
+	para "Vogel-Profis an"
+	line "einem vernünftigen"
+	cont "Ort treffen."
 	done
 
 GenericTrainerHexManiacEsther:
 	generictrainer HEX_MANIAC, ESTHER, EVENT_BEAT_HEX_MANIAC_ESTHER, HexManiacEstherSeenText, HexManiacEstherBeatenText
 
-	text "Magic mirror,"
-	line "great and wise,"
+	text "Zauberspiegel,"
+	line "weis' und klug,"
 
-	para "failed to see my"
-	line "swift demise."
+	para "sah nicht, wie man"
+	line "mich schnell"
+	cont "schlug."
 	done
 
 GenericTrainerCooltrainermConnor:
 	generictrainer COOLTRAINERM, CONNOR, EVENT_BEAT_COOLTRAINERM_CONNOR, CooltrainermConnorSeenText, CooltrainermConnorBeatenText
 
-	text "Style and charm"
-	line "go hand in hand."
+	text "Stil und Charme"
+	line "gehen Hand in"
+	cont "Hand."
 
-	para "They're the cool-"
-	line "est combination."
+	para "Zusammen sind sie"
+	line "am coolsten."
 	done
 
 GenericTrainerSuperNerdMiguel:
 	generictrainer SUPER_NERD, MIGUEL, EVENT_BEAT_SUPER_NERD_MIGUEL, SuperNerdMiguelSeenText, SuperNerdMiguelBeatenText
 
-	text "Maybe if I had"
-	line "an Aerodactyl…"
+	text "Hätte ich doch nur"
+	line "ein Aerodactyl…"
 	done
 
 YoungsterJoshSeenText:
-	text "You came to ex-"
-	line "plore the cave,"
-	cont "right?"
+	text "Du willst die"
+	line "Höhle erkunden,"
+	cont "oder?"
 
-	para "Be careful, you"
-	line "may get lost."
+	para "Pass auf, dass du"
+	line "dich nicht"
+	cont "verirrst."
 	done
 
 YoungsterJoshBeatenText:
-	text "You're not lost"
-	line "at all."
+	text "Du hast dich gar"
+	line "nicht verirrt."
 	done
 
 Bird_keeperMickSeenText:
-	text "I'm not sure why"
-	line "I came here."
+	text "Ich weiß nicht,"
+	line "warum ich her-"
+	cont "gekommen bin."
 
-	para "My birds can't fly"
-	line "in this cave!"
+	para "Meine Vögel können"
+	line "in dieser Höhle"
+	cont "nicht fliegen!"
 	done
 
 Bird_keeperMickBeatenText:
-	text "Yeah, this was a"
-	line "bad idea."
+	text "Ja, das war eine"
+	line "dumme Idee."
 	done
 
 HexManiacEstherSeenText:
-	text "Mirror, mirror,"
-	line "on the wall,"
+	text "Spieglein, Spieg-"
+	line "lein an der Wand,"
 
-	para "who will throw"
-	line "their # Ball?"
+	para "wer wirft den"
+	line "#ball im"
+	cont "ganzen Land?"
 	done
 
 HexManiacEstherBeatenText:
-	text "You will!"
+	text "Du!"
 	done
 
 CooltrainermConnorSeenText:
-	text "You've either got"
-	line "it or you don't."
+	text "Entweder man hat"
+	line "es, oder man hat"
+	cont "es nicht."
 	done
 
 CooltrainermConnorBeatenText:
-	text "Whoa!"
-	line "You've got it!"
+	text "Wow!"
+	line "Du hast es!"
 	done
 
 SuperNerdMiguelSeenText:
-	text "I found these"
-	line "fossils and re-"
-	cont "vived them!"
+	text "Ich habe diese"
+	line "Fossilien gefunden"
+	cont "und wiederbelebt!"
 
-	para "Now they're both"
-	line "mine!"
+	para "Jetzt gehören"
+	line "beide mir!"
 	done
 
 SuperNerdMiguelBeatenText:
-	text "My fossils were"
-	line "crushed!"
+	text "Meine Fossilien"
+	line "wurden zermalmt!"
 	done

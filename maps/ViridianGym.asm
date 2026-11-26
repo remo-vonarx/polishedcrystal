@@ -123,54 +123,58 @@ ViridianGymGuyScript:
 GenericTrainerAceDuoAraandbela1:
 	generictrainer ACE_DUO, ARAANDBELA1, EVENT_BEAT_ACE_DUO_ARA_AND_BELA, AceDuoAraandbela1SeenText, AceDuoAraandbela1BeatenText
 
-	text "Ara: Me, I should"
-	line "be a pretty good"
-	cont "practice partner…"
+	text "Ara: Ich wäre"
+	line "wohl ein ziemlich"
+	cont "guter Trainings-"
+	cont "partner…"
 	done
 
 GenericTrainerAceDuoAraandbela2:
 	generictrainer ACE_DUO, ARAANDBELA2, EVENT_BEAT_ACE_DUO_ARA_AND_BELA, AceDuoAraandbela2SeenText, AceDuoAraandbela2BeatenText
 
-	text "Bela: Our practice"
-	line "battles didn't pre-"
-	cont "pare us for this."
+	text "Bela: Unsere"
+	line "Trainingskämpfe"
+	cont "haben uns nicht"
+	cont "darauf"
+	cont "vorbereitet."
 	done
 
 GenericTrainerCooltrainerfSalma:
 	generictrainer COOLTRAINERF, SALMA, EVENT_BEAT_COOLTRAINERF_SALMA, CooltrainerfSalmaSeenText, CooltrainerfSalmaBeatenText
 
-	text "There are many"
-	line "Gyms in the world,"
+	text "Es gibt viele"
+	line "Arenen auf der"
 
-	para "but I really like"
-	line "this one!"
+	para "Welt, aber diese"
+	line "mag ich wirklich!"
 	done
 
 GenericTrainerCooltrainerfBonita:
 	generictrainer COOLTRAINERF, BONITA, EVENT_BEAT_COOLTRAINERF_BONITA, CooltrainerfBonitaSeenText, CooltrainerfBonitaBeatenText
 
-	text "Looks like you've"
-	line "still got some"
-	cont "energy left."
+	text "Sieht aus, als"
+	line "hättest du noch"
+	cont "Energie übrig."
 	done
 
 GenericTrainerAceDuoElanandida1:
 	generictrainer ACE_DUO, ELANANDIDA1, EVENT_BEAT_ACE_DUO_ELAN_AND_IDA, AceDuoElanandida1SeenText, AceDuoElanandida1BeatenText
 
-	text "Elan: You're"
-	line "stronger than we"
-	cont "anticipated!"
+	text "Olli: Du bist"
+	line "stärker als"
+	cont "erwartet!"
 	done
 
 GenericTrainerAceDuoElanandida2:
 	generictrainer ACE_DUO, ELANANDIDA2, EVENT_BEAT_ACE_DUO_ELAN_AND_IDA, AceDuoElanandida2SeenText, AceDuoElanandida2BeatenText
 
-	text "Ida: If all you"
-	line "have is strength,"
-	cont "you won't do well."
+	text "Moni: Wenn du nur"
+	line "Stärke hast,"
+	cont "kommst du nicht"
+	cont "weit."
 
-	para "Strategy is also"
-	line "important!"
+	para "Strategie ist"
+	line "auch wichtig!"
 	done
 
 ViridianGymStatue:
@@ -221,23 +225,23 @@ LeaderBlueBeforeText:
 	done
 
 LeaderBlueWinText:
-	text "Blue: What?"
+	text "Blau: Was?"
 
-	para "How the heck did I"
-	line "lose to you?"
+	para "Wie zum Teufel"
+	line "konnte ich gegen"
+	cont "dich verlieren?"
 
 	para "…"
 
-	para "Tch, all right…"
-	line "Here, take this--"
-
-	para "it's the Earth"
-	line "Badge."
+	para "Also gut…"
+	line "Hier, nimm das -"
+	cont "es ist der"
+	cont "Erdorden."
 	done
 
 LeaderBlueAfterText:
-	text "Blue: Here! Take"
-	line "this as well!"
+	text "Blau: Hier! Nimm"
+	line "das auch noch!"
 	done
 
 
@@ -265,72 +269,78 @@ ViridianGymGuyWinText:
 	done
 
 AceDuoAraandbela1SeenText:
-	text "Ara: Come on,"
-	line "fight us and see"
-	cont "how good we are!"
+	text "Ara: Komm schon,"
+	line "kämpf gegen uns"
+	cont "und sieh, wie gut"
+	cont "wir sind!"
 	done
 
 AceDuoAraandbela1BeatenText:
-	text "Ara: We were"
-	line "deceived!"
+	text "Ara: Wir wurden"
+	line "getäuscht!"
 	done
 
 AceDuoAraandbela2SeenText:
-	text "Bela: Come on,"
-	line "fight us and see"
-	cont "how good we are!"
+	text "Bela: Komm schon,"
+	line "kämpf gegen uns"
+	cont "und sieh, wie gut"
+	cont "wir sind!"
 	done
 
 AceDuoAraandbela2BeatenText:
-	text "Bela: We were"
-	line "deceived!"
+	text "Bela: Wir wurden"
+	line "getäuscht!"
 	done
 
 CooltrainerfSalmaSeenText:
-	text "What do you think?"
+	text "Na, was meinst du?"
 
-	para "You've never seen"
-	line "such a wonderful"
-	cont "Gym, have you?"
+	para "So eine wunder-"
+	line "bare Arena hast du"
+	cont "noch nie gesehen,"
+	cont "oder?"
 	done
 
 CooltrainerfSalmaBeatenText:
-	text "Whatever!"
+	text "Egal!"
 	done
 
 CooltrainerfBonitaSeenText:
-	text "Looking around the"
-	line "room, doesn't it"
-	cont "make you dizzy?"
+	text "Wird dir nicht"
+	line "schwindlig, wenn"
+	cont "du dich hier"
+	cont "umsiehst?"
 	done
 
 CooltrainerfBonitaBeatenText:
-	text "All of my #mon…"
+	text "Meine #mon…"
 
-	para "All dizzy and"
-	line "fainting…"
+	para "Alle schwindlig"
+	line "und besiegt…"
 	done
 
 AceDuoElanandida1SeenText:
-	text "Elan: All right,"
-	line "let's get this"
-	cont "fight started!"
+	text "Olli: Also gut,"
+	line "lass uns den Kampf"
+	cont "beginnen!"
 	done
 
 AceDuoElanandida1BeatenText:
-	text "Elan: Well, this"
-	line "is surprising."
+	text "Olli: Na, das"
+	line "überrascht mich."
 	done
 
 AceDuoElanandida2SeenText:
-	text "Ida: I'm Ida! Next"
-	line "to me is Elan!"
+	text "Moni: Ich bin"
+	line "Moni! Neben mir"
+	cont "ist Olli!"
 
-	para "Together, we're an"
-	line "Ace Duo!"
+	para "Zusammen sind wir"
+	line "ein Ass-Duo!"
 	done
 
 AceDuoElanandida2BeatenText:
-	text "Ida: Wow. You're"
-	line "really something."
+	text "Moni: Wow. Du"
+	line "bist echt was"
+	cont "Besonderes."
 	done

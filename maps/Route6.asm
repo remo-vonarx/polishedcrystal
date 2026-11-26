@@ -70,67 +70,72 @@ PokefanmAllanBeatenText:
 GenericTrainerTwinsDayanddani1:
 	generictrainer TWINS, DAYANDDANI1, EVENT_BEAT_TWINS_DAY_AND_DANI, TwinsDayanddani1SeenText, TwinsDayanddani1BeatenText
 
-	text "Day: You beat us…"
+	text "Kim: Du hast uns"
+	line "besiegt…"
 	done
 
 TwinsDayanddani1SeenText:
-	text "Day: Are you going"
-	line "to beat us?"
+	text "Kim: Wirst du uns"
+	line "besiegen?"
 	done
 
 TwinsDayanddani1BeatenText:
-	text "Day: Waah!"
+	text "Kim: Waah!"
 	done
 
 GenericTrainerTwinsDayanddani2:
 	generictrainer TWINS, DAYANDDANI2, EVENT_BEAT_TWINS_DAY_AND_DANI, TwinsDayanddani2SeenText, TwinsDayanddani2BeatenText
 
-	text "Dani: Looks like"
-	line "we got bounced."
+	text "Kiki: Sieht aus,"
+	line "als wären wir"
+	cont "rausgeflogen."
 	done
 
 TwinsDayanddani2SeenText:
-	text "Dani: We'll knock"
-	line "you flat!"
+	text "Kiki: Wir hauen"
+	line "dich um!"
 	done
 
 TwinsDayanddani2BeatenText:
-	text "Dani: Eeeeh!"
+	text "Kiki: Eeeeh!"
 	done
 
 GenericTrainerYoungsterChaz:
 	generictrainer YOUNGSTER, CHAZ, EVENT_BEAT_YOUNGSTER_CHAZ, .SeenText, .BeatenText
 
-	text "Me and my big"
-	line "mouth…"
+	text "Ich und meine"
+	line "große Klappe…"
 	done
 
 .SeenText:
-	text "Do I see a strong"
-	line "trainer?"
+	text "Sehe ich da einen"
+	line "starken Trainer?"
 
-	para "Nope, there's only"
-	line "trash here!"
+	para "Nö, hier ist nur"
+	line "Müll!"
 	done
 
 .BeatenText:
-	text "The trash was me…"
+	text "Der Müll war"
+	line "ich…"
 	done
 
 GenericTrainerGuitaristfWanda:
 	generictrainer GUITARISTF, WANDA, EVENT_BEAT_GUITARISTF_WANDA, .SeenText, .BeatenText
 
-	text "Just move along…"
+	text "Geh einfach"
+	line "weiter…"
 	done
 
 .SeenText:
-	text "You'd better"
-	line "scatter and run!"
+	text "Du solltest dich"
+	line "lieber verziehen!"
 	done
 
 .BeatenText:
-	text "The battle's lost"
-	line "and not won…"
+	text "Die Schlacht ist"
+	line "verloren und"
+	cont "nicht gewonnen…"
 	done
 
 OfficerfJennyScript:
@@ -172,11 +177,11 @@ OfficerfJennyScript:
 	done
 
 .AfterText:
-	text "Sorry to bother"
-	line "you, kid."
+	text "Entschuldige die"
+	line "Störung, Kleiner."
 
-	para "I get jumpy at"
-	line "night."
+	para "Nachts bin ich"
+	line "schreckhaft."
 	done
 
 Route6AdvancedTipsSignText:

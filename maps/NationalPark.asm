@@ -72,27 +72,28 @@ OfficermKeithScript:
 GenericTrainerBugManiacLou:
 	generictrainer BUG_MANIAC, LOU, EVENT_BEAT_BUG_MANIAC_LOU, BugManiacLouSeenText, BugManiacLouBeatenText
 
-	text "I used to be just"
-	line "a Bug Catcher,"
+	text "Früher war ich nur"
+	line "ein Käfersammler,"
 
-	para "but I evolved into"
-	line "a Bug Maniac!"
+	para "aber ich habe mich"
+	line "zum Käfermaniac"
+	cont "entwickelt!"
 	done
 
 GenericTrainerSchoolgirlEliza:
 	generictrainer SCHOOLGIRL, ELIZA, EVENT_BEAT_SCHOOLGIRL_ELIZA, SchoolgirlElizaSeenText, SchoolgirlElizaBeatenText
 
-	text "I don't care!"
-	line "I still love"
-	cont "Oddish."
+	text "Ist mir egal!"
+	line "Ich liebe Myrapla"
+	cont "trotzdem."
 	done
 
 GenericTrainerSchoolboyJohnny:
 	generictrainer SCHOOLBOY, JOHNNY, EVENT_BEAT_SCHOOLBOY_JOHNNY, SchoolboyJohnnySeenText, SchoolboyJohnnyBeatenText
 
-	text "Yeah, well, I"
-	line "still prefer"
-	cont "Bellsprout."
+	text "Ja, na ja, mir ist"
+	line "Knofensa trotzdem"
+	cont "lieber."
 	done
 
 NationalParkGameboyKidScript:
@@ -349,25 +350,27 @@ NationalParkTeacher1Text_GotQuickClaw:
 	done
 
 SchoolgirlElizaSeenText:
-	text "Oddish is just"
-	line "the cutest!"
+	text "Myrapla ist ein-"
+	line "fach am süßesten!"
 
-	para "Don't you agree?"
+	para "Findest du nicht?"
 	done
 
 SchoolgirlElizaBeatenText:
-	text "My poor Oddish…"
+	text "Mein armes"
+	line "Myrapla…"
 	done
 
 SchoolboyJohnnySeenText:
-	text "Bellsprout is just"
-	line "the coolest!"
+	text "Knofensa ist ein-"
+	line "fach am coolsten!"
 
-	para "Aren't I right?"
+	para "Hab ich nicht"
+	line "recht?"
 	done
 
 SchoolboyJohnnyBeatenText:
-	text "Bellsprout, no…"
+	text "Knofensa, nein…"
 	done
 
 NationalParkTeacher2Text:
@@ -472,13 +475,14 @@ LassKriseBeatenText: ; text > text
 	done
 
 BugManiacLouSeenText:
-	text "Nobody can beat"
-	line "my passion for"
-	cont "bug #mon!"
+	text "Niemand übertrifft"
+	line "meine Leidenschaft"
+	cont "für Käfer-#mon!"
 	done
 
 BugManiacLouBeatenText:
-	text "How can this be?!"
+	text "Wie kann das"
+	line "sein?!"
 	done
 
 OfficermKeithSeenText:
@@ -488,17 +492,17 @@ OfficermKeithSeenText:
 	done
 
 OfficermKeithWinText:
-	text "You know how to"
-	line "defend yourself!"
+	text "Du weißt dich zu"
+	line "verteidigen!"
 	done
 
 OfficermKeithAfterText:
-	text "The park stays"
-	line "open at night,"
+	text "Der Park bleibt"
+	line "nachts geöffnet,"
 
-	para "because Officers"
-	line "like me keep it"
-	cont "safe!"
+	para "weil Wächter wie"
+	line "ich für Sicherheit"
+	cont "sorgen!"
 	done
 
 OfficermKeithDaytimeText:

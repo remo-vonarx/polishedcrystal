@@ -37,14 +37,16 @@ Route35_MapScriptHeader:
 GenericTrainerBreederTheresa:
 	generictrainer BREEDER, THERESA, EVENT_BEAT_BREEDER_THERESA, BreederTheresaSeenText, BreederTheresaBeatenText
 
-	text "I take my #mon"
-	line "to get haircuts"
+	text "Ich bringe meine"
+	line "#mon zum Haare-"
 
-	para "in Goldenrod City,"
-	line "and blessings in"
-	cont "Ecruteak City."
+	para "schneiden nach"
+	line "Dukatia City und"
+	cont "zum Segnen nach"
+	cont "Teak City."
 
-	para "They're so happy!"
+	para "Sie sind so"
+	line "glücklich!"
 	done
 
 TrainerJugglerIrwin:
@@ -106,17 +108,20 @@ GenericTrainerCamperIvan:
 GenericTrainerCoupleGailandeli1:
 	generictrainer COUPLE, GAILANDELI1, EVENT_BEAT_COUPLE_GAIL_AND_ELI, CoupleGailandeli1SeenText, CoupleGailandeli1BeatenText
 
-	text "Eli: I was humili-"
-	line "ated in front of"
-	cont "my girlfriend…"
+	text "Eli: Du hast mich"
+	line "vor meiner Freun-"
+	cont "din lächerlich"
+	cont "gemacht…"
 	done
 
 GenericTrainerCoupleGailandeli2:
 	generictrainer COUPLE, GAILANDELI2, EVENT_BEAT_COUPLE_GAIL_AND_ELI, CoupleGailandeli2SeenText, CoupleGailandeli2BeatenText
 
-	text "Gail: I can count"
-	line "on my #mon more"
-	cont "than my boyfriend."
+	text "Gail: Auf meine"
+	line "#mon kann ich"
+	cont "mich eher verlas-"
+	cont "sen als auf meinen"
+	cont "Freund."
 	done
 
 GenericTrainerPicnickerKim:
@@ -295,25 +300,27 @@ CamperIvanBeatenText:
 	done
 
 CoupleGailandeli1SeenText:
-	text "Eli: I'm gonna"
-	line "show my girlfriend"
-	cont "I'm hot stuff!"
+	text "Eli: Ich werde"
+	line "meiner Freundin"
+	cont "zeigen, wie cool"
+	cont "ich bin!"
 	done
 
 CoupleGailandeli1BeatenText:
-	text "Eli: I wish you'd"
-	line "have lost for me…"
+	text "Eli: Ach, hättest"
+	line "du doch verloren…"
 	done
 
 CoupleGailandeli2SeenText:
-	text "Gail: My boy-"
-	line "friend's weak, so I"
-	cont "can't rely on him."
+	text "Gail: Mein Freund"
+	line "ist schwach, auf"
+	cont "ihn ist kein"
+	cont "Verlass."
 	done
 
 CoupleGailandeli2BeatenText:
-	text "Gail: Oh, my!"
-	line "You're so strong!"
+	text "Gail: Meine Güte,"
+	line "bist du stark!"
 	done
 
 PicnickerKimSeenText:
@@ -327,13 +334,13 @@ PicnickerKimBeatenText:
 	done
 
 BreederTheresaSeenText:
-	text "How do you care"
-	line "for your #mon?"
+	text "Wie pflegst du"
+	line "deine #mon?"
 	done
 
 BreederTheresaBeatenText:
-	text "Ah! You take good"
-	line "care of them!"
+	text "Ah! Du pflegst sie"
+	line "gut!"
 	done
 
 JugglerIrwin1SeenText:

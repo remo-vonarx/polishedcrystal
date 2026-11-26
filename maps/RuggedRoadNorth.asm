@@ -66,26 +66,27 @@ RuggedRoadNorthFixBridgeCallback:
 GenericTrainerBattleGirlMei:
 	generictrainer BATTLE_GIRL, MEI, EVENT_BEAT_BATTLE_GIRL_MEI, .SeenText, .BeatenText
 
-	text "Pushing yourself"
-	line "a little further"
-	cont "every day."
+	text "Sich jeden Tag"
+	line "ein bisschen mehr"
+	cont "anstrengen."
 
-	para "That's my training"
-	line "style."
+	para "Das ist mein"
+	line "Trainingsstil."
 	done
 
 .SeenText:
-	text "Training in harsh"
-	line "environments like"
+	text "Training in so"
+	line "rauer Umgebung"
 
-	para "this is essential"
-	line "if you want to be"
-	cont "your best."
+	para "ist unerlässlich,"
+	line "wenn du dein"
+	cont "Bestes geben"
+	cont "willst."
 	done
 
 .BeatenText:
-	text "I see you've done"
-	line "your training."
+	text "Wie ich sehe, hast"
+	line "du trainiert."
 	done
 
 RuggedRoadNorthHikerScript:

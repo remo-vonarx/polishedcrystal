@@ -18,11 +18,11 @@ Route12North_MapScriptHeader:
 GenericTrainerFisherKyle:
 	generictrainer FISHER, KYLE, EVENT_BEAT_FISHER_KYLE, FisherKyleSeenText, FisherKyleBeatenText
 
-	text "The tug you feel"
-	line "on the Rod when"
+	text "Das Reißen an der"
+	line "Angel, wenn du"
 
-	para "you hook a #-"
-	line "mon…"
+	para "ein #mon"
+	line "fangen möchtest…"
 	done
 
 FisherKyleSeenText:

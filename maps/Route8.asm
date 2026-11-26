@@ -78,49 +78,49 @@ GenericTrainerSupernerdSam:
 GenericTrainerSupernerdTom:
 	generictrainer SUPER_NERD, TOM, EVENT_BEAT_SUPER_NERD_TOM, SupernerdTomSeenText, SupernerdTomBeatenText
 
-	text "Gym Badges are"
-	line "proof of your"
-	cont "skill at battles."
+	text "Orden sind der"
+	line "Beweis für dein"
+	cont "Können im Kampf."
 	done
 
 GenericTrainerGentlemanMilton:
 	generictrainer GENTLEMAN, MILTON, EVENT_BEAT_GENTLEMAN_MILTON, GentlemanMiltonSeenText, GentlemanMiltonBeatenText
 
-	text "Stopping in the"
-	line "road for a battle"
-	cont "isn't rude."
+	text "Für einen Kampf"
+	line "auf der Straße"
+	cont "anzuhalten, ist"
+	cont "nicht unhöflich."
 
-	para "No matter what,"
-	line "I am a gentleman"
-	cont "first!"
+	para "Ich bin stets"
+	line "zuerst ein"
+	cont "Gentleman!"
 	done
 
 GenericTrainerCoupleMoeandlulu1:
 	generictrainer COUPLE, MOEANDLULU1, EVENT_BEAT_COUPLE_MOE_AND_LULU, CoupleMoeandlulu1SeenText, CoupleMoeandlulu1BeatenText
 
-	text "Moe: In short,"
-	line "you're just too"
-	cont "strong…"
+	text "Ivo: Kurz gesagt,"
+	line "du bist einfach"
+	cont "zu stark…"
 	done
 
 GenericTrainerCoupleMoeandlulu2:
 	generictrainer COUPLE, MOEANDLULU2, EVENT_BEAT_COUPLE_MOE_AND_LULU, CoupleMoeandlulu2SeenText, CoupleMoeandlulu2BeatenText
 
-	text "Lulu: It's not that"
-	line "Moe's weak, it's"
+	text "Lulu: Ivo ist"
+	line "nicht schwach, du"
 
-	para "that you're too"
-	line "strong!"
+	para "bist einfach zu"
+	line "stark!"
 	done
 
 GenericTrainerLassMeadow:
 	generictrainer LASS, MEADOW, EVENT_BEAT_LASS_MEADOW, LassMeadowSeenText, LassMeadowBeatenText
 
-	text "Oh well, I'm more"
-	line "worried about"
+	text "Na ja, mir geht"
+	line "es mehr um Spaß"
 
-	para "having fun than"
-	line "being competitive."
+	para "als ums Gewinnen."
 	done
 
 Route8BikerDwayneProtestText:
@@ -204,50 +204,51 @@ SupernerdTomBeatenText:
 	done
 
 GentlemanMiltonSeenText:
-	text "Would you care to"
-	line "join me in a"
-	cont "quick contest?"
+	text "Hättest du Lust"
+	line "auf einen kurzen"
+	cont "Wettkampf?"
 	done
 
 GentlemanMiltonBeatenText:
-	text "You were very"
-	line "skillful."
+	text "Du warst sehr"
+	line "geschickt."
 	done
 
 CoupleMoeandlulu1SeenText:
-	text "Moe: Do I look"
-	line "weak? Don't make"
-	cont "me laugh!"
+	text "Ivo: Sehe ich"
+	line "schwach aus? Dass"
+	cont "ich nicht lache!"
 
-	para "When I'm with Lulu,"
-	line "I've got a hundred"
-	cont "times the courage!"
+	para "Mit Lulu habe ich"
+	line "hundertmal so viel"
+	cont "Mut!"
 	done
 
 CoupleMoeandlulu1BeatenText:
-	text "Moe: Uwaaaahhh…"
+	text "Ivo: Uwaaaahhh…"
 	done
 
 CoupleMoeandlulu2SeenText:
-	text "Lulu: Moe and I"
-	line "make a great pair!"
+	text "Lulu: Ivo und ich"
+	line "sind ein tolles"
+	cont "Paar!"
 
-	para "You should prepare"
-	line "yourself!"
+	para "Mach dich auf"
+	line "was gefasst!"
 	done
 
 CoupleMoeandlulu2BeatenText:
-	text "Lulu: Eeek!"
+	text "Lulu: Iiiek!"
 	done
 
 LassMeadowSeenText:
-	text "I like skirts!"
-	line "They're cute and"
-	cont "comfy to wear!"
+	text "Ich mag Röcke!"
+	line "Sie sind süß und"
+	cont "bequem!"
 	done
 
 LassMeadowBeatenText:
-	text "Oh my!"
+	text "Oh je!"
 	done
 
 Route8UndergroundPathSignText:

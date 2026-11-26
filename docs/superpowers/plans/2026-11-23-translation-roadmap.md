@@ -186,8 +186,8 @@ Decided 2026-11-25 on a review page and in dialogs: stat names in full with 's, 
 
 ### Task 12: Trainer battle lines
 
-- [ ] Every trainer's seen, beaten and after-battle lines K left, in all maps.
-- [ ] Test: one trainer of each class, every Gym Leader and the Elite Four.
+- [x] Every trainer's seen, beaten and after-battle lines K left, in all maps.
+- [x] Test: one trainer of each class, every Gym Leader and the Elite Four.
 - [ ] Ship.
 
 ### Task 13: Signs

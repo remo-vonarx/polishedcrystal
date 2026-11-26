@@ -113,11 +113,13 @@ GenericTrainerGruntM8:
 GenericTrainerGruntM9:
 	generictrainer GRUNTM, 9, EVENT_BEAT_ROCKET_GRUNTM_9, GruntM9SeenText, GruntM9BeatenText
 
-	text "What?! You made it"
-	line "past our men in"
-	cont "the Underground?"
+	text "Was?! Du bist an"
+	line "unseren Männern im"
+	cont "Untergrund"
+	cont "vorbeigekommen?"
 
-	para "How could you?"
+	para "Wie hast du das"
+	line "fertiggebracht?"
 	done
 
 GenericTrainerRocketScientistMarc:

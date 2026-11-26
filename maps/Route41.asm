@@ -132,12 +132,12 @@ Route41MarlonScript:
 	done
 
 .AfterText:
-	text "You don't just"
-	line "look strong, you're"
-	cont "strong fo' reals!"
+	text "Du siehst nicht"
+	line "nur stark aus, du"
+	cont "bist echt stark!"
 
-	para "Eh, I was swept"
-	line "away, too!"
+	para "Eh, ich wurde auch"
+	line "mitgerissen!"
 	done
 
 GenericTrainerSwimmerfKaylee:
@@ -266,11 +266,11 @@ GenericTrainerSwimmermMathew:
 GenericTrainerSwimmermLewis:
 	generictrainer SWIMMERM, LEWIS, EVENT_BEAT_SWIMMERM_LEWIS, SwimmermLewisSeenText, SwimmermLewisBeatenText
 
-	text "It takes knowledge"
-	line "and experience"
+	text "Man braucht Wis-"
+	line "sen und Erfahrung,"
 
-	para "to not get lost"
-	line "in the water."
+	para "um sich im Wasser"
+	line "nicht zu verirren."
 	done
 
 SwimmermCharlieSeenText:
@@ -340,13 +340,13 @@ SwimmermMathewBeatenText:
 	done
 
 SwimmermLewisSeenText:
-	text "I feel right at"
-	line "home in the sea!"
+	text "Im Meer fühle ich"
+	line "mich wie zu Hause!"
 	done
 
 SwimmermLewisBeatenText:
-	text "Beaten in my own"
-	line "home?"
+	text "In meinem eigenen"
+	line "Zuhause besiegt?"
 	done
 
 SwimmerfKayleeSeenText:

@@ -28,18 +28,18 @@ FastShipCabins_NNW_NNE_NE_MapScriptHeader:
 GenericTrainerPILooker:
 	generictrainer PI, LOOKER, EVENT_BEAT_PI_LOOKER, PILookerSeenText, PILookerBeatenText
 
-	text "My code name,"
-	line "it is Looker."
+	text "Mein Codename,"
+	line "er lautet LeBelle."
 
-	para "It is what they"
-	line "all call me."
+	para "So nennen sie"
+	line "mich alle."
 
-	para "I am on the look-"
-	line "out for members"
-	cont "of Team Rocket."
+	para "Ausschau halte ich"
+	line "nach Mitgliedern"
+	cont "von Team Rocket."
 
-	para "What?! You defeat-"
-	line "ed them?"
+	para "Was?! Besiegt hast"
+	line "du sie?"
 
 	para "Bravo!"
 	done
@@ -151,19 +151,20 @@ FastShipLazySailorLeavesMovement2:
 	step_end
 
 PILookerSeenText:
-	text "WHAAAT?!"
+	text "WAAAS?!"
 
-	para "…How did you know?"
-	line "How did you unmask"
+	para "…Woher wusstest"
+	line "du das? Wie hast"
 
-	para "me as a member of"
-	line "the International"
-	cont "Police?!"
+	para "du mich als Mit-"
+	line "glied der Inter-"
+	cont "nationalen Polizei"
+	cont "enttarnt?!"
 	done
 
 PILookerBeatenText:
-	text "Quite admirable,"
-	line "you are!"
+	text "Recht bewunderns-"
+	line "wert, du bist!"
 	done
 
 CooltrainermSeanSeenText:

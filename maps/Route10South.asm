@@ -51,9 +51,9 @@ GenericTrainerPokefanmRobert:
 GenericTrainerHexManiacAmy:
 	generictrainer HEX_MANIAC, AMY, EVENT_BEAT_HEX_MANIAC_AMY, HexManiacAmySeenText, HexManiacAmyBeatenText
 
-	text "A Hex Maniac is"
-	line "at peace among"
-	cont "the spirits…"
+	text "Eine Hexe findet"
+	line "Frieden unter den"
+	cont "Geistern…"
 	done
 
 HikerJimSeenText:
@@ -77,16 +77,16 @@ PokefanmRobertBeatenText:
 	done
 
 HexManiacAmySeenText:
-	text "Lavender Town…"
+	text "Lavandia…"
 
-	para "Where the spirits"
-	line "of #mon sleep…"
+	para "Wo die Seelen der"
+	line "#mon schlafen…"
 	done
 
 HexManiacAmyBeatenText:
-	text "Your #mon are"
-	line "overflowing with"
-	cont "vitality…"
+	text "Deine #mon"
+	line "sprühen vor"
+	cont "Lebenskraft…"
 	done
 
 Route10SignText:

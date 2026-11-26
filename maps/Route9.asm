@@ -134,12 +134,12 @@ PicnickerEdnaBeatenText:
 	done
 
 HikerTimSeenText:
-	text "♪ She'll be coming"
-	line "'round Mt.Silver"
-	cont "when she comes… ♪"
+	text "♪ Sie kommt um den"
+	line "Silberberg, wenn"
+	cont "sie kommt… ♪"
 
-	para "Mt.Silver is in"
-	line "Johto, right?"
+	para "Der Silberberg ist"
+	line "in Johto, oder?"
 	done
 
 HikerTimBeatenText:

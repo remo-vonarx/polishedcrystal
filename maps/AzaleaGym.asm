@@ -276,22 +276,21 @@ GenericTrainerTwinsAmyandmimi1:
 GenericTrainerTwinsAmyandmimi2:
 	generictrainer TWINS, AMYANDMIMI2, EVENT_BEAT_TWINS_AMY_AND_MAY, .SeenText, TrainerTwinsAmyandmimiBeatenText
 
-	text "Mimi: Our bug"
-	line "#mon lost!"
-
-	para "Oh, what a"
-	line "shame."
+	text "Ute: Unsere Käfer-"
+	line "#mon haben ver-"
+	cont "loren! Was für ei-"
+	cont "ne Schande!"
 	done
 
 .SeenText:
-	text "Mimi: You want to"
-	line "see the Leader?"
-	cont "We come first!"
+	text "Ute: Du möchtest"
+	line "zum Leiter? Erst"
+	cont "sind wir dran!"
 	done
 
 TrainerTwinsAmyandmimiBeatenText:
-	text "Amy & Mimi: Oh,"
-	line "double goodness!"
+	text "Eva & Ute: Um"
+	line "Himmels Willen!"
 	done
 
 SpinarakCartStartUpScript:

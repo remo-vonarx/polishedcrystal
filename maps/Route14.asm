@@ -28,14 +28,16 @@ Route14_MapScriptHeader:
 GenericTrainerPokefanmTrevor:
 	generictrainer POKEFANM, TREVOR, EVENT_BEAT_POKEFANM_TREVOR, PokefanmTrevorSeenText, PokefanmTrevorBeatenText
 
-	text "If only there were"
-	line "an easy way to"
+	text "Gäbe es doch einen"
+	line "einfachen Weg, um"
 
-	para "identify where I"
-	line "got my #mon…"
+	para "festzustellen, wo"
+	line "ich meine"
+	cont "#mon traf…"
 
-	para "Oh! I can just"
-	line "check its stats!"
+	para "Oh! Ich sehe mir"
+	line "einfach ihre"
+	cont "Werte an!"
 	done
 
 PokefanmTrevorSeenText:
@@ -105,105 +107,110 @@ Bird_keeperRoyBeatenText:
 GenericTrainerBird_keeperJosh:
 	generictrainer BIRD_KEEPER, BIRD_KEEPER_JOSH, EVENT_BEAT_BIRD_KEEPER_JOSH, .SeenText, .BeatenText
 
-	text "Maybe I should lie"
-	line "and say I'm in the"
-	cont "heavyweight class…"
+	text "Vielleicht sollte"
+	line "ich lügen und sa-"
+	cont "gen, ich bin ein"
+	cont "Schwergewicht…"
 	done
 
 .SeenText:
-	text "My weight puts me"
-	line "in the feather-"
-	cont "weight class!"
+	text "Mit meinem Gewicht"
+	line "bin ich ein"
+	cont "Federgewicht!"
 
-	para "…Huh? What do you"
-	line "mean that doesn't"
-	cont "sound very strong?"
+	para "…Hä? Wie, das"
+	line "klingt nicht"
+	cont "besonders stark?"
 	done
 
 .BeatenText:
-	text "I lost as lightly"
-	line "as a feather"
-	cont "floats!"
+	text "Ich habe so leicht"
+	line "verloren, wie eine"
+	cont "Feder schwebt!"
 	done
 
 GenericTrainerSchoolboyConnor:
 	generictrainer SCHOOLBOY, SCHOOLBOY_CONNOR, EVENT_BEAT_SCHOOLBOY_CONNOR, .SeenText, .BeatenText
 
-	text "Don't rush, and"
-	line "take the road one"
-	cont "step at a time."
+	text "Nichts überstürzen"
+	line "und Schritt für"
+	cont "Schritt gehen."
 
-	para "Great advice!"
+	para "Toller Rat!"
 	done
 
 .SeenText:
-	text "I can't wait to go"
-	line "home and drop off"
-	cont "my Bag!"
+	text "Ich kann es kaum"
+	line "erwarten, heimzu-"
+	cont "gehen und meinen"
+	cont "Beutel abzulegen!"
 	done
 
 .BeatenText:
-	text "I was in too much"
-	line "of a hurry."
+	text "Ich hatte es zu"
+	line "eilig."
 	done
 
 GenericTrainerSchoolboyTorin:
 	generictrainer SCHOOLBOY, TORIN, EVENT_BEAT_SCHOOLBOY_TORIN, .SeenText, .BeatenText
 
-	text "All right! Next"
-	line "time, I won't make"
-	cont "any mistakes!"
+	text "Na gut! Nächstes"
+	line "Mal mache ich"
+	cont "keine Fehler!"
 	done
 
 .SeenText:
-	text "It's good to put"
-	line "what you learn to"
-	cont "use immediately!"
+	text "Es ist gut, das"
+	line "Gelernte sofort"
+	cont "anzuwenden!"
 	done
 
 .BeatenText:
-	text "I see. I see."
+	text "Verstehe."
+	line "Verstehe."
 	done
 
 GenericTrainerSchoolboyTravis:
 	generictrainer SCHOOLBOY, TRAVIS, EVENT_BEAT_SCHOOLBOY_TRAVIS, .SeenText, .BeatenText
 
-	text "Maybe I should"
-	line "join your study"
-	cont "sessions!"
+	text "Vielleicht sollte"
+	line "ich zu deinen"
+	cont "Lerngruppen"
+	cont "kommen!"
 	done
 
 .SeenText:
-	text "Do you have after-"
-	line "school study"
-	cont "sessions?"
+	text "Hast du nach der"
+	line "Schule Lern-"
+	cont "gruppen?"
 	done
 
 .BeatenText:
-	text "So strong…"
+	text "So stark…"
 	done
 
 GenericTrainerTeacherClarice:
 	generictrainer TEACHER_F, CLARICE, EVENT_BEAT_TEACHER_CLARICE, .SeenText, .BeatenText
 
-	text "Don't relax just"
-	line "'cause you won."
+	text "Ruh dich nicht"
+	line "aus, nur weil du"
+	cont "gewonnen hast."
 
-	para "Once you get home,"
-	line "you should do a"
-	cont "full review!"
+	para "Zu Hause solltest"
+	line "du alles gründlich"
+	cont "wiederholen!"
 	done
 
 .SeenText:
-	text "All right, let's"
-	line "get this #mon"
-	cont "battle started!"
+	text "Also gut, starten"
+	line "wir diesen"
+	cont "#mon-Kampf!"
 	done
 
 .BeatenText:
-	text "All right! That"
-	line "concludes today's"
-	cont "battle."
+	text "Also gut! Damit"
+	line "endet der heutige"
+	cont "Kampf."
 	done
 
 Route14SignText:

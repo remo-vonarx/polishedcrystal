@@ -287,11 +287,11 @@ EusineBeatenText:
 	done
 
 EusineLossText:
-	text "Yes!"
+	text "Ja!"
 
-	para "Surely Suicune"
-	line "will recognize"
-	cont "my greatness now!"
+	para "Jetzt wird Suicune"
+	line "meine Größe sicher"
+	cont "anerkennen!"
 	done
 
 EusineAfterText:

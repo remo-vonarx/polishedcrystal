@@ -381,13 +381,15 @@ Text_LyraGoodbye1:
 	done
 
 Text_LyraGoodbyeWin:
-	text "You're as talented"
-	line "as I expected!"
+	text "Du bist so talen-"
+	line "tiert, wie ich"
+	cont "erwartet habe!"
 	done
 
 Text_LyraGoodbyeLoss:
-	text "I hope you didn't"
-	line "let me win…"
+	text "Hoffentlich hast"
+	line "du mich nicht ge-"
+	cont "winnen lassen…"
 	done
 
 Text_LyraGoodbye2:

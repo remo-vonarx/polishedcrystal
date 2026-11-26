@@ -423,15 +423,16 @@ OfficerfMaraScript:
 GenericTrainerBreederJulie:
 	generictrainer BREEDER, JULIE, EVENT_BEAT_BREEDER_JULIE, BreederJulieSeenText, BreederJulieBeatenText
 
-	text "One of my #mon"
-	line "has an Adamant"
+	text "Eines meiner"
+	line "#mon hat ein"
+	cont "hartes Wesen,"
 
-	para "nature. Another"
-	line "has a Lax nature."
+	para "ein anderes ein"
+	line "lasches."
 
-	para "It seems to make"
-	line "a difference in"
-	cont "battle."
+	para "Das scheint im"
+	line "Kampf einen Unter-"
+	cont "schied zu machen."
 	done
 
 Route34RichBoyIrvingScript:
@@ -472,9 +473,9 @@ Route34RichBoyIrvingScript:
 	jumpthisopenedtext
 
 .AfterText2:
-	text "There are some"
-	line "things that money"
-	cont "can't buy."
+	text "Manche Dinge kann"
+	line "man nicht mit Geld"
+	cont "kaufen."
 	done
 
 .IntroText:
@@ -530,15 +531,16 @@ Route34RichBoyIrvingScript:
 	done
 
 .AfterText1:
-	text "You've clearly"
-	line "earned this item."
+	text "Dieses Item hast"
+	line "du dir eindeutig"
+	cont "verdient."
 
-	para "Sell it and go on"
-	line "a shopping spree,"
+	para "Verkauf es und geh"
+	line "shoppen,"
 
-	para "or keep it as a"
-	line "memento of our"
-	cont "battle."
+	para "oder behalte es"
+	line "als Andenken an"
+	cont "unseren Kampf."
 	done
 
 GenericTrainerPokefanmBrandon:
@@ -669,13 +671,14 @@ Route34LyraChallengeText:
 	done
 
 Route34LyraWinText:
-	text "You're even better"
-	line "than I thought!"
+	text "Du bist sogar"
+	line "besser, als ich"
+	cont "dachte!"
 	done
 
 Route34LyraLossText:
-	text "Well, you're still"
-	line "getting better…"
+	text "Na ja, du wirst"
+	line "immer besser…"
 	done
 
 Route34LyraFollowMeText:
@@ -685,8 +688,8 @@ Route34LyraFollowMeText:
 	done
 
 BreederJulieSeenText:
-	text "This is where I"
-	line "train my baby"
+	text "Hier trainiere"
+	line "ich meine Baby-"
 	cont "#mon!"
 	done
 
@@ -759,11 +762,14 @@ OfficerfMaraWinText:
 	done
 
 OfficerfMaraAfterText:
-	text "Yes, I see nothing"
-	line "wrong today. You"
+	text "Ja, heute scheint"
+	line "alles in Ordnung"
 
-	para "be good and stay"
-	line "out of trouble."
+	para "zu sein. Benimm"
+	line "dich und halte"
+	cont "dich aus"
+	cont "Schwierigkeiten"
+	cont "heraus."
 	done
 
 OfficerfMaraDaytimeText:

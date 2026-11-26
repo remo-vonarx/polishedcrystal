@@ -40,49 +40,51 @@ DimCave2FBouldersLand:
 GenericTrainerEngineerLang:
 	generictrainer ENGINEER, LANG, EVENT_BEAT_ENGINEER_LANG, .SeenText, .BeatenText
 
-	text "Three years ago"
-	line "the Power Plant"
-	cont "was a wreck."
+	text "Vor drei Jahren"
+	line "war das Kraftwerk"
+	cont "ein Wrack."
 
-	para "We got it up and"
-	line "running to power"
+	para "Wir haben es"
+	line "wieder in Gang"
 
-	para "the Magnet Train"
-	line "to Johto."
+	para "gebracht, um den"
+	line "Magnetzug nach"
+	cont "Johto anzutreiben."
 	done
 
 .SeenText:
-	text "We mined ore from"
-	line "this mountain to"
+	text "Wir haben Erz aus"
+	line "diesem Berg"
 
-	para "refurbish the"
-	line "Power Plant!"
+	para "gefördert, um das"
+	line "Kraftwerk zu"
+	cont "erneuern!"
 	done
 
 .BeatenText:
-	text "A power failure!"
+	text "Ein Stromausfall!"
 	done
 
 GenericTrainerHikerDerrick:
 	generictrainer HIKER, DERRICK, EVENT_BEAT_HIKER_DERRICK, .SeenText, .BeatenText
 
-	text "It goes without"
-	line "saying, but I love"
+	text "Es versteht sich"
+	line "von selbst, aber"
 
-	para "hiking with my"
-	line "#mon."
+	para "ich liebe es, mit"
+	line "meinen #mon zu"
+	cont "wandern."
 	done
 
 .SeenText:
-	text "♪ A-hiking we"
-	line "will go, a-hiking"
-	cont "we will go… ♪"
+	text "♪ Das Wandern ist"
+	line "des Müllers Lust,"
+	cont "das Wandern… ♪"
 	done
 
 .BeatenText:
-	text "♪ Eee-iiii-ah-"
-	line "dee-oh, a-hiking"
-	cont "we will go! ♪"
+	text "♪ Das Wa-an-dern,"
+	line "das Wa-an-dern! ♪"
 	done
 
 DimCaveFallenBoulderText:

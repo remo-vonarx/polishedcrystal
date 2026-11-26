@@ -44,54 +44,59 @@ GenericTrainerBug_maniacPierre:
 
 	text "Bzzz… Bzzz…"
 
-	para "That noise is"
-	line "stuck in my head…"
+	para "Das Geräusch geht"
+	line "mir nicht mehr aus"
+	cont "dem Kopf…"
 	done
 
 .SeenText:
-	text "My #mon love"
-	line "this forest."
+	text "Meine #mon"
+	line "lieben diesen"
+	cont "Wald."
 
-	para "They buzz nonstop"
-	line "here!"
+	para "Hier summen sie"
+	line "ununterbrochen!"
 	done
 
 .BeatenText:
-	text "Bzzz! I lost!"
+	text "Bzzz! Verloren!"
 	done
 
 GenericTrainerBug_maniacDylan:
 	generictrainer BUG_MANIAC, DYLAN, EVENT_BEAT_BUG_MANIAC_DYLAN, .SeenText, .BeatenText
 
-	text "There's something"
-	line "about the buzz of"
+	text "Das Summen in"
+	line "diesem Wald hat"
 
-	para "this forest that"
-	line "bugs just love."
+	para "etwas, das Käfer"
+	line "einfach lieben."
 	done
 
 .SeenText:
-	text "I've never seen my"
-	line "bugs this happy!"
+	text "So glücklich habe"
+	line "ich meine Käfer"
+	cont "noch nie gesehen!"
 	done
 
 .BeatenText:
-	text "Aw, but they were"
-	line "so happy!"
+	text "Och, dabei waren"
+	line "sie so glücklich!"
 	done
 
 GenericTrainerGuitaristfJaclyn:
 	generictrainer GUITARISTF, JACLYN, EVENT_BEAT_GUITARISTF_JACLYN, .SeenText, .BeatenText
 
-	text "Wait up! I'm not"
-	line "done singing!"
+	text "Warte! Ich bin"
+	line "noch nicht fertig"
+	cont "mit Singen!"
 	done
 
 .SeenText:
-	text "Let my guitar"
-	line "howl!"
+	text "Lass meine Gitarre"
+	line "heulen!"
 
-	para "Hear me scream!"
+	para "Hör mich"
+	line "schreien!"
 	done
 
 .BeatenText:
@@ -101,62 +106,67 @@ GenericTrainerGuitaristfJaclyn:
 GenericTrainerGuitaristmEzekiel:
 	generictrainer GUITARISTM, EZEKIEL, EVENT_BEAT_GUITARISTM_EZEKIEL, .SeenText, .BeatenText
 
-	text "If you listen"
-	line "carefully, you can"
+	text "Wenn du genau"
+	line "hinhörst, kannst"
 
-	para "hear the rhythm of"
-	line "the forest's hum."
+	para "du den Rhythmus"
+	line "des summenden"
+	cont "Waldes hören."
 	done
 
 .SeenText:
-	text "Battle? Yeah, I'm"
-	line "up for that."
+	text "Ein Kampf? Klar,"
+	line "bin dabei."
 	done
 
 .BeatenText:
-	text "Wow. Good stuff."
+	text "Wow. Gut gemacht."
 	done
 
 GenericTrainerHikerLester:
 	generictrainer HIKER, LESTER, EVENT_BEAT_HIKER_LESTER, .SeenText, .BeatenText
 
-	text "What, can't a Hiker"
-	line "explore a forest"
+	text "Was, darf ein"
+	line "Wanderer nicht"
 
-	para "instead of a moun-"
-	line "tain now and then?"
+	para "ab und zu einen"
+	line "Wald statt eines"
+	cont "Bergs erkunden?"
 	done
 
 .SeenText:
-	text "Yahoo!"
+	text "Juchhu!"
 	done
 
 .BeatenText:
-	text "Gweh! Cough!"
+	text "Gweh! Hust!"
 
-	para "Hollering choked"
-	line "me up!"
+	para "Vom Brüllen hab"
+	line "ich mich ver-"
+	cont "schluckt!"
 	done
 
 GenericTrainerBird_keeperTrent:
 	generictrainer BIRD_KEEPER, TRENT, EVENT_BEAT_BIRD_KEEPER_TRENT, .SeenText, .BeatenText
 
-	text "I get up early"
-	line "every day to train"
-	cont "my birds here."
+	text "Ich stehe jeden"
+	line "Tag früh auf, um"
+	cont "hier meine Vögel"
+	cont "zu trainieren."
 
-	para "The din is part of"
-	line "our training."
+	para "Der Lärm gehört zu"
+	line "unserem Training."
 	done
 
 .SeenText:
-	text "The early bird"
-	line "catches the worm!"
+	text "Der frühe Vogel"
+	line "fängt den Wurm!"
 	done
 
 .BeatenText:
-	text "Looks like I was"
-	line "the worm…"
+	text "Sieht aus, als"
+	line "wäre ich der"
+	cont "Wurm…"
 	done
 
 NoisyForestTeacherText:

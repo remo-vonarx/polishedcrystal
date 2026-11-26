@@ -44,79 +44,81 @@ Route49YoungsterText:
 GenericTrainerSightseermHari:
 	generictrainer SIGHTSEERM, HARI, EVENT_BEAT_SIGHTSEERM_HARI, .SeenText, .BeatenText
 
-	text "I've been traveling"
-	line "a lot just to meet"
+	text "Ich bin viel ge-"
+	line "reist, um jeden"
 
-	para "every #mon"
-	line "Prof."
+	para "#mon-Professor"
+	line "zu treffen."
 
-	para "Wanna see the pho-"
-	line "tos I took?"
+	para "Willst du meine"
+	line "Fotos sehen?"
 	done
 
 .SeenText:
-	text "Hey! I came here"
-	line "to meet Prof.Ivy!"
+	text "Hey! Ich bin hier,"
+	line "um Prof. Ivy zu"
+	cont "treffen!"
 	done
 
 .BeatenText:
-	text "What? You already"
-	line "know her?"
+	text "Was? Du kennst sie"
+	line "schon?"
 	done
 
 GenericTrainerTamerJordan:
 	generictrainer TAMER, JORDAN, EVENT_BEAT_TAMER_JORDAN, .SeenText, .BeatenText
 
-	text "How did you tame"
-	line "your #mon so"
-	cont "well?"
+	text "Wie hast du deine"
+	line "#mon so gut"
+	cont "gezähmt?"
 
-	para "They're strong,"
-	line "but calm at the"
-	cont "same time."
+	para "Sie sind stark,"
+	line "aber gleichzeitig"
+	cont "ruhig."
 	done
 
 .SeenText:
-	text "Be careful! #-"
-	line "mon here can be"
-	cont "really wild!"
+	text "Vorsicht! Die"
+	line "#mon hier"
+	cont "können richtig"
+	cont "wild sein!"
 	done
 
 .BeatenText:
-	text "Whoa! Looks like"
-	line "yours are wilder."
+	text "Wow! Deine sind"
+	line "wohl wilder."
 	done
 
 GenericTrainerAromaLadyPeony:
 	generictrainer AROMA_LADY, PEONY, EVENT_BEAT_AROMA_LADY_PEONY, .SeenText, .BeatenText
 
-	text "My Bellossom loves"
-	line "living on this"
+	text "Mein Blubella lebt"
+	line "so gern auf dieser"
 
-	para "peaceful little"
-	line "island."
+	para "friedlichen klei-"
+	line "nen Insel."
 	done
 
 .SeenText:
-	text "Do you want to see"
-	line "my Bellossom?"
+	text "Möchtest du mein"
+	line "Blubella sehen?"
 	done
 
 .BeatenText:
-	text "Aww… Bellossom"
-	line "didn't want to"
-	cont "battle…"
+	text "Oh… Blubella"
+	line "wollte nicht"
+	cont "kämpfen…"
 	done
 
 GenericTrainerGuitaristmGeddy:
 	generictrainer GUITARISTM, GEDDY, EVENT_BEAT_GUITARISTM_GEDDY, .SeenText, .BeatenText
 
-	text "You think that I'm"
-	line "playing a guitar?"
-	cont "Wrong!"
+	text "Du denkst, ich"
+	line "spiele Gitarre?"
+	cont "Falsch!"
 
-	para "It's a 6-string"
-	line "bass."
+	para "Das ist ein"
+	line "6-saitiger Bass."
 	done
 
 .SeenText:
@@ -134,9 +136,10 @@ GenericTrainerGuitaristmGeddy:
 	done
 
 .BeatenText:
-	text "Good battle!"
-	line "I may write a"
-	cont "song about it."
+	text "Guter Kampf!"
+	line "Vielleicht schrei-"
+	cont "be ich ein Lied"
+	cont "darüber."
 	done
 
 Route49SignText:

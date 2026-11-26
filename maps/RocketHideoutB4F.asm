@@ -245,20 +245,20 @@ RocketHideoutB4FSparkScript:
 	done
 
 .AfterText1:
-	text "Spark: Here's the"
-	line "Malign Lure."
+	text "Spark: Hier ist"
+	line "das Unheilparfüm."
 	done
 
 .AfterText2:
-	text "The Malign Lure"
-	line "draws on bold"
-	cont "energy."
+	text "Das Unheilparfüm"
+	line "nutzt kühne"
+	cont "Energie."
 
-	para "It's my way of"
-	line "sparking some"
-	cont "creativity!"
+	para "So entfache ich"
+	line "den Funken der"
+	cont "Kreativität!"
 
-	para "Use it boldly!"
+	para "Setz es kühn ein!"
 	done
 
 .RefusedText:
@@ -322,20 +322,20 @@ RocketHideoutB4FCandelaScript:
 	done
 
 .AfterText1:
-	text "Candela: Here's the"
-	line "Harsh Lure."
+	text "Candela: Hier ist"
+	line "das Herbparfüm."
 	done
 
 .AfterText2:
-	text "Candela: The Harsh"
-	line "Lure draws fierce"
-	cont "power."
+	text "Candela: Das"
+	line "Herbparfüm nutzt"
+	cont "wilde Kraft."
 
-	para "This is my contri-"
-	line "bution to our"
-	cont "project."
+	para "Das ist mein Bei-"
+	line "trag zu unserem"
+	cont "Projekt."
 
-	para "Use it wisely."
+	para "Setz es weise ein."
 	done
 
 .RefusedText:
@@ -399,20 +399,21 @@ RocketHideoutB4FBlancheScript:
 	done
 
 .AfterText1:
-	text "Blanche: This is"
-	line "the Potent Lure."
+	text "Blanche: Das ist"
+	line "das Kraftparfüm."
 	done
 
 .AfterText2:
-	text "The Potent Lure"
-	line "amplifies its"
-	cont "precision."
+	text "Das Kraftparfüm"
+	line "verstärkt seine"
+	cont "Präzision."
 
-	para "It's my contri-"
-	line "bution to ensuring"
-	cont "our success."
+	para "Das ist mein Bei-"
+	line "trag zu unserem"
+	cont "Erfolg."
 
-	para "Use it carefully."
+	para "Setz es mit Be-"
+	line "dacht ein."
 	done
 
 .RefusedText:
@@ -458,11 +459,12 @@ RocketHideoutB4FYoungsterArdenScript:
 	done
 
 .AfterText:
-	text "Aww, I dropped"
-	line "the lift key!"
+	text "Ooch, ich habe den"
+	line "Liftöffner fallen"
+	cont "lassen!"
 
-	para "Candela is going"
-	line "to be so mad!"
+	para "Candela wird so"
+	line "sauer sein!"
 	done
 
 RocketHideoutB4FTeacherSerena:
@@ -494,25 +496,26 @@ RocketHideoutB4FTeacherSerena:
 	end
 
 .AfterText
-	text "The leaders are"
-	line "only here at"
-	cont "night."
+	text "Die Teamleiter"
+	line "sind nur nachts"
+	cont "hier."
 
-	para "They work at"
-	line "the university"
-	cont "during the day."
+	para "Tagsüber arbeiten"
+	line "sie an der Uni."
 	done
 
 .SeenText:
-	text "Let me see if you"
-	line "are smart enough"
+	text "Lass mich heraus-"
+	line "finden, ob du klug"
 
-	para "to take on the"
-	line "leaders!"
+	para "genug bist, um ge-"
+	line "gen die Teamleiter"
+	cont "anzutreten!"
 	done
 
 .BeatenText:
-	text "Class dismissed!"
+	text "Der Unterricht"
+	line "ist beendet!"
 	done
 
 RocketHideoutB4FSuperNerdNolan:
@@ -544,21 +547,23 @@ RocketHideoutB4FSuperNerdNolan:
 	end
 
 .AfterText
-	text "The leaders argue"
-	line "a lot, but they"
-	cont "are good friends."
+	text "Die Teamleiter"
+	line "streiten viel,"
+	cont "aber sie sind"
+	cont "gute Freunde."
 	done
 
 .SeenText:
-	text "You here to chal-"
-	line "lenge the leaders?"
+	text "Willst du die"
+	line "Teamleiter heraus-"
+	cont "fordern?"
 
-	para "You need to beat"
-	line "me first!"
+	para "Dann musst du erst"
+	line "mich besiegen!"
 	done
 
 .BeatenText:
-	text "I choked!"
+	text "Ich hab versagt!"
 	done
 
 RocketHideoutB4FDefeatedAllLeadersScript:

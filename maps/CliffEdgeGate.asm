@@ -57,12 +57,12 @@ ProfOaksAide3Script:
 GenericTrainerGruntM12:
 	generictrainer GRUNTM, 12, EVENT_BEAT_ROCKET_GRUNTM_12, GruntM12SeenText, GruntM12BeatenText
 
-	text "Yellow Forest is"
-	line "full of rare"
-	cont "#mon."
+	text "Im Goldgelben Wald"
+	line "gibt es viele"
+	cont "seltene #mon."
 
-	para "We're nabbing them"
-	line "all for ourselves!"
+	para "Wir schnappen sie"
+	line "uns alle selbst!"
 	done
 
 CliffEdgeGateReceptionistText:
@@ -120,14 +120,16 @@ ProfOaksAide3HereYouGoText:
 
 
 GruntM12SeenText:
-	text "You're curious"
-	line "about our plans?"
+	text "Du willst etwas"
+	line "über unsere Pläne"
+	cont "wissen?"
 
-	para "Beat me and I'll"
-	line "tell you!"
+	para "Besiege mich, dann"
+	line "verrate ich sie"
+	cont "dir!"
 	done
 
 GruntM12BeatenText:
-	text "You were supposed"
-	line "to lose!"
+	text "Du hättest doch"
+	line "verlieren sollen!"
 	done

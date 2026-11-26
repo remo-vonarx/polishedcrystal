@@ -361,13 +361,14 @@ Route42LyraGreetingText:
 	done
 
 Route42LyraWinText:
-	text "You've earned this"
-	line "gift!"
+	text "Dieses Geschenk"
+	line "hast du dir"
+	cont "verdient!"
 	done
 
 Route42LyraLossText:
-	text "Better luck next"
-	line "time…"
+	text "Nächstes Mal"
+	line "klappt's besser…"
 	done
 
 Route42LyraPresentText:

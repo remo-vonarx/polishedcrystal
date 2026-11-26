@@ -188,7 +188,7 @@ AgathaSeenText:
 	done
 
 AgathaBeatenText:
-	text "Oh, my!"
+	text "Oh, meine Güte!"
 	done
 
 AgathaRewardText:

@@ -90,16 +90,16 @@ BattleTower2FCherylScript:
 	jumpthistext
 
 .AfterText:
-	text "Being a trainer"
-	line "isn't easy."
+	text "Trainer zu sein,"
+	line "ist nicht leicht."
 
-	para "The more you"
-	line "battle, the more"
-	cont "you discover."
+	para "Je mehr du"
+	line "kämpfst, desto"
+	cont "mehr entdeckst du."
 
-	para "But, you know?"
-	line "I love #mon"
-	cont "for that, too!"
+	para "Aber weißt du was?"
+	line "Auch dafür liebe"
+	cont "ich #mon!"
 	done
 
 .BeatenText:
@@ -160,17 +160,21 @@ BattleTower2FRileyScript:
 	jumpthistext
 
 .AfterText:
-	text "If I weren't in"
-	line "Dim Cave then…"
+	text "Wäre ich damals"
+	line "nicht in der"
+	cont "Finsteren Höhle…"
 
-	para "If you hadn't been"
-	line "in Dim Cave then…"
+	para "Wärst du damals"
+	line "nicht in der"
+	cont "Finsteren Höhle…"
 
-	para "Perhaps we would"
-	line "have never met."
+	para "Vielleicht hätten"
+	line "wir uns nie"
+	cont "getroffen."
 
-	para "Or, would we have"
-	line "met elsewhere?"
+	para "Oder hätten wir"
+	line "uns woanders"
+	cont "getroffen?"
 	done
 
 .BeatenText:
@@ -228,10 +232,11 @@ BattleTower2FBuckScript:
 	jumpthistext
 
 .AfterText:
-	text "Fweh! Too much!"
+	text "Fweh! Zu viel!"
 
-	para "I guess I'll keep"
-	line "improving my team."
+	para "Ich verbessere"
+	line "mein Team wohl"
+	cont "weiter."
 	done
 
 .BeatenText:
@@ -282,11 +287,12 @@ BattleTower2FMarleyScript:
 	jumpthistext
 
 .AfterText:
-	text "…I might like"
-	line "battling with you."
+	text "…Vielleicht kämpfe"
+	line "ich gern mit dir."
 
-	para "…Just a little."
-	line "Only a tiny bit."
+	para "…Nur ein bisschen."
+	line "Nur ein winziges"
+	cont "bisschen."
 	done
 
 .BeatenText:
@@ -337,15 +343,15 @@ BattleTower2FMiraScript:
 	jumpthistext
 
 .AfterText:
-	text "<PLAYER>, you are"
-	line "always with your"
+	text "<PLAYER>, du bist"
+	line "immer bei deinen"
 	cont "#mon."
 
-	para "That's how you got"
-	line "to be so strong."
+	para "Darum bist du so"
+	line "stark geworden."
 
-	para "Mira is beginning"
-	line "to understand!"
+	para "Orisa beginnt zu"
+	line "verstehen!"
 	done
 
 .BeatenText:
@@ -393,13 +399,12 @@ BattleTower2FAnabelScript:
 	jumpthistext
 
 .AfterText:
-	text "That was fun…"
+	text "Das hat Spaß"
+	line "gemacht…"
 
-	para "I have never had"
-	line "a #mon battle"
-
-	para "so enjoyable"
-	line "before…"
+	para "Ich hatte noch nie"
+	line "einen so schönen"
+	cont "#mon-Kampf…"
 	done
 
 .BeatenText:

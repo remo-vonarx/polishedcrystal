@@ -32,17 +32,17 @@ GenericTrainerSchoolboyDanny:
 GenericTrainerSchoolboySherman:
 	generictrainer SCHOOLBOY, SHERMAN, EVENT_BEAT_SCHOOLBOY_SHERMAN, SchoolboyShermanSeenText, SchoolboyShermanBeatenText
 
-	text "I should record"
-	line "all of today's"
-	cont "mistakes."
+	text "Ich sollte alle"
+	line "Fehler von heute"
+	cont "aufschreiben."
 	done
 
 GenericTrainerCooltrainermFrench:
 	generictrainer COOLTRAINERM, FRENCH, EVENT_BEAT_COOLTRAINERM_FRENCH, CooltrainermFrenchSeenText, CooltrainermFrenchBeatenText
 
-	text "That was a great"
-	line "fight!"
-	cont "Don't you agree?"
+	text "Das war ein toller"
+	line "Kampf!"
+	cont "Findest du nicht?"
 	done
 
 GenericTrainerCooltrainerfQuinn:
@@ -68,27 +68,28 @@ SchoolboyDannyBeatenText:
 	done
 
 SchoolboyShermanSeenText:
-	text "Right after class,"
-	line "I head outside to"
-	cont "practice!"
+	text "Direkt nach dem"
+	line "Unterricht gehe"
+	cont "ich üben!"
 	done
 
 SchoolboyShermanBeatenText:
-	text "I need to follow"
-	line "the textbook."
+	text "Ich muss mich an"
+	line "das Lehrbuch"
+	cont "halten."
 	done
 
 CooltrainermFrenchSeenText:
-	text "You!"
+	text "Du!"
 
-	para "I've been waiting"
-	line "for someone like"
-	cont "you!"
+	para "Ich habe auf je-"
+	line "manden wie dich"
+	cont "gewartet!"
 	done
 
 CooltrainermFrenchBeatenText:
-	text "Yep, as strong as"
-	line "expected!"
+	text "Ja, so stark wie"
+	line "erwartet!"
 	done
 
 CooltrainerfQuinnSeenText:

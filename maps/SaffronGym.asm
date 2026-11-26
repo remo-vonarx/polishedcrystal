@@ -109,8 +109,9 @@ GenericTrainerMediumDoris:
 GenericTrainerPsychicLeon:
 	generictrainer PSYCHIC_T, LEON, EVENT_BEAT_PSYCHIC_LEON, PsychicLeonSeenText, PsychicLeonBeatenText
 
-	text "Sabrina's power is"
-	line "greater than mine!"
+	text "Sabrinas Kraft"
+	line "ist größer als"
+	cont "meine!"
 	done
 
 GenericTrainerPsychicJared:
@@ -128,20 +129,20 @@ GenericTrainerPsychicJared:
 GenericTrainerHexManiacLuna:
 	generictrainer HEX_MANIAC, LUNA, EVENT_BEAT_HEX_MANIAC_LUNA, HexManiacLunaSeenText, HexManiacLunaBeatenText
 
-	text "Alakazam is a pow-"
-	line "erful #mon,"
+	text "Simsala ist ein"
+	line "starkes #mon,"
 
-	para "so Hex Maniacs use"
-	line "its name for"
-	cont "powerful spells."
+	para "darum nutzen"
+	line "Hexen seinen Namen"
+	cont "für starke Zauber."
 	done
 
 GenericTrainerHexManiacNatalie:
 	generictrainer HEX_MANIAC, NATALIE, EVENT_BEAT_HEX_MANIAC_NATALIE, HexManiacNatalieSeenText, HexManiacNatalieBeatenText
 
-	text "Maybe I'm not cut"
-	line "out to be a Hex"
-	cont "Maniac…"
+	text "Vielleicht bin ich"
+	line "nicht zur Hexe"
+	cont "geschaffen…"
 	done
 
 GenericTrainerPsychicFranklin:
@@ -219,24 +220,27 @@ SabrinaIntroText:
 	done
 
 SabrinaWinLossText:
-	text "Sabrina: Your"
-	line "power…"
+	text "Sabrina: Deine"
+	line "Stärke…"
 
-	para "It far exceeds"
-	line "what I foresaw…"
+	para "übertrifft meine"
+	line "Vorahnungen bei"
+	cont "weitem…"
 
-	para "Maybe it isn't"
-	line "possible to fully"
+	para "Vielleicht ist es"
+	line "nicht möglich,"
 
-	para "predict what the"
-	line "future holds…"
+	para "alles vorherzu-"
+	line "sagen, was die"
+	cont "Zukunft bringt…"
 
-	para "OK, you win. You"
-	line "earned yourself"
+	para "Gut, du hast"
 if DEF(FAITHFUL)
-	cont "the Marsh Badge."
+	line "dir den Sumpforden"
+	cont "verdient."
 else
-	cont "the Soul Badge."
+	line "dir den Seelen-"
+	cont "orden verdient."
 endc
 	done
 
@@ -286,13 +290,14 @@ MediumDorisBeatenText:
 	done
 
 PsychicLeonSeenText:
-	text "You cannot resist"
-	line "my psychic power!"
+	text "Meinen Psycho-"
+	line "kräften kannst du"
+	cont "nicht widerstehen!"
 	done
 
 PsychicLeonBeatenText:
-	text "My prediction was"
-	line "inaccurate…"
+	text "Meine Vorhersage"
+	line "war ungenau…"
 	done
 
 PsychicJaredSeenText:
@@ -309,20 +314,21 @@ PsychicJaredBeatenText:
 
 HexManiacLunaSeenText:
 	text "Abra, Kadabra,"
-	line "Alakazam!"
+	line "Simsala!"
 	done
 
 HexManiacLunaBeatenText:
-	text "My curse failed?"
+	text "Mein Fluch hat"
+	line "versagt?"
 	done
 
 HexManiacNatalieSeenText:
-	text "Let us do battle!"
+	text "Lass uns kämpfen!"
 	line "Mwahaha!"
 	done
 
 HexManiacNatalieBeatenText:
-	text "Mwaha--cough!"
+	text "Mwaha… hust!"
 	done
 
 PsychicFranklinSeenText:

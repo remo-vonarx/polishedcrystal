@@ -186,40 +186,44 @@ CherrygroveBayTutorEarthPowerScript:
 GenericTrainerSwimmermThomas:
 	generictrainer SWIMMERM, THOMAS, EVENT_BEAT_SWIMMERM_THOMAS, .SeenText, .BeatenText
 
-	text "My #mon knows"
-	line "how to Surf, but"
-	cont "I prefer swimming."
+	text "Mein #mon kann"
+	line "Surfer, aber ich"
+	cont "schwimme lieber."
 	done
 
 .SeenText:
-	text "Do you know how to"
-	line "swim? I can teach"
-	cont "you, if you want."
+	text "Kannst du"
+	line "schwimmen? Wenn du"
+	cont "willst, bringe ich"
+	cont "es dir bei."
 	done
 
 .BeatenText:
-	text "Glub, glub, glub…"
+	text "Blubb, blubb,"
+	line "blubb…"
 	done
 
 GenericTrainerSwimmerfSally:
 	generictrainer SWIMMERF, SALLY, EVENT_BEAT_SWIMMERF_SALLY, .SeenText, .BeatenText
 
-	text "I like drifting on"
-	line "the waves along-"
-	cont "side my #mon!"
+	text "Ich lasse mich"
+	line "gern mit meinen"
+	cont "#mon auf den"
+	cont "Wellen treiben!"
 	done
 
 .SeenText:
-	text "I like this bay."
-	line "Its waters are so"
+	text "Ich mag diese"
+	line "Bucht. Ihr Wasser"
 
-	para "much calmer than"
-	line "the open ocean."
+	para "ist so viel ruhi-"
+	line "ger als das offene"
+	cont "Meer."
 	done
 
 .BeatenText:
-	text "I don't like"
-	line "losing, however…"
+	text "Verlieren mag ich"
+	line "allerdings nicht…"
 	done
 
 TrainerSwimmerfTara:
@@ -229,52 +233,57 @@ TrainerSwimmerfTara:
 	endifjustbattled
 	jumpthistextfaceplayer
 
-	text "North of here is"
-	line "the Great Tree of"
-	cont "Cherrygrove."
+	text "Nördlich von hier"
+	line "steht der Große"
+	cont "Baum von Rosalia."
 
-	para "Some say rare bird"
-	line "#mon come from"
+	para "Man sagt, seltene"
+	line "Vogel-#mon"
 
-	para "far away to nest"
-	line "there."
+	para "kommen von weit"
+	line "her, um dort zu"
+	cont "nisten."
 	done
 
 .SeenText:
-	text "Ah, swimming amid"
-	line "cherry blossoms is"
-	cont "so relaxing!"
+	text "Ah, zwischen"
+	line "Kirschblüten zu"
+	cont "schwimmen ist so"
+	cont "entspannend!"
 	done
 
 .BeatenText:
-	text "I don't even mind"
-	line "losing…"
+	text "Mir macht es nicht"
+	line "mal etwas aus, zu"
+	cont "verlieren…"
 	done
 
 GenericTrainerHikerTony:
 	generictrainer HIKER, TONY, EVENT_BEAT_HIKER_TONY, .SeenText, .BeatenText
 
-	text "After a long hike,"
-	line "I saw what looked"
+	text "Nach einer langen"
+	line "Wanderung sah ich"
 
-	para "like a big bird"
-	line "flying this way!"
+	para "so etwas wie einen"
+	line "großen Vogel"
+	cont "hierherfliegen!"
 
-	para "Where was it head-"
-	line "ing to and why?"
+	para "Wohin flog er und"
+	line "warum?"
 	done
 
 .SeenText:
-	text "I hiked through"
-	line "miles of woods"
+	text "Ich bin kilometer-"
+	line "weit durch Wälder"
 
-	para "just to see the"
-	line "legendary bird"
-	cont "#mon!"
+	para "gewandert, nur um"
+	line "das legendäre"
+	cont "Vogel-#mon zu"
+	cont "sehen!"
 	done
 
 .BeatenText:
-	text "I'm exhausted…"
+	text "Ich bin erschöpft…"
 	done
 
 CherrygroveBayFisherText:

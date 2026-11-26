@@ -172,16 +172,17 @@ FalknerIntroText:
 	done
 
 FalknerWinLossText:
-	text "…Darn! My dad's"
-	line "cherished bird"
-	cont "#mon…"
+	text "…Verflixt! Mein"
+	line "Vater hat Flug-"
+	cont "#mon geliebt…"
 
-	para "All right."
-	line "Take this."
+	para "Also gut."
+	line "Nimm dies!"
 
-	para "It's the official"
-	line "#mon League"
-	cont "Zephyr Badge."
+	para "Es ist der offi-"
+	line "zielle Flügelorden"
+	cont "der #mon"
+	cont "Liga."
 	done
 
 FalknerZephyrBadgeText:

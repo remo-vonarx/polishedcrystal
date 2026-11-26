@@ -161,73 +161,79 @@ DimCave5FRileyScript:
 GenericTrainerSuper_nerdFoote:
 	generictrainer SUPER_NERD, FOOTE, EVENT_BEAT_SUPER_NERD_FOOTE, .SeenText, .BeatenText
 
-	text "Save one life or"
-	line "save five?"
+	text "Ein Leben retten"
+	line "oder fünf?"
 
-	para "As a #mon"
-	line "trainer, you may"
+	para "Als Trainer von"
+	line "#mon hast du"
+	cont "vielleicht die"
 
-	para "have the power to"
-	line "save all six!"
+	para "Macht, alle sechs"
+	line "zu retten!"
 	done
 
 .SeenText:
-	text "I have a conundrum"
-	line "for you!"
+	text "Ich habe eine"
+	line "knifflige Frage"
+	cont "für dich!"
 
-	para "Would you push one"
-	line "#mon in front"
+	para "Würdest du ein"
+	line "#mon vor eine"
 
-	para "of a mine cart to"
-	line "save five?"
+	para "Lore stoßen, um"
+	line "fünf zu retten?"
 	done
 
 .BeatenText:
-	text "You answered"
-	line "without words…"
-	cont "How Zen!"
+	text "Du hast ohne Worte"
+	line "geantwortet…"
+	cont "Wie Zen!"
 	done
 
 GenericTrainerEngineerHoward:
 	generictrainer ENGINEER, HOWARD, EVENT_BEAT_ENGINEER_HOWARD, .SeenText, .BeatenText
 
-	text "Water flows south"
-	line "from Cerulean Cape"
+	text "Das Wasser fließt"
+	line "vom Kap von Azuria"
 
-	para "and follows a"
-	line "steady course to"
-	cont "the Power Plant."
+	para "nach Süden und"
+	line "fließt stetig bis"
+	cont "zum Kraftwerk."
 	done
 
 .SeenText:
-	text "This waterfall"
-	line "provides energy"
-	cont "throughout Kanto!"
+	text "Dieser Wasserfall"
+	line "liefert Energie"
+	cont "für ganz Kanto!"
 	done
 
 .BeatenText:
-	text "No! A blackout…"
+	text "Nein! Ein Strom-"
+	line "ausfall…"
 	done
 
 GenericTrainerSuper_nerdDave:
 	generictrainer SUPER_NERD, DAVE, EVENT_BEAT_SUPER_NERD_DAVE, .SeenText, .BeatenText
 
-	text "You need a mining"
-	line "pick to mine."
+	text "Zum Abbauen"
+	line "brauchst du eine"
+	cont "Spitzhacke."
 
-	para "But you can't get"
-	line "them around here."
+	para "Aber hier in der"
+	line "Gegend gibt es"
+	cont "keine."
 	done
 
 .SeenText:
-	text "I've maxed out my"
-	line "mining, jeweling,"
+	text "Bergbau, Schmuck-"
+	line "handwerk,"
 
-	para "smelting, and"
-	line "crafting skills!"
+	para "Schmelzen und"
+	line "Herstellen: alles"
+	cont "auf Maximum!"
 	done
 
 .BeatenText:
-	text "But not"
-	line "battling…"
+	text "Aber nicht das"
+	line "Kämpfen…"
 	done
