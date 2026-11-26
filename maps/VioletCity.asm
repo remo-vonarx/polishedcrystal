@@ -187,7 +187,7 @@ Text_HereTeacherIAm:
 	cont "zu lernen!"
 
 	para "Nimm das, und du"
-	line "wirst lernen!"
+	line "wirscht lernen!"
 	done
 
 Text_EarlsTypeChart:
