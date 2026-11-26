@@ -17,18 +17,18 @@ Route12Gate2F_MapScriptHeader:
 Route12Gate2FBinoculars1:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "A man fishing!"
+	para "Ein Mann angelt!"
 	done
 
 Route12Gate2FBinoculars2:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "It's the Radio"
-	line "Tower!"
+	para "Das ist der"
+	line "Radioturm!"
 	done

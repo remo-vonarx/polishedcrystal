@@ -17,23 +17,23 @@ Route11Gate2F_MapScriptHeader:
 Route11Gate2FBinoculars1:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "It's a beautiful"
-	line "view!"
+	para "Was für eine"
+	line "schöne Aussicht!"
 	done
 
 Route11Gate2FBinoculars2:
 	jumpthistext
 
-	text "Looked into the"
-	line "binoculars."
+	text "Du schaust durch"
+	line "das Fernglas."
 
-	para "The only way to"
-	line "get from Cerulean"
-	cont "City to Lavender"
+	para "Der einzige Weg"
+	line "von Azuria City"
+	cont "nach Lavandia"
 
-	para "is by way of the"
-	line "Rock Tunnel."
+	para "führt durch den"
+	line "Felstunnel."
 	done

@@ -95,17 +95,19 @@ GiovannisCaveRadioScript:
 	iftrue_jumptext GiovannisCaveRadioAfterTimeTravelText
 	jumpthistext
 
-	text "There is a radio"
-	line "that no longer"
-	cont "works…"
+	text "Hier steht ein"
+	line "Radio, das nicht"
+	cont "mehr funktioniert…"
 	done
 
 GiovannisCaveRadioAfterTimeTravelText:
-	text "You cannot turn on"
-	line "the radio."
+	text "Du kannst das"
+	line "Radio nicht ein-"
+	cont "schalten."
 
-	para "Giovanni must have"
-	line "left it here…"
+	para "Giovanni muss es"
+	line "hier zurückgelas-"
+	cont "sen haben…"
 	done
 
 GiovannisCave_GiovanniStepsBackMovementData:
@@ -152,115 +154,125 @@ GiovannisCave_CelebiFloatsMovementData:
 GiovannisCaveGiovanniIntroText:
 	text "…"
 
-	para "I don't know why"
-	line "you came here,"
+	para "Ich weiß nicht,"
+	line "warum ihr hier"
 
-	para "but I have to warn"
-	line "you that this is"
-	cont "no place for kids"
-	cont "like you."
+	para "seid, aber ich"
+	line "muss euch warnen:"
+	cont "Das ist kein Ort"
+	cont "für Kinder wie"
+	cont "euch."
 
-	para "Lyra: Huh? That's"
-	line "the guy we just"
+	para "Lyra: Hä? Das ist"
+	line "doch der Typ, den"
 
-	para "saw arguing with"
-	line "that boy!"
+	para "wir eben mit dem"
+	line "Jungen streiten"
+	cont "gesehen haben!"
 	done
 
 GiovannisCaveGiovanniMemoriesText:
-	text "You have a certain"
-	line "look…"
+	text "Du hast einen ge-"
+	line "wissen Blick…"
 
-	para "I remember you!"
+	para "Ich erinnere mich"
+	line "an dich!"
 
-	para "That kid three"
-	line "years ago kept"
-	cont "ruining our plans,"
+	para "Dieses Kind vor"
+	line "drei Jahren hat"
+	cont "ständig unsere"
+	cont "Pläne durchkreuzt,"
 
-	para "but you caused all"
-	line "our problems in"
-	cont "the first place!"
+	para "aber du hast uns"
+	line "die ganzen Pro-"
+	cont "bleme überhaupt"
+	cont "erst eingebrockt!"
 
 	para "…"
 
-	para "I'm on my way to"
-	line "Goldenrod City to"
+	para "Ich bin auf dem"
+	line "Weg nach Dukatia"
 
-	para "answer the call"
-	line "and join my team."
+	para "City, um dem Ruf"
+	line "zu folgen und"
+	cont "mich meinem Team"
+	cont "anzuschließen."
 
-	para "Are you going to"
-	line "get in my way"
-	cont "again?"
+	para "Wirst du mir wie-"
+	line "der in die Quere"
+	cont "kommen?"
 	done
 
 GiovannisCaveLyraQuestionsText:
-	text "Lyra: Three years"
-	line "ago…? Goldenrod"
+	text "Lyra: Vor drei"
+	line "Jahren…? Dukatia"
 	cont "City…?"
 	done
 
 GiovannisCaveLyraRecognizesGiovanniText:
-	text "This is who Team"
-	line "Rocket was trying"
-	cont "to reach!"
+	text "Das ist der, den"
+	line "Team Rocket er-"
+	cont "reichen wollte!"
 
-	para "Their boss,"
+	para "Ihr Boss,"
 	line "Giovanni!"
 
-	para "<PLAYER>, when did"
-	line "you meet Giovanni"
-	cont "before…?"
+	para "<PLAYER>, wann hast"
+	line "du Giovanni schon"
+	cont "mal getroffen…?"
 	done
 
 GiovannisCaveBroadcastText:
-	text "“… …Ahem, we are"
+	text "“… …Ähm, wir sind"
 	line "Team Rocket!"
-	cont "After three years"
-	cont "of preparation, we"
-	cont "have risen again"
-	cont "from the ashes!"
-	cont "Giovanni! Can you"
-	cont "hear? We did it!"
-	cont "Where is our boss?"
-	cont "Is he listening?”"
+	cont "Nach drei Jahren"
+	cont "Vorbereitung sind"
+	cont "wir aus der Asche"
+	cont "auferstanden!"
+	cont "Giovanni! Hörst"
+	cont "du uns? Geschafft!"
+	cont "Wo ist unser Boss?"
+	cont "Hört er zu?”"
 
 	para "Lyra: Team Rocket"
-	line "has occupied the"
+	line "hat gerade den"
 
-	para "Radio Tower right"
-	line "now…"
+	para "Radioturm"
+	line "besetzt…"
 
-	para "You're there, but"
-	line "you're also here…"
+	para "Du bist dort, aber"
+	line "du bist auch"
+	cont "hier…"
 	done
 
 GiovannisCaveGiovanniIMustGoText:
-	text "Giovanni: My old"
-	line "associates need"
-	cont "me…"
+	text "Giovanni: Meine"
+	line "alten Gefährten"
+	cont "brauchen mich…"
 
-	para "We will not repeat"
-	line "the failure of"
-	cont "three years ago!"
+	para "Wir werden das"
+	line "Scheitern von vor"
+	cont "drei Jahren nicht"
+	cont "wiederholen!"
 
-	para "Team Rocket will"
-	line "be born again!"
+	para "Team Rocket wird"
+	line "wiedergeboren!"
 
-	para "Lyra: Hah!"
-	line "<PLAYER> already"
-	cont "stopped you!"
-	cont "…Will stop you."
+	para "Lyra: Ha!"
+	line "<PLAYER> hat dich"
+	cont "schon aufgehalten!"
+	cont "…Wird dich auf-"
+	cont "halten."
 
-	para "Will have stopped"
-	line "you…?"
+	para "Wird dich aufge-"
+	line "halten haben…?"
 
-	para "…Traveling through"
-	line "time is confusing!"
+	para "…Zeitreisen sind"
+	line "echt verwirrend!"
 
-	para "Giovanni: Enough"
-	line "chatter! Get out"
-	cont "of my way!"
+	para "Giovanni: Genug"
+	line "geplappert! Geh"
+	cont "mir aus dem Weg!"
 	done
 
 GiovannisCaveGiovanniBeatenText:
@@ -292,23 +304,27 @@ GiovannisCaveBroadcastAfterText:
 	done
 
 GiovannisCaveLyraFeelsSorryText:
-	text "Lyra: They keep"
-	line "calling for their"
-	cont "boss."
+	text "Lyra: Sie rufen"
+	line "immer wieder nach"
+	cont "ihrem Boss."
 
-	para "I feel sorry they"
-	line "don't know he's not"
-	cont "coming."
+	para "Sie tun mir leid,"
+	line "weil sie nicht"
+	cont "wissen, dass er"
+	cont "nicht kommt."
 
-	para "But right now,"
-	line "<PLAYER>, you must"
-	cont "be defeating them!"
+	para "Aber in diesem"
+	line "Moment besiegst"
+	cont "du sie wohl,"
+	cont "<PLAYER>!"
 	done
 
 GiovannisCaveLyraWantsToLeaveText:
-	text "Lyra: Not again…!"
-	line "I've had enough!"
+	text "Lyra: Nicht schon"
+	line "wieder…! Mir"
+	cont "reicht's!"
 
-	para "Please let us go"
-	line "back to our time!"
+	para "Bitte bring uns"
+	line "zurück in unsere"
+	cont "Zeit!"
 	done

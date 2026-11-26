@@ -45,18 +45,20 @@ VictoryRoadGateBadgeCheckScript:
 	end
 
 VictoryRoadGateOfficerText:
-	text "Only trainers who"
-	line "have proven them-"
-	cont "selves may pass."
+	text "Nur Trainer, die"
+	line "sich als würdig"
+	cont "erwiesen haben,"
+	cont "dürfen eintreten."
 
-	para "You took the Johto"
-	line "Gym challenge?"
+	para "Hast du die Arenen"
+	line "von Johto heraus-"
+	cont "gefordert?"
 
-	para "The guards ahead"
-	line "will check your"
-	cont "Badges."
+	para "Die Wachen weiter"
+	line "vorne prüfen deine"
+	cont "Orden."
 
-	para "Go on now."
+	para "Geh nur weiter."
 	done
 
 VictoryRoadGateLeftBlackBeltText:

@@ -78,29 +78,30 @@ WillScript:
 	end
 
 .SeenText:
-	text "Welcome to the"
-	line "#mon League,"
+	text "Willkommen in der"
+	line "#mon Liga,"
 	cont "<PLAYER>."
 
-	para "Allow me to intro-"
-	line "duce myself. I am"
-	cont "Will."
+	para "Erlaube mir, mich"
+	line "vorzustellen. Ich"
+	cont "bin Willi."
 
-	para "I have trained all"
-	line "around the world,"
+	para "Ich habe die ganze"
+	line "Welt bereist, um"
 
-	para "making my Psychic"
-	line "#mon powerful."
+	para "meine Psycho-#-"
+	line "mon zu verbessern."
 
-	para "And, at last, I've"
-	line "been accepted into"
-	cont "the Elite Four."
+	para "Und schließlich"
+	line "habe ich es"
+	cont "in die Top Vier"
+	cont "geschafft."
 
-	para "I can only keep"
-	line "getting better!"
+	para "Ich werde ständig"
+	line "besser!"
 
-	para "Losing is not an"
-	line "option!"
+	para "Verlieren ist"
+	line "keine Alternative!"
 	done
 
 .BeatenText:
@@ -131,26 +132,27 @@ WillScript:
 	done
 
 .SeenRematchText:
-	text "So, you have"
-	line "finally appeared."
+	text "Du bist also"
+	line "endlich da."
 
-	para "I have observed"
-	line "your battle"
-	cont "techniques."
+	para "Ich habe deine"
+	line "Kampftechniken"
+	cont "beobachtet."
 
-	para "I'm ready for you!"
+	para "Ich bin bereit"
+	line "für dich!"
 
-	para "All right."
+	para "Nun denn."
 
-	para "Prepare for"
-	line "battle!"
+	para "Mach dich bereit"
+	line "zum Kampf!"
 	done
 
 .AfterRematchText:
-	text "I've expended all"
-	line "my power."
+	text "Ich habe all meine"
+	line "Kraft verbraucht."
 
-	para "I have no regrets"
-	line "about losing"
-	cont "this way."
+	para "Ich bereue nicht,"
+	line "auf diese Weise"
+	cont "verloren zu haben."
 	done

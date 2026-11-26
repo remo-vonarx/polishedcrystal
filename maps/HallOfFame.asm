@@ -106,59 +106,62 @@ HallOfFameEnterScene:
 	step_end
 
 .LanceText1:
-	text "Lance: It's been a"
-	line "long time since I"
-	cont "last came here."
+	text "Siegfried: Ich war"
+	line "schon lange nicht"
+	cont "mehr hier."
 
-	para "This is where we"
-	line "honor the League"
+	para "Hier werden die"
+	line "Liga-Champs"
 
-	para "Champions for all"
-	line "eternity."
+	para "für alle Ewigkeit"
+	line "gewürdigt."
 
-	para "Their courageous"
-	line "#mon are also"
-	cont "inducted."
+	para "Ihre mutigen #-"
+	line "mon sind auch"
+	cont "aufgeführt."
 	done
 
 .LanceTrophyText:
-	text "Take this as a"
-	line "memento of what"
+	text "Nimm dies als"
+	line "Andenken an das,"
 
-	para "you accomplished"
-	line "here today."
+	para "was du heute hier"
+	line "erreicht hast."
 	done
 
 .LanceText2:
-	text "Here today, we"
-	line "witnessed the rise"
+	text "Hier und heute"
+	line "wurden wir Zeuge"
 
-	para "of a new League"
-	line "Champion--a"
+	para "des Aufstiegs ei-"
+	line "nes neuen Liga-"
+	cont "Champs -- eines"
+	cont "Trainers, der"
 
-	para "trainer who feels"
-	line "compassion for,"
+	para "Leidenschaft für"
+	line "und Vertrauen in"
+	cont "seine #mon hat."
 
-	para "and trust toward,"
-	line "all #mon."
+	para "Ein Trainer,"
+	line "dessen Erfolg auf"
 
-	para "A trainer who"
-	line "succeeded through"
+	para "Ausdauer und"
+	line "Entschlossenheit"
+	cont "basiert."
 
-	para "perseverance and"
-	line "determination."
+	para "Der neue Liga-"
+	line "Champ, der"
 
-	para "The new League"
-	line "Champion who has"
+	para "alle Zeichen von"
+	line "Größe in sich"
+	cont "vereint!"
 
-	para "all the makings"
-	line "of greatness!"
+	para "<PLAYER>, darf ich"
+	line "dich und deine"
 
-	para "<PLAYER>, allow me"
-	line "to register you"
-
-	para "and your partners"
-	line "as Champions!"
+	para "Partner als"
+	line "Champs"
+	cont "eintragen?"
 	done
 
 .GoldTrophyText:

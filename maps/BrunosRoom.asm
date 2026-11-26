@@ -131,23 +131,26 @@ BrunoScript:
 	done
 
 .SeenRematchText:
-	text "Hello again."
+	text "Hallo, schon"
+	line "wieder."
 
-	para "As one of the"
-	line "Elite Four, I will"
-	cont "stand up to your"
-	cont "challenge!"
+	para "Als einer der Top"
+	line "Vier stelle ich"
+	cont "mich deiner"
+	cont "Herausforderung!"
 
-	para "It would disturb"
-	line "me for you to"
-	cont "underestimate my"
-	cont "fighting #mon."
+	para "Es würde mich"
+	line "stören, wenn du"
+	cont "meine #mon vom"
+	cont "Typ Kampf unter-"
+	cont "schätzt."
 
-	para "Get ready!"
+	para "Mach dich bereit!"
 	done
 
 .AfterRematchText:
-	text "We tried hard."
+	text "Wir haben unser"
+	line "Bestes gegeben."
 
-	para "Continue on!"
+	para "Geh weiter!"
 	done
