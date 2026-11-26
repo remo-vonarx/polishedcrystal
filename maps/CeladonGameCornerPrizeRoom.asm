@@ -256,7 +256,7 @@ CeladonPrizeRoom_HereYouGoText:
 
 CeladonPrizeRoom_AlreadyHaveTMText:
 	text "Du hast diese TM"
-	line "schon."
+	line "bereits."
 	done
 
 

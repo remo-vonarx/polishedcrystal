@@ -134,6 +134,14 @@ The original trainers of Wonder Trade Pokémon: the official German name of each
 **In-game trades**:
 Crystal's trade partners and their Pokémon keep Kristall's names (Ralf with Herakles, Tobi, Carmen with Dori, Paul). The Heracross from Pewter City is Herkules: Kristall calls its trainer Paul, so it can't keep Upstream's nickname Paul. The other nicknames stay as Upstream writes them (Mimic, Joey, Chance, Gail, Clarence, Batty).
 
+**Habsi**, **Harald**:
+The gift Spearow in the Route 35 gate and its OT, Kristall's names (Crystal's Kenya and Randy).
+_Avoid_: Kenya, Randy
+
+**Modri**:
+The Shuckle you look after in Cianwood City, Kristall's nickname (Crystal's Shuckie). Its OT stays Polished's Kirk: Kristall's Gabriele has 8 letters, and an OT holds 7 here.
+_Avoid_: Shuckie
+
 **Nicknames**:
 Trainers' Pokémon nicknames are German where the English is a word play (Hitzkopf, Kanonade, Wurzelwut) and stay where they're a name, a reference or a foreign word (Milky, Bruce, Jackie, Antorcha). Yellow's team takes the German manga names (Amoni, Ratzi, Raups, Dodi, Geon).
 

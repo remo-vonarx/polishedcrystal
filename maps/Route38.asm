@@ -414,7 +414,8 @@ Route38AdvancedTipsText:
 	text "Tipps für Profis!"
 
 	para "Drücke START im"
-	line "PC-Boxen-System,"
+	line "PC-Lagerungs-"
+	cont "System,"
 
 	para "um schnell den"
 	line "Boxnamen anzu-"

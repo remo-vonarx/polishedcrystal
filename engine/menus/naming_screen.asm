@@ -1105,7 +1105,7 @@ NamingScreen_PlaceShiftDelEnd:
 	ret
 
 .ShowingUpper:
-	db "klein  Lösch Ende@"
+	db "klein Lösch  Ende@"
 
 .ShowingLower:
-	db "Groß   Lösch Ende@"
+	db "Groß  Lösch  Ende@"

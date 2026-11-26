@@ -45,8 +45,8 @@ DimCave5FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
-	text "Der Felsbrocken"
-	line "fiel hinunter."
+	text "Der Felsen fiel"
+	line "hindurch."
 	done
 
 DimCave5FRileyScript:

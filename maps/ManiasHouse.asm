@@ -122,7 +122,7 @@ ManiaScript:
 	done
 
 ShuckieName:
-	rawchar "Shuckie@"
+	rawchar "Modri@"
 
 ShuckieOTName:
 	rawchar "Kirk@"

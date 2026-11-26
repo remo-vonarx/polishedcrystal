@@ -350,8 +350,8 @@ Text_WrongVersion:
 	line "stimmen nicht"
 	cont "überein."
 
-	para "Um im Kolosseum"
-	line "zu spielen,"
+	para "Um im Link-Kolos-"
+	line "seum zu spielen,"
 
 	para "müssen die Ver-"
 	line "sionen überein-"

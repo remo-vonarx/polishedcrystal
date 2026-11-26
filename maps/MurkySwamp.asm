@@ -106,13 +106,13 @@ MurkySwampCherylScript:
 	done
 
 .BeatenText:
-	text "Das richtige"
-	line "Gleichgewicht aus"
+	text "Die richtige"
+	line "Balance zwischen"
 	cont "Angriff und"
 	cont "Verteidigung…"
 
-	para "Das ist nicht"
-	line "leicht."
+	para "Das ist gar nicht"
+	line "so einfach."
 	done
 
 .ItemText:

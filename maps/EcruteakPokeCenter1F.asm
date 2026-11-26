@@ -199,7 +199,7 @@ EcruteakPokeCenter1FBillScript:
 	jmp CloseSRAM
 
 .EeveeMailOTID:
-	rawchar "Prof.Oak@@"
+	rawchar "Prof.Eich@"
 	bigdw 00001
 .EeveeMailOTIDEnd
 

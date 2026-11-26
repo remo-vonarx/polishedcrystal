@@ -651,11 +651,10 @@ KimonoGirlMinaScript:
 	text "Ich bin ein"
 	line "Kimono-Girl."
 
-	para "Hast du meine"
-	line "fünf tanzenden"
-	cont "Cousinen in Teak"
-	cont "City nicht"
-	cont "getroffen?"
+	para "Hast du meine fünf"
+	line "tanzenden Cousinen"
+	cont "in Teak City"
+	cont "nicht getroffen?"
 
 	para "Sag mir Bescheid,"
 	line "wenn du sie"
