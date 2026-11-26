@@ -153,9 +153,8 @@ SeafoamIslandsB4FLawrenceSpeechText:
 	cont "versagt habe?"
 
 	para "Kannst du die"
-	line "Pracht der"
-	cont "geflügelten"
-	cont "Trugbilder"
+	line "Pracht der sagen-"
+	cont "umwobenen Vögel"
 	cont "würdigen?"
 
 	para "Hast du überhaupt"

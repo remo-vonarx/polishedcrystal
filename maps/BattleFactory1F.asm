@@ -155,11 +155,11 @@ BattleFactory1FReceptionistScript:
 		line "Kampffabrik!"
 
 		para "Ich führe dich in"
-		line "einen Kampfraum."
+		line "die Kampfhalle."
 		done
 	promptbutton
 	checkevent EVENT_BATTLE_FACTORY_INTRO
-	iftruefwd .BattleFactoryMenu
+	iftrue .BattleFactoryMenu
 
 	; only ask once, so set the flag regardless
 	setevent EVENT_BATTLE_FACTORY_INTRO
@@ -184,8 +184,8 @@ BattleFactory1FReceptionistScript:
 		para "und Fern kommen"
 		line "hier zusammen und"
 
-		para "duellieren sich im"
-		line "Kampfraum."
+		para "duellieren sich in"
+		line "der Kampfhalle."
 
 		para "Jede Herausfor-"
 		line "derung umfasst"
@@ -214,7 +214,7 @@ BattleFactory1FReceptionistScript:
 	setscene SCENE_BATTLEFACTORY1F_NOOP
 	writethistext
 		text "Möchtest du in"
-		line "einen Kampfraum?"
+		line "die Kampfhalle?"
 		done
 	loadmenu MenuDataHeader_BattleInfoCancel
 	verticalmenu
@@ -229,8 +229,8 @@ BattleFactory1FReceptionistScript:
 
 .Challenge:
 	writethistext
-		text "Ehe du einen"
-		line "Kampfraum"
+		text "Ehe du die"
+		line "Kampfhalle"
 
 		para "betrittst, wird"
 		line "der Spielstand"
@@ -263,7 +263,7 @@ Script_ReturnToRentalChallenge:
 	; Everything ready to go for challenge start
 	writethistext
 		text "Hier entlang in"
-		line "den Kampfraum."
+		line "die Kampfhalle."
 		done
 	waitbutton
 	closetext

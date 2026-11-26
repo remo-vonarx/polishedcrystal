@@ -9104,7 +9104,7 @@ SECTION "VictorGroup", ROMX
 VictorGroup:
 
 	def_trainer_class VICTOR
-	def_trainer 1, "Victor"
+	def_trainer 1, "Viktor"
 	tr_mon 69, "Puka", PIKACHU @ LIGHT_BALL, MALE | PIKACHU_SURF_FORM
 		tr_extra LIGHTNING_ROD, SPE_UP_DEF_DOWN
 		tr_evs 252 SAt, 4 Atk, 252 Spe
