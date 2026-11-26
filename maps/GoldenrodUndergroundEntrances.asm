@@ -39,20 +39,19 @@ GoldenrodUndergroundEntrancesVeteranMScript:
 	jumpthisopenedtext
 
 .Text2:
-	text "In the long run,"
-	line "the house always"
-	cont "wins…"
+	text "Auf lange Sicht"
+	line "gewinnt immer die"
+	cont "Bank…"
 	done
 
 .Text1:
-	text "I tried to use"
-	line "this item in the"
+	text "Ich wollte das in"
+	line "der Spielhalle be-"
+	cont "nutzen, aber man"
+	cont "hat mich erwischt."
 
-	para "Game Corner, but"
-	line "they caught me."
-
-	para "You may as well"
-	line "take it."
+	para "Du kannst es ge-"
+	line "nauso gut nehmen."
 	done
 
 GoldenrodUndergroundEntrances_TeacherText:
@@ -67,16 +66,16 @@ GoldenrodUndergroundEntrances_TeacherText:
 	done
 
 GoldenrodUndergroundEntrances_SuperNerd1Text:
-	text "This tunnel was"
-	line "originally made"
-	cont "for deliveries to"
+	text "Dieser Tunnel war"
+	line "ursprünglich für"
+	cont "Lieferungen an"
 
-	para "the department"
-	line "store."
+	para "das Kaufhaus"
+	line "gedacht."
 
-	para "It's a nice short-"
-	line "cut across the"
-	cont "city too."
+	para "Er ist auch eine"
+	line "nette Abkürzung"
+	cont "durch die Stadt."
 	done
 
 GoldenrodUndergroundEntrances_SuperNerd2Text:
@@ -90,12 +89,13 @@ GoldenrodUndergroundEntrances_SuperNerd2Text:
 	done
 
 GoldenrodUndergroundEntrances_BeautyText:
-	text "I went on a tour"
-	line "of the Radio"
+	text "Ich habe eine Füh-"
+	line "rung durch den"
 
-	para "Tower. I saw all"
-	line "three studios and"
+	para "Radioturm gemacht."
+	line "Ich habe alle drei"
 
-	para "even ate in the"
-	line "café."
+	para "Studios gesehen"
+	line "und sogar im Café"
+	cont "gegessen."
 	done

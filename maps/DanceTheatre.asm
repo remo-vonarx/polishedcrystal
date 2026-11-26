@@ -130,11 +130,11 @@ DanceTheaterSurfGuy:
 .KimonoGirlsUndefeated:
 	jumpthisopenedtext
 
-	text "Kiddo! If you can"
-	line "defeat all the"
+	text "Kleiner! Wenn du"
+	line "alle Kimono-Girls"
 
-	para "Kimono Girls, I'll"
-	line "give you a gift."
+	para "besiegst, gebe ich"
+	line "dir ein Geschenk."
 	done
 
 MapDanceTheatreSignpost1Script:
@@ -240,9 +240,10 @@ SurfGuyLikeADanceText:
 	done
 
 SurfGuyElegantKimonoGirlsText:
-	text "I wish my #mon"
-	line "were as elegant as"
-	cont "the Kimono Girls."
+	text "Ich wünschte, mei-"
+	line "ne #mon wären"
+	cont "so elegant wie die"
+	cont "Kimono-Girls."
 	done
 
 RhydonText:
@@ -286,16 +287,17 @@ DanceTheatreGrannyText:
 	done
 
 DanceTheatreLadyText:
-	text "Eevee can evolve"
-	line "into Leafeon, Gla-"
-	cont "ceon, or Sylveon,"
+	text "Evoli kann sich"
+	line "zu Folipurba, Gla-"
+	cont "ziola oder Feeli-"
+	cont "nara entwickeln,"
 
-	para "but I don't see"
-	line "any of them here."
+	para "aber ich sehe"
+	line "hier keines davon."
 
-	para "I wonder if the"
-	line "Kimono Girls who"
+	para "Ob die Kimono-"
+	line "Girls, die sie"
 
-	para "use them are"
-	line "somewhere else?"
+	para "einsetzen, woan-"
+	line "ders sind?"
 	done

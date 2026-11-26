@@ -109,14 +109,16 @@ EcruteakGymMortyScript:
 	setevent EVENT_GOT_TM30_SHADOW_BALL
 	jumpthisopenedtext
 
-	text "It's Shadow Ball."
-	line "It causes damage"
+	text "Das ist Spukball."
+	line "Er verursacht"
 
-	para "and may reduce"
-	line "Special Defense."
+	para "Schaden und kann"
+	line "die Spez.-Vertei-"
+	cont "digung senken."
 
-	para "Use it if it"
-	line "appeals to you."
+	para "Setze ihn ein,"
+	line "wenn er dir ge-"
+	cont "fällt."
 	done
 
 EcruteakGymClosed:
@@ -259,20 +261,21 @@ MortyWinLossText:
 	done
 
 MortyText_FogBadgeSpeech:
-	text "By having the Fog"
-	line "Badge, #mon up"
+	text "Durch den Phantom-"
+	line "orden gehorchen"
 
-	para "to <LV>50 will obey"
-	line "you."
+	para "dir #mon bis zu"
+	line "<LV>50."
 
-	para "Also, #mon that"
-	line "know Surf will be"
+	para "Außerdem können"
+	line "#mon, die Sur-"
+	cont "fer beherrschen,"
 
-	para "able to use that"
-	line "move anytime."
+	para "diesen jederzeit"
+	line "einsetzen."
 
-	para "I want you to have"
-	line "this too."
+	para "Bitte nimm auch"
+	line "dies an."
 	done
 
 

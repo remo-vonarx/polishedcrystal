@@ -87,9 +87,9 @@ GoldenrodDeptStore5FTwinScript:
 	jumpthisopenedtext
 
 .ComeBackText:
-	text "You can have"
-	line "another Berry"
-	cont "tomorrow."
+	text "Morgen kannst du"
+	line "noch eine Beere"
+	cont "haben."
 	done
 
 GoldenrodDeptStore5FReceptionistOhYourMonDotDotDotText:
@@ -108,19 +108,19 @@ GoldenrodDeptStore5FReceptionistThisMoveShouldBePerfectText:
 
 
 GoldenrodDeptStore5FCarrieMysteryGiftRequiresGBCText:
-	text "Looking at the"
-	line "ground while I was"
+	text "Als ich beim Gehen"
+	line "auf den Boden sah,"
+	cont "wurde mir schwin-"
+	cont "delig."
 
-	para "walking made me"
-	line "dizzy."
-
-	para "But, I did find"
-	line "this Berry!"
+	para "Aber ich habe"
+	line "diese Beere"
+	cont "gefunden!"
 	done
 
 MysteryGiftGirl_NoRoomText:
-	text "But you can't"
-	line "carry it…"
+	text "Aber du kannst"
+	line "sie nicht tragen…"
 	done
 
 GoldenrodDeptStore5FLassText:

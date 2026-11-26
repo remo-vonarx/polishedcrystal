@@ -98,10 +98,10 @@ DayCare_MeetGrandma:
 	ld hl, wStringBuffer4
 	jmp CopyName2
 
-.boy:  db "boy@"
-.girl: db "girl@"
-.she:  db "s" ; fallthrough
-.he:   db "he@"
+.boy:  db "dein… Freund@"
+.girl: db "deine… Freundin@"
+.she:  db "sie@"
+.he:   db "ihn@"
 
 DayCareManScript_Inside:
 	faceplayer
@@ -191,58 +191,61 @@ DayCareMovementData_LyraLeaves:
 	step_end
 
 DayCareLyraHelloText:
-	text "Lyra: Grandma!"
+	text "Lyra: Oma!"
 
-	para "Let me introduce"
-	line "my friend."
+	para "Ich möchte dir"
+	line "jemanden vorstel-"
+	cont "len."
 
-	para "This is <PLAYER>!"
+	para "Das ist <PLAYER>!"
 
-	para "Grandma: Ah ha."
+	para "Oma: Aha."
 
-	para "This is your"
+	para "Das ist also"
 	line ""
 	text_ram wStringBuffer3
-	text "… friend."
+	text "."
 
-	para "I see. Hmm."
+	para "Verstehe. Hm."
 	done
 
 DayCareLyraProtestText:
-	text "Lyra: What?"
-	line "Grandma…!"
+	text "Lyra: Was?"
+	line "Oma…!"
 
-	para "What are you"
-	line "talking about?"
+	para "Was redest du"
+	line "denn da?"
 
-	para "<PLAYER> just"
-	line "lives nearby…"
+	para "<PLAYER> wohnt"
+	line "nur in der Nähe…"
 
-	para "Grandma: Hahaha."
-	line "I know, I know."
+	para "Oma: Hahaha."
+	line "Ja, ja, ich weiß."
 
-	para "You must be sure"
+	para "Du hältst"
 	line ""
 	text_ram wStringBuffer4
-	text "'s talented."
+	text " sicher"
+	cont "für sehr begabt."
 
-	para "Right, <PLAYER>?"
-	line "Come and see us"
-	cont "any time!"
+	para "Stimmt's,"
+	line "<PLAYER>? Besuch"
+	cont "uns jederzeit!"
 	done
 
 DayCareLyraGoodbyeText:
-	text "Lyra: Well, I'd"
-	line "better go now…"
-	cont "See ya!"
+	text "Lyra: Also, ich"
+	line "geh dann mal…"
+	cont "Bis dann!"
 	done
 
 DayCareLyraForgotText:
 	text "Lyra: Oh!"
-	line "I almost forgot!"
+	line "Fast vergessen!"
 
-	para "Here! This is my"
-	line "#gear number!"
+	para "Hier! Das ist"
+	line "meine #Com-"
+	cont "Nummer!"
 	done
 
 GotLyrasNumberText:
@@ -251,31 +254,30 @@ GotLyrasNumberText:
 	done
 
 DayCareLyraHasInfoText:
-	text "Call me any time"
-	line "you want!"
+	text "Ruf mich an, wann"
+	line "immer du willst!"
 
-	para "Grandma and Grand-"
-	line "pa taught me a lot"
+	para "Oma und Opa haben"
+	line "mir viel darüber"
+	cont "beigebracht, wie"
+	cont "man #mon"
+	cont "aufzieht."
 
-	para "about raising"
-	line "#mon, and I'd"
-
-	para "like to share it"
-	line "with you."
+	para "Das möchte ich"
+	line "mit dir teilen."
 	done
 
 DayCareLyraEmbarassedText:
-	text "Lyra: Grandma!"
+	text "Lyra: Oma!"
 
-	para "Don't you say"
-	line "anything."
+	para "Sag bloß nichts."
 
-	para "We're both train-"
-	line "ers, and we're"
+	para "Wir sind beide"
+	line "Trainer und sollen"
 
-	para "supposed to ex-"
-	line "change numbers."
-	cont "That's all."
+	para "Nummern austau-"
+	line "schen. Das ist"
+	cont "alles."
 	done
 
 Text_GrampsLookingForYou:
@@ -329,24 +331,27 @@ DayCareText_DescribeOddEgg:
 	done
 
 DayCareLadyText_GiveLyrasEgg:
-	text "Hello, dear."
+	text "Hallo, Liebes."
 
-	para "Lyra told me this"
-	line "Egg was a gift for"
-	cont "you. Here you go!"
+	para "Lyra sagte mir,"
+	line "dieses Ei sei ein"
+	cont "Geschenk für dich."
+	cont "Bitte schön!"
 	done
 
 DayCareLadyText_DescribeLyrasEgg:
-	text "That Egg came from"
-	line "her first #mon."
+	text "Dieses Ei stammt"
+	line "von ihrem ersten"
+	cont "#mon."
 
-	para "She must really"
-	line "trust you as a"
-	cont "trainer."
+	para "Sie muss dir als"
+	line "Trainer wirklich"
+	cont "vertrauen."
 	done
 
 DayCareText_PartyAndBoxFull:
-	text "You have no room"
-	line "for this, even in"
-	cont "your Box."
+	text "Du hast keinen"
+	line "Platz dafür, nicht"
+	cont "einmal in deiner"
+	cont "Box."
 	done

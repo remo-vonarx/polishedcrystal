@@ -40,8 +40,8 @@ LugiaPaintingScript:
 	closepokepic
 	jumpthistext
 
-	text "  The Leviathan"
-	line "     Awakens"
+	text "  Der Leviathan"
+	line "     erwacht"
 	done
 
 HoOhPaintingScript:
@@ -51,8 +51,8 @@ HoOhPaintingScript:
 	closepokepic
 	jumpthistext
 
-	text "   The Phoenix"
-	line "    Ascending"
+	text "   Der Aufstieg"
+	line "    des Phönix"
 	done
 
 BellTowerPaintingScript:
@@ -62,8 +62,8 @@ BellTowerPaintingScript:
 	closepokepic
 	jumpthistext
 
-	text "    Friendship"
-	line "     and Hope"
+	text "   Freundschaft"
+	line "   und Hoffnung"
 	done
 
 KabutoPuzzleScript:
@@ -76,8 +76,8 @@ KabutoPuzzleScript:
 	end
 
 .Text:
-	text "It's the completed"
-	line "Kabuto panel!"
+	text "Die Kabuto-Platte"
+	line "ist vollständig!"
 	done
 
 OmanytePuzzleScript:
@@ -90,8 +90,9 @@ OmanytePuzzleScript:
 	end
 
 .Text:
-	text "It's the completed"
-	line "Omanyte panel!"
+	text "Die Amonitas-"
+	line "Platte ist"
+	cont "vollständig!"
 	done
 
 AerodactylPuzzleScript:
@@ -104,8 +105,9 @@ AerodactylPuzzleScript:
 	end
 
 .Text:
-	text "It's the completed"
-	line "Aerodactyl panel!"
+	text "Die Aerodactyl-"
+	line "Platte ist"
+	cont "vollständig!"
 	done
 
 HoOhPuzzleScript:
@@ -118,16 +120,17 @@ HoOhPuzzleScript:
 	end
 
 .Text:
-	text "It's the completed"
-	line "Ho-Oh panel!"
+	text "Die Ho-Oh-Platte"
+	line "ist vollständig!"
 	done
 
 EmptyPuzzleText:
-	text "Ruins of Alph"
-	line "panel replica"
+	text "Nachbildung einer"
+	line "Platte der Alph-"
+	cont "Ruinen"
 
-	para "(restoration"
-	line "in progress)"
+	para "(wird gerade"
+	line "restauriert)"
 	done
 
 TowerRelicText:
@@ -138,18 +141,19 @@ TowerRelicText:
 	done
 
 GoldenrodMuseum2FSightseerMText:
-	text "These paintings"
-	line "are beautiful!"
+	text "Diese Gemälde"
+	line "sind wunderschön!"
 
-	para "One day, I hope my"
-	line "art is hung in a"
+	para "Ich hoffe, eines"
+	line "Tages hängt meine"
 
-	para "museum for all to"
-	line "see too."
+	para "Kunst auch in"
+	line "einem Museum, wo"
+	cont "alle sie sehen."
 	done
 
 GoldenrodMuseum2FSmeargleText:
-	text "Smeargle: Smeer!"
+	text "Farbeagle: Smeer!"
 	done
 
 GoldenrodMuseum2FScientistScript:
@@ -163,24 +167,25 @@ GoldenrodMuseum2FScientistScript:
 	iftrue_jumptextfaceplayer GoldenrodMuseum2FScientistSomeArtifactsText
 	jumpthistextfaceplayer
 
-	text "I was expecting"
-	line "there to be more"
-	cont "exhibits…"
+	text "Ich habe mehr"
+	line "Ausstellungs-"
+	cont "stücke erwartet…"
 
-	para "Where are the"
-	line "Alph carvings?"
+	para "Wo sind die"
+	line "Reliefs aus Alph?"
 	done
 
 GoldenrodMuseum2FScientistSomeArtifactsText:
-	text "These artifacts"
-	line "are fascinating!"
+	text "Diese Artefakte"
+	line "sind faszinierend!"
 
-	para "Its a shame they're"
-	line "just replicas…"
+	para "Schade, dass es"
+	line "nur Nachbildungen"
+	cont "sind…"
 
-	para "I'd love to study"
-	line "the real thing"
-	cont "up close."
+	para "Ich würde gern die"
+	line "echten aus der"
+	cont "Nähe studieren."
 	done
 
 GoldenrodMuseum2FTeacherScript:
@@ -207,64 +212,61 @@ GoldenrodMuseum2FTutorBatonPassScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "If you say so."
+	text "Wie du meinst."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf!"
+	text "Du hast kein"
+	line "Silberblatt!"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Baton Pass!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Staffette!"
 	done
 
 GoldenrodMuseum2FTutorIntroText:
-	text "Before the con-"
-	line "struction of the"
+	text "Bevor der neue"
+	line "Radioturm gebaut"
 
-	para "new Radio Tower,"
-	line "there once stood"
+	para "wurde, stand hier"
+	line "einst ein alter"
+	cont "Holzturm."
 
-	para "an ancient wooden"
-	line "tower."
+	para "Dieses Wandbild"
+	line "war ursprünglich"
+	cont "in jenem Turm."
 
-	para "This mural was"
-	line "originally in"
-	cont "that tower."
+	para "Es musste hierher"
+	line "gebracht werden,"
 
-	para "Moving it here"
-	line "was necessary"
+	para "um ein Stück der"
+	line "Geschichte Johtos"
+	cont "zu bewahren."
 
-	para "to preserve a"
-	line "piece of Johto's"
-	cont "history."
+	para "Selbst #mon"
+	line "verstehen den Wert"
 
-	para "Even #mon"
-	line "can understand"
-
-	para "the value of"
-	line "preservation!"
+	para "des Bewahrens!"
 	done
 
 GoldenrodMuseum2FTutorBatonPassText:
-	text "I can teach your"
-	line "#mon to use"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "Baton Pass for one"
-	line "Silver Leaf."
+	para "deinem #mon"
+	line "Staffette bei."
 	done
 
 
 GoldenrodMuseum2FTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Baton Pass?"
+	text "Soll ich deinem"
+	line "#mon Staffette"
+	cont "beibringen?"
 	done

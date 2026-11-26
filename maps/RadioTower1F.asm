@@ -128,9 +128,9 @@ RadioTower1FLuckyNumberManScript:
 	jumpthisopenedtext
 
 RadioTower1FLuckyNumberManComeAgainText:
-	text "Please come back"
-	line "tomorrow for the"
-	cont "next Lucky Number."
+	text "Komm morgen wieder"
+	line "für die nächste"
+	cont "Glückszahl."
 	done
 
 RadioTower1FRadioCardWomanScript:
@@ -250,29 +250,31 @@ RadioTower1FReceptionistNoToursText:
 	done
 
 RadioTower1FLuckyNumberManAskToPlayText:
-	text "Hi, are you here"
-	line "for the Lucky Num-"
-	cont "ber Show?"
+	text "Hallo! Bist du"
+	line "wegen der Glücks-"
+	cont "zahlshow hier?"
 	done
 
 IntroduceFelicityText:
-	text "I'm Felicity,"
-	line "your attendant"
-	cont "today."
+	text "Ich bin Felizitas"
+	line "und betreue dich"
+	cont "heute."
 	done
 
 ExplainLuckyNumberShowText:
-	text "Want me to check"
-	line "the ID numbers of"
-	cont "your #mon?"
+	text "Soll ich die"
+	line "ID-Nummern deiner"
+	cont "#mon über-"
+	cont "prüfen?"
 
-	para "If you get lucky,"
-	line "you win a prize."
+	para "Wenn du Glück"
+	line "hast, gewinnst du"
+	cont "einen Preis."
 	done
 
 RadioTower1FLuckyNumberManTodayIdIsText:
-	text "Today's lucky ID"
-	line "number is "
+	text "Die heutige ID-"
+	line "Nummer ist "
 	text_ram wStringBuffer3
 	text "."
 	done
@@ -300,42 +302,46 @@ WonFirstPlaceText:
 	done
 
 WonSecondPlaceText:
-	text "Hey! You've"
-	line "matched the last"
-	cont "four numbers!"
+	text "Hey! Die letzten"
+	line "vier Ziffern"
+	cont "stimmen überein!"
 
-	para "You've won second"
-	line "prize, a rare"
-	cont "Bottle Cap!"
+	para "Du hast den"
+	line "zweiten Preis"
+	cont "gewonnen: einen"
+	cont "seltenen"
+	cont "Kronkorken!"
 	done
 
 WonThirdPlaceText:
-	text "Hey! You've"
-	line "matched the last"
-	cont "three numbers!"
+	text "Hey! Die letzten"
+	line "drei Ziffern"
+	cont "stimmen überein!"
 
-	para "You've won third"
-	line "prize, a PP Max!"
+	para "Du hast den"
+	line "dritten Preis"
+	cont "gewonnen: AP-Top!"
 	done
 
 WonFourthPlaceText:
-	text "Ooh, you've"
-	line "matched the last"
-	cont "two numbers."
+	text "Ooh, die letzten"
+	line "beiden Ziffern"
+	cont "stimmen überein."
 
-	para "You've won"
-	line "fourth prize,"
-	cont "a PP Up."
+	para "Du hast den"
+	line "vierten Preis"
+	cont "gewonnen: AP-Plus."
 	done
 
 WonFifthPlaceText:
-	text "Ooh, you've"
-	line "matched the last"
-	cont "number."
+	text "Ooh, die letzte"
+	line "Ziffer stimmt"
+	cont "überein."
 
-	para "You've won fifth"
-	line "prize, a"
-	cont "Rare Candy."
+	para "Du hast den"
+	line "fünften Preis"
+	cont "gewonnen: ein"
+	cont "Sonderbonbon."
 	done
 
 
@@ -380,30 +386,32 @@ RadioTower1FRadioCardWomanQuestion1Text:
 	done
 
 RadioTower1FRadioCardWomanQuestion2Text:
-	text "Correct!"
-	line "Question 2:"
+	text "Korrekt!"
+	line "Frage 2:"
 
-	para "Nidorina can only"
-	line "be female. True?"
+	para "Nidorina kann nur"
+	line "weiblich sein."
+	cont "Stimmt das?"
 	done
 
 RadioTower1FRadioCardWomanQuestion3Text:
-	text "Bull's-eye!"
-	line "Question 3:"
+	text "Volltreffer!"
+	line "Frage 3:"
 
-	para "Can Magikarp learn"
-	line "any moves via TM?"
+	para "Kann Karpador per"
+	line "TM Attacken"
+	cont "lernen?"
 	done
 
 RadioTower1FRadioCardWomanQuestion4Text:
-	text "So far so good!"
-	line "Question 4:"
+	text "So weit, so gut!"
+	line "Frage 4:"
 
-	para "Does Kurt, the"
-	line "# Ball creator,"
+	para "Benutzt Kurt, der"
+	line "#bälle baut,"
 
-	para "use apricots as"
-	line "ingredients?"
+	para "Aprikosen als"
+	line "Zutat?"
 	done
 
 RadioTower1FRadioCardWomanQuestion5Text:
@@ -489,29 +497,32 @@ GruntM3BeatenText:
 	done
 
 RadioTower1FWhitney1Text:
-	text "Hi! I'm Whitney!"
+	text "Hi! Ich bin"
+	line "Bianka!"
 
-	para "I heard about the"
-	line "quiz to win a"
-	cont "Radio Card,"
+	para "Ich habe von dem"
+	line "Quiz gehört, bei"
+	cont "dem man ein Radio-"
+	cont "Modul gewinnt,"
 
-	para "so I came here"
-	line "to get one…"
+	para "also bin ich her-"
+	line "gekommen…"
 
-	para "But this quiz is"
-	line "so hard!"
+	para "Aber dieses Quiz"
+	line "ist so schwer!"
 	done
 
 RadioTower1FWhitney2Text:
-	text "Whitney: Wow, you"
-	line "did it!"
+	text "Bianka: Wow, du"
+	line "hast es geschafft!"
 
-	para "I thought the"
-	line "fourth answer"
-	cont "was apricots…"
+	para "Ich dachte, die"
+	line "vierte Antwort"
+	cont "wäre Aprikosen…"
 
-	para "Oops! I should get"
-	line "back to the Gym!"
+	para "Huch! Ich sollte"
+	line "zurück in die"
+	cont "Arena!"
 	done
 
 RadioTower1FDirectoryText:

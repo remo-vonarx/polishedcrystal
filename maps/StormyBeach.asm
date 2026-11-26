@@ -116,20 +116,21 @@ GenericTrainerPicnickerLily:
 	done
 
 StormyBeachSwimmermText:
-	text "We're here on a"
-	line "camping trip,"
+	text "Wir sind hier zum"
+	line "Campen,"
 
-	para "but the weather"
-	line "doesn't look great…"
+	para "aber das Wetter"
+	line "sieht nicht so"
+	cont "toll aus…"
 	done
 
 StormyBeachGrampsText:
-	text "Can you feel it in"
-	line "the air? A storm"
-	cont "is brewing."
+	text "Spürst du es in"
+	line "der Luft? Ein"
+	cont "Sturm zieht auf."
 
-	para "A befitting omen"
-	line "for those looking"
-	cont "to explore the"
-	cont "swamp."
+	para "Ein passendes Omen"
+	line "für alle, die den"
+	cont "Sumpf erkunden"
+	cont "wollen."
 	done

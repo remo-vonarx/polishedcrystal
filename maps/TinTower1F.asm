@@ -533,35 +533,38 @@ TinTower1FSage5Text1:
 
 
 TinTowerEusineHoOhText:
-	text "I knew it."
+	text "Ich wusste es."
 
-	para "I knew you'd get"
-	line "to see the #mon"
+	para "Ich wusste, dass"
+	line "du das regenbogen-"
+	cont "farbene #mon"
 
-	para "of rainbow colors,"
+	para "sehen würdest,"
 	line "<PLAYER>."
 
-	para "It happened just"
-	line "as I envisioned."
+	para "Meine Vorhersehung"
+	line "ist eingetreten."
 
-	para "My research isn't"
-	line "bad, I might say."
+	para "Meine Forschung"
+	line "ist nicht übel,"
+	cont "würde ich sagen."
 
-	para "I'm going to keep"
-	line "studying #mon"
+	para "Ich werde weiter-"
+	line "hin #mon stu-"
+	cont "dieren, um ein be-"
+	cont "rühmter #-"
+	cont "Maniac zu werden!"
 
-	para "to become a famous"
-	line "#Maniac!"
+	para "Wenn du mal in"
+	line "Prismania City"
 
-	para "If you're ever in"
-	line "Celadon City,"
+	para "bist, grüßt du"
+	line "dann meinen Opa?"
 
-	para "will you say hi to"
-	line "my grandpa?"
+	para "Er freut sich si-"
+	line "cher über Gesell-"
+	cont "schaft, solange"
+	cont "ich weg bin."
 
-	para "I'm sure he would"
-	line "like the company"
-	cont "while I'm away."
-
-	para "Later, <PLAYER>!"
+	para "Bis dann, <PLAYER>!"
 	done

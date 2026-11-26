@@ -34,11 +34,11 @@ EcruteakMartSuperNerdText:
 	done
 
 EcruteakMartGrannyText:
-	text "The Magnet Train"
-	line "in Goldenrod is"
-	cont "great, but there"
+	text "Der Magnetzug in"
+	line "Dukatia City ist"
+	cont "toll, aber zuerst"
 
-	para "were also plans to"
-	line "put a station in"
-	cont "Ecruteak at first."
+	para "gab es auch Pläne"
+	line "für einen Bahnhof"
+	cont "in Teak City."
 	done

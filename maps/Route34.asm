@@ -479,55 +479,61 @@ Route34RichBoyIrvingScript:
 	done
 
 .IntroText:
-	text "I don't need to"
-	line "gamble for Coins."
+	text "Ich muss nicht um"
+	line "Münzen spielen."
 
-	para "I'm rich, so I"
-	line "bought my #-"
-	cont "mon with cash!"
+	para "Ich bin reich und"
+	line "habe meine #mon"
+	cont "bar gekauft!"
 
-	para "They're strong"
-	line "enough that we"
-	cont "beat Azalea's Gym!"
+	para "Sie sind so stark,"
+	line "dass wir die Arena"
+	cont "von Azalea City"
+	cont "besiegt haben!"
 
-	para "You want to battle"
-	line "them? Fine--just"
+	para "Du willst gegen"
+	line "sie kämpfen? Gut,"
 
-	para "beat everyone else"
-	line "here first!"
+	para "dann besiege erst"
+	line "alle anderen hier!"
 
-	para "Even the Officer,"
-	line "although she may"
+	para "Sogar die Wächte-"
+	line "rin, auch wenn sie"
 
-	para "not battle you"
-	line "until night."
+	para "vielleicht erst"
+	line "nachts gegen dich"
+	cont "kämpft."
 	done
 
 .QuestionText:
-	text "You really did it!"
-	line "Well then,"
-	cont "noblesse oblige."
+	text "Du hast es echt"
+	line "geschafft! Nun"
+	cont "denn, Adel ver-"
+	cont "pflichtet."
 
-	para "Are you ready to"
-	line "fight my top-shelf"
-	cont "team?"
+	para "Bist du bereit für"
+	line "mein erstklassiges"
+	cont "Team?"
 	done
 
 .RefusedText:
-	text "Not so desperate"
-	line "for prize money"
-	cont "after all?"
+	text "So dringend"
+	line "brauchst du das"
+	cont "Preisgeld wohl"
+	cont "doch nicht?"
 	done
 
 .SeenText:
-	text "I'm a cut above"
-	line "the commoners"
-	cont "you beat here!"
+	text "Ich stehe weit"
+	line "über dem gemeinen"
+	cont "Volk, das du hier"
+	cont "besiegt hast!"
 	done
 
 .BeatenText:
-	text "No! My money"
-	line "wasn't enough…"
+	text "Nein! Mein Geld"
+	line "hat nicht ge-"
+	cont "reicht…"
 	done
 
 .AfterText1:
@@ -633,41 +639,44 @@ Route34MovementData_LyraEntersDayCare:
 	step_end
 
 Route34LyraText_Grandpa:
-	text "Lyra: Grandpa!"
+	text "Lyra: Opa!"
 	done
 
 Route34LyraGoodWorkText:
-	text "Lyra: Good work,"
-	line "Grandpa!"
+	text "Lyra: Gute Arbeit,"
+	line "Opa!"
 
-	para "The #mon you"
-	line "raised for me is"
-	cont "healthy as can be!"
+	para "Das #mon, das"
+	line "du für mich aufge-"
+	cont "zogen hast, ist"
+	cont "kerngesund!"
 
-	para "You look fit,"
-	line "too!"
+	para "Du siehst auch"
+	line "fit aus!"
 	done
 
 Route34LyraGreetingText:
-	text "Lyra: Hi, <PLAYER>!"
+	text "Lyra: Hallo,"
+	line "<PLAYER>!"
 	done
 
 Route34LyraIntroductionText:
-	text "Grandpa, this is"
-	line "my friend!"
+	text "Opa, das ist mein"
+	line "Freund!"
 
-	para "<PLAYER> is quite"
-	line "good at raising"
-	cont "#mon."
+	para "<PLAYER> kann ziem-"
+	line "lich gut #mon"
+	cont "aufziehen."
 
-	para "Well, not as good"
-	line "as you, of course!"
+	para "Na ja, nicht so"
+	line "gut wie du, na-"
+	cont "türlich!"
 	done
 
 Route34LyraChallengeText:
-	text "<PLAYER>, why don't"
-	line "we show Grandpa"
-	cont "how good you are?"
+	text "<PLAYER>, sollen"
+	line "wir Opa zeigen,"
+	cont "wie gut du bist?"
 	done
 
 Route34LyraWinText:
@@ -682,9 +691,9 @@ Route34LyraLossText:
 	done
 
 Route34LyraFollowMeText:
-	text "Lyra: Let me"
-	line "introduce you to"
-	cont "Grandma, too!"
+	text "Lyra: Ich stelle"
+	line "dich auch Oma"
+	cont "vor!"
 	done
 
 BreederJulieSeenText:

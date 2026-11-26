@@ -260,9 +260,11 @@ BugCatchingContestant2BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant2BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Lou: I envy you."
-	line "I just couldn't"
-	cont "do it this time."
+	text "Lou: Ich beneide"
+	line "dich. Dieses Mal"
+	cont "habe ich es"
+	cont "einfach nicht"
+	cont "geschafft."
 	done
 
 BugCatchingContestant3BScript:
@@ -341,8 +343,8 @@ BugCatchingContestant9BScript:
 	iffalse_jumptextfaceplayer BugCatchingContestant9BStillCompetingText
 	jumpthistextfaceplayer
 
-	text "Johnny: Next time,"
-	line "I'm going to win."
+	text "Niklas: Nächstes"
+	line "Mal gewinne ich!"
 	done
 
 BugCatchingContestant10BScript:
@@ -391,8 +393,9 @@ BugCatchingContestant1BStillCompetingText:
 
 
 BugCatchingContestant2BStillCompetingText:
-	text "Lou: Maybe you win"
-	line "with big #mon?"
+	text "Lou: Du gewinnst"
+	line "vielleicht mit"
+	cont "großen #mon?"
 	done
 
 
@@ -458,9 +461,11 @@ BugCatchingContestant8BStillCompetingText:
 
 
 BugCatchingContestant9BStillCompetingText:
-	text "Johnny: Darn."
-	line "I thought I would"
-	cont "score higher…"
+	text "Niklas: Mist! Ich"
+	line "dachte, ich würde"
+	cont "eine höhere"
+	cont "Bewertung"
+	cont "erreichen…"
 	done
 
 

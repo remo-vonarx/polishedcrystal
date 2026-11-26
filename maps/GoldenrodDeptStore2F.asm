@@ -29,12 +29,13 @@ GoldenrodDeptStore2FClerk2Script:
 	pokemart MARTTYPE_STANDARD, MART_GOLDENROD_2F_2_EEVEE
 
 GoldenrodDeptStore2FYoungsterText:
-	text "#gear has no"
-	line "storage limit."
+	text "Der #Com kann"
+	line "unbegrenzt viele"
+	cont "Nummern speichern."
 
-	para "But getting too"
-	line "many phone calls"
-	cont "can be annoying."
+	para "Aber zu viele"
+	line "Anrufe können"
+	cont "nerven."
 	done
 
 GoldenrodDeptStore2FCooltrainerFText:

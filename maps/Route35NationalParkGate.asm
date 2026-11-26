@@ -219,30 +219,31 @@ Route35NationalParkGateTutorCharmScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Aw, I guess your"
-	line "#mon are cute"
-	cont "enough,"
+	text "Och, deine #mon"
+	line "sind wohl süß"
+	cont "genug,"
 
-	para "but they still"
-	line "could be cuter!"
+	para "aber sie könnten"
+	line "noch süßer sein!"
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "Sorry, but I can't"
-	line "teach the move"
+	text "Tut mir leid, aber"
+	line "ohne Silberblatt"
 
-	para "unless you have a"
-	line "a Silver Leaf."
+	para "kann ich dir die"
+	line "Attacke nicht"
+	cont "beibringen."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Your #mon is"
-	line "cuter already!"
+	text "Dein #mon ist"
+	line "schon süßer!"
 	done
 
 Route35NationalParkGateOfficer1AskToParticipateText:
@@ -283,27 +284,29 @@ Route35NationalParkGatePlayerReceivedParkBallsText:
 	done
 
 Route35NationalParkGateOfficer1ExplainsRulesText:
-	text "The person who"
-	line "gets the strong-"
-	cont "est bug #mon"
-	cont "is the winner."
+	text "Wer das stärkste"
+	line "Käfer-#mon"
+	cont "fängt, hat"
+	cont "gewonnen."
 
-	para "You have {d:BUG_CONTEST_MINUTES}"
-	line "minutes."
+	para "Du hast {d:BUG_CONTEST_MINUTES}"
+	line "Minuten Zeit."
 
-	para "If you run out of"
-	line "Park Balls, you're"
-	cont "done."
+	para "Wenn du keine"
+	line "Parkbälle mehr"
+	cont "hast, ist das"
+	cont "Turnier beendet."
 
-	para "You can keep the"
-	line "last #mon you"
-	cont "catch as your own."
+	para "Du darfst das"
+	line "letzte #mon,"
+	cont "das du gefangen"
+	cont "hast, behalten."
 
-	para "Go out and catch"
-	line "the strongest bug"
+	para "Los! Fang das"
+	line "stärkste Käfer-"
 
-	para "#mon you can"
-	line "find!"
+	para "#mon, das du"
+	line "finden kannst!"
 	done
 
 Route35NationalParkGateOfficer1AskToUseFirstMonText:
@@ -473,35 +476,37 @@ BugCatchingContestExplanationText:
 	done
 
 Route35NationalParkGatePokefanFText:
-	text "Many #mon come"
-	line "to National Park"
+	text "Viele #mon kom-"
+	line "men mit ihren"
 
-	para "with their"
-	line "trainers,"
+	para "Trainern in den"
+	line "Nationalpark,"
 
-	para "and they're all"
-	line "so, so cute!"
+	para "und sie sind alle"
+	line "so, so süß!"
 
-	para "Yes, the Bug"
-	line "#mon too!"
+	para "Ja, auch die"
+	line "Käfer-#mon!"
 	done
 
 Text_Route35NationalParkGateTutorCharm:
-	text "I can make your"
-	line "#mon cuter with"
-	cont "the move Charm."
+	text "Ich kann dein"
+	line "#mon mit der"
+	cont "Attacke Charme"
+	cont "süßer machen."
 
-	para "Even opposing"
-	line "#mon won't want"
+	para "Selbst gegnerische"
+	line "#mon wollen es"
 
-	para "to hit it as"
-	line "hard afterwards!"
+	para "danach nicht mehr"
+	line "so fest treffen!"
 	done
 
 Text_Route35NationalParkGateTutorQuestion:
-	text "I just need a"
-	line "Silver Leaf, so"
+	text "Ich brauche nur"
+	line "ein Silberblatt."
 
-	para "can I teach Charm?"
-	line "Pretty please?"
+	para "Darf ich Charme"
+	line "beibringen?"
+	cont "Bitte, bitte?"
 	done

@@ -29,176 +29,182 @@ GoldenrodPokecomCenterOffice_MapScriptHeader:
 	object_event  4,  1, SPRITE_MON_ICON, SPRITEMOVEDATA_ADMIN_MEOWTH, 0, MEOWTH, -1, PAL_MON_BROWN, OBJECTTYPE_SCRIPT, NO_FORM, AdminEldredScript, -1
 
 AdminRangiText:
-	text "Rangi: I hope"
-	line "you're enjoying"
+	text "Rangi: Ich hoffe,"
+	line "dir gefällt deine"
 
-	para "your journey"
-	line "through this game!"
+	para "Reise durch dieses"
+	line "Spiel!"
 
-	para "We had trouble"
-	line "fitting all the"
-	cont "data in for it."
+	para "Es war schwierig,"
+	line "alle Daten unter-"
+	cont "zubringen."
 
-	para "There was barely"
-	line "even enough room"
-	cont "for my sprite!"
+	para "Es war kaum noch"
+	line "Platz für mein"
+	cont "Sprite!"
 	done
 
 RangiComputerScript:
 	jumpthistext
 
-	text "“Optimizing…” is"
-	line "blinking on the"
-	cont "screen."
+	text "“Optimiere…”"
+	line "blinkt auf dem"
+	cont "Bildschirm."
 
-	para "It seems to be"
-	line "taking a while."
+	para "Das scheint eine"
+	line "Weile zu dauern."
 	done
 
 AdminLunaText:
-	text "Luna: When you"
-	line "Wonder Traded"
+	text "Luna: Als du zum"
+	line "ersten Mal mit"
 
-	para "with someone in"
-	line "another region"
+	para "jemandem aus einer"
+	line "anderen Region"
+	cont "Wundertausch ge-"
+	cont "macht hast, warst"
+	cont "du da nicht beein-"
+	cont "druckt?"
 
-	para "for the first"
-	line "time, weren't you"
-	cont "impressed?"
-
-	para "I built the orig-"
-	line "inal system right"
-	cont "here in Goldenrod!"
+	para "Ich habe das Ori-"
+	line "ginalsystem genau"
+	cont "hier in Dukatia"
+	cont "City gebaut!"
 	done
 
 LunaComputerScript:
 	jumpthistext
 
-	text "A screen full of"
-	line "dense notes, maps"
+	text "Ein Bildschirm"
+	line "voller dichter"
+	cont "Notizen,"
 
-	para "of unfamiliar"
-	line "places, and a"
+	para "Karten unbekann-"
+	line "ter Orte und ein"
 
-	para "picture of Johto"
-	line "covered in snow."
+	para "Bild von Johto"
+	line "unter Schnee."
 	done
 
 AdminFredrikText:
-	text "Fredrik: Bill's PC"
-	line "Storage System"
-	cont "is open-source,"
+	text "Fredrik: Bills"
+	line "PC-Boxsystem ist"
+	cont "Open Source,"
 
-	para "so I was able to"
-	line "completely re-"
+	para "also konnte ich"
+	line "seine Datenbank"
 
-	para "write and upgrade"
-	line "his database!"
+	para "komplett neu"
+	line "schreiben und"
+	cont "verbessern!"
 	done
 
 FredrikComputerScript:
 	jumpthistext
 
-	text "A dozen windows"
-	line "are open at once,"
+	text "Ein Dutzend Fens-"
+	line "ter sind offen,"
 
-	para "each related to"
-	line "its own feature."
+	para "jedes zu einer"
+	line "eigenen Funktion."
 	done
 
 AdminEmiText:
-	text "Emi: Have you"
-	line "seen the Summary"
-	cont "of your #mon?"
+	text "Emi: Hast du dir"
+	line "die Statusseiten"
+	cont "deiner #mon"
+	cont "angesehen?"
 
-	para "I'm visiting from"
-	line "the Beria region"
+	para "Ich komme aus der"
+	line "Beria-Region, um"
 
-	para "to bring UI like"
-	line "that to Johto!"
+	para "so eine Ober-"
+	line "fläche nach Johto"
+	cont "zu bringen!"
 
-	para "Come say hello if"
-	line "you're ever in"
-	cont "Amethyst Town!"
+	para "Sag mal Hallo,"
+	line "wenn du in"
+	cont "Amethyst Town"
+	cont "bist!"
 	done
 
 EmiComputerScript:
 	jumpthistext
 
-	text "Lots of code is"
-	line "covered up by a"
-	cont "game of Solitaire."
+	text "Viel Code ist von"
+	line "einer Partie Soli-"
+	cont "taire verdeckt."
 	done
 
 AdminAizawaText:
-	text "Aizawa: Dialog,"
-	line "map designs,"
-	cont "character sprites,"
-	cont "trainer parties…"
+	text "Aizawa: Dialoge,"
+	line "Kartendesigns,"
+	cont "Figuren-Sprites,"
+	cont "Trainer-Teams…"
 
-	para "Game Freak over"
-	line "in Kanto is lucky"
+	para "Game Freak in"
+	line "Kanto hat Glück,"
 
-	para "to have a whole"
-	line "company for this!"
+	para "dafür eine ganze"
+	line "Firma zu haben!"
 	done
 
 AizawaComputerScript:
 	jumpthistext
 
-	text "A program called"
-	line "Polished Map++ is"
-	cont "displaying a"
+	text "Das Programm"
+	line "Polished Map++"
+	cont "zeigt eine halb"
 
-	para "half-drawn trop-"
-	line "ical island."
+	para "gezeichnete Tro-"
+	line "peninsel."
 	done
 
 AdminVulcanText:
-	text "Vulcan: How's the"
-	line "weather?"
+	text "Vulcan: Wie ist"
+	line "das Wetter?"
 
-	para "That's no small"
-	line "talk… I actually"
-	cont "implemented it!"
+	para "Das ist kein"
+	line "Smalltalk… Ich"
+	cont "habe es wirklich"
+	cont "eingebaut!"
 
-	para "We thought it"
-	line "couldn't be done…"
+	para "Wir dachten, das"
+	line "geht nicht…"
 
-	para "I proved myself"
-	line "wrong!"
+	para "Ich habe mich"
+	line "selbst widerlegt!"
 	done
 
 VulcanComputerScript:
 	jumpthistext
 
-	text "A weather map"
-	line "is displayed on"
-	cont "the screen."
+	text "Auf dem Bildschirm"
+	line "ist eine Wetter-"
+	cont "karte zu sehen."
 
-	para "It's showing"
-	line "rain in Johto."
+	para "Sie zeigt Regen"
+	line "in Johto."
 	done
 
 AdminSourText:
-	text "Sour: How do you"
-	line "like the move"
+	text "Sour: Wie gefallen"
+	line "dir die Attacken-"
+	cont "Animationen im"
+	cont "Kampf?"
 
-	para "animations in"
-	line "battles?"
-
-	para "I really like to"
-	line "make every move"
-	cont "a joy to use!"
+	para "Ich will jede"
+	line "Attacke zu einem"
+	cont "Vergnügen machen!"
 	done
 
 SourComputerScript:
 	jumpthistext
 
-	text "There's a goofy"
-	line "image of an egg-"
-	cont "shaped man with"
-	cont "a moustache."
+	text "Ein albernes Bild"
+	line "von einem eiförmi-"
+	cont "gen Mann mit"
+	cont "Schnurrbart."
 	done
 
 AdminEldredScript:
@@ -208,11 +214,11 @@ AdminEldredScript:
 	promptbutton
 	jumpthisopenedtext
 
-	text "A mischievous"
-	line "Meowth is pawing"
-	cont "at the keyboard."
+	text "Ein freches Mauzi"
+	line "tatzelt auf der"
+	cont "Tastatur herum."
 	done
 
 AdminMeowthText:
-	text "Eldred: Miaou!"
+	text "Eldred: Miau!"
 	done

@@ -89,28 +89,30 @@ GoldenrodGameCornerTutorPayDayScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "Never mind then."
+	text "Dann eben nicht."
 	done
 
 .NoSilverLeaf
 	waitbutton
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf?"
-	cont "Never mind then."
+	text "Du hast kein"
+	line "Silberblatt?"
+	cont "Dann eben nicht."
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Pay Day nets you"
-	line "more money after a"
-	cont "battle."
+	text "Mit Zahltag ver-"
+	line "dienst du nach"
+	cont "einem Kampf mehr"
+	cont "Geld."
 
-	para "Keep using it and"
-	line "you'll be rich!"
+	para "Setz die Attacke"
+	line "oft ein und du"
+	cont "wirst reich!"
 	done
 
 GoldenrodGameCornerTMVendorScript:
@@ -367,18 +369,19 @@ GoldenrodGameCornerPrizeVendorHereYouGoText:
 	done
 
 GoldenrodGameCornerPrizeVendorAlreadyHaveTMText:
-	text "But you already"
-	line "have that TM!"
+	text "Aber du hast diese"
+	line "TM doch schon!"
 	done
 
 
 GoldenrodGameCornerPrizeVendorNoMoreRoomText:
-	text "Oh, no. You can't"
-	line "carry any more and"
-	cont "your Box is full."
+	text "Oh nein. Du kannst"
+	line "nichts mehr tragen"
+	cont "und deine Box ist"
+	cont "voll."
 
-	para "I'll return your"
-	line "coins to you."
+	para "Ich gebe dir deine"
+	line "Münzen zurück."
 	done
 
 GoldenrodGameCornerPrizeVendorQuitText:
@@ -393,20 +396,24 @@ GoldenrodGameCornerPrizeVendorNoCoinCaseText:
 	done
 
 GoldenrodGameCornerFisherText:
-	text "Today's my pay day!"
-	line "Time to celebrate"
-	cont "with some slots!"
+	text "Heute ist mein"
+	line "Zahltag! Zeit, mit"
+	cont "ein paar Runden am"
+	cont "Automaten zu"
+	cont "feiern!"
 
-	para "…You know, #mon"
-	line "get a Pay Day too."
+	para "…Weißt du, #mon"
+	line "haben auch einen"
+	cont "Zahltag."
 	done
 
 Text_GoldenrodGameCornerTutorPayDayQuestion:
-	text "If you give me a"
-	line "Silver Leaf, I'll"
+	text "Wenn du mir ein"
+	line "Silberblatt gibst,"
 
-	para "teach Pay Day to"
-	line "your #mon."
+	para "bringe ich einem"
+	line "deiner #mon"
+	cont "Zahltag bei."
 	done
 
 
@@ -460,28 +467,34 @@ GoldenrodGameCornerCooltrainerFText:
 	done
 
 GoldenrodGameCornerGentlemanText:
-	text "I taught Ice Beam"
-	line "to my #mon."
+	text "Ich habe meinen"
+	line "#mon Eisstrahl"
+	cont "beigebracht."
 
-	para "It was hard to get"
-	line "enough coins for"
+	para "Es hat zwar gedau-"
+	line "ert, bis ich genug"
 
-	para "it, but it was"
-	line "worth it."
+	para "Münzen hatte, aber"
+	line "es hat sich ge-"
+	cont "lohnt."
 	done
 
 GoldenrodGameCornerPokefanM2Text:
-	text "I couldn't win at"
-	line "the slots, and I"
+	text "Ich hatte an den"
+	line "Automaten kein"
 
-	para "blew it on card"
-	line "flipping…"
+	para "Glück. Bei den"
+	line "Karten sieht es"
 
-	para "I got so furious,"
-	line "I tossed out my"
+	para "auch nicht anders"
+	line "aus…"
 
-	para "Coin Case in the"
-	line "Underground."
+	para "Ich war so zornig,"
+	line "dass ich meinen"
+
+	para "Münzkorb in den"
+	line "Untergrund gewor-"
+	cont "fen habe."
 	done
 
 GoldenrodGameCornerPokefanM3Text:

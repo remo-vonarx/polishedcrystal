@@ -49,16 +49,20 @@ GoldenrodBikeShopClerkFirstRateBikesText:
 	done
 
 GoldenrodBikeShopClerkIntroText:
-	text "…sigh… I opened"
-	line "a branch here,"
+	text "…Seufz… Ich habe"
+	line "hier eine Filiale"
+	cont "eröffnet,"
 
-	para "but I can't sell"
-	line "my Bicycles."
-	cont "Why is that?"
+	para "aber ich kann mei-"
+	line "ne Fahrräder nicht"
 
-	para "Could you ride a"
-	line "Bicycle and adver-"
-	cont "tise for me?"
+	para "verkaufen. Warum"
+	line "nur?"
+
+	para "Würdest du ein"
+	line "Fahrrad fahren und"
+	cont "für mich Werbung"
+	cont "machen?"
 	done
 
 GoldenrodBikeShopClerkAgreedText:

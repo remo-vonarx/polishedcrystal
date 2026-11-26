@@ -341,11 +341,12 @@ FirebreatherNedBeatenText:
 	done
 
 FirebreatherDickBeforeText:
-	text "Hey, I'm training"
-	line "secretly here!"
+	text "Hey, ich trainiere"
+	line "hier heimlich!"
 
-	para "Don't embarrass me"
-	line "by looking!"
+	para "Schau nicht hin,"
+	line "das ist mir"
+	cont "peinlich!"
 	done
 
 FirebreatherDickBeatenText:

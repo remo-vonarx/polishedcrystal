@@ -74,22 +74,22 @@ GoldenrodMagnetTrainStationCooltrainerfScript:
 	iftruefwd .PowerRestored
 	jumpthistextfaceplayer
 
-	text "The Magnet Train"
-	line "is like, zoooom,"
-	cont "byun! Shuuu!"
+	text "Der Magnetzug ist"
+	line "so zoooom, byun!"
+	cont "Schuuu!"
 
-	para "At least when"
-	line "it's running…"
+	para "Zumindest, wenn"
+	line "er fährt…"
 	done
 
 .PowerRestored
 	jumpthistextfaceplayer
 
-	text "The Magnet Train"
-	line "is like, zoooom,"
-	cont "byun! Shuuu!"
+	text "Der Magnetzug ist"
+	line "so zoooom, byun!"
+	cont "Schuuu!"
 
-	para "It's so cool!"
+	para "Er ist so cool!"
 	done
 
 GoldenrodMagnetTrainStationOfficerApproachTrainDoorMovement:

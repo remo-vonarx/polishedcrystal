@@ -163,147 +163,155 @@ BellchimeTrailValerieScript:
 	sjump .Depart
 
 .IntroText:
-	text "If it isn't the"
-	line "trainer who faced"
-	cont "Suicune…"
+	text "Sieh an, der"
+	line "Trainer, der sich"
+	cont "Suicune stellte…"
 
-	para "I am Valerie."
-	line "I come to this"
+	para "Ich bin Valerie."
+	line "Ich komme auf"
 
-	para "trail to be"
-	line "captivated by its"
-	cont "beauty."
+	para "diesen Pfad, um"
+	line "mich von seiner"
+	cont "Schönheit ver-"
+	cont "zaubern zu lassen."
 
-	para "Today I was for-"
-	line "tunate enough to"
+	para "Heute hatte ich"
+	line "das Glück, deinen"
 
-	para "witness your"
-	line "battle with a"
-	cont "legend…"
+	para "Kampf mit einer"
+	line "Legende zu sehen…"
 
-	para "I would love to"
-	line "contend with one"
+	para "Zu gern würde ich"
+	line "mich mit jeman-"
 
-	para "who caught the eye"
-	line "of a legendary"
-	cont "#mon."
+	para "dem messen, der"
+	line "den Blick eines"
+	cont "legendären #mon"
+	cont "auf sich zog."
 	done
 
 .BattleText:
-	text "Valerie: I train"
-	line "the elusive Fairy"
-	cont "type."
+	text "Valerie: Ich"
+	line "trainiere den"
+	cont "rätselhaften Typ"
+	cont "Fee."
 
-	para "They appear frail"
-	line "and delicate, but"
-	cont "they are strong."
+	para "Sie wirken zart"
+	line "und zerbrechlich,"
+	cont "doch sie sind"
+	cont "stark."
 
-	para "Will you battle"
-	line "with me?"
+	para "Kämpfst du mit"
+	line "mir?"
 	done
 
 .RefusedText:
-	text "Valerie: Alas…"
+	text "Valerie: Schade…"
 	done
 
 .AcceptedText:
-	text "Valerie: I hope"
-	line "our battle will"
+	text "Valerie: Ich hof-"
+	line "fe, unser Kampf"
 
-	para "prove entertaining"
-	line "to you."
+	para "wird dir Freude"
+	line "bereiten."
 	done
 
 .BeatenText:
-	text "I hope the sun is"
-	line "shining tomorrow…"
+	text "Hoffentlich"
+	line "scheint morgen"
+	cont "die Sonne…"
 
-	para "That would be"
-	line "reason enough to"
-	cont "smile."
+	para "Das wäre Grund"
+	line "genug zu lächeln."
 	done
 
 .RewardText:
-	text "Valerie: Yes… that"
-	line "was a fine battle."
+	text "Valerie: Ja… das"
+	line "war ein schöner"
+	cont "Kampf."
 
-	para "I shall reward you"
-	line "for this great"
-	cont "victory."
+	para "Für diesen großen"
+	line "Sieg möchte ich"
+	cont "dich belohnen."
 
-	para "Please consider"
-	line "this as a personal"
-	cont "gift from me."
+	para "Bitte betrachte"
+	line "dies als persön-"
+	cont "liches Geschenk."
 	done
 
 .FarewellText:
-	text "Valerie: Oh? My,"
-	line "what a curious"
-	cont "feeling…"
+	text "Valerie: Oh? Ach,"
+	line "welch seltsames"
+	cont "Gefühl…"
 
-	para "I can't seem to"
-	line "recall which move"
+	para "Mir will nicht"
+	line "einfallen, welche"
 
-	para "is contained in"
-	line "that TM."
+	para "Attacke diese TM"
+	line "enthält."
 
-	para "I hope you might"
-	line "forgive me."
+	para "Ich hoffe, du"
+	line "verzeihst mir."
 
-	para "That was truly a"
-	line "captivating"
-	cont "battle."
+	para "Das war wahrlich"
+	line "ein fesselnder"
+	cont "Kampf."
 
-	para "I might just be"
-	line "captivated by you."
+	para "Vielleicht hast"
+	line "du mich in deinen"
+	cont "Bann gezogen."
 
-	para "Until we meet"
-	line "again, farewell."
+	para "Bis wir uns wie-"
+	line "dersehen, leb"
+	cont "wohl."
 	done
 
 .RematchText:
-	text "Valerie: Oh, if it"
-	line "isn't my young"
-	cont "trainer…"
+	text "Valerie: Oh, wenn"
+	line "das nicht mein"
+	cont "junger Trainer"
+	cont "ist…"
 
-	para "It is lovely to"
-	line "meet you again"
-	cont "like this."
+	para "Wie schön, dich"
+	line "so wiederzusehen."
 
-	para "Then I suppose you"
-	line "have earned your-"
+	para "Dann hast du dir"
+	line "wohl das Recht"
 
-	para "self the right to"
-	line "a battle."
+	para "auf einen Kampf"
+	line "verdient."
 
-	para "The elusive Fairy"
-	line "may appear frail"
+	para "Die rätselhafte"
+	line "Fee wirkt zart"
 
-	para "as the breeze and"
-	line "delicate as a"
+	para "wie eine Brise und"
+	line "zerbrechlich wie"
 
-	para "bloom, but it is"
-	line "strong."
+	para "eine Blüte, doch"
+	line "sie ist stark."
 	done
 
 .RematchBeatenText:
-	text "I hope that you"
-	line "will find things"
+	text "Ich hoffe, du"
+	line "findest morgen"
 
-	para "worth smiling"
-	line "about tomorrow…"
+	para "Dinge, über die"
+	line "du lächeln kannst…"
 	done
 
 .RematchFarewellText:
-	text "That was truly a"
-	line "captivating"
-	cont "battle."
+	text "Das war wahrlich"
+	line "ein fesselnder"
+	cont "Kampf."
 
-	para "I might just be"
-	line "captivated by you."
+	para "Vielleicht hast"
+	line "du mich in deinen"
+	cont "Bann gezogen."
 
-	para "Until we meet"
-	line "again, farewell."
+	para "Bis wir uns wie-"
+	line "dersehen, leb"
+	cont "wohl."
 	done
 
 .ValerieGoesAroundMovement:

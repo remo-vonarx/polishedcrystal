@@ -28,9 +28,10 @@ EcruteakShrineOutside_MapScriptHeader:
 	object_event  6,  2, SPRITE_PAGODA, SPRITEMOVEDATA_ARCH_TREE_LEFT, 0, 0, -1, PAL_NPC_COPY_BG_ROOF, OBJECTTYPE_COMMAND, end, NULL, -1
 
 EcruteakShrineOutsideTwinText:
-	text "My Hoothoot's"
-	line "Foresight helps"
-	cont "shoo away ghosts."
+	text "Mein Hoothoot"
+	line "verscheucht mit"
+	cont "Gesichte die"
+	cont "Geister."
 	done
 
 EcruteakShrineOutsideHoothootText:
@@ -38,12 +39,13 @@ EcruteakShrineOutsideHoothootText:
 	done
 
 EcruteakShrineOutsideSageText:
-	text "On New Year's Eve,"
-	line "people visit this"
+	text "An Silvester be-"
+	line "suchen die Leute"
 
-	para "shrine and make"
-	line "wishes for their"
-	cont "future."
+	para "diesen Schrein und"
+	line "wünschen sich"
+	cont "etwas für ihre"
+	cont "Zukunft."
 	done
 
 EcruteakShrineOutsideStatueText:

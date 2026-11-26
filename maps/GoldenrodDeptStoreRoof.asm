@@ -109,14 +109,16 @@ Binoculars2:
 Binoculars3:
 	jumpthistext
 
-	text "A Fisher caught a"
-	line "lot of Magikarp…"
+	text "Ein Angler fing"
+	line "viele Karpador…"
 
-	para "They're Splashing"
-	line "at the same time!"
+	para "Sie setzen alle"
+	line "gleichzeitig"
+	cont "Platscher ein!"
 
-	para "Look at the water"
-	line "going everywhere!"
+	para "Sieh nur wie das"
+	line "Wasser überall"
+	cont "hinspritzt!"
 	done
 
 PokeDollVendingMachine:
@@ -226,9 +228,9 @@ GoldenrodDeptStoreRoofFisherText:
 	done
 
 GoldenrodDeptStoreRoofFisherDuplicateText:
-	text "This one is a"
-	line "duplicate. Here,"
-	cont "you can have it."
+	text "Diese habe ich"
+	line "doppelt. Hier, du"
+	cont "kannst sie haben."
 	done
 
 GotVoltorbDollText:
@@ -243,8 +245,8 @@ VoltorbDollSentText:
 	done
 
 GoldenrodDeptStoreRoofFisherCatchEmAllText:
-	text "I heard there are"
-	line "30 kinds of dolls."
+	text "Ich hörte, es gibt"
+	line "30 Arten Puppen."
 	done
 
 GoldenrodDeptStoreRoofTwinText:
@@ -302,16 +304,16 @@ GoldenrodDeptStoreRoofBugCatcherText:
 
 
 PokeDollVendingMachineText:
-	text "A vending machine"
-	line "for #mon dolls!"
+	text "Ein Automat für"
+	line "#mon-Puppen!"
 	done
 
 PokeDollVendingMachineNoMoneyText:
-	text "It costs too much!"
+	text "Das ist zu teuer!"
 	done
 
 PokeDollVendingMachineAlreadyBoughtText:
-	text "It's a duplicate!"
+	text "Die hast du schon!"
 	done
 
 BoughtJigglypuffDollText:

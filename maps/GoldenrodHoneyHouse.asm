@@ -26,43 +26,38 @@ GoldenrodHoneyHousePokefanFScript:
 	setevent EVENT_GOT_HONEY_FROM_GOLDENROD
 	jumpthisopenedtext
 
-	text "My little brother"
+	text "Mein kleiner Bru-"
 if DEF(FAITHFUL)
-	line "takes Honey and"
-
-	para "spreads it around"
+	line "der verteilt Honig"
 else
-	line "takes Sweet Honey"
-
-	para "and spreads it in"
+	line "der verteilt Honig"
 endc
-	line "tall grass."
+	cont "im hohen Gras."
 
-	para "#mon are"
-	line "enticed by it."
+	para "Damit lockt er"
+	line "#mon an."
 
-	para "It tends to draw"
-	line "in #mon at the"
+	para "Meistens zieht er"
+	line "#mon an, die"
+	cont "das gleiche Level"
+	cont "wie deine haben!"
 
-	para "same level as"
-	line "your own!"
-
-	para "If you like it,"
-	line "I'm happy to sell"
-	cont "you some more."
+	para "Wenn er dir ge-"
+	line "fällt, verkaufe"
+	cont "ich dir gern mehr."
 	done
 
 .IntroText:
-	text "My #mon is an"
-	line "expert at collect-"
+	text "Mein #mon ist"
+	line "ein Experte im"
 if DEF(FAITHFUL)
-	cont "ing Honey."
+	cont "Honigsammeln."
 else
-	cont "ing Sweet Honey."
+	cont "Honigsammeln."
 endc
 
-	para "I'll share some"
-	line "with you."
+	para "Ich gebe dir"
+	line "etwas davon ab."
 	done
 
 .SellHoney:
@@ -77,8 +72,8 @@ endc
 	ifequalfwd $2, .Buy10
 	jumpthisopenedtext ; cancel
 
-	text "Well, come again,"
-	line "honey!"
+	text "Komm bald wieder,"
+	line "Schätzchen!"
 	done
 
 .Buy1:
@@ -106,35 +101,33 @@ endc
 .NotEnoughMoney:
 	jumpthisopenedtext
 
-	text "You don't have"
-	line "enough money,"
-	cont "honey!"
+	text "Du hast nicht"
+	line "genügend Geld,"
+	cont "Schätzchen!"
 	done
 
 .SellText:
-	text "Would you like to"
+	text "Möchtest du etwas"
 if DEF(FAITHFUL)
-	line "buy some Honey"
+	line "Honig kaufen? Er"
 
-	para "for attracting"
-	line "#mon?"
+	para "lockt #mon an."
 else
-	line "buy some Sweet"
+	line "Honig kaufen? Er"
 
-	para "Honey for attract-"
-	line "ing #mon?"
+	para "lockt #mon an."
 endc
-	cont "Just ¥1000 each!"
+	line "Nur ¥1000 je Glas!"
 	done
 
 .GoodbyeText:
-	text "Here you go,"
-	line "honey!"
+	text "Bitte schön,"
+	line "Schätzchen!"
 	done
 
 .BagFullText:
-	text "Oopsy! You have"
-	line "no room for it."
+	text "Hoppla! Du hast"
+	line "keinen Platz mehr."
 	done
 
 .MenuDataHeader:

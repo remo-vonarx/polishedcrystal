@@ -64,23 +64,23 @@ GoldenrodHarborTutorHyperVoiceScript:
 .TutorRefused
 	jumpthisopenedtext
 
-	text "OK then."
+	text "Na gut."
 	done
 
 .NoSilverLeaf
 	jumpthisopenedtext
 
-	text "You don't have a"
-	line "Silver Leaf!"
+	text "Du hast kein"
+	line "Silberblatt!"
 	done
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Now your #mon"
-	line "knows how to use"
-	cont "Hyper Voice!"
+	text "Jetzt beherrscht"
+	line "dein #mon"
+	cont "Schallwelle!"
 	done
 
 GenericTrainerFisherPaton:
@@ -123,10 +123,12 @@ GenericTrainerSwimmermJames:
 GoldenrodHarborMagikarpScript:
 	jumpthistext
 
-	text "This is a Fish"
-	line "#mon! Huh?"
+	text "Das ist ein"
+	line "Fisch-#mon!"
+	cont "Was?"
 
-	para "It's only a doll…"
+	para "Es ist nur eine"
+	line "Puppe…"
 	done
 
 GoldenrodHarborPokefanmScript:
@@ -304,37 +306,38 @@ GoldenrodHarborSailboatScript:
 	waitsfx
 	jumpthistext
 
-	text "It's a sailboat"
-	line "named SeaKing."
+	text "Ein Segelboot"
+	line "namens Seekönig."
 	done
 
 GoldenrodHarborFisherText:
-	text "If you're fishing,"
-	line "you have to be"
+	text "Beim Angeln muss"
+	line "man leise sein,"
 
-	para "quiet so you don't"
-	line "scare the #mon."
+	para "um die #mon"
+	line "nicht zu ver-"
+	cont "scheuchen."
 
-	para "But to be heard"
-	line "over the waves,"
+	para "Aber um die Wellen"
+	line "zu übertönen,"
 
-	para "you have to say"
-	line "things LOUD!"
+	para "muss man LAUT"
+	line "reden!"
 	done
 
 Text_GoldenrodHarborTutorHyperVoice:
-	text "I can teach your"
-	line "#mon how to"
+	text "Für ein Silber-"
+	line "blatt bringe ich"
 
-	para "use Hyper Voice"
-	line "for a Silver Leaf."
+	para "deinem #mon"
+	line "Schallwelle bei."
 	done
 
 
 Text_GoldenrodHarborTutorQuestion:
-	text "Should I teach"
-	line "your #mon"
-	cont "Hyper Voice?"
+	text "Soll ich deinem"
+	line "#mon Schall-"
+	cont "welle beibringen?"
 	done
 
 
@@ -376,9 +379,9 @@ SwimmermJamesBeatenText:
 	done
 
 GoldenrodHarborDollVendorText:
-	text "Welcome! I have"
-	line "adorable aquatic"
-	cont "dolls for sale."
+	text "Willkommen! Ich"
+	line "verkaufe niedliche"
+	cont "Meeres-Puppen."
 	done
 
 GoldenrodHarborMagikarpDollText:
@@ -415,21 +418,21 @@ GoldenrodHarborOctilleryDollSentText:
 	done
 
 GoldenrodHarborNoMoneyText:
-	text "You can't afford"
-	line "that!"
+	text "Das kannst du dir"
+	line "nicht leisten!"
 	done
 
 GoldenrodHarborAlreadyBoughtText:
-	text "You already have"
-	line "that!"
+	text "Das hast du doch"
+	line "schon!"
 	done
 
 GoldenrodHarborPlantVendorText:
-	text "Welcome! I have"
-	line "a selection of"
+	text "Willkommen! Ich"
+	line "habe eine Auswahl"
 
-	para "exotic plants to"
-	line "adorn your home."
+	para "exotischer Pflan-"
+	line "zen für dein Heim."
 	done
 
 GoldenrodHarborMagnaPlantText:
@@ -466,13 +469,13 @@ GoldenrodHarborJumboPlantSentText:
 	done
 
 GoldenrodHarborLass2Text:
-	text "All this water,"
-	line "it's totally…"
+	text "All das Wasser,"
+	line "das ist total…"
 
-	para "bloop-bloop,"
-	line "splish-splish."
+	para "blubb-blubb,"
+	line "plitsch-platsch."
 
-	para "Don't you agree?"
+	para "Findest du nicht?"
 	done
 
 GoldenrodHarborSignText:

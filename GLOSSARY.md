@@ -552,3 +552,24 @@ _Avoid_: E1, E2
 **Club Nintendo**:
 The magazine in the Hyper Test room, Germany's counterpart of Nintendo Power.
 _Avoid_: Nintendo Power
+
+## Story text
+
+**Unterhaltungskanal**:
+The Variety Channel the Goldenrod band plays on. No German game has a station of that name; built from Kristall's "Unterhaltungssendungen" in the Radio Tower.
+_Avoid_: Varieté-Kanal
+
+**Schätzchen**:
+What the Honey House woman in Goldenrod calls the player ("honey"). The honey pun has no German pet name.
+_Avoid_: Zuckerschnute, Honigschnäuzchen
+
+**Seekönig**:
+The sailboat in Goldenrod Harbor (SeaKing), by meaning: a boat named after a Pokémon would read as the Pokémon.
+_Avoid_: Golking
+
+**Felizitas**:
+The Lucky Number Show attendant in the Radio Tower (Felicity), the German form of her name.
+
+**Schreinmaid**:
+The shrine maiden in Ecruteak's shrine, as her trainer class.
+_Avoid_: Schreinjungfrau, Schreinmädchen

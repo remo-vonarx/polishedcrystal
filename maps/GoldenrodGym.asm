@@ -74,15 +74,17 @@ GoldenrodGymWhitneyScript:
 	setevent EVENT_GOT_TM45_ATTRACT
 	jumpthisopenedtext
 
-	text "It's Attract!"
-	line "It makes full use"
+	text "Es ist Anziehung!"
+	line "Es bringt den"
 
-	para "of a #mon's"
-	line "charm."
+	para "Charme eines"
+	line "#mon voll zur"
+	cont "Geltung."
 
-	para "Isn't it just per-"
-	line "fect for a cutie"
-	cont "like me? ♥"
+	para "Passt das nicht"
+	line "perfekt zu einem"
+	cont "süßen Ding wie"
+	cont "mir? ♥"
 	done
 
 TrainerLassCathy:
@@ -161,25 +163,23 @@ GoldenrodGymGuyScript:
 	iftrue_jumptextfaceplayer GoldenrodGymGuyWinText
 	jumpthistextfaceplayer
 
-	text "Yo! Champ in"
-	line "making!"
+	text "Yo! Champ in spe!"
 
-	para "This Gym is home"
-	line "to Normal-type"
-	cont "#mon trainers."
+	para "In dieser PKMN-"
+	line "Arena warten Trai-"
+	cont "ner mit #mon"
+	cont "des Typs Normal"
 
-	para "I recommend you"
-	line "use Fighting-type"
-	cont "#mon."
+	para "auf dich. Ich rate"
+	line "dir, Kampf-#mon"
+	cont "einzusetzen."
 
-	para "But be careful--"
-	line "Fairy #mon"
+	para "Aber Vorsicht:"
+	line "Fee-#mon"
 
-	para "resist Fighting-"
-	line "type moves,"
-
-	para "and they're used"
-	line "here too!"
+	para "widerstehen Kampf-"
+	line "Attacken, und die"
+	cont "gibt es hier auch!"
 	done
 
 GoldenrodGymStatue:
@@ -205,18 +205,21 @@ JoWalksAwayMovement:
 	step_end
 
 WhitneyBeforeText:
-	text "Hi! I'm Whitney!"
+	text "Hi! Ich bin"
+	line "Bianka!"
 
-	para "Everyone was into"
-	line "#mon, so I got"
-	cont "into it too!"
+	para "Jeder hat sich für"
+	line "#mon inte-"
+	cont "ressiert, also"
+	cont "musste ich mit-"
+	cont "machen!"
 
-	para "#mon are"
-	line "super cute!"
+	para "#mon sind"
+	line "superniedlich!"
 
-	para "You want to bat-"
-	line "tle? I'm warning"
-	cont "you--I'm good!"
+	para "Willst du kämpfen?"
+	line "Sei gewarnt, ich"
+	cont "bin gut!"
 	done
 
 WhitneyShouldntBeSoSeriousText:
@@ -232,25 +235,28 @@ WhitneyShouldntBeSoSeriousText:
 
 
 WhitneyWhatDoYouWantText:
-	text "…Sniff…"
+	text "…Schnüff…"
 
-	para "What? What do you"
-	line "want? A Badge?"
+	para "Was? Was willst"
+	line "du? Einen Orden?"
 
-	para "Oh, right."
-	line "I forgot. Here's"
-	cont "the Plain Badge."
+	para "Oh, stimmt, ich"
+	line "vergaß. Hier ist"
+	cont "der Basisorden."
 	done
 
 WhitneyPlainBadgeText:
-	text "The Plain Badge"
-	line "lets your #mon"
+	text "Mit Hilfe des Ba-"
+	line "sisordens können"
 
-	para "use Strength out-"
-	line "side of battle."
+	para "deine #mon"
+	line "Stärke auch außer-"
+	cont "halb eines Kampfes"
+	cont "einsetzen."
 
-	para "Oh, you can have"
-	line "this too!"
+	para "Oh, das hier"
+	line "kannst du auch"
+	cont "haben!"
 	done
 
 WhitneyGoodCryText:
