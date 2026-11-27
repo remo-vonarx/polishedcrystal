@@ -36,10 +36,10 @@ WardensGranddaughter:
 	jumpthisopenedtext
 
 	text "Viele Leute waren"
-	line "traurig, dass das"
+	line "enttäuscht, dass"
 
-	para "Safari-Spiel ein-"
-	line "gestellt wurde,"
+	para "das Safari-Spiel"
+	line "eingestellt wurde,"
 
 	para "aber mir fehlt es"
 	line "nicht wirklich."

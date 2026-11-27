@@ -120,8 +120,9 @@ RuggedRoadNorthHikerScript:
 	line "muss auf deiner"
 	cont "Seite sein!"
 
-	para "Dieser Ovale Stein"
-	line "fühlt sich nach"
+	para "Ich fand diesen"
+	line "Ovalen Stein. Er"
+	cont "fühlt sich nach"
 	cont "Glück an."
 
 	para "Hier, nimm ihn!"

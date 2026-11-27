@@ -164,7 +164,7 @@ _Avoid_: Team Valor, Team Mystic, Team Instinct, Teamleitung
 The Celadon Four, the four strong trainers of the Prismania-Uni (own translation).
 
 **Quoted songs and foreign speech**:
-Lyrics that trainers quote (Ramones, Pink Floyd, Rush, The Trashmen) stay in English, Blaise speaks French as in Upstream, and battle cries and sounds stay as written (Urrgggh!, Pyopyo…).
+Lyrics that trainers quote (Ramones, Pink Floyd, Rush, The Trashmen) stay in English, Blaise speaks French as in Upstream (so does Eldred's Meowth: Miaou!), and battle cries and sounds stay as written (Urrgggh!, Pyopyo…).
 
 **Trainer**, **Kleiner**, **Freund** (the player):
 Polished's own text calls the player in the literal masculine, as Kristall does ("Du bist ein starker Trainer!"), whichever picture the player chose. Confirmed line by line; a few lines are reworded where the rewording reads better ("Nimm ihn, als Zeichen unserer Freundschaft!").
@@ -300,7 +300,7 @@ In full in battle messages: Angriff, Verteidigung, Initiative, Spez.-Angriff, Sp
 _Avoid_: ANGR, VER, INIT (Kristall's abbreviations in these messages), Spezial-Verteidigung
 
 **Possessive 's in battle**:
-Every Pokémon's and the player's name in a battle text takes 's ("Endivie's Angriff steigt!", "Arktos's Hagelalarm"). Outside battle, and on the link record, names keep Kristall's plain s (Linds, Bills, "<PLAYER>s Statistik").
+Every Pokémon's and the player's name in a battle text takes 's ("Endivie's Angriff steigt!", "Arktos's Hagelalarm"). Outside battle, and on the link record, names keep Kristall's plain s (Linds, Bills, "<PLAYER>s Statistik"). Where the name filled in can end in s, z or ß, the text says von instead: "die Nummer von Julius" when registering a phone number, "Die AP von Donnerblitz" after a PP Up or PP Max (decided 2026-11-27).
 _Avoid_: Endivies
 
 **Stat message**:
@@ -741,6 +741,10 @@ _Avoid_: Victor
 **Kampfraum**, **Kampfhalle**:
 The Battle Tower's Battle Room (Kristall's Kampfraum) and the Battle Factory's Battle Floor (Kampfhalle, a factory hall).
 _Avoid_: Kampfraum for the Battle Floor
+
+**Siegesserie**:
+The win streak in the Battle Tower and Battle Factory lobbies ("Siegesserie: 3", "Rekord: 5"), the word of the Tycoon warning; no "Siege" after the number, which would read "1 Siege" (decided 2026-11-27).
+_Avoid_: Serie: 3 Siege
 
 ## Credits and music player
 

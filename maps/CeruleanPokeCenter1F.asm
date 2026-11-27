@@ -31,8 +31,8 @@ PokemonJournalMistyScript:
 	para "Misty soll"
 	line "Lorelei verehren,"
 
-	para "einst Mitglied"
-	line "der Top Vier."
+	para "die einst zu den"
+	line "Top Vier gehörte."
 	done
 
 CeruleanPokeCenter1FGymGuyScript:

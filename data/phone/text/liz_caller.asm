@@ -258,16 +258,16 @@ LizBugCatchingContestGossipText:
 LizBeautifulMonGossipText:
 	text "Hör zu!"
 
-	para ""
-	text_ram wStringBuffer4
-	text ""
-	line "begegnete mir!"
-
-	para "Ich wünschte, ich"
-	line "wäre wie"
+	para "Mir ist jemand"
+	line "begegnet, der als"
 	cont ""
 	text_ram wStringBuffer4
-	text "."
+	cont "wunderschön war!"
+
+	para "So schön wäre ich"
+	line "als "
+	text_ram wStringBuffer4
+	cont "auch gern."
 	done
 
 LizForgotGossipText:

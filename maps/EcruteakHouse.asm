@@ -240,10 +240,10 @@ EcruteakTinTowerEntranceSageText_HeardClearBell:
 EcruteakTinTowerEntranceWanderingSageText_GotClearBell:
 	text "Der Glockenturm"
 	line "bebt! Ein #mon"
-	cont "muss"
 
-	para "auf der Spitze ge-"
-	line "landet sein!"
+	para "muss auf der"
+	line "Spitze gelandet"
+	cont "sein!"
 	done
 
 EcruteakTinTowerEntranceGrampsText:

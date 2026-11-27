@@ -161,7 +161,7 @@ CeladonUniversityCafeteriaCooltrainerfText:
 	cont "nach Zinnober-Art"
 	cont "in ganz Kanto!"
 
-	para "Fast wie zu"
+	para "Ganz wie zu"
 	line "Hause."
 	done
 

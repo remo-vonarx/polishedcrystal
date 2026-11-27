@@ -134,3 +134,14 @@ UrsaringPokedexEntry	c81e3ead	Kristall's category SCHLÄFER; the writer keeps th
 WonFirstPlaceText	f23e8ca7	Kristall's words, re-broken: Polished's Master Ball icon covers the end of line 1
 _CardFlipNotEnoughCoinsText	c78ef8e0	one line above the coin box, which Polished made wider (decided 2026-11-26)
 GettingPumpedText	adee16a9	Kristall's line kept under Polished's reworded English
+LizBeautifulMonGossipText	e89a69f6	Kristall's class read like a name in capitals; als takes any class (decided 2026-11-27)
+_LookAdorableDecoText	0da58482	no period after the name: Surfer Pikachu-P. printed two (decided 2026-11-27)
+_PnP_lazy	b744435c	Kristall dropped ist; ist etwas faul (decided 2026-11-27)
+Text_PPIsMaxedOut	76ac3fd5	Die AP von: a move name ending in s, z or ß (decided 2026-11-27)
+Text_PPsIncreased	cf09dbb2	Die AP von: a move name ending in s, z or ß (decided 2026-11-27)
+RegisteredNumber1Text	323fc971	die Nummer von: Julius, Amadeus, Lutz (decided 2026-11-27)
+RegisteredNumber2Text	323fc971	die Nummer von: Julius, Amadeus, Lutz (decided 2026-11-27)
+BattleFactoryHallwayEnterScene.AskNextBattle	3a86a192	space before the left-aligned number (decided 2026-11-27)
+Script_BattleRoomLoop.AskNextBattle	3a86a192	space before the left-aligned number (decided 2026-11-27)
+EcruteakTinTowerEntranceWanderingSageText_GotClearBell	05eb8cc2	re-broken where the English breaks, no lone muss (decided 2026-11-27)
+GenericTrainerBikerReilly	5b4c96a5	Kristall's typo Wer't fixed (decided 2026-11-27)

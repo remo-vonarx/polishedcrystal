@@ -234,7 +234,7 @@ SaffronCityBlackBelt1Text:
 
 SaffronCityBlackBelt2Text:
 	text "Wäre ich ein Item,"
-	line "dann X-Angriff."
+	line "wär ich X-Angriff."
 
 	para "Ich strotze nur so"
 	line "vor Kraft, und"

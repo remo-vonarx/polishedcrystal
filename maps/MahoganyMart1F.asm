@@ -263,7 +263,7 @@ Text_MahoganyMart1FTutorAgility:
 
 Text_MahoganyMart1FTutorQuestion:
 	text "Ich brauche nur"
-	line "erst ein Silber-"
+	line "zuerst ein Silber-"
 	cont "blatt."
 	done
 
