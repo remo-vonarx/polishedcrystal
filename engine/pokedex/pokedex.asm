@@ -2526,8 +2526,8 @@ _Pokedex_Search:
 	db NUM_TYPES
 	db NUM_EGG_GROUPS
 	db NUM_EGG_GROUPS
-	db NUM_BODY_COLORS
-	db NUM_SHAPES
+	db NUM_BODY_COLORS + 1 ; 0 is "----"
+	db NUM_SHAPES + 1 ; 0 is "----"
 
 .SearchStringTableLocations:
 	dab .DexOrdering
