@@ -2280,7 +2280,7 @@ _Pokedex_Search:
 	add b
 	add 4 ; shape, not mini
 	xor $80
-	hlcoord 13, 15 ; right after "Silhouette:" (Upstream: 8, 15 after the shorter "Shape:")
+	hlcoord 14, 15 ; one tile after "Silhouette:" (Upstream: 8, 15 after the shorter "Shape:")
 	ld [hli], a
 	inc a
 	ld [hld], a

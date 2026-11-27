@@ -496,7 +496,7 @@ Pokedex_RefreshOAM:
 	lb hl, OAM_BANK1, $40
 	ld a, 3
 .search_loop
-	ld b, 140 ; Upstream: 120. Past the silhouette after the longer "Silhouette:", 4 pixels from the right border as the cursor from the left
+	ld b, 140 ; Upstream: 120. Past the silhouette, 4 pixels from the right border as the cursor from the left
 	ld d, 3
 	push af
 	call Pokedex_WriteOAM
