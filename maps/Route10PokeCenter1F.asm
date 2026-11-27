@@ -26,8 +26,8 @@ PokemonJournalAgathaScript:
 	text "#mon Journal"
 
 	para "Titelthema:"
-	line "Agathe, früher"
-	cont "Top Vier!"
+	line "Ex-Top-Vier"
+	cont "Agathe!"
 
 	para "In ihrer Jugend"
 	line "waren Agathe und"

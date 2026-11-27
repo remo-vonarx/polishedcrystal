@@ -136,8 +136,8 @@ InitialOptionDescriptions:
 	text "Statuswerte werden"
 	line "so berechnet, als"
 
-	para "wären alle DVs"
-	line "perfekte 15, für"
+	para "wäre das Potenzial"
+	line "perfekt (15), für"
 	cont "deine #mon und"
 	cont "die der Gegner."
 	prompt

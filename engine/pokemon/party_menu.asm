@@ -315,7 +315,7 @@ BT_PartySelect:
 	db "Zurück@"
 
 BTText_EnterBattle:
-	db "Antreten?@"
+	db "Antreten?   @"
 
 BTText_SameSpecies:
 	text "Die #mon müssen"

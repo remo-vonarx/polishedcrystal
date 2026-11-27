@@ -365,7 +365,8 @@ PokemonJournalProfElmScript:
 	text "#mon Journal"
 
 	para "Titelthema:"
-	line "Prof. Lind!"
+	line "#mon-Professor"
+	cont "Lind!"
 
 	para "Prof. Lind war"
 	line "der beste Schüler"

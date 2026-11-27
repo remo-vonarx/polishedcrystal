@@ -244,8 +244,8 @@ BuenaPhoneGotAColdText:
 
 BuenaPhoneRadioCardQuestionsText:
 	text "Heh, <PLAYER>."
-	line "Du hast die Radio-"
-	cont "karte gewonnen, da"
+	line "Du hast das Radio-"
+	cont "Modul gewonnen, da"
 
 	para "du das Quiz an der"
 	line "Rezeption gewonnen"

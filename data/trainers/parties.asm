@@ -3223,7 +3223,7 @@ BirdKeeperGroup:
 	tr_mon 57, DODRIO
 	end_trainer
 
-	def_trainer ERNIE, "Athur"
+	def_trainer ERNIE, "Artur"
 	tr_mon 61, PIDGEOT
 	end_trainer
 
@@ -4137,7 +4137,7 @@ endc
 		tr_moves DISABLE, SURF, PSYCHIC_M, SCREECH
 	end_trainer
 
-	def_trainer CATHY, "Bettina"
+	def_trainer CATHY, "Jennifer"
 	tr_mon 18, SNUBBULL
 		tr_moves SCARY_FACE, CHARM, BITE, LICK
 	end_trainer
@@ -4289,7 +4289,7 @@ BeautyGroup:
 	tr_mon 59, PARASECT
 	end_trainer
 
-	def_trainer VALENCIA, "Valencia"
+	def_trainer VALENCIA, "Jutta"
 	tr_mon 18, SUNKERN
 	tr_mon 18, SKIPLOOM
 	tr_mon 18, SUNFLORA
@@ -4304,7 +4304,7 @@ BeautyGroup:
 	tr_mon 16, WIGGLYTUFF
 	end_trainer
 
-	def_trainer CASSANDRA, "Cassy"
+	def_trainer CASSANDRA, "Aline"
 	tr_mon 16, CLEFABLE
 	tr_mon 16, WIGGLYTUFF
 	end_trainer
@@ -5793,7 +5793,7 @@ SwimmerFGroup:
 	tr_mon 61, AZUMARILL
 	end_trainer
 
-	def_trainer KENDRA, "Simone"
+	def_trainer KENDRA, "Undine"
 	tr_mon 62, SLOWKING
 	end_trainer
 
@@ -5826,7 +5826,7 @@ BurglarGroup:
 	tr_mon 34, WEEZING
 	end_trainer
 
-	def_trainer ORSON, "Kalle"
+	def_trainer ORSON, "Franco"
 	tr_mon 36, GROWLITHE
 	tr_mon 34, WEEZING
 	end_trainer
@@ -6452,7 +6452,7 @@ BikerGroup:
 	tr_mon 57, WEEZING
 	end_trainer
 
-	def_trainer REILLY, "Reilly"
+	def_trainer REILLY, "Hannes"
 	tr_mon 59, WEEZING
 	end_trainer
 
@@ -6467,7 +6467,7 @@ BikerGroup:
 	tr_mon 59, WEEZING
 	end_trainer
 
-	def_trainer DALE, "Hugo"
+	def_trainer DALE, "Wotan"
 	tr_mon 57, MUK
 	tr_mon 57, WEEZING
 	end_trainer

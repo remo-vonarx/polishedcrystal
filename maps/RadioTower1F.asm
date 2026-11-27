@@ -381,7 +381,7 @@ RadioTower1FRadioCardWomanQuestion1Text:
 	text "Frage 1:"
 
 	para "Gibt es ein #-"
-	line "mon, das nur Vor-"
+	line "mon, das nur vor-"
 	cont "mittags erscheint?"
 	done
 

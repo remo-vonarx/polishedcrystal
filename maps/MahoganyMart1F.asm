@@ -274,8 +274,7 @@ PokemonJournalWillScript:
 	text "#mon Journal"
 
 	para "Titelthema:"
-	line "Willi von den"
-	cont "Top Vier!"
+	line "Top Vier Willi!"
 
 	para "Willi spricht"
 	line "nicht über seine"

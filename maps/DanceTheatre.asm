@@ -258,7 +258,7 @@ DanceTheatreCooltrainerMText:
 
 	para "Er sagt, dass er"
 	line "ein #mon haben"
-	cont "will, das Surfen"
+	cont "will, das surfen"
 	cont "und tanzen kann."
 
 	para "Versucht er etwa,"

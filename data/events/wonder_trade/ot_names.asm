@@ -84,7 +84,7 @@ WonderTradeOTNames1:
 	rawchar "Klein@@" ; $51
 	rawchar "Bill@@@" ; $52
 	rawchar "Lanette" ; $53
-	rawchar "Brigett" ; $54
+	rawchar "Linette" ; $54
 	rawchar "Celio@@" ; $55
 	rawchar "Lana@@@" ; $56
 	rawchar "Rubina@" ; $57
@@ -219,7 +219,7 @@ WonderTradeOTNames1:
 	rawchar "Kordula" ; $d8
 	rawchar "Adrian@" ; $d9
 	rawchar "Kalle@@" ; $da
-	rawchar "Courtny" ; $db
+	rawchar "Jördis@" ; $db
 	rawchar "Marc@@@" ; $dc
 	rawchar "Mars@@@" ; $dd
 	rawchar "Jupiter" ; $de
@@ -246,7 +246,7 @@ WonderTradeOTNames1:
 	rawchar "Tupp@@@" ; $f3
 	rawchar "Zipp@@@" ; $f4
 	rawchar "Rapp@@@" ; $f5
-	rawchar "Plumera" ; $f6
+	rawchar "Fran@@@" ; $f6
 	rawchar "Bromley" ; $f7
 	rawchar "Fabian@" ; $f8
 	rawchar "Pia@@@@" ; $f9
@@ -293,7 +293,7 @@ WonderTradeOTNames2:
 	rawchar "Baoba@@" ; $1e
 	rawchar "Copycat" ; $1f
 	rawchar "Castor@" ; $20
-	rawchar "Lostele" ; $21
+	rawchar "Irrma@@" ; $21
 	rawchar "Teala@@" ; $22
 	rawchar "Kea@@@@" ; $23
 	rawchar "Julian@" ; $24
@@ -301,16 +301,16 @@ WonderTradeOTNames2:
 	rawchar "Carrie@" ; $26
 	rawchar "Mr.<PK><MN>@@" ; $27
 	rawchar "Eusin@@" ; $28
-	rawchar "Cameron" ; $29
+	rawchar "Wikbert" ; $29
 	rawchar "Earl@@@" ; $2a
 	rawchar "Kurt@@@" ; $2b
 	rawchar "Ben@@@@" ; $2c
 	rawchar "Margit@" ; $2d
-	rawchar "Reed@@@" ; $2e
+	rawchar "Bastian" ; $2e
 	rawchar "Fabian@" ; $2f
 	rawchar "Lilly@@" ; $30
 	rawchar "Buena@@" ; $31
-	rawchar "Randy@@" ; $32
+	rawchar "Harald@" ; $32
 	rawchar "Pollux@" ; $33
 	rawchar "Felicty" ; $34
 	rawchar "Monja@@" ; $35
@@ -328,18 +328,18 @@ WonderTradeOTNames2:
 	rawchar "Marek@@" ; $41
 	rawchar "Leif@@@" ; $42
 	rawchar "Scott@@" ; $43
-	rawchar "Briney@" ; $44
-	rawchar "Stein@@" ; $45
+	rawchar "Brack@@" ; $44
+	rawchar "Trumm@@" ; $45
 	rawchar "Heike@@" ; $46
-	rawchar "Gabby@@" ; $47
-	rawchar "Ty@@@@@" ; $48
+	rawchar "Pia@@@@" ; $47
+	rawchar "Udo@@@@" ; $48
 	rawchar "Rydel@@" ; $49
 	rawchar "Stern@@" ; $4a
 	rawchar "Johnson" ; $4b
 	rawchar "Xenia@@" ; $4c
 	rawchar "Amalia@" ; $4d
 	rawchar "Estefan" ; $4e
-	rawchar "Chaz@@@" ; $4f
+	rawchar "Clett@@" ; $4f
 	rawchar "Kiri@@@" ; $50
 	rawchar "Katrin@" ; $51
 	rawchar "LeBelle" ; $52
