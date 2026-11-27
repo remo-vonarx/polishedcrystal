@@ -1824,8 +1824,8 @@ OnlyXWillBeAppliedText:
 	db "Nur "
 XWillBeAppliedText:
 	text_decimal wItemQuantityChangeBuffer, 1, 3
-	text " werden"
-	line "benutzt. Weiter?"
+	text " Stück"
+	line "benutzen. Weiter?"
 	done
 
 INCLUDE "data/items/wing_names.asm"

@@ -553,7 +553,7 @@ TinTowerEusineHoOhText:
 	line "hin #mon stu-"
 	cont "dieren, um ein be-"
 	cont "rühmter #-"
-	cont "Maniac zu werden!"
+	cont "maniac zu werden!"
 
 	para "Wenn du mal in"
 	line "Prismania City"
