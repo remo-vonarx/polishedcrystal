@@ -198,3 +198,69 @@ def test_soft_hyphen_counts_toward_the_pokegear_line():
     # "Felsschlund" fits 11 tiles; with the hyphen the line is 12
     assert check_names.place_problems("Felsschlund<WBR>höhle", 18) == []
     assert check_names.place_problems("Felsschlund<SHY>höhle", 18) == ["Pokégear line too long (12 > 11)"]
+
+
+def put(path, text):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text)
+
+
+def text_asm(*commands):
+    from asm_text import render
+    return "\n".join(["T:"] + render(list(commands))) + "\n"
+
+
+PUMPED = [("text_pause",), ("text", "<USER>"), ("line", "is getting pumped!"), ("prompt",)]
+
+
+def test_commands_dropped_pause_fails(git_repo):
+    import check_commands
+    repo = git_repo({"maps/X.asm": text_asm(*PUMPED)},
+                    {"maps/X.asm": text_asm(("text", "<USER>"), ("line", "Hallo!"), ("prompt",))})
+    failures, _ = check_commands.check(repo, "base")
+    assert len(failures) == 1 and "T" in failures[0] and "text_pause" in failures[0]
+
+
+def test_commands_added_sound_fails(git_repo):
+    import check_commands
+    repo = git_repo({"maps/X.asm": text_asm(("text", "Hi!"), ("done",))},
+                    {"maps/X.asm": text_asm(("text", "Hallo!"), ("text_sound", "SFX_DEX_FANFARE_50_79"), ("done",))})
+    assert check_commands.check(repo, "base")[0]
+
+
+def test_commands_reordered_buffers_pass(git_repo):
+    import check_commands
+    en = [("text_ram", "wStringBuffer3"), ("text", "'s"), ("line", ""), ("text_ram", "wStringBuffer4"), ("done",)]
+    de = [("text_ram", "wStringBuffer4"), ("text", " von"), ("line", ""), ("text_ram", "wStringBuffer3"), ("done",)]
+    repo = git_repo({"maps/X.asm": text_asm(*en)}, {"maps/X.asm": text_asm(*de)})
+    assert check_commands.check(repo, "base") == ([], 1)
+
+
+def listed_change(repo, label, english):
+    from check_kristall import english_key
+    put(repo / "utils/command_changes.tsv", f"# label, key, why\n{label}\t{english_key(english)}\tGerman plural\n")
+
+
+def test_commands_listed_change_passes(git_repo):
+    import check_commands
+    en = [("text", "Hit"), ("text_decimal", "wStringBuffer1", "1", "1"), ("text", " time"), ("text_plural",), ("done",)]
+    de = [("text", "Traf"), ("text_decimal", "wStringBuffer1", "1", "1"), ("text", "x."), ("done",)]
+    repo = git_repo({"maps/X.asm": text_asm(*en)}, {"maps/X.asm": text_asm(*de)})
+    listed_change(repo, "T", en)
+    assert check_commands.check(repo, "base") == ([], 1)
+
+
+def test_commands_listed_change_fails_when_english_changes(git_repo):
+    import check_commands
+    old = [("text", "Hit"), ("text_plural",), ("done",)]
+    repo = git_repo({"maps/X.asm": text_asm(("text", "Hits"), ("text_plural",), ("prompt",))},
+                    {"maps/X.asm": text_asm(("text", "Traf."), ("prompt",))})
+    listed_change(repo, "T", old)
+    failures, _ = check_commands.check(repo, "base")
+    assert any("command_changes.tsv" in f and f.startswith("T:") for f in failures)
+
+
+def test_commands_clean_on_tree(root, base):
+    import check_commands
+    failures, compared = check_commands.check(root, base)
+    assert failures == [] and compared > 9000
