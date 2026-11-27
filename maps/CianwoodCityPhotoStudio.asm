@@ -82,8 +82,8 @@ PhotoStudioGreetingText:
 	done
 
 PhotoStudioWhichMonText:
-	text "Okay! Jetzt schön"
-	line "lächeln!"
+	text "O.K.! Und jetzt"
+	line "sag: Cheese!"
 
 	para "Welches #mon"
 	line "soll ich"

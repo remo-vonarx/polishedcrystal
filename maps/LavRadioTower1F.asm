@@ -188,7 +188,7 @@ LavRadioTower1FPokeFluteSignText:
 	line "mit den Fröhlichen"
 
 	para "Melodien der #-"
-	line "Flöte auf Programm"
+	line "flöte auf Programm"
 	cont "20 wieder munter."
 	done
 

@@ -451,5 +451,5 @@ OlivineCityBattleTowerSignText:
 	done
 
 OlivineCityCafeSignText:
-	text "Café Oliviana"
+	text "Oliviana City-Cafe"
 	done

@@ -302,9 +302,9 @@ MystriStageCynthiaItemText:
 
 MystriStageCynthiaAfterText:
 	text "Cynthia: Aber hat"
-	line "unser Kampf dem"
+	line "unser Kampf den"
 	cont "Trysteriumaltar"
-	cont "geschadet?"
+	cont "beeinflusst?"
 	done
 
 

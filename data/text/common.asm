@@ -344,7 +344,6 @@ _LookAdorableDecoText::
 	text "Sehr bezaubernd:"
 	line ""
 	text_ram wStringBuffer3
-	text "."
 	done
 
 SECTION "DecoConsoleText", ROMX
@@ -836,7 +835,7 @@ _PnP_cute::
 
 SECTION "_PnP_lazy", ROMX
 _PnP_lazy::
-	line "irgendwie faul."
+	line "ist etwas faul."
 	done
 
 SECTION "_PnP_happy", ROMX
@@ -4314,24 +4313,27 @@ Text_RestoreThePPOfWhichMove::
 
 SECTION "Text_PPIsMaxedOut", ROMX
 Text_PPIsMaxedOut::
+	text "Die AP von"
+	line ""
 	text_ram wStringBuffer2
-	text "s AP"
-	line "wurden komplett"
+	cont "wurden komplett"
 	cont "aufgefüllt."
 	prompt
 
 SECTION "Text_PPsIncreased", ROMX
 Text_PPsIncreased::
+	text "Die AP von"
+	line ""
 	text_ram wStringBuffer2
-	text "s AP"
-	line "wurden aufgefüllt."
+	cont "wurden aufgefüllt."
 	prompt
 
 SECTION "Text_PPsMaximized", ROMX
 Text_PPsMaximized::
+	text "Die AP von"
+	line ""
 	text_ram wStringBuffer2
-	text "s AP"
-	line "wurden maximiert."
+	cont "wurden maximiert."
 	prompt
 
 SECTION "_PPRestoredText", ROMX

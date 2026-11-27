@@ -85,7 +85,7 @@ DimCave5FRileyScript:
 .ChallengeText:
 	text "…Und du bist?"
 
-	para "Okay, du bist"
+	para "OK, du bist"
 	line "<PLAYER>."
 
 	para "Ich bin Urs. Ich"

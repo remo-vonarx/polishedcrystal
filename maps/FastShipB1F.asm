@@ -215,7 +215,7 @@ GenericTrainerSchoolboyRicky:
 	generictrainer SCHOOLBOY, RICKY, EVENT_BEAT_SCHOOLBOY_RICKY, SchoolboyRickySeenText, SchoolboyRickyBeatenText
 
 	text "Ich habe in einem"
-	line "#mon-Journal"
+	line "#mon Journal"
 	cont "gelesen, dass es"
 
 	para "vier von den"

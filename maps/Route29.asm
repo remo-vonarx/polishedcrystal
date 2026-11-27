@@ -141,7 +141,7 @@ TuscanyScript:
 
 	text "Dietlinde: Findest"
 	line "du nicht auch,"
-	cont "dass es überaus"
+	cont "dass er überaus"
 	cont "elegant ist?"
 
 	para "Attacken der"
@@ -150,7 +150,7 @@ TuscanyScript:
 	cont "dadurch stärker."
 
 	para "Ich bin sicher,"
-	line "du kannst es"
+	line "du kannst ihn"
 	cont "gebrauchen."
 	done
 

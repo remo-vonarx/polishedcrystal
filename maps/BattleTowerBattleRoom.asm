@@ -63,7 +63,7 @@ Script_BattleRoomLoop:
 .AskNextBattle:
 	writethistext
 		text "Als Nächstes kommt"
-		line "Gegner Nr."
+		line "Gegner Nr. "
 		text_decimal wStringBuffer3, 2, 5
 		text "."
 		done

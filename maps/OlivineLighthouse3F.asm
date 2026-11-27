@@ -189,7 +189,7 @@ GenericTrainerSailorTerrell:
 	para "Arena. Der #-"
 	line "mon-Typ der Arena-"
 
-	para "Leiterin hat sich"
+	para "leiterin hat sich"
 	line "geändert, ohne"
 
 	para "dass ich es"

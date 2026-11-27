@@ -227,9 +227,10 @@ RocketHideoutB4FSparkScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
-	text "Spark: Hey! Hörst"
-	line "du auf deinen"
-	cont "Bauch? Im Kampf?"
+	text "Spark: Hey!"
+	line "Bereit, auf deinen"
+	cont "Bauch zu hören?"
+	cont "Im Kampf?"
 	done
 
 .SeenText:

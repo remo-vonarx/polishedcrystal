@@ -1116,7 +1116,7 @@ BellyDrumDescription:
 
 ForesightDescription:
 	text "Nimmt Gegner Immu-"
-	next "nität &Fluchtwert."
+	next "nität, Fluchtwert."
 	done
 
 DestinyBondDescription:

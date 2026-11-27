@@ -239,7 +239,7 @@ LavenderTownGrampsText:
 
 LavenderTownYoungsterText:
 	text "Mit einer #-"
-	line "Flöte weckst du"
+	line "flöte weckst du"
 	cont "schlafende"
 	cont "#mon."
 

@@ -266,7 +266,7 @@ BattleTower2FMarleyScript:
 	iffalse_jumpopenedtext .RefuseText
 	setflag ENGINE_MARLEY_DONE_TODAY
 	writethistext
-		text "…Okay. Ich… werde"
+		text "…OK. Ich… werde"
 		line "nicht verlieren…!"
 		done
 	waitbutton

@@ -38,7 +38,7 @@ Route17SouthAlwaysOnBikeCallback:
 GenericTrainerBikerReilly:
 	generictrainer BIKER, REILLY, EVENT_BEAT_BIKER_REILLY, BikerReillySeenText, BikerReillyBeatenText
 
-	text "Wer't nicht frech,"
+	text "Werd nicht frech,"
 	line "du Null aus Johto!"
 	done
 

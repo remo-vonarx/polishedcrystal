@@ -194,7 +194,7 @@ AskOldAmberText:
 	done
 
 ResurrectingPokemonText:
-	text "O.K.! Ich belebe"
+	text "OK! Ich belebe"
 	line "das #mon"
 	cont "wieder!"
 	done

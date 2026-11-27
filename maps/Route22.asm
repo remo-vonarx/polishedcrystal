@@ -166,7 +166,7 @@ VictoryRoadEntranceSignText:
 	text "Route 22"
 
 	para "#mon Liga"
-	line "Empfangstor"
+	line "Empfang"
 	done
 
 Route22AdvancedTipsSignText:

@@ -90,7 +90,7 @@ Route44VeteranmScript:
 	para "Willst du sie"
 	line "herausfordern?"
 
-	para "Okay, dann musst"
+	para "OK, dann musst"
 	line "du zuerst jeden"
 
 	para "Trainer auf dieser"

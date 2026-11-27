@@ -116,7 +116,7 @@ Binoculars3:
 	line "gleichzeitig"
 	cont "Platscher ein!"
 
-	para "Sieh nur wie das"
+	para "Sieh nur, wie das"
 	line "Wasser überall"
 	cont "hinspritzt!"
 	done

@@ -216,10 +216,10 @@ AdminEldredScript:
 	jumpthisopenedtext
 
 	text "Ein freches Mauzi"
-	line "tatzelt auf der"
+	line "tapst auf der"
 	cont "Tastatur herum."
 	done
 
 AdminMeowthText:
-	text "Eldred: Miau!"
+	text "Eldred: Miaou!"
 	done

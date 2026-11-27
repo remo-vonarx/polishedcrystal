@@ -76,7 +76,7 @@ MurkySwampCherylScript:
 	line "Raissa."
 	cont "Und du bist…?"
 
-	para "Okay, du heißt"
+	para "OK, du heißt"
 	line "also <PLAYER>."
 
 	para "Ich freue mich"

@@ -29,8 +29,8 @@ GenericTrainerCowgirlApril:
 	text "Manchmal siehst"
 	line "du 10 gleiche"
 
-	para "#mon in einer"
-	line "Reihe!"
+	para "#mon hinter-"
+	line "einander!"
 	done
 
 CowgirlAprilSeenText:

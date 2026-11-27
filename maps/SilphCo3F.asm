@@ -89,8 +89,8 @@ SilphCo3FScientist2Text:
 	line "nieren nach"
 
 	para "demselben Prinzip"
-	line "wie das Lagerungs-"
-	cont "System im PC."
+	line "wie das PC-"
+	cont "Lagerungs-System."
 
 	para "#mon werden in"
 	line "digitale Daten"

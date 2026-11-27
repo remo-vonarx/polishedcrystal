@@ -239,10 +239,11 @@ GenericTrainerAceDuoThomandkae2:
 	generictrainer ACE_DUO, THOMANDKAE2, EVENT_BEAT_ACE_DUO_THOM_AND_KAE, AceDuoThomandkae2SeenText, AceDuoThomandkae2BeatenText
 
 	text "Nele: Ich dachte,"
-	line "du wärst ein ganz"
+	line "du wärst nur ein"
 
-	para "normaler Trainer."
-	line "Da lag ich falsch!"
+	para "gewöhnlicher"
+	line "Einzelkämpfer."
+	cont "Da lag ich falsch!"
 	done
 
 GenericTrainerCoupleDuffandeda1:

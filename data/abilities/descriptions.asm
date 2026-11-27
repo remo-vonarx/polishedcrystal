@@ -858,7 +858,7 @@ ParentalBondDescription:
 
 BerserkDescription:
 	text "Mehr Spez.-Angriff"
-	next "ab halben KP."
+	next "unter halben KP."
 	done
 
 SlushRushDescription:
@@ -872,8 +872,8 @@ GalvanizeDescription:
 	done
 
 CorrosionDescription:
-	text "Vergiftet Gegner"
-	next "jedes Typs."
+	text "Kann Gegner jedes"
+	next "Typs vergiften."
 	done
 
 FluffyDescription:
