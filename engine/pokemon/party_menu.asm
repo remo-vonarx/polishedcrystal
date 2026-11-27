@@ -215,7 +215,7 @@ BT_PartySelect:
 	dec a
 	jr z, .Enter
 	dec a
-	jmp z, .Stats
+	jr z, .Stats
 	jr .loop
 
 .return
