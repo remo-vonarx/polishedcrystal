@@ -35,7 +35,7 @@ AskResurrectFossilScript::
 	loadmenu HelixDomeMenuDataHeader
 	verticalmenu
 	closewindow
-	ifequal $1, ResurrectHelixFossil
+	ifequalfwd $1, ResurrectHelixFossil
 	ifequal $2, ResurrectDomeFossil
 	sjumpfwd .maybe_later
 

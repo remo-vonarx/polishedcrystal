@@ -20,7 +20,7 @@ DaisyScript:
 	readvar VAR_HOUR
 	ifequalfwd 15, .Massage
 	checkflag ENGINE_TEA_IN_BLUES_HOUSE
-	iftrue .After
+	iftruefwd .After
 	jumpthistextfaceplayer
 
 	text "Sarah: Hi! Mein"
@@ -42,7 +42,7 @@ DaisyScript:
 	opentext
 	writetext .IntroText
 	yesorno
-	iffalse .NoMassage
+	iffalsefwd .NoMassage
 	writetext .QuestionText
 	waitbutton
 	special Special_DaisyMassage

@@ -460,7 +460,10 @@ VermilionCityPortSignText:
 	done
 
 VermilionCityPierSignText:
-	db "◀ M.S. Aqua<LINE>▼ Seesprint-Fähre<DONE>" ; not compressible
+	; '◀' and '▼' are not compressible
+	assert '◀' > HUFFMAN_LAST_SHIFTED_CHAR && '◀' >= HUFFMAN_FIRST_SHIFTED_TOKEN
+	assert '▼' > HUFFMAN_LAST_SHIFTED_CHAR && '▼' >= HUFFMAN_FIRST_SHIFTED_TOKEN
+	db "◀ M.S. Aqua<LINE>▼ Seesprint-Fähre<DONE>"
 
 VermilionCityAdvancedTipsSignText:
 	text "Tipps für Profis!"
