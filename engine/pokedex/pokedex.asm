@@ -2413,7 +2413,7 @@ _Pokedex_Search:
 	jr c, .pressed_right
 .pressed_start
 	call ClearSpriteAnims
-	lb de, 120, 132 ; y, x: x as the static frame in Pokedex_RefreshOAM
+	lb de, 120, 140 ; y, x: x as the static frame in Pokedex_RefreshOAM
 	ld a, SPRITE_ANIM_INDEX_DEX_SLOWPOKE
 	call InitSpriteAnimStruct
 
