@@ -241,4 +241,4 @@ Found 2026-11-26 by three review agents (German everywhere, boxes and lengths at
 - [x] Graphics: ARN and MRKT as Kristall, KAUF, SPIEL and LIGA (own), LINK-TAUSCH, Inseln, UNBEKANNT, A▶FLIEGEN above the region name, START ▶ ZURÜCK, the VWF font's á í ó ¿ ¡.
 - [x] `check_text_width.py` counts the freed contractions as two tiles and skips debug-only text.
 - [x] Test: every changed screen in the Regular ROM, the party submenu in Faithful too; every changed text through the room PC.
-- [ ] Ship.
+- [x] Ship.
