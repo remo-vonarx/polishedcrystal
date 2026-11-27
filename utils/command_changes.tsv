@@ -1,0 +1,26 @@
+# label	key of Upstream's English (check_kristall.english_key)	why the German's commands differ
+BattleText_ItemLowered	8c1862e5	the verb scrolls in from text_asm (Task 7); prompt sits after it
+BattleText_ItemHarshlyLowered	ee2d2b75	the verb scrolls in from text_asm (Task 7); prompt sits after it
+BattleText_ItemSeverelyLowered	8b1cc070	the verb scrolls in from text_asm (Task 7); prompt sits after it
+BattleText_ItemRaised	0c864dee	the verb scrolls in from text_asm (Task 7); prompt sits after it
+BattleText_ItemSharplyRaised	86b4ff4e	the verb scrolls in from text_asm (Task 7); prompt sits after it
+BattleText_ItemDrasticallyRaised	ae75f603	the verb scrolls in from text_asm (Task 7); prompt sits after it
+WontRiseAnymoreText	40af4742	the verb scrolls in from text_asm (Task 7); prompt sits after it
+WontDropAnymoreText	85625734	the verb scrolls in from text_asm (Task 7); prompt sits after it
+StatRoseText	7d5ed9b3	the verb scrolls in from text_asm (Task 7); prompt sits after it
+StatRoseSharplyText	367f938d	the verb scrolls in from text_asm (Task 7); prompt sits after it
+StatRoseDrasticallyText	9256a6a7	the verb scrolls in from text_asm (Task 7); prompt sits after it
+StatFellText	2239ef41	the verb scrolls in from text_asm (Task 7); prompt sits after it
+StatHarshlyFellText	bab8ebab	the verb scrolls in from text_asm (Task 7); prompt sits after it
+StatSeverelyFellText	321bc41d	the verb scrolls in from text_asm (Task 7); prompt sits after it
+HitNTimesText	d0a6d2b0	the German counts with x instead of a plural ending
+LightScreenEffectText	276d96f9	the verb scrolls in from text_asm (Task 7); prompt sits after it
+ReflectEffectText	ef3a006d	the verb scrolls in from text_asm (Task 7); prompt sits after it
+_BidsFarewellToMonText	db4ccc92	the two trade texts print as one German sentence, each buffer once
+_MonNameBidsFarewellText	80b1843e	the two trade texts print as one German sentence, each buffer once
+_ThrewAwayText	d24a3666	the German prints the count with the item
+_ItemsTossOutHowManyText	967f095c	the German counts with x instead of a plural ending
+_ItemsDiscardedText	bd7c31f5	the German prints the count with the item
+_StoppedEvolvingText	29b6d7be	Kristall's line names no Pokémon
+_MartBoughtText	5c75d81e	the German prints the count with the item
+Route35NationalParkGateOfficer1WantToFinishText	9fca9cd6	the German counts with x instead of a plural ending
