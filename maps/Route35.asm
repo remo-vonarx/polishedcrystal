@@ -422,5 +422,5 @@ Route35AdvancedTipsSignText:
 
 	para "für den schnellen"
 	line "Einsatz auf"
-	cont "SELECT legen!"
+	cont "Select legen!"
 	done

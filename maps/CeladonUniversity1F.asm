@@ -123,7 +123,7 @@ CeladonUniversity1FReceptionistText:
 	para "die Studenten-"
 	line "lounge links."
 
-	para "Die Cafeteria, das"
+	para "Die Mensa, das"
 	line "Schwimmbad und das"
 
 	para "Krankenzimmer sind"
@@ -155,7 +155,8 @@ CeladonUniversity1FClassroom2SignText:
 	done
 
 CeladonUniversity1FClassroom3SignText:
-	text "O1 Wissenschaft"
+	text "O1 Natur-"
+	line "wissenschaften"
 	done
 
 CeladonUniversity1FClassroom4SignText:
@@ -163,7 +164,7 @@ CeladonUniversity1FClassroom4SignText:
 	done
 
 CeladonUniversity1FStudentLoungeSignText:
-	text "Aufenthaltsraum"
+	text "Studentenlounge"
 	done
 
 CeladonUniversity1FLibrarySignText:

@@ -4756,13 +4756,13 @@ SchoolgirlGroup:
 	end_trainer
 
 	def_trainer SARAH, "Sarah"
-	tr_mon LEVEL_FROM_BADGES + 2, "Charmer", CHARMANDER
+	tr_mon LEVEL_FROM_BADGES + 2, "Charmeur", CHARMANDER
 	tr_mon LEVEL_FROM_BADGES + 0, SENTRET
 	tr_mon LEVEL_FROM_BADGES + 1, MARILL
 	end_trainer
 
 	def_trainer ISABEL, "Isabel"
-	tr_mon LEVEL_FROM_BADGES + 2, "Turtle", SQUIRTLE
+	tr_mon LEVEL_FROM_BADGES + 2, "Schildi", SQUIRTLE
 	tr_mon LEVEL_FROM_BADGES + 0, PIDGEY
 	tr_mon LEVEL_FROM_BADGES + 1, PIKACHU
 	end_trainer
@@ -6640,7 +6640,7 @@ SightseerMGroup:
 	end_trainer
 
 	def_trainer BLAISE, "Blaise"
-	tr_mon 50, "Bulbasaur", BULBASAUR, MALE
+	tr_mon 50, "Bulbizarre", BULBASAUR, MALE
 	end_trainer
 
 	def_trainer GARETH, "Gareth"
@@ -9149,23 +9149,23 @@ YellowGroup:
 
 	def_trainer_class YELLOW
 	def_trainer 1, "Gelb"
-	tr_mon LEVEL_FROM_BADGES + 5, "Ratty", RATTATA @ SITRUS_BERRY, FEMALE
+	tr_mon LEVEL_FROM_BADGES + 5, "Ratzi", RATTATA @ SITRUS_BERRY, FEMALE
 		tr_extra GUTS, ATK_UP_SATK_DOWN
 		tr_evs 240 Atk
 		tr_moves SUCKER_PUNCH, QUICK_ATTACK, HYPER_FANG, SWORDS_DANCE
-	tr_mon LEVEL_FROM_BADGES + 3, "Kitty", BUTTERFREE @ SITRUS_BERRY, FEMALE
+	tr_mon LEVEL_FROM_BADGES + 3, "Raups", BUTTERFREE @ SITRUS_BERRY, FEMALE
 		tr_extra TINTED_LENS, SPE_UP_ATK_DOWN
 		tr_evs 240 Spe
 		tr_moves BUG_BUZZ, SUPERSONIC, STUN_SPORE, PSYCHIC_M
-	tr_mon LEVEL_FROM_BADGES + 6, "Dody", DODUO, FEMALE
+	tr_mon LEVEL_FROM_BADGES + 6, "Dodi", DODUO, FEMALE
 		tr_extra TANGLED_FEET, SPE_UP_SDEF_DOWN
 		tr_evs 240 Spe
 		tr_moves SWORDS_DANCE, ACROBATICS, RETURN, MUD_SLAP
-	tr_mon LEVEL_FROM_BADGES + 5, "Gravvy", GRAVELER @ EVIOLITE, FEMALE
+	tr_mon LEVEL_FROM_BADGES + 5, "Geon", GRAVELER @ EVIOLITE, FEMALE
 		tr_extra STURDY, ATK_UP_SATK_DOWN
 		tr_evs 240 HP
 		tr_moves ROLLOUT, DEFENSE_CURL, EARTHQUAKE, ROCK_BLAST
-	tr_mon LEVEL_FROM_BADGES + 4, "Omny", OMANYTE @ SITRUS_BERRY, FEMALE
+	tr_mon LEVEL_FROM_BADGES + 4, "Amoni", OMANYTE @ SITRUS_BERRY, FEMALE
 		tr_extra SHELL_ARMOR, SATK_UP_ATK_DOWN
 		tr_evs 240 HP
 		tr_moves SURF, PROTECT, ANCIENTPOWER, AURORA_BEAM

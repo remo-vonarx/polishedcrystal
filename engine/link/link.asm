@@ -16,10 +16,10 @@ LinkCommunications:
 	call LoadFontsBattleExtra
 	call LoadTradeScreenGFX
 	call ApplyAttrAndTilemapInVBlank
-	hlcoord 3, 8
-	lb bc, 2, 12
+	hlcoord 2, 8
+	lb bc, 2, 14
 	call LinkTextbox
-	hlcoord 4, 10
+	hlcoord 3, 10
 	ld de, String_PleaseWait
 	rst PlaceString
 	call SetTradeRoomBGPals
@@ -1360,15 +1360,15 @@ LinkTrade:
 	bccoord 1, 14
 	call PlaceWholeStringInBoxAtOnce
 	call LoadStandardMenuHeader
-	hlcoord 10, 7
-	lb bc, 3, 7
+	hlcoord 7, 7
+	lb bc, 3, 10
 	call LinkTextbox
 	ld de, .TradeCancel
-	hlcoord 12, 8
+	hlcoord 9, 8
 	rst PlaceString
 	ld a, 8
 	ld [w2DMenuCursorInitY], a
-	ld a, 11
+	ld a, 8
 	ld [w2DMenuCursorInitX], a
 	ld a, 1
 	ld [w2DMenuNumCols], a
@@ -1770,10 +1770,10 @@ LinkTextbox::
 
 PlaceWaitingTextAndSyncAndExchangeNybble:
 	call LoadStandardMenuHeader
-	hlcoord 5, 10
-	lb bc, 1, 9
+	hlcoord 2, 10
+	lb bc, 1, 14
 	call LinkTextbox
-	hlcoord 6, 11
+	hlcoord 3, 11
 	ld de, .Waiting
 	rst PlaceString
 	call ApplyTilemapInVBlank
@@ -2736,8 +2736,8 @@ Serial_PlaceWaitingTextAndSyncAndExchangeNybble::
 	jmp SafeLoadTempTileMapToTileMap
 
 PlaceWaitingText::
-	hlcoord 4, 10
-	lb bc, 1, 10
+	hlcoord 2, 10
+	lb bc, 1, 14
 
 	ld a, [wBattleMode]
 	and a
@@ -2750,7 +2750,7 @@ PlaceWaitingText::
 	call LinkTextbox
 
 .proceed
-	hlcoord 5, 11
+	hlcoord 3, 11
 	ld de, .Waiting
 	rst PlaceString
 	ld c, 50

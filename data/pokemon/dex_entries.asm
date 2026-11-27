@@ -2168,7 +2168,7 @@ TeddiursaPokedexEntry::
 
 SECTION "UrsaringPokedexEntry", ROMX
 UrsaringPokedexEntry::
-	db "Hibernator@"
+	db "Schläfer@"
 	text "Trotz seines"
 	next "riesigen Körpers"
 	next "ist es ein guter"

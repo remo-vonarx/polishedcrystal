@@ -67,5 +67,5 @@ ReturnShuckie:
 	ret
 
 SpecialShuckleOTAndExtra:
-	rawchar "Kirk@@@@"
+	rawchar "Gabriel@" ; as ShuckieOTName in maps/ManiasHouse.asm, padded to 8 bytes
 	db 0, 0, 0

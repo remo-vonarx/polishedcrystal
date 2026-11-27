@@ -94,10 +94,10 @@ GiftSpearowMail:
 	setcharmap default
 
 GiftSpearowName:
-	rawchar "Kenya@"
+	rawchar "Habsi@"
 
 GiftSpearowOTName:
-	rawchar "Randy@"
+	rawchar "Harald@"
 
 Route35GoldenrodGatePokefanFScript:
 	faceplayer

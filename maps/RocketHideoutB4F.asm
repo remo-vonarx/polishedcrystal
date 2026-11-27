@@ -140,15 +140,15 @@ RocketHideoutB4FMeetLeadersScript:
 	text "Spark: Ihr beide"
 	line "liegt falsch!"
 
-	para "Auf den Instinkt"
+	para "Auf die Intuition"
 	line "kommt's an! Hört"
 	cont "auf euren Bauch!"
 	done
 
 .CandelaIntro2Text:
-	text "Candela: Instinkt?"
-	line "Das ist doch nur"
-	cont "Raterei!"
+	text "Candela:"
+	line "Intuition? Das ist"
+	cont "doch nur Raterei!"
 
 	para "Echte Trainer"
 	line "setzen auf Kraft!"
@@ -234,8 +234,9 @@ RocketHideoutB4FSparkScript:
 
 .SeenText:
 	text "Super! Mal sehen,"
-	line "wie weit dich dein"
-	cont "Instinkt bringt!"
+	line "wie weit dich"
+	cont "deine Intuition"
+	cont "bringt!"
 	done
 
 .BeatenText:

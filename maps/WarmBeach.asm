@@ -182,7 +182,7 @@ WarmBeachShackSignText:
 
 WarmBeachShrineText:
 	text "Ein Schrein, der"
-	line "dem Hüter der"
+	line "dem Wächter der"
 
 	para "Meere geweiht ist."
 	done

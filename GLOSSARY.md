@@ -23,7 +23,7 @@ _Avoid_: free translation, adaptation
 ## Letters
 
 **Umlauts**:
-Ä ä Ö ö Ü ü. Every font of the Translation draws them, and the naming keyboards offer them.
+Ä ä Ö ö Ü ü. Every font of the Translation draws them, and the naming keyboards offer them. In the Icognito font they are the Icognito A, O and U with two dots in the top corners (decided 2026-11-26).
 
 **ß**:
 Written as Kristall writes it (mostly the new spelling: Straße, but dass; a few older forms such as erfaßt), and in Own translation as the new spelling has it. The naming keyboards have no ß key, as in Kristall.
@@ -134,8 +134,19 @@ The original trainers of Wonder Trade Pokémon: the official German name of each
 **In-game trades**:
 Crystal's trade partners and their Pokémon keep Kristall's names (Ralf with Herakles, Tobi, Carmen with Dori, Paul). The Heracross from Pewter City is Herkules: Kristall calls its trainer Paul, so it can't keep Upstream's nickname Paul. The other nicknames stay as Upstream writes them (Mimic, Joey, Chance, Gail, Clarence, Batty).
 
+**Habsi**, **Harald**:
+The gift Spearow in the Route 35 gate and its OT, Kristall's names (Crystal's Kenya and Randy).
+_Avoid_: Kenya, Randy
+
+**Modri**:
+The Shuckle you look after in Cianwood City, Kristall's nickname (Crystal's Shuckie). Its OT is Gabriel (Polished: Kirk): Kristall's Gabriele has 8 letters, and an OT holds 7 here (decided 2026-11-26).
+
+**Kurios**:
+The Odd Egg's OT, Kristall's (Crystal: ODD; Polished: Egg). The egg's summary hides it, and hatching replaces it with the player's name (decided 2026-11-26).
+_Avoid_: Shuckie
+
 **Nicknames**:
-Trainers' Pokémon nicknames are German where the English is a word play (Hitzkopf, Kanonade, Wurzelwut) and stay where they're a name, a reference or a foreign word (Milky, Bruce, Jackie, Antorcha). Yellow's team takes the German manga names (Amoni, Ratzi, Raups, Dodi, Geon).
+Trainers' Pokémon nicknames are German where the English is a word play (Hitzkopf, Kanonade, Wurzelwut) and stay where they're a name, a reference or a foreign word (Milky, Bruce, Jackie, Antorcha). Yellow's team takes the German manga names (Amoni, Ratzi, Raups, Dodi, Geon), both times she battles. Blaise, the French tourist, calls his Bisasam Bulbizarre (its French name; Upstream: Bulbasaur); Sarah's Glumanda is Charmeur and Isabel's Schiggy Schildi (Upstream: Charmer, Turtle) (decided 2026-11-26).
 
 **Default names**:
 The player is Chris, Krista, Crys or Krys by picture, the rival Silber, the Magikarp record holder Angelo (Kristall's names).
@@ -145,7 +156,8 @@ _Avoid_: Kris, Silver, Ralph
 A line that opens with its speaker's name uses the German trainer name (Uwe: for Thom, Eva & Ute: for Amy & Mimi, with spaces around the & as Kristall writes it in dialogue) or the character's official German name (Blau:, Gelb:, Troy:, Major Bob:, Pyro:, Janina:), also where Upstream shortens Lt. Surge to Surge.
 
 **Team Wagemut**, **Team Weisheit**, **Team Intuition**:
-Pokémon GO's teams Valor, Mystic and Instinct, led by Candela, Blanche and Spark, the Teamleiter (PokéWiki, Candela).
+Pokémon GO's teams Valor, Mystic and Instinct, led by Candela, Blanche and Spark, the Teamleiter (PokéWiki, Candela). Where Upstream plays on Instinct (Spark: "Instinct is key"), the German says Intuition (decided 2026-11-26).
+_Avoid_: Instinkt for Spark's team
 _Avoid_: Team Valor, Team Mystic, Team Instinct, Teamleitung
 
 **Prismania-Vier**:
@@ -172,7 +184,7 @@ _Avoid_: Gongturm
 Their official German names: Glockenklangpfad, Felsklippentor, Felsschlundhöhle, Sinjoh-Ruinen and Trysteriumaltar (HeartGold/SoulSilver); Pokémon-Labor, Nabelfels and Ferneiland (FireRed/LeafGreen, Emerald); the Pokéwalker's routes Stürmische Küste, Holpriger Pfad, Gruselhöhle, Finstere Höhle, Malerische Küste, Lauschiger Wald, Sonniger Strand, Stille Höhle and Goldgelber Wald; the anime's Shamouti, Insel des Feuers, Insel des Eises, Insel der Blitze and Valencia Insel.
 
 **Own place names**:
-Own translations for Polished's places: Viola-Stadtrand, Rosalia-Bucht, Dukatia-Hafen, Magnettunnel, Route 32: Küste (and 34, 35), Trüber Sumpf, Schneegipfel, Felsiger Strand, Uraga-Kanal, Schreinruinen, Shamouti-Tunnel, Shamouti-Küste, Prismania-Uni, Zinnober-Vulkan, Kap von Azuria, Glücksinsel, Pokémon-Liga: Tor (Fly writes Pokémon-Liga).
+Own translations for Polished's places: Viola-Stadtrand, Rosalia-Bucht, Dukatia-Hafen, Magnettunnel, Route 32: Küste (and 34, 35), Trüber Sumpf, Schneegipfel, Felsiger Strand, Uraga-Kanal, Schreinruinen, Shamouti-Tunnel, Shamouti-Küste, Prismania-Uni, Zinnober-Vulkan, Kap von Azuria (Kristall's own lines keep KAP bei AZURIA CITY, decided 2026-11-26), Glücksinsel, Pokémon-Liga: Tor (Fly writes Pokémon-Liga).
 _Avoid_: Küste Route 32, Universität Prismania
 
 **Pokégear line breaks**:
@@ -250,6 +262,13 @@ _Avoid_: BP
 **Tauschecke**:
 The counter that trades items for GP.
 
+**LINK-TAUSCH**:
+The trade screen's border (CABLE TRADE), Kristall's.
+
+**PC-Lagerungs-System**, **#mon-Lagerungs-System**:
+Bill's storage system, Kristall's word in every place.
+_Avoid_: PC-Boxsystem, PC-Boxen-System
+
 **Richter-Maschine**:
 The Judge Machine; what it does is bewerten (to judge the Pokémon's overall strength).
 _Avoid_: Bewertungsmaschine
@@ -309,7 +328,7 @@ The short status names, Kristall's, in normal case in every text and menu, as Up
 _Avoid_: GIF, PAR in a text
 
 **KP**, **EP**, **AP**:
-HP, Exp. Points and PP, on the bars and in the texts ("157 EP!").
+HP, Exp. Points and PP, on the bars and in the texts ("157 EP!"). AP is in the plain font, where Upstream draws a bold PP and Kristall a bold AP (decided 2026-11-25, confirmed 2026-11-26).
 
 **S**:
 A move's power (Stärke, PokéWiki) beside its accuracy in % ("90S/ 90%"), in the normal font, in the battle move box, the summary and the move screen.
@@ -462,11 +481,15 @@ The Seagallop Ferry (PokéWiki).
 Seen and Own on the list, as Kristall; Results of a search (own).
 
 **Modus**, **Johto-Modus**, **National-Modus**, **Icognito Index**:
-The SELECT menu. Icognito Index is Kristall's line; the others are Polished's own words, where Kristall has OPTIONEN and NEUER/ALTER POKéDEX.
+The SELECT menu. Icognito Index is Kristall's line; the others are Polished's own words, where Kristall has OPTIONEN and NEUER/ALTER POKéDEX. The index's words (ANGER, BEAR … ZOOM) stay English, as Kristall shows them (in Icognito letters there) (decided 2026-11-26).
 
 **Suche**, **Ordnen:**, **Typ**, **Gruppe**, **Farbe**, **Silhouette**, **Beginnen!**:
 The search page. Suche, Typ and the start's verb are Kristall's, Farbe and Silhouette PokéWiki's.
 _Avoid_: Körper, Form (for Body)
+
+**UNBEKANNT**:
+The label under the question mark of an unseen slot or an uncaught Unown form (UNDISCOVERED), the German name of the matching egg group. Own.
+_Avoid_: UNENTDECKT
 
 **Gr.**, **Gew**, **S.1**, **Info**, **Bio**, **Werte**, **Geb.**, **Ruf**:
 The entry page and the bar below it. Gr., Gew, S., Geb. and Ruf are Kristall's.
@@ -506,8 +529,15 @@ The call menu and the clock card, Kristall's words.
 **Sendersuchlauf**:
 The radio card's drawn label (Tuning), Kristall's word, drawn in narrow small capitals as Kristall has it.
 
+**A▶FLIEGEN**:
+The Pokégear map's Fly label (A▶FLY), with the move's German name.
+
+**Inseln**:
+The Orange Islands label on the Pokégear map, as on the Pokédex area page (Islands).
+
 **Eichs PKMN-Talk**, **Pokémon-Musik**, **Glückskanal**, **Orte & Personen**, **Lasst uns singen**, **Pokémon-Flöte**, **Buenas Passwort**:
-The radio stations, Kristall's names. Oak's show calls its channel Pokémon Programm, the DJs are Margit, Ben, Fabian, Bastian and Lilly.
+The radio stations, Kristall's names. Oak's show calls its channel Pokémon Programm, the DJs are Margit, Ben, Fabian, Bastian and Lilly. Kristall calls Margit MARIA in Buena's and Chad's calls; ours says Margit there too (decided 2026-11-26).
+_Avoid_: Maria for DJ Mary (the Ice Path skier is a different Maria)
 _Avoid_: Mary, Fern, Reed, Lily
 
 **Datenbank**:
@@ -553,7 +583,50 @@ _Avoid_: E1, E2
 The magazine in the Hyper Test room, Germany's counterpart of Nintendo Power.
 _Avoid_: Nintendo Power
 
+**ARN**, **MRKT**:
+The roof signs of Gyms and Marts, as on Kristall's roofs.
+_Avoid_: GYM, MART
+
+**KAUF**, **LIGA**:
+Polished's own roof signs (DEPT, LEAGUE) on the department stores and the Pokémon League: the first word of Kaufhaus, and the Liga of #mon Liga. Own.
+
+**GAMES**:
+The Game Corners' roof sign stays English, as Upstream draws it (decided 2026-11-26).
+_Avoid_: SPIEL
+
 ## Story text
+
+**der Auserwählte**:
+"The lead" in the Sinjoh inscription and in Cynthia's quote of it on the Trysteriumaltar (decided 2026-11-26).
+_Avoid_: der Anführer
+
+**Studentenlounge**, **Mensa**, **Krankenzimmer**, **Naturwissenschaften**:
+Celadon University's student lounge, cafeteria, nurse's office and science classroom, on the door signs and in dialogue alike (decided 2026-11-26).
+_Avoid_: Aufenthaltsraum, Cafeteria, Krankenstation, Wissenschaft
+
+**OK**, **Okay**:
+Polished's own lines keep OK and Okay as written; Kristall's lines keep O.K. (decided 2026-11-26).
+
+**KRISTALL** (intro):
+The Unown in the opening spell KRISTALL with Kristall's tiles, where Upstream spells CRYSTAL (decided 2026-11-26).
+
+**Start**, **Select**:
+The buttons, named in text as Kristall's lines are re-cased (Drücke Start, um …). In graphics they stay START and SEL.
+
+**#mon Liga**:
+The Pokémon League in text, as Kristall writes it (#MON LIGA): two words, no hyphen.
+_Avoid_: #mon-Liga
+
+**Rocket Rüpel**:
+A Team Rocket grunt in text, two words as Kristall writes them.
+_Avoid_: Rocket-Rüpel
+
+**Technikladen**:
+The Celadon Department Store's Tech Shop floor (Polished's own), one word on the signs and in dialogue.
+_Avoid_: Technik-Laden
+
+**Pilar's Spanish**:
+Sightseer Pilar on the Shamouti coast speaks Spanish, as in Upstream: a tourist from far away. Her lines stay Upstream's, with á í ó ¿ ¡ (decided 2026-11-26).
 
 **Unterhaltungskanal**:
 The Variety Channel the Goldenrod band plays on. No German game has a station of that name; built from Kristall's "Unterhaltungssendungen" in the Radio Tower.
@@ -691,6 +764,13 @@ _Avoid_: Ge, Y, C, R/S/E, FR/LG, B/W, B2/W2, M02
 
 **Komponist:**, **Arrangeur:**:
 The music player's labels on a song's info page (Composer:, Arranger:).
+
+**H**:
+The note B in the music player, as German names it (C … A, A#, H) (decided 2026-11-26).
+_Avoid_: B
+
+**Ch1**, **Ch2**, **Wave**, **Noise**, **Set**:
+The music player's channel labels stay as Upstream draws them: they name the Game Boy's sound channels, not words.
 
 ## Map menus and the Alph walls
 

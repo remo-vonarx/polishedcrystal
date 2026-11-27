@@ -423,7 +423,7 @@ GoldenrodHarborNoMoneyText:
 	done
 
 GoldenrodHarborAlreadyBoughtText:
-	text "Das hast du doch"
+	text "Das hast du"
 	line "schon!"
 	done
 

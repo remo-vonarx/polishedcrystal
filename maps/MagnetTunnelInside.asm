@@ -386,9 +386,9 @@ GenericTrainerEngineerGraden:
 	cont "schaffen, aber…"
 
 	para "Ich ahnte ja"
-	line "nicht, dass all"
+	line "nicht, dass der"
 
-	para "das Magnetit uns"
+	para "ganze Magnetit uns"
 	line "so viel Kopfzer-"
 	cont "brechen bereiten"
 	cont "würde!"

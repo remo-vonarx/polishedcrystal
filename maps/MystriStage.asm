@@ -205,11 +205,11 @@ MystriStageCynthiaSpeechText:
 	cont "ist."
 
 	para "Er erzählt davon,"
-	line "wenn “der Anführer"
+	line "wenn “der"
+	cont "Auserwählte den"
 
-	para "den Trysterium-"
-	line "altar endlich"
-	cont "betritt…”"
+	para "Trysteriumaltar"
+	line "endlich betritt…”"
 	done
 
 MystriStageCynthiaLeadText2:
@@ -222,10 +222,10 @@ MystriStageCynthiaLeadText2:
 	para "Das ist sehr"
 	line "faszinierend."
 
-	para "Könnte “der Anfüh-"
-	line "rer” ein #mon"
-	cont "sein? Oder ein"
-	cont "Mensch?"
+	para "Könnte “der"
+	line "Auserwählte” ein"
+	cont "#mon sein? Oder"
+	cont "ein Mensch?"
 	done
 
 MystriStageCynthiaIdeaText:

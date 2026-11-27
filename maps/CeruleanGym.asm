@@ -409,7 +409,7 @@ CeruleanGymSomethingUnderwaterText:
 	line "unter Wasser…"
 
 	para "Vielleicht redet"
-	line "der Rocket-Rüpel?"
+	line "der Rocket Rüpel?"
 
 	para "Wo ist er nur"
 	line "hingerannt?"

@@ -8,8 +8,12 @@ LyraPhoneScript:
 	getstring .CeladonUniversity, STRING_BUFFER_4
 	sjumpfwd .got_landmark
 .not_celadon_university
-	ifnotequal POKEMON_LEAGUE, .got_landmark
+	ifnotequal POKEMON_LEAGUE, .not_pokemon_league
 	getstring .PokemonLeague, STRING_BUFFER_4
+	sjumpfwd .got_landmark
+.not_pokemon_league
+	ifnotequal LAV_RADIO_TOWER, .got_landmark
+	getstring .LavRadioTower, STRING_BUFFER_4
 .got_landmark
 	farwritetext LyraPhoneLandmarkText
 	ifless SHAMOUTI_LANDMARK, .not_shamouti
@@ -46,7 +50,8 @@ LyraPhoneScript:
 	end
 
 .CeladonUniversity: db "Prismania-Uni@"
-.PokemonLeague:     db "#mon-Liga@"
+.PokemonLeague:     db "#mon Liga@"
+.LavRadioTower:     db "Radioturm<CONT>Lavandia@" ; 18 tiles and "?" are one too many: the name goes on two lines
 
 LyraPhone_GetFirstMonNextMove:
 	; [wStringBuffer3] = species name

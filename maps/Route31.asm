@@ -526,7 +526,7 @@ Route31AdvancedTipsSignText:
 	text "Tipps für Profis!"
 
 	para "Drücke im Beutel"
-	line "START, um eine"
+	line "Start, um eine"
 	cont "Tasche zu sortie-"
 	cont "ren!"
 	done

@@ -170,12 +170,12 @@ RocketHideoutB1FLassMavis:
 .SeenText:
 	text "Meine Strategie?"
 
-	para "Reiner Instinkt,"
+	para "Reine Intuition,"
 	line "sonst nichts!"
 	done
 
 .BeatenText:
-	text "Dein Instinkt ist"
-	line "wohl besser als"
-	cont "meiner."
+	text "Deine Intuition"
+	line "ist wohl besser"
+	cont "als meine."
 	done

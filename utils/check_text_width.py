@@ -46,8 +46,8 @@ TOKEN_WIDTHS = {
     '<PLAYER>': 7, '<RIVAL>': 7, '<TRENDY>': 7,
     '<USER>': UNKNOWN, '<TARGET>': UNKNOWN, '<ENEMY>': UNKNOWN,
 }
-# "'l" "'m" "'r" "'s" "'t" "'v" are one tile each; "'d" is two since its tile became ß
-TOKEN = re.compile(r"#mon|<[^>]+>|'[lmrstv]|{[^}]*}|.")
+# "'s" is one tile; "'d" is two since its tile became ß (G3), "'l" "'m" "'r" "'t" "'v" since theirs became á í ó ¿ ¡ (Task 20)
+TOKEN = re.compile(r"#mon|<[^>]+>|'s|{[^}]*}|.")
 
 NEW_LINE = {'line', 'cont', 'para', 'next', 'next1', 'page'}
 RUNTIME = {'text_ram', 'text_decimal', 'text_today', 'text_plural'}
@@ -92,7 +92,7 @@ def check_file(path):
     max_width = file_width
     screen = screen_labels(path)
     width = 0
-    branches = []  # per open "if": [width before it, widest branch end, has else]
+    branches = []  # per open "if": [width before it, widest branch end, has else, in a DEBUG-only branch]
     for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
         code = strip_comment(line)
         match = LABEL.match(code)
@@ -106,16 +106,18 @@ def check_file(path):
         command, rest = match.groups()
         conditional = command.lower()
         if conditional == 'if':
-            branches.append([width, None, False])
+            debug_only = re.sub(r'\s', '', rest) == 'DEF(DEBUG)'  # in neither ROM, stays English (CLAUDE.md)
+            branches.append([width, None, False, debug_only])
             continue
         if conditional in {'elif', 'else'} and branches:
             branch = branches[-1]
             branch[1] = width if branch[1] is None else max(branch[1], width)
             branch[2] = branch[2] or conditional == 'else'
+            branch[3] = False
             width = branch[0]
             continue
         if conditional == 'endc' and branches:
-            before, widest, has_else = branches.pop()
+            before, widest, has_else, _ = branches.pop()
             ends = [width] + ([] if widest is None else [widest]) + ([] if has_else else [before])
             width = max(ends)
             continue
@@ -131,7 +133,7 @@ def check_file(path):
             continue
         for string in STRING.findall(rest):
             width += string_width(string)
-        if width > max_width:
+        if width > max_width and not any(branch[3] for branch in branches):
             problems.append(f'{display_path(path)}:{number}: width {width}: {line.strip()}')
     return problems
 

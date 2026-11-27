@@ -114,7 +114,7 @@ INCLUDE "gfx/stats/orange_page.pal"
 	db "aus Ei@"
 
 .str_traded
-	db "per Tausch@"
+	db "getauscht@"
 
 .TN_PrintCharacteristics:
 	; b = value of best DV, c = index of best DV

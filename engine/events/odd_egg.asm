@@ -81,7 +81,7 @@ endr
 	call CopyName2
 
 	ld hl, wTempMonOT
-	ld de, .EggName
+	ld de, .EggOT
 	call CopyName2
 
 	ld hl, wTempMonExtra
@@ -114,5 +114,8 @@ endr
 
 .EggName:
 	rawchar "Ei@"
+
+.EggOT: ; Kristall's OT for the Odd Egg (Crystal: ODD); hatching sets the player's name
+	rawchar "Kurios@"
 
 INCLUDE "data/events/odd_eggs.asm"

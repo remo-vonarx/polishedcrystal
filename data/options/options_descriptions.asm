@@ -96,8 +96,7 @@ OptionsDescriptions:
 .ClockFormat:
 	text "Die Anzeige der"
 	line "Uhrzeit: 12 Std."
-	cont "hat AM"
-	cont "PM."
+	cont "hat AM/PM."
 	prompt
 
 .PokedexUnits:

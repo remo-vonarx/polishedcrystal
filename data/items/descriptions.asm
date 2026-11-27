@@ -1486,8 +1486,8 @@ PunchinGloveDesc:
 	done
 
 CovertCloakDesc:
-	text "Blockiert Zusatz-"
-	next "effekte."
+	text "Blockt Attacken-"
+	next "Zusatzeffekte."
 	done
 
 EjectPackDesc:

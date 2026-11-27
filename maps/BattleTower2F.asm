@@ -64,9 +64,10 @@ BattleTower2FCherylScript:
 	iffalse_jumpopenedtext .RefuseText
 	setflag ENGINE_CHERYL_DONE_TODAY
 	writethistext
-		text "Ich warne dich:"
-		line "Meine #mon sind"
-		cont "ziemlich wild."
+		text "Ich warne dich,"
+		line "meine #mon"
+		cont "können ziemlich"
+		cont "wild sein."
 		done
 	waitbutton
 	closetext
@@ -180,7 +181,8 @@ BattleTower2FRileyScript:
 .BeatenText:
 	text "Mal kämpfen wir"
 	line "gegeneinander, mal"
-	cont "im Team."
+	cont "tun wir uns"
+	cont "zusammen."
 
 	para "Toll, wie Trainer"
 	line "miteinander umge-"
@@ -240,8 +242,8 @@ BattleTower2FBuckScript:
 	done
 
 .BeatenText:
-	text "Hihihi!"
-	line "Du bist ja feurig!"
+	text "Hehehehe!"
+	line "So heiß bist du!"
 	done
 
 .RefuseText:
