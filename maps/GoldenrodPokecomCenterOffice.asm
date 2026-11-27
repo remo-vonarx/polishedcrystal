@@ -88,8 +88,9 @@ LunaComputerScript:
 
 AdminFredrikText:
 	text "Fredrik: Bills"
-	line "PC-Boxsystem ist"
-	cont "Open Source,"
+	line "PC-Lagerungs-"
+	cont "System ist Open"
+	cont "Source,"
 
 	para "also konnte ich"
 	line "seine Datenbank"

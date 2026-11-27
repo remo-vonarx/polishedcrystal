@@ -2735,7 +2735,6 @@ _MagikarpGuruMeasureText::
 	para "…Hm, es ist"
 	line ""
 	text_ram wStringBuffer1
-	text "cm"
 	cont "groß."
 	prompt
 
@@ -2744,7 +2743,7 @@ _KarpGuruRecordText::
 	text "Aktueller Rekord"
 	para ""
 	text_ram wStringBuffer1
-	text "cm gefangen"
+	text " gefangen"
 	line "von "
 	text_ram wMagikarpRecordHoldersName
 	text_promptbutton
@@ -3865,7 +3864,7 @@ BTMartInsufficientFundsText::
 
 SECTION "BTMartBagFullText", ROMX
 BTMartBagFullText::
-	text "Es tut mir Leid,"
+	text "Es tut mir leid,"
 	line "aber dein Beutel"
 	cont "ist voll."
 	done
@@ -4057,8 +4056,7 @@ _CardFlipPlayWithThreeCoinsText::
 
 SECTION "_CardFlipNotEnoughCoinsText", ROMX
 _CardFlipNotEnoughCoinsText::
-	text "Nicht genügend"
-	cont "Münzen…"
+	text "Zu wenig Münzen…"
 	prompt
 
 SECTION "_CardFlipChooseACardText", ROMX

@@ -20,7 +20,7 @@ MonSubmenu:
 
 .MenuDataHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 6, 0, 19, 17
+	menu_coords 5, 0, 19, 17
 	dw 0
 	db 1 ; default option
 

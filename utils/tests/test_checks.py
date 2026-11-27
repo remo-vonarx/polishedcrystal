@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 import check_text_mode
-from check_text_width import string_width
+from check_text_width import check_file, string_width
 
 
 def run(script, *args, cwd=None):
@@ -14,6 +14,21 @@ def test_width_counts_g3_letters():
     assert string_width("Straße") == 6 and string_width("Grüße") == 5
     assert string_width("he'd") == 4 and string_width("he's") == 3  # 'd is two tiles since G3
     assert string_width("#mon") == 7 and string_width("<PLAYER>") == 7
+
+
+def test_width_counts_freed_contractions_as_two_tiles():
+    # Task 20 gave the slots of 'l 'm 'r 't 'v to á í ó ¿ ¡; only 's is still one tile
+    assert string_width("auf'm") == 5 and string_width("can't") == 5
+    assert string_width("geht's") == 5
+
+
+def test_width_check_skips_debug_only_text(tmp_path):
+    # `if DEF(DEBUG)` text is in neither ROM and stays English (CLAUDE.md)
+    wide = '\ttext "This line is far too wide"\n\tdone\n'
+    f = tmp_path / "t.asm"
+    f.write_text("DebugText:\nif DEF(DEBUG)\n" + wide + "else\n" + wide + "endc\n", encoding="utf-8")
+    problems = check_file(f)
+    assert len(problems) == 1 and ":6:" in problems[0]  # only the else branch's line
 
 
 def test_width_check_clean_on_tree(root):
@@ -153,6 +168,19 @@ def test_inver_check_reports_a_missing_party_prefix(root, tmp_path):
     edit(tmp_path / INVER_FILES[1], "DEF INVER_PREFIX", "DEF INVER_HEADER")
     assert check_names.inver_problems(tmp_path)
 
+
+SHUCKIE_FILES = ["maps/ManiasHouse.asm", "engine/events/shuckle.asm"]
+
+
+def test_shuckie_ot_that_mania_does_not_check_for_is_reported(root, tmp_path):
+    import re
+    import check_names
+    copy_files(root, tmp_path, SHUCKIE_FILES)
+    assert not check_names.gift_ot_problems(tmp_path)
+    returning = tmp_path / SHUCKIE_FILES[1]
+    name = re.search(r'^SpecialShuckleOTAndExtra:\n\trawchar "([^"@]*)', returning.read_text(encoding="utf-8"), re.M).group(1)
+    edit(returning, f'rawchar "{name}', 'rawchar "Kirk')
+    assert check_names.gift_ot_problems(tmp_path)
 
 def test_soft_hyphen_breaks_a_place_with_a_hyphen_on_the_pokegear():
     import check_names

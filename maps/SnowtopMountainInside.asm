@@ -94,7 +94,7 @@ KimonoGirlAmiScript:
 
 	para "Hast du meine fünf"
 	line "tanzenden Cousinen"
-	cont "in Teak City noch"
+	cont "in Teak City"
 	cont "nicht getroffen?"
 
 	para "Sag mir Bescheid,"

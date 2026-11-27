@@ -122,10 +122,10 @@ ManiaScript:
 	done
 
 ShuckieName:
-	rawchar "Shuckie@"
+	rawchar "Modri@"
 
 ShuckieOTName:
-	rawchar "Kirk@"
+	rawchar "Gabriel@"
 
 ManiaText_AskLookAfterShuckie:
 	text "Ich… ich bin"

@@ -12,6 +12,6 @@ NoteNames:
 	db "G<SHARP>"
 	db "A "
 	db "A<SHARP>"
-	db "B "
+	db "H "
 	db "--"
 	assert_table_length NUM_NOTES + 2 ; count __ and CC

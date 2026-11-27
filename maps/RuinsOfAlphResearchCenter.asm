@@ -308,7 +308,8 @@ RuinsOfAlphResearchCenterScientist4Script:
 	line "Forschung über die"
 
 	para "#mon-Fossilien"
-	line "hier abschließen."
+	line "hier abzu-"
+	cont "schließen."
 	done
 
 .CanResurrectFossils

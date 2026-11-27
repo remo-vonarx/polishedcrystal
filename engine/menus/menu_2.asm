@@ -213,7 +213,7 @@ CoinString:
 
 StartMenu_DrawBugContestStatusBox:
 	hlcoord 0, 0
-	lb bc, 5, 17
+	lb bc, 5, 18 ; one wider than Upstream, as Kristall: "Besitz: " and a 10-letter name
 	jmp Textbox
 
 StartMenu_PrintBugContestStatus:
@@ -242,7 +242,7 @@ StartMenu_PrintBugContestStatus:
 	call GetPokemonName
 
 .no_contest_mon
-	hlcoord 8, 1
+	hlcoord 9, 1 ; Kristall's column: a space after "Besitz:"
 	rst PlaceString
 	ld a, [wContestMon]
 	and a

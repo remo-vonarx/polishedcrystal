@@ -318,34 +318,37 @@ Route10NorthLawrenceSpeechText:
 	cont "Unmöglich."
 
 	para "Nicht einmal ich"
-	line "habe trotz meines"
-	cont "Wissens und meiner"
-	cont "Mittel Lavados"
+	line "habe mit meinem"
+
+	para "Wissen und meinen"
+	line "Mitteln Lavados"
 	cont "gefunden…"
 
-	para "Wieso hast du"
+	para "Warum hast du"
 	line "Erfolg, wo ich"
 	cont "versagt habe?"
 
-	para "Weißt du die"
-	line "Pracht der geflü-"
-	cont "gelten Trugbilder"
-	cont "zu schätzen?"
+	para "Kannst du die"
+	line "Pracht der sagen-"
+	cont "umwobenen Vögel"
+	cont "würdigen?"
 
-	para "Hast du je vom"
-	line "Wächter des Meeres"
+	para "Hast du überhaupt"
+	line "schon mal vom"
+	cont "Wächter des Meeres"
 	cont "gehört?"
 
-	para "Das ist inakzep-"
-	line "tabel."
+	para "Das ist"
+	line "inakzeptabel."
 
-	para "Triff mich in den"
+	para "Triff mich bei den"
 	line "Schreinruinen auf"
 	cont "Shamouti."
 
-	para "Ich zeige dir,"
-	line "dass mir diese"
-	cont "#mon zustehen."
+	para "Ich werde dir"
+	line "beweisen, dass mir"
+	cont "diese #mon"
+	cont "zustehen."
 	done
 
 RockTunnelSignText:

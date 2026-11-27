@@ -54,9 +54,9 @@ ProfOaksAide1Script:
 .NoRoom
 	jumpthisopenedtext
 
-	text "Oh! Du hast"
-	line "keinen Platz mehr"
-	cont "dafür."
+	text "Oh! Wie ich sehe,"
+	line "hast du keinen"
+	cont "Platz dafür."
 	done
 
 IlexForestAzaleaGateOfficerText:
@@ -77,33 +77,33 @@ IlexForestAzaleaGateGrannyText:
 	done
 
 ProfOaksAide1HiText:
-	text "Hallo! Ich bin ein"
-	line "Assistent von"
-	cont "Prof. Eich."
+	text "Hallo! Ich bin"
+	line "Prof. Eichs"
+	cont "Assistent."
 
 	para "Wenn du 15 Arten"
-	line "#mon gefangen"
-	cont "hast,"
-
-	para "soll ich dir ein"
-	line "Item geben."
+	line "von #mon"
+	cont "gefangen hast,"
+	cont "soll ich dir ein"
+	cont "Item geben."
 
 	para "Also, <PLAYER>,"
 	line "hast du schon"
 
 	para "mindestens 15"
-	line "Arten #mon"
+	line "Arten von #mon"
 	cont "gefangen?"
 	done
 
 ProfOaksAide1UhOhText:
-	text "Mal sehen…"
-	line "Oh je! Du hast nur"
+	text "Mal sehen… Oje!"
+	line "Du hast bisher"
 
-	para ""
+	para "erst "
 	text_decimal wTempDexOwn, 2, 3
-	text " Arten #mon"
-	line "gefangen."
+	text " Arten"
+	line "von #mon"
+	cont "gefangen."
 
 	para "Komm wieder, wenn"
 	line "du 15 Arten"
@@ -111,14 +111,15 @@ ProfOaksAide1UhOhText:
 	done
 
 ProfOaksAide1HereYouGoText:
-	text "Mal sehen…"
-	line "Toll! Du hast"
+	text "Mal sehen… Toll"
+	line "gemacht! Du hast"
 
-	para ""
+	para "schon "
 	text_decimal wTempDexOwn, 2, 3
-	text " Arten #mon"
-	line "gefangen."
+	text " Arten"
+	line "von #mon"
+	cont "gefangen."
 
 	para "Glückwunsch!"
-	line "Bitte schön!"
+	line "Hier, bitte!"
 	done

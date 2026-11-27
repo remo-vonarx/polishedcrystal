@@ -87,7 +87,7 @@ KukuiScript:
 
 	para "Bei uns gibt es"
 	line "aber keine"
-	cont "#mon-Liga."
+	cont "#mon Liga."
 
 	para "Darum bin ich nach"
 	line "Kanto gekommen, um"

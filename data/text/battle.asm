@@ -627,7 +627,7 @@ BattleText_ItemPreventsStatusMoves: ; assault vest
 	text_ram wStringBuffer1
 	text ""
 	line "verhindert Status-"
-	cont "attacken!"
+	cont "Attacken!"
 	prompt
 
 BattleText_TheMoveIsDisabled:
@@ -1661,17 +1661,17 @@ PlayerAffectionEvasionText:
 	text "<USER>"
 	line "weicht der Attacke"
 
-	para "auf <PLAYER>'s"
-	line "Ruf hin aus!"
+	para "auf den Ruf von"
+	line "<PLAYER> hin aus!"
 	prompt
 
 EnemyAffectionEvasionText:
 	text "<USER>"
 	line "weicht der Attacke"
 
-	para "auf Ruf von"
+	para "auf den Ruf von"
 	line "<ENEMY>"
-	cont "aus!"
+	cont "hin aus!"
 	prompt
 
 PlayerAffectionSelfCureText:

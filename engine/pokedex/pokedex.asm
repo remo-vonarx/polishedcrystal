@@ -2280,7 +2280,7 @@ _Pokedex_Search:
 	add b
 	add 4 ; shape, not mini
 	xor $80
-	hlcoord 8, 15
+	hlcoord 13, 15 ; right after "Silhouette:" (Upstream: 8, 15 after the shorter "Shape:")
 	ld [hli], a
 	inc a
 	ld [hld], a
@@ -2413,7 +2413,7 @@ _Pokedex_Search:
 	jr c, .pressed_right
 .pressed_start
 	call ClearSpriteAnims
-	lb de, 120, 120
+	lb de, 120, 142 ; y, x: x as the static frame in Pokedex_RefreshOAM
 	ld a, SPRITE_ANIM_INDEX_DEX_SLOWPOKE
 	call InitSpriteAnimStruct
 

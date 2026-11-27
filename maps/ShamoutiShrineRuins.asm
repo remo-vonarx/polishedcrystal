@@ -127,13 +127,13 @@ ShamoutiShrineRuinsLawrenceScript:
 	line "ihn anlocken, aber"
 
 	para "nur, wenn du die"
-	line "drei geflügelten"
+	line "drei sagen-"
+	cont "umwobenen Vögel"
 
-	para "Trugbilder gemeis-"
-	line "tert hast--die"
-	cont "Vögel von Feuer,"
-
-	para "Eis und Blitz."
+	para "gemeistert hast--"
+	line "die Vögel von"
+	cont "Feuer, Eis und"
+	cont "Blitz."
 
 	para "So sagen es"
 	line "zumindest die"

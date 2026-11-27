@@ -231,7 +231,7 @@ Route22PastLyraPokeGearText:
 	text "Lyra: <PLAYER>,"
 	line "das Radio meines"
 
-	para "#com nennt ein"
+	para "#Com nennt ein"
 	line "Datum von vor drei"
 	cont "Jahren!"
 	done

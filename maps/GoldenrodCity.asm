@@ -197,7 +197,7 @@ MoveTutor:
 	jumpthisopenedtext
 
 	text "Wahahah!"
-	line "Guten Tag, Kind!"
+	line "Mach's gut, Wicht!"
 	done
 
 .NotEnoughMoney:

@@ -512,12 +512,8 @@ PokegearMap_Init:
 	ld a, [wTownMapCanShowFly]
 	and a
 	jr z, .no_fly
-	ld a, [wPokegearMapPlayerIconLandmark]
-	cp SHAMOUTI_LANDMARK
-	depixel 18, 12, 0, 0
-	jr nc, .got_coords
-	ld e, 13 * 8 ; depixel 18, 13, 0, 0
-.got_coords
+	; the six-tile label sits one row up (see .OAMData_TownMapFly), on open sea above every region's name
+	depixel 18, 14, 0, 0
 	ld a, SPRITE_ANIM_INDEX_TOWN_MAP_FLY
 	call InitSpriteAnimStruct
 .no_fly
