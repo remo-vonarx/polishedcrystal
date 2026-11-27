@@ -113,7 +113,7 @@ GenericTrainerSightseerfRosie:
 	line "viel Geschichte!"
 
 	para "Ich kann es kaum"
-	line "erwarten, sie zu"
+	line "erwarten, alles zu"
 	cont "fotografieren."
 	done
 

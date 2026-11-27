@@ -42,8 +42,8 @@ SilphCo2FEmployee1Script:
 	text "Du kommst aus"
 	line "Johto?"
 
-	para "Da du einen so"
-	line "weiten Weg hast,"
+	para "Da du von so weit"
+	line "hergekommen bist,"
 
 	para "gebe ich dir"
 	line "dieses hübsche"

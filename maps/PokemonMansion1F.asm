@@ -74,6 +74,7 @@ PokemonMansion1FMewtwoStatueText:
 	done
 
 PokemonMansion1FFlowerPotText:
-	text "Sie ist mit Erde"
-	line "und Asche gefüllt…"
+	text "Der Blumentopf ist"
+	line "mit Erde und Asche"
+	cont "gefüllt…"
 	done

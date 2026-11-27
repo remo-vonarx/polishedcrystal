@@ -177,10 +177,9 @@ CeladonUniversityCafeteriaBeautyText:
 	done
 
 CeladonUniversityCafeteriaYoungster1Text:
-	text "Ich habe die Cafe-"
-	line "teria gebeten,"
-	cont "Stratos-Eis anzu-"
-	cont "bieten."
+	text "Ich habe die Mensa"
+	line "gebeten, Stratos-"
+	cont "Eis anzubieten."
 
 	para "Es erinnert mich"
 	line "an zu Hause, und"

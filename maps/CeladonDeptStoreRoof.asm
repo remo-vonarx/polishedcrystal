@@ -62,7 +62,7 @@ CeladonDeptStoreRoofSuperNerdText:
 	done
 
 CeladonDeptStoreRoofYoungsterText:
-	text "Im dritten Stock"
+	text "Im zweiten Stock"
 	line "kann ich spielen,"
 	cont "und wenn ich"
 

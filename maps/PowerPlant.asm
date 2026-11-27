@@ -344,9 +344,9 @@ Text_PowerPlantTutorZapCannon:
 	line "sehr präzise,"
 
 	para "aber du kannst"
-	line "jemanden damit"
+	line "jemandem damit"
 	cont "ordentlich"
-	cont "schmoren!"
+	cont "einheizen!"
 
 	para "Soll ich deinem"
 	line "#mon Blitz-"

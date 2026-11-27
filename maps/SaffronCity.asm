@@ -320,7 +320,7 @@ SaffronCityMagnetTrainStationSignText:
 	done
 
 PokemonTrainerFanClubSignText:
-	text "#mon Trainer-"
+	text "#mon-Trainer-"
 	line "Fanclub"
 
 	para "Viele Trainer"

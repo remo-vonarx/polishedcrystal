@@ -161,7 +161,7 @@ SnowtopMountainInsideTutorIcyWindScript:
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
-	text "Okay! Jetzt kann"
+	text "OK! Jetzt kann"
 	line "dein #mon"
 	cont "Eissturm!"
 	done

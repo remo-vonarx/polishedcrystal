@@ -33,7 +33,7 @@ CeladonUniversityWestwoodsOfficeChildScript:
 .Text2:
 	text "Dann kaufe ich mir"
 	line "eben Ramen in der"
-	cont "Cafeteria."
+	cont "Mensa."
 	done
 
 .Text1:

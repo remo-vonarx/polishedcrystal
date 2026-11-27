@@ -1254,6 +1254,7 @@ ProtectedByMistText:
 	prompt
 
 GettingPumpedText:
+	text_pause
 	text "<USER>"
 	line "pumpt sich auf!"
 	prompt
@@ -2114,7 +2115,7 @@ Lyra1_2FinalPkmnText:
 	prompt
 
 Lyra1_3FinalPkmnText:
-	text "Okay! Jetzt kommt"
+	text "OK! Jetzt kommt"
 	line "mein letztes"
 	cont "#mon!"
 	prompt
@@ -2368,7 +2369,7 @@ ValerieFinalPkmnText:
 
 KukuiFinalPkmnText:
 	text "Meine Seele brennt"
-	line "heiß, oh yeah!"
+	line "heiß, jawohl!"
 	prompt
 
 PiersFinalPkmnText:

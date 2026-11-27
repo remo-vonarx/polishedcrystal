@@ -134,9 +134,9 @@ PicnickerEdnaBeatenText:
 	done
 
 HikerTimSeenText:
-	text "♪ Sie kommt um den"
-	line "Silberberg, wenn"
-	cont "sie kommt… ♪"
+	text "♪ Wenn sie kommt,"
+	line "kommt sie vom"
+	cont "Silberberg… ♪"
 
 	para "Der Silberberg ist"
 	line "in Johto, oder?"

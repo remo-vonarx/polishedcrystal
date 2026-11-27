@@ -1057,7 +1057,7 @@ BigRootDesc:
 
 BindingBandDesc:
 	text "Verstärkt Klammer-"
-	next "attacken. (Tragen)"
+	next "Attacken. (Tragen)"
 	done
 
 DestinyKnotDesc:
@@ -1077,7 +1077,7 @@ FocusSashDesc:
 
 GripClawDesc:
 	text "Verlängert"
-	next "Klammerattacken."
+	next "Klammer-Attacken."
 	done
 
 LifeOrbDesc:

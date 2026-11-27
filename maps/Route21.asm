@@ -210,7 +210,7 @@ GenericTrainerFisherLiam:
 	para "…Hä?"
 	line "Ein Kampf?"
 
-	para "Okay, los geht's!"
+	para "OK, los geht's!"
 	done
 
 .BeatenText:

@@ -120,9 +120,10 @@ ProfIvyScript:
 	para "meine Prunusbeeren"
 	line "helfen ihm nicht."
 
-	para "Kannst du drei"
-	line "Lydzibeeren für"
-	cont "es finden?"
+	para "Kannst du bitte"
+	line "drei Lydzibeeren"
+	cont "für das Nidorino"
+	cont "finden?"
 	done
 
 .OkayText:

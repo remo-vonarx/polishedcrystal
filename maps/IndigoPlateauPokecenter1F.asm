@@ -273,7 +273,7 @@ PlateauLyraText1:
 	line "ausfordern, nicht"
 	cont "nur, weil wir"
 	cont "Freunde sind,"
-	cont "sondern"
+	cont "sondern auch"
 	done
 
 PlateauLyraText2:

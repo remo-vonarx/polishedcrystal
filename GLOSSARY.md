@@ -568,6 +568,14 @@ _Avoid_: Silktree
 The Celadon Condominiums, by Kristall's name for the building.
 _Avoid_: Prismania-Wohnungen
 
+**Empfang**:
+The #mon League Reception Gate on the Route 22 and Route 26 signs, as Kristall's Route 26 sign writes it (#MON LIGA / EMPFANG).
+_Avoid_: Empfangstor
+
+**Oliviana City-Cafe**:
+The Olivine Café, Kristall's name, on Polished's sign as in dialogue.
+_Avoid_: Café Oliviana
+
 **Mondberg-Tunnel**:
 Polished's signs at the Mt. Moon entrances (Mt.Moon Tunnel). Own name.
 

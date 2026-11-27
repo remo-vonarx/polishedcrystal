@@ -65,7 +65,7 @@ QuietCaveB3FMarleyScript:
 	done
 
 .YesText:
-	text "…Okay. Ich gebe"
+	text "…OK. Ich gebe"
 	line "mein Bestes."
 	done
 
